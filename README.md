@@ -45,11 +45,9 @@ Run Jekyll:
 jekyll serve --baseurl ''
 ```
 
-
 ## _config.yml
 
 Options within the `_config.yml` file allow you to control the site's title, subtitle, logo, author information, and the left column navigation.
-
 
 ### Project Page URL Structure
 
