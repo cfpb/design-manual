@@ -19,25 +19,25 @@
 
     </head>
     <body>
-      <header role="banner">
+      <header id="header" class="header" role="banner">
       <div class="wrap">
         <img class="logo" src="{{site.logourl}}" alt="{{site.logoalt}}">
         <h1><a class="title-link" href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
       </div>
       </header>
 
-      <div class="wrap content">
+      <div class="wrap content-wrapper">
 
         {% include sidebar.html %}
 
-        <section id="main" class="main-content">
+        <section id="content" class="content">
           <main role="main">
             {{ content }}
           </main>
         </section>
 
 
-        <footer role="contentinfo">
+        <footer id="footer" class="footer" role="contentinfo">
           <p>This project is maintained by <a href="{{ site.author.url }}">{{ site.author.name }}</a>.</p>
 
           <p>Made with <a href="https://github.com/ascott1/DOCter">DOCter</a> and hosted on <a href="http://pages.github.com/">Github Pages</a>.</p>
