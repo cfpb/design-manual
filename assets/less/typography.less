@@ -1,0 +1,163 @@
+/* ==========================================================================
+   CFPB Design Manual
+   Basic Typography
+   ========================================================================== */
+
+@import (less) "./../css/fonts.css";
+
+// Font stack variables
+@sans-serif: "Avenir Next", Arial, sans-serif;
+@sans-serif-medium: "Avenir Next Medium", Arial, sans-serif;
+@sans-serif-demi: "Avenir Next Demi", Arial, sans-serif;
+@sans-serif-italic: "Avenir Next Italic", Arial, sans-serif;
+@serif: Georgia, "Times New Roman", serif;
+@monospace: monospace, sans-serif;
+
+body {
+    color: @black;
+    font-family: @serif;
+    line-height: 1.375;
+}
+
+/* Link Styling
+   ========================================================================== */
+
+a {
+    border-bottom-width: 0;
+    border-bottom-style: dotted;
+    border-bottom-color: @pacific;
+    color: @pacific;
+    text-decoration: none;
+}
+a:visited {
+    border-bottom-color: @teal;
+    color: @teal;
+}
+a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: @pacific-50;
+    color: @pacific-50;
+}
+a:focus {
+    border-bottom-style: solid;
+}
+a:active {
+    border-bottom-style: solid;
+    border-bottom-color: @navy;
+    color: @navy;
+}
+p a,
+li a,
+dd a {
+    border-bottom-width: 1px;
+}
+
+
+/* Headings
+   ========================================================================== */
+
+h1,
+h2,
+h3 {
+    font-family: @sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2.125em;
+    line-height: 1.23529411764706;
+}
+h2 {
+    font-size: 1.625em;
+    line-height: 1.23076923076923;
+}
+h3 {
+    font-size: 1.375em;
+    line-height: 1.27272727272727;
+}
+
+h4 {
+    font-family: @sans-serif-medium;
+    font-size: 1.125em;
+    line-height: 1.22222222222222;
+    font-weight: 500;
+}
+
+h5,
+h6 {
+    font-family: @sans-serif-demi;
+    // font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 0.875em;
+    line-height: 1.57142857142857;
+}
+h6 {
+    font-size: 0.75em;
+    line-height: 1.83333333333333;
+}
+
+.display {
+    // a.k.a. "superheader"
+    // For when you want a heading that's bigger than a normal H1
+    font-family: @sans-serif-demi;
+    font-size: 3em;
+    line-height: 1.25;
+    font-weight: bold; // Default @font-face code set Demi in place of Bold
+}
+
+
+/* Margins
+   ========================================================================== */
+
+p {
+    margin: 1.375em 0;
+}
+
+
+/*
+ * Miscellaneous
+ *
+ * - Any instances of Avenir Next getting italicized or bolded must be declared
+ *   explicitly so that it uses the correct webfont and does not fake the style
+ *   on normal Avenir Next. See blockquote example below.
+ */
+
+blockquote {
+    padding: 0.5em 0.75em;
+    border-left: 4px solid @green;
+    margin: 1em;
+    background: @green-midtone;
+    font-family: @sans-serif;
+}
+blockquote em,
+blockquote i {
+    font-family: @sans-serif-italic;
+}
+blockquote strong,
+blockquote b {
+    font-family: @sans-serif-demi;
+}
+
+
+/*
+ * Webfont Overrides for IE 6-8 to prevent faux/double bold and italics
+ *   
+ * - Any bold or italic Avenir elements added to the base styles MUST BE added
+ *   to this section, as well.
+ * - Dependent on using H5BP's conditional classes on the <html> element:
+ *   https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md
+ */
+
+.lt-ie9 {
+    h1, h2, h3, h4, h5, h6,
+    blockquote strong {
+        font-weight: normal !important;
+    }
+    blockquote em {
+        font-style: normal !important;
+    }
+}

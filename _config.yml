@@ -1,0 +1,38 @@
+# Base configuration
+permalink: /:title 
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+markdown: redcarpet
+pygments: true
+
+# Title
+name: CFPB Design Manual
+subtitle: A set of principles and standards for the Consumer Financial Protection Bureau's design projects.
+
+# When using this template with a project page set the baseurl to '/project-name'
+# For user/organization pages set this to an empty string
+# When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
+# See http://jekyllrb.com/docs/github-pages/ for more info
+#baseurl: ''
+baseurl: '/design-manual'
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: The Consumer Financial Protection Bureau
+  url: http://cfpb.github.io/design-manual
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl: 'assets/img/logo_210.png'
+logoalt: 'Consumer Financial Protection Bureau'
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Home
+  url: index.html
+  internal: true
+- text: Example Page
+  url: example_page.html
+  internal: true
+- text: DOCter Repo
+  url: https://github.com/ascott1/DOCter
+  internal: false
