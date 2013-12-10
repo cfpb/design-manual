@@ -1,6 +1,6 @@
 # The CFPB Design Manual
 
-The CFPB Design Manual is a set of principles and standards for the Consumer Financial Protection Bureau's design projects.
+The CFPB Design Manual is a set of principles and standards for the Consumer Financial Protection Bureau.
 
 ## To run it locally
 
