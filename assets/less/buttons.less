@@ -3,16 +3,18 @@
    Button Styling
    ========================================================================== */
 
-@btn-base-font-size-px: 14;
-@btn-base-font-size-em: unit( @btn-base-font-size-px / 16, em );
+@btn-base-font-size-px: 14px;
+@btn-base-font-size-em: unit( @btn-base-font-size-px / @base-font-size-px, em );
 
-.btn {
+.btn,
+.btn:link,
+.btn:visited {
     box-sizing: border-box;
     display: inline-block;
     
     padding: 0.625em 1em;
     
-    border: none;
+    border-width: 0;
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
@@ -20,12 +22,11 @@
     margin: 0;
     
     background-color: @pacific;
-    
     color: #FFF;
+
+    .webfont-medium;
     font-size: @btn-base-font-size-em;
     line-height: 1;
-    font-family: @sans-serif-medium;
-    font-weight: 500;
     text-decoration: none;
 
     -webkit-transition: .1s;
@@ -57,7 +58,7 @@
 /* Tertiary Button Styles */
 .btn-tertiary {
     background-color: @gray-20;
-    color: @black; /* Black */
+    color: @black;
 }
 .btn-tertiary:hover,
 .btn-tertiary:focus {
@@ -92,17 +93,22 @@
 }
 
 /* Simple link with same dimensions as button */
-.btn-link {
+.btn-link,
+.btn-link:link,
+.btn-link:visited {
     padding: 0;
     border-bottom: 1px dotted @pacific;
     -webkit-border-radius: 0;
        -moz-border-radius: 0;
             border-radius: 0;
-    margin: 0;
+
+    // This margin is necessary to vertically align link buttons with regular buttons.
+    // You can add to the left and right margin, but be wary of changing the top/bottom.
+    margin: unit( 10 / @btn-base-font-size-px, em);
+
     background-color: transparent;
     color: @pacific;
 }
-
 .btn-link:hover {
     color: @pacific-50;
     border-bottom: 1px solid @pacific-50;
@@ -116,7 +122,7 @@
 .btn-link:active {
     border-bottom: 1px solid @navy;
     background-color: transparent;
-    color: @navy; /* Navy */
+    color: @navy;
 }
 
 /* Destructive Action Button Styles */

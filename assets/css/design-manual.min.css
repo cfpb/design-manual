@@ -792,10 +792,101 @@ table {
    CFPB Design Manual
    Basic Typography
    ========================================================================== */
+/* Base Variables
+   ========================================================================== */
 body {
   color: #101820;
   font-family: Georgia, "Times New Roman", serif;
+  font-size: 100%;
   line-height: 1.375;
+}
+/* Headings
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 0;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+h1,
+.h1 {
+  margin-bottom: 0.6470588235294118em;
+  font-size: 2.125em;
+  line-height: 1.2941176470588236;
+}
+h2,
+.h2 {
+  margin-bottom: 0.8461538461538461em;
+  font-size: 1.625em;
+  line-height: 1.2692307692307692;
+}
+h3,
+.h3 {
+  margin-bottom: 1em;
+  font-size: 1.375em;
+  line-height: 1.2727272727272727;
+}
+h4,
+.h4 {
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 1.2222222222222223em;
+  font-size: 1.125em;
+  line-height: 1.2222222222222223;
+}
+h5,
+h6,
+.h5,
+.h6 {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+h5,
+.h5 {
+  margin-bottom: 1.5714285714285714em;
+  font-size: 0.875em;
+  line-height: 1.5714285714285714;
+}
+h6,
+.h6 {
+  margin-bottom: 1.8333333333333333em;
+  font-size: 0.75em;
+  line-height: 1.8333333333333333;
+}
+.superheader {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 0.4583333333333333em;
+  font-size: 3em;
+  line-height: 1.375;
+}
+/* Margins
+   ========================================================================== */
+p,
+ul,
+ol,
+dl,
+table,
+blockquote,
+figure {
+  margin-top: 0;
+  margin-bottom: 1.375em;
 }
 /* Link Styling
    ========================================================================== */
@@ -823,61 +914,27 @@ a:active {
   border-bottom-color: #002d72;
   color: #002d72;
 }
-p a,
-li a,
-dd a {
+p > strong > a,
+li > strong > a,
+dd > strong > a,
+p > em > a,
+li > em > a,
+dd > em > a,
+p > b > a,
+li > b > a,
+dd > b > a,
+p > i > a,
+li > i > a,
+dd > i > a {
   border-bottom-width: 1px;
 }
-/* Headings
-   ========================================================================== */
-h1,
-h2,
-h3 {
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-weight: normal;
+p > a,
+li > a,
+dd > a {
+  border-bottom-width: 1px;
 }
-h1 {
-  font-size: 2.125em;
-  line-height: 1.23529411764706;
-}
-h2 {
-  font-size: 1.625em;
-  line-height: 1.23076923076923;
-}
-h3 {
-  font-size: 1.375em;
-  line-height: 1.27272727272727;
-}
-h4 {
-  font-family: "Avenir Next Medium", Arial, sans-serif;
-  font-size: 1.125em;
-  line-height: 1.22222222222222;
-  font-weight: 500;
-}
-h5,
-h6 {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-h5 {
-  font-size: 0.875em;
-  line-height: 1.57142857142857;
-}
-h6 {
-  font-size: 0.75em;
-  line-height: 1.83333333333333;
-}
-.display {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-size: 3em;
-  line-height: 1.25;
-  font-weight: bold;
-}
-/* Margins
-   ========================================================================== */
-p {
-  margin: 1.375em 0;
+nav a {
+  border-bottom-width: 0;
 }
 /*
  * Miscellaneous
@@ -889,17 +946,25 @@ p {
 blockquote {
   padding: 0.5em 0.75em;
   border-left: 4px solid #2cb34a;
-  margin: 1em;
   background: #addc91;
   font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 blockquote em,
 blockquote i {
   font-family: "Avenir Next Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
 }
 blockquote strong,
 blockquote b {
   font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+ul {
+  list-style: square;
 }
 /*
  * Webfont Overrides for IE 6-8 to prevent faux/double bold and italics
@@ -1129,21 +1194,24 @@ textarea + [class^="icon-"] {
    CFPB Design Manual
    Button Styling
    ========================================================================== */
-.btn {
+.btn,
+.btn:link,
+.btn:visited {
   box-sizing: border-box;
   display: inline-block;
   padding: 0.625em 1em;
-  border: none;
+  border-width: 0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   margin: 0;
   background-color: #0072ce;
   color: #FFF;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 0.875em;
   line-height: 1;
-  font-family: "Avenir Next Medium", Arial, sans-serif;
-  font-weight: 500;
   text-decoration: none;
   -webkit-transition: .1s;
   -moz-transition: .1s;
@@ -1172,8 +1240,6 @@ textarea + [class^="icon-"] {
 .btn-tertiary {
   background-color: #e3e4e5;
   color: #101820;
-  /* Black */
-
 }
 .btn-tertiary:hover,
 .btn-tertiary:focus {
@@ -1213,13 +1279,15 @@ textarea + [class^="icon-"] {
   cursor: not-allowed;
 }
 /* Simple link with same dimensions as button */
-.btn-link {
+.btn-link,
+.btn-link:link,
+.btn-link:visited {
   padding: 0;
   border-bottom: 1px dotted #0072ce;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  margin: 0;
+  margin: 0.7142857142857143em;
   background-color: transparent;
   color: #0072ce;
 }
@@ -1237,8 +1305,6 @@ textarea + [class^="icon-"] {
   border-bottom: 1px solid #002d72;
   background-color: transparent;
   color: #002d72;
-  /* Navy */
-
 }
 /* Destructive Action Button Styles */
 .btn-warning {
@@ -1367,14 +1433,35 @@ img {
 }
 /* ==========================================================================
    CFPB Design Manual
-   Structure and Media Queries
+   Header
    ========================================================================== */
-/* Mobile first styles */
-.wrap {
-  padding: 0 1.25em;
-  /* 20px */
+/* Site title */
+.site-title {
+  text-align: center;
+  /* Site title / class on <a> */
 
 }
+.site-title .logo {
+  display: none;
+}
+.site-title h1 {
+  font-size: 1.875em;
+  /* 30px */
+
+  text-transform: lowercase;
+}
+.site-title .title-link {
+  color: #babbbd;
+  /* Probably too light for color contrast */
+
+}
+.site-title .title-link:visited {
+  color: #babbbd;
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Side Nav Mobile Styles
+   ========================================================================== */
 /* Main nav */
 .main-nav {
   margin: 0;
@@ -1382,6 +1469,163 @@ img {
   border-top: 2px solid #f1f2f2;
 }
 .main-nav li {
-  list-style: none;
   border-bottom: 2px solid #f1f2f2;
+  list-style: none;
+  padding: 0.5em 1em;
+}
+.main-nav a {
+  border: none;
+  color: #75787b;
+}
+.main-nav a:visited {
+  border: none;
+  color: #75787b;
+}
+.main-nav a:hover,
+.main-nav a:focus {
+  border-bottom: 1px solid #919395;
+  color: #919395;
+}
+.main-nav a:active {
+  border-bottom: 1px solid #babbbd;
+  color: #babbbd;
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Structure and Media Queries
+   ========================================================================== */
+/* Vertical padding */
+.header,
+.content,
+.footer {
+  padding: 2.5em 0;
+}
+/* Set up containers */
+.wrap {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+}
+.lt-ie8 .wrap {
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+/* Mobile first, y'all */
+.site-title,
+.sidebar,
+.content,
+.site-info {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+}
+.ie .site-title,
+.ie .sidebar,
+.ie .content,
+.ie .site-info {
+  margin-right: -0.26em;
+}
+.lt-ie8 .site-title,
+.lt-ie8 .sidebar,
+.lt-ie8 .content,
+.lt-ie8 .site-info {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+/* Media Queries */
+/* Mobile portrait */
+@media only screen and (min-width: 20em) {
+  
+}
+/* Mobile landscape */
+@media only screen and (min-width: 30em) {
+  
+}
+/* Small tablet */
+@media only screen and (min-width: 37.5em) {
+  .header {
+    border-bottom: 4px solid #2cb34a;
+  }
+  .site-title {
+    text-align: left;
+  }
+  .site-title .logo {
+    display: inline;
+  }
+  .site-title h1 {
+    display: inline;
+    margin-left: 4px;
+    position: relative;
+    bottom: 10px;
+  }
+  .sidebar {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 33.33333333333333%;
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
+  }
+  .ie .sidebar {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .sidebar {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .content {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 66.66666666666666%;
+  }
+  .ie .content {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .content {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .footer {
+    border-top: 4px solid #2cb34a;
+  }
+}
+/* Tablet/Netbook */
+@media only screen and (min-width: 48em) {
+  
+}
+/* Landscape tablet/netbook/laptop */
+@media only screen and (min-width: 64em) {
+  
+}
+@media only screen and (min-width: 80em) {
+  /* Desktop */
+}
+/* Widescreen */
+@media only screen and (min-width: 87.5em) {
+  
 }

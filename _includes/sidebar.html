@@ -1,15 +1,16 @@
-<aside>
-  <p class="intro">{{ site.subtitle }}</p>
-  <a class="skip-link visually-hidden focusable" href="#content">Skip to Main Content</a>
-  <nav role="navigation">
-    <ul class="main-nav">
-      {% for link in site.navigation %}
-        {% if link.internal == true %}
-          <li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
-        {% else %}
-          <li><a href="{{ link.url }}">{{ link.text }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
-</aside>
+<div id="sidebar" class="sidebar" role="comple">
+  <aside>
+    <a class="skip-link visually-hidden focusable" href="#content">Skip to Main Content</a>
+    <nav role="navigation">
+      <ul class="main-nav">
+        {% for link in site.navigation %}
+          {% if link.internal == true %}
+            <li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
+          {% else %}
+            <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </aside>
+</div>

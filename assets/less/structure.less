@@ -3,19 +3,89 @@
    Structure and Media Queries
    ========================================================================== */
 
-/* Mobile first styles */
+/* Vertical padding */
+.header,
+.content,
+.footer {
+	padding: 2.5em 0;
+}
+
+/* Set up containers */
 .wrap {
-	padding: 0 1.25em; /* 20px */
+	 .wrapper();
 }
 
-/* Main nav */
-.main-nav {
-    margin: 0;
-    padding: 0;
-    border-top: 2px solid @gray-10;
+/* Mobile first, y'all */
+.site-title,
+.sidebar,
+.content,
+.site-info {
+	.column(12);
 }
 
-.main-nav li {
-    list-style: none;
-    border-bottom: 2px solid @gray-10;
+/* Media Queries */
+/* Mobile portrait */
+@media only screen and (min-width: 20em) {
+
+}
+
+/* Mobile landscape */
+@media only screen and (min-width: 30em) {
+
+}
+
+/* Small tablet */
+@media only screen and (min-width: 37.5em) {
+	.header {
+		border-bottom: 4px solid @green;
+	}
+
+	.site-title {
+		text-align: left;
+
+		.logo {
+			display: inline;
+		}
+
+		h1 {
+			display: inline;
+			margin-left: 4px;
+			position: relative;
+			bottom: 10px;
+		}
+	}
+
+	.sidebar {
+		.column(4);
+		padding-bottom: 2.5em;
+		padding-top: 2.5em;
+	}
+
+	.content {
+		.column(8);
+	}
+
+	.footer {
+		border-top: 4px solid @green;
+	}
+}
+
+/* Tablet/Netbook */
+@media only screen and (min-width: 48em) { 
+
+}
+
+/* Landscape tablet/netbook/laptop */
+@media only screen and (min-width: 64em) { 
+
+}
+
+@media only screen and (min-width: 80em) { 
+/* Desktop */
+
+}
+
+/* Widescreen */
+@media only screen and (min-width: 87.5em) { 
+
 }

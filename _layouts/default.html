@@ -19,12 +19,14 @@
     <body>
       <header id="header" class="header" role="banner">
       <div class="wrap">
-        <img class="logo" src="{{site.logourl}}" alt="{{site.logoalt}}">
-        <h1><a class="title-link" href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <div class="site-title">
+          <img class="logo" src="{{site.logourl}}" alt="{{site.logoalt}}">
+          <h1><a class="title-link" href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        </div>
       </div>
       </header>
 
-      <div class="wrap content-wrapper">
+      <div class="wrap">
 
         {% include sidebar.html %}
 
@@ -34,14 +36,17 @@
           </main>
         </section>
 
-
-        <footer id="footer" class="footer" role="contentinfo">
-          <p>This project is maintained by <a href="{{ site.author.url }}">{{ site.author.name }}</a>.</p>
-
-          <p>Made with <a href="https://github.com/ascott1/DOCter">DOCter</a> and hosted on <a href="http://pages.github.com/">Github Pages</a>.</p>
-        </footer>
-
       </div><!-- /.wrap -->
+
+      <footer id="footer" class="footer" role="contentinfo">
+        <div class="wrap">
+          <div class="site-info">
+            <p>This project is maintained by <a href="{{ site.author.url }}">{{ site.author.name }}</a>.</p>
+            <p>Made with <a href="https://github.com/ascott1/DOCter">DOCter</a> and hosted on <a href="http://pages.github.com/">Github Pages</a>.</p>
+          </div>
+        </div>
+      </footer>
+
       <script src="js/jquery-1.9.1.js"></script>
       <script src="js/main.js"></script>
     </body>
