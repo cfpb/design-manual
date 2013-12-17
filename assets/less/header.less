@@ -7,10 +7,6 @@
 .site-title {
 	text-align: center;
 	
-	.logo {
-		display: none;
-	}
-	
 	h1 {
     	font-size: 1.875em; /* 30px */
     	text-transform: lowercase;
@@ -19,9 +15,18 @@
 	/* Site title / class on <a> */
 	.title-link {
 		color: @gray-50; /* Probably too light for color contrast */
+			.site-org {
+				color: @gray;
+				text-transform: uppercase;
+			}
 	}
 
 	.title-link:visited {
     	color: @gray-50;
     }
+}
+
+/* Site logo */
+.logo {
+	display: none;
 }

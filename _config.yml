@@ -4,6 +4,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 markdown: redcarpet
 pygments: true
 
+# Organization
+org: CFPB
+
 # Title
 name: Design Manual
 # We currently don't use this in the templates

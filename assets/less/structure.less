@@ -17,6 +17,7 @@
 
 /* Mobile first, y'all */
 .site-title,
+.site-logo,
 .sidebar,
 .content,
 .site-info {
@@ -38,20 +39,19 @@
 @media only screen and (min-width: 37.5em) {
 	.header {
 		border-bottom: 4px solid @green;
-	}
 
-	.site-title {
-		text-align: left;
-
-		.logo {
-			display: inline;
+		.site-title {
+			.column(6);
+			text-align: left;
 		}
 
-		h1 {
-			display: inline;
-			margin-left: 4px;
-			position: relative;
-			bottom: 10px;
+		.site-logo {
+			.column(6);
+			text-align: right;
+
+			.logo {
+				display: inline;
+			}
 		}
 	}
 

@@ -1441,9 +1441,6 @@ img {
   /* Site title / class on <a> */
 
 }
-.site-title .logo {
-  display: none;
-}
 .site-title h1 {
   font-size: 1.875em;
   /* 30px */
@@ -1455,8 +1452,16 @@ img {
   /* Probably too light for color contrast */
 
 }
+.site-title .title-link .site-org {
+  color: #75787b;
+  text-transform: uppercase;
+}
 .site-title .title-link:visited {
   color: #babbbd;
+}
+/* Site logo */
+.logo {
+  display: none;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -1517,6 +1522,7 @@ img {
 }
 /* Mobile first, y'all */
 .site-title,
+.site-logo,
 .sidebar,
 .content,
 .site-info {
@@ -1531,12 +1537,14 @@ img {
   width: 100%;
 }
 .ie .site-title,
+.ie .site-logo,
 .ie .sidebar,
 .ie .content,
 .ie .site-info {
   margin-right: -0.26em;
 }
 .lt-ie8 .site-title,
+.lt-ie8 .site-logo,
 .lt-ie8 .sidebar,
 .lt-ie8 .content,
 .lt-ie8 .site-info {
@@ -1558,17 +1566,48 @@ img {
   .header {
     border-bottom: 4px solid #2cb34a;
   }
-  .site-title {
+  .header .site-title {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 50%;
     text-align: left;
   }
-  .site-title .logo {
-    display: inline;
+  .ie .header .site-title {
+    margin-right: -0.26em;
   }
-  .site-title h1 {
+  .lt-ie8 .header .site-title {
     display: inline;
-    margin-left: 4px;
-    position: relative;
-    bottom: 10px;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .header .site-logo {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 50%;
+    text-align: right;
+  }
+  .ie .header .site-logo {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .header .site-logo {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .header .site-logo .logo {
+    display: inline;
   }
   .sidebar {
     display: inline-block;
