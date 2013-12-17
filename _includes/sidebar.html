@@ -3,7 +3,7 @@
     <a class="skip-link visually-hidden focusable" href="#content">Skip to Main Content</a>
     <nav role="navigation">
       <ul class="main-nav">
-        {% for link in site.navigation %}
+        {% for link in site.secondarynav %}
           {% if link.internal == true %}
             <li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
           {% else %}
