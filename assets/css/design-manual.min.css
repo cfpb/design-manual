@@ -1462,31 +1462,31 @@ img {
    CFPB Design Manual
    Side Nav Mobile Styles
    ========================================================================== */
-/* Main nav */
-.main-nav {
+/* Secondary nav */
+.secondary-nav {
   margin: 0;
   padding: 0;
   border-top: 2px solid #f1f2f2;
 }
-.main-nav li {
+.secondary-nav li {
   border-bottom: 2px solid #f1f2f2;
   list-style: none;
   padding: 0.5em 1em;
 }
-.main-nav a {
+.secondary-nav a {
   border: none;
   color: #75787b;
 }
-.main-nav a:visited {
+.secondary-nav a:visited {
   border: none;
   color: #75787b;
 }
-.main-nav a:hover,
-.main-nav a:focus {
+.secondary-nav a:hover,
+.secondary-nav a:focus {
   border-bottom: 1px solid #919395;
   color: #919395;
 }
-.main-nav a:active {
+.secondary-nav a:active {
   border-bottom: 1px solid #babbbd;
   color: #babbbd;
 }
