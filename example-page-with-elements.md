@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Example Page"
+title: Example Page with Elements
 ---
 
 Sample HTML from [Normalize](http://necolas.github.io/normalize.css/).
@@ -342,4 +342,3 @@ The <var>var element</var> example
         <div><button type="submit">Submit (button)</button></div>
     </fieldset>
 </form>
-
