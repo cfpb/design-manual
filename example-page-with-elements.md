@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Example Page with Elements
-published: true
 ---
 
 Sample HTML from [Normalize](http://necolas.github.io/normalize.css/).
