@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<!--[if lt IE 7]>  <html lang="en" class="ie lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>     <html lang="en" class="ie lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>     <html lang="en" class="ie lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>     <html lang="en" class="ie lt-ie10"> <![endif]-->
+<!--[if !IE]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/design-manual.min.css">
+        <!--[if lt IE 9]>
+          <script src="{{ site.baseurl }}/assets/js/html5shiv-printshiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+      <header id="header" class="header" role="banner">
+      <div class="wrap">
+        <div class="site-title">
+          <h1><a class="title-link" href="{{ site.baseurl }}/"><span class="site-org">{{ site.org }}&nbsp;</span>{{ site.name }}</a></h1>
+        </div>
+        <div class="site-logo">
+          <img class="logo" src="{{site.logourl}}" alt="{{site.logoalt}}">
+        </div>
+      </div>
+      </header>
+
+      <div class="wrap">
+
+        {% include sidebar.html %}
+
+        <section id="content" class="content">
+          <main role="main">
+            {{ content }}
+          </main>
+        </section>
+
+      </div><!-- /.wrap -->
+
+      <footer id="footer" class="footer" role="contentinfo">
+        <div class="wrap">
+          <div class="site-info">
+            <p>This project is maintained by <a href="{{ site.author.url }}">{{ site.author.name }}</a>.</p>
+            <p>Made with <a href="https://github.com/ascott1/DOCter">DOCter</a> and hosted on <a href="http://pages.github.com/">Github Pages</a>.</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="assets/js/jquery-1.9.1.js"></script>
+      <script src="assets/js/main.js"></script>
+    </body>
+</html>
