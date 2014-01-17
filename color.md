@@ -1,6 +1,9 @@
 ---
 layout: page
-title: "Color"
+title: Color
+published: true
 ---
 
-Content here!
+Test edit.
+
+![CFPB logo](//CFPB_2tone_Horiz_RGB.png)
