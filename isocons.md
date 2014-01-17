@@ -26,3 +26,10 @@ but all are relatively scaled within a
 bounding box. These scales represent
 the maximum and minimum for web and
 print applications.
+
+## Asset library
+This library comprises all currently
+approved isocons and will continue to
+expand when new assets are developed,
+as needed.
+
