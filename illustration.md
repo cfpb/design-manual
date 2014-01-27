@@ -14,10 +14,10 @@ to consumers. The content of an
 illustration should always be politically
 and socially neutral.
 
-!["School objects illustration"](/design-manual/assets/img/illustration/illustration.png "Illustration")
+!["School objects illustration"](/design-manual/assets/img/illustration/Illustration.png "Illustration")
 
 ## Stylistic guidelines
-!["Paying for College illustration"](/design-manual/assets/img/illustration/illustration2.png "Illustration 2")
+!["Paying for College illustration"](/design-manual/assets/img/illustration/Illustration2.png "Illustration 2")
 ### Form
 Illustrations should feature flat elements
 and avoid showing things in threedimensions.
@@ -26,7 +26,7 @@ Elements should not be outlined.
 Do not scale-up or collage minicons or
 isocons for use in illustrations.
 
-!["Teach Your Kids to Pin illustration"](/design-manual/assets/img/illustration/illustration3.png "Illustration 3")
+!["Teach Your Kids to Pin illustration"](/design-manual/assets/img/illustration/Illustration3.png "Illustration 3")
 ### Composition
 Illustrations should be compositionally
 balanced with related headers and
@@ -44,7 +44,7 @@ Differentiate components or faces of
 objects using tints. Illustrations should
 also make use of 100% white and black.
 
-!["Clipboard illustration"](/design-manual/assets/img/illustration/illustration4.png "Illustration 4")
+!["Clipboard illustration"](/design-manual/assets/img/illustration/Illustration4.png "Illustration 4")
 ### Shading
 Shading should be achieved using
 subtle, solid tints, not gradients, textures,
