@@ -76,4 +76,4 @@ with this waiver of copyright interest.
 
 ## Current Sitemap
 
-![sitemap image](/assets/img/design_manual_sitemap.svg)
+![sitemap image](https://raw2.github.com/dezzie/design-manual/gh-pages/assets/img/design_manual_sitemap.svg)
