@@ -1,6 +1,14 @@
 # The CFPB Design Manual
 
-The CFPB Design Manual is a set of principles and standards for the Consumer Financial Protection Bureau.
+This is the repository for CFPB's Design Manual for developing print and web products. It contains both the assets and the content for the site. 
+
+The Manual is an open-source resource built to help employees and contractors efficiently produce consistent print and web products. The guides and assets included in the Manual put our Design Principles into practice, helping CFPB build clear, consistent and accessible products. 
+
+The Manual includes CFPB's design goals and principles, guidelines for user experience, identity standards, and code snippets for common user interface elements. Our internal design and development team collaboratively developed the Manual over the past six months, but it will grow and change as we design new products and add staff.
+
+Releasing the Manual to the public increases transparency and allows you to help us make improvements. The Manual is open source, so we’d love for other agencies, developers, or groups to adapt it for their own use. Many style guides influenced the Manual, including Mozilla's, MailChimp's, BBC's, but our primary inspiration is the UK's Government Digital Service's Government Service Design Manual. We hope ours is one small step towards unified, quality, user-centric design across all US government websites.
+
+The site is built using Grunt, Jekyll, and LESS.
 
 ## To run it locally
 
