@@ -81,3 +81,7 @@ dedication. By submitting a pull request, you are agreeing to comply
 with this waiver of copyright interest.
 
 [CC0]: http://creativecommons.org/publicdomain/zero/1.0/
+
+## Current Sitemap
+
+![sitemap image](https://raw2.github.com/dezzie/design-manual/gh-pages/assets/img/design_manual_sitemap.png)
