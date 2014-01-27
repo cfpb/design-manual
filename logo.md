@@ -50,7 +50,7 @@ small execution logo allows “Consumer
 Financial Protection Bureau” to remain
 legible.
 
-!["Small execution logo"](/design-manual/assets/img/illustration/Illustration.png "Illustration")
+!["Small execution logo"](/design-manual/assets/img/logo/Logo8.png "Small execution logo")
 
 ## Variations
 
@@ -81,8 +81,8 @@ impact and keep the mark from
 looking cluttered.
 
 Isolated logo clear space
-!["Isolated logo clear space"](/design-manual/assets/img/logo/Logo1.png "Isolated logo clear space")
 !["Isolated logo clear space"](/design-manual/assets/img/logo/Logo2.png "Isolated logo clear space")
+!["Isolated logo clear space"](/design-manual/assets/img/logo/Logo3.png "Isolated logo clear space")
 
 Vertical logo clear space
 !["Vertical logo clear space"](/design-manual/assets/img/logo/Logo4.png "Vertical logo clear space")
