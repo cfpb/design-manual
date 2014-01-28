@@ -11,7 +11,7 @@ arrows, isocons are able to go beyond
 simply showing objects and can indicate
 important actions and transactions.
 
-!["Graph Isocon"](/design-manual/assets/img/isocons/Isocons.png "Graph Isocon")
+![Graph Isocon](/design-manual/assets/img/isocons/Isocons.png "Graph Isocon")
 
 
 ## Stylistic guidelines
@@ -24,10 +24,10 @@ there are several isocons together on
 a page.
 
 Black and white over green field
-!["Black and white over green field Graph Isocon"](/design-manual/assets/img/isocons/Isocons.png "Graph Isocon")
+![Black and white over green field Graph Isocon](/design-manual/assets/img/isocons/Isocons.png "Graph Isocon")
 
 Black and white over gray field
-!["Black and white over gray field Graph Isocon"](/design-manual/assets/img/isocons/Isocons3.png "Graph Isocon")
+![Black and white over gray field Graph Isocon](/design-manual/assets/img/isocons/Isocons3.png "Graph Isocon")
 
 ### Scaling
 Padding varies around each isocon,
@@ -37,10 +37,10 @@ the maximum and minimum for web and
 print applications.
 
 Web scale
-!["Isocon web scale diagram"](/design-manual/assets/img/isocons/Isocons4.png "Isocon web scale")
+![Isocon web scale diagram](/design-manual/assets/img/isocons/Isocons4.png "Isocon web scale")
 
 Print scale
-!["Isocon print scale diagram"](/design-manual/assets/img/isocons/Isocons5.png "Isocon print scale")
+![Isocon print scale diagram](/design-manual/assets/img/isocons/Isocons5.png "Isocon print scale")
 
 
 ## Asset library
@@ -50,42 +50,42 @@ expand when new assets are developed,
 as needed.
 
 Ask CFPB
-!["Ask CFPB isocon"](/design-manual/assets/img/isocons/Isocons6.png "Ask CFPB isocon")
+![Ask CFPB isocon](/design-manual/assets/img/isocons/Isocons6.png "Ask CFPB isocon")
 Submit a complaint
-!["Submit a complaint isocon"](/design-manual/assets/img/isocons/Isocons24.png "Submit a complaint isocon")
+![Submit a complaint isocon](/design-manual/assets/img/isocons/Isocons24.png "Submit a complaint isocon")
 Review and route
-!["Review and route isocon"](/design-manual/assets/img/isocons/Isocons25.png "Review and route isocon")
+![Review and route isocon](/design-manual/assets/img/isocons/Isocons25.png "Review and route isocon")
 Company response
-!["Company response isocon"](/design-manual/assets/img/isocons/Isocons23.png "Company response isocon")
+![Company response isocon](/design-manual/assets/img/isocons/Isocons23.png "Company response isocon")
 Educate
-!["Educate isocon"](/design-manual/assets/img/isocons/Isocons14.png "Educate isocon")
+![Educate isocon](/design-manual/assets/img/isocons/Isocons14.png "Educate isocon")
 Consumer review
-!["Consumer review isocon"](/design-manual/assets/img/isocons/Isocons18.png "Consumer review isocon")
+![Consumer review isocon](/design-manual/assets/img/isocons/Isocons18.png "Consumer review isocon")
 Review and investigate
-!["Review and investigate isocon"](/design-manual/assets/img/isocons/Isocons22.png "Review and investigate isocon")
+![Review and investigate isocon](/design-manual/assets/img/isocons/Isocons22.png "Review and investigate isocon")
 Analyze and report
-!["Analyze and report isocon"](/design-manual/assets/img/isocons/Isocons21.png "Analyze and report isocon")
+![Analyze and report isocon](/design-manual/assets/img/isocons/Isocons21.png "Analyze and report isocon")
 Data
-!["Data isocon"](/design-manual/assets/img/isocons/Isocons7.png "Data isocon")
+![Data isocon](/design-manual/assets/img/isocons/Isocons7.png "Data isocon")
 Developers
-!["Developers isocon"](/design-manual/assets/img/isocons/Isocons8.png "Developers isocon")
+![Developers isocon](/design-manual/assets/img/isocons/Isocons8.png "Developers isocon")
 Loan
-!["Loan isocon"](/design-manual/assets/img/isocons/Isocons12.png "Loan isocon")
+![Loan isocon](/design-manual/assets/img/isocons/Isocons12.png "Loan isocon")
 Payday loan
-!["Payday loan isocon"](/design-manual/assets/img/isocons/Isocons11.png "Payday loan isocon")
+![Payday loan isocon](/design-manual/assets/img/isocons/Isocons11.png "Payday loan isocon")
 Credit card
-!["Credit card isocon"](/design-manual/assets/img/isocons/Isocons17.png "Credit card")
+![Credit card isocon](/design-manual/assets/img/isocons/Isocons17.png "Credit card")
 Credit reporting
-!["Credit reporting isocon"](/design-manual/assets/img/isocons/Isocons19.png "Credit reporting isocon")
+![Credit reporting isocon](/design-manual/assets/img/isocons/Isocons19.png "Credit reporting isocon")
 Bank account or service
-!["Bank account or service isocon"](/design-manual/assets/img/isocons/Isocons20.png "Bank account or service isocon")
+![Bank account or service isocon](/design-manual/assets/img/isocons/Isocons20.png "Bank account or service isocon")
 Getting cash quick
-!["Getting cash quick isocon"](/design-manual/assets/img/isocons/Isocons9.png "Getting cash quick isocon")
+![Getting cash quick isocon](/design-manual/assets/img/isocons/Isocons9.png "Getting cash quick isocon")
 Getting out of debt
-!["Getting out of debt isocon"](/design-manual/assets/img/isocons/Isocons15.png "Getting out of debt isocon")
+![Getting out of debt isocon](/design-manual/assets/img/isocons/Isocons15.png "Getting out of debt isocon")
 Money transfer
-!["Money transfer isocon"](/design-manual/assets/img/isocons/Isocons16.png "Money transfer isocon")
+![Money transfer isocon](/design-manual/assets/img/isocons/Isocons16.png "Money transfer isocon")
 Mortgage
-!["Mortgage isocon"](/design-manual/assets/img/isocons/Isocons13.png "Mortgage isocon")
+![Mortgage isocon](/design-manual/assets/img/isocons/Isocons13.png "Mortgage isocon")
 News
-!["News isocon"](/design-manual/assets/img/isocons/Isocons10.png "News isocon")
+![News isocon](/design-manual/assets/img/isocons/Isocons10.png "News isocon")
