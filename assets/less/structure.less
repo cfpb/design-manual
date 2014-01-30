@@ -20,7 +20,10 @@
 .site-logo,
 .sidebar,
 .content,
-.site-info {
+.site-info,
+/* Inner content */
+.content-25,
+.content-75 {
 	.column(12);
 }
 
@@ -56,17 +59,30 @@
 	}
 
 	.sidebar {
-		.column(4);
+		.column(3);
 		padding-bottom: 2.5em;
 		padding-top: 2.5em;
 	}
 
 	.content {
-		.column(8);
+		.column(9);
 	}
 
 	.footer {
 		border-top: 4px solid @green;
+	}
+
+	/* Inner content */
+	.content-25 {
+		.column(3);
+		padding-bottom: 1em;
+		padding-top: 1em;
+	}
+
+	.content-75 {
+		.column(9);
+		padding-bottom: 1em;
+		padding-top: 1em;
 	}
 }
 

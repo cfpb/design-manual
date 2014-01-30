@@ -60,7 +60,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: ['assets/js/html5shiv-printshiv.js', 'assets/js/jquery-1.9.1.js', 'assets/js/main.js', '!assets/js/*.min.js'],
-        dest: 'static/js/<%= pkg.name %>.min.js'
+        dest: 'assets/js/<%= pkg.name %>.min.js'
       }
     },
 
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
           Highcharts: true
         }
       },
-      all: ['static/js/main.js']
+      all: ['assets/js/main.js']
     },
 
     /**
