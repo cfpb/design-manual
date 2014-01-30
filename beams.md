@@ -10,7 +10,7 @@ element that provide
 grounding and visual
 interest.
 
-Using overlaid shapes with 9º angles
+Using overlaid shapes with 9&deg; angles
 and the full CFPB Green color palette,
 the beam pattern provides a bold and
 engaging graphic reference to the beam
