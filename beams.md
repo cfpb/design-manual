@@ -19,15 +19,15 @@ concept in our logo.
 ## Stylistic Guidelines
 ### Base shapes
 
-<div class="content-25">
+<span class="content-25">
 Beam patterns are created using
 trapezoids and parallelograms that
 feature the 9&deg; angle.
-</div>
+</span>
 
-<div class="content-75">
+<span class="content-75">
 ![Base shapes for beams](/design-manual/assets/img/beams/Beams3.png "Base shapes for beams")
-</div>
+</span>
 
 ### Color
 Beam patterns include all three CFPB
@@ -44,7 +44,7 @@ of white space used for titles, text, and
 other graphic elements. Beams always
 point horizontally, not vertically.
 
-<div class="content-25">
+<span class="content-25">
 Ideal composition  
 Solid green beam
 bleeds off the top
@@ -52,13 +52,13 @@ of the layout. Beams
 alternate direction
 to create layered
 beam shapes.
-</div>
+</span>
 
-<div class="content-75">
+<span class="content-75">
 ![Ideal composition of beams](/design-manual/assets/img/beams/Beams4.png "Ideal beams")
-</div>
+</span>
 
-<div class="content-25">
+<span class="content-25">
 Layered beams
 anchor to the bottom,
 leaving plenty of
@@ -66,31 +66,31 @@ white space above
 for type. This works
 especially well for
 horizontal layouts.
-</div>
+</span>
 
-<div class="content-75">
+<span class="content-75">
 ![Ideal composition of beams](/design-manual/assets/img/beams/Beams5.png "Ideal beams")
-</div>
+</span>
 
-<div class="content-25">
+<span class="content-25">
 Poor composition  
 Beams float in white
 space, leaving little
 room for content. No
 transparency used.
-</div>
+</span>
 
-<div class="content-75">
+<span class="content-75">
 ![Poor composition of beams](/design-manual/assets/img/beams/Beams6.png "Poor composition of beams")
-</div>
+</span>
 
-<div class="content-25">
+<span class="content-25">
 All three beams
 layer in the same
 direction, weakening
 the beam metaphor.
-</div>
+</span>
 
-<div class="content-75">
+<span class="content-75">
 ![Poor composition of beams](/design-manual/assets/img/beams/Beams7.png "Poor composition of beams")
-</div>
+</span>

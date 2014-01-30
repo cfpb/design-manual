@@ -1669,6 +1669,7 @@ img {
     margin-right: -0.25em;
     vertical-align: top;
     width: 25%;
+    display: block;
     padding-bottom: 1em;
     padding-top: 1em;
   }
@@ -1690,6 +1691,7 @@ img {
     margin-right: -0.25em;
     vertical-align: top;
     width: 75%;
+    display: block;
     padding-bottom: 1em;
     padding-top: 1em;
   }
