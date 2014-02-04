@@ -18,6 +18,7 @@ concept in our logo.
 
 ## Stylistic Guidelines
 ### Base shapes
+
 <span class="content-25">
 Beam patterns are created using
 trapezoids and parallelograms that
@@ -54,6 +55,7 @@ beam shapes.
 <span class="content-75">
 ![Ideal composition of beams](/design-manual/assets/img/beams/Beams4.png "Ideal beams")
 </span>
+
 <span class="content-25">
 Layered beams
 anchor to the bottom,
@@ -66,6 +68,7 @@ horizontal layouts.
 <span class="content-75">
 ![Ideal composition of beams](/design-manual/assets/img/beams/Beams5.png "Ideal beams")
 </span>
+
 <span class="content-25">
 Poor composition  
 Beams float in white
@@ -76,6 +79,7 @@ transparency used.
 <span class="content-75">
 ![Poor composition of beams](/design-manual/assets/img/beams/Beams6.png "Poor composition of beams")
 </span>
+
 <span class="content-25">
 All three beams
 layer in the same
