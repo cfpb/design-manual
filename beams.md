@@ -41,6 +41,7 @@ overlapping beams that frame areas
 of white space used for titles, text, and
 other graphic elements. Beams always
 point horizontally, not vertically.
+
 <span class="content-25">
 Ideal composition  
 Solid green beam
