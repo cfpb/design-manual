@@ -42,7 +42,21 @@ module.exports = function(grunt) {
           paths: ['assets/less']
         },
         files: {
-          'assets/css/<%= pkg.name %>.min.css': ['<%= banner %>', 'assets/css/normalize.css', 'assets/css/syntax.css', 'assets/css/fonts.css', 'assets/less/style.less']
+          'assets/css/<%= pkg.name %>.css': ['<%= banner %>', 'assets/css/normalize.css', 'assets/css/syntax.css', 'assets/css/fonts.css', 'assets/less/style.less']
+        }
+      }
+    },
+
+    /**
+     * CSSMin: https://github.com/gruntjs/grunt-contrib-cssmin
+     * 
+     * Minify CSS.
+     * 
+     */
+    cssmin: {
+      minify: {
+        files: {
+          'assets/css/design-manual.min.css': ['assets/css/design-manual.css'],
         }
       }
     },
@@ -137,6 +151,7 @@ module.exports = function(grunt) {
    * The above tasks are loaded here.
    */
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -151,6 +166,6 @@ module.exports = function(grunt) {
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['test', 'less', 'uglify']);
+  grunt.registerTask('default', ['test', 'less', 'cssmin', 'uglify']);
 
 };
