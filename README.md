@@ -31,7 +31,7 @@ npm install
 Install [Grunt](http://gruntjs.com/), a JavaScript task runner:
 
 ```
-npm install -g grunt-cli grunt-init
+npm install -g grunt-cli
 ```
 
 Now, on to Jekyll. Jekyll generates and serves our Design Manual as a website.
