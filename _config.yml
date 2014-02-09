@@ -22,7 +22,7 @@ baseurl: '/design-manual'
 # Author/Organization info to be displayed in the templates
 author:
   name: The Consumer Financial Protection Bureau
-  url: http://cfpb.github.io/design-manual
+  url: http://cfpb.github.io/
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl: 'assets/img/logo_210.png'
