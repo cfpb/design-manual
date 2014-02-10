@@ -158,6 +158,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-notify');
 
+
+  /**
+   * Grunt is installed in a sub-directory called "front",  so back out one directory:
+  ;*/
+  grunt.file.setBase('../');
+
   /**
    * Create task aliases by registering new tasks
    */
