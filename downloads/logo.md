@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Logo
+category: Downloads
 published: true
 ---
 

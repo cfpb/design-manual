@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Minicons
+title: Brand 2.0 style
 category: Downloads
 ---
 
