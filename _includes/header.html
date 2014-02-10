@@ -10,6 +10,10 @@
         <nav role="navigation">
           <ul class="main-nav">
             {% for link in site.mainnav %}
+              <!--
+                link.text: {{ link.text }}
+                page.category: {{ page.category }}
+              -->
               {% if link.internal == true %}
                 <li{% if link.text == page.category %} class="active"{% endif %}><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
               {% else %}
