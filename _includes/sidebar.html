@@ -2,22 +2,22 @@
   <aside>
     <a class="skip-link visually-hidden focusable" href="#content">Skip to Main Content</a>
     <nav role="navigation">
-      <h3>{{ page.section_text }}</h3>
+      <h3>{{ page.category_text }}</h3>
       <ul class="secondary-nav">
         {% for link in site.secondarynav %}
-          {% if link.section == page.section %}
+          {% if link.category == page.category %}
             {% if link.internal == true %}
               <li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
             {% else %}
               <li><a href="{{ link.url }}">{{ link.text }}</a></li>
             {% endif %}
-          {% else %}
-            <li>{{ link.text }}<br>
-            link section: {{ link.section }}<br>
-            page category: {{ page.category }}<br>
-            page section: {{ page.section }}
           </li>
           {% endif %}
+          <!--
+            Link.text: {{ link.text }}
+            link section: {{ link.category }}<br>
+            page category: {{ page.category }}<br>
+          -->
         {% endfor %}
       </ul>
     </nav>
