@@ -10,6 +10,11 @@
             {% else %}
               <li><a href="{{ link.url }}">{{ link.text }}</a></li>
             {% endif %}
+          {% else %}
+            <li>{{ link.text }}<br>
+            link section: {{ link.section }}<br>
+            page section: {{ page.section }}
+          </li>
           {% endif %}
         {% endfor %}
       </ul>

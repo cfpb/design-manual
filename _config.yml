@@ -62,7 +62,7 @@ secondarynav:
   url: guides/creating-accessible-interfaces.html
   internal: true
   section: guides
-- text: UX Checklist
+- text: UX checklist
   url: guides/ux-checklist.html
   internal: true
   section: guides

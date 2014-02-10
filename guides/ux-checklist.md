@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Filtering patterns"
+title:  "UX checklist"
+section: guides
 ---
 
 Content here!

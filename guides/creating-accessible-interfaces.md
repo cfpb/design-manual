@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Creating Accessible Interfaces
+title: Creating accessible interfaces
+section: guides
 ---
 
 Content here!
