@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Minicons"
+title: "Video"
 section: identity
 ---
 

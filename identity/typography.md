@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Typography
+title: Typography principles
+section: identity
 published: true
 ---
 

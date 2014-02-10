@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Minicons"
+title: "Isocons"
 section: identity
 ---
 

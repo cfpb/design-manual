@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Photography
+section: identity
 published: true
 ---
 
