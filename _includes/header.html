@@ -15,9 +15,9 @@
                 page.category: {{ page.category }}
               -->
               {% if link.internal == true %}
-                <li{% if link.text == page.category %} class="active"{% endif %}><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
+                <li{% if link.text == page.category %} class="main-nav-active"{% endif %}><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
               {% else %}
-                <li{% if link.text == page.category %} class="active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+                <li{% if link.text == page.category %} class="main-nav-active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>
