@@ -1442,22 +1442,21 @@ img {
 
 }
 .site-title h1 {
-  font-size: 1.875em;
-  /* 30px */
+  font-size: 1.625em;
+  /* 26px */
 
-  text-transform: lowercase;
 }
 .site-title .title-link {
-  color: #babbbd;
-  /* Probably too light for color contrast */
-
+  color: #919395;
 }
 .site-title .title-link .site-org {
   color: #75787b;
-  text-transform: uppercase;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 .site-title .title-link:visited {
-  color: #babbbd;
+  color: #919395;
 }
 /* Site logo */
 .logo {
@@ -1503,7 +1502,7 @@ img {
 .header,
 .content,
 .footer {
-  padding: 2.5em 0;
+  padding: 2em 0;
 }
 /* Set up containers */
 .wrap {
@@ -1558,19 +1557,21 @@ img {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
 }
-/* Media Queries */
-/* Mobile portrait */
+/* Media Queries
+   ========================================================================== */
+/* Mobile portrait (320px) */
 @media only screen and (min-width: 20em) {
   
 }
-/* Mobile landscape */
+/* Mobile landscape (480px) */
 @media only screen and (min-width: 30em) {
   
 }
-/* Small tablet */
+/* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
   .header {
     border-bottom: 4px solid #2cb34a;
+    padding-bottom: 0;
   }
   .header .site-title {
     display: inline-block;
@@ -1614,6 +1615,59 @@ img {
   }
   .header .site-logo .logo {
     display: inline;
+  }
+  .main-nav {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 100%;
+    margin: 0;
+  }
+  .ie .main-nav {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .main-nav {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .main-nav li {
+    display: inline-block;
+    margin-left: 2em;
+    font-family: "Avenir Next Medium", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125em;
+    /* 18px */
+  
+    list-style: none;
+  }
+  .main-nav li:first-child {
+    margin-left: 0;
+  }
+  .main-nav a {
+    display: block;
+    padding-bottom: 1em;
+  }
+  .main-nav a:link,
+  .main-nav a:visited {
+    color: #75787b;
+  }
+  .main-nav a:hover,
+  .main-nav a:focus {
+    border-bottom: 4px solid #dbedd4;
+    margin-bottom: -4px;
+    color: #43484e;
+  }
+  .main-nav a:active {
+    border-bottom: 4px solid #addc91;
+    margin-bottom: -4px;
+    color: #101820;
   }
   .sidebar {
     display: inline-block;
@@ -1702,18 +1756,26 @@ img {
     *behavior: url(boxsizing.htc);
   }
 }
-/* Tablet/Netbook */
+/* Tablet/netbook (768px) */
 @media only screen and (min-width: 48em) {
+  .main-nav li {
+    font-size: 1.25em;
+    /* 20px */
   
+  }
 }
-/* Landscape tablet/netbook/laptop */
+/* Landscape tablet/netbook/laptop (1024px) */
 @media only screen and (min-width: 64em) {
+  .main-nav li {
+    font-size: 1.375em;
+    /* 22px */
+  
+  }
+}
+/* Desktop (1280px) */@media only screen and (min-width: 80em) {
   
 }
-@media only screen and (min-width: 80em) {
-  /* Desktop */
-}
-/* Widescreen */
-@media only screen and (min-width: 87.5em) {
+/* Widescreen (1600px) */
+@media only screen and (min-width: 100em) {
   
 }

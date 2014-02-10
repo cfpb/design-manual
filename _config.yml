@@ -22,7 +22,7 @@ baseurl: '/design-manual'
 # Author/Organization info to be displayed in the templates
 author:
   name: The Consumer Financial Protection Bureau
-  url: http://cfpb.github.io/design-manual
+  url: http://cfpb.github.io/
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl: 'assets/img/logo_210.png'
@@ -31,15 +31,21 @@ logoalt: 'Consumer Financial Protection Bureau'
 # Main Navigation
 # List links that should appear in the main navigation (header) here
 mainnav:
-- text: Home
+- text: Overview
   url: index.html
   internal: true
-- text: Example Page
-  url: example_page.html
+- text: Guides
+  url: guides.html
   internal: true
-- text: DOCter Repo
-  url: https://github.com/ascott1/DOCter
-  internal: false
+- text: Identity
+  url: identity.html
+  internal: true
+- text: UI Toolkit
+  url: ui-toolkit.html
+  internal: true
+- text: Downloads
+  url: downloads.html
+  internal: true
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
