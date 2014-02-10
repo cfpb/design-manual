@@ -1,10 +1,5 @@
-# When running Jekyll locally, it outputs the files into the _site directory
-_site/*
-
-# Node modules for local development
-node_modules/*
-
 # OS generated files #
+######################
 .DS_Store
 .DS_Store?
 .Spotlight-V100
@@ -17,3 +12,21 @@ csslint.out.xml
 *.orig
 *.tmp
 *.log
+
+# Node modules for local development
+####################################
+front/node_modules
+
+# Bower downloaded packages #
+#############################
+front/vendor
+
+# Test reports #
+###################
+front/test/coverage
+front/test/junit
+
+# Jekyll #
+##########
+# When running Jekyll locally, it outputs the files into the _site directory
+_site

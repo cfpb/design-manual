@@ -166,9 +166,6 @@ footernav:
 - text: Home
   url: index.html
   internal: true
-- text: Example Page
-  url: example_page.html
-  internal: true
 - text: DOCter Repo
   url: https://github.com/ascott1/DOCter
   internal: false
