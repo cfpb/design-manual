@@ -11,9 +11,9 @@
           <ul class="main-nav">
             {% for link in site.mainnav %}
               {% if link.internal == true %}
-                <li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
+                <li{% if link.text == page.category %} class="active"{% endif %}><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
               {% else %}
-                <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+                <li{% if link.text == page.category %} class="active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>
