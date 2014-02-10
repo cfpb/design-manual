@@ -147,11 +147,11 @@ secondarynav:
   internal: true
   category: UI toolkit
 - text: Minicon font/assets
-  url: downloads/micons.html
+  url: downloads/minicons.html
   internal: true
   category: Downloads
 - text: Logo suite
-  url: downloads/expandables.html
+  url: downloads/logo-suite.html
   internal: true
   category: Downloads
 - text: Brand 2.0 style guide
