@@ -53,7 +53,7 @@ secondarynav:
 - text: Home
   url: index.html
   internal: true
-  category: overview
+  category: Overview
 - text: Design best practices
   url: guides/design-best-practices.html
   internal: true

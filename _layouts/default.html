@@ -14,53 +14,18 @@
         <!--[if lt IE 9]>
           <script src="{{ site.baseurl }}/assets/js/html5shiv-printshiv.js"></script>
         <![endif]-->
-
     </head>
     <body>
-      <header id="header" class="header" role="banner">
+      {% include header.html %}
       <div class="wrap">
-        <a class="skip-link visually-hidden focusable" href="#content">Skip to Main Content</a>
-        <div class="site-title">
-          <h1><a class="title-link" href="{{ site.baseurl }}/"><span class="site-org">{{ site.org }}&nbsp;</span>{{ site.name }}</a></h1>
-        </div>
-        <div class="site-logo">
-          <img class="logo" src="{{ site.logourl }}" alt="{{ site.logoalt }}">
-        </div>
-        <nav role="navigation">
-          <ul class="main-nav">
-            {% for link in site.mainnav %}
-              {% if link.internal == true %}
-                <li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
-              {% else %}
-                <li><a href="{{ link.url }}">{{ link.text }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </nav>
-      </div>
-      </header>
-
-      <div class="wrap">
-
         {% include sidebar.html %}
-
         <section id="content" class="content">
           <main role="main">
             {{ content }}
           </main>
         </section>
-
       </div><!-- /.wrap -->
-
-      <footer id="footer" class="footer" role="contentinfo">
-        <div class="wrap">
-          <div class="site-info">
-            <p>This project is maintained by <a href="{{ site.author.url }}">{{ site.author.name }}</a>.</p>
-            <p>Made with <a href="https://github.com/cfpb/DOCter">DOCter</a> and hosted on <a href="http://pages.github.com/">Github Pages</a>.</p>
-          </div>
-        </div>
-      </footer>
-
+      {% include footer.html %}
       <script src="assets/js/jquery-1.9.1.js"></script>
       <script src="assets/js/design-manual.min.js"></script>
     </body>
