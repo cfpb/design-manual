@@ -17,14 +17,7 @@
     </head>
     <body>
       {% include header.html %}
-      <div class="wrap">
-        {% include sidebar.html %}
-        <section id="content" class="content">
-          <main role="main">
-            {{ content }}
-          </main>
-        </section>
-      </div><!-- /.wrap -->
+      {{ content }}
       {% include footer.html %}
       <script src="assets/js/jquery-1.9.1.js"></script>
       <script src="assets/js/design-manual.min.js"></script>
