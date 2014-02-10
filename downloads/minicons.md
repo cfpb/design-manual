@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Minicons
+title: Minicon font and assets
 category: Downloads
 ---
 

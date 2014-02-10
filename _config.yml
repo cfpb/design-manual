@@ -110,12 +110,12 @@ secondarynav:
   url: identity/video.html
   internal: true
   category: Identity
-- text: Beams
-  url: ui-toolkit/beams.html
-  internal: true
-  category: UI toolkit
 - text: Buttons
   url: ui-toolkit/buttons.html
+  internal: true
+  category: UI toolkit
+- text: Beams
+  url: ui-toolkit/beams.html
   internal: true
   category: UI toolkit
 - text: Links
