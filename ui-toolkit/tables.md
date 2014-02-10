@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Tables"
+title:  Tables
+category: UI toolkit
 ---
 
 Content here!

@@ -1,15 +1,11 @@
 ---
 layout: page
 title: Isocons
+category: UI toolkit
 published: true
 ---
 
-Isocons are visually sophisticated
-graphics, with more detail than a flat
-icon. By using an isometric view and
-arrows, isocons are able to go beyond
-simply showing objects and can indicate
-important actions and transactions.
+Isocons are visually sophisticated graphics, with more detail than a flat icon. By using an isometric view and arrows, isocons are able to go beyond simply showing objects and can indicate important actions and transactions.
 
 ![Graph Isocon](/design-manual/assets/img/isocons/Isocons.png "Graph Isocon")
 

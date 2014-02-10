@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Expandables"
+title:  Expandables
+category: UI toolkit
 ---
 
 Content here!

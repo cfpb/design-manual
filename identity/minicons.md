@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Minicons"
-section: identity
+title: Minicons
+category: Identity
 ---
 
 Content here!

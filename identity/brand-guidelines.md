@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Brand guidelines"
-section: identity
+title:  Brand guidelines
+category: Identity
 ---
 
 Content here!

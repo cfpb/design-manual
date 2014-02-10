@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Video
+category: UI toolkit
 published: true
 ---
 

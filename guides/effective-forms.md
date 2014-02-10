@@ -1,8 +1,7 @@
 ---
 layout: page
-title:  "Effective forms"
-section: guides
-section_text: "Guides"
+title:  Effective forms
+category: Guides
 ---
 
 Content here!

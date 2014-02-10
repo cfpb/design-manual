@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Buttons"
+title:  Buttons
+category: UI toolkit
 ---
 
 Content here!

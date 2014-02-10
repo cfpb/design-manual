@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Links"
+title:  Links
+category: UI toolkit
 ---
 
 Content here!

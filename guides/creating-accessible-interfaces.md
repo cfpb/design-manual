@@ -1,8 +1,7 @@
 ---
 layout: page
-title: "Creating accessible interfaces"
-section: guides
-section_text: "Guides"
+title: Creating accessible interfaces
+category: Guides
 ---
 
 Content here!

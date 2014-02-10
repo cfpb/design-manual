@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Video"
-section: identity
+title: Video
+category: Identity
 ---
 
 Content here!

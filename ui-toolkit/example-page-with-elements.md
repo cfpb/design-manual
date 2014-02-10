@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Example Page with Elements
+category: UI toolkit
 ---
 
 Sample HTML from [Normalize](http://necolas.github.io/normalize.css/).

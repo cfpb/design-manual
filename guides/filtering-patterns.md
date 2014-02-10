@@ -1,8 +1,7 @@
 ---
 layout: page
-title:  "Filtering patterns"
-section: guides
-section_text: "Guides"
+title:  Filtering patterns
+category: Guides
 ---
 
 Content here!

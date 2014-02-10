@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Grid and Layout"
+title:  Grid and layout
+category: UI toolkit
 ---
 
 Content here!

@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Form Fields"
+title:  Form fields
+category: UI toolkit
 ---
 
 Content here!

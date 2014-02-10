@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Color
+category: UI toolkit
 published: true
 ---
 

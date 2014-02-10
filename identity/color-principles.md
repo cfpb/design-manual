@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Color principles"
-section: identity
+title:  Color principles
+category: Identity
 ---
 
 Content here!

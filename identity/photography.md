@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Photography
-section: identity
+category: Identity
 published: true
 ---
 

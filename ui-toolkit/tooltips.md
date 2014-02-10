@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Tooltips"
+title:  Tooltips
+category: UI toolkit
 ---
 
 Content here!

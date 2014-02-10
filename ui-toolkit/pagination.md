@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Pagination"
+title:  Pagination
+category: UI toolkit
 ---
 
 Content here!

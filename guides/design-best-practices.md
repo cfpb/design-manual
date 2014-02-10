@@ -1,8 +1,7 @@
 ---
 layout: page
-title:  "Design best practices"
-section: guides
-section_text: "Guides"
+title:  Design best practices
+category: Guides
 ---
 
 Content here!

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Logo
-section: identity
+category: Identity
 published: true
 ---
 

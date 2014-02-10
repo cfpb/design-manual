@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Modals"
+title:  Modals
+category: UI toolkit
 ---
 
 Content here!

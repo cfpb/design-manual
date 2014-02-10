@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Isocons"
-section: identity
+title: Isocons
+category: Identity
 ---
 
 Content here!

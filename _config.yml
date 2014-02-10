@@ -57,107 +57,107 @@ secondarynav:
 - text: Design best practices
   url: guides/design-best-practices.html
   internal: true
-  category: guides
+  category: Guides
 - text: Creating accessible interfaces
   url: guides/creating-accessible-interfaces.html
   internal: true
-  category: guides
+  category: Guides
 - text: UX checklist
   url: guides/ux-checklist.html
   internal: true
-  category: guides
+  category: Guides
 - text: Effective forms
   url: guides/effective-forms.html
   internal: true
-  category: guides
+  category: Guides
 - text: Filtering patterns
   url: guides/filtering-patterns.html
   internal: true
-  category: guides
+  category: Guides
 - text: Brand guidelines
   url: identity/brand-guidelines.html
   internal: true
-  category: identity
+  category: Identity
 - text: Logo
   url: identity/logo.html
   internal: true
-  category: identity
+  category: Identity
 - text: Typography principles
   url: identity/typography.html
   internal: true
-  category: identity
+  category: Identity
 - text: Color principles
   url: identity/color-principles.html
   internal: true
-  category: identity
+  category: Identity
 - text: Minicons
   url: identity/minicons.html
   internal: true
-  category: identity
+  category: Identity
 - text: Isocons
   url: identity/isocons.html
   internal: true
-  category: identity
+  category: Identity
 - text: Illustration
   url: identity/illustration.html
   internal: true
-  category: identity
+  category: Identity
 - text: Photography
   url: identity/photography.html
   internal: true
-  category: identity
+  category: Identity
 - text: Video
   url: identity/video.html
   internal: true
-  category: identity
+  category: Identity
 - text: Beams
   url: ui-toolkit/beams.html
   internal: true
-  category: ui-toolkit
+  category: UI toolkit
 - text: Buttons
   url: ui-toolkit/buttons.html
   internal: true
-  category: ui-toolkit
+  category: UI toolkit
 - text: Links
   url: ui-toolkit/links.html
   internal: true
-  category: ui-toolkit
+  category: UI toolkit
 - text: Pagination
   url: ui-toolkit/pagination.html
   internal: true
-  category: ui-toolkit
+  category: UI toolkit
 - text: Form fields
   url: ui-toolkit/form-fields.html
   internal: true
-  category: ui-toolkit
+  category: UI toolkit
 - text: Modals
   url: ui-toolkit/modals.html
   internal: true
-  category: ui-toolkit
+  category: UI toolkit
 - text: Tooltips
   url: ui-toolkit/tooltips.html
   internal: true
-  category: ui-toolkit
+  category: UI toolkit
 - text: Expandables
   url: ui-toolkit/expandables.html
   internal: true
-  category: ui-toolkit
+  category: UI toolkit
 - text: Tables
   url: ui-toolkit/tables.html
   internal: true
-  category: ui-toolkit
+  category: UI toolkit
 - text: Minicon font/assets
   url: downloads/micons.html
   internal: true
-  category: downloads
+  category: Downloads
 - text: Logo suite
   url: downloads/expandables.html
   internal: true
-  category: downloads
+  category: Downloads
 - text: Brand 2.0 style guide
   url: downloads/style-guide.html
   internal: true
-  category: downloads
+  category: Downloads
 
 
 # Footer Navigation

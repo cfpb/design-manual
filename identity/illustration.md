@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Illustration
-section: identity
+category: Identity
 published: true
 ---
 
