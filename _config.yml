@@ -110,6 +110,10 @@ secondarynav:
   url: identity/video.html
   internal: true
   section: identity
+- text: Beams
+  url: ui-toolkit/beams.html
+  internal: true
+  section: ui-toolkit
 - text: Buttons
   url: ui-toolkit/buttons.html
   internal: true

@@ -2,6 +2,7 @@
   <aside>
     <a class="skip-link visually-hidden focusable" href="#content">Skip to Main Content</a>
     <nav role="navigation">
+      <h3>{{ page.section_text }}</h3>
       <ul class="secondary-nav">
         {% for link in site.secondarynav %}
           {% if link.section == page.section %}
