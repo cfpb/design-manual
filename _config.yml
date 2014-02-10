@@ -44,7 +44,7 @@ mainnav:
   url: ui-toolkit/buttons.html
   internal: true
 - text: Downloads
-  url: downloads/mincons.html
+  url: downloads/minicons.html
   internal: true
 
 # Secondary Navigation
@@ -53,12 +53,108 @@ secondarynav:
 - text: Home
   url: index.html
   internal: true
-- text: Example Page
-  url: example_page.html
+  section: overview
+- text: Design best practices
+  url: guides/design-best-practices.html
   internal: true
-- text: DOCter Repo
-  url: https://github.com/ascott1/DOCter
-  internal: false
+  section: guides
+- text: Creating accessible interfaces
+  url: guides/creating-accessible-interfaces.html
+  internal: true
+  section: guides
+- text: UX Checklist
+  url: guides/ux-checklist.html
+  internal: true
+  section: guides
+- text: Effective forms
+  url: guides/effective-forms.html
+  internal: true
+  section: guides
+- text: Filtering patterns
+  url: guides/filtering-patterns.html
+  internal: true
+  section: guides
+- text: Brand guidelines
+  url: identity/brand-guidelines.html
+  internal: true
+  section: identity
+- text: Logo
+  url: identity/logo.html
+  internal: true
+  section: identity
+- text: Typography principles
+  url: identity/typography.html
+  internal: true
+  section: identity
+- text: Color principles
+  url: identity/color-principles.html
+  internal: true
+  section: identity
+- text: Minicons
+  url: identity/minicons.html
+  internal: true
+  section: identity
+- text: Isocons
+  url: identity/isocons.html
+  internal: true
+  section: identity
+- text: Illustration
+  url: identity/illustration.html
+  internal: true
+  section: identity
+- text: Photography
+  url: identity/photography.html
+  internal: true
+  section: identity
+- text: Video
+  url: identity/video.html
+  internal: true
+  section: identity
+- text: Buttons
+  url: ui-toolkit/buttons.html
+  internal: true
+  section: ui-toolkit
+- text: Links
+  url: ui-toolkit/links.html
+  internal: true
+  section: ui-toolkit
+- text: Pagination
+  url: ui-toolkit/pagination.html
+  internal: true
+  section: ui-toolkit
+- text: Form fields
+  url: ui-toolkit/form-fields.html
+  internal: true
+  section: ui-toolkit
+- text: Modals
+  url: ui-toolkit/modals.html
+  internal: true
+  section: ui-toolkit
+- text: Tooltips
+  url: ui-toolkit/tooltips.html
+  internal: true
+  section: ui-toolkit
+- text: Expandables
+  url: ui-toolkit/expandables.html
+  internal: true
+  section: ui-toolkit
+- text: Tables
+  url: ui-toolkit/tables.html
+  internal: true
+  section: ui-toolkit
+- text: Minicon font/assets
+  url: downloads/micons.html
+  internal: true
+  section: downloads
+- text: Logo suite
+  url: downloads/expandables.html
+  internal: true
+  section: downloads
+- text: Brand 2.0 style guide
+  url: downloads/style-guide.html
+  internal: true
+  section: downloads
+
 
 # Footer Navigation
 # List links that should appear in the footer navigation (footer) here
