@@ -4,4 +4,4 @@ title:  Expandables
 category: UI toolkit
 ---
 
-Content here!
+{% include ui-toolkit/expandables/custom.html %}

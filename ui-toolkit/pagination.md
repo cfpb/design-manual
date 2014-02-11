@@ -4,4 +4,4 @@ title:  Pagination
 category: UI toolkit
 ---
 
-Content here!
+{% include ui-toolkit/pagination/custom.html %}

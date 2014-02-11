@@ -150,6 +150,10 @@ secondarynav:
   url: ui-toolkit/tables.html
   internal: true
   category: UI toolkit
+- text: Typography
+  url: ui-toolkit/typography.html
+  internal: true
+  category: UI toolkit
 - text: Minicon font and assets
   url: downloads/minicons.html
   internal: true

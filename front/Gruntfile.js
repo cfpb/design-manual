@@ -113,7 +113,51 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: ['front/vendor/fj-buttons/demo/custom.html'],
-            dest: '_includes/ui-toolkit/buttons',
+            dest: '_includes/ui-toolkit/buttons/',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/cf-typography/demo/custom.html'],
+            dest: '_includes/ui-toolkit/typography/',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/fj-colors/demo/custom.html'],
+            dest: '_includes/ui-toolkit/colors/',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/fj-expandables/demo/custom.html'],
+            dest: '_includes/ui-toolkit/expandables/',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/fj-forms/demo/custom.html'],
+            dest: '_includes/ui-toolkit/forms/',
+            filter: 'isFile'
+          },
+          /* NO GRID DEMO (YET) -- This should be fixed when everything is moved into the gh-pages repo
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/fj-grid/demo/custom.html'],
+            dest: '_includes/ui-toolkit/grid/',
+            filter: 'isFile'
+          },
+          */
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/fj-pagination/demo/custom.html'],
+            dest: '_includes/ui-toolkit/pagination/',
             filter: 'isFile'
           }
         ]
