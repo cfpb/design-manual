@@ -220,6 +220,12 @@ module.exports = function(grunt) {
             filter: 'isFile'
           }
         ]
+      },
+      watch: {
+        scripts: {
+          files: ['front/src/**/*.js','front/src/**/*.less'],
+          tasks: ['build']
+        }
       }
     }
   });
@@ -233,6 +239,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-legacssy');
 
   /**
@@ -243,6 +250,7 @@ module.exports = function(grunt) {
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['concat', 'less', 'autoprefixer', 'legacssy', 'cssmin', 'uglify', 'copy']);
+  grunt.registerTask('build', ['concat', 'less', 'autoprefixer', 'legacssy', 'cssmin', 'uglify', 'copy']);
+  grunt.registerTask('default', ['build']);
 
 };
