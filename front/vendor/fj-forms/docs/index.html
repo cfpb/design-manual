@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cf-forms demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/demo/demo.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/demo/brackets.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="demo_header">
+        <h1 class="h5">cf-forms demo</h1>
+      </header>
+      <ul class="demo-component-list">
+        <li id="singlemulti-line-text-inputs" class="demo-component-list_item wrapper">
+          <h1 class="demo-component-list_header">Single/Multi-Line Text Inputs</h1>
+          <ul class="demo-pattern-list">
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Default single-line text input</h3>
+              </header>
+              <section>
+<input placeholder="placeholder text" type="text">
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;input placeholder=&quot;placeholder text&quot; type=&quot;text&quot;&gt;</code></pre>
+              </footer>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Focused single-line text input</h3>
+              </header>
+              <section>
+<input class="focus" placeholder="placeholder text" type="text">
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;input class=&quot;focus&quot; placeholder=&quot;placeholder text&quot; type=&quot;text&quot;&gt;</code></pre>
+              </footer>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Field in error state</h3>
+              </header>
+              <section>
+<input class="error" type="text" value="Invalid input">
+<i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;input class=&quot;error&quot; type=&quot;text&quot; value=&quot;Invalid input&quot;&gt;
+&lt;i class=&quot;icon-remove-sign&quot;&gt;&lt;span class=&quot;jekyll-bug&quot;&gt;&lt;/span&gt;&lt;/i&gt;</code></pre>
+              </footer>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Field in success state</h3>
+              </header>
+              <section>
+<input class="success" type="text" value="Validated input">
+<i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;input class=&quot;success&quot; type=&quot;text&quot; value=&quot;Validated input&quot;&gt;
+&lt;i class=&quot;icon-ok-sign&quot;&gt;&lt;span class=&quot;jekyll-bug&quot;&gt;&lt;/span&gt;&lt;/i&gt;</code></pre>
+              </footer>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Default multi-line text box</h3>
+              </header>
+              <section>
+<textarea>Example entry</textarea>
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;textarea&gt;Example entry&lt;/textarea&gt;</code></pre>
+              </footer>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Focused multi-line text box</h3>
+              </header>
+              <section>
+<textarea class="focus">Example entry</textarea>
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;textarea class=&quot;focus&quot;&gt;Example entry&lt;/textarea&gt;</code></pre>
+              </footer>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Multi-line text box in error state</h3>
+              </header>
+              <section>
+<textarea class="error">Invalid input</textarea>
+<i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;textarea class=&quot;error&quot;&gt;Invalid input&lt;/textarea&gt;
+&lt;i class=&quot;icon-remove-sign&quot;&gt;&lt;span class=&quot;jekyll-bug&quot;&gt;&lt;/span&gt;&lt;/i&gt;</code></pre>
+              </footer>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Multi-line text box in success state</h3>
+              </header>
+              <section>
+<textarea class="success">Validated input</textarea>
+<i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;textarea class=&quot;success&quot;&gt;Validated input&lt;/textarea&gt;
+&lt;i class=&quot;icon-ok-sign&quot;&gt;&lt;span class=&quot;jekyll-bug&quot;&gt;&lt;/span&gt;&lt;/i&gt;</code></pre>
+              </footer>
+            </li>
+          </ul>
+          <div class="demo-pattern-css">
+            <pre class="css"><code data-language="css">input,
+textarea {
+  display: inline-block;
+  width: 85%;
+  margin: 0;
+  padding: 0.25em;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  background: #ffffff;
+  border: 1px solid #75787b;
+  border-radius: 0;
+  vertical-align: top;
+  -webkit-appearance: none;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+textarea {
+  overflow: auto;
+}
+input:focus,
+input.focus,
+textarea:focus,
+textarea.focus {
+  border: 1px solid #0072ce;
+  border-color: #0072ce;
+  outline: 1px solid #0072ce;
+  outline-offset: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input.error,
+textarea.error {
+  border: 1px solid #d12124;
+  outline: 1px solid #d12124;
+}
+input.success,
+textarea.success {
+  border: 1px solid #2cb34a;
+  outline: 1px solid #2cb34a;
+}
+input + [class^=&quot;icon-&quot;],
+textarea + [class^=&quot;icon-&quot;] {
+  position: relative;
+  top: 0.15em;
+  margin-left: 0.2em;
+  font-size: 1.25em;
+}
+.error + [class^=&quot;icon-&quot;] {
+  color: #d12124;
+}
+.success + [class^=&quot;icon-&quot;] {
+  color: #2cb34a;
+}</code></pre>
+          </div>
+        </li>
+      </ul>
+      <footer class="wrapper-footer">
+        <h4><a href="http://github.cfpb.gov/flapjack/cf-forms.git">View the repository</a></h4>
+      </footer>
+    </div>
+    <script src="static/demo/main.min.js"></script>
+  </body>
+</html>

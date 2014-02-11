@@ -1,0 +1,240 @@
+/* Default Button Styles */
+.guide-example .button {
+    box-sizing: border-box;
+    display: inline-block;
+    
+    padding: 0.71428571428571em 1em; /* 10/14 14/14 */
+    
+    border: none;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+
+    margin-right: 1em;
+    
+    background-color: #0072CE; /* Pacific */
+    
+    color: #FFF;
+    font-size: 1em; /* 14px set in Bootstrap's CSS */
+    line-height: 1;
+    font-family: "Avenir Next Medium", Arial, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+
+    -webkit-transition: .1s;
+       -moz-transition: .1s;
+            transition: .1s;
+}
+.guide-example .button:hover,
+.guide-example .button.hover,
+.guide-example .button:focus,
+.guide-example .button.focus {
+    /* Class included for static state examples */
+    background-color: #328ED8; /* Pacific/80 */
+}
+.guide-example .button:active,
+.guide-example .button.active {
+    /* Class included for static state examples */
+    background-color: #33578E; /* Navy/80 */
+}
+
+/* Secondary Button Styles */
+.guide-example .button-secondary {
+    background-color: #75787B; /* Dark Field */
+    color: #FFF;
+}
+.guide-example .button-secondary:hover,
+.guide-example .button-secondary.hover,
+.guide-example .button-secondary:focus,
+.guide-example .button-secondary.focus {
+    /* Class included for static state examples */
+    background-color: #8E9193; /* Dark Field/80 */
+}
+.guide-example .button-secondary:active,
+.guide-example .button-secondary.active {
+    /* Class included for static state examples */
+    background-color: #515355; /* Dark Gray */
+}
+
+/* Tertiary Button Styles */
+.guide-example .button-tertiary {
+    background-color: #E7E7E6; /* Light Field/50 */
+    color: #101820; /* Black */
+}
+.guide-example .button-tertiary:hover,
+.guide-example .button-tertiary.hover,
+.guide-example .button-tertiary:focus,
+.guide-example .button-tertiary.focus {
+    /* Class included for static state examples */
+    background-color: #ADDC91; /* Midtone Green */
+}
+.guide-example .button-tertiary:active,
+.guide-example .button-tertiary.active {
+    /* Class included for static state examples */
+    background-color: #2CB34A; /* CFPB Green */
+    color: #FFF;
+}
+
+/* Super Button Styles */
+.guide-example .button-super {
+    padding: 0.83333333333333em 1.66666666666667em; /* 15/18 30/18 */
+    font-size: 1.28571428571429em; /* 18px */
+}
+.guide-example .button-super:hover,
+.guide-example .button-super.hover,
+.guide-example .button-super:focus,
+.guide-example .button-super.focus {
+    /* Class included for static state examples */
+    /*background-color: #328ED8;*/ /* Pacific/80 */
+}
+.guide-example .button-super:active,
+.guide-example .button-super.active {
+    /* Class included for static state examples */
+    /*background-color: #33578E;*/ /* Navy/80 */
+}
+
+/* Disabled Button Styles */
+.guide-example .button-disabled,
+.guide-example .button-disabled:hover,
+.guide-example .button-group:focus {
+    background-color: #E7E7E6; /* Light Field/50 */
+    color: #75787B; /* Dark Field */
+    cursor: default; /* Fallback for IE/Opera */
+    cursor: not-allowed;
+}
+
+/* Simple link with same dimensions as button */
+.guide-example .button-link {
+    padding: 0;
+    border-bottom: 1px dotted #0072CE; /* Pacific */
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    margin: 0.71428571428571em; /* 10/14 */
+    background-color: transparent;
+    color: #0072CE; /* Pacific */
+}
+.guide-example .button-link:hover,
+.guide-example .button-link.hover {
+    /* Class included for static state examples */
+    color: #7FB8E6; /* Pacific/50 */
+    border-bottom: 1px solid #7FB8E6; /* Pacific/50 */
+    background-color: transparent;
+}
+.guide-example .button-link:focus,
+.guide-example .button-link.focus {
+    border-bottom-style: solid;
+    outline: thin dotted;
+    background-color: transparent;
+}
+.guide-example .button-link:active,
+.guide-example .button-link.active {
+    /* Class included for static state examples */
+    border-bottom: 1px solid #002D72; /* Navy */
+    background-color: transparent;
+    color: #002D72; /* Navy */
+}
+
+/* Destructive Action Button Styles */
+.guide-example .button-warning {
+    background-color: #D12124; /* Red Orange */
+    color: #FFF;
+}
+.guide-example .button-warning:hover,
+.guide-example .button-warning.hover,
+.guide-example .button-warning:focus,
+.guide-example .button-warning.focus {
+    /* Class included for static state examples */
+    background-color: #DA6750; /* Red Orange/80 */
+}
+.guide-example .button-warning:active,
+.guide-example .button-warning.active {
+    /* Class included for static state examples */
+    background-color: #9C301B; /* Red Orange/darker */
+}
+
+/* Simple link + destructive action */
+.guide-example .button-link.button-warning {
+    border-bottom-color: #D12124;
+    background-color: transparent;
+    color: #D12124; /* Red Orange/darker */
+}
+.guide-example .button-link.button-warning:hover,
+.guide-example .button-link.button-warning.hover,
+.guide-example .button-link.button-warning:focus,
+.guide-example .button-link.button-warning.focus {
+    /* Class included for static state examples */
+    border-bottom-color: #DA6750; /* Red Orange/80 */
+    color: #DA6750; /* Red Orange/80 */
+}
+.guide-example .button-link.button-warning:active,
+.guide-example .button-link.button-warning.active {
+    /* Class included for static state examples */
+    border-bottom-color: #9C301B;
+    color: #9C301B; /* Red Orange/darker */
+}
+
+
+/* Compound button styles */
+.guide-example .button-group .button:first-child {
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+       -moz-border-radius-topright: 0;
+       -moz-border-radius-bottomright: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+    margin-right: -0.26em;
+}
+.guide-example .button-group .secondary-action {
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+       -moz-border-radius-topleft: 0;
+       -moz-border-radius-bottomleft: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+    background-color: #328ED8; /* Pacific/80 */
+}
+.guide-example .button-group .secondary-action:hover,
+.guide-example .button-group .secondary-action.hover,
+.guide-example .button-group .secondary-action:focus,
+.guide-example .button-group .secondary-action.focus {
+    /* Class included for static state examples */
+    background-color: #0072CE; /* Pacific */
+}
+.guide-example .button-group .secondary-action:active,
+.guide-example .button-group .secondary-action.active {
+    /* Class included for static state examples */
+    background-color: #33578E; /* Navy/80 */
+}
+.secondary-action .jekyll-bug {
+    /* Added to address problem with Jekyll's interpreter mishandling empty icon markup. */
+    display: none;
+    /*font-size: 0;
+    line-height: 0;
+    text-indent: -999em;
+    overflow: hidden;*/
+}
+
+
+/* Button icons */
+
+.guide-example .button-icon [class^="icon-"] {
+    padding-right: 0.75em;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    margin: -0.35em 0.5em -0.5em 0;
+    color: #FFF;
+    position: relative;
+    line-height: 1.42857142857143;
+}
+.guide-example .button-icon [class$="-right"] {
+    padding-right: 0;
+    padding-left: 0.75em;
+    border-right: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    margin: -0.35em 0 -0.5em 0.5em;
+}
+
+
+.guide-example img {
+    margin-right: 3em;
+}

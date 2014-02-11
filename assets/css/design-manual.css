@@ -1,51 +1,82 @@
-/*                                      
-            /$$$$$$          /$$        
-           /$$__  $$        | $$        
-  /$$$$$$$| $$  \__//$$$$$$ | $$$$$$$  
- /$$_____/| $$$$   /$$__  $$| $$__  $$  
-| $$      | $$_/  | $$  \ $$| $$  \ $$
-| $$      | $$    | $$  | $$| $$  | $$  
-|  $$$$$$$| $$    | $$$$$$$/| $$$$$$$/  
- \_______/|__/    | $$____/ |_______/  
-                  | $$                  
-                  | $$                  
-                  |__/                  
-
-* Ghost - v0.6.0 - 2013-07-21
-* http://consumerfinance.gov
-* A Public Domain work of the Consumer Financial Protection Bureau */
-.col {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-}
-.ie .col {
-  margin-right: -0.26em;
-}
-.lt-ie8 .col {
-  display: inline;
-  *zoom: 1;
-  *behavior: url(boxsizing.htc);
-}
 /* ==========================================================================
-   CFPB Design Manual
+   Capital Framework
+   Color Variables
+   ========================================================================== */
+/* ==========================================================================
+   Capital Framework
    Basic Typography
    ========================================================================== */
-/* Base Variables
-   ========================================================================== */
+/* topdoc
+    name: LESS notes
+    family: cf-typography
+    patterns:
+    - name: Size variables
+      codenotes:
+        - "@base-font-size-px: 16px;"
+        - "@base-line-height-px: 22px;"
+        - "@base-line-height: unit(@base-line-height-px / @base-font-size-px);"
+    - name: Webfont mixins
+      codenotes:
+        - ".webfont-regular()"
+        - ".webfont-italic()"
+        - ".webfont-medium()"
+        - ".webfont-demi()"
+    - name: Explicitly set font styles
+      notes:
+        - "Any instances of Avenir Next getting italicized or bolded must be declared explicitly
+          so that it uses the correct webfont and does not fake the style on normal Avenir Next."
+        - "Use the webfont mixins above to make this easy. See the #blockquote styles as an example."
+      markup: |
+       <blockquote cite="http://cfpb.github.io/cf-typography/docs/index.html#webfont-notes">
+         Any instances of Avenir Next getting <em>italic</em><i>ized</i> or <strong>bold</strong><b>ed</b> must be declared explicitly ...
+       </blockquote> 
+    tags:
+    - cf-typography
+*/
+/* topdoc
+    name: Type hierarchy
+    family: cf-typography
+    patterns:
+    - name: Default body type
+      markup: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    - name: Heading level 1
+      markup: |
+        <h1>Example heading element</h1>
+        <p class="h1">A non-heading element</p>
+    - name: Heading level 2
+      markup: |
+        <h2>Example heading element</h2>
+        <p class="h2">A non-heading element</p>
+    - name: Heading level 3
+      markup: |
+        <h3>Example heading element</h3>
+        <p class="h3">A non-heading element</p>
+    - name: Heading level 4
+      markup: |
+        <h4>Example heading element</h4>
+        <p class="h4">A non-heading element</p>
+    - name: Heading level 5
+      markup: |
+        <h5>Example heading element</h5>
+        <p class="h5">A non-heading element</p>
+    - name: Heading level 6
+      markup: |
+        <h6>Example heading element</h6>
+        <p class="h6">A non-heading element</p>
+    - name: Super header
+      markup: |
+        <h1 class="superheader">Example super heading</h1>
+        <p class="superheader">Example super heading</p>
+    tags:
+    - cf-typography
+*/
 body {
   color: #101820;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 100%;
   line-height: 1.375;
 }
-/* Headings
-   ========================================================================== */
 h1,
 h2,
 h3,
@@ -120,8 +151,19 @@ h6,
   font-size: 3em;
   line-height: 1.375;
 }
-/* Margins
-   ========================================================================== */
+/* topdoc
+    name: Margins
+    family: cf-typography
+    patterns:
+    - name: Consistent vertical margins
+      notes:
+        - "Assumes that the font size of each of these items remains the default."
+      markup: |
+        <p>Paragraph margin example</p>
+        <p>Paragraph margin example</p>
+    tags:
+    - cf-typography
+*/
 p,
 ul,
 ol,
@@ -132,8 +174,31 @@ figure {
   margin-top: 0;
   margin-bottom: 1.375em;
 }
-/* Link Styling
-   ========================================================================== */
+/* topdoc
+    name: Default link
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    family: cf-typography
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#">Default link style</a>
+    - name: Visited state
+      markup: |
+        <a href="#" class="visited">Visited link style</a>
+    - name: Hovered state
+      markup: |
+        <a href="#" class="hover">Hovered link style</a>
+    - name: Focused state
+      markup: |
+        <a href="#" class="focus">Focused link style</a>
+    - name: Active state
+      markup: |
+        <a href="#" class="active">Active link style</a>
+    tags:
+    - cf-typography
+*/
 a {
   border-bottom-width: 0;
   border-bottom-style: dotted;
@@ -141,52 +206,111 @@ a {
   color: #0072ce;
   text-decoration: none;
 }
-a:visited {
+a:visited,
+a.visited {
   border-bottom-color: #005e5d;
   color: #005e5d;
 }
-a:hover {
+a:hover,
+a.hover {
   border-bottom-style: solid;
   border-bottom-color: #7fb8e6;
   color: #7fb8e6;
 }
-a:focus {
+a:focus,
+a.focus {
   border-bottom-style: solid;
 }
-a:active {
+a:active,
+a.active {
   border-bottom-style: solid;
   border-bottom-color: #002d72;
   color: #002d72;
 }
-p > strong > a,
-li > strong > a,
-dd > strong > a,
-p > em > a,
-li > em > a,
-dd > em > a,
-p > b > a,
-li > b > a,
-dd > b > a,
-p > i > a,
-li > i > a,
-dd > i > a {
-  border-bottom-width: 1px;
-}
-p > a,
-li > a,
-dd > a {
+/* topdoc
+    name: Underlined links
+    family: cf-typography
+    patterns:
+    - name: States
+      notes:
+        - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+          be used in production."
+        - "The underline style properties are mostly set above in the a tag.
+          To enable the underline simply set a bottom-border-width as done here."
+      markup: |
+        <p>
+            <a href="#">Default</a>,
+            <a href="#" class="visited">Visited</a>,
+            <a href="#" class="hover">Hovered</a>,
+            <a href="#" class="focus">Focused</a>,
+            <a href="#" class="active">Active</a>
+        </p>
+    - name: Underline conditions
+      notes:
+       - "We're restricting link borders to links within p, li, and dd so that
+         we don't have to override them every time we want a plain link."
+      markup: |
+        <p>
+            <a href="#">A child of a paragraph</a>
+        </p>
+        <ul>
+            <li>
+                <a href="#">A child of a list item</a>
+            </li>
+        </ul>
+        <dl>
+            <dt>
+                Definition list term
+            </dt>
+            <dd>
+                <a href="#">A child of a definition list description</a>
+            </dd>
+        </dl>
+    - name: Exceptions for underlined links
+      notes:
+        - "Inline text links inside of a nav element are not underlined."
+      markup: |
+        <nav>
+            <p>
+                <a href="#">A child of a paragraph</a>
+            </p>
+            <ul>
+                <li>
+                    <a href="#">A child of a list item</a>
+                </li>
+            </ul>
+            <dl>
+                <dt>
+                    Definition list term
+                </dt>
+                <dd>
+                    <a href="#">A child of a definition list description</a>
+                </dd>
+            </dl>
+        </nav>
+    tags:
+    - cf-typography
+*/
+p a,
+li a,
+dd a {
   border-bottom-width: 1px;
 }
 nav a {
   border-bottom-width: 0;
 }
-/*
- * Miscellaneous
- *
- * - Any instances of Avenir Next getting italicized or bolded must be declared
- *   explicitly so that it uses the correct webfont and does not fake the style
- *   on normal Avenir Next. See blockquote example below.
- */
+/* topdoc
+    name: Blockquote
+    family: cf-typography
+    patterns:
+    - name: Default blockquote
+      markup: |
+       <blockquote>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi animi facere modi eaque amet odio!
+       </blockquote> 
+    tags:
+    - cf-typography
+*/
 blockquote {
   padding: 0.5em 0.75em;
   border-left: 4px solid #2cb34a;
@@ -207,17 +331,38 @@ blockquote b {
   font-style: normal;
   font-weight: bold;
 }
+/* topdoc
+    name: Lists
+    family: cf-typography
+    patterns:
+    - name: Unordered list
+      markup: |
+       <ul>
+         <li>List item</li>
+         <li>List item</li>
+         <li>List item</li>
+       </ul>
+    tags:
+    - cf-typography
+*/
 ul {
   list-style: square;
 }
-/*
- * Webfont Overrides for IE 6-8 to prevent faux/double bold and italics
- *   
- * - Any bold or italic Avenir elements added to the base styles MUST BE added
- *   to this section, as well.
- * - Dependent on using H5BP's conditional classes on the <html> element:
- *   https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md
- */
+/* topdoc
+    name: IE overrides
+    family: cf-typography
+    patterns:
+    - name: Prevent faux/double bold and italics in IE 6-8
+      notes:
+        - "Any bold or italic Avenir elements added to the base styles MUST BE added to this section, as well."
+        - "Dependent on using H5BP's conditional classes on the <html> element:
+          https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md"
+      markup: |
+        <h5>I might appear as faux/double bold in older IE without this fix.</h5>
+    tags:
+    - cf-typography
+    - ltie9
+*/
 .lt-ie9 h1,
 .lt-ie9 h2,
 .lt-ie9 h3,
@@ -230,35 +375,816 @@ ul {
 .lt-ie9 blockquote em {
   font-style: normal !important;
 }
+/* topdoc
+  name: EOF
+  eof: true
+*/
+.col {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+}
+.ie .col {
+  margin-right: -0.26em;
+}
+.lt-ie8 .col {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+/* ==========================================================================
+   Flapjack Front End
+   Button Styling
+   ========================================================================== */
+/* topdoc
+    name: LESS notes
+    family: cf-buttons
+    patterns:
+    - name: Variables
+      codenotes:
+        - "@btn-font-size: 14px;"
+        - "@btn-v-padding: 9px;"
+        - "@btn-v-padding-modifier-ie: .8;"
+      notes:
+        - "@btn-v-padding-modifier-ie is used to fix the vertical padding bug in IE for <button>'s and <inputs>'s
+          across various .btn styles. We should revisit this after adding normalize.css to see if this is still needed."
+    tags:
+    - cf-buttons
+    - less
+*/
+/* topdoc
+    name: Default button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn">Anchor Tag</a>
+        <button class="btn">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn">
+    - name: Hovered/focused state
+      markup: |
+        <a href="#" class="btn hover">Anchor Tag</a>
+        <button class="btn hover">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn hover">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn active">Anchor Tag</a>
+        <button class="btn active">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn active">
+    tags:
+    - cf-buttons
+*/
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0.6428571428571429em 1em;
+  border: 0;
+  border-radius: 0.2857142857142857em;
+  margin: 0;
+  vertical-align: middle;
+  background-color: #0072ce;
+  color: #ffffff;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .1s;
+  -webkit-appearance: none;
+}
+.btn:hover,
+.btn:focus,
+.btn.hover {
+  background-color: #328ed8;
+}
+.btn:active,
+.btn.active {
+  background-color: #33578e;
+}
+.btn + .btn {
+  margin-left: 0.42857142857142855em;
+}
+button.btn::-moz-focus-inner,
+input.btn::-moz-focus-inner {
+  border: 0;
+}
+.lt-ie8 {
+  background: url(null) fixed no-repeat;
+}
+.lt-ie8 button.btn,
+.lt-ie8 input.btn {
+  overflow: visible;
+  padding-top: 0.5142857142857143em;
+  padding-bottom: 0.5142857142857143em;
+}
+/* topdoc
+    name: Secondary button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-secondary">Anchor Tag</a>
+        <button class="btn btn-secondary">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-secondary">
+    - name: Hovered/focused state
+      markup: |
+        <a href="#" class="btn btn-secondary hover">Anchor Tag</a>
+        <button class="btn btn-secondary hover">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-secondary hover">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-secondary active">Anchor Tag</a>
+        <button class="btn btn-secondary active">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-secondary active">
+    tags:
+    - cf-buttons
+*/
+.btn-secondary,
+.btn-secondary:link,
+.btn-secondary:visited {
+  background-color: #75787b;
+  color: #ffffff;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.hover {
+  background-color: #919395;
+}
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #43484e;
+}
+/* topdoc
+    name: Destructive action button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-warning">Anchor Tag</a>
+        <button class="btn btn-warning">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-warning">
+    - name: Hovered/focused state
+      markup: |
+        <a href="#" class="btn btn-warning hover">Anchor Tag</a>
+        <button class="btn btn-warning hover">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-warning hover">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-warning active">Anchor Tag</a>
+        <button class="btn btn-warning active">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-warning active">
+    tags:
+    - cf-buttons
+*/
+.btn-warning,
+.btn-warning:link,
+.btn-warning:visited {
+  background-color: #d12124;
+  color: #ffffff;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.hover {
+  background-color: #da6750;
+}
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #9c301b;
+}
+/* topdoc
+    name: Disabled button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default/hovered/focused/active state
+      markup: |
+        <a href="#" class="btn btn-disabled">Anchor Tag</a>
+        <button class="btn btn-disabled">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-disabled">
+    tags:
+    - cf-buttons
+*/
+.btn-disabled,
+.btn-disabled:link,
+.btn-disabled:visited,
+.btn-disabled:hover,
+.btn-disabled.hover,
+.btn-disabled:focus,
+.btn-disabled:active,
+.btn-disabled.active {
+  background-color: #e3e4e5;
+  color: #75787b;
+  cursor: default;
+  cursor: not-allowed;
+}
+/* topdoc
+    name: Super button
+    family: cf-buttons
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-super">Anchor Tag</a>
+        <button class="btn btn-super">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-super">
+    - name: Hovered/focused state
+      markup: |
+        <a href="#" class="btn btn-super hover">Anchor Tag</a>
+        <button class="btn btn-super hover">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-super hover">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-super active">Anchor Tag</a>
+        <button class="btn btn-super active">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-super active">
+    tags:
+    - cf-buttons
+*/
+.btn-super,
+.btn-super:link,
+.btn-super:visited {
+  padding: 0.8333333333333334em 1.6666666666666667em;
+  font-size: 1.125em;
+}
+.btn-super + .btn-super {
+  margin-left: 0.3333333333333333em;
+}
+.lt-ie8 button.btn-super,
+.lt-ie8 input.btn-super {
+  padding-top: 0.6666666666666666em;
+  padding-bottom: 0.6666666666666666em;
+}
+/* topdoc
+    name: Button with icons
+    family: cf-buttons
+    patterns:
+    - name: Button icon left
+      markup: |
+        <a href="#" class="btn">
+            <i class="btn-icon-left icon-chevron-left"><span class="jekyll-bug"></span></i>
+            Anchor Tag
+        </a>
+        <button class="btn">
+            <i class="btn-icon-left icon-chevron-left"><span class="jekyll-bug"></span></i>
+            Button Tag
+        </button>
+    - name: Button icon right
+      markup: |
+        <a href="#" class="btn">
+            Anchor Tag
+            <i class="btn-icon-right icon-chevron-right"><span class="jekyll-bug"></span></i>
+        </a>
+        <button class="btn">
+            Button Tag
+            <i class="btn-icon-right icon-chevron-right"><span class="jekyll-bug"></span></i>
+        </button>
+    - name: Just an icon
+      markup: |
+        <a href="#" class="btn">
+            <i class="icon-search"><span class="jekyll-bug"></span></i>
+        </a>
+        <button class="btn">
+            <i class="icon-search"><span class="jekyll-bug"></span></i>
+        </button>
+    tags:
+    - cf-buttons
+    - fj-icons
+*/
+.btn [class^="icon-"],
+.btn [class*="icon-"] {
+  line-height: 1;
+}
+.btn-icon-left {
+  padding: 0 0.75em 0 0;
+  border-right: 1px solid #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 0 0.5em 0 0;
+}
+.btn-disabled .btn-icon-left {
+  border-right-color: #babbbd;
+}
+.btn-icon-right {
+  padding: 0 0 0 0.75em;
+  border-right: 0;
+  border-left: 1px solid #ffffff;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 0 0 0 0.5em;
+}
+.btn-disabled .btn-icon-right {
+  border-left-color: #babbbd;
+}
+/* topdoc
+    name: Button group
+    family: cf-buttons
+    patterns:
+    - name: Default buttons in a button group
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn">Anchor 1</a>
+            <a href="#" class="btn">Anchor 2</a>
+            <a href="#" class="btn">Anchor 3</a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn">Button 1</button>
+            <button class="btn">Button 2</button>
+            <button class="btn">Button 3</button>
+        </div><br>
+        <div class="btn-group">
+            <input type="button" value="Input 1" class="btn">
+            <input type="button" value="Input 2" class="btn">
+            <input type="button" value="Input 3" class="btn">
+        </div>
+    - name: Super buttons in a button group
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn btn-super">Anchor 1</a>
+            <a href="#" class="btn btn-super">Anchor 2</a>
+            <a href="#" class="btn btn-super">Anchor 3</a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn btn-super">Button 1</button>
+            <button class="btn btn-super">Button 2</button>
+            <button class="btn btn-super">Button 3</button>
+        </div><br>
+        <div class="btn-group">
+            <input type="button" value="Input 1" class="btn btn-super">
+            <input type="button" value="Input 2" class="btn btn-super">
+            <input type="button" value="Input 3" class="btn btn-super">
+        </div>
+    tags:
+    - cf-buttons
+*/
+.btn-group .btn:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group .btn + .btn {
+  margin-left: -0.21428571428571427em;
+}
+.btn-group .btn + .btn:not(:last-child) {
+  border-radius: 0;
+}
+.btn-group .btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group .btn-super + .btn-super {
+  margin-left: -0.16666666666666666em;
+}
+/* topdoc
+    name: Compound button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default button style
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn">Anchor</a>
+            <a href="#" class="btn btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn">Button</button>
+            <button class="btn btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></button>
+        </div><br>
+    - name: Secondary button style
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn btn-secondary">Anchor</a>
+            <a href="#" class="btn btn-secondary btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn btn-secondary">Button</button>
+            <button class="btn btn-secondary btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></button>
+        </div>
+    - name: Super button style
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn btn-super">Anchor</a>
+            <a href="#" class="btn btn-super btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn btn-super">Button</button>
+            <button class="btn btn-super btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></button>
+        </div>
+    tags:
+    - cf-buttons
+    - fj-icons
+*/
+.btn-compound-action,
+.btn-compound-action:link,
+.btn-compound-action:visited {
+  background-color: #328ed8;
+}
+.btn-compound-action:hover,
+.btn-compound-action:focus,
+.btn-compound-action.hover {
+  background-color: #0072ce;
+}
+.btn-compound-action.btn-secondary {
+  background-color: #919395;
+}
+.btn-compound-action.btn-secondary:hover,
+.btn-compound-action.btn-secondary:focus,
+.btn-compound-action.btn-secondary.hover {
+  background-color: #75787b;
+}
+.btn-compound-action.btn-super {
+  padding-left: 1.2222222222222223em;
+  padding-right: 1.2222222222222223em;
+}
+/* topdoc
+    name: Button link
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-link">Anchor Tag</a>
+        <button class="btn btn-link">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link">
+    - name: Hovered state
+      markup: |
+        <a href="#" class="btn btn-link hover">Anchor Tag</a>
+        <button class="btn btn-link hover">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link hover">
+    - name: Focused state
+      markup: |
+        <a href="#" class="btn btn-link focus">Anchor Tag</a>
+        <button class="btn btn-link focus">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link focus">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-link active">Anchor Tag</a>
+        <button class="btn btn-link active">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link active">
+    tags:
+    - cf-buttons
+*/
+.btn-link,
+.btn-link:link,
+.btn-link:visited {
+  padding: 0;
+  border-bottom: 1px dotted #0072ce;
+  border-radius: 0;
+  margin: 0.6428571428571429em 0;
+  background-color: transparent;
+  color: #0072ce;
+}
+.btn-link:hover,
+.btn-link.hover {
+  border-bottom: 1px solid #7fb8e6;
+  background-color: transparent;
+  color: #7fb8e6;
+}
+.btn-link:focus,
+.btn-link.focus {
+  border-bottom-style: solid;
+  background-color: transparent;
+  outline: thin dotted;
+}
+.btn-link:active,
+.btn-link.active {
+  border-bottom: 1px solid #002d72;
+  background-color: transparent;
+  color: #002d72;
+}
+.lt-ie8 button.btn-link,
+.lt-ie8 input.btn-link {
+  padding: 0;
+}
+/* topdoc
+    name: Destructive action button link
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-link btn-warning">Anchor Tag</a>
+        <button class="btn btn-link btn-warning">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning">
+    - name: Hovered state
+      markup: |
+        <a href="#" class="btn btn-link btn-warning hover">Anchor Tag</a>
+        <button class="btn btn-link btn-warning hover">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning hover">
+    - name: Focused state
+      markup: |
+        <a href="#" class="btn btn-link btn-warning focus">Anchor Tag</a>
+        <button class="btn btn-link btn-warning focus">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning focus">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-link btn-warning active">Anchor Tag</a>
+        <button class="btn btn-link btn-warning active">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning active">
+    tags:
+    - cf-buttons
+*/
+.btn-link.btn-warning,
+.btn-link.btn-warning:link,
+.btn-link.btn-warning:visited {
+  border-bottom-color: #d12124;
+  background-color: transparent;
+  color: #d12124;
+}
+.btn-link.btn-warning:hover,
+.btn-link.btn-warning.hover {
+  border-bottom-color: #da6750;
+  color: #da6750;
+}
+.btn-link.btn-warning:focus,
+.btn-link.btn-warning.focus {
+  border-bottom-color: #da6750;
+  outline: thin dotted;
+}
+.btn-link.btn-warning:active,
+.btn-link.btn-warning.active {
+  border-bottom-color: #9c301b;
+  color: #9c301b;
+}
+/* topdoc
+  name: EOF
+  eof: true
+*/
+/* ==========================================================================
+   Flapjack Front End
+   Form Element Styling
+   ========================================================================== */
+label {
+  display: block;
+}
+/* topdoc
+    name: Single/Multi-Line Text Inputs
+    family: cf-forms
+    patterns:
+    - name: Default single-line text input
+      markup: |
+        <input placeholder="placeholder text" type="text">
+    - name: Focused single-line text input
+      markup: |
+        <input class="focus" placeholder="placeholder text" type="text">
+    - name: Field in error state
+      markup: |
+        <input class="error" type="text" value="Invalid input">
+        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+    - name: Field in success state
+      markup: |
+        <input class="success" type="text" value="Validated input">
+        <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+    - name: Default multi-line text box
+      markup: |
+        <textarea>Example entry</textarea>
+    - name: Focused multi-line text box
+      markup: |
+        <textarea class="focus">Example entry</textarea>
+    - name: Multi-line text box in error state
+      markup: |
+        <textarea class="error">Invalid input</textarea>
+        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+    - name: Multi-line text box in success state
+      markup: |
+        <textarea class="success">Validated input</textarea>
+        <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+    tags:
+    - cf-forms
+*/
+input,
+textarea {
+  display: inline-block;
+  width: 85%;
+  margin: 0;
+  padding: 0.25em;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  background: #ffffff;
+  border: 1px solid #75787b;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  vertical-align: top;
+  -webkit-appearance: none;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+textarea {
+  overflow: auto;
+}
+input:focus,
+input.focus,
+textarea:focus,
+textarea.focus {
+  border: 1px solid #0072ce;
+  border-color: #0072ce;
+  outline: 1px solid #0072ce;
+  outline-offset: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input.error,
+textarea.error {
+  border: 1px solid #d12124;
+  outline: 1px solid #d12124;
+}
+input.success,
+textarea.success {
+  border: 1px solid #2cb34a;
+  outline: 1px solid #2cb34a;
+}
+input + [class^="icon-"],
+textarea + [class^="icon-"] {
+  position: relative;
+  top: 0.15em;
+  margin-left: 0.2em;
+  font-size: 1.25em;
+}
+.error + [class^="icon-"] {
+  color: #d12124;
+}
+.success + [class^="icon-"] {
+  color: #2cb34a;
+}
+/* topdoc
+  name: EOF
+  eof: true
+*//* ==========================================================================
+   Flapjack Front End
+   Pagination Styling
+   ========================================================================== */
+/* topdoc
+    name: Pagination
+    family: cf-pagination
+    patterns:
+    - name: Default pagination
+      markup: |
+        <nav class="pagination">
+            <a class="btn pagination_prev" href="#"><i class="btn-icon-left icon-chevron-left"></i> Previous</a>
+            <form class="pagination_form">
+                <label class="pagination_label" for="pagination_current-page">Page</label>
+                <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="number" min="1" max="149" value="149" />
+                <label class="pagination_label" for="pagination_current-page">of 149</label>
+                <button class="btn btn-link pagination_submit" id="pagination_submit" type="submit">Go</button>
+            </form>
+            <a class="btn pagination_next" href="#">Next <i class="btn-icon-right icon-chevron-right"></i></a>
+        </nav>
+    tags:
+    - fj-buttons
+    - fj-forms
+*/
+.pagination {
+  display: block;
+  margin: 0;
+  padding: 0;
+  /* Positions .pagination_next relative to this container */
+
+  position: relative;
+}
+/* On small screens position .pagination_next to the right edge of .pagination */
+.pagination_next {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pagination_label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+.pagination_form {
+  display: block;
+  padding: 0.25em 1.875em;
+  margin: 1em 0 0 0;
+  background: #E3E4E5;
+  color: #75787B;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+.pagination_current-page {
+  display: inline-block;
+  vertical-align: middle;
+  /* We need enough room for three digits and the number spinners for type="number" inputs */
+
+  width: 3em;
+  /* Resets the padding back to 4px now that the font-size is 14px */
+
+  padding: 0.2857142857142857em;
+  margin: 0 0.2857142857142857em;
+  /* Keep in mind that text inputs are 16px by default but 14px in .pagination to match the rest of the tex */
+
+  font-size: 0.875em;
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+}
+.pagination_submit.btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 1em;
+}
+@media only screen and (min-width: 480px) {
+  .pagination_form {
+    border-radius: 0.2857142857142857em;
+  }
+  .pagination_prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .pagination_prev.btn,
+  .pagination_prev.btn:link,
+  .pagination_prev.btn:visited {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .pagination_next.btn,
+  .pagination_next.btn:link,
+  .pagination_next.btn:visited {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+/* topdoc
+  name: EOF
+  eof: true
+*//* ==========================================================================
+   CFPB Design Manual
+   Basic Typography
+   ========================================================================== */
+/* We may need to add these lines in the capital framework: */
 /* ==========================================================================
    CFPB Design Manual
-   Less Mixins
+   @font-face Declarations
    ========================================================================== */
-.hidden {
-  display: none !important;
-  visibility: hidden;
+/* 
+ * CSS as specified in the following article until IE8 support is dropped:
+ * http://coding.smashingmagazine.com/2013/02/14/setting-weights-and-styles-at-font-face-declaration/
+ *
+ * Only the esential variants are on, by default. Uncomment any others if 
+ * you determine that you truly need them.
+ *
+ * Using Demi in place of Bold, by default. If using both Demi and Bold, set 
+ * Avenir Next Demi's weight back to 600.
+ * 
+ * Formats:
+ * .eot - IE9 compatibility modes
+ * .eot#iefix - IE6-IE8
+ * .woff - Modern browsers
+ * .ttf - Safari, Android, iOS
+ * .svg - Legacy iOS
+ */
+@font-face {
+  font-family: "Avenir Next";
+  src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/e9167238-3b3f-4813-a04a-a384394eed42.eot");
+  src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("embedded-opentype"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+  font-weight: 400;
+  font-style: normal;
 }
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+@font-face {
+  font-family: "Avenir Next Italic";
+  src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/d1fddef1-d940-4904-8f6c-17e809462301.eot");
+  src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix") format("embedded-opentype"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff") format("woff"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf") format("truetype"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
+  font-weight: 400;
+  font-style: italic;
 }
-.visually-hidden .visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
+@font-face {
+  font-family: "Avenir Next Medium";
+  src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/1a7c9181-cd24-4943-a9d9-d033189524e0.eot");
+  src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("embedded-opentype"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
+  font-weight: 500;
+  font-style: normal;
 }
-.invisible {
-  visibility: hidden;
+@font-face {
+  font-family: "Avenir Next Demi";
+  src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/12d643f2-3899-49d5-a85b-ff430f5fad15.eot");
+  src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("embedded-opentype"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"), url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+  font-weight: 700;
+  font-style: normal;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -281,343 +1207,34 @@ samp {
 }
 /* ==========================================================================
    CFPB Design Manual
-   Default Table Styles
+   Header
    ========================================================================== */
-table {
-  margin: 1.375em 0;
-  padding: 0;
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background: #FFF;
-}
-th,
-td {
-  padding: 0.9375em;
-  /* 15px */
-
-  background: #f8f8f8;
-  border: 0;
-}
-thead {
-  background: #43484e;
-}
-thead th,
-thead td {
-  color: #FFF;
-  background: #43484e;
-}
-th {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  text-align: left;
-}
-tbody > tr:nth-child(odd) > td,
-tbody > tr:nth-child(odd) > th {
-  background: #f1f2f2;
-}
-/* ==========================================================================
-   Compact Table
-   ========================================================================== */
-.compact-table th,
-.compact-table td {
-  padding: 0.625em;
-  /* 10px */
+/* Site title */
+.site-title {
+  text-align: center;
+  /* Site title / class on <a> */
 
 }
-/* ==========================================================================
-   Interactive Table
-   ========================================================================== */
-.interactive-table thead > tr > th.sorting {
-  position: relative;
-  /* used to position the sorting icon in :after */
-
-  cursor: pointer;
-}
-.interactive-table thead > tr > th.sorting:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  min-width: 1.1875em;
-  /* 19px */
-
-  min-height: 1.1875em;
-  /* 19px */
-
-  height: 100%;
-  margin-left: 0.625em;
-  /* 10px */
-
-  background: transparent url("../assets/img/sort_both_light.png") no-repeat left center;
-}
-/* Interactive table rows have a different background color */
-.interactive-table tbody th,
-.interactive-table tbody td,
-.interactive-table tbody > tr:nth-child(odd) > td,
-.interactive-table tbody > tr:nth-child(odd) > th {
-  background: #FFF;
-}
-.interactive-table tbody > tr {
-  border-bottom: 1px solid #e3e4e5;
-}
-.interactive-table tbody > tr:hover > td,
-.interactive-table tbody > tr:hover > th {
-  background: #addc91;
-}
-/* ==========================================================================
-   CFPB Design Manual
-   Basic Form Elements
-   Just text fields for now
-   ========================================================================== */
-form {
-  margin: 0;
-}
-label {
-  display: block;
-}
-legend {
-  font-weight: bold;
-}
-input,
-textarea {
-  display: inline-block;
-  width: 85%;
-  padding: 0.25em;
-  border: 1px solid #75787b;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin: 0;
-  vertical-align: top;
-}
-input:focus,
-input.focus,
-textarea:focus,
-textarea.focus {
-  /* Class included for static state examples */
-
-  border: 1px solid #0072ce;
-  outline: 1px solid #0072ce;
-  outline-offset: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-input.error,
-textarea.error {
-  /* Class included for static state examples */
-
-  border: 1px solid #d12124;
-  outline: 1px solid #d12124;
-}
-input.success,
-textarea.success {
-  /* Class included for static state examples */
-
-  border: 1px solid #2cb34a;
-  outline: 1px solid #2cb34a;
-}
-input + [class^="icon-"],
-textarea + [class^="icon-"] {
-  margin-left: 0.25em;
-  /* 4px */
-
-  position: relative;
-  top: 3px;
-  font-size: 1.25em;
-  /* 20px */
+.site-title h1 {
+  font-size: 1.625em;
+  /* 26px */
 
 }
-.error + [class^="icon-"] {
-  color: #d12124;
+.site-title .title-link {
+  color: #919395;
 }
-.success + [class^="icon-"] {
-  color: #2cb34a;
-}
-/* ==========================================================================
-   CFPB Design Manual
-   Button Styling
-   ========================================================================== */
-.btn,
-.btn:link,
-.btn:visited {
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 0.625em 1em;
-  border-width: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin: 0;
-  background-color: #0072ce;
-  color: #FFF;
+.site-title .title-link .site-org {
+  color: #75787b;
   font-family: "Avenir Next Medium", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.875em;
-  line-height: 1;
-  text-decoration: none;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-  transition: .1s;
 }
-.btn:hover,
-.btn:focus {
-  background-color: #328ed8;
+.site-title .title-link:visited {
+  color: #919395;
 }
-.btn:active {
-  background-color: #33578e;
-}
-/* Secondary Button Styles */
-.btn-secondary {
-  background-color: #75787b;
-  color: #FFF;
-}
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: #919395;
-}
-.btn-secondary:active {
-  background-color: #919395;
-}
-/* Tertiary Button Styles */
-.btn-tertiary {
-  background-color: #e3e4e5;
-  color: #101820;
-}
-.btn-tertiary:hover,
-.btn-tertiary:focus {
-  background-color: #addc91;
-}
-.btn-tertiary:active {
-  background-color: #2cb34a;
-  color: #FFF;
-}
-/* Super Button Styles */
-.btn-super {
-  padding: 0.83333333333333em 1.66666666666667em;
-  /* 15/18 30/18 */
-
-  font-size: 1.28571428571429em;
-  /* 18px */
-
-}
-.btn-super:hover,
-.btn-super:focus {
-  /*background-color: @pacific-80;*/
-
-}
-.btn-super:active {
-  /*background-color: @navy-80;*/
-
-}
-/* Disabled Button Styles */
-.btn-disabled,
-.btn-disabled:hover,
-.btn-group:focus {
-  background-color: #e3e4e5;
-  color: #75787b;
-  cursor: default;
-  /* Fallback for IE/Opera */
-
-  cursor: not-allowed;
-}
-/* Simple link with same dimensions as button */
-.btn-link,
-.btn-link:link,
-.btn-link:visited {
-  padding: 0;
-  border-bottom: 1px dotted #0072ce;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin: 0.7142857142857143em;
-  background-color: transparent;
-  color: #0072ce;
-}
-.btn-link:hover {
-  color: #7fb8e6;
-  border-bottom: 1px solid #7fb8e6;
-  background-color: transparent;
-}
-.btn-link:focus {
-  border-bottom-style: solid;
-  outline: thin dotted;
-  background-color: transparent;
-}
-.btn-link:active {
-  border-bottom: 1px solid #002d72;
-  background-color: transparent;
-  color: #002d72;
-}
-/* Destructive Action Button Styles */
-.btn-warning {
-  background-color: #d12124;
-  color: #FFF;
-}
-.btn-warning:hover,
-.btn-warning:focus {
-  background-color: #da6750;
-}
-.btn-warning:active {
-  background-color: #9c301b;
-}
-/* Simple link + destructive action */
-.btn-link.btn-warning {
-  border-bottom-color: #d12124;
-  background-color: transparent;
-  color: #d12124;
-}
-.btn-link.btn-warning:hover,
-.btn-link.btn-warning:focus {
-  border-bottom-color: #da6750;
-  color: #da6750;
-}
-.btn-link.btn-warning:active {
-  border-bottom-color: #9c301b;
-  color: #9c301b;
-}
-/* Compound button styles */
-.btn-group .btn:first-child {
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-right: -0.26em;
-}
-.btn-group .secondary-action {
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-bottomleft: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  background-color: #328ed8;
-}
-.btn-group .secondary-action:hover,
-.btn-group .secondary-action:focus {
-  background-color: #0072ce;
-}
-.btn-group .secondary-action:active {
-  background-color: #33578e;
-}
-/* Button icons */
-.btn-icon [class^="icon-"] {
-  padding-right: 0.75em;
-  border-right: 1px solid rgba(255, 255, 255, 0.4);
-  margin: -0.35em 0.5em -0.5em 0;
-  color: #FFF;
-  position: relative;
-  line-height: 1.42857142857143;
-}
-.btn-icon [class$="-right"] {
-  padding-right: 0;
-  padding-left: 0.75em;
-  border-right: 0;
-  border-left: 1px solid rgba(255, 255, 255, 0.4);
-  margin: -0.35em 0 -0.5em 0.5em;
+/* Site logo */
+.logo {
+  display: none;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -677,34 +1294,33 @@ img {
 }
 /* ==========================================================================
    CFPB Design Manual
-   Header
+   Less Mixins
    ========================================================================== */
-/* Site title */
-.site-title {
-  text-align: center;
-  /* Site title / class on <a> */
-
+.hidden {
+  display: none !important;
+  visibility: hidden;
 }
-.site-title h1 {
-  font-size: 1.625em;
-  /* 26px */
-
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
-.site-title .title-link {
-  color: #919395;
+.visually-hidden .visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
-.site-title .title-link .site-org {
-  color: #75787b;
-  font-family: "Avenir Next Medium", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
-.site-title .title-link:visited {
-  color: #919395;
-}
-/* Site logo */
-.logo {
-  display: none;
+.invisible {
+  visibility: hidden;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -1022,4 +1638,93 @@ img {
 /* Widescreen (1600px) */
 @media only screen and (min-width: 100em) {
   
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Default Table Styles
+   ========================================================================== */
+.table table {
+  margin: 1.375em 0;
+  padding: 0;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #FFF;
+}
+.table th,
+.table td {
+  padding: 0.9375em;
+  /* 15px */
+
+  background: #f8f8f8;
+  border: 0;
+}
+.table thead {
+  background: #43484e;
+}
+.table thead th,
+.table thead td {
+  color: #FFF;
+  background: #43484e;
+}
+.table th {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: left;
+}
+.table tbody > tr:nth-child(odd) > td,
+.table tbody > tr:nth-child(odd) > th {
+  background: #f1f2f2;
+}
+/* ==========================================================================
+   Compact Table
+   ========================================================================== */
+.compact-table th,
+.compact-table td {
+  padding: 0.625em;
+  /* 10px */
+
+}
+/* ==========================================================================
+   Interactive Table
+   ========================================================================== */
+.interactive-table {
+  /* Interactive table rows have a different background color */
+
+}
+.interactive-table thead > tr > th.sorting {
+  position: relative;
+  /* used to position the sorting icon in :after */
+
+  cursor: pointer;
+}
+.interactive-table thead > tr > th.sorting:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  min-width: 1.1875em;
+  /* 19px */
+
+  min-height: 1.1875em;
+  /* 19px */
+
+  height: 100%;
+  margin-left: 0.625em;
+  /* 10px */
+
+  background: transparent url("../assets/img/sort_both_light.png") no-repeat left center;
+}
+.interactive-table tbody th,
+.interactive-table tbody td,
+.interactive-table tbody > tr:nth-child(odd) > td,
+.interactive-table tbody > tr:nth-child(odd) > th {
+  background: #FFF;
+}
+.interactive-table tbody > tr {
+  border-bottom: 1px solid #e3e4e5;
+}
+.interactive-table tbody > tr:hover > td,
+.interactive-table tbody > tr:hover > th {
+  background: #addc91;
 }

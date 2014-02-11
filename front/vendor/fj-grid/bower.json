@@ -1,0 +1,17 @@
+{
+  "name": "cf-grid",
+  "version": "0.6.7",
+  "authors": [
+    {
+      "name": "Consumer Financial Protection Bureau",
+      "url": "http://cfpb.github.io/"
+    }
+  ],
+  "homepage": "https://github.com/cfpb/cf-grid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfpb/cf-grid.git"
+  },
+  "license": "https://github.com/cfpb/cf-grid/blob/master/TERMS.md",
+  "main": "src/ghost.less"
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>{{ page.title }}</title>
+
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="edge">
+
+     <link href="{{site.site_path}}/static/css/all.css" rel="stylesheet" media="screen">
+
+    <script type="text/javascript">
+        var repoName = "{{site.repo_name}}"; 
+        var repoOrg = "{{site.repo_org}}";
+        var documentLabel = "{{page.document_label}}";
+        var documentAssetPath = "{{site.document_asset_path}}";                
+    </script>
+</head>
+
+<body class="{{page.type}}">
+
+     {% include templates/header.html %}
+
+    <div class="wrapper-content">
+
+        <div class="index-intro">
+            {{ content }}
+        </div>
+
+        <div class="issues-container">
+            <p><a class="add-issue-link" target="_blank" href="#">Add an Issue</a> about this guide </p>
+            <div class="ghissues-container" data-gh-issues="general"></div>
+        </div>
+
+        {% include templates/global-nav.html %}
+
+        <footer>
+             <a title="Document Edit" target="_blank" href="https://github.cfpb.gov/{{site.prose_path}}{{site.repo_org}}/{{site.repo_name}}/edit/gh-pages{{page.url | replace:'.html','.md'}}"> Page Edit</a>  
+             <a title="Document Edits"  target="_blank" href="https://github.cfpb.gov/{{site.repo_org}}/{{site.repo_name}}/commits/gh-pages{{page.url | replace:'.html','.md'}}"> Page History</a>  
+             <a title="GitHub Link" target="_blank" href="https://github.cfpb.gov/{{site.repo_org}}/{{site.repo_name}}/">GitHub Repository</a>
+             <a title="Help" href="{{site.home_link}}help.html">Help</a>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="{{site.site_path}}/static/js/all.js" ></script>
+
+</body>
+
+</html>

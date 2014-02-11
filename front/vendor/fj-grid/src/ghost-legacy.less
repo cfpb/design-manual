@@ -1,0 +1,95 @@
+@import "ghost.less";
+
+/**
+ *  A CSS version of Ghost
+ **/
+
+//  If you'd prefer vanilla CSS over LESS, this stylesheet will 
+//  generate a CSS version of Ghost with the same fixed-gutter, 
+//  fluid-column functionality.
+//
+//  .wrapper = .wrapper()
+//  .row = .row()
+//  .col-X = .column( X )
+//  .prefix-Y = .column( @columns: X; @prefix: Y; )
+//  .suffix-Z = .column( @columns: X; @suffix: Z; )
+//  .push-X = .push( X )
+//  .pull-X = .pull( X )
+//
+//  Change the variables below before compiling to change your
+//  grid specifications.
+//
+// WARNING: This generates a GIGANTIC CSS file, so if you are
+// going to use this, you best be gzipping on the server-side.
+
+
+@wrapper-width: 1200px;
+@gutter-width: 30px;
+@total-columns: 12;
+
+
+.wrapper {
+  .wrapper();
+}
+
+
+.columnX ( @index ) when ( @index > 0 ) {
+
+  .col-@{index} {
+    .column( @index );
+  }
+
+  .prefixX ( @index, @total-columns - @index );
+  .suffixX ( @index, @total-columns - @index );
+
+
+  .push-@{index} {
+    .push( @index );
+  }
+
+  .pull-@{index} {
+    .pull( @index );
+  }
+
+  .columnX( @index - 1 );
+
+}
+
+
+.prefixX ( @index, @indexP ) when (@indexP > 0) {
+  
+  .col-@{index}.prefix-@{indexP} {
+    .column( @columns: @index; @prefix: @indexP; );
+  }
+
+  .prefixSuffix ( @index, @indexP, @total-columns - @index - @indexP );
+  .prefixX ( @index, @indexP - 1 );
+
+}
+
+
+.suffixX ( @index, @indexS ) when (@indexS > 0) {
+  
+  .col-@{index}.suffix-@{indexS} {
+    .column( @columns: @index; @suffix: @indexS; );
+  }
+
+  .suffixX ( @index, @indexS - 1 );
+
+}
+
+
+.prefixSuffix ( @index, @indexP, @indexS ) when (@indexS > 0) {
+
+  .col-@{index}.prefix-@{indexP}.suffix-@{indexS} {
+    .column( @columns: @index; @prefix: @indexP; @suffix: @indexS );
+  }
+
+  .prefixSuffix ( @index, @indexP, @indexS - 1 );
+
+}
+
+
+.columnX ( 0 ) {}
+
+.columnX ( @total-columns );

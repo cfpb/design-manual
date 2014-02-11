@@ -19,7 +19,8 @@ front/node_modules
 
 # Bower downloaded packages #
 #############################
-front/vendor
+# uncomment once cf-framework is in the public github:
+#front/vendor
 
 # Test reports #
 ###################

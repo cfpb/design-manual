@@ -1,0 +1,446 @@
+/* ==========================================================================
+   Capital Framework
+   Basic Typography
+   ========================================================================== */
+
+
+/* topdoc
+    name: LESS notes
+    family: cf-typography
+    patterns:
+    - name: Size variables
+      codenotes:
+        - "@base-font-size-px: 16px;"
+        - "@base-line-height-px: 22px;"
+        - "@base-line-height: unit(@base-line-height-px / @base-font-size-px);"
+    - name: Webfont mixins
+      codenotes:
+        - ".webfont-regular()"
+        - ".webfont-italic()"
+        - ".webfont-medium()"
+        - ".webfont-demi()"
+    - name: Explicitly set font styles
+      notes:
+        - "Any instances of Avenir Next getting italicized or bolded must be declared explicitly
+          so that it uses the correct webfont and does not fake the style on normal Avenir Next."
+        - "Use the webfont mixins above to make this easy. See the #blockquote styles as an example."
+      markup: |
+       <blockquote cite="http://cfpb.github.io/cf-typography/docs/index.html#webfont-notes">
+         Any instances of Avenir Next getting <em>italic</em><i>ized</i> or <strong>bold</strong><b>ed</b> must be declared explicitly ...
+       </blockquote> 
+    tags:
+    - cf-typography
+*/
+
+@base-font-size-px: 16px;
+@base-line-height-px: 22px;
+@base-line-height: unit(@base-line-height-px / @base-font-size-px);
+
+.webfont-regular() {
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.webfont-italic() {
+    font-family: "Avenir Next Italic", Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.webfont-medium() {
+    font-family: "Avenir Next Medium", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.webfont-demi() {
+    font-family: "Avenir Next Demi", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* topdoc
+    name: Type hierarchy
+    family: cf-typography
+    patterns:
+    - name: Default body type
+      markup: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    - name: Heading level 1
+      markup: |
+        <h1>Example heading element</h1>
+        <p class="h1">A non-heading element</p>
+    - name: Heading level 2
+      markup: |
+        <h2>Example heading element</h2>
+        <p class="h2">A non-heading element</p>
+    - name: Heading level 3
+      markup: |
+        <h3>Example heading element</h3>
+        <p class="h3">A non-heading element</p>
+    - name: Heading level 4
+      markup: |
+        <h4>Example heading element</h4>
+        <p class="h4">A non-heading element</p>
+    - name: Heading level 5
+      markup: |
+        <h5>Example heading element</h5>
+        <p class="h5">A non-heading element</p>
+    - name: Heading level 6
+      markup: |
+        <h6>Example heading element</h6>
+        <p class="h6">A non-heading element</p>
+    - name: Super header
+      markup: |
+        <h1 class="superheader">Example super heading</h1>
+        <p class="superheader">Example super heading</p>
+    tags:
+    - cf-typography
+*/
+
+body {
+    color: @black;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 100%;
+    line-height: @base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 0;
+    .webfont-regular;
+}
+
+h1,
+.h1 {
+    @font-size: 34px;
+    @line-height: 44px;
+
+    margin-bottom: unit( @base-line-height-px / @font-size, em );
+    font-size: unit( @font-size / @base-font-size-px, em );
+    line-height: unit( @line-height / @font-size );
+}
+
+h2,
+.h2 {
+    @font-size: 26px;
+    @line-height: 33px;
+
+    margin-bottom: unit( @base-line-height-px / @font-size, em );
+    font-size: unit( @font-size / @base-font-size-px, em );
+    line-height: unit( @line-height / @font-size );
+}
+
+h3,
+.h3 {
+    @font-size: 22px;
+    @line-height: 28px;
+
+    margin-bottom: unit( @base-line-height-px / @font-size, em );
+    font-size: unit( @font-size / @base-font-size-px, em );
+    line-height: unit( @line-height / @font-size );
+}
+
+h4,
+.h4 {
+    .webfont-medium;
+    @font-size: 18px;
+
+    margin-bottom: unit( @base-line-height-px / @font-size, em );
+    font-size: unit( @font-size / @base-font-size-px, em );
+    line-height: unit( @base-line-height-px / @font-size );
+}
+
+h5,
+h6,
+.h5,
+.h6 {
+    .webfont-demi;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h5,
+.h5 {
+    @font-size: 14px;
+
+    margin-bottom: unit( @base-line-height-px / @font-size, em );
+    font-size: unit( @font-size / @base-font-size-px, em );
+    line-height: unit( @base-line-height-px / @font-size );
+}
+
+h6,
+.h6 {
+    @font-size: 12px;
+
+    margin-bottom: unit( @base-line-height-px / @font-size, em );
+    font-size: unit( @font-size / @base-font-size-px, em );
+    line-height: unit( @base-line-height-px / @font-size );
+}
+
+.superheader {
+    // For when you want a heading that's bigger than a normal H1
+
+    .webfont-demi;
+    @font-size: 48px;
+    @line-height: 66px;
+
+    margin-bottom: unit( @base-line-height-px / @font-size, em );
+    font-size: unit( @font-size / @base-font-size-px, em );
+    line-height: unit( @line-height / @font-size );
+}
+
+
+/* topdoc
+    name: Margins
+    family: cf-typography
+    patterns:
+    - name: Consistent vertical margins
+      notes:
+        - "Assumes that the font size of each of these items remains the default."
+      markup: |
+        <p>Paragraph margin example</p>
+        <p>Paragraph margin example</p>
+    tags:
+    - cf-typography
+*/
+
+p,
+ul,
+ol,
+dl,
+table,
+blockquote,
+figure {
+    margin-top: 0;
+    margin-bottom: unit(@base-line-height, em);
+}
+
+
+/* topdoc
+    name: Default link
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    family: cf-typography
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#">Default link style</a>
+    - name: Visited state
+      markup: |
+        <a href="#" class="visited">Visited link style</a>
+    - name: Hovered state
+      markup: |
+        <a href="#" class="hover">Hovered link style</a>
+    - name: Focused state
+      markup: |
+        <a href="#" class="focus">Focused link style</a>
+    - name: Active state
+      markup: |
+        <a href="#" class="active">Active link style</a>
+    tags:
+    - cf-typography
+*/
+
+a {
+    border-bottom-width: 0;
+    border-bottom-style: dotted;
+    border-bottom-color: @pacific;
+    color: @pacific;
+    text-decoration: none;
+
+    &:visited,
+    &.visited {
+        border-bottom-color: @teal;
+        color: @teal;
+    }
+
+    &:hover,
+    &.hover {
+        border-bottom-style: solid;
+        border-bottom-color: @pacific-50;
+        color: @pacific-50;
+    }
+
+    &:focus,
+    &.focus {
+        border-bottom-style: solid;
+    }
+
+    &:active,
+    &.active {
+        border-bottom-style: solid;
+        border-bottom-color: @navy;
+        color: @navy;
+    }
+}
+
+
+/* topdoc
+    name: Underlined links
+    family: cf-typography
+    patterns:
+    - name: States
+      notes:
+        - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+          be used in production."
+        - "The underline style properties are mostly set above in the a tag.
+          To enable the underline simply set a bottom-border-width as done here."
+      markup: |
+        <p>
+            <a href="#">Default</a>,
+            <a href="#" class="visited">Visited</a>,
+            <a href="#" class="hover">Hovered</a>,
+            <a href="#" class="focus">Focused</a>,
+            <a href="#" class="active">Active</a>
+        </p>
+    - name: Underline conditions
+      notes:
+       - "We're restricting link borders to links within p, li, and dd so that
+         we don't have to override them every time we want a plain link."
+      markup: |
+        <p>
+            <a href="#">A child of a paragraph</a>
+        </p>
+        <ul>
+            <li>
+                <a href="#">A child of a list item</a>
+            </li>
+        </ul>
+        <dl>
+            <dt>
+                Definition list term
+            </dt>
+            <dd>
+                <a href="#">A child of a definition list description</a>
+            </dd>
+        </dl>
+    - name: Exceptions for underlined links
+      notes:
+        - "Inline text links inside of a nav element are not underlined."
+      markup: |
+        <nav>
+            <p>
+                <a href="#">A child of a paragraph</a>
+            </p>
+            <ul>
+                <li>
+                    <a href="#">A child of a list item</a>
+                </li>
+            </ul>
+            <dl>
+                <dt>
+                    Definition list term
+                </dt>
+                <dd>
+                    <a href="#">A child of a definition list description</a>
+                </dd>
+            </dl>
+        </nav>
+    tags:
+    - cf-typography
+*/
+
+p,
+li,
+dd {
+    // Restrict bottom borders to inline text links ...
+
+    a {
+        border-bottom-width: 1px;
+    }
+}
+
+nav a {
+    // ... unless they're part of a nav list
+    border-bottom-width: 0;
+}
+
+
+/* topdoc
+    name: Blockquote
+    family: cf-typography
+    patterns:
+    - name: Default blockquote
+      markup: |
+       <blockquote>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi animi facere modi eaque amet odio!
+       </blockquote> 
+    tags:
+    - cf-typography
+*/
+
+blockquote {
+    padding: 0.5em 0.75em;
+    border-left: 4px solid @green;
+    background: @green-midtone;
+    .webfont-regular;
+
+    & em,
+    & i {
+        .webfont-italic;
+    }
+
+    & strong,
+    & b {
+        .webfont-demi;
+    }
+}
+
+
+/* topdoc
+    name: Lists
+    family: cf-typography
+    patterns:
+    - name: Unordered list
+      markup: |
+       <ul>
+         <li>List item</li>
+         <li>List item</li>
+         <li>List item</li>
+       </ul>
+    tags:
+    - cf-typography
+*/
+
+ul {
+    list-style: square;
+}
+
+
+/* topdoc
+    name: IE overrides
+    family: cf-typography
+    patterns:
+    - name: Prevent faux/double bold and italics in IE 6-8
+      notes:
+        - "Any bold or italic Avenir elements added to the base styles MUST BE added to this section, as well."
+        - "Dependent on using H5BP's conditional classes on the <html> element:
+          https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md"
+      markup: |
+        <h5>I might appear as faux/double bold in older IE without this fix.</h5>
+    tags:
+    - cf-typography
+    - ltie9
+*/
+
+.lt-ie9 {
+    h1, h2, h3, h4, h5, h6,
+    blockquote strong {
+        font-weight: normal !important;
+    }
+
+    blockquote em {
+        font-style: normal !important;
+    }
+}
+
+
+/* topdoc
+  name: EOF
+  eof: true
+*/

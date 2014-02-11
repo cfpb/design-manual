@@ -1,0 +1,91 @@
+/* ==========================================================================
+   CFPB Design Manual
+   Default Table Styles
+   ========================================================================== */
+
+.table {
+    table {
+        margin: 1.375em 0;
+        padding: 0;
+        font-family: @sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background: #FFF;
+    }
+
+    th,
+    td {
+        padding: 0.9375em; /* 15px */
+        background: @gray-5;
+        border: 0;
+    }
+
+    thead {
+        background: @darkgray;
+    }
+
+    thead th,
+    thead td {
+        color: #FFF;
+        background: @darkgray;
+    }
+
+    th {
+        font-family: @sans-serif-demi;
+        font-weight: 600;
+        font-style: normal;
+        text-align: left;
+    }
+
+    tbody > tr:nth-child(odd) > td,
+    tbody > tr:nth-child(odd) > th {
+        background: @gray-10;
+    }
+}
+
+/* ==========================================================================
+   Compact Table
+   ========================================================================== */
+.compact-table {
+    th, td {
+        padding: 0.625em; /* 10px */
+    }
+}
+
+/* ==========================================================================
+   Interactive Table
+   ========================================================================== */
+.interactive-table {
+    thead > tr > th.sorting {
+        position: relative; /* used to position the sorting icon in :after */
+        cursor: pointer;
+    }
+
+     thead > tr > th.sorting:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        min-width: 1.1875em; /* 19px */
+        min-height: 1.1875em; /* 19px */
+        height: 100%;
+        margin-left: 0.625em; /* 10px */
+        background: transparent url("../assets/img/sort_both_light.png") no-repeat left center;
+    }
+
+    /* Interactive table rows have a different background color */
+     tbody th,
+     tbody td,
+     tbody > tr:nth-child(odd) > td,
+     tbody > tr:nth-child(odd) > th {
+        background: #FFF;
+    }
+
+     tbody > tr {
+        border-bottom: 1px solid @gray-20;
+    }
+
+     tbody > tr:hover > td,
+     tbody > tr:hover > th {
+        background: @green-midtone;
+    }
+}

@@ -33,7 +33,9 @@ module.exports = function(grunt) {
         files: {
           'assets/css/<%= pkg.name %>.css': ['<%= banner %>', 'front/src/less/style.less']
         }
-      },
+      }
+      /*
+      ,
       ie8: {
         options: {
           paths: ['src/static']
@@ -42,6 +44,7 @@ module.exports = function(grunt) {
           'assets/css/design-manual.ie8.css': ['front/src/less/design-manual.ie8.less']
         }
       }
+      */
     },
 
     /**
@@ -53,8 +56,8 @@ module.exports = function(grunt) {
     cssmin: {
       minify: {
         files: {
-          'assets/css/design-manual.min.css': ['assets/css/design-manual.css'],
-          'assets/css/design-manual.ie8.min.css': ['design-manual.ie8.css'],
+          'assets/css/<%= pkg.name %>.min.css': ['assets/css/<%= pkg.name %>.css']
+          /*'assets/css/design-manual.ie8.min.css': ['design-manual.ie8.css']*/
         }
       }
     },

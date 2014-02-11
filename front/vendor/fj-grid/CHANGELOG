@@ -1,0 +1,77 @@
+0.6.7:
+  date: 2014-02-04
+  changes:
+    - Adds more info to bower.json.
+
+v0.6.6:
+  date: 2014-02-04
+  changes:
+    - Updates links in package.json.
+    - Updates TERMS.
+
+v0.6.5:
+  date: 2014-01-30
+  changes:
+    - Standardize TERMS and CONTRIBUTING.
+
+v0.6.4:
+  date: 2014-01-09
+  changes:
+    - Start preparing for public release.
+
+v0.6.3:
+  date: 2013-11-07
+  changes:
+    - Correct version number in bower.json.
+
+v0.6.2:
+  date: 2013-11-07
+  changes:
+    - Correct link in CONTRIBUTING.md.
+
+v0.6.1:
+  date: 2013-11-07
+  changes:
+    - Add bower.json file.
+
+v0.6.0:
+  date: 2013-07-17
+  changes: 
+    - Removed overflow:hidden from wrapper.
+
+v0.5.3:
+  date: 2013-07-16
+  changes: 
+    - Add missing boxsizing.htc.
+
+v0.5.2:
+  date: 2013-07-15
+  changes: 
+    - Update README to be accurate and add list of known issues.
+    - Remove a little bit of outdated stuff from ghost.less.
+
+v0.5.1:
+  date: 2013-07-15
+  changes:
+    - Moved repo and updated documentation links accordingly.
+
+v0.5.0:
+  date: 2013-07-13
+  changes:
+    - Total rewrite to use box-sizing and padding instead of calc().
+    - Compile examples' LESS.
+
+v0.4.2:
+  date: 2013-07-12
+  changes:
+    - Add proper git tag.
+
+v0.4.1:
+  date: 2013-07-11
+  changes:
+    - Bump package.json version to aid dependency management.
+
+v0.4.0:
+  date: 2013-07-01
+  changes:
+    - Add grunt-cfpb-internal to manage semantic versioning.

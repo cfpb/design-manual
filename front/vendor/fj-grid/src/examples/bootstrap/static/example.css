@@ -1,0 +1,105 @@
+.col {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+}
+.ie .col {
+  margin-right: -0.26em;
+}
+.lt-ie8 .col {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+body {
+  padding-top: 30px;
+}
+.sidebar {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 25%;
+}
+.ie .sidebar {
+  margin-right: -0.26em;
+}
+.lt-ie8 .sidebar {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+.main-promo {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 75%;
+}
+.ie .main-promo {
+  margin-right: -0.26em;
+}
+.lt-ie8 .main-promo {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+.fun-fact {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 33.33333333333333%;
+}
+.ie .fun-fact {
+  margin-right: -0.26em;
+}
+.lt-ie8 .fun-fact {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+@media only screen and (max-width: 767px) {
+  .sidebar,
+  .main-promo,
+  .fun-fact {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 100%;
+  }
+  .ie .sidebar,
+  .ie .main-promo,
+  .ie .fun-fact {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .sidebar,
+  .lt-ie8 .main-promo,
+  .lt-ie8 .fun-fact {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+}

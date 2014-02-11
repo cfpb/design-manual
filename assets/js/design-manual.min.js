@@ -1,4 +1,4 @@
-* design-manual - v0.2.0 - 2014-02-10 4:30:05 PM
+* design-manual - v0.2.0 - 2014-02-11 11:04:26 AM
 * https://github.com/cfpb/design-manual/
 * A public domain work of the Consumer Financial Protection Bureau */
 

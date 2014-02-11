@@ -1,0 +1,345 @@
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
+body, html {
+    font-family: "Avenir Next", Arial, sans-serif;
+    width: 100%;
+    color: #101820;
+    padding:0  !important;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2 {
+    font-family: "Avenir Next Bold", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h4 {
+    font-family: "Avenir Next Medium", Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 0.5em;
+}
+
+h3,
+h5 {
+    font-family: "Avenir Next Demi", Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h4,
+h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+}
+h3, h4 {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+h5 {
+    margin-bottom: -0.75em;
+}
+
+h2 {
+    margin: 1em 0;
+    border-bottom: 1px solid #eee;
+}
+
+a {
+    color: #0072CE;
+    text-decoration:none;
+}
+
+a:hover {
+    color: #0072CE;
+    text-decoration:none;
+    border-bottom: 1px solid #0072CE;  
+}
+
+a.btn:hover {
+    border-bottom: 1px solid #0072CE;  
+}
+
+header {
+    padding: 1em 2em;
+    border-bottom: 1px solid #101820;  
+}
+
+header a h1 {
+   font-size: 1.6em;
+}
+
+header a{
+   color: #101820;    
+}
+
+header h1 a:hover{
+    border-bottom: none; 
+}
+
+ul ul {
+    margin-bottom: 8px;
+}
+
+.wrapper-content {
+    margin: 2em auto 6em auto;
+    padding: 0 5%;
+}
+
+/* Document Styles
+   ========================================================================== */
+
+#document-content{
+    max-width: 750px;
+}
+
+#document-content .guide-example {
+    margin: 1em 0;
+}
+
+#document-content .guide-example p {
+    margin: 1em 0;
+}
+
+#document-title {
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: solid 1px #101820;
+}
+
+#document-sidebar ul {
+    margin-left:0;
+    list-style-type: none;
+}
+
+#document-sidebar ul ul{
+    margin-left: 1em;
+}
+
+#document-sidebar ul li {
+    margin-bottom: .4em;
+}
+
+#toc, #document-links{
+    margin-bottom: 2em;
+}
+
+#toc a {
+    border-bottom: 1px solid #0072CE;   
+}
+
+footer{
+    border-top: solid #101820 1px;
+    margin-top: 2em;
+    padding:20px 0;
+}
+
+footer a {
+    margin-right:1em;
+}
+
+/* Index
+   ========================================================================== */
+
+.index-intro {
+   margin-bottom: 3em;
+}
+
+.index-intro p {
+    max-width: 850px;
+}
+
+.issues-container {
+    margin-bottom: 5em; 
+}
+
+ul.global-nav {
+    list-style-type: none;
+    margin-left:0;
+    margin-bottom: 3em;
+    columns: 400px 3;
+    -webkit-columns:400px 3; /* Safari and Chrome */
+    -moz-columns:400px 3; /* Firefox */
+}
+
+.global-nav li {
+    display:inline-block;
+    padding: 1.5em 0;
+    width: 400px;
+    height: 65px;
+    border-bottom: solid #D0D0CE 1px;
+}
+
+.global-nav li a {
+    font-size:1.4em;
+    font-family: "Avenir Next Demi", Arial, sans-serif;
+}
+
+.global-nav li .subtitle {
+    display:inline-block;
+}
+
+.global-nav li .mini-stage-label {
+    position:relative;
+    top:-2px;
+    margin-left: 1em;
+}
+
+/* Stage Labels
+   ========================================================================== */
+
+.document-stage p{
+    display: inline-block;
+    padding: 1em;
+}
+
+.mini-stage-label {
+    display: inline-block;
+    text-align: center;
+    padding: .2em;
+    font-size: .83333em;
+    width: 60px;
+}
+
+.stage-draft {
+    border: dashed #101820 1px; 
+}
+
+.stage-comment {
+    border:1px solid #ADDC91;
+    background-color: #ADDC91; 
+}
+
+.stage-none {
+    border:none;
+    background-color: #F7DAD6; 
+}
+
+.stage-final {
+    border: solid #63666A 1px;
+    background-color: #63666A;
+    color: #fff;
+}
+
+.stage-final a{
+    border-bottom: solid #FFF 1px;
+    color: #fff;
+}
+
+/* Issues
+   ========================================================================== */
+
+.ghissues-container {
+    margin-top: 1em;
+
+}
+
+.ghissues-header {
+    cursor: pointer;
+    color: #fff;
+    background-color: #D96A4F;
+    padding: .4em 1em; 
+    margin-bottom: 0;
+}
+
+.ghissues-header:before { 
+    font-family:'FontAwesome';
+    content:" ";
+    display:inline-block;
+    width:16px;
+}
+
+.ghissues-header.open:before {
+    font-family:'FontAwesome';
+    content:" ";
+}
+
+.ghissues-list {
+    background-color: #F7DAD6;
+    padding: .4em 1em; 
+}
+
+.ghissues {
+    margin: 1em 0;
+}
+
+.ghissues-number {
+   display:none;
+}
+
+.ghissues-title {
+    font-size:1.2em;
+    font-family: "Avenir Next Demi", Arial, sans-serif;
+}
+
+.ghissues-label.comments {
+    display:inline-block;
+    padding: .2em .5em;
+    margin-left: 1em;
+    color: #fff;
+    font-size: .8333333em;
+    background-color: #D96A4F;
+}
+
+.ghissues-label.metadata {
+    display:block;
+}
+
+/* Tables
+   ========================================================================== */
+
+.uniform-image-table table img{
+    max-width:200px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+table th,
+table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+table th {
+    font-weight: bold;
+}
+table thead th {
+    vertical-align: bottom;
+}
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+table tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+table table {
+    background-color: #ffffff;
+}
+
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
+    background-color: #f9f9f9;
+}
+
+
+/* Responsive
+   ========================================================================== */
+
+

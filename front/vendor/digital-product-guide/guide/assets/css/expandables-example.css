@@ -1,0 +1,68 @@
+.expandable {
+  background-color: #F2F2F2;
+}
+
+.expandable-header {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.expandable-content {
+  padding: 0 10px 10px 10px;
+}
+
+.expandable:hover {
+  background-color: #E7E7E6;
+}
+
+.open {
+  background-color: #E7E7E6;
+}
+
+.expandable h4 {
+  display: inline;
+  font-size: 1em;
+  line-height: 1.25em;
+  text-transform: none;
+}
+
+.expandable-button {
+  float: right;
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+.expandable-button:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  content: "\f055";
+  margin-left: 8px;
+  line-height: 1.25em;
+  float: right;
+}
+
+.open .expandable-button:before {
+  content: "\f056";
+}
+
+/*
+Demo Specific
+---------------
+*/
+
+.expandable a {
+  border-bottom: none;
+  color: #0072CE;
+}
+
+.expandable header {
+  border-bottom: none;
+}
+
+/* custom class as .hidden is already used in the guide */
+.expandable-hidden {
+  display: none;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cf-grid",
+  "version": "0.6.7",
+  "authors": [
+    {
+      "name": "Consumer Financial Protection Bureau",
+      "url": "http://cfpb.github.io/"
+    }
+  ],
+  "homepage": "https://github.com/cfpb/cf-grid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfpb/cf-grid.git"
+  },
+  "license": "https://github.com/cfpb/cf-grid/blob/master/TERMS.md",
+  "main": "src/ghost.less",
+  "_release": "0.6.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.6.7",
+    "commit": "cd24283bc7598c2cb86f0fcff07d3ac7fd42d396"
+  },
+  "_source": "git://github.cfpb.gov/flapjack/fj-grid.git",
+  "_target": "*",
+  "_originalSource": "git://github.cfpb.gov/flapjack/fj-grid.git"
+}
