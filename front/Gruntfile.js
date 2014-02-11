@@ -102,7 +102,15 @@ module.exports = function(grunt) {
             flatten: true,
             src: ['front/vendor/box-sizing-polyfill/boxsizing.htc'],
             dest: 'assets/css/',
-            filter: 'isFile'}
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/fj-buttons/demo/custom.html'],
+            dest: '_includes/ui-toolkit/buttons',
+            filter: 'isFile'
+          }
         ]
       }
     }
