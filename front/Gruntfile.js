@@ -14,10 +14,15 @@ module.exports = function(grunt) {
      * We'll be inserting it at the top of minified assets.
      */
     banner:
-      '* <%= pkg.name %> - v<%= pkg.version %> - ' +
-      '<%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %>\n' +
-      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-      '* A public domain work of the <%= pkg.author.name %> */\n\n',
+      '/*\n' +
+      ' * ==========================================================================\n' +
+      ' * Package name: <%= pkg.name %>\n' +
+      ' * Version: <%= pkg.version %>\n' +
+      ' * Last modified: <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %>\n' +
+      ' * URL: <%= pkg.homepage %>\n' +
+      ' * A public domain work of the <%= pkg.author.name %>\n' +
+      ' * ==========================================================================\n' +
+      '*/\n\n',
 
     /**
      * LESS: https://github.com/gruntjs/grunt-contrib-less
@@ -41,7 +46,7 @@ module.exports = function(grunt) {
           paths: ['src/static']
         },
         files: {
-          'assets/css/design-manual.ie8.css': ['front/src/less/design-manual.ie8.less']
+          'assets/css/<%= pkg.name %>.ie8.css': ['front/src/less/<%= pkg.name %>.ie8.less']
         }
       }
       */
@@ -57,7 +62,7 @@ module.exports = function(grunt) {
       minify: {
         files: {
           'assets/css/<%= pkg.name %>.min.css': ['assets/css/<%= pkg.name %>.css']
-          /*'assets/css/design-manual.ie8.min.css': ['design-manual.ie8.css']*/
+          /*'assets/css/<%= pkg.name %>.ie8.min.css': ['<%= pkg.name %>.ie8.css']*/
         }
       }
     },
@@ -85,8 +90,8 @@ module.exports = function(grunt) {
         dest: 'assets/js/html5shiv-printshiv.js'
       },
       main: {
-        src: ['front/src/js/design-manual.js'],
-        dest: 'assets/js/design-manual.min.js'
+        src: ['front/src/js/<%= pkg.name %>.js'],
+        dest: 'assets/js/<%= pkg.name %>.min.js'
       }
     },
 

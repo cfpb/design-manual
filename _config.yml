@@ -44,7 +44,7 @@ mainnav:
 - text: Identity
   url: identity/brand-guidelines.html
   internal: true
-- text: UI Toolkit
+- text: UI toolkit
   url: ui-toolkit/buttons.html
   internal: true
 - text: Downloads
