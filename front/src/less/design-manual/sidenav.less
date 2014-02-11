@@ -7,29 +7,32 @@
 
  /* Secondary nav */
 .secondary-nav {
-    margin: 0;
-    padding: 0;
-    border-top: 2px solid @gray-10;
-    	li {
-    		border-bottom: 2px solid @gray-10;
-    		list-style: none;
-    		padding: 0.5em 1em;
-    	}
-    	a {
-		    border: none;
-		    color: @gray;
-		}
-		a:visited {
-		    border: none;
-		    color: @gray;
-		}
-		a:hover,
-		a:focus {
-		    border-bottom: 1px solid @gray-80;
-		    color: @gray-80;
-		}
-		a:active {
-		    border-bottom: 1px solid @gray-50;
-		    color: @gray-50;
-		}
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid @gray-10;
+    li {
+      border-bottom: 2px solid @gray-10;
+      list-style: none;
+      padding: 0.5em 1em;
+    }
+    a {
+      border: none;
+      color: @gray;
+    }
+    a:visited {
+      border: none;
+      color: @gray;
+    }
+    a:hover,
+    a:focus {
+      border-bottom: 1px solid @gray-80;
+      color: @gray-80;
+    }
+    a:active {
+      border-bottom: 1px solid @gray-50;
+      color: @gray-50;
+    }
+  .secondary-nav-active {
+    border-left: 4px solid @green;
+  }
 }

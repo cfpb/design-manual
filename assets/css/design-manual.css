@@ -1354,6 +1354,9 @@ img {
   border-bottom: 1px solid #babbbd;
   color: #babbbd;
 }
+.secondary-nav .secondary-nav-active {
+  border-left: 4px solid #2cb34a;
+}
 /* ==========================================================================
    CFPB Design Manual
    Structure and Media Queries
@@ -1528,6 +1531,9 @@ img {
     border-bottom: 4px solid #addc91;
     margin-bottom: -4px;
     color: #101820;
+  }
+  .main-nav-active {
+    background-color: #dbedd4;
   }
   .sidebar {
     display: inline-block;
