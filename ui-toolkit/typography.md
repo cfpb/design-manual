@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Typepography
+title: Typography
 category: UI toolkit
 ---
 
-{% include ui-toolkit/typepography/custom.html %}
+{% include ui-toolkit/typography/custom.html %}
