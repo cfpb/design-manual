@@ -4,4 +4,4 @@ title:  Tables
 category: UI toolkit
 ---
 
-Content here!
+{% include ui-toolkit/pagination/tables.html %}

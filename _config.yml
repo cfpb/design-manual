@@ -45,10 +45,10 @@ mainnav:
   url: identity/brand-guidelines.html
   internal: true
 - text: UI toolkit
-  url: ui-toolkit/buttons.html
+  url: ui-toolkit/beams.html
   internal: true
 - text: Downloads
-  url: downloads/minicons.html
+  url: downloads/style-guide.html
   internal: true
 
 # Secondary Navigation
@@ -66,10 +66,6 @@ secondarynav:
   url: guides/creating-accessible-interfaces.html
   internal: true
   category: Guides
-- text: UX checklist
-  url: guides/ux-checklist.html
-  internal: true
-  category: Guides
 - text: Effective forms
   url: guides/effective-forms.html
   internal: true
@@ -77,44 +73,47 @@ secondarynav:
 - text: Filtering patterns
   url: guides/filtering-patterns.html
   internal: true
+  category: Guides  
+- text: UX checklist
+  url: guides/ux-checklist.html
+  internal: true
   category: Guides
 - text: Brand guidelines
   url: identity/brand-guidelines.html
-  internal: true
-  category: Identity
-- text: Logo
-  url: identity/logo.html
-  internal: true
-  category: Identity
-- text: Typography principles
-  url: identity/typography.html
   internal: true
   category: Identity
 - text: Color principles
   url: identity/color-principles.html
   internal: true
   category: Identity
-- text: Minicons
-  url: identity/minicons.html
+- text: Illustration
+  url: identity/illustration.html
   internal: true
   category: Identity
 - text: Isocons
   url: identity/isocons.html
   internal: true
   category: Identity
-- text: Illustration
-  url: identity/illustration.html
+- text: Logo
+  url: identity/logo.html
+  internal: true
+  category: Identity
+- text: Minicons
+  url: identity/minicons.html
   internal: true
   category: Identity
 - text: Photography
   url: identity/photography.html
+  internal: true
+  category: Identity  
+- text: Typography principles
+  url: identity/typography.html
   internal: true
   category: Identity
 - text: Video
   url: identity/video.html
   internal: true
   category: Identity
-
 - text: Beams
   url: ui-toolkit/beams.html
   internal: true
@@ -175,8 +174,6 @@ secondarynav:
   url: downloads/minicons.html
   internal: true
   category: Downloads
-
-
 
 
 # Footer Navigation
