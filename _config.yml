@@ -114,62 +114,69 @@ secondarynav:
   url: identity/video.html
   internal: true
   category: Identity
-- text: Buttons
-  url: ui-toolkit/buttons.html
-  internal: true
-  category: UI toolkit
+
 - text: Beams
   url: ui-toolkit/beams.html
   internal: true
   category: UI toolkit
-- text: Links
-  url: ui-toolkit/links.html
+- text: Buttons
+  url: ui-toolkit/buttons.html
   internal: true
   category: UI toolkit
-- text: Grid and layout
-  url: ui-toolkit/grid-and-layout.html
-  internal: true
-  category: UI toolkit
-- text: Pagination
-  url: ui-toolkit/pagination.html
-  internal: true
-  category: UI toolkit
-- text: Form fields
-  url: ui-toolkit/form-fields.html
-  internal: true
-  category: UI toolkit
-- text: Modals
-  url: ui-toolkit/modals.html
-  internal: true
-  category: UI toolkit
-- text: Tooltips
-  url: ui-toolkit/tooltips.html
+- text: Example Page with Elements
+  url: ui-toolkit/example-page-with-elements.html
   internal: true
   category: UI toolkit
 - text: Expandables
   url: ui-toolkit/expandables.html
   internal: true
   category: UI toolkit
+- text: Form fields
+  url: ui-toolkit/form-fields.html
+  internal: true
+  category: UI toolkit
+- text: Grid and layout
+  url: ui-toolkit/grid-and-layout.html
+  internal: true
+  category: UI toolkit  
+- text: Links
+  url: ui-toolkit/links.html
+  internal: true
+  category: UI toolkit
+- text: Modals
+  url: ui-toolkit/modals.html
+  internal: true
+  category: UI toolkit
+- text: Pagination
+  url: ui-toolkit/pagination.html
+  internal: true
+  category: UI toolkit
 - text: Tables
   url: ui-toolkit/tables.html
+  internal: true
+  category: UI toolkit
+- text: Tooltips
+  url: ui-toolkit/tooltips.html
   internal: true
   category: UI toolkit
 - text: Typography
   url: ui-toolkit/typography.html
   internal: true
   category: UI toolkit
-- text: Minicon font and assets
-  url: downloads/minicons.html
+- text: Brand 2.0 style guide
+  url: downloads/style-guide.html
   internal: true
   category: Downloads
 - text: Logo suite
   url: downloads/logo-suite.html
   internal: true
   category: Downloads
-- text: Brand 2.0 style guide
-  url: downloads/style-guide.html
+- text: Minicon font and assets
+  url: downloads/minicons.html
   internal: true
   category: Downloads
+
+
 
 
 # Footer Navigation

@@ -134,6 +134,7 @@ module.exports = function(grunt) {
             dest: '_includes/ui-toolkit/colors/',
             filter: 'isFile'
           },
+          /*
           {
             expand: true,
             flatten: true,
@@ -141,6 +142,8 @@ module.exports = function(grunt) {
             dest: '_includes/ui-toolkit/expandables/',
             filter: 'isFile'
           },
+          */
+          /*
           {
             expand: true,
             flatten: true,
@@ -148,6 +151,7 @@ module.exports = function(grunt) {
             dest: '_includes/ui-toolkit/forms/',
             filter: 'isFile'
           },
+          */
           /* NO GRID DEMO (YET) -- This should be fixed when everything is moved into the gh-pages repo
           {
             expand: true,
