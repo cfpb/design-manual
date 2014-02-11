@@ -1533,7 +1533,11 @@ img {
     margin-bottom: -4px;
     color: #101820;
   }
-  .main-nav-active a {
+  .main-nav-active a:link,
+  .main-nav-active a:visited,
+  .main-nav-active a:hover,
+  .main-nav-active a:focus,
+  .main-nav-active a:active {
     border-bottom: 4px solid #addc91;
     margin-bottom: -4px;
     color: #101820;

@@ -97,10 +97,15 @@
     }
   }
   .main-nav-active a {
-    border-bottom: 4px solid @green-midtone;
-    margin-bottom: -4px;
-    color: @black;
-
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 4px solid @green-midtone;
+      margin-bottom: -4px;
+      color: @black;
+    }
   }
   .sidebar {
     .column(3);
