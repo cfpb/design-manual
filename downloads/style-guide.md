@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Brand 2.0 style
+title: Brand 2.0 style guide
 category: Downloads
 ---
 
