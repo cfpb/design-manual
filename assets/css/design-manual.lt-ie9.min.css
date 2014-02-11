@@ -1711,8 +1711,10 @@ img {
   color: #101820;
 }
 
-.main-nav-active {
-  background-color: #dbedd4;
+.main-nav-active a {
+  border-bottom: 4px solid #addc91;
+  margin-bottom: -4px;
+  color: #101820;
 }
 
 .sidebar {
