@@ -24,6 +24,24 @@ module.exports = function(grunt) {
       ' * ==========================================================================\n' +
       '*/\n\n',
 
+
+    concat: {
+      main: {
+        src: [
+          'front/vendor/font-awesome/css/font-awesome.min.css'
+        ],
+        dest: 'assets/css/vendor.min.css',
+      },
+      ltIE8: {
+        src: [
+          'front/vendor/font-awesome/css/font-awesome-ie7.min.css'
+        ],
+        // Using .min keeps topdoc from rendering it as a demo page
+        dest: 'assets/css/vendor.ie8.min.css',
+      },
+    },
+
+
     /**
      * LESS: https://github.com/gruntjs/grunt-contrib-less
      * 
@@ -105,7 +123,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          // includes files within path
+          /* Vendor Packages */
           {
             expand: true,
             flatten: true,
@@ -113,6 +131,14 @@ module.exports = function(grunt) {
             dest: 'assets/css/',
             filter: 'isFile'
           },
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/font-awesome/font/*'],
+            dest: 'assets/font/',
+            filter: 'isFile'
+          },
+          /* Capital Framework Demos */
           {
             expand: true,
             flatten: true,
@@ -176,10 +202,12 @@ module.exports = function(grunt) {
   /**
    * The above tasks are loaded here.
    */
-  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
 
   /**
    * Grunt is installed in a sub-directory called "front",  so back out one directory:
@@ -189,6 +217,6 @@ module.exports = function(grunt) {
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['less', 'cssmin', 'uglify', 'copy']);
+  grunt.registerTask('default', ['concat', 'less', 'cssmin', 'uglify', 'copy']);
 
 };
