@@ -21,6 +21,13 @@ front/node_modules
 #############################
 # uncomment once cf-framework is in the public github:
 #front/vendor
+front/vendor/box-sizing-polyfill
+front/vendor/digital-product-guide
+front/vendor/font-awesome
+front/vendor/highlight
+front/vendor/html5shiv
+front/vendor/jquery
+front/vendor/normalize-css
 
 # Test reports #
 ###################
