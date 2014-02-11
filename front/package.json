@@ -1,7 +1,7 @@
 {
   "name": "design-manual",
   "description": "A set of principles and standards for the Consumer Financial Protection Bureau.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://github.com/cfpb/design-manual/",
   "author": {
     "name": "Consumer Financial Protection Bureau",
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4.2",
+    "grunt-autoprefixer": "latest",
     "grunt-bower-requirejs": "~0.7.1",
     "grunt-bower-task": "~0.3.2",
     "grunt-combine-media-queries": "~1.0.2",
@@ -45,6 +46,7 @@
     "grunt-contrib-requirejs": "~0.4.0",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-watch": "~0.4.4",
+    "grunt-legacssy": "~0.3.1",
     "grunt-docco": "~0.2.0",
     "grunt-notify": "~0.2.4",
     "grunt-remove-logging": "~0.1.1",

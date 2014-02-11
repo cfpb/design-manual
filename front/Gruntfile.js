@@ -37,7 +37,7 @@ module.exports = function(grunt) {
           'front/vendor/font-awesome/css/font-awesome-ie7.min.css'
         ],
         // Using .min keeps topdoc from rendering it as a demo page
-        dest: 'assets/css/vendor.ie8.min.css',
+        dest: 'assets/css/vendor.lt-ie9.min.css',
       },
     },
 
@@ -69,6 +69,31 @@ module.exports = function(grunt) {
       }
       */
     },
+
+    autoprefixer: {
+      options: {
+        // Options we might want to enable in the future.
+        diff: false,
+        map: false
+      },
+      multiple_files: {
+        // Prefix all CSS files found in `src/static/css` and overwrite.
+        expand: true,
+        src: 'assets/css/<%= pkg.name %>.css'
+      },
+    },
+
+    legacssy: {
+      demo: {
+        options: {
+          legacyWidth: 960
+        },
+        files: {
+          'assets/css/<%= pkg.name %>.lt-ie9.min.css': 'assets/css/<%= pkg.name %>.css'
+        }
+      }
+    },
+
 
     /**
      * CSSMin: https://github.com/gruntjs/grunt-contrib-cssmin
@@ -202,12 +227,13 @@ module.exports = function(grunt) {
   /**
    * The above tasks are loaded here.
    */
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-
+  grunt.loadNpmTasks('grunt-legacssy');
 
   /**
    * Grunt is installed in a sub-directory called "front",  so back out one directory:
@@ -217,6 +243,6 @@ module.exports = function(grunt) {
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['concat', 'less', 'cssmin', 'uglify', 'copy']);
+  grunt.registerTask('default', ['concat', 'less', 'autoprefixer', 'legacssy', 'cssmin', 'uglify', 'copy']);
 
 };
