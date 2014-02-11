@@ -126,6 +126,10 @@ secondarynav:
   url: ui-toolkit/links.html
   internal: true
   category: UI toolkit
+- text: Grid and layout
+  url: ui-toolkit/grid-and-layout.html
+  internal: true
+  category: UI toolkit
 - text: Pagination
   url: ui-toolkit/pagination.html
   internal: true

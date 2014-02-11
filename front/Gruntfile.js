@@ -92,6 +92,10 @@ module.exports = function(grunt) {
       main: {
         src: ['front/src/js/<%= pkg.name %>.js'],
         dest: 'assets/js/<%= pkg.name %>.min.js'
+      },
+      capitalframework: {
+        src: ['front/vendor/fj-expandables/src/js/expandables.js'],
+        dest: 'assets/js/capital-framework.min.js'
       }
     },
 
