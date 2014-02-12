@@ -1,7 +1,25 @@
 /* ==========================================================================
    CFPB Design Manual
-   Structure and Media Queries
+   MAIN CSS FILE
    ========================================================================== */
+
+body, html {
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Avenir Next", Arial, sans-serif;
+    line-height: 1.375;
+    color: @black; /* CFPB black */
+
+    /* Improve default text rendering, handling of kerning pairs and ligatures */
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* New CSS3 syntax supported by Chrome */
+}
+
 
 /* Vertical padding */
 .header,

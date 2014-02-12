@@ -1332,73 +1332,6 @@ samp {
 
 /* ==========================================================================
    CFPB Design Manual
-   Header
-   ========================================================================== */
-
-/* Site title */
-
-.site-title {
-  text-align: center;
-  /* Site title / class on <a> */
-}
-
-.site-title h1 {
-  font-size: 1.625em;
-  /* 26px */
-}
-
-.site-title .title-link {
-  color: #919395;
-}
-
-.site-title .title-link .site-org {
-  color: #75787b;
-  font-family: "Avenir Next Medium", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
-
-.site-title .title-link:visited {
-  color: #919395;
-}
-
-/* Site logo */
-
-.logo {
-  display: none;
-}
-
-/* ==========================================================================
-   CFPB Design Manual
-   Lists
-   ========================================================================== */
-
-ul,
-ol {
-  list-style-position: inside;
-  padding: 0;
-}
-
-ul {
-  list-style-type: square;
-}
-
-li ul,
-li ol {
-  margin: 0 1.375em;
-}
-
-dl dd {
-  margin-left: 1.375em;
-}
-
-dt {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-weight: 600;
-}
-
-/* ==========================================================================
-   CFPB Design Manual
    Media
    ========================================================================== */
 
@@ -1471,8 +1404,27 @@ img {
 
 /* ==========================================================================
    CFPB Design Manual
-   Structure and Media Queries
+   MAIN CSS FILE
    ========================================================================== */
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Avenir Next", Arial, sans-serif;
+  line-height: 1.375;
+  color: #101820;
+  /* CFPB black */
+  /* Improve default text rendering, handling of kerning pairs and ligatures */
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* New CSS3 syntax supported by Chrome */
+}
 
 /* Vertical padding */
 
@@ -1714,6 +1666,73 @@ img {
 
 /* Widescreen (1600px) */
 
+/* ==========================================================================
+   CFPB Design Manual
+   Lists
+   ========================================================================== */
+
+ul,
+ol {
+  list-style-position: inside;
+  padding: 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li ul,
+li ol {
+  margin: 0 1.375em;
+}
+
+dl dd {
+  margin-left: 1.375em;
+}
+
+dt {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   CFPB Design Manual
+   Header
+   ========================================================================== */
+
+/* Site title */
+
+.site-title {
+  text-align: center;
+  /* Site title / class on <a> */
+}
+
+.site-title h1 {
+  font-size: 1.625em;
+  /* 26px */
+}
+
+.site-title .title-link {
+  color: #919395;
+}
+
+.site-title .title-link .site-org {
+  color: #75787b;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.site-title .title-link:visited {
+  color: #919395;
+}
+
+/* Site logo */
+
+.logo {
+  display: none;
+}
+
 /* Mobile portrait (320px) */
 
 /* Mobile landscape (480px) */
@@ -1814,43 +1833,75 @@ img {
    Side Nav Mobile Styles
    ========================================================================== */
 
-/* Secondary nav */
-
+/*
 .secondary-nav {
   margin: 0;
   padding: 0;
-  border-top: 2px solid #f1f2f2;
+  border-top: 2px solid @gray-10;
+    li {
+      border-bottom: 2px solid @gray-10;
+      list-style: none;
+      padding: 0.5em 1em;
+    }
+    a {
+      border: none;
+      color: @gray;
+    }
+    a:visited {
+      border: none;
+      color: @gray;
+    }
+    a:hover,
+    a:focus {
+      border-bottom: 1px solid @gray-80;
+      color: @gray-80;
+    }
+    a:active {
+      border-bottom: 1px solid @gray-50;
+      color: @gray-50;
+    }
+  .secondary-nav-active {
+    border-left: 4px solid @green;
+  }
+}
+*/
+
+.secondary-nav a {
+  display: block;
+  padding: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.secondary-nav a,
+.secondary-nav a:link,
+.secondary-nav a:visited {
+  border-bottom: none;
+  color: #75787b;
+}
+
+.secondary-nav li:hover,
+.secondary-nav a:focus,
+.secondary-nav li:active,
+.secondary-nav .secondary-nav-active {
+  color: #75787b;
+  border-left: 4px solid #2cb34a;
+  background-color: transparent;
+  border-bottom: 1px solid #babbbd;
+  padding-left: 0;
+}
+
+.secondary-nav ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #babbbd;
 }
 
 .secondary-nav li {
-  border-bottom: 2px solid #f1f2f2;
   list-style: none;
-  padding: 0.5em 1em;
-}
-
-.secondary-nav a {
-  border: none;
-  color: #75787b;
-}
-
-.secondary-nav a:visited {
-  border: none;
-  color: #75787b;
-}
-
-.secondary-nav a:hover,
-.secondary-nav a:focus {
-  border-bottom: 1px solid #919395;
-  color: #919395;
-}
-
-.secondary-nav a:active {
   border-bottom: 1px solid #babbbd;
-  color: #babbbd;
-}
-
-.secondary-nav .secondary-nav-active {
-  border-left: 4px solid #2cb34a;
+  font-size: 1.125em;
+  padding-left: 4px;
 }
 
 /* ==========================================================================
