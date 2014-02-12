@@ -1452,9 +1452,6 @@ html {
     *zoom: 1;
     *behavior: url(boxsizing.htc);
   }
-  .footer {
-    border-top: 4px solid #2cb34a;
-  }
   /* Inner content */
   .content-25 {
     display: inline-block;
@@ -1732,6 +1729,52 @@ dt {
   border-bottom: 1px solid #babbbd;
   font-size: 1.125em;
   padding-left: 4px;
+}
+.footer {
+  padding: 0;
+  border-top: 2px solid #2cb34a;
+  background: #F1F2F2;
+  font-family: "Avenir Next", Arial, sans-serif;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.footer .footer-section {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: .5em;
+  margin-left: .5em;
+}
+.footer .footer-links {
+  float: left;
+}
+.footer .footer-oss {
+  float: right;
+}
+.footer .footer-links ul {
+  list-style: none;
+  margin: 1em .5em 1em .25em;
+}
+.footer h4 {
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+  margin-left: .25em;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.footer p {
+  font-size: 0.875em;
+  line-height: 1.42857142857143;
+  margin-left: .25em;
+}
+.footer a,
+.footer a:link,
+.footer a:visited {
+  border-bottom: 1px dotted;
+}
+.footer a:hover {
+  border-bottom: 1px dotted #0072ce;
 }
 /* ==========================================================================
    CFPB Design Manual

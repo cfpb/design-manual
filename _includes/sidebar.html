@@ -2,27 +2,29 @@
   <aside>
     <a class="skip-link visually-hidden focusable" href="#content">Skip to Main Content</a>
     <nav role="navigation">
-      <h3>{{ page.category }}</h3>
-      <ul class="secondary-nav">
-        {% for link in site.secondarynav %}
-          {% if link.category == page.category %}
-            {% if link.internal == true %}
-              <li{% if link.text == page.title %} class="secondary-nav-active"{% endif %}><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
-            {% else %}
-              <li{% if link.text == page.title %} class="secondary-nav-active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+      <div class="secondary-nav">
+        <h3>{{ page.category }}</h3>
+        <ul>
+          {% for link in site.secondarynav %}
+            {% if link.category == page.category %}
+              {% if link.internal == true %}
+                <li{% if link.text == page.title %} class="secondary-nav-active"{% endif %}><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
+              {% else %}
+                <li{% if link.text == page.title %} class="secondary-nav-active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+              {% endif %}
+            </li>
             {% endif %}
-          </li>
-          {% endif %}
-          <!--
-            link.text: {{ link.text }}
-            link.category: {{ link.category }}
-            link.url: {{ link.url }}
-            page.title: {{ page.title }}
-            page.category: {{ page.category }}
-            page.url: {{ page.url }}
-          -->
-        {% endfor %}
-      </ul>
+            <!--
+              link.text: {{ link.text }}
+              link.category: {{ link.category }}
+              link.url: {{ link.url }}
+              page.title: {{ page.title }}
+              page.category: {{ page.category }}
+              page.url: {{ page.url }}
+            -->
+          {% endfor %}
+        </ul>
+      </div>
     </nav>
   </aside>
 </div>
