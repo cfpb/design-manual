@@ -1,33 +1,22 @@
 /* ==========================================================================
    CFPB Design Manual
-   MAIN CSS FILE
+   Content
    ========================================================================== */
 
-body, html {
-    min-height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: "Avenir Next", Arial, sans-serif;
-    line-height: 1.375;
-    color: @black; /* CFPB black */
+/* Mobile first means all content boxes are full width */
 
-    /* Improve default text rendering, handling of kerning pairs and ligatures */
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    word-wrap: break-word;
-    overflow-wrap: break-word; /* New CSS3 syntax supported by Chrome */
-}
-body {
-    padding-bottom: 20em; /* Making room for absolutely-positioned footer */
+.content {
+  padding: 2em 0;
+  .column(12);
+
+  .content-25,
+  .content-75 {
+    .column(12);
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
 }
 
-
-/* Set up containers */
-.wrap {
-   .wrapper();
-}
 
 
 /* Media Queries
@@ -45,6 +34,19 @@ body {
 
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
+
+  .content {
+    .column(9);
+
+    /* Inner content - nested grid inside content */
+    .content-25 {
+      .column(3);
+    }
+
+    .content-75 {
+      .column(9);
+    }
+  }
 
 }
 

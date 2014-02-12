@@ -1,0 +1,64 @@
+/* ==========================================================================
+   CFPB Design Manual
+   Sidebar and Secondary Nav
+   ========================================================================== */
+
+
+.sidebar {
+  .column(12);
+}
+
+/* Media Queries
+   ========================================================================== */
+
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+
+  .sidebar {
+    .column(3);
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
+  }
+
+}
+
+
+.secondary-nav {
+  a {
+    display: block;
+    padding: 10px;
+    transition: .4s;
+  }
+
+  a,
+  a:link,
+  a:visited {
+    border-bottom: none;
+    color: @gray;
+  }
+
+  li:hover,
+  a:focus,
+  li:active,
+  .secondary-nav-active {
+    color: @gray;
+    border-left: 4px solid @green;
+    background-color: transparent;
+    border-bottom: 1px solid @gray-50;
+    padding-left: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid @gray-50;
+  }
+
+  li {
+    list-style: none;
+    border-bottom: 1px solid @gray-50;
+    font-size: 1.125em;
+    padding-left: 4px;
+  }
+
+}

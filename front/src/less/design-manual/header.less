@@ -1,31 +1,96 @@
 /* ==========================================================================
-   CFPB Design Manual
-   Header
-   ========================================================================== */
+	 CFPB Design Manual
+	 Header
+	 ========================================================================== */
 
-/* Site title */
-.site-title {
-	text-align: center;
-	
-	h1 {
-    	font-size: 1.625em; /* 26px */
-	}
 
-	/* Site title / class on <a> */
-	.title-link {
-		color: @gray-80;
+/* Mobile-First Defaults: */
+.header {
+	border-bottom: 4px solid @green;
+	padding: 2em 0;
+
+	.site-title {
+		.column(12);
+		text-align: center;
+
+		h1 {
+			font-size: 1.625em; /* 26px */
+		}
+		.title-link {
+			color: @gray-80;
 			.site-org {
 				color: @gray;
-                .webfont-medium;
+				.webfont-medium;
 			}
+		}
+		.title-link:visited {
+			color: @gray-80;
+		}
 	}
 
-	.title-link:visited {
-    	color: @gray-80;
-    }
+	.site-logo {
+		.column(12);
+		text-align: right;
+
+		.logo {
+			display: none;
+		}
+	}
 }
 
-/* Site logo */
-.logo {
-	display: none;
+
+
+/* Media Queries
+	 ========================================================================== */
+
+/* Mobile portrait (320px) */
+@media only screen and (min-width: 20em) {
+
+}
+
+/* Mobile landscape (480px) */
+@media only screen and (min-width: 30em) {
+
+}
+
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+	.header {
+		border-bottom: 4px solid @green;
+		padding-bottom: 0;
+
+		.site-title {
+			.column(6);
+			text-align: left;
+		}
+
+		.site-logo {
+			.column(6);
+			text-align: right;
+
+			.logo {
+				display: inline;
+			}
+		}
+	}
+}
+
+/* Tablet/netbook (768px) */
+@media only screen and (min-width: 48em) { 
+
+}
+
+/* Landscape tablet/netbook/laptop (1024px) */
+@media only screen and (min-width: 64em) { 
+
+}
+
+/* Desktop (1280px) */ 
+@media only screen and (min-width: 80em) { 
+
+}
+
+/* Widescreen (1600px) */
+@media only screen and (min-width: 100em) { 
+
 }
