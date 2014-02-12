@@ -1547,6 +1547,11 @@ body {
 
 /* SMALL TABLET 600px */
 
+.sidebar,
+.content {
+  margin-top: 6.25em;
+}
+
 body {
   padding-bottom: 13.5em;
 }
