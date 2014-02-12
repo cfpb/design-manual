@@ -1537,6 +1537,115 @@ body {
 
 /* Widescreen (1600px) */
 
+/* FROM HMDA API DOCS */
+
+/* MOBILE PORTRAIT 480px */
+
+.mobile-warning {
+  display: none;
+}
+
+/* SMALL TABLET 600px */
+
+body {
+  padding-bottom: 13.5em;
+}
+
+/* DESKTOP STYLES 640px */
+
+body {
+  padding-bottom: 12em;
+}
+
+/* Only fix sidebar position if the screen has enough height (800px) */
+
+/*aside {
+          position: fixed;
+      }*/
+
+/* LAYOUT */
+
+header {
+  position: fixed;
+}
+
+/* LANDSCAPE TABLET/NETBOOK/LAPTOP (1024PX) */
+
+/* full header design */
+
+/* PRINT */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    /*prints faster and cheaper */
+    text-shadow: none !important;
+    -webkit-filter: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't print links for images, javascript or internal links */
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  /* Repeat header row at top of each printed page */
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+@page {
+    margin: 0.5cm;
+}
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
 /* ==========================================================================
    CFPB Design Manual
    Lists
@@ -1576,8 +1685,6 @@ dt {
 .header {
   border-bottom: 4px solid #2cb34a;
   padding: 2em 0;
-  top: 0;
-  z-index: 99999;
 }
 
 .header .site-title {
@@ -1660,7 +1767,9 @@ dt {
 /* Small tablet (600px) */
 
 .header {
-  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
   border-bottom: 4px solid #2cb34a;
   padding-bottom: 0;
 }
@@ -1931,7 +2040,6 @@ body {
   padding-bottom: 1em;
   border-top: 2px solid #babbbd;
   background: #f1f2f2;
-  font-family: "Avenir Next", Arial, sans-serif;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -1975,7 +2083,6 @@ footer {
   padding: 2em 0;
   border-top: 2px solid #babbbd;
   background: #f1f2f2;
-  font-family: "Avenir Next", Arial, sans-serif;
 }
 
 /* TABLET/NETBOOK 744px */
@@ -2133,6 +2240,27 @@ footer {
   display: inline;
   *zoom: 1;
   *behavior: url(boxsizing.htc);
+}
+
+/* LAYOUT */
+
+.sidebar {
+  position: absolute;
+}
+
+/* TABLET/NETBOOK 744px */
+
+.sidebar {
+  margin-top: 5em;
+  width: 13em;
+  position: fixed;
+}
+
+.sidebar {
+  margin-top: 6.25em;
+  width: 13.75em;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .secondary-nav a {

@@ -8,8 +8,7 @@
 .header {
 	border-bottom: 4px solid @green;
 	padding: 2em 0;
-    top: 0;
-    z-index: 99999;
+
 
 	.site-title {
 		.column(12);
@@ -58,7 +57,9 @@
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
 	.header {
-		padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
 		border-bottom: 4px solid @green;
 		padding-bottom: 0;
 
