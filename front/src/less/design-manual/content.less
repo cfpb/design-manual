@@ -6,7 +6,10 @@
 /* Mobile first means all content boxes are full width */
 
 .content {
+  margin-top: 0;
   padding: 2em 0;
+  /* only here to keep footer sticky */
+  overflow: auto;
   .column(12);
 
   .content-25,
@@ -16,7 +19,6 @@
     padding-top: 1em;
   }
 }
-
 
 
 /* Media Queries

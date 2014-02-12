@@ -61,3 +61,37 @@
 .invisible {
     visibility: hidden;
 }
+
+
+/* HMDA API DOCS BELOW */
+
+
+/* MICRO CLEARFIX HACK */
+.cf:before,  .cf:after {
+    content: "";
+    display: table;
+}
+ /* For modern browsers */
+.cf:after {
+    clear: both;
+}
+.cf {
+    /* For IE 6/7 (trigger hasLayout) */
+    zoom: 1;
+}
+
+/* Image replacement */
+.ir {
+    background-color: transparent;
+    border:0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}

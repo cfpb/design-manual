@@ -1239,6 +1239,34 @@ img {
   background: #43484e;
   color: #FFF;
 }
+/* ALIGNMENT */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+.mobile-warning {
+  display: block;
+  background-color: #f6d9d3;
+  padding: .85em;
+  margin: .5em 0;
+  font-size: .75em;
+}
+svg:not(:root) {
+  /* corrects IE9 overflow */
+
+  overflow: hidden;
+}
 /* ==========================================================================
    CFPB Design Manual
    Less Mixins
@@ -1268,6 +1296,37 @@ img {
 }
 .invisible {
   visibility: hidden;
+}
+/* HMDA API DOCS BELOW */
+/* MICRO CLEARFIX HACK */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+/* For modern browsers */
+.cf:after {
+  clear: both;
+}
+.cf {
+  /* For IE 6/7 (trigger hasLayout) */
+
+  zoom: 1;
+}
+/* Image replacement */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+
+  *text-indent: -9999px;
+}
+.ir before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -1374,6 +1433,8 @@ dt {
 .header {
   border-bottom: 4px solid #2cb34a;
   padding: 2em 0;
+  top: 0;
+  z-index: 99999;
 }
 .header .site-title {
   display: inline-block;
@@ -1448,6 +1509,7 @@ dt {
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
   .header {
+    padding: 0;
     border-bottom: 4px solid #2cb34a;
     padding-bottom: 0;
   }
@@ -1516,7 +1578,11 @@ dt {
    ========================================================================== */
 /* Mobile first means all content boxes are full width */
 .content {
+  margin-top: 0;
   padding: 2em 0;
+  /* only here to keep footer sticky */
+
+  overflow: auto;
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2019,4 +2085,50 @@ dt {
 .interactive-table tbody > tr:hover > td,
 .interactive-table tbody > tr:hover > th {
   background: #addc91;
+}
+/* ==========================================================================
+   HMDA API DOCS Table
+   ========================================================================== */
+.field-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.375em;
+  font-size: 0.875em;
+  width: 100%;
+  table-layout: fixed;
+}
+.field-table code {
+  background-color: #ffffff;
+  border: 1px solid #e3e4e5;
+  border-radius: 0.250em;
+  overflow-x: auto;
+  padding: 0.125em 0.250em;
+  white-space: pre-wrap;
+}
+.field-table th {
+  text-align: left;
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  background-color: #dbedd4;
+}
+.field-table tr,
+.field-table th,
+.field-table td {
+  padding: 10px 15px;
+  line-height: 1.5em;
+}
+.field-table td:code {
+  background-color: transparent;
+  white-space: nowrap;
+}
+.field-table tr:nth-child(even) {
+  background-color: #F1F2F2;
+}
+.field-table tr:nth-child(odd) {
+  background-color: #F8F8F8;
+}
+.field-table .fullwidth tr:nth-child(odd) {
+  background-color: transparent;
+}
+.field-table .fullwidth tr:nth-child(even) {
+  background-color: transparent;
 }
