@@ -1690,6 +1690,7 @@ dt {
 .header {
   border-bottom: 4px solid #2cb34a;
   padding: 2em 0;
+  width: 100%;
 }
 
 .header .site-title {
@@ -1772,9 +1773,6 @@ dt {
 /* Small tablet (600px) */
 
 .header {
-  position: fixed;
-  top: 0;
-  z-index: 99999;
   border-bottom: 4px solid #2cb34a;
   padding-bottom: 0;
 }
@@ -1981,40 +1979,20 @@ dt {
 
 /* Widescreen (1600px) */
 
+/* ==========================================================================
+   CFPB Design Manual
+   Footer
+   ========================================================================== */
+
 .footer {
   padding: 2em 0;
   border-top: 2px solid #2cb34a;
   background: #f1f2f2;
-  font-family: "Avenir Next", Arial, sans-serif;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-.footer .footer-section {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: .5em;
-  margin-left: .5em;
-}
-
-.footer .footer-links {
-  float: left;
-}
-
-.footer .footer-oss {
-  float: right;
-}
-
-.footer .footer-links ul {
-  list-style: none;
-  margin: 1em .5em 1em .25em;
 }
 
 .footer h4 {
-  margin-top: 1.5em;
-  margin-bottom: .5em;
-  margin-left: .25em;
+  margin: 1.5em 0 .5em .25em;
   font-size: 16px;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -2036,26 +2014,9 @@ dt {
   border-bottom: 1px dotted #0072ce;
 }
 
-body {
-  padding-bottom: 13.5em;
-}
-
-.footer {
-  padding-top: .75em;
-  padding-bottom: 1em;
-  border-top: 2px solid #babbbd;
-  background: #f1f2f2;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-.footer h4 {
-  margin: 1em 0 .5em 0;
-}
-
-.footer p {
-  margin: .75em 0;
+.footer .footer-links ul {
+  list-style: none;
+  margin: 1em .5em 1em .25em;
 }
 
 .footer .footer-section {
@@ -2066,8 +2027,31 @@ body {
 }
 
 .footer .footer-links {
-  margin: 0 .5em .5em 1em;
   float: left;
+}
+
+.footer .footer-oss {
+  float: right;
+}
+
+/* Media Queries
+   ========================================================================== */
+
+.footer {
+  padding-top: 1em 0;
+  border-top: 2px solid #babbbd;
+}
+
+.footer h4 {
+  margin: 1em 0 .5em 0;
+}
+
+.footer p {
+  margin: .75em 0;
+}
+
+.footer .footer-links {
+  margin: 0 .5em .5em 1em;
 }
 
 .footer .footer-links ul,
@@ -2078,16 +2062,6 @@ body {
 .footer .footer-oss {
   width: 60%;
   float: right;
-}
-
-body {
-  padding-bottom: 12em;
-}
-
-footer {
-  padding: 2em 0;
-  border-top: 2px solid #babbbd;
-  background: #f1f2f2;
 }
 
 /* TABLET/NETBOOK 744px */
@@ -2233,8 +2207,8 @@ footer {
   margin-right: -0.25em;
   vertical-align: top;
   width: 25%;
-  padding-bottom: 2.5em;
-  padding-top: 2.5em;
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
 
 .ie .sidebar {
@@ -2245,27 +2219,6 @@ footer {
   display: inline;
   *zoom: 1;
   *behavior: url(boxsizing.htc);
-}
-
-/* LAYOUT */
-
-.sidebar {
-  position: absolute;
-}
-
-/* TABLET/NETBOOK 744px */
-
-.sidebar {
-  margin-top: 5em;
-  width: 13em;
-  position: fixed;
-}
-
-.sidebar {
-  margin-top: 6.25em;
-  width: 13.75em;
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .secondary-nav a {

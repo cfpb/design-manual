@@ -1,38 +1,17 @@
-
+/* ==========================================================================
+   CFPB Design Manual
+   Footer
+   ========================================================================== */
 
 .footer {
+
   padding: 2em 0;
   border-top: 2px solid @green;
   background: @gray-10;
-  font-family: "Avenir Next", Arial, sans-serif;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-
-  .footer-section {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: .5em;
-    margin-left: .5em;
-  }
-
-  .footer-links {
-    float:left;
-  }
-
-  .footer-oss {
-    float:right;
-  }
-
-  .footer-links ul {
-    list-style: none;
-    margin: 1em .5em 1em .25em;
-  }
 
   h4 {
-    margin-top: 1.5em;
-    margin-bottom: .5em;
-    margin-left: .25em;
+    margin: 1.5em 0 .5em .25em;
     font-size: 16px;
     line-height: 1.5em;
     text-transform: uppercase;
@@ -53,24 +32,37 @@
   a:hover {
     border-bottom: 1px dotted @pacific;
   }
+  
+  .footer-links ul {
+    list-style: none;
+    margin: 1em .5em 1em .25em;
+  }
+
+  .footer-section {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: .5em;
+    margin-left: .5em;
+  }
+
+  .footer-links {
+    float:left;
+  }
+
+  .footer-oss {
+    float:right;
+  }
+
 }
 
+/* Media Queries
+   ========================================================================== */
 
 @media only screen and (min-width: 37.5em) {
 
-  body {
-      padding-bottom: 13.5em;
-  }
-
   .footer {
-    padding-top: .75em;
-    padding-bottom: 1em;
+    padding-top: 1em 0;
     border-top: 2px solid @gray-50;
-    background: @gray-10;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-
 
     h4 {
         margin: 1em 0 .5em 0;
@@ -80,16 +72,8 @@
         margin: .75em 0;
     }
 
-    .footer-section {
-        display: inline-block;
-        vertical-align: top;
-        margin-right: .5em;
-        margin-left: .5em;
-
-    }
     .footer-links {
         margin: 0 .5em .5em 1em;
-        float: left;
     }
 
     .footer-links ul, li {
@@ -103,30 +87,8 @@
   }
 } 
 
-
-@media only screen and (min-width: 40em) {
-  body {
-      padding-bottom: 12em;
-  }
-}
-
-@media screen and (min-width: 40.5em) and (min-height: 50em) {
-
-}
-
-@media screen and (min-width: 40.5em) and (min-height: 32.5em) {
-
-  footer {
-     padding: 2em 0;
-     border-top: 2px solid @gray-50;
-     background: @gray-10;
-  }
-}
-
-
 /* TABLET/NETBOOK 744px */
 @media only screen and (min-width: 46.5em) {
-
 
     .footer {
       .footer-oss {
