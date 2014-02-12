@@ -1294,6 +1294,11 @@ html {
   /* New CSS3 syntax supported by Chrome */
 
 }
+body {
+  padding-bottom: 20em;
+  /* Making room for absolutely-positioned footer */
+
+}
 /* Vertical padding */
 .header,
 .content,
@@ -1649,7 +1654,7 @@ dt {
 /* Landscape tablet/netbook/laptop (1024px) */
 @media only screen and (min-width: 64em) {
   .main-nav li {
-    font-size: 1.375em;
+    /*font-size: 1.375em;*/
     /* 22px */
   
   }
@@ -1733,7 +1738,7 @@ dt {
 .footer {
   padding: 0;
   border-top: 2px solid #2cb34a;
-  background: #F1F2F2;
+  background: #f1f2f2;
   font-family: "Avenir Next", Arial, sans-serif;
   width: 100%;
   position: absolute;
@@ -1775,6 +1780,67 @@ dt {
 }
 .footer a:hover {
   border-bottom: 1px dotted #0072ce;
+}
+@media only screen and (min-width: 37.5em) {
+  body {
+    padding-bottom: 13.5em;
+  }
+  .footer {
+    padding-top: .75em;
+    padding-bottom: 1em;
+    border-top: 2px solid #babbbd;
+    background: #f1f2f2;
+    font-family: "Avenir Next", Arial, sans-serif;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .footer h4 {
+    margin: 1em 0 .5em 0;
+  }
+  .footer p {
+    margin: .75em 0;
+  }
+  .footer .footer-section {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: .5em;
+    margin-left: .5em;
+  }
+  .footer .footer-links {
+    margin: 0 .5em .5em 1em;
+    float: left;
+  }
+  .footer .footer-links ul,
+  .footer li {
+    margin-left: 0;
+  }
+  .footer .footer-oss {
+    width: 60%;
+    float: right;
+  }
+}
+@media only screen and (min-width: 40em) {
+  body {
+    padding-bottom: 12em;
+  }
+}
+@media screen and (min-width: 40.5em) and (min-height: 50em) {
+  
+}
+@media screen and (min-width: 40.5em) and (min-height: 32.5em) {
+  footer {
+    padding: 2em 0;
+    border-top: 2px solid #babbbd;
+    background: #f1f2f2;
+    font-family: "Avenir Next", Arial, sans-serif;
+  }
+}
+/* TABLET/NETBOOK 744px */
+@media only screen and (min-width: 46.5em) {
+  .footer .footer-oss {
+    width: 67%;
+  }
 }
 /* ==========================================================================
    CFPB Design Manual
