@@ -1471,50 +1471,6 @@ img {
 
 /* ==========================================================================
    CFPB Design Manual
-   Side Nav Mobile Styles
-   ========================================================================== */
-
-/* Secondary nav */
-
-.secondary-nav {
-  margin: 0;
-  padding: 0;
-  border-top: 2px solid #f1f2f2;
-}
-
-.secondary-nav li {
-  border-bottom: 2px solid #f1f2f2;
-  list-style: none;
-  padding: 0.5em 1em;
-}
-
-.secondary-nav a {
-  border: none;
-  color: #75787b;
-}
-
-.secondary-nav a:visited {
-  border: none;
-  color: #75787b;
-}
-
-.secondary-nav a:hover,
-.secondary-nav a:focus {
-  border-bottom: 1px solid #919395;
-  color: #919395;
-}
-
-.secondary-nav a:active {
-  border-bottom: 1px solid #babbbd;
-  color: #babbbd;
-}
-
-.secondary-nav .secondary-nav-active {
-  border-left: 4px solid #2cb34a;
-}
-
-/* ==========================================================================
-   CFPB Design Manual
    Structure and Media Queries
    ========================================================================== */
 
@@ -1650,77 +1606,6 @@ img {
   display: inline;
 }
 
-.main-nav {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 100%;
-  margin: 0;
-}
-
-.ie .main-nav {
-  margin-right: -0.26em;
-}
-
-.lt-ie8 .main-nav {
-  display: inline;
-  *zoom: 1;
-  *behavior: url(boxsizing.htc);
-}
-
-.main-nav li {
-  display: inline-block;
-  margin-left: 2em;
-  font-family: "Avenir Next Medium", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.125em;
-  /* 18px */
-  list-style: none;
-}
-
-.main-nav li:first-child {
-  margin-left: 0;
-}
-
-.main-nav a {
-  display: block;
-  padding-bottom: 1em;
-}
-
-.main-nav a:link,
-.main-nav a:visited {
-  color: #75787b;
-}
-
-.main-nav a:hover,
-.main-nav a:focus {
-  border-bottom: 4px solid #dbedd4;
-  margin-bottom: -4px;
-  color: #43484e;
-}
-
-.main-nav a:active {
-  border-bottom: 4px solid #addc91;
-  margin-bottom: -4px;
-  color: #101820;
-}
-
-.main-nav-active a:link,
-.main-nav-active a:visited,
-.main-nav-active a:hover,
-.main-nav-active a:focus,
-.main-nav-active a:active {
-  border-bottom: 4px solid #addc91;
-  margin-bottom: -4px;
-  color: #101820;
-}
-
 .sidebar {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -1823,6 +1708,91 @@ img {
 
 /* Tablet/netbook (768px) */
 
+/* Landscape tablet/netbook/laptop (1024px) */
+
+/* Desktop (1280px) */
+
+/* Widescreen (1600px) */
+
+/* Mobile portrait (320px) */
+
+/* Mobile landscape (480px) */
+
+/* Small tablet (600px) */
+
+.main-nav {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+  margin: 0;
+}
+
+.ie .main-nav {
+  margin-right: -0.26em;
+}
+
+.lt-ie8 .main-nav {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 2em;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125em;
+  /* 18px */
+  list-style: none;
+}
+
+.main-nav li:first-child {
+  margin-left: 0;
+}
+
+.main-nav a {
+  display: block;
+  padding-bottom: 1em;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+  color: #75787b;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  border-bottom: 4px solid #dbedd4;
+  margin-bottom: -4px;
+  color: #43484e;
+}
+
+.main-nav a:active {
+  border-bottom: 4px solid #addc91;
+  margin-bottom: -4px;
+  color: #101820;
+}
+
+.main-nav-active a:link,
+.main-nav-active a:visited,
+.main-nav-active a:hover,
+.main-nav-active a:focus,
+.main-nav-active a:active {
+  border-bottom: 4px solid #addc91;
+  margin-bottom: -4px;
+  color: #101820;
+}
+
+/* Tablet/netbook (768px) */
+
 .main-nav li {
   font-size: 1.25em;
   /* 20px */
@@ -1838,6 +1808,50 @@ img {
 /* Desktop (1280px) */
 
 /* Widescreen (1600px) */
+
+/* ==========================================================================
+   CFPB Design Manual
+   Side Nav Mobile Styles
+   ========================================================================== */
+
+/* Secondary nav */
+
+.secondary-nav {
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid #f1f2f2;
+}
+
+.secondary-nav li {
+  border-bottom: 2px solid #f1f2f2;
+  list-style: none;
+  padding: 0.5em 1em;
+}
+
+.secondary-nav a {
+  border: none;
+  color: #75787b;
+}
+
+.secondary-nav a:visited {
+  border: none;
+  color: #75787b;
+}
+
+.secondary-nav a:hover,
+.secondary-nav a:focus {
+  border-bottom: 1px solid #919395;
+  color: #919395;
+}
+
+.secondary-nav a:active {
+  border-bottom: 1px solid #babbbd;
+  color: #babbbd;
+}
+
+.secondary-nav .secondary-nav-active {
+  border-left: 4px solid #2cb34a;
+}
 
 /* ==========================================================================
    CFPB Design Manual
