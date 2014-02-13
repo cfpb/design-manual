@@ -1,4 +1,4 @@
-http://cfpb.github.io/design-manual/
+http://cfpb.github.io/design-manual/  
 Development is in progress; content and design are not final.
 
 # The CFPB Design Manual
