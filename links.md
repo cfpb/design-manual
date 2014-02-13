@@ -22,13 +22,13 @@ Links in headers or in navigation are not underlined.
 ### Emphasizing links
 Use icons when a link needs extra emphasis. Use icons consistently, or don’t use them at all. Each icon should be used exclusively for one action. 
 
-Icons appear to the left of the link text. The color and ```font-size``` of icons should be the same as the adjacent text. Icons are never underlined.
+Icons appear to the left of the link text. The color and ```font-size``` of icons should be the same as the adjacent text, including state changes. Icons are never underlined.
 
 #### Internal links
-Use carets (minicon glyph EE02) for CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage.
+Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage.
 
 #### External links
-Use the external link minicon (glyph E610) to emphasize a non-CFPB webpage.
+Use the external link minicon (glyph E610) to emphasize a non-CFPB webpage. External links should open in a new window or tab.
 
 #### Email links
 Use the Email link minicon (glyph E302) to emphasize a ```mailto:``` link.
