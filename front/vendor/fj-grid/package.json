@@ -1,0 +1,41 @@
+{
+  "name": "cf-grid",
+  "description": "An invisible, LESS-based grid system using parametric mixins to encourage semantic HTML",
+  "version": "0.6.7",
+  "author": {
+    "name": "Consumer Financial Protection Bureau",
+    "url": "http://cfpb.github.io/"
+  },
+  "homepage": "https://github.com/cfpb/cf-grid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfpb/cf-grid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cfpb/cf-grid/issues"
+  },
+  "licenses": [
+    {
+      "type": "Public Domain",
+      "url": "https://github.com/cfpb/cf-grid/blob/master/TERMS.md"
+    }
+  ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "grunt jasmine"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cfpb-internal": "git://github.com/cfpb/grunt-cfpb-internal.git",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-jasmine": "~0.3.3",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-notify": "~0.1.4",
+    "grunt-shell": "~0.2.2"
+  },
+  "keywords": []
+}

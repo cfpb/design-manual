@@ -1,0 +1,166 @@
+// The following variables can be overridden in your application's stylesheet.
+
+// Grid's max width in px.
+@wrapper-width: 1200px;
+
+// Width between columns.
+@gutter-width: 30px;
+
+// Total number of columns.
+@total-columns: 12;
+
+// Column blocks have a bg color if set to true.
+@debug: false;
+
+
+// A wrapper holds one or more .column() elements.
+
+.wrapper( @wrapper-width: @wrapper-width ) {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: @wrapper-width;
+  padding: 0 ( @gutter-width / 2 );
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+
+  .lt-ie8 & {
+    // Clearfix hack for IE 6/7 only
+    *zoom: 1;
+    // If you want IE 6/7 support, ensure boxsizing.htc is in the same dir as your stylesheet.
+    // Read more: https://github.com/Schepp/box-sizing-polyfill
+    *behavior: url(boxsizing.htc);
+  }
+
+}
+
+
+// Column()s hold actual content
+
+.col {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  // borders used for fixed gutters
+  border: solid transparent;
+  border-width: 0 (@gutter-width / 2);
+
+  margin-right: -0.25em; // Remove whitespace caused by setting display to inline-block
+
+  vertical-align: top;
+
+  // Tweaks are necessary for IE, of course.
+  // This creates a whole heap of extra rules, and thus should probably be pulled out 
+  // into a separate stylesheet that gets loaded via conditional comment.
+  .ie & {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 & {
+    // hack inline-block into submission
+    display: inline;
+
+    // Clearfix hack for IE 6/7 only
+    *zoom: 1;
+    // box-sizing polyfill: https://github.com/Schepp/box-sizing-polyfill
+    *behavior: url(boxsizing.htc);
+  }
+} // .col
+
+
+// Compute column widths and prefix/suffix padding
+
+.column( @columns: 1; @total: @total-columns; @prefix: 0; @suffix: 0 ) {
+
+  // Necessary bits from the simple class/mixin above
+  .col;
+
+  // To calculate the percentage width of the base element, we take the number of
+  // columns it'll span and divide by the total number of columns. As columns are
+  // specified as inline-block elements, standard columns require no further math.
+  //  
+  //                      num cols used
+  //  column width in % = -------------
+  //                       total cols
+
+  @width: percentage( @columns / @total );
+
+
+  // Modifying standard width and padding for prefixed/suffixed columns, if necessary:
+  // LESS will now run through four possible child mixins, only one of which will
+  // actually be activated, depending on which one's guard conditions are met.
+  // At some point, consider how to modularize the prefix-suffix functionality and
+  // keep it optional.
+  
+  .nonPrefixSuffix( @prefix, @suffix );
+  .prefix( @prefix, @suffix );
+  .suffix( @suffix, @prefix );
+  .prefixSuffix( @prefix, @suffix );
+
+  // Child mixins
+
+  // Run this when neither prefix nor suffix are specified
+  .nonPrefixSuffix( @prefix: 0; @suffix: 0 ) when ( @prefix = 0 ) and ( @suffix = 0 ) {
+    width: @width;
+  }
+
+  // Run this when only prefix is specified
+  .prefix( @prefix: 0; @suffix: 0 ) when ( @prefix > 0 ) and ( @suffix = 0 ) {
+    @offset: percentage( @prefix / @total );
+    width: @width + @offset;
+    padding-left: @offset;
+    .lt-ie8 & {
+      padding-left: 0;
+    }
+  }
+
+  // Run this when only suffix is specified
+  .suffix( @suffix: 0; @prefix: 0 ) when ( @suffix > 0 ) and ( @prefix = 0 ) {
+    @offset: percentage( @suffix / @total );
+    width: @width + @offset;
+    padding-right: @offset;
+    .lt-ie8 & {
+      padding-right: 0;
+    }
+  }
+
+  // Run this when both prefix and suffix are specified
+  .prefixSuffix( @prefix: 0; @suffix: 0 ) when ( @prefix > 0 ) and ( @suffix > 0 ) {
+    @left: percentage( @prefix / @total );
+    @right: percentage( @suffix / @total );
+    width: @width + @left + @right;
+    padding-right: @right;
+    padding-left: @left;
+    .lt-ie8 & {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+} // .column()
+
+// Push and Pull mixins for source ordering
+
+.push( @offset: 1, @total-columns: @total-columns ) {
+  @push: percentage( @offset / @total-columns );
+  position: relative;
+  left: @push;
+}
+
+.pull( @offset: 1, @total-columns: @total-columns ) {
+  @pull: percentage( @offset / @total-columns );
+  position: relative;
+  right: @pull;
+}
+
+
+// Debug tools
+
+.column( @columns; @total: @total-columns; @prefix: 0; @suffix: 0; ) when ( @debug ) {
+
+  background-color: #ffc;
+  background-color: fade(#ff0, 25%);
+
+}

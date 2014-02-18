@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+
+<!--[if gt IE 8]><!-->
+<html lang="en">
+  <!-- <![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cf-pagination demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="static/css/main.lt-ie9.min.css"><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <!--<![endif]-->
+<!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="static/css/main.lt-ie8.min.css"><![endif]-->
+<!--[if lt IE 9]>
+    <script src="static/demo/html5shiv-printshiv.js"></script><![endif]-->
+  </head>
+  <body>
+    <div id="pagination">
+      <div>
+        <div>
+<nav class="pagination">
+    <a class="btn pagination_prev" href="#"><i class="btn-icon-left icon-chevron-left"></i> Previous</a>
+    <form class="pagination_form">
+        <label class="pagination_label" for="pagination_current-page">Page</label>
+        <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="number" min="1" max="149" value="149" />
+        <label class="pagination_label" for="pagination_current-page">of 149</label>
+        <button class="btn btn-link pagination_submit" id="pagination_submit" type="submit">Go</button>
+    </form>
+    <a class="btn pagination_next" href="#">Next <i class="btn-icon-right icon-chevron-right"></i></a>
+</nav>
+</div><br>
+      </div>
+    </div>
+    <div id="custom-demo">
+<hr><br>
+
+<!-- TEST: Disabled Previous -->
+<nav class="pagination">
+    <a class="btn btn-disabled pagination_prev" href="#"><i class="btn-icon-left icon-chevron-left"></i> Previous</a>
+    <form class="pagination_form">
+        <label class="pagination_label" for="pagination_current-page">Page</label>
+        <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="number" min="1" max="149" value="149" />
+        <label class="pagination_label" for="pagination_current-page">of 149</label>
+        <button class="btn btn-link pagination_submit" id="pagination_submit" type="submit">Go</button>
+    </form>
+    <a class="btn pagination_next" href="#">Next <i class="btn-icon-right icon-chevron-right"></i></a>
+</nav><br>
+
+<!-- TEST: Disabled Next -->
+<nav class="pagination">
+    <a class="btn pagination_prev" href="#"><i class="btn-icon-left icon-chevron-left"></i> Previous</a>
+    <form class="pagination_form">
+        <label class="pagination_label" for="pagination_current-page">Page</label>
+        <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="number" min="1" max="149" value="149" />
+        <label class="pagination_label" for="pagination_current-page">of 149</label>
+        <button class="btn btn-link pagination_submit" id="pagination_submit" type="submit">Go</button>
+    </form>
+    <a class="btn btn-disabled pagination_next" href="#">Next <i class="btn-icon-right icon-chevron-right"></i></a>
+</nav><br>
+
+<!-- TEST: Disabled Submit -->
+<nav class="pagination">
+    <a class="btn pagination_prev" href="#"><i class="btn-icon-left icon-chevron-left"></i> Previous</a>
+    <form class="pagination_form">
+        <label class="pagination_label" for="pagination_current-page">Page</label>
+        <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="number" min="1" max="149" value="149" />
+        <label class="pagination_label" for="pagination_current-page">of 149</label>
+        <button class="btn btn-disabled btn-link pagination_submit" id="pagination_submit" type="submit">Go</button>
+    </form>
+    <a class="btn pagination_next" href="#">Next <i class="btn-icon-right icon-chevron-right"></i></a>
+</nav>
+</div>
+  </body>
+</html>

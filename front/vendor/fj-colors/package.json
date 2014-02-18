@@ -1,0 +1,25 @@
+{
+  "name": "cf-colors",
+  "description": "Color variables for the Capital Framework.",
+  "version": "0.3.0",
+  "homepage": "http://github.com/cfpb/cf-colors",
+  "author": {
+    "name": "Consumer Financial Protection Bureau",
+    "email": "scott.cranfill@cfpb.gov",
+    "url": "http://cfpb.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/cfpb/cf-colors.git"
+  },
+  "bugs": {
+    "url": "http://github.com/cfpb/cf-colors/issues"
+  },
+  "licenses": [
+    {
+      "type": "Public Domain",
+      "url": "http://github.com/cfpb/cf-colors/blob/master/TERMS.md"
+    }
+  ],
+  "keywords": []
+}

@@ -53,7 +53,7 @@ cd design-manual
 Run Jekyll:
 
 ```
-jekyll serve --baseurl ''
+jekyll serve --watch --baseurl ''
 ```
 
 ## _config.yml

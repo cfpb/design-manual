@@ -1,615 +1,3 @@
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-/**
- * Address `[hidden]` styling not present in IE 8/9.
- * Hide the `template` element in IE, Safari, and Firefox < 22.
- */
-[hidden],
-template {
-  display: none;
-}
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-html {
-  font-family: sans-serif;
-  /* 1 */
-
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-
-}
-/**
- * Remove default margin.
- */
-body {
-  margin: 0;
-}
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-a {
-  background: transparent;
-}
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: thin dotted;
-}
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-a:active,
-a:hover {
-  outline: 0;
-}
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-b,
-strong {
-  font-weight: bold;
-}
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-dfn {
-  font-style: italic;
-}
-/**
- * Address differences between Firefox and other browsers.
- */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-/**
- * Address styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000;
-}
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-pre {
-  white-space: pre-wrap;
-}
-/**
- * Set consistent quote types.
- */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-img {
-  border: 0;
-}
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-svg:not(:root) {
-  overflow: hidden;
-}
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-figure {
-  margin: 0;
-}
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/**
- * Define consistent border, margin, and padding.
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-legend {
-  border: 0;
-  /* 1 */
-
-  padding: 0;
-  /* 2 */
-
-}
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-
-  font-size: 100%;
-  /* 2 */
-
-  margin: 0;
-  /* 3 */
-
-}
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-button,
-input {
-  line-height: normal;
-}
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-button,
-select {
-  text-transform: none;
-}
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-
-  cursor: pointer;
-  /* 3 */
-
-}
-/**
- * Re-set default cursor for disabled elements.
- */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-/**
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-
-  padding: 0;
-  /* 2 */
-
-}
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-
-  box-sizing: content-box;
-}
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-textarea {
-  overflow: auto;
-  /* 1 */
-
-  vertical-align: top;
-  /* 2 */
-
-}
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.highlight {
-  background: #ffffff;
-}
-.highlight .c {
-  color: #999988;
-  font-style: italic;
-}
-/* Comment */
-.highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2;
-}
-/* Error */
-.highlight .k {
-  font-weight: bold;
-}
-/* Keyword */
-.highlight .o {
-  font-weight: bold;
-}
-/* Operator */
-.highlight .cm {
-  color: #999988;
-  font-style: italic;
-}
-/* Comment.Multiline */
-.highlight .cp {
-  color: #999999;
-  font-weight: bold;
-}
-/* Comment.Preproc */
-.highlight .c1 {
-  color: #999988;
-  font-style: italic;
-}
-/* Comment.Single */
-.highlight .cs {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic;
-}
-/* Comment.Special */
-.highlight .gd {
-  color: #000000;
-  background-color: #ffdddd;
-}
-/* Generic.Deleted */
-.highlight .gd .x {
-  color: #000000;
-  background-color: #ffaaaa;
-}
-/* Generic.Deleted.Specific */
-.highlight .ge {
-  font-style: italic;
-}
-/* Generic.Emph */
-.highlight .gr {
-  color: #aa0000;
-}
-/* Generic.Error */
-.highlight .gh {
-  color: #999999;
-}
-/* Generic.Heading */
-.highlight .gi {
-  color: #000000;
-  background-color: #ddffdd;
-}
-/* Generic.Inserted */
-.highlight .gi .x {
-  color: #000000;
-  background-color: #aaffaa;
-}
-/* Generic.Inserted.Specific */
-.highlight .go {
-  color: #888888;
-}
-/* Generic.Output */
-.highlight .gp {
-  color: #555555;
-}
-/* Generic.Prompt */
-.highlight .gs {
-  font-weight: bold;
-}
-/* Generic.Strong */
-.highlight .gu {
-  color: #aaaaaa;
-}
-/* Generic.Subheading */
-.highlight .gt {
-  color: #aa0000;
-}
-/* Generic.Traceback */
-.highlight .kc {
-  font-weight: bold;
-}
-/* Keyword.Constant */
-.highlight .kd {
-  font-weight: bold;
-}
-/* Keyword.Declaration */
-.highlight .kp {
-  font-weight: bold;
-}
-/* Keyword.Pseudo */
-.highlight .kr {
-  font-weight: bold;
-}
-/* Keyword.Reserved */
-.highlight .kt {
-  color: #445588;
-  font-weight: bold;
-}
-/* Keyword.Type */
-.highlight .m {
-  color: #009999;
-}
-/* Literal.Number */
-.highlight .s {
-  color: #dd1144;
-}
-/* Literal.String */
-.highlight .na {
-  color: #008080;
-}
-/* Name.Attribute */
-.highlight .nb {
-  color: #0086b3;
-}
-/* Name.Builtin */
-.highlight .nc {
-  color: #445588;
-  font-weight: bold;
-}
-/* Name.Class */
-.highlight .no {
-  color: #008080;
-}
-/* Name.Constant */
-.highlight .ni {
-  color: #800080;
-}
-/* Name.Entity */
-.highlight .ne {
-  color: #990000;
-  font-weight: bold;
-}
-/* Name.Exception */
-.highlight .nf {
-  color: #990000;
-  font-weight: bold;
-}
-/* Name.Function */
-.highlight .nn {
-  color: #555555;
-}
-/* Name.Namespace */
-.highlight .nt {
-  color: #000080;
-}
-/* Name.Tag */
-.highlight .nv {
-  color: #008080;
-}
-/* Name.Variable */
-.highlight .ow {
-  font-weight: bold;
-}
-/* Operator.Word */
-.highlight .w {
-  color: #bbbbbb;
-}
-/* Text.Whitespace */
-.highlight .mf {
-  color: #009999;
-}
-/* Literal.Number.Float */
-.highlight .mh {
-  color: #009999;
-}
-/* Literal.Number.Hex */
-.highlight .mi {
-  color: #009999;
-}
-/* Literal.Number.Integer */
-.highlight .mo {
-  color: #009999;
-}
-/* Literal.Number.Oct */
-.highlight .sb {
-  color: #dd1144;
-}
-/* Literal.String.Backtick */
-.highlight .sc {
-  color: #dd1144;
-}
-/* Literal.String.Char */
-.highlight .sd {
-  color: #dd1144;
-}
-/* Literal.String.Doc */
-.highlight .s2 {
-  color: #dd1144;
-}
-/* Literal.String.Double */
-.highlight .se {
-  color: #dd1144;
-}
-/* Literal.String.Escape */
-.highlight .sh {
-  color: #dd1144;
-}
-/* Literal.String.Heredoc */
-.highlight .si {
-  color: #dd1144;
-}
-/* Literal.String.Interpol */
-.highlight .sx {
-  color: #dd1144;
-}
-/* Literal.String.Other */
-.highlight .sr {
-  color: #009926;
-}
-/* Literal.String.Regex */
-.highlight .s1 {
-  color: #dd1144;
-}
-/* Literal.String.Single */
-.highlight .ss {
-  color: #990073;
-}
-/* Literal.String.Symbol */
-.highlight .bp {
-  color: #999999;
-}
-/* Name.Builtin.Pseudo */
-.highlight .vc {
-  color: #008080;
-}
-/* Name.Variable.Class */
-.highlight .vg {
-  color: #008080;
-}
-/* Name.Variable.Global */
-.highlight .vi {
-  color: #008080;
-}
-/* Name.Variable.Instance */
-.highlight .il {
-  color: #009999;
-}
-/* Literal.Number.Integer.Long */
-
 /* ==========================================================================
    CFPB Design Manual
    @font-face Declarations
@@ -659,149 +47,90 @@ table {
   font-weight: 700;
   font-style: normal;
 }
-/*
-@font-face {
-    font-family: "Avenir Next Ultra Light";
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/1a7c9181-cd24-4943-a9d9-d033189524e0.eot");
-    src: url("hhttp://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/6de0ce4d-9278-467b-b96f-c1f5f0a4c375.ttf") format("truetype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/9fd4ea0c-b19a-4b21-9fdf-37045707dd78.svg#9fd4ea0c-b19a-4b21-9fdf-37045707dd78") format("svg");
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Avenir Next Ultra Light Italic";
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/77a9cdce-ea6a-4f94-95df-e6a54555545e.eot");
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/77a9cdce-ea6a-4f94-95df-e6a54555545e.eot?#iefix") format("embedded-opentype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/8344e877-560d-44d4-82eb-9822766676f9.woff") format("woff"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/3a561c83-40d4-4868-8255-e8455eb009c4.ttf") format("truetype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/3966f856-9dcf-48e7-88e7-7400f1b7d619.svg#3966f856-9dcf-48e7-88e7-7400f1b7d619") format("svg");
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Avenir Next Medium Italic";
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/77a9cdce-ea6a-4f94-95df-e6a54555545e.eot");
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/77a9cdce-ea6a-4f94-95df-e6a54555545e.eot?#iefix") format("embedded-opentype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/8344e877-560d-44d4-82eb-9822766676f9.woff") format("woff"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/b28b01d9-78c5-46c6-a30d-9a62c8f407c5.ttf") format("truetype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/ed4d3c45-af64-4992-974b-c37cd12a9570.svg#ed4d3c45-af64-4992-974b-c37cd12a9570") format("svg");
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Avenir Next Demi Italic";
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/770d9a7e-8842-4376-9319-8f2c8b8e880d.eot");
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/770d9a7e-8842-4376-9319-8f2c8b8e880d.eot?#iefix") format("embedded-opentype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/bc350df4-3100-4ce1-84ce-4a5363dbccfa.woff") format("woff"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/bc13ae80-cd05-42b4-b2a9-c123259cb166.ttf") format("truetype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/4862b373-2643-46b1-b0b5-88537c52d15c.svg#4862b373-2643-46b1-b0b5-88537c52d15c") format("svg");
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Avenir Next Bold";
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot");
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix") format("embedded-opentype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg");
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Avenir Next Bold Italic";
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/ac2d4349-4327-448f-9887-083a6a227a52.eot");
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix") format("embedded-opentype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/25e83bf5-47e3-4da7-98b1-755efffb0089.woff") format("woff"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/4112ec87-6ded-438b-83cf-aaff98f7e987.ttf") format("truetype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/ab1835cb-df6f-4d8d-b8ee-3075f5ba758d.svg#ab1835cb-df6f-4d8d-b8ee-3075f5ba758d") format("svg");
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Avenir Next Heavy";
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot");
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix") format("embedded-opentype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/045d1654-97f2-4ff0-9d24-21ba9dfee219.ttf") format("truetype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/3c111f4f-c9f7-45d4-b35f-4f4ed018842f.svg#3c111f4f-c9f7-45d4-b35f-4f4ed018842f") format("svg");
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Avenir Next Heavy Italic";
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/ac2d4349-4327-448f-9887-083a6a227a52.eot");
-    src: url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix") format("embedded-opentype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/25e83bf5-47e3-4da7-98b1-755efffb0089.woff") format("woff"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/2b4885a7-fc02-4aa0-b998-5b008a589c80.ttf") format("truetype"),
-         url("http://www.consumerfinance.gov/wp-content/themes/cfpb_nemo/_/f/9b40a6ef-0ef5-49c0-aa8d-5ba7e8e7d9b7.svg#9b40a6ef-0ef5-49c0-aa8d-5ba7e8e7d9b7") format("svg");
-    font-weight: 800;
-    font-style: italic;
-}
-*/
-/*
- * This CSS resource incorporates links to font software which is
- * the valuable copyrighted property of Monotype Imaging and/or
- * its suppliers. You may not attempt to copy, install, redistribute, convert,
- * modify or reverse engineer this font software. Please contact Monotype Imaging
- * with any questions regarding Web Fonts:  http://webfonts.fonts.com
- */
-/*                                      
-            /$$$$$$          /$$        
-           /$$__  $$        | $$        
-  /$$$$$$$| $$  \__//$$$$$$ | $$$$$$$  
- /$$_____/| $$$$   /$$__  $$| $$__  $$  
-| $$      | $$_/  | $$  \ $$| $$  \ $$
-| $$      | $$    | $$  | $$| $$  | $$  
-|  $$$$$$$| $$    | $$$$$$$/| $$$$$$$/  
- \_______/|__/    | $$____/ |_______/  
-                  | $$                  
-                  | $$                  
-                  |__/                  
-
-* Ghost - v0.6.0 - 2013-07-21
-* http://consumerfinance.gov
-* A Public Domain work of the Consumer Financial Protection Bureau */
-.col {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-}
-.ie .col {
-  margin-right: -0.26em;
-}
-.lt-ie8 .col {
-  display: inline;
-  *zoom: 1;
-  *behavior: url(boxsizing.htc);
-}
 /* ==========================================================================
    CFPB Design Manual
    Basic Typography
    ========================================================================== */
-/* Base Variables
+/* We may need to add these lines in the capital framework: */
+/* ==========================================================================
+   Capital Framework
+   Color Variables
    ========================================================================== */
+/* ==========================================================================
+   Capital Framework
+   Basic Typography
+   ========================================================================== */
+/* topdoc
+    name: LESS notes
+    family: cf-typography
+    patterns:
+    - name: Size variables
+      codenotes:
+        - "@base-font-size-px: 16px;"
+        - "@base-line-height-px: 22px;"
+        - "@base-line-height: unit(@base-line-height-px / @base-font-size-px);"
+    - name: Webfont mixins
+      codenotes:
+        - ".webfont-regular()"
+        - ".webfont-italic()"
+        - ".webfont-medium()"
+        - ".webfont-demi()"
+    - name: Explicitly set font styles
+      notes:
+        - "Any instances of Avenir Next getting italicized or bolded must be declared explicitly
+          so that it uses the correct webfont and does not fake the style on normal Avenir Next."
+        - "Use the webfont mixins above to make this easy. See the #blockquote styles as an example."
+      markup: |
+       <blockquote cite="http://cfpb.github.io/cf-typography/docs/index.html#webfont-notes">
+         Any instances of Avenir Next getting <em>italic</em><i>ized</i> or <strong>bold</strong><b>ed</b> must be declared explicitly ...
+       </blockquote> 
+    tags:
+    - cf-typography
+*/
+/* topdoc
+    name: Type hierarchy
+    family: cf-typography
+    patterns:
+    - name: Default body type
+      markup: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    - name: Heading level 1
+      markup: |
+        <h1>Example heading element</h1>
+        <p class="h1">A non-heading element</p>
+    - name: Heading level 2
+      markup: |
+        <h2>Example heading element</h2>
+        <p class="h2">A non-heading element</p>
+    - name: Heading level 3
+      markup: |
+        <h3>Example heading element</h3>
+        <p class="h3">A non-heading element</p>
+    - name: Heading level 4
+      markup: |
+        <h4>Example heading element</h4>
+        <p class="h4">A non-heading element</p>
+    - name: Heading level 5
+      markup: |
+        <h5>Example heading element</h5>
+        <p class="h5">A non-heading element</p>
+    - name: Heading level 6
+      markup: |
+        <h6>Example heading element</h6>
+        <p class="h6">A non-heading element</p>
+    - name: Super header
+      markup: |
+        <h1 class="superheader">Example super heading</h1>
+        <p class="superheader">Example super heading</p>
+    tags:
+    - cf-typography
+*/
 body {
   color: #101820;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 100%;
   line-height: 1.375;
 }
-/* Headings
-   ========================================================================== */
 h1,
 h2,
 h3,
@@ -876,8 +205,19 @@ h6,
   font-size: 3em;
   line-height: 1.375;
 }
-/* Margins
-   ========================================================================== */
+/* topdoc
+    name: Margins
+    family: cf-typography
+    patterns:
+    - name: Consistent vertical margins
+      notes:
+        - "Assumes that the font size of each of these items remains the default."
+      markup: |
+        <p>Paragraph margin example</p>
+        <p>Paragraph margin example</p>
+    tags:
+    - cf-typography
+*/
 p,
 ul,
 ol,
@@ -888,8 +228,31 @@ figure {
   margin-top: 0;
   margin-bottom: 1.375em;
 }
-/* Link Styling
-   ========================================================================== */
+/* topdoc
+    name: Default link
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    family: cf-typography
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#">Default link style</a>
+    - name: Visited state
+      markup: |
+        <a href="#" class="visited">Visited link style</a>
+    - name: Hovered state
+      markup: |
+        <a href="#" class="hover">Hovered link style</a>
+    - name: Focused state
+      markup: |
+        <a href="#" class="focus">Focused link style</a>
+    - name: Active state
+      markup: |
+        <a href="#" class="active">Active link style</a>
+    tags:
+    - cf-typography
+*/
 a {
   border-bottom-width: 0;
   border-bottom-style: dotted;
@@ -897,52 +260,111 @@ a {
   color: #0072ce;
   text-decoration: none;
 }
-a:visited {
+a:visited,
+a.visited {
   border-bottom-color: #005e5d;
   color: #005e5d;
 }
-a:hover {
+a:hover,
+a.hover {
   border-bottom-style: solid;
   border-bottom-color: #7fb8e6;
   color: #7fb8e6;
 }
-a:focus {
+a:focus,
+a.focus {
   border-bottom-style: solid;
 }
-a:active {
+a:active,
+a.active {
   border-bottom-style: solid;
   border-bottom-color: #002d72;
   color: #002d72;
 }
-p > strong > a,
-li > strong > a,
-dd > strong > a,
-p > em > a,
-li > em > a,
-dd > em > a,
-p > b > a,
-li > b > a,
-dd > b > a,
-p > i > a,
-li > i > a,
-dd > i > a {
-  border-bottom-width: 1px;
-}
-p > a,
-li > a,
-dd > a {
+/* topdoc
+    name: Underlined links
+    family: cf-typography
+    patterns:
+    - name: States
+      notes:
+        - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+          be used in production."
+        - "The underline style properties are mostly set above in the a tag.
+          To enable the underline simply set a bottom-border-width as done here."
+      markup: |
+        <p>
+            <a href="#">Default</a>,
+            <a href="#" class="visited">Visited</a>,
+            <a href="#" class="hover">Hovered</a>,
+            <a href="#" class="focus">Focused</a>,
+            <a href="#" class="active">Active</a>
+        </p>
+    - name: Underline conditions
+      notes:
+       - "We're restricting link borders to links within p, li, and dd so that
+         we don't have to override them every time we want a plain link."
+      markup: |
+        <p>
+            <a href="#">A child of a paragraph</a>
+        </p>
+        <ul>
+            <li>
+                <a href="#">A child of a list item</a>
+            </li>
+        </ul>
+        <dl>
+            <dt>
+                Definition list term
+            </dt>
+            <dd>
+                <a href="#">A child of a definition list description</a>
+            </dd>
+        </dl>
+    - name: Exceptions for underlined links
+      notes:
+        - "Inline text links inside of a nav element are not underlined."
+      markup: |
+        <nav>
+            <p>
+                <a href="#">A child of a paragraph</a>
+            </p>
+            <ul>
+                <li>
+                    <a href="#">A child of a list item</a>
+                </li>
+            </ul>
+            <dl>
+                <dt>
+                    Definition list term
+                </dt>
+                <dd>
+                    <a href="#">A child of a definition list description</a>
+                </dd>
+            </dl>
+        </nav>
+    tags:
+    - cf-typography
+*/
+p a,
+li a,
+dd a {
   border-bottom-width: 1px;
 }
 nav a {
   border-bottom-width: 0;
 }
-/*
- * Miscellaneous
- *
- * - Any instances of Avenir Next getting italicized or bolded must be declared
- *   explicitly so that it uses the correct webfont and does not fake the style
- *   on normal Avenir Next. See blockquote example below.
- */
+/* topdoc
+    name: Blockquote
+    family: cf-typography
+    patterns:
+    - name: Default blockquote
+      markup: |
+       <blockquote>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi animi facere modi eaque amet odio!
+       </blockquote> 
+    tags:
+    - cf-typography
+*/
 blockquote {
   padding: 0.5em 0.75em;
   border-left: 4px solid #2cb34a;
@@ -963,17 +385,38 @@ blockquote b {
   font-style: normal;
   font-weight: bold;
 }
+/* topdoc
+    name: Lists
+    family: cf-typography
+    patterns:
+    - name: Unordered list
+      markup: |
+       <ul>
+         <li>List item</li>
+         <li>List item</li>
+         <li>List item</li>
+       </ul>
+    tags:
+    - cf-typography
+*/
 ul {
   list-style: square;
 }
-/*
- * Webfont Overrides for IE 6-8 to prevent faux/double bold and italics
- *   
- * - Any bold or italic Avenir elements added to the base styles MUST BE added
- *   to this section, as well.
- * - Dependent on using H5BP's conditional classes on the <html> element:
- *   https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md
- */
+/* topdoc
+    name: IE overrides
+    family: cf-typography
+    patterns:
+    - name: Prevent faux/double bold and italics in IE 6-8
+      notes:
+        - "Any bold or italic Avenir elements added to the base styles MUST BE added to this section, as well."
+        - "Dependent on using H5BP's conditional classes on the <html> element:
+          https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md"
+      markup: |
+        <h5>I might appear as faux/double bold in older IE without this fix.</h5>
+    tags:
+    - cf-typography
+    - ltie9
+*/
 .lt-ie9 h1,
 .lt-ie9 h2,
 .lt-ie9 h3,
@@ -986,37 +429,765 @@ ul {
 .lt-ie9 blockquote em {
   font-style: normal !important;
 }
+/* topdoc
+  name: EOF
+  eof: true
+*/
+.col {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+}
+.ie .col {
+  margin-right: -0.26em;
+}
+.lt-ie8 .col {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
 /* ==========================================================================
-   CFPB Design Manual
-   Less Mixins
+   Flapjack Front End
+   Button Styling
    ========================================================================== */
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-.visually-hidden {
+/* topdoc
+    name: LESS notes
+    family: cf-buttons
+    patterns:
+    - name: Variables
+      codenotes:
+        - "@btn-font-size: 14px;"
+        - "@btn-v-padding: 9px;"
+        - "@btn-v-padding-modifier-ie: .8;"
+      notes:
+        - "@btn-v-padding-modifier-ie is used to fix the vertical padding bug in IE for <button>'s and <inputs>'s
+          across various .btn styles. We should revisit this after adding normalize.css to see if this is still needed."
+    tags:
+    - cf-buttons
+    - less
+*/
+/* topdoc
+    name: Default button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn">Anchor Tag</a>
+        <button class="btn">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn">
+    - name: Hovered/focused state
+      markup: |
+        <a href="#" class="btn hover">Anchor Tag</a>
+        <button class="btn hover">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn hover">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn active">Anchor Tag</a>
+        <button class="btn active">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn active">
+    tags:
+    - cf-buttons
+*/
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.6428571428571429em 1em;
   border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.visually-hidden .visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
+  border-radius: 0.2857142857142857em;
   margin: 0;
+  vertical-align: middle;
+  background-color: #0072ce;
+  color: #ffffff;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: .1s;
+  transition: .1s;
+  -webkit-appearance: none;
+}
+.btn:hover,
+.btn:focus,
+.btn.hover {
+  background-color: #328ed8;
+}
+.btn:active,
+.btn.active {
+  background-color: #33578e;
+}
+.btn + .btn {
+  margin-left: 0.42857142857142855em;
+}
+button.btn::-moz-focus-inner,
+input.btn::-moz-focus-inner {
+  border: 0;
+}
+.lt-ie8 {
+  background: url(null) fixed no-repeat;
+}
+.lt-ie8 button.btn,
+.lt-ie8 input.btn {
   overflow: visible;
-  position: static;
-  width: auto;
+  padding-top: 0.5142857142857143em;
+  padding-bottom: 0.5142857142857143em;
 }
-.invisible {
-  visibility: hidden;
+/* topdoc
+    name: Secondary button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-secondary">Anchor Tag</a>
+        <button class="btn btn-secondary">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-secondary">
+    - name: Hovered/focused state
+      markup: |
+        <a href="#" class="btn btn-secondary hover">Anchor Tag</a>
+        <button class="btn btn-secondary hover">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-secondary hover">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-secondary active">Anchor Tag</a>
+        <button class="btn btn-secondary active">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-secondary active">
+    tags:
+    - cf-buttons
+*/
+.btn-secondary,
+.btn-secondary:link,
+.btn-secondary:visited {
+  background-color: #75787b;
+  color: #ffffff;
 }
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.hover {
+  background-color: #919395;
+}
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #43484e;
+}
+/* topdoc
+    name: Destructive action button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-warning">Anchor Tag</a>
+        <button class="btn btn-warning">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-warning">
+    - name: Hovered/focused state
+      markup: |
+        <a href="#" class="btn btn-warning hover">Anchor Tag</a>
+        <button class="btn btn-warning hover">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-warning hover">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-warning active">Anchor Tag</a>
+        <button class="btn btn-warning active">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-warning active">
+    tags:
+    - cf-buttons
+*/
+.btn-warning,
+.btn-warning:link,
+.btn-warning:visited {
+  background-color: #d12124;
+  color: #ffffff;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.hover {
+  background-color: #da6750;
+}
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #9c301b;
+}
+/* topdoc
+    name: Disabled button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default/hovered/focused/active state
+      markup: |
+        <a href="#" class="btn btn-disabled">Anchor Tag</a>
+        <button class="btn btn-disabled">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-disabled">
+    tags:
+    - cf-buttons
+*/
+.btn-disabled,
+.btn-disabled:link,
+.btn-disabled:visited,
+.btn-disabled:hover,
+.btn-disabled.hover,
+.btn-disabled:focus,
+.btn-disabled:active,
+.btn-disabled.active {
+  background-color: #e3e4e5;
+  color: #75787b;
+  cursor: default;
+  cursor: not-allowed;
+}
+/* topdoc
+    name: Super button
+    family: cf-buttons
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-super">Anchor Tag</a>
+        <button class="btn btn-super">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-super">
+    - name: Hovered/focused state
+      markup: |
+        <a href="#" class="btn btn-super hover">Anchor Tag</a>
+        <button class="btn btn-super hover">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-super hover">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-super active">Anchor Tag</a>
+        <button class="btn btn-super active">Button Tag</button>
+        <input type="submit" value="Input Tag" class="btn btn-super active">
+    tags:
+    - cf-buttons
+*/
+.btn-super,
+.btn-super:link,
+.btn-super:visited {
+  padding: 0.8333333333333334em 1.6666666666666667em;
+  font-size: 1.125em;
+}
+.btn-super + .btn-super {
+  margin-left: 0.3333333333333333em;
+}
+.lt-ie8 button.btn-super,
+.lt-ie8 input.btn-super {
+  padding-top: 0.6666666666666666em;
+  padding-bottom: 0.6666666666666666em;
+}
+/* topdoc
+    name: Button with icons
+    family: cf-buttons
+    patterns:
+    - name: Button icon left
+      markup: |
+        <a href="#" class="btn">
+            <i class="btn-icon-left icon-chevron-left"><span class="jekyll-bug"></span></i>
+            Anchor Tag
+        </a>
+        <button class="btn">
+            <i class="btn-icon-left icon-chevron-left"><span class="jekyll-bug"></span></i>
+            Button Tag
+        </button>
+    - name: Button icon right
+      markup: |
+        <a href="#" class="btn">
+            Anchor Tag
+            <i class="btn-icon-right icon-chevron-right"><span class="jekyll-bug"></span></i>
+        </a>
+        <button class="btn">
+            Button Tag
+            <i class="btn-icon-right icon-chevron-right"><span class="jekyll-bug"></span></i>
+        </button>
+    - name: Just an icon
+      markup: |
+        <a href="#" class="btn">
+            <i class="icon-search"><span class="jekyll-bug"></span></i>
+        </a>
+        <button class="btn">
+            <i class="icon-search"><span class="jekyll-bug"></span></i>
+        </button>
+    tags:
+    - cf-buttons
+    - fj-icons
+*/
+.btn [class^="icon-"],
+.btn [class*="icon-"] {
+  line-height: 1;
+}
+.btn-icon-left {
+  padding: 0 0.75em 0 0;
+  border-right: 1px solid #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 0 0.5em 0 0;
+}
+.btn-disabled .btn-icon-left {
+  border-right-color: #babbbd;
+}
+.btn-icon-right {
+  padding: 0 0 0 0.75em;
+  border-right: 0;
+  border-left: 1px solid #ffffff;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 0 0 0 0.5em;
+}
+.btn-disabled .btn-icon-right {
+  border-left-color: #babbbd;
+}
+/* topdoc
+    name: Button group
+    family: cf-buttons
+    patterns:
+    - name: Default buttons in a button group
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn">Anchor 1</a>
+            <a href="#" class="btn">Anchor 2</a>
+            <a href="#" class="btn">Anchor 3</a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn">Button 1</button>
+            <button class="btn">Button 2</button>
+            <button class="btn">Button 3</button>
+        </div><br>
+        <div class="btn-group">
+            <input type="button" value="Input 1" class="btn">
+            <input type="button" value="Input 2" class="btn">
+            <input type="button" value="Input 3" class="btn">
+        </div>
+    - name: Super buttons in a button group
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn btn-super">Anchor 1</a>
+            <a href="#" class="btn btn-super">Anchor 2</a>
+            <a href="#" class="btn btn-super">Anchor 3</a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn btn-super">Button 1</button>
+            <button class="btn btn-super">Button 2</button>
+            <button class="btn btn-super">Button 3</button>
+        </div><br>
+        <div class="btn-group">
+            <input type="button" value="Input 1" class="btn btn-super">
+            <input type="button" value="Input 2" class="btn btn-super">
+            <input type="button" value="Input 3" class="btn btn-super">
+        </div>
+    tags:
+    - cf-buttons
+*/
+.btn-group .btn:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group .btn + .btn {
+  margin-left: -0.21428571428571427em;
+}
+.btn-group .btn + .btn:not(:last-child) {
+  border-radius: 0;
+}
+.btn-group .btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group .btn-super + .btn-super {
+  margin-left: -0.16666666666666666em;
+}
+/* topdoc
+    name: Compound button
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default button style
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn">Anchor</a>
+            <a href="#" class="btn btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn">Button</button>
+            <button class="btn btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></button>
+        </div><br>
+    - name: Secondary button style
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn btn-secondary">Anchor</a>
+            <a href="#" class="btn btn-secondary btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn btn-secondary">Button</button>
+            <button class="btn btn-secondary btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></button>
+        </div>
+    - name: Super button style
+      markup: |
+        <div class="btn-group">
+            <a href="#" class="btn btn-super">Anchor</a>
+            <a href="#" class="btn btn-super btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></a>
+        </div><br>
+        <div class="btn-group">
+            <button class="btn btn-super">Button</button>
+            <button class="btn btn-super btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></button>
+        </div>
+    tags:
+    - cf-buttons
+    - fj-icons
+*/
+.btn-compound-action,
+.btn-compound-action:link,
+.btn-compound-action:visited {
+  background-color: #328ed8;
+}
+.btn-compound-action:hover,
+.btn-compound-action:focus,
+.btn-compound-action.hover {
+  background-color: #0072ce;
+}
+.btn-compound-action.btn-secondary {
+  background-color: #919395;
+}
+.btn-compound-action.btn-secondary:hover,
+.btn-compound-action.btn-secondary:focus,
+.btn-compound-action.btn-secondary.hover {
+  background-color: #75787b;
+}
+.btn-compound-action.btn-super {
+  padding-left: 1.2222222222222223em;
+  padding-right: 1.2222222222222223em;
+}
+/* topdoc
+    name: Button link
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-link">Anchor Tag</a>
+        <button class="btn btn-link">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link">
+    - name: Hovered state
+      markup: |
+        <a href="#" class="btn btn-link hover">Anchor Tag</a>
+        <button class="btn btn-link hover">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link hover">
+    - name: Focused state
+      markup: |
+        <a href="#" class="btn btn-link focus">Anchor Tag</a>
+        <button class="btn btn-link focus">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link focus">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-link active">Anchor Tag</a>
+        <button class="btn btn-link active">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link active">
+    tags:
+    - cf-buttons
+*/
+.btn-link,
+.btn-link:link,
+.btn-link:visited {
+  padding: 0;
+  border-bottom: 1px dotted #0072ce;
+  border-radius: 0;
+  margin: 0.6428571428571429em 0;
+  background-color: transparent;
+  color: #0072ce;
+}
+.btn-link:hover,
+.btn-link.hover {
+  border-bottom: 1px solid #7fb8e6;
+  background-color: transparent;
+  color: #7fb8e6;
+}
+.btn-link:focus,
+.btn-link.focus {
+  border-bottom-style: solid;
+  background-color: transparent;
+  outline: thin dotted;
+}
+.btn-link:active,
+.btn-link.active {
+  border-bottom: 1px solid #002d72;
+  background-color: transparent;
+  color: #002d72;
+}
+.lt-ie8 button.btn-link,
+.lt-ie8 input.btn-link {
+  padding: 0;
+}
+/* topdoc
+    name: Destructive action button link
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
+    patterns:
+    - name: Default state
+      markup: |
+        <a href="#" class="btn btn-link btn-warning">Anchor Tag</a>
+        <button class="btn btn-link btn-warning">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning">
+    - name: Hovered state
+      markup: |
+        <a href="#" class="btn btn-link btn-warning hover">Anchor Tag</a>
+        <button class="btn btn-link btn-warning hover">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning hover">
+    - name: Focused state
+      markup: |
+        <a href="#" class="btn btn-link btn-warning focus">Anchor Tag</a>
+        <button class="btn btn-link btn-warning focus">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning focus">
+    - name: Active state
+      markup: |
+        <a href="#" class="btn btn-link btn-warning active">Anchor Tag</a>
+        <button class="btn btn-link btn-warning active">Button Tag</button>
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning active">
+    tags:
+    - cf-buttons
+*/
+.btn-link.btn-warning,
+.btn-link.btn-warning:link,
+.btn-link.btn-warning:visited {
+  border-bottom-color: #d12124;
+  background-color: transparent;
+  color: #d12124;
+}
+.btn-link.btn-warning:hover,
+.btn-link.btn-warning.hover {
+  border-bottom-color: #da6750;
+  color: #da6750;
+}
+.btn-link.btn-warning:focus,
+.btn-link.btn-warning.focus {
+  border-bottom-color: #da6750;
+  outline: thin dotted;
+}
+.btn-link.btn-warning:active,
+.btn-link.btn-warning.active {
+  border-bottom-color: #9c301b;
+  color: #9c301b;
+}
+/* topdoc
+  name: EOF
+  eof: true
+*/
 /* ==========================================================================
+   Flapjack Front End
+   Form Element Styling
+   ========================================================================== */
+label {
+  display: block;
+}
+/* topdoc
+    name: Single/Multi-Line Text Inputs
+    family: cf-forms
+    patterns:
+    - name: Default single-line text input
+      markup: |
+        <input placeholder="placeholder text" type="text">
+    - name: Focused single-line text input
+      markup: |
+        <input class="focus" placeholder="placeholder text" type="text">
+    - name: Field in error state
+      markup: |
+        <input class="error" type="text" value="Invalid input">
+        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+    - name: Field in success state
+      markup: |
+        <input class="success" type="text" value="Validated input">
+        <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+    - name: Default multi-line text box
+      markup: |
+        <textarea>Example entry</textarea>
+    - name: Focused multi-line text box
+      markup: |
+        <textarea class="focus">Example entry</textarea>
+    - name: Multi-line text box in error state
+      markup: |
+        <textarea class="error">Invalid input</textarea>
+        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+    - name: Multi-line text box in success state
+      markup: |
+        <textarea class="success">Validated input</textarea>
+        <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+    tags:
+    - cf-forms
+*/
+input,
+textarea {
+  display: inline-block;
+  width: 85%;
+  margin: 0;
+  padding: 0.25em;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  background: #ffffff;
+  border: 1px solid #75787b;
+  border-radius: 0;
+  vertical-align: top;
+  -webkit-appearance: none;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+textarea {
+  overflow: auto;
+}
+input:focus,
+input.focus,
+textarea:focus,
+textarea.focus {
+  border: 1px solid #0072ce;
+  border-color: #0072ce;
+  outline: 1px solid #0072ce;
+  outline-offset: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input.error,
+textarea.error {
+  border: 1px solid #d12124;
+  outline: 1px solid #d12124;
+}
+input.success,
+textarea.success {
+  border: 1px solid #2cb34a;
+  outline: 1px solid #2cb34a;
+}
+input + [class^="icon-"],
+textarea + [class^="icon-"] {
+  position: relative;
+  top: 0.15em;
+  margin-left: 0.2em;
+  font-size: 1.25em;
+}
+.error + [class^="icon-"] {
+  color: #d12124;
+}
+.success + [class^="icon-"] {
+  color: #2cb34a;
+}
+/* topdoc
+  name: EOF
+  eof: true
+*//* ==========================================================================
+   Flapjack Front End
+   Pagination Styling
+   ========================================================================== */
+/* topdoc
+    name: Pagination
+    family: cf-pagination
+    patterns:
+    - name: Default pagination
+      markup: |
+        <nav class="pagination">
+            <a class="btn pagination_prev" href="#"><i class="btn-icon-left icon-chevron-left"></i> Previous</a>
+            <form class="pagination_form">
+                <label class="pagination_label" for="pagination_current-page">Page</label>
+                <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="number" min="1" max="149" value="149" />
+                <label class="pagination_label" for="pagination_current-page">of 149</label>
+                <button class="btn btn-link pagination_submit" id="pagination_submit" type="submit">Go</button>
+            </form>
+            <a class="btn pagination_next" href="#">Next <i class="btn-icon-right icon-chevron-right"></i></a>
+        </nav>
+    tags:
+    - fj-buttons
+    - fj-forms
+*/
+.pagination {
+  display: block;
+  margin: 0;
+  padding: 0;
+  /* Positions .pagination_next relative to this container */
+
+  position: relative;
+}
+/* On small screens position .pagination_next to the right edge of .pagination */
+.pagination_next {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pagination_label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+.pagination_form {
+  display: block;
+  padding: 0.25em 1.875em;
+  margin: 1em 0 0 0;
+  background: #E3E4E5;
+  color: #75787B;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+.pagination_current-page {
+  display: inline-block;
+  vertical-align: middle;
+  /* We need enough room for three digits and the number spinners for type="number" inputs */
+
+  width: 3em;
+  /* Resets the padding back to 4px now that the font-size is 14px */
+
+  padding: 0.2857142857142857em;
+  margin: 0 0.2857142857142857em;
+  /* Keep in mind that text inputs are 16px by default but 14px in .pagination to match the rest of the tex */
+
+  font-size: 0.875em;
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+}
+.pagination_submit.btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 1em;
+}
+@media only screen and (min-width: 480px) {
+  .pagination_form {
+    border-radius: 0.2857142857142857em;
+  }
+  .pagination_prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .pagination_prev.btn,
+  .pagination_prev.btn:link,
+  .pagination_prev.btn:visited {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .pagination_next.btn,
+  .pagination_next.btn:link,
+  .pagination_next.btn:visited {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+/* topdoc
+  name: EOF
+  eof: true
+*//* ==========================================================================
    CFPB Design Manual
    Code Elements
    ========================================================================== */
@@ -1034,369 +1205,6 @@ kbd,
 samp {
   font-family: monospace, sans-serif;
   margin-bottom: 1.375em;
-}
-/* ==========================================================================
-   CFPB Design Manual
-   Default Table Styles
-   ========================================================================== */
-table {
-  margin: 1.375em 0;
-  padding: 0;
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background: #FFF;
-}
-th,
-td {
-  padding: 0.9375em;
-  /* 15px */
-
-  background: #f8f8f8;
-  border: 0;
-}
-thead {
-  background: #43484e;
-}
-thead th,
-thead td {
-  color: #FFF;
-  background: #43484e;
-}
-th {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  text-align: left;
-}
-tbody > tr:nth-child(odd) > td,
-tbody > tr:nth-child(odd) > th {
-  background: #f1f2f2;
-}
-/* ==========================================================================
-   Compact Table
-   ========================================================================== */
-.compact-table th,
-.compact-table td {
-  padding: 0.625em;
-  /* 10px */
-
-}
-/* ==========================================================================
-   Interactive Table
-   ========================================================================== */
-.interactive-table thead > tr > th.sorting {
-  position: relative;
-  /* used to position the sorting icon in :after */
-
-  cursor: pointer;
-}
-.interactive-table thead > tr > th.sorting:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  min-width: 1.1875em;
-  /* 19px */
-
-  min-height: 1.1875em;
-  /* 19px */
-
-  height: 100%;
-  margin-left: 0.625em;
-  /* 10px */
-
-  background: transparent url("../assets/img/sort_both_light.png") no-repeat left center;
-}
-/* Interactive table rows have a different background color */
-.interactive-table tbody th,
-.interactive-table tbody td,
-.interactive-table tbody > tr:nth-child(odd) > td,
-.interactive-table tbody > tr:nth-child(odd) > th {
-  background: #FFF;
-}
-.interactive-table tbody > tr {
-  border-bottom: 1px solid #e3e4e5;
-}
-.interactive-table tbody > tr:hover > td,
-.interactive-table tbody > tr:hover > th {
-  background: #addc91;
-}
-/* ==========================================================================
-   CFPB Design Manual
-   Basic Form Elements
-   Just text fields for now
-   ========================================================================== */
-form {
-  margin: 0;
-}
-label {
-  display: block;
-}
-legend {
-  font-weight: bold;
-}
-input,
-textarea {
-  display: inline-block;
-  width: 85%;
-  padding: 0.25em;
-  border: 1px solid #75787b;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin: 0;
-  vertical-align: top;
-}
-input:focus,
-input.focus,
-textarea:focus,
-textarea.focus {
-  /* Class included for static state examples */
-
-  border: 1px solid #0072ce;
-  outline: 1px solid #0072ce;
-  outline-offset: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-input.error,
-textarea.error {
-  /* Class included for static state examples */
-
-  border: 1px solid #d12124;
-  outline: 1px solid #d12124;
-}
-input.success,
-textarea.success {
-  /* Class included for static state examples */
-
-  border: 1px solid #2cb34a;
-  outline: 1px solid #2cb34a;
-}
-input + [class^="icon-"],
-textarea + [class^="icon-"] {
-  margin-left: 0.25em;
-  /* 4px */
-
-  position: relative;
-  top: 3px;
-  font-size: 1.25em;
-  /* 20px */
-
-}
-.error + [class^="icon-"] {
-  color: #d12124;
-}
-.success + [class^="icon-"] {
-  color: #2cb34a;
-}
-/* ==========================================================================
-   CFPB Design Manual
-   Button Styling
-   ========================================================================== */
-.btn,
-.btn:link,
-.btn:visited {
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 0.625em 1em;
-  border-width: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin: 0;
-  background-color: #0072ce;
-  color: #FFF;
-  font-family: "Avenir Next Medium", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.875em;
-  line-height: 1;
-  text-decoration: none;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-  transition: .1s;
-}
-.btn:hover,
-.btn:focus {
-  background-color: #328ed8;
-}
-.btn:active {
-  background-color: #33578e;
-}
-/* Secondary Button Styles */
-.btn-secondary {
-  background-color: #75787b;
-  color: #FFF;
-}
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: #919395;
-}
-.btn-secondary:active {
-  background-color: #919395;
-}
-/* Tertiary Button Styles */
-.btn-tertiary {
-  background-color: #e3e4e5;
-  color: #101820;
-}
-.btn-tertiary:hover,
-.btn-tertiary:focus {
-  background-color: #addc91;
-}
-.btn-tertiary:active {
-  background-color: #2cb34a;
-  color: #FFF;
-}
-/* Super Button Styles */
-.btn-super {
-  padding: 0.83333333333333em 1.66666666666667em;
-  /* 15/18 30/18 */
-
-  font-size: 1.28571428571429em;
-  /* 18px */
-
-}
-.btn-super:hover,
-.btn-super:focus {
-  /*background-color: @pacific-80;*/
-
-}
-.btn-super:active {
-  /*background-color: @navy-80;*/
-
-}
-/* Disabled Button Styles */
-.btn-disabled,
-.btn-disabled:hover,
-.btn-group:focus {
-  background-color: #e3e4e5;
-  color: #75787b;
-  cursor: default;
-  /* Fallback for IE/Opera */
-
-  cursor: not-allowed;
-}
-/* Simple link with same dimensions as button */
-.btn-link,
-.btn-link:link,
-.btn-link:visited {
-  padding: 0;
-  border-bottom: 1px dotted #0072ce;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin: 0.7142857142857143em;
-  background-color: transparent;
-  color: #0072ce;
-}
-.btn-link:hover {
-  color: #7fb8e6;
-  border-bottom: 1px solid #7fb8e6;
-  background-color: transparent;
-}
-.btn-link:focus {
-  border-bottom-style: solid;
-  outline: thin dotted;
-  background-color: transparent;
-}
-.btn-link:active {
-  border-bottom: 1px solid #002d72;
-  background-color: transparent;
-  color: #002d72;
-}
-/* Destructive Action Button Styles */
-.btn-warning {
-  background-color: #d12124;
-  color: #FFF;
-}
-.btn-warning:hover,
-.btn-warning:focus {
-  background-color: #da6750;
-}
-.btn-warning:active {
-  background-color: #9c301b;
-}
-/* Simple link + destructive action */
-.btn-link.btn-warning {
-  border-bottom-color: #d12124;
-  background-color: transparent;
-  color: #d12124;
-}
-.btn-link.btn-warning:hover,
-.btn-link.btn-warning:focus {
-  border-bottom-color: #da6750;
-  color: #da6750;
-}
-.btn-link.btn-warning:active {
-  border-bottom-color: #9c301b;
-  color: #9c301b;
-}
-/* Compound button styles */
-.btn-group .btn:first-child {
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-right: -0.26em;
-}
-.btn-group .secondary-action {
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-bottomleft: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  background-color: #328ed8;
-}
-.btn-group .secondary-action:hover,
-.btn-group .secondary-action:focus {
-  background-color: #0072ce;
-}
-.btn-group .secondary-action:active {
-  background-color: #33578e;
-}
-/* Button icons */
-.btn-icon [class^="icon-"] {
-  padding-right: 0.75em;
-  border-right: 1px solid rgba(255, 255, 255, 0.4);
-  margin: -0.35em 0.5em -0.5em 0;
-  color: #FFF;
-  position: relative;
-  line-height: 1.42857142857143;
-}
-.btn-icon [class$="-right"] {
-  padding-right: 0;
-  padding-left: 0.75em;
-  border-right: 0;
-  border-left: 1px solid rgba(255, 255, 255, 0.4);
-  margin: -0.35em 0 -0.5em 0.5em;
-}
-/* ==========================================================================
-   CFPB Design Manual
-   Lists
-   ========================================================================== */
-ul,
-ol {
-  list-style-position: inside;
-  padding: 0;
-}
-ul {
-  list-style-type: square;
-}
-li ul,
-li ol {
-  margin: 0 1.375em;
-}
-dl dd {
-  margin-left: 1.375em;
-}
-dt {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-weight: 600;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -1431,78 +1239,123 @@ img {
   background: #43484e;
   color: #FFF;
 }
-/* ==========================================================================
-   CFPB Design Manual
-   Header
-   ========================================================================== */
-/* Site title */
-.site-title {
-  text-align: center;
-  /* Site title / class on <a> */
+/* ALIGNMENT */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+.mobile-warning {
+  display: block;
+  background-color: #f6d9d3;
+  padding: .85em;
+  margin: .5em 0;
+  font-size: .75em;
+}
+svg:not(:root) {
+  /* corrects IE9 overflow */
 
-}
-.site-title h1 {
-  font-size: 1.625em;
-  /* 26px */
-
-}
-.site-title .title-link {
-  color: #919395;
-}
-.site-title .title-link .site-org {
-  color: #75787b;
-  font-family: "Avenir Next Medium", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
-.site-title .title-link:visited {
-  color: #919395;
-}
-/* Site logo */
-.logo {
-  display: none;
+  overflow: hidden;
 }
 /* ==========================================================================
    CFPB Design Manual
-   Side Nav Mobile Styles
+   Less Mixins
    ========================================================================== */
-/* Secondary nav */
-.secondary-nav {
-  margin: 0;
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
   padding: 0;
-  border-top: 2px solid #f1f2f2;
+  position: absolute;
+  width: 1px;
 }
-.secondary-nav li {
-  border-bottom: 2px solid #f1f2f2;
-  list-style: none;
-  padding: 0.5em 1em;
+.visually-hidden .visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
-.secondary-nav a {
-  border: none;
-  color: #75787b;
+.invisible {
+  visibility: hidden;
 }
-.secondary-nav a:visited {
-  border: none;
-  color: #75787b;
+/* HMDA API DOCS BELOW */
+/* MICRO CLEARFIX HACK */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
 }
-.secondary-nav a:hover,
-.secondary-nav a:focus {
-  border-bottom: 1px solid #919395;
-  color: #919395;
+/* For modern browsers */
+.cf:after {
+  clear: both;
 }
-.secondary-nav a:active {
-  border-bottom: 1px solid #babbbd;
-  color: #babbbd;
+.cf {
+  /* For IE 6/7 (trigger hasLayout) */
+
+  zoom: 1;
+}
+/* Image replacement */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+
+  *text-indent: -9999px;
+}
+.ir before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
 }
 /* ==========================================================================
    CFPB Design Manual
-   Structure and Media Queries
+   MAIN CSS FILE
    ========================================================================== */
-/* Vertical padding */
-.header,
-.content,
-.footer {
-  padding: 2em 0;
+body,
+html {
+  /* The 3 height lines are for the fixed footer to work: http://ryanfait.com/sticky-footer/ */
+
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Avenir Next", Arial, sans-serif;
+  line-height: 1.375;
+  color: #101820;
+  /* CFPB black */
+
+  /* Improve default text rendering, handling of kerning pairs and ligatures */
+
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* New CSS3 syntax supported by Chrome */
+
 }
 /* Set up containers */
 .wrap {
@@ -1519,44 +1372,6 @@ img {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
 }
-/* Mobile first, y'all */
-.site-title,
-.site-logo,
-.sidebar,
-.content,
-.site-info,
-.content-25,
-.content-75 {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 100%;
-}
-.ie .site-title,
-.ie .site-logo,
-.ie .sidebar,
-.ie .content,
-.ie .site-info,
-.ie .content-25,
-.ie .content-75 {
-  margin-right: -0.26em;
-}
-.lt-ie8 .site-title,
-.lt-ie8 .site-logo,
-.lt-ie8 .sidebar,
-.lt-ie8 .content,
-.lt-ie8 .site-info,
-.lt-ie8 .content-25,
-.lt-ie8 .content-75 {
-  display: inline;
-  *zoom: 1;
-  *behavior: url(boxsizing.htc);
-}
 /* Media Queries
    ========================================================================== */
 /* Mobile portrait (320px) */
@@ -1569,8 +1384,195 @@ img {
 }
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
+  
+}
+/* Tablet/netbook (768px) */
+@media only screen and (min-width: 48em) {
+  
+}
+/* Landscape tablet/netbook/laptop (1024px) */
+@media only screen and (min-width: 64em) {
+  
+}
+/* Desktop (1280px) */@media only screen and (min-width: 80em) {
+  
+}
+/* Widescreen (1600px) */
+@media only screen and (min-width: 100em) {
+  
+}
+/* FROM HMDA API DOCS */
+/* MOBILE PORTRAIT 480px */
+@media only screen and (min-width: 30em) {
+  .mobile-warning {
+    display: none;
+  }
+}
+/* PRINT */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    /*prints faster and cheaper */
+  
+    text-shadow: none !important;
+    -webkit-filter: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  /* Don't print links for images, javascript or internal links */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  /* Repeat header row at top of each printed page */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Lists
+   ========================================================================== */
+ul,
+ol {
+  list-style-position: inside;
+  padding: 0;
+}
+ul {
+  list-style-type: square;
+}
+li ul,
+li ol {
+  margin: 0 1.375em;
+}
+dl dd {
+  margin-left: 1.375em;
+}
+dt {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-weight: 600;
+}
+/* ==========================================================================
+	 CFPB Design Manual
+	 Header
+	 ========================================================================== */
+/* Mobile-First Defaults: */
+.header {
+  border-bottom: 4px solid #2cb34a;
+  padding: 2em 0;
+  width: 100%;
+}
+.header .site-title {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+  text-align: center;
+}
+.ie .header .site-title {
+  margin-right: -0.26em;
+}
+.lt-ie8 .header .site-title {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+.header .site-title h1 {
+  font-size: 1.625em;
+  /* 26px */
+
+}
+.header .site-title .title-link {
+  color: #919395;
+}
+.header .site-title .title-link .site-org {
+  color: #75787b;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.header .site-title .title-link:visited {
+  color: #919395;
+}
+.header .site-logo {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+  text-align: right;
+}
+.ie .header .site-logo {
+  margin-right: -0.26em;
+}
+.lt-ie8 .header .site-logo {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+.header .site-logo .logo {
+  display: none;
+}
+/* Media Queries
+	 ========================================================================== */
+/* Mobile portrait (320px) */
+@media only screen and (min-width: 20em) {
+  
+}
+/* Mobile landscape (480px) */
+@media only screen and (min-width: 30em) {
+  
+}
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
   .header {
-    border-bottom: 4px solid #2cb34a;
     padding-bottom: 0;
   }
   .header .site-title {
@@ -1616,6 +1618,244 @@ img {
   .header .site-logo .logo {
     display: inline;
   }
+}
+/* Tablet/netbook (768px) */
+@media only screen and (min-width: 48em) {
+  
+}
+/* Landscape tablet/netbook/laptop (1024px) */
+@media only screen and (min-width: 64em) {
+  
+}
+/* Desktop (1280px) */@media only screen and (min-width: 80em) {
+  
+}
+/* Widescreen (1600px) */
+@media only screen and (min-width: 100em) {
+  
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Content
+   ========================================================================== */
+/* Mobile first means all content boxes are full width */
+.content {
+  margin-top: 0;
+  padding: 2em 0;
+  /* only here to keep footer sticky */
+
+  overflow: auto;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+}
+.ie .content {
+  margin-right: -0.26em;
+}
+.lt-ie8 .content {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+.content .content-25,
+.content .content-75 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.ie .content .content-25,
+.ie .content .content-75 {
+  margin-right: -0.26em;
+}
+.lt-ie8 .content .content-25,
+.lt-ie8 .content .content-75 {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+/* Media Queries
+   ========================================================================== */
+/* Mobile portrait (320px) */
+@media only screen and (min-width: 20em) {
+  
+}
+/* Mobile landscape (480px) */
+@media only screen and (min-width: 30em) {
+  
+}
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+  .content {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 75%;
+    /* Inner content - nested grid inside content */
+  
+  }
+  .ie .content {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .content {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .content .content-25 {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 25%;
+  }
+  .ie .content .content-25 {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .content .content-25 {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .content .content-75 {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 75%;
+  }
+  .ie .content .content-75 {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .content .content-75 {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+}
+/* Tablet/netbook (768px) */
+@media only screen and (min-width: 48em) {
+  
+}
+/* Landscape tablet/netbook/laptop (1024px) */
+@media only screen and (min-width: 64em) {
+  
+}
+/* Desktop (1280px) */@media only screen and (min-width: 80em) {
+  
+}
+/* Widescreen (1600px) */
+@media only screen and (min-width: 100em) {
+  
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Footer
+   ========================================================================== */
+.footer {
+  padding: 2em 0;
+  border-top: 2px solid #babbbd;
+  background: #f1f2f2;
+  width: 100%;
+}
+.footer h4 {
+  margin: 1.5em 0 .5em .25em;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.footer p {
+  font-size: 0.875em;
+  line-height: 1.42857142857143;
+  margin-left: .25em;
+}
+.footer a,
+.footer a:link,
+.footer a:visited {
+  border-bottom: 1px dotted;
+}
+.footer a:hover {
+  border-bottom: 1px dotted #0072ce;
+}
+.footer .footer-links ul {
+  list-style: none;
+  margin: 1em .5em 1em .25em;
+}
+.footer .footer-section {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: .5em;
+  margin-left: .5em;
+}
+.footer .footer-links {
+  float: left;
+}
+.footer .footer-oss {
+  float: right;
+}
+/* Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 37.5em) {
+  .footer h4 {
+    margin: 1em 0 .5em 0;
+  }
+  .footer p {
+    margin: .75em 0;
+  }
+  .footer .footer-links {
+    margin: 0 .5em .5em 1em;
+  }
+  .footer .footer-links ul,
+  .footer li {
+    margin-left: 0;
+  }
+  .footer .footer-oss {
+    width: 60%;
+    float: right;
+  }
+}
+/* TABLET/NETBOOK 744px */
+@media only screen and (min-width: 46.5em) {
+  .footer .footer-oss {
+    width: 67%;
+  }
+}
+/* Mobile portrait (320px) */
+@media only screen and (min-width: 20em) {
+  
+}
+/* Mobile landscape (480px) */
+@media only screen and (min-width: 30em) {
+  
+}
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
   .main-nav {
     display: inline-block;
     -webkit-box-sizing: border-box;
@@ -1669,91 +1909,14 @@ img {
     margin-bottom: -4px;
     color: #101820;
   }
-  .sidebar {
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: solid transparent;
-    border-width: 0 15px;
-    margin-right: -0.25em;
-    vertical-align: top;
-    width: 25%;
-    padding-bottom: 2.5em;
-    padding-top: 2.5em;
-  }
-  .ie .sidebar {
-    margin-right: -0.26em;
-  }
-  .lt-ie8 .sidebar {
-    display: inline;
-    *zoom: 1;
-    *behavior: url(boxsizing.htc);
-  }
-  .content {
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: solid transparent;
-    border-width: 0 15px;
-    margin-right: -0.25em;
-    vertical-align: top;
-    width: 75%;
-  }
-  .ie .content {
-    margin-right: -0.26em;
-  }
-  .lt-ie8 .content {
-    display: inline;
-    *zoom: 1;
-    *behavior: url(boxsizing.htc);
-  }
-  .footer {
-    border-top: 4px solid #2cb34a;
-  }
-  /* Inner content */
-  .content-25 {
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: solid transparent;
-    border-width: 0 15px;
-    margin-right: -0.25em;
-    vertical-align: top;
-    width: 25%;
-    padding-bottom: 1em;
-    padding-top: 1em;
-  }
-  .ie .content-25 {
-    margin-right: -0.26em;
-  }
-  .lt-ie8 .content-25 {
-    display: inline;
-    *zoom: 1;
-    *behavior: url(boxsizing.htc);
-  }
-  .content-75 {
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: solid transparent;
-    border-width: 0 15px;
-    margin-right: -0.25em;
-    vertical-align: top;
-    width: 75%;
-    padding-bottom: 1em;
-    padding-top: 1em;
-  }
-  .ie .content-75 {
-    margin-right: -0.26em;
-  }
-  .lt-ie8 .content-75 {
-    display: inline;
-    *zoom: 1;
-    *behavior: url(boxsizing.htc);
+  .main-nav-active a:link,
+  .main-nav-active a:visited,
+  .main-nav-active a:hover,
+  .main-nav-active a:focus,
+  .main-nav-active a:active {
+    border-bottom: 4px solid #addc91;
+    margin-bottom: -4px;
+    color: #101820;
   }
 }
 /* Tablet/netbook (768px) */
@@ -1767,7 +1930,7 @@ img {
 /* Landscape tablet/netbook/laptop (1024px) */
 @media only screen and (min-width: 64em) {
   .main-nav li {
-    font-size: 1.375em;
+    /*font-size: 1.375em;*/
     /* 22px */
   
   }
@@ -1778,4 +1941,564 @@ img {
 /* Widescreen (1600px) */
 @media only screen and (min-width: 100em) {
   
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Sidebar and Secondary Nav
+   ========================================================================== */
+.sidebar {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+}
+.ie .sidebar {
+  margin-right: -0.26em;
+}
+.lt-ie8 .sidebar {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+.secondary-nav a {
+  display: block;
+  padding: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.secondary-nav a,
+.secondary-nav a:link,
+.secondary-nav a:visited {
+  border-bottom: none;
+  color: #75787b;
+}
+.secondary-nav li:hover,
+.secondary-nav a:focus,
+.secondary-nav li:active,
+.secondary-nav .secondary-nav-active {
+  color: #75787b;
+  border-left: 4px solid #2cb34a;
+  background-color: transparent;
+  border-bottom: 1px solid #babbbd;
+  padding-left: 0;
+}
+.secondary-nav ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #babbbd;
+}
+.secondary-nav li {
+  list-style: none;
+  border-bottom: 1px solid #babbbd;
+  font-size: 1.125em;
+  padding-left: 4px;
+}
+/* Media Queries
+   ========================================================================== */
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+  .sidebar {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 25%;
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+  .ie .sidebar {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .sidebar {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+}
+/* 
+This LESS Code is for code highlighing
+* Background:
+* Github.com lets you host webpages in the special gh-pages branch.
+* gh-pages parses markdown files using the Ruby application called Jekyll
+* More specifically, Jekyll uses the Ruby script "Redcarpet" to parse Markdown
+* Markdown's code highlighting creates the css class names the same way the Python-based syntax highlighter named Pygments does.
+* Side note: Github.com allows for syntax highlighting in wiki pages and issues (outputting the pygments CSS class names).
+* This is the github pygments css.
+* This code is from:
+** https://github.com/richleland/pygments-css/blob/master/github.css
+
+*/
+.highlight {
+  /* Comment */
+
+  /* Error */
+
+  /* Keyword */
+
+  /* Operator */
+
+  /* Comment.Multiline */
+
+  /* Comment.Preproc */
+
+  /* Comment.Single */
+
+  /* Comment.Special */
+
+  /* Generic.Deleted */
+
+  /* Generic.Emph */
+
+  /* Generic.Error */
+
+  /* Generic.Heading */
+
+  /* Generic.Inserted */
+
+  /* Generic.Output */
+
+  /* Generic.Prompt */
+
+  /* Generic.Strong */
+
+  /* Generic.Subheading */
+
+  /* Generic.Traceback */
+
+  /* Keyword.Constant */
+
+  /* Keyword.Declaration */
+
+  /* Keyword.Namespace */
+
+  /* Keyword.Pseudo */
+
+  /* Keyword.Reserved */
+
+  /* Keyword.Type */
+
+  /* Literal.Number */
+
+  /* Literal.String */
+
+  /* Name.Attribute */
+
+  /* Name.Builtin */
+
+  /* Name.Class */
+
+  /* Name.Constant */
+
+  /* Name.Decorator */
+
+  /* Name.Entity */
+
+  /* Name.Exception */
+
+  /* Name.Function */
+
+  /* Name.Label */
+
+  /* Name.Namespace */
+
+  /* Name.Tag */
+
+  /* Name.Variable */
+
+  /* Operator.Word */
+
+  /* Text.Whitespace */
+
+  /* Literal.Number.Float */
+
+  /* Literal.Number.Hex */
+
+  /* Literal.Number.Integer */
+
+  /* Literal.Number.Oct */
+
+  /* Literal.String.Backtick */
+
+  /* Literal.String.Char */
+
+  /* Literal.String.Doc */
+
+  /* Literal.String.Double */
+
+  /* Literal.String.Escape */
+
+  /* Literal.String.Heredoc */
+
+  /* Literal.String.Interpol */
+
+  /* Literal.String.Other */
+
+  /* Literal.String.Regex */
+
+  /* Literal.String.Single */
+
+  /* Literal.String.Symbol */
+
+  /* Name.Builtin.Pseudo */
+
+  /* Name.Variable.Class */
+
+  /* Name.Variable.Global */
+
+  /* Name.Variable.Instance */
+
+  /* Literal.Number.Integer.Long */
+
+}
+.highlight .hll {
+  background-color: #ffffcc;
+}
+.highlight .c {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+.highlight .k {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .o {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #aa0000;
+}
+.highlight .gh {
+  color: #999999;
+}
+.highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .gt {
+  color: #aa0000;
+}
+.highlight .kc {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kd {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .m {
+  color: #009999;
+}
+.highlight .s {
+  color: #d01040;
+}
+.highlight .na {
+  color: #008080;
+}
+.highlight .nb {
+  color: #0086b3;
+}
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #008080;
+}
+.highlight .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #800080;
+}
+.highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #555555;
+}
+.highlight .nt {
+  color: #000080;
+}
+.highlight .nv {
+  color: #008080;
+}
+.highlight .ow {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #bbbbbb;
+}
+.highlight .mf {
+  color: #009999;
+}
+.highlight .mh {
+  color: #009999;
+}
+.highlight .mi {
+  color: #009999;
+}
+.highlight .mo {
+  color: #009999;
+}
+.highlight .sb {
+  color: #d01040;
+}
+.highlight .sc {
+  color: #d01040;
+}
+.highlight .sd {
+  color: #d01040;
+}
+.highlight .s2 {
+  color: #d01040;
+}
+.highlight .se {
+  color: #d01040;
+}
+.highlight .sh {
+  color: #d01040;
+}
+.highlight .si {
+  color: #d01040;
+}
+.highlight .sx {
+  color: #d01040;
+}
+.highlight .sr {
+  color: #009926;
+}
+.highlight .s1 {
+  color: #d01040;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .bp {
+  color: #999999;
+}
+.highlight .vc {
+  color: #008080;
+}
+.highlight .vg {
+  color: #008080;
+}
+.highlight .vi {
+  color: #008080;
+}
+.highlight .il {
+  color: #009999;
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Default Table Styles
+   ========================================================================== */
+.table table {
+  margin: 1.375em 0;
+  padding: 0;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #FFF;
+}
+.table th,
+.table td {
+  padding: 0.9375em;
+  /* 15px */
+
+  background: #f8f8f8;
+  border: 0;
+}
+.table thead {
+  background: #43484e;
+}
+.table thead th,
+.table thead td {
+  color: #FFF;
+  background: #43484e;
+}
+.table th {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: left;
+}
+.table tbody > tr:nth-child(odd) > td,
+.table tbody > tr:nth-child(odd) > th {
+  background: #f1f2f2;
+}
+/* ==========================================================================
+   Compact Table
+   ========================================================================== */
+.compact-table th,
+.compact-table td {
+  padding: 0.625em;
+  /* 10px */
+
+}
+/* ==========================================================================
+   Interactive Table
+   ========================================================================== */
+.interactive-table {
+  /* Interactive table rows have a different background color */
+
+}
+.interactive-table thead > tr > th.sorting {
+  position: relative;
+  /* used to position the sorting icon in :after */
+
+  cursor: pointer;
+}
+.interactive-table thead > tr > th.sorting:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  min-width: 1.1875em;
+  /* 19px */
+
+  min-height: 1.1875em;
+  /* 19px */
+
+  height: 100%;
+  margin-left: 0.625em;
+  /* 10px */
+
+  background: transparent url("../assets/img/sort_both_light.png") no-repeat left center;
+}
+.interactive-table tbody th,
+.interactive-table tbody td,
+.interactive-table tbody > tr:nth-child(odd) > td,
+.interactive-table tbody > tr:nth-child(odd) > th {
+  background: #FFF;
+}
+.interactive-table tbody > tr {
+  border-bottom: 1px solid #e3e4e5;
+}
+.interactive-table tbody > tr:hover > td,
+.interactive-table tbody > tr:hover > th {
+  background: #addc91;
+}
+/* ==========================================================================
+   HMDA API DOCS Table
+   ========================================================================== */
+.field-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.375em;
+  font-size: 0.875em;
+  width: 100%;
+  table-layout: fixed;
+}
+.field-table code {
+  background-color: #ffffff;
+  border: 1px solid #e3e4e5;
+  border-radius: 0.250em;
+  overflow-x: auto;
+  padding: 0.125em 0.250em;
+  white-space: pre-wrap;
+}
+.field-table th {
+  text-align: left;
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  background-color: #dbedd4;
+}
+.field-table tr,
+.field-table th,
+.field-table td {
+  padding: 10px 15px;
+  line-height: 1.5em;
+}
+.field-table td:code {
+  background-color: transparent;
+  white-space: nowrap;
+}
+.field-table tr:nth-child(even) {
+  background-color: #F1F2F2;
+}
+.field-table tr:nth-child(odd) {
+  background-color: #F8F8F8;
+}
+.field-table .fullwidth tr:nth-child(odd) {
+  background-color: transparent;
+}
+.field-table .fullwidth tr:nth-child(even) {
+  background-color: transparent;
 }

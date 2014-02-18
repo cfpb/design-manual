@@ -1,16 +1,21 @@
 <div id="sidebar" class="sidebar" role="complementary">
   <aside>
     <a class="skip-link visually-hidden focusable" href="#content">Skip to Main Content</a>
+    <h3>{{ page.category }}</h3>
     <nav role="navigation">
-      <ul class="secondary-nav">
-        {% for link in site.secondarynav %}
-          {% if link.internal == true %}
-            <li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
-          {% else %}
-            <li><a href="{{ link.url }}">{{ link.text }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+      <div class="secondary-nav">
+        <ul>
+          {% for link in site.secondarynav %}
+            {% if link.category == page.category %}
+              {% if link.internal == true %}
+                <li{% if link.text == page.title %} class="secondary-nav-active"{% endif %}><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
+              {% else %}
+                <li{% if link.text == page.title %} class="secondary-nav-active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
     </nav>
   </aside>
 </div>

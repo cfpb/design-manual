@@ -1,0 +1,44 @@
+{
+  "name": "cf-expandables",
+  "description": "Standard expandable (show/hide) components for Capital Framework.",
+  "version": "0.2.0",
+  "homepage": "http://github.cfpb.gov/pages/flapjack/cf-expandables",
+  "author": {
+    "name": "Consumer Financial Protection Bureau",
+    "email": "scott.cranfill@cfpb.gov",
+    "url": "http://cfpb.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.cfpb.gov/flapjack/cf-expandables.git"
+  },
+  "bugs": {
+    "url": "http://github.cfpb.gov/flapjack/cf-expandables/issues"
+  },
+  "licenses": [
+    {
+      "type": "Public Domain",
+      "url": "http://github.cfpb.gov/pages/flapjack/cf-expandables/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "grunt jasmine"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-bower-task": "~0.3.2",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-string-replace": "latest",
+    "grunt-topdoc": "~0.2.0",
+    "fj-component-demo": "git://github.cfpb.gov/flapjack/fj-component-demo.git"
+  },
+  "keywords": []
+}

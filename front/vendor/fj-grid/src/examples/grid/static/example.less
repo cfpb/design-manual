@@ -1,0 +1,182 @@
+// Make sure you import Ghost.
+@import "ghost.less";
+
+// Give columns a background color to aid debugging.
+@total-columns: 12;
+@wrapper-width: 1200px;
+@debug: true;
+
+body {
+  font-family: "Avenir Next", Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  .wrapper();
+  //.row();
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+// Twelve columns, 1200px wide
+
+.cols-12 {
+
+  .wrapper();
+
+  section {
+    margin: 0 -15px;
+  }
+
+  // column class generation, based on ghost-plus.less
+
+  .columnX ( @index ) when ( @index > 0 ) {
+
+    .col-@{index} {
+      .column( @index );
+    }
+
+    .prefixX ( @index, @total-columns - @index );
+    .suffixX ( @index, @total-columns - @index );
+
+
+    .push-@{index} {
+      .push( @index );
+    }
+
+    .pull-@{index} {
+      .pull( @index );
+    }
+
+    .columnX( @index - 1 );
+
+  }
+
+  .prefixX ( @index, @indexP ) when (@indexP > 0) {
+    
+    .col-@{index}.prefix-@{indexP} {
+      .column( @columns: @index; @prefix: @indexP; );
+    }
+
+    .prefixSuffix ( @index, @indexP, @total-columns - @index - @indexP );
+
+    .prefixX ( @index, @indexP - 1 );
+
+  }
+
+  .suffixX ( @index, @indexS ) when (@indexS > 0) {
+    
+    .col-@{index}.suffix-@{indexS} {
+      .column( @columns: @index; @suffix: @indexS; );
+    }
+
+    .suffixX ( @index, @indexS - 1 );
+
+  }
+
+  .prefixSuffix ( @index, @indexP, @indexS ) when (@indexS > 0) {
+
+    .col-@{index}.prefix-@{indexP}.suffix-@{indexS} {
+      .column( @columns: @index; @prefix: @indexP; @suffix: @indexS );
+    }
+
+    .prefixSuffix ( @index, @indexP, @indexS - 1 );
+
+  }
+
+  .columnX ( 0 ) {}
+
+  .columnX ( @total-columns );
+
+  // end of class generation code
+
+
+  .col {
+    //padding: 20px 0;
+    text-align: center;
+    margin-bottom: 10px;
+
+    section {
+      text-align: left;
+    }
+  }
+
+
+  // Push/pull tests
+
+  .push-one {
+    .push(1);
+  }
+
+  .push-two {
+    .push(2);
+  }
+
+  .push-three {
+    .push(3);
+  }
+
+  .pull-one {
+    .pull(1);
+  }
+
+  .pull-two {
+    .pull(2);
+  }
+
+
+  // Viewport adjustments
+
+  @media only screen and ( max-width: 767px ) {
+
+    .col {
+      // We're using an important flag to ensure the above nested children 
+      // are also set to 12 columns. Normally, you'd have CSS rules for 
+      // nested children in your media query but to keep things simple in 
+      // this test runner I'm just using !important to coerce all columns.
+      .column(12);
+      // For the push() column()s, we have to make sure the offset is removed.
+      margin-left: 0;
+    }
+
+  }
+
+}
+
+
+// Twelve columns, 960px wide
+
+.cols-12.w-960 {
+
+  .wrapper( 960px );
+
+}
+
+
+// Misc. test runner stuff
+
+body > div {
+
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px !important;
+  padding-bottom: 40px !important;
+  clear: both;
+
+}
+
+
+.cols-12 .col,
+.cols-16 .col {
+  margin-bottom: 10px;
+
+  div {
+    padding: 20px 0;
+    background-color: #FCC;
+    background-color: rgba(255, 0, 0, 0.25);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  }
+}
+
+h2, h3 {
+  clear: both;
+}
