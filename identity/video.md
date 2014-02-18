@@ -12,22 +12,22 @@ CFPB videos must contain strong emotional and creative imagery while maintaining
 
 ### Event
 
-![Still from Miami Fl Field Hearing Video](/design-manual/assets/img/videos/Video_1.jpg "Event Video")
+![Still from Miami Fl Field Hearing Video]({{ site.baseurl }}/assets/img/video/Video_1.jpg "Event Video")
 A video that covers a specific event relevant to the Bureau, such as a field hearing, webcast, or conference.
 
 ### Informational
 
-![Still from Remittance Transfer Rule Video](/design-manual/assets/img/videos/Video_2.jpg "Informational Video")
+![Still from Remittance Transfer Rule Video]({{ site.baseurl }}/assets/img/video/Video_2.jpg "Informational Video")
 An industry-facing video that informs viewers about a specific topic through animated slide presentations and voiceovers.
 
 ### Educational
 
-![Still from What is HMDA Video](/design-manual/assets/img/videos/Video_3.jpg "Educational Video")
+![Still from What is HMDA Video]({{ site.baseurl }}/assets/img/video/Video_3.jpg "Educational Video")
 A video that educates consumers on a specific issue, web tool, or regulation written by the Bureau.
 
 ### Documentary
 
-![Still from Consumer Stories Video](/design-manual/assets/img/videos/Video_4.jpg "Documentary Video")
+![Still from Consumer Stories Video]({{ site.baseurl }}/assets/img/video/Video_4.jpg "Documentary Video")
 A documentary-style video that demonstrates how the CFPB has helped consumers and impacted their lives.
 
 ## Stylistic guidelines

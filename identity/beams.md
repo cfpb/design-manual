@@ -26,7 +26,7 @@ trapezoids and parallelograms that
 feature the 9&deg; angle.
 </span>
 <span class="content-75">
-![Base shapes for beams](/design-manual/assets/img/beams/Beams3.png "Base shapes for beams")
+![Base shapes for beams]({{ site.baseurl }}/assets/img/beams/Beams3.png "Base shapes for beams")
 </span>
 
 ### Color
@@ -54,7 +54,7 @@ to create layered
 beam shapes.
 </span>
 <span class="content-75">
-![Ideal composition of beams](/design-manual/assets/img/beams/Beams4.png "Ideal beams")
+![Ideal composition of beams]({{ site.baseurl }}/assets/img/beams/Beams4.png "Ideal beams")
 </span>
 
 <span class="content-25">
@@ -67,7 +67,7 @@ especially well for
 horizontal layouts.
 </span>
 <span class="content-75">
-![Ideal composition of beams](/design-manual/assets/img/beams/Beams5.png "Ideal beams")
+![Ideal composition of beams]({{ site.baseurl }}/assets/img/beams/Beams5.png "Ideal beams")
 </span>
 
 <span class="content-25">
@@ -78,7 +78,7 @@ room for content. No
 transparency used.
 </span>
 <span class="content-75">
-![Poor composition of beams](/design-manual/assets/img/beams/Beams6.png "Poor composition of beams")
+![Poor composition of beams]({{ site.baseurl }}/assets/img/beams/Beams6.png "Poor composition of beams")
 </span>
 
 <span class="content-25">
@@ -88,5 +88,5 @@ direction, weakening
 the beam metaphor.
 </span>
 <span class="content-75">
-![Poor composition of beams](/design-manual/assets/img/beams/Beams7.png "Poor composition of beams")
+![Poor composition of beams]({{ site.baseurl }}/assets/img/beams/Beams7.png "Poor composition of beams")
 </span>
