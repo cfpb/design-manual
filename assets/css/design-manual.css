@@ -1334,7 +1334,11 @@ svg:not(:root) {
    ========================================================================== */
 body,
 html {
+  /* The 3 height lines are for the fixed footer to work: http://ryanfait.com/sticky-footer/ */
+
   min-height: 100%;
+  height: auto !important;
+  height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -1776,7 +1780,7 @@ dt {
    ========================================================================== */
 .footer {
   padding: 2em 0;
-  border-top: 2px solid #2cb34a;
+  border-top: 2px solid #babbbd;
   background: #f1f2f2;
   width: 100%;
 }
@@ -1818,10 +1822,6 @@ dt {
 /* Media Queries
    ========================================================================== */
 @media only screen and (min-width: 37.5em) {
-  .footer {
-    padding-top: 1em 0;
-    border-top: 2px solid #babbbd;
-  }
   .footer h4 {
     margin: 1em 0 .5em 0;
   }
@@ -1965,32 +1965,6 @@ dt {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
 }
-/* Media Queries
-   ========================================================================== */
-/* Small tablet (600px) */
-@media only screen and (min-width: 37.5em) {
-  .sidebar {
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: solid transparent;
-    border-width: 0 15px;
-    margin-right: -0.25em;
-    vertical-align: top;
-    width: 25%;
-    padding-bottom: 2em;
-    padding-top: 2em;
-  }
-  .ie .sidebar {
-    margin-right: -0.26em;
-  }
-  .lt-ie8 .sidebar {
-    display: inline;
-    *zoom: 1;
-    *behavior: url(boxsizing.htc);
-  }
-}
 .secondary-nav a {
   display: block;
   padding: 10px;
@@ -2023,6 +1997,406 @@ dt {
   border-bottom: 1px solid #babbbd;
   font-size: 1.125em;
   padding-left: 4px;
+}
+/* Media Queries
+   ========================================================================== */
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+  .sidebar {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 25%;
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+  .ie .sidebar {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .sidebar {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+}
+/* If the screen is tall and wide enough (1024x768), fix the header, sidebar and footer */
+@media screen and (min-width: 64em) and (min-height: 48em) {
+  .wrapper {
+    /* Make room for the fixed footer  */
+  
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background-color: #fff;
+  }
+  .sidebar {
+    margin-top: 8em;
+    width: 13.75em;
+    margin-right: 0;
+    margin-left: 0;
+    position: fixed;
+    z-index: 99999;
+  }
+  .secondary-nav {
+    background-color: #fff;
+  }
+  .content {
+    margin-top: 8em;
+    margin-left: 14em;
+    min-height: 50em;
+  }
+  /* On short pages, we want the footer to be at the bottom of the page */
+  /* http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page */
+}
+/* 
+This LESS Code is for code highlighing
+* Background:
+* Github.com lets you host webpages in the special gh-pages branch.
+* gh-pages parses markdown files using the Ruby application called Jekyll
+* More specifically, Jekyll uses the Ruby script "Redcarpet" to parse Markdown
+* Markdown's code highlighting creates the css class names the same way the Python-based syntax highlighter named Pygments does.
+* Side note: Github.com allows for syntax highlighting in wiki pages and issues (outputting the pygments CSS class names).
+* This is the github pygments css.
+* This code is from:
+** https://github.com/richleland/pygments-css/blob/master/github.css
+
+*/
+.highlight {
+  /* Comment */
+
+  /* Error */
+
+  /* Keyword */
+
+  /* Operator */
+
+  /* Comment.Multiline */
+
+  /* Comment.Preproc */
+
+  /* Comment.Single */
+
+  /* Comment.Special */
+
+  /* Generic.Deleted */
+
+  /* Generic.Emph */
+
+  /* Generic.Error */
+
+  /* Generic.Heading */
+
+  /* Generic.Inserted */
+
+  /* Generic.Output */
+
+  /* Generic.Prompt */
+
+  /* Generic.Strong */
+
+  /* Generic.Subheading */
+
+  /* Generic.Traceback */
+
+  /* Keyword.Constant */
+
+  /* Keyword.Declaration */
+
+  /* Keyword.Namespace */
+
+  /* Keyword.Pseudo */
+
+  /* Keyword.Reserved */
+
+  /* Keyword.Type */
+
+  /* Literal.Number */
+
+  /* Literal.String */
+
+  /* Name.Attribute */
+
+  /* Name.Builtin */
+
+  /* Name.Class */
+
+  /* Name.Constant */
+
+  /* Name.Decorator */
+
+  /* Name.Entity */
+
+  /* Name.Exception */
+
+  /* Name.Function */
+
+  /* Name.Label */
+
+  /* Name.Namespace */
+
+  /* Name.Tag */
+
+  /* Name.Variable */
+
+  /* Operator.Word */
+
+  /* Text.Whitespace */
+
+  /* Literal.Number.Float */
+
+  /* Literal.Number.Hex */
+
+  /* Literal.Number.Integer */
+
+  /* Literal.Number.Oct */
+
+  /* Literal.String.Backtick */
+
+  /* Literal.String.Char */
+
+  /* Literal.String.Doc */
+
+  /* Literal.String.Double */
+
+  /* Literal.String.Escape */
+
+  /* Literal.String.Heredoc */
+
+  /* Literal.String.Interpol */
+
+  /* Literal.String.Other */
+
+  /* Literal.String.Regex */
+
+  /* Literal.String.Single */
+
+  /* Literal.String.Symbol */
+
+  /* Name.Builtin.Pseudo */
+
+  /* Name.Variable.Class */
+
+  /* Name.Variable.Global */
+
+  /* Name.Variable.Instance */
+
+  /* Literal.Number.Integer.Long */
+
+}
+.highlight .hll {
+  background-color: #ffffcc;
+}
+.highlight .c {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+.highlight .k {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .o {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #aa0000;
+}
+.highlight .gh {
+  color: #999999;
+}
+.highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .gt {
+  color: #aa0000;
+}
+.highlight .kc {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kd {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .m {
+  color: #009999;
+}
+.highlight .s {
+  color: #d01040;
+}
+.highlight .na {
+  color: #008080;
+}
+.highlight .nb {
+  color: #0086b3;
+}
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #008080;
+}
+.highlight .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #800080;
+}
+.highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #555555;
+}
+.highlight .nt {
+  color: #000080;
+}
+.highlight .nv {
+  color: #008080;
+}
+.highlight .ow {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #bbbbbb;
+}
+.highlight .mf {
+  color: #009999;
+}
+.highlight .mh {
+  color: #009999;
+}
+.highlight .mi {
+  color: #009999;
+}
+.highlight .mo {
+  color: #009999;
+}
+.highlight .sb {
+  color: #d01040;
+}
+.highlight .sc {
+  color: #d01040;
+}
+.highlight .sd {
+  color: #d01040;
+}
+.highlight .s2 {
+  color: #d01040;
+}
+.highlight .se {
+  color: #d01040;
+}
+.highlight .sh {
+  color: #d01040;
+}
+.highlight .si {
+  color: #d01040;
+}
+.highlight .sx {
+  color: #d01040;
+}
+.highlight .sr {
+  color: #009926;
+}
+.highlight .s1 {
+  color: #d01040;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .bp {
+  color: #999999;
+}
+.highlight .vc {
+  color: #008080;
+}
+.highlight .vg {
+  color: #008080;
+}
+.highlight .vi {
+  color: #008080;
+}
+.highlight .il {
+  color: #009999;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -2158,332 +2532,4 @@ dt {
 }
 .field-table .fullwidth tr:nth-child(even) {
   background-color: transparent;
-}
-.content {
-  /*
-    h1 {
-        margin-top: .5em;
-        margin-bottom: .5em;
-        font: 400 2.125em/1.23529411764706 "Avenir Next", Arial, sans-serif;
-        font-weight: normal;
-    }
-
-    h2 {
-        margin: 0;
-        margin-bottom: 1em;
-        font: 400 1.625em/1.23076923076923 "Avenir Next", Arial, sans-serif;
-        font-weight: normal;
-    }
-
-    h3 {
-        margin: 2em 0 1em 0;
-        font: 400 1.375em/1.27272727272727 "Avenir Next", Arial, sans-serif;
-        font-weight: normal;
-    }
-
-    h3:first-child {
-        margin-top: 0;
-        margin-bottom: .75em;
-    }
-
-    h4 {
-        margin: 0;
-        margin-bottom: 1em;
-        font: 500 1.125em/1.22222222222222 "Avenir Next Medium", Arial, sans-serif;
-        font-weight: 500;
-    }
-
-    h5 {
-        margin: 3em 0 1.25em 0;
-        font: 600 0.875em/1.57142857142857 "Avenir Next Demi", Arial, sans-serif;
-        font-weight: bold;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-    }
-
-    h6 {
-        margin: 0;
-        margin-bottom: 1em;
-        font: 600 0.75em/1.83333333333333 "Avenir Next Demi", Arial, sans-serif;
-        font-weight: bold;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-    }
-
-    p  {
-        margin: .75em 0;
-        font-size: 1em;
-        line-height: 1.375em;
-    }
-
-    ul, blockquote, pre, td, th, label {
-        margin: 0;
-        font-size: 1em;
-        line-height: 1.57142857142857em;
-        margin-bottom: 1.375em;
-    }
-
-    ol {
-        line-height: 1.57142857142857em;
-    }
-*/
-
-  /* CODE */
-
-  /* LISTS */
-
-  /* LINKS */
-
-  /* FORMS */
-
-  /*
-    input[type="search"]::-webkit-search-decoration {
-        -webkit-appearance: none;
-    }
-
-    button:: -moz-focus-inner, input::-moz-focus-inner {
-        border:0;
-        padding:0;
-    }
-    */
-
-  /* QUOTES */
-
-  /* MEDIA */
-
-  /* ABBREVIATION */
-
-  /* MARKED/INSERTED/DELETED AND SELECTED TEXT */
-
-}
-.content p,
-.content blockquote,
-.content q,
-.content pre,
-.content address,
-.content hr,
-.content code,
-.content samp,
-.content dl,
-.content ol,
-.content ul,
-.content form,
-.content table,
-.content fieldset,
-.content menu,
-.content img {
-  margin: 0;
-  margin-bottom: 1.375em;
-}
-.content small,
-.content p.small {
-  margin: 0;
-  margin-bottom: 1.7142857142857142857142857142857em;
-  /* 12px / 24px */
-
-  font-size: 0.75em;
-  line-height: 1.7142857142857142857142857142857;
-}
-.content strong,
-.content b,
-.content dt {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-}
-.content dfn {
-  font-style: italic;
-}
-.content var,
-.content address {
-  font-style: normal;
-}
-.content sub,
-.content sup {
-  font-size: 75%;
-  line-height: 0;
-  /* Positions 'sub' and 'sup' without affecting line-height */
-
-  position: relative;
-  vertical-align: baseline;
-}
-.content sup {
-  /* Move superscripted text up */
-
-  top: -0.5em;
-}
-.content sub {
-  /* Move subscripted text down */
-
-  bottom: -0.25em;
-}
-.content pre,
-.content code {
-  background-color: #f1f2f2;
-  border: 1px solid #e3e4e5;
-  border-radius: 0.250em;
-  overflow-x: auto;
-  padding: 0.125em 0.250em;
-  white-space: nowrap;
-}
-.content pre,
-.content code,
-.content kbd,
-.content samp {
-  font-size: .75em;
-  line-height: 1.375;
-  margin-bottom: 1.375em;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-}
-.content pre {
-  white-space: pre-wrap;
-  margin-bottom: 1.5em;
-}
-.content ul,
-.content ol {
-  padding: 0;
-  list-style-position: outside;
-  margin-left: 3%;
-}
-.content li ul,
-.content li ol {
-  margin-left: 1.375em;
-}
-.content dl dd {
-  margin-left: 1.375em;
-}
-.content dt {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-}
-.content a {
-  border-bottom: 1px dotted #0072CE;
-  color: #0072CE;
-  text-decoration: none;
-}
-.content a:visited {
-  border-bottom: 1px solid #005E5D;
-  color: #005E5D;
-  text-decoration: none;
-}
-.content a:hover {
-  border-bottom: 1px solid #7eb8dd;
-  color: #7eb8dd;
-  text-decoration: none;
-}
-.content a:focus {
-  border-bottom: 1px solid #0072ce;
-  outline: thin dotted;
-  color: #0072ce;
-  text-decoration: none;
-}
-.content a:active {
-  border-bottom: 1px solid #002D72;
-  color: #002D72;
-  text-decoration: none;
-}
-.content a.call-to-action {
-  font-family: "Avenir Next", Arial, sans-serif;
-}
-.content a.action-arrow {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-style: normal;
-  font-size: 1em;
-}
-.content a.action-arrow .icon-right {
-  position: relative;
-}
-.content a.action-arrow i {
-  text-decoration: none;
-}
-.content form {
-  margin: 0;
-}
-.content fieldset {
-  border: 0;
-  padding: 0;
-}
-.content textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-.content legend {
-  *margin-left: -0.75em;
-}
-.content button,
-.content input,
-.content select,
-.content textarea {
-  vertical-align: baseline;
-  /* IE7 and older */
-
-  *vertical-align: middle;
-}
-.content button,
-.content input {
-  line-height: normal;
-  *overflow: visible;
-}
-.content button,
-.content input[type="button"],
-.content input[type="reset"],
-.content input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-.content input[type="checkbox"],
-.content input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.content input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-.content blockquote,
-.content q {
-  quotes: none;
-}
-.content blockquote:before,
-.content blockquote:after,
-.content q:before,
-.content q:after {
-  content: "";
-  content: none;
-}
-.content blockquote {
-  border-left: 4px solid #BABBBD;
-  color: #75787b;
-  padding-left: 1.5em;
-}
-.content blockquote > p {
-  padding: 0;
-}
-.content figure {
-  margin: 0;
-}
-.content img {
-  border: 0;
-  float: right;
-  /* improve IE's resizing of images */
-
-  -ms-interpolation-mode: bicubic;
-}
-.content abbr[title],
-.content dfn[title] {
-  border-bottom: 1px dotted #333;
-  cursor: help;
-}
-.content ins,
-.content mark {
-  text-decoration: none;
-}
-.content mark {
-  background: #c47529;
-}
-.content ins {
-  background: #d49855;
-}
-.content del {
-  text-decoration: line-through;
 }

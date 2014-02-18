@@ -82,6 +82,10 @@ secondarynav:
   url: identity/brand-guidelines.html
   internal: true
   category: Identity
+- text: Beams
+  url: identity/beams.html
+  internal: true
+  category: Identity
 - text: Color principles
   url: identity/color-principles.html
   internal: true
@@ -114,16 +118,8 @@ secondarynav:
   url: identity/video.html
   internal: true
   category: Identity
-- text: Beams
-  url: ui-toolkit/beams.html
-  internal: true
-  category: UI toolkit
 - text: Buttons
   url: ui-toolkit/buttons.html
-  internal: true
-  category: UI toolkit
-- text: Example Page with Elements
-  url: ui-toolkit/example-page-with-elements.html
   internal: true
   category: UI toolkit
 - text: Expandables
@@ -137,9 +133,17 @@ secondarynav:
 - text: Grid and layout
   url: ui-toolkit/grid-and-layout.html
   internal: true
+  category: UI toolkit
+- text: HTML elements
+  url: ui-toolkit/html-elements.html
+  internal: true
   category: UI toolkit  
 - text: Links
   url: ui-toolkit/links.html
+  internal: true
+  category: UI toolkit
+- text: Markdown
+  url: ui-toolkit/markdown.html
   internal: true
   category: UI toolkit
 - text: Modals
