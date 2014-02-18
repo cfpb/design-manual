@@ -2218,42 +2218,6 @@ dt {
   *behavior: url(boxsizing.htc);
 }
 
-/* If the screen is tall and wide enough (1024x768), fix the header, sidebar and footer */
-
-.wrapper {
-  /* Make room for the fixed footer  */
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 99999;
-  background-color: #fff;
-}
-
-.sidebar {
-  margin-top: 8em;
-  width: 13.75em;
-  margin-right: 0;
-  margin-left: 0;
-  position: fixed;
-  z-index: 99999;
-}
-
-.secondary-nav {
-  background-color: #fff;
-}
-
-.content {
-  margin-top: 8em;
-  margin-left: 14em;
-  min-height: 50em;
-}
-
-/* On short pages, we want the footer to be at the bottom of the page */
-
-/* http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page */
-
 /* 
 This LESS Code is for code highlighing
 * Background:
