@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Beams
-category: UI toolkit
+category: Identity
 published: true
 ---
 
