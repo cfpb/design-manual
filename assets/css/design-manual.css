@@ -1085,7 +1085,8 @@ textarea + [class^="icon-"] {
 /* topdoc
   name: EOF
   eof: true
-*//* ==========================================================================
+*/
+/* ==========================================================================
    Flapjack Front End
    Pagination Styling
    ========================================================================== */
@@ -1114,7 +1115,6 @@ textarea + [class^="icon-"] {
   margin: 0;
   padding: 0;
   /* Positions .pagination_next relative to this container */
-
   position: relative;
 }
 /* On small screens position .pagination_next to the right edge of .pagination */
@@ -1143,14 +1143,11 @@ textarea + [class^="icon-"] {
   display: inline-block;
   vertical-align: middle;
   /* We need enough room for three digits and the number spinners for type="number" inputs */
-
   width: 3em;
   /* Resets the padding back to 4px now that the font-size is 14px */
-
   padding: 0.2857142857142857em;
   margin: 0 0.2857142857142857em;
   /* Keep in mind that text inputs are 16px by default but 14px in .pagination to match the rest of the tex */
-
   font-size: 0.875em;
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
@@ -1187,13 +1184,13 @@ textarea + [class^="icon-"] {
 /* topdoc
   name: EOF
   eof: true
-*//* ==========================================================================
+*/
+/* ==========================================================================
    CFPB Design Manual
    Code Elements
    ========================================================================== */
 pre {
   /* Allow line wrapping of 'pre' */
-
   padding: 1.375em 1em;
   white-space: pre;
   white-space: pre-wrap;
@@ -1220,7 +1217,6 @@ video {
 img {
   border: 0;
   /* Improve IE's resizing of images */
-
   -ms-interpolation-mode: bicubic;
 }
 /* ==========================================================================
@@ -1229,13 +1225,11 @@ img {
    ========================================================================== */
 ::-moz-selection {
   /* Selected text */
-
   background: #43484e;
   color: #FFF;
 }
 ::selection {
   /* Selected text */
-
   background: #43484e;
   color: #FFF;
 }
@@ -1264,7 +1258,6 @@ img {
 }
 svg:not(:root) {
   /* corrects IE9 overflow */
-
   overflow: hidden;
 }
 /* ==========================================================================
@@ -1310,7 +1303,6 @@ svg:not(:root) {
 }
 .cf {
   /* For IE 6/7 (trigger hasLayout) */
-
   zoom: 1;
 }
 /* Image replacement */
@@ -1319,7 +1311,6 @@ svg:not(:root) {
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
-
   *text-indent: -9999px;
 }
 .ir before {
@@ -1335,7 +1326,6 @@ svg:not(:root) {
 body,
 html {
   /* The 3 height lines are for the fixed footer to work: http://ryanfait.com/sticky-footer/ */
-
   min-height: 100%;
   height: auto !important;
   height: 100%;
@@ -1346,16 +1336,13 @@ html {
   line-height: 1.375;
   color: #101820;
   /* CFPB black */
-
   /* Improve default text rendering, handling of kerning pairs and ligatures */
-
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   overflow-wrap: break-word;
   /* New CSS3 syntax supported by Chrome */
-
 }
 /* Set up containers */
 .wrap {
@@ -1375,32 +1362,12 @@ html {
 /* Media Queries
    ========================================================================== */
 /* Mobile portrait (320px) */
-@media only screen and (min-width: 20em) {
-  
-}
 /* Mobile landscape (480px) */
-@media only screen and (min-width: 30em) {
-  
-}
 /* Small tablet (600px) */
-@media only screen and (min-width: 37.5em) {
-  
-}
 /* Tablet/netbook (768px) */
-@media only screen and (min-width: 48em) {
-  
-}
 /* Landscape tablet/netbook/laptop (1024px) */
-@media only screen and (min-width: 64em) {
-  
-}
-/* Desktop (1280px) */@media only screen and (min-width: 80em) {
-  
-}
+/* Desktop (1280px) */
 /* Widescreen (1600px) */
-@media only screen and (min-width: 100em) {
-  
-}
 /* FROM HMDA API DOCS */
 /* MOBILE PORTRAIT 480px */
 @media only screen and (min-width: 30em) {
@@ -1414,7 +1381,6 @@ html {
     background: transparent !important;
     color: black !important;
     /*prints faster and cheaper */
-  
     text-shadow: none !important;
     -webkit-filter: none !important;
     filter: none !important;
@@ -1453,7 +1419,7 @@ html {
   img {
     max-width: 100% !important;
   }
-  @page  {
+  @page {
     margin: 0.5cm;
   }
   p,
@@ -1523,7 +1489,6 @@ dt {
 .header .site-title h1 {
   font-size: 1.625em;
   /* 26px */
-
 }
 .header .site-title .title-link {
   color: #919395;
@@ -1563,13 +1528,7 @@ dt {
 /* Media Queries
 	 ========================================================================== */
 /* Mobile portrait (320px) */
-@media only screen and (min-width: 20em) {
-  
-}
 /* Mobile landscape (480px) */
-@media only screen and (min-width: 30em) {
-  
-}
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
   .header {
@@ -1620,20 +1579,9 @@ dt {
   }
 }
 /* Tablet/netbook (768px) */
-@media only screen and (min-width: 48em) {
-  
-}
 /* Landscape tablet/netbook/laptop (1024px) */
-@media only screen and (min-width: 64em) {
-  
-}
-/* Desktop (1280px) */@media only screen and (min-width: 80em) {
-  
-}
+/* Desktop (1280px) */
 /* Widescreen (1600px) */
-@media only screen and (min-width: 100em) {
-  
-}
 /* ==========================================================================
    CFPB Design Manual
    Content
@@ -1643,7 +1591,6 @@ dt {
   margin-top: 0;
   padding: 2em 0;
   /* only here to keep footer sticky */
-
   overflow: auto;
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -1690,13 +1637,7 @@ dt {
 /* Media Queries
    ========================================================================== */
 /* Mobile portrait (320px) */
-@media only screen and (min-width: 20em) {
-  
-}
 /* Mobile landscape (480px) */
-@media only screen and (min-width: 30em) {
-  
-}
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
   .content {
@@ -1710,7 +1651,6 @@ dt {
     vertical-align: top;
     width: 75%;
     /* Inner content - nested grid inside content */
-  
   }
   .ie .content {
     margin-right: -0.26em;
@@ -1760,19 +1700,163 @@ dt {
   }
 }
 /* Tablet/netbook (768px) */
-@media only screen and (min-width: 48em) {
-  
-}
 /* Landscape tablet/netbook/laptop (1024px) */
-@media only screen and (min-width: 64em) {
-  
-}
-/* Desktop (1280px) */@media only screen and (min-width: 80em) {
-  
-}
+/* Desktop (1280px) */
 /* Widescreen (1600px) */
-@media only screen and (min-width: 100em) {
-  
+/* Color swatches for Identity/Color page
+   ========================================================================== */
+.swatch {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 25%;
+  margin-left: 0;
+}
+.ie .swatch {
+  margin-right: -0.26em;
+}
+.lt-ie8 .swatch {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+.swatch_field {
+  height: 2em;
+}
+.swatch__primary .swatch_field {
+  height: 8em;
+}
+.swatch_head {
+  margin: 0.25em 0;
+}
+.swatch_table {
+  width: 100%;
+}
+.swatch td,
+.swatch th {
+  padding: 0;
+}
+.swatch th {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+.swatch_field__green {
+  background: #2cb34a;
+}
+.swatch_field__dark-redorange {
+  background: #9c301b;
+}
+.swatch_field__teal-20 {
+  background: #ccdfdf;
+}
+.swatch_field__teal-50 {
+  background: #7faeae;
+}
+.swatch_field__teal-80 {
+  background: #337e7d;
+}
+.swatch_field__teal {
+  background: #005e5d;
+}
+.swatch_field__pacific-20 {
+  background: #cce3f5;
+}
+.swatch_field__pacific-50 {
+  background: #7fb8e6;
+}
+.swatch_field__pacific-80 {
+  background: #328ed8;
+}
+.swatch_field__pacific {
+  background: #0072ce;
+}
+.swatch_field__navy-20 {
+  background: #ccd5e3;
+}
+.swatch_field__navy-50 {
+  background: #7f96b8;
+}
+.swatch_field__navy-80 {
+  background: #33578e;
+}
+.swatch_field__navy {
+  background: #002d72;
+}
+.swatch_field__neutral-20 {
+  background: #e4e2e0;
+}
+.swatch_field__neutral-50 {
+  background: #bcb6b2;
+}
+.swatch_field__neutral-80 {
+  background: #948b84;
+}
+.swatch_field__neutral {
+  background: #796e65;
+}
+.swatch_field__gold-20 {
+  background: #ffecd1;
+}
+.swatch_field__gold-50 {
+  background: #ffce8d;
+}
+.swatch_field__gold-80 {
+  background: #ffb149;
+}
+.swatch_field__gold {
+  background: #ff9e1b;
+}
+.swatch_field__redorange-20 {
+  background: #f6d9d3;
+}
+.swatch_field__redorange-50 {
+  background: #e8a091;
+}
+.swatch_field__redorange-80 {
+  background: #da6750;
+}
+.swatch_field__redorange {
+  background: #d12124;
+}
+.swatch_field__gray-5 {
+  background: #f8f8f8;
+}
+.swatch_field__gray-10 {
+  background: #f1f2f2;
+}
+.swatch_field__gray-20 {
+  background: #e3e4e5;
+}
+.swatch_field__gray-50 {
+  background: #babbbd;
+}
+.swatch_field__gray-80 {
+  background: #919395;
+}
+.swatch_field__gray {
+  background: #75787b;
+}
+.swatch_field__darkgray {
+  background: #43484e;
+}
+.swatch_field__black {
+  background: #101820;
+}
+.swatch_field__green-tint {
+  background: #dbedd4;
+}
+.swatch_field__green-midtone {
+  background: #addc91;
+}
+.swatch_field__green {
+  background: #2cb34a;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -1847,13 +1931,7 @@ dt {
   }
 }
 /* Mobile portrait (320px) */
-@media only screen and (min-width: 20em) {
-  
-}
 /* Mobile landscape (480px) */
-@media only screen and (min-width: 30em) {
-  
-}
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
   .main-nav {
@@ -1884,7 +1962,6 @@ dt {
     font-weight: 500;
     font-size: 1.125em;
     /* 18px */
-  
     list-style: none;
   }
   .main-nav li:first-child {
@@ -1924,7 +2001,6 @@ dt {
   .main-nav li {
     font-size: 1.25em;
     /* 20px */
-  
   }
 }
 /* Landscape tablet/netbook/laptop (1024px) */
@@ -1932,16 +2008,10 @@ dt {
   .main-nav li {
     /*font-size: 1.375em;*/
     /* 22px */
-  
   }
 }
-/* Desktop (1280px) */@media only screen and (min-width: 80em) {
-  
-}
+/* Desktop (1280px) */
 /* Widescreen (1600px) */
-@media only screen and (min-width: 100em) {
-  
-}
 /* ==========================================================================
    CFPB Design Manual
    Sidebar and Secondary Nav
@@ -2039,125 +2109,65 @@ This LESS Code is for code highlighing
 */
 .highlight {
   /* Comment */
-
   /* Error */
-
   /* Keyword */
-
   /* Operator */
-
   /* Comment.Multiline */
-
   /* Comment.Preproc */
-
   /* Comment.Single */
-
   /* Comment.Special */
-
   /* Generic.Deleted */
-
   /* Generic.Emph */
-
   /* Generic.Error */
-
   /* Generic.Heading */
-
   /* Generic.Inserted */
-
   /* Generic.Output */
-
   /* Generic.Prompt */
-
   /* Generic.Strong */
-
   /* Generic.Subheading */
-
   /* Generic.Traceback */
-
   /* Keyword.Constant */
-
   /* Keyword.Declaration */
-
   /* Keyword.Namespace */
-
   /* Keyword.Pseudo */
-
   /* Keyword.Reserved */
-
   /* Keyword.Type */
-
   /* Literal.Number */
-
   /* Literal.String */
-
   /* Name.Attribute */
-
   /* Name.Builtin */
-
   /* Name.Class */
-
   /* Name.Constant */
-
   /* Name.Decorator */
-
   /* Name.Entity */
-
   /* Name.Exception */
-
   /* Name.Function */
-
   /* Name.Label */
-
   /* Name.Namespace */
-
   /* Name.Tag */
-
   /* Name.Variable */
-
   /* Operator.Word */
-
   /* Text.Whitespace */
-
   /* Literal.Number.Float */
-
   /* Literal.Number.Hex */
-
   /* Literal.Number.Integer */
-
   /* Literal.Number.Oct */
-
   /* Literal.String.Backtick */
-
   /* Literal.String.Char */
-
   /* Literal.String.Doc */
-
   /* Literal.String.Double */
-
   /* Literal.String.Escape */
-
   /* Literal.String.Heredoc */
-
   /* Literal.String.Interpol */
-
   /* Literal.String.Other */
-
   /* Literal.String.Regex */
-
   /* Literal.String.Single */
-
   /* Literal.String.Symbol */
-
   /* Name.Builtin.Pseudo */
-
   /* Name.Variable.Class */
-
   /* Name.Variable.Global */
-
   /* Name.Variable.Instance */
-
   /* Literal.Number.Integer.Long */
-
 }
 .highlight .hll {
   background-color: #ffffcc;
@@ -2383,7 +2393,6 @@ This LESS Code is for code highlighing
 .table td {
   padding: 0.9375em;
   /* 15px */
-
   background: #f8f8f8;
   border: 0;
 }
@@ -2412,19 +2421,16 @@ This LESS Code is for code highlighing
 .compact-table td {
   padding: 0.625em;
   /* 10px */
-
 }
 /* ==========================================================================
    Interactive Table
    ========================================================================== */
 .interactive-table {
   /* Interactive table rows have a different background color */
-
 }
 .interactive-table thead > tr > th.sorting {
   position: relative;
   /* used to position the sorting icon in :after */
-
   cursor: pointer;
 }
 .interactive-table thead > tr > th.sorting:after {
@@ -2433,14 +2439,11 @@ This LESS Code is for code highlighing
   top: 0;
   min-width: 1.1875em;
   /* 19px */
-
   min-height: 1.1875em;
   /* 19px */
-
   height: 100%;
   margin-left: 0.625em;
   /* 10px */
-
   background: transparent url("../assets/img/sort_both_light.png") no-repeat left center;
 }
 .interactive-table tbody th,

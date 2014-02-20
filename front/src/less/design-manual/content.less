@@ -73,3 +73,62 @@
 @media only screen and (min-width: 100em) { 
 
 }
+
+
+/* Color swatches for Identity/Color page
+   ========================================================================== */
+
+.swatch {
+    .column(3);
+    margin-left: 0;
+
+    &_field {
+        height: 2em;
+    }
+    
+    &__primary .swatch_field {
+        height: 8em;
+    }
+
+    &_head {
+        margin: 0.25em 0;
+    }
+
+    &_table {
+        width: 100%;
+    }
+    td,
+    th {
+        padding: 0;
+    }
+    th {
+        .webfont-demi;
+        text-align: left;
+    }
+
+    &_field__green {
+        background: @green;
+    }
+}
+
+@colors: 'green', 'green-midtone', 'green-tint', 'black', 'darkgray',
+         'gray', 'gray-80', 'gray-50', 'gray-20', 'gray-10', 'gray-5',
+         'redorange', 'redorange-80', 'redorange-50', 'redorange-20',
+         'gold', 'gold-80', 'gold-50', 'gold-20',
+         'neutral', 'neutral-80', 'neutral-50', 'neutral-20',
+         'navy', 'navy-80', 'navy-50', 'navy-20',
+         'pacific', 'pacific-80', 'pacific-50', 'pacific-20',
+         'teal', 'teal-80', 'teal-50', 'teal-20',
+         'dark-redorange';
+
+.loop(@i) when (@i > 0) {
+    // Retrieve the next variable name from the @colors array
+    @name: e(extract(@colors, @i));
+    // Output the `.swatch_field__color` rule
+    .swatch_field__@{name} { background: @@name; }
+    // Call the next iteration of the loop
+    .loop((@i - 1));
+}
+
+// Initiate loop
+.loop( length(@colors) );
