@@ -45,7 +45,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__green-midtone"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Green Midtone</h4> <!-- Update the full color name -->
         <table class="swatch_table">
@@ -71,7 +71,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__green-tint"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Green Tint</h4> <!-- Update the full color name -->
         <table class="swatch_table">
@@ -97,7 +97,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__black"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">CFPB Black</h4> <!-- Update the full color name -->
         <table class="swatch_table">
@@ -123,7 +123,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__darkgray"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Dark Gray</h4> <!-- Update the full color name -->
         <table class="swatch_table">
@@ -149,7 +149,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__gray"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Gray</h4> <!-- Update the full color name -->
         <table class="swatch_table">
@@ -175,7 +175,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__gray-80"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Gray 80%</h4> <!-- Update the full color name -->
         <table class="swatch_table">
@@ -201,7 +201,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__gray-50"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Gray 50%</h4> <!-- Update the full color name -->
         <table class="swatch_table">
@@ -227,7 +227,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__gray-20"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Gray 20%</h4> <!-- Update the full color name -->
         <table class="swatch_table">
@@ -253,7 +253,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__gray-10"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Gray 10%</h4> <!-- Update the full color name -->
         <table class="swatch_table">
@@ -279,7 +279,7 @@ including midtones and tints, and thoughtful use of whitespace.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
-    <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
+    <div class="swatch_field swatch_field__gray-5"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Gray 5%</h4> <!-- Update the full color name -->
         <table class="swatch_table">
