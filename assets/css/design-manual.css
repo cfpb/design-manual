@@ -1619,6 +1619,30 @@ html {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
 }
+.content .content-33,
+.content .content-67 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.ie .content .content-33,
+.ie .content .content-67 {
+  margin-right: -0.26em;
+}
+.lt-ie8 .content .content-33,
+.lt-ie8 .content .content-67 {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
 /* Media Queries
    ========================================================================== */
 /* Mobile portrait (320px) */
@@ -1635,6 +1659,7 @@ html {
     margin-right: -0.25em;
     vertical-align: top;
     width: 75%;
+    /* Inner content - nested grid inside content */
     /* Inner content - nested grid inside content */
   }
   .ie .content {
@@ -1655,6 +1680,7 @@ html {
     margin-right: -0.25em;
     vertical-align: top;
     width: 25%;
+    border-left: 0;
   }
   .ie .content .content-25 {
     margin-right: -0.26em;
@@ -1674,6 +1700,7 @@ html {
     margin-right: -0.25em;
     vertical-align: top;
     width: 75%;
+    border-right: 0;
   }
   .ie .content .content-75 {
     margin-right: -0.26em;
@@ -1683,11 +1710,96 @@ html {
     *zoom: 1;
     *behavior: url(boxsizing.htc);
   }
+  .content .content-33 {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 33.33333333%;
+    border-left: 0;
+  }
+  .ie .content .content-33 {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .content .content-33 {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .content .content-67 {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 66.66666667%;
+    border-right: 0;
+  }
+  .ie .content .content-67 {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .content .content-67 {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
 }
 /* Tablet/netbook (768px) */
 /* Landscape tablet/netbook/laptop (1024px) */
 /* Desktop (1280px) */
 /* Widescreen (1600px) */
+.content {
+  /* cross-browser HR styling. See:
+  https://github.com/paulirish/html5-boilerplate/blob/ef3c095bafa9a6fa9c771f368d4b30c8ce4deded/css/style.css#L75
+  */
+  /* Table of Contents */
+}
+.content .page-title {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+}
+.content h2 {
+  clear: both;
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  border-bottom: 1px solid #e3e4e5;
+  padding-bottom: 4px;
+}
+.content hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #babbbd;
+  margin: 1em 0;
+  padding: 0;
+}
+.content ul.toc {
+  list-style: none;
+  border-bottom: 1px solid #7fb8e6;
+}
+.content .toc li {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-size: 18px;
+}
+.content .toc li a {
+  text-decoration: none;
+  border-bottom: none;
+}
+.content .toc li a:hover {
+  border-bottom: none;
+}
+.content p {
+  font-family: Georgia, "Times New Roman", serif;
+}
+.content .lead-in {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 18px;
+}
 /* ==========================================================================
    CFPB Design Manual
    Lists

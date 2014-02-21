@@ -11,7 +11,7 @@ The Manual will include CFPB's design goals and principles, guidelines for user 
 
 Releasing the Manual to the public increases transparency and allows you to help us make improvements. The Manual is open source, so we’d love for other agencies, developers, or groups to adapt it for their own use. Many style guides influenced the Manual, including Mozilla's, MailChimp's, BBC's, but our primary inspiration is the UK's Government Digital Service's Government Service Design Manual. We hope ours is one small step towards unified, quality, user-centric design across all US government websites.
 
-The site is built using Grunt, Jekyll, and LESS.
+The site is built using Bower, Grunt, Jekyll, and LESS.
 
 ## To run it locally
 
