@@ -137,7 +137,7 @@ module.exports = function(grunt) {
         dest: 'assets/js/<%= pkg.name %>.min.js'
       },
       capitalframework: {
-        src: ['front/vendor/fj-expandables/src/js/expandables.js'],
+        src: ['front/vendor_temp/fj-expandables/src/js/expandables.js'],
         dest: 'assets/js/capital-framework.min.js'
       }
     },
@@ -167,7 +167,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-buttons/demo/custom.html'],
+            src: ['front/vendor/cf-buttons/demo/custom.html'],
             dest: '_includes/ui-toolkit/buttons/',
             filter: 'isFile'
           },
@@ -181,7 +181,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-colors/demo/custom.html'],
+            src: ['front/vendor/cf-colors/demo/custom.html'],
             dest: '_includes/ui-toolkit/colors/',
             filter: 'isFile'
           },
@@ -194,15 +194,15 @@ module.exports = function(grunt) {
             filter: 'isFile'
           },
           */
-          /*
+          
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-forms/demo/custom.html'],
+            src: ['front/vendor/cf-forms/demo/custom.html'],
             dest: '_includes/ui-toolkit/forms/',
             filter: 'isFile'
           },
-          */
+          
           /* NO GRID DEMO (YET) -- This should be fixed when everything is moved into the gh-pages repo
           {
             expand: true,
@@ -215,7 +215,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-pagination/demo/custom.html'],
+            src: ['front/vendor_temp/fj-pagination/demo/custom.html'],
             dest: '_includes/ui-toolkit/pagination/',
             filter: 'isFile'
           }

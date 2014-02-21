@@ -75,6 +75,36 @@
 }
 
 
+/* ==========================================================================
+   CFPB Design Manual
+   Lists
+   ========================================================================== */
+.content {
+  ul,
+  ol {
+          list-style-position: inside;
+          padding: 0;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  li ul,
+  li ol {
+          margin: 0 1.375em;
+  }
+
+  dl dd {
+          margin-left: 1.375em;
+  }
+
+  dt {
+          font-family: @sans-serif-demi;
+          font-weight: 600;
+  }
+}
+
 /* Color swatches for Identity/Color page
    ========================================================================== */
 
@@ -121,14 +151,28 @@
          'teal', 'teal-80', 'teal-50', 'teal-20',
          'dark-redorange';
 
-.loop(@i) when (@i > 0) {
+// Need grunt-contrib-less .9 or higher for lenght to work
+// http://lesscss.org/functions/#list-functions
+@num_colors: length(@colors);
+
+/*
+.num-colors-test {
+  color: @num_colors;
+}
+*/
+
+.loop(@index) when (@index > 0) {
     // Retrieve the next variable name from the @colors array
-    @name: e(extract(@colors, @i));
+    @name: e(extract(@colors, @index));
     // Output the `.swatch_field__color` rule
-    .swatch_field__@{name} { background: @@name; }
+    .swatch_field__@{name} { background-color: @@name; }
     // Call the next iteration of the loop
-    .loop((@i - 1));
+    .loop((@index - 1));
 }
 
+// end the loop when index is 0
+.loop (0) {}
+
 // Initiate loop
-.loop( length(@colors) );
+//.loop( length(@colors) );
+.loop(@num_colors);

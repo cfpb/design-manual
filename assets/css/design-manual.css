@@ -150,30 +150,30 @@ h6,
 }
 h1,
 .h1 {
-  margin-bottom: 0.6470588235294118em;
+  margin-bottom: 0.64705882em;
   font-size: 2.125em;
-  line-height: 1.2941176470588236;
+  line-height: 1.29411765;
 }
 h2,
 .h2 {
-  margin-bottom: 0.8461538461538461em;
+  margin-bottom: 0.84615385em;
   font-size: 1.625em;
-  line-height: 1.2692307692307692;
+  line-height: 1.26923077;
 }
 h3,
 .h3 {
   margin-bottom: 1em;
   font-size: 1.375em;
-  line-height: 1.2727272727272727;
+  line-height: 1.27272727;
 }
 h4,
 .h4 {
   font-family: "Avenir Next Medium", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  margin-bottom: 1.2222222222222223em;
+  margin-bottom: 1.22222222em;
   font-size: 1.125em;
-  line-height: 1.2222222222222223;
+  line-height: 1.22222222;
 }
 h5,
 h6,
@@ -187,21 +187,21 @@ h6,
 }
 h5,
 .h5 {
-  margin-bottom: 1.5714285714285714em;
+  margin-bottom: 1.57142857em;
   font-size: 0.875em;
-  line-height: 1.5714285714285714;
+  line-height: 1.57142857;
 }
 h6,
 .h6 {
-  margin-bottom: 1.8333333333333333em;
+  margin-bottom: 1.83333333em;
   font-size: 0.75em;
-  line-height: 1.8333333333333333;
+  line-height: 1.83333333;
 }
 .superheader {
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  margin-bottom: 0.4583333333333333em;
+  margin-bottom: 0.45833333em;
   font-size: 3em;
   line-height: 1.375;
 }
@@ -503,9 +503,9 @@ ul {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0.6428571428571429em 1em;
+  padding: 0.64285714em 1em;
   border: 0;
-  border-radius: 0.2857142857142857em;
+  border-radius: 0.28571429em;
   margin: 0;
   vertical-align: middle;
   background-color: #0072ce;
@@ -531,7 +531,7 @@ ul {
   background-color: #33578e;
 }
 .btn + .btn {
-  margin-left: 0.42857142857142855em;
+  margin-left: 0.42857143em;
 }
 button.btn::-moz-focus-inner,
 input.btn::-moz-focus-inner {
@@ -543,8 +543,8 @@ input.btn::-moz-focus-inner {
 .lt-ie8 button.btn,
 .lt-ie8 input.btn {
   overflow: visible;
-  padding-top: 0.5142857142857143em;
-  padding-bottom: 0.5142857142857143em;
+  padding-top: 0.51428571em;
+  padding-bottom: 0.51428571em;
 }
 /* topdoc
     name: Secondary button
@@ -679,16 +679,16 @@ input.btn::-moz-focus-inner {
 .btn-super,
 .btn-super:link,
 .btn-super:visited {
-  padding: 0.8333333333333334em 1.6666666666666667em;
+  padding: 0.83333333em 1.66666667em;
   font-size: 1.125em;
 }
 .btn-super + .btn-super {
-  margin-left: 0.3333333333333333em;
+  margin-left: 0.33333333em;
 }
 .lt-ie8 button.btn-super,
 .lt-ie8 input.btn-super {
-  padding-top: 0.6666666666666666em;
-  padding-bottom: 0.6666666666666666em;
+  padding-top: 0.66666667em;
+  padding-bottom: 0.66666667em;
 }
 /* topdoc
     name: Button with icons
@@ -795,7 +795,7 @@ input.btn::-moz-focus-inner {
   border-bottom-right-radius: 0;
 }
 .btn-group .btn + .btn {
-  margin-left: -0.21428571428571427em;
+  margin-left: -0.21428571em;
 }
 .btn-group .btn + .btn:not(:last-child) {
   border-radius: 0;
@@ -805,7 +805,7 @@ input.btn::-moz-focus-inner {
   border-bottom-left-radius: 0;
 }
 .btn-group .btn-super + .btn-super {
-  margin-left: -0.16666666666666666em;
+  margin-left: -0.16666667em;
 }
 /* topdoc
     name: Compound button
@@ -867,8 +867,8 @@ input.btn::-moz-focus-inner {
   background-color: #75787b;
 }
 .btn-compound-action.btn-super {
-  padding-left: 1.2222222222222223em;
-  padding-right: 1.2222222222222223em;
+  padding-left: 1.22222222em;
+  padding-right: 1.22222222em;
 }
 /* topdoc
     name: Button link
@@ -906,7 +906,7 @@ input.btn::-moz-focus-inner {
   padding: 0;
   border-bottom: 1px dotted #0072ce;
   border-radius: 0;
-  margin: 0.6428571428571429em 0;
+  margin: 0.64285714em 0;
   background-color: transparent;
   color: #0072ce;
 }
@@ -1006,9 +1006,13 @@ label {
       markup: |
         <input class="focus" placeholder="placeholder text" type="text">
     - name: Field in error state
+      codenotes:
+        - 'role="alert"'
+      notes:
+        - 'Use the alert role to mark invalid fields: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role'
       markup: |
         <input class="error" type="text" value="Invalid input">
-        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+        <i class="icon-remove-sign" role="alert"><span class="jekyll-bug"></span></i>
     - name: Field in success state
       markup: |
         <input class="success" type="text" value="Validated input">
@@ -1020,9 +1024,13 @@ label {
       markup: |
         <textarea class="focus">Example entry</textarea>
     - name: Multi-line text box in error state
+      codenotes:
+        - 'role="alert"'
+      notes:
+        - 'Use the alert role to mark invalid fields: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role'
       markup: |
         <textarea class="error">Invalid input</textarea>
-        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+        <i class="icon-remove-sign" role="alert"><span class="jekyll-bug"></span></i>
     - name: Multi-line text box in success state
       markup: |
         <textarea class="success">Validated input</textarea>
@@ -1145,8 +1153,8 @@ textarea + [class^="icon-"] {
   /* We need enough room for three digits and the number spinners for type="number" inputs */
   width: 3em;
   /* Resets the padding back to 4px now that the font-size is 14px */
-  padding: 0.2857142857142857em;
-  margin: 0 0.2857142857142857em;
+  padding: 0.28571429em;
+  margin: 0 0.28571429em;
   /* Keep in mind that text inputs are 16px by default but 14px in .pagination to match the rest of the tex */
   font-size: 0.875em;
   font-family: "Avenir Next Demi", Arial, sans-serif;
@@ -1161,7 +1169,7 @@ textarea + [class^="icon-"] {
 }
 @media only screen and (min-width: 480px) {
   .pagination_form {
-    border-radius: 0.2857142857142857em;
+    border-radius: 0.28571429em;
   }
   .pagination_prev {
     position: absolute;
@@ -1434,29 +1442,6 @@ html {
   }
 }
 /* ==========================================================================
-   CFPB Design Manual
-   Lists
-   ========================================================================== */
-ul,
-ol {
-  list-style-position: inside;
-  padding: 0;
-}
-ul {
-  list-style-type: square;
-}
-li ul,
-li ol {
-  margin: 0 1.375em;
-}
-dl dd {
-  margin-left: 1.375em;
-}
-dt {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-weight: 600;
-}
-/* ==========================================================================
 	 CFPB Design Manual
 	 Header
 	 ========================================================================== */
@@ -1703,6 +1688,29 @@ dt {
 /* Landscape tablet/netbook/laptop (1024px) */
 /* Desktop (1280px) */
 /* Widescreen (1600px) */
+/* ==========================================================================
+   CFPB Design Manual
+   Lists
+   ========================================================================== */
+.content ul,
+.content ol {
+  list-style-position: inside;
+  padding: 0;
+}
+.content ul {
+  list-style-type: square;
+}
+.content li ul,
+.content li ol {
+  margin: 0 1.375em;
+}
+.content dl dd {
+  margin-left: 1.375em;
+}
+.content dt {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-weight: 600;
+}
 /* Color swatches for Identity/Color page
    ========================================================================== */
 .swatch {
@@ -1750,113 +1758,118 @@ dt {
 .swatch_field__green {
   background: #2cb34a;
 }
+/*
+.num-colors-test {
+  color: @num_colors;
+}
+*/
 .swatch_field__dark-redorange {
-  background: #9c301b;
+  background-color: #9c301b;
 }
 .swatch_field__teal-20 {
-  background: #ccdfdf;
+  background-color: #ccdfdf;
 }
 .swatch_field__teal-50 {
-  background: #7faeae;
+  background-color: #7faeae;
 }
 .swatch_field__teal-80 {
-  background: #337e7d;
+  background-color: #337e7d;
 }
 .swatch_field__teal {
-  background: #005e5d;
+  background-color: #005e5d;
 }
 .swatch_field__pacific-20 {
-  background: #cce3f5;
+  background-color: #cce3f5;
 }
 .swatch_field__pacific-50 {
-  background: #7fb8e6;
+  background-color: #7fb8e6;
 }
 .swatch_field__pacific-80 {
-  background: #328ed8;
+  background-color: #328ed8;
 }
 .swatch_field__pacific {
-  background: #0072ce;
+  background-color: #0072ce;
 }
 .swatch_field__navy-20 {
-  background: #ccd5e3;
+  background-color: #ccd5e3;
 }
 .swatch_field__navy-50 {
-  background: #7f96b8;
+  background-color: #7f96b8;
 }
 .swatch_field__navy-80 {
-  background: #33578e;
+  background-color: #33578e;
 }
 .swatch_field__navy {
-  background: #002d72;
+  background-color: #002d72;
 }
 .swatch_field__neutral-20 {
-  background: #e4e2e0;
+  background-color: #e4e2e0;
 }
 .swatch_field__neutral-50 {
-  background: #bcb6b2;
+  background-color: #bcb6b2;
 }
 .swatch_field__neutral-80 {
-  background: #948b84;
+  background-color: #948b84;
 }
 .swatch_field__neutral {
-  background: #796e65;
+  background-color: #796e65;
 }
 .swatch_field__gold-20 {
-  background: #ffecd1;
+  background-color: #ffecd1;
 }
 .swatch_field__gold-50 {
-  background: #ffce8d;
+  background-color: #ffce8d;
 }
 .swatch_field__gold-80 {
-  background: #ffb149;
+  background-color: #ffb149;
 }
 .swatch_field__gold {
-  background: #ff9e1b;
+  background-color: #ff9e1b;
 }
 .swatch_field__redorange-20 {
-  background: #f6d9d3;
+  background-color: #f6d9d3;
 }
 .swatch_field__redorange-50 {
-  background: #e8a091;
+  background-color: #e8a091;
 }
 .swatch_field__redorange-80 {
-  background: #da6750;
+  background-color: #da6750;
 }
 .swatch_field__redorange {
-  background: #d12124;
+  background-color: #d12124;
 }
 .swatch_field__gray-5 {
-  background: #f8f8f8;
+  background-color: #f8f8f8;
 }
 .swatch_field__gray-10 {
-  background: #f1f2f2;
+  background-color: #f1f2f2;
 }
 .swatch_field__gray-20 {
-  background: #e3e4e5;
+  background-color: #e3e4e5;
 }
 .swatch_field__gray-50 {
-  background: #babbbd;
+  background-color: #babbbd;
 }
 .swatch_field__gray-80 {
-  background: #919395;
+  background-color: #919395;
 }
 .swatch_field__gray {
-  background: #75787b;
+  background-color: #75787b;
 }
 .swatch_field__darkgray {
-  background: #43484e;
+  background-color: #43484e;
 }
 .swatch_field__black {
-  background: #101820;
+  background-color: #101820;
 }
 .swatch_field__green-tint {
-  background: #dbedd4;
+  background-color: #dbedd4;
 }
 .swatch_field__green-midtone {
-  background: #addc91;
+  background-color: #addc91;
 }
 .swatch_field__green {
-  background: #2cb34a;
+  background-color: #2cb34a;
 }
 /* ==========================================================================
    CFPB Design Manual

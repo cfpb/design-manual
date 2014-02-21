@@ -1,25 +1,23 @@
 {
   "name": "cf-colors",
-  "description": "Color variables for the Capital Framework.",
   "version": "0.3.0",
-  "homepage": "http://github.com/cfpb/cf-colors",
+  "description": "Less color variables for Capital Framework.",
+  "keywords": ["capital-framework", "capital", "colors", "less"],
   "author": {
     "name": "Consumer Financial Protection Bureau",
-    "email": "scott.cranfill@cfpb.gov",
     "url": "http://cfpb.github.io/"
   },
+  "homepage": "https://github.com/cfpb/cf-colors",
   "repository": {
     "type": "git",
-    "url": "http://github.com/cfpb/cf-colors.git"
+    "url": "https://github.com/cfpb/cf-colors.git"
   },
-  "bugs": {
-    "url": "http://github.com/cfpb/cf-colors/issues"
-  },
+  "bugs": "https://github.com/cfpb/cf-colors/issues",
   "licenses": [
     {
       "type": "Public Domain",
-      "url": "http://github.com/cfpb/cf-colors/blob/master/TERMS.md"
+      "url": "https://github.com/cfpb/cf-colors/blob/master/TERMS.md"
     }
   ],
-  "keywords": []
+  "main": "src/colors.less"
 }

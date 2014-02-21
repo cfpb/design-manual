@@ -6,7 +6,10 @@
       "jquery": "~1.10.1",
       "html5shiv": "3.7.0",
       "box-sizing-polyfill": "",
-      "normalize-css": "~3",
-      "highlight": ""
+      "cf-grid": "git@github.com:cfpb/cf-grid.git",
+      "cf-forms": "git@github.com:cfpb/cf-forms.git",
+      "cf-colors": "git@github.com:cfpb/cf-colors.git",
+      "cf-buttons": "git@github.com:cfpb/cf-buttons.git",
+      "cf-typography": "git@github.com:cfpb/cf-typography.git"
     }
 }
