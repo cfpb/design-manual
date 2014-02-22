@@ -18,6 +18,14 @@
     padding-bottom: 1em;
     padding-top: 1em;
   }
+
+  .content-33,
+  .content-67 {
+    .column(12);
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
 }
 
 
@@ -45,11 +53,27 @@
     /* Inner content - nested grid inside content */
     .content-25 {
       .column(3);
+      //Nested colums don't work yet, so pull the first col back 
+      border-left: 0;
     }
 
     .content-75 {
       .column(9);
+      border-right: 0;
     }
+
+    /* Inner content - nested grid inside content */
+    .content-33 {
+      .column(4);
+      //Nested colums don't work yet, so pull the first col back 
+      border-left: 0;
+    }
+
+    .content-67 {
+      .column(8);
+      border-right: 0;
+    }
+
   }
 
 }
@@ -74,6 +98,98 @@
 
 }
 
+.content {
+
+  .page-title {
+    font-family: @sans-serif-demi;
+  }
+
+  h2 {
+    clear: both;
+    font-family: @sans-serif-demi;
+    border-bottom: 1px solid @gray-20;
+    padding-bottom: 4px;
+  }
+
+  /* cross-browser HR styling. See:
+  https://github.com/paulirish/html5-boilerplate/blob/ef3c095bafa9a6fa9c771f368d4b30c8ce4deded/css/style.css#L75
+  */
+  hr { 
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid @gray-50;
+    margin: 1em 0; 
+    padding: 0;
+  }
+
+  /* Table of Contents */
+  ul.toc {
+    list-style: none;
+    border-bottom: 1px solid @pacific-50;
+  }
+
+  .toc {
+
+    li {
+
+      font-family: @sans-serif-demi;
+      font-size: 18px;
+
+
+      a {
+        text-decoration: none;
+        border-bottom: none;
+      }
+
+      a:hover {
+        border-bottom: none;
+      }
+
+    }
+
+  }
+  p {
+    font-family: @serif;
+  }
+
+  .lead-in {
+    font-family: @sans-serif;
+    font-size: 18px;
+  }
+
+}
+
+
+/* ==========================================================================
+   CFPB Design Manual
+   Lists
+   ========================================================================== */
+.content {
+  ul,
+  ol {
+          list-style-position: inside;
+          padding: 0;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  li ul,
+  li ol {
+          margin: 0 1.375em;
+  }
+
+  dl dd {
+          margin-left: 1.375em;
+  }
+
+  dt {
+          font-family: @sans-serif-demi;
+          font-weight: 600;
+  }
+}
 
 /* Color swatches for Identity/Color page
    ========================================================================== */
@@ -121,14 +237,28 @@
          'teal', 'teal-80', 'teal-50', 'teal-20',
          'dark-redorange';
 
-.loop(@i) when (@i > 0) {
+// Need grunt-contrib-less .9 or higher for lenght to work
+// http://lesscss.org/functions/#list-functions
+@num_colors: length(@colors);
+
+/*
+.num-colors-test {
+  color: @num_colors;
+}
+*/
+
+.loop(@index) when (@index > 0) {
     // Retrieve the next variable name from the @colors array
-    @name: e(extract(@colors, @i));
+    @name: e(extract(@colors, @index));
     // Output the `.swatch_field__color` rule
-    .swatch_field__@{name} { background: @@name; }
+    .swatch_field__@{name} { background-color: @@name; }
     // Call the next iteration of the loop
-    .loop((@i - 1));
+    .loop((@index - 1));
 }
 
+// end the loop when index is 0
+.loop (0) {}
+
 // Initiate loop
-.loop( length(@colors) );
+//.loop( length(@colors) );
+.loop(@num_colors);
