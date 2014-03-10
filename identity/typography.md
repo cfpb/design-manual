@@ -71,18 +71,50 @@ To ensure text remains compliant with WCA standards, use only these permitted co
 
 ### Fully accessible combinations
 Accessible text and background color combinations are shown below:
-\[insert CSS diagram of fully accessible combos]
+
+<figure>
+    <ul>
+        <li class="type-color-combo__black-on-white">CFPB Black on White</li>
+        <li class="type-color-combo__darkgray-on-white">Dark Gray on White</li>
+        <li class="type-color-combo__white-on-black">White on CFPB Black</li>
+        <li class="type-color-combo__white-on-darkgray">White on Dark Gray</li>
+        <li class="type-color-combo__black-on-gray10">CFPB Black on Gray 10%</li>
+        <li class="type-color-combo__black-on-gray5">CFPB Black on Gray 5%</li>
+        <li class="type-color-combo__black-on-greenmid">CFPB Black on Green Midtone</li>
+        <li class="type-color-combo__black-on-greentint">CFPB Black on Green Tint</li>
+    </ul>
+</figure>
 
 ### Partially accessible combinations
-CFPB Black text and white text on gray, and gray text on white are only accessible for header sizes above 24px.
-\[insert CSS diagram of partially accessible combos]
+CFPB Black text and white text on gray, and gray text on white are _only accessible for header sizes above 24px_.
 
-### Non-accessible combinations
+<figure>
+    <ul>
+        <li class="type-color-combo__white-on-gray">White on Gray</li>
+        <li class="type-color-combo__black-on-gray">CFPB Black on Gray</li>
+        <li class="type-color-combo__gray-on-white">Gray on White</li>
+    </ul>
+</figure>
+
+<h3 class="warning"><i class="icon-remove-sign"></i> Non-accessible combinations</h3>
 Never set CFPB Green web type on white combinations, as they are not accessible. Never set type on a patterned background.
-\[insert CSS diagram of non-accessible combos]
 
-### Undesirable combinations
+<figure>
+    <ul>
+        <li class="type-color-combo__white-on-green">White on Green</li>
+        <li class="type-color-combo__green-on-white">Green on White</li>
+    </ul>
+</figure>
+
+<h3 class="warning"><i class="icon-remove-sign"></i> Undesirable combinations</h3>
 Even though CFPB Green and CFPB Black are accessible for large scale type, this color combination should never be used for web type.
+
+<figure>
+    <ul>
+        <li class="type-color-combo__black-on-green">Black on Green</li>
+        <li class="type-color-combo__green-on-black">Green on Black</li>
+    </ul>
+</figure>
 
 #### To learn more about making the web accessible to everyone
 Refer to the [Section 508 Standards Guide].

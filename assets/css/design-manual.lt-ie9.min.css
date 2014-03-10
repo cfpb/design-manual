@@ -1859,6 +1859,15 @@ dt {
   *behavior: url(boxsizing.htc);
 }
 
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.warning {
+  color: #d12124;
+}
+
 /* Media Queries
    ========================================================================== */
 
@@ -2143,6 +2152,94 @@ dt {
 
 .swatch_field__green {
   background: #2cb34a;
+}
+
+/* Diagrams for Identity/Typography page
+   ========================================================================== */
+
+[class^="type-color-combo"] {
+  margin-top: 0;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: normal;
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5714285714285714em;
+  font-size: 0.875em;
+  line-height: 1.5714285714285714;
+  padding: 0.5em 1em;
+  list-style: none;
+}
+
+.type-color-combo__black-on-white {
+  border: 1px solid #e3e4e5;
+}
+
+.type-color-combo__darkgray-on-white {
+  border: 1px solid #e3e4e5;
+  color: #43484e;
+}
+
+.type-color-combo__white-on-black {
+  background: #101820;
+  color: #ffffff;
+}
+
+.type-color-combo__white-on-darkgray {
+  background: #43484e;
+  color: #ffffff;
+}
+
+.type-color-combo__black-on-gray10 {
+  background: #f1f2f2;
+}
+
+.type-color-combo__black-on-gray5 {
+  background: #f8f8f8;
+}
+
+.type-color-combo__black-on-greenmid {
+  background: #addc91;
+}
+
+.type-color-combo__black-on-greentint {
+  background: #dbedd4;
+}
+
+.type-color-combo__white-on-gray {
+  background: #75787b;
+  color: #ffffff;
+}
+
+.type-color-combo__black-on-gray {
+  background: #75787b;
+}
+
+.type-color-combo__gray-on-white {
+  border: 1px solid #e3e4e5;
+  color: #75787b;
+}
+
+.type-color-combo__white-on-green {
+  background: #2cb34a;
+  color: #ffffff;
+}
+
+.type-color-combo__green-on-white {
+  border: 1px solid #dbedd4;
+  color: #2cb34a;
+}
+
+.type-color-combo__black-on-green {
+  background: #2cb34a;
+  color: #101820;
+}
+
+.type-color-combo__green-on-black {
+  background: #101820;
+  color: #2cb34a;
 }
 
 /* ==========================================================================

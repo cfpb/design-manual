@@ -20,6 +20,15 @@
   }
 }
 
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.warning {
+    color: @redorange;
+}
+
 
 /* Media Queries
    ========================================================================== */
@@ -132,3 +141,69 @@
 
 // Initiate loop
 .loop( length(@colors) );
+
+
+/* Diagrams for Identity/Typography page
+   ========================================================================== */
+
+[class^="type-color-combo"] {
+    .h5; // See cf-typography.less
+    padding: 0.5em 1em;
+    list-style: none;
+}
+.type-color-combo__ {
+    &black-on-white {
+        border: 1px solid @gray-20;
+    }
+    &darkgray-on-white {
+        border: 1px solid @gray-20;
+        color: @darkgray;
+    }
+    &white-on-black {
+        background: @black;
+        color: @white;
+    }
+    &white-on-darkgray {
+        background: @darkgray;
+        color: @white;
+    }
+    &black-on-gray10 {
+        background: @gray-10;
+    }
+    &black-on-gray5 {
+        background: @gray-5;
+    }
+    &black-on-greenmid {
+        background: @green-midtone;
+    }
+    &black-on-greentint {
+        background: @green-tint;
+    }
+    &white-on-gray {
+        background: @gray;
+        color: @white;
+    }
+    &black-on-gray {
+        background: @gray;
+    }
+    &gray-on-white {
+        border: 1px solid @gray-20;
+        color: @gray;
+    }
+    &white-on-green {
+        background: @green;
+        color: @white;
+    }
+    &green-on-white {
+        border: 1px solid @green-tint;
+        color: @green;
+    }
+    &black-on-green {
+        background: @green;
+        color: @black;
+    }
+    &green-on-black {
+        background: @black;
+        color: @green;
+    }
+}
