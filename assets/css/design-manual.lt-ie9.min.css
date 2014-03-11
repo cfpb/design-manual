@@ -2850,7 +2850,9 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  /* Th next two lines get rid of the annoying 40px left margin on unordered list in WebKit (-webkit-offset-start: 40px;): */
   margin: 0;
+  padding: 0;
 }
 
 .ie .main-nav {
@@ -2984,7 +2986,7 @@ html {
 .secondary-nav ul {
   margin: 0;
   padding: 0;
-  border-top: 1px solid #babbbd;
+  /*border-top: 1px solid @gray-50;*/
 }
 
 .secondary-nav li {
