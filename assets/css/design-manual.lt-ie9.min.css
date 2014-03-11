@@ -2535,7 +2535,9 @@ html {
 /* Tablet/netbook (768px) */
 
 .main-nav li {
-  font-size: 1.25em;
+  /*font-size: 1.25em;*/
+  /* 20px */
+  font-size: 1.125em;
   /* 20px */
 }
 
