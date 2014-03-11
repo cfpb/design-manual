@@ -75,7 +75,7 @@ Comfortable line length allows the user’s eyes to flow easily from the end of 
 
 For a single column of text, line length should be an average of 66 characters per line, including spaces, but may range from 50 to 75 characters.
 
-<a name="Web type accessibility"></a>
+<a name="web-type-accessibility"></a>
 ## Web type accessibility
 WCA (Web Content Accessibility) standards ensure that content is accessible by everyone, regardless of any disability or user device. 
 

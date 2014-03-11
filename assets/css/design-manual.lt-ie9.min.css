@@ -2379,7 +2379,6 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 33.33333333%;
-  border-left: 0;
 }
 
 .ie .content .content-33 {
@@ -2402,7 +2401,6 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 66.66666667%;
-  border-right: 0;
 }
 
 .ie .content .content-67 {
@@ -2413,6 +2411,14 @@ html {
   display: inline;
   *zoom: 1;
   *behavior: url(boxsizing.htc);
+}
+
+.content .content-first {
+  border-left: 0;
+}
+
+.content .content-last {
+  border-right: 0;
 }
 
 /* Tablet/netbook (768px) */
@@ -2431,9 +2437,20 @@ html {
 }
 
 .content h2 {
-  clear: both;
   border-bottom: 1px solid #e3e4e5;
-  padding-bottom: 4px;
+  /* The EM sizes are calculating to unexpected values - DM */
+  padding-bottom: 30px;
+  margin-bottom: 20px !important;
+}
+
+.content h2:before,
+.content h2:after {
+  content: " ";
+  display: table;
+}
+
+.content h2:after {
+  clear: both;
 }
 
 .content hr {
@@ -2441,18 +2458,36 @@ html {
   height: 1px;
   border: 0;
   border-top: 1px solid #e3e4e5;
-  margin: 1em 0;
+  margin: 1.25em 0;
   padding: 0;
+}
+
+.content img + hr {
+  /* horizontal rules after images are getting to much space above the image */
+  margin: 1em 0 1.25em 0;
 }
 
 .content ul.toc {
   list-style: none;
   border-bottom: 1px solid #cce3f5;
+  padding: 0 0 1.25em 0;
+  margin: 0 0 1.875em 0;
+}
+
+.content ul.toc:before,
+.content ul.toc:after {
+  content: " ";
+  display: table;
+}
+
+.content ul.toc:after {
+  clear: both;
 }
 
 .content .toc li {
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-size: 1.125em;
+  display: block;
   float: left;
   position: relative;
 }
@@ -2460,6 +2495,7 @@ html {
 .content .toc li a {
   text-decoration: none;
   border-bottom: none;
+  padding: 0 1em 0 0;
 }
 
 .content .toc li a:hover {
