@@ -2440,14 +2440,14 @@ html {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #babbbd;
+  border-top: 1px solid #e3e4e5;
   margin: 1em 0;
   padding: 0;
 }
 
 .content ul.toc {
   list-style: none;
-  border-bottom: 1px solid #7fb8e6;
+  border-bottom: 1px solid #cce3f5;
 }
 
 .content .toc li {
