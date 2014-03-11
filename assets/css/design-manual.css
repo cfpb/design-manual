@@ -2132,7 +2132,9 @@ html {
 }
 .content .toc li {
   font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 1.125em;
+  float: left;
+  position: relative;
 }
 .content .toc li a {
   text-decoration: none;
@@ -2146,7 +2148,7 @@ html {
 }
 .content .lead-in {
   font-family: "Avenir Next", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 /* ==========================================================================
    CFPB Design Manual
