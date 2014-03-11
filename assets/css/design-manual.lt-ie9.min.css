@@ -498,7 +498,7 @@ ul {
 }
 
 /* ==========================================================================
-   Flapjack Front End
+   Capital Framework
    Button Styling
    ========================================================================== */
 
@@ -1089,7 +1089,7 @@ input.btn::-moz-focus-inner {
 */
 
 /* ==========================================================================
-   Flapjack Front End
+   Capital Framework
    Form Element Styling
    ========================================================================== */
 
@@ -1207,7 +1207,86 @@ textarea + [class^="icon-"] {
 */
 
 /* ==========================================================================
-   Flapjack Front End
+   Capital Framework
+   Expandable Styling
+   ========================================================================== */
+
+/* topdoc
+    name: Default expandable
+    family: cf-expandables
+    patterns:
+    - name: Default state
+      markup: |
+        <div class="expandable">
+            <header class="expandable-header">
+                Expandable Header
+                <a href="" class="expandable-button">
+                    <span class="expandable-text">Show</span> <i class="icon-plus-sign"></i>
+                </a>
+            </header>
+            <div class="expandable-content expandable-hidden" style="display: none;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    tags:
+    - cf-expandables
+*/
+
+.expandable {
+  margin-bottom: 1.375em;
+  background: #f1f2f2;
+}
+
+.expandable:hover,
+.expandable .open {
+  background: #e3e4e5;
+}
+
+.expandable-hidden {
+  display: none;
+}
+
+.expandable-header {
+  padding: 0.625em 0.75em;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.expandable-button,
+.expandable-button:link,
+.expandable-button:visited {
+  margin: 0;
+  border-width: 0;
+  float: right;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+}
+
+.expandable-content {
+  padding: 0 0.75em 0.25em;
+}
+
+.open .icon-plus-sign:before {
+  content: "\f056";
+}
+
+/* topdoc
+  name: EOF
+  eof: true
+*/
+
+/* ==========================================================================
+   Capital Framework
    Pagination Styling
    ========================================================================== */
 

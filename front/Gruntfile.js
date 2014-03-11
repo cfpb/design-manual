@@ -137,7 +137,7 @@ module.exports = function(grunt) {
         dest: 'assets/js/<%= pkg.name %>.min.js'
       },
       capitalframework: {
-        src: ['front/vendor_temp/fj-expandables/src/js/expandables.js'],
+        src: ['front/vendor/cf-expandables/src/js/cf-expandables.js'],
         dest: 'assets/js/capital-framework.min.js'
       }
     },
@@ -185,16 +185,13 @@ module.exports = function(grunt) {
             dest: '_includes/ui-toolkit/colors/',
             filter: 'isFile'
           },
-          /*
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-expandables/demo/custom.html'],
+            src: ['front/vendor/cf-expandables/demo/custom.html'],
             dest: '_includes/ui-toolkit/expandables/',
             filter: 'isFile'
           },
-          */
-          
           {
             expand: true,
             flatten: true,
@@ -215,7 +212,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor_temp/fj-pagination/demo/custom.html'],
+            src: ['front/vendor/cf-pagination/demo/custom.html'],
             dest: '_includes/ui-toolkit/pagination/',
             filter: 'isFile'
           }
