@@ -28,6 +28,7 @@ module.exports = function(grunt) {
     concat: {
       main: {
         src: [
+          'front/vendor/normalize.css/normalize.css',
           'front/vendor/font-awesome/css/font-awesome.min.css'
         ],
         dest: 'assets/css/vendor.min.css',
