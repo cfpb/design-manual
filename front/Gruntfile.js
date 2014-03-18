@@ -143,6 +143,25 @@ module.exports = function(grunt) {
       }
     },
 
+/*
+    topdoc: {
+      demo: {
+        options: {
+          source: 'demo/static/css/',
+          destination: 'demo/',
+          template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'raw' ) + '/',
+          templateData: {
+            family: '<%= pkg.name %>',
+            title: '<%= pkg.name %> demo',
+            repo: '<%= pkg.homepage %>',
+            ltIE8Source: 'static/css/main.lt-ie8.min.css',
+            custom: '<%= grunt.file.read("demo/custom.html") %>'
+          }
+        }
+      },
+*/
+
+
     /**
      * Copy: https://github.com/gruntjs/grunt-contrib-copy
      */

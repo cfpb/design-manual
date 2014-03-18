@@ -54,13 +54,6 @@
 }
 
 /* ==========================================================================
-   CFPB Design Manual
-   Basic Typography
-   ========================================================================== */
-
-/* We may need to add these lines in the capital framework: */
-
-/* ==========================================================================
    Capital Framework
    Color Variables
    ========================================================================== */
@@ -164,23 +157,23 @@ h6,
 
 h1,
 .h1 {
-  margin-bottom: 0.64705882em;
+  margin-bottom: 0.6470588235294118em;
   font-size: 2.125em;
-  line-height: 1.29411765;
+  line-height: 1.2941176470588236;
 }
 
 h2,
 .h2 {
-  margin-bottom: 0.84615385em;
+  margin-bottom: 0.8461538461538461em;
   font-size: 1.625em;
-  line-height: 1.26923077;
+  line-height: 1.2692307692307692;
 }
 
 h3,
 .h3 {
   margin-bottom: 1em;
   font-size: 1.375em;
-  line-height: 1.27272727;
+  line-height: 1.2727272727272727;
 }
 
 h4,
@@ -188,9 +181,9 @@ h4,
   font-family: "Avenir Next Medium", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  margin-bottom: 1.22222222em;
+  margin-bottom: 1.2222222222222223em;
   font-size: 1.125em;
-  line-height: 1.22222222;
+  line-height: 1.2222222222222223;
 }
 
 h5,
@@ -206,23 +199,23 @@ h6,
 
 h5,
 .h5 {
-  margin-bottom: 1.57142857em;
+  margin-bottom: 1.5714285714285714em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  line-height: 1.5714285714285714;
 }
 
 h6,
 .h6 {
-  margin-bottom: 1.83333333em;
+  margin-bottom: 1.8333333333333333em;
   font-size: 0.75em;
-  line-height: 1.83333333;
+  line-height: 1.8333333333333333;
 }
 
 .superheader {
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  margin-bottom: 0.45833333em;
+  margin-bottom: 0.4583333333333333em;
   font-size: 3em;
   line-height: 1.375;
 }
@@ -552,9 +545,9 @@ ul {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0.64285714em 1em;
+  padding: 0.6428571428571429em 1em;
   border: 0;
-  border-radius: 0.28571429em;
+  border-radius: 0.2857142857142857em;
   margin: 0;
   vertical-align: middle;
   background-color: #0072ce;
@@ -583,7 +576,7 @@ ul {
 }
 
 .btn + .btn {
-  margin-left: 0.42857143em;
+  margin-left: 0.42857142857142855em;
 }
 
 button.btn::-moz-focus-inner,
@@ -598,8 +591,8 @@ input.btn::-moz-focus-inner {
 .lt-ie8 button.btn,
 .lt-ie8 input.btn {
   overflow: visible;
-  padding-top: 0.51428571em;
-  padding-bottom: 0.51428571em;
+  padding-top: 0.5142857142857143em;
+  padding-bottom: 0.5142857142857143em;
 }
 
 /* topdoc
@@ -746,18 +739,18 @@ input.btn::-moz-focus-inner {
 .btn-super,
 .btn-super:link,
 .btn-super:visited {
-  padding: 0.83333333em 1.66666667em;
+  padding: 0.8333333333333334em 1.6666666666666667em;
   font-size: 1.125em;
 }
 
 .btn-super + .btn-super {
-  margin-left: 0.33333333em;
+  margin-left: 0.3333333333333333em;
 }
 
 .lt-ie8 button.btn-super,
 .lt-ie8 input.btn-super {
-  padding-top: 0.66666667em;
-  padding-bottom: 0.66666667em;
+  padding-top: 0.6666666666666666em;
+  padding-bottom: 0.6666666666666666em;
 }
 
 /* topdoc
@@ -873,7 +866,7 @@ input.btn::-moz-focus-inner {
 }
 
 .btn-group .btn + .btn {
-  margin-left: -0.21428571em;
+  margin-left: -0.21428571428571427em;
 }
 
 .btn-group .btn + .btn:not(:last-child) {
@@ -886,7 +879,7 @@ input.btn::-moz-focus-inner {
 }
 
 .btn-group .btn-super + .btn-super {
-  margin-left: -0.16666667em;
+  margin-left: -0.16666666666666666em;
 }
 
 /* topdoc
@@ -954,8 +947,8 @@ input.btn::-moz-focus-inner {
 }
 
 .btn-compound-action.btn-super {
-  padding-left: 1.22222222em;
-  padding-right: 1.22222222em;
+  padding-left: 1.2222222222222223em;
+  padding-right: 1.2222222222222223em;
 }
 
 /* topdoc
@@ -995,7 +988,7 @@ input.btn::-moz-focus-inner {
   padding: 0;
   border-bottom: 1px dotted #0072ce;
   border-radius: 0;
-  margin: 0.64285714em 0;
+  margin: 0.6428571428571429em 0;
   background-color: transparent;
   color: #0072ce;
 }
@@ -1269,7 +1262,7 @@ textarea + [class^="icon-"] {
   font-style: normal;
   font-weight: normal;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  line-height: 1.5714285714285714;
 }
 
 .expandable-content {
@@ -1351,8 +1344,8 @@ textarea + [class^="icon-"] {
   /* We need enough room for three digits and the number spinners for type="number" inputs */
   width: 3em;
   /* Resets the padding back to 4px now that the font-size is 14px */
-  padding: 0.28571429em;
-  margin: 0 0.28571429em;
+  padding: 0.2857142857142857em;
+  margin: 0 0.2857142857142857em;
   /* Keep in mind that text inputs are 16px by default but 14px in .pagination to match the rest of the tex */
   font-size: 0.875em;
   font-family: "Avenir Next Demi", Arial, sans-serif;
@@ -1368,7 +1361,7 @@ textarea + [class^="icon-"] {
 }
 
 .pagination_form {
-  border-radius: 0.28571429em;
+  border-radius: 0.2857142857142857em;
 }
 
 .pagination_prev {
@@ -1914,12 +1907,14 @@ This LESS Code is for code highlighing
 body,
 html {
   /* The 3 height lines are for the fixed footer to work: http://ryanfait.com/sticky-footer/ */
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  /*
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    */
   font-family: "Avenir Next", Arial, sans-serif;
   line-height: 1.375;
   color: #101820;
@@ -2378,7 +2373,7 @@ html {
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333%;
+  width: 33.33333333333333%;
 }
 
 .ie .content .content-33 {
@@ -2400,7 +2395,7 @@ html {
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666667%;
+  width: 66.66666666666666%;
 }
 
 .ie .content .content-67 {
