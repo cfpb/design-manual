@@ -5,10 +5,9 @@
   "keywords": [],
   "author": {
     "name": "Consumer Financial Protection Bureau",
-    "email": "david.kennedy@cfpb.gov",
-    "url": "http://cfpb.github.io/design-manual/"
+    "url": "http://cfpb.github.io"
   },
-  "homepage": "https://github.com/cfpb/design-manual/",
+  "homepage": "https://github.com/cfpb/design-manual",
   "repository": {
     "type": "git",
     "url": "https://github.com/cfpb/design-manual.git"
@@ -27,15 +26,15 @@
   },
   "devDependencies": {
     "grunt": "latest",
-    "grunt-autoprefixer": "latest",
-    "grunt-bower-task": "~0.3.2",
-    "grunt-contrib-clean": "latest",
     "grunt-contrib-concat": "latest",
-    "grunt-contrib-copy": "latest",
     "grunt-contrib-less": "~0.8.3",
-    "grunt-string-replace": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-legacssy": "~0.3.1",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-uglify": "latest",
     "grunt-topdoc": "~0.2.0",
-    "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git",
-    "grunt-legacssy": "~0.3.1"
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-watch": "latest",
+    "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git"
   }
 }
