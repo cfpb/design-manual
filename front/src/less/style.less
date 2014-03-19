@@ -5,7 +5,6 @@
 
 // Type:
 @import "design-manual/fonts.less";
-@import "design-manual/typography.less";
 
 // Capital Framework:
 @import "../../vendor/cf-colors/src/cf-colors.less";
@@ -13,13 +12,15 @@
 @import "../../vendor/cf-grid/src/ghost.less";
 @import "../../vendor/cf-buttons/src/cf-buttons.less";
 @import "../../vendor/cf-forms/src/cf-forms.less";
-@import "../../vendor_temp/fj-pagination/src/pagination.less";
+@import "../../vendor/cf-expandables/src/less/cf-expandables.less";
+@import "../../vendor/cf-pagination/src/cf-pagination.less";
 
 // Should become  part of captial framwork repos:
-@import "design-manual/code.less";
-@import "design-manual/media.less";
-@import "design-manual/misc.less";
-@import "design-manual/mixins.less";
+@import "move-to-capital-framework/code.less";
+@import "move-to-capital-framework/media.less";
+@import "move-to-capital-framework/misc.less";
+@import "move-to-capital-framework/mixins.less";
+@import "move-to-capital-framework/pygments.less"; // Pygments Syntax Highlighting
 
 // Core LESS Styles:
 @import "design-manual/main.less";
@@ -30,8 +31,6 @@
 @import "design-manual/sidebar.less";
 //@import "design-manual/fixed-layout.less";
 
-// Pygments Syntax Highlighting
-@import "design-manual/pygments.less";
-
-@import "productguide/tables.less";
+// Temporary table formatting
+@import "sources/productguide/tables.less";
 //@import "hmda-api-docs/elements.less";

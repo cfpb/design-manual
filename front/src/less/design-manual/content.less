@@ -65,12 +65,18 @@
     /* Inner content - nested grid inside content */
     .content-33 {
       .column(4);
-      //Nested colums don't work yet, so pull the first col back 
-      border-left: 0;
     }
 
     .content-67 {
       .column(8);
+    }
+
+    //Nested colums don't work yet, so pull the first col back 
+    .content-first {
+      border-left: 0;
+    }
+
+    .content-last {
       border-right: 0;
     }
 
@@ -100,15 +106,15 @@
 
 .content {
 
-  .page-title {
-    font-family: @sans-serif-demi;
-  }
-
   h2 {
-    clear: both;
-    font-family: @sans-serif-demi;
+    .clearfix();
     border-bottom: 1px solid @gray-20;
-    padding-bottom: 4px;
+    /* The EM sizes are calculating to unexpected values - DM */
+    padding-bottom: 30px;
+    margin-bottom: 20px !important;
+    //padding-bottom: unit( 16 / @base-font-size-px, em );
+    //margin-bottom: unit( @base-line-height-px / @font-size, em );
+    //margin-bottom: unit( 16 / @base-font-size-px, em ) !important; /* This is ugly, but I am over-riding cf-typography */
   }
 
   /* cross-browser HR styling. See:
@@ -118,15 +124,24 @@
     display: block; 
     height: 1px;
     border: 0; 
-    border-top: 1px solid @gray-50;
-    margin: 1em 0; 
+    border-top: 1px solid @gray-20;
+    margin: 1.25em 0; 
     padding: 0;
+  }
+
+  img + hr {
+    /* horizontal rules after images are getting to much space above the image */
+    margin: 1em 0 1.25em 0; 
   }
 
   /* Table of Contents */
   ul.toc {
+    .clearfix();
     list-style: none;
-    border-bottom: 1px solid @pacific-50;
+    border-bottom: 1px solid @pacific-20;
+    padding: 0 0 1.25em 0; // 1.25em = 20px
+    margin: 0 0 1.875em 0; // 1.875em = 30px
+
   }
 
   .toc {
@@ -134,12 +149,15 @@
     li {
 
       font-family: @sans-serif-demi;
-      font-size: 18px;
-
+      font-size: 1.125em;
+      display: block;
+      float: left;
+      position: relative;
 
       a {
         text-decoration: none;
         border-bottom: none;
+        padding: 0 1em 0 0;
       }
 
       a:hover {
@@ -155,7 +173,7 @@
 
   .lead-in {
     font-family: @sans-serif;
-    font-size: 18px;
+    font-size: 1.125em;
   }
 
 }
