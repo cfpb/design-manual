@@ -45,7 +45,7 @@ mainnav:
   url: index.html
   internal: true
 - text: Guides
-  url: guides/design-best-practices.html
+  url: guides/design-principles.html
   internal: true
 - text: Identity
   url: identity/brand-guidelines.html
@@ -64,8 +64,8 @@ secondarynav:
   url: index.html
   internal: true
   category: Overview
-- text: Design best practices
-  url: guides/design-best-practices.html
+- text: Design principles
+  url: guides/design-principles.html
   internal: true
   category: Guides
 - text: Creating accessible interfaces
