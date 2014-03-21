@@ -5,21 +5,27 @@ category: Identity
 published: true
 ---
 
-<ul class="toc">
-    <li><a href="#stylistic-guidelines">Stylistic guidelines</a></li>
-</ul>
+- [Stylistic guidelines](#stylistic-guidelines)
+{: class="toc"}
 
-<span class="content-67 content-first">
-<p class="lead-in">Illustrations are vector-based graphics that support primary headers and text. They function as the brand's top-level illustration style with high detail and clarity. Illustration is universally relatable and sets a friendly tone when speaking to consumers. The content of an illustration should always be politically and socially neutral.</p>
-</span>
+<div class="content-67 content-first">
 
-<span class="content-33 content-last">
-![School objects illustration]({{ site.baseurl }}/assets/img/illustration/Illustration.png "Illustration")
-</span>
+Illustrations are vector-based graphics that support primary headers and text. They function as the brand's top-level illustration style with high detail and clarity. Illustration is universally relatable and sets a friendly tone when speaking to consumers. The content of an illustration should always be politically and socially neutral.
 
-## Stylistic guidelines
-![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration2.png "Illustration 2")
+</div>
+
+<div class="content-33 content-last">
+
+![School objects illustration]({{ site.baseurl }}/assets/img/illustration/Illustration.png)
+
+</div>
+
+<h2 id="stylistic-guidelines"> Stylistic guidelines</h2>
+
+<div class="content-33 content-first">
+
 ### Form
+
 Illustrations should feature flat elements
 and avoid showing things in threedimensions.
 Elements should not be outlined.
@@ -27,7 +33,16 @@ Elements should not be outlined.
 Do not scale-up or collage minicons or
 isocons for use in illustrations.
 
-![Teach Your Kids to Pin illustration]({{ site.baseurl }}/assets/img/illustration/Illustration3.png "Illustration 3")
+</div>
+
+<div class="content-67 content-last">
+
+![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration2.png)
+
+</div>
+
+<div class="content-33 content-first">
+
 ### Composition
 Illustrations should be compositionally
 balanced with related headers and
@@ -37,6 +52,16 @@ Make use of layering and subtle, vectorbased
 background patterns to help
 ground the illustration.
 
+</div>
+
+<div class="content-67 content-last">
+
+![Teach Your Kids to Pin illustration]({{ site.baseurl }}/assets/img/illustration/Illustration3.png)
+
+</div>
+
+<div class="content-33 content-first">
+
 ### Color
 Illustrations should use the full range
 of primary and secondary colors, but
@@ -45,7 +70,16 @@ Differentiate components or faces of
 objects using tints. Illustrations should
 also make use of 100% white and black.
 
-![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration4.png "Illustration 4")
+</div>
+
+<div class="content-67 content-last">
+
+![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration4.png)
+
+</div>
+
+<div class="content-33 content-first">
+
 ### Shading
 Shading should be achieved using
 subtle, solid tints, not gradients, textures,
@@ -53,3 +87,5 @@ or blurs. Shadows are created using a
 darker tint of the background color, cast
 from the top-right corner of an object at
 a 45º angle.
+
+</div>
