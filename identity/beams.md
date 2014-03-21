@@ -17,6 +17,8 @@ the beam pattern provides a bold and
 engaging graphic reference to the beam
 concept in our logo.
 
+![CFPB Beam pattern]({{ site.baseurl }}/assets/img/beams/Beams0_@2.png "CFPB Beam pattern")
+
 ## Stylistic Guidelines
 ### Base shapes
 
