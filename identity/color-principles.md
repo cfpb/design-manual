@@ -686,6 +686,32 @@ They should never overpower the core brand colors.
     </figcaption>
 </figure>
 <figure class="swatch swatch__primary">
+    <div class="swatch_field swatch_field__navy-50"></div> <!-- Update the color in the class name -->
+    <figcaption class="swatch_label">
+        <h4 class="swatch_head">Navy 50%</h4> <!-- Update the full color name -->
+        <table class="swatch_table">
+            <tbody>
+                <tr>
+                    <th>HEX</th>
+                    <td>#7F96B8</td> <!-- Update the hex code -->
+                </tr>
+                <tr>
+                    <th>RGB</th>
+                    <td>127 / 150 / 184</td> <!-- Update the RGB value -->
+                </tr>
+                <tr>
+                    <th>PMS</th>
+                    <td>288 @ 50%</td> <!-- Update the PMS name -->
+                </tr>
+                <tr>
+                    <th>CMYK</th>
+                    <td>48 / 33 / 18 / 0</td> <!-- Update the CMYK value -->
+                </tr>
+            </tbody>
+        </table>
+    </figcaption>
+</figure>
+<figure class="swatch swatch__primary">
     <div class="swatch_field swatch_field__navy-20"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
         <h4 class="swatch_head">Navy 20%</h4> <!-- Update the full color name -->
