@@ -5,17 +5,17 @@ category: Identity
 published: true
 ---
 
-Illustrations are vector-based graphics
-that support primary headers and text.
-They function as the brand's top-level
-illustration style with high detail and
-clarity. Illustration is universally relatable
-and sets a friendly tone when speaking
-to consumers. The content of an
-illustration should always be politically
-and socially neutral.
+<ul class="toc">
+    <li><a href="#stylistic-guidelines">Stylistic guidelines</a></li>
+</ul>
 
+<span class="content-67 content-first">
+<p class="lead-in">Illustrations are vector-based graphics that support primary headers and text. They function as the brand's top-level illustration style with high detail and clarity. Illustration is universally relatable and sets a friendly tone when speaking to consumers. The content of an illustration should always be politically and socially neutral.</p>
+</span>
+
+<span class="content-33 content-last">
 ![School objects illustration]({{ site.baseurl }}/assets/img/illustration/Illustration.png "Illustration")
+</span>
 
 ## Stylistic guidelines
 ![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration2.png "Illustration 2")
