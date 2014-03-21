@@ -1,5 +1,5 @@
 ---
 layout: page
-title:  Design best practices
+title:  Design principles
 category: Guides
 ---
