@@ -20,7 +20,7 @@ An edited selection of our latest editorial photography is available at [flickr.
 
 <div class="content-33 content-last">
 
-![Photo of a woman at an Atlanta, GA Field Hearing on Mortgage Servicing]({{ site.baseurl }}/assets/img/photography/Photography_1.jpg)
+![Photo of a field hearing]({{ site.baseurl }}/assets/img/photography/Photography_0_@2.jpg)
 
 </div>
 
