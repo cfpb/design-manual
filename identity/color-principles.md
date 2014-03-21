@@ -4,8 +4,7 @@ title:  Color principles
 category: Identity
 ---
 
-## Principles
-### The primary color palette for the CFPB is green and black, including mid-tones and tints, and thoughtful use of whitespace.
+The primary color palette for the CFPB is green and black, including mid-tones and tints, and thoughtful use of whitespace.
 
 A minimal palette, clear hierarchy, good information design, and
 ample whitespace will ensure a voice of authority and expertise in communication.
