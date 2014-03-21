@@ -16,7 +16,7 @@ symbolizes our efforts to illuminate
 the financial landscape and foster
 transparency in the marketplace.
 
-[Insert CFPB logo image here]
+![Feature logo]({{ site.baseurl }}/assets/img/logo/Logo0_@2.png "CFPB Logo")
 
 ## Lockups
 
