@@ -10,6 +10,8 @@ category: Identity
 A minimal palette, clear hierarchy, good information design, and
 ample whitespace will ensure a voice of authority and expertise in communication.
 
+![Primary color palette]({{ site.baseurl }}/assets/img/color/Color0_@2.png "Primary color palette")
+
 ## Palette
 
 ### Primary colors
