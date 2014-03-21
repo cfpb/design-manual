@@ -1,7 +1,7 @@
 # Base configuration
 permalink: /:title 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 
 # Organization
@@ -31,6 +31,12 @@ repository:
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl: 'assets/img/logo_210.png'
 logoalt: 'Consumer Financial Protection Bureau'
+
+# Kramdown settings
+kramdown:
+  auto_ids: true
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  parse_block_html: true
 
 # Main Navigation
 # List links that should appear in the main navigation (header) here

@@ -166,7 +166,7 @@ module.exports = function(grunt) {
      * Copy: https://github.com/gruntjs/grunt-contrib-copy
      */
     copy: {
-      main: {
+            main: {
         files: [
           /* Vendor Packages */
           {
@@ -237,14 +237,15 @@ module.exports = function(grunt) {
             filter: 'isFile'
           }
         ]
-      },
-      watch: {
-        scripts: {
-          files: ['front/src/**/*.js','front/src/**/*.less'],
-          tasks: ['build']
+      }
+    },
+     
+    watch: {
+       scripts: {
+         files: ['front/src/js/*.js','front/src/**/*.less'],
+         tasks: ['build']
         }
       }
-    }
   });
 
   /**
