@@ -15,6 +15,7 @@ Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Me
 \[include image that sets the text at 14px, indicate 10 px 15 px padding]
 
 #### Call to action
+
 #### Destructive action
 
 ### Button types
@@ -25,8 +26,11 @@ Reserve warning and compound buttons for destructive and multiple actions, respe
 \[include the dimensions here for small and big primary buttons]
 
 #### Primary
+
 #### Secondary
+
 #### Warning
+
 #### Compound
 
 ### Button labels
@@ -41,10 +45,17 @@ Use icons consistently, or don’t use them at all. Each icon should be used exc
 
 ### Button states
 \[insert CSS diagram]
+
 #### Normal
+
 #### Hover
+
 #### Focus
+
 #### Active
+
 #### Disabled
 
+{::nomarkdown}
 {% include ui-toolkit/buttons/custom.html %}
+{:/nomarkdown}
