@@ -2285,6 +2285,15 @@ html {
   *behavior: url(boxsizing.htc);
 }
 
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.warning {
+  color: #d12124;
+}
+
 /* Media Queries
    ========================================================================== */
 
@@ -2593,154 +2602,236 @@ html {
   background: #2cb34a;
 }
 
-/*
-.num-colors-test {
-  color: @num_colors;
-}
-*/
-
 .swatch_field__dark-redorange {
-  background-color: #9c301b;
+  background: #9c301b;
 }
 
 .swatch_field__teal-20 {
-  background-color: #ccdfdf;
+  background: #ccdfdf;
 }
 
 .swatch_field__teal-50 {
-  background-color: #7faeae;
+  background: #7faeae;
 }
 
 .swatch_field__teal-80 {
-  background-color: #337e7d;
+  background: #337e7d;
 }
 
 .swatch_field__teal {
-  background-color: #005e5d;
+  background: #005e5d;
 }
 
 .swatch_field__pacific-20 {
-  background-color: #cce3f5;
+  background: #cce3f5;
 }
 
 .swatch_field__pacific-50 {
-  background-color: #7fb8e6;
+  background: #7fb8e6;
 }
 
 .swatch_field__pacific-80 {
-  background-color: #328ed8;
+  background: #328ed8;
 }
 
 .swatch_field__pacific {
-  background-color: #0072ce;
+  background: #0072ce;
 }
 
 .swatch_field__navy-20 {
-  background-color: #ccd5e3;
+  background: #ccd5e3;
 }
 
 .swatch_field__navy-50 {
-  background-color: #7f96b8;
+  background: #7f96b8;
 }
 
 .swatch_field__navy-80 {
-  background-color: #33578e;
+  background: #33578e;
 }
 
 .swatch_field__navy {
-  background-color: #002d72;
+  background: #002d72;
 }
 
 .swatch_field__neutral-20 {
-  background-color: #e4e2e0;
+  background: #e4e2e0;
 }
 
 .swatch_field__neutral-50 {
-  background-color: #bcb6b2;
+  background: #bcb6b2;
 }
 
 .swatch_field__neutral-80 {
-  background-color: #948b84;
+  background: #948b84;
 }
 
 .swatch_field__neutral {
-  background-color: #796e65;
+  background: #796e65;
 }
 
 .swatch_field__gold-20 {
-  background-color: #ffecd1;
+  background: #ffecd1;
 }
 
 .swatch_field__gold-50 {
-  background-color: #ffce8d;
+  background: #ffce8d;
 }
 
 .swatch_field__gold-80 {
-  background-color: #ffb149;
+  background: #ffb149;
 }
 
 .swatch_field__gold {
-  background-color: #ff9e1b;
+  background: #ff9e1b;
 }
 
 .swatch_field__redorange-20 {
-  background-color: #f6d9d3;
+  background: #f6d9d3;
 }
 
 .swatch_field__redorange-50 {
-  background-color: #e8a091;
+  background: #e8a091;
 }
 
 .swatch_field__redorange-80 {
-  background-color: #da6750;
+  background: #da6750;
 }
 
 .swatch_field__redorange {
-  background-color: #d12124;
+  background: #d12124;
 }
 
 .swatch_field__gray-5 {
-  background-color: #f8f8f8;
+  background: #f8f8f8;
 }
 
 .swatch_field__gray-10 {
-  background-color: #f1f2f2;
+  background: #f1f2f2;
 }
 
 .swatch_field__gray-20 {
-  background-color: #e3e4e5;
+  background: #e3e4e5;
 }
 
 .swatch_field__gray-50 {
-  background-color: #babbbd;
+  background: #babbbd;
 }
 
 .swatch_field__gray-80 {
-  background-color: #919395;
+  background: #919395;
 }
 
 .swatch_field__gray {
-  background-color: #75787b;
+  background: #75787b;
 }
 
 .swatch_field__darkgray {
-  background-color: #43484e;
+  background: #43484e;
 }
 
 .swatch_field__black {
-  background-color: #101820;
+  background: #101820;
 }
 
 .swatch_field__green-tint {
-  background-color: #dbedd4;
+  background: #dbedd4;
 }
 
 .swatch_field__green-midtone {
-  background-color: #addc91;
+  background: #addc91;
 }
 
 .swatch_field__green {
-  background-color: #2cb34a;
+  background: #2cb34a;
+}
+
+/* Diagrams for Identity/Typography page
+   ========================================================================== */
+
+[class^="type-color-combo"] {
+  margin-top: 0;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: normal;
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5714285714285714em;
+  font-size: 0.875em;
+  line-height: 1.5714285714285714;
+  padding: 0.5em 1em;
+  list-style: none;
+}
+
+.type-color-combo__black-on-white {
+  border: 1px solid #e3e4e5;
+}
+
+.type-color-combo__darkgray-on-white {
+  border: 1px solid #e3e4e5;
+  color: #43484e;
+}
+
+.type-color-combo__white-on-black {
+  background: #101820;
+  color: #ffffff;
+}
+
+.type-color-combo__white-on-darkgray {
+  background: #43484e;
+  color: #ffffff;
+}
+
+.type-color-combo__black-on-gray10 {
+  background: #f1f2f2;
+}
+
+.type-color-combo__black-on-gray5 {
+  background: #f8f8f8;
+}
+
+.type-color-combo__black-on-greenmid {
+  background: #addc91;
+}
+
+.type-color-combo__black-on-greentint {
+  background: #dbedd4;
+}
+
+.type-color-combo__white-on-gray {
+  background: #75787b;
+  color: #ffffff;
+}
+
+.type-color-combo__black-on-gray {
+  background: #75787b;
+}
+
+.type-color-combo__gray-on-white {
+  border: 1px solid #e3e4e5;
+  color: #75787b;
+}
+
+.type-color-combo__white-on-green {
+  background: #2cb34a;
+  color: #ffffff;
+}
+
+.type-color-combo__green-on-white {
+  border: 1px solid #dbedd4;
+  color: #2cb34a;
+}
+
+.type-color-combo__black-on-green {
+  background: #2cb34a;
+  color: #101820;
+}
+
+.type-color-combo__green-on-black {
+  background: #101820;
+  color: #2cb34a;
 }
 
 /* ==========================================================================

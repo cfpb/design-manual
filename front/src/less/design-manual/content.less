@@ -28,6 +28,15 @@
 
 }
 
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.warning {
+    color: @redorange;
+}
+
 
 /* Media Queries
    ========================================================================== */
@@ -255,28 +264,81 @@
          'teal', 'teal-80', 'teal-50', 'teal-20',
          'dark-redorange';
 
-// Need grunt-contrib-less .9 or higher for lenght to work
-// http://lesscss.org/functions/#list-functions
-@num_colors: length(@colors);
-
-/*
-.num-colors-test {
-  color: @num_colors;
-}
-*/
-
+// Set up looping mixin
 .loop(@index) when (@index > 0) {
     // Retrieve the next variable name from the @colors array
     @name: e(extract(@colors, @index));
     // Output the `.swatch_field__color` rule
-    .swatch_field__@{name} { background-color: @@name; }
+    .swatch_field__@{name} { background: @@name; }
     // Call the next iteration of the loop
     .loop((@index - 1));
 }
 
-// end the loop when index is 0
-.loop (0) {}
-
 // Initiate loop
-//.loop( length(@colors) );
-.loop(@num_colors);
+.loop( length(@colors) );
+
+
+/* Diagrams for Identity/Typography page
+   ========================================================================== */
+
+[class^="type-color-combo"] {
+    .h5; // See cf-typography.less
+    padding: 0.5em 1em;
+    list-style: none;
+}
+.type-color-combo__ {
+    &black-on-white {
+        border: 1px solid @gray-20;
+    }
+    &darkgray-on-white {
+        border: 1px solid @gray-20;
+        color: @darkgray;
+    }
+    &white-on-black {
+        background: @black;
+        color: @white;
+    }
+    &white-on-darkgray {
+        background: @darkgray;
+        color: @white;
+    }
+    &black-on-gray10 {
+        background: @gray-10;
+    }
+    &black-on-gray5 {
+        background: @gray-5;
+    }
+    &black-on-greenmid {
+        background: @green-midtone;
+    }
+    &black-on-greentint {
+        background: @green-tint;
+    }
+    &white-on-gray {
+        background: @gray;
+        color: @white;
+    }
+    &black-on-gray {
+        background: @gray;
+    }
+    &gray-on-white {
+        border: 1px solid @gray-20;
+        color: @gray;
+    }
+    &white-on-green {
+        background: @green;
+        color: @white;
+    }
+    &green-on-white {
+        border: 1px solid @green-tint;
+        color: @green;
+    }
+    &black-on-green {
+        background: @green;
+        color: @black;
+    }
+    &green-on-black {
+        background: @black;
+        color: @green;
+    }
+}
