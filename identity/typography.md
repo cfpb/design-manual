@@ -15,12 +15,16 @@ published: true
 </ul>
 
 <a name="principles"></a>
+
 ## Principles
+
 ### A clear typographic hierarchy is critical to the effective communication of our brand.
 Type should be light and well-spaced to reinforce the idea that the CFPB is open, modern, and approachable. It should promote readability and accessibility, which allows all users to efficiently read and absorb textual information. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document.
 
 <a name="typefaces"></a>
+
 ## Typefaces
+
 ### Avenir Next
 Avenir Next is the primary brand typeface and can be used across all formats from print to digital. Its round and geometric letterforms are approachable and modern.
 
@@ -32,6 +36,7 @@ Georgia is the secondary brand typeface and is designed for digital executions. 
 Georgia should not be used for display type or large-scale typography.
 
 <a name="web-hierarchy"></a>
+
 ## Web hierarchy
 **Hierarchy** refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read; a successful hierarchy enables readers to easily scan content. 
 
@@ -40,11 +45,17 @@ Consistent scaling, weights, and capitalization are used to create distinction b
 
 \[table begins]
 #### Display
+
 #### h1
+
 #### h2
+
 #### h3
+
 #### h4
+
 #### h5
+
 #### h6
 \[table ends]
 
@@ -54,6 +65,7 @@ Georgia should be used for the majority of body copy on the web. Avenir Next may
 Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast. 
 
 <a name="typesetting-for-readability"></a>
+
 ## Typesetting for readability
 Readable text allows users to efficiently read and take in textual information. Text that is not readable turns off readers or makes it challenging for them to stay focused. The following guidelines promote good readability.
 
@@ -76,6 +88,7 @@ Comfortable line length allows the user’s eyes to flow easily from the end of 
 For a single column of text, line length should be an average of 66 characters per line, including spaces, but may range from 50 to 75 characters.
 
 <a name="web-type-accessibility"></a>
+
 ## Web type accessibility
 WCA (Web Content Accessibility) standards ensure that content is accessible by everyone, regardless of any disability or user device. 
 
@@ -106,8 +119,10 @@ Refer to the [Section 508 Standards Guide].
 **Important note:** This CSS is dependent on using the standard CFPB web font code as seen in [web fonts] or [cfpb-bp]. It also assumes a base `font-size` of 16px (unchanged from the default in most browsers).
 
 <a name="print-hierarchy"></a>
+
 ## Print hierarchy
 This hierarchy should serve as a basis for 8.5 x 11” documents, but appropriate scaling should be explored for content of larger or smaller dimensions.
 
 ### Headers
+
 ### Body text
