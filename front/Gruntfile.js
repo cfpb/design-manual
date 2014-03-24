@@ -166,7 +166,7 @@ module.exports = function(grunt) {
      * Copy: https://github.com/gruntjs/grunt-contrib-copy
      */
     copy: {
-            main: {
+      main: {
         files: [
           /* Vendor Packages */
           {

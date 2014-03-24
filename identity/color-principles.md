@@ -18,6 +18,7 @@ ample whitespace will ensure a voice of authority and expertise in communication
 The primary color palette for the CFPB is green and black,
 including midtones and tints, and thoughtful use of whitespace.
 
+{::nomarkdown}
 <!-- Copy the full `figure` block for each color -->
 <figure class="swatch swatch__primary">
     <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
@@ -123,6 +124,7 @@ including midtones and tints, and thoughtful use of whitespace.
         </table>
     </figcaption>
 </figure>
+{:/nomarkdown}
 
 
 ### Background colors
@@ -131,6 +133,7 @@ These colors are used primarily for background wells and fields.
 When alternating between tones, be sure to use enough tones
 providing enough contrast between adjacent wells.
 
+{::nomarkdown}
 <!-- Copy the full `figure` block for each color -->
 <figure class="swatch swatch__primary">
     <div class="swatch_field swatch_field__darkgray"></div> <!-- Update the color in the class name -->
@@ -314,6 +317,7 @@ providing enough contrast between adjacent wells.
         </table>
     </figcaption>
 </figure>
+{:/nomarkdown}
 
 
 ### Secondary colors
@@ -322,6 +326,7 @@ These colors are used primarily as accent colors, and
 should be used to add variety to page content and illustrations.
 They should never overpower the core brand colors.
 
+{::nomarkdown}
 <figure class="swatch swatch__primary">
     <div class="swatch_field swatch_field__redorange"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
@@ -946,3 +951,4 @@ They should never overpower the core brand colors.
         </table>
     </figcaption>
 </figure>
+{:/nomarkdown}
