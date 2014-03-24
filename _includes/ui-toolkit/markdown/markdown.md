@@ -16,14 +16,20 @@
 
 
 <a name="headers"></a>
+
 ## Headers
 
 
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 
 Alternatively, for H1 and H2, an underline-ish style:
@@ -36,6 +42,7 @@ Alt-H2
 
 
 <a name="emphasis"></a>
+
 ## Emphasis
 
 Emphasis, aka italics, with *asterisks* or _underscores_.
@@ -48,6 +55,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 
 <a name="lists"></a>
+
 ## Lists
 
 1. First ordered list item
@@ -64,6 +72,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 + Or pluses
 
 <a name="links"></a>
+
 ## Links
 
 There are two ways to create links.
@@ -85,6 +94,7 @@ Some text to show that the reference links can follow later.
 [link text itself]: http://www.reddit.com
 
 <a name="images"></a>
+
 ## Images
 
 Here's our logo (hover to see the title text):
@@ -98,6 +108,7 @@ Reference-style:
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 
 <a name="code"></a>
+
 ## Code and Syntax Highlighting
 
 Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
@@ -124,6 +135,7 @@ Again, to see what languages are available for highlighting, and how to write th
 
 
 <a name="tables"></a>
+
 ## Tables
 
 Tables aren't part of the core Markdown spec, but they are part of some Markdown parsers. Unfortunalty, this table syntax does not work with Redcarpet:
@@ -140,6 +152,7 @@ Tables aren't part of the core Markdown spec, but they are part of some Markdown
 
 
 <a name="blockquotes"></a>
+
 ## Blockquotes
 
 
@@ -151,6 +164,7 @@ Quote break.
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
 
 <a name="html"></a>
+
 ## Inline HTML
 
 You can also use raw HTML in your Markdown, and it'll mostly work pretty well. 
@@ -164,6 +178,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 </dl>
 
 <a name="hr"></a>
+
 ## Horizontal Rule
 
 
@@ -182,6 +197,7 @@ ___
 Underscores
 
 <a name="lines"></a>
+
 ## Line Breaks
 
 My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend. 

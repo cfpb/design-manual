@@ -4,7 +4,6 @@ title: Accessible interfaces
 category: Guides
 ---
 
-<br/>
 ##Guiding principles of web accessibility
 The concepts of web accessibility are organized around four guiding principles. These principles lay the foundation for ensuring web content is available for all users. As defined by the W3C, the guidelines are:  
 
@@ -72,7 +71,6 @@ For color:
     - Text as part of a logo has no minimum contrast requirement.
 One good tool for testing contrast ratio can be found at <http://www.snook.ca/technical/colour_contrast/colour.html>
 
-<br/>  
 ##Operable
 Following these guidelines will ensure that users who need to use input devices other than a mouse will be able to use a web site or app.
 
@@ -108,8 +106,7 @@ From a browser’s perspective, only one element on a webpage has “focus” at
 - If the order of controls on a page matters, make sure they’ll be focused in that order when navigating by keyboard.
 - Make sure there is a visible indicator on screen of which element has focus. It is okay to make this an optional mode, but the mode should be turned on if the user begins to navigate with the keyboard.
 - If a user action causes a modal dialog or something else to appear on screen, make sure the focus is moved to that dialog or area. When the dialog is dismissed, move focus back to the original control or to some other logical place in the document.
-
-<br/>  
+ 
 ##Understandable
 These guidelines primarily deal with a user’s ability to comprehend content.
 
@@ -147,7 +144,6 @@ If an automatic context change is necessary, warn the user in advance and give t
 - If a form field is complex or unusual, provide context-sensitive help.
 - If possible, allow a user to reverse or edit form submissions after the fact. If this is not possible, allow them to review and confirm their inputs before submitting the form.
 
-<br/>
 ##Robust
 
 A robust site will be broadly compatible with past, current, and future web browsers and devices.
