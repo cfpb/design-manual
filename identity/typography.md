@@ -5,6 +5,7 @@ category: Identity
 published: true
 ---
 
+{::nomarkdown}
 <ul class="toc">
     <li><a href="#principles">Principles</a></li>
     <li><a href="#typefaces">Typefaces</a></li>
@@ -13,6 +14,7 @@ published: true
     <li><a href="#web-type-accessibility">Web type accessibility</a></li>
     <li><a href="#print-hierarchy">Print hierarchy</a></li>
 </ul>
+{:/nomarkdown}
 
 <a name="principles"></a>
 
