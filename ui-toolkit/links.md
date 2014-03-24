@@ -10,6 +10,7 @@ Links should lead users to another page or further information. In contrast, [bu
 Standard normal links use Pacific Blue with a 1px dotted bottom border. Links should adhere to all other typographic guidelines, including those for color and web accessibility.
 
 ### Link types
+
 #### Body text and lists
 Links that appear in body text or link lists are underlined. Links are underlined with the ```border-bottom``` property.
 
@@ -44,14 +45,19 @@ Be careful not to signal an action with a link–use a button for that instead.
 [pic crossing out Upload, Attach, Save, Email]
 
 ### Link states
+
 #### Normal
 Use Pacific Blue with a 1px dotted bottom border.
+
 #### Hover
 Use 50% Pacific Blue with a 1px solid bottom border.
+
 #### Focus
 Use Pacific Blue with a 1px dotted bottom border, and a thin dotted outline.
+
 #### Active
 Use Navy Blue with a 1px solid bottom border.
+
 #### Visited
 Use 50% Teal with a 1px solid bottom border.
 

@@ -18,6 +18,14 @@
     padding-bottom: 1em;
     padding-top: 1em;
   }
+
+  .content-33,
+  .content-67 {
+    .column(12);
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
 }
 
 figure {
@@ -54,11 +62,33 @@ figure {
     /* Inner content - nested grid inside content */
     .content-25 {
       .column(3);
+      //Nested colums don't work yet, so pull the first col back 
+      border-left: 0;
     }
 
     .content-75 {
       .column(9);
+      border-right: 0;
     }
+
+    /* Inner content - nested grid inside content */
+    .content-33 {
+      .column(4);
+    }
+
+    .content-67 {
+      .column(8);
+    }
+
+    //Nested colums don't work yet, so pull the first col back 
+    .content-first {
+      border-left: 0;
+    }
+
+    .content-last {
+      border-right: 0;
+    }
+
   }
 
 }
@@ -83,6 +113,110 @@ figure {
 
 }
 
+.content {
+
+  h2 {
+    .clearfix();
+    border-bottom: 1px solid @gray-20;
+    /* The EM sizes are calculating to unexpected values - DM */
+    padding-bottom: 30px;
+    margin-bottom: 20px !important;
+    //padding-bottom: unit( 16 / @base-font-size-px, em );
+    //margin-bottom: unit( @base-line-height-px / @font-size, em );
+    //margin-bottom: unit( 16 / @base-font-size-px, em ) !important; /* This is ugly, but I am over-riding cf-typography */
+  }
+
+  /* cross-browser HR styling. See:
+  https://github.com/paulirish/html5-boilerplate/blob/ef3c095bafa9a6fa9c771f368d4b30c8ce4deded/css/style.css#L75
+  */
+  hr { 
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid @gray-20;
+    margin: 1.25em 0; 
+    padding: 0;
+  }
+
+  img + hr {
+    /* horizontal rules after images are getting to much space above the image */
+    margin: 1em 0 1.25em 0; 
+  }
+
+  /* Table of Contents */
+  ul.toc {
+    .clearfix();
+    list-style: none;
+    border-bottom: 1px solid @pacific-20;
+    padding: 0 0 1.25em 0; // 1.25em = 20px
+    margin: 0 0 1.875em 0; // 1.875em = 30px
+
+  }
+
+  .toc {
+
+    li {
+
+      font-family: @sans-serif-demi;
+      font-size: 1.125em;
+      display: block;
+      float: left;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        border-bottom: none;
+        padding: 0 1em 0 0;
+      }
+
+      a:hover {
+        border-bottom: none;
+      }
+
+    }
+
+  }
+  p {
+    font-family: @serif;
+  }
+
+  .lead-in {
+    font-family: @sans-serif;
+    font-size: 1.125em;
+  }
+
+}
+
+
+/* ==========================================================================
+   CFPB Design Manual
+   Lists
+   ========================================================================== */
+.content {
+  ul,
+  ol {
+          list-style-position: inside;
+          padding: 0;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  li ul,
+  li ol {
+          margin: 0 1.375em;
+  }
+
+  dl dd {
+          margin-left: 1.375em;
+  }
+
+  dt {
+          font-family: @sans-serif-demi;
+          font-weight: 600;
+  }
+}
 
 /* Color swatches for Identity/Color page
    ========================================================================== */
@@ -130,13 +264,14 @@ figure {
          'teal', 'teal-80', 'teal-50', 'teal-20',
          'dark-redorange';
 
-.loop(@i) when (@i > 0) {
+// Set up looping mixin
+.loop(@index) when (@index > 0) {
     // Retrieve the next variable name from the @colors array
-    @name: e(extract(@colors, @i));
+    @name: e(extract(@colors, @index));
     // Output the `.swatch_field__color` rule
     .swatch_field__@{name} { background: @@name; }
     // Call the next iteration of the loop
-    .loop((@i - 1));
+    .loop((@index - 1));
 }
 
 // Initiate loop

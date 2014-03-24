@@ -15,7 +15,9 @@
 
   .main-nav {
     .column(12);
+    /* Th next two lines get rid of the annoying 40px left margin on unordered list in WebKit (-webkit-offset-start: 40px;): */
     margin: 0;
+    padding: 0;
   }
   .main-nav li {
     display: inline-block;
@@ -65,7 +67,7 @@
 /* Tablet/netbook (768px) */
 @media only screen and (min-width: 48em) { 
   .main-nav li {
-    font-size: 1.25em; /* 20px */
+    font-size: 1.125em; /* 18px */
   }
 }
 

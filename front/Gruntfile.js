@@ -26,12 +26,6 @@ module.exports = function(grunt) {
 
 
     concat: {
-      main: {
-        src: [
-          'front/vendor/font-awesome/css/font-awesome.min.css'
-        ],
-        dest: 'assets/css/vendor.min.css',
-      },
       ltIE8: {
         src: [
           'front/vendor/font-awesome/css/font-awesome-ie7.min.css'
@@ -104,6 +98,10 @@ module.exports = function(grunt) {
     cssmin: {
       minify: {
         files: {
+          'assets/css/vendor.min.css': [
+            'front/vendor/normalize-css/normalize.css',
+            'front/vendor/font-awesome/css/font-awesome.css'
+          ],
           'assets/css/<%= pkg.name %>.min.css': ['assets/css/<%= pkg.name %>.css']
           /*'assets/css/<%= pkg.name %>.ie8.min.css': ['<%= pkg.name %>.ie8.css']*/
         }
@@ -137,10 +135,29 @@ module.exports = function(grunt) {
         dest: 'assets/js/<%= pkg.name %>.min.js'
       },
       capitalframework: {
-        src: ['front/vendor/fj-expandables/src/js/expandables.js'],
+        src: ['front/vendor/cf-expandables/src/js/cf-expandables.js'],
         dest: 'assets/js/capital-framework.min.js'
       }
     },
+
+/*
+    topdoc: {
+      demo: {
+        options: {
+          source: 'demo/static/css/',
+          destination: 'demo/',
+          template: 'node_modules/cf-component-demo/' + ( grunt.option('tpl') || 'raw' ) + '/',
+          templateData: {
+            family: '<%= pkg.name %>',
+            title: '<%= pkg.name %> demo',
+            repo: '<%= pkg.homepage %>',
+            ltIE8Source: 'static/css/main.lt-ie8.min.css',
+            custom: '<%= grunt.file.read("demo/custom.html") %>'
+          }
+        }
+      },
+*/
+
 
     /**
      * Copy: https://github.com/gruntjs/grunt-contrib-copy
@@ -167,7 +184,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-buttons/demo/custom.html'],
+            src: ['front/vendor/cf-buttons/demo/custom.html'],
             dest: '_includes/ui-toolkit/buttons/',
             filter: 'isFile'
           },
@@ -181,28 +198,25 @@ module.exports = function(grunt) {
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-colors/demo/custom.html'],
+            src: ['front/vendor/cf-colors/demo/custom.html'],
             dest: '_includes/ui-toolkit/colors/',
             filter: 'isFile'
           },
-          /*
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-expandables/demo/custom.html'],
+            src: ['front/vendor/cf-expandables/demo/custom.html'],
             dest: '_includes/ui-toolkit/expandables/',
             filter: 'isFile'
           },
-          */
-          /*
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-forms/demo/custom.html'],
+            src: ['front/vendor/cf-forms/demo/custom.html'],
             dest: '_includes/ui-toolkit/forms/',
             filter: 'isFile'
           },
-          */
+          
           /* NO GRID DEMO (YET) -- This should be fixed when everything is moved into the gh-pages repo
           {
             expand: true,
@@ -215,32 +229,34 @@ module.exports = function(grunt) {
           {
             expand: true,
             flatten: true,
-            src: ['front/vendor/fj-pagination/demo/custom.html'],
+            src: ['front/vendor/cf-pagination/demo/custom.html'],
             dest: '_includes/ui-toolkit/pagination/',
             filter: 'isFile'
           }
         ]
-      },
-      watch: {
-        scripts: {
-          files: ['front/src/**/*.js','front/src/**/*.less'],
-          tasks: ['build']
+      }
+    },
+     
+    watch: {
+       scripts: {
+         files: ['front/src/js/*.js','front/src/**/*.less'],
+         tasks: ['build']
         }
       }
-    }
   });
 
   /**
-   * The above tasks are loaded here.
+   * The above tasks are loaded here (in the same order).
    */
-  grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-legacssy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-topdoc');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   /**
    * Grunt is installed in a sub-directory called "front",  so back out one directory:

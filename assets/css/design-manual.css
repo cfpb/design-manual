@@ -48,11 +48,6 @@
   font-style: normal;
 }
 /* ==========================================================================
-   CFPB Design Manual
-   Basic Typography
-   ========================================================================== */
-/* We may need to add these lines in the capital framework: */
-/* ==========================================================================
    Capital Framework
    Color Variables
    ========================================================================== */
@@ -452,7 +447,7 @@ ul {
   *behavior: url(boxsizing.htc);
 }
 /* ==========================================================================
-   Flapjack Front End
+   Capital Framework
    Button Styling
    ========================================================================== */
 /* topdoc
@@ -989,7 +984,7 @@ input.btn::-moz-focus-inner {
   eof: true
 */
 /* ==========================================================================
-   Flapjack Front End
+   Capital Framework
    Form Element Styling
    ========================================================================== */
 label {
@@ -1006,9 +1001,13 @@ label {
       markup: |
         <input class="focus" placeholder="placeholder text" type="text">
     - name: Field in error state
+      codenotes:
+        - 'role="alert"'
+      notes:
+        - 'Use the alert role to mark invalid fields: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role'
       markup: |
         <input class="error" type="text" value="Invalid input">
-        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+        <i class="icon-remove-sign" role="alert"><span class="jekyll-bug"></span></i>
     - name: Field in success state
       markup: |
         <input class="success" type="text" value="Validated input">
@@ -1020,9 +1019,13 @@ label {
       markup: |
         <textarea class="focus">Example entry</textarea>
     - name: Multi-line text box in error state
+      codenotes:
+        - 'role="alert"'
+      notes:
+        - 'Use the alert role to mark invalid fields: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role'
       markup: |
         <textarea class="error">Invalid input</textarea>
-        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+        <i class="icon-remove-sign" role="alert"><span class="jekyll-bug"></span></i>
     - name: Multi-line text box in success state
       markup: |
         <textarea class="success">Validated input</textarea>
@@ -1087,7 +1090,76 @@ textarea + [class^="icon-"] {
   eof: true
 */
 /* ==========================================================================
-   Flapjack Front End
+   Capital Framework
+   Expandable Styling
+   ========================================================================== */
+/* topdoc
+    name: Default expandable
+    family: cf-expandables
+    patterns:
+    - name: Default state
+      markup: |
+        <div class="expandable">
+            <header class="expandable-header">
+                Expandable Header
+                <a href="" class="expandable-button">
+                    <span class="expandable-text">Show</span> <i class="icon-plus-sign"></i>
+                </a>
+            </header>
+            <div class="expandable-content expandable-hidden" style="display: none;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    tags:
+    - cf-expandables
+*/
+.expandable {
+  margin-bottom: 1.375em;
+  background: #f1f2f2;
+}
+.expandable:hover,
+.expandable .open {
+  background: #e3e4e5;
+}
+.expandable-hidden {
+  display: none;
+}
+.expandable-header {
+  padding: 0.625em 0.75em;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+.expandable-button,
+.expandable-button:link,
+.expandable-button:visited {
+  margin: 0;
+  border-width: 0;
+  float: right;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 1.5714285714285714;
+}
+.expandable-content {
+  padding: 0 0.75em 0.25em;
+}
+.open .icon-plus-sign:before {
+  content: "\f056";
+}
+/* topdoc
+  name: EOF
+  eof: true
+*/
+/* ==========================================================================
+   Capital Framework
    Pagination Styling
    ========================================================================== */
 /* topdoc
@@ -1319,6 +1391,289 @@ svg:not(:root) {
   width: 0;
   height: 150%;
 }
+/* 
+This LESS Code is for code highlighing
+* Background:
+* Github.com lets you host webpages in the special gh-pages branch.
+* gh-pages parses markdown files using the Ruby application called Jekyll
+* More specifically, Jekyll uses the Ruby script "Redcarpet" to parse Markdown
+* Markdown's code highlighting creates the css class names the same way the Python-based syntax highlighter named Pygments does.
+* Side note: Github.com allows for syntax highlighting in wiki pages and issues (outputting the pygments CSS class names).
+* This is the github pygments css.
+* This code is from:
+** https://github.com/richleland/pygments-css/blob/master/github.css
+
+*/
+.highlight {
+  /* Comment */
+  /* Error */
+  /* Keyword */
+  /* Operator */
+  /* Comment.Multiline */
+  /* Comment.Preproc */
+  /* Comment.Single */
+  /* Comment.Special */
+  /* Generic.Deleted */
+  /* Generic.Emph */
+  /* Generic.Error */
+  /* Generic.Heading */
+  /* Generic.Inserted */
+  /* Generic.Output */
+  /* Generic.Prompt */
+  /* Generic.Strong */
+  /* Generic.Subheading */
+  /* Generic.Traceback */
+  /* Keyword.Constant */
+  /* Keyword.Declaration */
+  /* Keyword.Namespace */
+  /* Keyword.Pseudo */
+  /* Keyword.Reserved */
+  /* Keyword.Type */
+  /* Literal.Number */
+  /* Literal.String */
+  /* Name.Attribute */
+  /* Name.Builtin */
+  /* Name.Class */
+  /* Name.Constant */
+  /* Name.Decorator */
+  /* Name.Entity */
+  /* Name.Exception */
+  /* Name.Function */
+  /* Name.Label */
+  /* Name.Namespace */
+  /* Name.Tag */
+  /* Name.Variable */
+  /* Operator.Word */
+  /* Text.Whitespace */
+  /* Literal.Number.Float */
+  /* Literal.Number.Hex */
+  /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
+  /* Literal.String.Doc */
+  /* Literal.String.Double */
+  /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
+  /* Literal.String.Interpol */
+  /* Literal.String.Other */
+  /* Literal.String.Regex */
+  /* Literal.String.Single */
+  /* Literal.String.Symbol */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
+  /* Name.Variable.Global */
+  /* Name.Variable.Instance */
+  /* Literal.Number.Integer.Long */
+}
+.highlight .hll {
+  background-color: #ffffcc;
+}
+.highlight .c {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+.highlight .k {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .o {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #aa0000;
+}
+.highlight .gh {
+  color: #999999;
+}
+.highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .gt {
+  color: #aa0000;
+}
+.highlight .kc {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kd {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .m {
+  color: #009999;
+}
+.highlight .s {
+  color: #d01040;
+}
+.highlight .na {
+  color: #008080;
+}
+.highlight .nb {
+  color: #0086b3;
+}
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #008080;
+}
+.highlight .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #800080;
+}
+.highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #555555;
+}
+.highlight .nt {
+  color: #000080;
+}
+.highlight .nv {
+  color: #008080;
+}
+.highlight .ow {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #bbbbbb;
+}
+.highlight .mf {
+  color: #009999;
+}
+.highlight .mh {
+  color: #009999;
+}
+.highlight .mi {
+  color: #009999;
+}
+.highlight .mo {
+  color: #009999;
+}
+.highlight .sb {
+  color: #d01040;
+}
+.highlight .sc {
+  color: #d01040;
+}
+.highlight .sd {
+  color: #d01040;
+}
+.highlight .s2 {
+  color: #d01040;
+}
+.highlight .se {
+  color: #d01040;
+}
+.highlight .sh {
+  color: #d01040;
+}
+.highlight .si {
+  color: #d01040;
+}
+.highlight .sx {
+  color: #d01040;
+}
+.highlight .sr {
+  color: #009926;
+}
+.highlight .s1 {
+  color: #d01040;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .bp {
+  color: #999999;
+}
+.highlight .vc {
+  color: #008080;
+}
+.highlight .vg {
+  color: #008080;
+}
+.highlight .vi {
+  color: #008080;
+}
+.highlight .il {
+  color: #009999;
+}
 /* ==========================================================================
    CFPB Design Manual
    MAIN CSS FILE
@@ -1326,12 +1681,14 @@ svg:not(:root) {
 body,
 html {
   /* The 3 height lines are for the fixed footer to work: http://ryanfait.com/sticky-footer/ */
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  /*
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    */
   font-family: "Avenir Next", Arial, sans-serif;
   line-height: 1.375;
   color: #101820;
@@ -1432,29 +1789,6 @@ html {
   h3 {
     page-break-after: avoid;
   }
-}
-/* ==========================================================================
-   CFPB Design Manual
-   Lists
-   ========================================================================== */
-ul,
-ol {
-  list-style-position: inside;
-  padding: 0;
-}
-ul {
-  list-style-type: square;
-}
-li ul,
-li ol {
-  margin: 0 1.375em;
-}
-dl dd {
-  margin-left: 1.375em;
-}
-dt {
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-weight: 600;
 }
 /* ==========================================================================
 	 CFPB Design Manual
@@ -1634,6 +1968,30 @@ dt {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
 }
+.content .content-33,
+.content .content-67 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.ie .content .content-33,
+.ie .content .content-67 {
+  margin-right: -0.26em;
+}
+.lt-ie8 .content .content-33,
+.lt-ie8 .content .content-67 {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
 figure {
   margin-left: 0;
   margin-right: 0;
@@ -1658,6 +2016,7 @@ figure {
     vertical-align: top;
     width: 75%;
     /* Inner content - nested grid inside content */
+    /* Inner content - nested grid inside content */
   }
   .ie .content {
     margin-right: -0.26em;
@@ -1677,6 +2036,7 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 25%;
+    border-left: 0;
   }
   .ie .content .content-25 {
     margin-right: -0.26em;
@@ -1696,6 +2056,7 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 75%;
+    border-right: 0;
   }
   .ie .content .content-75 {
     margin-right: -0.26em;
@@ -1705,11 +2066,146 @@ figure {
     *zoom: 1;
     *behavior: url(boxsizing.htc);
   }
+  .content .content-33 {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 33.33333333333333%;
+  }
+  .ie .content .content-33 {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .content .content-33 {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .content .content-67 {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 66.66666666666666%;
+  }
+  .ie .content .content-67 {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .content .content-67 {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+  .content .content-first {
+    border-left: 0;
+  }
+  .content .content-last {
+    border-right: 0;
+  }
 }
 /* Tablet/netbook (768px) */
 /* Landscape tablet/netbook/laptop (1024px) */
 /* Desktop (1280px) */
 /* Widescreen (1600px) */
+.content {
+  /* cross-browser HR styling. See:
+  https://github.com/paulirish/html5-boilerplate/blob/ef3c095bafa9a6fa9c771f368d4b30c8ce4deded/css/style.css#L75
+  */
+  /* Table of Contents */
+}
+.content h2 {
+  border-bottom: 1px solid #e3e4e5;
+  /* The EM sizes are calculating to unexpected values - DM */
+  padding-bottom: 30px;
+  margin-bottom: 20px !important;
+}
+.content h2:before,
+.content h2:after {
+  content: " ";
+  display: table;
+}
+.content h2:after {
+  clear: both;
+}
+.content hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e3e4e5;
+  margin: 1.25em 0;
+  padding: 0;
+}
+.content img + hr {
+  /* horizontal rules after images are getting to much space above the image */
+  margin: 1em 0 1.25em 0;
+}
+.content ul.toc {
+  list-style: none;
+  border-bottom: 1px solid #cce3f5;
+  padding: 0 0 1.25em 0;
+  margin: 0 0 1.875em 0;
+}
+.content ul.toc:before,
+.content ul.toc:after {
+  content: " ";
+  display: table;
+}
+.content ul.toc:after {
+  clear: both;
+}
+.content .toc li {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-size: 1.125em;
+  display: block;
+  float: left;
+  position: relative;
+}
+.content .toc li a {
+  text-decoration: none;
+  border-bottom: none;
+  padding: 0 1em 0 0;
+}
+.content .toc li a:hover {
+  border-bottom: none;
+}
+.content p {
+  font-family: Georgia, "Times New Roman", serif;
+}
+.content .lead-in {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 1.125em;
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Lists
+   ========================================================================== */
+.content ul,
+.content ol {
+  list-style-position: inside;
+  padding: 0;
+}
+.content ul {
+  list-style-type: square;
+}
+.content li ul,
+.content li ol {
+  margin: 0 1.375em;
+}
+.content dl dd {
+  margin-left: 1.375em;
+}
+.content dt {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-weight: 600;
+}
 /* Color swatches for Identity/Color page
    ========================================================================== */
 .swatch {
@@ -2022,7 +2518,9 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 100%;
+    /* Th next two lines get rid of the annoying 40px left margin on unordered list in WebKit (-webkit-offset-start: 40px;): */
     margin: 0;
+    padding: 0;
   }
   .ie .main-nav {
     margin-right: -0.26em;
@@ -2077,8 +2575,8 @@ figure {
 /* Tablet/netbook (768px) */
 @media only screen and (min-width: 48em) {
   .main-nav li {
-    font-size: 1.25em;
-    /* 20px */
+    font-size: 1.125em;
+    /* 18px */
   }
 }
 /* Landscape tablet/netbook/laptop (1024px) */
@@ -2138,7 +2636,7 @@ figure {
 .secondary-nav ul {
   margin: 0;
   padding: 0;
-  border-top: 1px solid #babbbd;
+  /*border-top: 1px solid @gray-50;*/
 }
 .secondary-nav li {
   list-style: none;
@@ -2171,289 +2669,6 @@ figure {
     *zoom: 1;
     *behavior: url(boxsizing.htc);
   }
-}
-/* 
-This LESS Code is for code highlighing
-* Background:
-* Github.com lets you host webpages in the special gh-pages branch.
-* gh-pages parses markdown files using the Ruby application called Jekyll
-* More specifically, Jekyll uses the Ruby script "Redcarpet" to parse Markdown
-* Markdown's code highlighting creates the css class names the same way the Python-based syntax highlighter named Pygments does.
-* Side note: Github.com allows for syntax highlighting in wiki pages and issues (outputting the pygments CSS class names).
-* This is the github pygments css.
-* This code is from:
-** https://github.com/richleland/pygments-css/blob/master/github.css
-
-*/
-.highlight {
-  /* Comment */
-  /* Error */
-  /* Keyword */
-  /* Operator */
-  /* Comment.Multiline */
-  /* Comment.Preproc */
-  /* Comment.Single */
-  /* Comment.Special */
-  /* Generic.Deleted */
-  /* Generic.Emph */
-  /* Generic.Error */
-  /* Generic.Heading */
-  /* Generic.Inserted */
-  /* Generic.Output */
-  /* Generic.Prompt */
-  /* Generic.Strong */
-  /* Generic.Subheading */
-  /* Generic.Traceback */
-  /* Keyword.Constant */
-  /* Keyword.Declaration */
-  /* Keyword.Namespace */
-  /* Keyword.Pseudo */
-  /* Keyword.Reserved */
-  /* Keyword.Type */
-  /* Literal.Number */
-  /* Literal.String */
-  /* Name.Attribute */
-  /* Name.Builtin */
-  /* Name.Class */
-  /* Name.Constant */
-  /* Name.Decorator */
-  /* Name.Entity */
-  /* Name.Exception */
-  /* Name.Function */
-  /* Name.Label */
-  /* Name.Namespace */
-  /* Name.Tag */
-  /* Name.Variable */
-  /* Operator.Word */
-  /* Text.Whitespace */
-  /* Literal.Number.Float */
-  /* Literal.Number.Hex */
-  /* Literal.Number.Integer */
-  /* Literal.Number.Oct */
-  /* Literal.String.Backtick */
-  /* Literal.String.Char */
-  /* Literal.String.Doc */
-  /* Literal.String.Double */
-  /* Literal.String.Escape */
-  /* Literal.String.Heredoc */
-  /* Literal.String.Interpol */
-  /* Literal.String.Other */
-  /* Literal.String.Regex */
-  /* Literal.String.Single */
-  /* Literal.String.Symbol */
-  /* Name.Builtin.Pseudo */
-  /* Name.Variable.Class */
-  /* Name.Variable.Global */
-  /* Name.Variable.Instance */
-  /* Literal.Number.Integer.Long */
-}
-.highlight .hll {
-  background-color: #ffffcc;
-}
-.highlight .c {
-  color: #999988;
-  font-style: italic;
-}
-.highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2;
-}
-.highlight .k {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .o {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .cm {
-  color: #999988;
-  font-style: italic;
-}
-.highlight .cp {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic;
-}
-.highlight .c1 {
-  color: #999988;
-  font-style: italic;
-}
-.highlight .cs {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic;
-}
-.highlight .gd {
-  color: #000000;
-  background-color: #ffdddd;
-}
-.highlight .ge {
-  color: #000000;
-  font-style: italic;
-}
-.highlight .gr {
-  color: #aa0000;
-}
-.highlight .gh {
-  color: #999999;
-}
-.highlight .gi {
-  color: #000000;
-  background-color: #ddffdd;
-}
-.highlight .go {
-  color: #888888;
-}
-.highlight .gp {
-  color: #555555;
-}
-.highlight .gs {
-  font-weight: bold;
-}
-.highlight .gu {
-  color: #aaaaaa;
-}
-.highlight .gt {
-  color: #aa0000;
-}
-.highlight .kc {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .kd {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .kn {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .kp {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .kr {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .kt {
-  color: #445588;
-  font-weight: bold;
-}
-.highlight .m {
-  color: #009999;
-}
-.highlight .s {
-  color: #d01040;
-}
-.highlight .na {
-  color: #008080;
-}
-.highlight .nb {
-  color: #0086b3;
-}
-.highlight .nc {
-  color: #445588;
-  font-weight: bold;
-}
-.highlight .no {
-  color: #008080;
-}
-.highlight .nd {
-  color: #3c5d5d;
-  font-weight: bold;
-}
-.highlight .ni {
-  color: #800080;
-}
-.highlight .ne {
-  color: #990000;
-  font-weight: bold;
-}
-.highlight .nf {
-  color: #990000;
-  font-weight: bold;
-}
-.highlight .nl {
-  color: #990000;
-  font-weight: bold;
-}
-.highlight .nn {
-  color: #555555;
-}
-.highlight .nt {
-  color: #000080;
-}
-.highlight .nv {
-  color: #008080;
-}
-.highlight .ow {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .w {
-  color: #bbbbbb;
-}
-.highlight .mf {
-  color: #009999;
-}
-.highlight .mh {
-  color: #009999;
-}
-.highlight .mi {
-  color: #009999;
-}
-.highlight .mo {
-  color: #009999;
-}
-.highlight .sb {
-  color: #d01040;
-}
-.highlight .sc {
-  color: #d01040;
-}
-.highlight .sd {
-  color: #d01040;
-}
-.highlight .s2 {
-  color: #d01040;
-}
-.highlight .se {
-  color: #d01040;
-}
-.highlight .sh {
-  color: #d01040;
-}
-.highlight .si {
-  color: #d01040;
-}
-.highlight .sx {
-  color: #d01040;
-}
-.highlight .sr {
-  color: #009926;
-}
-.highlight .s1 {
-  color: #d01040;
-}
-.highlight .ss {
-  color: #990073;
-}
-.highlight .bp {
-  color: #999999;
-}
-.highlight .vc {
-  color: #008080;
-}
-.highlight .vg {
-  color: #008080;
-}
-.highlight .vi {
-  color: #008080;
-}
-.highlight .il {
-  color: #009999;
 }
 /* ==========================================================================
    CFPB Design Manual

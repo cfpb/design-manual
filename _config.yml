@@ -1,7 +1,7 @@
 # Base configuration
 permalink: /:title 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 
 # Organization
@@ -32,6 +32,12 @@ repository:
 logourl: 'assets/img/logo_210.png'
 logoalt: 'Consumer Financial Protection Bureau'
 
+# Kramdown settings
+kramdown:
+  auto_ids: true
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  parse_block_html: true
+
 # Main Navigation
 # List links that should appear in the main navigation (header) here
 mainnav:
@@ -39,7 +45,7 @@ mainnav:
   url: index.html
   internal: true
 - text: Guides
-  url: guides/design-best-practices.html
+  url: guides/design-principles.html
   internal: true
 - text: Identity
   url: identity/brand-guidelines.html
@@ -58,8 +64,8 @@ secondarynav:
   url: index.html
   internal: true
   category: Overview
-- text: Design best practices
-  url: guides/design-best-practices.html
+- text: Design principles
+  url: guides/design-principles.html
   internal: true
   category: Guides
 - text: Creating accessible interfaces
