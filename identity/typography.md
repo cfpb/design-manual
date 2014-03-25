@@ -19,6 +19,12 @@ A clear typographic hierarchy is critical to the effective communication of our 
 
 </div>
 
+<div class="content-33 content-last">
+
+![Feature image of Avenir Type Sample]({{ site.baseurl }}/assets/img/typography/Typography0_@2.png)
+
+</div>
+
 <a name="typefaces"></a>
 
 ## Typefaces
