@@ -11,6 +11,7 @@ published: true
 <div class="content-67 content-first">
 
 Illustrations are vector-based graphics that support primary headers and text. They function as the brand's top-level illustration style with high detail and clarity. Illustration is universally relatable and sets a friendly tone when speaking to consumers. The content of an illustration should always be politically and socially neutral.
+{: class="lead-in"}
 
 </div>
 
