@@ -7,7 +7,6 @@ published: true
 
 {::nomarkdown}
 <ul class="toc">
-    <li><a href="#principles">Principles</a></li>
     <li><a href="#typefaces">Typefaces</a></li>
     <li><a href="#web-hierarchy">Web hierarchy</a></li>
     <li><a href="#typesetting-for-readability">Typesetting for readability</a></li>
@@ -16,12 +15,12 @@ published: true
 </ul>
 {:/nomarkdown}
 
-<a name="principles"></a>
+<div class="content-67 content-first">
 
-## Principles
+A clear typographic hierarchy is critical to the effective communication of our brand. Type should be light and well-spaced to reinforce the idea that the CFPB is open, modern, and approachable. It should promote readability and accessibility, which allows all users to efficiently read and absorb textual information. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document.
+{: class="lead-in"}
 
-### A clear typographic hierarchy is critical to the effective communication of our brand.
-Type should be light and well-spaced to reinforce the idea that the CFPB is open, modern, and approachable. It should promote readability and accessibility, which allows all users to efficiently read and absorb textual information. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document.
+</div>
 
 <a name="typefaces"></a>
 
