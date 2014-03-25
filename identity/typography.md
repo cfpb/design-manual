@@ -5,15 +5,12 @@ category: Identity
 published: true
 ---
 
-{::nomarkdown}
-<ul class="toc">
-    <li><a href="#typefaces">Typefaces</a></li>
-    <li><a href="#web-hierarchy">Web hierarchy</a></li>
-    <li><a href="#typesetting-for-readability">Typesetting for readability</a></li>
-    <li><a href="#web-type-accessibility">Web type accessibility</a></li>
-    <li><a href="#print-hierarchy">Print hierarchy</a></li>
-</ul>
-{:/nomarkdown}
+- [Typefaces](#typefaces)
+- [Web hierarchy](#web-hierarchy)
+- [Web typesetting](#typesetting-for-readability)
+- [Web accessibilitiy](#web-type-accessibility)
+- [Print hierarchy](#print-hierarchy)
+{: class="toc"}
 
 <div class="content-67 content-first">
 
