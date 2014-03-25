@@ -88,7 +88,8 @@ At any other time, the isolated logo may be used in the bottom-right corner of t
 
 <div class="content-67 content-last">
 
-![Still from Consumer Stories Video]({{ site.baseurl }}/assets/img/video/Video_4.jpg "Documentary Video")
+![Still from Video title slide]({{ site.baseurl }}/assets/img/video/Video_5.jpg "Logo in Video")
+![Still from Video title slide]({{ site.baseurl }}/assets/img/video/Video_6.jpg "Logo in Video")
 
 </div>
 
@@ -103,7 +104,7 @@ other content. Key messages can also be highlighted on their own using display t
 
 <div class="content-67 content-last">
 
-![Still from Consumer Stories Video]({{ site.baseurl }}/assets/img/video/Video_4.jpg "Documentary Video")
+![Still from Consumer Stories Video]({{ site.baseurl }}/assets/img/video/Video_6.jpg "Documentary Video")
 
 </div>
 
