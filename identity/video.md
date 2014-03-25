@@ -10,6 +10,7 @@ category: Identity
 <div class="content-67 content-first">
 
 Video is a powerful tool that can be used to educate viewers about the financial marketplace and the CFPB's role in regulating it.
+{: class="lead-in"}
 
 CFPB videos must contain strong emotional and creative imagery while maintaining visual simplicity. Video is a complex medium, so it is essential to pay attention to every detail, for example: composition, color treatment, typography and timing. The audience should recognize a CFPB video through its unique visual treatment.
 {: class="lead-in"}
