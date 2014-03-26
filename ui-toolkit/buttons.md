@@ -4,7 +4,6 @@ title:  Buttons
 category: UI toolkit
 ---
 
-# Buttons
 Buttons signal actions. They should be used sparingly; each additional button on a page reduces visual prominence of a call to action. Destructive actions should be reversible or alert the user to confirm the destructive action. 
 
 In contrast, [links] should lead users to another page or further information, or indicate a secondary destructive action.
