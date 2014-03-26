@@ -168,6 +168,10 @@ Padding: 20px
 
 The horizontal or vertical lockup should be used for most print applications. These are our benchmark sizes for 8.5 x 11” documents, including reports, brochures, powerpoints, and forms. For large-format print pieces, such as posters and banners, where the logo is used with a height greater than 1”, it should be used in increments of 1/2”.
 
+</div>
+
+<div class="content-67 content-last">
+
 8.5 x 11” documents
 Lockup: horizontal
 Height: 0.5”
