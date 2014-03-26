@@ -65,7 +65,15 @@ Print scale
 
 <h2 id="asset-library">Asset library</h2>
 
+<div class="content-67 content-first">
+
 This library comprises all currently approved isocons and will continue to expand when new assets are developed, as needed.
+
+</div>
+
+<div class="content-33 content-last">
+
+</div>
 
 Ask CFPB
 ![Ask CFPB isocon]({{ site.baseurl }}/assets/img/isocons/Isocons6.png "Ask CFPB isocon")
