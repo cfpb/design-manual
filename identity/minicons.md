@@ -5,7 +5,6 @@ category: Identity
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)
-- [Variations](#variations)
 {: class="toc"}
 
 <div class="content-67 content-first">
@@ -27,12 +26,8 @@ Minicons are visually simple, quickly recognizable, and easy to understand. They
 <h2 id="stylistic-guidelines">Stylistic Guidelines</h2>
 
 <div class="content-33 content-first">
-
+	
 ### Scaling
-
-</div>
-
-<div class="content-33 content-first">
 
 #### Web scale
 The following primary benchmark sizes should be used for web sizing:
