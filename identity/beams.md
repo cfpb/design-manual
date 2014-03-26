@@ -73,6 +73,7 @@ Solid green beam bleeds off the top of the layout. Beams alternate direction to 
 </span>
 
 <span class="content-25">
+Ideal composition
 Layered beams anchor to the bottom, leaving plenty of white space above for type. This works
 especially well for horizontal layouts.
 </span>
