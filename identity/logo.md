@@ -207,6 +207,10 @@ Clear space: 0.25”
 The logo should be shown on a white background for optimal appearance. When this is not possible, the logo must be contained in a white rectangle equal
 to the required clear space.
 
+</div>
+
+<div class="content-67 content-last">
+
 Color
 ![Complex color backgrounds logo]({{ site.baseurl }}/assets/img/logo/Logo13.png "Complex color backgrounds logo")
 Pattern
@@ -214,26 +218,81 @@ Pattern
 Photo
 ![Complex photo backgrounds logo]({{ site.baseurl }}/assets/img/logo/Logo15.png "Complex photo backgrounds logo")
 
-## Examples of misuse
+</div>
+
+<h2 id="examples-of-misuse">Examples of misuse</h2>
+
+<div class="content-33 content-first">
+
 1. Don’t remove the light beam. It is essential to the logo.
+
+</div>
+
+<div class="content-67 content-last">
+
 ![Logo with no beam]({{ site.baseurl }}/assets/img/logo/Logo23.png "Logo with no beam")
 
+</div>
+
+<div class="content-33 content-first">
+
 2. Don’t stretch or condense. This weakens the brand.
+
+</div>
+
+<div class="content-67 content-last">
+
 ![Stretched logo]({{ site.baseurl }}/assets/img/logo/Logo16.png "Stretched logo")
 ![Condensed logo]({{ site.baseurl }}/assets/img/logo/Logo24.png "Condensed logo")
 
+</div>
+
+<div class="content-33 content-first">
+
 3. Don’t apply a drop shadow.
+
+</div>
+
+<div class="content-67 content-last">
+
 ![Drop shadow logo]({{ site.baseurl }}/assets/img/logo/Logo17.png "Drop shadow logo")
 
+</div>
+
+<div class="content-33 content-first">
+
 4. Don’t outline the logo or use other colors. This dilutes brand association.
+
+</div>
+
+<div class="content-67 content-last">
+
 ![Outlined logo]({{ site.baseurl }}/assets/img/logo/Logo25.png "Outlined logo")
 ![Blue logo]({{ site.baseurl }}/assets/img/logo/Logo18.png "Blue logo")
 
+</div>
+
+<div class="content-33 content-first">
+
 5. Don’t rotate the symbol. This changes the connotation of the light.
+
+</div>
+
+<div class="content-67 content-last">
+
 ![Rotated logo]({{ site.baseurl }}/assets/img/logo/Logo21.png "Rotated logo")
 ![Rotated logo]({{ site.baseurl }}/assets/img/logo/Logo22.png "Rotated logo")
 
+</div>
+
+<div class="content-33 content-first">
+
 6. Don’t place the logo directly on a colored background or photo without a white bounding box.
+
+</div>
+
+<div class="content-67 content-last">
+
 ![Colored box logo]({{ site.baseurl }}/assets/img/logo/Logo20.png "Colored box logo")
 ![Photo box logo]({{ site.baseurl }}/assets/img/logo/Logo19.png "Photo box logo")
 
