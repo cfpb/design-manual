@@ -1,27 +1,29 @@
 ---
 layout: page
-title: Typography principles
+title: Typography
 category: Identity
 published: true
 ---
 
-{::nomarkdown}
-<ul class="toc">
-    <li><a href="#principles">Principles</a></li>
-    <li><a href="#typefaces">Typefaces</a></li>
-    <li><a href="#web-hierarchy">Web hierarchy</a></li>
-    <li><a href="#typesetting-for-readability">Typesetting for readability</a></li>
-    <li><a href="#web-type-accessibility">Web type accessibility</a></li>
-    <li><a href="#print-hierarchy">Print hierarchy</a></li>
-</ul>
-{:/nomarkdown}
+- [Typefaces](#typefaces)
+- [Web hierarchy](#web-hierarchy)
+- [Web typesetting](#typesetting-for-readability)
+- [Web accessibility](#web-type-accessibility)
+- [Print hierarchy](#print-hierarchy)
+{: class="toc"}
 
-<a name="principles"></a>
+<div class="content-67 content-first">
 
-## Principles
+A clear typographic hierarchy is critical to the effective communication of our brand. Type should be light and well-spaced to reinforce the idea that the CFPB is open, modern, and approachable. It should promote readability and accessibility, which allows all users to efficiently read and absorb textual information. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document.
+{: class="lead-in"}
 
-### A clear typographic hierarchy is critical to the effective communication of our brand.
-Type should be light and well-spaced to reinforce the idea that the CFPB is open, modern, and approachable. It should promote readability and accessibility, which allows all users to efficiently read and absorb textual information. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document.
+</div>
+
+<div class="content-33 content-last">
+
+![Feature image of Avenir Type Sample]({{ site.baseurl }}/assets/img/typography/Typography0_@2.png)
+
+</div>
 
 <a name="typefaces"></a>
 
