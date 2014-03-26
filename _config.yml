@@ -1,5 +1,5 @@
 # Base configuration
-permalink: /:title 
+permalink: /:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 markdown: kramdown
 pygments: true
@@ -79,45 +79,41 @@ secondarynav:
 - text: Filtering patterns
   url: guides/filtering-patterns.html
   internal: true
-  category: Guides  
+  category: Guides
 - text: UX checklist
   url: guides/ux-checklist.html
   internal: true
   category: Guides
-- text: Brand guidelines
-  url: identity/brand-guidelines.html
+- text: Logo
+  url: identity/logo.html
   internal: true
   category: Identity
-- text: Beams
-  url: identity/beams.html
-  internal: true
-  category: Identity
-- text: Color principles
+- text: Color
   url: identity/color-principles.html
   internal: true
   category: Identity
-- text: Illustration
-  url: identity/illustration.html
-  internal: true
-  category: Identity
-- text: Isocons
-  url: identity/isocons.html
-  internal: true
-  category: Identity
-- text: Logo
-  url: identity/logo.html
+- text: Typography
+  url: identity/typography.html
   internal: true
   category: Identity
 - text: Minicons
   url: identity/minicons.html
   internal: true
   category: Identity
+- text: Isocons
+  url: identity/isocons.html
+  internal: true
+  category: Identity
+- text: Illustration
+  url: identity/illustration.html
+  internal: true
+  category: Identity
+- text: Beam Pattern
+  url: identity/beams.html
+  internal: true
+  category: Identity
 - text: Photography
   url: identity/photography.html
-  internal: true
-  category: Identity  
-- text: Typography principles
-  url: identity/typography.html
   internal: true
   category: Identity
 - text: Video
@@ -143,7 +139,7 @@ secondarynav:
 - text: HTML elements
   url: ui-toolkit/html-elements.html
   internal: true
-  category: UI toolkit  
+  category: UI toolkit
 - text: Links
   url: ui-toolkit/links.html
   internal: true
