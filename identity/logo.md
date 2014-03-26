@@ -5,20 +5,23 @@ category: Identity
 published: true
 ---
 
-The CFPB logo was
-designed to symbolize
-vigilance, transparency,
-and a consumer focus.
-Consumers are the foundation and
-focus of our mission and our logo
-reflects that. A soft beam of light
-symbolizes our efforts to illuminate
-the financial landscape and foster
-transparency in the marketplace.
+- [Lockups](#lockups)
+{: class="toc"}
 
+<div class="content-67 content-first">
+	
+The CFPB logo was designed to symbolize vigilance, transparency, and a consumer focus. Consumers are the foundation and focus of our mission and our logo reflects that. A soft beam of light symbolizes our efforts to illuminate the financial landscape and foster transparency in the marketplace.
+{: class="lead-in"}
+
+</div>
+
+<div class="content-33 content-last">
+	
 ![Feature logo]({{ site.baseurl }}/assets/img/logo/Logo0_@2.png "CFPB Logo")
 
-## Lockups
+</div>
+
+<h2 id="lockups">Lockups</h2>
 
 ### Horizontal
 The horizontal lockup is the primary
