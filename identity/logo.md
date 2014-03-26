@@ -104,11 +104,23 @@ This is applicable for the horizontal, vertical, and small execution lockups.
 
 </div>
 
+<div class="content-67 content-last">
+
+[Insert CFPB logo image here]
+
+</div>
+
 <div class="content-33 content-first">
 
 ### One color logo
 
 When the logo is being produced for print formats conditions may not allow for full color. For these rare cases, the one-color logo may be used only in black on a white background.This is applicable for the horizontal, vertical, isolated, and small execution lockups.
+
+</div>
+
+<div class="content-67 content-last">
+
+[Insert CFPB logo image here]
 
 </div>
 
