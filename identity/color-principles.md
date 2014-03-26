@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Color principles
+title:  Color
 category: Identity
 ---
 
