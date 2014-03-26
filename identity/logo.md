@@ -6,6 +6,8 @@ published: true
 ---
 
 - [Lockups](#lockups)
+- [Variations](#variations)
+- [Stylistic guidelines](#stylistic-guidelines)
 {: class="toc"}
 
 <div class="content-67 content-first">
