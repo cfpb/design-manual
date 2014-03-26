@@ -5,22 +5,32 @@ category: Identity
 published: true
 ---
 
-Beam patterns are a
-graphic background
-element that provide
-grounding and visual
-interest.
+- [Stylistic guidelines](#stylistic-guidelines)
+{: class="toc"}
 
-Using overlaid shapes with 9&deg; angles
-and the full CFPB Green color palette,
-the beam pattern provides a bold and
-engaging graphic reference to the beam
-concept in our logo.
+<div class="content-67 content-first">
+
+Beam patterns are a graphic background element that provide grounding and visual interest.
+{: class="lead-in"}
+
+Using overlaid shapes with 9&deg; angles and the full CFPB Green color palette, the beam pattern provides a bold and engaging graphic reference to the beam concept in our logo.
+{: class="lead-in"}
+
+</div>
+
+<div class="content-33 content-last">
 
 ![CFPB Beam pattern]({{ site.baseurl }}/assets/img/beams/Beams0_@2.png "CFPB Beam pattern")
 
-## Stylistic Guidelines
+</div>
+
+<h2 id="stylistic-guidelines">Stylistic Guidelines</h2>
+
+<div class="content-100 content-first">
+
 ### Base shapes
+
+</div>
 
 <span class="content-25">
 Beam patterns are created using
