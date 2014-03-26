@@ -5,6 +5,7 @@ category: Identity
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)
+- [Asset library](#asset-library)
 {: class="toc"}
 
 <div class="content-67 content-first">
@@ -85,8 +86,12 @@ Although color usage is flexible, minicons should always be used in high contras
 ### Spacing
 Padding varies around minicons of various primary shapes. Square, vertically and horizontally rectangular, diagonal, and most complex minicons can fit within the relative padding bounding box. Circular and some complex icons should be slightly larger to offset the visual weight of surrounding negative space.
 
+</div>
+
 <div class="content-67 content-last">
 	
 [Insert color image here]
 
 </div>
+
+<h2 id="asset-library">Asset library</h2>
