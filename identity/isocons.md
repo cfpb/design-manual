@@ -5,25 +5,44 @@ category: Identity
 published: true
 ---
 
+- [Stylistic guidelines](#stylistic-guidelines)
+- [Asset library](#asset-library)
+{: class="toc"}
+
+<div class="content-67 content-first">
+
 Isocons are visually sophisticated graphics, with more detail than a flat icon. By using an isometric view and arrows, isocons are able to go beyond simply showing objects and can indicate important actions and transactions.
+{: class="lead-in"}
+
+</div>
+
+<div class="content-33 content-last">
 
 ![Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons.png "Graph Isocon")
 
+</div>
 
-## Stylistic guidelines
+<h2 id="stylistic-guidelines">Stylistic Guidelines</h2>
+
+<div class="content-33 content-first">
+
 ### Basic color approach
-The basic color approach for isocons
-uses the primary brand colors. The
-isocon has black strokes with white fill.
-This approach should be used when
-there are several isocons together on
-a page.
+
+The basic color approach for isocons uses the primary brand colors. The isocon has black strokes with white fill. This approach should be used when there are several isocons together on a page.
+
+</div>
+
+<div class="content-67 content-last">
 
 Black and white over green field
 ![Black and white over green field Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons.png "Graph Isocon")
 
 Black and white over gray field
 ![Black and white over gray field Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons3.png "Graph Isocon")
+
+</div>
+
+<div class="content-33 content-first">
 
 ### Scaling
 Padding varies around each isocon,
@@ -32,18 +51,21 @@ bounding box. These scales represent
 the maximum and minimum for web and
 print applications.
 
+</div>
+
+<div class="content-67 content-last">
+
 Web scale
 ![Isocon web scale diagram]({{ site.baseurl }}/assets/img/isocons/Isocons4.png "Isocon web scale")
 
 Print scale
 ![Isocon print scale diagram]({{ site.baseurl }}/assets/img/isocons/Isocons5.png "Isocon print scale")
 
+</div>
 
-## Asset library
-This library comprises all currently
-approved isocons and will continue to
-expand when new assets are developed,
-as needed.
+<h2 id="asset-library">Asset library</h2>
+
+This library comprises all currently approved isocons and will continue to expand when new assets are developed, as needed.
 
 Ask CFPB
 ![Ask CFPB isocon]({{ site.baseurl }}/assets/img/isocons/Isocons6.png "Ask CFPB isocon")
