@@ -413,7 +413,7 @@ They should never overpower the core brand colors.
             <tbody>
                 <tr>
                     <th>HEX</th>
-                    <td>#E8A091</td> <!-- Update the hex code -->
+                    <td>#F6D9D3</td> <!-- Update the hex code -->
                 </tr>
                 <tr>
                     <th>RGB</th>
