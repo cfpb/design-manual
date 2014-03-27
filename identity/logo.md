@@ -224,7 +224,7 @@ Photo
 
 <div class="content-33 content-first">
 
-1. Don’t remove the light beam. It is essential to the logo.
+Don’t remove the light beam. It is essential to the logo.
 
 </div>
 
@@ -236,7 +236,7 @@ Photo
 
 <div class="content-33 content-first">
 
-2. Don’t stretch or condense. This weakens the brand.
+Don’t stretch or condense. This weakens the brand.
 
 </div>
 
@@ -249,7 +249,7 @@ Photo
 
 <div class="content-33 content-first">
 
-3. Don’t apply a drop shadow.
+Don’t apply a drop shadow.
 
 </div>
 
@@ -261,7 +261,7 @@ Photo
 
 <div class="content-33 content-first">
 
-4. Don’t outline the logo or use other colors. This dilutes brand association.
+Don’t outline the logo or use other colors. This dilutes brand association.
 
 </div>
 
@@ -274,7 +274,7 @@ Photo
 
 <div class="content-33 content-first">
 
-5. Don’t rotate the symbol. This changes the connotation of the light.
+Don’t rotate the symbol. This changes the connotation of the light.
 
 </div>
 
@@ -287,7 +287,7 @@ Photo
 
 <div class="content-33 content-first">
 
-6. Don’t place the logo directly on a colored background or photo without a white bounding box.
+Don’t place the logo directly on a colored background or photo without a white bounding box.
 
 </div>
 
