@@ -15,33 +15,16 @@ The site is built using Bower, Grunt, Jekyll, and LESS.
 
 ## To run it locally
 
-We use NodeJS, Node Packaged Modules and Grunt to help make lots of development tasks easier within our Design Manual. Let's get those installed if you don't have them already.
-
-Install [NodeJS](http://nodejs.org/) however you'd like. We use Homebrew. That's:
+Before you get started make sure you have an up-to-date version of Ruby installed. We use [Homebrew](http://brew.sh/):
 
 ```
-brew install node
+brew install ruby
 ```
 
-Install [Node Packaged Modules](https://npmjs.org/):
-
-```
-npm install
-```
-
-Install [Grunt](http://gruntjs.com/), a JavaScript task runner:
-
-```
-npm install -g grunt-cli
-```
-
-Now, on to Jekyll. Jekyll generates and serves our Design Manual as a website.
-
-Be sure to have [Jekyll](http://jekyllrb.com/) and [redcarpet](http://rubygems.org/gems/redcarpet) installed.
+We use the static site generator [Jekyll](http://jekyllrb.com/) to generate and serve our Design Manual as a website. To install Jekyll run:
 
 ```
 gem install jekyll
-gem install redcarpet
 ```
 
 Fork and clone the repo:
@@ -50,10 +33,41 @@ Fork and clone the repo:
 git clone git@github.com:cfpb/design-manual.git
 cd design-manual
 ```
+
 Run Jekyll:
 
 ```
 jekyll serve --watch --baseurl ''
+```
+
+## Working with the front-end
+
+We use NodeJS, Node Packaged Modules and Grunt to simplify development tasks within our Design Manual. Let's get those installed if you don't have them already.
+
+Install [node.js](http://nodejs.org/) however you'd like. We use [Homebrew](http://brew.sh/). That's:
+
+```
+brew install node
+```
+
+Install [Grunt](http://gruntjs.com/), a JavaScript task runner:
+
+```
+npm install -g grunt-cli
+```
+
+All of our front-end dependencies are stored within the `front` directory. To install the dependencies `cd` into front and run npm and bower:
+
+```
+cd front
+npm install
+bower install
+```
+
+We use [Grunt](http://gruntjs.com/) to compile and compress our Less and JavaScript files. The easiest way to do that is to run the `watch` task. This will watch for changes and run grunt whenever you save a file:
+
+```
+grunt watch
 ```
 
 ## _config.yml
