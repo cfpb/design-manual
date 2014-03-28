@@ -37,7 +37,7 @@ and website.
 
 <div class="content-67 content-last">
 
-[Insert CFPB logo image here]
+![Horizontal lockup logo]({{ site.baseurl }}/assets/img/logo/Logo1_horizontal-lockup_@2.png "Horizontal lockup logo")
 
 </div>
 
@@ -52,7 +52,7 @@ frames or narrow columns.
 
 <div class="content-67 content-last">
 	
-[Insert CFPB logo image here]
+![Vertical lockup logo]({{ site.baseurl }}/assets/img/logo/Logo1_vertical-lockup_@2.png "Vertical lockup logo")
 
 </div>
 
@@ -71,7 +71,7 @@ clear communication.
 
 <div class="content-67 content-last">
 
-[Insert CFPB logo image here]
+![Isolated logo]({{ site.baseurl }}/assets/img/logo/Logo1_isolated-lockup_@2.png "Isolated logo")
 
 </div>
 
@@ -90,7 +90,7 @@ legible.
 
 <div class="content-67 content-last">
 
-![Small execution logo]({{ site.baseurl }}/assets/img/logo/Logo8.png "Small execution logo")
+![Small execution logo]({{ site.baseurl }}/assets/img/logo/Logo1_small-execution_@2.png "Small execution logo")
 
 </div>
 
