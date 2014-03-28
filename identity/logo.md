@@ -35,7 +35,7 @@ and website.
 
 </div>
 
-<div class="content-67 content-last">
+<div class="content-50 content-last">
 
 ![Horizontal lockup logo]({{ site.baseurl }}/assets/img/logo/Logo1_horizontal-lockup_@2.png "Horizontal lockup logo")
 
