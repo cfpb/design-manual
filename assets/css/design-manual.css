@@ -495,8 +495,6 @@ ul {
 .btn:link,
 .btn:visited {
   display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0.6428571428571429em 1em;
   border: 0;
@@ -512,7 +510,6 @@ ul {
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: .1s;
   transition: .1s;
   -webkit-appearance: none;
 }
@@ -1043,6 +1040,8 @@ textarea {
   font-size: 1em;
   background: #ffffff;
   border: 1px solid #75787b;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
   vertical-align: top;
   -webkit-appearance: none;
@@ -1739,7 +1738,6 @@ html {
     color: black !important;
     /*prints faster and cheaper */
     text-shadow: none !important;
-    -webkit-filter: none !important;
     filter: none !important;
     -ms-filter: none !important;
   }
@@ -1988,6 +1986,27 @@ html {
 }
 .lt-ie8 .content .content-33,
 .lt-ie8 .content .content-67 {
+  display: inline;
+  *zoom: 1;
+  *behavior: url(boxsizing.htc);
+}
+.content .content-50 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 50%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.ie .content .content-50 {
+  margin-right: -0.26em;
+}
+.lt-ie8 .content .content-50 {
   display: inline;
   *zoom: 1;
   *behavior: url(boxsizing.htc);
@@ -2614,7 +2633,6 @@ figure {
 .secondary-nav a {
   display: block;
   padding: 10px;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 .secondary-nav a,
