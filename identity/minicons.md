@@ -24,7 +24,7 @@ Minicons are visually simple, quickly recognizable, and easy to understand. They
 
 </div>
 
-<h2 id="stylistic-guidelines">Stylistic Guidelines</h2>
+## Stylistic Guidelines
 
 <div class="content-33 content-first">
 	
@@ -94,4 +94,4 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 
 </div>
 
-<h2 id="asset-library">Asset library</h2>
+## Asset library

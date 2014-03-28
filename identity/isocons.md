@@ -22,7 +22,7 @@ Isocons are visually sophisticated graphics, with more detail than a flat icon. 
 
 </div>
 
-<h2 id="stylistic-guidelines">Stylistic Guidelines</h2>
+## Stylistic Guidelines
 
 <div class="content-33 content-first">
 
@@ -63,7 +63,7 @@ Print scale
 
 </div>
 
-<h2 id="asset-library">Asset library</h2>
+## Asset library
 
 <div class="content-67 content-first">
 

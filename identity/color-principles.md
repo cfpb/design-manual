@@ -23,7 +23,7 @@ A minimal palette, clear hierarchy, good information design, and ample whitespac
 
 </div>
 
-<h2 id="palette">Palette</h2>
+## Palette
 
 ### Primary colors
 

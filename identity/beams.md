@@ -24,7 +24,7 @@ Using overlaid shapes with 9&deg; angles and the full CFPB Green color palette, 
 
 </div>
 
-<h2 id="stylistic-guidelines">Stylistic Guidelines</h2>
+## Stylistic Guidelines
 
 <div class="content-100 content-first">
 

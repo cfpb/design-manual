@@ -23,7 +23,7 @@ The CFPB logo was designed to symbolize vigilance, transparency, and a consumer 
 
 </div>
 
-<h2 id="lockups">Lockups</h2>
+## Lockups
 
 <div class="content-33 content-first">
 
@@ -94,7 +94,7 @@ legible.
 
 </div>
 
-<h2 id="variations">Variations</h2>
+## Variations
 
 <div class="content-33 content-first">
 
@@ -126,7 +126,7 @@ When the logo is being produced for print formats conditions may not allow for f
 
 </div>
 
-<h2 id="stylistic-guidelines">Stylistic Guidelines</h2>
+## Stylistic Guidelines
 
 <div class="content-33 content-first">
 
@@ -220,7 +220,7 @@ Photo
 
 </div>
 
-<h2 id="examples-of-misuse">Examples of misuse</h2>
+## Examples of misuse
 
 <div class="content-33 content-first">
 
