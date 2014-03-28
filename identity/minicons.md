@@ -100,7 +100,7 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 
 <div class="content-67 content-last">
 	
-[Insert color image here]
+![Minicon spacing diagram]({{ site.baseurl }}/assets/img/minicons/Minicons4_@2.png "Minicon spacing diagram")
 
 </div>
 
