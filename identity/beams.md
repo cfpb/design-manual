@@ -65,6 +65,7 @@ Beam patterns are composed of overlapping beams that frame areas of white space 
 </div>
 
 <span class="content-25">
+
 #### Ideal composition  
 
 Solid green beam bleeds off the top of the layout. Beams alternate direction to create layered beam shapes.
