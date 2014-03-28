@@ -69,7 +69,9 @@ Beam patterns are composed of overlapping beams that frame areas of white space 
 #### Ideal composition  
 
 Solid green beam bleeds off the top of the layout. Beams alternate direction to create layered beam shapes.
+
 </span>
+
 <span class="content-75">
 ![Ideal composition of beams]({{ site.baseurl }}/assets/img/beams/Beams4.png "Ideal beams")
 </span>
