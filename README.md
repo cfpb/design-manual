@@ -15,29 +15,9 @@ The site is built using Bower, Grunt, Jekyll, and LESS.
 
 ## To run it locally
 
-We use NodeJS, Node Packaged Modules and Grunt to help make lots of development tasks easier within our Design Manual. Let's get those installed if you don't have them already.
+We use Jekyll to generate and serve our Design Manual as a website.
 
-Install [NodeJS](http://nodejs.org/) however you'd like. We use Homebrew. That's:
-
-```
-brew install node
-```
-
-Install [Node Packaged Modules](https://npmjs.org/):
-
-```
-npm install
-```
-
-Install [Grunt](http://gruntjs.com/), a JavaScript task runner:
-
-```
-npm install -g grunt-cli
-```
-
-Now, on to Jekyll. Jekyll generates and serves our Design Manual as a website.
-
-Be sure to have [Jekyll](http://jekyllrb.com/) and [redcarpet](http://rubygems.org/gems/redcarpet) installed.
+First, be sure to have [Jekyll](http://jekyllrb.com/) and [maruku](http://rubygems.org/gems/maruku) installed.
 
 ```
 gem install jekyll
@@ -50,10 +30,41 @@ Fork and clone the repo:
 git clone git@github.com:cfpb/design-manual.git
 cd design-manual
 ```
+
 Run Jekyll:
 
 ```
 jekyll serve --watch --baseurl ''
+```
+
+## Working with the front-end
+
+We use NodeJS, Node Packaged Modules and Grunt to simplify development tasks within our Design Manual. Let's get those installed if you don't have them already.
+
+Install [NodeJS](http://nodejs.org/) however you'd like. We use Homebrew. That's:
+
+```
+brew install node
+```
+
+Install [Grunt](http://gruntjs.com/), a JavaScript task runner:
+
+```
+npm install -g grunt-cli
+```
+
+All of our front-end dependencies are stored within the `front` directory. To install the dependencies `cd` into front and run npm and bower:
+
+```
+cd front
+npm install
+bower install
+```
+
+We use [Grunt](http://gruntjs.com/) to compile and compress our Less and JavaScript files. The easiest way to do that is to run the `watch` task. This will watch for changes and run grunt whenever you save a file:
+
+```
+grunt watch
 ```
 
 ## _config.yml
