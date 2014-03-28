@@ -79,13 +79,11 @@ Although color usage is flexible, minicons should always be used in high contras
 
 
 <div class="content-50 content-first">
-
 #### One color
 
 ![One color minicon example]({{ site.baseurl }}/assets/img/minicons/Minicons3a_@2.png "One color minicon example")
 </div>
 <div class="content-50 content-last">
-
 #### Negative space knocked out
 
 ![Negative space knocked out minicon example]({{ site.baseurl }}/assets/img/minicons/Minicons3b_@2.png "Negative space knocked out minicon example")
