@@ -79,28 +79,34 @@ Solid green beam bleeds off the top of the layout. Beams alternate direction to 
 </span>
 
 <span class="content-25">
+
 #### Ideal composition  
 
 Layered beams anchor to the bottom, leaving plenty of white space above for type. This works
 especially well for horizontal layouts.
+
 </span>
 <span class="content-75">
 ![Ideal composition of beams]({{ site.baseurl }}/assets/img/beams/Beams5.png "Ideal beams")
 </span>
 
 <span class="content-25">
+
 #### Poor composition  
 
 Beams float in white space, leaving little room for content. No transparency used.
+
 </span>
 <span class="content-75">
 ![Poor composition of beams]({{ site.baseurl }}/assets/img/beams/Beams6.png "Poor composition of beams")
 </span>
 
 <span class="content-25">
+
 #### Poor composition  
 
 All three beams layer in the same direction, weakening the beam metaphor.
+
 </span>
 <span class="content-75">
 ![Poor composition of beams]({{ site.baseurl }}/assets/img/beams/Beams7.png "Poor composition of beams")
