@@ -1,6 +1,6 @@
 # Base configuration
 permalink: /:title
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "front"]
 markdown: kramdown
 pygments: true
 
