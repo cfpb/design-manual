@@ -50,7 +50,7 @@ frames or narrow columns.
 
 </div>
 
-<div class="content-67 content-last">
+<div class="content-50 content-last">
 	
 ![Vertical lockup logo]({{ site.baseurl }}/assets/img/logo/Logo1_vertical-lockup_@2.png "Vertical lockup logo")
 
@@ -69,7 +69,7 @@ clear communication.
 
 </div>
 
-<div class="content-67 content-last">
+<div class="content-50 content-last">
 
 ![Isolated logo]({{ site.baseurl }}/assets/img/logo/Logo1_isolated-lockup_@2.png "Isolated logo")
 
@@ -88,7 +88,7 @@ legible.
 
 </div>
 
-<div class="content-67 content-last">
+<div class="content-50 content-last">
 
 ![Small execution logo]({{ site.baseurl }}/assets/img/logo/Logo1_small-execution_@2.png "Small execution logo")
 
