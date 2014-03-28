@@ -2124,7 +2124,7 @@ figure {
 .content h2 {
   border-bottom: 1px solid #e3e4e5;
   /* The EM sizes are calculating to unexpected values - DM */
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   margin-bottom: 20px !important;
 }
 .content h2:before,
