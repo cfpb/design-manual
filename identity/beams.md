@@ -73,7 +73,9 @@ Solid green beam bleeds off the top of the layout. Beams alternate direction to 
 </span>
 
 <span class="content-75">
+
 ![Ideal composition of beams]({{ site.baseurl }}/assets/img/beams/Beams4.png "Ideal beams")
+
 </span>
 
 <span class="content-25">
