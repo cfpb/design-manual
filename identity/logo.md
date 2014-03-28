@@ -106,9 +106,9 @@ This is applicable for the horizontal, vertical, and small execution lockups.
 
 </div>
 
-<div class="content-67 content-last">
+<div class="content-50 content-last">
 
-[Insert CFPB logo image here]
+![Spanish logo]({{ site.baseurl }}/assets/img/logo/Logo1_spanish_@2.png "Spanish logo")
 
 </div>
 
@@ -120,9 +120,9 @@ When the logo is being produced for print formats conditions may not allow for f
 
 </div>
 
-<div class="content-67 content-last">
+<div class="content-50 content-last">
 
-[Insert CFPB logo image here]
+![One color logo]({{ site.baseurl }}/assets/img/logo/Logo1_one-color_@2.png "One color logo")
 
 </div>
 
