@@ -1,7 +1,7 @@
 # Base configuration
-permalink: /:title 
+permalink: /:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 
 # Organization
@@ -22,24 +22,40 @@ baseurl: '/design-manual'
 # Author/Organization info to be displayed in the templates
 author:
   name: The Consumer Financial Protection Bureau
-  url: http://cfpb.github.io/design-manual
+  url: http://cfpb.github.io/
+
+repository:
+  name: Design Manual
+  url: https://github.com/cfpb/design-manual
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl: 'assets/img/logo_210.png'
 logoalt: 'Consumer Financial Protection Bureau'
 
+# Kramdown settings
+kramdown:
+  auto_ids: true
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  parse_block_html: true
+
 # Main Navigation
 # List links that should appear in the main navigation (header) here
 mainnav:
-- text: Home
+- text: Overview
   url: index.html
   internal: true
-- text: Example Page
-  url: example_page.html
+- text: Guides
+  url: guides/design-principles.html
   internal: true
-- text: DOCter Repo
-  url: https://github.com/ascott1/DOCter
-  internal: false
+- text: Identity
+  url: identity/brand-guidelines.html
+  internal: true
+- text: UI toolkit
+  url: ui-toolkit/buttons.html
+  internal: true
+- text: Downloads
+  url: downloads/style-guide.html
+  internal: true
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
@@ -47,21 +63,118 @@ secondarynav:
 - text: Home
   url: index.html
   internal: true
-- text: Example Page
-  url: example_page.html
+  category: Overview
+- text: Design principles
+  url: guides/design-principles.html
   internal: true
-- text: DOCter Repo
-  url: https://github.com/ascott1/DOCter
-  internal: false
+  category: Guides
+- text: Creating accessible interfaces
+  url: guides/creating-accessible-interfaces.html
+  internal: true
+  category: Guides
+- text: Effective forms
+  url: guides/effective-forms.html
+  internal: true
+  category: Guides
+- text: Filtering patterns
+  url: guides/filtering-patterns.html
+  internal: true
+  category: Guides
+- text: UX checklist
+  url: guides/ux-checklist.html
+  internal: true
+  category: Guides
+- text: Logo
+  url: identity/logo.html
+  internal: true
+  category: Identity
+- text: Color
+  url: identity/color-principles.html
+  internal: true
+  category: Identity
+- text: Typography
+  url: identity/typography.html
+  internal: true
+  category: Identity
+- text: Minicons
+  url: identity/minicons.html
+  internal: true
+  category: Identity
+- text: Isocons
+  url: identity/isocons.html
+  internal: true
+  category: Identity
+- text: Illustration
+  url: identity/illustration.html
+  internal: true
+  category: Identity
+- text: Beam pattern
+  url: identity/beams.html
+  internal: true
+  category: Identity
+- text: Photography
+  url: identity/photography.html
+  internal: true
+  category: Identity
+- text: Video
+  url: identity/video.html
+  internal: true
+  category: Identity
+- text: Buttons
+  url: ui-toolkit/buttons.html
+  internal: true
+  category: UI toolkit
+- text: Expandables
+  url: ui-toolkit/expandables.html
+  internal: true
+  category: UI toolkit
+- text: Form fields
+  url: ui-toolkit/form-fields.html
+  internal: true
+  category: UI toolkit
+- text: Links
+  url: ui-toolkit/links.html
+  internal: true
+  category: UI toolkit
+- text: Modals
+  url: ui-toolkit/modals.html
+  internal: true
+  category: UI toolkit
+- text: Pagination
+  url: ui-toolkit/pagination.html
+  internal: true
+  category: UI toolkit
+- text: Tables
+  url: ui-toolkit/tables.html
+  internal: true
+  category: UI toolkit
+- text: Tooltips
+  url: ui-toolkit/tooltips.html
+  internal: true
+  category: UI toolkit
+- text: Brand 2.0 style guide
+  url: downloads/style-guide.html
+  internal: true
+  category: Downloads
+- text: Logo suite
+  url: downloads/logo-suite.html
+  internal: true
+  category: Downloads
+- text: Minicon font and assets
+  url: downloads/minicons.html
+  internal: true
+  category: Downloads
+- text: Grid and layout
+  url: ui-toolkit/grid-and-layout.html
+  internal: true
+  category: unpublished
+
 
 # Footer Navigation
 # List links that should appear in the footer navigation (footer) here
 footernav:
 - text: Home
   url: index.html
-  internal: true
-- text: Example Page
-  url: example_page.html
   internal: true
 - text: DOCter Repo
   url: https://github.com/ascott1/DOCter

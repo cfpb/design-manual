@@ -1,0 +1,344 @@
+/* ==========================================================================
+   CFPB Design Manual
+   Content
+   ========================================================================== */
+
+/* Mobile first means all content boxes are full width */
+
+.content {
+  margin-top: 0;
+  padding: 2em 0;
+  /* only here to keep footer sticky */
+  overflow: auto;
+  .column(12);
+
+  .content-25,
+  .content-75 {
+    .column(12);
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
+  .content-33,
+  .content-67 {
+    .column(12);
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.warning {
+    color: @redorange;
+}
+
+
+/* Media Queries
+   ========================================================================== */
+
+/* Mobile portrait (320px) */
+@media only screen and (min-width: 20em) {
+
+}
+
+/* Mobile landscape (480px) */
+@media only screen and (min-width: 30em) {
+
+}
+
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+
+
+  .content {
+    // Make room for the fixed header
+    .column(9);
+
+    /* Inner content - nested grid inside content */
+    .content-25 {
+      .column(3);
+      //Nested colums don't work yet, so pull the first col back 
+      border-left: 0;
+    }
+
+    .content-75 {
+      .column(9);
+      border-right: 0;
+    }
+
+    /* Inner content - nested grid inside content */
+    .content-33 {
+      .column(4);
+    }
+
+    .content-67 {
+      .column(8);
+    }
+
+    //Nested colums don't work yet, so pull the first col back 
+    .content-first {
+      border-left: 0;
+    }
+
+    .content-last {
+      border-right: 0;
+    }
+
+  }
+
+}
+
+/* Tablet/netbook (768px) */
+@media only screen and (min-width: 48em) { 
+
+}
+
+/* Landscape tablet/netbook/laptop (1024px) */
+@media only screen and (min-width: 64em) { 
+
+}
+
+/* Desktop (1280px) */ 
+@media only screen and (min-width: 80em) { 
+
+}
+
+/* Widescreen (1600px) */
+@media only screen and (min-width: 100em) { 
+
+}
+
+.content {
+
+  h2 {
+    .clearfix();
+    border-bottom: 1px solid @gray-20;
+    /* The EM sizes are calculating to unexpected values - DM */
+    padding-bottom: 30px;
+    margin-bottom: 20px !important;
+    //padding-bottom: unit( 16 / @base-font-size-px, em );
+    //margin-bottom: unit( @base-line-height-px / @font-size, em );
+    //margin-bottom: unit( 16 / @base-font-size-px, em ) !important; /* This is ugly, but I am over-riding cf-typography */
+  }
+
+  /* cross-browser HR styling. See:
+  https://github.com/paulirish/html5-boilerplate/blob/ef3c095bafa9a6fa9c771f368d4b30c8ce4deded/css/style.css#L75
+  */
+  hr { 
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid @gray-20;
+    margin: 1.25em 0; 
+    padding: 0;
+  }
+
+  img + hr {
+    /* horizontal rules after images are getting to much space above the image */
+    margin: 1em 0 1.25em 0; 
+  }
+
+  /* Table of Contents */
+  ul.toc {
+    .clearfix();
+    list-style: none;
+    border-bottom: 1px solid @pacific-20;
+    padding: 0 0 1.25em 0; // 1.25em = 20px
+    margin: 0 0 1.875em 0; // 1.875em = 30px
+
+  }
+
+  .toc {
+
+    li {
+
+      font-family: @sans-serif-demi;
+      font-size: 1.125em;
+      display: block;
+      float: left;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        border-bottom: none;
+        padding: 0 1em 0 0;
+      }
+
+      a:hover {
+        border-bottom: none;
+      }
+
+    }
+
+  }
+  p {
+    font-family: @serif;
+  }
+
+  .lead-in {
+    font-family: @sans-serif;
+    font-size: 1.125em;
+  }
+
+}
+
+
+/* ==========================================================================
+   CFPB Design Manual
+   Lists
+   ========================================================================== */
+.content {
+  ul,
+  ol {
+          list-style-position: inside;
+          padding: 0;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  li ul,
+  li ol {
+          margin: 0 1.375em;
+  }
+
+  dl dd {
+          margin-left: 1.375em;
+  }
+
+  dt {
+          font-family: @sans-serif-demi;
+          font-weight: 600;
+  }
+}
+
+/* Color swatches for Identity/Color page
+   ========================================================================== */
+
+.swatch {
+    .column(3);
+    margin-left: 0;
+
+    &_field {
+        height: 2em;
+    }
+    
+    &__primary .swatch_field {
+        height: 8em;
+    }
+
+    &_head {
+        margin: 0.25em 0;
+    }
+
+    &_table {
+        width: 100%;
+    }
+    td,
+    th {
+        padding: 0;
+    }
+    th {
+        .webfont-demi;
+        text-align: left;
+    }
+
+    &_field__green {
+        background: @green;
+    }
+}
+
+@colors: 'green', 'green-midtone', 'green-tint', 'black', 'darkgray',
+         'gray', 'gray-80', 'gray-50', 'gray-20', 'gray-10', 'gray-5',
+         'redorange', 'redorange-80', 'redorange-50', 'redorange-20',
+         'gold', 'gold-80', 'gold-50', 'gold-20',
+         'neutral', 'neutral-80', 'neutral-50', 'neutral-20',
+         'navy', 'navy-80', 'navy-50', 'navy-20',
+         'pacific', 'pacific-80', 'pacific-50', 'pacific-20',
+         'teal', 'teal-80', 'teal-50', 'teal-20',
+         'dark-redorange';
+
+// Set up looping mixin
+.loop(@index) when (@index > 0) {
+    // Retrieve the next variable name from the @colors array
+    @name: e(extract(@colors, @index));
+    // Output the `.swatch_field__color` rule
+    .swatch_field__@{name} { background: @@name; }
+    // Call the next iteration of the loop
+    .loop((@index - 1));
+}
+
+// Initiate loop
+.loop( length(@colors) );
+
+
+/* Diagrams for Identity/Typography page
+   ========================================================================== */
+
+[class^="type-color-combo"] {
+    .h5; // See cf-typography.less
+    padding: 0.5em 1em;
+    list-style: none;
+}
+.type-color-combo__ {
+    &black-on-white {
+        border: 1px solid @gray-20;
+    }
+    &darkgray-on-white {
+        border: 1px solid @gray-20;
+        color: @darkgray;
+    }
+    &white-on-black {
+        background: @black;
+        color: @white;
+    }
+    &white-on-darkgray {
+        background: @darkgray;
+        color: @white;
+    }
+    &black-on-gray10 {
+        background: @gray-10;
+    }
+    &black-on-gray5 {
+        background: @gray-5;
+    }
+    &black-on-greenmid {
+        background: @green-midtone;
+    }
+    &black-on-greentint {
+        background: @green-tint;
+    }
+    &white-on-gray {
+        background: @gray;
+        color: @white;
+    }
+    &black-on-gray {
+        background: @gray;
+    }
+    &gray-on-white {
+        border: 1px solid @gray-20;
+        color: @gray;
+    }
+    &white-on-green {
+        background: @green;
+        color: @white;
+    }
+    &green-on-white {
+        border: 1px solid @green-tint;
+        color: @green;
+    }
+    &black-on-green {
+        background: @green;
+        color: @black;
+    }
+    &green-on-black {
+        background: @black;
+        color: @green;
+    }
+}

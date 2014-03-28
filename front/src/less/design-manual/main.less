@@ -1,0 +1,109 @@
+/* ==========================================================================
+   CFPB Design Manual
+   MAIN CSS FILE
+   ========================================================================== */
+
+body, html {
+    /* The 3 height lines are for the fixed footer to work: http://ryanfait.com/sticky-footer/ */
+    /*
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    */
+    font-family: "Avenir Next", Arial, sans-serif;
+    line-height: 1.375;
+    color: @black; /* CFPB black */
+
+    /* Improve default text rendering, handling of kerning pairs and ligatures */
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* New CSS3 syntax supported by Chrome */
+}
+
+
+
+/* Set up containers */
+.wrap {
+   .wrapper();
+}
+
+
+/* Media Queries
+   ========================================================================== */
+
+/* Mobile portrait (320px) */
+@media only screen and (min-width: 20em) {
+
+}
+
+/* Mobile landscape (480px) */
+@media only screen and (min-width: 30em) {
+
+}
+
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+
+}
+
+/* Tablet/netbook (768px) */
+@media only screen and (min-width: 48em) { 
+
+}
+
+/* Landscape tablet/netbook/laptop (1024px) */
+@media only screen and (min-width: 64em) { 
+
+}
+
+/* Desktop (1280px) */ 
+@media only screen and (min-width: 80em) { 
+
+}
+
+/* Widescreen (1600px) */
+@media only screen and (min-width: 100em) { 
+
+}
+
+/* FROM HMDA API DOCS */
+
+/* MOBILE PORTRAIT 480px */
+
+@media only screen and (min-width: 30em) {
+
+  .mobile-warning {
+      display:none;
+  }
+
+}
+
+/* PRINT */
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important; /*prints faster and cheaper */
+        text-shadow: none !important;
+        filter: none !important;
+        -ms-filter: none !important;
+    }
+    a, a:visited {
+        color: #444 !important;
+        text-decoration: underline;
+    }
+    a[href]:after {content: " (" attr(href) ")"}
+    abbr[title]:after {content: " (" attr(title) ")"}
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {content: ""}  /* Don't print links for images, javascript or internal links */
+    pre, blockquote {border: 1px solid #999; page-break-inside: avoid; }
+    thead {display: table-header-group; } /* Repeat header row at top of each printed page */
+    tr, img {page-break-inside: avoid; }
+    img {max-width: 100% !important; }
+    @page {margin: 0.5cm}
+    p, h2, h3 {orphans: 3; widows: 3}
+    h2, h3{page-break-after: avoid}
+}

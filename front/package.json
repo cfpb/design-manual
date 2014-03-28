@@ -1,0 +1,40 @@
+{
+  "name": "design-manual",
+  "version": "0.4.0",
+  "description": "A set of principles and standards for the Consumer Financial Protection Bureau.",
+  "keywords": [],
+  "author": {
+    "name": "Consumer Financial Protection Bureau",
+    "url": "http://cfpb.github.io"
+  },
+  "homepage": "https://github.com/cfpb/design-manual",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfpb/design-manual.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cfpb/design-manual/issues"
+  },
+  "licenses": [
+    {
+      "type": "Public Domain",
+      "url": "https://github.com/cfpb/design-manual/blob/gh-pages/TERMS.md"
+    }
+  ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-autoprefixer": "latest",
+    "grunt-legacssy": "~0.3.1",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-topdoc": "~0.2.0",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-watch": "latest",
+    "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git"
+  }
+}

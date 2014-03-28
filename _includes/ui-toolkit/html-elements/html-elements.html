@@ -1,0 +1,605 @@
+
+<p>The following example is from: <br>
+  http://www.cs.tut.fi/~jkorpela/www/testel.html</p>
+
+<h1>Testing display of HTML elements</h1>
+
+<h2>This is 2nd level heading</h2>
+<p>This is a test paragraph.</p>
+<h3>This is 3rd level heading</h3>
+<p>This is a test paragraph.</p>
+<h4>This is 4th level heading</h4>
+<p>This is a test paragraph.</p>
+<h5>This is 5th level heading</h5>
+<p>This is a test paragraph.</p>
+<h6>This is 6th level heading</h6>
+<p>This is a test paragraph.</p>
+
+<h2>Basic block level elements</h2>
+
+<p>This is a normal paragraph (<code>p</code> element).
+To add some length to it, let us mention that this page was
+primarily written for testing the effect of <strong>user style sheets</strong>.
+You can use it for various other purposes as well, like just checking how
+your browser displays various HTML elements by default.
+It can also be useful when testing conversions from HTML
+format to other formats, since some elements can go wrong then.</p> 
+<p>This is another paragraph. I think it needs to be added that
+the set of elements tested is not exhaustive in any sense. I have selected
+those elements for which it can make sense to write user style sheet rules,
+in my opionion.</p>
+<div>This is a <code>div</code> element. Authors may use such elements instead
+of paragraph markup for various reasons. (End of <code>div</code>.)</div>
+<blockquote><p>This is a block quotation containing a single
+paragraph. Well, not quite, since this is not <em>really</em>
+quoted text, but I hope you understand the point. After all, this
+page does not use HTML markup very normally anyway.</p></blockquote>
+<p>The following contains address information about the author, in an <code>address</code>
+element.</p>
+<address>
+<a href="../personal.html" lang="fi" hreflang="en">Jukka Korpela</a>,
+<a href="mailto:jkorpela@cs.tut.fi">jkorpela@cs.tut.fi</A><br>
+Päivänsäteenkuja 4 A, Espoo, Finland
+</address>
+
+<h2>Lists</h2>
+
+<p>This is a paragraph before an <strong>unnumbered</strong> list (<code>ul</code>). Note that
+the spacing between a paragraph and a list before or after that is hard
+to tune in a user style sheet. You can't guess which paragraphs are
+logically related to a list, e.g. as a "list header".</p>
+<ul>
+  <li> One.
+  <li> Two.
+  <li> Three. Well, probably this list item should be longer. Note that
+for short items lists look better if they are compactly presented,
+       whereas for long items, it would be better to have more vertical spacing between items.
+  <li> Four. This is the last item in this list.
+       Let us terminate the list now without making any more fuss about it.
+</ul>
+<p>The following is a <code>menu</code> list:</p>
+<menu>
+  <li> One.
+  <li> Two.
+  <li> Three. Well, probably this list item should be longer so that it will
+probably wrap to the next line in rendering.
+</menu>
+<p>The following is a <code>dir</code> list:</p>
+<dir>
+  <li> One.
+  <li> Two.
+  <li> Three. Well, probably this list item should be longer so that it will
+probably wrap to the next line in rendering.
+</dir>
+
+<p>This is a paragraph before a <strong>numbered</strong> list (<code>ol</code>). Note that
+the spacing between a paragraph and a list before or after that is hard
+to tune in a user style sheet. You can't guess which paragraphs are
+logically related to a list, e.g. as a "list header".</p>
+<ol>
+  <li> One.
+  <li> Two.
+  <li> Three. Well, probably this list item should be longer. Note that if
+items are short, lists look better if they are compactly presented,
+       whereas for long items, it would be better to have more vertical spacing between items.
+  <li> Four. This is the last item in this list.
+       Let us terminate the list now without making any more fuss about it.
+</ol>
+
+<p>This is a paragraph before a <strong>definition</strong> list (<code>dl</code>).
+In principle, such a list should consist of <em>terms</em> and associated 
+definitions.
+But many authors use <code>dl</code> elements for fancy "layout" things. Usually the
+effect is not <em>too</em> bad, if you design user style sheet rules for <code>dl</code>
+which are suitable
+for real definition lists.
+<dl>
+  <dt> recursion
+  <dd> see recursion
+  <dt> recursion, indirect
+  <dd> see indirect recursion
+  <dt> indirect recursion
+  <dd> see recursion, indirect
+  <dt> term
+  <dd> a word or other expression taken into specific use in
+       a well-defined meaning, which is often defined rather rigorously, even
+       formally, and may differ quite a lot from an everyday meaning
+</dl>
+
+<h2>Text-level markup</h2>
+
+<ul>
+  <li> <abbr title="Cascading Style Sheets">CSS</abbr> (an abbreviation;
+ <code>abbr</code> markup used)
+  <li> <acronym title="radio detecting and ranging">radar</acronym> (an acronym; <code>acronym</code> markup used)
+  <li> <b>bolded</b> (<code>b</code> markup used - just bolding with unspecified
+       semantics)
+  <li> <big>big thing</big> (<code>big</code> markup used)
+  <li> <font size=6>large size</font> (<code>font size=6</code> markup used)
+  <li> <font face=Courier>Courier font</font> (<code>font face=Courier</code> markup used)
+  <li> <font color=red>red text</font> (<code>font color=red</code> markup used)
+  <li> <cite>Origin of Species</cite> (a book title;
+       <code>cite</code> markup used)
+  <li> <code>a[i] = b[i] + c[i);</code> (computer code; <code>code</code> markup used)
+  <li> here we have some <del>deleted</del> text (<code>del</code> markup used)
+  <li> an <dfn>octet</dfn> is an entity consisting of eight bits
+       (<code>dfn</code> markup used for the term being defined)
+  <li> this is <em>very</em> simple (<code>em</code> markup used for emphasizing
+       a word)
+  <li> <i lang="la">Homo sapiens</i> (should appear in italics;  <code>i</code> markup used)
+  <li> here we have some <ins>inserted</ins> text (<code>ins</code> markup used)
+  <li> type <kbd>yes</kbd> when prompted for an answer (<code>kbd</code> markup
+       used for text indicating keyboard input)
+  <li> <q>Hello!</q> (<code>q</code> markup used for quotation)
+  <li> He said: <q>She said <q>Hello!</q></q> (a quotation inside a quotation)
+  <li> you may get the message <samp>Core dumped</samp> at times
+       (<code>samp</code> markup used for sample output)
+  <li> <small>this is not that important</small> (<code>small</code> markup used)
+  <li> <strike>overstruck</strike> (<code>strike</code> markup used; note:
+       <code>s</code> is a nonstandard synonym for <code>strike</code>)
+  <li> <strong>this is highlighted text</strong> (<code>strong</code>
+       markup used)
+  <li> In order to test how subscripts and superscripts (<code>sub</code> and
+       <code>sup</code> markup) work inside running text, we need some
+       dummy text around constructs like x<sub>1</sub> and H<sub>2</sub>O
+       (where subscripts occur). So here is some fill so that
+       you will (hopefully) see whether and how badly the subscripts
+       and superscripts mess up vertical spacing between lines.
+       Now superscripts: M<sup>lle</sup>, 1<sup>st</sup>, and then some
+       mathematical notations: e<sup>x</sup>, sin<sup>2</sup> <i>x</i>,
+       and some nested superscripts (exponents) too:
+       e<sup>x<sup>2</sup></sup> and f(x)<sup>g(x)<sup>a+b+c</sup></sup>
+       (where 2 and a+b+c should appear as exponents of exponents).
+  <li> <tt>text in monospace font</tt> (<code>tt</code> markup used)
+  <li> <u>underlined</u> text (<code>u</code> markup used)
+  <li> the command <code>cat</code> <var>filename</var> displays the
+       file specified by the <var>filename</var> (<code>var</code> markup
+       used to indicate a word as a variable).
+</ul>
+
+<p>Some of the elements tested above are typically displayed in a monospace
+font, often using the <em>same</em> presentation for all of them. This
+tests whether that is the case on your browser:</p>
+
+<ul>
+  <li> <code>This is sample text inside code markup</code>
+  <li> <kbd>This is sample text inside kbd markup</kbd>
+  <li> <samp>This is sample text inside samp markup</samp>
+  <li> <tt>This is sample text inside tt markup</tt>
+</ul>
+<h2>Links</h2>
+<ul>
+<li> <a href="../index.html">main page</a>
+<li> <a href=
+"http://www.unicode.org/versions/Unicode4.0.0/ch06.pdf"
+title="Writing Systems and Punctuation"
+type="application/pdf"
+>Unicode Standard, chapter&nbsp;6</a>
+</ul>
+
+<p>This is a text paragraph that contains some
+inline links. Generally, inline links (as opposite to e.g. links
+lists) are problematic
+from the
+<a href="http://www.useit.com">usability</a> perspective,
+but they may have use as
+&#8220;incidental&#8221;, less relevant links. See the document
+<cite><a href="links.html">Links Want To Be Links</a></cite>.</p>
+
+<h2>Forms</h2>
+
+<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+<div>
+<input type="hidden" name="hidden field" value="42">
+This is a form containing various fields (with some initial
+values (defaults) set, so that you can see how input text looks
+like without actually typing it):</div>
+<div><label for="but">Button:
+<button id="but" type="submit" name="foo" value="bar">A cool<br>button</button></label></div>
+<div><label for="f0">Reset button:
+<input id="f0" type="reset" name="reset" value="Reset"></label></div>
+<div><label for="f1">Single-line text input field: <input id="f1" name="text" size="20" value="Default text."></label></div>
+<div><label for="f2">Multi-line text input field (textarea):</label><br>
+<textarea id="f2" name="textarea" rows="2" cols="20">
+Default text.
+</textarea></div>
+<div>The following two radio buttons are inside
+a <code>fieldset</code> element with a <code>legend</code>:</div>
+<fieldset>
+<legend>Legend</legend>
+<div><label for="f3"><input id="f3" type="radio" name="radio" value="1"> Radio button 1</label></div>
+<div><label for="f4"><input id="f4" type="radio" name="radio" value="2" checked> Radio button 2 (initially checked)</label></div>
+</fieldset>
+<fieldset>
+<legend>Check those that apply</legend>
+<div><label for="f5"><input id="f5" type="checkbox" name="checkbox"> Checkbox 1</label></div>
+<div><label for="f6"><input id="f6" type="checkbox" name="checkbox2" checked> Checkbox 2 (initially checked)</label></div>
+</fieldset>
+<div><label for="f10">A <code>select</code> element with <code>size="1"</code>
+(dropdown box):
+<select id="f10" name="select1" size="1">
+<option>one
+<option selected>two (default)
+<option>three
+</select></label></div>
+<div><label for="f11">A <code>select</code> element with <code>size="3"</code>
+(listbox):</label><br>
+<select id="f11" name="select2" size="3">
+<option>one
+<option selected>two (default)
+<option>three
+</select></div>
+<div><label for="f99">Submit button:
+<input id="f99" type="submit" name="submit" value="Just a test"></label></div>
+</form>
+
+<h2>Tables</h2>
+
+<p>The following table has a caption. The first row and the first column
+contain table header cells (<code>th</code> elements) only; other cells
+are data cells (<code>td</code> elements), with <code>align="right"</code>
+attributes:</p>
+
+<TABLE summary=
+"Each row names a Nordic country and specifies its total area and land area, in square kilometers">
+<CAPTION>Sample table: Areas of the Nordic countries, in sq km</CAPTION>
+<TR><th scope="col">Country</th> <th scope="col">Total area</TH> <th scope="col">Land area</TH>
+<TR><th scope="row">Denmark</TH> <TD ALIGN=RIGHT> 43,070 </TD><TD ALIGN=RIGHT> 42,370</TR>
+<TR><th scope="row">Finland</TH> <TD ALIGN=RIGHT>337,030 </TD><TD ALIGN=RIGHT>305,470</TR>
+<TR><th scope="row">Iceland</TH> <TD ALIGN=RIGHT>103,000 </TD><TD ALIGN=RIGHT>100,250</TR>
+<TR><th scope="row">Norway</TH>  <TD ALIGN=RIGHT>324,220 </TD><TD ALIGN=RIGHT>307,860</TR>
+<TR><th scope="row">Sweden</TH>  <TD ALIGN=RIGHT>449,964 </TD><TD ALIGN=RIGHT>410,928</TR>
+</TABLE>
+
+<h2>Character test</h2>
+<p>The following table has some sample characters with annotations. If the browser&#8217;s default font does not contain all of them, they may get displayed using backup fonts. This may cause stylistic differences, but it should not prevent the characters from being displayed at all.</p>
+
+<table>
+<tr><th>Char. <th>Explanation <th>Notes
+<tr><td>ê <td>e with circumflex <td>Latin 1 character, should be ok
+<tr><td>&#8212; <td>em dash <td>Windows Latin 1 character, should be ok, too
+<tr><td>&#x100; <td>A with macron (line above) <td>Latin Extended-A character, not present in all fonts
+<tr><td>&Omega; <td>capital omega <td>A Greek letter
+<tr><td>&#x2212; <td>minus sign <td>Unicode minus
+<tr><td>&#x2300; <td>diameter sign <td>relatively rare in fonts
+</table>
+
+
+Sample HTML from [Normalize](http://necolas.github.io/normalize.css/).
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<section>
+    <h1>Heading 1 (in section)</h1>
+    <h2>Heading 2 (in section)</h2>
+    <h3>Heading 3 (in section)</h3>
+    <h4>Heading 4 (in section)</h4>
+    <h5>Heading 5 (in section)</h5>
+    <h6>Heading 6 (in section)</h6>
+</section>
+
+<article>
+    <h1>Heading 1 (in article)</h1>
+    <h2>Heading 2 (in article)</h2>
+    <h3>Heading 3 (in article)</h3>
+    <h4>Heading 4 (in article)</h4>
+    <h5>Heading 5 (in article)</h5>
+    <h6>Heading 6 (in article)</h6>
+</article>
+
+<header>
+    <hgroup>
+        <h1>Heading 1 (in hgroup)</h1>
+        <h2>Heading 2 (in hgroup)</h2>
+    </hgroup>
+    <nav>
+        <ul>
+            <li><a href="#">navigation item #1</a></li>
+            <li><a href="#">navigation item #2</a></li>
+            <li><a href="#">navigation item #3</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Text-level semantics</h1>
+
+<p hidden>This should be hidden in all browsers, apart from IE6</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+
+<address>Address: somewhere, world</address>
+
+<hr>
+
+<hr style="height:4px; border:solid #000; border-width:1px 0;">
+
+<p>
+The <a href="#">a element</a> example<br>
+The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples<br>
+The <b>b element</b> example<br>
+The <cite>cite element</cite> example<br>
+The <code>code element</code> example<br>
+The <del>del element</del> example<br>
+The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples<br>
+The <em>em element</em> example<br>
+The <i>i element</i> example<br>
+The img element <img src="http://lorempixel.com/16/16" alt=""> example<br>
+The <ins>ins element</ins> example<br>
+The <kbd>kbd element</kbd> example<br>
+The <mark>mark element</mark> example<br>
+The <q>q element <q>inside</q> a q element</q> example<br>
+The <s>s element</s> example<br>
+The <samp>samp element</samp> example<br>
+The <small>small element</small> example<br>
+The <span>span element</span> example<br>
+The <strong>strong element</strong> example<br>
+The <sub>sub element</sub> example<br>
+The <sup>sup element</sup> example<br>
+The <u>u element</u> example<br>
+The <var>var element</var> example
+</p>
+
+<h1>Template content</h1>
+<template>
+    <h1>{{title}}</h1>
+    <content></content>
+</template>
+
+<h1>Embedded content</h1>
+
+<h3>audio</h3>
+
+<audio controls></audio>
+<audio></audio>
+
+<h3>img</h3>
+
+<img src="http://lorempixel.com/100/100" alt="">
+<a href="#"><img src="http://lorempixel.com/100/100" alt=""></a>
+
+<h3>svg</h3>
+
+<svg width="100px" height="100px">
+    <circle cx="100" cy="100" r="100" fill="#ff0000" />
+</svg>
+
+<h3>video</h3>
+
+<video controls></video>
+<video></video>
+
+<h1>Interactive content</h1>
+
+<h3>details / summary</h3>
+<details>
+    <summary>More info</summary>
+    <p>Additional information</p>
+    <ul>
+        <li>Point 1</li>
+        <li>Point 2</li>
+    </ul>
+</details>
+
+<h1>Grouping content</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+
+<h3>pre</h3>
+
+<pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</pre>
+
+<pre><code>&lt;html>
+&lt;head>
+&lt;/head>
+&lt;body>
+&lt;div class="main"> &lt;div>
+&lt;/body>
+&lt;/html></code></pre>
+
+<h3>blockquote</h3>
+
+<blockquote>
+    <p>Some sort of famous witty quote marked up with a &lt;blockquote> and a child &lt;p> element.</p>
+</blockquote>
+
+<blockquote>Even better philosophical quote marked up with just a &lt;blockquote> element.</blockquote>
+
+<h3>ordered list</h3>
+
+<ol>
+    <li>list item 1</li>
+    <li>list item 1
+        <ol>
+            <li>list item 2</li>
+            <li>list item 2
+                <ol>
+                    <li>list item 3</li>
+                    <li>list item 3</li>
+                </ol>
+            </li>
+            <li>list item 2</li>
+            <li>list item 2</li>
+        </ol>
+    </li>
+    <li>list item 1</li>
+    <li>list item 1</li>
+</ol>
+
+<h3>unordered list</h3>
+
+<ul>
+    <li>list item 1</li>
+    <li>list item 1
+        <ul>
+            <li>list item 2</li>
+            <li>list item 2
+                <ul>
+                    <li>list item 3</li>
+                    <li>list item 3</li>
+                </ul>
+            </li>
+            <li>list item 2</li>
+            <li>list item 2</li>
+        </ul>
+    </li>
+    <li>list item 1</li>
+    <li>list item 1</li>
+</ul>
+
+<h3>description list</h3>
+
+<dl>
+    <dt>Description name</dt>
+    <dd>Description value</dd>
+    <dt>Description name</dt>
+    <dd>Description value</dd>
+    <dd>Description value</dd>
+    <dt>Description name</dt>
+    <dt>Description name</dt>
+    <dd>Description value</dd>
+</dl>
+
+<h3>figure</h3>
+
+<figure>
+    <img src="http://lorempixel.com/400/200" alt="">
+    <figcaption>Figcaption content</figcaption>
+</figure>
+
+<h1>Tabular data</h1>
+
+<table>
+    <caption>Jimi Hendrix - albums</caption>
+    <thead>
+        <tr>
+            <th>Album</th>
+            <th>Year</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Album</th>
+            <th>Year</th>
+            <th>Price</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Are You Experienced</td>
+            <td>1967</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Axis: Bold as Love</td>
+            <td>1967</td>
+            <td>$12.00</td>
+        </tr>
+        <tr>
+            <td>Electric Ladyland</td>
+            <td>1968</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Band of Gypsys</td>
+            <td>1970</td>
+            <td>$12.00</td>
+        </tr>
+    </tbody>
+</table>
+
+<h1>Forms</h1>
+
+
+    <fieldset>
+        <legend>Inputs as descendents of labels (form legend). This doubles up as a long legend that can test word wrapping.</legend>
+        <p><label>Text input <input type="text" value="default value that goes on and on without stopping or punctuation"></label></p>
+        <p><label>Email input <input type="email"></label></p>
+        <p><label>Search input <input type="search"></label></p>
+        <p><label>Tel input <input type="tel"></label></p>
+        <p><label>URL input <input type="url" placeholder="http://"></label></p>
+        <p><label>Password input <input type="password" value="password"></label></p>
+        <p><label>File input <input type="file"></label></p>
+
+        <p><label>Radio input <input type="radio" name="rad"></label></p>
+        <p><label>Checkbox input <input type="checkbox"></label></p>
+        <p><label><input type="radio" name="rad"> Radio input</label></p>
+        <p><label><input type="checkbox"> Checkbox input</label></p>
+
+        <p><label>Select field <select><option>Option 01</option><option>Option 02</option></select></label></p>
+        <p><label>Textarea <textarea cols="30" rows="5" >Textarea text</textarea></label></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Inputs as siblings of labels</legend>
+        <p><label for="ic">Color input</label> <input type="color" id="ic" value="#000000"></p>
+        <p><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></p>
+        <p><label for="ir">Range input</label> <input type="range" id="ir" value="10"></p>
+        <p><label for="idd">Date input</label> <input type="date" id="idd" value="1970-01-01"></p>
+        <p><label for="idm">Month input</label> <input type="month" id="idm" value="1970-01"></p>
+        <p><label for="idw">Week input</label> <input type="week" id="idw" value="1970-W01"></p>
+        <p><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></p>
+        <p><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="1970-01-01T00:00"></p>
+
+        <p><label for="irb">Radio input</label> <input type="radio" id="irb" name="rad"></p>
+        <p><label for="icb">Checkbox input</label> <input type="checkbox" id="icb"></p>
+        <p><input type="radio" id="irb2" name="rad"> <label for="irb2">Radio input</label></p>
+        <p><input type="checkbox" id="icb2"> <label for="icb2">Checkbox input</label></p>
+
+        <p><label for="s">Select field</label> <select id="s"><option>Option 01</option><option>Option 02</option></select></p>
+        <p><label for="t">Textarea</label> <textarea id="t" cols="30" rows="5" >Textarea text</textarea></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Clickable inputs and buttons</legend>
+        <p><input type="image" src="http://lorempixel.com/90/24" alt="Image (input)"></p>
+        <p><input type="reset" value="Reset (input)"></p>
+        <p><input type="button" value="Button (input)"></p>
+        <p><input type="submit" value="Submit (input)"></p>
+        <p><input type="submit" value="Disabled (input)" disabled></p>
+
+
+        <p><button type="reset">Reset (button)</button></p>
+        <p><button type="button">Button (button)</button></p>
+        <p><button type="submit">Submit (button)</button></p>
+        <p><button type="submit" disabled>Disabled (button)</button></p>
+    </fieldset>
+
+    <fieldset id="boxsize">
+        <legend>box-sizing tests</legend>
+        <div><input type="text" value="text"></div>
+        <div><input type="email" value="email"></div>
+        <div><input type="search" value="search"></div>
+        <div><input type="url" value="http://example.com"></div>
+        <div><input type="password" value="password"></div>
+
+        <div><input type="color" value="#000000"></div>
+        <div><input type="number" value="5"></div>
+        <div><input type="range" value="10"></div>
+        <div><input type="date" value="1970-01-01"></div>
+        <div><input type="month" value="1970-01"></div>
+        <div><input type="week" value="1970-W01"></div>
+        <div><input type="datetime" value="1970-01-01T00:00:00Z"></div>
+        <div><input type="datetime-local" value="1970-01-01T00:00"></div>
+
+        <div><input type="radio"></div>
+        <div><input type="checkbox"></div>
+
+        <div><select><option>Option 01</option><option>Option 02</option></select></div>
+        <div><textarea cols="30" rows="5">Textarea text</textarea></div>
+
+        <div><input type="image" src="http://lorempixel.com/90/24" alt="Image (input)"></div>
+        <div><input type="reset" value="Reset (input)"></div>
+        <div><input type="button" value="Button (input)"></div>
+        <div><input type="submit" value="Submit (input)"></div>
+
+        <div><button type="reset">Reset (button)</button></div>
+        <div><button type="button">Button (button)</button></div>
+        <div><button type="submit">Submit (button)</button></div>
+    </fieldset>
