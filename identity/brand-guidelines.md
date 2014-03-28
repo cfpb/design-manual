@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Identity
 category: Identity
 ---
 
