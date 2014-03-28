@@ -17,7 +17,7 @@ CFPB videos must contain strong emotional and creative imagery while maintaining
 
 </div>
 
-<h2 id="use-cases">Use cases</h2>
+## Use cases
 
 <div class="content-33 content-first">
 
@@ -75,7 +75,7 @@ A documentary-style video that demonstrates how the CFPB has helped consumers an
 
 </div>
 
-<h2 id="stylistic-guidelines">Stylistic guidelines</h2>
+## Stylistic guidelines
 
 <div class="content-33 content-first">
 
