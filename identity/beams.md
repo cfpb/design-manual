@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Beams
+title: Beam pattern
 category: Identity
 published: true
 ---
@@ -24,7 +24,7 @@ Using overlaid shapes with 9&deg; angles and the full CFPB Green color palette, 
 
 </div>
 
-## Stylistic Guidelines
+## Stylistic guidelines
 
 <div class="content-100 content-first">
 
