@@ -15,13 +15,16 @@ The site is built using Bower, Grunt, Jekyll, and LESS.
 
 ## To run it locally
 
-We use Jekyll to generate and serve our Design Manual as a website.
+Before you get started make sure you have an up-to-date version of Ruby installed. We use [Homebrew](http://brew.sh/):
 
-First, be sure to have [Jekyll](http://jekyllrb.com/) and [maruku](http://rubygems.org/gems/maruku) installed.
+```
+brew install ruby
+```
+
+We use the static site generator [Jekyll](http://jekyllrb.com/) to generate and serve our Design Manual as a website. To install Jekyll run:
 
 ```
 gem install jekyll
-gem install redcarpet
 ```
 
 Fork and clone the repo:
@@ -41,7 +44,7 @@ jekyll serve --watch --baseurl ''
 
 We use NodeJS, Node Packaged Modules and Grunt to simplify development tasks within our Design Manual. Let's get those installed if you don't have them already.
 
-Install [NodeJS](http://nodejs.org/) however you'd like. We use Homebrew. That's:
+Install [node.js](http://nodejs.org/) however you'd like. We use [Homebrew](http://brew.sh/). That's:
 
 ```
 brew install node
