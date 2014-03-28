@@ -108,7 +108,7 @@ secondarynav:
   url: identity/illustration.html
   internal: true
   category: Identity
-- text: Beam Pattern
+- text: Beam pattern
   url: identity/beams.html
   internal: true
   category: Identity
