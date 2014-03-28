@@ -32,14 +32,14 @@ Using overlaid shapes with 9&deg; angles and the full CFPB Green color palette, 
 
 </div>
 
-<span class="content-25">
+<div class="content-25">
 Beam patterns are created using
 trapezoids and parallelograms that
 feature the 9&deg; angle.
-</span>
-<span class="content-75">
+</div>
+<div class="content-75">
 ![Base shapes for beams]({{ site.baseurl }}/assets/img/beams/Beams3.png "Base shapes for beams")
-</span>
+</div>
 
 <div class="content-67 content-first">
 
@@ -64,50 +64,59 @@ Beam patterns are composed of overlapping beams that frame areas of white space 
 
 </div>
 
-<span class="content-25">
+<div class="content-25">
 
 #### Ideal composition  
 
 Solid green beam bleeds off the top of the layout. Beams alternate direction to create layered beam shapes.
 
-</span>
+</div>
 
-<span class="content-75">
+<div class="content-75">
 
 ![Ideal composition of beams]({{ site.baseurl }}/assets/img/beams/Beams4.png "Ideal beams")
 
-</span>
+</div>
 
-<span class="content-25">
+<div class="content-25">
 
 #### Ideal composition  
 
 Layered beams anchor to the bottom, leaving plenty of white space above for type. This works
 especially well for horizontal layouts.
 
-</span>
-<span class="content-75">
-![Ideal composition of beams]({{ site.baseurl }}/assets/img/beams/Beams5.png "Ideal beams")
-</span>
+</div>
 
-<span class="content-25">
+<div class="content-75">
+
+![Ideal composition of beams]({{ site.baseurl }}/assets/img/beams/Beams5.png "Ideal beams")
+
+</div>
+
+<div class="content-25">
 
 #### Poor composition  
 
 Beams float in white space, leaving little room for content. No transparency used.
 
-</span>
-<span class="content-75">
-![Poor composition of beams]({{ site.baseurl }}/assets/img/beams/Beams6.png "Poor composition of beams")
-</span>
+</div>
 
-<span class="content-25">
+<div class="content-75">
+
+![Poor composition of beams]({{ site.baseurl }}/assets/img/beams/Beams6.png "Poor composition of beams")
+
+</div>
+
+<div class="content-25">
 
 #### Poor composition  
 
 All three beams layer in the same direction, weakening the beam metaphor.
 
-</span>
-<span class="content-75">
+</div>
+
+<div class="content-75">
+
 ![Poor composition of beams]({{ site.baseurl }}/assets/img/beams/Beams7.png "Poor composition of beams")
-</span>
+
+</div>
