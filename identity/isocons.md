@@ -38,13 +38,13 @@ The basic color approach for isocons uses the primary brand colors. The isocon h
 
 #### Black and white over green field
 
-![Black and white over green field Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons.png "Graph Isocon")
+![Black and white on green field Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons.png "Graph Isocon")
 
 </div>
 
 <div class="content-50 content-last">
 
-#### Black and white over gray field
+#### Black and white on gray field
 
 ![Black and white over gray field Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons3.png "Graph Isocon")
 
