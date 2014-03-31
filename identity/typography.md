@@ -25,8 +25,6 @@ A clear typographic hierarchy is critical to the effective communication of our 
 
 </div>
 
-<a name="typefaces"></a>
-
 ## Typefaces
 
 <div class="content-33 content-first">
@@ -165,13 +163,19 @@ abcdefghijklmnopqrstuvwxyz<br/>
 
 </div>
 
-<a name="web-hierarchy"></a>
-
 ## Web hierarchy
+
 **Hierarchy** refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read; a successful hierarchy enables readers to easily scan content. 
 
+<div class="content-33 content-first">
+
 ### Headers
+
 Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in three weights of Avenir Next–Demi Bold, Medium, and Regular.
+
+</div>
+
+<div class="content-67 content-last">
 
 \[table begins]
 #### Display
@@ -189,14 +193,16 @@ Consistent scaling, weights, and capitalization are used to create distinction b
 #### h6
 \[table ends]
 
+</div>
+
 ### Body text
+
 Georgia should be used for the majority of body copy on the web. Avenir Next may be used for introductory or accent text. For example, Avenir is well-suited for use in tables or captions. 
 
 Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast. 
 
-<a name="typesetting-for-readability"></a>
-
 ## Typesetting for readability
+
 Readable text allows users to efficiently read and take in textual information. Text that is not readable turns off readers or makes it challenging for them to stay focused. The following guidelines promote good readability.
 
 ### Alignment
