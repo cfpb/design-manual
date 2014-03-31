@@ -177,7 +177,21 @@ Consistent scaling, weights, and capitalization are used to create distinction b
 
 <div class="content-67 content-last">
 
-\[table begins]
+<div class="content-25 content-first">
+#### Display
+
+##### Avenir Next Demi bold
+
+##### 48 px
+
+</div>
+
+<div class="content-75 content-last">
+Getting out of debt
+</div>
+
+---
+
 #### Display
 
 #### h1
@@ -191,7 +205,6 @@ Consistent scaling, weights, and capitalization are used to create distinction b
 #### h5
 
 #### h6
-\[table ends]
 
 </div>
 
