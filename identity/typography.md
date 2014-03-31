@@ -178,21 +178,38 @@ Consistent scaling, weights, and capitalization are used to create distinction b
 <div class="content-67 content-last">
 
 <div class="content-25 content-first">
+
 #### Display
 
-###### Avenir Next Demi bold
-
-###### 48 px
+Avenir Next Demi bold<br/>
+48 px
 
 </div>
 
 <div class="content-75 content-last">
-<p style="font:Avenir Next Regular;font-size:48px;">Getting out of debt</p>
+
+<p style="font:Avenir Next Demi Bold;font-size:48px;">Getting out of debt</p>
+
 </div>
 
 ---
 
-#### Display
+<div class="content-25 content-first">
+    
+#### Header 1
+
+Avenir Next Regular<br/>
+34 px
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font:Avenir Next Demi Bold;font-size:34px;">Getting out of debt</p>
+
+</div>
+
+---
 
 #### h1
 
