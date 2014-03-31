@@ -188,7 +188,7 @@ Avenir Next Demi bold<br/>
 
 <div class="content-75 content-last">
 
-<p style="font:Avenir Next Demi Bold;font-size:48px;">Getting out of debt</p>
+<p style="font-size:48px;">Getting out of debt</p>
 
 </div>
 
@@ -205,23 +205,96 @@ Avenir Next Regular<br/>
 
 <div class="content-75 content-last">
 
-<p style="font:Avenir Next Demi Bold;font-size:34px;">Getting out of debt</p>
+<p style="font-size:34px;">Getting out of debt</p>
 
 </div>
 
 ---
 
-#### h1
+<div class="content-25 content-first">
+    
+#### Header 2
 
-#### h2
+Avenir Next Regular<br/>
+26 px
 
-#### h3
+</div>
 
-#### h4
+<div class="content-75 content-last">
 
-#### h5
+<p style="font-size:26px;">Getting out of debt</p>
 
-#### h6
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 3
+
+Avenir Next Regular<br/>
+22 px
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:22px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 4
+
+Avenir Next Medium<br/>
+18 px
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:18px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 5
+
+Avenir Next Demi Bold<br/>
+14 px, 1 px letter spacing<br/>
+All caps
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:14px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 6
+
+Avenir Next Demi Bold<br/>
+12 px, 1 px letter spacing<br/>
+All caps
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:12px;">Getting out of debt</p>
+
+</div>
 
 </div>
 
