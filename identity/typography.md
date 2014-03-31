@@ -43,8 +43,10 @@ Avenir is great for titling, pull-quotes and lists, and in some cases can be use
 
 #### Avenir Next Bold
 
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
-abcdefghijklmnopqrstuvwxyz<br/>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+abcdefghijklmnopqrstuvwxyz
+
 0123456789
 
 ---
@@ -52,7 +54,29 @@ abcdefghijklmnopqrstuvwxyz<br/>
 #### Avenir Next Demi Bold
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
 abcdefghijklmnopqrstuvwxyz
+
+0123456789
+
+---
+
+#### Avenir Next Medium
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+abcdefghijklmnopqrstuvwxyz
+
+0123456789
+
+---
+
+#### Avenir Next Regular
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+abcdefghijklmnopqrstuvwxyz
+
 0123456789
 
 </div>
