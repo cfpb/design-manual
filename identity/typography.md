@@ -298,11 +298,51 @@ All caps
 
 </div>
 
+<div class="content-33 content-first">
+
 ### Body text
 
 Georgia should be used for the majority of body copy on the web. Avenir Next may be used for introductory or accent text. For example, Avenir is well-suited for use in tables or captions. 
 
 Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast. 
+
+</div>
+
+<div class="content-67 content-last">
+
+<div class="content-25 content-first">
+
+#### Display
+
+Avenir Next Demi bold<br/>
+48 px
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:48px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 1
+
+Avenir Next Regular<br/>
+34 px
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:34px;">Getting out of debt</p>
+
+</div>
+
+</div>
 
 ## Typesetting for readability
 
