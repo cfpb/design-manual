@@ -391,12 +391,17 @@ For a single column of text, line length should be an average of 66 characters p
 
 WCA (Web Content Accessibility) standards ensure that content is accessible by everyone, regardless of any disability or user device. 
 
-### Text contrast
 To ensure text remains compliant with WCA standards, use only these permitted color combinations. These options fall within the range of foreground/background color contrast permitted by the Secion 508 guidelines.
-\[include image]
+
+<div class="content-33 content-first">
 
 ### Fully accessible combinations
+
 Accessible text and background color combinations are shown below:
+
+</div>
+
+<div class="content-67 content-last">
 
 <figure>
     <ul>
@@ -411,8 +416,16 @@ Accessible text and background color combinations are shown below:
     </ul>
 </figure>
 
+</div>
+
+<div class="content-33 content-first">
+
 ### Partially accessible combinations
 CFPB Black text and white text on gray, and gray text on white are _only accessible for header sizes above 24px_.
+
+</div>
+
+<div class="content-67 content-last">
 
 <figure>
     <ul>
@@ -422,8 +435,16 @@ CFPB Black text and white text on gray, and gray text on white are _only accessi
     </ul>
 </figure>
 
+</div>
+
+<div class="content-33 content-first">
+
 <h3 class="warning"><i class="icon-remove-sign"></i> Non-accessible combinations</h3>
 Never set CFPB Green web type on white combinations, as they are not accessible. Never set type on a patterned background.
+
+</div>
+
+<div class="content-67 content-last">
 
 <figure>
     <ul>
@@ -432,8 +453,16 @@ Never set CFPB Green web type on white combinations, as they are not accessible.
     </ul>
 </figure>
 
+</div>
+
+<div class="content-33 content-first">
+
 <h3 class="warning"><i class="icon-remove-sign"></i> Undesirable combinations</h3>
 Even though CFPB Green and CFPB Black are accessible for large scale type, this color combination should never be used for web type.
+
+</div>
+
+<div class="content-67 content-last">
 
 <figure>
     <ul>
@@ -441,6 +470,8 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
         <li class="type-color-combo__green-on-black">Green on Black</li>
     </ul>
 </figure>
+
+</div>
 
 #### To learn more about making the web accessible to everyone
 Refer to the [Section 508 Standards Guide].
