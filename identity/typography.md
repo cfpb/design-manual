@@ -41,8 +41,20 @@ Avenir is great for titling, pull-quotes and lists, and in some cases can be use
 
 <div class="content-67 content-last">
 
+<div class="content-25 content-first">
+#### Bold
+</div>
+
+<div class="content-75 content-last">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+0123456789
+</div>
+
+---
+
 <div class="content-33 content-first">
-#### Avenir Next Bold
+#### Demi Bold
 </div>
 
 <div class="content-67 content-last">
@@ -54,22 +66,14 @@ abcdefghijklmnopqrstuvwxyz<br/>
 ---
 
 <div class="content-33 content-first">
-#### Avenir Next Demi Bold
-</div>
-
-<div class="content-67 content-last">
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
-abcdefghijklmnopqrstuvwxyz<br/>
-0123456789
-</div>
-
----
-
 #### Avenir Next Medium
+</div>
 
+<div class="content-67 content-last">
 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
 abcdefghijklmnopqrstuvwxyz<br/>
 0123456789
+</div>
 
 ---
 
