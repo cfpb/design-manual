@@ -47,6 +47,7 @@ The basic color approach for isocons uses the primary brand colors. The isocon h
 #### Black and white over gray field
 
 ![Black and white over gray field Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons3.png "Graph Isocon")
+
 </div>
 
 </div>
@@ -64,10 +65,14 @@ print applications.
 
 <div class="content-67 content-last">
 
-Web scale
+#### Web scale
+
 ![Isocon web scale diagram]({{ site.baseurl }}/assets/img/isocons/Isocons4.png "Isocon web scale")
 
-Print scale
+---
+
+#### Print scale
+
 ![Isocon print scale diagram]({{ site.baseurl }}/assets/img/isocons/Isocons5.png "Isocon print scale")
 
 </div>
