@@ -42,17 +42,13 @@ Avenir is great for titling, pull-quotes and lists, and in some cases can be use
 <div class="content-67 content-last">
 
 <div class="content-33 content-first">
-
 #### Avenir Next Bold
-
 </div>
 
 <div class="content-67 content-last">
-
 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
 abcdefghijklmnopqrstuvwxyz<br/>
 0123456789
-
 </div>
 
 ---
