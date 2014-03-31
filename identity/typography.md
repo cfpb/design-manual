@@ -48,7 +48,9 @@ Avenir is great for titling, pull-quotes and lists, and in some cases can be use
 <div class="content-75 content-last">
 
 #### ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
 #### abcdefghijklmnopqrstuvwxyz
+
 #### 0123456789
 
 </div>
@@ -60,9 +62,13 @@ Avenir is great for titling, pull-quotes and lists, and in some cases can be use
 </div>
 
 <div class="content-75 content-last">
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
-abcdefghijklmnopqrstuvwxyz<br/>
-0123456789
+
+#### ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+#### abcdefghijklmnopqrstuvwxyz
+
+#### 0123456789
+
 </div>
 
 ---
@@ -72,9 +78,13 @@ abcdefghijklmnopqrstuvwxyz<br/>
 </div>
 
 <div class="content-75 content-last">
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
-abcdefghijklmnopqrstuvwxyz<br/>
-0123456789
+
+#### ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+#### abcdefghijklmnopqrstuvwxyz
+
+#### 0123456789
+
 </div>
 
 ---
@@ -84,9 +94,13 @@ abcdefghijklmnopqrstuvwxyz<br/>
 </div>
 
 <div class="content-75 content-last">
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
-abcdefghijklmnopqrstuvwxyz<br/>
-0123456789
+
+#### ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+#### abcdefghijklmnopqrstuvwxyz
+
+#### 0123456789
+
 </div>
 
 </div>
