@@ -389,9 +389,27 @@ For a single column of text, line length should be an average of 66 characters p
 
 ## Web type accessibility
 
+<div class="content-50 content-first">
+
+### Text contrast
+
 WCA (Web Content Accessibility) standards ensure that content is accessible by everyone, regardless of any disability or user device. 
 
 To ensure text remains compliant with WCA standards, use only these permitted color combinations. These options fall within the range of foreground/background color contrast permitted by the Secion 508 guidelines.
+
+</div>
+
+<div class="content-50 content-last">
+
+### To learn more about making the web accessible to everyone
+
+Refer to the [Section 508 Standards Guide].
+
+[This color contrast tool] is a useful resource for testing the compliance of any color combination.
+
+**Important note:** This CSS is dependent on using the standard CFPB web font code as seen in [web fonts] or [cfpb-bp]. It also assumes a base `font-size` of 16px (unchanged from the default in most browsers).
+
+</div>
 
 <div class="content-33 content-first">
 
@@ -472,13 +490,6 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 </figure>
 
 </div>
-
-#### To learn more about making the web accessible to everyone
-Refer to the [Section 508 Standards Guide].
-
-[This color contrast tool] is a useful resource for testing the compliance of any color combination.
-
-**Important note:** This CSS is dependent on using the standard CFPB web font code as seen in [web fonts] or [cfpb-bp]. It also assumes a base `font-size` of 16px (unchanged from the default in most browsers).
 
 <a name="print-hierarchy"></a>
 
