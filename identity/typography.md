@@ -54,7 +54,7 @@ abcdefghijklmnopqrstuvwxyz<br/>
 ---
 
 <div class="content-25 content-first">
-#### Demi Bold
+#### Avenir Next Demi Bold
 </div>
 
 <div class="content-75 content-last">
@@ -89,11 +89,65 @@ abcdefghijklmnopqrstuvwxyz<br/>
 
 </div>
 
+<div class="content-33 content-first">
+
 ### Georgia
 
 Georgia is the secondary brand typeface and is designed for digital executions. Its high x-height and round letterforms play nicely with Avenir Next. Georgia is well-suited for lengthy body copy. Bold is useful for highlighting or titling within body copy. The italic weights work nicely at a medium scale for pull-quotes or language with a human tone.
 
 Georgia should not be used for display type or large-scale typography.
+
+</div>
+
+<div class="content-67 content-last">
+
+<div class="content-25 content-first">
+#### Georgia Bold
+</div>
+
+<div class="content-75 content-last">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+0123456789
+</div>
+
+---
+
+<div class="content-25 content-first">
+#### Georgia Bold Italic
+</div>
+
+<div class="content-75 content-last">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+0123456789
+</div>
+
+---
+
+<div class="content-25 content-first">
+#### Georgia Regular
+</div>
+
+<div class="content-75 content-last">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+0123456789
+</div>
+
+---
+
+<div class="content-25 content-first">
+#### Georgia Regular Italic
+</div>
+
+<div class="content-75 content-last">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+0123456789
+</div>
+
+</div>
 
 <a name="web-hierarchy"></a>
 
