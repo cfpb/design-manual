@@ -630,26 +630,22 @@ All caps
 
 ### Body text
 
-Georgia should be used for the majority of body copy on the web. Avenir Next may be used for introductory or accent text. For example, Avenir is well-suited for use in tables or captions. 
-
-Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast. 
-
 </div>
 
 <div class="content-67 content-last">
 
 <div class="content-25 content-first">
 
-#### Body (sans-serif)
+#### Subheader
 
 Avenir Next Regular<br/>
-16 px / 22 px line height
+18 pt / 22 pt leading
 
 </div>
 
 <div class="content-75 content-last">
 
-If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
+Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
 
 </div>
 
@@ -657,16 +653,54 @@ If you have received financial aid offers, use this tool to compare school data 
 
 <div class="content-25 content-first">
     
-#### Body (serif)
+#### Paragraph
 
-Georgia Regular<br/>
-16 px / 22 px line height
+Avenir Next Regular<br/>
+11 pt / 16 pt leading
 
 </div>
 
 <div class="content-75 content-last">
 
-If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
+If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future. Evaluate the costs and risks involved in paying for school.
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Paragraph
+
+Georgia<br/>
+11 pt / 16 pt leading
+
+</div>
+
+<div class="content-75 content-last">
+
+If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future. Evaluate the costs and risks involved in paying for school.
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Bulleted list
+
+Avenir Next Regular<br/>
+11 pt / 14 pt leading
+
+</div>
+
+<div class="content-75 content-last">
+
+* Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
+
+* Evaluate the costs and risks involved in paying for school.
+
+* Use web school data and relevant financial factors to make a more informed decision for your future.
 
 </div>
 
