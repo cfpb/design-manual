@@ -99,7 +99,7 @@ module.exports = function(grunt) {
       minify: {
         files: {
           'assets/css/vendor.min.css': [
-            'front/vendor/normalize-css/normalize.css',
+            'front/vendor/normalize.css/normalize.css',
             'front/vendor/font-awesome/css/font-awesome.css'
           ],
           'assets/css/<%= pkg.name %>.min.css': ['assets/css/<%= pkg.name %>.css']
