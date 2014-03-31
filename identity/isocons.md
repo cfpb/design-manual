@@ -36,7 +36,7 @@ The basic color approach for isocons uses the primary brand colors. The isocon h
 
 <div class="content-50 content-first">
 
-#### Black and white over green field
+#### Black and white on green field
 
 ![Black and white on green field Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons.png "Graph Isocon")
 
