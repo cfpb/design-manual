@@ -46,12 +46,12 @@ Avenir is great for titling, pull-quotes and lists, and in some cases can be use
 </div>
 
 <div class="content-75 content-last">
-    
-##### ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-##### abcdefghijklmnopqrstuvwxyz
+#### ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-##### 0123456789
+#### abcdefghijklmnopqrstuvwxyz
+
+#### 0123456789
 
 </div>
 
