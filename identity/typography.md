@@ -312,16 +312,16 @@ Body text should provide an efficient and pleasant experience on every viewport 
 
 <div class="content-25 content-first">
 
-#### Display
+#### Body (sans-serif)
 
-Avenir Next Demi bold<br/>
-48 px
+Avenir Next Regular<br/>
+16 px / 22 px line height
 
 </div>
 
 <div class="content-75 content-last">
 
-<p style="font-size:48px;">Getting out of debt</p>
+If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
 
 </div>
 
@@ -329,16 +329,16 @@ Avenir Next Demi bold<br/>
 
 <div class="content-25 content-first">
     
-#### Header 1
+#### Body (serif)
 
-Avenir Next Regular<br/>
-34 px
+Georgia Regular<br/>
+16 px / 22 px line height
 
 </div>
 
 <div class="content-75 content-last">
 
-<p style="font-size:34px;">Getting out of debt</p>
+If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
 
 </div>
 
