@@ -382,7 +382,8 @@ For a single column of text, line length should be an average of 66 characters p
 
 <div class="content-67 content-last">
 
-[insert typesetting image]
+![Typesetting]({{ site.baseurl }}/assets/img/typography/Typography1a_typesetting_PLACEHOLDER.png "Typesetting")
+![Typesetting]({{ site.baseurl }}/assets/img/typography/Typography1b_typesetting_PLACEHOLDER.png "Typesetting")
 
 </div>
 
