@@ -171,7 +171,7 @@ abcdefghijklmnopqrstuvwxyz<br/>
 
 ### Headers
 
-Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in three weights of Avenir Next–Demi Bold, Medium, and Regular.
+Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in three weights of Avenir Next Demi Bold, Medium, and Regular.
 
 </div>
 
@@ -401,9 +401,9 @@ To ensure text remains compliant with WCA standards, use only these permitted co
 
 <div class="content-50 content-last">
 
-### To learn more about making the web accessible to everyone
+### For more information:
 
-Refer to the [Section 508 Standards Guide].
+To learn more, refer to the http://www.section508.gov.
 
 [This color contrast tool] is a useful resource for testing the compliance of any color combination.
 
@@ -491,11 +491,183 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 </div>
 
-<a name="print-hierarchy"></a>
-
 ## Print hierarchy
+
 This hierarchy should serve as a basis for 8.5 x 11” documents, but appropriate scaling should be explored for content of larger or smaller dimensions.
+
+<div class="content-33 content-first">
 
 ### Headers
 
+Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in two weights of Avenir Next Demi Bold and Medium.
+
+</div>
+
+<div class="content-67 content-last">
+
+<div class="content-25 content-first">
+
+#### Display
+
+Avenir Next Medium<br/>
+60 pt / 66 pt
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:48px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 1
+
+Avenir Next Medium<br/>
+38 pt / 40 pt
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:34px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 2
+
+Avenir Next Demi Bold<br/>
+18 pt / 20 pt
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:26px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 3
+
+Avenir Next Demi Bold<br/>
+16 pt / 18 pt
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:22px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 4
+
+Avenir Next Medium<br/>
+14 pt / 16 pt
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:18px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 5
+
+Avenir Next Demi Bold<br/>
+10 pt / 12 pt<br/>
+All caps
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:14px;">Getting out of debt</p>
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Header 6
+
+Avenir Next Demi Bold<br/>
+12 pt / 14 pt<br/>
+All caps
+
+</div>
+
+<div class="content-75 content-last">
+
+<p style="font-size:12px;">Getting out of debt</p>
+
+</div>
+
+</div>
+
+<div class="content-33 content-first">
+
 ### Body text
+
+Georgia should be used for the majority of body copy on the web. Avenir Next may be used for introductory or accent text. For example, Avenir is well-suited for use in tables or captions. 
+
+Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast. 
+
+</div>
+
+<div class="content-67 content-last">
+
+<div class="content-25 content-first">
+
+#### Body (sans-serif)
+
+Avenir Next Regular<br/>
+16 px / 22 px line height
+
+</div>
+
+<div class="content-75 content-last">
+
+If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
+
+</div>
+
+---
+
+<div class="content-25 content-first">
+    
+#### Body (serif)
+
+Georgia Regular<br/>
+16 px / 22 px line height
+
+</div>
+
+<div class="content-75 content-last">
+
+If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
+
+</div>
+
+</div>
