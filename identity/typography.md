@@ -348,27 +348,46 @@ If you have received financial aid offers, use this tool to compare school data 
 
 Readable text allows users to efficiently read and take in textual information. Text that is not readable turns off readers or makes it challenging for them to stay focused. The following guidelines promote good readability.
 
+<div class="content-33 content-first">
+
 ### Alignment
+
 Typography should be set flush left. This provides the eye a constant starting point for each line, making text easier to read.
 
+---
+
 ### Spacing
+
 White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. 
 
 When setting headers and body copy, the white space should be 15px, 20px, or 30px.
 
+---
+
 ### Line height
+
 Ample space between lines of type promotes an open feeling and lends flow to body copy. 
 
 When setting body copy, the leading should be 1.375 times the type size, or 37.5% larger.
 
+---
+
 ### Line length
+
 Comfortable line length allows the user’s eyes to flow easily from the end of one line to the beginning of the next.
 
 For a single column of text, line length should be an average of 66 characters per line, including spaces, but may range from 50 to 75 characters.
 
-<a name="web-type-accessibility"></a>
+</div>
+
+<div class="content-67 content-last">
+
+[insert typesetting image]
+
+</div>
 
 ## Web type accessibility
+
 WCA (Web Content Accessibility) standards ensure that content is accessible by everyone, regardless of any disability or user device. 
 
 ### Text contrast
