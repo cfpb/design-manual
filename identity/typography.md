@@ -40,32 +40,17 @@ Avenir is great for titling, pull-quotes and lists, and in some cases can be use
 <div class="content-67 content-last">
 
 <div class="content-25 content-first">
-#### Avenir Next Bold
-</div>
-
-<div class="content-75 content-last">
-
-#### ABCDEFGHIJKLMNOPQRSTUVWXYZ
-
-#### abcdefghijklmnopqrstuvwxyz
-
-#### 0123456789
-
-</div>
-
----
-
-<div class="content-25 content-first">
 #### Avenir Next Demi Bold
 </div>
 
-<div class="content-75 content-last">
 
-#### ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<div class="content-75 content-last demi-ex">
 
-#### abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-#### 0123456789
+abcdefghijklmnopqrstuvwxyz
+
+0123456789
 
 </div>
 
@@ -75,13 +60,13 @@ Avenir is great for titling, pull-quotes and lists, and in some cases can be use
 #### Avenir Next Medium
 </div>
 
-<div class="content-75 content-last">
+<div class="content-75 content-last medium-ex">
 
-#### ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-#### abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
 
-#### 0123456789
+0123456789
 
 </div>
 
@@ -91,13 +76,13 @@ Avenir is great for titling, pull-quotes and lists, and in some cases can be use
 #### Avenir Next Regular
 </div>
 
-<div class="content-75 content-last">
+<div class="content-75 content-last regular-ex">
 
-#### ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-#### abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
 
-#### 0123456789
+0123456789
 
 </div>
 
@@ -116,37 +101,17 @@ Georgia should not be used for display type or large-scale typography.
 <div class="content-67 content-last">
 
 <div class="content-25 content-first">
-#### Georgia Bold
-</div>
-
-<div class="content-75 content-last">
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
-abcdefghijklmnopqrstuvwxyz<br/>
-0123456789
-</div>
-
----
-
-<div class="content-25 content-first">
-#### Georgia Bold Italic
-</div>
-
-<div class="content-75 content-last">
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
-abcdefghijklmnopqrstuvwxyz<br/>
-0123456789
-</div>
-
----
-
-<div class="content-25 content-first">
 #### Georgia Regular
 </div>
 
 <div class="content-75 content-last">
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
-abcdefghijklmnopqrstuvwxyz<br/>
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+abcdefghijklmnopqrstuvwxyz
+
 0123456789
+
 </div>
 
 ---
@@ -156,9 +121,13 @@ abcdefghijklmnopqrstuvwxyz<br/>
 </div>
 
 <div class="content-75 content-last">
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
-abcdefghijklmnopqrstuvwxyz<br/>
-0123456789
+
+<i>ABCDEFGHIJKLMNOPQRSTUVWXYZ</i>
+
+<i>abcdefghijklmnopqrstuvwxyz</i>
+
+<i>0123456789</i>
+
 </div>
 
 </div>
@@ -188,7 +157,7 @@ Avenir Next Demi bold<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:48px;">Getting out of debt</p>
+<span class="superheader">Getting out of debt</span>
 
 </div>
 
@@ -205,7 +174,7 @@ Avenir Next Regular<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:34px;">Getting out of debt</p>
+<h1>Getting out of debt</h1>
 
 </div>
 
@@ -222,7 +191,7 @@ Avenir Next Regular<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:26px;">Getting out of debt</p>
+<h2 class="h2-ex">Getting out of debt</h2>
 
 </div>
 
@@ -239,7 +208,7 @@ Avenir Next Regular<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:22px;">Getting out of debt</p>
+<h3>Getting out of debt</h3>
 
 </div>
 
@@ -256,7 +225,7 @@ Avenir Next Medium<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:18px;">Getting out of debt</p>
+<h4>Getting out of debt</h4>
 
 </div>
 
@@ -274,7 +243,7 @@ All caps
 
 <div class="content-75 content-last">
 
-<p style="font-size:14px;">Getting out of debt</p>
+<h5>Getting out of debt</h5>
 
 </div>
 
@@ -292,7 +261,7 @@ All caps
 
 <div class="content-75 content-last">
 
-<p style="font-size:12px;">Getting out of debt</p>
+<h6>Getting out of debt</h6>
 
 </div>
 
@@ -319,7 +288,7 @@ Avenir Next Regular<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-75 content-last regular-ex">
 
 If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
 
@@ -403,11 +372,11 @@ To ensure text remains compliant with WCA standards, use only these permitted co
 
 ### For more information:
 
-To learn more, refer to the http://www.section508.gov.
+To learn more, refer to the [http://www.section508.gov](http://www.section508.gov).
 
 [This color contrast tool] is a useful resource for testing the compliance of any color combination.
 
-**Important note:** This CSS is dependent on using the standard CFPB web font code as seen in [web fonts] or [cfpb-bp]. It also assumes a base `font-size` of 16px (unchanged from the default in most browsers).
+**Important note:** This CSS is dependent on using the standard CFPB web font code as seen in [web fonts] or [cfpb-bp]. It also assumes a base font-size of 16px (unchanged from the default in most browsers).
 
 </div>
 
@@ -519,7 +488,7 @@ Consistent scaling, weights, and capitalization are used to create distinction b
 
 </div>
 
-<div class="content-67 content-last">
+<div class="content-67 content-last" id="print-hierarchy">
 
 <div class="content-25 content-first">
 
@@ -532,7 +501,7 @@ Avenir Next Medium<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:48px;">Getting out of debt</p>
+<span class="superheader">Getting out of debt</span>
 
 </div>
 
@@ -549,7 +518,7 @@ Avenir Next Medium<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:34px;">Getting out of debt</p>
+<h1>Getting out of debt</h1>
 
 </div>
 
@@ -566,7 +535,7 @@ Avenir Next Demi Bold<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:26px;">Getting out of debt</p>
+<h2 class="h2-ex">Getting out of debt</h2>
 
 </div>
 
@@ -583,7 +552,7 @@ Avenir Next Demi Bold<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:22px;">Getting out of debt</p>
+<h3>Getting out of debt</h3>
 
 </div>
 
@@ -600,7 +569,7 @@ Avenir Next Medium<br/>
 
 <div class="content-75 content-last">
 
-<p style="font-size:18px;">Getting out of debt</p>
+<h4 class="h4-print-ex">Getting out of debt</h4>
 
 </div>
 
@@ -618,7 +587,7 @@ All caps
 
 <div class="content-75 content-last">
 
-<p style="font-size:14px;">Getting out of debt</p>
+<h5>Getting out of debt</h5>
 
 </div>
 
@@ -628,19 +597,18 @@ All caps
     
 #### Header 6
 
-Avenir Next Demi Bold<br/>
-12 pt / 14 pt<br/>
-All caps
+Avenir Next Medium<br/>
+12 pt / 14 pt
 
 </div>
 
 <div class="content-75 content-last">
 
-<p style="font-size:12px;">Getting out of debt</p>
+<h6>Getting out of debt</h6>
 
 </div>
 
-</div>
+</div><!--/ .content-67 .content-last #print-hierarchy-->
 
 <div class="content-33 content-first">
 
@@ -661,7 +629,7 @@ Avenir Next Regular<br/>
 
 <div class="content-75 content-last">
 
-Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
+<p class="print-subheader">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
 
 </div>
 
@@ -678,7 +646,7 @@ Avenir Next Regular<br/>
 
 <div class="content-75 content-last">
 
-If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future. Evaluate the costs and risks involved in paying for school.
+<p class="print-avenir-para">If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future. Evaluate the costs and risks involved in paying for school.</p>
 
 </div>
 
@@ -695,7 +663,7 @@ Georgia<br/>
 
 <div class="content-75 content-last">
 
-If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future. Evaluate the costs and risks involved in paying for school.
+<p class="print-georgia-para">If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future. Evaluate the costs and risks involved in paying for school.</p>
 
 </div>
 
@@ -710,7 +678,7 @@ Avenir Next Regular<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-75 content-last print-ul">
 
 * Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
 
@@ -720,4 +688,4 @@ Avenir Next Regular<br/>
 
 </div>
 
-</div>
+</div><!--/ .content-67 .content-last-->
