@@ -86,17 +86,65 @@ If a longer label is needed, consider phrasing it as a question: “How many chu
 
 </div>
 
-**Helper text should appear below the text entry field, and provide an example of the correct way to enter text** (“e.g., 100 Main Street, Anytown, USA”). Do not hide this sort of helper text: it should always be visible, even before the user focuses on the form element (some users won’t select a field until they know their answer).
+<div class="content-33 content-first">
+	
+#### Helper text should appear below the text entry field, and provide an example of the correct way to enter text (“e.g., 100 Main Street, Anytown, USA”).
 
-**If the most of the fields are required, leave them alone and just mark the optional fields as optional.** If most of the fields are optional, leave them alone and just mark the required fields as required. If it’s close to a tie, go with whichever choice might be better for your users.
+</div>
 
-**Helper text and/or field masking should be used whenever a specific data entry format is required,** as for phone numbers, dates, and social security numbers. Users should not have to guess and check this through validation.
+<div class="content-67 content-last">
+	
+Do not hide this sort of helper text: it should always be visible, even before the user focuses on the form element (some users won’t select a field until they know their answer).
 
-**Where the label is placed affects how quickly the user can read the form field.** Keeping labels to the left of the form field is the pattern that tends to work best for clearly indicating which label belongs to which field. 
+</div>
 
-**To help clarify the association of a label with a form field, provide ample space and visual indication between separate form fields.** This will allow the user to quickly scan the text of the labels and easily associate each label with its field. Right-aligning label text can also be helpful, but it also has the negative effect of making labels harder to scan and can lead to very ragged text when translated to different languages.
+<div class="content-33 content-first">
+	
+#### If the most of the fields are required, leave them alone and just mark the optional fields as optional.
 
+</div>
 
+<div class="content-67 content-last">
+	
+If most of the fields are optional, leave them alone and just mark the required fields as required. If it’s close to a tie, go with whichever choice might be better for your users.
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### Helper text and/or field masking should be used whenever a specific data entry format is required,
+
+</div>
+
+<div class="content-67 content-last">
+	
+as for phone numbers, dates, and social security numbers. Users should not have to guess and check this through validation.
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### Where the label is placed affects how quickly the user can read the form field.
+
+</div>
+
+<div class="content-67 content-last">
+	
+Keeping labels to the left of the form field is the pattern that tends to work best for clearly indicating which label belongs to which field. 
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### To help clarify the association of a label with a form field, provide ample space and visual indication between separate form fields.
+
+</div>
+
+<div class="content-67 content-last">
+	
+This will allow the user to quickly scan the text of the labels and easily associate each label with its field. Right-aligning label text can also be helpful, but it also has the negative effect of making labels harder to scan and can lead to very ragged text when translated to different languages.
+
+</div>
 
 ## Validation
 
