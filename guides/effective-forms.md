@@ -62,9 +62,29 @@ If there are sections of the form that are optional, consider using a show/hide 
 
 ## Clarity
 
-**Wherever possible, use clear, concise, standard English.** Avoid jargon.
+<div class="content-33 content-first">
+	
+#### Wherever possible, use clear, concise, standard English.
 
-**Keep labels short and simple.** If a longer label is needed, consider phrasing it as a question: “How many chucks did the woodchuck chuck?” rather than “Number of chucks chucked by woodchuck”
+</div>
+
+<div class="content-67 content-last">
+	
+Avoid jargon.
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### Keep labels short and simple.
+
+</div>
+
+<div class="content-67 content-last">
+	
+If a longer label is needed, consider phrasing it as a question: “How many chucks did the woodchuck chuck?” rather than “Number of chucks chucked by woodchuck”
+
+</div>
 
 **Helper text should appear below the text entry field, and provide an example of the correct way to enter text** (“e.g., 100 Main Street, Anytown, USA”). Do not hide this sort of helper text: it should always be visible, even before the user focuses on the form element (some users won’t select a field until they know their answer).
 
