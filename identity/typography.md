@@ -421,6 +421,8 @@ Accessible text and background color combinations are shown below:
 
 <div class="content-67 content-last">
 
+{::nomarkdown}
+
 <figure>
     <ul>
         <li class="type-color-combo__black-on-white">CFPB Black on White</li>
@@ -434,6 +436,8 @@ Accessible text and background color combinations are shown below:
     </ul>
 </figure>
 
+{:/nomarkdown}
+
 </div>
 
 <div class="content-33 content-first">
@@ -445,6 +449,8 @@ CFPB Black text and white text on gray, and gray text on white are _only accessi
 
 <div class="content-67 content-last">
 
+{::nomarkdown}
+
 <figure>
     <ul>
         <li class="type-color-combo__white-on-gray">White on Gray</li>
@@ -452,6 +458,8 @@ CFPB Black text and white text on gray, and gray text on white are _only accessi
         <li class="type-color-combo__gray-on-white">Gray on White</li>
     </ul>
 </figure>
+
+{:/nomarkdown}
 
 </div>
 
@@ -464,12 +472,16 @@ Never set CFPB Green web type on white combinations, as they are not accessible.
 
 <div class="content-67 content-last">
 
+{::nomarkdown}
+
 <figure>
     <ul>
         <li class="type-color-combo__white-on-green">White on Green</li>
         <li class="type-color-combo__green-on-white">Green on White</li>
     </ul>
 </figure>
+
+{:/nomarkdown}
 
 </div>
 
@@ -482,12 +494,16 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-67 content-last">
 
+{::nomarkdown}
+
 <figure>
     <ul>
         <li class="type-color-combo__black-on-green">Black on Green</li>
         <li class="type-color-combo__green-on-black">Green on Black</li>
     </ul>
 </figure>
+
+{:/nomarkdown}
 
 </div>
 
