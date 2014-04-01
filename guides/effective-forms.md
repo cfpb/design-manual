@@ -4,41 +4,155 @@ title:  Effective forms
 category: Guides
 ---
 
-
-##Order and layout
-
-**The order of the elements in a form is critical for the user understanding the form.** Think of your form as a narrative that you are walking your user through.
-
-**The most important items in the form should be listed first.** This can include login and contact information (e.g., name and email address) if it’s important to enable the user to come back if they don’t complete the form on the first pass.
-
-**Form elements should be grouped logically.** Similar items (e.g., all things related to identifying an individual financial institution) should be grouped together.
-
-**When your form has a lot of fields, chunk the fields into separate categories.** Those categories can then be divided by either separate headers or accordion-style modules depending on the purpose of the form (external form style vs application form style)
-
-**If the form stretches over multiple pages, indicate the user’s progress.** A left-hand list of steps/pages is included in the external form style for this purpose.
-
-**Use progressive disclosure.** If there are sections of the form that are optional, consider using a show/hide mechanism like an accordion module. If something is a followup question (e.g., “If you answered yes to the previous question…”) don’t show it at all until the user has met the condition requiring the follow-up.
+- [Order and layout](#order-and-layout)
+- [Clarity](#clarity)
+- [Validation](#validation)
+{: class="toc"}
 
 
-##Clarity
+## Order and layout
 
-**Wherever possible, use clear, concise, standard English.** Avoid jargon.
+<div class="content-100">
 
-**Keep labels short and simple.** If a longer label is needed, consider phrasing it as a question: “How many chucks did the woodchuck chuck?” rather than “Number of chucks chucked by woodchuck”
+<div class="content-33 content-first">
+	
+#### The order of the elements in a form is critical for the user understanding the form.
 
-**Helper text should appear below the text entry field, and provide an example of the correct way to enter text** (“e.g., 100 Main Street, Anytown, USA”). Do not hide this sort of helper text: it should always be visible, even before the user focuses on the form element (some users won’t select a field until they know their answer).
+Think of your form as a narrative that you are walking your user through.
 
-**If the most of the fields are required, leave them alone and just mark the optional fields as optional.** If most of the fields are optional, leave them alone and just mark the required fields as required. If it’s close to a tie, go with whichever choice might be better for your users.
+</div>
 
-**Helper text and/or field masking should be used whenever a specific data entry format is required,** as for phone numbers, dates, and social security numbers. Users should not have to guess and check this through validation.
+<div class="content-33">
+	
+#### The most important items in the form should be listed first.
 
-**Where the label is placed affects how quickly the user can read the form field.** Keeping labels to the left of the form field is the pattern that tends to work best for clearly indicating which label belongs to which field. 
+This can include login and contact information (e.g., name and email address) if it’s important to enable the user to come back if they don’t complete the form on the first pass.
 
-**To help clarify the association of a label with a form field, provide ample space and visual indication between separate form fields.** This will allow the user to quickly scan the text of the labels and easily associate each label with its field. Right-aligning label text can also be helpful, but it also has the negative effect of making labels harder to scan and can lead to very ragged text when translated to different languages.
+</div>
 
+<div class="content-33 content-last">
+	
+#### Form elements should be grouped logically.
 
+Similar items (e.g., all things related to identifying an individual financial institution) should be grouped together.
 
-##Validation
+</div>
+
+---
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### When your form has a lot of fields, chunk the fields into separate categories.
+
+Those categories can then be divided by either separate headers or accordion-style modules depending on the purpose of the form (external form style vs application form style)
+
+</div>
+
+<div class="content-33">
+	
+#### If the form stretches over multiple pages, indicate the user’s progress.
+
+A left-hand list of steps/pages is included in the external form style for this purpose.
+
+</div>
+
+<div class="content-33 content-last">
+	
+#### Use progressive disclosure.
+
+If there are sections of the form that are optional, consider using a show/hide mechanism like an accordion module. If something is a followup question (e.g., “If you answered yes to the previous question…”) don’t show it at all until the user has met the condition requiring the follow-up.
+
+</div>
+
+## Clarity
+
+<div class="content-33 content-first">
+	
+#### Wherever possible, use clear, concise, standard English.
+
+</div>
+
+<div class="content-67 content-last">
+	
+Avoid jargon.
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### Keep labels short and simple.
+
+</div>
+
+<div class="content-67 content-last">
+	
+If a longer label is needed, consider phrasing it as a question: “How many chucks did the woodchuck chuck?” rather than “Number of chucks chucked by woodchuck”
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### Helper text should appear below the text entry field, and provide an example of the correct way to enter text (“e.g., 100 Main Street, Anytown, USA”).
+
+</div>
+
+<div class="content-67 content-last">
+	
+Do not hide this sort of helper text: it should always be visible, even before the user focuses on the form element (some users won’t select a field until they know their answer).
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### If the most of the fields are required, leave them alone and just mark the optional fields as optional.
+
+</div>
+
+<div class="content-67 content-last">
+	
+If most of the fields are optional, leave them alone and just mark the required fields as required. If it’s close to a tie, go with whichever choice might be better for your users.
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### Helper text and/or field masking should be used whenever a specific data entry format is required,
+
+</div>
+
+<div class="content-67 content-last">
+	
+as for phone numbers, dates, and social security numbers. Users should not have to guess and check this through validation.
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### Where the label is placed affects how quickly the user can read the form field.
+
+</div>
+
+<div class="content-67 content-last">
+	
+Keeping labels to the left of the form field is the pattern that tends to work best for clearly indicating which label belongs to which field. 
+
+</div>
+
+<div class="content-33 content-first">
+	
+#### To help clarify the association of a label with a form field, provide ample space and visual indication between separate form fields.
+
+</div>
+
+<div class="content-67 content-last">
+	
+This will allow the user to quickly scan the text of the labels and easily associate each label with its field. Right-aligning label text can also be helpful, but it also has the negative effect of making labels harder to scan and can lead to very ragged text when translated to different languages.
+
+</div>
+
+## Validation
 
 **In an ideal world, the user enters an acceptable value in all the required fields the first time around, making validation unnecessary.** That should be your goal. 
 
