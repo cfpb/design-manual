@@ -18,8 +18,6 @@ category: Guides
 
 Think of your form as a narrative that you are walking your user through.
 
----
-
 </div>
 
 <div class="content-33">
@@ -28,8 +26,6 @@ Think of your form as a narrative that you are walking your user through.
 
 This can include login and contact information (e.g., name and email address) if it’s important to enable the user to come back if they don’t complete the form on the first pass.
 
----
-
 </div>
 
 <div class="content-33 content-last">
@@ -37,8 +33,6 @@ This can include login and contact information (e.g., name and email address) if
 #### Form elements should be grouped logically.
 
 Similar items (e.g., all things related to identifying an individual financial institution) should be grouped together.
-
----
 
 </div>
 
