@@ -12,6 +12,8 @@ category: Guides
 
 ## Order and layout
 
+<div class="content-100">
+
 <div class="content-33 content-first">
 	
 #### The order of the elements in a form is critical for the user understanding the form.
@@ -33,6 +35,10 @@ This can include login and contact information (e.g., name and email address) if
 #### Form elements should be grouped logically.
 
 Similar items (e.g., all things related to identifying an individual financial institution) should be grouped together.
+
+</div>
+
+---
 
 </div>
 
