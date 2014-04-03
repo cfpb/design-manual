@@ -70,13 +70,13 @@ If there are sections of the form that are optional, consider using a show/hide 
 
 <div class="content-33 content-first">
 	
-#### Wherever possible, use clear, concise, standard English.
+#### Avoid jargon.
 
 </div>
 
 <div class="content-67 content-last">
 	
-Avoid jargon.
+Wherever possible, use clear, concise, standard English.
 
 </div>
 
