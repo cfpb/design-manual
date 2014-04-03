@@ -69,7 +69,7 @@ Aesthetic integrity is not merely “attractiveness;” it implies the successfu
   
 </div>         
 
-<div class="content-50 content-first">
+<div class="content-33 content-first">
 
 #### Maintain consistency and clarity.
 
@@ -83,25 +83,48 @@ Maintaining consistency in design empowers users to seamlessly transfer their kn
      
 ## Design with data
           
+<div class="content-33 content-first">
+
 #### Honest, transparent design that wins the public’s trust.
-          
-Because the CFPB is a data-driven organization, quantitative measures of success should be integral
-to the design process. With the world’s information doubling
-          
-every two years, consumers often experience information overload and develop shorter attention spans. Furthermore, our ability to interpret visual information is greater than that of the written word. Succinct and compelling visualization of data and information gives data a voice and helps us clarify otherwise indigestible numbers. 
+
+</div>
+
+<div class="content-67 content-last">
+
+Because the CFPB is a data-driven organization, quantitative measures of success should be integral to the design process. With the world’s information doubling every two years, consumers often experience information overload and develop shorter attention spans. Furthermore, our ability to interpret visual information is greater than that of the written word. Succinct and compelling visualization of data and information gives data a voice and helps us clarify otherwise indigestible numbers. 
+
+</div>
 
 ## Inclusion and accessibility
           
+<div class="content-33 content-first">
+
 #### Design for the widest possible demographic with bias toward clear articulation, plain language, and intuitive design.
+
+</div>
+
+<div class="content-67 content-last">
+
+##### Inclusion
+
+It is easy to forget that the people most in need of the CFPB’s message are often the ones who are the most difficult to reach, whether it is because they have no exposure to financial language or simply don’t have access to the Internet. For this reason, we set the bar for clarity very high and aim to reach those most in need.
           
-Inclusion – It is easy to forget that the people most in need of the CFPB’s message are often the ones who are the most difficult to reach, whether
-          
-It is because they have no exposure to financial language or simply don’t have access to the Internet. For this reason, we set the bar for clarity very high and aim to reach those most in need.
-          
-Accessibility – We design to meet each consumer where he or she is. We are sensitive to experiential level, timing, and biases and aim to design experiences that are equally accessible to everyone, and equally empowering no matter what the user’s skill set or familiarity. Simple, clean designs are the most effective and wide-reaching.   
-          
+##### Accessibility
+
+We design to meet each consumer where he or she is. We are sensitive to experiential level, timing, and biases and aim to design experiences that are equally accessible to everyone, and equally empowering no matter what the user’s skill set or familiarity. Simple, clean designs are the most effective and wide-reaching.   
+
+</div>
+
 ## Coherent end-to-end user experience
-          
+
+<div class="content-33 content-first">
+
 #### Unify parts of the user experience and transition seamlessly between them.
-          
+
+</div>
+
+<div class="content-67 content-last">
+
 The best design guides the user’s experience from beginning-to-end and caters to his or her expectations. Navigation between sections should be intuitive and transitions should be seamless. Consistent quality and attention to detail are essential to maintain a cohesive user experience.  
+
+</div>
