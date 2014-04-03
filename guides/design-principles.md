@@ -5,8 +5,11 @@ category: Guides
 ---
 
 - [Public service, public trust](#public-service-public-trust)
-- [Clarity](#clarity)
-- [Validation](#validation)
+- [Give the user control](#give-the-user-control)
+- [Aesthetic integrity](#aesthetic-integrity)
+- [Design with data](#design-with-data)
+- [Inclusion and accessibility](#inclusion-and-accessibility)
+- [Coherent end-to-end user experience](#coherent-end-to-end-user-experience)
 {: class="toc"}
 
 <div class="content-67 content-first">
