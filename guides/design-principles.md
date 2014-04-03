@@ -4,9 +4,9 @@ title:  Design principles
 category: Guides
 ---
 
-\\- [Public service, public trust](#public-service-public-trust)
-\\- [Clarity](#clarity)
-\\- [Validation](#validation)
+- [Public service, public trust](#public-service-public-trust)
+- [Clarity](#clarity)
+- [Validation](#validation)
 {: class="toc"}
 
 <div class="content-67 content-first">
