@@ -4,9 +4,23 @@ title:  Design principles
 category: Guides
 ---
 
-These are the strategic underpinnings for the CFPB’s brand and experience.
-They should serve as the backbone for the user experience, at once inspiring
-and binding the design of the CFPB’s offerings.
+- [Public service, public trust](#public-service-public-trust)
+- [Clarity](#clarity)
+- [Validation](#validation)
+{: class="toc"}
+
+<div class="content-67 content-first">
+	
+These are the strategic underpinnings for the CFPB’s brand and experience. They should serve as the backbone for the user experience, at once inspiring and binding the design of the CFPB’s offerings.
+{: class="lead-in"}
+
+</div>
+
+<div class="content-33 content-last">
+	
+[Feature image?]
+
+</div>
 
 ## Public service, public trust
           
