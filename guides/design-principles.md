@@ -27,7 +27,7 @@ These are the strategic underpinnings for the CFPB’s brand and experience. The
 
 ## Public service, public trust
           
-**Honest, transparent design that wins the public’s trust.**
+#### Honest, transparent design that wins the public’s trust.
           
 We establish trust through clear, concise, and approachable design that is always consumer-driven. We demonstrate transparency through our user-friendly online experiences and tools and our dedication to open-source content. 
     
