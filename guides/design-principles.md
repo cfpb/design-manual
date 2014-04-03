@@ -39,7 +39,7 @@ We establish trust through clear, concise, and approachable design that is alway
 
 ## Give the user control
           
-**Design to empower users with information.**
+#### Design to empower users with information.
           
 The CFPB motivates consumers to take the control of their financial decision-making; our designs enable this process. Good design increases transparency and succinctly hands the user all the necessary information, giving consumers control of how they use it. To create an empowering product, designers must rely on introspection and research to discover what path users instinctively take and then cater to those instincts. 
   
