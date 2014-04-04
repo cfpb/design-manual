@@ -53,9 +53,9 @@ mainnav:
 - text: UI toolkit
   url: ui-toolkit/buttons.html
   internal: true
-- text: Downloads
-  url: downloads/style-guide.html
-  internal: true
+# - text: Downloads
+#   url: downloads/style-guide.html
+#   internal: true
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
@@ -152,22 +152,22 @@ secondarynav:
   url: ui-toolkit/tooltips.html
   internal: true
   category: UI toolkit
-- text: Brand 2.0 style guide
-  url: downloads/style-guide.html
-  internal: true
-  category: Downloads
-- text: Logo suite
-  url: downloads/logo-suite.html
-  internal: true
-  category: Downloads
-- text: Minicon font and assets
-  url: downloads/minicons.html
-  internal: true
-  category: Downloads
-- text: Grid and layout
-  url: ui-toolkit/grid-and-layout.html
-  internal: true
-  category: unpublished
+# - text: Brand 2.0 style guide
+#   url: downloads/style-guide.html
+#   internal: true
+#   category: Downloads
+# - text: Logo suite
+#   url: downloads/logo-suite.html
+#   internal: true
+#   category: Downloads
+# - text: Minicon font and assets
+#   url: downloads/minicons.html
+#   internal: true
+#   category: Downloads
+# - text: Grid and layout
+#   url: ui-toolkit/grid-and-layout.html
+#   internal: true
+#   category: unpublished
 
 
 # Footer Navigation
