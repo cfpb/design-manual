@@ -34,7 +34,9 @@ Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Me
 <div class="content-67 content-last">
 #### Call to action
 \[include image that sets the text at 14px, indicate 10 px 15 px padding]
+
 ---
+
 #### Destructive action
 \[include image that sets the text at 14px, indicate 10 px 15 px padding]
 </div>
@@ -50,13 +52,19 @@ Reserve warning and compound buttons for destructive and multiple actions, respe
 <div class="content-67 content-last">
 #### Primary
 \[include the dimensions here for small and big primary buttons]
+
 ---
+
 #### Secondary
 \[include the dimensions here for small and big primary buttons]
+
 ---
+
 #### Warning
 \[include the dimensions here for small and big primary buttons]
+
 ---
+
 #### Compound
 \[include the dimensions here for small and big primary buttons]
 </div>
