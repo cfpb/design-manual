@@ -2455,12 +2455,18 @@ figure {
    ========================================================================== */
 .demi-ex p {
   font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
 }
 .medium-ex p {
   font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 .regular-ex p {
   font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 h2.h2-ex {
   border-bottom: none;
