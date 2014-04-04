@@ -238,11 +238,15 @@ module.exports = function(grunt) {
     },
      
     watch: {
-       scripts: {
-         files: ['front/src/js/*.js','front/src/**/*.less'],
-         tasks: ['build']
+      scripts: {
+        files: ['front/src/js/*.js','front/src/**/*.less'],
+        tasks: ['build'],
+        options: {
+          spawn: false,
         }
       }
+    },
+
   });
 
   /**
