@@ -4,20 +4,44 @@ title:  Buttons
 category: UI toolkit
 ---
 
+- [Lockups](#lockups)
+- [Variations](#variations)
+- [Stylistic guidelines](#stylistic-guidelines)
+{: class="toc"}
+
+<div class="content-67 content-first">
+
 Buttons signal actions. They should be used sparingly; each additional button on a page reduces visual prominence of a call to action. Destructive actions should be reversible or alert the user to confirm the destructive action. 
+{: class="lead-in"}
 
 In contrast, [links] should lead users to another page or further information, or indicate a secondary destructive action.
+{: class="lead-in"}
 
-### Visual style
+</div>
+
+<div class="content-33 content-last">
+	
+[Feature image?]
+
+</div>
+
+## Visual style
+
+<div class="content-33 content-first">
 Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Medium at 14 px, sentence case, for button copy. Generous white space lends focus and makes buttons more actionable.
+</div>
 
 \[include image that sets the text at 14px, indicate 10 px 15 px padding]
+<div class="content-67 content-last">
+### Call to action
 
-#### Call to action
+---
 
-#### Destructive action
+### Destructive action
+</div>
 
-### Button types
+## Button types
+
 Use primary buttons for actions that go to the next step. Use secondary buttons for actions that happen on the current page. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.
 
 Reserve warning and compound buttons for destructive and multiple actions, respectively. 
