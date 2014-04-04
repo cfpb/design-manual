@@ -4,9 +4,11 @@ title:  Buttons
 category: UI toolkit
 ---
 
-- [Lockups](#lockups)
-- [Variations](#variations)
-- [Stylistic guidelines](#stylistic-guidelines)
+- [Visual style](#visual-style)
+- [Types](#button-types)
+- [Labels](#button-labels)
+- [Icons](#button-icons)
+- [States](#button-states)
 {: class="toc"}
 
 <div class="content-67 content-first">
