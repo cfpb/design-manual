@@ -69,28 +69,57 @@ Reserve warning and compound buttons for destructive and multiple actions, respe
 \[include the dimensions here for small and big primary buttons]
 </div>
 
-### Button labels
+## Button labels
+
+<div class="content-33 content-first">
 Use verbs and an active voice. Language should be clear, succinct, and informative. Avoid technical terms such as “form reset” and “submit.” Limit the copy length to 22 characters.
+</div>
 
-### Button icons
+<div class="content-67 content-last">
+[Add example content]
+</div>
+
+## Button icons
+
+<div class="content-33 content-first">
 Use icons consistently, or don’t use them at all. Each icon should be used exclusively for one action. Icons appear to the left of the button text. Buttons that have “forward” actions have icons to the right of the text, and those with “back” actions have icons to the left.
-\[insert CSS diagram]
+</div>
 
+<div class="content-67 content-last">
 #### Placement
 \[insert CSS diagram]
+</div>
 
-### Button states
+## Button states
+
+<div class="content-33 content-first">
+[Description here]
+</div>
+
+<div class="content-67 content-last">
+#### Normal
 \[insert CSS diagram]
 
-#### Normal
+---
 
 #### Hover
+\[insert CSS diagram]
+
+---
 
 #### Focus
+\[insert CSS diagram]
+
+---
 
 #### Active
+\[insert CSS diagram]
+
+---
 
 #### Disabled
+\[insert CSS diagram]
+</div>
 
 {::nomarkdown}
 {% include ui-toolkit/buttons/custom.html %}
