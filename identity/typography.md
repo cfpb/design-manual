@@ -445,19 +445,13 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 ## Print hierarchy
 
-This hierarchy should serve as a basis for 8.5 x 11” documents, but appropriate scaling should be explored for content of larger or smaller dimensions.
-
-<div class="content-33 content-first">
+<p>This hierarchy should serve as a basis for 8.5 x 11” documents, but appropriate scaling should be explored for content of larger or smaller dimensions.</p>
 
 ### Headers
 
-Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in two weights of Avenir Next Demi Bold and Medium.
+<p>Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in two weights of Avenir Next Demi Bold and Medium.</p>
 
-</div>
-
-<div class="content-67 content-last" id="print-hierarchy">
-
-<div class="content-25 content-first">
+<div class="content-33 content-first">
 
 #### Display
 
@@ -466,7 +460,7 @@ Avenir Next Medium<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <span class="superheader">Getting out of debt</span>
 
@@ -474,7 +468,7 @@ Avenir Next Medium<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 1
 
@@ -483,7 +477,7 @@ Avenir Next Medium<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h1>Getting out of debt</h1>
 
@@ -491,7 +485,7 @@ Avenir Next Medium<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 2
 
@@ -500,7 +494,7 @@ Avenir Next Demi Bold<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h2 class="h2-ex">Getting out of debt</h2>
 
@@ -508,7 +502,7 @@ Avenir Next Demi Bold<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 3
 
@@ -517,7 +511,7 @@ Avenir Next Demi Bold<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h3>Getting out of debt</h3>
 
@@ -525,7 +519,7 @@ Avenir Next Demi Bold<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 4
 
@@ -534,7 +528,7 @@ Avenir Next Medium<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h4 class="h4-print-ex">Getting out of debt</h4>
 
@@ -542,7 +536,7 @@ Avenir Next Medium<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 5
 
@@ -552,7 +546,7 @@ All caps
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h5>Getting out of debt</h5>
 
@@ -560,7 +554,7 @@ All caps
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 6
 
@@ -569,23 +563,15 @@ Avenir Next Medium<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h6>Getting out of debt</h6>
 
 </div>
 
-</div><!--/ .content-67 .content-last #print-hierarchy-->
-
-<div class="content-33 content-first">
-
 ### Body text
 
-</div>
-
-<div class="content-67 content-last">
-
-<div class="content-25 content-first">
+<div class="content-33 content-first">
 
 #### Subheader
 
@@ -594,7 +580,7 @@ Avenir Next Regular<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <p class="print-subheader">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
 
@@ -602,7 +588,7 @@ Avenir Next Regular<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Paragraph
 
@@ -611,7 +597,7 @@ Avenir Next Regular<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <p class="print-avenir-para">If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future. Evaluate the costs and risks involved in paying for school.</p>
 
@@ -619,7 +605,7 @@ Avenir Next Regular<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Paragraph
 
@@ -628,7 +614,7 @@ Georgia<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <p class="print-georgia-para">If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future. Evaluate the costs and risks involved in paying for school.</p>
 
@@ -636,7 +622,7 @@ Georgia<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Bulleted list
 
@@ -645,7 +631,7 @@ Avenir Next Regular<br/>
 
 </div>
 
-<div class="content-75 content-last print-ul">
+<div class="content-67 content-last print-ul">
 
 * Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
 
@@ -654,5 +640,4 @@ Avenir Next Regular<br/>
 * Use web school data and relevant financial factors to make a more informed decision for your future.
 
 </div>
-
-</div><!--/ .content-67 .content-last-->
+<!--/ .content-67 .content-last-->
