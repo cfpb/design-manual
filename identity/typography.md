@@ -39,7 +39,7 @@ A clear typographic hierarchy is critical to the effective communication of our 
 #### Avenir Next Demi Bold
 </div>
 
-<div class="content-67 content-last">
+<div class="content-67 content-last demi-ex">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
@@ -47,10 +47,9 @@ abcdefghijklmnopqrstuvwxyz
 
 0123456789
 
----
-
 </div>
 
+---
 
 <div class="content-25 content-first">
 #### Avenir Next Medium
