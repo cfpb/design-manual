@@ -32,31 +32,34 @@ Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Me
 </div>
 
 <div class="content-67 content-last">
-### Call to action
+#### Call to action
 \[include image that sets the text at 14px, indicate 10 px 15 px padding]
-
 ---
-
-### Destructive action
+#### Destructive action
 \[include image that sets the text at 14px, indicate 10 px 15 px padding]
-
 </div>
 
 ## Button types
 
+<div class="content-33 content-first">
 Use primary buttons for actions that go to the next step. Use secondary buttons for actions that happen on the current page. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.
 
 Reserve warning and compound buttons for destructive and multiple actions, respectively. 
+</div>
 
-\[include the dimensions here for small and big primary buttons]
-
+<div class="content-67 content-last">
 #### Primary
-
+\[include the dimensions here for small and big primary buttons]
+---
 #### Secondary
-
+\[include the dimensions here for small and big primary buttons]
+---
 #### Warning
-
+\[include the dimensions here for small and big primary buttons]
+---
 #### Compound
+\[include the dimensions here for small and big primary buttons]
+</div>
 
 ### Button labels
 Use verbs and an active voice. Language should be clear, succinct, and informative. Avoid technical terms such as “form reset” and “submit.” Limit the copy length to 22 characters.
