@@ -82,8 +82,6 @@ abcdefghijklmnopqrstuvwxyz
 
 </div>
 
-</div>
-
 <div class="content-33 content-first">
 
 ### Georgia
