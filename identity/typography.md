@@ -374,9 +374,7 @@ To ensure text remains compliant with WCA standards, use only these permitted co
 
 To learn more, refer to the [http://www.section508.gov](http://www.section508.gov).
 
-[This color contrast tool] is a useful resource for testing the compliance of any color combination.
-
-**Important note:** This CSS is dependent on using the standard CFPB web font code as seen in [web fonts] or [cfpb-bp]. It also assumes a base font-size of 16px (unchanged from the default in most browsers).
+[This color contrast tool](http://accessibility.oit.ncsu.edu/tools/color-contrast/) is a useful resource for testing the compliance of any color combination.
 
 </div>
 
