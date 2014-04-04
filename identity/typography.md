@@ -93,7 +93,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Georgia Regular
 </div>
 
-<div class="content-67 content-last demi-ex">
+<div class="content-67 content-last">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
