@@ -27,24 +27,19 @@ A clear typographic hierarchy is critical to the effective communication of our 
 
 ## Typefaces
 
-<div class="content-33 content-first">
-
 ### Avenir Next
 
-Avenir Next is the primary brand typeface and can be used across all formats from print to digital. Its round and geometric letterforms are approachable and modern.
+<p>Avenir Next is the primary brand typeface and can be used across all formats from print to digital. Its round and geometric letterforms are approachable and modern.</p>
 
-Avenir is great for titling, pull-quotes and lists, and in some cases can be used for lengthy body copy. Italics are included in the brand typography but should only be used on rare occasion, when necessary for grammatical accuracy.
+<p>Avenir is great for titling, pull-quotes and lists, and in some cases can be used for lengthy body copy. Italics are included in the brand typography but should only be used on rare occasion, when necessary for grammatical accuracy.</p>
 
-</div>
 
-<div class="content-67 content-last">
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
 #### Avenir Next Demi Bold
 </div>
 
-
-<div class="content-75 content-last demi-ex">
+<div class="content-67 content-last">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
@@ -52,9 +47,10 @@ abcdefghijklmnopqrstuvwxyz
 
 0123456789
 
+---
+
 </div>
 
----
 
 <div class="content-25 content-first">
 #### Avenir Next Medium
