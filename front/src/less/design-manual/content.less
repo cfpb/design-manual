@@ -278,17 +278,17 @@ figure {
          'dark-redorange';
 
 // Set up looping mixin
-.loop(@index) when (@index > 0) {
+.color-swatch-loop(@index) when (@index > 0) {
     // Retrieve the next variable name from the @colors array
     @name: e(extract(@colors, @index));
     // Output the `.swatch_field__color` rule
     .swatch_field__@{name} { background: @@name; }
     // Call the next iteration of the loop
-    .loop((@index - 1));
+    .color-swatch-loop((@index - 1));
 }
 
 // Initiate loop
-.loop( length(@colors) );
+.color-swatch-loop( length(@colors) );
 
 
 /* Diagrams for Identity/Typography page
@@ -369,6 +369,39 @@ figure {
     width: 80%;
   }
 }
+
+.minicon-scale-table {
+    th,
+    td {
+        border-left: 1px solid @gray-20;
+        text-align: center;
+
+        &:first-child {
+            border: none;
+        }
+    }
+    i {
+        display: block;
+        margin: 20px 20px 0;
+    }
+}
+
+@minicon-sizes: '16px', '20px', '25px', '30px', '40px',
+                '14pt', '21pt', '28pt', '36pt', '48pt';
+
+// Set up looping mixin
+.minicon-scale-loop(@index) when (@index > 0) {
+    // Retrieve the next variable name from the @colors array
+    @size: e(extract(@minicon-sizes, @index));
+    // Output the `.swatch_field__color` rule
+    .minicon-scale-@{size} { font-size: @size; }
+    // Call the next iteration of the loop
+    .minicon-scale-loop((@index - 1));
+}
+
+// Initiate loop
+.minicon-scale-loop( length(@minicon-sizes) );
+
 
 /* Typography page
    ========================================================================== */

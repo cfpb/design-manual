@@ -180,6 +180,13 @@ module.exports = function(grunt) {
             dest: 'assets/font/',
             filter: 'isFile'
           },
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/cf-icons/src/fonts/*'],
+            dest: 'assets/font/',
+            filter: 'isFile'
+          },
           /* Capital Framework Demos */
           {
             expand: true,
