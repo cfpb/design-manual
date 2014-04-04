@@ -29,11 +29,14 @@ A clear typographic hierarchy is critical to the effective communication of our 
 
 ### Avenir Next
 
+<div class="content-67 content-first">
 <p>Avenir Next is the primary brand typeface and can be used across all formats from print to digital. Its round and geometric letterforms are approachable and modern.</p>
 
 <p>Avenir is great for titling, pull-quotes and lists, and in some cases can be used for lengthy body copy. Italics are included in the brand typography but should only be used on rare occasion, when necessary for grammatical accuracy.</p>
+</div>
 
-
+<div class="content-33 content-last">
+</div>
 
 <div class="content-33 content-first">
 #### Avenir Next Demi Bold
