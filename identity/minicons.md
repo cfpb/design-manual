@@ -42,8 +42,38 @@ The following primary benchmark sizes should be used for web sizing:
 </div>
 
 <div class="content-67 content-last">
-	
-[Insert scale image here]
+
+<table class="minicon-scale-table">
+    <thead>
+        <th>16px</th>
+        <th>20px</th>
+        <th>25px</th>
+        <th>30px</th>
+        <th>40px</th>
+    </thead>
+    <tbody>
+        <td class="minicon-scale-16px">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+        <td class="minicon-scale-20px">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+        <td class="minicon-scale-25px">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+        <td class="minicon-scale-30px">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+        <td class="minicon-scale-40px">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+    </tbody>
+</table>
 
 </div>
 
@@ -61,8 +91,38 @@ The following primary benchmark sizes should be used for print sizing:
 </div>
 
 <div class="content-67 content-last">
-	
-[Insert scale image here]
+
+<table class="minicon-scale-table">
+    <thead>
+        <th>14pt</th>
+        <th>21pt</th>
+        <th>28pt</th>
+        <th>36pt</th>
+        <th>48pt</th>
+    </thead>
+    <tbody>
+        <td class="minicon-scale-14pt">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+        <td class="minicon-scale-21pt">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+        <td class="minicon-scale-28pt">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+        <td class="minicon-scale-36pt">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+        <td class="minicon-scale-48pt">
+            <i class="cf-icon cf-icon-loan"></i>
+            <i class="cf-icon cf-icon-loan-round"></i>
+        </td>
+    </tbody>
+</table>
 
 </div>
 

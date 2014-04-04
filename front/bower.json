@@ -27,6 +27,7 @@
       "cf-buttons": "git@github.com:cfpb/cf-buttons.git",
       "cf-typography": "git@github.com:cfpb/cf-typography.git",
       "cf-expandables": "git@github.com:cfpb/cf-expandables.git",
-      "cf-pagination": "git@github.com:cfpb/cf-pagination.git"
+      "cf-pagination": "git@github.com:cfpb/cf-pagination.git",
+      "cf-icons": "git@github.com:cfpb/cf-icons.git"
     }
 }
