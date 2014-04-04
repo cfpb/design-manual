@@ -27,15 +27,11 @@ A clear typographic hierarchy is critical to the effective communication of our 
 
 ## Typefaces
 
-<div class="content-33 content-first">
 ### Avenir Next
-</div>
 
-<div class="content-67 content-last">
 <p>Avenir Next is the primary brand typeface and can be used across all formats from print to digital. Its round and geometric letterforms are approachable and modern.</p>
 
 <p>Avenir is great for titling, pull-quotes and lists, and in some cases can be used for lengthy body copy. Italics are included in the brand typography but should only be used on rare occasion, when necessary for grammatical accuracy.</p>
-</div>
 
 <div class="content-33 content-first">
 #### Avenir Next Demi Bold
@@ -85,14 +81,9 @@ abcdefghijklmnopqrstuvwxyz
 
 ### Georgia
 
-<div class="content-75 content-first">
 <p>Georgia is the secondary brand typeface and is designed for digital executions. Its high x-height and round letterforms play nicely with Avenir Next. Georgia is well-suited for lengthy body copy. Bold is useful for highlighting or titling within body copy. The italic weights work nicely at a medium scale for pull-quotes or language with a human tone.</p>
 
 <p>Georgia should not be used for display type or large-scale typography.</p>
-</div>
-
-<div class="content-25 content-last">
-</div>
 
 <div class="content-33 content-first">
 #### Georgia Regular
