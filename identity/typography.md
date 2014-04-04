@@ -51,11 +51,11 @@ abcdefghijklmnopqrstuvwxyz
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
 #### Avenir Next Medium
 </div>
 
-<div class="content-75 content-last medium-ex">
+<div class="content-67 content-last medium-ex">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
@@ -67,11 +67,11 @@ abcdefghijklmnopqrstuvwxyz
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
 #### Avenir Next Regular
 </div>
 
-<div class="content-75 content-last regular-ex">
+<div class="content-67 content-last regular-ex">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
