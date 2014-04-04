@@ -85,9 +85,14 @@ abcdefghijklmnopqrstuvwxyz
 
 ### Georgia
 
+<div class="content-75 content-first">
 <p>Georgia is the secondary brand typeface and is designed for digital executions. Its high x-height and round letterforms play nicely with Avenir Next. Georgia is well-suited for lengthy body copy. Bold is useful for highlighting or titling within body copy. The italic weights work nicely at a medium scale for pull-quotes or language with a human tone.</p>
 
 <p>Georgia should not be used for display type or large-scale typography.</p>
+</div>
+
+<div class="content-25 content-last">
+</div>
 
 <div class="content-33 content-first">
 #### Georgia Regular
