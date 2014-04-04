@@ -31,13 +31,15 @@ In contrast, [links] should lead users to another page or further information, o
 Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Medium at 14 px, sentence case, for button copy. Generous white space lends focus and makes buttons more actionable.
 </div>
 
-\[include image that sets the text at 14px, indicate 10 px 15 px padding]
 <div class="content-67 content-last">
 ### Call to action
+\[include image that sets the text at 14px, indicate 10 px 15 px padding]
 
 ---
 
 ### Destructive action
+\[include image that sets the text at 14px, indicate 10 px 15 px padding]
+
 </div>
 
 ## Button types
