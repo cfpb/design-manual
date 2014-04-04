@@ -158,7 +158,7 @@ Avenir Next Regular<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 2
 
@@ -167,7 +167,7 @@ Avenir Next Regular<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h2 class="h2-ex">Getting out of debt</h2>
 
@@ -175,7 +175,7 @@ Avenir Next Regular<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 3
 
@@ -184,7 +184,7 @@ Avenir Next Regular<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h3>Getting out of debt</h3>
 
@@ -192,7 +192,7 @@ Avenir Next Regular<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 4
 
@@ -201,7 +201,7 @@ Avenir Next Medium<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h4>Getting out of debt</h4>
 
@@ -209,7 +209,7 @@ Avenir Next Medium<br/>
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 5
 
@@ -219,7 +219,7 @@ All caps
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h5>Getting out of debt</h5>
 
@@ -227,7 +227,7 @@ All caps
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Header 6
 
@@ -237,25 +237,20 @@ All caps
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 <h6>Getting out of debt</h6>
 
 </div>
 
-<div class="content-33 content-first">
 
 ### Body text
 
-Georgia should be used for the majority of body copy on the web. Avenir Next may be used for introductory or accent text. For example, Avenir is well-suited for use in tables or captions. 
+<p>Georgia should be used for the majority of body copy on the web. Avenir Next may be used for introductory or accent text. For example, Avenir is well-suited for use in tables or captions.</p>
 
-Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast. 
+<p>Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast.</p>
 
-</div>
-
-<div class="content-67 content-last">
-
-<div class="content-25 content-first">
+<div class="content-33 content-first">
 
 #### Body (sans-serif)
 
@@ -264,7 +259,7 @@ Avenir Next Regular<br/>
 
 </div>
 
-<div class="content-75 content-last regular-ex">
+<div class="content-67 content-last regular-ex">
 
 If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
 
@@ -272,7 +267,7 @@ If you have received financial aid offers, use this tool to compare school data 
 
 ---
 
-<div class="content-25 content-first">
+<div class="content-33 content-first">
     
 #### Body (serif)
 
@@ -281,11 +276,9 @@ Georgia Regular<br/>
 
 </div>
 
-<div class="content-75 content-last">
+<div class="content-67 content-last">
 
 If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
-
-</div>
 
 </div>
 
