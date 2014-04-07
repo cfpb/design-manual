@@ -3500,6 +3500,10 @@ figure {
   margin-bottom: 1em;
 }
 
+.content p {
+  max-width: 35em;
+}
+
 /* Tablet/netbook (768px) */
 
 /* Landscape tablet/netbook/laptop (1024px) */
@@ -3922,19 +3926,50 @@ figure {
 }
 
 .minicon-scale-table th,
-.minicon-scale-table td {
-  border-left: 1px solid #e3e4e5;
+.minicon-assets-table th,
+.minicon-scale-table td,
+.minicon-assets-table td {
+  border-left: 1px solid #f1f2f2;
   text-align: center;
+  padding: 0 5px;
 }
 
 .minicon-scale-table th:first-child,
-.minicon-scale-table td:first-child {
+.minicon-assets-table th:first-child,
+.minicon-scale-table td:first-child,
+.minicon-assets-table td:first-child {
   border: none;
 }
 
-.minicon-scale-table i {
+.minicon-scale-table th,
+.minicon-assets-table th {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .875em;
+}
+
+.minicon-scale-table i,
+.minicon-assets-table i {
   display: block;
   margin: 20px 20px 0;
+}
+
+.minicon-assets-table td {
+  padding-bottom: 20px;
+}
+
+.minicon-assets-table td p {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: .75em;
+  color: #919395;
+  padding-top: 2.5em;
+}
+
+.minicon-assets-table i {
+  font-size: 40px;
 }
 
 .minicon-scale-48pt {

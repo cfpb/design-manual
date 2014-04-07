@@ -102,6 +102,7 @@ figure {
       margin-bottom: 1em;
     }
 
+
     p {
       max-width: 35em;
     }
@@ -128,6 +129,7 @@ figure {
 @media only screen and (min-width: 100em) { 
 
 }
+
 
 .content {
 
@@ -373,22 +375,44 @@ figure {
   }
 }
 
-.minicon-scale-table {
-    th,
-    td {
-        border-left: 1px solid @gray-20;
-        text-align: center;
+.minicon-scale-table,
+.minicon-assets-table {
+  th,
+  td {
+    border-left: 1px solid @gray-10;
+    text-align: center;
+    padding: 0 5px;
 
-        &:first-child {
-            border: none;
-        }
+    &:first-child {
+        border: none;
     }
-    i {
-        display: block;
-        margin: 20px 20px 0;
-    }
+  }
+  th {
+    .webfont-demi;
+    font-size: .875em;
+  }
+  i {
+    display: block;
+    margin: 20px 20px 0;
+  }
 }
 
+.minicon-assets-table {
+  td {
+    padding-bottom: 20px;
+    p {
+      .webfont-regular;
+      font-size: .75em;
+      color: @gray-80;
+      padding-top: 2.5em;
+    }  
+  }
+  i {
+    font-size: 40px;
+  }
+}
+
+// MINICON SCALE TABLE
 @minicon-sizes: '16px', '20px', '25px', '30px', '40px',
                 '14pt', '21pt', '28pt', '36pt', '48pt';
 
@@ -404,7 +428,6 @@ figure {
 
 // Initiate loop
 .minicon-scale-loop( length(@minicon-sizes) );
-
 
 /* Typography page
    ========================================================================== */

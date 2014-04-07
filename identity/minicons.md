@@ -165,3 +165,96 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 </div>
 
 ## Asset library
+
+<div class="content-25 content-first">
+
+### Navigation
+
+</div>
+
+<div class="content-75 content-last">
+
+  <table class="minicon-assets-table">
+    <thead>
+      <th>left</th>
+      <th>right</th>
+      <th>up</th>
+      <th>down</th>
+    </thead>
+    <tbody>
+      <td>
+        <p>E000</p>
+        <i class="cf-icon cf-icon-left"></i>
+        <p>E001</p>
+        <i class="cf-icon cf-icon-left-round"></i>
+      </td>
+      <td>
+        <p>E002</p>
+        <i class="cf-icon cf-icon-right"></i>
+        <p>E003</p>
+        <i class="cf-icon cf-icon-right-round"></i>
+      </td>
+      <td>
+        <p>E004</p>
+        <i class="cf-icon cf-icon-up"></i>
+        <p>E005</p>
+        <i class="cf-icon cf-icon-up-round"></i>
+      </td>
+      <td>
+        <p>E006</p>
+        <i class="cf-icon cf-icon-down"></i>
+        <p>E007</p>
+        <i class="cf-icon cf-icon-down-round"></i>
+      </td>
+    </tbody>
+  </table>
+
+  ---
+
+  <table class="minicon-assets-table">
+    <thead>
+      <th>arrow-left</th>
+      <th>arrow-right</th>
+      <th>arrow-up</th>
+      <th>arrow-down</th>
+    </thead>
+    <tbody>
+      <td>
+        <p>E008</p>
+        <i class="cf-icon cf-icon-arrow-left"></i>
+        <p>E009</p>
+        <i class="cf-icon cf-icon-arrow-left-round"></i>
+      </td>
+      <td>
+        <p>E010</p>
+        <i class="cf-icon cf-icon-arrow-right"></i>
+        <p>E011</p>
+        <i class="cf-icon cf-icon-arrow-right-round"></i>
+      </td>
+      <td>
+        <p>E012</p>
+        <i class="cf-icon cf-icon-arrow-up"></i>
+        <p>E013</p>
+        <i class="cf-icon cf-icon-arrow-up-round"></i>
+      </td>          
+      <td>
+        <p>E000</p>
+        <i class="cf-icon cf-icon-arrow-down"></i>
+        <p>E001</p>
+        <i class="cf-icon cf-icon-arrow-down-round"></i>
+      </td>       
+    </tbody>
+  </table>
+</div>
+
+<div class="content-25 content-first">
+
+### Status
+
+</div>
+
+<div class="content-75 content-last">
+
+
+
+</div>
