@@ -3972,6 +3972,42 @@ figure {
   font-size: 40px;
 }
 
+.minicon-assets-div {
+  display: inline-block;
+  float: left;
+  width: 4.5em;
+  text-align: center;
+  border-left: 1px solid #f1f2f2;
+  padding: 0 5px;
+}
+
+.minicon-assets-div:first-child {
+  border: none;
+}
+
+.minicon-assets-div h6 {
+  font-family: "Avenir Next Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .875em;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+
+.minicon-assets-div p {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: .75em;
+  color: #919395;
+  padding-top: 2.5em;
+}
+
+.minicon-assets-div i {
+  font-size: 40px;
+}
+
 .minicon-scale-48pt {
   font-size: 48pt;
 }

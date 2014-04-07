@@ -412,6 +412,35 @@ figure {
   }
 }
 
+.minicon-assets-div {
+  display: inline-block;
+  float: left;
+  width: 4.5em;
+  text-align: center;
+  border-left: 1px solid @gray-10;
+  padding: 0 5px;
+
+  &:first-child {
+      border: none;
+  }
+  h6 {
+    .webfont-demi;
+    font-size: .875em;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    margin-bottom: 0
+  }
+  p {
+    .webfont-regular;
+    font-size: .75em;
+    color: @gray-80;
+    padding-top: 2.5em;
+  } 
+  i {
+    font-size: 40px;
+  }
+}
+
 // MINICON SCALE TABLE
 @minicon-sizes: '16px', '20px', '25px', '30px', '40px',
                 '14pt', '21pt', '28pt', '36pt', '48pt';
