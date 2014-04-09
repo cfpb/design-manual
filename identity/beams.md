@@ -95,7 +95,7 @@ especially well for horizontal layouts.
 
 <div class="content-25">
 
-#### Poor composition  
+<div class="warning">#### <i class="icon-remove-sign"></i> Poor composition</div>  
 
 Beams float in white space, leaving little room for content. No transparency used.
 
