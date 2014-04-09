@@ -299,8 +299,6 @@ Padding varies around minicons of various primary shapes. Square, vertically and
     <i class="cf-icon cf-icon-update-round"></i>
   </div>
 
-
-
 {:/nomarkdown}
 
 </div>

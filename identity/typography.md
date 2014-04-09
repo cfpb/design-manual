@@ -89,7 +89,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Georgia Regular
 </div>
 
-<div class="content-67 content-last">
+<div class="content-67 content-last georgia-ex">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
@@ -105,7 +105,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Georgia Regular Italic
 </div>
 
-<div class="content-67 content-last">
+<div class="content-67 content-last georgia-ex">
 
 <i>ABCDEFGHIJKLMNOPQRSTUVWXYZ</i>
 

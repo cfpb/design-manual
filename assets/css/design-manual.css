@@ -3446,6 +3446,13 @@ figure {
 }
 /* Typography page
    ========================================================================== */
+.demi-ex p,
+.medium-ex p,
+.regular-ex p,
+.georgia-ex p {
+  font-size: 1.125em;
+  letter-spacing: 3px;
+}
 .demi-ex p {
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
