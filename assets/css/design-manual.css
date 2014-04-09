@@ -3446,12 +3446,10 @@ figure {
 }
 /* Typography page
    ========================================================================== */
-.demi-ex p,
-.medium-ex p,
-.regular-ex p,
-.georgia-ex p {
+.abc p {
   font-size: 1.125em;
   letter-spacing: 3px;
+  margin-bottom: .5em;
 }
 .demi-ex p {
   font-family: "Avenir Next Demi", Arial, sans-serif;
@@ -3548,6 +3546,7 @@ p.print-georgia-para {
   font-weight: normal;
   font-size: 11pt;
   line-height: 14pt;
+  margin-bottom: 1em;
 }
 /* ==========================================================================
    CFPB Design Manual

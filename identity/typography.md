@@ -37,7 +37,7 @@ A clear typographic hierarchy is critical to the effective communication of our 
 #### Avenir Next Demi Bold
 </div>
 
-<div class="content-67 content-last demi-ex">
+<div class="content-67 content-last demi-ex abc">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
@@ -53,7 +53,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Avenir Next Medium
 </div>
 
-<div class="content-67 content-last medium-ex">
+<div class="content-67 content-last medium-ex abc">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
@@ -69,7 +69,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Avenir Next Regular
 </div>
 
-<div class="content-67 content-last regular-ex">
+<div class="content-67 content-last regular-ex abc">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
@@ -89,7 +89,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Georgia Regular
 </div>
 
-<div class="content-67 content-last georgia-ex">
+<div class="content-67 content-last georgia-ex abc">
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
@@ -105,7 +105,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Georgia Regular Italic
 </div>
 
-<div class="content-67 content-last georgia-ex">
+<div class="content-67 content-last georgia-ex abc">
 
 <i>ABCDEFGHIJKLMNOPQRSTUVWXYZ</i>
 
