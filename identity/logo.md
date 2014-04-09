@@ -275,9 +275,9 @@ to the required clear space.
 
 </div><!-- /.content-67 -->
 
-<div class="content-33 content-first">
+<div class="content-33 content-first warning">
 
-Don’t stretch or condense. This weakens the brand.
+<i class="cf-icon cf-icon-delete"></i> Don’t stretch or condense. This weakens the brand.
 
 </div><!-- /.content-33 -->
 
@@ -292,9 +292,9 @@ Don’t stretch or condense. This weakens the brand.
 
 </div><!-- /.content-67 -->
 
-<div class="content-33 content-first">
+<div class="content-33 content-first warning">
 
-Don’t apply a drop shadow.
+<i class="cf-icon cf-icon-delete"></i> Don’t apply a drop shadow.
 
 </div><!-- /.content-33 -->
 
@@ -306,9 +306,9 @@ Don’t apply a drop shadow.
 
 </div><!-- /.content-67 -->
 
-<div class="content-33 content-first">
+<div class="content-33 content-first warning">
 
-Don’t outline the logo or use other colors. This dilutes brand association.
+<i class="cf-icon cf-icon-delete"></i> Don’t outline the logo or use other colors. This dilutes brand association.
 
 </div><!-- /.content-33 -->
 
@@ -323,9 +323,9 @@ Don’t outline the logo or use other colors. This dilutes brand association.
 
 </div><!-- /.content-67 -->
 
-<div class="content-33 content-first">
+<div class="content-33 content-first warning">
 
-Don’t rotate the symbol. This changes the connotation of the light.
+<i class="cf-icon cf-icon-delete"></i> Don’t rotate the symbol. This changes the connotation of the light.
 
 </div><!-- /.content-33 -->
 
@@ -340,9 +340,9 @@ Don’t rotate the symbol. This changes the connotation of the light.
 
 </div><!-- /.content-67 -->
 
-<div class="content-33 content-first">
+<div class="content-33 content-first warning">
 
-Don’t place the logo directly on a colored background or photo without a white bounding box.
+<i class="cf-icon cf-icon-delete"></i> Don’t place the logo directly on a colored background or photo without a white bounding box.
 
 </div><!-- /.content-33 -->
 
