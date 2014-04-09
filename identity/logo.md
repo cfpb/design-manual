@@ -263,7 +263,7 @@ to the required clear space.
 
 <div class="content-33 content-first">
 
-<i class="icon-remove-sign warning"></i> Don’t remove the light beam. It is essential to the logo.
+<i class="cf-icon cf-icon-delete warning"></i> Don’t remove the light beam. It is essential to the logo.
 
 </div>
 
