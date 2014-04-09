@@ -95,7 +95,7 @@ especially well for horizontal layouts.
 
 <div class="content-25">
 
-<h4 class="warning"><i class="icon-remove-sign"></i> Poor composition</h4>  
+<h4 class="warning"><i class="cf-icon cf-icon-delete-round"></i> Poor composition</h4>  
 
 Beams float in white space, leaving little room for content. No transparency used.
 
@@ -109,7 +109,7 @@ Beams float in white space, leaving little room for content. No transparency use
 
 <div class="content-25">
 
-<h4 class="warning"><i class="icon-remove-sign"></i> Poor composition</h4>  
+<h4 class="warning"><i class="cf-icon cf-icon-delete-round"></i> Poor composition</h4>  
 
 All three beams layer in the same direction, weakening the beam metaphor.
 
