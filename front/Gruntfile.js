@@ -26,13 +26,6 @@ module.exports = function(grunt) {
 
 
     concat: {
-      main: {
-        src: [
-          'front/vendor/normalize.css/normalize.css',
-          'front/vendor/font-awesome/css/font-awesome.min.css'
-        ],
-        dest: 'assets/css/vendor.min.css',
-      },
       ltIE8: {
         src: [
           'front/vendor/font-awesome/css/font-awesome-ie7.min.css'
@@ -105,6 +98,10 @@ module.exports = function(grunt) {
     cssmin: {
       minify: {
         files: {
+          'assets/css/vendor.min.css': [
+            'front/vendor/normalize.css/normalize.css',
+            'front/vendor/font-awesome/css/font-awesome.css'
+          ],
           'assets/css/<%= pkg.name %>.min.css': ['assets/css/<%= pkg.name %>.css']
           /*'assets/css/<%= pkg.name %>.ie8.min.css': ['<%= pkg.name %>.ie8.css']*/
         }
@@ -166,7 +163,7 @@ module.exports = function(grunt) {
      * Copy: https://github.com/gruntjs/grunt-contrib-copy
      */
     copy: {
-            main: {
+      main: {
         files: [
           /* Vendor Packages */
           {
@@ -180,6 +177,13 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: ['front/vendor/font-awesome/font/*'],
+            dest: 'assets/font/',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: ['front/vendor/cf-icons/src/fonts/*'],
             dest: 'assets/font/',
             filter: 'isFile'
           },
@@ -241,11 +245,28 @@ module.exports = function(grunt) {
     },
      
     watch: {
-       scripts: {
-         files: ['front/src/js/*.js','front/src/**/*.less'],
-         tasks: ['build']
+      scripts: {
+        files: ['front/src/js/*.js','front/src/**/*.less'],
+        tasks: ['build'],
+        options: {
+          spawn: false,
         }
       }
+    },
+
+    topdoc: {
+      icons: {
+        options: {
+          source: 'assets/css/',
+          destination: '_includes/ui-toolkit/icons/',
+          template: 'front/topdoc-templates/icons/',
+          templateData: {
+            family: 'cf-icons'
+          }
+        }
+      }
+    },
+
   });
 
   /**

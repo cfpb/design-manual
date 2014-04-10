@@ -1,0 +1,9 @@
+='hi'
+each component in document.components
+	if(component.family == templateData.family)
+		if(!component.eof && component.patterns)
+			each pattern in component.patterns
+				if(pattern.name && pattern.markup)
+					div(class="minicon-assets-div")
+						h6=pattern.name
+						!=pattern.markup
