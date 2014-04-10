@@ -3,7 +3,7 @@ layout: page
 title:  Expandables
 category: UI toolkit
 ---
-
+{::nomarkdown}
 {% include ui-toolkit/expandables/custom.html %}
 
 
@@ -23,3 +23,4 @@ category: UI toolkit
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 </div>
+{:/nomarkdown}

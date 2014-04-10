@@ -25,7 +25,7 @@ An edited selection of our latest editorial photography is available at [flickr.
 </div>
 
 
-<h2 id="stylistic-guidelines">Stylistic guidelines</h2>
+## Stylistic guidelines
 
 <div class="content-33 content-first">
 

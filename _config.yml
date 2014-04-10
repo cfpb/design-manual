@@ -1,6 +1,6 @@
 # Base configuration
-permalink: /:title 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+permalink: /:title
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "front"]
 markdown: kramdown
 pygments: true
 
@@ -53,9 +53,9 @@ mainnav:
 - text: UI toolkit
   url: ui-toolkit/buttons.html
   internal: true
-- text: Downloads
-  url: downloads/style-guide.html
-  internal: true
+# - text: Downloads
+#   url: downloads/style-guide.html
+#   internal: true
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
@@ -79,45 +79,41 @@ secondarynav:
 - text: Filtering patterns
   url: guides/filtering-patterns.html
   internal: true
-  category: Guides  
+  category: Guides
 - text: UX checklist
   url: guides/ux-checklist.html
   internal: true
   category: Guides
-- text: Brand guidelines
-  url: identity/brand-guidelines.html
+- text: Logo
+  url: identity/logo.html
   internal: true
   category: Identity
-- text: Beams
-  url: identity/beams.html
-  internal: true
-  category: Identity
-- text: Color principles
+- text: Color
   url: identity/color-principles.html
   internal: true
   category: Identity
-- text: Illustration
-  url: identity/illustration.html
-  internal: true
-  category: Identity
-- text: Isocons
-  url: identity/isocons.html
-  internal: true
-  category: Identity
-- text: Logo
-  url: identity/logo.html
+- text: Typography
+  url: identity/typography.html
   internal: true
   category: Identity
 - text: Minicons
   url: identity/minicons.html
   internal: true
   category: Identity
+- text: Isocons
+  url: identity/isocons.html
+  internal: true
+  category: Identity
+- text: Illustration
+  url: identity/illustration.html
+  internal: true
+  category: Identity
+- text: Beam pattern
+  url: identity/beams.html
+  internal: true
+  category: Identity
 - text: Photography
   url: identity/photography.html
-  internal: true
-  category: Identity  
-- text: Typography principles
-  url: identity/typography.html
   internal: true
   category: Identity
 - text: Video
@@ -136,20 +132,8 @@ secondarynav:
   url: ui-toolkit/form-fields.html
   internal: true
   category: UI toolkit
-- text: Grid and layout
-  url: ui-toolkit/grid-and-layout.html
-  internal: true
-  category: UI toolkit
-- text: HTML elements
-  url: ui-toolkit/html-elements.html
-  internal: true
-  category: UI toolkit  
 - text: Links
   url: ui-toolkit/links.html
-  internal: true
-  category: UI toolkit
-- text: Markdown
-  url: ui-toolkit/markdown.html
   internal: true
   category: UI toolkit
 - text: Modals
@@ -168,22 +152,22 @@ secondarynav:
   url: ui-toolkit/tooltips.html
   internal: true
   category: UI toolkit
-- text: Typography
-  url: ui-toolkit/typography.html
-  internal: true
-  category: UI toolkit
-- text: Brand 2.0 style guide
-  url: downloads/style-guide.html
-  internal: true
-  category: Downloads
-- text: Logo suite
-  url: downloads/logo-suite.html
-  internal: true
-  category: Downloads
-- text: Minicon font and assets
-  url: downloads/minicons.html
-  internal: true
-  category: Downloads
+# - text: Brand 2.0 style guide
+#   url: downloads/style-guide.html
+#   internal: true
+#   category: Downloads
+# - text: Logo suite
+#   url: downloads/logo-suite.html
+#   internal: true
+#   category: Downloads
+# - text: Minicon font and assets
+#   url: downloads/minicons.html
+#   internal: true
+#   category: Downloads
+# - text: Grid and layout
+#   url: ui-toolkit/grid-and-layout.html
+#   internal: true
+#   category: unpublished
 
 
 # Footer Navigation

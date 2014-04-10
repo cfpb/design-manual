@@ -1,15 +1,27 @@
 ---
 layout: page
-title:  Color principles
+title:  Color
 category: Identity
 ---
 
-The primary color palette for the CFPB is green and black, including mid-tones and tints, and thoughtful use of whitespace.
+- [Palette](#palette)
+{: class="toc"}
 
-A minimal palette, clear hierarchy, good information design, and
-ample whitespace will ensure a voice of authority and expertise in communication.
+<div class="content-67 content-first">
+
+The primary color palette for the CFPB is green and black, including mid-tones and tints, and thoughtful use of whitespace.
+{: class="lead-in"}
+
+A minimal palette, clear hierarchy, good information design, and ample whitespace will ensure a voice of authority and expertise in communication.
+{: class="lead-in"}
+
+</div>
+
+<div class="content-33 content-last">
 
 ![Primary color palette]({{ site.baseurl }}/assets/img/color/Color0_@2.png "Primary color palette")
+
+</div>
 
 ## Palette
 
@@ -18,6 +30,7 @@ ample whitespace will ensure a voice of authority and expertise in communication
 The primary color palette for the CFPB is green and black,
 including midtones and tints, and thoughtful use of whitespace.
 
+{::nomarkdown}
 <!-- Copy the full `figure` block for each color -->
 <figure class="swatch swatch__primary">
     <div class="swatch_field swatch_field__green"></div> <!-- Update the color in the class name -->
@@ -123,6 +136,7 @@ including midtones and tints, and thoughtful use of whitespace.
         </table>
     </figcaption>
 </figure>
+{:/nomarkdown}
 
 
 ### Background colors
@@ -131,6 +145,7 @@ These colors are used primarily for background wells and fields.
 When alternating between tones, be sure to use enough tones
 providing enough contrast between adjacent wells.
 
+{::nomarkdown}
 <!-- Copy the full `figure` block for each color -->
 <figure class="swatch swatch__primary">
     <div class="swatch_field swatch_field__darkgray"></div> <!-- Update the color in the class name -->
@@ -314,6 +329,7 @@ providing enough contrast between adjacent wells.
         </table>
     </figcaption>
 </figure>
+{:/nomarkdown}
 
 
 ### Secondary colors
@@ -322,6 +338,7 @@ These colors are used primarily as accent colors, and
 should be used to add variety to page content and illustrations.
 They should never overpower the core brand colors.
 
+{::nomarkdown}
 <figure class="swatch swatch__primary">
     <div class="swatch_field swatch_field__redorange"></div> <!-- Update the color in the class name -->
     <figcaption class="swatch_label">
@@ -408,7 +425,7 @@ They should never overpower the core brand colors.
             <tbody>
                 <tr>
                     <th>HEX</th>
-                    <td>#E8A091</td> <!-- Update the hex code -->
+                    <td>#F6D9D3</td> <!-- Update the hex code -->
                 </tr>
                 <tr>
                     <th>RGB</th>
@@ -946,3 +963,4 @@ They should never overpower the core brand colors.
         </table>
     </figcaption>
 </figure>
+{:/nomarkdown}

@@ -13,19 +13,31 @@
   .column(12);
 
   .content-25,
-  .content-75 {
-    .column(12);
+  .content-75,
+  .content-33,
+  .content-67,
+  .content-50 {
     padding-bottom: 1em;
     padding-top: 1em;
   }
 
+  .content-25,
+  .content-75,
   .content-33,
   .content-67 {
     .column(12);
-    padding-bottom: 1em;
-    padding-top: 1em;
   }
 
+
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.warning {
+    color: @redorange;
 }
 
 
@@ -53,13 +65,10 @@
     /* Inner content - nested grid inside content */
     .content-25 {
       .column(3);
-      //Nested colums don't work yet, so pull the first col back 
-      border-left: 0;
     }
 
     .content-75 {
       .column(9);
-      border-right: 0;
     }
 
     /* Inner content - nested grid inside content */
@@ -71,6 +80,11 @@
       .column(8);
     }
 
+    /* Inner content - nested grid inside content */
+    .content-50 {
+      .column(6);
+    }
+
     //Nested colums don't work yet, so pull the first col back 
     .content-first {
       border-left: 0;
@@ -80,6 +94,14 @@
       border-right: 0;
     }
 
+    /* Rules between cols of content */
+
+
+    /* Rules between rows of content */
+    .content-row-rule {
+      border-bottom: 1px solid @gray-20;
+      margin-bottom: 1em;
+    }
   }
 
 }
@@ -110,7 +132,7 @@
     .clearfix();
     border-bottom: 1px solid @gray-20;
     /* The EM sizes are calculating to unexpected values - DM */
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     margin-bottom: 20px !important;
     //padding-bottom: unit( 16 / @base-font-size-px, em );
     //margin-bottom: unit( @base-line-height-px / @font-size, em );
@@ -255,28 +277,214 @@
          'teal', 'teal-80', 'teal-50', 'teal-20',
          'dark-redorange';
 
-// Need grunt-contrib-less .9 or higher for lenght to work
-// http://lesscss.org/functions/#list-functions
-@num_colors: length(@colors);
-
-/*
-.num-colors-test {
-  color: @num_colors;
-}
-*/
-
-.loop(@index) when (@index > 0) {
+// Set up looping mixin
+.color-swatch-loop(@index) when (@index > 0) {
     // Retrieve the next variable name from the @colors array
     @name: e(extract(@colors, @index));
     // Output the `.swatch_field__color` rule
-    .swatch_field__@{name} { background-color: @@name; }
+    .swatch_field__@{name} { background: @@name; }
     // Call the next iteration of the loop
-    .loop((@index - 1));
+    .color-swatch-loop((@index - 1));
 }
 
-// end the loop when index is 0
-.loop (0) {}
+// Initiate loop
+.color-swatch-loop( length(@colors) );
+
+
+/* Diagrams for Identity/Typography page
+   ========================================================================== */
+
+[class^="type-color-combo"] {
+    .h5; // See cf-typography.less
+    padding: 0.5em 1em;
+    list-style: none;
+}
+.type-color-combo__ {
+    &black-on-white {
+        border: 1px solid @gray-20;
+    }
+    &darkgray-on-white {
+        border: 1px solid @gray-20;
+        color: @darkgray;
+    }
+    &white-on-black {
+        background: @black;
+        color: @white;
+    }
+    &white-on-darkgray {
+        background: @darkgray;
+        color: @white;
+    }
+    &black-on-gray10 {
+        background: @gray-10;
+    }
+    &black-on-gray5 {
+        background: @gray-5;
+    }
+    &black-on-greenmid {
+        background: @green-midtone;
+    }
+    &black-on-greentint {
+        background: @green-tint;
+    }
+    &white-on-gray {
+        background: @gray;
+        color: @white;
+    }
+    &black-on-gray {
+        background: @gray;
+    }
+    &gray-on-white {
+        border: 1px solid @gray-20;
+        color: @gray;
+    }
+    &white-on-green {
+        background: @green;
+        color: @white;
+    }
+    &green-on-white {
+        border: 1px solid @green-tint;
+        color: @green;
+    }
+    &black-on-green {
+        background: @green;
+        color: @black;
+    }
+    &green-on-black {
+        background: @black;
+        color: @green;
+    }
+}
+
+/* Identity/Isocons page
+   ========================================================================== */
+
+/*#isocon-assets .content-25 {
+  border-right: 1px solid @gray-10;
+}*/
+
+#isocon-assets {
+  img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+.minicon-scale-table {
+    th,
+    td {
+        border-left: 1px solid @gray-20;
+        text-align: center;
+
+        &:first-child {
+            border: none;
+        }
+    }
+    i {
+        display: block;
+        margin: 20px 20px 0;
+    }
+}
+
+@minicon-sizes: '16px', '20px', '25px', '30px', '40px',
+                '14pt', '21pt', '28pt', '36pt', '48pt';
+
+// Set up looping mixin
+.minicon-scale-loop(@index) when (@index > 0) {
+    // Retrieve the next variable name from the @colors array
+    @size: e(extract(@minicon-sizes, @index));
+    // Output the `.swatch_field__color` rule
+    .minicon-scale-@{size} { font-size: @size; }
+    // Call the next iteration of the loop
+    .minicon-scale-loop((@index - 1));
+}
 
 // Initiate loop
-//.loop( length(@colors) );
-.loop(@num_colors);
+.minicon-scale-loop( length(@minicon-sizes) );
+
+
+/* Typography page
+   ========================================================================== */
+
+.demi-ex {
+  p {
+    .webfont-demi;
+  }
+}
+.medium-ex {
+  p {
+    .webfont-medium;
+  }
+}
+.regular-ex {
+  p {
+    .webfont-regular;
+  }
+}
+
+h2.h2-ex {
+  border-bottom: none;
+}
+
+#print-hierarchy {
+  .superheader {
+    .webfont-medium;
+    font-size: 60pt;
+    line-height: 66pt;
+  }
+  h1 {
+    .webfont-medium;
+    font-size: 38pt;
+    line-height: 40pt;
+  }
+  h2 {
+    .webfont-demi;
+    font-size: 18pt;
+    line-height: 20pt;
+  }
+  h3{
+    .webfont-demi;
+    font-size: 16pt;
+    line-height: 18pt;
+  }
+  h4.h4-print-ex {
+    .webfont-medium;
+    font-size: 14pt;
+    line-height: 16pt;
+  }
+  h5 {
+    .webfont-demi;
+    font-size: 10pt;
+    line-height: 12pt;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+  }
+  h6 {
+    .webfont-medium;
+    font-size: 12pt;
+    line-height: 14pt;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+}
+p.print-subheader {
+  .webfont-regular;
+  font-size: 18pt;
+  line-height: 22pt;
+}
+p.print-avenir-para {
+  .webfont-regular;
+  font-size: 11pt;
+  line-height: 16pt;
+}
+p.print-georgia-para {
+  font-size: 11pt;
+  line-height: 16pt;
+}
+.print-ul ul li p {
+  .webfont-regular;
+  font-size: 11pt;
+  line-height: 14pt;
+}
+
+
