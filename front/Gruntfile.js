@@ -254,6 +254,19 @@ module.exports = function(grunt) {
       }
     },
 
+    topdoc: {
+      icons: {
+        options: {
+          source: 'assets/css/',
+          destination: '_includes/ui-toolkit/icons/',
+          template: 'front/topdoc-templates/icons/',
+          templateData: {
+            family: 'cf-icons'
+          }
+        }
+      }
+    },
+
   });
 
   /**
