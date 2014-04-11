@@ -258,7 +258,7 @@ module.exports = function(grunt) {
       icons: {
         options: {
           source: 'assets/css/',
-          destination: '_includes/ui-toolkit/icons/',
+          destination: '_includes/identity/icons/',
           template: 'front/topdoc-templates/icons/',
           templateData: {
             family: 'cf-icons'
