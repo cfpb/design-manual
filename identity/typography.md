@@ -303,19 +303,28 @@ Typography should be set flush left. This provides the eye a constant starting p
 
 <div class="content-33 content-first">
 
-### Spacing
-
-White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. 
-
-When setting headers and body copy, the white space should be 15px, 20px, or 30px.
-
----
-
 ### Line height
 
 Ample space between lines of type promotes an open feeling and lends flow to body copy. 
 
 When setting body copy, the leading should be 1.375 times the type size, or 37.5% larger.
+
+</div>
+
+<div class="content-67 content-last">
+
+![Alignment]({{ site.baseurl }}/assets/img/typography/Typography_typesetting02_@2.png "Alignment")
+
+---
+</div>
+
+<div class="content-33 content-first">
+
+### Spacing
+
+White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. 
+
+When setting headers and body copy, the white space should be 15px, 20px, or 30px.
 
 ---
 
