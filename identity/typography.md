@@ -298,8 +298,9 @@ Typography should be set flush left. This provides the eye a constant starting p
 
 ![Alignment]({{ site.baseurl }}/assets/img/typography/Typography_typesetting01_@2.png "Alignment")
 
----
 </div>
+
+---
 
 <div class="content-33 content-first">
 
@@ -315,8 +316,9 @@ When setting body copy, the leading should be 1.375 times the type size, or 37.5
 
 ![Alignment]({{ site.baseurl }}/assets/img/typography/Typography_typesetting02_@2.png "Alignment")
 
----
 </div>
+
+---
 
 <div class="content-33 content-first">
 
