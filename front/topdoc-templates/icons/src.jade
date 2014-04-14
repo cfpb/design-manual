@@ -1,0 +1,22 @@
+//- 
+
+//- After creating the list of components containing markup examples
+//- loop through them again so that we can render its patterns.
+each component in componentsWithMarkup
+  
+  = '\n'
+  h1.icon-set-heading
+    = component.name.trim()
+  = '\n'
+
+  each pattern in component.patterns
+
+    //- Only render a pattern containing a name and markup.
+    if (pattern.name && pattern.markup)
+      div.icon
+        p.icon-name
+          = pattern.name.trim()
+        div.icon-markup
+          != '\n' + pattern.markup.trim()
+      = '\n'
+

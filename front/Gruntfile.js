@@ -33,6 +33,13 @@ module.exports = function(grunt) {
         // Using .min keeps topdoc from rendering it as a demo page
         dest: 'assets/css/vendor.lt-ie9.min.css',
       },
+      topdocIcons: {
+        src: [
+          'front/topdoc-templates/includes/filter-components-without-markup.jade',
+          'front/topdoc-templates/icons/src.jade'
+        ],
+        dest: 'front/topdoc-templates/icons/index.jade',
+      }
     },
 
 
@@ -259,7 +266,7 @@ module.exports = function(grunt) {
         options: {
           source: 'assets/css/',
           destination: '_includes/ui-toolkit/icons/',
-          template: 'front/topdoc-templates/icons/',
+          template: 'front/topdoc-templates/icons/index.jade',
           templateData: {
             family: 'cf-icons'
           }
@@ -290,7 +297,7 @@ module.exports = function(grunt) {
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('build', ['concat', 'less', 'autoprefixer', 'legacssy', 'cssmin', 'uglify', 'copy']);
+  grunt.registerTask('build', ['concat', 'less', 'autoprefixer', 'legacssy', 'cssmin', 'uglify', 'copy', 'topdoc']);
   grunt.registerTask('default', ['build']);
 
 };
