@@ -5,7 +5,7 @@
 each component in componentsWithMarkup
   
   = '\n'
-  h1.icon-set-heading
+  h3
     = component.name.trim()
   = '\n'
 
@@ -13,10 +13,9 @@ each component in componentsWithMarkup
 
     //- Only render a pattern containing a name and markup.
     if (pattern.name && pattern.markup)
-      div.icon
-        p.icon-name
+      div.minicon-assets-div
+        h6
           = pattern.name.trim()
-        div.icon-markup
-          != '\n' + pattern.markup.trim()
+        != '\n' + pattern.markup.trim()
       = '\n'
 
