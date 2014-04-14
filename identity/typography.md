@@ -292,7 +292,16 @@ Readable text allows users to efficiently read and take in textual information. 
 
 Typography should be set flush left. This provides the eye a constant starting point for each line, making text easier to read.
 
+</div>
+
+<div class="content-67 content-last">
+
+If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
+
 ---
+</div>
+
+<div class="content-33 content-first">
 
 ### Spacing
 
