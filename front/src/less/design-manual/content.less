@@ -40,7 +40,6 @@ figure {
     color: @redorange;
 }
 
-
 /* Media Queries
    ========================================================================== */
 
@@ -102,6 +101,11 @@ figure {
       border-bottom: 1px solid @gray-20;
       margin-bottom: 1em;
     }
+
+
+    p {
+      max-width: 35em;
+    }
   }
 
 }
@@ -125,6 +129,7 @@ figure {
 @media only screen and (min-width: 100em) { 
 
 }
+
 
 .content {
 
@@ -190,7 +195,7 @@ figure {
 
   }
   p {
-    font-family: @serif;
+    font-family: @serif;    
   }
 
   .lead-in {
@@ -370,22 +375,72 @@ figure {
   }
 }
 
-.minicon-scale-table {
-    th,
-    td {
-        border-left: 1px solid @gray-20;
-        text-align: center;
+.minicon-scale-table,
+.minicon-assets-table {
+  th,
+  td {
+    border-left: 1px solid @gray-10;
+    text-align: center;
+    padding: 0 5px;
 
-        &:first-child {
-            border: none;
-        }
+    &:first-child {
+        border: none;
     }
-    i {
-        display: block;
-        margin: 20px 20px 0;
-    }
+  }
+  th {
+    .webfont-demi;
+    font-size: .875em;
+  }
+  i {
+    display: block;
+    margin: 20px 20px 0;
+  }
 }
 
+.minicon-assets-table {
+  td {
+    padding-bottom: 20px;
+    p {
+      .webfont-regular;
+      font-size: .75em;
+      color: @gray-80;
+      padding-top: 2.5em;
+    }  
+  }
+  i {
+    font-size: 40px;
+  }
+}
+
+.minicon-assets-div {
+  display: inline-block;
+  width: 4.5em;
+  text-align: center;
+  border-left: 1px solid @gray-10;
+  padding: 0 5px;
+
+  &:first-child {
+      border: none;
+  }
+  h6 {
+    .webfont-demi;
+    font-size: .875em;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    margin-bottom: 0
+  }
+  p {
+    .webfont-regular;
+    font-size: .75em;
+    color: @gray-80;
+    padding-top: 2.5em;
+  } 
+  i {
+    font-size: 40px;
+  }
+}
+
+// MINICON SCALE TABLE
 @minicon-sizes: '16px', '20px', '25px', '30px', '40px',
                 '14pt', '21pt', '28pt', '36pt', '48pt';
 
@@ -402,9 +457,15 @@ figure {
 // Initiate loop
 .minicon-scale-loop( length(@minicon-sizes) );
 
-
 /* Typography page
    ========================================================================== */
+.abc {
+  p {
+    font-size: 1.125em;
+    letter-spacing: 3px;
+    margin-bottom: .5em;
+  }
+}
 
 .demi-ex {
   p {
@@ -485,6 +546,7 @@ p.print-georgia-para {
   .webfont-regular;
   font-size: 11pt;
   line-height: 14pt;
+  margin-bottom: 1em;
 }
 
 

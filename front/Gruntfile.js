@@ -265,7 +265,7 @@ module.exports = function(grunt) {
       icons: {
         options: {
           source: 'assets/css/',
-          destination: '_includes/ui-toolkit/icons/',
+          destination: '_includes/identity/icons/',
           template: 'front/topdoc-templates/icons/index.jade',
           templateData: {
             family: 'cf-icons'
