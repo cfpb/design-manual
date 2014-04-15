@@ -358,8 +358,21 @@ When setting headers and body copy, the white space should be 15px, 20px, or 30p
 
 <div class="content-67 content-last">
 
-![Typesetting]({{ site.baseurl }}/assets/img/typography/Typography1a_typesetting_PLACEHOLDER.png "Typesetting")
-![Typesetting]({{ site.baseurl }}/assets/img/typography/Typography1b_typesetting_PLACEHOLDER.png "Typesetting")
+<div class="content-50 content-first">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_display_@2.png "Spacing for Display header")
+</div>
+
+<div class="content-50 content-last">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header1_@2.png "Spacing for Header 1")
+</div>
+
+<div class="content-50 content-first">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header2_@2.png "Spacing for Header 2")
+</div>
+
+<div class="content-50 content-last">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header3_@2.png "Spacing for Header 3")
+</div>
 
 </div>
 
