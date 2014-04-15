@@ -219,24 +219,15 @@ This library comprises all currently approved isocons and will continue to expan
 </div>
 <div class="content-25">
 
-#### Mortgage
+#### Owning a home
 
-![Mortgage isocon]({{ site.baseurl }}/assets/img/isocons/Isocons13.png "Mortgage isocon")
+![Owning a home isocon]({{ site.baseurl }}/assets/img/isocons/Isocons26.png "Owning a home")
 </div>
 <div class="content-25 content-last">
 
 #### News
 
 ![News isocon]({{ site.baseurl }}/assets/img/isocons/Isocons10.png "News isocon")
-</div>
-
-</div><!-- .content-row-rule -->
-
-<div class="content-25 content-first">
-
-#### Owning a home
-
-![Owning a home isocon]({{ site.baseurl }}/assets/img/isocons/Isocons26.png "Owning a home")
 </div>
 
 </div> <!-- #isocon-assets -->
