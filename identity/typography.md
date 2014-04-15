@@ -331,19 +331,29 @@ When setting body copy, the leading should be 1.375 times the type size, or 37.5
 
 <div class="content-33 content-first">
 
-### Spacing
-
-White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. 
-
-When setting headers and body copy, the white space should be 15px, 20px, or 30px.
-
----
-
 ### Line length
 
 Comfortable line length allows the user’s eyes to flow easily from the end of one line to the beginning of the next.
 
 For a single column of text, line length should be an average of 66 characters per line, including spaces, but may range from 50 to 75 characters.
+
+</div>
+
+<div class="content-67 content-last">
+
+![Line length]({{ site.baseurl }}/assets/img/typography/Typography_typesetting04_@2.png "Line length example")
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+
+### Spacing
+
+White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. 
+
+When setting headers and body copy, the white space should be 15px, 20px, or 30px.
 
 </div>
 
