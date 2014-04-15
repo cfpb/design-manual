@@ -314,7 +314,16 @@ When setting body copy, the leading should be 1.375 times the type size, or 37.5
 
 <div class="content-67 content-last">
 
-![Alignment]({{ site.baseurl }}/assets/img/typography/Typography_typesetting02_@2.png "Alignment")
+<div class="content-50 content-first">
+#### Font size: 26px
+
+![Line height example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting02_@2.png "Line height of 36px for 26px font size")
+</div>
+<div class="content-50 content-last">
+#### Font size: 16px
+
+![Line height example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting03_@2.png "Line height of 22px for 16px font size")
+</div>
 
 </div>
 
