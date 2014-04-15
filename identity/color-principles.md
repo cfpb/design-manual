@@ -27,8 +27,7 @@ A minimal palette, clear hierarchy, good information design, and ample whitespac
 
 ### Primary colors
 
-The primary color palette for the CFPB is green and black,
-including midtones and tints, and thoughtful use of whitespace.
+<p>The primary color palette for the CFPB is green and black, including midtones and tints, and thoughtful use of whitespace.</p>
 
 {::nomarkdown}
 <!-- Copy the full `figure` block for each color -->
@@ -141,9 +140,7 @@ including midtones and tints, and thoughtful use of whitespace.
 
 ### Background colors
 
-These colors are used primarily for background wells and fields.
-When alternating between tones, be sure to use enough tones
-providing enough contrast between adjacent wells.
+<p>These colors are used primarily for background wells and fields. When alternating between tones, be sure to use enough tones providing enough contrast between adjacent wells.</p>
 
 {::nomarkdown}
 <!-- Copy the full `figure` block for each color -->
@@ -334,9 +331,7 @@ providing enough contrast between adjacent wells.
 
 ### Secondary colors
 
-These colors are used primarily as accent colors, and
-should be used to add variety to page content and illustrations.
-They should never overpower the core brand colors.
+<p>These colors are used primarily as accent colors, and should be used to add variety to page content and illustrations. They should never overpower the core brand colors.</p>
 
 {::nomarkdown}
 <figure class="swatch swatch__primary">
