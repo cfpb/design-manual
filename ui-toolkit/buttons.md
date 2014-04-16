@@ -14,7 +14,7 @@ category: UI toolkit
 Buttons signal actions. They should be used sparingly; each additional button on a page reduces visual prominence of a call to action. Destructive actions should be reversible or alert the user to confirm the destructive action. 
 {: class="lead-in"}
 
-In contrast, [links] should lead users to another page or further information, or indicate a secondary destructive action.
+In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lead users to another page or further information, or indicate a secondary destructive action.
 {: class="lead-in"}
 
 </div>
