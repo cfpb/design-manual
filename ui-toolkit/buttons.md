@@ -4,9 +4,9 @@ title:  Buttons
 category: UI toolkit
 ---
 
-- [Visual style](#visual-style)
-- [Types](#button-types)
-- [Labels](#button-labels)
+- [Style](#visual-style)
+- [States](#button-types)
+- [Variations](#button-labels)
 - [Icons](#button-icons)
 - [States](#button-states)
 {: class="toc"}
@@ -27,49 +27,33 @@ In contrast, [links] should lead users to another page or further information, o
 
 </div>
 
-## Visual style
+## Style
+
+<p>Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Medium at 14 px, sentence case, for button copy. Generous white space lends focus and makes buttons more actionable.</p>
 
 <div class="content-33 content-first">
-Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Medium at 14 px, sentence case, for button copy. Generous white space lends focus and makes buttons more actionable.
-</div>
+### Primary buttons
 
-<div class="content-67 content-last">
-#### Call to action
-\[include image that sets the text at 14px, indicate 10 px 15 px padding]
-
----
-
-#### Destructive action
-\[include image that sets the text at 14px, indicate 10 px 15 px padding]
-</div>
-
-## Button types
-
-<div class="content-33 content-first">
-Use primary buttons for actions that go to the next step. Use secondary buttons for actions that happen on the current page. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.
-
-Reserve warning and compound buttons for destructive and multiple actions, respectively. 
+<p>Use primary buttons for actions that go to the next step. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.</p>
 </div>
 
 <div class="content-67 content-last">
 #### Primary
-\[include the dimensions here for small and big primary buttons]
-
+\[include the dimensions here for primary buttons]
 ---
-
-#### Secondary
-\[include the dimensions here for small and big primary buttons]
-
----
-
-#### Warning
-\[include the dimensions here for small and big primary buttons]
-
----
-
-#### Compound
-\[include the dimensions here for small and big primary buttons]
 </div>
+
+<div class="content-33 content-first">
+### Secondary buttons
+
+<p>Use secondary buttons for actions that happen on the current page.</p>
+</div>
+
+<div class="content-67 content-last">
+\[include the dimensions here for secondary buttons]
+---
+</div>
+
 
 ## Button labels
 
@@ -79,6 +63,30 @@ Use verbs and an active voice. Language should be clear, succinct, and informati
 
 <div class="content-67 content-last">
 [Add example content]
+</div>
+
+## Variations
+
+<div class="content-67 content-last">
+#### Call to action
+\[include image that sets the text at 14px, indicate 10 px 15 px padding]
+
+---
+
+#### Destructive action
+\[include image that sets the text at 14px, indicate 10 px 15 px padding]
+
+---
+
+<p>Reserve warning and compound buttons for destructive and multiple actions, respectively.</p>
+
+#### Warning
+\[include the dimensions here for small and big primary buttons]
+
+---
+
+#### Compound
+\[include the dimensions here for small and big primary buttons]
 </div>
 
 ## Button icons
