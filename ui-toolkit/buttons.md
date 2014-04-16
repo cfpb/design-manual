@@ -4,11 +4,9 @@ title:  Buttons
 category: UI toolkit
 ---
 
-- [Style](#visual-style)
-- [States](#button-types)
-- [Variations](#button-labels)
-- [Icons](#button-icons)
-- [States](#button-states)
+- [Style](#style)
+- [States](#states)
+- [Variations](#variations)
 {: class="toc"}
 
 <div class="content-67 content-first">
@@ -69,7 +67,7 @@ In contrast, [links] should lead users to another page or further information, o
 \[Add example content]
 </div>
 
-## Button states
+## States
 
 <div class="content-67 content-first">
 #### Normal
@@ -95,7 +93,7 @@ In contrast, [links] should lead users to another page or further information, o
 
 <div class="content-67 content-first">
 #### Focus
-<p>[Description here]</p>
+<p>Use Pacific Blue 80% for <code>background-color</code>.</p>
 </div>
 
 <div class="content-33 content-last">
@@ -106,7 +104,7 @@ In contrast, [links] should lead users to another page or further information, o
 
 <div class="content-67 content-first">
 #### Active
-<p>[Description here]</p>
+<p>Use Navy 80% for <code>background-color</code>.</p>
 </div>
 
 <div class="content-33 content-last">
@@ -117,7 +115,7 @@ In contrast, [links] should lead users to another page or further information, o
 
 <div class="content-67 content-first">
 #### Disabled
-<p>[Description here]</p>
+<p>Use Gray 20% for <code>background-color</code>, Gray text, and cursor shoudl be set to <code>not-allowed</code>.</p>
 </div>
 
 <div class="content-33 content-last">
