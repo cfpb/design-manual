@@ -30,6 +30,7 @@ In contrast, [links] should lead users to another page or further information, o
 ## Style
 
 <div class="content-33 content-first">
+### Primary and Secondary buttons
 <p>Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Medium at 14 px, sentence case, for button copy. Generous white space lends focus and makes buttons more actionable.</p>
 </div>
 
@@ -55,17 +56,72 @@ In contrast, [links] should lead users to another page or further information, o
 \[include the dimensions here for secondary buttons]
 </div>
 
+---
+
 </div>
 
-
-## Button labels
-
 <div class="content-33 content-first">
-Use verbs and an active voice. Language should be clear, succinct, and informative. Avoid technical terms such as “form reset” and “submit.” Limit the copy length to 22 characters.
+### Labels
+<p>Use verbs and an active voice. Language should be clear, succinct, and informative. Avoid technical terms such as “form reset” and “submit.” Limit the copy length to 22 characters.</p>
 </div>
 
 <div class="content-67 content-last">
-[Add example content]
+\[Add example content]
+</div>
+
+## Button states
+
+<div class="content-67 content-first">
+#### Normal
+<p>[Description here]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Hover
+<p>[Description here]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Focus
+<p>[Description here]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Active
+<p>[Description here]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Disabled
+<p>[Description here]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
 </div>
 
 ## Variations
@@ -103,36 +159,6 @@ Use icons consistently, or don’t use them at all. Each icon should be used exc
 \[insert CSS diagram]
 </div>
 
-## Button states
-
-<div class="content-33 content-first">
-[Description here]
-</div>
-
-<div class="content-67 content-last">
-#### Normal
-\[insert CSS diagram]
-
----
-
-#### Hover
-\[insert CSS diagram]
-
----
-
-#### Focus
-\[insert CSS diagram]
-
----
-
-#### Active
-\[insert CSS diagram]
-
----
-
-#### Disabled
-\[insert CSS diagram]
-</div>
 
 {::nomarkdown}
 {% include ui-toolkit/buttons/custom.html %}
