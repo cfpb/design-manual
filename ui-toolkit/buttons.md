@@ -73,7 +73,7 @@ In contrast, [links] should lead users to another page or further information, o
 
 <div class="content-67 content-first">
 #### Normal
-<p>[Description here]</p>
+<p>Use Pacific Blue with White text.</p>
 </div>
 
 <div class="content-33 content-last">
@@ -84,7 +84,7 @@ In contrast, [links] should lead users to another page or further information, o
 
 <div class="content-67 content-first">
 #### Hover
-<p>[Description here]</p>
+<p>Use Pacific Blue 80% for <code>background-color</code>.</p>
 </div>
 
 <div class="content-33 content-last">
