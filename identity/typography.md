@@ -117,12 +117,11 @@ abcdefghijklmnopqrstuvwxyz
 
 ## Web hierarchy
 
-**Hierarchy** refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read; a successful hierarchy enables readers to easily scan content. 
-
+<p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read; a successful hierarchy enables readers to easily scan content.</p>
 
 ### Headers
 
-Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in three weights of Avenir Next Demi Bold, Medium, and Regular.
+<p>Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in three weights of Avenir Next Demi Bold, Medium, and Regular.</p>
 
 <div class="content-33 content-first">
 
@@ -292,15 +291,17 @@ Readable text allows users to efficiently read and take in textual information. 
 
 Typography should be set flush left. This provides the eye a constant starting point for each line, making text easier to read.
 
+</div>
+
+<div class="content-67 content-last">
+
+![Alignment]({{ site.baseurl }}/assets/img/typography/Typography_typesetting01_@2.png "Alignment")
+
+</div>
+
 ---
 
-### Spacing
-
-White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. 
-
-When setting headers and body copy, the white space should be 15px, 20px, or 30px.
-
----
+<div class="content-33 content-first">
 
 ### Line height
 
@@ -308,7 +309,26 @@ Ample space between lines of type promotes an open feeling and lends flow to bod
 
 When setting body copy, the leading should be 1.375 times the type size, or 37.5% larger.
 
+</div>
+
+<div class="content-67 content-last">
+
+<div class="content-50 content-first">
+#### Font size: 26px
+
+![Line height example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting02_@2.png "Line height of 36px for 26px font size")
+</div>
+<div class="content-50 content-last">
+#### Font size: 16px
+
+![Line height example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting03_@2.png "Line height of 22px for 16px font size")
+</div>
+
+</div>
+
 ---
+
+<div class="content-33 content-first">
 
 ### Line length
 
@@ -320,8 +340,51 @@ For a single column of text, line length should be an average of 66 characters p
 
 <div class="content-67 content-last">
 
-![Typesetting]({{ site.baseurl }}/assets/img/typography/Typography1a_typesetting_PLACEHOLDER.png "Typesetting")
-![Typesetting]({{ site.baseurl }}/assets/img/typography/Typography1b_typesetting_PLACEHOLDER.png "Typesetting")
+![Line length]({{ site.baseurl }}/assets/img/typography/Typography_typesetting04_@2.png "Line length example")
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+
+### Spacing
+
+White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. 
+
+When setting headers and body copy, the white space should be 15px, 20px, or 30px.
+
+</div>
+
+<div class="content-67 content-last">
+
+<div class="content-50 content-first">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_display_@2.png "Spacing for Display header")
+</div>
+
+<div class="content-50 content-last">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header1_@2.png "Spacing for Header 1")
+</div>
+
+<div class="content-50 content-first">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header2_@2.png "Spacing for Header 2")
+</div>
+
+<div class="content-50 content-last">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header3_@2.png "Spacing for Header 3")
+</div>
+
+<div class="content-50 content-first">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header4_@2.png "Spacing for Header 4")
+</div>
+
+<div class="content-50 content-last">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header5_@2.png "Spacing for Header 5")
+</div>
+
+<div class="content-50 content-first">
+![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header6_@2.png "Spacing for Header 6")
+</div>
 
 </div>
 
