@@ -67,6 +67,16 @@ In contrast, [links] should lead users to another page or further information, o
 \[Add example content]
 </div>
 
+<div class="content-33 content-first">
+### Icons
+<p>Use icons consistently, or don’t use them at all. Each icon should be used exclusively for one action. Icons appear to the left of the button text. Buttons that have “forward” actions have icons to the right of the text, and those with “back” actions have icons to the left.</p>
+</div>
+
+<div class="content-67 content-last">
+#### Placement
+\[insert CSS diagram]
+</div>
+
 ## States
 
 <div class="content-67 content-first">
@@ -115,7 +125,7 @@ In contrast, [links] should lead users to another page or further information, o
 
 <div class="content-67 content-first">
 #### Disabled
-<p>Use Gray 20% for <code>background-color</code>, Gray text, and cursor shoudl be set to <code>not-allowed</code>.</p>
+<p>Use Gray 20% for <code>background-color</code>, Gray text, and cursor set to <code>not-allowed</code>.</p>
 </div>
 
 <div class="content-33 content-last">
@@ -124,18 +134,27 @@ In contrast, [links] should lead users to another page or further information, o
 
 ## Variations
 
-<div class="content-67 content-last">
+<div class="content-67 content-first">
 #### Call to action
-\[include image that sets the text at 14px, indicate 10 px 15 px padding]
+[add description]
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
 
 ---
 
+<div class="content-67 content-first">
 #### Destructive action
-\[include image that sets the text at 14px, indicate 10 px 15 px padding]
+<p>Destructive actions should use warning links paired with primary action buttons.
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
 
 ---
-
-<p>Reserve warning and compound buttons for destructive and multiple actions, respectively.</p>
 
 #### Warning
 \[include the dimensions here for small and big primary buttons]
@@ -144,17 +163,6 @@ In contrast, [links] should lead users to another page or further information, o
 
 #### Compound
 \[include the dimensions here for small and big primary buttons]
-</div>
-
-## Button icons
-
-<div class="content-33 content-first">
-Use icons consistently, or don’t use them at all. Each icon should be used exclusively for one action. Icons appear to the left of the button text. Buttons that have “forward” actions have icons to the right of the text, and those with “back” actions have icons to the left.
-</div>
-
-<div class="content-67 content-last">
-#### Placement
-\[insert CSS diagram]
 </div>
 
 
