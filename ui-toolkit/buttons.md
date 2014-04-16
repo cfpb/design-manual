@@ -35,27 +35,25 @@ In contrast, [links] should lead users to another page or further information, o
 
 <div class="content-67 content-last">
 
-	<div class="content-50 content-first">
-		#### Primary buttons
+<div class="content-50 content-first">
+#### Primary buttons
+<p>Use primary buttons for actions that go to the next step. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.</p>
+</div>
 
-		<p>Use primary buttons for actions that go to the next step. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.</p>
-	</div>
-
-	<div class="content-50 content-last">
-		\[include the dimensions here for primary buttons]
-	</div>
+<div class="content-50 content-last">
+\[include the dimensions here for primary buttons]
+</div>
 
 ---
 
-	<div class="content-50 content-first">
-		#### Secondary buttons
+<div class="content-50 content-first">
+#### Secondary buttons
+<p>Use secondary buttons for actions that happen on the current page.</p>
+</div>
 
-		<p>Use secondary buttons for actions that happen on the current page.</p>
-	</div>
-
-	<div class="content-50 content-last">
-		\[include the dimensions here for secondary buttons]
-	</div>
+<div class="content-50 content-last">
+\[include the dimensions here for secondary buttons]
+</div>
 
 </div>
 
