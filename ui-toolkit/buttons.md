@@ -20,9 +20,19 @@ In contrast, [links] should lead users to another page or further information, o
 </div>
 
 <div class="content-33 content-last">
-	
-[Feature image?]
-
+<ul class="repo-list">
+<li class="list-icon">
+    <p class="image-wrap">
+      <img src="../static/img/octocat.png" title="Github" width="25px">
+    </p>
+  </li>
+  <li>
+    <a href="http://cfpb.github.io/cf-buttons/docs/">
+     <h4>CF-buttons</h4>
+      <p>Buttons in the Capital Framework</p>
+    </a>
+  </li>
+</ul>
 </div>
 
 ## Style
