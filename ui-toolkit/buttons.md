@@ -40,7 +40,8 @@ In contrast, [links] should lead users to another page or further information, o
 </div>
 
 <div class="content-50 content-last">
-\[include the dimensions here for primary buttons]
+<button class="btn">Sign up</button>
+<button class="btn btn-link">Log in</button><br>
 </div>
 
 ---
