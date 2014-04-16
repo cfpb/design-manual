@@ -136,7 +136,40 @@ In contrast, [links] should lead users to another page or further information, o
 
 <div class="content-67 content-first">
 #### Call to action
-[add description]
+<p>[add description]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Super button
+<p>[add description]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Button group
+<p>[add description]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Compound action
+<p>[add description]</p>
 </div>
 
 <div class="content-33 content-last">
@@ -147,23 +180,14 @@ In contrast, [links] should lead users to another page or further information, o
 
 <div class="content-67 content-first">
 #### Destructive action
-<p>Destructive actions should use warning links paired with primary action buttons.
+<p>Destructive actions use Red Orange for <code>background-color</code>.</p>
+<p>When paired with a Primary action, indicate the destructive action using a Destructive action button link to the right of the Primary button.</p>
 </div>
 
 <div class="content-33 content-last">
 \[insert CF example]
 </div>
 
----
-
-#### Warning
-\[include the dimensions here for small and big primary buttons]
-
----
-
-#### Compound
-\[include the dimensions here for small and big primary buttons]
-</div>
 
 
 {::nomarkdown}
