@@ -45,7 +45,7 @@ module.exports = function(grunt) {
 
     /**
      * LESS: https://github.com/gruntjs/grunt-contrib-less
-     * 
+     *
      * Compile LESS files to CSS.
      * Make sure to add any other CSS libraries/files you'll be using.
      */
@@ -98,9 +98,9 @@ module.exports = function(grunt) {
 
     /**
      * CSSMin: https://github.com/gruntjs/grunt-contrib-cssmin
-     * 
+     *
      * Minify CSS.
-     * 
+     *
      */
     cssmin: {
       minify: {
@@ -117,7 +117,7 @@ module.exports = function(grunt) {
 
     /**
      * Uglify: https://github.com/gruntjs/grunt-contrib-uglify
-     * 
+     *
      * Minify JS files.
      * Make sure to add any other JS libraries/files you'll be using.
      * We are excluding minified files with the final ! pattern.
@@ -184,14 +184,14 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: ['front/vendor/font-awesome/font/*'],
-            dest: 'assets/font/',
+            dest: 'assets/fonts/',
             filter: 'isFile'
           },
           {
             expand: true,
             flatten: true,
             src: ['front/vendor/cf-icons/src/fonts/*'],
-            dest: 'assets/font/',
+            dest: 'assets/fonts/',
             filter: 'isFile'
           },
           /* Capital Framework Demos */
@@ -230,7 +230,7 @@ module.exports = function(grunt) {
             dest: '_includes/ui-toolkit/forms/',
             filter: 'isFile'
           },
-          
+
           /* NO GRID DEMO (YET) -- This should be fixed when everything is moved into the gh-pages repo
           {
             expand: true,
@@ -250,7 +250,7 @@ module.exports = function(grunt) {
         ]
       }
     },
-     
+
     watch: {
       scripts: {
         files: ['front/src/js/*.js','front/src/**/*.less'],
