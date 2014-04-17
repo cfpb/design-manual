@@ -4,11 +4,9 @@ title:  Buttons
 category: UI toolkit
 ---
 
-- [Visual style](#visual-style)
-- [Types](#button-types)
-- [Labels](#button-labels)
-- [Icons](#button-icons)
-- [States](#button-states)
+- [Style](#style)
+- [States](#states)
+- [Variations](#variations)
 {: class="toc"}
 
 <div class="content-67 content-first">
@@ -16,75 +14,73 @@ category: UI toolkit
 Buttons signal actions. They should be used sparingly; each additional button on a page reduces visual prominence of a call to action. Destructive actions should be reversible or alert the user to confirm the destructive action. 
 {: class="lead-in"}
 
-In contrast, [links] should lead users to another page or further information, or indicate a secondary destructive action.
+In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lead users to another page or further information, or indicate a secondary destructive action.
 {: class="lead-in"}
 
 </div>
 
 <div class="content-33 content-last">
-	
-[Feature image?]
-
+<ul class="repo-list">
+<li class="list-icon">
+    <p class="image-wrap">
+      <img src="../static/img/octocat.png" title="Github" width="25px">
+    </p>
+  </li>
+  <li>
+    <a href="http://cfpb.github.io/cf-buttons/docs/">
+     <h4>CF-buttons</h4>
+      <p>Buttons in the Capital Framework</p>
+    </a>
+  </li>
+</ul>
 </div>
 
-## Visual style
+## Style
 
 <div class="content-33 content-first">
-Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Medium at 14 px, sentence case, for button copy. Generous white space lends focus and makes buttons more actionable.
+### Primary and Secondary buttons
+<p>Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Medium at 14 px, sentence case, for button copy. Generous white space lends focus and makes buttons more actionable.</p>
 </div>
 
 <div class="content-67 content-last">
-#### Call to action
-\[include image that sets the text at 14px, indicate 10 px 15 px padding]
+
+<div class="content-50 content-first">
+#### Primary buttons
+<p>Use primary buttons for actions that go to the next step. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.</p>
+</div>
+
+<div class="content-50 content-last">
+<button class="btn">Sign up</button>
+<button class="btn btn-link">Log in</button><br>
+</div>
 
 ---
 
-#### Destructive action
-\[include image that sets the text at 14px, indicate 10 px 15 px padding]
+<div class="content-50 content-first">
+#### Secondary buttons
+<p>Use secondary buttons for actions that happen on the current page.</p>
 </div>
 
-## Button types
+<div class="content-50 content-last">
+\[include the dimensions here for secondary buttons]
+</div>
+
+---
+
+</div>
 
 <div class="content-33 content-first">
-Use primary buttons for actions that go to the next step. Use secondary buttons for actions that happen on the current page. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.
-
-Reserve warning and compound buttons for destructive and multiple actions, respectively. 
+### Labels
+<p>Use verbs and an active voice. Language should be clear, succinct, and informative. Avoid technical terms such as “form reset” and “submit.” Limit the copy length to 22 characters.</p>
 </div>
 
 <div class="content-67 content-last">
-#### Primary
-\[include the dimensions here for small and big primary buttons]
-
----
-
-#### Secondary
-\[include the dimensions here for small and big primary buttons]
-
----
-
-#### Warning
-\[include the dimensions here for small and big primary buttons]
-
----
-
-#### Compound
-\[include the dimensions here for small and big primary buttons]
+\[Add example content]
 </div>
-
-## Button labels
 
 <div class="content-33 content-first">
-Use verbs and an active voice. Language should be clear, succinct, and informative. Avoid technical terms such as “form reset” and “submit.” Limit the copy length to 22 characters.
-</div>
-
-<div class="content-67 content-last">
-[Add example content]
-</div>
-
-## Button icons
-
-<div class="content-33 content-first">
-Use icons consistently, or don’t use them at all. Each icon should be used exclusively for one action. Icons appear to the left of the button text. Buttons that have “forward” actions have icons to the right of the text, and those with “back” actions have icons to the left.
+### Icons
+<p>Use icons consistently, or don’t use them at all. Each icon should be used exclusively for one action. Icons appear to the left of the button text. Buttons that have “forward” actions have icons to the right of the text, and those with “back” actions have icons to the left.</p>
 </div>
 
 <div class="content-67 content-last">
@@ -92,36 +88,118 @@ Use icons consistently, or don’t use them at all. Each icon should be used exc
 \[insert CSS diagram]
 </div>
 
-## Button states
+## States
 
-<div class="content-33 content-first">
-[Description here]
-</div>
-
-<div class="content-67 content-last">
+<div class="content-67 content-first">
 #### Normal
-\[insert CSS diagram]
-
----
-
-#### Hover
-\[insert CSS diagram]
-
----
-
-#### Focus
-\[insert CSS diagram]
-
----
-
-#### Active
-\[insert CSS diagram]
-
----
-
-#### Disabled
-\[insert CSS diagram]
+<p>Use Pacific Blue with White text.</p>
 </div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Hover
+<p>Use Pacific Blue 80% for <code>background-color</code>.</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Focus
+<p>Use Pacific Blue 80% for <code>background-color</code>.</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Active
+<p>Use Navy 80% for <code>background-color</code>.</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Disabled
+<p>Use Gray 20% for <code>background-color</code>, Gray text, and cursor set to <code>not-allowed</code>.</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+## Variations
+
+<div class="content-67 content-first">
+#### Call to action
+<p>[add description]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Super button
+<p>[add description]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Button group
+<p>[add description]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Compound action
+<p>[add description]</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+---
+
+<div class="content-67 content-first">
+#### Destructive action
+<p>Destructive actions use Red Orange for <code>background-color</code>.</p>
+<p>When paired with a Primary action, indicate the destructive action using a Destructive action button link to the right of the Primary button.</p>
+</div>
+
+<div class="content-33 content-last">
+\[insert CF example]
+</div>
+
+
 
 {::nomarkdown}
 {% include ui-toolkit/buttons/custom.html %}
