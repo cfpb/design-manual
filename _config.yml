@@ -76,14 +76,14 @@ secondarynav:
   url: guides/effective-forms.html
   internal: true
   category: Guides
-- text: Filtering patterns
-  url: guides/filtering-patterns.html
-  internal: true
-  category: Guides
-- text: UX checklist
-  url: guides/ux-checklist.html
-  internal: true
-  category: Guides
+# - text: Filtering patterns
+#   url: guides/filtering-patterns.html
+#   internal: true
+#   category: Guides
+# - text: UX checklist
+#   url: guides/ux-checklist.html
+#   internal: true
+#   category: Guides
 - text: Logo
   url: identity/logo.html
   internal: true
