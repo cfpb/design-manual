@@ -3028,6 +3028,7 @@ figure {
   border-bottom: 1px solid #e3e4e5;
   /* The EM sizes are calculating to unexpected values - DM */
   padding-bottom: 15px;
+  margin-top: 20px;
   margin-bottom: 20px !important;
 }
 .content h2:before,
@@ -3467,6 +3468,7 @@ figure {
   font-weight: normal;
 }
 h2.h2-ex {
+  margin-top: 0;
   border-bottom: none;
 }
 #print-hierarchy .superheader {
