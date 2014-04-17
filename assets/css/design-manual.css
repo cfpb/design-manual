@@ -3346,74 +3346,54 @@ figure {
   width: 80%;
 }
 .minicon-scale-table th,
-.minicon-assets-table th,
-.minicon-scale-table td,
-.minicon-assets-table td {
+.minicon-scale-table td {
   border-left: 1px solid #f1f2f2;
   text-align: center;
   padding: 0 5px;
 }
 .minicon-scale-table th:first-child,
-.minicon-assets-table th:first-child,
-.minicon-scale-table td:first-child,
-.minicon-assets-table td:first-child {
+.minicon-scale-table td:first-child {
   border: none;
 }
-.minicon-scale-table th,
-.minicon-assets-table th {
+.minicon-scale-table th {
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: .875em;
 }
-.minicon-scale-table i,
-.minicon-assets-table i {
+.minicon-scale-table i {
   display: block;
   margin: 20px 20px 0;
 }
-.minicon-assets-table td {
-  padding-bottom: 20px;
+.minicon-asset-lib h3 {
+  margin-top: 1.5em;
 }
-.minicon-assets-table td p {
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: .75em;
-  color: #919395;
-  padding-top: 2.5em;
-}
-.minicon-assets-table i {
-  font-size: 40px;
-}
-.minicon-assets-div {
+.minicon-asset-lib .minicon-assets-div {
   display: inline-block;
-  width: 4.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 6em;
   text-align: center;
-  border-left: 1px solid #f1f2f2;
-  padding: 0 5px;
+  border-right: 1px solid #f1f2f2;
 }
-.minicon-assets-div:first-child {
-  border: none;
+.minicon-asset-lib .minicon-assets-div:last-child {
+  border-right: none;
 }
-.minicon-assets-div h6 {
+.minicon-asset-lib .minicon-assets-div h6 {
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: .875em;
+  line-height: 1.325em;
   text-transform: capitalize;
   letter-spacing: 0;
-  margin-bottom: 0;
+  margin-bottom: 1.5em;
 }
-.minicon-assets-div p {
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: .75em;
-  color: #919395;
-  padding-top: 2.5em;
-}
-.minicon-assets-div i {
+.minicon-asset-lib .minicon-assets-div i {
   font-size: 40px;
+  display: block;
+  margin: .75em 0;
 }
 .minicon-scale-48pt {
   font-size: 48pt;
