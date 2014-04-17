@@ -3762,6 +3762,9 @@ p.print-georgia-para {
   font-size: 1.125em;
   padding-left: 4px;
 }
+.secondary-nav li:last-child {
+  border-bottom: none;
+}
 /* Media Queries
    ========================================================================== */
 /* Small tablet (600px) */

@@ -4418,6 +4418,10 @@ p.print-georgia-para {
   padding-left: 4px;
 }
 
+.secondary-nav li:last-child {
+  border-bottom: none;
+}
+
 /* Media Queries
    ========================================================================== */
 
