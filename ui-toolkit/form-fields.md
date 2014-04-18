@@ -99,7 +99,7 @@ Single checkboxes are used to provide authorization or to opt in to a specific a
 </div>
 
 <div class="content-67 content-last">
-  
+
 {::nomarkdown} 
 <label>Question label</label> 
 <form>
@@ -108,3 +108,144 @@ Single checkboxes are used to provide authorization or to opt in to a specific a
 {:/nomarkdown}
 
 </div> 
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+
+#### Radio buttons
+
+Radio buttons are used for allowing users to select a single option from a list. The default state should always have no option selected. 
+
+</div>
+
+<div class="content-67 content-last">
+
+<div class="content-33 content-first">
+##### Radio button list
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown} 
+<label>Question label</label> 
+<form>
+<input type="radio">I am the borrower<br>
+<input type="radio">I am submitting on behalf of the borrower
+</form>
+{:/nomarkdown}
+
+</div> 
+
+</div> 
+
+---
+
+<div class="content-33 content-first">
+
+#### Selects
+
+Select elements, also called drop-downs, are used for allowing users to select a single option from a list. Because the options are only visible when the select menu is open, it's better to use radio buttons instead of select elements unless the options are well-known to users (e.g., a list of U.S. states).
+
+</div>
+
+<div class="content-67 content-last">
+
+<div class="content-33 content-first">
+##### Select menu
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown} 
+<form action="">
+<select name="Options">
+<option>Option 1</option>
+<option>Option 2</option>
+<option>Option 3</option>
+<option>Option 4</option>
+</select>
+</form>
+{:/nomarkdown}
+
+</div> 
+
+</div> 
+
+## States
+
+<div class="content-33 content-first">
+
+#### Normal
+
+Use a Gray 1px solid border.
+
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown} 
+<input placeholder="placeholder text" type="text">
+{:/nomarkdown}
+
+</div> 
+
+---
+
+<div class="content-33 content-first">
+
+#### Focus
+
+Use Pacific Blue 1px solid border.
+
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown} 
+<input class="focus" placeholder="placeholder text" type="text">
+{:/nomarkdown}
+
+</div> 
+
+---
+
+<div class="content-33 content-first">
+
+#### Error
+
+Use Red Orange 1px solid border with Error minicon.
+
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown} 
+<input class="error" type="text" value="Invalid input">
+<i class="icon-remove-sign" role="alert"><span class="jekyll-bug"></span></i>
+{:/nomarkdown}
+
+</div> 
+
+---
+
+<div class="content-33 content-first">
+
+#### Success
+
+Use CFPB Green 1px solid border with Success minicon.
+
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown} 
+<input class="success" type="text" value="Validated input">
+<i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+{:/nomarkdown}
+
+</div> 
+
+## Variations
