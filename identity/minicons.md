@@ -166,6 +166,8 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 
 ## Asset library
 
-{::nomarkdown}
+<div class="minicon-asset-lib">
+
 {% include identity/icons/index.html %}
-{:/nomarkdown}
+
+</div>

@@ -138,6 +138,7 @@ figure {
     border-bottom: 1px solid @gray-20;
     /* The EM sizes are calculating to unexpected values - DM */
     padding-bottom: 15px;
+    margin-top: 20px;
     margin-bottom: 20px !important;
     //padding-bottom: unit( 16 / @base-font-size-px, em );
     //margin-bottom: unit( @base-line-height-px / @font-size, em );
@@ -375,8 +376,7 @@ figure {
   }
 }
 
-.minicon-scale-table,
-.minicon-assets-table {
+.minicon-scale-table {
   th,
   td {
     border-left: 1px solid @gray-10;
@@ -397,46 +397,33 @@ figure {
   }
 }
 
-.minicon-assets-table {
-  td {
-    padding-bottom: 20px;
-    p {
-      .webfont-regular;
-      font-size: .75em;
-      color: @gray-80;
-      padding-top: 2.5em;
-    }  
+.minicon-asset-lib {
+  h3 {
+      margin-top: 1.5em;
   }
-  i {
-    font-size: 40px;
-  }
-}
+  .minicon-assets-div {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 6em;
+    text-align: center;
+    border-right: 1px solid @gray-10;
 
-.minicon-assets-div {
-  display: inline-block;
-  width: 4.5em;
-  text-align: center;
-  border-left: 1px solid @gray-10;
-  padding: 0 5px;
-
-  &:first-child {
-      border: none;
-  }
-  h6 {
-    .webfont-demi;
-    font-size: .875em;
-    text-transform: capitalize;
-    letter-spacing: 0;
-    margin-bottom: 0
-  }
-  p {
-    .webfont-regular;
-    font-size: .75em;
-    color: @gray-80;
-    padding-top: 2.5em;
-  } 
-  i {
-    font-size: 40px;
+    &:last-child {
+      border-right: none;
+    }
+    h6 {
+      .webfont-demi;
+      font-size: .875em;
+      line-height: 1.325em;
+      text-transform: capitalize;
+      letter-spacing: 0;
+      margin-bottom: 1.5em;
+    }
+    i {
+      font-size: 40px;
+      display: block;
+      margin: .75em 0;
+    }
   }
 }
 
@@ -457,7 +444,7 @@ figure {
 // Initiate loop
 .minicon-scale-loop( length(@minicon-sizes) );
 
-/* Typography page
+/* Identity/Typography page
    ========================================================================== */
 .abc {
   p {
@@ -484,6 +471,7 @@ figure {
 }
 
 h2.h2-ex {
+  margin-top: 0;
   border-bottom: none;
 }
 

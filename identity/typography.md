@@ -127,8 +127,12 @@ abcdefghijklmnopqrstuvwxyz
 
 #### Display
 
-Avenir Next Demi bold<br/>
+<div class="regular-ex">
+
+Avenir Next Demi Bold<br/>
 48 px
+
+</div>
 
 </div>
 
@@ -144,8 +148,12 @@ Avenir Next Demi bold<br/>
     
 #### Header 1
 
+<div class="regular-ex">
+
 Avenir Next Regular<br/>
 34 px
+
+</div>
 
 </div>
 
@@ -161,8 +169,12 @@ Avenir Next Regular<br/>
     
 #### Header 2
 
+<div class="regular-ex">
+
 Avenir Next Regular<br/>
 26 px
+
+</div>
 
 </div>
 
@@ -178,8 +190,12 @@ Avenir Next Regular<br/>
     
 #### Header 3
 
+<div class="regular-ex">
+
 Avenir Next Regular<br/>
 22 px
+
+</div>
 
 </div>
 
@@ -195,8 +211,12 @@ Avenir Next Regular<br/>
     
 #### Header 4
 
+<div class="regular-ex">
+
 Avenir Next Medium<br/>
 18 px
+
+</div>
 
 </div>
 
@@ -212,9 +232,13 @@ Avenir Next Medium<br/>
     
 #### Header 5
 
+<div class="regular-ex">
+
 Avenir Next Demi Bold<br/>
 14 px, 1 px letter spacing<br/>
 All caps
+
+</div>
 
 </div>
 
@@ -230,9 +254,13 @@ All caps
     
 #### Header 6
 
+<div class="regular-ex">
+
 Avenir Next Demi Bold<br/>
 12 px, 1 px letter spacing<br/>
 All caps
+
+</div>
 
 </div>
 
@@ -253,8 +281,12 @@ All caps
 
 #### Body (sans-serif)
 
+<div class="regular-ex">
+
 Avenir Next Regular<br/>
 16 px / 22 px line height
+
+</div>
 
 </div>
 
@@ -270,8 +302,12 @@ If you have received financial aid offers, use this tool to compare school data 
     
 #### Body (serif)
 
+<div class="regular-ex">
+
 Georgia Regular<br/>
 16 px / 22 px line height
+
+</div>
 
 </div>
 
@@ -518,8 +554,12 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 #### Display
 
+<div class="regular-ex">
+
 Avenir Next Medium<br/>
 60 pt / 66 pt
+
+</div>
 
 </div>
 
@@ -535,8 +575,12 @@ Avenir Next Medium<br/>
     
 #### Header 1
 
+<div class="regular-ex">
+
 Avenir Next Medium<br/>
 38 pt / 40 pt
+
+</div>
 
 </div>
 
@@ -552,8 +596,12 @@ Avenir Next Medium<br/>
     
 #### Header 2
 
+<div class="regular-ex">
+
 Avenir Next Demi Bold<br/>
 18 pt / 20 pt
+
+</div>
 
 </div>
 
@@ -569,8 +617,12 @@ Avenir Next Demi Bold<br/>
     
 #### Header 3
 
+<div class="regular-ex">
+
 Avenir Next Demi Bold<br/>
 16 pt / 18 pt
+
+</div>
 
 </div>
 
@@ -586,8 +638,12 @@ Avenir Next Demi Bold<br/>
     
 #### Header 4
 
+<div class="regular-ex">
+
 Avenir Next Medium<br/>
 14 pt / 16 pt
+
+</div>
 
 </div>
 
@@ -603,9 +659,13 @@ Avenir Next Medium<br/>
     
 #### Header 5
 
+<div class="regular-ex">
+
 Avenir Next Demi Bold<br/>
 10 pt / 12 pt<br/>
 All caps
+
+</div>
 
 </div>
 
@@ -621,8 +681,12 @@ All caps
     
 #### Header 6
 
+<div class="regular-ex">
+
 Avenir Next Medium<br/>
 12 pt / 14 pt
+
+</div>
 
 </div>
 
@@ -638,8 +702,12 @@ Avenir Next Medium<br/>
 
 #### Subheader
 
+<div class="regular-ex">
+
 Avenir Next Regular<br/>
 18 pt / 22 pt leading
+
+</div>
 
 </div>
 
@@ -655,8 +723,12 @@ Avenir Next Regular<br/>
     
 #### Paragraph
 
+<div class="regular-ex">
+
 Avenir Next Regular<br/>
 11 pt / 16 pt leading
+
+</div>
 
 </div>
 
@@ -672,8 +744,12 @@ Avenir Next Regular<br/>
     
 #### Paragraph
 
+<div class="regular-ex">
+
 Georgia<br/>
 11 pt / 16 pt leading
+
+</div>
 
 </div>
 
@@ -689,8 +765,12 @@ Georgia<br/>
     
 #### Bulleted list
 
+<div class="regular-ex">
+
 Avenir Next Regular<br/>
 11 pt / 14 pt leading
+
+</div>
 
 </div>
 

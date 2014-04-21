@@ -39,8 +39,6 @@ Editorial photographs capture the events and activities attended by CFPB staff. 
 
 ![Photo of a woman at an Atlanta, GA Field Hearing on Mortgage Servicing]({{ site.baseurl }}/assets/img/photography/Photography_1_550px_wide.jpg)
 
----
-
 ![Photo of Confirmation Day: Director Cordray taking a moment to make calls and share the big news]({{ site.baseurl }}/assets/img/photography/Photography_2_550px_wide.jpg)
 
 
@@ -59,8 +57,6 @@ Photographs should not be collaged, staged, unrealistic,  or use still lifes to 
 <div class="content-67 content-last">
 
 ![Photo of Olivia Calderon talking about financial empowerment efforts for low-income and unauthorizd immigrants]({{ site.baseurl }}/assets/img/photography/Photography_3_550px_wide.jpg)
-
----
 
 ![Photo of Director Cordray addressing the Bureau at the 2012 All Hands Meeting in Washington DC]({{ site.baseurl }}/assets/img/photography/Photography_4_550px_wide.jpg)
 

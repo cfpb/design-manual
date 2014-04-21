@@ -91,8 +91,6 @@ At any other time, the isolated logo may be used in the bottom-right corner of t
 
 ![Still from Video title slide]({{ site.baseurl }}/assets/img/video/Video_5.jpg "Logo in Video")
 
----
-
 ![Still from Video title slide]({{ site.baseurl }}/assets/img/video/Video_6.jpg "Logo in Video")
 
 </div>
@@ -110,8 +108,6 @@ other content. Key messages can also be highlighted on their own using display t
 
 ![Still from HMDA Video]({{ site.baseurl }}/assets/img/video/Video_7.jpg "Example of typography in Video")
 
----
-
 ![Still from HMDA Video]({{ site.baseurl }}/assets/img/video/Video_8.jpg "Example of typography in Video")
 
 </div>
@@ -128,8 +124,6 @@ Title slides for educational videos should feature clean typography with ample w
 
 ![Still from Financial Education Video]({{ site.baseurl }}/assets/img/video/Video_9.jpg "Example of title slide in Video")
 
----
-
 ![Still from CFPB Training Video]({{ site.baseurl }}/assets/img/video/Video_10.jpg "Example of title slide in Video")
 
 </div>
@@ -145,8 +139,6 @@ Animation should be used to bring on-brand illustrations to life. Animation can 
 <div class="content-67 content-last">
 
 ![Still from Student Loan Video]({{ site.baseurl }}/assets/img/video/Video_11.jpg "Example of animation in Video")
-
----
 
 ![Still from Student Loan Video]({{ site.baseurl }}/assets/img/video/Video_12.jpg "Example of animation in Video")
 

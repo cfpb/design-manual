@@ -50,8 +50,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-50 content-last">
+
+{::nomarkdown}  
 <button class="btn">Sign up</button>
-<button class="btn btn-link">Log in</button><br>
+<button class="btn btn-link">Log in</button>
+{:/nomarkdown}
+
 </div>
 
 ---
@@ -62,6 +66,11 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-50 content-last">
+
+{::nomarkdown}  
+<button class="btn btn-secondary">Secondary button</button>
+{:/nomarkdown}
+
 \[include the dimensions here for secondary buttons]
 </div>
 
@@ -96,29 +105,26 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-33 content-last">
-\[insert CF example]
+
+{::nomarkdown}  
+<button class="btn">Sign up</button>
+{:/nomarkdown}
+
 </div>
 
 ---
 
 <div class="content-67 content-first">
-#### Hover
+#### Hover/Focused 
 <p>Use Pacific Blue 80% for <code>background-color</code>.</p>
 </div>
 
 <div class="content-33 content-last">
-\[insert CF example]
-</div>
 
----
+{::nomarkdown}  
+<button class="btn hover">Sign up</button>
+{:/nomarkdown}
 
-<div class="content-67 content-first">
-#### Focus
-<p>Use Pacific Blue 80% for <code>background-color</code>.</p>
-</div>
-
-<div class="content-33 content-last">
-\[insert CF example]
 </div>
 
 ---
@@ -129,8 +135,13 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-33 content-last">
-\[insert CF example]
+
+{::nomarkdown}  
+<button class="btn active">Sign up</button>
+{:/nomarkdown}
+
 </div>
+
 
 ---
 
@@ -140,7 +151,11 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-33 content-last">
-\[insert CF example]
+
+{::nomarkdown}  
+<button class="btn btn-disabled">Sign up</button>
+{:/nomarkdown}
+
 </div>
 
 ## Variations
@@ -151,7 +166,11 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-33 content-last">
-\[insert CF example]
+
+{::nomarkdown}  
+<button class="btn">Sign up</button>
+{:/nomarkdown}
+
 </div>
 
 ---
@@ -162,7 +181,11 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-33 content-last">
-\[insert CF example]
+
+{::nomarkdown}   
+<button class="btn btn-super">Sign up</button>
+{:/nomarkdown} 
+
 </div>
 
 ---
@@ -173,7 +196,15 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-33 content-last">
-\[insert CF example]
+
+{::nomarkdown}   
+<div class="btn-group">
+    <button class="btn">Button 1</button>
+    <button class="btn">Button 2</button>
+    <button class="btn">Button 3</button>
+</div>
+{:/nomarkdown} 
+
 </div>
 
 ---
@@ -184,7 +215,14 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-33 content-last">
-\[insert CF example]
+
+{::nomarkdown}   
+<div class="btn-group">
+    <button class="btn">Button</button>
+    <button class="btn btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></button>
+</div>
+{:/nomarkdown} 
+
 </div>
 
 ---
@@ -196,11 +234,9 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-33 content-last">
-\[insert CF example]
+
+{::nomarkdown}   
+<button class="btn btn-link btn-warning">Button Tag</button>
+{:/nomarkdown} 
+
 </div>
-
-
-
-{::nomarkdown}
-{% include ui-toolkit/buttons/custom.html %}
-{:/nomarkdown}
