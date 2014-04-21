@@ -54,7 +54,7 @@ Pacific Blue<br>
 1px dotted bottom border
 </div>
 
-<div class="content-67 content-last">
+<div class="content-67 content-last regular-ex">
 <a href="#">Default link style</a>
 </div>
 ---
@@ -65,7 +65,7 @@ Pacific Blue<br>
 50% Pacific Blue<br>
 1px solid bottom border
 </div>
-<div class="content-67 content-last">
+<div class="content-67 content-last regular-ex">
 <a href="#" class="hover">Hover link style</a>
 </div>
 ---
@@ -76,7 +76,7 @@ Pacific Blue<br>
 1px dotted bottom border<br>
 Thin dotted outline
 </div>
-<div class="content-67 content-last">
+<div class="content-67 content-last regular-ex">
 <a href="#" class="focus">Focused link style</a>
 </div>
 ---
@@ -86,7 +86,7 @@ Thin dotted outline
 Navy Blue<br>
 1px solid bottom border
 </div>
-<div class="content-67 content-last">
+<div class="content-67 content-last regular-ex">
 <a href="#" class="active">Active link style</a>
 </div>
 ---
@@ -98,7 +98,7 @@ Navy Blue<br>
 1px solid bottom border
 </div>
 
-<div class="content-67 content-last">
+<div class="content-67 content-last regular-ex">
 <a href="#" class="visited">Visited link style</a>
 </div>
 
@@ -125,9 +125,9 @@ Links in navigation are not underlined.
 
 #### Internal links
 <div class="content-33 content-first">
-Carets [minicon glyph EE02] can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage. 
+Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage. 
 </div>
-<div class="content-67 content-last">
+<div class="content-67 content-last regular-ex">
 <a href="#">Internal link <i class="cf-icon cf-icon-right"></i></a>
 </div>
 ---
@@ -138,7 +138,41 @@ Use icons when a link needs extra emphasis. Use icons consistently, or don't use
 
 Icons appear to the right of the link text. The color and ```font-size``` of icons should be the same as the adjacent text, including state changes. Icons are never underlined.
 </div>
+
 <div class="content-67 content last">
+
+<div class="content-50 content first">
+##### External links
+Use the external link (glyph E610) to emphasize a non-CFPB webpage. External links should open in a new window or tab.
+</div>
+<div class="content-50 content last regular-ex">
 <a href="#">External link <i class="cf-icon cf-icon-external-link"></i></a>
+</div>
+
+---
+
+<div class="content-50 content first">
+##### Email links
+Use the Email link minicon (glyph E302) to emphasize a <code>mailto</code> link.
+</div>
+<div class="content-50 content last regular-ex">
+<a href="#">Email us <i class="cf-icon cf-icon-email"></i></a>
+</div>
+
+---
+
+<div class="content-50 content first">
+##### Document links
+Documents minicons can emphasize a link that contains a file or document.
+</div>
+<div class="content-50 content last regular-ex">
+<a href="#">Basic document <i class="cf-icon cf-icon-document"></i></a><br>
+<a href="#">PDF document <i class="cf-icon cf-icon-pdf"></i></a><br>
+<a href="#">Download <i class="cf-icon cf-icon-download"></i></a><br>
+<a href="#">Appendix <i class="cf-icon cf-icon-appendix"></i></a><br>
+<a href="#">Supplement <i class="cf-icon cf-icon-supplement"></i></a><br>
+<a href="#">Attach <i class="cf-icon cf-icon-attach"></i></a>
+</div>
+
 </div>
 
