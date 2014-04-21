@@ -132,8 +132,8 @@ Radio buttons are used for allowing users to select a single option from a list.
 {::nomarkdown} 
 <label>Question label</label> 
 <form>
-<input type="radio">I am the borrower<br>
-<input type="radio">I am submitting on behalf of the borrower
+<input type="radio" name="borrower-type">I am the borrower<br>
+<input type="radio" name="borrower-type">I am submitting on behalf of the borrower
 </form>
 {:/nomarkdown}
 
@@ -224,7 +224,7 @@ Use Red Orange 1px solid border with Error minicon.
 
 {::nomarkdown} 
 <input class="error" type="text" value="Invalid input">
-<i class="icon-remove-sign" role="alert"><span class="jekyll-bug"></span></i>
+<i class="icon-remove-sign cf-form_input-icon" role="alert"><span class="jekyll-bug" ></span></i>
 {:/nomarkdown}
 
 </div> 
@@ -243,7 +243,7 @@ Use CFPB Green 1px solid border with Success minicon.
 
 {::nomarkdown} 
 <input class="success" type="text" value="Validated input">
-<i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+<i class="icon-ok-sign cf-form_input-icon"><span class="jekyll-bug"></span></i>
 {:/nomarkdown}
 
 </div> 

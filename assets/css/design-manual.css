@@ -495,6 +495,8 @@ ul {
 .btn:link,
 .btn:visited {
   display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0.6428571428571429em 1em;
   border: 0;
@@ -510,6 +512,7 @@ ul {
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transition: .1s;
   transition: .1s;
   -webkit-appearance: none;
 }
@@ -1045,8 +1048,6 @@ textarea {
   font-size: 1em;
   background: #ffffff;
   border: 1px solid #75787b;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   vertical-align: top;
   -webkit-appearance: none;
@@ -2873,6 +2874,7 @@ html {
     color: black !important;
     /*prints faster and cheaper */
     text-shadow: none !important;
+    -webkit-filter: none !important;
     filter: none !important;
     -ms-filter: none !important;
   }
@@ -3615,6 +3617,8 @@ figure {
 }
 .minicon-asset-lib .minicon-assets-div {
   display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 6em;
   text-align: center;
@@ -3772,6 +3776,12 @@ p.print-georgia-para {
   font-size: 11pt;
   line-height: 14pt;
   margin-bottom: 1em;
+}
+/* UI toolkit/Forms page
+   ========================================================================== */
+input[type=checkbox],
+input[type=radio] {
+  margin-right: .75em;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -3955,6 +3965,7 @@ p.print-georgia-para {
 .secondary-nav a {
   display: block;
   padding: 10px;
+  -webkit-transition: .4s;
   transition: .4s;
 }
 .secondary-nav a,
