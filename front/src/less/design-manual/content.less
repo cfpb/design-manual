@@ -544,19 +544,21 @@ UI toolkit repo list
   li {
     list-style: none;
     display: block;
+    box-sizing: border-box;
     float: left;
     height: 4.0625em;
     max-height: 4.0625em;
     background-color: #E7E7E6;
     border-left: 1px solid #BABBBD;
-    width: 80%;
+    width: 85%;
+    padding: .75em 1em;
   }
   li:first-child {
     text-align: center;
     border-left: none;
     line-height: 75px;
     padding: 0 .75em;
-    width: 10%;
+    width: 15%;
   }
   i {
     font-size: 30px;
@@ -564,19 +566,11 @@ UI toolkit repo list
   }
   a:link,
   a:visited {
-    display: block;
     max-height: 4.0625em;
     background-color: #E7E7E6;
-    border-bottom: none;
-    padding: .625em 1em;
-    color: @pacific;
-  }
-  a:hover {
-    background-color: #CDE3F1;
   }
   h4 {
-    margin-bottom: .2em;
-    .webfont-demi;
+    margin-bottom: .125em;
   }
   p {
     margin: 0;
@@ -591,6 +585,10 @@ UI toolkit repo list
     li {
       height: 6em;
       max-height: 6em;
+      width: 75%;
+    }
+    li:first-child {
+      width: 25%;
     }
   a:link,
   a:visited {

@@ -26,15 +26,11 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
       <i class="cf-icon cf-icon-github"></i>
     </li>
     <li>
-      <a href="http://github.com/cfpb/cf-buttons">
-        <h4>cf-buttons</h4>
-        <p>Buttons in the Capital Framework</p>
-      </a>
+      <a href="http://github.com/cfpb/cf-buttons"><h4>cf-buttons</h4></a>
+      <p>Buttons in the Capital Framework</p>
     </li>
   </ul>
 </div>
-
-
 
 ## Style
 

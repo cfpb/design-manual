@@ -4416,12 +4416,16 @@ UI toolkit repo list
 .repo-list li {
   list-style: none;
   display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
   height: 4.0625em;
   max-height: 4.0625em;
   background-color: #E7E7E6;
   border-left: 1px solid #BABBBD;
-  width: 80%;
+  width: 85%;
+  padding: .75em 1em;
 }
 
 .repo-list li:first-child {
@@ -4429,7 +4433,7 @@ UI toolkit repo list
   border-left: none;
   line-height: 75px;
   padding: 0 .75em;
-  width: 10%;
+  width: 15%;
 }
 
 .repo-list i {
@@ -4439,23 +4443,12 @@ UI toolkit repo list
 
 .repo-list a:link,
 .repo-list a:visited {
-  display: block;
   max-height: 4.0625em;
   background-color: #E7E7E6;
-  border-bottom: none;
-  padding: .625em 1em;
-  color: #0072ce;
-}
-
-.repo-list a:hover {
-  background-color: #CDE3F1;
 }
 
 .repo-list h4 {
-  margin-bottom: .2em;
-  font-family: "Avenir Next Demi", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  margin-bottom: .125em;
 }
 
 .repo-list p {
