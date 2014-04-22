@@ -2,7 +2,7 @@
  * ==========================================================================
  * Package name: design-manual
  * Version: 0.4.0
- * Last modified: 2014-04-21 6:21:08 PM
+ * Last modified: 2014-04-22 11:58:57 AM
  * URL: https://github.com/cfpb/design-manual
  * A public domain work of the Consumer Financial Protection Bureau
  * ==========================================================================

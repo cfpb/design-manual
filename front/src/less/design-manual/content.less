@@ -130,7 +130,6 @@ figure {
 
 }
 
-
 .content {
 
   h2 {
@@ -537,10 +536,75 @@ p.print-georgia-para {
   margin-bottom: 1em;
 }
 
+/*
+UI toolkit repo list
+----------------------------------
+*/
+.repo-list {
+  li {
+    list-style: none;
+    display: block;
+    float: left;
+    height: 4.0625em;
+    max-height: 4.0625em;
+    background-color: #E7E7E6;
+    border-left: 1px solid #BABBBD;
+    width: 80%;
+  }
+  li:first-child {
+    text-align: center;
+    border-left: none;
+    line-height: 75px;
+    padding: 0 .75em;
+    width: 10%;
+  }
+  i {
+    font-size: 30px;
+    color: @gray;
+  }
+  a:link,
+  a:visited {
+    display: block;
+    max-height: 4.0625em;
+    background-color: #E7E7E6;
+    border-bottom: none;
+    padding: .625em 1em;
+    color: @pacific;
+  }
+  a:hover {
+    background-color: #CDE3F1;
+  }
+  h4 {
+    margin-bottom: .2em;
+    .webfont-demi;
+  }
+  p {
+    margin: 0;
+    font-size: 0.875em;
+    color: @gray;
+    .webfont-regular;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .repo-list {
+    li {
+      height: 6em;
+      max-height: 6em;
+    }
+  a:link,
+  a:visited {
+      max-height: 6em;
+    }
+  }
+}
+
+
 /* UI toolkit/Forms page
    ========================================================================== */
 input[type=checkbox], 
 input[type=radio] {
   margin-right: .75em;
 }
+
 

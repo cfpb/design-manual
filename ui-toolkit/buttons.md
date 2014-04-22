@@ -9,7 +9,7 @@ category: UI toolkit
 - [Variations](#variations)
 {: class="toc"}
 
-<div class="content-67 content-first">
+<div class="content-50 content-first">
 
 Buttons signal actions. They should be used sparingly; each additional button on a page reduces visual prominence of a call to action. Destructive actions should be reversible or alert the user to confirm the destructive action. 
 {: class="lead-in"}
@@ -19,21 +19,22 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
-<div class="content-33 content-last">
-<ul class="repo-list">
-<li class="list-icon">
-    <p class="image-wrap">
-      <img src="../static/img/octocat.png" title="Github" width="25px">
-    </p>
-  </li>
-  <li>
-    <a href="http://cfpb.github.io/cf-buttons/docs/">
-     <h4>CF-buttons</h4>
-      <p>Buttons in the Capital Framework</p>
-    </a>
-  </li>
-</ul>
+<div class="content-50 content-last">
+  <h5>Repository</h5>
+  <ul class="repo-list">
+    <li>
+      <i class="cf-icon cf-icon-github"></i>
+    </li>
+    <li>
+      <a href="http://github.com/cfpb/cf-buttons">
+        <h4>cf-buttons</h4>
+        <p>Buttons in the Capital Framework</p>
+      </a>
+    </li>
+  </ul>
 </div>
+
+
 
 ## Style
 
