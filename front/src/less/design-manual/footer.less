@@ -3,8 +3,17 @@
    Footer
    ========================================================================== */
 
+/* display content wrap as table for sticky footer */
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
 .footer {
 
+  display: table-row; /* for sticky footer */
+  height: 1px; /* for sticky footer */
   padding: 2em 0;
   border-top: 2px solid @gray-50;
   background: @gray-10;
@@ -32,7 +41,7 @@
   a:hover {
     border-bottom: 1px dotted @pacific;
   }
-  
+
   .footer-links ul {
     list-style: none;
     margin: 1em .5em 1em .25em;
@@ -83,7 +92,7 @@
         float: right;
     }
   }
-} 
+}
 
 /* TABLET/NETBOOK 744px */
 @media only screen and (min-width: 46.5em) {
@@ -94,4 +103,4 @@
       }
     }
 
-} 
+}
