@@ -4169,7 +4169,6 @@ p.print-georgia-para {
   /* for sticky footer */
   height: 1px;
   /* for sticky footer */
-  padding: 2em 0;
   border-top: 2px solid #babbbd;
   background: #f1f2f2;
   width: 100%;
@@ -4196,6 +4195,10 @@ p.print-georgia-para {
 
 .footer a:hover {
   border-bottom: 1px dotted #0072ce;
+}
+
+.footer .footer-container {
+  padding: 2em 0;
 }
 
 .footer .footer-links ul {
