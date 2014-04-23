@@ -3839,6 +3839,11 @@ UI toolkit repo list
     max-height: 6em;
   }
 }
+/* UI toolkit/Links page
+   ========================================================================== */
+a i.link-minicon {
+  text-decoration: none;
+}
 /* UI toolkit/Forms page
    ========================================================================== */
 input[type=checkbox],

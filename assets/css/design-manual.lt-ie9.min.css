@@ -4464,6 +4464,13 @@ UI toolkit repo list
   font-weight: normal;
 }
 
+/* UI toolkit/Links page
+   ========================================================================== */
+
+a i.link-minicon {
+  text-decoration: none;
+}
+
 /* UI toolkit/Forms page
    ========================================================================== */
 

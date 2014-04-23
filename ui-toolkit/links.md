@@ -39,12 +39,12 @@ Links that appear in body text or link lists are underlined. Links are underline
 </div>
 
 <div class="content-67 content-last">
-#### Georgia paragraph links
+##### Georgia paragraph links
 Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>.
 
 ---
 
-#### Avenir Next list links
+##### Avenir Next list links
 - Lorem ipsum <a href="#">Default link style</a>, consectetur adipiscing elit.
 - Curabitur vel odio et est auctor, <a href="#" class="hover">Hover link style</a>.
 - Aliquam mollis tellus in purus porta, <a href="#" class="focus">Focused link style</a>.
@@ -55,10 +55,10 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 
 ## States
 
+<div class="content-33 content-first">
 #### Default
-<div class="content-33 content-first regular-ex">
-Pacific Blue<br>
-1px dotted bottom border
+* Pacific Blue
+* 1px dotted bottom border
 </div>
 
 <div class="content-67 content-last regular-ex">
@@ -66,43 +66,41 @@ Pacific Blue<br>
 </div>
 ---
 
-
+<div class="content-33 content-first">
 #### Hover
-<div class="content-33 content-first regular-ex">
-50% Pacific Blue<br>
-1px solid bottom border
+* 50% Pacific Blue
+* 1px solid bottom border
 </div>
 <div class="content-67 content-last regular-ex">
 <a href="#" class="hover">Hover link style</a>
 </div>
 ---
 
+<div class="content-33 content-first">
 #### Focus
-<div class="content-33 content-first regular-ex">
-Pacific Blue<br>
-1px dotted bottom border<br>
-Thin dotted outline
+* Pacific Blue
+* 1px dotted bottom border
+* Thin dotted outline
 </div>
 <div class="content-67 content-last regular-ex">
 <a href="#" class="focus">Focused link style</a>
 </div>
 ---
 
+<div class="content-33 content-first">
 #### Active
-<div class="content-33 content-first regular-ex">
-Navy Blue<br>
-1px solid bottom border
+* Navy Blue
+* 1px solid bottom border
 </div>
 <div class="content-67 content-last regular-ex">
 <a href="#" class="active">Active link style</a>
 </div>
 ---
 
-
+<div class="content-33 content-first">
 #### Visited
-<div class="content-33 content-first regular-ex">
-50% Teal<br>
-1px solid bottom border
+* 50% Teal
+* 1px solid bottom border
 </div>
 
 <div class="content-67 content-last regular-ex">
@@ -112,21 +110,21 @@ Navy Blue<br>
 
 ## Variations
 
-#### Links in headers
 <div class="content-33 content-first">
-Links in headers are not underlined.
+#### Links in headers
+* No underline
 </div>
 <div class="content-67 content-last">
 # Header 2 <a href="#">link style</a>
 
 </div>
 
-#### Links in navigation
 <div class="content-33 content-first">
-Links in navigation are not underlined.
+#### Links in navigation
+* No underline
 </div>
 <div class="content-67 content-last">
-[placeholder img of Avenir ul with links]
+[coded example of Avenir ul nav with links]
 </div>
 ---
 
@@ -135,7 +133,7 @@ Links in navigation are not underlined.
 Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage. 
 </div>
 <div class="content-67 content-last regular-ex">
-<a href="#">Internal link <i class="cf-icon cf-icon-right"></i></a>
+<a href="#">Internal link<i class="cf-icon cf-icon-right link-minicon"></i></a>
 </div>
 ---
 
@@ -153,7 +151,7 @@ Icons appear to the right of the link text. The color and ```font-size``` of ico
 Use the external link (glyph E610) to emphasize a non-CFPB webpage. External links should open in a new window or tab.
 </div>
 <div class="content-50 content last regular-ex">
-<a href="#">External link <i class="cf-icon cf-icon-external-link"></i></a>
+<a href="#">External link<i class="cf-icon cf-icon-external-link"></i></a>
 </div>
 
 ---
