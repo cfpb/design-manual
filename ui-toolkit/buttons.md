@@ -60,6 +60,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="content-50 content-first">
 #### Secondary buttons
 <p>Use secondary buttons for actions that happen on the current page.</p>
+[include the dimensions here for secondary buttons]
 </div>
 
 <div class="content-50 content-last">
@@ -68,7 +69,6 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <button class="btn btn-secondary">Secondary button</button>
 {:/nomarkdown}
 
-\[include the dimensions here for secondary buttons]
 </div>
 
 ---
@@ -96,12 +96,13 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ## States
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Normal
-<p>Use Pacific Blue with White text.</p>
+* Pacific Blue background color
+* White text
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn">Sign up</button>
@@ -111,12 +112,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Hover/Focused 
-<p>Use Pacific Blue 80% for <code>background-color</code>.</p>
+* Pacific Blue 80% background color
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn hover">Sign up</button>
@@ -126,12 +127,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Active
-<p>Use Navy 80% for <code>background-color</code>.</p>
+* Navy 80% background color
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn active">Sign up</button>
@@ -142,12 +143,14 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Disabled
-<p>Use Gray 20% for <code>background-color</code>, Gray text, and cursor set to <code>not-allowed</code>.</p>
+* Gray 20% background color
+* Gray text
+* Cursor set to <code>not-allowed</code>
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn btn-disabled">Sign up</button>
@@ -157,12 +160,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ## Variations
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Call to action
-<p>[add description]</p>
+* [add description]
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn">Sign up</button>
@@ -172,12 +175,11 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
-#### Super button
-<p>[add description]</p>
+<div class="content-33 content-first">
+* [add description]
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}   
 <button class="btn btn-super">Sign up</button>
@@ -187,12 +189,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Button group
-<p>[add description]</p>
+* [add description]
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}   
 <div class="btn-group">
@@ -206,12 +208,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Compound action
-<p>[add description]</p>
+* [add description]
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}   
 <div class="btn-group">
@@ -224,16 +226,17 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Destructive action
-<p>Destructive actions use Red Orange for <code>background-color</code>.</p>
+* Red Orange background color
 <p>When paired with a Primary action, indicate the destructive action using a Destructive action button link to the right of the Primary button.</p>
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}   
-<button class="btn btn-link btn-warning">Button Tag</button>
+<button class="btn">Submit</button>
+<button class="btn btn-link btn-warning">Reset form</button>
 {:/nomarkdown} 
 
 </div>
