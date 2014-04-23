@@ -20,7 +20,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-50 content-last">
-  <h5>Repository</h5>
+  <h5 class="repo-list-header">Repository</h5>
   <ul class="repo-list">
     <li>
       <i class="cf-icon cf-icon-github"></i>
