@@ -9,18 +9,25 @@ category: UI toolkit
 - [States](#states)
 {: class="toc"}
 
-<div class="content-67 content-first">
+<div class="content-50 content-first">
 
 Use expandables for secondary information not essential for general understanding of the page content, with long forms or with long lists. 
 {: class="lead-in"}
 
 </div>
 
-<div class="content-33 content-last">
-
-[Capital Framework repo]
-
-</div>    
+<div class="content-50 content-last">
+  <h5>Repository</h5>
+  <ul class="repo-list">
+    <li>
+      <i class="cf-icon cf-icon-github"></i>
+    </li>
+    <li>
+      <a href="https://github.com/cfpb/cf-expandables"><h4>cf-expandables</h4></a>
+      <p>Expandables in the Capital Framework</p>
+    </li>
+  </ul>
+</div> 
 
 ## Use
 

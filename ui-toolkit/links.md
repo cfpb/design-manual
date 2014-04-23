@@ -9,18 +9,25 @@ category: UI toolkit
 - [Variations](#variations)
 {: class="toc"}
 
-<div class="content-67 content-first">
+<div class="content-50 content-first">
 
 Links should lead users to another page or further information. In contrast, [buttons](link) are used to signal actions. Users should be able to identify links without relying on color or styling alone.
 {: class="lead-in"}
 
 </div>
 
-<div class="content-33 content-last">
-	
-[repo img]
-
-</div>
+<div class="content-50 content-last">
+  <h5>Repository</h5>
+  <ul class="repo-list">
+    <li>
+      <i class="cf-icon cf-icon-github"></i>
+    </li>
+    <li>
+      <a href="https://github.com/cfpb/cf-typography"><h4>cf-links</h4></a>
+      <p>Links in the Capital Framework</p>
+    </li>
+  </ul>
+</div> 
 
 ## Style
 

@@ -9,18 +9,25 @@ category: UI toolkit
 - [Variations](#variations)
 {: class="toc"}
 
-<div class="content-67 content-first">
+<div class="content-50 content-first">
 
 Lorem ipsum dolor sit amet. 
 {: class="lead-in"}
 
 </div>
 
-<div class="content-33 content-last">
-
-[Capital Framework repo]
-
-</div>    
+<div class="content-50 content-last">
+  <h5>Repository</h5>
+  <ul class="repo-list">
+    <li>
+      <i class="cf-icon cf-icon-github"></i>
+    </li>
+    <li>
+      <a href="https://github.com/cfpb/cf-forms"><h4>cf-forms</h4></a>
+      <p>Forms in the Capital Framework</p>
+    </li>
+  </ul>
+</div>   
 
 ## Style
 
