@@ -3769,6 +3769,14 @@ figure {
   max-width: 35em;
 }
 
+.homepage {
+  width: 100%;
+}
+
+.homepage img {
+  width: 50%;
+}
+
 /* Tablet/netbook (768px) */
 
 /* Landscape tablet/netbook/laptop (1024px) */
