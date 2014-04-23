@@ -32,7 +32,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
   </ul>
 </div>
 
-<h2>Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 ### Primary and Secondary buttons
@@ -119,7 +119,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
-<h2>States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 #### Normal
@@ -183,7 +183,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
-<h2>Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 #### Call to action

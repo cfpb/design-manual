@@ -4,7 +4,7 @@ title:  Links
 category: UI toolkit
 ---
 
-- [Styles](#styles)
+- [Style](#style)
 - [States](#states)
 - [Variations](#variations)
 {: class="toc"}
@@ -29,8 +29,7 @@ Links should lead users to another page or further information. In contrast, [bu
   </ul>
 </div> 
 
-## Style
-
+<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-typography/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -53,7 +52,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 </div>
 
 
-## States
+<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-typography/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 #### Default
@@ -108,7 +107,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 </div>
 
 
-## Variations
+<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-typography/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 #### Links in headers

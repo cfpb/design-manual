@@ -29,7 +29,7 @@ Lorem ipsum dolor sit amet.
   </ul>
 </div>   
 
-## Style
+<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-forms/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -181,7 +181,7 @@ Select elements, also called drop-downs, are used for allowing users to select a
 
 </div> 
 
-## States
+<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-forms/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -257,4 +257,4 @@ Select elements, also called drop-downs, are used for allowing users to select a
 
 </div> 
 
-## Variations
+<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-forms/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>

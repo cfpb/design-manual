@@ -5,6 +5,7 @@ category: UI toolkit
 ---
 
 - [Style](#style)
+- [Use](#use)
 - [States](#states)
 - [Variations](#variations)
 {: class="toc"}
@@ -30,17 +31,17 @@ Pagination allows a user to browse through pages of search results, archives or 
 </div> 
 
 
-## Style
+<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-pagination/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 The styling of the pagination bar is adapted from the button style. 
 
-### Use
+<h2 id="use">Use<span class="cf-code-link"><a href="http://cfpb.github.io/cf-pagination/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 Use large clickable areas to avoid unwanted actions. Identify the current page and indicate the total number of pages. Allow for the user to move between previous and next pages.
 
 Using generous whitespace to space out elements make it as easy to navigate through pages as it is to use all other navigation on the page.
 
-## States 
+<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-pagination/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2> 
 
 #### First page
 
@@ -48,7 +49,7 @@ Using generous whitespace to space out elements make it as easy to navigate thro
 
 #### Last page
 
-## Variations
+<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-pagination/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 #### Infinite scrolling
 
