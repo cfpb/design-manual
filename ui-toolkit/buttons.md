@@ -71,9 +71,9 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
----
-
 </div>
+
+---
 
 <div class="content-33 content-first">
 ### Labels
@@ -89,6 +89,8 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 {:/nomarkdown}
 
 </div>
+
+---
 
 <div class="content-33 content-first">
 ### Icons
@@ -113,8 +115,9 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
     Next
     <i class="btn-icon-right icon-chevron-right"><span class="jekyll-bug"></span></i>
 </button>
-</div>
 {:/nomarkdown}
+
+</div>
 
 ## States
 
