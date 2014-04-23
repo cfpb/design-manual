@@ -2577,6 +2577,7 @@ html {
     padding: 0;
     margin: 0;
     */
+  height: 100%;
   font-family: "Avenir Next", Arial, sans-serif;
   line-height: 1.375;
   color: #101820;
@@ -2599,6 +2600,9 @@ html {
   margin: 0 auto;
   position: relative;
   clear: both;
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 .lt-ie8 .wrap {
   *zoom: 1;
@@ -3534,8 +3538,17 @@ p.print-georgia-para {
    CFPB Design Manual
    Footer
    ========================================================================== */
+/* display content wrap as table for sticky footer */
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
 .footer {
-  padding: 2em 0;
+  display: table-row;
+  /* for sticky footer */
+  height: 1px;
+  /* for sticky footer */
   border-top: 2px solid #babbbd;
   background: #f1f2f2;
   width: 100%;
@@ -3558,6 +3571,9 @@ p.print-georgia-para {
 }
 .footer a:hover {
   border-bottom: 1px dotted #0072ce;
+}
+.footer .footer-container {
+  padding: 2em 0;
 }
 .footer .footer-links ul {
   list-style: none;
