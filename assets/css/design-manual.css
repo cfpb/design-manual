@@ -3845,8 +3845,9 @@ UI toolkit repo list
 }
 /* UI toolkit/Links page
    ========================================================================== */
-a i.link-minicon {
+a.link-minicon i {
   text-decoration: none;
+  margin-left: .5em;
 }
 /* UI toolkit/Forms page
    ========================================================================== */

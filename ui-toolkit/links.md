@@ -133,7 +133,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage. 
 </div>
 <div class="content-67 content-last regular-ex">
-<a href="#">Internal link<i class="cf-icon cf-icon-right link-minicon"></i></a>
+<a href="#" class="link-minicon">Internal link<i class="cf-icon cf-icon-right"></i></a>
 </div>
 ---
 
@@ -151,7 +151,7 @@ Icons appear to the right of the link text. The color and ```font-size``` of ico
 Use the external link (glyph E610) to emphasize a non-CFPB webpage. External links should open in a new window or tab.
 </div>
 <div class="content-50 content last regular-ex">
-<a href="#">External link<i class="cf-icon cf-icon-external-link"></i></a>
+<a href="#">External link <i class="cf-icon cf-icon-external-link"></i></a>
 </div>
 
 ---
