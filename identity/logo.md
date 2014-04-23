@@ -187,13 +187,9 @@ The small execution logo should be used to optimize legibility of the logotype o
 
 ![Desktop web scale logo]({{ site.baseurl }}/assets/img/logo/Logo9.png "Desktop web scale logo")
 
-<div class="regular-ex">
-
-Lockup: small execution<br>
-Height: 50px<br>
-Padding: 25px
-
-</div>
+* Lockup: small execution
+* Height: 50px
+* Padding: 25px
 
 </div>
 
@@ -202,13 +198,9 @@ Padding: 25px
 
 ![Mobile web scale logo]({{ site.baseurl }}/assets/img/logo/Logo10.png "Mobile web scale logo")
 
-<div class="regular-ex">
-
-Lockup: small execution<br>
-Height: 40px<br>
-Padding: 20px
-
-</div>
+* Lockup: small execution
+* Height: 40px
+* Padding: 20px
 
 </div>
 
@@ -229,13 +221,9 @@ The horizontal or vertical lockup should be used for most print applications. Th
 
 ![8.5 x 11” documents print scale horizontal logo]({{ site.baseurl }}/assets/img/logo/Logo11.png "8.5 x 11” documents print scale horizontal logo")
 
-<div class="regular-ex">
-
-Lockup: horizontal<br>
-Height: 0.5”<br>
-Clear space: 0.25”
-
-</div>
+* Lockup: horizontal
+* Height: 0.5”
+* Clear space: 0.25”
 
 </div>
 
@@ -244,13 +232,9 @@ Clear space: 0.25”
 
 ![8.5 x 11” documents print scale vertical logo]({{ site.baseurl }}/assets/img/logo/Logo12.png "8.5 x 11” documents print scale vertical logo")
 
-<div class="regular-ex">
-
-Lockup: vertical<br>
-Height: 0.77”<br>
-Clear space: 0.25”
-
-</div>
+* Lockup: vertical
+* Height: 0.77”
+* Clear space: 0.25”
 
 </div>
 

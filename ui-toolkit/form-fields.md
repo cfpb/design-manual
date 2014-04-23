@@ -187,7 +187,7 @@ Select elements, also called drop-downs, are used for allowing users to select a
 
 #### Normal
 
-Use a Gray 1px solid border.
+* Gray 1px solid border
 
 </div>
 
@@ -205,7 +205,7 @@ Use a Gray 1px solid border.
 
 #### Focus
 
-Use Pacific Blue 1px solid border.
+* Pacific Blue 1px solid border
 
 </div>
 
@@ -223,7 +223,8 @@ Use Pacific Blue 1px solid border.
 
 #### Error
 
-Use Red Orange 1px solid border with Error minicon.
+* Red Orange 1px solid border
+* Error minicon
 
 </div>
 
@@ -242,7 +243,8 @@ Use Red Orange 1px solid border with Error minicon.
 
 #### Success
 
-Use CFPB Green 1px solid border with Success minicon.
+* CFPB Green 1px solid border
+* Success minicon
 
 </div>
 
