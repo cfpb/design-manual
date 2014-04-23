@@ -81,18 +81,40 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-67 content-last">
-\[Add example content]
+
+{::nomarkdown}  
+<button class="btn">Sign up</button><br><br>
+<button class="btn">Continue</button><br><br>
+<button class="btn">A longer label example</button>
+{:/nomarkdown}
+
 </div>
 
 <div class="content-33 content-first">
 ### Icons
-<p>Use icons consistently, or don’t use them at all. Each icon should be used exclusively for one action. Icons appear to the left of the button text. Buttons that have “forward” actions have icons to the right of the text, and those with “back” actions have icons to the left.</p>
+<p>Use icons consistently. Each icon should be used exclusively for one action. Icons appear to the left of the button text. Buttons that have “forward” actions have icons to the right of the text, and those with “back” actions have icons to the left.</p>
 </div>
 
 <div class="content-67 content-last">
 #### Placement
-\[insert CSS diagram]
+
+{::nomarkdown}  
+<button class="btn">
+    <i class="btn-icon-left cf-icon cf-icon-upload"><span class="jekyll-bug"></span></i>
+    Upload document
+</button>
+<br><br>
+
+<button class="btn">
+    <i class="btn-icon-left icon-chevron-left"><span class="jekyll-bug"></span></i>
+    Back
+</button>
+<button class="btn">
+    Next
+    <i class="btn-icon-right icon-chevron-right"><span class="jekyll-bug"></span></i>
+</button>
 </div>
+{:/nomarkdown}
 
 ## States
 
@@ -176,6 +198,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 ---
 
 <div class="content-33 content-first">
+#### Super button
 * [add description]
 </div>
 
@@ -235,8 +258,8 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="content-67 content-last">
 
 {::nomarkdown}   
-<button class="btn">Submit</button>
-<button class="btn btn-link btn-warning">Reset form</button>
+<button class="btn">Action</button>
+<button class="btn btn-link btn-warning">Destructive action</button>
 {:/nomarkdown} 
 
 </div>
