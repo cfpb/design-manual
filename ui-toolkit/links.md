@@ -128,15 +128,7 @@ Lorem ipsum dolor sit amet. Vestibulum orci ante, sagittis quis dolor a, fringil
 <div class="content-67 content-last">
 [coded example of Avenir ul nav with links]
 </div>
----
 
-<div class="content-33 content-first">
-#### Internal links
-Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage. 
-</div>
-<div class="content-67 content-last regular-ex">
-<a href="#">Internal link <i class="cf-icon cf-icon-right"></i></a>
-</div>
 ---
 
 <div class="content-33 content-first">
@@ -147,6 +139,16 @@ Icons appear to the right of the link text. The color and ```font-size``` of ico
 </div>
 
 <div class="content-67 content-last">
+
+<div class="content-50 content-first">
+#### Internal links
+Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage. 
+</div>
+<div class="content-50 content-last regular-ex">
+<a href="#">Internal link <i class="cf-icon cf-icon-right"></i></a>
+</div>
+
+---
 
 <div class="content-50 content-first">
 ##### External links
