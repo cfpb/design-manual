@@ -9,7 +9,7 @@ category: UI toolkit
 - [Variations](#variations)
 {: class="toc"}
 
-<div class="content-67 content-first">
+<div class="content-50 content-first">
 
 Buttons signal actions. They should be used sparingly; each additional button on a page reduces visual prominence of a call to action. Destructive actions should be reversible or alert the user to confirm the destructive action. 
 {: class="lead-in"}
@@ -19,23 +19,20 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
-<div class="content-33 content-last">
-<ul class="repo-list">
-<li class="list-icon">
-    <p class="image-wrap">
-      <img src="../static/img/octocat.png" title="Github" width="25px">
-    </p>
-  </li>
-  <li>
-    <a href="http://cfpb.github.io/cf-buttons/docs/">
-     <h4>CF-buttons</h4>
+<div class="content-50 content-last">
+  <h5 class="repo-list-header">Repository</h5>
+  <ul class="repo-list">
+    <li>
+      <i class="cf-icon cf-icon-github"></i>
+    </li>
+    <li>
+      <a href="http://github.com/cfpb/cf-buttons"><h4>cf-buttons</h4></a>
       <p>Buttons in the Capital Framework</p>
-    </a>
-  </li>
-</ul>
+    </li>
+  </ul>
 </div>
 
-## Style
+<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 ### Primary and Secondary buttons
@@ -63,6 +60,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="content-50 content-first">
 #### Secondary buttons
 <p>Use secondary buttons for actions that happen on the current page.</p>
+[include the dimensions here for secondary buttons]
 </div>
 
 <div class="content-50 content-last">
@@ -71,12 +69,11 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <button class="btn btn-secondary">Secondary button</button>
 {:/nomarkdown}
 
-\[include the dimensions here for secondary buttons]
+</div>
+
 </div>
 
 ---
-
-</div>
 
 <div class="content-33 content-first">
 ### Labels
@@ -84,27 +81,53 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-67 content-last">
-\[Add example content]
+
+{::nomarkdown}  
+<button class="btn">Sign up</button><br><br>
+<button class="btn">Continue</button><br><br>
+<button class="btn">A longer label example</button>
+{:/nomarkdown}
+
 </div>
+
+---
 
 <div class="content-33 content-first">
 ### Icons
-<p>Use icons consistently, or don’t use them at all. Each icon should be used exclusively for one action. Icons appear to the left of the button text. Buttons that have “forward” actions have icons to the right of the text, and those with “back” actions have icons to the left.</p>
+<p>Use icons consistently. Each icon should be used exclusively for one action. Icons appear to the left of the button text. Buttons that have “forward” actions have icons to the right of the text, and those with “back” actions have icons to the left.</p>
 </div>
 
 <div class="content-67 content-last">
 #### Placement
-\[insert CSS diagram]
+
+{::nomarkdown}  
+<button class="btn">
+    <i class="btn-icon-left cf-icon cf-icon-upload"><span class="jekyll-bug"></span></i>
+    Upload document
+</button>
+<br><br>
+
+<button class="btn">
+    <i class="btn-icon-left icon-chevron-left"><span class="jekyll-bug"></span></i>
+    Back
+</button>
+<button class="btn">
+    Next
+    <i class="btn-icon-right icon-chevron-right"><span class="jekyll-bug"></span></i>
+</button>
+{:/nomarkdown}
+
 </div>
 
-## States
+<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Normal
-<p>Use Pacific Blue with White text.</p>
+* Pacific Blue background color
+* White text
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn">Sign up</button>
@@ -114,12 +137,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Hover/Focused 
-<p>Use Pacific Blue 80% for <code>background-color</code>.</p>
+* Pacific Blue 80% background color
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn hover">Sign up</button>
@@ -129,12 +152,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Active
-<p>Use Navy 80% for <code>background-color</code>.</p>
+* Navy 80% background color
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn active">Sign up</button>
@@ -145,12 +168,14 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Disabled
-<p>Use Gray 20% for <code>background-color</code>, Gray text, and cursor set to <code>not-allowed</code>.</p>
+* Gray 20% background color
+* Gray text
+* Cursor set to <code>not-allowed</code>
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn btn-disabled">Sign up</button>
@@ -158,14 +183,14 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
-## Variations
+<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Call to action
-<p>[add description]</p>
+* [add description]
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}  
 <button class="btn">Sign up</button>
@@ -175,12 +200,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Super button
-<p>[add description]</p>
+* [add description]
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}   
 <button class="btn btn-super">Sign up</button>
@@ -190,12 +215,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Button group
-<p>[add description]</p>
+* [add description]
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}   
 <div class="btn-group">
@@ -209,12 +234,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Compound action
-<p>[add description]</p>
+* [add description]
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}   
 <div class="btn-group">
@@ -227,16 +252,17 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 #### Destructive action
-<p>Destructive actions use Red Orange for <code>background-color</code>.</p>
+* Red Orange background color
 <p>When paired with a Primary action, indicate the destructive action using a Destructive action button link to the right of the Primary button.</p>
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 {::nomarkdown}   
-<button class="btn btn-link btn-warning">Button Tag</button>
+<button class="btn">Action</button>
+<button class="btn btn-link btn-warning">Destructive action</button>
 {:/nomarkdown} 
 
 </div>

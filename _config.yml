@@ -132,6 +132,10 @@ secondarynav:
   url: ui-toolkit/form-fields.html
   internal: true
   category: UI toolkit
+- text: Grid and layout
+  url: ui-toolkit/grid-and-layout.html
+  internal: true
+  category: UI toolkit
 - text: Links
   url: ui-toolkit/links.html
   internal: true
@@ -144,10 +148,10 @@ secondarynav:
   url: ui-toolkit/pagination.html
   internal: true
   category: UI toolkit
-- text: Tables
-  url: ui-toolkit/tables.html
-  internal: true
-  category: UI toolkit
+# - text: Tables
+#   url: ui-toolkit/tables.html
+#   internal: true
+#   category: UI toolkit
 # - text: Tooltips
 #   url: ui-toolkit/tooltips.html
 #   internal: true
@@ -164,10 +168,6 @@ secondarynav:
 #   url: downloads/minicons.html
 #   internal: true
 #   category: Downloads
-# - text: Grid and layout
-#   url: ui-toolkit/grid-and-layout.html
-#   internal: true
-#   category: unpublished
 
 
 # Footer Navigation

@@ -102,9 +102,15 @@ figure {
       margin-bottom: 1em;
     }
 
-
     p {
       max-width: 35em;
+    }
+  }
+
+  .homepage {
+    width: 100%;
+    img {
+      width: 50%;
     }
   }
 
@@ -129,7 +135,6 @@ figure {
 @media only screen and (min-width: 100em) { 
 
 }
-
 
 .content {
 
@@ -537,4 +542,97 @@ p.print-georgia-para {
   margin-bottom: 1em;
 }
 
+/* UI toolkit repo list
+   ========================================================================== */
+.repo-list-header {
+  margin-bottom: .75em;
+}
+.repo-list {
+  li {
+    list-style: none;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    height: 4.0625em;
+    max-height: 4.0625em;
+    background-color: #E7E7E6;
+    border-left: 1px solid #BABBBD;
+    width: 85%;
+    padding: .75em 1em;
+  }
+  li:first-child {
+    text-align: center;
+    border-left: none;
+    line-height: 75px;
+    padding: 0 .75em;
+    width: 15%;
+  }
+  i {
+    font-size: 30px;
+    color: @gray;
+  }
+  a:link,
+  a:visited {
+    max-height: 4.0625em;
+    background-color: #E7E7E6;
+  }
+  h4 {
+    margin-bottom: .125em;
+  }
+  p {
+    margin: 0;
+    font-size: 0.875em;
+    color: @gray;
+    .webfont-regular;
+  }
+}
 
+@media screen and (max-width: 60em) {
+  .repo-list {
+    li {
+      height: 6em;
+      max-height: 6em;
+      width: 75%;
+    }
+    li:first-child {
+      width: 25%;
+    }
+  a:link,
+  a:visited {
+      max-height: 6em;
+    }
+  }
+}
+
+/* UI toolkit
+   ========================================================================== */
+
+h2 {
+  span.cf-code-link {
+    float: right;
+    font-size: .625em;
+    padding-top: .7em;
+    .webfont-demi;
+  }
+}
+
+
+
+/* UI toolkit/Links page
+   ========================================================================== */
+ul {
+  &.list_links-minicons {
+    list-style: none;
+    li {
+      margin: .5em 0;
+    }
+  }
+}
+
+
+/* UI toolkit/Forms page
+   ========================================================================== */
+input[type=checkbox], 
+input[type=radio] {
+  margin-right: .75em;
+}

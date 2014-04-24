@@ -9,26 +9,33 @@ category: UI toolkit
 - [States](#states)
 {: class="toc"}
 
-<div class="content-67 content-first">
+<div class="content-50 content-first">
 
 Use expandables for secondary information not essential for general understanding of the page content, with long forms or with long lists. 
 {: class="lead-in"}
 
 </div>
 
-<div class="content-33 content-last">
+<div class="content-50 content-last">
+  <h5 class="repo-list-header">Repository</h5>
+  <ul class="repo-list">
+    <li>
+      <i class="cf-icon cf-icon-github"></i>
+    </li>
+    <li>
+      <a href="https://github.com/cfpb/cf-expandables"><h4>cf-expandables</h4></a>
+      <p>Expandables in the Capital Framework</p>
+    </li>
+  </ul>
+</div> 
 
-[Capital Framework repo]
+<h2 id="use">Use<span class="cf-code-link"><a href="http://cfpb.github.io/cf-expandables/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-</div>    
-
-## Use
-
-The ‘find’ function will not discover information hidden by a collapsed expandable, so use good judgement in deciding which information to hide.
+The `find` function will not discover information hidden by a collapsed expandable, so use good judgement in deciding which information to hide.
 
 Non-javascript users should default to the expanded state. Otherwise, the default state (expanded or collapsed) will depend on the circumstance.  
 
-## Style
+<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-expandables/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -38,16 +45,32 @@ Standard expandables feature a colored bar, a header, the expand/collapse minico
 
 <div class="content-67 content-last">
 
-[example expandables image]
+{::nomarkdown}  
+<div class="expandable">
+    <header class="expandable-header">
+        Expandable Header
+        <a href="" class="expandable-button">
+            <span class="expandable-text">Show</span> <i class="icon-plus-sign"></i>
+        </a>
+    </header>
+    <div class="expandable-content expandable-hidden" style="display: none;">
+        <h3>Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</div>
+{:/nomarkdown}
 
 </div>
 
-## States
+<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-expandables/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
 
 #### Normal
-Gray 20% bar with Pacific Blue minicon.
+* Gray 20% bar 
+* Pacific Blue minicon
 
 </div>
 
@@ -76,9 +99,10 @@ Gray 20% bar with Pacific Blue minicon.
 
 #### Hover/Focus
 
-Grey 50% bar with Pacific Blue minicon.
+* Grey 50% bar
+* Pacific Blue minicon
 
-The header should be addressable by the keyboard to ensure keyboard users can open the expandable. It should match the hover state
+The header should be addressable by the keyboard to ensure keyboard users can open the expandable. It should match the hover state.
 
 </div>
 
@@ -86,7 +110,7 @@ The header should be addressable by the keyboard to ensure keyboard users can op
 
 {::nomarkdown}  
 <div class="expandable">
-    <header class="expandable-header">
+    <header class="expandable-header open">
         Expandable Header
         <a href="" class="expandable-button">
             <span class="expandable-text">Show</span> <i class="icon-plus-sign"></i>

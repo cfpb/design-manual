@@ -127,12 +127,8 @@ abcdefghijklmnopqrstuvwxyz
 
 #### Display
 
-<div class="regular-ex">
-
-Avenir Next Demi Bold<br/>
-48 px
-
-</div>
+* Avenir Next Demi Bold
+* 48 px
 
 </div>
 
@@ -148,12 +144,8 @@ Avenir Next Demi Bold<br/>
     
 #### Header 1
 
-<div class="regular-ex">
-
-Avenir Next Regular<br/>
-34 px
-
-</div>
+* Avenir Next Regular
+* 34 px
 
 </div>
 
@@ -169,12 +161,8 @@ Avenir Next Regular<br/>
     
 #### Header 2
 
-<div class="regular-ex">
-
-Avenir Next Regular<br/>
-26 px
-
-</div>
+* Avenir Next Regular
+* 26 px
 
 </div>
 
@@ -190,12 +178,8 @@ Avenir Next Regular<br/>
     
 #### Header 3
 
-<div class="regular-ex">
-
-Avenir Next Regular<br/>
-22 px
-
-</div>
+* Avenir Next Regular
+* 22 px
 
 </div>
 
@@ -211,12 +195,8 @@ Avenir Next Regular<br/>
     
 #### Header 4
 
-<div class="regular-ex">
-
-Avenir Next Medium<br/>
-18 px
-
-</div>
+* Avenir Next Medium
+* 18 px
 
 </div>
 
@@ -232,13 +212,9 @@ Avenir Next Medium<br/>
     
 #### Header 5
 
-<div class="regular-ex">
-
-Avenir Next Demi Bold<br/>
-14 px, 1 px letter spacing<br/>
-All caps
-
-</div>
+* Avenir Next Demi Bold
+* 14 px, 1 px letter spacing
+* All caps
 
 </div>
 
@@ -254,13 +230,9 @@ All caps
     
 #### Header 6
 
-<div class="regular-ex">
-
-Avenir Next Demi Bold<br/>
-12 px, 1 px letter spacing<br/>
-All caps
-
-</div>
+* Avenir Next Demi Bold
+* 12 px, 1 px letter spacing
+* All caps
 
 </div>
 
@@ -281,12 +253,8 @@ All caps
 
 #### Body (sans-serif)
 
-<div class="regular-ex">
-
-Avenir Next Regular<br/>
-16 px / 22 px line height
-
-</div>
+* Avenir Next Regular
+* 16 px / 22 px line height
 
 </div>
 
@@ -302,12 +270,8 @@ If you have received financial aid offers, use this tool to compare school data 
     
 #### Body (serif)
 
-<div class="regular-ex">
-
-Georgia Regular<br/>
-16 px / 22 px line height
-
-</div>
+* Georgia Regular
+* 16 px / 22 px line height
 
 </div>
 
@@ -554,12 +518,8 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 #### Display
 
-<div class="regular-ex">
-
-Avenir Next Medium<br/>
-60 pt / 66 pt
-
-</div>
+* Avenir Next Medium
+* 60 pt / 66 pt
 
 </div>
 
@@ -575,12 +535,8 @@ Avenir Next Medium<br/>
     
 #### Header 1
 
-<div class="regular-ex">
-
-Avenir Next Medium<br/>
-38 pt / 40 pt
-
-</div>
+* Avenir Next Medium
+* 38 pt / 40 pt
 
 </div>
 
@@ -596,12 +552,8 @@ Avenir Next Medium<br/>
     
 #### Header 2
 
-<div class="regular-ex">
-
-Avenir Next Demi Bold<br/>
-18 pt / 20 pt
-
-</div>
+* Avenir Next Demi Bold
+* 18 pt / 20 pt
 
 </div>
 
@@ -617,12 +569,8 @@ Avenir Next Demi Bold<br/>
     
 #### Header 3
 
-<div class="regular-ex">
-
-Avenir Next Demi Bold<br/>
-16 pt / 18 pt
-
-</div>
+* Avenir Next Demi Bold
+* 16 pt / 18 pt
 
 </div>
 
@@ -638,12 +586,8 @@ Avenir Next Demi Bold<br/>
     
 #### Header 4
 
-<div class="regular-ex">
-
-Avenir Next Medium<br/>
-14 pt / 16 pt
-
-</div>
+* Avenir Next Medium
+* 14 pt / 16 pt
 
 </div>
 
@@ -659,13 +603,9 @@ Avenir Next Medium<br/>
     
 #### Header 5
 
-<div class="regular-ex">
-
-Avenir Next Demi Bold<br/>
-10 pt / 12 pt<br/>
-All caps
-
-</div>
+* Avenir Next Demi Bold
+* 10 pt / 12 pt
+* All caps
 
 </div>
 
@@ -681,12 +621,8 @@ All caps
     
 #### Header 6
 
-<div class="regular-ex">
-
-Avenir Next Medium<br/>
-12 pt / 14 pt
-
-</div>
+* Avenir Next Medium
+* 12 pt / 14 pt
 
 </div>
 
@@ -702,12 +638,8 @@ Avenir Next Medium<br/>
 
 #### Subheader
 
-<div class="regular-ex">
-
-Avenir Next Regular<br/>
-18 pt / 22 pt leading
-
-</div>
+* Avenir Next Regular
+* 18 pt / 22 pt leading
 
 </div>
 
@@ -723,12 +655,8 @@ Avenir Next Regular<br/>
     
 #### Paragraph
 
-<div class="regular-ex">
-
-Avenir Next Regular<br/>
-11 pt / 16 pt leading
-
-</div>
+* Avenir Next Regular
+* 11 pt / 16 pt leading
 
 </div>
 
@@ -744,12 +672,8 @@ Avenir Next Regular<br/>
     
 #### Paragraph
 
-<div class="regular-ex">
-
-Georgia<br/>
-11 pt / 16 pt leading
-
-</div>
+* Georgia
+* 11 pt / 16 pt leading
 
 </div>
 
@@ -765,12 +689,8 @@ Georgia<br/>
     
 #### Bulleted list
 
-<div class="regular-ex">
-
-Avenir Next Regular<br/>
-11 pt / 14 pt leading
-
-</div>
+* Avenir Next Regular
+* 11 pt / 14 pt leading
 
 </div>
 
