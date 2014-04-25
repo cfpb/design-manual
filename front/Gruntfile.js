@@ -18,7 +18,6 @@ module.exports = function(grunt) {
       ' * ==========================================================================\n' +
       ' * Package name: <%= pkg.name %>\n' +
       ' * Version: <%= pkg.version %>\n' +
-      ' * Last modified: <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %>\n' +
       ' * URL: <%= pkg.homepage %>\n' +
       ' * A public domain work of the <%= pkg.author.name %>\n' +
       ' * ==========================================================================\n' +
