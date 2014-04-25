@@ -43,7 +43,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-67 content-last">
 
-<div class="content-50 content-first">
+<div class="content-67 content-first">
 #### Primary buttons
 * Pacific Blue background color
 * 4px rounded corner
@@ -51,7 +51,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 * Sentence case
 </div>
 
-<div class="content-50 content-last">
+<div class="content-33 content-last">
 
 {::nomarkdown}  
 <button class="btn">Sign up</button>
