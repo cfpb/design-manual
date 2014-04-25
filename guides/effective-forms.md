@@ -126,7 +126,7 @@ As always, these design decisions must have a strong, user-centred rationale beh
 
 If the average time to complete a form is more than you can reasonably expect your users to spend in a single session, then you'll need to provide a way for them to save their progress.
 
-The same goes if the session is likely to be interrupted for some reason. For example, if the user is suddenly asked for information which they might not have immediately on hand (a way to mitigate this is to warn users if they're going to be asked for that kind of information). Another example is that the might start a form on their mobile device and want to continue filling it out on their desktop computer.
+The same goes if the session is likely to be interrupted for some reason. For example, if the user is suddenly asked for information which they might not have immediately on hand (a way to mitigate this is to warn users if they're going to be asked for that kind of information). Another example is that the user might start a form on their mobile device and want to continue filling it out on their desktop computer.
 
 ## Indicating mandatory fields
 
@@ -153,16 +153,33 @@ Use familiar language
 
 Sometimes though, people are going to need extra help. Many government forms involve concepts and terminology that people will be unfamiliar with. Some of this stuff takes a lot of explaining, so we need a way of providing contextual help of varying degrees of detail throughout a form.
 
-Here are 3 approaches:
+Here are four approaches:
 
 Inline help
 : Short, snappy text, positioned near the part of the interface it refers to. If it's something that everyone needs to know, make it permanently visible.
+
+Field masking
+: When a specific data entry format is required, as for phone numbers, dates, and social security numbers, provide an example of the required format (e.g., XXX-XX-XXXX).
 
 Progressive disclosure
 : A fancy phrase for hiding stuff until it's clicked on. Used carefully this is a good way of keeping the interface free from potentially confusing clutter. Only use this for help that's intended for a small subset of your audience (say, less than 10%).
 
 Rich contextual help
 : Sometimes you need to give users access to supporting content, in case they're unfamiliar with the terminology or concepts involved in the form. This kind of content should probably exist as a page outside of the form, and then be repurposed in some way within the form.
+
+## Communicating errors
+
+In an ideal world, the user will enter an acceptable value in all the required fields the first time around, making validation unnecessary. That said, there are a several ways to improve the experience when users make mistakes: 
+
+When possible, check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error. 
+: Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
+
+Be descriptive with error text
+: Tell the user what caused the error and how to correct it.
+
+Inline error text should be combined with a page-level error message
+: This is particularly important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to fix the error without re-navigating the entire page. 
+
 
 ## A few principles
 
