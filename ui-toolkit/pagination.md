@@ -12,7 +12,7 @@ category: UI toolkit
 
 <div class="content-50 content-first">
 
-Pagination allows a user to browse through pages of search results, archives or any other kind of continuous content. Choosing pagination or infinite scrolling is subjective to the amount of content on a page, but should be implemented consistently across pages. 
+Pagination allows a user to browse through pages of search results, blog posts, or other collections of content. 
 {: class="lead-in"}
 
 </div>
@@ -37,9 +37,7 @@ The styling of the pagination bar is adapted from the button style.
 
 <h2 id="use">Use<span class="cf-code-link"><a href="http://cfpb.github.io/cf-pagination/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-Use large clickable areas to avoid unwanted actions. Identify the current page and indicate the total number of pages. Allow for the user to move between previous and next pages.
-
-Using generous whitespace to space out elements make it as easy to navigate through pages as it is to use all other navigation on the page.
+Pagination controls should be placed directly below the listed results. 
 
 <h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-pagination/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2> 
 
@@ -53,7 +51,7 @@ Using generous whitespace to space out elements make it as easy to navigate thro
 
 #### Infinite scrolling
 
-Users generally have better experiences scrolling rather than clicking. For large amounts of text, readability can especially be improved through the use of infinite scrolling over pagination.
+In some cases, infinite scrolling provides a better user experience than pagination. 
 
 
 
