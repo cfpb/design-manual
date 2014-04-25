@@ -12,12 +12,12 @@ category: Guides
 
 This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 
-Web forms provide an incredible advantage over paper forms in accessibility, usability, and operational efficiency, but when designed poorly they can cause just as much confusion and cost as their non-digital counterparts. Here we've outlined several ways to ensure the best possible user experience.
+Web forms provide an incredible advantage over paper forms in their potential for accessibility, usability, and operational efficiency, but when designed poorly they can lose many of these benefits. In this guide, we've outlined several ways to ensure the best possible user experience.
 
 
 ## How to structure the form
 
-You should choose a structure for your form that most naturally fits the ways your users are going to want to use it.
+You should choose a structure for your form that fits the ways in which your users will want to use it.
 
 Ask yourself:
 
@@ -30,7 +30,7 @@ Ask yourself:
 * do any parts of the form take place offline?
 * at what point is the form regarded as complete?
 
-How you answer these questions will help you decide how to structure the form. It can help to think in terms of levels: sections, subsections, groups etc. Try not to worry about how those levels should be represented in the interface until you have a broader understanding of the overall structure.
+How you answer these questions will help you decide how to structure the form. It can help to think in terms of levels: sections, subsections, groups, etc. Try not to worry about how those levels should be represented in the interface until you have a broader understanding of the overall structure.
 
 For example, on a website, you might choose to have one section per page, or multiple sections per page. It depends on what's going to work best for your users.
 
@@ -48,7 +48,7 @@ All sections are positioned on a single page.
 * There's only one submit button to press
 * A single URL gives access to all form fields
 * It doesn't force a fixed order of completion
-* You benefit from context of neighbouring sections
+* You benefit from context of neighboring sections
 * Progress is self-evident
 
 #### **The bad**
@@ -78,7 +78,7 @@ Each section goes on its own page.
 
 * Can be harder for users to see where they are within the form
 * It can slow users down as they have to click and load each section
-* You lose the contextual information from neighbouring sections
+* You lose the contextual information from neighboring sections
 * Harder for users to review and edit previous sections
 * There's no single place for users to go back and edit their data
 * Not a natural fit for non-linear processes like looping, adding and removing
@@ -118,19 +118,19 @@ For more complicated forms, some combination of the other options might be your 
 
 ![Diagram showing a hybrid form](https://www.gov.uk/service-manual/assets/images/designing-transactions/hybrid.png)
 
-Again, done well this can give you the benefits of both the single page and wizard approaches. It also allows you to create a sense of rhythm to the overall flow, which can help people to understand when they have moved into a different part of the form, and break up the monotony of filling in forms.
+Done well, this can give you the benefits of both the single page and wizard approaches. It also allows you to create a sense of rhythm to the overall flow, which can help users understand when they have moved into a different part of the form, and break up the monotony of filling in forms.
 
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
 ## Saving progress
 
-If the average time to complete a form is more than you can reasonably expect your users to spend in a single session, then you'll need to provide a way for them to save their progress.
+If the average time to complete a form is more than you can reasonably expect your users to spend in a single session, then you need to provide a way for them to save their progress.
 
 The same goes if the session is likely to be interrupted for some reason. For example, if the user is suddenly asked for information which they might not have immediately on hand (a way to mitigate this is to warn users if they're going to be asked for that kind of information). Another example is that the user might start a form on their mobile device and want to continue filling it out on their desktop computer.
 
-## Indicating mandatory fields
+## Indicating required fields
 
-If you follow the principle of not asking for information you don't need, then most of your fields will be mandatory and you shouldn't need to mark them as such with '*' symbols or other conventions. Instead, mark the optional fields, by adding '(optional)' to their label.
+If you follow the principle of not asking for information you don't need, then most of your fields will be required and you shouldn't need to mark them as such with '*' symbols or other conventions. Instead, mark the optional fields, by adding '(optional)' to their label.
 
 ## Helping users
 
@@ -140,9 +140,6 @@ These principles may help:
 
 Follow conventions where possible
 : Hyperlinks are blue, warnings are red etc.
-
-Use metaphors as a shortcut to understanding
-: "Oh, it's like an address book..."
 
 Leverage the context of the surrounding elements
 : "I'm on the address page, I must be being asked for an address"
@@ -169,16 +166,16 @@ Rich contextual help
 
 ## Communicating errors
 
-In an ideal world, the user will enter an acceptable value in all the required fields the first time around, making validation unnecessary. That said, there are a several ways to improve the experience when users make mistakes: 
+Despite providing the best possible helper text and contextual help, you should still plan for when users make errors when filling out your forms. Here are a few ways to improve the experience: 
 
-When possible, check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error. 
+Check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error. 
 : Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
 
 Be descriptive with error text
 : Tell the user what caused the error and how to correct it.
 
-Inline error text should be combined with a page-level error message
-: This is particularly important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to fix the error without re-navigating the entire page. 
+Combine field-level error text with a page-level error message
+: This is particularly important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to find and fix the error without re-navigating the entire form. 
 
 
 ## A few principles
@@ -202,7 +199,7 @@ Use common sense, though. Don't try to make everyone read a page of terms and co
 
 The best approach is to meet (or exceed) people's expectations. For example, if your delivery times are typical and you accept all the usual payment methods then you won't need to warn everyone about them up front.
 
-### 2. Respect the natural flow of the underlying process
+### 2. Respect the flow of the underlying process
 
 For example, if the underlying process is inherently non-linear then choose an interface that works well with non-linear processes. If you try to fit a process into a model it's unsuited for you'll confuse your users and upset their expectations.
 
@@ -222,18 +219,13 @@ Every request for information from the user:
 * creates another opportunity for them to get something 'wrong'
 * increases the time it takes to complete the form
 * increases the perception that the service is invasive
+* increases the risk that users will give up or fail to submit your form
 
-Asking for information because 'it might be useful' or 'it helps with our record keeping' is not acceptable.
+Asking for information because 'it might be useful' or 'it helps with our record keeping' should be considered against all of these factors.
 
 
 
 ## Attribution
 
-* Adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
-
-
-
- 
-
-
+* Adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) within the exceptional [Gov.uk Service Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 
