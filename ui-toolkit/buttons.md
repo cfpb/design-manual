@@ -11,10 +11,10 @@ category: UI toolkit
 
 <div class="content-50 content-first">
 
-Buttons signal actions. They should be used sparingly; each additional button on a page reduces visual prominence of a call to action. 
+Buttons signal actions. They should be used sparingly; each additional button on a page reduces the visual prominence of a call to action. 
 {: class="lead-in"}
 
-In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lead users to another page or further information, or indicate a secondary destructive action.
+In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lead users to another page or further information.
 {: class="lead-in"}
 
 </div>
