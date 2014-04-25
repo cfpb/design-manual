@@ -41,7 +41,7 @@ For example, on a website, you might choose to have one section per page, or mul
 All sections are positioned on a single page.
 
 {:.left}
-![Diagram showing all sections on a page](/service-manual/assets/images/designing-transactions/one-page.png)
+![Diagram showing all sections on a page](https://www.gov.uk/service-manual/assets/images/designing-transactions/one-page.png)
 
 #### **The good**
 
@@ -64,7 +64,7 @@ All sections are positioned on a single page.
 
 Each section goes on its own page.
 
-![Diagram showing each section on it's own page](/service-manual/assets/images/designing-transactions/wizard.png)
+![Diagram showing each section on it's own page](https://www.gov.uk/service-manual/assets/images/designing-transactions/wizard.png)
 
 #### **The good**
 
@@ -116,7 +116,7 @@ Within this hybrid option there are still some important design decisions to mak
 
 For more complicated forms, some combination of the other options might be your best bet.
 
-![Diagram showing a hybrid form](/service-manual/assets/images/designing-transactions/hybrid.png)
+![Diagram showing a hybrid form](https://www.gov.uk/service-manual/assets/images/designing-transactions/hybrid.png)
 
 Again, done well this can give you the benefits of both the single page and wizard approaches. It also allows you to create a sense of rhythm to the overall flow, which can help people to understand when they have moved into a different part of the form, and break up the monotony of filling in forms.
 
