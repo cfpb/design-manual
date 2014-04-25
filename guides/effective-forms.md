@@ -4,15 +4,19 @@ title:  Effective forms
 category: Guides
 ---
 
-- [Order and layout](#order-and-layout)
-- [Clarity](#clarity)
-- [Validation](#validation)
+- [How to structure the form](#how-to-structure-the-form)
+- [Example structures](#example-structures)
+- [Saving progress](#saving-progress)
+- [Indicating required fields](#indicating-required fields)
+- [Helping users](#helping-users)
+- [Communicating errors](#communicating-errors)
+- [General principles](#general-principles)
 {: class="toc"}
 
 
-This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
+_This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual)._
 
-Web forms provide an incredible advantage over paper forms in their potential for accessibility, usability, and operational efficiency, but when designed poorly they can lose many of these benefits. In this guide, we've outlined several ways to ensure the best possible user experience.
+Web forms provide an incredible advantage over paper forms in their potential for accessibility, usability, and operational efficiency, but when designed without users in mind they can lose many of these benefits. In this guide, we've outlined several ways to ensure the best possible user experience.
 
 
 ## How to structure the form
@@ -178,7 +182,7 @@ Combine field-level error text with a page-level error message
 : This is particularly important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to find and fix the error without re-navigating the entire form. 
 
 
-## A few principles
+## General principles
 
 Here are a few principles to keep in mind when you're designing forms.
 
