@@ -21,7 +21,7 @@ Web forms provide an incredible advantage over paper forms in their potential fo
 
 ## How to structure the form
 
-You should choose a structure for your form that fits the ways in which your users will want to use it.
+The structure of your form should fit with the ways in which your users will want to use it.
 
 Ask yourself:
 
@@ -64,7 +64,7 @@ All sections are positioned on a single page.
 
 ---
 
-### Option2 : Wizard
+### Option 2 : Wizard
 
 Each section goes on its own page.
 
