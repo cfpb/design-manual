@@ -89,7 +89,7 @@ Each section goes on its own page.
 
 All sections on a single page, but each new section only appears once the previous section has been completed.
 
-![Diagram showing an accordion form](/service-manual/assets/images/designing-transactions/accordion-3.png)
+![Diagram showing an accordion form](https://www.gov.uk/service-manual/assets/images/designing-transactions/accordion-3.png)
 
 #### **The good**
 
