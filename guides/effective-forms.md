@@ -10,206 +10,209 @@ category: Guides
 {: class="toc"}
 
 
-## Order and layout
+This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 
-<div class="content-100">
+Web forms provide an incredible advantage over paper forms in accessibility, usability, and operational efficiency, but when designed poorly they can cause just as much confusion and cost as their non-digital counterparts. Here we've outlined several ways to ensure the best possible user experience.
 
-<div class="content-33 content-first">
-	
-#### The order of the elements in a form is critical for the user understanding the form.
 
-Think of your form as a narrative that you are walking your user through.
+## How to structure the form
 
-</div>
+You should choose a structure for your form that most naturally fits the ways your users are going to want to use it.
 
-<div class="content-33">
-	
-#### The most important items in the form should be listed first.
+Ask yourself:
 
-This can include login and contact information (e.g., name and email address) if it’s important to enable the user to come back if they don’t complete the form on the first pass.
+* will your users want to move through the form in a fixed order, or one of their choosing?
+* will they be able to complete the form in a single go?
+* will their answers affect other parts of the form?
+* will they want to go back and review or change answers to previous questions?
+* will they need to add or remove items from a list, or change the order of things?
+* how many parties are involved in the form?
+* do any parts of the form take place offline?
+* at what point is the form regarded as complete?
 
-</div>
+How you answer these questions will help you decide how to structure the form. It can help to think in terms of levels: sections, subsections, groups etc. Try not to worry about how those levels should be represented in the interface until you have a broader understanding of the overall structure.
 
-<div class="content-33 content-last">
-	
-#### Form elements should be grouped logically.
+For example, on a website, you might choose to have one section per page, or multiple sections per page. It depends on what's going to work best for your users.
 
-Similar items (e.g., all things related to identifying an individual financial institution) should be grouped together.
+## Example structures
 
-</div>
+### Option 1: Single page
+
+All sections are positioned on a single page.
+
+{:.left}
+![Diagram showing all sections on a page](/service-manual/assets/images/designing-transactions/one-page.png)
+
+#### **The good**
+
+* There's only one submit button to press
+* A single URL gives access to all form fields
+* It doesn't force a fixed order of completion
+* You benefit from context of neighbouring sections
+* Progress is self-evident
+
+#### **The bad**
+
+* Long forms can be overwhelming and off-putting
+* It's less well suited to branching or non-linear flow
+* How do you save partial progress?
+* Can be harder to track analytics like drop-off rates
 
 ---
 
-</div>
+### Option2 : Wizard
 
-<div class="content-33 content-first">
-	
-#### When your form has a lot of fields, chunk the fields into separate categories.
+Each section goes on its own page.
 
-Those categories can then be divided by either separate headers or accordion-style modules depending on the purpose of the form (external form style vs application form style)
+![Diagram showing each section on it's own page](/service-manual/assets/images/designing-transactions/wizard.png)
 
-</div>
+#### **The good**
 
-<div class="content-33">
-	
-#### If the form stretches over multiple pages, indicate the user’s progress.
+* It's easier to handle branching and dependencies between sections
+* It's easier to let the user save progress
+* A long form can feel more manageable
+* Easier to guide a user through an unfamiliar process
+* Easier to capture analytics like drop-off rates for each section
 
-A left-hand list of steps/pages is included in the external form style for this purpose.
+#### **The bad**
 
-</div>
+* Can be harder for users to see where they are within the form
+* It can slow users down as they have to click and load each section
+* You lose the contextual information from neighbouring sections
+* Harder for users to review and edit previous sections
+* There's no single place for users to go back and edit their data
+* Not a natural fit for non-linear processes like looping, adding and removing
 
-<div class="content-33 content-last">
-	
-#### Use progressive disclosure.
+---
 
-If there are sections of the form that are optional, consider using a show/hide mechanism like an accordion module. If something is a followup question (e.g., “If you answered yes to the previous question…”) don’t show it at all until the user has met the condition requiring the follow-up.
+### Option 3: Accordion form
 
-</div>
+All sections on a single page, but each new section only appears once the previous section has been completed.
 
-## Clarity
+![Diagram showing an accordion form](/service-manual/assets/images/designing-transactions/accordion-3.png)
 
-<div class="content-33 content-first">
-	
-#### Avoid jargon.
+#### **The good**
 
-</div>
+* Can handle branching and dependencies between sections
+* Can easily review and edit previous questions
+* Can help guide a user through an unfamiliar process
+* User still benefits from some surrounding context
+* Progress is clear
 
-<div class="content-67 content-last">
-	
-Wherever possible, use clear, concise, standard English.
+#### **The bad**
 
-</div>
+* Implementation and interface is more complex
 
-<div class="content-33 content-first">
-	
-#### Keep labels short and simple.
+Done well, option 3 is a hybrid of the other two that has benefits of both the other options.
+Within this hybrid option there are still some important design decisions to make. For example:
 
-</div>
+* Will future questions be shown in any way or will you only see the questions you've answered?
+* What happens if you go back and edit a previous question?
+    * Does the current question stay open or closed?
+    * How do you get back to the current question once you've edited a previous one?
+    * Do you lose all your answers to questions that follow the one you go back to edit?
 
-<div class="content-67 content-last">
-	
-If a longer label is needed, consider phrasing it as a question: “How many chucks did the woodchuck chuck?” rather than “Number of chucks chucked by woodchuck”
+### Option 4: Hybrid
 
-</div>
+For more complicated forms, some combination of the other options might be your best bet.
 
-<div class="content-33 content-first">
-	
-#### Helper text should appear below the text entry field, and provide an example of the correct way to enter text (“e.g., 100 Main Street, Anytown, USA”).
+![Diagram showing a hybrid form](/service-manual/assets/images/designing-transactions/hybrid.png)
 
-</div>
+Again, done well this can give you the benefits of both the single page and wizard approaches. It also allows you to create a sense of rhythm to the overall flow, which can help people to understand when they have moved into a different part of the form, and break up the monotony of filling in forms.
 
-<div class="content-67 content-last">
-	
-Do not hide this sort of helper text: it should always be visible, even before the user focuses on the form element (some users won’t select a field until they know their answer).
+As always, these design decisions must have a strong, user-centred rationale behind them.
 
-</div>
+## Saving progress
 
-<div class="content-33 content-first">
-	
-#### If the most of the fields are required, leave them alone and just mark the optional fields as optional.
+If the average time to complete a form is more than you can reasonably expect your users to spend in a single session, then you'll need to provide a way for them to save their progress.
 
-</div>
+The same goes if the session is likely to be interrupted for some reason. For example, if the user is suddenly asked for information which they might not have immediately on hand (a way to mitigate this is to warn users if they're going to be asked for that kind of information). Another example is that the might start a form on their mobile device and want to continue filling it out on their desktop computer.
 
-<div class="content-67 content-last">
-	
-If most of the fields are optional, leave them alone and just mark the required fields as required. If it’s close to a tie, go with whichever choice might be better for your users.
+## Indicating mandatory fields
 
-</div>
+If you follow the principle of not asking for information you don't need, then most of your fields will be mandatory and you shouldn't need to mark them as such with '*' symbols or other conventions. Instead, mark the optional fields, by adding '(optional)' to their label.
 
-<div class="content-33 content-first">
-	
-#### Helper text and/or field masking should be used whenever a specific data entry format is required,
+## Helping users
 
-</div>
+You should be aiming for a service that's so intuitive people don't need any help in using it. If you find yourself explaining the interface within the interface it's a sign that something has gone wrong. Time to try out some different ideas.
 
-<div class="content-67 content-last">
-	
-as for phone numbers, dates, and social security numbers. Users should not have to guess and check this through validation.
+These principles may help:
 
-</div>
+Follow conventions where possible
+: Hyperlinks are blue, warnings are red etc.
 
-<div class="content-33 content-first">
-	
-#### Where the label is placed affects how quickly the user can read the form field.
+Use metaphors as a shortcut to understanding
+: "Oh, it's like an address book..."
 
-</div>
+Leverage the context of the surrounding elements
+: "I'm on the address page, I must be being asked for an address"
 
-<div class="content-67 content-last">
-	
-Keeping labels to the left of the form field is the pattern that tends to work best for clearly indicating which label belongs to which field. 
+Use familiar language
+: eg 'Registration number' rather than 'Vehicle Registration Mark'
 
-</div>
 
-<div class="content-33 content-first">
-	
-#### To help clarify the association of a label with a form field, provide ample space and visual indication between separate form fields.
+Sometimes though, people are going to need extra help. Many government forms involve concepts and terminology that people will be unfamiliar with. Some of this stuff takes a lot of explaining, so we need a way of providing contextual help of varying degrees of detail throughout a form.
 
-</div>
+Here are 3 approaches:
 
-<div class="content-67 content-last">
-	
-This will allow the user to quickly scan the text of the labels and easily associate each label with its field. Right-aligning label text can also be helpful, but it also has the negative effect of making labels harder to scan and can lead to very ragged text when translated to different languages.
+Inline help
+: Short, snappy text, positioned near the part of the interface it refers to. If it's something that everyone needs to know, make it permanently visible.
 
-</div>
+Progressive disclosure
+: A fancy phrase for hiding stuff until it's clicked on. Used carefully this is a good way of keeping the interface free from potentially confusing clutter. Only use this for help that's intended for a small subset of your audience (say, less than 10%).
 
-## Validation
+Rich contextual help
+: Sometimes you need to give users access to supporting content, in case they're unfamiliar with the terminology or concepts involved in the form. This kind of content should probably exist as a page outside of the form, and then be repurposed in some way within the form.
 
-**In an ideal world, the user enters an acceptable value in all the required fields the first time around, making validation unnecessary.** That should be your goal. 
+## A few principles
 
-**When possible, check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error.** It is not necessary to provide affirmative inline validation (such as green checkmarks) for all fields, but you should consider them for places where correctness is particularly critical, such as when users create a password.
+Here are a few principles to keep in mind when you're designing forms.
 
-**Remember that autocomplete fields create a risk of false positives.** So don’t make it painful for users to type something out on their own. Users often have a better idea of what they’re looking for better than your autocomplete algorithm does.
+### 1. Be honest about the proposition
 
-##Error states
+The further in to a form someone gets, the more time they have invested in it and the greater their annoyance if they have to abandon it for some reason.
 
-**Think about why a user might enter an invalid value, and which invalid values might be common.** This should inform how you write the label, helper text, and error text.
+Be honest about what you're offering users, and what you're not offering them. In particular, people need to know up front about any:
 
-**Error text should be descriptive.** Tell the user what caused the error and how to correct it.
+* costs involved
+* waiting periods or delays
+* uncommon or hard-to-find infomation they'll need to provide
+* constraints on who can complete the form (age, nationality etc)
+* equipment that will be required (e.g., a printer)
+* non-digital parts of the form
 
-**Conditional error text (i.e., based on the invalid value that the user enters) is awesome.**
+Use common sense, though. Don't try to make everyone read a page of terms and conditions before they start (they won't).
 
-**Combine the error text with an icon for additional visual emphasis.** It’s important that the choice of this icon makes sense in the context of the icons used for success states and warning states. A recommended set is a check mark for success, an exclamation mark for warnings, and a “no” icon for errors.
+The best approach is to meet (or exceed) people's expectations. For example, if your delivery times are typical and you accept all the usual payment methods then you won't need to warn everyone about them up front.
 
-**Inline error messaging should be combined with page-level error messaging.** This is important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to fix the error without re-navigating the entire page. 
+### 2. Respect the natural flow of the underlying process
 
-**To reiterate the above, marking invalid fields with a bright red border is of no use to users with vision disabilities.**
+For example, if the underlying process is inherently non-linear then choose an interface that works well with non-linear processes. If you try to fit a process into a model it's unsuited for you'll confuse your users and upset their expectations.
 
+### 3. Consider all aspects of the user experience
 
-##Success states
+Remember the broader context in which the form exists, including the emotional states of the people involved, the situations and activites that the form is embedded in, and the full range of devices that will be used to access it.
 
-**Inline validation of the fields that a user is filling out will provide a sense of efficacy while filling out the form.** It’s not necessary, but you’ll probably find that users enjoy the experience more when they’re reminded that they’re doing things correctly.
+### 4. Assume users have no prior domain knowledge
 
-**The user should know that they’ve submitted the form successfully.** So tell them with a success page. And then send a follow up email, which can be pretty much identical to your success page.
+Don't assume that your users already understand all the concepts and terminology used in your form. A few people will want to read up on all that stuff before they start, but many will choose to dive straight in. You need to support both types of people.
 
-**This is your moment to provide next steps.** Direct the user to what they should do next. 
+### 5. Don't ask for information you don't need
 
+Every request for information from the user:
 
-##Recommendations for specific field types and field sets
+* requires additional physical and cognitive effort 
+* creates another opportunity for them to get something 'wrong'
+* increases the time it takes to complete the form
+* increases the perception that the service is invasive
 
-**Radio buttons or select menus should be used when the system will only permit one of the available values.** This is often necessary as a back-end or business requirement, but be careful about the plausibility that the real answer is “both” or “neither.”
+Asking for information because 'it might be useful' or 'it helps with our record keeping' is not acceptable.
 
-**Avoid multi-selectors whenever possible.** Fewer options should be represented as checkboxes or radio buttons. If you have dozens of options, find a way to group them into a set of simpler choices through which the user can drill down to their final choice.
 
-**Make the text-entry box the size of the expected text entry string.** If a field requires a ten-digit number, the field should be ten characters wide.
 
-**Options within a form element should be listed in alphabetical order unless there is a strong and specific reason not to do so.**
+## Attribution
 
-**Consider internationalization issues.** If the form should only be completed by US residents, then it’s ok for the form to only accept ZIP codes and US phone numbers; forms that might be used by people from other countries, such as servicemembers stationed overseas, should consider a wider range of postal codes and telephone country codes.
-
-
-##Considerations for mobile
-
-**Your form fields and buttons probably need to be bigger.** The rules of thumb from the major OS UI guidelines range slightly: Nokia recommends that all tappable elements should be at a minimum of 28 x 28 pixels, Apple recommends a minimum of 44 x 44 pixels wide. Ultimately the easier things are to tap on, the easier it will be for users to fill out your form. So make them bigger.
-
-**You need to demo your form on an actual phone in order to test how it feels.** Viewing a jpeg of the interface on your Blackberry is a good start. Demoing on less outdated devices is also important.
-
-**Placing labels to the left of form fields is harder on mobile phones.** For this reason, our form templates respond to mobile by placing labels above the fields.
-
-**For longer forms, include functionality to save and continue later.** And note that your users are likely to continue later on a different device, such as a desktop computer.
-
-**Specify “url” “email” and “number” input types and your users will thank you thank you thank you.** It is so wonderful when an website asks for your PIN and the number keypad pops up instead of the alphabet. It’s also really easy to implement.
-
- 
+* Adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 
 
 
