@@ -33,7 +33,7 @@ Lorem ipsum dolor sit amet.
 
 {::nomarkdown}
 <div class="cols-12">
-        <h2>12 columns w/ 1200px max width</h2>
+        <h3>12 column grid</h3>
         <section>
             <div class="col col-1"><p>one</p></div>
             <div class="col col-1"><p>one</p></div>
