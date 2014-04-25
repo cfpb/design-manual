@@ -83,6 +83,8 @@ Lorem ipsum dolor sit amet.
         </section>
 {:/nomarkdown}
 
+<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-grid/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+
 {::nomarkdown}
         <h3>Prefixing/Suffixing</h3>
         <section>
