@@ -29,6 +29,8 @@ Lorem ipsum dolor sit amet.
   </ul>
 </div>
 
+<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-grid/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+
 {::nomarkdown}
 <div class="cols-12">
         <h2>12 columns w/ 1200px max width</h2>
@@ -79,6 +81,9 @@ Lorem ipsum dolor sit amet.
         <section>
             <div class="col col-12"><p>twelve</p></div>
         </section>
+{:/nomarkdown}
+
+{::nomarkdown}
         <h3>Prefixing/Suffixing</h3>
         <section>
             <div class="col col-1 suffix-11"><p>prefix 0, suffix 11</p></div>
