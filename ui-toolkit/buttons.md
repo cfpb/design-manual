@@ -84,7 +84,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-33 content-first">
 ### Labels
-<p>Use verbs and an active voice. Language should be clear, succinct, and informative. Avoid technical terms such as “form reset” and “submit.” Limit the copy length to 22 characters.</p>
+<p>Use verbs and an active voice. Language should be clear, succinct, and informative.  Limit the copy length to 22 characters.</p>
 </div>
 
 <div class="content-67 content-last">
