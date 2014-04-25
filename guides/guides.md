@@ -4,4 +4,5 @@ title: Guides
 category: Guides
 ---
 
-### These guides reflect the design principles and best practices espoused by the CFPB tech team.
+### These guides present strategies and guiding principles for building effective, accessible, and user-centered products and services. 
+
