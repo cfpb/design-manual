@@ -39,8 +39,6 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <p>Use primary buttons for actions that go to the next step. Use secondary buttons for actions that happen on the current page.</p>
 
 <p>Generous white space lends focus and makes buttons more actionable. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.</p>
-
-<p>Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Medium at 14 px, sentence case, for button copy.</p>
 </div>
 
 <div class="content-67 content-last">
