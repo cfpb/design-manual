@@ -148,5 +148,5 @@ Lorem ipsum dolor sit amet.
                 </section>
             </div>
         </section>
-    </div>
-    {:/nomarkdown}
+</div>
+{:/nomarkdown}
