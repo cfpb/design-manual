@@ -4,4 +4,4 @@ title:  UI toolkit
 category: UI toolkit
 ---
 
-### The UI toolkit contains guidelines for using CFPB's [Capital Framework](http://cfpb.github.io/capital-framework/), a set of front-end components built by in-house developers to make creating consistent, on-brand web products as easy as possible. 
+### Our UI toolkit contains guidelines for using the CFPB's [Capital Framework](http://cfpb.github.io/capital-framework/), a set of front-end components built by in-house designers and developers to help us create consistent, on-brand web products as easily as possible. 
