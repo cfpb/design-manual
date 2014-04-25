@@ -11,7 +11,7 @@ category: UI toolkit
 
 <div class="content-50 content-first">
 
-Use expandables for secondary information not essential for general understanding of the page content, with long forms or with long lists. 
+Expandables are used for displaying non-essential information on a page. 
 {: class="lead-in"}
 
 </div>
