@@ -11,7 +11,7 @@ category: UI toolkit
 
 <div class="content-50 content-first">
 
-Links should lead users to another page or further information. In contrast, [buttons](link) are used to signal actions. Users should be able to identify links without relying on color or styling alone.
+Links lead users to a different page or further information. In contrast, [buttons](link) are used to signal actions. Users should be able to identify links without relying on color or styling alone.
 {: class="lead-in"}
 
 </div>
