@@ -3132,6 +3132,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   text-align: center;
 }
 
@@ -3175,6 +3177,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   text-align: right;
 }
 
@@ -3215,6 +3219,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   text-align: left;
 }
 
@@ -3238,6 +3244,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   text-align: right;
 }
 
@@ -3284,6 +3292,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .content {
@@ -3318,6 +3328,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .content .content-25,
@@ -3364,6 +3376,8 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   overflow: hidden;
   /* Inner content - nested grid inside content */
   /* Inner content - nested grid inside content */
@@ -3392,6 +3406,8 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 25%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .content .content-25 {
@@ -3414,6 +3430,8 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .content .content-75 {
@@ -3436,6 +3454,8 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 33.33333333333333%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .content .content-33 {
@@ -3458,6 +3478,8 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 66.66666666666666%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .content .content-67 {
@@ -3480,6 +3502,8 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .content .content-50 {
@@ -3697,6 +3721,8 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .swatch {
@@ -3721,6 +3747,8 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 25%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .swatch {
@@ -4283,6 +4311,14 @@ input[type=radio] {
   margin-right: .75em;
 }
 
+/* UI toolkit/Grids page
+   ========================================================================== */
+
+.cols-12 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 /* ==========================================================================
    CFPB Design Manual
    Footer
@@ -4400,6 +4436,8 @@ input[type=radio] {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   /* Th next two lines get rid of the annoying 40px left margin on unordered list in WebKit (-webkit-offset-start: 40px;): */
   margin: 0;
   padding: 0;
@@ -4496,6 +4534,8 @@ input[type=radio] {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .ie .sidebar {
@@ -4565,6 +4605,8 @@ input[type=radio] {
   margin-right: -0.25em;
   vertical-align: top;
   width: 25%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   padding-bottom: 2em;
   padding-top: 2em;
 }

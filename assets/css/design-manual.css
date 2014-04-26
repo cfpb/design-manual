@@ -2702,6 +2702,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   text-align: center;
 }
 .ie .header .site-title {
@@ -2738,6 +2740,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   text-align: right;
 }
 .ie .header .site-logo {
@@ -2770,6 +2774,8 @@ html {
     margin-right: -0.25em;
     vertical-align: top;
     width: 50%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
     text-align: left;
   }
   .ie .header .site-title {
@@ -2790,6 +2796,8 @@ html {
     margin-right: -0.25em;
     vertical-align: top;
     width: 50%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
     text-align: right;
   }
   .ie .header .site-logo {
@@ -2827,6 +2835,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 .ie .content {
   margin-right: -0.26em;
@@ -2857,6 +2867,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 .ie .content .content-25,
 .ie .content .content-75,
@@ -2895,6 +2907,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 75%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
     overflow: hidden;
     /* Inner content - nested grid inside content */
     /* Inner content - nested grid inside content */
@@ -2920,6 +2934,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 25%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-25 {
     margin-right: -0.26em;
@@ -2939,6 +2955,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 75%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-75 {
     margin-right: -0.26em;
@@ -2958,6 +2976,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 33.33333333333333%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-33 {
     margin-right: -0.26em;
@@ -2977,6 +2997,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 66.66666666666666%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-67 {
     margin-right: -0.26em;
@@ -2996,6 +3018,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 50%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-50 {
     margin-right: -0.26em;
@@ -3170,6 +3194,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 50%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .swatch {
     margin-right: -0.26em;
@@ -3192,6 +3218,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 25%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .swatch {
     margin-right: -0.26em;
@@ -3659,6 +3687,12 @@ input[type=checkbox],
 input[type=radio] {
   margin-right: .75em;
 }
+/* UI toolkit/Grids page
+   ========================================================================== */
+.cols-12 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 /* ==========================================================================
    CFPB Design Manual
    Footer
@@ -3757,6 +3791,8 @@ input[type=radio] {
     margin-right: -0.25em;
     vertical-align: top;
     width: 100%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
     /* Th next two lines get rid of the annoying 40px left margin on unordered list in WebKit (-webkit-offset-start: 40px;): */
     margin: 0;
     padding: 0;
@@ -3841,6 +3877,8 @@ input[type=radio] {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 .ie .sidebar {
   margin-right: -0.26em;
@@ -3900,6 +3938,8 @@ input[type=radio] {
     margin-right: -0.25em;
     vertical-align: top;
     width: 25%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
     padding-bottom: 2em;
     padding-top: 2em;
   }
