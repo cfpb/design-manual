@@ -36,17 +36,22 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-33 content-first">
 ### Primary and Secondary buttons
-<p>Standard buttons use Pacific Blue with a 4px rounded corner. Use Avenir Next, Medium at 14 px, sentence case, for button copy. Generous white space lends focus and makes buttons more actionable.</p>
+<p>Use primary buttons for actions that go to the next step. Use secondary buttons for actions that happen on the current page.</p>
+
+<p>Generous white space lends focus and makes buttons more actionable. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.</p>
 </div>
 
 <div class="content-67 content-last">
 
-<div class="content-50 content-first">
+<div class="content-67 content-first">
 #### Primary buttons
-<p>Use primary buttons for actions that go to the next step. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.</p>
+* Pacific Blue background color
+* 4px rounded corner
+* 14px Avenir Next Medium text in white
+* Sentence case
 </div>
 
-<div class="content-50 content-last">
+<div class="content-33 content-last">
 
 {::nomarkdown}  
 <button class="btn">Sign up</button>
@@ -57,13 +62,15 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 ---
 
-<div class="content-50 content-first">
+<div class="content-67 content-first">
 #### Secondary buttons
-<p>Use secondary buttons for actions that happen on the current page.</p>
-[include the dimensions here for secondary buttons]
+* Gray background color
+* 4px rounded corner
+* 14px Avenir Next Medium text in white
+* Sentence case
 </div>
 
-<div class="content-50 content-last">
+<div class="content-33 content-last">
 
 {::nomarkdown}  
 <button class="btn btn-secondary">Secondary button</button>
@@ -77,7 +84,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-33 content-first">
 ### Labels
-<p>Use verbs and an active voice. Language should be clear, succinct, and informative. Avoid technical terms such as “form reset” and “submit.” Limit the copy length to 22 characters.</p>
+<p>Use verbs and an active voice. Language should be clear, succinct, and informative.  Limit the copy length to 22 characters.</p>
 </div>
 
 <div class="content-67 content-last">
