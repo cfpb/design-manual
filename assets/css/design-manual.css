@@ -987,58 +987,53 @@ input.btn::-moz-focus-inner {
    Capital Framework
    Form Element Styling
    ========================================================================== */
-/* topdoc
-    name: Form labels
-    family: cf-forms
-    patterns:
-    - name: Default label
-      notes:
-        - "Warning, this pattern is still under development."
-      markup: |
-        <label>I am a form label</label>
-    tags:
-    - cf-forms
-*/
 label {
   display: block;
 }
 /* topdoc
-    name: Single-line text input
-    notes:
-      - Most other text-based inputs extend styles from here as seen in the CSS to the right.
+    name: Single/Multi-Line Text Inputs
     family: cf-forms
     patterns:
     - name: Default single-line text input
       markup: |
-        <input placeholder="placeholder text" type="text" value="">
-    - name: Focused state
+        <input placeholder="placeholder text" type="text">
+    - name: Focused single-line text input
       markup: |
-        <input class="focus" placeholder="placeholder text" type="text" value="">
-    - name: Error state
+        <input class="focus" placeholder="placeholder text" type="text">
+    - name: Field in error state
+      codenotes:
+        - 'role="alert"'
       notes:
-        - Please review the notes on form input error icons in the form icons section below.
+        - 'Use the alert role to mark invalid fields: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role'
       markup: |
-        <input class="error" placeholder="placeholder text" type="text" value="Invalid input">
-        <i class="cf-form_input-icon icon-remove-sign" role="alert">
-          <span class="jekyll-bug"></span>
-        </i>
-    - name: Success state
+        <input class="error" type="text" value="Invalid input">
+        <i class="icon-remove-sign" role="alert"><span class="jekyll-bug"></span></i>
+    - name: Field in success state
+      markup: |
+        <input class="success" type="text" value="Validated input">
+        <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+    - name: Default multi-line text box
+      markup: |
+        <textarea>Example entry</textarea>
+    - name: Focused multi-line text box
+      markup: |
+        <textarea class="focus">Example entry</textarea>
+    - name: Multi-line text box in error state
+      codenotes:
+        - 'role="alert"'
       notes:
-        - Please review the notes on form input success icons in the form icons section below.
+        - 'Use the alert role to mark invalid fields: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role'
       markup: |
-        <input class="success" placeholder="placeholder text" type="text" value="Validated input">
-        <i class="cf-form_input-icon icon-ok-sign">
-          <span class="jekyll-bug"></span>
-        </i>
+        <textarea class="error">Invalid input</textarea>
+        <i class="icon-remove-sign" role="alert"><span class="jekyll-bug"></span></i>
+    - name: Multi-line text box in success state
+      markup: |
+        <textarea class="success">Validated input</textarea>
+        <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
     tags:
     - cf-forms
 */
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="url"],
-input[type="tel"],
-input[type="number"],
+input,
 textarea {
   display: inline-block;
   width: 85%;
@@ -1053,18 +1048,11 @@ textarea {
   -webkit-appearance: none;
   -webkit-user-modify: read-write-plaintext-only;
 }
-input[type="text"]:focus,
-input[type="text"].focus,
-input[type="search"]:focus,
-input[type="search"].focus,
-input[type="email"]:focus,
-input[type="email"].focus,
-input[type="url"]:focus,
-input[type="url"].focus,
-input[type="tel"]:focus,
-input[type="tel"].focus,
-input[type="number"]:focus,
-input[type="number"].focus,
+textarea {
+  overflow: auto;
+}
+input:focus,
+input.focus,
 textarea:focus,
 textarea.focus {
   border: 1px solid #0072ce;
@@ -1074,262 +1062,27 @@ textarea.focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-input[type="text"].error,
-input[type="search"].error,
-input[type="email"].error,
-input[type="url"].error,
-input[type="tel"].error,
-input[type="number"].error,
+input.error,
 textarea.error {
   border: 1px solid #d12124;
   outline: 1px solid #d12124;
 }
-input[type="text"].success,
-input[type="search"].success,
-input[type="email"].success,
-input[type="url"].success,
-input[type="tel"].success,
-input[type="number"].success,
+input.success,
 textarea.success {
   border: 1px solid #2cb34a;
   outline: 1px solid #2cb34a;
 }
-/* topdoc
-    name: Single-line search input
-    family: cf-forms
-    patterns:
-    - name: Default single-line search input
-      markup: |
-        <input placeholder="placeholder search text" type="search" value="">
-    - name: Focused state
-      markup: |
-        <input class="focus" placeholder="placeholder search text" type="search" value="">
-    - name: Error state
-      notes:
-        - Please review the notes on form input error icons in the form icons section below.
-      markup: |
-        <input class="error" placeholder="placeholder search text" type="search" value="Invalid input">
-        <i class="cf-form_input-icon icon-remove-sign" role="alert">
-          <span class="jekyll-bug"></span>
-        </i>
-    - name: Success state
-      notes:
-        - Please review the notes on form input success icons in the form icons section below.
-      markup: |
-        <input class="success" placeholder="placeholder search text" type="search" value="Validated input">
-        <i class="cf-form_input-icon icon-ok-sign">
-          <span class="jekyll-bug"></span>
-        </i>
-    tags:
-    - cf-forms
-*/
-/* NOTE: all input[type="search"] styles extend input[type="text"]. */
-/* topdoc
-    name: Single-line email input
-    family: cf-forms
-    patterns:
-    - name: Default single-line email input
-      markup: |
-        <input placeholder="placeholder email text" type="email" value="">
-    - name: Focused state
-      markup: |
-        <input class="focus" placeholder="placeholder email text" type="email" value="">
-    - name: Error state
-      notes:
-        - Please review the notes on form input error icons in the form icons section below.
-      markup: |
-        <input class="error" placeholder="placeholder email text" type="email" value="Invalid input">
-        <i class="cf-form_input-icon icon-remove-sign" role="alert">
-          <span class="jekyll-bug"></span>
-        </i>
-    - name: Success state
-      notes:
-        - Please review the notes on form input success icons in the form icons section below.
-      markup: |
-        <input class="success" placeholder="placeholder email text" type="email" value="Validated input">
-        <i class="cf-form_input-icon icon-ok-sign">
-          <span class="jekyll-bug"></span>
-        </i>
-    tags:
-    - cf-forms
-*/
-/* NOTE: all input[type="email"] styles extend input[type="text"]. */
-/* topdoc
-    name: Single-line url input
-    family: cf-forms
-    patterns:
-    - name: Default single-line url input
-      markup: |
-        <input placeholder="placeholder url text" type="url" value="">
-    - name: Focused state
-      markup: |
-        <input class="focus" placeholder="placeholder url text" type="url" value="">
-    - name: Error state
-      notes:
-        - Please review the notes on form input error icons in the form icons section below.
-      markup: |
-        <input class="error" placeholder="placeholder url text" type="url" value="Invalid input">
-        <i class="cf-form_input-icon icon-remove-sign" role="alert">
-          <span class="jekyll-bug"></span>
-        </i>
-    - name: Success state
-      notes:
-        - Please review the notes on form input success icons in the form icons section below.
-      markup: |
-        <input class="success" placeholder="placeholder url text" type="url" value="Validated input">
-        <i class="cf-form_input-icon icon-ok-sign">
-          <span class="jekyll-bug"></span>
-        </i>
-    tags:
-    - cf-forms
-*/
-/* NOTE: all input[type="url"] styles extend input[type="text"]. */
-/* topdoc
-    name: Single-line tel input
-    family: cf-forms
-    patterns:
-    - name: Default single-line tel input
-      markup: |
-        <input placeholder="placeholder tel text" type="tel" value="">
-    - name: Focused state
-      markup: |
-        <input class="focus" placeholder="placeholder tel text" type="tel" value="">
-    - name: Error state
-      notes:
-        - Please review the notes on form input error icons in the form icons section below.
-      markup: |
-        <input class="error" placeholder="placeholder tel text" type="tel" value="Invalid input">
-        <i class="cf-form_input-icon icon-remove-sign" role="alert">
-          <span class="jekyll-bug"></span>
-        </i>
-    - name: Success state
-      notes:
-        - Please review the notes on form input success icons in the form icons section below.
-      markup: |
-        <input class="success" placeholder="placeholder tel text" type="tel" value="Validated input">
-        <i class="cf-form_input-icon icon-ok-sign">
-          <span class="jekyll-bug"></span>
-        </i>
-    tags:
-    - cf-forms
-*/
-/* NOTE: all input[type="tel"] styles extend input[type="text"]. */
-/* topdoc
-    name: Single-line number input
-    family: cf-forms
-    patterns:
-    - name: Default single-line number input
-      markup: |
-        <input placeholder="placeholder number text" type="number" value="">
-    - name: Focused state
-      markup: |
-        <input class="focus" placeholder="placeholder number text" type="number" value="">
-    - name: Error state
-      notes:
-        - Please review the notes on form input error icons in the form icons section below.
-      markup: |
-        <input class="error" placeholder="placeholder number text" type="number" value="Invalid input">
-        <i class="cf-form_input-icon icon-remove-sign" role="alert">
-          <span class="jekyll-bug"></span>
-        </i>
-    - name: Success state
-      notes:
-        - Please review the notes on form input success icons in the form icons section below.
-      markup: |
-        <input class="success" placeholder="placeholder number text" type="number" value="Validated input">
-        <i class="cf-form_input-icon icon-ok-sign">
-          <span class="jekyll-bug"></span>
-        </i>
-    tags:
-    - cf-forms
-*/
-/* NOTE: all input[type="number"] styles extend input[type="text"]. */
-/* topdoc
-    name: Multiline textarea
-    family: cf-forms
-    patterns:
-    - name: Default multi-line text box
-      markup: |
-        <textarea>Example entry</textarea>
-    - name: Focused multi-line text box
-      markup: |
-        <textarea class="focus">Example entry</textarea>
-    - name: Multi-line text box in error state
-      notes:
-        - Please review the notes on form input error icons in the form icons section below.
-      markup: |
-        <textarea class="error">Invalid input</textarea>
-        <i class="cf-form_input-icon icon-remove-sign" role="alert"><span class="jekyll-bug"></span></i>
-    - name: Multi-line text box in success state
-      notes:
-        - Please review the notes on form input success icons in the form icons section below.
-      markup: |
-        <textarea class="success">Validated input</textarea>
-        <i class="cf-form_input-icon icon-ok-sign"><span class="jekyll-bug"></span></i>
-    tags:
-    - cf-forms
-*/
-/* NOTE: all textarea styles extend input[type="text"]. */
-textarea {
-  overflow: auto;
-}
-/* topdoc
-    name: Form icons
-    family: cf-forms
-    patterns:
-    - name: The .jekyll-bug element
-      codenotes:
-        - |
-          <i class="cf-form_input-icon icon-credit-card">
-            <span class="jekyll-bug"></span>
-          </i>
-      notes:
-        - |
-          Adding the .jekyll-bug element inside of an icon is only necessary
-          when using Jekyll as it tends to ignore empty <i> elements.
-    - name: Form input icons
-      notes:
-        - "Form input icons add small positioning tweaks to Font Awesome icons."
-        - "They are meant to be positioned after a form input."
-      markup: |
-        <input type="text" value="">
-        <i class="cf-form_input-icon icon-credit-card">
-          <span class="jekyll-bug"></span>
-        </i>
-    - name: Form input error icon
-      notes:
-        - |
-          The icon must be placed directly after the form input in the markup
-          and the input must have the class of "error".
-        - 'Use the alert role to mark invalid fields: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role'
-      markup: |
-        <input class="error" placeholder="placeholder search text" type="search" value="Invalid input">
-        <i class="cf-form_input-icon icon-remove-sign" role="alert">
-          <span class="jekyll-bug"></span>
-        </i>
-    - name: Form input success icon
-      notes:
-        - |
-          The icon must be placed directly after the form input in the markup
-          and the input must have the class of "success".
-      markup: |
-        <input class="success" placeholder="placeholder search text" type="search" value="Validated input">
-        <i class="cf-form_input-icon icon-ok-sign">
-          <span class="jekyll-bug"></span>
-        </i>
-    tags:
-    - cf-forms
-*/
-.cf-form_input-icon {
+input + [class^="icon-"],
+textarea + [class^="icon-"] {
   position: relative;
   top: 0.15em;
   margin-left: 0.2em;
   font-size: 1.25em;
 }
-.error + .cf-form_input-icon {
+.error + [class^="icon-"] {
   color: #d12124;
 }
-.success + .cf-form_input-icon {
+.success + [class^="icon-"] {
   color: #2cb34a;
 }
 /* topdoc
@@ -2949,6 +2702,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   text-align: center;
 }
 .ie .header .site-title {
@@ -2985,6 +2740,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
   text-align: right;
 }
 .ie .header .site-logo {
@@ -3017,6 +2774,8 @@ html {
     margin-right: -0.25em;
     vertical-align: top;
     width: 50%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
     text-align: left;
   }
   .ie .header .site-title {
@@ -3037,6 +2796,8 @@ html {
     margin-right: -0.25em;
     vertical-align: top;
     width: 50%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
     text-align: right;
   }
   .ie .header .site-logo {
@@ -3074,6 +2835,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 .ie .content {
   margin-right: -0.26em;
@@ -3104,6 +2867,8 @@ html {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 .ie .content .content-25,
 .ie .content .content-75,
@@ -3142,6 +2907,9 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 75%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
+    overflow: hidden;
     /* Inner content - nested grid inside content */
     /* Inner content - nested grid inside content */
     /* Inner content - nested grid inside content */
@@ -3166,6 +2934,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 25%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-25 {
     margin-right: -0.26em;
@@ -3185,6 +2955,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 75%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-75 {
     margin-right: -0.26em;
@@ -3204,6 +2976,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 33.33333333333333%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-33 {
     margin-right: -0.26em;
@@ -3223,6 +2997,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 66.66666666666666%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-67 {
     margin-right: -0.26em;
@@ -3242,6 +3018,8 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 50%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
   }
   .ie .content .content-50 {
     margin-right: -0.26em;
@@ -3370,24 +3148,7 @@ figure {
 /* Color swatches for Identity/Color page
    ========================================================================== */
 .swatch {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 25%;
   margin-left: 0;
-}
-.ie .swatch {
-  margin-right: -0.26em;
-}
-.lt-ie8 .swatch {
-  display: inline;
-  *zoom: 1;
-  *behavior: url(boxsizing.htc);
 }
 .swatch_field {
   height: 2em;
@@ -3404,8 +3165,10 @@ figure {
 .swatch td,
 .swatch th {
   padding: 0;
+  vertical-align: top;
 }
 .swatch th {
+  padding-right: 0.25em;
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -3413,6 +3176,59 @@ figure {
 }
 .swatch_field__green {
   background: #2cb34a;
+}
+/* Make swatch tables multi column at appropriate widths */
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+  .swatches {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .swatch {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 50%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
+  }
+  .ie .swatch {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .swatch {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
+}
+/* Landscape tablet/netbook/laptop (1024px) */
+@media only screen and (min-width: 64em) {
+  .swatch {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 25%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
+  }
+  .ie .swatch {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .swatch {
+    display: inline;
+    *zoom: 1;
+    *behavior: url(boxsizing.htc);
+  }
 }
 .swatch_field__dark-redorange {
   background: #9c301b;
@@ -3871,6 +3687,12 @@ input[type=checkbox],
 input[type=radio] {
   margin-right: .75em;
 }
+/* UI toolkit/Grids page
+   ========================================================================== */
+.cols-12 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 /* ==========================================================================
    CFPB Design Manual
    Footer
@@ -3969,6 +3791,8 @@ input[type=radio] {
     margin-right: -0.25em;
     vertical-align: top;
     width: 100%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
     /* Th next two lines get rid of the annoying 40px left margin on unordered list in WebKit (-webkit-offset-start: 40px;): */
     margin: 0;
     padding: 0;
@@ -4053,6 +3877,8 @@ input[type=radio] {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  background-color: #ffc;
+  background-color: rgba(255, 255, 0, 0.25);
 }
 .ie .sidebar {
   margin-right: -0.26em;
@@ -4112,6 +3938,8 @@ input[type=radio] {
     margin-right: -0.25em;
     vertical-align: top;
     width: 25%;
+    background-color: #ffc;
+    background-color: rgba(255, 255, 0, 0.25);
     padding-bottom: 2em;
     padding-top: 2em;
   }

@@ -60,6 +60,8 @@ figure {
   .content {
     // Make room for the fixed header
     .column(9);
+    overflow: hidden; // Added so that .nested-col-group mixin within isn't too wide.
+                      // This shouldn't be necessary, though... need to revisit.
 
     /* Inner content - nested grid inside content */
     .content-25 {
@@ -246,7 +248,7 @@ figure {
    ========================================================================== */
 
 .swatch {
-    .column(3);
+    
     margin-left: 0;
 
     &_field {
@@ -267,14 +269,34 @@ figure {
     td,
     th {
         padding: 0;
+        vertical-align: top;
     }
     th {
+        padding-right: 0.25em;
         .webfont-demi;
         text-align: left;
     }
 
     &_field__green {
         background: @green;
+    }
+}
+
+/* Make swatch tables multi column at appropriate widths */
+
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+    .swatches {
+        .nested-col-group;
+    }
+    .swatch {
+        .column(6)
+    }
+}
+/* Landscape tablet/netbook/laptop (1024px) */
+@media only screen and (min-width: 64em) {
+    .swatch {
+        .column(3);
     }
 }
 
