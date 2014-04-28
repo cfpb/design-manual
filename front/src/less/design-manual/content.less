@@ -638,8 +638,6 @@ h2 {
   }
 }
 
-
-
 /* UI toolkit/Links page
    ========================================================================== */
 ul {
@@ -649,14 +647,6 @@ ul {
       margin: .5em 0;
     }
   }
-}
-
-
-/* UI toolkit/Forms page
-   ========================================================================== */
-input[type=checkbox], 
-input[type=radio] {
-  margin-right: .75em;
 }
 
 
@@ -685,12 +675,12 @@ input[type=radio] {
         // Space each column apart vertically.
         margin-bottom: 10px;
 
-        border-left-color: #FFB149;
-        border-left-color: fade(#FF9E1B, 25%);
-        border-right-color: #FFB149;
-        border-right-color: fade(#FF9E1B, 25%);
-        background-color: #F6D9D3;
-        background-color: fade(#D12124, 20%);
+        border-left-color: @green-midtone;
+        border-left-color: fade(@green-midtone, 100%);
+        border-right-color: @green-midtone;
+        border-right-color: fade(@green-midtone, 100%);
+        background-color: @green-tint;
+        background-color: fade(@green-tint, 100%);
 
         &:before,
         &:after {
@@ -698,8 +688,8 @@ input[type=radio] {
           display: block;
           width: 100%;
           height: @gutter-width * 0.25;
-          background-color: #DA6750;
-          background-color: fade(#DA6750, 75%);
+          background-color: @green;
+          background-color: fade(@green, 100%);
         }
 
         &:before {
