@@ -32,7 +32,7 @@ Lorem ipsum dolor sit amet.
 <h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-grid/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 {::nomarkdown}
-<div class="cols-12">
+<div class="grid-demo cols-12">
         <h3>12 column grid</h3>
         <section>
             <div class="col col-1"><p>one</p></div>

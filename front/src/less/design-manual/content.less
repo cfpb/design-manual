@@ -659,9 +659,60 @@ input[type=radio] {
   margin-right: .75em;
 }
 
+
 /* UI toolkit/Grids page
    ========================================================================== */
-@debug: true;
-.cols-12 {
-  .nested-col-group();
+
+.grid-demo {
+    // Make .grid-demo a cf-grids .wrapper.
+    .wrapper();
+
+
+    // Space .wrappers apart from each other.
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    // Make section elements inside of .grid-demo a .nested-col-group.
+    // Each cf-grids column has both left and right gutters. since we're wrapping
+    // each set of columns in a section tag we can negate the left gutter on the
+    // first column and the right gutter on the last column by simply using
+    // negative margins on its container.
+    section {
+        .nested-col-group();
+    }
+
+    .col {
+        // Space each column apart vertically.
+        margin-bottom: 10px;
+
+        border-left-color: #FFB149;
+        border-left-color: fade(#FF9E1B, 25%);
+        border-right-color: #FFB149;
+        border-right-color: fade(#FF9E1B, 25%);
+        background-color: #F6D9D3;
+        background-color: fade(#D12124, 20%);
+
+        &:before,
+        &:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: @gutter-width * 0.25;
+          background-color: #DA6750;
+          background-color: fade(#DA6750, 75%);
+        }
+
+        &:before {
+          margin-bottom: @gutter-width * 0.25;
+        }
+
+        &:after {
+          margin-top: @gutter-width * 0.25;
+        }
+    }
+
+    p {
+        max-width: auto;
+        text-align: center;
+    }
 }
