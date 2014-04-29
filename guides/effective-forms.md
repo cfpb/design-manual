@@ -4,10 +4,9 @@ title:  Effective forms
 category: Guides
 ---
 
-- [How to structure the form](#how-to-structure-the-form)
-- [Example structures](#example-structures)
+- [Choosing a form structure](#choosing-a-form-structure)
 - [Saving progress](#saving-progress)
-- [Indicating required fields](#indicating-required fields)
+- [Indicating required fields](#indicating-required-fields)
 - [Helping users](#helping-users)
 - [Communicating errors](#communicating-errors)
 - [General principles](#general-principles)
@@ -19,7 +18,7 @@ _This guide is adapted from [Designing transactions](https://www.gov.uk/service-
 Web forms provide an incredible advantage over paper forms in their potential for accessibility, usability, and operational efficiency, but when designed without users in mind they can lose many of these benefits. In this guide, we've outlined several ways to ensure the best possible user experience.
 
 
-## How to structure the form
+## Choosing a form structure
 
 The structure of your form should fit with the ways in which your users will want to use it.
 
