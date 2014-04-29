@@ -4,10 +4,9 @@ title:  Effective forms
 category: Guides
 ---
 
-- [How to structure the form](#how-to-structure-the-form)
-- [Example structures](#example-structures)
+- [Choosing a form structure](#choosing-a-form-structure)
 - [Saving progress](#saving-progress)
-- [Indicating required fields](#indicating-required fields)
+- [Indicating required fields](#indicating-required-fields)
 - [Helping users](#helping-users)
 - [Communicating errors](#communicating-errors)
 - [General principles](#general-principles)
@@ -19,7 +18,7 @@ _This guide is adapted from [Designing transactions](https://www.gov.uk/service-
 Web forms provide an incredible advantage over paper forms in their potential for accessibility, usability, and operational efficiency, but when designed without users in mind they can lose many of these benefits. In this guide, we've outlined several ways to ensure the best possible user experience.
 
 
-## How to structure the form
+## Choosing a form structure
 
 The structure of your form should fit with the ways in which your users will want to use it.
 
@@ -44,18 +43,10 @@ For example, on a website, you might choose to have one section per page, or mul
 
 All sections are positioned on a single page.
 
-<div class="content-25 content-first">
-
 {:.left}
 ![Diagram showing all sections on a page](https://www.gov.uk/service-manual/assets/images/designing-transactions/one-page.png)
 
-</div>
-
-<div class="content-75 content-last">
-
-<div class="content-50 content-first">
-
-#### The good
+#### **The good**
 
 * There's only one submit button to press
 * A single URL gives access to all form fields
@@ -63,20 +54,12 @@ All sections are positioned on a single page.
 * You benefit from context of neighboring sections
 * Progress is self-evident
 
-</div>
-
-<div class="content-50 content-last">
-
-#### The bad
+#### **The bad**
 
 * Long forms can be overwhelming and off-putting
 * It's less well suited to branching or non-linear flow
 * How do you save partial progress?
 * Can be harder to track analytics like drop-off rates
-
-</div>
-
-</div>
 
 ---
 
@@ -86,8 +69,6 @@ Each section goes on its own page.
 
 ![Diagram showing each section on it's own page](https://www.gov.uk/service-manual/assets/images/designing-transactions/wizard.png)
 
-<div class="content-50 content-first">
-
 #### **The good**
 
 * It's easier to handle branching and dependencies between sections
@@ -95,10 +76,6 @@ Each section goes on its own page.
 * A long form can feel more manageable
 * Easier to guide a user through an unfamiliar process
 * Easier to capture analytics like drop-off rates for each section
-
-</div>
-
-<div class="content-50 content-last">
 
 #### **The bad**
 
@@ -109,8 +86,6 @@ Each section goes on its own page.
 * There's no single place for users to go back and edit their data
 * Not a natural fit for non-linear processes like looping, adding and removing
 
-</div>
-
 ---
 
 ### Option 3: Accordion form
@@ -119,8 +94,6 @@ All sections on a single page, but each new section only appears once the previo
 
 ![Diagram showing an accordion form](https://www.gov.uk/service-manual/assets/images/designing-transactions/accordion-3.png)
 
-<div class="content-50 content-first">
-
 #### **The good**
 
 * Can handle branching and dependencies between sections
@@ -128,10 +101,6 @@ All sections on a single page, but each new section only appears once the previo
 * Can help guide a user through an unfamiliar process
 * User still benefits from some surrounding context
 * Progress is clear
-
-</div>
-
-<div class="content-50 content-last">
 
 #### **The bad**
 
@@ -145,8 +114,6 @@ Within this hybrid option there are still some important design decisions to mak
     * Does the current question stay open or closed?
     * How do you get back to the current question once you've edited a previous one?
     * Do you lose all your answers to questions that follow the one you go back to edit?
-
-</div>
 
 ### Option 4: Hybrid
 
