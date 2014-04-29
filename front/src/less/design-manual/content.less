@@ -675,10 +675,10 @@ ul {
         // Space each column apart vertically.
         margin-bottom: 10px;
 
-        border-left-color: @green-midtone;
-        border-left-color: fade(@green-midtone, 100%);
-        border-right-color: @green-midtone;
-        border-right-color: fade(@green-midtone, 100%);
+        border-left-color: @green;
+        border-left-color: fade(@green, 100%);
+        border-right-color: @green;
+        border-right-color: fade(@green, 100%);
         background-color: @green-tint;
         background-color: fade(@green-tint, 100%);
 
@@ -688,8 +688,8 @@ ul {
           display: block;
           width: 100%;
           height: @gutter-width * 0.25;
-          background-color: @green;
-          background-color: fade(@green, 100%);
+          background-color: @green-midtone;
+          background-color: fade(@green-midtone, 100%);
         }
 
         &:before {
@@ -702,7 +702,9 @@ ul {
     }
 
     p {
-        max-width: auto;
+        max-width: none;
         text-align: center;
+        .webfont-regular;
+        margin-top: 1.125em;
     }
 }

@@ -12979,8 +12979,8 @@ ul.list_links-minicons li {
 }
 .grid-demo .col {
   margin-bottom: 10px;
-  border-left-color: #addc91;
-  border-right-color: #addc91;
+  border-left-color: #2cb34a;
+  border-right-color: #2cb34a;
   background-color: #dbedd4;
 }
 .grid-demo .col:before,
@@ -12989,7 +12989,7 @@ ul.list_links-minicons li {
   display: block;
   width: 100%;
   height: 7.5px;
-  background-color: #2cb34a;
+  background-color: #addc91;
 }
 .grid-demo .col:before {
   margin-bottom: 7.5px;
@@ -12998,8 +12998,12 @@ ul.list_links-minicons li {
   margin-top: 7.5px;
 }
 .grid-demo p {
-  max-width: auto;
+  max-width: none;
   text-align: center;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 1.125em;
 }
 /* ==========================================================================
    CFPB Design Manual
