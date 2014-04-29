@@ -4,18 +4,27 @@ title: Creating accessible interfaces
 category: Guides
 ---
 
-##Guiding principles of web accessibility
-The concepts of web accessibility are organized around four guiding principles. These principles lay the foundation for ensuring web content is available for all users. As defined by the W3C, the guidelines are:  
+- [Perceivable](#perceivable)
+- [Operable](#operable)
+- [Understandable](#understandable)
+- [Robust](#robust)
+{: class="toc"}
 
-1. **Perceivable**: Information and user interface components must be presentable to users in ways they can perceive.
-2. **Operable**: User interface components and navigation must be operable: an interface cannot require interaction that a user cannot perform).
-3. **Understandable**: Information and the operation of user interface must be understandable.
-4. **Robust**: Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+<div class="content-67 content-first">
 
-Following these guidelines makes web sites and apps more accessible for users with disabilities. It also makes sites and content more usable for everybody, especially users on non-desktop devices. And it helps to ensure forward compatibility, including with devices that are radically different from those in use today.
+Following these guidelines makes web sites and apps more accessible for users with disabilities. It also makes sites and content more usable for everybody, especially users on non-desktop devices. And it helps to ensure forward compatibility, including devices that are radically different from those in use today.
+{: class="lead-in"}
 
-This document is organized based around these four principles. Note: while this document can function as a checklist – and at times, it will – that isn’t the primary purpose. The goal is to foster understanding of why these guidelines are important.
+This document is organized based around these four principles, as defined by the W3C. Note: while this document can function as a checklist – and at times, it will – that isn’t the primary purpose. The goal is to foster understanding of why these guidelines are important.
+{: class="lead-in"}
 
+</div>
+
+<div class="content-33 content-last">
+  
+[Feature image or links?]
+
+</div>
 
 ##Perceivable
 Following these guidelines will ensure the ability to access content on a broad variety of devices. This includes disabled individuals using assistive technology (such as blind users with screen readers, or deaf users needing captions, etc). It also includes users of varying devices, including grayscale screens, mobile devices when muted, devices that can read content to us, etc.

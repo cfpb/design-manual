@@ -12418,10 +12418,10 @@ figure {
   margin-left: 0;
 }
 .swatch_field {
-  height: 2em;
+  height: 5em;
 }
 .swatch__primary .swatch_field {
-  height: 8em;
+  height: 10em;
 }
 .swatch_head {
   margin: 0.25em 0;
