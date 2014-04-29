@@ -12,7 +12,7 @@ category: Guides
 
 <div class="content-67 content-first">
 
-The following four principles, as defined by the [W3C](http://www.w3.org/standards/webdesign/accessibility), lay the foundation for ensuring that web content is available for all users, including people with disabilities and users on non-desktop devices. These guidelines also enable forward compatibility in the event that future devices are radically different from those in use today.
+The following four principles, as defined by the [W3C](http://www.w3.org/TR/2008/REC-WCAG20-20081211/), lay the foundation for ensuring that web content is available for all users, including people with disabilities and users on non-desktop devices. These guidelines also enable forward compatibility in the event that future devices are radically different from those in use today.
 {: class="lead-in"}
 
 Note: While this document can function as a checklist – and at times, it will – that isn’t the primary purpose. The goal is to foster understanding of why these guidelines are important.
