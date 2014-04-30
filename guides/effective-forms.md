@@ -5,11 +5,11 @@ category: Guides
 ---
 
 - [Choosing a form structure](#choosing-a-form-structure)
-- [Saving progress](#saving-progress)
-- [Indicating required fields](#indicating-required-fields)
 - [Helping users](#helping-users)
 - [Communicating errors](#communicating-errors)
-- [General principles](#general-principles)
+- [Saving progress](#saving-progress)
+- [Setting expectations](#setting-expectations)
+- [Keeping it simple](#keeping-it-simple)
 {: class="toc"}
 
 
@@ -125,35 +125,14 @@ Done well, this can give you the benefits of both the single page and wizard app
 
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
-## Saving progress
-
-If the average time to complete a form is more than you can reasonably expect your users to spend in a single session, then you need to provide a way for them to save their progress.
-
-The same goes if the session is likely to be interrupted for some reason. For example, if the user is suddenly asked for information which they might not have immediately on hand (a way to mitigate this is to warn users if they're going to be asked for that kind of information). Another example is that the user might start a form on their mobile device and want to continue filling it out on their desktop computer.
-
-## Indicating required fields
-
-If you follow the principle of not asking for information you don't need, then most of your fields will be required and you shouldn't need to mark them as such with '*' symbols or other conventions. Instead, mark the optional fields, by adding '(optional)' to their label.
 
 ## Helping users
 
-You should be aiming for a service that's so intuitive people don't need any help in using it. If you find yourself explaining the interface within the interface it's a sign that something has gone wrong. Time to try out some different ideas.
-
-These principles may help:
-
-Follow conventions where possible
-: Hyperlinks are blue, warnings are red etc.
-
-Leverage the context of the surrounding elements
-: "I'm on the address page, I must be being asked for an address"
-
-Use familiar language
-: eg 'Registration number' rather than 'Vehicle Registration Mark'
-
+You should be aiming for a service that's so intuitive people don't need any help in using it. If you find yourself explaining the interface within the interface it's a sign that something has gone wrong. 
 
 Sometimes though, people are going to need extra help. Many government forms involve concepts and terminology that people will be unfamiliar with. Some of this stuff takes a lot of explaining, so we need a way of providing contextual help of varying degrees of detail throughout a form.
 
-Here are four approaches:
+Methods for providing extra help:
 
 Inline help
 : Short, snappy text, positioned near the part of the interface it refers to. If it's something that everyone needs to know, make it permanently visible.
@@ -169,10 +148,16 @@ Rich contextual help
 
 ## Communicating errors
 
-Despite providing the best possible helper text and contextual help, you should still plan for when users make errors when filling out your forms. Here are a few ways to improve the experience: 
+Despite providing the best possible helper text and contextual help, you should still plan for when users make errors when filling out your forms.
 
-Check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error. 
-: Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
+Tips for communicating errors:
+
+Indicate optional and/or required fields
+: If most of the fields are required, leave them alone and just mark the optional fields as optional. If most of the fields are optional, leave them alone and just mark the required fields as required. If it’s close to a tie, go with whichever choice might be better for your users.
+
+Validate fields before the user submits
+: Check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error.
+Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
 
 Be descriptive with error text
 : Tell the user what caused the error and how to correct it.
@@ -181,11 +166,14 @@ Combine field-level error text with a page-level error message
 : This is particularly important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to find and fix the error without re-navigating the entire form. 
 
 
-## General principles
+## Saving progress
 
-Here are a few principles to keep in mind when you're designing forms.
+If the average time to complete a form is more than you can reasonably expect your users to spend in a single session, then you need to provide a way for them to save their progress.
 
-### 1. Be honest about the proposition
+The same goes if the session is likely to be interrupted for some reason. For example, if the user is suddenly asked for information which they might not have immediately on hand (a way to mitigate this is to warn users if they're going to be asked for that kind of information). Another example is that the user might start a form on their mobile device and want to continue filling it out on their desktop computer.
+
+
+## Setting expectations
 
 The further in to a form someone gets, the more time they have invested in it and the greater their annoyance if they have to abandon it for some reason.
 
@@ -202,19 +190,8 @@ Use common sense, though. Don't try to make everyone read a page of terms and co
 
 The best approach is to meet (or exceed) people's expectations. For example, if your delivery times are typical and you accept all the usual payment methods then you won't need to warn everyone about them up front.
 
-### 2. Respect the flow of the underlying process
 
-For example, if the underlying process is inherently non-linear then choose an interface that works well with non-linear processes. If you try to fit a process into a model it's unsuited for you'll confuse your users and upset their expectations.
-
-### 3. Consider all aspects of the user experience
-
-Remember the broader context in which the form exists, including the emotional states of the people involved, the situations and activites that the form is embedded in, and the full range of devices that will be used to access it.
-
-### 4. Assume users have no prior domain knowledge
-
-Don't assume that your users already understand all the concepts and terminology used in your form. A few people will want to read up on all that stuff before they start, but many will choose to dive straight in. You need to support both types of people.
-
-### 5. Don't ask for information you don't need
+## Keeping it simple
 
 Every request for information from the user:
 
