@@ -13021,6 +13021,11 @@ ul.list_links-minicons li {
   font-weight: normal;
   margin-top: 1.125em;
 }
+/* UI toolkit/Links page
+   ========================================================================== */
+.nav-link-ex ul.toc {
+  border-bottom: none;
+}
 /* ==========================================================================
    CFPB Design Manual
    Footer
