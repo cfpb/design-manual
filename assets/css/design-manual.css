@@ -12306,7 +12306,8 @@ figure {
     border-bottom: 1px solid #e3e4e5;
     margin-bottom: 1em;
   }
-  .content p {
+  .content p,
+  .content ul li {
     max-width: 35em;
   }
   .homepage {
@@ -12784,6 +12785,9 @@ figure {
   font-family: "Avenir Next", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+}
+.georgia-ex {
+  font-family: Georgia, "Times New Roman", serif;
 }
 h2.h2-ex {
   margin-top: 0;

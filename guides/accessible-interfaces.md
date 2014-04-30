@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Creating accessible interfaces
+title: Accessible interfaces
 category: Guides
 ---
 

@@ -14286,7 +14286,8 @@ figure {
   margin-bottom: 1em;
 }
 
-.content p {
+.content p,
+.content ul li {
   max-width: 35em;
 }
 
@@ -14884,6 +14885,10 @@ figure {
   font-family: "Avenir Next", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+}
+
+.georgia-ex {
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 h2.h2-ex {
