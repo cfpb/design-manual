@@ -12,12 +12,18 @@ category: Guides
 - [Keeping it simple](#keeping-it-simple)
 {: class="toc"}
 
-
-_This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual)._
+<div class="content-67 content-first">
 
 Web forms provide an incredible advantage over paper forms in their potential for accessibility, usability, and operational efficiency, but when designed without users in mind they can lose many of these benefits. In this guide, we've outlined several ways to ensure the best possible user experience.
 {: class="lead-in"}
 
+</div>
+
+<div class="content-33 content-last">
+
+_This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual)._
+
+</div>
 
 ## Choosing a form structure
 
