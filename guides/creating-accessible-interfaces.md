@@ -26,11 +26,12 @@ Note: While this document can function as a checklist – and at times, it will 
 
 </div>
 
-## Perceivable
+<h2 id="perceivable">Perceivable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#perceivable">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+
 Information and user interface components must be presentable to users in ways they can perceive. This includes disabled individuals using assistive technology (for instance screen readers for blind users or captions for deaf users) and users of varying devices (like grayscale screens or muted mobile devices).
 
 <div class="content-33 content-first">
-#### Text alternatives for non-text content
+#### Include text alternatives for non-text content
 
 For any content that is not text-based (images, audio, video, animations, charts, graphs, etc), provide an alternative version of that content that is text-based.
 </div>
@@ -40,8 +41,7 @@ For any content that is not text-based (images, audio, video, animations, charts
 - Use the `alt` and `title` attributes on images and other graphical elements.
 - Use the `title` and `desc` elements in SVG drawings.
 - Use fallback text for the `<object>` element.
-- Have descriptive text near the image in the document: for example, the legend for a pie chart might include the percentages of each item.
-- Link to said text in the immediate context of the image or other multimedia.
+- Include descriptive text near images (for example, a pie chart legend with percentages of each item).
 - Provide transcripts of audio and video recordings.
 
 </div>  
@@ -49,50 +49,49 @@ For any content that is not text-based (images, audio, video, animations, charts
 ---
 
 <div class="content-33 content-first">
-#### Alternatives for multimedia
+#### Provide alternatives for multimedia
 
-Multimedia such as audio, video, animations and the like will usually require more than just descriptive text. In most cases the timing of text and descriptions in these files is important, and should therefore be included in the alternative versions.
+Multimedia such as audio, video, and animations will usually require more than just descriptive text. In most cases the timing of text and descriptions in these files is important, and should therefore be incorporated by alternative means.
 </div>
 
 <div class="content-67 content-last">
 
-##### Prerecorded content:  
+##### Prerecorded content
 
-- For audio-only content, provide a transcript that includes both spoken words and descriptions of other sounds.
-- For video-only content, provide an audio track with descriptions of the video or a similar description in text.
-- Combined audio/video content needs to provide alternatives for both the sound and video. There are a few strategies for this:
-  - Alternatives for sound include closed captions or sign interpretation.
-  - Alternatives for video include an audio description track or a document similar to a screenplay that includes dialog, description of sounds, and description of action.  
+- For audio-only content, provide a transcript of both spoken words and descriptions of other sounds.
+- For video-only content, provide an audio track or transcript that describes the video.
+- Combined audio and video content should accommodate alternatives for both; ie closed captioning or sign interpretation for audio, and an audio track or a screenplay-like document that transcribes dialog and descriptions of sounds and action for video.  
 
 ##### Live content
 
-- Ideally closed captioning or sign interpretation should be available, but in some cases providing the prepared remarks or script alongside the audio/video may be sufficient.
+- Ideally closed captioning or sign interpretation should always be available, but in some cases providing the prepared remarks or script alongside the audio/video may suffice.
 
 </div>
 
 ---
   
 <div class="content-33 content-first">
-#### Organize content so that it can be presented in different ways by a browser without losing information or structure
+#### Organize content semantically
 
-Semantic content allows user agents to correctly parse documents and present it to end users in a way that is appropriate for their device and medium. 
+Semantic content allows user agents to correctly parse documents and present it to end users in a way that is appropriate for their device and medium without losing information or structure. 
 </div>
 
 <div class="content-67 content-last">
 
-- Use semantic HTML, including relative header tags, lists, semantic tags like `<aside>`, `<figure>`, and so on.
-- Be careful to support HTML tables with semantic tags like `<th>`, `<thead>`, `<tbody>`, `<caption>`, and so on.
+- Use semantic HTML, including relative header tags, lists, and semantic tags like `<aside>`, and `<figure>`
+- Be careful to support HTML tables with semantic tags like `<th>`, `<thead>`, `<tbody>`, and `<caption>`
 - Be sure to mark up HTML forms with semantic tags like `<label>`, `<fieldset>`, `<legend>`, and – where appropriate – HTML5 form additions like email fields.
-- If the sequence of a page matters, make sure it is in that sequence in the underlying HTML document or that the sequence is otherwise machine-readable.
-- Avoid text descriptions that rely on layout or other sensory items such as “click the round button” or “the image on the right.” Note, however, that “above” and “below” are generally understood to mean “preceding” and “after,” and as such are okay to use.
+- If the sequence of a page matters, make sure it is in that order in the underlying HTML document or that the sequence is otherwise machine-readable.
+- Avoid text descriptions that rely on layout or other sensory items such as “click the round button” or “the image on the right.” However, not that “above” and “below” are generally understood to mean “preceding” and “after” respectively, and as such are permissible usage.
+
 </div>
 
 ---
 
 <div class="content-33 content-first">
-#### Make sure content is easy to distinguish from its surroundings and background
+#### Make content easily distinguishable from its surroundings
 
-The previous guideline deals primarily with making content understandable to machines. This guideline deals with making sure the content is distinguishable to humans.
+Thus far, the listed guidelines have focused primarily on making content machine-readable. The following will help ensure that content is distinguishable to humans.
 </div>
 
 <div class="content-67 content-last">
@@ -101,27 +100,30 @@ The previous guideline deals primarily with making content understandable to mac
 
 - Choose easy-to-read fonts.
 - Avoid using images of text, except for logos and images meant to represent physical documents like a letter or disclosure form.
-- Be sure text can be resized up to 200% without causing problems like overlapping items on the page (don’t rely on browser zoom for this; some users have settings to force large type).
-For audio:
-- Avoid using auto-playing audio. If this is absolutely unavoidable, make sure there is a control that allows the user to stop the audio, adjust the volume, or mute it).
-- Mix audio such that background sounds are at least 20 dB lower than foreground sounds and speech. This does not apply to music.
+- Make sure text can be resized up to 200% without causing overlapping issues with other content on the page. Also don’t rely on browser zoom, since some users have settings to force large type.
 
 ##### Color:  
 
 - Do not use color as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
-- Text should have a contrast ratio of at least 4.5:1, except for the following exceptions:
-    - A contrast ratio of at least 3:1 for large text (defined as text of at least 18pt/24px, or bold text of at least 14pt/18px).
-    - Text or images of text that are part of inactive UI components (such as disabled form controls), pure decoration, are not visible to anyone, or are part of a picture that contains significant other visual content have no contrast requirement.
-    - Text as part of a logo has no minimum contrast requirement.
-One good tool for testing contrast ratio can be found at <http://www.snook.ca/technical/colour_contrast/colour.html>
+- Text should have a contrast ratio of at least 4.5:1, with the following exceptions: 
+  1. a contrast ratio of at least 3:1 is necessary for large text, ie a minimum of 18pt/24px regular text or 14pt/18px bold text
+  1. text or images of text that are part of inactive UI components (like disabled form controls), pure decoration, are not visible, or are part of a picture that contains significant other visual content have no contrast requirement
+  1. text as part of a logo has no minimum contrast requirement.
+- The [Colour Contrast Check](http://www.snook.ca/technical/colour_contrast/colour.html) is a nice tool for testing color contrast ratios. 
+
+##### Audio:
+- Avoid using auto-playing audio. If this is absolutely unavoidable, make sure there is a control that allows the user to stop the audio, adjust the volume, or mute it).
+- Mix audio such that background sounds are at least 20 dB lower than foreground sounds and speech. This does not apply to music.
+
 </div>
 
-##Operable
-Following these guidelines will ensure that users who need to use input devices other than a mouse will be able to use a website or app.
+<h2 id="operable">Operable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#operable">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+
+User interfaces cannot require interaction that a user cannot perform. Following these guidelines will ensure that users who need to use input devices other than a mouse will be able to use a website or app.
 
 <div class="content-33 content-first">
 
-#### Make sure all content is keyboard accessible
+#### Ensure all content is keyboard accessible
 
 In general, making sure that all parts of a site can be operated using only a keyboard will cover use with less-common input devices as well. You should not rely on specific timing of individual keystrokes when planning for and implementing keyboard accessibility.
 
@@ -138,7 +140,7 @@ In general, making sure that all parts of a site can be operated using only a ke
 
 <div class="content-33 content-first">
 
-#### Make sure users have enough time to read and interact with content
+#### Give users ample time to interact with content
 
 Ideally, you should not use time limits. 
 
@@ -158,7 +160,7 @@ For those cases where it is unavoidable, make sure to follow these guidelines:
 
 <div class="content-33 content-first">
 
-#### When possible, avoid interrupting a user
+#### Avoid interrupting a user, when possible
 
 </div>
 
@@ -174,7 +176,7 @@ For those cases where it is unavoidable, make sure to follow these guidelines:
 
 <div class="content-33 content-first">
 
-#### Avoid designs or interactions that may cause seizures
+#### Do not create designs or interactions that may cause seizures
 
 Avoid anything that flashes more than 3 times in 1 second.
 
@@ -184,7 +186,7 @@ Avoid anything that flashes more than 3 times in 1 second.
 
 <div class="content-33 content-first">
 
-#### Provide ways to help users navigate, find content, and determine where they are.
+#### Help users navigate, find content, and determine where they are
 
 </div>
 
@@ -217,13 +219,13 @@ From a browser’s perspective, only one element on a webpage has “focus” at
 
 </div>
  
-## Understandable
+<h2 id="understandable">Understandable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#understandable">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-These guidelines primarily deal with a user’s ability to comprehend content.
+These guidelines primarily deal with a user’s ability to comprehend content and operate an interface.
 
 <div class="content-33 content-first">
 
-#### Make text content readable and understandable
+#### Create text content that is machine and human-readable
 
 </div>
 
@@ -242,7 +244,7 @@ These guidelines primarily deal with a user’s ability to comprehend content.
 
 <div class="content-33 content-first">
 
-#### Make sure a site behaves in a predictable way
+#### Develop sites that behave in a predictable way
 
 </div> 
 
@@ -297,11 +299,13 @@ If an automatic context change is necessary, warn the user in advance and give t
 
 </div>
 
-##Robust
+<h2 id="robust">Robust<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#robust">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-A robust site will be broadly compatible with past, current, and future web browsers and devices.
+Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies. A robust site will be broadly compatible with past, current, and future web browsers and devices.
 
 <div class="content-33 content-first">
+
+#### Follow standard web best practices
 
 In general, this means sticking to standard HTML elements, etc. In some cases, complex widgets are required – in these cases, use WAI-ARIA to make the use, states and properties clear to browsers and assistive technology.
 
