@@ -124,6 +124,7 @@ Lorem ipsum dolor sit amet. Vestibulum orci ante, sagittis quis dolor a, fringil
 <div class="content-33 content-first">
 #### Links in navigation
 * No underline
+* No visited link style
 </div>
 
 {: class="nav-link-ex"}

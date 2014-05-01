@@ -105,34 +105,34 @@ Thus far, the listed guidelines have focused primarily on making content machine
 ##### Color:  
 
 - Do not use color as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
-- Text should have a contrast ratio of at least 4.5:1, with the following exceptions: 
-  1. a contrast ratio of at least 3:1 is necessary for large text, ie a minimum of 18pt/24px regular text or 14pt/18px bold text
-  1. text or images of text that are part of inactive UI components (like disabled form controls), pure decoration, are not visible, or are part of a picture that contains significant other visual content have no contrast requirement
-  1. text as part of a logo has no minimum contrast requirement.
+- Text should have a contrast ratio of at least 4.5 : 1, but there are exceptions.
+  1. For large text, a contrast ratio of only 3 : 1 is necessary. Large regular text is at least 18pt/24px, while large bold text is 14pt/18px.
+  1. Text or images of text that are either pure decoration or not visible, or are part of a logo, picture that contains significant other visual content, or inactive UI components (like disabled form controls) do not have a color contrast requirement.
 - The [Colour Contrast Check](http://www.snook.ca/technical/colour_contrast/colour.html) is a nice tool for testing color contrast ratios. 
 
 ##### Audio:
-- Avoid using auto-playing audio. If this is absolutely unavoidable, make sure there is a control that allows the user to stop the audio, adjust the volume, or mute it).
+- Avoid auto-playing audio. If this is absolutely unavoidable, provide a control that allows the user to stop the audio and adjust or mute the volume.
 - Mix audio such that background sounds are at least 20 dB lower than foreground sounds and speech. This does not apply to music.
 
 </div>
 
 <h2 id="operable">Operable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#operable">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-User interfaces cannot require interaction that a user cannot perform. Following these guidelines will ensure that users who need to use input devices other than a mouse will be able to use a website or app.
+User interface components and navigation must be operable: an interface cannot require interaction that a user cannot perform. Following these guidelines will guarantee that people who use input devices other than a mouse can still navigate the website or app.
 
 <div class="content-33 content-first">
 
 #### Ensure all content is keyboard accessible
 
-In general, making sure that all parts of a site can be operated using only a keyboard will cover use with less-common input devices as well. You should not rely on specific timing of individual keystrokes when planning for and implementing keyboard accessibility.
+In general, validating that a website can be operated using only a keyboard will also cover use with less-common input devices. 
 
 </div>
 
 <div class="content-67 content-last">
 
-- Make sure all controls are addressible by the keyboard. By default, this includes `<a>` elements, `<area>` elements, `<object>` elements, and all form elements, but other elements can be made addressible by applying a `tabindex` value to them.
-- Make sure there are no keyboard traps. If a user can tab to an element on a page, she needs to be able to exit that element using only the keyboard as well.  
+- All controls must be addressible by keyboard. By default, this includes `<a>`, `<area>`, `<object>`, and all form elements. Other elements can be made addressible by applying a `tabindex` value.
+- Avoid keyboard traps. If a user can tab to an element on the page, s/he needs to be able to exit that element using only the keyboard as well. 
+- Do not rely on specific timing of individual keystrokes when planning for and implementing keyboard accessibility. 
 
 </div>
 

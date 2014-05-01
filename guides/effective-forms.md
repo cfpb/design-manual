@@ -120,7 +120,14 @@ Each section goes on its own page.
 
 ### Option 3: Accordion form
 
-All sections on a single page, but each new section only appears once the previous section has been completed.
+All sections on a single page, but each new section only appears once the previous section has been completed. Done well, option 3 is a hybrid of the other two that has benefits of both the other options. Within this hybrid option there are still some important design decisions to make, for example:
+
+{: class="georgia-ex"}
+* Will future questions be shown in any way or will you only see the questions you've answered?
+* What happens if you go back and edit a previous question?
+    * Does the current question stay open or closed?
+    * How do you get back to the current question once you've edited a previous one?
+    * Do you lose all your answers to questions that follow the one you go back to edit?
 
 ![Diagram showing an accordion form](https://www.gov.uk/service-manual/assets/images/designing-transactions/accordion-3.png)
 
@@ -144,30 +151,17 @@ All sections on a single page, but each new section only appears once the previo
 
 </div>
 
-Done well, option 3 is a hybrid of the other two that has benefits of both the other options.
-Within this hybrid option there are still some important design decisions to make. 
-
-For example:
-
-{: class="georgia-ex"}
-* Will future questions be shown in any way or will you only see the questions you've answered?
-* What happens if you go back and edit a previous question?
-    * Does the current question stay open or closed?
-    * How do you get back to the current question once you've edited a previous one?
-    * Do you lose all your answers to questions that follow the one you go back to edit?
-
 ---
 
 ### Option 4: Hybrid
 
 For more complicated forms, some combination of the other options might be your best bet.
 
-![Diagram showing a hybrid form](https://www.gov.uk/service-manual/assets/images/designing-transactions/hybrid.png)
-
 Done well, this can give you the benefits of both the single page and wizard approaches. It also allows you to create a sense of rhythm to the overall flow, which can help users understand when they have moved into a different part of the form, and break up the monotony of filling in forms.
 
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
+![Diagram showing a hybrid form](https://www.gov.uk/service-manual/assets/images/designing-transactions/hybrid.png)
 
 ## Helping users
 
@@ -175,22 +169,22 @@ You should be aiming for a service that's so intuitive people don't need any hel
 
 Sometimes though, people are going to need extra help. Many government forms involve concepts and terminology that people will be unfamiliar with. Some of this stuff takes a lot of explaining, so we need a way of providing contextual help of varying degrees of detail throughout a form.
 
-<div class="content-33 content-first">
-
 #### Methods for providing extra help:
 
-</div>
-
-<div class="content-67 content-last">
+<div class="content-50 content-first">
 
 ##### Inline help
 Short, snappy text, positioned near the part of the interface it refers to. If it's something that everyone needs to know, make it permanently visible.
 
-##### Field masking
-When a specific data entry format is required, as for phone numbers, dates, and social security numbers, provide an example of the required format (e.g., XXX-XX-XXXX).
-
 ##### Progressive disclosure
 A fancy phrase for hiding stuff until it's clicked on. Used carefully this is a good way of keeping the interface free from potentially confusing clutter. Only use this for help that's intended for a small subset of your audience (say, less than 10%).
+
+</div>
+
+<div class="content-50 content-last">
+
+##### Field masking
+When a specific data entry format is required, as for phone numbers, dates, and social security numbers, provide an example of the required format (e.g., XXX-XX-XXXX).
 
 ##### Rich contextual help
 Sometimes you need to give users access to supporting content, in case they're unfamiliar with the terminology or concepts involved in the form. This kind of content should probably exist as a page outside of the form, and then be repurposed in some way within the form.
@@ -201,16 +195,19 @@ Sometimes you need to give users access to supporting content, in case they're u
 
 Despite providing the best possible helper text and contextual help, you should still plan for when users make errors when filling out your forms.
 
-<div class="content-33 content-first">
-
 #### Tips for communicating errors:
 
-</div>
-
-<div class="content-67 content-last">
+<div class="content-50 content-first">
 
 ##### Indicate optional and/or required fields
 If most of the fields are required, leave them alone and just mark the optional fields as optional. If most of the fields are optional, leave them alone and just mark the required fields as required. If it’s close to a tie, go with whichever choice might be better for your users.
+
+##### Combine field-level error text with a page-level error message
+This is particularly important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to find and fix the error without re-navigating the entire form. 
+
+</div>
+
+<div class="content-50 content-last">
 
 ##### Validate fields before the user submits
 Check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error.
@@ -219,9 +216,6 @@ Also consider including affirmative inline validation (such as green checkmarks)
 
 ##### Be descriptive with error text
 Tell the user what caused the error and how to correct it.
-
-##### Combine field-level error text with a page-level error message
-This is particularly important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to find and fix the error without re-navigating the entire form. 
 
 </div> 
 
@@ -243,7 +237,7 @@ Be honest about what you're offering users, and what you're not offering them. I
 * Waiting periods or delays
 * Uncommon or hard-to-find infomation they'll need to provide
 * Constraints on who can complete the form (age, nationality etc)
-* Rquipment that will be required (e.g., a printer)
+* Equipment that will be required (e.g., a printer)
 * Non-digital parts of the form
 
 Use common sense, though. Don't try to make everyone read a page of terms and conditions before they start (they won't).
