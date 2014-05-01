@@ -39,7 +39,7 @@ For any content that is not text-based (images, audio, video, animations, charts
 <div class="content-67 content-last">
 
 - Use the `alt` and `title` attributes on images and other graphical elements.
-- Use the `title` and `desc` elements in SVG drawings.
+- Use the `<title>` and `<desc>` elements in SVG drawings.
 - Use fallback text for the `<object>` element.
 - Include descriptive text near images (for example, a pie chart legend with percentages of each item).
 - Provide transcripts of audio and video recordings.

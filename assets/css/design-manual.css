@@ -12326,7 +12326,7 @@ figure {
     width: 100%;
   }
   .homepage img {
-    width: 50%;
+    width: 200px;
   }
 }
 /* Tablet/netbook (768px) */
@@ -12392,8 +12392,12 @@ figure {
   border-bottom: none;
   padding: 0 1em 0 0;
 }
+.content .toc li a:visited {
+  color: #0072ce;
+}
 .content .toc li a:hover {
   border-bottom: none;
+  color: #7fb8e6;
 }
 .content p {
   font-family: Georgia, "Times New Roman", serif;

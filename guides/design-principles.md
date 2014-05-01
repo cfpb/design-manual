@@ -13,8 +13,6 @@ These are the strategic underpinnings for the CFPB’s brand and experience. The
 
 <div class="content-33 content-last">
 	
-[Feature image or links?]
-
 </div>
 
 ## Public service, public trust
