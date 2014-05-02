@@ -10,7 +10,7 @@ category: UI toolkit
 
 <div class="content-50 content-first">
 
-Lorem ipsum dolor sit amet. 
+Consistent form elements help us quickly design effective web forms. So far we've only developed text inputs, with checkboxes, selects, and radio buttons in the backlog. In the meantime, review our <a href="http://cfpb.github.io/design-manual/guides/effective-forms.html">Effective forms guide</a> for user experience tips. 
 {: class="lead-in"}
 
 </div>
