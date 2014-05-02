@@ -209,13 +209,13 @@ This is particularly important for accessibility. If someone is using a screenre
 
 <div class="content-50 content-last">
 
+##### Be descriptive with error text
+Tell the user what caused the error and how to correct it.
+
 ##### Validate fields before the user submits
 Check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error.
 
 Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
-
-##### Be descriptive with error text
-Tell the user what caused the error and how to correct it.
 
 </div> 
 

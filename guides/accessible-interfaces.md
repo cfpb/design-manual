@@ -26,7 +26,7 @@ Note: While this document can function as a checklist – and at times, it will 
 
 </div>
 
-<h2 id="perceivable">Perceivable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#perceivable">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="perceivable">Perceivable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#perceivable">View on W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 Information and user interface components must be presentable to users in ways they can perceive. This includes disabled individuals using assistive technology (for instance screen readers for blind users or captions for deaf users) and users of varying devices (like grayscale screens or muted mobile devices).
 
@@ -116,7 +116,7 @@ Thus far, the listed guidelines have focused primarily on making content machine
 
 </div>
 
-<h2 id="operable">Operable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#operable">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="operable">Operable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#operable">View on W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 User interface components and navigation must be operable: an interface cannot require interaction that a user cannot perform. Following these guidelines will guarantee that people who use input devices other than a mouse can still navigate the website or app.
 
@@ -219,7 +219,7 @@ From a browser’s perspective, only one element on a webpage has “focus” at
 
 </div>
  
-<h2 id="understandable">Understandable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#understandable">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="understandable">Understandable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#understandable">View on W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 Users must be able to comprehend content and how to operate an interface.
 
@@ -280,7 +280,7 @@ A few examples of context changes:
 
 </div>
 
-<h2 id="robust">Robust<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#robust">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="robust">Robust<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#robust">View on W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies. A robust site will be broadly compatible with past, current, and future web browsers and devices.
 

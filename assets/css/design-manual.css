@@ -12306,6 +12306,21 @@ figure {
     border-bottom: 1px solid #e3e4e5;
     margin-bottom: 1em;
   }
+  .content h1 {
+    margin-bottom: .882em;
+  }
+  .content h3 {
+    margin-bottom: .682em;
+  }
+  .content h4 {
+    margin-bottom: .833em;
+  }
+  .content h5 {
+    margin-bottom: 1.071em;
+  }
+  .content h6 {
+    margin-bottom: 1.25em;
+  }
   .content p,
   .content ul li {
     max-width: 35em;
@@ -13231,13 +13246,13 @@ ul.list_links-minicons li {
 .secondary-nav a:link,
 .secondary-nav a:visited {
   border-bottom: none;
-  color: #75787b;
+  color: #101820;
 }
 .secondary-nav li:hover,
 .secondary-nav a:focus,
 .secondary-nav li:active,
 .secondary-nav .secondary-nav-active {
-  color: #75787b;
+  color: #101820;
   border-left: 4px solid #2cb34a;
   background-color: transparent;
   border-bottom: 1px solid #babbbd;
