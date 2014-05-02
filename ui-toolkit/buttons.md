@@ -47,6 +47,8 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 #### Primary buttons
 * Pacific Blue background color
 * 4px rounded corner
+* 10px top and bottom padding
+* 15px left and right padding
 * 14px Avenir Next Medium text in white
 * Sentence case
 </div>
@@ -65,9 +67,6 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="content-67 content-first">
 #### Secondary buttons
 * Gray background color
-* 4px rounded corner
-* 14px Avenir Next Medium text in white
-* Sentence case
 </div>
 
 <div class="content-33 content-last">
@@ -130,7 +129,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-33 content-first">
 #### Normal
-* Pacific Blue background color
+* Pacific background color
 * White text
 </div>
 
@@ -146,7 +145,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-33 content-first">
 #### Hover/Focused 
-* Pacific Blue 80% background color
+* Pacific 80% background color
 </div>
 
 <div class="content-67 content-last">
@@ -193,23 +192,11 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="content-33 content-first">
-#### Call to action
-* [add description]
-</div>
-
-<div class="content-67 content-last">
-
-{::nomarkdown}  
-<button class="btn">Sign up</button>
-{:/nomarkdown}
-
-</div>
-
----
-
-<div class="content-33 content-first">
-#### Super button
-* [add description]
+#### Large Primary button
+<p>At the designer’s discretion, use the larger primary button on consumer-facing products for an important call to action.</p>
+* 18px Avenir Next Medium text in white
+* 15px top and bottom padding
+* 30px left and right padding
 </div>
 
 <div class="content-67 content-last">
@@ -224,7 +211,6 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-33 content-first">
 #### Button group
-* [add description]
 </div>
 
 <div class="content-67 content-last">
@@ -243,7 +229,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-33 content-first">
 #### Compound action
-* [add description]
+<p>For multiple actions in a single button unit. Prone to error, avoid if possible.</p>
 </div>
 
 <div class="content-67 content-last">
@@ -261,7 +247,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-33 content-first">
 #### Destructive action
-* Red Orange background color
+* Red Orange type color
 <p>When paired with a Primary action, indicate the destructive action using a Destructive action button link to the right of the Primary button.</p>
 </div>
 
