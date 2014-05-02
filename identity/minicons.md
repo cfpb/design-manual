@@ -164,7 +164,7 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 
 </div>
 
-## Asset library
+<h2 id="asset-library">Asset Library<span class="cf-code-link"><a href="http://cfpb.github.io/cf-icons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="minicon-asset-lib">
 

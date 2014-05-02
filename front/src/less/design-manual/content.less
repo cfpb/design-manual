@@ -104,15 +104,29 @@ figure {
       margin-bottom: 1em;
     }
 
-    p {
+    p,
+    ul li {
       max-width: 35em;
+    }
+
+    code {
+      background-color: @gray-10;
+      border: 1px solid @gray-20;
+      border-radius: 0.250em;
+      overflow-x: auto;
+      padding: 0.125em 0.250em;
+      white-space: nowrap;
+      font-size: .75em;
+      line-height: 1.375;
+      margin-bottom: 1.375em;
+      font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
     }
   }
 
   .homepage {
     width: 100%;
     img {
-      width: 50%;
+      width: 200px;
     }
   }
 
@@ -195,8 +209,13 @@ figure {
         padding: 0 1em 0 0;
       }
 
+      a:visited {
+        color: @pacific;
+      }
+
       a:hover {
         border-bottom: none;
+        color: @pacific-50;
       }
 
     }
@@ -252,11 +271,11 @@ figure {
     margin-left: 0;
 
     &_field {
-        height: 2em;
+        height: 5em;
     }
     
     &__primary .swatch_field {
-        height: 8em;
+        height: 10em;
     }
 
     &_head {
@@ -497,6 +516,10 @@ figure {
   }
 }
 
+.georgia-ex {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
 h2.h2-ex {
   margin-top: 0;
   border-bottom: none;
@@ -638,8 +661,6 @@ h2 {
   }
 }
 
-
-
 /* UI toolkit/Links page
    ========================================================================== */
 ul {
@@ -649,14 +670,6 @@ ul {
       margin: .5em 0;
     }
   }
-}
-
-
-/* UI toolkit/Forms page
-   ========================================================================== */
-input[type=checkbox], 
-input[type=radio] {
-  margin-right: .75em;
 }
 
 
@@ -685,12 +698,12 @@ input[type=radio] {
         // Space each column apart vertically.
         margin-bottom: 10px;
 
-        border-left-color: #FFB149;
-        border-left-color: fade(#FF9E1B, 25%);
-        border-right-color: #FFB149;
-        border-right-color: fade(#FF9E1B, 25%);
-        background-color: #F6D9D3;
-        background-color: fade(#D12124, 20%);
+        border-left-color: @green;
+        border-left-color: fade(@green, 100%);
+        border-right-color: @green;
+        border-right-color: fade(@green, 100%);
+        background-color: @green-tint;
+        background-color: fade(@green-tint, 100%);
 
         &:before,
         &:after {
@@ -698,8 +711,8 @@ input[type=radio] {
           display: block;
           width: 100%;
           height: @gutter-width * 0.25;
-          background-color: #DA6750;
-          background-color: fade(#DA6750, 75%);
+          background-color: @green-midtone;
+          background-color: fade(@green-midtone, 100%);
         }
 
         &:before {
@@ -712,7 +725,17 @@ input[type=radio] {
     }
 
     p {
-        max-width: auto;
+        max-width: none;
         text-align: center;
+        .webfont-regular;
+        margin-top: 1.125em;
     }
+}
+
+/* UI toolkit/Links page
+   ========================================================================== */
+.nav-link-ex {
+  ul.toc {
+    border-bottom: none;
+  }
 }

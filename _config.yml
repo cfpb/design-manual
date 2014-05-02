@@ -68,8 +68,8 @@ secondarynav:
   url: guides/design-principles.html
   internal: true
   category: Guides
-- text: Creating accessible interfaces
-  url: guides/creating-accessible-interfaces.html
+- text: Accessible interfaces
+  url: guides/accessible-interfaces.html
   internal: true
   category: Guides
 - text: Effective forms
@@ -144,10 +144,10 @@ secondarynav:
 #   url: ui-toolkit/modals.html
 #   internal: true
 #   category: UI toolkit
-- text: Pagination
-  url: ui-toolkit/pagination.html
-  internal: true
-  category: UI toolkit
+# - text: Pagination
+#   url: ui-toolkit/pagination.html
+#   internal: true
+#   category: UI toolkit
 # - text: Tables
 #   url: ui-toolkit/tables.html
 #   internal: true

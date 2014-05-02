@@ -4,14 +4,6 @@ title:  Design principles
 category: Guides
 ---
 
-- [Public service, public trust](#public-service-public-trust)
-- [Give the user control](#give-the-user-control)
-- [Aesthetic integrity](#aesthetic-integrity)
-- [Design with data](#design-with-data)
-- [Inclusion and accessibility](#inclusion-and-accessibility)
-- [Coherent end-to-end user experience](#coherent-end-to-end-user-experience)
-{: class="toc"}
-
 <div class="content-67 content-first">
 	
 These are the strategic underpinnings for the CFPB’s brand and experience. They should serve as the backbone for the user experience, at once inspiring and binding the design of the CFPB’s offerings.
@@ -21,37 +13,33 @@ These are the strategic underpinnings for the CFPB’s brand and experience. The
 
 <div class="content-33 content-last">
 	
-[Feature image?]
-
 </div>
-
-
 
 ## Public service, public trust
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 
 #### Honest, transparent design that wins the public’s trust.
+
+</div>
+
+<div class="content-67 content-last">
 
 We establish trust through clear, concise, and approachable design that is always consumer-driven. We demonstrate transparency through our user-friendly online experiences and tools and our dedication to open-source content. 
 
 </div>
 
-<div class="content-33 content-last">
-
-</div>
-
 ## Give the user control
 
-<div class="content-67 content-first">
+<div class="content-33 content-first">
 
 #### Design to empower users with information.
 
-The CFPB motivates consumers to take the control of their financial decision-making; our designs enable this process. Good design increases transparency and succinctly hands the user all the necessary information, giving consumers control of how they use it. To create an empowering product, designers must rely on introspection and research to discover what path users instinctively take and then cater to those instincts. 
-
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
+
+The CFPB motivates consumers to take the control of their financial decision-making; our designs enable this process. Good design increases transparency and succinctly hands the user all the necessary information, giving consumers control of how they use it. To create an empowering product, designers must rely on introspection and research to discover what path users instinctively take and then cater to those instincts. 
 
 </div>        
 

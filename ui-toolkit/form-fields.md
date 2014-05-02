@@ -6,7 +6,6 @@ category: UI toolkit
 
 - [Style](#style)
 - [States](#states)
-- [Variations](#variations)
 {: class="toc"}
 
 <div class="content-50 content-first">

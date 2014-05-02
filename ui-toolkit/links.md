@@ -124,9 +124,16 @@ Lorem ipsum dolor sit amet. Vestibulum orci ante, sagittis quis dolor a, fringil
 <div class="content-33 content-first">
 #### Links in navigation
 * No underline
+* No visited link style
 </div>
+
+{: class="nav-link-ex"}
 <div class="content-67 content-last">
-[coded example of Avenir ul nav with links]
+- [Home](#)
+- [About](#)
+- [News](#)
+- [Contact us](#)
+{: class="toc"}
 </div>
 
 ---

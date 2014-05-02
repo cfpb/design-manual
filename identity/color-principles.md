@@ -23,7 +23,7 @@ A minimal palette, clear hierarchy, good information design, and ample whitespac
 
 </div>
 
-## Palette
+<h2 id="palette">Palette<span class="cf-code-link"><a href="https://github.com/cfpb/cf-colors/blob/gh-pages/src/cf-colors.less">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 ### Primary colors
 
