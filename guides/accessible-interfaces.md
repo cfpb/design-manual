@@ -12,7 +12,7 @@ category: Guides
 
 <div class="content-67 content-first">
 
-The following four principles, as defined by the [W3C](http://www.w3.org/TR/2008/REC-WCAG20-20081211/), lay the foundation for ensuring that web content is available for all users, including people with disabilities and users on non-desktop devices. These guidelines also enable forward compatibility in the event that future devices are radically different from those in use today.
+The following four principles, as defined by the [W3C](http://www.w3.org/TR/2008/REC-WCAG20-20081211/), lay the foundation for ensuring that web content is available for all users, including users with disabilities and users on non-desktop devices. These guidelines also enable future compatibility in the event that future devices are radically different from those in use today.
 {: class="lead-in"}
 
 Note: While this document can function as a checklist – and at times, it will – that isn’t the primary purpose. The goal is to foster understanding of why these guidelines are important.
@@ -28,7 +28,7 @@ Note: While this document can function as a checklist – and at times, it will 
 
 <h2 id="perceivable">Perceivable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#perceivable">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-Information and user interface components must be presentable to users in ways they can perceive. This includes disabled individuals using assistive technology (for instance screen readers for blind users or captions for deaf users) and users of varying devices (like grayscale screens or muted mobile devices).
+Information and user interface elements must be presented to users in ways that they can perceive. This includes considering individuals using assistive technology (e.g., screen readers for blind users or captions for deaf users) and the limitations of different devices (e.g., grayscale screens or muted mobile devices).
 
 <div class="content-33 content-first">
 #### Include text alternatives for non-text content
@@ -51,7 +51,7 @@ For any content that is not text-based (images, audio, video, animations, charts
 <div class="content-33 content-first">
 #### Provide alternatives for multimedia
 
-Multimedia such as audio, video, and animations will usually require more than just descriptive text. In most cases the timing of text and descriptions in these files is important, and should therefore be incorporated by alternative means.
+Multimedia such as audio, video, and animations will usually require more than just descriptive text. In most cases, the timing of text and descriptions in these files is important and should therefore be incorporated in an accessible manner.
 </div>
 
 <div class="content-67 content-last">
@@ -60,11 +60,11 @@ Multimedia such as audio, video, and animations will usually require more than j
 
 - For audio-only content, provide a transcript of both spoken words and descriptions of other sounds.
 - For video-only content, provide an audio track or transcript that describes the video.
-- Combined audio and video content should accommodate alternatives for both; ie closed captioning or sign interpretation for audio, and an audio track or a screenplay-like document that transcribes dialog and descriptions of sounds and action for video.  
+- Combined audio and video content should accommodate alternatives for both (e.g., closed captioning or sign interpretation for audio, and an audio track or a screenplay-like document that transcribes dialog and descriptions of sounds and action for video).
 
 ##### Live content
 
-- Ideally closed captioning or sign interpretation should always be available, but in some cases providing the prepared remarks or script alongside the audio/video may suffice.
+- Closed captioning or sign language interpretation should always be available, but in some cases providing the prepared remarks or script alongside the audio/video may suffice.
 
 </div>
 
@@ -79,10 +79,10 @@ Semantic content allows user agents to correctly parse documents and present it 
 <div class="content-67 content-last">
 
 - Use semantic HTML, including relative header tags, lists, and semantic tags like `<aside>`, and `<figure>`
-- Be careful to support HTML tables with semantic tags like `<th>`, `<thead>`, `<tbody>`, and `<caption>`
-- Be sure to mark up HTML forms with semantic tags like `<label>`, `<fieldset>`, `<legend>`, and – where appropriate – HTML5 form additions like email fields.
-- If the sequence of a page matters, make sure it is in that order in the underlying HTML document or that the sequence is otherwise machine-readable.
-- Avoid text descriptions that rely on layout or other sensory items such as “click the round button” or “the image on the right.” However, not that “above” and “below” are generally understood to mean “preceding” and “after” respectively, and as such are permissible usage.
+- Support HTML tables with semantic tags like `<th>`, `<thead>`, `<tbody>`, and `<caption>`
+- Mark up HTML forms with semantic tags like `<label>`, `<fieldset>`, `<legend>`, and – where appropriate – HTML5 form additions like email fields.
+- If the sequence of a page matters, the underlying HTML document should be in that order or the sequence should be machine-readable through another method.
+- Avoid text descriptions that rely on layout or other sensory items such as “click the round button” or “the image on the right.” However, note that “above” and “below” are generally understood to mean “preceding” and “after," and as such are permissible usage.
 
 </div>
 
@@ -91,7 +91,7 @@ Semantic content allows user agents to correctly parse documents and present it 
 <div class="content-33 content-first">
 #### Make content easily distinguishable from its surroundings
 
-Thus far, the listed guidelines have focused primarily on making content machine-readable. The following will help ensure that content is distinguishable to humans.
+These guidelines help ensure that content is perceivable for sighted users.
 </div>
 
 <div class="content-67 content-last">
@@ -99,8 +99,8 @@ Thus far, the listed guidelines have focused primarily on making content machine
 ##### Text:  
 
 - Choose easy-to-read fonts.
-- Avoid using images of text, except for logos and images meant to represent physical documents like a letter or disclosure form.
-- Make sure text can be resized up to 200% without causing overlapping issues with other content on the page. Also don’t rely on browser zoom, since some users have settings to force large type.
+- Avoid using images of text, except for logos and images meant to represent physical documents.
+- Text should be able to be resized up to 200% without causing overlapping issues with other content on the page. Don’t rely on browser zoom, since some users have settings to force large type.
 
 ##### Color:  
 
@@ -112,27 +112,27 @@ Thus far, the listed guidelines have focused primarily on making content machine
 
 ##### Audio:
 - Avoid auto-playing audio. If this is absolutely unavoidable, provide a control that allows the user to stop the audio and adjust or mute the volume.
-- Mix audio such that background sounds are at least 20 dB lower than foreground sounds and speech. This does not apply to music.
+- In recorded audio, background sounds should be at least 20 dB lower than foreground sounds and speech. This does not apply to music.
 
 </div>
 
 <h2 id="operable">Operable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#operable">Visit W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-User interface components and navigation must be operable: an interface cannot require interaction that a user cannot perform. Following these guidelines will guarantee that people who use input devices other than a mouse can still navigate the website or app.
+User interface components and navigation must be operable: an interface cannot require interaction that a user cannot perform. Following these guidelines will guarantee that all users can navigate a website or app regardless of their input device (mouse, keyboard, touchscreen, screen reader, etc).
 
 <div class="content-33 content-first">
 
-#### Ensure all content is keyboard accessible
+#### Ensure that all content is keyboard accessible
 
-In general, validating that a website can be operated using only a keyboard will also cover use with less-common input devices. 
+In general, if a website can be operated using only the keyboard, it will also be operable with less-common input devices. 
 
 </div>
 
 <div class="content-67 content-last">
 
-- All controls must be addressible by keyboard. By default, this includes `<a>`, `<area>`, `<object>`, and all form elements. Other elements can be made addressible by applying a `tabindex` value.
-- Avoid keyboard traps. If a user can tab to an element on the page, s/he needs to be able to exit that element using only the keyboard as well. 
-- Do not rely on specific timing of individual keystrokes when planning for and implementing keyboard accessibility. 
+- All controls must be addressible by the keyboard. By default, this includes `<a>`, `<area>`, `<object>`, and all form elements. Other elements can be made addressible by applying a `tabindex` value.
+- Avoid keyboard traps. If a user can tab to an element on the page, the user needs to be able to exit that element using only the keyboard as well. 
+- Do not rely on specific timing of individual keystrokes when implementing keyboard accessibility. 
 
 </div>
 
@@ -142,17 +142,17 @@ In general, validating that a website can be operated using only a keyboard will
 
 #### Give users ample time to interact with content
 
-Ideally, you should not use time limits. 
+You should not use time limits. 
 
 </div>
 
 <div class="content-67 content-last">
 
-For those cases where that is unavoidable:
+For cases in which time limits are unavoidable:
 
 - Allow users to turn off or extend the time limit to at least 10 times the default setting.
 - Warn users at least 20 seconds before a time limit expires and enable a time extension with a simple action, such as pressing the space bar.
-- If a user needs to log in again after a time limit, make sure there is no loss of data.
+- If a user needs to log in again after a time limit, make sure that there is no loss of data.
 
 </div>
 
@@ -160,7 +160,7 @@ For those cases where that is unavoidable:
 
 <div class="content-33 content-first">
 
-#### Avoid interrupting a user, when possible
+#### Avoid interrupting users
 
 </div>
 
@@ -177,8 +177,11 @@ For those cases where that is unavoidable:
 <div class="content-33 content-first">
 
 #### Do not create designs or interactions that may cause seizures
+</div>
 
-Nothing should flash more than 3 times in 1 second.
+<div class="content-67 content-last">
+
+- Nothing on the page should flash more than 3 times in 1 second.
 
 </div>
 
@@ -192,12 +195,12 @@ Nothing should flash more than 3 times in 1 second.
 
 <div class="content-67 content-last">
 
-- Allow users to bypass blocks of content that appear repeatedly on a website, like navigations, with a “skip to main content” or similar link.
+- Allow users to bypass blocks of content that appear repeatedly on a website, like navigation, with a “skip to main content” or similar link.
 - Use titles that describe a webpage's topic or purpose.
-- Use descriptive section headings to organize the content.
-- Unless content is a step in a process, provide more than one way to access it, such as through browsing or searching.
-- Provide a breadcrumb trail or other way to identify one’s location in a site on every page.
-- Use more descriptive link text. Avoid calls to action like “click here” or “read more."
+- Include descriptive section headings to organize content.
+- Unless content is a step in a process, provide more than one way to access it, such as through browsing and search.
+- Provide a breadcrumb trail or other way for the user to identify their location in the site on every page.
+- Use descriptive link text. Avoid calls to action like “click here” or “read more."
 
 </div>
 
@@ -207,7 +210,7 @@ Nothing should flash more than 3 times in 1 second.
 
 #### Manage focus
 
-From a browser’s perspective, only one element on a webpage has “focus” at a given time. It is vital to the user experience to manage this well.
+Whe users navigate a webpage using the keyboard or another alternative input device, only one element on the page will be in focus at a given time.
 
 </div>
 
@@ -225,18 +228,18 @@ Users must be able to comprehend content and how to operate an interface.
 
 <div class="content-33 content-first">
 
-#### Create text content that is machine and human-readable
+#### Create text content that is machine- and human-readable
 
 </div>
 
 <div class="content-67 content-last">
 
-- Specify the language of the content in a machine-readable way. Generally, this means using `<html lang="en-us">` or the equivalent for another language. This ensures that screen readers will use the correct pronunciation and help with translation software.
+- Specify the language of the content in a machine-readable way. Generally, this means using `<html lang="en-us">` or the equivalent for another language. This will help with translation software and ensures that screen readers will use the correct pronunciation.
 - If part of a document is in a different language from the overall language of the document, specify this with something like `<span lang="fr">`.
-- Where possible, provide a way for users to find definitions of unusual words and phrases especially jargon.
+- Where possible, provide a way for users to find definitions of unusual words and phrases, especially jargon.
 - Make the meaning of abbreviations and acronyms available, either directly in the text, such as “Consumer Financial Protection Bureau (CFPB)”, or in a machine-readable way, like `<abbr title="Consumer Financial Protection Bureau">CFPB</abbr>)`.
-- Write text to the eighth-grade comprehension level, excluding proper names and titles, where possible. If that is not an option, provide a simplified version of the text nearby.
-- In the cases of hard-to-pronounce words, consider including the pronunciation.
+- Write text to an eighth-grade comprehension level, excluding proper names and titles, where possible. If that is not an option, provide a simplified version of the text nearby.
+- For hard-to-pronounce words, consider including the pronunciation.
 
 </div>
 
@@ -250,7 +253,7 @@ Users must be able to comprehend content and how to operate an interface.
 
 <div class="content-67 content-last">
 
-- Related webpages should generally have a consistent navigation structure and layout. (Note that this doesn’t mean it has to be exactly the same – just consistent.)
+- Related webpages should have a consistent navigation structure and layout. 
 - Components that perform the same action should be labelled the same way.
 
 </div>
@@ -261,9 +264,9 @@ Users must be able to comprehend content and how to operate an interface.
 
 #### Maintain context
 
-Avoid drastically changing a user’s context without an explicit request from the user, like clicking or otherwise activing a link or button. At a bare minimum, do not change context due solely to a focus change.
+Avoid changing a user’s context without an explicit request from the user, like clicking or otherwise activating a link or button. 
 
-If an automatic context change is necessary, warn the user in advance and give them an opportunity to change this behavior.
+If an automatic context change is necessary, warn the user in advance and give them an opportunity to stop the change.
 
 </div>
 
@@ -288,7 +291,7 @@ Content must be robust enough that it can be interpreted reliably by a wide vari
 
 #### Follow standard web best practices
 
-In general, this means sticking to standard HTML elements, etc. If complex widgets are required, use WAI-ARIA to make the use, states, and properties clear to browsers and assistive technologies.
+This means using standard HTML markup. If complex widgets are required, use WAI-ARIA to make the use, states, and properties clear to browsers and assistive technologies.
 
 </div>
 
@@ -301,9 +304,4 @@ In general, this means sticking to standard HTML elements, etc. If complex widge
 - Note that this is specific to HTML and does not include CSS.
 
 </div> 
-
-
-
-
-
 
