@@ -667,9 +667,6 @@ ul {
   margin: 0 auto;
   position: relative;
   clear: both;
-  display: table;
-  height: 100%;
-  width: 100%;
 }
 
 .lt-ie8 .wrapper {
@@ -13777,9 +13774,6 @@ html {
   margin: 0 auto;
   position: relative;
   clear: both;
-  display: table;
-  height: 100%;
-  width: 100%;
 }
 
 .lt-ie8 .wrap {
@@ -15113,9 +15107,6 @@ ul.list_links-minicons li {
   margin: 0 auto;
   position: relative;
   clear: both;
-  display: table;
-  height: 100%;
-  width: 100%;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -15182,26 +15173,15 @@ ul.list_links-minicons li {
    Footer
    ========================================================================== */
 
-/* display content wrap as table for sticky footer */
-
-.wrapper {
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
 .footer {
-  display: table-row;
-  /* for sticky footer */
-  height: 1px;
-  /* for sticky footer */
+  padding: 2em 0;
   border-top: 2px solid #babbbd;
   background: #f1f2f2;
   width: 100%;
 }
 
 .footer h4 {
-  margin: 1.5em 0 .5em .25em;
+  margin-top: 0;
   font-size: 16px;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -15223,43 +15203,40 @@ ul.list_links-minicons li {
   border-bottom: 1px dotted #0072ce;
 }
 
-.footer .footer-container {
-  padding: 2em 0;
-}
-
 .footer .footer-links ul {
   list-style: none;
-  margin: 1em .5em 1em .25em;
+  padding-left: 0;
+  margin-top: 0;
 }
 
 .footer .footer-section {
   display: inline-block;
   vertical-align: top;
-  margin-right: .5em;
-  margin-left: .5em;
 }
 
 .footer .footer-links {
   float: left;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 .footer .footer-oss {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 75%;
   float: right;
+  padding: 0 15px;
 }
 
 /* Media Queries
    ========================================================================== */
 
-.footer h4 {
-  margin: 1em 0 .5em 0;
-}
-
 .footer p {
   margin: .75em 0;
-}
-
-.footer .footer-links {
-  margin: 0 .5em .5em 1em;
 }
 
 .footer .footer-links ul,
@@ -15267,16 +15244,7 @@ ul.list_links-minicons li {
   margin-left: 0;
 }
 
-.footer .footer-oss {
-  width: 60%;
-  float: right;
-}
-
 /* TABLET/NETBOOK 744px */
-
-.footer .footer-oss {
-  width: 67%;
-}
 
 /* Mobile portrait (320px) */
 

@@ -22,7 +22,7 @@ Isocons are visually sophisticated graphics, with more detail than a flat icon. 
 
 </div>
 
-## Stylistic Guidelines
+## Stylistic guidelines
 
 <div class="content-33 content-first">
 
