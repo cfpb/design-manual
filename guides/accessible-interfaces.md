@@ -22,7 +22,6 @@ Note: While this document can function as a checklist – and at times, it will 
 
 <div class="content-33 content-last">
   
-[Feature image or links?]
 
 </div>
 
