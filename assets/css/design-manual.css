@@ -618,6 +618,9 @@ ul {
   margin: 0 auto;
   position: relative;
   clear: both;
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 .lt-ie8 .wrapper {
   *zoom: 1;
@@ -11884,6 +11887,9 @@ html {
   margin: 0 auto;
   position: relative;
   clear: both;
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 .lt-ie8 .wrap {
   *zoom: 1;
@@ -12986,6 +12992,9 @@ ul.list_links-minicons li {
   margin: 0 auto;
   position: relative;
   clear: both;
+  display: table;
+  height: 100%;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -13040,7 +13049,17 @@ ul.list_links-minicons li {
    CFPB Design Manual
    Footer
    ========================================================================== */
+/* display content wrap as table for sticky footer */
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
 .footer {
+  display: table-row;
+  /* for sticky footer */
+  height: 1px;
+  /* for sticky footer */
   padding: 2em 0;
   border-top: 2px solid #babbbd;
   background: #f1f2f2;
@@ -13065,6 +13084,9 @@ ul.list_links-minicons li {
 .footer a:hover {
   border-bottom: 1px dotted #0072ce;
 }
+.footer .footer-container {
+  padding: 2em 0;
+}
 .footer .footer-links ul {
   list-style: none;
   padding-left: 0;
@@ -13080,7 +13102,7 @@ ul.list_links-minicons li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 .footer .footer-oss {
   -webkit-box-sizing: border-box;
