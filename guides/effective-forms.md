@@ -161,7 +161,7 @@ Done well, this can give you the benefits of both the single page and wizard app
 
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
-![Diagram showing a hybrid form](https://www.gov.uk/service-manual/assets/images/designing-transactions/hybrid.png)
+![Diagram showing a hybrid form]({{ site.baseurl }}/assets/img/effective-forms/EffectiveForms4_@2.png)
 
 ## Helping users
 
