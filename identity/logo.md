@@ -126,7 +126,7 @@ When the logo is being produced for print formats conditions may not allow for f
 
 </div>
 
-## Stylistic Guidelines
+## Stylistic guidelines
 
 <div class="content-33 content-first">
 

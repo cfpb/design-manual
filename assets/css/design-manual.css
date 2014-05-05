@@ -12306,6 +12306,21 @@ figure {
     border-bottom: 1px solid #e3e4e5;
     margin-bottom: 1em;
   }
+  .content h1 {
+    margin-bottom: .882em;
+  }
+  .content h3 {
+    margin-bottom: .682em;
+  }
+  .content h4 {
+    margin-bottom: .833em;
+  }
+  .content h5 {
+    margin-bottom: 1.071em;
+  }
+  .content h6 {
+    margin-bottom: 1.25em;
+  }
   .content p,
   .content ul li {
     max-width: 35em;
@@ -13045,12 +13060,13 @@ ul.list_links-minicons li {
   /* for sticky footer */
   height: 1px;
   /* for sticky footer */
+  padding: 2em 0;
   border-top: 2px solid #babbbd;
   background: #f1f2f2;
   width: 100%;
 }
 .footer h4 {
-  margin: 1.5em 0 .5em .25em;
+  margin-top: 0;
   font-size: 16px;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -13073,47 +13089,41 @@ ul.list_links-minicons li {
 }
 .footer .footer-links ul {
   list-style: none;
-  margin: 1em .5em 1em .25em;
+  padding-left: 0;
+  margin-top: 0;
 }
 .footer .footer-section {
   display: inline-block;
   vertical-align: top;
-  margin-right: .5em;
-  margin-left: .5em;
 }
 .footer .footer-links {
   float: left;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 30px;
 }
 .footer .footer-oss {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 75%;
   float: right;
+  padding: 0 15px;
 }
 /* Media Queries
    ========================================================================== */
 @media only screen and (min-width: 37.5em) {
-  .footer h4 {
-    margin: 1em 0 .5em 0;
-  }
   .footer p {
     margin: .75em 0;
-  }
-  .footer .footer-links {
-    margin: 0 .5em .5em 1em;
   }
   .footer .footer-links ul,
   .footer li {
     margin-left: 0;
   }
-  .footer .footer-oss {
-    width: 60%;
-    float: right;
-  }
 }
 /* TABLET/NETBOOK 744px */
-@media only screen and (min-width: 46.5em) {
-  .footer .footer-oss {
-    width: 67%;
-  }
-}
 /* Mobile portrait (320px) */
 /* Mobile landscape (480px) */
 /* Small tablet (600px) */
@@ -13231,13 +13241,13 @@ ul.list_links-minicons li {
 .secondary-nav a:link,
 .secondary-nav a:visited {
   border-bottom: none;
-  color: #75787b;
+  color: #101820;
 }
 .secondary-nav li:hover,
 .secondary-nav a:focus,
 .secondary-nav li:active,
 .secondary-nav .secondary-nav-active {
-  color: #75787b;
+  color: #101820;
   border-left: 4px solid #2cb34a;
   background-color: transparent;
   border-bottom: 1px solid #babbbd;

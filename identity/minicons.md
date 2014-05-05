@@ -24,7 +24,7 @@ Minicons are visually simple, quickly recognizable, and easy to understand. They
 
 </div>
 
-## Stylistic Guidelines
+## Stylistic guidelines
 
 <div class="content-33 content-first">
 	
