@@ -53,7 +53,7 @@ All sections are positioned on a single page.
 
 <div class="content-25 content-first">
 
-![Diagram showing all sections on a page](https://www.gov.uk/service-manual/assets/images/designing-transactions/one-page.png)
+![Diagram showing all sections on a page]({{ site.baseurl }}/assets/img/effective-forms/EffectiveForms1_@2.png)
 
 </div>
 
@@ -129,7 +129,7 @@ All sections on a single page, but each new section only appears once the previo
     * How do you get back to the current question once you've edited a previous one?
     * Do you lose all your answers to questions that follow the one you go back to edit?
 
-![Diagram showing an accordion form](https://www.gov.uk/service-manual/assets/images/designing-transactions/accordion-3.png)
+![Diagram showing an accordion form]({{ site.baseurl }}/assets/img/effective-forms/EffectiveForms3_@2.png)
 
 <div class="content-50 content-first">
 
