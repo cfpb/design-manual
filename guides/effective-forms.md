@@ -89,7 +89,7 @@ All sections are positioned on a single page.
 
 Each section goes on its own page.
 
-![Diagram showing each section on it's own page](assets/img/effective-forms/EffectiveForms2_@2.png)
+![Diagram showing each section on it's own page]({{ site.baseurl }}/assets/img/effective-forms/EffectiveForms2_@2.png)
 
 <div class="content-50 content-first">
 
