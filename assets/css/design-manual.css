@@ -12174,8 +12174,7 @@ figure {
    ========================================================================== */
 .content ul,
 .content ol {
-  list-style-position: inside;
-  padding: 0;
+  padding-left: 1.5em;
 }
 .content ul {
   list-style-type: square;
