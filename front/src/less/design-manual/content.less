@@ -686,6 +686,31 @@ ul {
     }
   }
 }
+.nav-link-ex {
+  ul.toc {
+    border-bottom: none;
+  }
+}
+
+.link-with-icon {
+  display: inline-block;
+  position: relative;
+  //margin-bottom: 1em;
+
+  > .cf-icon {
+    padding-left: 0.375em;
+    position: absolute;
+    top: 0.1875em;
+    left: 100%;
+  }
+
+  &__left {
+    margin-left: 1.25em;
+    > [class^='fa'] {
+      left: -1.5em;
+    }
+  }
+}
 
 
 /* UI toolkit/Grids page
@@ -749,8 +774,3 @@ ul {
 
 /* UI toolkit/Links page
    ========================================================================== */
-.nav-link-ex {
-  ul.toc {
-    border-bottom: none;
-  }
-}

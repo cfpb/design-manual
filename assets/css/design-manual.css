@@ -12727,6 +12727,25 @@ ul.list_links-minicons {
 ul.list_links-minicons li {
   margin: .5em 0;
 }
+.nav-link-ex ul.toc {
+  border-bottom: none;
+}
+.link-with-icon {
+  display: inline-block;
+  position: relative;
+}
+.link-with-icon > .cf-icon {
+  padding-left: 0.375em;
+  position: absolute;
+  top: 0.1875em;
+  left: 100%;
+}
+.link-with-icon__left {
+  margin-left: 1.25em;
+}
+.link-with-icon__left > [class^='fa'] {
+  left: -1.5em;
+}
 /* UI toolkit/Grids page
    ========================================================================== */
 .grid-demo {
@@ -12785,9 +12804,6 @@ ul.list_links-minicons li {
 }
 /* UI toolkit/Links page
    ========================================================================== */
-.nav-link-ex ul.toc {
-  border-bottom: none;
-}
 /* ==========================================================================
    CFPB Design Manual
    Footer
