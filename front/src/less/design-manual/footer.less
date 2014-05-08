@@ -4,7 +4,7 @@
    ========================================================================== */
 
 /* display content wrap as table for sticky footer */
-.wrapper {
+.body-wrapper {
   display: table;
   height: 100%;
   width: 100%;
@@ -26,6 +26,7 @@
   }
 
   p {
+    max-width: 45em;
     font-size: 0.875em;
     line-height: 1.42857142857143;
     margin-left: .25em;
@@ -42,32 +43,14 @@
   }
 
   .footer-container {
-    padding: 2em 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
   
   .footer-links ul {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
-  }
-
-  .footer-section {
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  .footer-links {
-    float:left;
-    width: 25%;
-    box-sizing: border-box;
-    padding: 0 30px;
-  }
-
-  .footer-oss {
-    box-sizing: border-box;
-    width: 75%;
-    float: right;
-    padding: 0 15px;
   }
 
 }
@@ -86,10 +69,20 @@
     .footer-links ul, li {
       margin-left: 0;
     }
+
   }
+
 } 
 
-/* TABLET/NETBOOK 744px */
-@media only screen and (min-width: 46.5em) {
+/* Move to 25-75 columns when link fits (800px) */
+@media only screen and (min-width: 50em) {
+
+  .footer-links {
+    .column(3);
+  }
+
+  .footer-oss {
+    .column(9);
+  }
 
 } 

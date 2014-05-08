@@ -152,7 +152,7 @@ Icons appear to the right of the link text. The color and ```font-size``` of ico
 Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage. 
 </div>
 <div class="content-50 content-last regular-ex">
-<a href="#">Internal link <i class="cf-icon cf-icon-right"></i></a>
+<a class="link-with-icon" href="#">Internal link <i class="cf-icon cf-icon-right"></i></a>
 </div>
 
 ---
@@ -162,7 +162,7 @@ Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigation
 Use the external link (glyph E610) to emphasize a non-CFPB webpage. External links should open in a new window or tab.
 </div>
 <div class="content-50 content-last regular-ex">
-<a href="#">External link <i class="cf-icon cf-icon-external-link"></i></a>
+<a class="link-with-icon" href="#">External link <i class="cf-icon cf-icon-external-link"></i></a>
 </div>
 
 ---
@@ -172,7 +172,7 @@ Use the external link (glyph E610) to emphasize a non-CFPB webpage. External lin
 Use the Email link minicon (glyph E302) to emphasize a <code>mailto</code> link.
 </div>
 <div class="content-50 content-last regular-ex">
-<a href="#">Email us <i class="cf-icon cf-icon-email"></i></a>
+<a class="link-with-icon" href="#">Email us <i class="cf-icon cf-icon-email"></i></a>
 </div>
 
 ---
@@ -183,12 +183,12 @@ Documents minicons can emphasize a link that contains a file or document.
 </div>
 <div class="content-50 content-last regular-ex">
 <ul class="list_links-minicons">
-<li><a href="#">Basic document <i class="cf-icon cf-icon-document"></i></a></li>
-<li><a href="#">PDF document <i class="cf-icon cf-icon-pdf"></i></a></li>
-<li><a href="#">Download <i class="cf-icon cf-icon-download"></i></a></li>
-<li><a href="#">Appendix <i class="cf-icon cf-icon-appendix"></i></a></li>
-<li><a href="#">Supplement <i class="cf-icon cf-icon-supplement"></i></a></li>
-<li><a href="#">Attach <i class="cf-icon cf-icon-attach"></i></a></li>
+<li><a class="link-with-icon" href="#">Basic document <i class="cf-icon cf-icon-document"></i></a></li>
+<li><a class="link-with-icon" href="#">PDF document <i class="cf-icon cf-icon-pdf"></i></a></li>
+<li><a class="link-with-icon" href="#">Download <i class="cf-icon cf-icon-download"></i></a></li>
+<li><a class="link-with-icon" href="#">Appendix <i class="cf-icon cf-icon-appendix"></i></a></li>
+<li><a class="link-with-icon" href="#">Supplement <i class="cf-icon cf-icon-supplement"></i></a></li>
+<li><a class="link-with-icon" href="#">Attach <i class="cf-icon cf-icon-attach"></i></a></li>
 </ul>
 
 </div>
