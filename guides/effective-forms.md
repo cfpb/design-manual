@@ -21,7 +21,7 @@ Web forms provide an incredible advantage over paper forms in their potential fo
 
 <div class="content-33 content-last">
 
-_This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual)._
+_This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual)._
 
 </div>
 
@@ -262,5 +262,5 @@ Asking for information because 'it might be useful' or 'it helps with our record
 
 ## Attribution
 
-Adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
+Adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 
