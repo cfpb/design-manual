@@ -24,6 +24,10 @@ Illustrations are an important tool for introducing the subject matter of a page
 
 ## Consumer illustrations
 
+<p>Consumer illustrations are universally relatable and set a friendly tone when communicating complex topics.</p>
+
+<p>The color palette should use the full range of primary and secondary colors, but selectively use a maximum of 3-4 colors, using midtones and tints to differentiate components. Illustrations should also make use of 100% white and black.</p>
+
 ### Viewpoint
 
 <div class="content-33 content-first">
