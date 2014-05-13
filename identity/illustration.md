@@ -5,12 +5,13 @@ category: Identity
 published: true
 ---
 
-- [Stylistic guidelines](#stylistic-guidelines)
+- [Consumer illustrations](#consumer-illustrations)
+- [Industry illustrations](#industry-illustrations)
 {: class="toc"}
 
 <div class="content-67 content-first">
 
-Illustrations are vector-based graphics that support primary headers and text. They function as the brand's top-level illustration style with high detail and clarity. Illustration is universally relatable and sets a friendly tone when speaking to consumers. The content of an illustration should always be politically and socially neutral.
+Illustrations are an important tool for introducing the subject matter of a page, event, or topic. Illustrations are vector-based graphics that support primary headers and text. They function as the brand's top-level illustration style with detail and clarity. Illustration is universally relatable and accessible to all audiences. The content of an illustration should always be politically and socially neutral.
 {: class="lead-in"}
 
 </div>
@@ -21,18 +22,31 @@ Illustrations are vector-based graphics that support primary headers and text. T
 
 </div>
 
-## Stylistic guidelines
+## Consumer illustrations
 
 <div class="content-33 content-first">
 
-### Form
+### Viewpoint
 
-Illustrations should feature flat elements
-and avoid showing things in threedimensions.
-Elements should not be outlined.
+<div class="content-33 content-first">
 
-Do not scale-up or collage minicons or
-isocons for use in illustrations.
+#### Front-facing
+
+These illustrations should feature flat elements and avoid showing things in three dimensions. Elements should not appear to be outlined.
+
+</div>
+
+<div class="content-67 content-last">
+
+![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration2.png)
+
+</div>
+
+<div class="content-33 content-first">
+
+#### Top-facing
+
+Top-facing illustrations are object-based. Illustrations should be arranged in a way that it appears the viewer is immersed in a real life scenario. These should include 4-6 objects and relative sizing to create a realistic and natural perspective. Shadows around objects can be used to create realism in top-facing perspective. If using top-facing perspective in a project, all illustrations should maintain that perspective for consistency.
 
 </div>
 
