@@ -61,19 +61,17 @@ Top-facing illustrations are object-based. Illustrations should be arranged in a
 <div class="content-33 content-first">
 
 ### Composition
-Illustrations should be compositionally
-balanced with related headers and
-text. Reduce “floating” by bleeding
-illustrations off the edges of the graphic.
-Make use of layering and subtle, vectorbased
-background patterns to help
-ground the illustration.
+All illustrations should have relative sizing when more than one object is included. Illustrations should appear natural, but stylized. Do not scale-up or collage minicons or isocons for use in illustrations. Minicons can be used as graphic details when scaled appropriately.
+
+Illustrations should be compositionally balanced with related headers and text. Reduce “floating” by bleeding illustrations off the edges of the graphic. Make use of layering and subtle, vector-based background patterns to help ground the illustration. Shadows are appropriate when objects overlap but should not extend outside of objects.
+
+Do not use negative space to define outlines.
 
 </div>
 
 <div class="content-67 content-last">
 
-![Teach Your Kids to Pin illustration]({{ site.baseurl }}/assets/img/illustration/Illustration3.png)
+![Library campaign illustration]({{ site.baseurl }}/assets/img/illustration/Illustration7_@2.png)
 
 </div>
 
