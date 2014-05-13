@@ -36,7 +36,7 @@ These illustrations should feature flat elements and avoid showing things in thr
 
 <div class="content-67 content-last">
 
-![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration2.png)
+![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration5_@2.png)
 
 </div>
 
@@ -50,7 +50,7 @@ Top-facing illustrations are object-based. Illustrations should be arranged in a
 
 <div class="content-67 content-last">
 
-![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration2.png)
+![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration6_@2.png)
 
 </div>
 
