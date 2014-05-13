@@ -77,13 +77,10 @@ Do not use negative space to define outlines.
 
 <div class="content-33 content-first">
 
-### Color
-Illustrations should use the full range
-of primary and secondary colors, but
-selectively use a maximum of 3-4 colors.
-Differentiate components or faces of
-objects using tints. Illustrations should
-also make use of 100% white and black.
+### Form
+All illustrations should be based on commonly used geometric shapes like circles, triangles, beams, and rectangles.
+
+To stylize illustrations according to CFPB standards, use relative sizing on stroke weights with a rounded end cap. For curved lines, the stylized stroke is recommended throughout illustrations.
 
 </div>
 
@@ -95,12 +92,35 @@ also make use of 100% white and black.
 
 <div class="content-33 content-first">
 
-### Shading
-Shading should be achieved using
-subtle, solid tints, not gradients, textures,
-or blurs. Shadows are created using a
-darker tint of the background color, cast
-from the top-right corner of an object at
-a 45º angle.
+### Shading and highlights
+Objects should be lit from the left side. This is consistent with the beam in our logo.
+
+Shading should be achieved using subtle, solid tints, not gradients, textures, multiply, or blurs.
+
+There are two types of highlights available for illustrations; curved and diagonal. The curved highlight is recommended when the object is round. Diagonal highlights are mostly used in rectangular objects. They are also frequently used to show reflections. To create a diagonal highlight, a tint of the background color is cast from the top-right corner of an object at a 45º angle.
+
+The overall placement of highlights and shading should be carefully decided by the designer and consistent throughout the project.
+
+</div>
+
+<div class="content-67 content-last">
+
+![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration4.png)
+
+</div>
+
+<div class="content-33 content-first">
+
+### Shadows
+
+Shadows are created using a darker tint of the background color. They are appropriate when objects overlap but should not extend outside of objects. In top-facing illustrations, shadows around objects can be used to create realism.
+
+The overall placement of shadows should be carefully decided by the designer and consistent throughout the project.
+
+</div>
+
+<div class="content-67 content-last">
+
+![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration4.png)
 
 </div>
