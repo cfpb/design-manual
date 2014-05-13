@@ -24,8 +24,6 @@ Illustrations are an important tool for introducing the subject matter of a page
 
 ## Consumer illustrations
 
-<div class="content-33 content-first">
-
 ### Viewpoint
 
 <div class="content-33 content-first">
