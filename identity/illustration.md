@@ -124,3 +124,21 @@ The overall placement of shadows should be carefully decided by the designer and
 ![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration4.png)
 
 </div>
+
+## Industry illustrations
+
+<div class="content-33 content-first">
+
+Industry illustrations are simple graphics that support a key topic or concept. Industry facing illustrations feature flat, front-facing elements and avoid the illusion of depth by excluding drop shadows and highlights.
+
+The color palette is green and grey, including midtones and tints and a thoughtful use of whitespace.
+
+</div>
+
+<div class="content-67 content-last">
+
+![Examiner hiring illustration]({{ site.baseurl }}/assets/img/illustration/Illustration_industry1_@2.png)
+
+![Home illustration]({{ site.baseurl }}/assets/img/illustration/Illustration_industry2_@2.png)
+
+</div>
