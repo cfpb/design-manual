@@ -93,19 +93,17 @@ To stylize illustrations according to CFPB standards, use relative sizing on str
 <div class="content-33 content-first">
 
 ### Shading and highlights
-Objects should be lit from the left side. This is consistent with the beam in our logo.
+Objects should be lit from the upper-left side. This is consistent with the beam in our logo. The overall placement of highlights and shading should be carefully decided by the designer and consistent throughout the project.
 
 Shading should be achieved using subtle, solid tints, not gradients, textures, multiply, or blurs.
 
 There are two types of highlights available for illustrations; curved and diagonal. The curved highlight is recommended when the object is round. Diagonal highlights are mostly used in rectangular objects. They are also frequently used to show reflections. To create a diagonal highlight, a tint of the background color is cast from the top-right corner of an object at a 45º angle.
 
-The overall placement of highlights and shading should be carefully decided by the designer and consistent throughout the project.
-
 </div>
 
 <div class="content-67 content-last">
 
-![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration4.png)
+![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration9_@2.png)
 
 </div>
 
@@ -129,7 +127,7 @@ The overall placement of shadows should be carefully decided by the designer and
 
 <div class="content-33 content-first">
 
-Industry illustrations are simple graphics that support a key topic or concept. Industry facing illustrations feature flat, front-facing elements and avoid the illusion of depth by excluding drop shadows and highlights.
+Industry illustrations are simple graphics that support a key topic or concept. Industry facing illustrations feature flat elements and avoid the illusion of depth by excluding drop shadows and highlights.
 
 The color palette is green and grey, including midtones and tints and a thoughtful use of whitespace.
 
