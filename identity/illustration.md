@@ -86,7 +86,7 @@ To stylize illustrations according to CFPB standards, use relative sizing on str
 
 <div class="content-67 content-last">
 
-![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration4.png)
+![Base forms of an illustration]({{ site.baseurl }}/assets/img/illustration/Illustration10_@2.png)
 
 </div>
 
