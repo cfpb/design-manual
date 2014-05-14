@@ -103,7 +103,7 @@ There are two types of highlights available for illustrations; curved and diagon
 
 <div class="content-67 content-last">
 
-![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration9_@2.png)
+![Examples of shading and highlights in illustration]({{ site.baseurl }}/assets/img/illustration/Illustration9_@2.png)
 
 </div>
 
@@ -119,7 +119,7 @@ The overall placement of shadows should be carefully decided by the designer and
 
 <div class="content-67 content-last">
 
-![Clipboard illustration]({{ site.baseurl }}/assets/img/illustration/Illustration4.png)
+![Example of shadows in llustration]({{ site.baseurl }}/assets/img/illustration/Illustration8_@2.png)
 
 </div>
 
