@@ -103,5 +103,5 @@ with this waiver of copyright interest.
 ![sitemap image](https://raw2.github.com/dezzie/design-manual/gh-pages/assets/img/design_manual_sitemap.png)
 
 ## Roadmap
-In the near future we plan to add guidelines for pagination, filtering, modals, tooltips, tabs, and responsive tables. We also plan to make the Design Manual itself fully responsive for small screens. The Design Manual will eventually merge with our existing cfpb.github.io page.
+In the near future we plan to add guidelines for pagination, filtering, modals, tooltips, tabs, and responsive tables. We also plan to make the Design Manual itself fully responsive for small screens.
 
