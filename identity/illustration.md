@@ -77,6 +77,8 @@ Do not use negative space to define outlines.
 
 </div>
 
+---
+
 <div class="content-33 content-first">
 
 ### Form
@@ -91,6 +93,8 @@ To stylize illustrations according to CFPB standards, use relative sizing on str
 ![Base forms of an illustration]({{ site.baseurl }}/assets/img/illustration/Illustration10_@2.png)
 
 </div>
+
+---
 
 <div class="content-33 content-first">
 
@@ -108,6 +112,8 @@ There are two types of highlights available for illustrations; curved and diagon
 ![Examples of shading and highlights in illustration]({{ site.baseurl }}/assets/img/illustration/Illustration9_@2.png)
 
 </div>
+
+---
 
 <div class="content-33 content-first">
 
