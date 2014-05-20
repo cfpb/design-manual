@@ -58,6 +58,8 @@ Top-facing illustrations are object-based. Illustrations should be arranged in a
 
 </div>
 
+---
+
 <div class="content-33 content-first">
 
 ### Composition
