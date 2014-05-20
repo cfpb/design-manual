@@ -13632,7 +13632,7 @@ html {
 
 .header {
   border-bottom: 4px solid #2cb34a;
-  padding: 2em 0;
+  padding-top: 0.5em;
   width: 100%;
 }
 
@@ -13660,8 +13660,7 @@ html {
 }
 
 .header .site-title h1 {
-  font-size: 1.625em;
-  /* 26px */
+  font-size: 1.5em;
 }
 
 .header .site-title .title-link {
@@ -13680,29 +13679,6 @@ html {
 }
 
 .header .site-logo {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 100%;
-  text-align: right;
-}
-
-.ie .header .site-logo {
-  margin-right: -0.26em;
-}
-
-.lt-ie8 .header .site-logo {
-  display: inline;
-  *zoom: 1;
-  *behavior: url(/cf-grid/custom-demo/static/css/boxsizing.htc);
-}
-
-.header .site-logo .logo {
   display: none;
 }
 
@@ -13716,7 +13692,7 @@ html {
 /* Small tablet (600px) */
 
 .header {
-  padding-bottom: 0;
+  padding: 2em 0 0;
 }
 
 .header .site-title {
@@ -13740,6 +13716,10 @@ html {
   display: inline;
   *zoom: 1;
   *behavior: url(/cf-grid/custom-demo/static/css/boxsizing.htc);
+}
+
+.header .site-title h1 {
+  font-size: 1.625em;
 }
 
 .header .site-logo {
@@ -14763,6 +14743,10 @@ p.print-georgia-para {
   margin-bottom: .75em;
 }
 
+.content .repo-list {
+  padding-left: 0;
+}
+
 .repo-list li {
   list-style: none;
   display: block;
@@ -14826,6 +14810,7 @@ h2 span.cf-code-link {
    ========================================================================== */
 
 ul.list_links-minicons {
+  padding-left: 0;
   list-style: none;
 }
 
@@ -14961,7 +14946,6 @@ ul.list_links-minicons li {
   max-width: 45em;
   font-size: 0.875em;
   line-height: 1.42857142857143;
-  margin-left: .25em;
 }
 
 .footer a,
@@ -15045,6 +15029,55 @@ ul.list_links-minicons li {
 
 /* Mobile portrait (320px) */
 
+.main-nav {
+  /* The next two lines get rid of the annoying 40px left margin on unordered list in WebKit (-webkit-offset-start: 40px;): */
+  margin: 0 0 0.5em;
+  padding: 0;
+  text-align: center;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 1em 0.5em;
+  font-family: "Avenir Next Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125em;
+  /* 18px */
+  list-style: none;
+}
+
+.main-nav a {
+  display: block;
+  padding: 0.125em 0;
+  border-bottom: 4px solid #ffffff;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+  color: #75787b;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  border-bottom: 4px solid #dbedd4;
+  color: #43484e;
+}
+
+.main-nav a:active {
+  border-bottom: 4px solid #addc91;
+  color: #101820;
+}
+
+.main-nav-active a:link,
+.main-nav-active a:visited,
+.main-nav-active a:hover,
+.main-nav-active a:focus,
+.main-nav-active a:active {
+  border-bottom: 4px solid #addc91;
+  color: #101820;
+}
+
 /* Mobile landscape (480px) */
 
 /* Small tablet (600px) */
@@ -15059,9 +15092,8 @@ ul.list_links-minicons li {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  /* Th next two lines get rid of the annoying 40px left margin on unordered list in WebKit (-webkit-offset-start: 40px;): */
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 .ie .main-nav {
@@ -15075,14 +15107,9 @@ ul.list_links-minicons li {
 }
 
 .main-nav li {
-  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 0;
   margin-left: 2em;
-  font-family: "Avenir Next Medium", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.125em;
-  /* 18px */
-  list-style: none;
 }
 
 .main-nav li:first-child {
@@ -15090,26 +15117,14 @@ ul.list_links-minicons li {
 }
 
 .main-nav a {
-  display: block;
+  padding-top: 0;
   padding-bottom: 1em;
-}
-
-.main-nav a:link,
-.main-nav a:visited {
-  color: #75787b;
+  border-bottom: none;
 }
 
 .main-nav a:hover,
-.main-nav a:focus {
-  border-bottom: 4px solid #dbedd4;
-  margin-bottom: -4px;
-  color: #43484e;
-}
-
 .main-nav a:active {
-  border-bottom: 4px solid #addc91;
   margin-bottom: -4px;
-  color: #101820;
 }
 
 .main-nav-active a:link,
@@ -15117,9 +15132,7 @@ ul.list_links-minicons li {
 .main-nav-active a:hover,
 .main-nav-active a:focus,
 .main-nav-active a:active {
-  border-bottom: 4px solid #addc91;
   margin-bottom: -4px;
-  color: #101820;
 }
 
 /* Tablet/netbook (768px) */
