@@ -15183,8 +15183,6 @@ ul.list_links-minicons li {
 .secondary-nav a {
   display: block;
   padding: 10px;
-  -webkit-transition: .4s;
-  transition: .4s;
 }
 
 .secondary-nav a,
@@ -15194,21 +15192,22 @@ ul.list_links-minicons li {
   color: #101820;
 }
 
-.secondary-nav li:hover,
+.secondary-nav a:hover,
 .secondary-nav a:focus,
-.secondary-nav li:active,
-.secondary-nav .secondary-nav-active {
-  color: #101820;
+.secondary-nav .secondary-nav-active > a {
   border-left: 4px solid #2cb34a;
-  background-color: transparent;
-  border-bottom: 1px solid #babbbd;
-  padding-left: 0;
+  margin-left: -4px;
+  color: #101820;
+}
+
+.secondary-nav a:active {
+  background-color: #f8f8f8;
+  color: #101820;
 }
 
 .secondary-nav ul {
   margin: 0;
   padding: 0;
-  /*border-top: 1px solid @gray-50;*/
 }
 
 .secondary-nav li {

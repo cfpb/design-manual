@@ -12,7 +12,6 @@
   a {
     display: block;
     padding: 10px;
-    transition: .4s;
   }
 
   a,
@@ -22,21 +21,21 @@
     color: @black;
   }
 
-  li:hover,
+  a:hover,
   a:focus,
-  li:active,
-  .secondary-nav-active {
-    color: @black;
+  .secondary-nav-active > a {
     border-left: 4px solid @green;
-    background-color: transparent;
-    border-bottom: 1px solid @gray-50;
-    padding-left: 0;
+    margin-left: -4px;
+    color: @black;
+  }
+  a:active {
+    background-color: @gray-5;
+    color: @black;
   }
 
   ul {
     margin: 0;
     padding: 0;
-    /*border-top: 1px solid @gray-50;*/
   }
 
   li {
