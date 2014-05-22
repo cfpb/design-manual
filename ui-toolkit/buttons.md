@@ -23,7 +23,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
   <h5 class="repo-list-header">Repository</h5>
   <ul class="repo-list">
     <li>
-      <i class="cf-icon cf-icon-github"></i>
+      <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
       <a href="http://github.com/cfpb/cf-buttons"><h4>cf-buttons</h4></a>
@@ -32,7 +32,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
   </ul>
 </div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 ### Primary and Secondary buttons
@@ -108,24 +108,24 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 {::nomarkdown}  
 <button class="btn">
-    <i class="btn-icon-left cf-icon cf-icon-upload"><span class="jekyll-bug"></span></i>
+    <span class="btn-icon-left cf-icon cf-icon-upload"></span>
     Upload document
 </button>
 <br><br>
 
 <button class="btn">
-    <i class="btn-icon-left icon-chevron-left"><span class="jekyll-bug"></span></i>
+    <span class="btn-icon-left cf-icon cf-icon-left"></span>
     Back
 </button>
 <button class="btn">
     Next
-    <i class="btn-icon-right icon-chevron-right"><span class="jekyll-bug"></span></i>
+    <span class="btn-icon-right cf-icon cf-icon-right"></span>
 </button>
 {:/nomarkdown}
 
 </div>
 
-<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Normal
@@ -189,7 +189,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
-<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Large Primary button
@@ -237,7 +237,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 {::nomarkdown}   
 <div class="btn-group">
     <button class="btn">Button</button>
-    <button class="btn btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></button>
+    <button class="btn btn-compound-action"><span class="cf-icon cf-icon-down"></span></button>
 </div>
 {:/nomarkdown} 
 
