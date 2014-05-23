@@ -25,7 +25,7 @@ A clear typographic hierarchy is critical to the effective communication of our 
 
 </div>
 
-<h2 id="typefaces">Typefaces<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="typefaces">Typefaces<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 ### Avenir Next
 
@@ -115,7 +115,7 @@ abcdefghijklmnopqrstuvwxyz
 
 </div>
 
-<h2 id="web-hierarchy">Web hierarchy<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="web-hierarchy">Web hierarchy<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read; a successful hierarchy enables readers to easily scan content.</p>
 
@@ -464,7 +464,7 @@ CFPB Black text and white text on gray, and gray text on white are _only accessi
 
 <div class="content-33 content-first">
 
-<h3 class="warning"><i class="icon-remove-sign"></i> Non-accessible combinations</h3>
+<h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Non-accessible combinations</h3>
 Never set CFPB Green web type on white combinations, as they are not accessible. Never set type on a patterned background.
 
 </div>
@@ -486,7 +486,7 @@ Never set CFPB Green web type on white combinations, as they are not accessible.
 
 <div class="content-33 content-first">
 
-<h3 class="warning"><i class="icon-remove-sign"></i> Undesirable combinations</h3>
+<h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Undesirable combinations</h3>
 Even though CFPB Green and CFPB Black are accessible for large scale type, this color combination should never be used for web type.
 
 </div>
