@@ -8,7 +8,7 @@ The Manual is an open-source resource built to help employees and contractors ef
 
 The Manual will include CFPB's design goals and principles, guidelines for user experience, identity standards, and code snippets for common user interface elements. Our internal design and development team collaboratively developed the Manual over the past nine months, but it will grow and change as we design new products and add staff.
 
-Releasing the Manual to the public increases transparency and allows you to help us make improvements. The Manual is open source, so we’d love for other agencies, developers, or groups to adapt it for their own use. Many style guides influenced the Manual, including Mozilla's, MailChimp's, BBC's, but our primary inspiration is the UK's Government Digital Service's Government Service Design Manual. We hope ours can serve as a foundation for discussing and practicing user-centered design in government.
+Releasing the Manual to the public increases transparency and allows you to help us make improvements. The Manual is open source, so we’d love for other agencies, developers, or groups to adapt it for their own use. Many style guides influenced the Manual, including Mozilla's, MailChimp's, BBC's, but our primary inspiration is the UK's Government Digital Service's Government Service Design Manual. We hope ours can serve as a foundation for discussing and practicing user-centered design in U.S. government.
 
 The site is built using Bower, Grunt, Jekyll, and LESS.
 
