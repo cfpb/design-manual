@@ -4,7 +4,7 @@ http://cfpb.github.io/design-manual/
 
 This is the repository for CFPB's Design Manual for developing print and web products. It contains both the assets and the content for the site. 
 
-The Manual is an open-source resource built to help employees and contractors efficiently produce consistent print and web products. The guides and assets included in the Manual put our Design Principles into practice, helping CFPB build clear, consistent and accessible products. 
+The Manual is an open-source resource built to help employees and contractors efficiently produce consistent print and web products. The guides and assets included in the Manual put our Design Principles into practice, helping CFPB build clear, consistent and accessible products. Consistent design builds trust with American consumers and helps us quickly build new products for them. 
 
 The Manual will include CFPB's design goals and principles, guidelines for user experience, identity standards, and code snippets for common user interface elements. Our internal design and development team collaboratively developed the Manual over the past nine months, but it will grow and change as we design new products and add staff.
 
