@@ -39,7 +39,7 @@ We establish trust through clear, concise, and approachable design that is alway
 
 <div class="content-67 content-last">
 
-The CFPB motivates consumers to take the control of their financial decision-making; our designs enable this process. Good design increases transparency and succinctly hands the user all the necessary information, giving consumers control of how they use it. To create an empowering product, designers must rely on introspection and research to discover what path users instinctively take and then cater to those instincts. 
+The CFPB motivates consumers to take the control of their financial decision-making; our designs enable this process. Good design increases transparency and succinctly hands the user all the necessary information, giving consumers control of how they use it. Designers must rely on introspection and research to discover what path users instinctively take and then cater to those instincts. 
 
 </div>        
 
@@ -73,13 +73,13 @@ Maintaining consistency in design empowers users to seamlessly transfer their kn
           
 <div class="content-33 content-first">
 
-#### Honest, transparent design that wins the public’s trust.
+#### Design gives voice to data, and data informs design.
 
 </div>
 
 <div class="content-67 content-last">
 
-Because the CFPB is a data-driven organization, quantitative measures of success should be integral to the design process. With the world’s information doubling every two years, consumers often experience information overload and develop shorter attention spans. Furthermore, our ability to interpret visual information is greater than that of the written word. Succinct and compelling visualization of data and information gives data a voice and helps us clarify otherwise indigestible numbers. 
+Because the CFPB is a data-driven organization, quantitative measures of success should be integral to the design process. Design should incorporate data to aid understanding of complex issues, and data-driven feedback should influence the design process. Succinct and compelling visualization of information gives data a voice and helps us clarify otherwise indigestible numbers. 
 
 </div>
 
@@ -92,12 +92,6 @@ Because the CFPB is a data-driven organization, quantitative measures of success
 </div>
 
 <div class="content-67 content-last">
-
-##### Inclusion
-
-It is easy to forget that the people most in need of the CFPB’s message are often the ones who are the most difficult to reach, whether it is because they have no exposure to financial language or simply don’t have access to the Internet. For this reason, we set the bar for clarity very high and aim to reach those most in need.
-          
-##### Accessibility
 
 We design to meet each consumer where he or she is. We are sensitive to experiential level, timing, and biases and aim to design experiences that are equally accessible to everyone, and equally empowering no matter what the user’s skill set or familiarity. Simple, clean designs are the most effective and wide-reaching.   
 
