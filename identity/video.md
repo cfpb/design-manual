@@ -65,7 +65,7 @@ A video that educates consumers on a specific issue, web tool, or regulation wri
 
 ### Documentary
 
-A documentary-style video that demonstrates how the CFPB has helped consumers and impacted their lives.
+A documentary-style, consumer-facing video that demonstrates the work done by the Bureau.
 
 </div>
 
