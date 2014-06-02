@@ -20,7 +20,7 @@
     "html5shiv": "3.7.0",
     "jquery": "~1.11.0",
     "normalize-css": "~3.0.1",
-    "cf-grid": "git@github.com:cfpb/cf-grid.git",
+    "cf-grid": "git@github.com:cfpb/cf-grid.git#0.8.2",
     "cf-forms": "git@github.com:cfpb/cf-forms.git",
     "cf-colors": "git@github.com:cfpb/cf-colors.git",
     "cf-buttons": "git@github.com:cfpb/cf-buttons.git",
