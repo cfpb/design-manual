@@ -47,7 +47,7 @@ mainnav:
 - text: Guides
   url: guides/guides.html
   internal: true
-- text: Identity
+- text: Visual identity
   url: identity/identity.html
   internal: true
 - text: UI toolkit
@@ -87,39 +87,39 @@ secondarynav:
 - text: Logo
   url: identity/logo.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Color
   url: identity/color-principles.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Typography
   url: identity/typography.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Minicons
   url: identity/minicons.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Isocons
   url: identity/isocons.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Illustration
   url: identity/illustration.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Beam pattern
   url: identity/beams.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Photography
   url: identity/photography.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Video
   url: identity/video.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Buttons
   url: ui-toolkit/buttons.html
   internal: true

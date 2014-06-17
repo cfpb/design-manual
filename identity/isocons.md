@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Isocons
-category: Identity
+category: Visual identity
 published: true
 ---
 

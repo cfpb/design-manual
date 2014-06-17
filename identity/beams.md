@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Beam pattern
-category: Identity
+category: Visual identity
 published: true
 ---
 

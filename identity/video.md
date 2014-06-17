@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Video
-category: Identity
+category: Visual identity
 ---
 
 - [Use cases](#use-cases)[Stylistic guidelines](#stylistic-guidelines)
