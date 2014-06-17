@@ -100,7 +100,7 @@ with this waiver of copyright interest.
 
 ## Current Sitemap
 
-![sitemap image](https://raw2.github.com/dezzie/design-manual/gh-pages/assets/img/design_manual_sitemap.png)
+![sitemap image](assets/img/design_manual_sitemap.svg)
 
 ## Roadmap
 In the near future we plan to add guidelines for pagination, filtering, modals, tooltips, tabs, and responsive tables. We also plan to make the Design Manual itself fully responsive for small screens.
