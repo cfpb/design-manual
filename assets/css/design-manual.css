@@ -14291,7 +14291,7 @@ ul.list_links-minicons li {
     border-width: 0 15px;
     margin-right: -0.25em;
     vertical-align: top;
-    width: 16.666666666666664%;
+    width: 25%;
   }
   .ie .footer-links {
     margin-right: -0.26em;
@@ -14316,6 +14316,25 @@ ul.list_links-minicons li {
     margin-right: -0.26em;
   }
   .lt-ie8 .footer-oss {
+    display: inline;
+    *zoom: 1;
+    *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  }
+  .footer-standards {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 33.33333333333333%;
+  }
+  .ie .footer-standards {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 .footer-standards {
     display: inline;
     *zoom: 1;
     *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
