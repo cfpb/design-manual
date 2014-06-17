@@ -242,6 +242,8 @@ abcdefghijklmnopqrstuvwxyz
 
 </div>
 
+---
+
 
 ### Body text
 
@@ -506,6 +508,8 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 </div>
 
+<div id="print-hierarchy-ex">
+
 ## Print hierarchy
 
 <p>This hierarchy should serve as a basis for 8.5 x 11” documents, but appropriate scaling should be explored for content of larger or smaller dimensions.</p>
@@ -632,6 +636,8 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 </div>
 
+---
+
 ### Body text
 
 <div class="content-33 content-first">
@@ -702,5 +708,6 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 * Use web school data and relevant financial factors to make a more informed decision for your future.
 
-</div>
-<!--/ .content-67 .content-last-->
+</div><!--/ .content-67 .content-last-->
+
+</div><!-- print-hierarchy-ex -->
