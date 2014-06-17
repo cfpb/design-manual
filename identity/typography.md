@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Typography
-category: Identity
+category: Visual identity
 published: true
 ---
 

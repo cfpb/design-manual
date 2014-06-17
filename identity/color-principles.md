@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Color
-category: Identity
+category: Visual identity
 ---
 
 - [Palette](#palette)
