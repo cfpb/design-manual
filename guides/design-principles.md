@@ -6,7 +6,7 @@ category: Guides
 
 <div class="content-67 content-first">
 	
-These are the strategic underpinnings for the CFPB’s brand and experience. They should serve as the backbone for the user experience, at once inspiring and binding the design of the CFPB’s offerings.
+These are the strategic underpinnings for the CFPB’s design and development standards. They should serve as the backbone for the user experience, ensuring that the standards we set enable products that are easy to use and understand for consumers.
 {: class="lead-in"}
 
 </div>
