@@ -12,7 +12,7 @@ category: Guides
 
 <div class="content-67 content-first">
 
-The following four principles, as defined by the W3C&reg;, lay the foundation for ensuring that web content is available for all users, including users with disabilities and users on non-desktop devices. These guidelines also enable future compatibility in the event that future devices are radically different from those in use today.
+The following four principles, as defined by the W3C<sup>&reg;</sup>, lay the foundation for ensuring that web content is available for all users, including users with disabilities and users on non-desktop devices. These guidelines also enable future compatibility in the event that future devices are radically different from those in use today.
 {: class="lead-in"}
 
 Note: While this document can function as a checklist – and at times, it will – that isn’t the primary purpose. The goal is to foster understanding of why these guidelines are important.
@@ -22,7 +22,7 @@ Note: While this document can function as a checklist – and at times, it will 
 
 <div class="content-33 content-last">
 
-_This guide is adapted from [WCAG 2.0](http://www.w3.org/TR/2008/REC-WCAG20-20081211/), a [W3C](http://www.w3.org/) Recommendation. [More info.](#attribution)_
+_This guide is adapted from the [Web Content Accessibility Guidelines 2.0](http://www.w3.org/TR/2008/REC-WCAG20-20081211/), a [W3C](http://www.w3.org/) Recommendation. [More info.](#attribution)_
 
 </div>
 
@@ -308,4 +308,4 @@ This means using standard HTML markup. If complex widgets are required, use WAI-
 
 ## Attribution
 
-This guide on accessible interfaces has been adapted from the [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/2008/REC-WCAG20-20081211/). That document's status is **Recommendation**. The document is [copyright](http://www.w3.org/Consortium/Legal/ipr-notice#Copyright) &copy; 2008 [W3C](http://www.w3.org/)&reg; ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.org/), [Keio](http://www.keio.ac.jp/)), All Rights Reserved. W3C [liability](http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer), [trademark](http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks) and [document use](http://www.w3.org/Consortium/Legal/copyright-documents) rules apply.
+This guide on accessible interfaces has been adapted from the [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/2008/REC-WCAG20-20081211/). That document's status is **Recommendation**. The document is [copyright](http://www.w3.org/Consortium/Legal/ipr-notice#Copyright) &copy; 2008 [W3C](http://www.w3.org/)<sup>&reg;</sup> ([MIT](http://www.csail.mit.edu/), [ERCIM](http://www.ercim.org/), [Keio](http://www.keio.ac.jp/)), All Rights Reserved. W3C [liability](http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer), [trademark](http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks) and [document use](http://www.w3.org/Consortium/Legal/copyright-documents) rules apply.
