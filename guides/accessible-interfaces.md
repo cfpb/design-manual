@@ -30,7 +30,7 @@ Note: While this document can function as a checklist – and at times, it will 
 Information and user interface elements must be presented to users in ways that they can perceive. This includes considering individuals using assistive technology (e.g., screen readers for blind users or captions for deaf users) and the limitations of different devices (e.g., grayscale screens or muted mobile devices).
 
 <div class="content-33 content-first">
-#### Include text alternatives for non-text content
+### Include text alternatives for non-text content
 
 For any content that is not text-based (images, audio, video, animations, charts, graphs, etc), provide an alternative version of that content that is text-based.
 </div>
@@ -48,20 +48,20 @@ For any content that is not text-based (images, audio, video, animations, charts
 ---
 
 <div class="content-33 content-first">
-#### Provide alternatives for multimedia
+### Provide alternatives for multimedia
 
 Multimedia such as audio, video, and animations will usually require more than just descriptive text. In most cases, the timing of text and descriptions in these files is important and should therefore be incorporated in an accessible manner.
 </div>
 
 <div class="content-67 content-last">
 
-##### Prerecorded content
+#### Prerecorded content
 
 - For audio-only content, provide a transcript of both spoken words and descriptions of other sounds.
 - For video-only content, provide an audio track or transcript that describes the video.
 - Combined audio and video content should accommodate alternatives for both (e.g., closed captioning or sign interpretation for audio, and an audio track or a screenplay-like document that transcribes dialog and descriptions of sounds and action for video).
 
-##### Live content
+#### Live content
 
 - Closed captioning or sign language interpretation should always be available, but in some cases providing the prepared remarks or script alongside the audio/video may suffice.
 
@@ -70,7 +70,7 @@ Multimedia such as audio, video, and animations will usually require more than j
 ---
   
 <div class="content-33 content-first">
-#### Organize content semantically
+### Organize content semantically
 
 Semantic content allows user agents to correctly parse documents and present it to end users in a way that is appropriate for their device and medium without losing information or structure. 
 </div>
@@ -88,20 +88,20 @@ Semantic content allows user agents to correctly parse documents and present it 
 ---
 
 <div class="content-33 content-first">
-#### Make content easily distinguishable from its surroundings
+### Make content easily distinguishable from its surroundings
 
 These guidelines help ensure that content is perceivable for sighted users.
 </div>
 
 <div class="content-67 content-last">
 
-##### Text:  
+#### Text:  
 
 - Choose easy-to-read fonts.
 - Avoid using images of text, except for logos and images meant to represent physical documents.
 - Text should be able to be resized up to 200% without causing overlapping issues with other content on the page. Don’t rely on browser zoom, since some users have settings to force large type.
 
-##### Color:  
+#### Color:  
 
 - Do not use color as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
 - Text should have a contrast ratio of at least 4.5 : 1, but there are exceptions.
@@ -109,7 +109,7 @@ These guidelines help ensure that content is perceivable for sighted users.
   1. Text or images of text that are either pure decoration or not visible, or are part of a logo, picture that contains significant other visual content, or inactive UI components (like disabled form controls) do not have a color contrast requirement.
 - The [Colour Contrast Check](http://www.snook.ca/technical/colour_contrast/colour.html) is a nice tool for testing color contrast ratios. 
 
-##### Audio:
+#### Audio:
 - Avoid auto-playing audio. If this is absolutely unavoidable, provide a control that allows the user to stop the audio and adjust or mute the volume.
 - In recorded audio, background sounds should be at least 20 dB lower than foreground sounds and speech. This does not apply to music.
 
@@ -121,7 +121,7 @@ User interface components and navigation must be operable: an interface cannot r
 
 <div class="content-33 content-first">
 
-#### Ensure that all content is keyboard accessible
+### Ensure that all content is keyboard accessible
 
 In general, if a website can be operated using only the keyboard, it will also be operable with less-common input devices. 
 
@@ -139,7 +139,7 @@ In general, if a website can be operated using only the keyboard, it will also b
 
 <div class="content-33 content-first">
 
-#### Give users ample time to interact with content
+### Give users ample time to interact with content
 
 You should not use time limits. 
 
@@ -159,7 +159,7 @@ For cases in which time limits are unavoidable:
 
 <div class="content-33 content-first">
 
-#### Avoid interrupting users
+### Avoid interrupting users
 
 </div>
 
@@ -175,7 +175,7 @@ For cases in which time limits are unavoidable:
 
 <div class="content-33 content-first">
 
-#### Do not create designs or interactions that may cause seizures
+### Do not create designs or interactions that may cause seizures
 </div>
 
 <div class="content-67 content-last">
@@ -188,7 +188,7 @@ For cases in which time limits are unavoidable:
 
 <div class="content-33 content-first">
 
-#### Help users navigate, find content, and determine where they are
+### Help users navigate, find content, and determine where they are
 
 </div>
 
@@ -207,7 +207,7 @@ For cases in which time limits are unavoidable:
 
 <div class="content-33 content-first">
 
-#### Manage focus
+### Manage focus
 
 Whe users navigate a webpage using the keyboard or another alternative input device, only one element on the page will be in focus at a given time.
 
@@ -227,7 +227,7 @@ Users must be able to comprehend content and how to operate an interface.
 
 <div class="content-33 content-first">
 
-#### Create text content that is machine- and human-readable
+### Create text content that is machine- and human-readable
 
 </div>
 
@@ -246,7 +246,7 @@ Users must be able to comprehend content and how to operate an interface.
 
 <div class="content-33 content-first">
 
-#### Develop sites that behave in a predictable way
+### Develop sites that behave in a predictable way
 
 </div> 
 
@@ -261,7 +261,7 @@ Users must be able to comprehend content and how to operate an interface.
 
 <div class="content-33 content-first">
 
-#### Maintain context
+### Maintain context
 
 Avoid changing a user’s context without an explicit request from the user, like clicking or otherwise activating a link or button. 
 
@@ -288,7 +288,7 @@ Content must be robust enough that it can be interpreted reliably by a wide vari
 
 <div class="content-33 content-first">
 
-#### Follow standard web best practices
+### Follow standard web best practices
 
 This means using standard HTML markup. If complex widgets are required, use WAI-ARIA to make the use, states, and properties clear to browsers and assistive technologies.
 
