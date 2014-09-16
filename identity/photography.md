@@ -13,7 +13,7 @@ published: true
 Photography is an important tool that helps us relate to consumers, communicate empathy, and build trust. CFPB images should preserve aesthetic integrity: photographs  should never be stretched, free of special effects, and always in full color. Images should be relatable, natural, and shot in a real location.
 {: class="lead-in"}
 
-An edited selection of our latest editorial photography is available at [flickr.com/photos/cfpbphotos](http://flickr.com/photos/cfpbphotos/")
+An edited selection of our latest editorial photography is available at [flickr.com/photos/cfpbphotos](http://flickr.com/photos/cfpbphotos/)
 {: class="lead-in"}
 
 </div>
