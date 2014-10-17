@@ -206,14 +206,13 @@ figure {
     border-bottom: 1px solid @pacific-20;
     padding: 0 0 1.25em 0; // 1.25em = 20px
     margin: 0 0 1.875em 0; // 1.875em = 30px
-
   }
 
   .toc {
 
     li {
 
-      font-family: @sans-serif-demi;
+      .webfont-demi();
       font-size: 1.125em;
       display: block;
       float: left;
@@ -237,12 +236,24 @@ figure {
     }
 
   }
+
   p {
-    font-family: @serif;    
+    font-family: Georgia, "Times New Roman", serif;
+
+    em,
+    i {
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+    }
+    strong,
+    b {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: bold;
+    }
   }
 
   .lead-in {
-    font-family: @sans-serif;
+    .webfont-regular();
     font-size: 1.125em;
   }
 
@@ -265,16 +276,15 @@ figure {
 
   li ul,
   li ol {
-          margin: 0 1.375em;
+    margin: 0 1.375em;
   }
 
   dl dd {
-          margin-left: 1.375em;
+    margin-left: 1.375em;
   }
 
   dt {
-          font-family: @sans-serif-demi;
-          font-weight: 600;
+    .webfont-demi();
   }
 }
 
@@ -307,7 +317,7 @@ figure {
     }
     th {
         padding-right: 0.25em;
-        .webfont-demi;
+        .webfont-demi();
         text-align: left;
     }
 

@@ -2,7 +2,7 @@
 permalink: /:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "front", "node_modules"]
 markdown: kramdown
-pygments: true
+highlighter: true
 
 # Organization
 org: CFPB
