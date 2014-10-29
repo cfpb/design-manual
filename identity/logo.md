@@ -266,7 +266,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t remove the light beam. It is essential to the logo.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t remove the light beam. It is essential to the logo.
 
 </div>
 
@@ -280,7 +280,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t stretch or condense. This weakens the brand.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t stretch or condense. This weakens the brand.
 
 </div><!-- /.content-33 -->
 
@@ -297,7 +297,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t apply a drop shadow.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t apply a drop shadow.
 
 </div><!-- /.content-33 -->
 
@@ -311,7 +311,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t outline the logo or use other colors. This dilutes brand association.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t outline the logo or use other colors. This dilutes brand association.
 
 </div><!-- /.content-33 -->
 
@@ -328,7 +328,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t rotate the symbol. This changes the connotation of the light.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t rotate the symbol. This changes the connotation of the light.
 
 </div><!-- /.content-33 -->
 
@@ -345,7 +345,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t place the logo directly on a colored background or photo without a white bounding box.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t place the logo directly on a colored background or photo without a white bounding box.
 
 </div><!-- /.content-33 -->
 
