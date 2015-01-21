@@ -178,6 +178,12 @@ Padding varies around minicons of various primary shapes. Square, vertically and
     
 ### Web font
 Our full icon set is available for desktop use as a font (.ttf).
+font kit, which has filetypes available for desktop and web usage.
+
+<a href="#" class="btn">
+    <span class="btn_icon__left cf-icon cf-icon-download"></span>
+    Download web font kit
+</a>
 
 <button class="btn">
     <span class="btn_icon__left cf-icon cf-icon-download"></span>
