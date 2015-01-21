@@ -5,8 +5,8 @@
   "homepage": "http://cfpb.github.io/design-manual/",
   "author": {
     "name": "Consumer Financial Protection Bureau",
-    "email": "tech@cfpb.gov"  ,
-        "url": "http://consumerfinance.gov" 
+    "email": "tech@cfpb.gov",
+    "url": "http://consumerfinance.gov"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,14 @@
   },
   "license": "CC0",
   "dependencies": {
+    "cf-buttons": "*",
+    "cf-expandables": "~0.7.0",
+    "cf-forms": "~1.2.0",
+    "cf-grid": "*",
+    "cf-icons": "*",
+    "cf-layout": "~0.2.2",
+    "cf-pagination": "~0.5.0",
+    "cf-typography": "~0.7.0"
   },
   "exportsOverride": {
     "cf-*": {
