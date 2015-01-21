@@ -4,30 +4,42 @@
 .DS_Store?
 .Spotlight-V100
 .Trashes
-ethumbs.db
+ehthumbs.db
 Thumbs.db
-/.project
-jshint.out.xml
-csslint.out.xml
-*.orig
-*.tmp
-*.log
 
-# Node modules for local development
-####################################
-front/node_modules
+# Vim swap files #
+##################
+*.swp
 
-# Bower downloaded packages #
-#############################
-# uncomment once cf-framework is in the public github:
-front/vendor
+# Python #
+#################
+*.pyc
+*.egg-info/
+__pycache__/
+*.py[cod]
 
-# Test reports #
-###################
-front/test/coverage
-front/test/junit
+# Django #
+#################
+*.egg-info
+.installed.cfg
+
+# Unit test / coverage reports
+#################
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Front-End #
+#############
+node_modules/
+bower_components/
+.grunt/
+src/vendor/
+
 
 # Jekyll #
 ##########
-# When running Jekyll locally, it outputs the files into the _site directory
-_site
+_site/

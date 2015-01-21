@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<head>
+
+<!--
+    ===========
+    GLOBAL META
+    ===========
+-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+    ==================
+    PAGE-SPECIFIC META
+    ==================
+-->
+
+    <title>Capital Framework demo page</title>
+    <meta name="description" content="A test page for Capital Framework components.">
+
+<!--
+    ======
+    STYLES
+    ======
+    The number of stylesheets here must be kept to a minimum.
+    Unless adding a significant amount of CSS that is specific to a single page
+    or section of the site, all new styles should be added to src/static/css/app.less.
+-->
+
+<!--[if lt IE 9]>      <link rel="stylesheet" href="/static/css/main.ie.min.css"> <![endif]-->
+<!--[if gt IE 8]><!--> <link rel="stylesheet" href="/static/css/main.min.css"> <!--<![endif]-->
+
+<!--
+    ============
+    HEAD SCRIPTS
+    ============
+    The following scripts must be included in the head. DO NOT ADD ANY MORE.
+    All other scripts should go before the closing body tag.
+    If you come across a script that makes a convincing case to be included in
+    the head, then file an issue or PR to discuss including it.
+-->
+
+<!--[if lt IE 9]>
+    <script src="/static/vendor/html5shiv/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+
+    <script>
+        // Confirm availability of JS and remove no-js class from html
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2');
+    </script>
+
+</head>
+
+<body ng-app="OSWizardApp" ng-controller="TeamsCtrl">
+
+<!--
+    =================
+    Begin page source
+    =================
+-->
+
+<header class="wrapper wrapper__match-content" role="banner">
+    <div class="block block__sub">
+        <h1>Capital Framework demo page</h1>
+    </div>
+</header>
+
+<main class="content" id="main" role="main">
+    <div class="content_bar"></div>
+    <div class="content_wrapper">
+        <div class="content_main">
+            <div class="feature-list">
+
+                <p class="block u-mt0 intro-message">
+                    This demo page contains a small sample from each component.
+                    Refer to the docs for the full set of patterns.
+                </p>
+
+                <section class="feature-list_item block">
+                    
+                    <div class="feature-header">
+                        <h1 class="feature-header_name">CF-Core</h1>
+                        <a class="feature-header_docs"
+                           href="https://cfpb.github.io/cf-core/docs/">
+                           <span class="cf-icon cf-icon-document"></span>
+                           Docs
+                       </a>
+                    </div>
+
+                    <div class="block block__sub u-mt0">
+                        <h2>Colors</h2>
+                        <p>
+                            <span class="color-demo color-demo__btn-bg"></span>
+                            <span class="color-demo color-demo__btn-secondary-bg"></span>
+                            <span class="color-demo color-demo__btn-disabled-bg"></span>
+                        </p>
+                    </div>
+
+                    <div class="block block__sub">
+                        <h2>Typography base styles</h2>
+                        <div class="typography-demo">
+                            <div class="block block__sub typography-demo_item">
+                                <div class="typography-demo_item-header">
+                                    <h3 class="h5">Superheader</h3>
+                                    <div class="spec">
+                                        Avenir Next Demi<br>
+                                        48px / 66px
+                                    </div>
+                                </div>
+                                <h1 class="superheader">Getting out of debt</h1>
+                            </div>
+                            <div class="block block__sub typography-demo_item">
+                                <div class="typography-demo_item-header">
+                                    <h3 class="h5">H1</h3>
+                                    <div class="spec">
+                                        Avenir Next Regular<br>
+                                        34px / 44px
+                                    </div>
+                                </div>
+                                <h1>Getting out of debt</h1>
+                            </div>
+                            <div class="block block__sub typography-demo_item">
+                                <div class="typography-demo_item-header">
+                                    <h3 class="h5">H2</h3>
+                                    <div class="spec">
+                                        Avenir Next Regular<br>
+                                        26px / 33px
+                                    </div>
+                                </div>
+                                <h2>Getting out of debt</h2>
+                            </div>
+                            <div class="block block__sub typography-demo_item">
+                                <div class="typography-demo_item-header">
+                                    <h3 class="h5">H3</h3>
+                                    <div class="spec">
+                                        Avenir Next Regular<br>
+                                        22px / 28px
+                                    </div>
+                                </div>
+                                <h3>Getting out of debt</h3>
+                            </div>
+                            <div class="block block__sub typography-demo_item">
+                                <div class="typography-demo_item-header">
+                                    <h3 class="h5">H4</h3>
+                                    <div class="spec">
+                                        Avenir Next Medium<br>
+                                        18px / 22px
+                                    </div>
+                                </div>
+                                <h4>Getting out of debt</h4>
+                            </div>
+                            <div class="block block__sub typography-demo_item">
+                                <div class="typography-demo_item-header">
+                                    <h3 class="h5">H5</h3>
+                                    <div class="spec">
+                                        Avenir Next Demi<br>
+                                        14px / 22px<br>
+                                        uppercase<br>
+                                        letter-spacing: 1px
+                                    </div>
+                                </div>
+                                <h5>Getting out of debt</h5>
+                            </div>
+                            <div class="block block__sub typography-demo_item">
+                                <div class="typography-demo_item-header">
+                                    <h3 class="h5">H6</h3>
+                                    <div class="spec">
+                                        Avenir Next Demi<br>
+                                        12px / 22px<br>
+                                        uppercase<br>
+                                        letter-spacing: 1px
+                                    </div>
+                                </div>
+                                <h6>Getting out of debt</h6>
+                            </div>
+                            <div class="block block__sub typography-demo_item">
+                                <div class="typography-demo_item-header">
+                                    <h3 class="h5">Body</h3>
+                                    <div class="spec">
+                                        Georgia<br>
+                                        16px / 22px<br>
+                                    </div>
+                                </div>
+                                <p>
+                                    Use this tool to compare school data and relevant financial factors to
+                                    make a more informed decision for your future.
+                                </p>
+                            </div>
+                        </div><!-- END .block.block__sub -->
+                    </div><!-- END .typography-demo -->
+
+                    <div class="block block__sub">
+                        <h2>Input base styles</h2>
+                        <form action="#">
+                            <p><input placeholder="placeholder text" type="text"></p>
+                            <p><textarea>Example entry</textarea></p>
+                        </form>
+                    </div>
+
+                </section>
+
+                <section class="feature-list_item block block__padded-top block__border-top">
+                    <div class="feature-header">
+                        <h1 class="feature-header_name">CF-Buttons</h1>
+                        <a class="feature-header_docs"
+                           href="https://cfpb.github.io/cf-buttons/docs/">
+                           <span class="cf-icon cf-icon-document"></span>
+                           Docs
+                       </a>
+                    </div>
+                    <p><a href="#" class="btn">Link Button</a> <button class="btn">Form Button</button></p>
+                </section>
+
+                <section class="feature-list_item block block__padded-top block__border-top">
+                    <div class="feature-header">
+                        <h1 class="feature-header_name">CF-Expandables</h1>
+                        <a class="feature-header_docs"
+                           href="https://cfpb.github.io/cf-expandables/docs/">
+                           <span class="cf-icon cf-icon-document"></span>
+                           Docs
+                       </a>
+                    </div>
+                    <div class="expandable expandable__padded">
+                        <a class="expandable_target expandable_header"
+                           href="#expandable-padded-content">
+                            <span class="expandable_label expandable_header-left">
+                                Expandable Header
+                            </span>
+                            <span class="expandable_link expandable_header-right">
+                                <span class="expandable_cue-open">
+                                    Show
+                                    <span class="cf-icon cf-icon-plus-round"></span>
+                                </span>
+                                <span class="expandable_cue-close">
+                                    Hide
+                                    <span class="cf-icon cf-icon-minus-round"></span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="expandable_content" id="expandable-padded-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Neque ipsa voluptatibus soluta nobis unde quisquam
+                                temporibus magnam debitis quidem. Ducimus ratione
+                                corporis nesciunt earum vel est quaerat blanditiis
+                                dolore ipsa?
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="feature-list_item block block__padded-top block__border-top">
+                    <div class="feature-header">
+                        <h1 class="feature-header_name">CF-Forms</h1>
+                        <a class="feature-header_docs"
+                           href="https://cfpb.github.io/cf-forms/docs/">
+                           <span class="cf-icon cf-icon-document"></span>
+                           Docs
+                       </a>
+                    </div>
+                    <div class="input-with-btn">
+                        <div class="input-with-btn_input">
+                            <input type="text">
+                        </div>
+                        <div class="input-with-btn_btn">
+                            <button class="btn">Search</button>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="feature-list_item block block__padded-top block__border-top">
+                    <div class="feature-header">
+                        <h1 class="feature-header_name">CF-Grid</h1>
+                        <a class="feature-header_docs"
+                           href="https://cfpb.github.io/cf-grid/docs/">
+                           <span class="cf-icon cf-icon-document"></span>
+                           Docs
+                       </a>
+                    </div>
+                    <div class="sample-grid">
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-1"></div>
+                        <div class="sample-grid_col sample-grid_col-6"></div>
+                        <div class="sample-grid_col sample-grid_col-6"></div>
+                        <div class="sample-grid_col sample-grid_col-4"></div>
+                        <div class="sample-grid_col sample-grid_col-4"></div>
+                        <div class="sample-grid_col sample-grid_col-4"></div>
+                        <div class="sample-grid_col sample-grid_col-3"></div>
+                        <div class="sample-grid_col sample-grid_col-3"></div>
+                        <div class="sample-grid_col sample-grid_col-3"></div>
+                        <div class="sample-grid_col sample-grid_col-3"></div>
+                    </div>
+                    <br>
+                </section>
+
+                <section class="feature-list_item block block__padded-top block__border-top">
+                    <div class="feature-header">
+                        <h1 class="feature-header_name">CF-Icons</h1>
+                        <a class="feature-header_docs"
+                           href="https://cfpb.github.io/cf-layout/docs/">
+                           <span class="cf-icon cf-icon-icons"></span>
+                           Docs
+                       </a>
+                    </div>
+                    <div>
+                        <span class="cf-icon cf-icon-approved"></span>
+                        <span class="cf-icon cf-icon-approved-round"></span>
+                        <span class="cf-icon cf-icon-error"></span>
+                        <span class="cf-icon cf-icon-error-round"></span>
+                        <span class="cf-icon cf-icon-help"></span>
+                        <span class="cf-icon cf-icon-help-round"></span>
+                        <span class="cf-icon cf-icon-delete"></span>
+                        <span class="cf-icon cf-icon-delete-round"></span>
+                        <span class="cf-icon cf-icon-plus"></span>
+                        <span class="cf-icon cf-icon-plus-round"></span>
+                        <span class="cf-icon cf-icon-minus"></span>
+                        <span class="cf-icon cf-icon-minus-round"></span>
+                        <span class="cf-icon cf-icon-update"></span>
+                        <span class="cf-icon cf-icon-update-round"></span>
+                    </div>
+                </section>
+
+                <section class="feature-list_item block block__padded-top block__border-top">
+                    <div class="feature-header">
+                        <h1 class="feature-header_name">CF-Layout</h1>
+                        <a class="feature-header_docs"
+                           href="https://cfpb.github.io/cf-layout/docs/">
+                           <span class="cf-icon cf-icon-document"></span>
+                           Docs
+                       </a>
+                    </div>
+                    <main class="content content__2-1" id="main" role="main">
+                        <div class="content_bar"></div>
+                        <div class="content_wrapper">
+                            <section class="content_main">
+                                <h2>Main content area</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Cum corrupti tempora nam nihil qui mollitia consectetur
+                                    corporis nemo culpa dolorum! Laborum at eos deleniti
+                                    consequatur itaque officiis debitis quisquam! Provident!
+                                </p>
+                            </section>
+                            <aside class="content_sidebar" style="background: #F1F2F2">
+                                Sidebar
+                            </aside>
+                        </div>
+                    </main>
+                </section>
+                
+                <section class="feature-list_item block block__padded-top block__border-top">
+                    <div class="feature-header">
+                        <h1 class="feature-header_name">CF-Pagination</h1>
+                        <a class="feature-header_docs"
+                           href="https://cfpb.github.io/cf-pagination/docs/">
+                           <span class="cf-icon cf-icon-document"></span>
+                           Docs
+                       </a>
+                    </div>
+                    <nav class="pagination">
+                        <a class="btn btn__super pagination_prev" href="#pagination_content">
+                            <span class="btn_icon__left cf-icon cf-icon-left"></span>
+                            Previous
+                        </a>
+                        <a class="btn btn__super pagination_next" href="#pagination_content">
+                            Next
+                            <span class="btn_icon__right cf-icon cf-icon-right"></span>
+                        </a>
+                        <form class="pagination_form" action="index.html#pagination_content">
+                            <label class="pagination_label"
+                                   for="pagination_current-page">
+                                Page
+                                <span class="u-visually-hidden">
+                                    number out of 149 total pages
+                                </span>
+                            </label>
+                            <input
+                                class="pagination_current-page"
+                                id="pagination_current-page"
+                                name="pagination_current-page"
+                                type="number" min="1" max="149"
+                                value="149">
+                            <span class="pagination_label">
+                                <span aria-hidden="true">
+                                    of 149
+                                </span>
+                            </span>
+                            <button class="btn btn__link pagination_submit"
+                                    id="pagination_submit"
+                                    type="submit">
+                                Go
+                            </button>
+                        </form>
+                    </nav>
+                    <br>
+                </section>
+
+                <section class="feature-list_item block block__padded-top block__border-top">
+                    <div class="feature-header">
+                        <h1 class="feature-header_name">CF-Typography</h1>
+                        <a class="feature-header_docs"
+                           href="https://cfpb.github.io/cf-typography/docs/">
+                           <span class="cf-icon cf-icon-document"></span>
+                           Docs
+                       </a>
+                    </div>
+                    <aside class="pull-quote">
+                        <div class="pull-quote_body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Cum corrupti tempora nam nihil qui mollitia consectetur
+                            corporis nemo culpa dolorum!
+                        </div>
+                        <footer>
+                            <cite class="pull-quote_citation">
+                                - Author Name
+                            </cite>
+                        <footer>
+                    </aside>
+                    <br>
+                    <h2 class="header-slug">
+                        <span class="header-slug_inner">
+                            Blog summary
+                        </span>
+                    </h2>
+                    <h2 class="fancy-slug">
+                        <span class="fancy-slug_text">
+                            <span class="fancy-slug_ribbon-left"></span>
+                            Watchroom
+                            <span class="fancy-slug_ribbon-right"></span>
+                        </span>
+                    </h2>
+                    <div class="meta-header">
+                        <span class="meta-header_right date">
+                            Nov 4, 2013
+                        </span>
+                        <a href="#" class="meta-header_left category-slug">
+                            <span class="cf-icon cf-icon-credit-card"></span>
+                            Consumer finance
+                        </a>
+                    </div>
+                    <ul class="list__branded">
+                        <li class="list_item">First item</li>
+                        <li class="list_item">Second item</li>
+                        <li class="list_item">Third item</li>
+                    </ul>
+                </section>
+
+            </div><!-- END .feature-list -->
+        </div><!-- END .content_main -->
+    </div>
+</main>
+
+<footer role="contentinfo">
+    <!-- Footer stuff -->
+</footer>
+
+<!--
+    ============
+    BODY SCRIPTS
+    ============
+    The number of scripts here must be kept to a minimum.
+    Unless adding a significant amount of JS that is specific to a single page
+    or section of the site, all custom JS should be added to src/static/js/app.js.
+-->
+
+<script src="/static/js/main.min.js"></script>
+
+</body>
