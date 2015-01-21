@@ -192,8 +192,7 @@ Our full minicon set is available for desktop use as an icon font (.ttf). It can
 ### Vector files
 Each of our minicons is available for download as a vector (.svg) on The Noun Project, a platform that collects and catalogs icons that are created and uploaded by graphic designers from around the world.
 
-<a href="http://thenounproject.com/cfpb_minicons/" target="_blank" class="btn">
-    <span class="btn_icon__left cf-icon cf-icon-external-link"></span>
+<a class="icon-link icon-link__external-link" href="http://thenounproject.com/cfpb_minicons/">
     View on Noun Project
 </a>
 
