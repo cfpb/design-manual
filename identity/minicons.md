@@ -185,11 +185,6 @@ font kit, which has filetypes available for desktop and web usage.
     Download web font kit
 </a>
 
-<button class="btn">
-    <span class="btn_icon__left cf-icon cf-icon-download"></span>
-    Download web font kit
-</button>
-
 </div>
 
 <div class="content-50 content-last">
@@ -197,9 +192,9 @@ font kit, which has filetypes available for desktop and web usage.
 ### Individual vector files
 Each of our icons is available for download as a vector (.svg) on the Noun Project, 
 
-<button class="btn">
-    <span class="btn_icon__left cf-icon cf-icon-download"></span>
-    Download .ttf
-</button>
+<a href="#" class="btn">
+    <span class="btn_icon__left cf-icon cf-icon-external-link"></span>
+    View on Noun Project
+</a>
 
 </div>
