@@ -181,7 +181,7 @@ Our full icon set is available for desktop use as a font (.ttf).
 
 <button class="btn">
     <span class="btn_icon__left cf-icon cf-icon-download"></span>
-    Download .ttf
+    Download web font kit
 </button>
 
 </div>
