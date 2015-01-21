@@ -6,6 +6,7 @@ category: Visual identity
 
 - [Stylistic guidelines](#stylistic-guidelines)
 - [Asset library](#asset-library)
+- [Download](#download)
 {: class="toc"}
 
 <div class="content-67 content-first">
