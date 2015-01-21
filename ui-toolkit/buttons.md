@@ -49,7 +49,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 * 4px rounded corner
 * 10px top and bottom padding
 * 15px left and right padding
-* 14px Avenir Next Medium text in white
+* 16px Avenir Next Medium text in white
 * Sentence case
 </div>
 
