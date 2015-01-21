@@ -39,7 +39,7 @@ Links that appear in body text or link lists are underlined. Links are underline
 
 <div class="content-67 content-last">
 ##### Georgia paragraph links
-Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>. Georgia links can also have minicons after when appropriate <a href="#" class="icon-link icon-link__external-link">external link</a>.
+Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>. Georgia links can also have minicons after when appropriate <a href="#" class="cf-icon cf-icon-external-link"">external link</a>.
 
 ---
 
