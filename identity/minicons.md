@@ -177,9 +177,8 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 
 <div class="content-50 content-first">
     
-### Web font
-Our full icon set is available for desktop use as a font (.ttf).
-font kit, which has filetypes available for desktop and web usage.
+### Icon font
+Our full icon set is available for desktop use as an icon font (.ttf). It can be accessed through programs like Illustrator and InDesign via the glyph panel.
 
 <a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fcfpb%2Fcf-icons%2Fblob%2Fgh-pages%2Fsrc%2Ffonts%2Fcf-icons.ttf%3Fraw%3Dtrue&sa=D&sntz=1&usg=AFQjCNEfA_Pb9TWATcmS11SAt2epvxOmXg" target="_blank" class="btn">
     <span class="btn_icon__left cf-icon cf-icon-download"></span>
@@ -193,7 +192,7 @@ font kit, which has filetypes available for desktop and web usage.
 ### Individual vector files
 Each of our icons is available for download as a vector (.svg) on The Noun Project, a platform that collects and catalogs icons that are created and uploaded by graphic designers from around the world.
 
-<a href="#" class="btn">
+<a href="http://thenounproject.com/cfpb_minicons/" target="_blank" class="btn">
     <span class="btn_icon__left cf-icon cf-icon-external-link"></span>
     View on Noun Project
 </a>
