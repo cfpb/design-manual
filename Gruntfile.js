@@ -18,7 +18,7 @@ module.exports = function(grunt) {
      */
     loc: {
       src: 'src',
-      dist: 'dist'
+      dist: '.'
     },
 
     /**
