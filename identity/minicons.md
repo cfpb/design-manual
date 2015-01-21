@@ -198,4 +198,8 @@ Each of our minicons is available for download as a vector (.svg) on The Noun Pr
     <span class="icon-link_text">View on Noun Project</span>
 </a>
 
+<a class="icon-link icon-link__external-link" href="http://thenounproject.com/cfpb_minicons/">
+    View on Noun Project
+</a>
+
 </div>
