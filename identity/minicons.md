@@ -172,30 +172,28 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 
 </div>
 
+## Download
+
 <div class="content-50 content-first">
     
-### Download
+### Web font
+Our full icon set is available for desktop use as a font (.ttf).
 
-#### Web font
-The following primary benchmark sizes should be used for web sizing:
-
-* 16px: inline with text
-* 20px: on buttons
-* 25px: social media sharing sets
-* 30px: inline with large text links
-* 40px: paired with primary headers
+<button class="btn">
+    <span class="btn_icon__left cf-icon cf-icon-download"></span>
+    Download .ttf
+</button>
 
 </div>
 
 <div class="content-50 content-last">
     
-#### Individual vector files
-The following primary benchmark sizes should be used for web sizing:
+### Individual vector files
+Each of our icons is available for download as a vector (.svg) on the Noun Project, 
 
-* 16px: inline with text
-* 20px: on buttons
-* 25px: social media sharing sets
-* 30px: inline with large text links
-* 40px: paired with primary headers
+<button class="btn">
+    <span class="btn_icon__left cf-icon cf-icon-download"></span>
+    Download .ttf
+</button>
 
 </div>
