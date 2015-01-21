@@ -171,3 +171,31 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 {% include identity/icons/index.html %}
 
 </div>
+
+<div class="content-50 content-first">
+    
+### Download
+
+#### Web font
+The following primary benchmark sizes should be used for web sizing:
+
+* 16px: inline with text
+* 20px: on buttons
+* 25px: social media sharing sets
+* 30px: inline with large text links
+* 40px: paired with primary headers
+
+</div>
+
+<div class="content-50 content-last">
+    
+#### Individual vector files
+The following primary benchmark sizes should be used for web sizing:
+
+* 16px: inline with text
+* 20px: on buttons
+* 25px: social media sharing sets
+* 30px: inline with large text links
+* 40px: paired with primary headers
+
+</div>
