@@ -53,7 +53,7 @@ All sections are positioned on a single page.
 
 <div class="content-25 content-first">
 
-![Diagram showing all sections on a page]({{ site.baseurl }}/assets/img/effective-forms/EffectiveForms1@2x.png)
+![Diagram showing all sections on a page]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms1@2x.png)
 
 </div>
 
@@ -86,7 +86,7 @@ All sections are positioned on a single page.
 
 Each section goes on its own page.
 
-![Diagram showing each section on its own page]({{ site.baseurl }}/assets/img/effective-forms/EffectiveForms2@2x.png)
+![Diagram showing each section on its own page]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms2@2x.png)
 
 <div class="content-50 content-first">
 
@@ -126,7 +126,7 @@ All sections on a single page, but each new section only appears once the previo
     * How do you get back to the current question once you've edited a previous one?
     * Do you lose all your answers to questions that follow the one you go back to edit?
 
-![Diagram showing an accordion form]({{ site.baseurl }}/assets/img/effective-forms/EffectiveForms3@2x.png)
+![Diagram showing an accordion form]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms3@2x.png)
 
 <div class="content-50 content-first">
 
@@ -158,7 +158,7 @@ Done well, this can give you the benefits of both the single page and wizard app
 
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
-![Diagram showing a hybrid form]({{ site.baseurl }}/assets/img/effective-forms/EffectiveForms4@2x.png)
+![Diagram showing a hybrid form]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms4@2x.png)
 
 ## Helping users
 

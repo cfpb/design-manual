@@ -29,7 +29,7 @@ A video that covers a specific event relevant to the Bureau, such as a field hea
 
 <div class="content-67 content-last">
 
-![Still from Miami Fl Field Hearing Video]({{ site.baseurl }}/assets/img/video/Video_1.jpg "Event Video")
+![Still from Miami Fl Field Hearing Video]({{ site.baseurl }}/static/img/video/Video_1.jpg "Event Video")
 
 </div>
 
@@ -43,7 +43,7 @@ An industry-facing video that informs viewers about a specific topic through ani
 
 <div class="content-67 content-last">
 
-![Still from Remittance Transfer Rule Video]({{ site.baseurl }}/assets/img/video/Video_2.jpg "Informational Video")
+![Still from Remittance Transfer Rule Video]({{ site.baseurl }}/static/img/video/Video_2.jpg "Informational Video")
 
 </div>
 
@@ -57,7 +57,7 @@ A video that educates consumers on a specific issue, web tool, or regulation wri
 
 <div class="content-67 content-last">
 
-![Still from What is HMDA Video]({{ site.baseurl }}/assets/img/video/Video_3.jpg "Educational Video")
+![Still from What is HMDA Video]({{ site.baseurl }}/static/img/video/Video_3.jpg "Educational Video")
 
 </div>
 
@@ -71,7 +71,7 @@ A documentary-style, consumer-facing video that demonstrates the work done by th
 
 <div class="content-67 content-last">
 
-![Still from Consumer Stories Video]({{ site.baseurl }}/assets/img/video/Video_4.jpg "Documentary Video")
+![Still from Consumer Stories Video]({{ site.baseurl }}/static/img/video/Video_4.jpg "Documentary Video")
 
 </div>
 
@@ -89,9 +89,9 @@ At any other time, the isolated logo may be used in the bottom-right corner of t
 
 <div class="content-67 content-last">
 
-![Still from Video title slide]({{ site.baseurl }}/assets/img/video/Video_5.jpg "Logo in Video")
+![Still from Video title slide]({{ site.baseurl }}/static/img/video/Video_5.jpg "Logo in Video")
 
-![Still from Video title slide]({{ site.baseurl }}/assets/img/video/Video_6.jpg "Logo in Video")
+![Still from Video title slide]({{ site.baseurl }}/static/img/video/Video_6.jpg "Logo in Video")
 
 </div>
 
@@ -106,9 +106,9 @@ other content. Key messages can also be highlighted on their own using display t
 
 <div class="content-67 content-last">
 
-![Still from HMDA Video]({{ site.baseurl }}/assets/img/video/Video_7.jpg "Example of typography in Video")
+![Still from HMDA Video]({{ site.baseurl }}/static/img/video/Video_7.jpg "Example of typography in Video")
 
-![Still from HMDA Video]({{ site.baseurl }}/assets/img/video/Video_8.jpg "Example of typography in Video")
+![Still from HMDA Video]({{ site.baseurl }}/static/img/video/Video_8.jpg "Example of typography in Video")
 
 </div>
 
@@ -122,9 +122,9 @@ Title slides for educational videos should feature clean typography with ample w
 
 <div class="content-67 content-last">
 
-![Still from Financial Education Video]({{ site.baseurl }}/assets/img/video/Video_9.jpg "Example of title slide in Video")
+![Still from Financial Education Video]({{ site.baseurl }}/static/img/video/Video_9.jpg "Example of title slide in Video")
 
-![Still from CFPB Training Video]({{ site.baseurl }}/assets/img/video/Video_10.jpg "Example of title slide in Video")
+![Still from CFPB Training Video]({{ site.baseurl }}/static/img/video/Video_10.jpg "Example of title slide in Video")
 
 </div>
 
@@ -138,8 +138,8 @@ Animation should be used to bring on-brand illustrations to life. Animation can 
 
 <div class="content-67 content-last">
 
-![Still from Student Loan Video]({{ site.baseurl }}/assets/img/video/Video_11.jpg "Example of animation in Video")
+![Still from Student Loan Video]({{ site.baseurl }}/static/img/video/Video_11.jpg "Example of animation in Video")
 
-![Still from Student Loan Video]({{ site.baseurl }}/assets/img/video/Video_12.jpg "Example of animation in Video")
+![Still from Student Loan Video]({{ site.baseurl }}/static/img/video/Video_12.jpg "Example of animation in Video")
 
 </div>

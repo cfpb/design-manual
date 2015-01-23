@@ -29,7 +29,7 @@ repository:
   url: https://github.com/cfpb/design-manual
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
-logourl: 'assets/img/logo_210.png'
+logourl: 'static/img/logo_210.png'
 logoalt: 'Consumer Financial Protection Bureau'
 
 # Kramdown settings
