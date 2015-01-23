@@ -47,6 +47,18 @@ samp {
   margin-bottom: 1.375em;
 }
 
+// Hide only visually, but have it available for screenreaders
+.u-visually-hidden {
+    &.focusable:active,
+    &.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+}
 
 /* ==========================================================================
    Base styles
@@ -56,6 +68,7 @@ body {
     height: 100%;
     .webfont-regular();
     // Improve default text rendering, handling of kerning pairs and ligatures
+    -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     word-wrap: break-word;

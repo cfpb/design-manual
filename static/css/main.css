@@ -11102,6 +11102,15 @@ samp {
   font-family: Consolas, Menlo, Monaco, Courier, monospace;
   margin-bottom: 1.375em;
 }
+.u-visually-hidden.focusable:active,
+.u-visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
 /* ==========================================================================
    Base styles
    ========================================================================== */
@@ -11110,6 +11119,7 @@ body {
   font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
