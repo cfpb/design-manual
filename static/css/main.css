@@ -9250,193 +9250,1407 @@ figure img {
    ========================================================================== */
 /* cf-typography
    ========================================================================== */
-.intro-message {
-  padding: 1em;
-  background: #f1f2f2;
-  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
-.lt-ie9 .intro-message {
-  font-weight: normal !important;
-}
-.feature-header {
-  display: inline-block;
-  padding-bottom: 0.625em;
-  margin-bottom: 1.875em;
+/* ==========================================================================
+	 CFPB Design Manual
+	 Header
+	 ========================================================================== */
+.header {
   border-bottom: 4px solid #2cb34a;
+  padding-top: 0.5em;
+  width: 100%;
 }
-.feature-header_name {
-  display: inline-block;
-  margin: 0;
-  line-height: 1;
-}
-.feature-header_docs {
-  display: inline-block;
-  vertical-align: top;
-  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-.feature-header_docs em,
-.feature-header_docs i {
-  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .feature-header_docs em,
-.lt-ie9 .feature-header_docs i {
-  font-style: normal !important;
-}
-.feature-header_docs strong,
-.feature-header_docs b {
-  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-}
-.lt-ie9 .feature-header_docs strong,
-.lt-ie9 .feature-header_docs b {
-  font-weight: normal !important;
-}
-.feature-header_name + .feature-header_docs {
-  margin-left: 1em;
-}
-.color-demo {
+.header .site-title {
   display: inline-block;
   box-sizing: border-box;
   border: solid transparent;
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333%;
-  height: 30px;
+  width: 100%;
+  text-align: center;
 }
-.lt-ie8 .color-demo {
+.lt-ie8 .header .site-title {
   display: inline;
   margin-right: 0;
   zoom: 1;
   behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
 }
-.color-demo__btn-bg {
-  background-color: #0072ce;
+.header .site-title h1 {
+  font-size: 1.5em;
 }
-.color-demo__btn-secondary-bg {
-  background-color: #75787b;
+.header .site-title .title-link {
+  color: #919395;
 }
-.color-demo__btn-disabled-bg {
-  background-color: #e3e4e5;
+.header .site-title .title-link .site-org {
+  color: #75787b;
+  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
-.sample-grid {
+.lt-ie9 .header .site-title .title-link .site-org {
+  font-weight: normal !important;
+}
+.header .site-title .title-link:visited {
+  color: #919395;
+}
+.header .site-logo {
+  display: none;
+}
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+  .header {
+    padding: 2em 0 0;
+  }
+  .header .site-title {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 50%;
+    text-align: left;
+  }
+  .lt-ie8 .header .site-title {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .header .site-title h1 {
+    font-size: 1.625em;
+  }
+  .header .site-logo {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 50%;
+    text-align: right;
+  }
+  .lt-ie8 .header .site-logo {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .header .site-logo .logo {
+    display: inline;
+  }
+}
+/* Mobile portrait (320px) */
+@media only screen and (min-width: 20em) {
+  .main-nav {
+    /* The next two lines get rid of the annoying 40px left margin on unordered list in WebKit (-webkit-offset-start: 40px;): */
+    margin: 0 0 0.5em;
+    padding: 0;
+    text-align: center;
+  }
+  .main-nav li {
+    display: inline-block;
+    margin: 0 1em 0.5em;
+    font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125em;
+    /* 18px */
+    list-style: none;
+  }
+  .lt-ie9 .main-nav li {
+    font-weight: normal !important;
+  }
+  .main-nav a {
+    display: block;
+    padding: 0.125em 0;
+    border-bottom: 4px solid #ffffff;
+  }
+  .main-nav a:link,
+  .main-nav a:visited {
+    color: #75787b;
+  }
+  .main-nav a:hover,
+  .main-nav a:focus {
+    border-bottom: 4px solid #dbedd4;
+    color: #43484e;
+  }
+  .main-nav a:active {
+    border-bottom: 4px solid #addc91;
+    color: #101820;
+  }
+  .main-nav-active a:link,
+  .main-nav-active a:visited,
+  .main-nav-active a:hover,
+  .main-nav-active a:focus,
+  .main-nav-active a:active {
+    border-bottom: 4px solid #addc91;
+    color: #101820;
+  }
+}
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+  .main-nav {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .lt-ie8 .main-nav {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .main-nav li {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 2em;
+  }
+  .main-nav li:first-child {
+    margin-left: 0;
+  }
+  .main-nav a {
+    padding-top: 0;
+    padding-bottom: 1em;
+    border-bottom: none;
+  }
+  .main-nav a:hover,
+  .main-nav a:active {
+    margin-bottom: -4px;
+  }
+  .main-nav-active a:link,
+  .main-nav-active a:visited,
+  .main-nav-active a:hover,
+  .main-nav-active a:focus,
+  .main-nav-active a:active {
+    margin-bottom: -4px;
+  }
+}
+/* Tablet/netbook (768px) */
+@media only screen and (min-width: 48em) {
+  .main-nav li {
+    font-size: 1.125em;
+    /* 18px */
+  }
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Content
+   ========================================================================== */
+/* Mobile first means all content boxes are full width */
+.content {
+  margin-top: 0;
+  padding: 2em 0;
+  /* only here to keep footer sticky */
+  overflow: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+}
+.lt-ie8 .content {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+.content .content-25,
+.content .content-75,
+.content .content-33,
+.content .content-67,
+.content .content-50 {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.content .content-25,
+.content .content-75,
+.content .content-33,
+.content .content-67 {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+}
+.lt-ie8 .content .content-25,
+.lt-ie8 .content .content-75,
+.lt-ie8 .content .content-33,
+.lt-ie8 .content .content-67 {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+.warning {
+  color: #d12124;
+}
+/* Media Queries
+   ========================================================================== */
+/* Mobile portrait (320px) */
+/* Mobile landscape (480px) */
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+  .content {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 75%;
+    overflow: hidden;
+    /* Inner content - nested grid inside content */
+    /* Inner content - nested grid inside content */
+    /* Inner content - nested grid inside content */
+    /* Rules between cols of content */
+    /* Rules between rows of content */
+  }
+  .lt-ie8 .content {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .content .content-25 {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 25%;
+  }
+  .lt-ie8 .content .content-25 {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .content .content-75 {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 75%;
+  }
+  .lt-ie8 .content .content-75 {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .content .content-33 {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 33.33333333%;
+  }
+  .lt-ie8 .content .content-33 {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .content .content-67 {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 66.66666667%;
+  }
+  .lt-ie8 .content .content-67 {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .content .content-50 {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 50%;
+  }
+  .lt-ie8 .content .content-50 {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .content .content-first {
+    border-left: 0;
+  }
+  .content .content-last {
+    border-right: 0;
+  }
+  .content .content-row-rule {
+    border-bottom: 1px solid #e3e4e5;
+    margin-bottom: 1em;
+  }
+  .content h1 {
+    margin-bottom: .882em;
+  }
+  .content h3 {
+    margin-bottom: .682em;
+  }
+  .content h4 {
+    margin-bottom: .833em;
+  }
+  .content h5 {
+    margin-bottom: 1.071em;
+  }
+  .content h6 {
+    margin-bottom: 1.25em;
+  }
+  .content p,
+  .content ul li {
+    max-width: 35em;
+  }
+  .content code {
+    background-color: #f1f2f2;
+    border: 1px solid #e3e4e5;
+    border-radius: 0.250em;
+    overflow-x: auto;
+    padding: 0.125em 0.250em;
+    white-space: nowrap;
+    font-size: .75em;
+    line-height: 1.375;
+    margin-bottom: 1.375em;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  }
+  .homepage {
+    width: 100%;
+  }
+  .homepage img {
+    width: 200px;
+  }
+}
+/* Tablet/netbook (768px) */
+/* Landscape tablet/netbook/laptop (1024px) */
+/* Desktop (1280px) */
+/* Widescreen (1600px) */
+.content {
+  /* cross-browser HR styling. See:
+  https://github.com/paulirish/html5-boilerplate/blob/ef3c095bafa9a6fa9c771f368d4b30c8ce4deded/css/style.css#L75
+  */
+  /* Table of Contents */
+}
+.content h2 {
+  border-bottom: 1px solid #e3e4e5;
+  /* The EM sizes are calculating to unexpected values - DM */
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px !important;
+}
+.content h2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.lt-ie8 .content h2 {
+  zoom: 1;
+}
+.content hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e3e4e5;
+  margin: 1.25em 0;
+  padding: 0;
+}
+.content img + hr {
+  /* horizontal rules after images are getting to much space above the image */
+  margin: 1em 0 1.25em 0;
+}
+.content ul.toc {
+  list-style: none;
+  border-bottom: 1px solid #cce3f5;
+  padding: 0 0 1.25em 0;
+  margin: 0 0 1.875em 0;
+}
+.content ul.toc:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.lt-ie8 .content ul.toc {
+  zoom: 1;
+}
+.content .toc li {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125em;
+  display: block;
+  float: left;
+  position: relative;
+}
+.lt-ie9 .content .toc li {
+  font-weight: normal !important;
+}
+.content .toc li a {
+  text-decoration: none;
+  border-bottom: none;
+  padding: 0 1em 0 0;
+}
+.content .toc li a:visited {
+  color: #0072ce;
+}
+.content .toc li a:hover {
+  border-bottom: none;
+  color: #7fb8e6;
+}
+.content p {
+  font-family: Georgia, "Times New Roman", serif;
+}
+.content p em,
+.content p i {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+.content p strong,
+.content p b {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+}
+.content .lead-in {
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
+}
+.content .lead-in em,
+.content .lead-in i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .content .lead-in em,
+.lt-ie9 .content .lead-in i {
+  font-style: normal !important;
+}
+.content .lead-in strong,
+.content .lead-in b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .content .lead-in strong,
+.lt-ie9 .content .lead-in b {
+  font-weight: normal !important;
+}
+/* ==========================================================================
+   CFPB Design Manual
+   Lists
+   ========================================================================== */
+.content ul,
+.content ol {
+  padding-left: 1.5em;
+}
+.content ul {
+  list-style-type: square;
+}
+.content li ul,
+.content li ol {
+  margin: 0 1.375em;
+}
+.content dl dd {
+  margin-left: 1.375em;
+}
+.content dt {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .content dt {
+  font-weight: normal !important;
+}
+/* Color swatches for Identity/Color page
+   ========================================================================== */
+.swatch {
+  margin-left: 0;
+}
+.swatch_field {
+  height: 5em;
+}
+.swatch__primary .swatch_field {
+  height: 10em;
+}
+.swatch_head {
+  margin: 0.25em 0;
+}
+.swatch_table {
+  width: 100%;
+}
+.swatch td,
+.swatch th {
+  padding: 0;
+  vertical-align: top;
+}
+.swatch th {
+  padding-right: 0.25em;
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+.lt-ie9 .swatch th {
+  font-weight: normal !important;
+}
+.swatch_field__green {
+  background: #2cb34a;
+}
+/* Make swatch tables multi column at appropriate widths */
+/* Small tablet (600px) */
+@media only screen and (min-width: 37.5em) {
+  .swatches {
+    display: block;
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .swatch {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 50%;
+  }
+  .lt-ie8 .swatch {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+}
+/* Landscape tablet/netbook/laptop (1024px) */
+@media only screen and (min-width: 64em) {
+  .swatch {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 25%;
+  }
+  .lt-ie8 .swatch {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+}
+.swatch_field__dark-redorange {
+  background: #9c301b;
+}
+.swatch_field__teal-20 {
+  background: #ccdfdf;
+}
+.swatch_field__teal-50 {
+  background: #7faeae;
+}
+.swatch_field__teal-80 {
+  background: #337e7d;
+}
+.swatch_field__teal {
+  background: #005e5d;
+}
+.swatch_field__pacific-20 {
+  background: #cce3f5;
+}
+.swatch_field__pacific-50 {
+  background: #7fb8e6;
+}
+.swatch_field__pacific-80 {
+  background: #328ed8;
+}
+.swatch_field__pacific {
+  background: #0072ce;
+}
+.swatch_field__navy-20 {
+  background: #ccd5e3;
+}
+.swatch_field__navy-50 {
+  background: #7f96b8;
+}
+.swatch_field__navy-80 {
+  background: #33578e;
+}
+.swatch_field__navy {
+  background: #002d72;
+}
+.swatch_field__neutral-20 {
+  background: #e4e2e0;
+}
+.swatch_field__neutral-50 {
+  background: #bcb6b2;
+}
+.swatch_field__neutral-80 {
+  background: #948b84;
+}
+.swatch_field__neutral {
+  background: #796e65;
+}
+.swatch_field__gold-20 {
+  background: #ffecd1;
+}
+.swatch_field__gold-50 {
+  background: #ffce8d;
+}
+.swatch_field__gold-80 {
+  background: #ffb149;
+}
+.swatch_field__gold {
+  background: #ff9e1b;
+}
+.swatch_field__redorange-20 {
+  background: #f6d9d3;
+}
+.swatch_field__redorange-50 {
+  background: #e8a091;
+}
+.swatch_field__redorange-80 {
+  background: #da6750;
+}
+.swatch_field__redorange {
+  background: #d12124;
+}
+.swatch_field__gray-5 {
+  background: #f8f8f8;
+}
+.swatch_field__gray-10 {
+  background: #f1f2f2;
+}
+.swatch_field__gray-20 {
+  background: #e3e4e5;
+}
+.swatch_field__gray-50 {
+  background: #babbbd;
+}
+.swatch_field__gray-80 {
+  background: #919395;
+}
+.swatch_field__gray {
+  background: #75787b;
+}
+.swatch_field__darkgray {
+  background: #43484e;
+}
+.swatch_field__black {
+  background: #101820;
+}
+.swatch_field__green-tint {
+  background: #dbedd4;
+}
+.swatch_field__green-midtone {
+  background: #addc91;
+}
+.swatch_field__green {
+  background: #2cb34a;
+}
+/* Diagrams for Identity/Typography page
+   ========================================================================== */
+[class^="type-color-combo"] {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  padding: 0.5em 1em;
+  list-style: none;
+}
+.lt-ie9 [class^="type-color-combo"] {
+  font-weight: normal !important;
+}
+.type-color-combo__black-on-white {
+  border: 1px solid #e3e4e5;
+}
+.type-color-combo__darkgray-on-white {
+  border: 1px solid #e3e4e5;
+  color: #43484e;
+}
+.type-color-combo__white-on-black {
+  background: #101820;
+  color: #ffffff;
+}
+.type-color-combo__white-on-darkgray {
+  background: #43484e;
+  color: #ffffff;
+}
+.type-color-combo__black-on-gray10 {
+  background: #f1f2f2;
+}
+.type-color-combo__black-on-gray5 {
+  background: #f8f8f8;
+}
+.type-color-combo__black-on-greenmid {
+  background: #addc91;
+}
+.type-color-combo__black-on-greentint {
+  background: #dbedd4;
+}
+.type-color-combo__white-on-gray {
+  background: #75787b;
+  color: #ffffff;
+}
+.type-color-combo__black-on-gray {
+  background: #75787b;
+}
+.type-color-combo__gray-on-white {
+  border: 1px solid #e3e4e5;
+  color: #75787b;
+}
+.type-color-combo__white-on-green {
+  background: #2cb34a;
+  color: #ffffff;
+}
+.type-color-combo__green-on-white {
+  border: 1px solid #dbedd4;
+  color: #2cb34a;
+}
+.type-color-combo__black-on-green {
+  background: #2cb34a;
+  color: #101820;
+}
+.type-color-combo__green-on-black {
+  background: #101820;
+  color: #2cb34a;
+}
+/* Identity/Isocons page
+   ========================================================================== */
+/*#isocon-assets .content-25 {
+  border-right: 1px solid @gray-10;
+}*/
+#isocon-assets img {
+  height: 80%;
+  width: 80%;
+}
+.minicon-scale-table th,
+.minicon-scale-table td {
+  border-left: 1px solid #f1f2f2;
+  text-align: center;
+  padding: 0 5px;
+}
+.minicon-scale-table th:first-child,
+.minicon-scale-table td:first-child {
+  border: none;
+}
+.minicon-scale-table th {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .875em;
+}
+.lt-ie9 .minicon-scale-table th {
+  font-weight: normal !important;
+}
+.minicon-scale-table .cf-icon {
+  display: block;
+  margin: 20px 20px 0;
+}
+.minicon-asset-lib h3 {
+  margin-top: 1.5em;
+}
+.minicon-asset-lib .minicon-assets-div {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 6em;
+  text-align: center;
+  border-right: 1px solid #f1f2f2;
+}
+.minicon-asset-lib .minicon-assets-div:last-child {
+  border-right: none;
+}
+.minicon-asset-lib .minicon-assets-div h6 {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .875em;
+  line-height: 1.325em;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  margin-bottom: 1.5em;
+}
+.lt-ie9 .minicon-asset-lib .minicon-assets-div h6 {
+  font-weight: normal !important;
+}
+.minicon-asset-lib .minicon-assets-div .cf-icon {
+  font-size: 40px;
+  display: block;
+  margin: .75em 0;
+}
+.minicon-scale-48pt {
+  font-size: 48pt;
+}
+.minicon-scale-36pt {
+  font-size: 36pt;
+}
+.minicon-scale-28pt {
+  font-size: 28pt;
+}
+.minicon-scale-21pt {
+  font-size: 21pt;
+}
+.minicon-scale-14pt {
+  font-size: 14pt;
+}
+.minicon-scale-40px {
+  font-size: 40px;
+}
+.minicon-scale-30px {
+  font-size: 30px;
+}
+.minicon-scale-25px {
+  font-size: 25px;
+}
+.minicon-scale-20px {
+  font-size: 20px;
+}
+.minicon-scale-16px {
+  font-size: 16px;
+}
+/* Identity/Typography page
+   ========================================================================== */
+.abc p {
+  font-size: 1.125em;
+  letter-spacing: 3px;
+  margin-bottom: .5em;
+}
+.demi-ex p {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .demi-ex p {
+  font-weight: normal !important;
+}
+.medium-ex p {
+  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.lt-ie9 .medium-ex p {
+  font-weight: normal !important;
+}
+.regular-ex p {
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.regular-ex p em,
+.regular-ex p i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .regular-ex p em,
+.lt-ie9 .regular-ex p i {
+  font-style: normal !important;
+}
+.regular-ex p strong,
+.regular-ex p b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .regular-ex p strong,
+.lt-ie9 .regular-ex p b {
+  font-weight: normal !important;
+}
+.georgia-ex {
+  font-family: Georgia, "Times New Roman", serif;
+}
+h2.h2-ex {
+  margin-top: 0;
+  border-bottom: none;
+}
+#print-hierarchy-ex .superheader {
+  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60pt;
+  line-height: 66pt;
+}
+.lt-ie9 #print-hierarchy-ex .superheader {
+  font-weight: normal !important;
+}
+#print-hierarchy-ex h1 {
+  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38pt;
+  line-height: 40pt;
+}
+.lt-ie9 #print-hierarchy-ex h1 {
+  font-weight: normal !important;
+}
+#print-hierarchy-ex h2 {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18pt;
+  line-height: 20pt;
+}
+.lt-ie9 #print-hierarchy-ex h2 {
+  font-weight: normal !important;
+}
+#print-hierarchy-ex h3 {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16pt;
+  line-height: 18pt;
+}
+.lt-ie9 #print-hierarchy-ex h3 {
+  font-weight: normal !important;
+}
+#print-hierarchy-ex h4.h4-print-ex {
+  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14pt;
+  line-height: 16pt;
+}
+.lt-ie9 #print-hierarchy-ex h4.h4-print-ex {
+  font-weight: normal !important;
+}
+#print-hierarchy-ex h5 {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10pt;
+  line-height: 12pt;
+  letter-spacing: 1pt;
+  text-transform: uppercase;
+}
+.lt-ie9 #print-hierarchy-ex h5 {
+  font-weight: normal !important;
+}
+#print-hierarchy-ex h6 {
+  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12pt;
+  line-height: 14pt;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.lt-ie9 #print-hierarchy-ex h6 {
+  font-weight: normal !important;
+}
+p.print-subheader {
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18pt;
+  line-height: 22pt;
+}
+p.print-subheader em,
+p.print-subheader i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 p.print-subheader em,
+.lt-ie9 p.print-subheader i {
+  font-style: normal !important;
+}
+p.print-subheader strong,
+p.print-subheader b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 p.print-subheader strong,
+.lt-ie9 p.print-subheader b {
+  font-weight: normal !important;
+}
+p.print-avenir-para {
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11pt;
+  line-height: 16pt;
+}
+p.print-avenir-para em,
+p.print-avenir-para i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 p.print-avenir-para em,
+.lt-ie9 p.print-avenir-para i {
+  font-style: normal !important;
+}
+p.print-avenir-para strong,
+p.print-avenir-para b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 p.print-avenir-para strong,
+.lt-ie9 p.print-avenir-para b {
+  font-weight: normal !important;
+}
+p.print-georgia-para {
+  font-size: 11pt;
+  line-height: 16pt;
+}
+.print-ul ul li p {
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11pt;
+  line-height: 14pt;
+  margin-bottom: 1em;
+}
+.print-ul ul li p em,
+.print-ul ul li p i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .print-ul ul li p em,
+.lt-ie9 .print-ul ul li p i {
+  font-style: normal !important;
+}
+.print-ul ul li p strong,
+.print-ul ul li p b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .print-ul ul li p strong,
+.lt-ie9 .print-ul ul li p b {
+  font-weight: normal !important;
+}
+/* UI toolkit repo list
+   ========================================================================== */
+.repo-list-header {
+  margin-bottom: .75em;
+}
+.content .repo-list {
+  padding-left: 0;
+}
+.repo-list li {
+  list-style: none;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  height: 4.0625em;
+  max-height: 4.0625em;
+  background-color: #E7E7E6;
+  border-left: 1px solid #BABBBD;
+  width: 85%;
+  padding: .75em 1em;
+}
+.repo-list li:first-child {
+  text-align: center;
+  border-left: none;
+  line-height: 75px;
+  padding: 0 .75em;
+  width: 15%;
+}
+.repo-list .cf-icon {
+  font-size: 30px;
+  color: #75787b;
+}
+.repo-list a:link,
+.repo-list a:visited {
+  display: block;
+  max-height: 4.0625em;
+  border-width: 0;
+  background-color: #E7E7E6;
+}
+.repo-list h4 {
+  margin-bottom: .125em;
+}
+.repo-list p {
+  margin: 0;
+  font-size: 0.875em;
+  color: #75787b;
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.repo-list p em,
+.repo-list p i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .repo-list p em,
+.lt-ie9 .repo-list p i {
+  font-style: normal !important;
+}
+.repo-list p strong,
+.repo-list p b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .repo-list p strong,
+.lt-ie9 .repo-list p b {
+  font-weight: normal !important;
+}
+@media screen and (max-width: 60em) {
+  .repo-list li {
+    height: 6em;
+    max-height: 6em;
+    width: 75%;
+  }
+  .repo-list li:first-child {
+    width: 25%;
+  }
+  .repo-list a:link,
+  .repo-list a:visited {
+    max-height: 6em;
+  }
+}
+/* UI toolkit
+   ========================================================================== */
+h2 span.cf-code-link {
+  float: right;
+  font-size: .625em;
+  padding-top: .7em;
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 h2 span.cf-code-link {
+  font-weight: normal !important;
+}
+/* UI toolkit/Links page
+   ========================================================================== */
+ul.list_links-minicons {
+  padding-left: 0;
+  list-style: none;
+}
+ul.list_links-minicons li {
+  margin: .5em 0;
+}
+.nav-link-ex ul.toc {
+  border-bottom: none;
+}
+.link-with-icon {
+  display: inline-block;
+  position: relative;
+}
+.link-with-icon > .cf-icon {
+  padding-left: 0.375em;
+  position: absolute;
+  top: 0.1875em;
+  left: 100%;
+}
+.link-with-icon__left {
+  margin-left: 1.25em;
+}
+.link-with-icon__left > [class^='fa'] {
+  left: -1.5em;
+}
+/* UI toolkit/Grids page
+   ========================================================================== */
+.grid-demo {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+@media only all and (min-width: 50.0625em) {
+  .grid-demo {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+  }
+}
+.grid-demo__match-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media only all and (min-width: 37.5em) {
+  .grid-demo__match-content {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1140px;
+  }
+}
+.grid-demo section {
   display: block;
   position: relative;
   margin-left: -15px;
   margin-right: -15px;
 }
-.sample-grid_col:before {
+.grid-demo .col {
+  margin-bottom: 10px;
+  border-left-color: #2cb34a;
+  border-right-color: #2cb34a;
+  background-color: #dbedd4;
+}
+.grid-demo .col:before,
+.grid-demo .col:after {
   content: "";
   display: block;
   width: 100%;
-  height: 1em;
-  background: #0072ce;
+  height: 7.5px;
+  background-color: #addc91;
 }
-.sample-grid_col-1 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 8.33333333%;
+.grid-demo .col:before {
+  margin-bottom: 7.5px;
 }
-.lt-ie8 .sample-grid_col-1 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+.grid-demo .col:after {
+  margin-top: 7.5px;
 }
-.sample-grid_col-3 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 25%;
-}
-.lt-ie8 .sample-grid_col-3 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-.sample-grid_col-4 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 33.33333333%;
-}
-.lt-ie8 .sample-grid_col-4 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-.sample-grid_col-6 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 50%;
-}
-.lt-ie8 .sample-grid_col-6 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-.typography-demo_item:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.lt-ie8 .typography-demo_item {
-  zoom: 1;
-}
-.typography-demo_item-header {
-  float: left;
-  width: 12.5em;
-  margin-right: 30px;
-  text-align: right;
-}
-.typography-demo .spec {
+.grid-demo p {
+  max-width: none;
+  text-align: center;
   font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #75787B;
-  font-size: 0.875em;
+  margin-top: 1.125em;
 }
-.typography-demo .spec em,
-.typography-demo .spec i {
+.grid-demo p em,
+.grid-demo p i {
   font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
-.lt-ie9 .typography-demo .spec em,
-.lt-ie9 .typography-demo .spec i {
+.lt-ie9 .grid-demo p em,
+.lt-ie9 .grid-demo p i {
   font-style: normal !important;
 }
-.typography-demo .spec strong,
-.typography-demo .spec b {
+.grid-demo p strong,
+.grid-demo p b {
   font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
-.lt-ie9 .typography-demo .spec strong,
-.lt-ie9 .typography-demo .spec b {
+.lt-ie9 .grid-demo p strong,
+.lt-ie9 .grid-demo p b {
+  font-weight: normal !important;
+}
+/* UI toolkit/Links page
+   ========================================================================== */
+/* ==========================================================================
+   Print stylesheet
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    /*prints faster and cheaper */
+    text-shadow: none !important;
+    -webkit-filter: none !important;
+            filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  /* Don't print links for images, javascript or internal links */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  /* Repeat header row at top of each printed page */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+body {
+  height: 100%;
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+body em,
+body i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 body em,
+.lt-ie9 body i {
+  font-style: normal !important;
+}
+body strong,
+body b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 body strong,
+.lt-ie9 body b {
   font-weight: normal !important;
 }

@@ -28,12 +28,10 @@
     &:hover,
     &:focus {
       border-bottom: 4px solid @green-tint;
-      //margin-bottom: -4px;
       color: @darkgray;
     }
     &:active {
       border-bottom: 4px solid @green-midtone;
-      //margin-bottom: -4px;
       color: @black;
     }
   }
@@ -44,22 +42,16 @@
     &:focus,
     &:active {
       border-bottom: 4px solid @green-midtone;
-      //margin-bottom: -4px;
       color: @black;
     }
   }
 
 }
 
-/* Mobile landscape (480px) */
-@media only screen and (min-width: 30em) {
-
-}
-
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
   .main-nav {
-    .column(12);
+    .grid_column(12);
     margin-bottom: 0;
     text-align: left;
   }
@@ -98,21 +90,4 @@
   .main-nav li {
     font-size: 1.125em; /* 18px */
   }
-}
-
-/* Landscape tablet/netbook/laptop (1024px) */
-@media only screen and (min-width: 64em) { 
-  .main-nav li {
-    /*font-size: 1.375em;*/ /* 22px */
-  }
-}
-
-/* Desktop (1280px) */ 
-@media only screen and (min-width: 80em) { 
-
-}
-
-/* Widescreen (1600px) */
-@media only screen and (min-width: 100em) { 
-
 }

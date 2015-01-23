@@ -2,9 +2,6 @@
    design-manual
    ========================================================================== */
 
-// This is your project's main Less file.
-// Project-specific Less rules go after the imports.
-
 // Import Normalize, a Capital Framework dependency and an all-around best practice.
 @import (less) "../../vendor/normalize-css/normalize.css";
 @import (less) "../../vendor/normalize-legacy-addon/normalize-legacy-addon.css";
@@ -18,95 +15,27 @@
 // Override the Capital Framework theme variables with colors from the brand color palette.
 @import (less) "cf-theme-overrides.less";
 
-// We've generated some sample rules for you. They're used with the index.html file.
-// Please delete them before starting your project.
+// Import site-specific Less files
+@import (less) "header.less";
+@import (less) "main-nav.less";
+@import (less) "content.less";
 
-.intro-message {
-    padding: 1em;
-    background: @expandable__padded-bg;
-    .webfont-medium();
-}
+// Print stylesheet
+@import (less) "print.less";
 
-.feature-header {
-    display: inline-block;
-    padding-bottom: unit(10px / @base-font-size-px, em);
-    margin-bottom: unit(30px / @base-font-size-px, em);
-    border-bottom: 4px solid @content_bar;
 
-    &_name {
-        display: inline-block;
-        margin: 0;
-        line-height: 1;
-    }
-    &_docs {
-        display: inline-block;
-        vertical-align: top;
-        .webfont-regular();
-    }
-    &_name + &_docs {
-        margin-left: 1em;
-    }
-}
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
 
-.color-demo {
-    .grid_column( 4 );
-    height: 30px;
-}
-
-.color-demo__btn-bg {
-    background-color: @btn-bg;
-}
-
-.color-demo__btn-secondary-bg {
-    background-color: @btn__secondary-bg;
-}
-
-.color-demo__btn-disabled-bg {
-    background-color: @btn__disabled-bg;
-}
-
-.sample-grid {
-    .grid_nested-col-group();
-}
-
-.sample-grid_col:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1em;
-    background: @btn-bg;
-}
-
-.sample-grid_col-1 {
-    .grid_column( 1 );
-}
-
-.sample-grid_col-3 {
-    .grid_column( 3 );
-}
-
-.sample-grid_col-4 {
-    .grid_column( 4 );
-}
-
-.sample-grid_col-6 {
-    .grid_column( 6 );
-}
-
-.typography-demo {
-    &_item {
-        .u-clearfix();
-    }
-    &_item-header {
-        float: left;
-        width: unit(200px / @base-font-size-px, em);
-        margin-right: @grid_gutter-width;
-        text-align: right;
-    }
-    .spec {
-        .webfont-regular();
-        color: #75787B;
-        font-size: 0.875em;
-    }
+body {
+    height: 100%;
+    .webfont-regular();
+    // Improve default text rendering, handling of kerning pairs and ligatures
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    // New CSS3 syntax supported by Chrome
+    overflow-wrap: break-word;
 }
 
