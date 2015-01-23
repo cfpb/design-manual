@@ -21,9 +21,31 @@
 @import (less) "content.less";
 @import (less) "sidebar.less";
 @import (less) "footer.less";
+@import (less) "pygments.less";
 
 // Print stylesheet
 @import (less) "print.less";
+
+
+/* ==========================================================================
+   CF Enhancements
+   ========================================================================== */
+
+pre {
+  // Allow line wrapping of 'pre'
+  padding: 1.375em 1em;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: Consolas, Menlo, Monaco, Courier, monospace;
+  margin-bottom: 1.375em;
+}
 
 
 /* ==========================================================================
@@ -39,4 +61,23 @@ body {
     word-wrap: break-word;
     // New CSS3 syntax supported by Chrome
     overflow-wrap: break-word;
+}
+
+
+/* ==========================================================================
+   To replace eventually
+   ========================================================================== */
+
+// Use u-clearfix class instead
+.cf:before,  .cf:after {
+    content: "";
+    display: table;
+}
+ /* For modern browsers */
+.cf:after {
+    clear: both;
+}
+.cf {
+    /* For IE 6/7 (trigger hasLayout) */
+    zoom: 1;
 }
