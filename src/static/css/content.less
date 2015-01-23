@@ -43,19 +43,8 @@ figure {
 /* Media Queries
    ========================================================================== */
 
-/* Mobile portrait (320px) */
-@media only screen and (min-width: 20em) {
-
-}
-
-/* Mobile landscape (480px) */
-@media only screen and (min-width: 30em) {
-
-}
-
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
-
 
   .content {
     // Make room for the fixed header
@@ -94,9 +83,6 @@ figure {
     .content-last {
       border-right: 0;
     }
-
-    /* Rules between cols of content */
-
 
     /* Rules between rows of content */
     .content-row-rule {
@@ -148,26 +134,6 @@ figure {
 
 }
 
-/* Tablet/netbook (768px) */
-@media only screen and (min-width: 48em) { 
-
-}
-
-/* Landscape tablet/netbook/laptop (1024px) */
-@media only screen and (min-width: 64em) { 
-
-}
-
-/* Desktop (1280px) */ 
-@media only screen and (min-width: 80em) { 
-
-}
-
-/* Widescreen (1600px) */
-@media only screen and (min-width: 100em) { 
-
-}
-
 .content {
 
   h2 {
@@ -177,9 +143,6 @@ figure {
     padding-bottom: 15px;
     margin-top: 20px;
     margin-bottom: 20px !important;
-    //padding-bottom: unit( 16 / @base-font-size-px, em );
-    //margin-bottom: unit( @base-line-height-px / @font-size, em );
-    //margin-bottom: unit( 16 / @base-font-size-px, em ) !important; /* This is ugly, but I am over-riding cf-typography */
   }
 
   /* cross-browser HR styling. See:
@@ -299,7 +262,7 @@ figure {
         height: 5em;
     }
     
-    &__primary .swatch_field {
+    &__primary &_field {
         height: 10em;
     }
 
@@ -435,10 +398,6 @@ figure {
 
 /* Identity/Isocons page
    ========================================================================== */
-
-/*#isocon-assets .content-25 {
-  border-right: 1px solid @gray-10;
-}*/
 
 #isocon-assets {
   img {
@@ -787,6 +746,3 @@ ul {
         margin-top: 1.125em;
     }
 }
-
-/* UI toolkit/Links page
-   ========================================================================== */

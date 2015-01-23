@@ -9969,10 +9969,6 @@ figure {
 /* Media Queries
    ========================================================================== */
 
-/* Mobile portrait (320px) */
-
-/* Mobile landscape (480px) */
-
 /* Small tablet (600px) */
 
 .content {
@@ -9987,7 +9983,6 @@ figure {
   /* Inner content - nested grid inside content */
   /* Inner content - nested grid inside content */
   /* Inner content - nested grid inside content */
-  /* Rules between cols of content */
   /* Rules between rows of content */
 }
 
@@ -10141,14 +10136,6 @@ figure {
 .homepage img {
   width: 200px;
 }
-
-/* Tablet/netbook (768px) */
-
-/* Landscape tablet/netbook/laptop (1024px) */
-
-/* Desktop (1280px) */
-
-/* Widescreen (1600px) */
 
 .content {
   /* cross-browser HR styling. See:
@@ -10626,10 +10613,6 @@ figure {
 
 /* Identity/Isocons page
    ========================================================================== */
-
-/*#isocon-assets .content-25 {
-  border-right: 1px solid @gray-10;
-}*/
 
 #isocon-assets img {
   height: 80%;
@@ -11238,9 +11221,6 @@ ul.list_links-minicons li {
 .lt-ie9 .grid-demo p b {
   font-weight: normal !important;
 }
-
-/* UI toolkit/Links page
-   ========================================================================== */
 
 /* ==========================================================================
    CFPB Design Manual

@@ -9501,8 +9501,6 @@ figure {
 }
 /* Media Queries
    ========================================================================== */
-/* Mobile portrait (320px) */
-/* Mobile landscape (480px) */
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
   .content {
@@ -9517,7 +9515,6 @@ figure {
     /* Inner content - nested grid inside content */
     /* Inner content - nested grid inside content */
     /* Inner content - nested grid inside content */
-    /* Rules between cols of content */
     /* Rules between rows of content */
   }
   .lt-ie8 .content {
@@ -9649,10 +9646,6 @@ figure {
     width: 200px;
   }
 }
-/* Tablet/netbook (768px) */
-/* Landscape tablet/netbook/laptop (1024px) */
-/* Desktop (1280px) */
-/* Widescreen (1600px) */
 .content {
   /* cross-browser HR styling. See:
   https://github.com/paulirish/html5-boilerplate/blob/ef3c095bafa9a6fa9c771f368d4b30c8ce4deded/css/style.css#L75
@@ -10049,9 +10042,6 @@ figure {
 }
 /* Identity/Isocons page
    ========================================================================== */
-/*#isocon-assets .content-25 {
-  border-right: 1px solid @gray-10;
-}*/
 #isocon-assets img {
   height: 80%;
   width: 80%;
@@ -10559,8 +10549,6 @@ ul.list_links-minicons li {
 .lt-ie9 .grid-demo p b {
   font-weight: normal !important;
 }
-/* UI toolkit/Links page
-   ========================================================================== */
 /* ==========================================================================
    CFPB Design Manual
    Sidebar and Secondary Nav
