@@ -69,6 +69,13 @@ module.exports = function(grunt) {
           '<%= loc.src %>/static/js/app.js'
         ],
         dest: '<%= loc.dist %>/static/js/main.js'
+      },
+      topdocIcons: {
+        src: [
+          'front/topdoc-templates/includes/filter-components-without-markup.jade',
+          'front/topdoc-templates/icons/src.jade'
+        ],
+        dest: 'front/topdoc-templates/icons/index.jade',
       }
     },
 
@@ -287,6 +294,24 @@ module.exports = function(grunt) {
     },
 
     /**
+     * Topdoc: https://github.com/topcoat/topdoc
+     *
+     * A command line tool for generating usage docs based on css comments
+     */
+    topdoc: {
+      icons: {
+        options: {
+          source: 'static/css/',
+          destination: '_includes/identity/icons/',
+          template: 'src/topdoc-templates/icons/index.jade',
+          templateData: {
+            family: 'cf-icons'
+          }
+        }
+      }
+    },
+
+    /**
      * Watch: https://github.com/gruntjs/grunt-contrib-watch
      *
      * Run predefined tasks whenever watched file patterns are added, changed or deleted.
@@ -306,14 +331,23 @@ module.exports = function(grunt) {
    */
   grunt.initConfig(config);
 
+  grunt.registerTask(
+    'cleanUpAfterTopdoc',
+    'Topdoc runs on all non-minified CSS files, including .ie.css files. We need to delete those.',
+    function() {
+      grunt.file.delete(grunt.file.expand('_includes/**/**/main.ie.html'));
+    }
+  );
+
   /**
    * Create custom task aliases and combinations.
    */
-  grunt.registerTask('compile-cf', ['bower:cf', 'concat:cf-less']);
+  grunt.registerTask('compile-cf', ['bower:cf', 'concat:cf-less', 'topdocIcons']);
   grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css']);
   grunt.registerTask('js', ['concat:js', 'uglify', 'usebanner:js']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('build', ['test', 'css', 'js', 'copy']);
   grunt.registerTask('default', ['build']);
+  grunt.registerTask('build-partials-from-cf-docs', ['topdoc', 'cleanUpAfterTopdoc']);
 
 };
