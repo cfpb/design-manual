@@ -10562,6 +10562,113 @@ ul.list_links-minicons li {
 /* UI toolkit/Links page
    ========================================================================== */
 /* ==========================================================================
+   CFPB Design Manual
+   Footer
+   ========================================================================== */
+/* display content wrap as table for sticky footer */
+.body-wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.footer {
+  display: table-row;
+  /* for sticky footer */
+  height: 1px;
+  /* for sticky footer */
+  padding: 2em 0;
+  border-top: 2px solid #babbbd;
+  background: #f1f2f2;
+  width: 100%;
+}
+.footer h4 {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.footer p {
+  max-width: 45em;
+  font-size: 0.875em;
+  line-height: 1.42857142857143;
+}
+.footer a,
+.footer a:link,
+.footer a:visited {
+  border-bottom: 1px dotted;
+}
+.footer a:hover {
+  border-bottom: 1px dotted #0072ce;
+}
+.footer .footer-container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.footer .footer-links ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+/* Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 37.5em) {
+  .footer p {
+    margin: .75em 0;
+  }
+  .footer .footer-links ul,
+  .footer .footer-links li {
+    margin-left: 0;
+  }
+}
+/* Move to 25-75 columns when link fits (800px) */
+@media only screen and (min-width: 50em) {
+  .footer-links {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 25%;
+  }
+  .lt-ie8 .footer-links {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .footer-oss {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 41.66666667%;
+  }
+  .lt-ie8 .footer-oss {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+  .footer-standards {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 33.33333333%;
+  }
+  .lt-ie8 .footer-standards {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+}
+/* ==========================================================================
    Print stylesheet
    ========================================================================== */
 @media print {

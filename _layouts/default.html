@@ -18,9 +18,11 @@
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MVLMCF');</script>
     <!-- End Google Tag Manager -->
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+    <div class="body-wrapper">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+    </div>
     <script src="{{ site.baseurl }}/assets/js/vendor.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/capital-framework.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/design-manual.min.js"></script>
