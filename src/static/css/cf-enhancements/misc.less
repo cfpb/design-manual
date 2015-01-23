@@ -1,0 +1,47 @@
+/* ==========================================================================
+   CFPB Design Manual
+   Misc. Elements
+   ========================================================================== */
+
+::-moz-selection {
+    /* Selected text */
+    background: @darkgray;
+    color: #FFF;
+}
+
+::selection {
+    /* Selected text */
+    background: @darkgray;
+    color: #FFF;
+}
+
+/* ALIGNMENT */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.mobile-warning {
+    display:block;
+    background-color: #f6d9d3;
+    padding: .85em;
+    margin: .5em 0;
+    font-size: .75em;
+}
+    
+svg:not(:root) {
+    /* corrects IE9 overflow */
+    overflow: hidden;
+}
