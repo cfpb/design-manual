@@ -72,10 +72,10 @@ module.exports = function(grunt) {
       },
       topdocIcons: {
         src: [
-          'front/topdoc-templates/includes/filter-components-without-markup.jade',
-          'front/topdoc-templates/icons/src.jade'
+          'src/topdoc-templates/includes/filter-components-without-markup.jade',
+          'src/topdoc-templates/icons/src.jade'
         ],
-        dest: 'front/topdoc-templates/icons/index.jade',
+        dest: 'src/topdoc-templates/icons/index.jade',
       }
     },
 
@@ -351,7 +351,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases and combinations.
    */
-  grunt.registerTask('compile-cf', ['bower:cf', 'concat:cf-less', 'topdocIcons']);
+  grunt.registerTask('compile-cf', ['bower:cf', 'concat:cf-less', 'concat:topdocIcons']);
   grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css']);
   grunt.registerTask('js', ['concat:js', 'uglify', 'usebanner:js']);
   grunt.registerTask('test', ['jshint']);
