@@ -277,6 +277,7 @@ figure {
     th {
         padding: 0;
         vertical-align: top;
+        background: transparent !important;
     }
     th {
         padding-right: 0.25em;
@@ -409,9 +410,11 @@ figure {
 .minicon-scale-table {
   th,
   td {
-    border-left: 1px solid @gray-10;
-    text-align: center;
     padding: 0 5px;
+    border-left: 1px solid @gray-10;
+    background: transparent !important;
+    color: @black !important;
+    text-align: center;
 
     &:first-child {
         border: none;

@@ -10329,6 +10329,7 @@ figure {
 .swatch th {
   padding: 0;
   vertical-align: top;
+  background: transparent !important;
 }
 
 .swatch th {
@@ -10621,9 +10622,11 @@ figure {
 
 .minicon-scale-table th,
 .minicon-scale-table td {
-  border-left: 1px solid #f1f2f2;
-  text-align: center;
   padding: 0 5px;
+  border-left: 1px solid #f1f2f2;
+  background: transparent !important;
+  color: #101820 !important;
+  text-align: center;
 }
 
 .minicon-scale-table th:first-child,
