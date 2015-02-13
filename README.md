@@ -1,6 +1,6 @@
 http://cfpb.github.io/design-manual/  
 
-# The CFPB Design Manual
+# The CFPB Design Manual!
 
 This is the repository for CFPB's Design Manual for developing print and web products. It contains both the assets and the content for the site. 
 
