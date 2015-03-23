@@ -26,8 +26,8 @@
     or section of the site, all new styles should be added to src/static/css/app.less.
 -->
 
-<!--[if lt IE 9]>      <link rel="stylesheet" href="/static/css/main.ie.min.css"> <![endif]-->
-<!--[if gt IE 8]><!--> <link rel="stylesheet" href="/static/css/main.min.css"> <!--<![endif]-->
+<!--[if lt IE 9]>      <link rel="stylesheet" href="{{ site.baseurl }}/static/css/main.ie.min.css"> <![endif]-->
+<!--[if gt IE 8]><!--> <link rel="stylesheet" href="{{ site.baseurl }}/static/css/main.min.css"> <!--<![endif]-->
 
 <!--
     ============
@@ -40,7 +40,7 @@
 -->
 
 <!--[if lt IE 9]>
-    <script src="/static/vendor/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="{{ site.baseurl }}/static/vendor/html5shiv/html5shiv-printshiv.min.js"></script>
 <![endif]-->
 
     <script>
