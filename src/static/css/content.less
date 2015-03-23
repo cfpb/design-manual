@@ -696,7 +696,7 @@ ul {
 
 .grid-demo {
     // Make .grid-demo a cf-grids .wrapper.
-    .wrapper();
+    .grid_wrapper();
 
 
     // Space .wrappers apart from each other.
@@ -749,3 +749,14 @@ ul {
         margin-top: 1.125em;
     }
 }
+
+// Loop to generate the col-# classes for the demo
+.columnX ( @index ) when ( @index > 0 ) {
+    .col-@{index} {
+        .grid_column( @index );
+    }
+
+    .columnX( @index - 1 );
+}
+// Initiate loop
+.columnX ( @grid_total-columns );
