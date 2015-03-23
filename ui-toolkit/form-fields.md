@@ -10,7 +10,7 @@ category: UI toolkit
 
 <div class="content-50 content-first">
 
-Consistent form elements help us quickly design effective web forms. So far we've only developed text inputs, with checkboxes, selects, and radio buttons in the backlog. In the meantime, review our <a href="http://cfpb.github.io/design-manual/guides/effective-forms.html">Effective forms guide</a> for user experience tips. 
+Consistent form elements help us quickly design effective web forms. So far we've only developed text inputs, with checkboxes, selects, and radio buttons in the backlog. In the meantime, review our <a href="https://cfpb.github.io/design-manual/guides/effective-forms.html">Effective forms guide</a> for user experience tips. 
 {: class="lead-in"}
 
 </div>
@@ -28,7 +28,7 @@ Consistent form elements help us quickly design effective web forms. So far we'v
   </ul>
 </div>   
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -68,7 +68,7 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 </div> 
 
-<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -144,4 +144,4 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 </div> 
 
-<!-- <h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2> -->
+<!-- <h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2> -->

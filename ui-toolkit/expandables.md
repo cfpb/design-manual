@@ -29,13 +29,13 @@ Expandables are used for displaying non-essential information on a page.
   </ul>
 </div> 
 
-<h2 id="use">Use<span class="cf-code-link"><a href="http://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="use">Use<span class="cf-code-link"><a href="https://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 The `find` function will not discover information hidden by a collapsed expandable, so use good judgement in deciding which information to hide.
 
 Non-javascript users should default to the expanded state. Otherwise, the default state (expanded or collapsed) will depend on the circumstance.  
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -76,7 +76,7 @@ Standard expandables feature a colored bar, a header, the expand/collapse minico
 
 </div>
 
-<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 

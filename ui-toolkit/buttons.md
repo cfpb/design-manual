@@ -26,13 +26,13 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="http://github.com/cfpb/cf-buttons"><h4>cf-buttons</h4></a>
+      <a href="https://github.com/cfpb/cf-buttons"><h4>cf-buttons</h4></a>
       <p>Buttons in the Capital Framework</p>
     </li>
   </ul>
 </div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 ### Primary and Secondary buttons
@@ -125,7 +125,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
-<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Normal
@@ -189,7 +189,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
-<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Large Primary button
