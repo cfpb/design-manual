@@ -56,9 +56,10 @@ module.exports = function(grunt) {
         src: [
           '<%= loc.src %>/vendor/cf-*/*.less',
           '!<%= loc.src %>/vendor/cf-core/*.less',
-          '<%= loc.src %>/vendor/cf-core/cf-core.less'
+          '<%= loc.src %>/vendor/cf-core/cf-core.less',
+          '<%= loc.src %>!vendor/cf-concat/cf.less'
         ],
-        dest: '<%= loc.src %>/static/css/capital-framework.less',
+        dest: '<%= loc.src %>/vendor/cf-concat/cf.less'
       },
       js: {
         src: [
@@ -75,7 +76,7 @@ module.exports = function(grunt) {
           'src/topdoc-templates/includes/filter-components-without-markup.jade',
           'src/topdoc-templates/icons/src.jade'
         ],
-        dest: 'src/topdoc-templates/icons/index.jade',
+        dest: 'src/topdoc-templates/icons/index.jade'
       }
     },
 
