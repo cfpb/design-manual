@@ -12079,6 +12079,7 @@ samp {
    Base styles
    ========================================================================== */
 
+html,
 body {
   height: 100%;
   font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
@@ -12091,26 +12092,34 @@ body {
   overflow-wrap: break-word;
 }
 
+html em,
 body em,
+html i,
 body i {
   font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
 
+.lt-ie9 html em,
 .lt-ie9 body em,
+.lt-ie9 html i,
 .lt-ie9 body i {
   font-style: normal !important;
 }
 
+html strong,
 body strong,
+html b,
 body b {
   font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
+.lt-ie9 html strong,
 .lt-ie9 body strong,
+.lt-ie9 html b,
 .lt-ie9 body b {
   font-weight: normal !important;
 }
