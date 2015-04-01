@@ -26,13 +26,13 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="http://github.com/cfpb/cf-buttons"><h4>cf-buttons</h4></a>
+      <a href="https://github.com/cfpb/cf-buttons"><h4>cf-buttons</h4></a>
       <p>Buttons in the Capital Framework</p>
     </li>
   </ul>
 </div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 ### Primary and Secondary buttons
@@ -57,7 +57,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 {::nomarkdown}  
 <button class="btn">Sign up</button>
-<button class="btn btn-link">Log in</button>
+<button class="btn btn__link">Log in</button>
 {:/nomarkdown}
 
 </div>
@@ -72,7 +72,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="content-33 content-last">
 
 {::nomarkdown}  
-<button class="btn btn-secondary">Secondary button</button>
+<button class="btn btn__secondary">Secondary button</button>
 {:/nomarkdown}
 
 </div>
@@ -108,24 +108,24 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 {::nomarkdown}  
 <button class="btn">
-    <span class="btn-icon-left cf-icon cf-icon-upload"></span>
+    <span class="btn_icon__left cf-icon cf-icon-upload"></span>
     Upload document
 </button>
 <br><br>
 
 <button class="btn">
-    <span class="btn-icon-left cf-icon cf-icon-left"></span>
+    <span class="btn_icon__left cf-icon cf-icon-left"></span>
     Back
 </button>
 <button class="btn">
     Next
-    <span class="btn-icon-right cf-icon cf-icon-right"></span>
+    <span class="btn_icon__right cf-icon cf-icon-right"></span>
 </button>
 {:/nomarkdown}
 
 </div>
 
-<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Normal
@@ -184,12 +184,12 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="content-67 content-last">
 
 {::nomarkdown}  
-<button class="btn btn-disabled">Sign up</button>
+<button class="btn btn__disabled">Sign up</button>
 {:/nomarkdown}
 
 </div>
 
-<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Large Primary button
@@ -202,7 +202,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="content-67 content-last">
 
 {::nomarkdown}   
-<button class="btn btn-super">Sign up</button>
+<button class="btn btn__super">Sign up</button>
 {:/nomarkdown} 
 
 </div>
@@ -216,11 +216,9 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="content-67 content-last">
 
 {::nomarkdown}   
-<div class="btn-group">
-    <button class="btn">Button 1</button>
-    <button class="btn">Button 2</button>
-    <button class="btn">Button 3</button>
-</div>
+<button class="btn btn__grouped-first">Button 1</button>
+<button class="btn btn__grouped">Button 2</button>
+<button class="btn btn__grouped-last">Button 3</button>
 {:/nomarkdown} 
 
 </div>
@@ -235,10 +233,8 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="content-67 content-last">
 
 {::nomarkdown}   
-<div class="btn-group">
-    <button class="btn">Button</button>
-    <button class="btn btn-compound-action"><span class="cf-icon cf-icon-down"></span></button>
-</div>
+<button class="btn btn__grouped-first">Button</button>
+<button class="btn btn__grouped-last btn__compound-action"><span class="cf-icon cf-icon-down"></span></button>
 {:/nomarkdown} 
 
 </div>
@@ -255,7 +251,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 {::nomarkdown}   
 <button class="btn">Action</button>
-<button class="btn btn-link btn-warning">Destructive action</button>
+<button class="btn btn__link btn__warning">Destructive action</button>
 {:/nomarkdown} 
 
 </div>

@@ -1,26 +1,35 @@
-    <header id="header" class="header" role="banner">
-      <div class="wrap">
-        <a class="skip-link visually-hidden focusable" href="#content">Skip to Main Content</a>
+<header id="header" class="header" role="banner">
+    <div class="wrapper">
+        <a class="skip-link u-visually-hidden focusable" href="#content">Skip to main content</a>
+
         <div class="site-title">
-          <h1><a class="title-link" href="{{ site.baseurl }}/"><span class="site-org">{{ site.org }}&nbsp;</span>{{ site.name }}</a></h1>
+            <h1>
+                <a class="title-link" href="{{ site.baseurl }}/">
+                    <span class="site-org">{{ site.org }}&nbsp;</span>{{ site.name }}
+                </a>
+            </h1>
         </div>
+
         <div class="site-logo">
-          <a href="http://www.consumerfinance.gov"><img class="logo" src="{{ site.baseurl }}/{{ site.logourl }}" alt="{{ site.logoalt }}"></a>
+            <a href="http://www.consumerfinance.gov">
+                <img class="logo" src="{{ site.baseurl }}/{{ site.logourl }}" alt="{{ site.logoalt }}">
+            </a>
         </div>
+
         <nav role="navigation">
-          <ul class="main-nav">
-            {% for link in site.mainnav %}
-              <!--
-                link.text: {{ link.text }}
-                page.category: {{ page.category }}
-              -->
-              {% if link.internal == true %}
-                <li{% if link.text == page.category %} class="main-nav-active"{% endif %}><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
-              {% else %}
-                <li{% if link.text == page.category %} class="main-nav-active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
+            <ul class="main-nav">
+        {% for link in site.mainnav %}
+            {% if link.internal == true %}
+                <li{% if link.text == page.category %} class="main-nav-active"{% endif %}>
+                    <a href="{{ site.baseurl }}/{{ link.url }}">{{ link.text }}</a>
+                </li>
+            {% else %}
+                <li{% if link.text == page.category %} class="main-nav-active"{% endif %}>
+                    <a href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+            </ul>
         </nav>
-      </div>
-    </header>
+    </div>
+</header>

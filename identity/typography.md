@@ -21,7 +21,7 @@ A clear typographic hierarchy is critical to the effective communication of our 
 
 <div class="content-33 content-last">
 
-![Feature image of Avenir Type Sample]({{ site.baseurl }}/assets/img/typography/Typography0_@2.png)
+![Feature image of Avenir Type Sample]({{ site.baseurl }}/static/img/typography/Typography0_@2.png)
 
 </div>
 
@@ -297,7 +297,7 @@ Typography should be set flush left. This provides the eye a constant starting p
 
 <div class="content-67 content-last">
 
-![Alignment]({{ site.baseurl }}/assets/img/typography/Typography_typesetting01_@2.png "Alignment")
+![Alignment]({{ site.baseurl }}/static/img/typography/Typography_typesetting01_@2.png "Alignment")
 
 </div>
 
@@ -318,12 +318,12 @@ When setting body copy, the leading should be 1.375 times the type size, or 37.5
 <div class="content-50 content-first">
 #### Font size: 26px
 
-![Line height example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting02_@2.png "Line height of 36px for 26px font size")
+![Line height example]({{ site.baseurl }}/static/img/typography/Typography_typesetting02_@2.png "Line height of 36px for 26px font size")
 </div>
 <div class="content-50 content-last">
 #### Font size: 16px
 
-![Line height example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting03_@2.png "Line height of 22px for 16px font size")
+![Line height example]({{ site.baseurl }}/static/img/typography/Typography_typesetting03_@2.png "Line height of 22px for 16px font size")
 </div>
 
 </div>
@@ -342,7 +342,7 @@ For a single column of text, line length should be an average of 66 characters p
 
 <div class="content-67 content-last">
 
-![Line length]({{ site.baseurl }}/assets/img/typography/Typography_typesetting04_@2.png "Line length example")
+![Line length]({{ site.baseurl }}/static/img/typography/Typography_typesetting04_@2.png "Line length example")
 
 </div>
 
@@ -361,31 +361,31 @@ When setting headers and body copy, the white space should be 15px, 20px, or 30p
 <div class="content-67 content-last">
 
 <div class="content-50 content-first">
-![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_display_@2.png "Spacing for Display header")
+![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_display_@2.png "Spacing for Display header")
 </div>
 
 <div class="content-50 content-last">
-![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header1_@2.png "Spacing for Header 1")
+![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header1_@2.png "Spacing for Header 1")
 </div>
 
 <div class="content-50 content-first">
-![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header2_@2.png "Spacing for Header 2")
+![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header2_@2.png "Spacing for Header 2")
 </div>
 
 <div class="content-50 content-last">
-![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header3_@2.png "Spacing for Header 3")
+![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header3_@2.png "Spacing for Header 3")
 </div>
 
 <div class="content-50 content-first">
-![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header4_@2.png "Spacing for Header 4")
+![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header4_@2.png "Spacing for Header 4")
 </div>
 
 <div class="content-50 content-last">
-![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header5_@2.png "Spacing for Header 5")
+![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header5_@2.png "Spacing for Header 5")
 </div>
 
 <div class="content-50 content-first">
-![Spacing example]({{ site.baseurl }}/assets/img/typography/Typography_typesetting05_header6_@2.png "Spacing for Header 6")
+![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header6_@2.png "Spacing for Header 6")
 </div>
 
 </div>

@@ -29,7 +29,7 @@ Links lead users to a different page or further information. In contrast, <a hre
   </ul>
 </div> 
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -52,7 +52,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 </div>
 
 
-<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Default
@@ -107,7 +107,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 </div>
 
 
-<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Links in headers

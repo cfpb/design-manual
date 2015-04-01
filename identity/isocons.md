@@ -18,7 +18,7 @@ Isocons are visually sophisticated graphics, with more detail than a flat icon. 
 
 <div class="content-33 content-last">
 
-![Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons.png "Graph Isocon")
+![Graph Isocon]({{ site.baseurl }}/static/img/isocons/Isocons.png "Graph Isocon")
 
 </div>
 
@@ -38,7 +38,7 @@ The basic color approach for isocons uses the primary brand colors. The isocon h
 
 ##### Black and white on green field
 
-![Black and white on green field Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons.png "Graph Isocon")
+![Black and white on green field Graph Isocon]({{ site.baseurl }}/static/img/isocons/Isocons.png "Graph Isocon")
 
 </div>
 
@@ -46,7 +46,7 @@ The basic color approach for isocons uses the primary brand colors. The isocon h
 
 ##### Black and white on gray field
 
-![Black and white over gray field Graph Isocon]({{ site.baseurl }}/assets/img/isocons/Isocons3.png "Graph Isocon")
+![Black and white over gray field Graph Isocon]({{ site.baseurl }}/static/img/isocons/Isocons3.png "Graph Isocon")
 
 </div>
 
@@ -67,13 +67,13 @@ print applications.
 
 ##### Web scale
 
-![Isocon web scale diagram]({{ site.baseurl }}/assets/img/isocons/Isocons4.png "Isocon web scale")
+![Isocon web scale diagram]({{ site.baseurl }}/static/img/isocons/Isocons4.png "Isocon web scale")
 
 ---
 
 ##### Print scale
 
-![Isocon print scale diagram]({{ site.baseurl }}/assets/img/isocons/Isocons5.png "Isocon print scale")
+![Isocon print scale diagram]({{ site.baseurl }}/static/img/isocons/Isocons5.png "Isocon print scale")
 
 </div>
 
@@ -97,25 +97,25 @@ This library comprises all currently approved isocons and will continue to expan
 
 #### Ask CFPB
 
-![Ask CFPB isocon]({{ site.baseurl }}/assets/img/isocons/Isocons6.png "Ask CFPB isocon")
+![Ask CFPB isocon]({{ site.baseurl }}/static/img/isocons/Isocons6.png "Ask CFPB isocon")
 </div>
 <div class="content-25">
 
 #### Submit a complaint
 
-![Submit a complaint isocon]({{ site.baseurl }}/assets/img/isocons/Isocons24.png "Submit a complaint isocon")
+![Submit a complaint isocon]({{ site.baseurl }}/static/img/isocons/Isocons24.png "Submit a complaint isocon")
 </div>
 <div class="content-25">
 
 #### Review and route
 
-![Review and route isocon]({{ site.baseurl }}/assets/img/isocons/Isocons25.png "Review and route isocon")
+![Review and route isocon]({{ site.baseurl }}/static/img/isocons/Isocons25.png "Review and route isocon")
 </div>
 <div class="content-25 content-last">
 
 #### Company response
 
-![Company response isocon]({{ site.baseurl }}/assets/img/isocons/Isocons23.png "Company response isocon")
+![Company response isocon]({{ site.baseurl }}/static/img/isocons/Isocons23.png "Company response isocon")
 </div>
 
 </div><!-- .content-row-rule -->
@@ -125,25 +125,25 @@ This library comprises all currently approved isocons and will continue to expan
 
 #### Educate
 
-![Educate isocon]({{ site.baseurl }}/assets/img/isocons/Isocons14.png "Educate isocon")
+![Educate isocon]({{ site.baseurl }}/static/img/isocons/Isocons14.png "Educate isocon")
 </div>
 <div class="content-25">
 
 #### Consumer review
 
-![Consumer review isocon]({{ site.baseurl }}/assets/img/isocons/Isocons18.png "Consumer review isocon")
+![Consumer review isocon]({{ site.baseurl }}/static/img/isocons/Isocons18.png "Consumer review isocon")
 </div>
 <div class="content-25">
 
 #### Review and investigate
 
-![Review and investigate isocon]({{ site.baseurl }}/assets/img/isocons/Isocons22.png "Review and investigate isocon")
+![Review and investigate isocon]({{ site.baseurl }}/static/img/isocons/Isocons22.png "Review and investigate isocon")
 </div>
 <div class="content-25 content-last">
 
 #### Analyze and report
 
-![Analyze and report isocon]({{ site.baseurl }}/assets/img/isocons/Isocons21.png "Analyze and report isocon")
+![Analyze and report isocon]({{ site.baseurl }}/static/img/isocons/Isocons21.png "Analyze and report isocon")
 </div>
 
 </div><!-- .content-row-rule -->
@@ -153,25 +153,25 @@ This library comprises all currently approved isocons and will continue to expan
 
 #### Data
 
-![Data isocon]({{ site.baseurl }}/assets/img/isocons/Isocons7.png "Data isocon")
+![Data isocon]({{ site.baseurl }}/static/img/isocons/Isocons7.png "Data isocon")
 </div>
 <div class="content-25">
 
 #### Developers
 
-![Developers isocon]({{ site.baseurl }}/assets/img/isocons/Isocons8.png "Developers isocon")
+![Developers isocon]({{ site.baseurl }}/static/img/isocons/Isocons8.png "Developers isocon")
 </div>
 <div class="content-25">
 
 #### Loan
 
-![Loan isocon]({{ site.baseurl }}/assets/img/isocons/Isocons12.png "Loan isocon")
+![Loan isocon]({{ site.baseurl }}/static/img/isocons/Isocons12.png "Loan isocon")
 </div>
 <div class="content-25 content-last">
 
 #### Payday loan
 
-![Payday loan isocon]({{ site.baseurl }}/assets/img/isocons/Isocons11.png "Payday loan isocon")
+![Payday loan isocon]({{ site.baseurl }}/static/img/isocons/Isocons11.png "Payday loan isocon")
 </div>
 
 </div><!-- .content-row-rule -->
@@ -181,25 +181,25 @@ This library comprises all currently approved isocons and will continue to expan
 
 #### Credit card
 
-![Credit card isocon]({{ site.baseurl }}/assets/img/isocons/Isocons17.png "Credit card")
+![Credit card isocon]({{ site.baseurl }}/static/img/isocons/Isocons17.png "Credit card")
 </div>
 <div class="content-25">
 
 #### Credit reporting
 
-![Credit reporting isocon]({{ site.baseurl }}/assets/img/isocons/Isocons19.png "Credit reporting isocon")
+![Credit reporting isocon]({{ site.baseurl }}/static/img/isocons/Isocons19.png "Credit reporting isocon")
 </div>
 <div class="content-25">
 
 #### Bank account or service
 
-![Bank account or service isocon]({{ site.baseurl }}/assets/img/isocons/Isocons20.png "Bank account or service isocon")
+![Bank account or service isocon]({{ site.baseurl }}/static/img/isocons/Isocons20.png "Bank account or service isocon")
 </div>
 <div class="content-25 content-last">
 
 #### Getting cash quick
 
-![Getting cash quick isocon]({{ site.baseurl }}/assets/img/isocons/Isocons9.png "Getting cash quick isocon")
+![Getting cash quick isocon]({{ site.baseurl }}/static/img/isocons/Isocons9.png "Getting cash quick isocon")
 </div>
 
 </div><!-- .content-row-rule -->
@@ -208,25 +208,25 @@ This library comprises all currently approved isocons and will continue to expan
 
 #### Getting out of debt
 
-![Getting out of debt isocon]({{ site.baseurl }}/assets/img/isocons/Isocons15.png "Getting out of debt isocon")
+![Getting out of debt isocon]({{ site.baseurl }}/static/img/isocons/Isocons15.png "Getting out of debt isocon")
 </div>
 <div class="content-25">
 
 #### Money transfer
 
-![Money transfer isocon]({{ site.baseurl }}/assets/img/isocons/Isocons16.png "Money transfer isocon")
+![Money transfer isocon]({{ site.baseurl }}/static/img/isocons/Isocons16.png "Money transfer isocon")
 </div>
 <div class="content-25">
 
 #### Owning a home
 
-![Owning a home isocon]({{ site.baseurl }}/assets/img/isocons/Isocons26.png "Owning a home")
+![Owning a home isocon]({{ site.baseurl }}/static/img/isocons/Isocons26.png "Owning a home")
 </div>
 <div class="content-25 content-last">
 
 #### News
 
-![News isocon]({{ site.baseurl }}/assets/img/isocons/Isocons10.png "News isocon")
+![News isocon]({{ site.baseurl }}/static/img/isocons/Isocons10.png "News isocon")
 </div>
 
 </div> <!-- #isocon-assets -->

@@ -21,7 +21,7 @@ Minicons are visually simple, quickly recognizable, and easy to understand. They
 
 <div class="content-33 content-last">
 
-![CFPB Minicons]({{ site.baseurl }}/assets/img/minicons/Minicons0_@2.png "CFPB Minicons")
+![CFPB Minicons]({{ site.baseurl }}/static/img/minicons/Minicons0_@2.png "CFPB Minicons")
 
 </div>
 
@@ -142,12 +142,12 @@ Although color usage is flexible, minicons should always be used in high contras
 <div class="content-50 content-first">
 #### One color
 
-![One color minicon example]({{ site.baseurl }}/assets/img/minicons/Minicons3a_@2.png "One color minicon example")
+![One color minicon example]({{ site.baseurl }}/static/img/minicons/Minicons3a_@2.png "One color minicon example")
 </div>
 <div class="content-50 content-last">
 #### Negative space knocked out
 
-![Negative space knocked out minicon example]({{ site.baseurl }}/assets/img/minicons/Minicons3b_@2.png "Negative space knocked out minicon example")
+![Negative space knocked out minicon example]({{ site.baseurl }}/static/img/minicons/Minicons3b_@2.png "Negative space knocked out minicon example")
 </div>
 
 </div>
@@ -161,11 +161,11 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 
 <div class="content-67 content-last">
 	
-![Minicon spacing diagram]({{ site.baseurl }}/assets/img/minicons/Minicons4_@2.png "Minicon spacing diagram")
+![Minicon spacing diagram]({{ site.baseurl }}/static/img/minicons/Minicons4_@2.png "Minicon spacing diagram")
 
 </div>
 
-<h2 id="asset-library">Asset Library<span class="cf-code-link"><a href="http://cfpb.github.io/cf-icons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="asset-library">Asset Library<span class="cf-code-link"><a href="https://cfpb.github.io/cf-icons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="minicon-asset-lib">
 

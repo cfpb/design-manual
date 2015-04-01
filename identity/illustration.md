@@ -18,7 +18,7 @@ Illustrations are an important tool for introducing the subject matter of a page
 
 <div class="content-33 content-last">
 
-![School objects illustration]({{ site.baseurl }}/assets/img/illustration/Illustration.png)
+![School objects illustration]({{ site.baseurl }}/static/img/illustration/Illustration.png)
 
 </div>
 
@@ -40,7 +40,7 @@ These illustrations should feature flat elements and avoid showing things in thr
 
 <div class="content-67 content-last">
 
-![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration5_@2.png)
+![Paying for College illustration]({{ site.baseurl }}/static/img/illustration/Illustration5_@2.png)
 
 </div>
 
@@ -54,7 +54,7 @@ Top-facing illustrations are object-based. Illustrations should be arranged in a
 
 <div class="content-67 content-last">
 
-![Paying for College illustration]({{ site.baseurl }}/assets/img/illustration/Illustration6_@2.png)
+![Paying for College illustration]({{ site.baseurl }}/static/img/illustration/Illustration6_@2.png)
 
 </div>
 
@@ -73,7 +73,7 @@ Do not use negative space to define outlines.
 
 <div class="content-67 content-last">
 
-![Library campaign illustration]({{ site.baseurl }}/assets/img/illustration/Illustration7_@2.png)
+![Library campaign illustration]({{ site.baseurl }}/static/img/illustration/Illustration7_@2.png)
 
 </div>
 
@@ -90,7 +90,7 @@ To stylize illustrations according to CFPB standards, use relative sizing on str
 
 <div class="content-67 content-last">
 
-![Base forms of an illustration]({{ site.baseurl }}/assets/img/illustration/Illustration10_@2.png)
+![Base forms of an illustration]({{ site.baseurl }}/static/img/illustration/Illustration10_@2.png)
 
 </div>
 
@@ -109,7 +109,7 @@ There are two types of highlights available for illustrations; curved and diagon
 
 <div class="content-67 content-last">
 
-![Examples of shading and highlights in illustration]({{ site.baseurl }}/assets/img/illustration/Illustration9_@2.png)
+![Examples of shading and highlights in illustration]({{ site.baseurl }}/static/img/illustration/Illustration9_@2.png)
 
 </div>
 
@@ -127,7 +127,7 @@ The overall placement of shadows should be carefully decided by the designer and
 
 <div class="content-67 content-last">
 
-![Example of shadows in llustration]({{ site.baseurl }}/assets/img/illustration/Illustration8_@2.png)
+![Example of shadows in llustration]({{ site.baseurl }}/static/img/illustration/Illustration8_@2.png)
 
 </div>
 
@@ -143,8 +143,8 @@ The color palette is green and grey, including midtones and tints and a thoughtf
 
 <div class="content-67 content-last">
 
-![Examiner hiring illustration]({{ site.baseurl }}/assets/img/illustration/Illustration_industry1_@2.png)
+![Examiner hiring illustration]({{ site.baseurl }}/static/img/illustration/Illustration_industry1_@2.png)
 
-![Home illustration]({{ site.baseurl }}/assets/img/illustration/Illustration_industry2_@2.png)
+![Home illustration]({{ site.baseurl }}/static/img/illustration/Illustration_industry2_@2.png)
 
 </div>

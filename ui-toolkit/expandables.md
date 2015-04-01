@@ -29,13 +29,13 @@ Expandables are used for displaying non-essential information on a page.
   </ul>
 </div> 
 
-<h2 id="use">Use<span class="cf-code-link"><a href="http://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="use">Use<span class="cf-code-link"><a href="https://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 The `find` function will not discover information hidden by a collapsed expandable, so use good judgement in deciding which information to hide.
 
 Non-javascript users should default to the expanded state. Otherwise, the default state (expanded or collapsed) will depend on the circumstance.  
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -46,25 +46,37 @@ Standard expandables feature a colored bar, a header, the expand/collapse minico
 <div class="content-67 content-last">
 
 {::nomarkdown}  
-<div class="expandable">
-    <header class="expandable-header">
-        Expandable Header
-        <a href="" class="expandable-button">
-            <span class="expandable-text">Show</span> <span class="cf-icon cf-icon-plus-round"></span>
-        </a>
-    </header>
-    <div class="expandable-content expandable-hidden" style="display: none;">
-        <h3>Heading 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="expandable expandable__padded">
+    <button class="expandable_header expandable_target">
+        <span class="expandable_header-left expandable_label">
+            Expandable Header
+        </span>
+        <span class="expandable_header-right expandable_link">
+            <span class="expandable_cue-open">
+                Show
+                <span class="cf-icon cf-icon-plus-round"></span>
+            </span>
+            <span class="expandable_cue-close">
+                Hide
+                <span class="cf-icon cf-icon-minus-round"></span>
+            </span>
+        </span>
+    </button>
+    <div class="expandable_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Neque ipsa voluptatibus soluta nobis unde quisquam
+            temporibus magnam debitis quidem. Ducimus ratione
+            corporis nesciunt earum vel est quaerat blanditiis
+            dolore ipsa?
+        </p>
     </div>
 </div>
 {:/nomarkdown}
 
 </div>
 
-<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -77,16 +89,30 @@ Standard expandables feature a colored bar, a header, the expand/collapse minico
 <div class="content-67 content-last">
 
 {::nomarkdown}  
-<div class="expandable">
-    <header class="expandable-header">
-        Expandable Header
-        <a href="" class="expandable-button">
-            <span class="expandable-text">Show</span> <span class="cf-icon cf-icon-plus-round"></span>
-        </a>
-    </header>
-    <div class="expandable-content expandable-hidden" style="display: none;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="expandable expandable__padded">
+    <button class="expandable_header expandable_target">
+        <span class="expandable_header-left expandable_label">
+            Expandable Header
+        </span>
+        <span class="expandable_header-right expandable_link">
+            <span class="expandable_cue-open">
+                Show
+                <span class="cf-icon cf-icon-plus-round"></span>
+            </span>
+            <span class="expandable_cue-close">
+                Hide
+                <span class="cf-icon cf-icon-minus-round"></span>
+            </span>
+        </span>
+    </button>
+    <div class="expandable_content" style="display: none;">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Neque ipsa voluptatibus soluta nobis unde quisquam
+            temporibus magnam debitis quidem. Ducimus ratione
+            corporis nesciunt earum vel est quaerat blanditiis
+            dolore ipsa?
+        </p>
     </div>
 </div>
 {:/nomarkdown}
@@ -97,7 +123,7 @@ Standard expandables feature a colored bar, a header, the expand/collapse minico
 
 <div class="content-33 content-first">
 
-#### Hover/Focus
+#### Hover/Focus/Expanded
 
 * Grey 50% bar
 * Pacific Blue minicon
@@ -109,16 +135,30 @@ The header should be addressable by the keyboard to ensure keyboard users can op
 <div class="content-67 content-last">
 
 {::nomarkdown}  
-<div class="expandable">
-    <header class="expandable-header open">
-        Expandable Header
-        <a href="" class="expandable-button">
-            <span class="expandable-text">Show</span> <span class="cf-icon cf-icon-plus-round"></span>
-        </a>
-    </header>
-    <div class="expandable-content expandable-hidden" style="display: none;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="expandable expandable__padded expandable__expanded">
+    <button class="expandable_header expandable_target">
+        <span class="expandable_header-left expandable_label">
+            Expandable Header
+        </span>
+        <span class="expandable_header-right expandable_link">
+            <span class="expandable_cue-open">
+                Show
+                <span class="cf-icon cf-icon-plus-round"></span>
+            </span>
+            <span class="expandable_cue-close">
+                Hide
+                <span class="cf-icon cf-icon-minus-round"></span>
+            </span>
+        </span>
+    </button>
+    <div class="expandable_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Neque ipsa voluptatibus soluta nobis unde quisquam
+            temporibus magnam debitis quidem. Ducimus ratione
+            corporis nesciunt earum vel est quaerat blanditiis
+            dolore ipsa?
+        </p>
     </div>
 </div>
 {:/nomarkdown}
