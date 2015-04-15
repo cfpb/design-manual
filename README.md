@@ -172,6 +172,67 @@ In the near future we plan to add guidelines for pagination, filtering, modals,
 tooltips, tabs, and responsive tables.
 We also plan to make the Manual itself fully responsive for small screens.
 
+## How to track an issue
+
+The CFPB’s  Design & Development Team uses GitHub issues to track potential updates and additions to the CFPB Design Manual. These issues are organized through milestones and labels. We welcome the public to participate  in our discussions and in opening pull requests to the Design Manual.
+
+- Updates and additions are published in the Design Manual after a GitHub issue has received approval from the applicable disciplines. The approvers are:
+  - Natalia Fitzgerald (GD)
+  - Ben Guhin (UX)
+  - Scott Cranfill (FEWD)
+  - Jennifer Horan (508)
+- After an issue has received the necessary approvals, anyone can volunteer to submit a pull request to make the change to the manual. Any applicable changes to our asset libraries and templates should also be updated on CFPB’s internal Google Drive. Any changes that require updates to a Capital Framework component should be made in the appropriate [GitHub repository](https://github.com/cfpb/capital-framework). 
+
+### Milestones
+
+#### Backlog
+There are three backlogs; Design, UI, FEWD. Every month items are chosen to work through from those backlogs.
+
+#### Sprints
+We work through open issues in monthly sprints. These milestone helps us prioritize what to tackle and when. Every month, we have a working session to review open issues and set the next month’s sprint. If you want certain issues included in the next month’s sprint, make sure to communicate this before or during the working session.
+
+#### Second Level
+These issues may not be as high of a priority as the monthly sprint but they are issues being actively discussed and worked on. We consider these items to be “next in line.”
+
+#### Publish
+These issues have received approval and need to be added to the asset libraries, to Capital Framework, to the Design Manual, or some combination of the three. 
+
+### Labels
+
+#### Step one: Label by classification
+508
+FEWD
+UI
+Design
+Multimedia
+Content strategy
+
+#### Step two: Where is it within the process?
+
+**0 - Backlog** – items within the Design Backlog, the UI Backlog, and the FEWD Backlog.
+
+**1 - Working** – issues that are currently a work in progress.
+
+**2 - Approval** – issues that need approval to publish. Be sure to tag the appropriate approver from the options listed below. To receive approval, the content should be presented in the way that it would be published to the Design Manual.
+FEWD approval
+UI approval
+Design approval
+508 approval
+
+**3 - Publish** – When an issue has received all of the necessary approvals (which depends on the type of standard), move the issue to the milestone for ‘Publish.’ Be sure to tag how they need to be published from the options listed below.
+- Add to asset library – This is the responsibility of the designer or UX designer that started the issue. The final asset should either be added to the library or the template available on CFPB’s Google Drive. Examples of assets include the illustration library, isocon library, minicon font, cf.gov web templates, or print suite templates. Changes to the minicon font must go through Daniel Pizarro, are released in batches, and require more lead time. 
+- FEWD task – Content that needs to be added to the Design Manual by a front end web developer.
+- Content update – Basic content update that can be done by anyone on the team.
+- Needs CF update – For the new content to be properly demonstrated in the manual, a CF component update is required.
+- Minicon font - All new minicons must have design approval before they are added to the minicon font. Once approved, an SVG file should be emailed to Daniel Pizarro. Updates to the minicon font are released every month or in an as needed basis. The updated file will be provided in a TrueType format (`.ttf`). 
+
+#### Other
+
+**discussion** - topics up for discussion
+
+**the manual itself** - actual strategies and updates for the manual.
+
+
 
 ----
 
