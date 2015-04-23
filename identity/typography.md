@@ -390,7 +390,7 @@ When setting headers and body copy, the white space should be 15px, 20px, or 30p
 
 </div>
 
-## Web type accessibility
+## Type accessibility
 
 <div class="content-50 content-first">
 
@@ -398,7 +398,7 @@ When setting headers and body copy, the white space should be 15px, 20px, or 30p
 
 WCA (Web Content Accessibility) standards ensure that content is accessible by everyone, regardless of any disability or user device. 
 
-To ensure text remains compliant with WCA standards, use only these permitted color combinations. These options fall within the range of foreground/background color contrast permitted by the Secion 508 guidelines.
+To ensure text remains compliant with [WCAG 2.0 standards](http://www.w3.org/TR/WCAG20/), use only these permitted color combinations. These options fall within the range of foreground/background color contrast permitted by the Secion 508 guidelines.
 
 </div>
 
