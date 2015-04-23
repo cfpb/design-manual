@@ -174,6 +174,8 @@ We also plan to make the Manual itself fully responsive for small screens.
 
 ---
 
+## How to track an issue
+
 The CFPB’s  Design & Development Team uses GitHub issues to track potential updates and additions to the CFPB Design Manual. These issues are organized through milestones and labels. We welcome the public to participate  in our discussions and in opening pull requests to the Design Manual.
 
 - Updates and additions are published in the Design Manual after a GitHub issue has received approval from the applicable disciplines. The approvers are:
