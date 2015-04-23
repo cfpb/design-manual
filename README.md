@@ -222,6 +222,14 @@ These issues have received approval and need to be added to the asset libraries,
 - 508 approval
 It is the responsibility of the approver to remove the approval tag.
 
+We recommend adding the following checklist to an issue when it's time to publish:
+
+>Steps to close out this issue:
+- [ ] Add to the Design Manual
+- [ ] Update Capital Framework
+- [ ] Update .ai template(s) to reflect new standard
+
+
 **3 - Publish** – When an issue has received all of the necessary approvals (which depends on the type of standard), move the issue to the milestone for ‘Publish.’ Be sure to tag how they need to be published from the options listed below.
 - Minicon font - All new minicons must have design approval before they are added to the minicon font. Once approved, an SVG file should be emailed to Daniel Pizarro. Updates to the minicon font are released every month or in an as needed basis. The updated file will be provided in a TrueType format (`.ttf`). 
 - Add to asset library – This is the responsibility of the designer or UX designer that volunteers for the issue. The final asset should either be added to the library or the template available on CFPB’s Google Drive. Examples of assets include the illustration library, isocon library, minicon font, cf.gov web templates, or print suite templates. Changes to the minicon font must go through Daniel Pizarro, are released in batches, and require more lead time. 
