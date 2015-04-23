@@ -172,7 +172,7 @@ In the near future we plan to add guidelines for pagination, filtering, modals,
 tooltips, tabs, and responsive tables.
 We also plan to make the Manual itself fully responsive for small screens.
 
-## How to track an issue
+---
 
 The CFPB’s  Design & Development Team uses GitHub issues to track potential updates and additions to the CFPB Design Manual. These issues are organized through milestones and labels. We welcome the public to participate  in our discussions and in opening pull requests to the Design Manual.
 
@@ -200,12 +200,12 @@ These issues have received approval and need to be added to the asset libraries,
 ### Labels
 
 #### Step one: Label by classification
-508
-FEWD
-UI
-Design
-Multimedia
-Content strategy
+- 508
+- FEWD
+- UI
+- Design
+- Multimedia
+- Content strategy
 
 #### Step two: Where is it within the process?
 
@@ -214,24 +214,23 @@ Content strategy
 **1 - Working** – issues that are currently a work in progress.
 
 **2 - Approval** – issues that need approval to publish. Be sure to tag the appropriate approver from the options listed below. To receive approval, the content should be presented in the way that it would be published to the Design Manual.
-FEWD approval
-UI approval
-Design approval
-508 approval
+- FEWD approval
+- UI approval
+- Design approval
+- 508 approval
+It is the responsibility of the approver to remove the approval tag.
 
 **3 - Publish** – When an issue has received all of the necessary approvals (which depends on the type of standard), move the issue to the milestone for ‘Publish.’ Be sure to tag how they need to be published from the options listed below.
-- Add to asset library – This is the responsibility of the designer or UX designer that started the issue. The final asset should either be added to the library or the template available on CFPB’s Google Drive. Examples of assets include the illustration library, isocon library, minicon font, cf.gov web templates, or print suite templates. Changes to the minicon font must go through Daniel Pizarro, are released in batches, and require more lead time. 
-- FEWD task – Content that needs to be added to the Design Manual by a front end web developer.
-- Content update – Basic content update that can be done by anyone on the team.
-- Needs CF update – For the new content to be properly demonstrated in the manual, a CF component update is required.
 - Minicon font - All new minicons must have design approval before they are added to the minicon font. Once approved, an SVG file should be emailed to Daniel Pizarro. Updates to the minicon font are released every month or in an as needed basis. The updated file will be provided in a TrueType format (`.ttf`). 
+- Add to asset library – This is the responsibility of the designer or UX designer that volunteers for the issue. The final asset should either be added to the library or the template available on CFPB’s Google Drive. Examples of assets include the illustration library, isocon library, minicon font, cf.gov web templates, or print suite templates. Changes to the minicon font must go through Daniel Pizarro, are released in batches, and require more lead time. 
+- Content update – Basic content update that can be done by anyone on the team.
+- FEWD task – Content that needs to be added to the Design Manual by a front end web developer. For the new content to be properly demonstrated in the manual, a CF component may be required.
 
 #### Other
 
-**discussion** - topics up for discussion
+**discussion** - topics up for discussion. These are not technically considered active but you might want to solicit thoughts and discussion from the Design and Development team as a whole.
 
 **the manual itself** - actual strategies and updates for the manual.
-
 
 
 ----
