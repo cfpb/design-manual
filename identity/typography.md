@@ -432,7 +432,7 @@ Accessible text and background color combinations are shown below:
         <li class="type-color-combo__white-on-darkgray">White on Dark Gray</li>
         <li class="type-color-combo__black-on-gray10">CFPB Black on Gray 10%</li>
         <li class="type-color-combo__black-on-gray5">CFPB Black on Gray 5%</li>
-         <li class="type-color-combo__pacific-on-gray5">CFPB Pacific on Gray 5%</li>
+        <li class="type-color-combo__pacific-on-gray5">Pacific on Gray 5%</li>
         <li class="type-color-combo__black-on-greenmid">CFPB Black on Green Midtone</li>
         <li class="type-color-combo__black-on-greentint">CFPB Black on Green Tint</li>
     </ul>
