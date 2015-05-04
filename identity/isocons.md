@@ -220,13 +220,26 @@ This library comprises all currently approved isocons and will continue to expan
 
 #### Owning a home
 
-![Owning a home isocon]({{ site.baseurl }}/assets/img/isocons/Isocons26.png "Owning a home")
+![Owning a home isocon]({{ site.baseurl }}/assets/img/isocons/Isocons26.png "Owning a home isocon")
 </div>
 <div class="content-25 content-last">
 
 #### News
 
 ![News isocon]({{ site.baseurl }}/assets/img/isocons/Isocons10.png "News isocon")
+</div>
+
+<div class="content-25 content-first">
+
+#### Empower
+
+![Empower isocon]({{ site.baseurl }}/assets/img/isocons/Isocons27.png "Empower isocon")
+</div>
+<div class="content-25">
+
+#### Enforce
+
+![Enforce isocon]({{ site.baseurl }}/assets/img/isocons/Isocons28.png "Enforce isocon")
 </div>
 
 </div> <!-- #isocon-assets -->
