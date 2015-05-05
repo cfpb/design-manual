@@ -204,6 +204,7 @@ This library comprises all currently approved isocons and will continue to expan
 
 </div><!-- .content-row-rule -->
 
+<div class="content-row-rule">
 <div class="content-25 content-first">
 
 #### Getting out of debt
@@ -228,6 +229,7 @@ This library comprises all currently approved isocons and will continue to expan
 
 ![News isocon]({{ site.baseurl }}/assets/img/isocons/Isocons10.png "News isocon")
 </div>
+</div><!-- .content-row-rule -->
 
 <div class="content-25 content-first">
 
