@@ -539,7 +539,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
     
 #### Header 1
 
-* Avenir Next Medium
+* Avenir Next Regular
 * 38 pt / 40 pt
 
 </div>
@@ -556,8 +556,8 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
     
 #### Header 2
 
-* Avenir Next Demi Bold
-* 18 pt / 20 pt
+* Avenir Next Regular
+* 28 pt / 26 pt
 
 </div>
 
