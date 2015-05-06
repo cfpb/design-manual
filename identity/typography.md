@@ -8,7 +8,7 @@ published: true
 - [Typefaces](#typefaces)
 - [Web hierarchy](#web-hierarchy)
 - [Web typesetting](#typesetting-for-readability)
-- [Web accessibility](#type-accessibility)
+- [Type accessibility](#type-accessibility)
 - [Print hierarchy](#print-hierarchy)
 {: class="toc"}
 
