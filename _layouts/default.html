@@ -3,17 +3,26 @@
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-  <head>
+
+<head>
     {% include head.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      {% include header.html %}
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MVLMCF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MVLMCF');</script>
+    <!-- End Google Tag Manager -->
+    <div class="body-wrapper">
+        {% include header.html %}
         {{ content }}
-      {% include footer.html %}
+        {% include footer.html %}
     </div>
-    <script src="{{ site.baseurl }}/assets/js/vendor.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/capital-framework.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/design-manual.min.js"></script>
-  </body>
+    <script src="{{ site.baseurl }}/static/js/main.min.js"></script>
+</body>
 </html>

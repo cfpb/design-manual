@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Color
-category: Identity
+category: Visual identity
 ---
 
 - [Palette](#palette)
@@ -19,7 +19,7 @@ A minimal palette, clear hierarchy, good information design, and ample whitespac
 
 <div class="content-33 content-last">
 
-![Primary color palette]({{ site.baseurl }}/assets/img/color/Color0_@2.png "Primary color palette")
+![Primary color palette]({{ site.baseurl }}/static/img/color/Color0_@2.png "Primary color palette")
 
 </div>
 

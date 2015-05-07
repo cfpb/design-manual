@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Minicons
-category: Identity
+category: Visual identity
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)
 - [Asset library](#asset-library)
+- [Download](#download)
 {: class="toc"}
 
 <div class="content-67 content-first">
@@ -20,11 +21,11 @@ Minicons are visually simple, quickly recognizable, and easy to understand. They
 
 <div class="content-33 content-last">
 
-![CFPB Minicons]({{ site.baseurl }}/assets/img/minicons/Minicons0_@2.png "CFPB Minicons")
+![CFPB Minicons]({{ site.baseurl }}/static/img/minicons/Minicons0_@2.png "CFPB Minicons")
 
 </div>
 
-## Stylistic Guidelines
+## Stylistic guidelines
 
 <div class="content-33 content-first">
 	
@@ -141,12 +142,12 @@ Although color usage is flexible, minicons should always be used in high contras
 <div class="content-50 content-first">
 #### One color
 
-![One color minicon example]({{ site.baseurl }}/assets/img/minicons/Minicons3a_@2.png "One color minicon example")
+![One color minicon example]({{ site.baseurl }}/static/img/minicons/Minicons3a_@2.png "One color minicon example")
 </div>
 <div class="content-50 content-last">
 #### Negative space knocked out
 
-![Negative space knocked out minicon example]({{ site.baseurl }}/assets/img/minicons/Minicons3b_@2.png "Negative space knocked out minicon example")
+![Negative space knocked out minicon example]({{ site.baseurl }}/static/img/minicons/Minicons3b_@2.png "Negative space knocked out minicon example")
 </div>
 
 </div>
@@ -160,14 +161,39 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 
 <div class="content-67 content-last">
 	
-![Minicon spacing diagram]({{ site.baseurl }}/assets/img/minicons/Minicons4_@2.png "Minicon spacing diagram")
+![Minicon spacing diagram]({{ site.baseurl }}/static/img/minicons/Minicons4_@2.png "Minicon spacing diagram")
 
 </div>
 
-<h2 id="asset-library">Asset Library<span class="cf-code-link"><a href="http://cfpb.github.io/cf-icons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="asset-library">Asset Library<span class="cf-code-link"><a href="https://cfpb.github.io/cf-icons/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 <div class="minicon-asset-lib">
 
 {% include identity/icons/index.html %}
+
+</div>
+
+## Download
+
+<div class="content-50 content-first">
+    
+### Minicon font
+Our full minicon set is available for desktop use as an icon font (.ttf). It can be accessed through programs like Illustrator and InDesign via the glyph panel.
+
+<a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fcfpb%2Fcf-icons%2Fblob%2Fgh-pages%2Fsrc%2Ffonts%2Fcf-icons.ttf%3Fraw%3Dtrue&sa=D&sntz=1&usg=AFQjCNEfA_Pb9TWATcmS11SAt2epvxOmXg" target="_blank" class="btn">
+    <span class="btn_icon__left cf-icon cf-icon-download"></span>
+    Download .ttf
+</a>
+
+</div>
+
+<div class="content-50 content-last">
+    
+### Vector files
+Each of our minicons is available for download as a vector (.svg) on The Noun Project, a platform that collects and catalogs icons that are created and uploaded by graphic designers from around the world.
+
+<a class="icon-link icon-link__external-link" href="http://thenounproject.com/cfpb_minicons/">
+    View on Noun Project
+</a>
 
 </div>

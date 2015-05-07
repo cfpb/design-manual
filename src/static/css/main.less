@@ -1,0 +1,97 @@
+/* ==========================================================================
+   design-manual
+   ========================================================================== */
+
+// Import Normalize, a Capital Framework dependency and an all-around best practice.
+@import (less) "../../vendor/normalize-css/normalize.css";
+@import (less) "../../vendor/normalize-legacy-addon/normalize-legacy-addon.css";
+
+// Import the combined Capital Framework component file that was created by `grunt compile-cf`.
+@import (less) "../../vendor/cf-concat/cf.less";
+
+// Import the brand color palette.
+@import (less) "brand-palette.less";
+
+// Override the Capital Framework theme variables with colors from the brand color palette.
+@import (less) "cf-theme-overrides.less";
+
+// Import site-specific Less files
+@import (less) "header.less";
+@import (less) "main-nav.less";
+@import (less) "content.less";
+@import (less) "sidebar.less";
+@import (less) "footer.less";
+@import (less) "pygments.less";
+
+// Print stylesheet
+@import (less) "print.less";
+
+
+/* ==========================================================================
+   CF Enhancements
+   ========================================================================== */
+
+pre {
+  // Allow line wrapping of 'pre'
+  padding: 1.375em 1em;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: Consolas, Menlo, Monaco, Courier, monospace;
+  margin-bottom: 1.375em;
+}
+
+// Hide only visually, but have it available for screenreaders
+.u-visually-hidden {
+    &.focusable:active,
+    &.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+}
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html, // html needed here for sticky footer
+body {
+    height: 100%;
+    .webfont-regular();
+    // Improve default text rendering, handling of kerning pairs and ligatures
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    // New CSS3 syntax supported by Chrome
+    overflow-wrap: break-word;
+}
+
+
+/* ==========================================================================
+   To replace eventually
+   ========================================================================== */
+
+// Use u-clearfix class instead
+.cf:before,  .cf:after {
+    content: "";
+    display: table;
+}
+ /* For modern browsers */
+.cf:after {
+    clear: both;
+}
+.cf {
+    /* For IE 6/7 (trigger hasLayout) */
+    zoom: 1;
+}

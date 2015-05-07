@@ -11,7 +11,7 @@ category: UI toolkit
 
 <div class="content-50 content-first">
 
-Links lead users to a different page or further information. In contrast, [buttons](link) are used to signal actions. Users should be able to identify links without relying on color or styling alone.
+Links lead users to a different page or further information. In contrast, <a href="/design-manual/ui-toolkit/buttons.html">buttons</a> are used to signal actions. Users should be able to identify links without relying on color or styling alone.
 {: class="lead-in"}
 
 </div>
@@ -20,7 +20,7 @@ Links lead users to a different page or further information. In contrast, [butto
   <h5 class="repo-list-header">Repository</h5>
   <ul class="repo-list">
     <li>
-      <i class="cf-icon cf-icon-github"></i>
+      <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
       <a href="https://github.com/cfpb/cf-typography"><h4>cf-typography</h4></a>
@@ -29,7 +29,7 @@ Links lead users to a different page or further information. In contrast, [butto
   </ul>
 </div> 
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-typography/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -39,7 +39,7 @@ Links that appear in body text or link lists are underlined. Links are underline
 
 <div class="content-67 content-last">
 ##### Georgia paragraph links
-Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>.
+Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>. 
 
 ---
 
@@ -52,7 +52,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 </div>
 
 
-<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-typography/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Default
@@ -107,7 +107,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 </div>
 
 
-<h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-typography/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 #### Links in headers
@@ -152,7 +152,7 @@ Icons appear to the right of the link text. The color and ```font-size``` of ico
 Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage. 
 </div>
 <div class="content-50 content-last regular-ex">
-<a href="#">Internal link <i class="cf-icon cf-icon-right"></i></a>
+<a class="link-with-icon" href="#">Internal link <span class="cf-icon cf-icon-right"></span></a>
 </div>
 
 ---
@@ -162,7 +162,7 @@ Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigation
 Use the external link (glyph E610) to emphasize a non-CFPB webpage. External links should open in a new window or tab.
 </div>
 <div class="content-50 content-last regular-ex">
-<a href="#">External link <i class="cf-icon cf-icon-external-link"></i></a>
+<a class="link-with-icon" href="#">External link <span class="cf-icon cf-icon-external-link"></span></a>
 </div>
 
 ---
@@ -172,7 +172,7 @@ Use the external link (glyph E610) to emphasize a non-CFPB webpage. External lin
 Use the Email link minicon (glyph E302) to emphasize a <code>mailto</code> link.
 </div>
 <div class="content-50 content-last regular-ex">
-<a href="#">Email us <i class="cf-icon cf-icon-email"></i></a>
+<a class="link-with-icon" href="#">Email us <span class="cf-icon cf-icon-email"></span></a>
 </div>
 
 ---
@@ -183,12 +183,12 @@ Documents minicons can emphasize a link that contains a file or document.
 </div>
 <div class="content-50 content-last regular-ex">
 <ul class="list_links-minicons">
-<li><a href="#">Basic document <i class="cf-icon cf-icon-document"></i></a></li>
-<li><a href="#">PDF document <i class="cf-icon cf-icon-pdf"></i></a></li>
-<li><a href="#">Download <i class="cf-icon cf-icon-download"></i></a></li>
-<li><a href="#">Appendix <i class="cf-icon cf-icon-appendix"></i></a></li>
-<li><a href="#">Supplement <i class="cf-icon cf-icon-supplement"></i></a></li>
-<li><a href="#">Attach <i class="cf-icon cf-icon-attach"></i></a></li>
+<li><a class="link-with-icon" href="#">Basic document <span class="cf-icon cf-icon-document"></span></a></li>
+<li><a class="link-with-icon" href="#">PDF document <span class="cf-icon cf-icon-pdf"></span></a></li>
+<li><a class="link-with-icon" href="#">Download <span class="cf-icon cf-icon-download"></span></a></li>
+<li><a class="link-with-icon" href="#">Appendix <span class="cf-icon cf-icon-appendix"></span></a></li>
+<li><a class="link-with-icon" href="#">Supplement <span class="cf-icon cf-icon-supplement"></span></a></li>
+<li><a class="link-with-icon" href="#">Attach <span class="cf-icon cf-icon-attach"></span></a></li>
 </ul>
 
 </div>

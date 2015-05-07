@@ -21,7 +21,7 @@ Web forms provide an incredible advantage over paper forms in their potential fo
 
 <div class="content-33 content-last">
 
-_This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual)._
+_This guide is adapted from [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual). [More info.](#attribution)_
 
 </div>
 
@@ -53,13 +53,11 @@ All sections are positioned on a single page.
 
 <div class="content-25 content-first">
 
-![Diagram showing all sections on a page](https://www.gov.uk/service-manual/assets/images/designing-transactions/one-page.png)
+![Diagram showing all sections on a page]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms1@2x.png)
 
 </div>
 
-<div class="content-75 content-last">
-
-<div class="content-50 content-first">
+<div class="content-33">
 
 #### The good
 
@@ -71,7 +69,7 @@ All sections are positioned on a single page.
 
 </div>
 
-<div class="content-50 content-last">
+<div class="content-33 content-last">
 
 #### The bad
 
@@ -82,14 +80,13 @@ All sections are positioned on a single page.
 
 </div>
 
-</div> 
 ---
 
-### Option 2 : Wizard
+### Option 2: Wizard
 
 Each section goes on its own page.
 
-![Diagram showing each section on it's own page](https://www.gov.uk/service-manual/assets/images/designing-transactions/wizard.png)
+![Diagram showing each section on its own page]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms2@2x.png)
 
 <div class="content-50 content-first">
 
@@ -129,7 +126,7 @@ All sections on a single page, but each new section only appears once the previo
     * How do you get back to the current question once you've edited a previous one?
     * Do you lose all your answers to questions that follow the one you go back to edit?
 
-![Diagram showing an accordion form](https://www.gov.uk/service-manual/assets/images/designing-transactions/accordion-3.png)
+![Diagram showing an accordion form]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms3@2x.png)
 
 <div class="content-50 content-first">
 
@@ -161,7 +158,7 @@ Done well, this can give you the benefits of both the single page and wizard app
 
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
-![Diagram showing a hybrid form](https://www.gov.uk/service-manual/assets/images/designing-transactions/hybrid.png)
+![Diagram showing a hybrid form]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms4@2x.png)
 
 ## Helping users
 
@@ -209,13 +206,13 @@ This is particularly important for accessibility. If someone is using a screenre
 
 <div class="content-50 content-last">
 
+##### Be descriptive with error text
+Tell the user what caused the error and how to correct it.
+
 ##### Validate fields before the user submits
 Check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error.
 
 Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
-
-##### Be descriptive with error text
-Tell the user what caused the error and how to correct it.
 
 </div> 
 
@@ -262,5 +259,4 @@ Asking for information because 'it might be useful' or 'it helps with our record
 
 ## Attribution
 
-Adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [Gov.uk Service Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
-
+This guide on effective forms has been adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).

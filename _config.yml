@@ -1,8 +1,8 @@
 # Base configuration
 permalink: /:title
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "front"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "src", "node_modules"]
 markdown: kramdown
-pygments: true
+highlighter: pygments
 
 # Organization
 org: CFPB
@@ -22,14 +22,14 @@ baseurl: '/design-manual'
 # Author/Organization info to be displayed in the templates
 author:
   name: The Consumer Financial Protection Bureau
-  url: http://cfpb.github.io/
+  url: https://cfpb.github.io/
 
 repository:
   name: Design Manual
   url: https://github.com/cfpb/design-manual
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
-logourl: 'assets/img/logo_210.png'
+logourl: 'static/img/logo_210.png'
 logoalt: 'Consumer Financial Protection Bureau'
 
 # Kramdown settings
@@ -47,7 +47,7 @@ mainnav:
 - text: Guides
   url: guides/guides.html
   internal: true
-- text: Identity
+- text: Visual identity
   url: identity/identity.html
   internal: true
 - text: UI toolkit
@@ -87,39 +87,39 @@ secondarynav:
 - text: Logo
   url: identity/logo.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Color
   url: identity/color-principles.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Typography
   url: identity/typography.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Minicons
   url: identity/minicons.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Isocons
   url: identity/isocons.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Illustration
   url: identity/illustration.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Beam pattern
   url: identity/beams.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Photography
   url: identity/photography.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Video
   url: identity/video.html
   internal: true
-  category: Identity
+  category: Visual identity
 - text: Buttons
   url: ui-toolkit/buttons.html
   internal: true
@@ -177,5 +177,5 @@ footernav:
   url: index.html
   internal: true
 - text: DOCter Repo
-  url: https://github.com/ascott1/DOCter
+  url: https://github.com/cfpb/DOCter
   internal: false

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Logo
-category: Identity
+category: Visual identity
 published: true
 ---
 
@@ -19,7 +19,7 @@ The CFPB logo was designed to symbolize vigilance, transparency, and a consumer 
 
 <div class="content-33 content-last">
 	
-![Feature logo]({{ site.baseurl }}/assets/img/logo/Logo0_@2.png "CFPB Logo")
+![Feature logo]({{ site.baseurl }}/static/img/logo/Logo0_@2.png "CFPB Logo")
 
 </div>
 
@@ -37,7 +37,7 @@ and website.
 
 <div class="content-50 content-last">
 
-![Horizontal lockup logo]({{ site.baseurl }}/assets/img/logo/Logo1_horizontal-lockup_@2.png "Horizontal lockup logo")
+![Horizontal lockup logo]({{ site.baseurl }}/static/img/logo/Logo1_horizontal-lockup_@2.png "Horizontal lockup logo")
 
 </div>
 
@@ -52,7 +52,7 @@ frames or narrow columns.
 
 <div class="content-50 content-last">
 	
-![Vertical lockup logo]({{ site.baseurl }}/assets/img/logo/Logo1_vertical-lockup_@2.png "Vertical lockup logo")
+![Vertical lockup logo]({{ site.baseurl }}/static/img/logo/Logo1_vertical-lockup_@2.png "Vertical lockup logo")
 
 </div>
 
@@ -71,7 +71,7 @@ clear communication.
 
 <div class="content-50 content-last">
 
-![Isolated logo]({{ site.baseurl }}/assets/img/logo/Logo1_isolated-lockup_@2.png "Isolated logo")
+![Isolated logo]({{ site.baseurl }}/static/img/logo/Logo1_isolated-lockup_@2.png "Isolated logo")
 
 </div>
 
@@ -90,7 +90,7 @@ legible.
 
 <div class="content-67 content-last">
 
-![Small execution logo]({{ site.baseurl }}/assets/img/logo/Logo1_small-execution_@2.png "Small execution logo")
+![Small execution logo]({{ site.baseurl }}/static/img/logo/Logo1_small-execution_@2.png "Small execution logo")
 
 </div>
 
@@ -108,7 +108,7 @@ This is applicable for the horizontal, vertical, and small execution lockups.
 
 <div class="content-50 content-last">
 
-![Spanish logo]({{ site.baseurl }}/assets/img/logo/Logo1_spanish_@2.png "Spanish logo")
+![Spanish logo]({{ site.baseurl }}/static/img/logo/Logo1_spanish_@2.png "Spanish logo")
 
 </div>
 
@@ -122,11 +122,11 @@ When the logo is being produced for print formats conditions may not allow for f
 
 <div class="content-50 content-last">
 
-![One color logo]({{ site.baseurl }}/assets/img/logo/Logo1_one-color_@2.png "One color logo")
+![One color logo]({{ site.baseurl }}/static/img/logo/Logo1_one-color_@2.png "One color logo")
 
 </div>
 
-## Stylistic Guidelines
+## Stylistic guidelines
 
 <div class="content-33 content-first">
 
@@ -142,10 +142,10 @@ There should always be ample space around the logo to ensure maximum impact and 
 #### Isolated logo clear space
 
 <div class="content-50 content-first">
-![Isolated logo clear space]({{ site.baseurl }}/assets/img/logo/Logo2.png "Isolated logo clear space")
+![Isolated logo clear space]({{ site.baseurl }}/static/img/logo/Logo2.png "Isolated logo clear space")
 </div>
 <div class="content-50 content-last">
-![Isolated logo clear space]({{ site.baseurl }}/assets/img/logo/Logo3.png "Isolated logo clear space")
+![Isolated logo clear space]({{ site.baseurl }}/static/img/logo/Logo3.png "Isolated logo clear space")
 </div>
 
 ---
@@ -153,10 +153,10 @@ There should always be ample space around the logo to ensure maximum impact and 
 #### Vertical logo clear space
 
 <div class="content-50 content-first">
-![Vertical logo clear space]({{ site.baseurl }}/assets/img/logo/Logo4.png "Vertical logo clear space")
+![Vertical logo clear space]({{ site.baseurl }}/static/img/logo/Logo4.png "Vertical logo clear space")
 </div>
 <div class="content-50 content-last">
-![Vertical logo clear space]({{ site.baseurl }}/assets/img/logo/Logo5.png "Vertical logo clear space")
+![Vertical logo clear space]({{ site.baseurl }}/static/img/logo/Logo5.png "Vertical logo clear space")
 </div>
 
 ---
@@ -164,10 +164,10 @@ There should always be ample space around the logo to ensure maximum impact and 
 #### Horizontal logo clear space
 
 <div class="content-50 content-first">
-![Horizontal logo clear space]({{ site.baseurl }}/assets/img/logo/Logo6.png "Horizontal logo clear space")
+![Horizontal logo clear space]({{ site.baseurl }}/static/img/logo/Logo6.png "Horizontal logo clear space")
 </div>
 <div class="content-50 content-last">
-![Horizontal logo clear space]({{ site.baseurl }}/assets/img/logo/Logo7.png "Horizontal logo clear space")
+![Horizontal logo clear space]({{ site.baseurl }}/static/img/logo/Logo7.png "Horizontal logo clear space")
 </div>
 
 </div><!-- /.content-67 -->
@@ -185,7 +185,7 @@ The small execution logo should be used to optimize legibility of the logotype o
 <div class="content-50 content-first">
 #### Desktop scale
 
-![Desktop web scale logo]({{ site.baseurl }}/assets/img/logo/Logo9.png "Desktop web scale logo")
+![Desktop web scale logo]({{ site.baseurl }}/static/img/logo/Logo9.png "Desktop web scale logo")
 
 * Lockup: small execution
 * Height: 50px
@@ -196,7 +196,7 @@ The small execution logo should be used to optimize legibility of the logotype o
 <div class="content-50 content-last">
 #### Mobile scale
 
-![Mobile web scale logo]({{ site.baseurl }}/assets/img/logo/Logo10.png "Mobile web scale logo")
+![Mobile web scale logo]({{ site.baseurl }}/static/img/logo/Logo10.png "Mobile web scale logo")
 
 * Lockup: small execution
 * Height: 40px
@@ -219,7 +219,7 @@ The horizontal or vertical lockup should be used for most print applications. Th
 <div class="content-50 content-first">
 #### 8.5 x 11” documents
 
-![8.5 x 11” documents print scale horizontal logo]({{ site.baseurl }}/assets/img/logo/Logo11.png "8.5 x 11” documents print scale horizontal logo")
+![8.5 x 11” documents print scale horizontal logo]({{ site.baseurl }}/static/img/logo/Logo11.png "8.5 x 11” documents print scale horizontal logo")
 
 * Lockup: horizontal
 * Height: 0.5”
@@ -230,7 +230,7 @@ The horizontal or vertical lockup should be used for most print applications. Th
 <div class="content-50 content-last">
 #### 8.5 x 11” documents
 
-![8.5 x 11” documents print scale vertical logo]({{ site.baseurl }}/assets/img/logo/Logo12.png "8.5 x 11” documents print scale vertical logo")
+![8.5 x 11” documents print scale vertical logo]({{ site.baseurl }}/static/img/logo/Logo12.png "8.5 x 11” documents print scale vertical logo")
 
 * Lockup: vertical
 * Height: 0.77”
@@ -252,13 +252,13 @@ to the required clear space.
 <div class="content-67 content-last">
 
 #### Color
-![Complex color backgrounds logo]({{ site.baseurl }}/assets/img/logo/Logo13.png "Complex color backgrounds logo")
+![Complex color backgrounds logo]({{ site.baseurl }}/static/img/logo/Logo13.png "Complex color backgrounds logo")
 
 #### Pattern
-![Complex pattern backgrounds logo]({{ site.baseurl }}/assets/img/logo/Logo14.png "Complex pattern backgrounds logo")
+![Complex pattern backgrounds logo]({{ site.baseurl }}/static/img/logo/Logo14.png "Complex pattern backgrounds logo")
 
 #### Photo
-![Complex photo backgrounds logo]({{ site.baseurl }}/assets/img/logo/Logo15.png "Complex photo backgrounds logo")
+![Complex photo backgrounds logo]({{ site.baseurl }}/static/img/logo/Logo15.png "Complex photo backgrounds logo")
 
 </div><!-- /.content-67 -->
 
@@ -266,96 +266,96 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t remove the light beam. It is essential to the logo.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t remove the light beam. It is essential to the logo.
 
 </div>
 
 <div class="content-67 content-last">
 
 <div class="content-50 content-first">
-![Logo with no beam]({{ site.baseurl }}/assets/img/logo/Logo23.png "Logo with no beam")
+![Logo with no beam]({{ site.baseurl }}/static/img/logo/Logo23.png "Logo with no beam")
 </div>
 
 </div><!-- /.content-67 -->
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t stretch or condense. This weakens the brand.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t stretch or condense. This weakens the brand.
 
 </div><!-- /.content-33 -->
 
 <div class="content-67 content-last">
 
 <div class="content-50 content-first">
-![Stretched logo]({{ site.baseurl }}/assets/img/logo/Logo16.png "Stretched logo")
+![Stretched logo]({{ site.baseurl }}/static/img/logo/Logo16.png "Stretched logo")
 </div>
 <div class="content-50 content-last">
-![Condensed logo]({{ site.baseurl }}/assets/img/logo/Logo24.png "Condensed logo")
+![Condensed logo]({{ site.baseurl }}/static/img/logo/Logo24.png "Condensed logo")
 </div>
 
 </div><!-- /.content-67 -->
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t apply a drop shadow.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t apply a drop shadow.
 
 </div><!-- /.content-33 -->
 
 <div class="content-67 content-last">
 
 <div class="content-50 content-first">
-![Drop shadow logo]({{ site.baseurl }}/assets/img/logo/Logo17.png "Drop shadow logo")
+![Drop shadow logo]({{ site.baseurl }}/static/img/logo/Logo17.png "Drop shadow logo")
 </div>
 
 </div><!-- /.content-67 -->
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t outline the logo or use other colors. This dilutes brand association.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t outline the logo or use other colors. This dilutes brand association.
 
 </div><!-- /.content-33 -->
 
 <div class="content-67 content-last">
 
 <div class="content-50 content-first">
-![Outlined logo]({{ site.baseurl }}/assets/img/logo/Logo25.png "Outlined logo")
+![Outlined logo]({{ site.baseurl }}/static/img/logo/Logo25.png "Outlined logo")
 </div>
 <div class="content-50 content-last">
-![Blue logo]({{ site.baseurl }}/assets/img/logo/Logo18.png "Blue logo")
+![Blue logo]({{ site.baseurl }}/static/img/logo/Logo18.png "Blue logo")
 </div>
 
 </div><!-- /.content-67 -->
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t rotate the symbol. This changes the connotation of the light.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t rotate the symbol. This changes the connotation of the light.
 
 </div><!-- /.content-33 -->
 
 <div class="content-67 content-last">
 
 <div class="content-50 content-first">
-![Rotated logo]({{ site.baseurl }}/assets/img/logo/Logo21.png "Rotated logo")
+![Rotated logo]({{ site.baseurl }}/static/img/logo/Logo21.png "Rotated logo")
 </div>
 <div class="content-50 content-last">
-![Rotated logo]({{ site.baseurl }}/assets/img/logo/Logo22.png "Rotated logo")
+![Rotated logo]({{ site.baseurl }}/static/img/logo/Logo22.png "Rotated logo")
 </div>
 
 </div><!-- /.content-67 -->
 
 <div class="content-33 content-first warning">
 
-<i class="cf-icon cf-icon-delete-round"></i> Don’t place the logo directly on a colored background or photo without a white bounding box.
+<span class="cf-icon cf-icon-delete-round"></span> Don’t place the logo directly on a colored background or photo without a white bounding box.
 
 </div><!-- /.content-33 -->
 
 <div class="content-67 content-last">
 
 <div class="content-50 content-first">
-![Colored box logo]({{ site.baseurl }}/assets/img/logo/Logo20.png "Colored box logo")
+![Colored box logo]({{ site.baseurl }}/static/img/logo/Logo20.png "Colored box logo")
 </div>
 <div class="content-50 content-last">
-![Photo box logo]({{ site.baseurl }}/assets/img/logo/Logo19.png "Photo box logo")
+![Photo box logo]({{ site.baseurl }}/static/img/logo/Logo19.png "Photo box logo")
 </div>
 
 </div><!-- /.content-67 -->

@@ -10,7 +10,7 @@ category: UI toolkit
 
 <div class="content-50 content-first">
 
-Consistent form elements help us quickly design effective web forms. So far we've only developed text inputs, with checkboxes, selects, and radio buttons in the backlog. In the meantime, review our <a href="http://cfpb.github.io/design-manual/guides/effective-forms.html">Effective forms guide</a> for user experience tips. 
+Consistent form elements help us quickly design effective web forms. So far we've only developed text inputs, with checkboxes, selects, and radio buttons in the backlog. In the meantime, review our <a href="https://cfpb.github.io/design-manual/guides/effective-forms.html">Effective forms guide</a> for user experience tips. 
 {: class="lead-in"}
 
 </div>
@@ -19,7 +19,7 @@ Consistent form elements help us quickly design effective web forms. So far we'v
   <h5 class="repo-list-header">Repository</h5>
   <ul class="repo-list">
     <li>
-      <i class="cf-icon cf-icon-github"></i>
+      <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
       <a href="https://github.com/cfpb/cf-forms"><h4>cf-forms</h4></a>
@@ -28,7 +28,7 @@ Consistent form elements help us quickly design effective web forms. So far we'v
   </ul>
 </div>   
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-forms/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -68,7 +68,7 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 </div> 
 
-<h2 id="states">States<span class="cf-code-link"><a href="http://cfpb.github.io/cf-forms/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -119,7 +119,7 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 {::nomarkdown} 
 <input class="error" type="text" value="Invalid input">
-<i class="icon-remove-sign cf-form_input-icon" role="alert"><span class="jekyll-bug" ></span></i>
+<span class="cf-icon cf-icon-delete-round cf-form_input-icon" role="alert"></span>
 {:/nomarkdown}
 
 </div> 
@@ -139,9 +139,9 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 {::nomarkdown} 
 <input class="success" type="text" value="Validated input">
-<i class="icon-ok-sign cf-form_input-icon"><span class="jekyll-bug"></span></i>
+<span class="cf-icon cf-icon-approved-round cf-form_input-icon"></span>
 {:/nomarkdown}
 
 </div> 
 
-<!-- <h2 id="variations">Variations<span class="cf-code-link"><a href="http://cfpb.github.io/cf-forms/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2> -->
+<!-- <h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2> -->

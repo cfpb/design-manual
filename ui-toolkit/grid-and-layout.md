@@ -21,25 +21,25 @@ The grid provides structure for website content. The flexible design adjusts for
       <i class="cf-icon cf-icon-github"></i>
     </li>
     <li>
-      <a href="http://github.com/cfpb/cf-grid"><h4>cf-grid</h4></a>
+      <a href="https://github.com/cfpb/cf-grid"><h4>cf-grid</h4></a>
       <p>Grid in the Capital Framework</p>
     </li>
   </ul>
 </div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="http://cfpb.github.io/cf-grid/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
-
-{::nomarkdown}
-<div class="grid-demo cols-12">
+<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-grid/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 Twelve-column grid with flexible column widths and fixed gutters. The width of the padding on the left and right edge of the grid depends on device size. 
+
 * 30px fixed gutter width
 * Max width 1200px, background colors may bleed to edge
 * Desktop: 60px padding
 * Portrait tablet: 30px padding
 * Portrait phone: 15px padding
-    
-</div>
+
+{::nomarkdown}    
+
+<div class="grid-demo cols-12">
 
     <section>
         <div class="col col-1"><p>one</p></div>
