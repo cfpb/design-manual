@@ -253,6 +253,21 @@ abcdefghijklmnopqrstuvwxyz
 
 <div class="content-33 content-first">
 
+#### Subheader
+
+* Avenir Next Regular
+* 18 px / 22 px line height
+
+</div>
+
+<div class="content-67 content-last">
+
+<p class="subheader">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
+
+</div>
+
+<div class="content-33 content-first">
+
 #### Body (sans-serif)
 
 * Avenir Next Regular
