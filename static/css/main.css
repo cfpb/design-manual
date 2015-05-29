@@ -10041,19 +10041,6 @@ figure {
   border-bottom: none;
   color: #7fb8e6;
 }
-.content p {
-  font-family: Georgia, "Times New Roman", serif;
-}
-.content p em,
-.content p i {
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-}
-.content p strong,
-.content p b {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: bold;
-}
 .content .lead-in {
   font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
   font-style: normal;
