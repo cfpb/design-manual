@@ -573,7 +573,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 #### Header 2
 
 * Avenir Next Regular
-* 28 pt / 26 pt
+* 26 pt / 28 pt
 
 </div>
 
