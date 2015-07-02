@@ -196,9 +196,6 @@ We work through open issues in monthly sprints. These milestone helps us priorit
 #### Second Level
 These issues may not be as high of a priority as the monthly sprint but they are issues being actively discussed and worked on. We consider these items to be “next in line.”
 
-#### Publish
-These issues have received approval and need to be added to the asset libraries, to Capital Framework, to the Design Manual, or some combination of the three. 
-
 ### Labels
 
 #### Step one: Label by classification
