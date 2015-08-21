@@ -74,7 +74,7 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 #### Normal
 
-* Gray 1px solid border
+* Gray 2px solid border
 
 </div>
 
@@ -92,7 +92,7 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 #### Focus
 
-* Pacific Blue 1px solid border
+* Pacific Blue 2px solid border
 
 </div>
 
@@ -110,7 +110,7 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 #### Error
 
-* Red Orange 1px solid border
+* Red Orange 2px solid border
 * Error minicon
 
 </div>
@@ -130,7 +130,7 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 #### Success
 
-* CFPB Green 1px solid border
+* CFPB Green 2px solid border
 * Success minicon
 
 </div>

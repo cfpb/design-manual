@@ -253,6 +253,21 @@ abcdefghijklmnopqrstuvwxyz
 
 <div class="content-33 content-first">
 
+#### Subheader
+
+* Avenir Next Regular
+* 18 px / 22 px line height
+
+</div>
+
+<div class="content-67 content-last">
+
+<p class="subheader">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
+
+</div>
+
+<div class="content-33 content-first">
+
 #### Body (sans-serif)
 
 * Avenir Next Regular
@@ -432,6 +447,7 @@ Accessible text and background color combinations are shown below:
         <li class="type-color-combo__white-on-darkgray">White on Dark Gray</li>
         <li class="type-color-combo__black-on-gray10">CFPB Black on Gray 10%</li>
         <li class="type-color-combo__black-on-gray5">CFPB Black on Gray 5%</li>
+        <li class="type-color-combo__pacific-on-gray5">Pacific on Gray 5%</li>
         <li class="type-color-combo__black-on-greenmid">CFPB Black on Green Midtone</li>
         <li class="type-color-combo__black-on-greentint">CFPB Black on Green Tint</li>
     </ul>
@@ -557,7 +573,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 #### Header 2
 
 * Avenir Next Regular
-* 28 pt / 26 pt
+* 26 pt / 28 pt
 
 </div>
 

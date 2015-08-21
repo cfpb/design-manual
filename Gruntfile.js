@@ -328,9 +328,17 @@ module.exports = function(grunt) {
      * Add files to monitor below.
      */
     watch: {
-      default: {
-        files: ['Gruntfile.js', '<%= loc.src %>/static/css/**/*.less', '<%= loc.src %>/static/js/**/*.js'],
-        tasks: ['default']
+      css: {
+        files: ['<%= loc.src %>/static/css/**/*.less'],
+        tasks: ['css']
+      },
+      js: {
+        files: ['Gruntfile.js', '<%= loc.src %>/static/js/**/*.js'],
+        tasks: ['js']
+      },
+      content: {
+        files: ['**/*.html', '/downloads/*.md', '/guides/*.md', '/identity/*.md', '/ui-toolkit/*.md'],
+        tasks: ['copy']
       }
     }
 
@@ -353,8 +361,8 @@ module.exports = function(grunt) {
    * Create custom task aliases and combinations.
    */
   grunt.registerTask('compile-cf', ['bower:cf', 'concat:cf-less', 'concat:topdocIcons']);
-  grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css']);
-  grunt.registerTask('js', ['concat:js', 'uglify', 'usebanner:js']);
+  grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css', 'copy']);
+  grunt.registerTask('js', ['concat:js', 'uglify', 'usebanner:js', 'copy']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('build', ['test', 'css', 'js', 'copy']);
   grunt.registerTask('default', ['build']);

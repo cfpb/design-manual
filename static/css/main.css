@@ -2,11 +2,11 @@
 /* ==========================================================================
    design-manual
    ========================================================================== */
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
  */
 html {
   font-family: sans-serif;
@@ -68,7 +68,7 @@ audio:not([controls]) {
 }
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
 [hidden],
 template {
@@ -83,7 +83,8 @@ a {
   background-color: transparent;
 }
 /**
- * Improve readability when focused and also mouse hovered in all browsers.
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
  */
 a:active,
 a:hover {
@@ -295,14 +296,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  /* 2 */
   box-sizing: content-box;
+  /* 2 */
 }
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
@@ -558,75 +558,75 @@ input[type="radio"] {
    Button Styling
    ========================================================================== */
 /* topdoc
-    name: Theme variables
-    family: cf-buttons
+  name: Theme variables
+  family: cf-buttons
+  notes:
+    - "The following color and sizing variables are exposed, allowing you to
+       easily override them before compiling."
+  patterns:
+  - name: Colors
+    codenotes:
+      - |
+        @btn-text
+        @btn-bg
+        @btn-bg-hover
+        @btn-bg-active
+        @btn__secondary-text
+        @btn__secondary-bg
+        @btn__secondary-bg-hover
+        @btn__secondary-bg-active
+        @btn__warning-text
+        @btn__warning-bg
+        @btn__warning-bg-hover
+        @btn__warning-bg-active
+        @btn__disabled-text
+        @btn__disabled-bg
+        @btn__disabled-outline
+  - name: Sizing
+    codenotes:
+      - |
+        @btn-font-size
+        @btn-v-padding
+        @btn-v-padding-modifier-ie
+        @super-btn-font-size
     notes:
-      - "The following color and sizing variables are exposed, allowing you to
-         easily override them before compiling."
-    patterns:
-    - name: Colors
-      codenotes:
-        - |
-          @btn-text
-          @btn-bg
-          @btn-bg-hover
-          @btn-bg-active
-          @btn__secondary-text
-          @btn__secondary-bg
-          @btn__secondary-bg-hover
-          @btn__secondary-bg-active
-          @btn__warning-text
-          @btn__warning-bg
-          @btn__warning-bg-hover
-          @btn__warning-bg-active
-          @btn__disabled-text
-          @btn__disabled-bg
-          @btn__disabled-outline
-    - name: Sizing
-      codenotes:
-        - |
-          @btn-font-size
-          @btn-v-padding
-          @btn-v-padding-modifier-ie
-          @super-btn-font-size
-      notes:
-        - "@btn-v-padding-modifier-ie is used to fix the vertical padding bug in
-           IE for <button>'s and <inputs>'s across various .btn styles.
-           We should revisit this after adding normalize.css to see if this is
-           still needed."
-    tags:
-    - cf-buttons
-    - less
+      - "@btn-v-padding-modifier-ie is used to fix the vertical padding bug in
+         IE for <button>'s and <inputs>'s across various .btn styles.
+         We should revisit this after adding normalize.css to see if this is
+         still needed."
+  tags:
+  - cf-buttons
+  - less
 */
 /* topdoc
-    name: Default button
-    family: cf-buttons
-    notes:
-      - "Note that the .visited, .hover, .focus, .active classes are for
-         demonstration purposes only and should not be used in production."
-    patterns:
-    - name: Default state
-      markup: |
-        <a href="#" class="btn">Anchor Tag</a>
-        <button class="btn">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn">
-    - name: Hovered state
-      markup: |
-        <a href="#" class="btn hover">Anchor Tag</a>
-        <button class="btn hover">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn hover">
-    - name: Focused state
-      markup: |
-        <a href="#" class="btn focus">Anchor Tag</a>
-        <button class="btn focus">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn focus">
-    - name: Active state
-      markup: |
-        <a href="#" class="btn active">Anchor Tag</a>
-        <button class="btn active">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn active">
-    tags:
-    - cf-buttons
+  name: Default button
+  family: cf-buttons
+  notes:
+    - "Note that the .visited, .hover, .focus, .active classes are for
+       demonstration purposes only and should not be used in production."
+  patterns:
+  - name: Default state
+    markup: |
+      <a href="#" class="btn">Anchor Tag</a>
+      <button class="btn">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn">
+  - name: Hovered state
+    markup: |
+      <a href="#" class="btn hover">Anchor Tag</a>
+      <button class="btn hover">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn hover">
+  - name: Focused state
+    markup: |
+      <a href="#" class="btn focus">Anchor Tag</a>
+      <button class="btn focus">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn focus">
+  - name: Active state
+    markup: |
+      <a href="#" class="btn active">Anchor Tag</a>
+      <button class="btn active">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn active">
+  tags:
+  - cf-buttons
 */
 .btn {
   display: inline-block;
@@ -643,7 +643,7 @@ input[type="radio"] {
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
-  transition: .1s;
+  transition: background-color 0.1s;
   -webkit-appearance: none;
 }
 .lt-ie9 .btn {
@@ -686,34 +686,34 @@ input.btn::-moz-focus-inner {
   padding-bottom: 0.45714286em;
 }
 /* topdoc
-    name: Secondary button
-    family: cf-buttons
-    notes:
-      - "Note that the .visited, .hover, .focus, .active classes are for
-         demonstration purposes only and should not be used in production."
-    patterns:
-    - name: Default state
-      markup: |
-        <a href="#" class="btn btn__secondary">Anchor Tag</a>
-        <button class="btn btn__secondary">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__secondary">
-    - name: Hovered state
-      markup: |
-        <a href="#" class="btn btn__secondary hover">Anchor Tag</a>
-        <button class="btn btn__secondary hover">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__secondary hover">
-    - name: Focused state
-      markup: |
-        <a href="#" class="btn btn__secondary focus">Anchor Tag</a>
-        <button class="btn btn__secondary focus">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__secondary focus">
-    - name: Active state
-      markup: |
-        <a href="#" class="btn btn__secondary active">Anchor Tag</a>
-        <button class="btn btn__secondary active">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__secondary active">
-    tags:
-    - cf-buttons
+  name: Secondary button
+  family: cf-buttons
+  notes:
+    - "Note that the .visited, .hover, .focus, .active classes are for
+       demonstration purposes only and should not be used in production."
+  patterns:
+  - name: Default state
+    markup: |
+      <a href="#" class="btn btn__secondary">Anchor Tag</a>
+      <button class="btn btn__secondary">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__secondary">
+  - name: Hovered state
+    markup: |
+      <a href="#" class="btn btn__secondary hover">Anchor Tag</a>
+      <button class="btn btn__secondary hover">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__secondary hover">
+  - name: Focused state
+    markup: |
+      <a href="#" class="btn btn__secondary focus">Anchor Tag</a>
+      <button class="btn btn__secondary focus">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__secondary focus">
+  - name: Active state
+    markup: |
+      <a href="#" class="btn btn__secondary active">Anchor Tag</a>
+      <button class="btn btn__secondary active">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__secondary active">
+  tags:
+  - cf-buttons
 */
 .btn__secondary,
 .btn__secondary:link,
@@ -735,34 +735,34 @@ input.btn::-moz-focus-inner {
   background-color: #43484e;
 }
 /* topdoc
-    name: Destructive action button
-    family: cf-buttons
-    notes:
-      - "Note that the .visited, .hover, .focus, .active classes are for
-         demonstration purposes only and should not be used in production."
-    patterns:
-    - name: Default state
-      markup: |
-        <a href="#" class="btn btn__warning">Anchor Tag</a>
-        <button class="btn btn__warning">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__warning">
-    - name: Hovered state
-      markup: |
-        <a href="#" class="btn btn__warning hover">Anchor Tag</a>
-        <button class="btn btn__warning hover">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__warning hover">
-    - name: Focused state
-      markup: |
-        <a href="#" class="btn btn__warning focus">Anchor Tag</a>
-        <button class="btn btn__warning focus">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__warning focus">
-    - name: Active state
-      markup: |
-        <a href="#" class="btn btn__warning active">Anchor Tag</a>
-        <button class="btn btn__warning active">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__warning active">
-    tags:
-    - cf-buttons
+  name: Destructive action button
+  family: cf-buttons
+  notes:
+    - "Note that the .visited, .hover, .focus, .active classes are for
+       demonstration purposes only and should not be used in production."
+  patterns:
+  - name: Default state
+    markup: |
+      <a href="#" class="btn btn__warning">Anchor Tag</a>
+      <button class="btn btn__warning">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__warning">
+  - name: Hovered state
+    markup: |
+      <a href="#" class="btn btn__warning hover">Anchor Tag</a>
+      <button class="btn btn__warning hover">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__warning hover">
+  - name: Focused state
+    markup: |
+      <a href="#" class="btn btn__warning focus">Anchor Tag</a>
+      <button class="btn btn__warning focus">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__warning focus">
+  - name: Active state
+    markup: |
+      <a href="#" class="btn btn__warning active">Anchor Tag</a>
+      <button class="btn btn__warning active">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__warning active">
+  tags:
+  - cf-buttons
 */
 .btn__warning,
 .btn__warning:link,
@@ -784,26 +784,26 @@ input.btn::-moz-focus-inner {
   background-color: #9c301b;
 }
 /* topdoc
-    name: Disabled button
-    family: cf-buttons
-    notes:
-      - "Disabled buttons do not contain separate hover and active states since
-         they should not be interacted with."
-      - "Note that the .focus class is for demonstration purposes only and
-         should not be used in production."
-    patterns:
-    - name: Default/hovered/active state
-      markup: |
-        <a href="#" class="btn btn__disabled">Anchor Tag</a>
-        <button class="btn btn__disabled">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__disabled">
-    - name: Focused state
-      markup: |
-        <a href="#" class="btn btn__disabled focus">Anchor Tag</a>
-        <button class="btn btn__disabled focus">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__disabled focus">
-    tags:
-    - cf-buttons
+  name: Disabled button
+  family: cf-buttons
+  notes:
+    - "Disabled buttons do not contain separate hover and active states since
+       they should not be interacted with."
+    - "Note that the .focus class is for demonstration purposes only and
+       should not be used in production."
+  patterns:
+  - name: Default/hovered/active state
+    markup: |
+      <a href="#" class="btn btn__disabled">Anchor Tag</a>
+      <button class="btn btn__disabled">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__disabled">
+  - name: Focused state
+    markup: |
+      <a href="#" class="btn btn__disabled focus">Anchor Tag</a>
+      <button class="btn btn__disabled focus">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__disabled focus">
+  tags:
+  - cf-buttons
 */
 .btn__disabled,
 .btn__disabled:link,
@@ -824,31 +824,31 @@ input.btn::-moz-focus-inner {
   outline-color: #e3e4e5;
 }
 /* topdoc
-    name: Super button
-    family: cf-buttons
-    patterns:
-    - name: Default state
-      markup: |
-        <a href="#" class="btn btn__super">Anchor Tag</a>
-        <button class="btn btn__super">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__super">
-    - name: Hovered state
-      markup: |
-        <a href="#" class="btn btn__super hover">Anchor Tag</a>
-        <button class="btn btn__super hover">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__super hover">
-    - name: Focused state
-      markup: |
-        <a href="#" class="btn btn__super focus">Anchor Tag</a>
-        <button class="btn btn__super focus">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__super focus">
-    - name: Active state
-      markup: |
-        <a href="#" class="btn btn__super active">Anchor Tag</a>
-        <button class="btn btn__super active">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn__super active">
-    tags:
-    - cf-buttons
+  name: Super button
+  family: cf-buttons
+  patterns:
+  - name: Default state
+    markup: |
+      <a href="#" class="btn btn__super">Anchor Tag</a>
+      <button class="btn btn__super">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__super">
+  - name: Hovered state
+    markup: |
+      <a href="#" class="btn btn__super hover">Anchor Tag</a>
+      <button class="btn btn__super hover">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__super hover">
+  - name: Focused state
+    markup: |
+      <a href="#" class="btn btn__super focus">Anchor Tag</a>
+      <button class="btn btn__super focus">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__super focus">
+  - name: Active state
+    markup: |
+      <a href="#" class="btn btn__super active">Anchor Tag</a>
+      <button class="btn btn__super active">Button Tag</button>
+      <input type="submit" value="Input Tag" class="btn btn__super active">
+  tags:
+  - cf-buttons
 */
 .btn__super {
   padding: 0.61111111em 1.61111111em;
@@ -863,105 +863,105 @@ input.btn::-moz-focus-inner {
   padding-bottom: 0.66666667em;
 }
 /* topdoc
-    name: Button with icons
-    family: cf-buttons
-    patterns:
-    - name: Button icon left
-      markup: |
-        <a href="#" class="btn">
-            <span class="btn_icon__left cf-icon cf-icon-left"></span>
-            Anchor Tag
-        </a>
-        <button class="btn">
-            <span class="btn_icon__left cf-icon cf-icon-left"></span>
-            Button Tag
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__secondary">
-            <span class="btn_icon__left cf-icon cf-icon-left"></span>
-            Anchor Tag
-        </a>
-        <button class="btn btn__secondary">
-            <span class="btn_icon__left cf-icon cf-icon-left"></span>
-            Button Tag
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__warning">
-            <span class="btn_icon__left cf-icon cf-icon-left"></span>
-            Anchor Tag
-        </a>
-        <button class="btn btn__warning">
-            <span class="btn_icon__left cf-icon cf-icon-left"></span>
-            Button Tag
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__disabled">
-            <span class="btn_icon__left cf-icon cf-icon-left"></span>
-            Anchor Tag
-        </a>
-        <button class="btn btn__disabled">
-            <span class="btn_icon__left cf-icon cf-icon-left"></span>
-            Button Tag
-        </button>
-    - name: Button icon right
-      markup: |
-        <a href="#" class="btn">
-            Anchor Tag
-            <span class="btn_icon__right cf-icon cf-icon-right"></span>
-        </a>
-        <button class="btn">
-            Button Tag
-            <span class="btn_icon__right cf-icon cf-icon-right"></span>
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__secondary">
-            Anchor Tag
-            <span class="btn_icon__right cf-icon cf-icon-right"></span>
-        </a>
-        <button class="btn btn__secondary">
-            Button Tag
-            <span class="btn_icon__right cf-icon cf-icon-right"></span>
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__warning">
-            Anchor Tag
-            <span class="btn_icon__right cf-icon cf-icon-right"></span>
-        </a>
-        <button class="btn btn__warning">
-            Button Tag
-            <span class="btn_icon__right cf-icon cf-icon-right"></span>
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__disabled">
-            Anchor Tag
-            <span class="btn_icon__right cf-icon cf-icon-right"></span>
-        </a>
-        <button class="btn btn__disabled">
-            Button Tag
-            <span class="btn_icon__right cf-icon cf-icon-right"></span>
-        </button>
-    - name: Just an icon
-      markup: |
-        <a href="#" class="btn">
-            <span class="u-visually-hidden">Search</span>
-            <span class="cf-icon cf-icon-search"></span>
-        </a>
-        <button class="btn">
-            <span class="u-visually-hidden">Search</span>
-            <span class="cf-icon cf-icon-search"></span>
-        </button>
-      notes:
-        - "For accessibility please use the .u-visually-hidden utility class
-           to add hidden text for screen readers."
-    tags:
-    - cf-buttons
-    - fj-icons
+  name: Button with icons
+  family: cf-buttons
+  patterns:
+  - name: Button icon left
+    markup: |
+      <a href="#" class="btn">
+          <span class="btn_icon__left cf-icon cf-icon-left"></span>
+          Anchor Tag
+      </a>
+      <button class="btn">
+          <span class="btn_icon__left cf-icon cf-icon-left"></span>
+          Button Tag
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__secondary">
+          <span class="btn_icon__left cf-icon cf-icon-left"></span>
+          Anchor Tag
+      </a>
+      <button class="btn btn__secondary">
+          <span class="btn_icon__left cf-icon cf-icon-left"></span>
+          Button Tag
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__warning">
+          <span class="btn_icon__left cf-icon cf-icon-left"></span>
+          Anchor Tag
+      </a>
+      <button class="btn btn__warning">
+          <span class="btn_icon__left cf-icon cf-icon-left"></span>
+          Button Tag
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__disabled">
+          <span class="btn_icon__left cf-icon cf-icon-left"></span>
+          Anchor Tag
+      </a>
+      <button class="btn btn__disabled">
+          <span class="btn_icon__left cf-icon cf-icon-left"></span>
+          Button Tag
+      </button>
+  - name: Button icon right
+    markup: |
+      <a href="#" class="btn">
+          Anchor Tag
+          <span class="btn_icon__right cf-icon cf-icon-right"></span>
+      </a>
+      <button class="btn">
+          Button Tag
+          <span class="btn_icon__right cf-icon cf-icon-right"></span>
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__secondary">
+          Anchor Tag
+          <span class="btn_icon__right cf-icon cf-icon-right"></span>
+      </a>
+      <button class="btn btn__secondary">
+          Button Tag
+          <span class="btn_icon__right cf-icon cf-icon-right"></span>
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__warning">
+          Anchor Tag
+          <span class="btn_icon__right cf-icon cf-icon-right"></span>
+      </a>
+      <button class="btn btn__warning">
+          Button Tag
+          <span class="btn_icon__right cf-icon cf-icon-right"></span>
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__disabled">
+          Anchor Tag
+          <span class="btn_icon__right cf-icon cf-icon-right"></span>
+      </a>
+      <button class="btn btn__disabled">
+          Button Tag
+          <span class="btn_icon__right cf-icon cf-icon-right"></span>
+      </button>
+  - name: Just an icon
+    markup: |
+      <a href="#" class="btn">
+          <span class="u-visually-hidden">Search</span>
+          <span class="cf-icon cf-icon-search"></span>
+      </a>
+      <button class="btn">
+          <span class="u-visually-hidden">Search</span>
+          <span class="cf-icon cf-icon-search"></span>
+      </button>
+    notes:
+      - "For accessibility please use the .u-visually-hidden utility class
+         to add hidden text for screen readers."
+  tags:
+  - cf-buttons
+  - fj-icons
 */
 .btn_icon__left {
   padding: 0 0.75em 0 0;
@@ -1001,41 +1001,41 @@ input.btn::-moz-focus-inner {
   border-left-color: rgba(117, 120, 123, 0.4);
 }
 /* topdoc
-    name: Button group modifiers
-    family: cf-buttons
-    patterns:
-    - name: Default buttons in a button group
-      markup: |
-        <a href="#" class="btn btn__grouped-first">Anchor 1</a>
-        <a href="#" class="btn btn__grouped">Anchor 2</a>
-        <a href="#" class="btn btn__grouped-last">Anchor 3</a>
-        <br>
-        <br>
-        <button class="btn btn__grouped-first">Button 1</button>
-        <button class="btn btn__grouped">Button 2</button>
-        <button class="btn btn__grouped-last">Button 3</button>
-        <br>
-        <br>
-        <input type="button" value="Input 1" class="btn btn__grouped-first">
-        <input type="button" value="Input 2" class="btn btn__grouped">
-        <input type="button" value="Input 3" class="btn btn__grouped-last">
-    - name: Super buttons in a button group
-      markup: |
-        <a href="#" class="btn btn__grouped-first btn__super">Anchor 1</a>
-        <a href="#" class="btn btn__grouped btn__super">Anchor 2</a>
-        <a href="#" class="btn btn__grouped-last btn__super">Anchor 3</a>
-        <br>
-        <br>
-        <button class="btn btn__grouped-first btn__super">Button 1</button>
-        <button class="btn btn__grouped btn__super">Button 2</button>
-        <button class="btn btn__grouped-last btn__super">Button 3</button>
-        <br>
-        <br>
-        <input type="button" value="Input 1" class="btn btn__grouped-first btn__super">
-        <input type="button" value="Input 2" class="btn btn__grouped btn__super">
-        <input type="button" value="Input 3" class="btn btn__grouped-last btn__super">
-    tags:
-    - cf-buttons
+  name: Button group modifiers
+  family: cf-buttons
+  patterns:
+  - name: Default buttons in a button group
+    markup: |
+      <a href="#" class="btn btn__grouped-first">Anchor 1</a>
+      <a href="#" class="btn btn__grouped">Anchor 2</a>
+      <a href="#" class="btn btn__grouped-last">Anchor 3</a>
+      <br>
+      <br>
+      <button class="btn btn__grouped-first">Button 1</button>
+      <button class="btn btn__grouped">Button 2</button>
+      <button class="btn btn__grouped-last">Button 3</button>
+      <br>
+      <br>
+      <input type="button" value="Input 1" class="btn btn__grouped-first">
+      <input type="button" value="Input 2" class="btn btn__grouped">
+      <input type="button" value="Input 3" class="btn btn__grouped-last">
+  - name: Super buttons in a button group
+    markup: |
+      <a href="#" class="btn btn__grouped-first btn__super">Anchor 1</a>
+      <a href="#" class="btn btn__grouped btn__super">Anchor 2</a>
+      <a href="#" class="btn btn__grouped-last btn__super">Anchor 3</a>
+      <br>
+      <br>
+      <button class="btn btn__grouped-first btn__super">Button 1</button>
+      <button class="btn btn__grouped btn__super">Button 2</button>
+      <button class="btn btn__grouped-last btn__super">Button 3</button>
+      <br>
+      <br>
+      <input type="button" value="Input 1" class="btn btn__grouped-first btn__super">
+      <input type="button" value="Input 2" class="btn btn__grouped btn__super">
+      <input type="button" value="Input 3" class="btn btn__grouped-last btn__super">
+  tags:
+  - cf-buttons
 */
 .btn__grouped {
   border-radius: 0;
@@ -1065,77 +1065,77 @@ input.btn::-moz-focus-inner {
   margin-left: -0.16666667em;
 }
 /* topdoc
-    name: Compound button
-    family: cf-buttons
-    notes:
-      - "This pattern requires combining .btn__grouped modifiers with
-         the .btn__compound-action modifier."
-      - "Note that the .visited, .hover, .focus, .active classes are for
-         demonstration purposes only and should not be used in production."
-    patterns:
-    - name: All button styles
-      markup: |
-        <a href="#" class="btn btn__grouped-first">Anchor</a>
-        <a href="#" class="btn btn__grouped-last btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </a>
-        <br>
-        <br>
-        <button class="btn btn__grouped-first">Button</button>
-        <button class="btn btn__grouped-last btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__grouped-first btn__secondary">Anchor</a>
-        <a href="#" class="btn btn__grouped-last btn__secondary btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </a>
-        <br>
-        <br>
-        <button class="btn btn__grouped-first btn__secondary">Button</button>
-        <button class="btn btn__grouped-last btn__secondary btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__grouped-first btn__warning">Anchor</a>
-        <a href="#" class="btn btn__grouped-last btn__warning btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </a>
-        <br>
-        <br>
-        <button class="btn btn__grouped-first btn__warning">Button</button>
-        <button class="btn btn__grouped-last btn__warning btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__grouped-first btn__disabled">Anchor</a>
-        <a href="#" class="btn btn__grouped-last btn__disabled btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </a>
-        <br>
-        <br>
-        <button class="btn btn__grouped-first btn__disabled">Button</button>
-        <button class="btn btn__grouped-last btn__disabled btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </button>
-        <br>
-        <br>
-        <a href="#" class="btn btn__grouped-first btn__super">Anchor</a>
-        <a href="#" class="btn btn__grouped-last btn__super btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </a>
-        <br>
-        <br>
-        <button class="btn btn__grouped-first btn__super">Button</button>
-        <button class="btn btn__grouped-last btn__super btn__compound-action">
-            <span class="cf-icon cf-icon-down btn__grouped-last"></span>
-        </button>
-    tags:
-    - cf-buttons
-    - fj-icons
+  name: Compound button
+  family: cf-buttons
+  notes:
+    - "This pattern requires combining .btn__grouped modifiers with
+       the .btn__compound-action modifier."
+    - "Note that the .visited, .hover, .focus, .active classes are for
+       demonstration purposes only and should not be used in production."
+  patterns:
+  - name: All button styles
+    markup: |
+      <a href="#" class="btn btn__grouped-first">Anchor</a>
+      <a href="#" class="btn btn__grouped-last btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </a>
+      <br>
+      <br>
+      <button class="btn btn__grouped-first">Button</button>
+      <button class="btn btn__grouped-last btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__grouped-first btn__secondary">Anchor</a>
+      <a href="#" class="btn btn__grouped-last btn__secondary btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </a>
+      <br>
+      <br>
+      <button class="btn btn__grouped-first btn__secondary">Button</button>
+      <button class="btn btn__grouped-last btn__secondary btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__grouped-first btn__warning">Anchor</a>
+      <a href="#" class="btn btn__grouped-last btn__warning btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </a>
+      <br>
+      <br>
+      <button class="btn btn__grouped-first btn__warning">Button</button>
+      <button class="btn btn__grouped-last btn__warning btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__grouped-first btn__disabled">Anchor</a>
+      <a href="#" class="btn btn__grouped-last btn__disabled btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </a>
+      <br>
+      <br>
+      <button class="btn btn__grouped-first btn__disabled">Button</button>
+      <button class="btn btn__grouped-last btn__disabled btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </button>
+      <br>
+      <br>
+      <a href="#" class="btn btn__grouped-first btn__super">Anchor</a>
+      <a href="#" class="btn btn__grouped-last btn__super btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </a>
+      <br>
+      <br>
+      <button class="btn btn__grouped-first btn__super">Button</button>
+      <button class="btn btn__grouped-last btn__super btn__compound-action">
+          <span class="cf-icon cf-icon-down btn__grouped-last"></span>
+      </button>
+  tags:
+  - cf-buttons
+  - fj-icons
 */
 .btn__compound-action,
 .btn__compound-action:link,
@@ -1174,34 +1174,34 @@ input.btn::-moz-focus-inner {
   padding-right: 1.22222222em;
 }
 /* topdoc
-    name: Button link
-    family: cf-buttons
-    notes:
-      - "Note that the .visited, .hover, .focus, .active classes are for
-         demonstration purposes only and should not be used in production."
-    patterns:
-    - name: Default state
-      markup: |
-        <a href="#" class="btn btn__link">Anchor Tag</a>
-        <button class="btn btn__link">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link">
-    - name: Hovered state
-      markup: |
-        <a href="#" class="btn btn__link hover">Anchor Tag</a>
-        <button class="btn btn__link hover">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link hover">
-    - name: Focused state
-      markup: |
-        <a href="#" class="btn btn__link focus">Anchor Tag</a>
-        <button class="btn btn__link focus">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link focus">
-    - name: Active state
-      markup: |
-        <a href="#" class="btn btn__link active">Anchor Tag</a>
-        <button class="btn btn__link active">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link active">
-    tags:
-    - cf-buttons
+  name: Button link
+  family: cf-buttons
+  notes:
+    - "Note that the .visited, .hover, .focus, .active classes are for
+       demonstration purposes only and should not be used in production."
+  patterns:
+  - name: Default state
+    markup: |
+      <a href="#" class="btn btn__link">Anchor Tag</a>
+      <button class="btn btn__link">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link">
+  - name: Hovered state
+    markup: |
+      <a href="#" class="btn btn__link hover">Anchor Tag</a>
+      <button class="btn btn__link hover">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link hover">
+  - name: Focused state
+    markup: |
+      <a href="#" class="btn btn__link focus">Anchor Tag</a>
+      <button class="btn btn__link focus">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link focus">
+  - name: Active state
+    markup: |
+      <a href="#" class="btn btn__link active">Anchor Tag</a>
+      <button class="btn btn__link active">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link active">
+  tags:
+  - cf-buttons
 */
 .btn__link {
   padding: 0;
@@ -1212,15 +1212,15 @@ input.btn::-moz-focus-inner {
 .btn__link,
 .btn__link:link,
 .btn__link:visited {
-  border-bottom-color: #0072ce;
+  border-bottom-color: #005e5d;
   background-color: transparent;
-  color: #0072ce;
+  color: #005e5d;
 }
 .btn__link:hover,
 .btn__link.hover {
-  border-bottom: 1px solid #328ed8;
+  border-bottom: 1px solid #7fb8e6;
   background-color: transparent;
-  color: #328ed8;
+  color: #7fb8e6;
 }
 .btn__link:focus,
 .btn__link.focus {
@@ -1230,43 +1230,43 @@ input.btn::-moz-focus-inner {
 }
 .btn__link:active,
 .btn__link.active {
-  border-bottom: 1px solid #33578e;
+  border-bottom: 1px solid #002d72;
   background-color: transparent;
-  color: #33578e;
+  color: #002d72;
 }
 .lt-ie8 button.btn__link,
 .lt-ie8 input.btn__link {
   padding: 0;
 }
 /* topdoc
-    name: Secondary button link
-    family: cf-buttons
-    notes:
-      - "Note that the .visited, .hover, .focus, .active classes are for
-         demonstration purposes only and should not be used in production."
-    patterns:
-    - name: Default state
-      markup: |
-        <a href="#" class="btn btn__link btn__secondary">Anchor Tag</a>
-        <button class="btn btn__link btn__secondary">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link btn__secondary">
-    - name: Hovered state
-      markup: |
-        <a href="#" class="btn btn__link btn__secondary hover">Anchor Tag</a>
-        <button class="btn btn__link btn__secondary hover">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link btn__secondary hover">
-    - name: Focused state
-      markup: |
-        <a href="#" class="btn btn__link btn__secondary focus">Anchor Tag</a>
-        <button class="btn btn__link btn__secondary focus">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link btn__secondary focus">
-    - name: Active state
-      markup: |
-        <a href="#" class="btn btn__link btn__secondary active">Anchor Tag</a>
-        <button class="btn btn__link btn__secondary active">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link btn__secondary active">
-    tags:
-    - cf-buttons
+  name: Secondary button link
+  family: cf-buttons
+  notes:
+    - "Note that the .visited, .hover, .focus, .active classes are for
+       demonstration purposes only and should not be used in production."
+  patterns:
+  - name: Default state
+    markup: |
+      <a href="#" class="btn btn__link btn__secondary">Anchor Tag</a>
+      <button class="btn btn__link btn__secondary">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link btn__secondary">
+  - name: Hovered state
+    markup: |
+      <a href="#" class="btn btn__link btn__secondary hover">Anchor Tag</a>
+      <button class="btn btn__link btn__secondary hover">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link btn__secondary hover">
+  - name: Focused state
+    markup: |
+      <a href="#" class="btn btn__link btn__secondary focus">Anchor Tag</a>
+      <button class="btn btn__link btn__secondary focus">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link btn__secondary focus">
+  - name: Active state
+    markup: |
+      <a href="#" class="btn btn__link btn__secondary active">Anchor Tag</a>
+      <button class="btn btn__link btn__secondary active">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link btn__secondary active">
+  tags:
+  - cf-buttons
 */
 .btn__link.btn__secondary,
 .btn__link.btn__secondary:link,
@@ -1290,34 +1290,34 @@ input.btn::-moz-focus-inner {
   color: #43484e;
 }
 /* topdoc
-    name: Destructive action button link
-    family: cf-buttons
-    notes:
-      - "Note that the .visited, .hover, .focus, .active classes are for
-         demonstration purposes only and should not be used in production."
-    patterns:
-    - name: Default state
-      markup: |
-        <a href="#" class="btn btn__link btn__warning">Anchor Tag</a>
-        <button class="btn btn__link btn__warning">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link btn__warning">
-    - name: Hovered state
-      markup: |
-        <a href="#" class="btn btn__link btn__warning hover">Anchor Tag</a>
-        <button class="btn btn__link btn__warning hover">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link btn__warning hover">
-    - name: Focused state
-      markup: |
-        <a href="#" class="btn btn__link btn__warning focus">Anchor Tag</a>
-        <button class="btn btn__link btn__warning focus">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link btn__warning focus">
-    - name: Active state
-      markup: |
-        <a href="#" class="btn btn__link btn__warning active">Anchor Tag</a>
-        <button class="btn btn__link btn__warning active">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn__link btn__warning active">
-    tags:
-    - cf-buttons
+  name: Destructive action button link
+  family: cf-buttons
+  notes:
+    - "Note that the .visited, .hover, .focus, .active classes are for
+       demonstration purposes only and should not be used in production."
+  patterns:
+  - name: Default state
+    markup: |
+      <a href="#" class="btn btn__link btn__warning">Anchor Tag</a>
+      <button class="btn btn__link btn__warning">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link btn__warning">
+  - name: Hovered state
+    markup: |
+      <a href="#" class="btn btn__link btn__warning hover">Anchor Tag</a>
+      <button class="btn btn__link btn__warning hover">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link btn__warning hover">
+  - name: Focused state
+    markup: |
+      <a href="#" class="btn btn__link btn__warning focus">Anchor Tag</a>
+      <button class="btn btn__link btn__warning focus">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link btn__warning focus">
+  - name: Active state
+    markup: |
+      <a href="#" class="btn btn__link btn__warning active">Anchor Tag</a>
+      <button class="btn btn__link btn__warning active">Button Tag</button>
+      <input type="button" value="Input Tag" class="btn btn__link btn__warning active">
+  tags:
+  - cf-buttons
 */
 .btn__link.btn__warning,
 .btn__link.btn__warning:link,
@@ -2675,6 +2675,11 @@ textarea.success {
         - "@cf-icon-ie7-support: true;"
       notes:
         - "More on IE7 support can be found in the 'IE7 Support' section."
+    - name: Icon border color
+      codenotes:
+        - "@cf-border-color: #eee;"
+      notes:
+        - "Used in .cf-icon__border"
   tags:
     - cf-icons
 */
@@ -2721,6 +2726,192 @@ textarea.success {
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+}
+/* topdoc
+  name: Icon character variables
+  family: cf-icons
+  patterns:
+    - name: Less variables for icons
+      codenotes:
+        - "@cf-icon-left:                       '\e000';"
+        - "@cf-icon-left-round:                 '\e001';"
+      notes:
+        - "These variables for fonts are used for adding icons in
+          Less files."
+        - "See the less file for the full list."
+  tags:
+    - cf-icons
+  notes:
+       - "Inspired by Font Awesome"
+*/
+/* topdoc
+    name: Helper classes for icon sizes
+    family: cf-icons
+    patterns:
+        - name: Large icon size
+          markup: |
+            <span class="cf-icon cf-icon-money cf-icon__lg"></span>
+        - name: 2x icon size
+          markup: |
+            <span class="cf-icon cf-icon-money cf-icon__2x"></span>
+        - name: 3x icon size
+          markup: |
+            <span class="cf-icon cf-icon-money cf-icon__3x"></span>
+        - name: 4x icon size
+          markup: |
+            <span class="cf-icon cf-icon-money cf-icon__4x"></span>
+        - name: 5x icon size
+          markup: |
+            <span class="cf-icon cf-icon-money cf-icon__5x"></span>
+    notes:
+       - "MIT Licensed by Font Awesome"
+*/
+.cf-icon__lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.cf-icon__2x {
+  font-size: 2em;
+}
+.cf-icon__3x {
+  font-size: 3em;
+}
+.cf-icon__4x {
+  font-size: 4em;
+}
+.cf-icon__5x {
+  font-size: 5em;
+}
+/* topdoc
+    name: Mixin classes
+    family: cf-icons
+    patterns:
+        - name: Icon rotation mixin
+          codenotes:
+            - ".@{cf-icon-prefix}__rotate-90  { .cf-icon__rotate(90deg, 1);  }"
+          notes:
+            - "First parameter is @degrees."
+            - "Second parameter is @rotation"
+        - name: Icon flip mixin
+          codenotes:
+            - ".@{cf-icon-prefix}__flip-horizontal { .cf-icon__flip(-1, 1, 0); }"
+            - ".@{cf-icon-prefix}__flip-vertical   { .cf-icon__flip(1, -1, 2); }"
+          notes:
+            - "First parameter is for number of horizontal flips"
+            - "Second parameter is for number of vertical flips"
+            - "Third parameter is for rotation"
+    notes:
+       - "MIT Licensed by Font Awesome"
+*/
+/* topdoc
+    name: Helper classes for modified icons
+    family: cf-icons
+    patterns:
+        - name: Bordered icons
+          markup: |
+            <span class="cf-icon cf-icon-update cf-icon__border"></span>
+          notes:
+            - "Border color set by @cf-icon-border-color"
+        - name: Rotated icons
+          markup: |
+            <span class="cf-icon cf-icon-update cf-icon__rotate-90"></span>
+            <span class="cf-icon cf-icon-update cf-icon__rotate-180"></span>
+            <span class="cf-icon cf-icon-update cf-icon__rotate-270"></span>
+        - name: Flipped icons
+          markup: |
+            <span class="cf-icon cf-icon-update cf-icon__flip-horizontal"></span>
+            <span class="cf-icon cf-icon-update cf-icon__flip-vertical"></span>
+    notes:
+       - "MIT Licensed by Font Awesome"
+*/
+.cf-icon__border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.cf-icon__rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.cf-icon__rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.cf-icon__rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.cf-icon__flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.cf-icon__flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .cf-icon__rotate-90,
+:root .cf-icon__rotate-180,
+:root .cf-icon__rotate-270,
+:root .cf-icon__flip-horizontal,
+:root .cf-icon__flip-vertical {
+  -webkit-filter: none;
+          filter: none;
+}
+/* topdoc
+    name: Helper classes for animated icons
+    family: cf-icons
+    patterns:
+        - name: Spinning icons
+          markup: |
+            <span class="cf-icon cf-icon-update cf-icon__spin"></span>
+        - name: Pulsing icons
+          markup: |
+            <span class="cf-icon cf-icon-update cf-icon__pulse"></span>
+        - name: Flipped icons
+          markup: |
+            <span class="cf-icon cf-icon-phone cf-icon__flip-horizontal"></span>
+            <span class="cf-icon cf-icon-phone cf-icon__flip-vertical"></span>
+    notes:
+       - "MIT Licensed by Font Awesome"
+*/
+.cf-icon__spin {
+  -webkit-animation: cf-spin 2s infinite linear;
+  animation: cf-spin 2s infinite linear;
+}
+.cf-icon__pulse {
+  -webkit-animation: cf-spin 1s infinite steps(8);
+  animation: cf-spin 1s infinite steps(8);
+}
+@-webkit-keyframes cf-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes cf-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }
 /* topdoc
     name: Navigation icons
@@ -3214,6 +3405,10 @@ textarea.success {
         markup: |
           <span class="cf-icon cf-icon-upload"></span>
           <span class="cf-icon cf-icon-upload-round"></span>
+      - name: download
+        markup: |
+          <span class="cf-icon cf-icon-download"></span>
+          <span class="cf-icon cf-icon-download-round"></span>
       - name: copy
         markup: |
           <span class="cf-icon cf-icon-copy"></span>
@@ -3808,6 +4003,14 @@ textarea.success {
         markup: |
           <span class="cf-icon cf-icon-play"></span>
           <span class="cf-icon cf-icon-play-round"></span>
+      - name: history
+        markup: |
+          <span class="cf-icon cf-icon-history"></span>
+          <span class="cf-icon cf-icon-history-round"></span>
+      - name: table of contents
+        markup: |
+          <span class="cf-icon cf-icon-table-of-contents"></span>
+          <span class="cf-icon cf-icon-table-of-contents-round"></span>
       - name: newspaper
         markup: |
           <span class="cf-icon cf-icon-newspaper"></span>
@@ -3844,6 +4047,22 @@ textarea.success {
         markup: |
           <span class="cf-icon cf-icon-date"></span>
           <span class="cf-icon cf-icon-date-round"></span>
+      - name: closing-quote
+        markup: |
+          <span class="cf-icon cf-icon-closing-quote"></span>
+          <span class="cf-icon cf-icon-closing-quote-round"></span>
+      - name: livestream
+        markup: |
+          <span class="cf-icon cf-icon-livestream"></span>
+          <span class="cf-icon cf-icon-livestream-round"></span>
+      - name: parents
+        markup: |
+          <span class="cf-icon cf-icon-parents"></span>
+          <span class="cf-icon cf-icon-parents-round"></span>
+      - name: servicemembers
+        markup: |
+          <span class="cf-icon cf-icon-servicemembers"></span>
+          <span class="cf-icon cf-icon-servicemembers-round"></span>
     tags:
       - cf-icons
 */
@@ -4099,6 +4318,30 @@ textarea.success {
 .lt-ie8 .cf-icon-play-round {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e641');
 }
+.cf-icon-history:before {
+  content: "\e642";
+}
+.lt-ie8 .cf-icon-history {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e642');
+}
+.cf-icon-history-round:before {
+  content: "\e643";
+}
+.lt-ie8 .cf-icon-history-round {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e643');
+}
+.cf-icon-table-of-contents:before {
+  content: "\e644";
+}
+.lt-ie8 .cf-icon-table-of-contents {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e644');
+}
+.cf-icon-table-of-contents-round:before {
+  content: "\e645";
+}
+.lt-ie8 .cf-icon-table-of-contents-round {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e645');
+}
 .cf-icon-newspaper:before {
   content: "\e700";
 }
@@ -4206,6 +4449,54 @@ textarea.success {
 }
 .lt-ie8 .cf-icon-date-round {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e719');
+}
+.cf-icon-closing-quote:before {
+  content: "\e720";
+}
+.lt-ie8 .cf-icon-closing-quote {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e720');
+}
+.cf-icon-closing-quote-round:before {
+  content: "\e721";
+}
+.lt-ie8 .cf-icon-closing-quote-round {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e721');
+}
+.cf-icon-livestream:before {
+  content: "\e722";
+}
+.lt-ie8 .cf-icon-livestream {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e722');
+}
+.cf-icon-livestream-round:before {
+  content: "\e723";
+}
+.lt-ie8 .cf-icon-livestream-round {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e723');
+}
+.cf-icon-parents:before {
+  content: "\e724";
+}
+.lt-ie8 .cf-icon-parents {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e724');
+}
+.cf-icon-parents-round:before {
+  content: "\e725";
+}
+.lt-ie8 .cf-icon-parents-round {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e725');
+}
+.cf-icon-servicemembers:before {
+  content: "\e726";
+}
+.lt-ie8 .cf-icon-servicemembers {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e726');
+}
+.cf-icon-servicemembers-round:before {
+  content: "\e727";
+}
+.lt-ie8 .cf-icon-servicemembers-round {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e727');
 }
 /* topdoc
   name: EOF
@@ -8366,10 +8657,14 @@ small {
       markup: |
         <h6>Example heading element</h6>
         <p class="h6">A non-heading element</p>
+    - name: Subheader
+      markup: |
+        <h1 class="subheader">Example subheader that's kinda long</h1>
+        <p class="subheader">Example subheader that's kinda long</p>
     - name: Super header
       markup: |
-        <h1 class="superheader">Example super heading</h1>
-        <p class="superheader">Example super heading</p>
+        <h1 class="superheader">Example super header</h1>
+        <p class="superheader">Example super header</p>
   tags:
     - cf-core
 */
@@ -8681,6 +8976,35 @@ h6,
   margin-bottom: 0.41666667em;
   font-size: 0.75em;
   line-height: 1.83333333;
+}
+.subheader {
+  margin-top: 0;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.22222222;
+}
+.subheader em,
+.subheader i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .subheader em,
+.lt-ie9 .subheader i {
+  font-style: normal !important;
+}
+.subheader strong,
+.subheader b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .subheader strong,
+.lt-ie9 .subheader b {
+  font-weight: normal !important;
 }
 .superheader {
   margin-bottom: 0.1875em;
@@ -9717,19 +10041,6 @@ figure {
   border-bottom: none;
   color: #7fb8e6;
 }
-.content p {
-  font-family: Georgia, "Times New Roman", serif;
-}
-.content p em,
-.content p i {
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-}
-.content p strong,
-.content p b {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: bold;
-}
 .content .lead-in {
   font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
   font-style: normal;
@@ -10008,6 +10319,10 @@ figure {
 .type-color-combo__black-on-gray5 {
   background: #f8f8f8;
 }
+.type-color-combo__pacific-on-gray5 {
+  background: #f8f8f8;
+  color: #0072ce;
+}
 .type-color-combo__black-on-greenmid {
   background: #addc91;
 }
@@ -10199,23 +10514,57 @@ h2.h2-ex {
   font-weight: normal !important;
 }
 #print-hierarchy-ex h1 {
-  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 38pt;
   line-height: 40pt;
 }
-.lt-ie9 #print-hierarchy-ex h1 {
-  font-weight: normal !important;
+#print-hierarchy-ex h1 em,
+#print-hierarchy-ex h1 i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
 }
-#print-hierarchy-ex h2 {
+.lt-ie9 #print-hierarchy-ex h1 em,
+.lt-ie9 #print-hierarchy-ex h1 i {
+  font-style: normal !important;
+}
+#print-hierarchy-ex h1 strong,
+#print-hierarchy-ex h1 b {
   font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18pt;
-  line-height: 20pt;
 }
-.lt-ie9 #print-hierarchy-ex h2 {
+.lt-ie9 #print-hierarchy-ex h1 strong,
+.lt-ie9 #print-hierarchy-ex h1 b {
+  font-weight: normal !important;
+}
+#print-hierarchy-ex h2 {
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26pt;
+  line-height: 28pt;
+}
+#print-hierarchy-ex h2 em,
+#print-hierarchy-ex h2 i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 #print-hierarchy-ex h2 em,
+.lt-ie9 #print-hierarchy-ex h2 i {
+  font-style: normal !important;
+}
+#print-hierarchy-ex h2 strong,
+#print-hierarchy-ex h2 b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 #print-hierarchy-ex h2 strong,
+.lt-ie9 #print-hierarchy-ex h2 b {
   font-weight: normal !important;
 }
 #print-hierarchy-ex h3 {
@@ -10736,6 +11085,31 @@ ul.list_links-minicons li {
   zoom: 1;
   behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
 }
+.secondary-nav {
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.secondary-nav em,
+.secondary-nav i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .secondary-nav em,
+.lt-ie9 .secondary-nav i {
+  font-style: normal !important;
+}
+.secondary-nav strong,
+.secondary-nav b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .secondary-nav strong,
+.lt-ie9 .secondary-nav b {
+  font-weight: normal !important;
+}
 .secondary-nav a {
   display: block;
   padding: 10px;
@@ -10803,6 +11177,9 @@ ul.list_links-minicons li {
   width: 100%;
 }
 .footer {
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   display: table-row;
   /* for sticky footer */
   height: 1px;
@@ -10811,6 +11188,26 @@ ul.list_links-minicons li {
   border-top: 2px solid #babbbd;
   background: #f1f2f2;
   width: 100%;
+}
+.footer em,
+.footer i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .footer em,
+.lt-ie9 .footer i {
+  font-style: normal !important;
+}
+.footer strong,
+.footer b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .footer strong,
+.lt-ie9 .footer b {
+  font-weight: normal !important;
 }
 .footer h4 {
   margin-top: 0;
@@ -11273,42 +11670,11 @@ samp {
 html,
 body {
   height: 100%;
-  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-html em,
-body em,
-html i,
-body i {
-  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 html em,
-.lt-ie9 body em,
-.lt-ie9 html i,
-.lt-ie9 body i {
-  font-style: normal !important;
-}
-html strong,
-body strong,
-html b,
-body b {
-  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-}
-.lt-ie9 html strong,
-.lt-ie9 body strong,
-.lt-ie9 html b,
-.lt-ie9 body b {
-  font-weight: normal !important;
 }
 /* ==========================================================================
    To replace eventually
