@@ -1,8 +1,10 @@
 ---
 layout: page
-title:  Grid and layout
+title: Grid and layout
 category: UI toolkit
+published: true
 ---
+
 
 - [Style](#style)
 {: class="toc"}
@@ -32,10 +34,10 @@ The grid provides structure for website content. The flexible design adjusts for
 Twelve-column grid with flexible column widths and fixed gutters. The width of the padding on the left and right edge of the grid depends on device size. 
 
 * 30px fixed gutter width
-* Max width 1200px, background colors may bleed to edge
-* Desktop: 60px padding
-* Portrait tablet: 30px padding
-* Portrait phone: 15px padding
+* Max width 1230px, background colors may bleed to edge
+* Desktop: 30px padding on each side
+* Tablet: 30px padding on each side
+* Mobile: 15px padding on each side
 
 {::nomarkdown}    
 
@@ -90,4 +92,3 @@ Twelve-column grid with flexible column widths and fixed gutters. The width of t
     </section>
 </div>
 {:/nomarkdown}
-
