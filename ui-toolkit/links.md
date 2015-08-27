@@ -1,8 +1,10 @@
 ---
 layout: page
-title:  Links
+title: Links
 category: UI toolkit
+published: true
 ---
+
 
 - [Style](#style)
 - [States](#states)
@@ -188,7 +190,6 @@ Document links should open in the same browser window (i.e., do not set them to 
 <div class="content-50 content-last regular-ex">
 <ul class="list_links-minicons">
 <li><a class="link-with-icon" href="#">Basic document <span class="cf-icon cf-icon-document"></span></a></li>
-<li><a class="link-with-icon" href="#">PDF document <span class="cf-icon cf-icon-pdf"></span></a></li>
 <li><a class="link-with-icon" href="#">Download <span class="cf-icon cf-icon-download"></span></a></li>
 <li><a class="link-with-icon" href="#">Appendix <span class="cf-icon cf-icon-appendix"></span></a></li>
 <li><a class="link-with-icon" href="#">Supplement <span class="cf-icon cf-icon-supplement"></span></a></li>
@@ -198,4 +199,3 @@ Document links should open in the same browser window (i.e., do not set them to 
 </div>
 
 </div>
-
