@@ -140,10 +140,10 @@ secondarynav:
   url: ui-toolkit/links.html
   internal: true
   category: UI toolkit
-# - text: Modals
-#   url: ui-toolkit/modals.html
-#   internal: true
-#   category: UI toolkit
+- text: Modals
+  url: ui-toolkit/modals.html
+  internal: true
+  category: UI toolkit
 # - text: Pagination
 #   url: ui-toolkit/pagination.html
 #   internal: true
