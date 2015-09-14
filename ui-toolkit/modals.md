@@ -51,6 +51,7 @@ Modals should be triggered by links rather than buttons.
 
 **Questions to possibly address:**
 
+* **How do we feel about the "should be triggered by" links vs buttons guidance?**
 * **Should we talk about how information in modals are findable by the `find` function, so info shouldn't be hidden behind them?**
 * **Should we talk about accessibility concerns, particularly for non-javascript users?**
 
