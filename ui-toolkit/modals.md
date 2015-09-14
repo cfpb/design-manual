@@ -94,8 +94,7 @@ Standard modals have a base style:
 <div class="content-33 content-first">
 
 #### Interaction Needed
-* Gray 10% bar along bottom of window
-* Pacific Blue minicon
+* Gray 10% bar along bottom of window to contain next action buttons
 
 </div>
 
