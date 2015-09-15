@@ -221,11 +221,7 @@ This library comprises all currently approved isocons and will continue to expan
 
 #### Owning a home
 
-<<<<<<< HEAD
-![Owning a home isocon]({{ site.baseurl }}/static/img/isocons/Isocons26.png "Owning a home")
-=======
-![Owning a home isocon]({{ site.baseurl }}/assets/img/isocons/Isocons26.png "Owning a home isocon")
->>>>>>> 4a8004254bdb072fa934a85d05e5b34fed64462c
+![Owning a home isocon]({{ site.baseurl }}/static/img/isocons/Isocons26.png "Owning a home isocon")
 </div>
 <div class="content-25 content-last">
 
