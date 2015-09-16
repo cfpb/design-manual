@@ -35,7 +35,6 @@
   },
   "resolutions": {
     "cf-expandables": "^1.0.0",
-    "cf-forms": "text-input-fields",
     "cf-layout": "^1.0.0",
     "cf-pagination": "^1.0.0",
     "cf-typography": "^1.0.0"
