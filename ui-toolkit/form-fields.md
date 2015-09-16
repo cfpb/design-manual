@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Form fields
+title:  Forms
 category: UI toolkit
 ---
 
@@ -144,4 +144,26 @@ Text input fields are used for requesting narratives, explanations, or other inf
 
 </div> 
 
-<!-- <h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2> -->
+---
+
+<div class="content-33 content-first">
+
+#### Disabled
+
+Limit use. Where possible, use progressive disclosure instead. 
+
+* Border: 1 px #babbbd (Grey 50)
+* Fill: #f1f2f2 (Gray 10)
+
+
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown} 
+<input class="disabled" disabled="true" autocomplete="off" type="text" value="Placeholder text">
+<span class="cf-icon cf-icon-delete-round cf-form_input-icon" role="alert"></span>
+{:/nomarkdown}
+
+</div> 
+

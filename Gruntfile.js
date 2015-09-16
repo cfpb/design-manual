@@ -360,7 +360,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases and combinations.
    */
-  grunt.registerTask('compile-cf', ['bower:cf', 'concat:cf-less', 'concat:topdocIcons']);
+  grunt.registerTask('compile-cf', ['bower:cf', 'concat:topdocIcons']);
   grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css', 'copy']);
   grunt.registerTask('js', ['concat:js', 'uglify', 'usebanner:js', 'copy']);
   grunt.registerTask('test', ['jshint']);
