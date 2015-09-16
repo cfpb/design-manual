@@ -52,15 +52,6 @@ module.exports = function(grunt) {
      * Concatenate cf-* Less files prior to compiling them.
      */
     concat: {
-      'cf-less': {
-        src: [
-          '<%= loc.src %>/vendor/cf-*/*.less',
-          '!<%= loc.src %>/vendor/cf-core/*.less',
-          '<%= loc.src %>/vendor/cf-core/cf-core.less',
-          '<%= loc.src %>!vendor/cf-concat/cf.less'
-        ],
-        dest: '<%= loc.src %>/vendor/cf-concat/cf.less'
-      },
       js: {
         src: [
           '<%= loc.src %>/vendor/jquery/jquery.js',
