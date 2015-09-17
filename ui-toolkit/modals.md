@@ -39,7 +39,7 @@ The `find` function will not discover information contained in a modal. Please u
   <h5 id="use-when">Use when</h5>
   <ul>
     <li>The user should be warned or alerted to a imminent deviation from the typical user flow that was not triggered by active user interaction. For example, a modal could be used to warn about an impending inactivity timeout for a form containing sensitive information.</li>
-    <li>There is an interaction that is extremely short, has a clear beginning and end, and requires the user's full attention the whole time. For example, a modal could be used for either a save or export interaction (though alternative UI elements should be explored).</li>
+    <li>There is an short part of the flow that is triggered by user interaction, has a clear beginning and end, and requires the user's full attention the whole time. For example, a modal could be used for either a save or export interaction (though alternative UI elements should be explored).</li>
   </ul>
 </div>
 <div class="content-50 content-last">
@@ -52,9 +52,10 @@ The `find` function will not discover information contained in a modal. Please u
   <h5 id="do-not-use-when">Do not use when</h5>
   <ul>
     <li>The information or interactions in the modal are crucial to the main user flow. Instead, either integrate what would have gone in the modal into the main UI of the page, or create an additional page.</li>
-    <li>The interaction is unable to live on the current page (due to complexity or a dynamic nature), but moving it to a separate page would be disruptive to the main user flow. Use alternative UI elements such as expandables or dynamically appearing areas instead. For example, error or status updates should be provided through dynamically appearing in-page elements.</li>
-    <li>The interaction is a commonly understood and expected behavior on the web, such as an external link directing to a different domain as the page it's on.</li>
     <li>There is not enough space in the main page to present content, so the modal serves as additional screen real estate. Instead, either integrate the content into the main page or create a new page.</li>
+    <li>The interaction is a commonly understood and expected behavior on the web, such as an external link directing to a different domain as the page it's on.</li>
+    <li>The interaction is an error warning or status update. Use our [alerts and notification elements](https://github.com/cfpb/cf-notifications) instead.</li>
+    
   </ul>
 </div>
 <div class="content-50 content-last">
