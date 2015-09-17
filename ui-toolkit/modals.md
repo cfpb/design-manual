@@ -62,10 +62,6 @@ The `find` function will not discover information contained in a modal. Please u
 [EXAMPLES]  
 {:/nomarkdown}
 </div>
-  
-**Questions to possibly address:**
-
-* **Does our single user case even make sense? If someone is not looking at the screen because they're inactive, they will miss the warning until it's too late.**
 
 
 <h2 id="style">Accessibility<span class="cf-code-link"><a href="https://cfpb.github.io/cf-modals/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
