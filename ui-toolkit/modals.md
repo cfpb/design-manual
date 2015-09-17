@@ -5,13 +5,13 @@ category: UI toolkit
 ---
 
 - [Use](#use)
+- [Accessibility](#accessibility)
 - [Style](#style)
-- [Variations](#variations)
 {: class="toc"}
 
 <div class="content-50 content-first">
 
-Modals prompt for focused user interaction in a manner that de-emphasizes the rest of the user interface. They often interrupt the standard user flow, and so should be used sparingly and with great discretion.
+<p>Modals serve as alerts by de-emphasizing the rest of the user interface. Due to their disruptive nature, modals should be used sparingly and with great discretion.</p>
 {: class="lead-in"}
 
 </div>
@@ -31,36 +31,77 @@ Modals prompt for focused user interaction in a manner that de-emphasizes the re
 
 <h2 id="use">Use<span class="cf-code-link"><a href="https://cfpb.github.io/cf-modals/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
-Modals are especially helpful for focusing user attention in the midst of a complex form or web application.
+Modals (also referred to as lightboxes) are useful for focusing user attention. They should not be a default interaction method, since they result in an interruption of standard user flows. Modals also may have negative connotations for users with popup windows or system alerts.
 
-<div class="content-33 content-first">
+The `find` function will not discover information contained in a modal. Please use good judgment in deciding what content and information is hidden within a modal.
+
+<div class="content-50 content-first">
   <h5 id="use-when">Use when</h5>
   <ul>
-    <li>Moving an involved user interaction to a separate page would be disruptive or harmful to the main user flow.</li>
+    <li>The user should be warned or alerted to a imminent deviation from the typical user flow that was not triggered by active user interaction. For example, a modal could be used to warn about an impending inactivity timeout for a form containing sensitive information.</li>
   </ul>
+</div>
+<div class="content-50 content-last">
+{::nomarkdown}
+[EXAMPLE]  
+{:/nomarkdown}
+</div>
+
+<div class="content-50 content-first">
+  <h5 id="do-not-use-when">Do not use when</h5>
+  <ul>
+    <li>The information or interactions in the modal are crucial to the main user flow. Instead, either integrate what would have gone in the modal into the main UI of the page, or create an additional page.</li>
+    <li>The interaction is unable to live on the current page (due to complexity or a dynamic nature), but moving it to a separate page would be disruptive to the main user flow. Use alternative UI elements such as expandables or dynamically appearing areas instead. For example, error or status updates should be provided through dynamically appearing in-page elements.</li>
+    <li>The interaction is a commonly understood and expected behavior on the web, such as an external link directing to a different domain as the page it's on.</li>
+    <li>There is not enough space in the main page to present content, so the modal serves as additional screen real estate. Instead, either integrate the content into the main page or create a new page.</li>
+  </ul>
+</div>
+<div class="content-50 content-last">
+{::nomarkdown}
+[EXAMPLE]  
+{:/nomarkdown}
+</div>
+  
+**Questions to possibly address:**
+
+* **Does our single user case even make sense? If someone is not looking at the screen because they're inactive, they will miss the warning until it's too late.**
+
+
+<h2 id="style">Accessibility<span class="cf-code-link"><a href="https://cfpb.github.io/cf-modals/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+
+<div class="content-67 content-first">
+#### Mobile devices
 </div>
 
 <div class="content-33 content-last">
-  <h5 id="do-not-use-when">Do not use when</h5>
-  <ul>
-    <li>Information or interactions are crucial to the main user flow. In such cases, the contents of the modal should be integrated into the main UI of the page.</li>
-  </ul>
+{::nomarkdown} 
+[EXAMPLE]
+{:/nomarkdown}
 </div>
 
-Modals should be triggered by links rather than buttons.
+<div class="content-67 content-first">
+#### Keyboard navigation
+</div>
 
-**Questions to possibly address:**
+<div class="content-33 content-last">
+{::nomarkdown} 
+[EXAMPLE]
+{:/nomarkdown}
+</div>
 
-* **How do we feel about the "should be triggered by" links vs buttons guidance?**
-* **Should we talk about how information in modals aren't findable by the `find` function, so info shouldn't be hidden behind them?**
-* **Should we talk about accessibility concerns, particularly for non-javascript users?**
+<div class="content-67 content-first">
+#### Non-Javascript users
+</div>
 
+<div class="content-33 content-last">
+{::nomarkdown} 
+[EXAMPLE]
+{:/nomarkdown}
+</div>
 
 <h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-modals/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
-
-Standard modals have a base style:
 
 <ul>
 	<li>10px CFPB Green stripe along the top of the window</li>
@@ -68,47 +109,28 @@ Standard modals have a base style:
 	<li>16px Avenir Next Regular black body text</li>
 	<li>Delete minicon within a circle in the upper right hand corner, with a label (if space allows)</li>
 	<li>Gray transparent background with opacity of 0.6</li>
+	<li>Gray 10% bar along bottom of window to contain next action buttons</li>
 </ul>
 
 </div>
 
+<div class="content-67 content-last">
+[EXAMPLE]
+</div>
+
+Modals can be triggered by links, buttons, or inactivity timeouts.
+
 
 **Questions to address:**
 
+* **We need to spell out the rules around height and width of the modal.**
 * **What height should the CFPB Green stripe be?**
 * **What opacity should the transparent background be?**
-* **Should there be a gray well at the bottom of the window for next action buttons and links?**
-* **What considerations do we need to spell out for small screens, especially around scrolling :-(**
+* **Remember to include explicit direction around coding for accessibility in this section.**
 
+<style scoped>
 
-
-
-<div class="content-67 content-last">
-
-{::nomarkdown}  
-{:/nomarkdown}
-
-</div>
-
-<h2 id="Variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-modals/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
-
-<div class="content-33 content-first">
-
-#### Interaction Needed
-* Gray 10% bar along bottom of window to contain next action buttons
-
-</div>
-
-<div class="content-67 content-last">
-
-{::nomarkdown}  
-{:/nomarkdown}
-
-</div>
-
-
-
-
+</style>
 
 
 
