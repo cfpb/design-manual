@@ -39,6 +39,7 @@ The `find` function will not discover information contained in a modal. Please u
   <h5 id="use-when">Use when</h5>
   <ul>
     <li>The user should be warned or alerted to a imminent deviation from the typical user flow that was not triggered by active user interaction. For example, a modal could be used to warn about an impending inactivity timeout for a form containing sensitive information.</li>
+    <li>There is an interaction that is extremely short, has a clear beginning and end, and requires the user's full attention the whole time. For example, a modal could be used for either a save or export interaction (though alternative UI elements should be explored).</li>
   </ul>
 </div>
 <div class="content-50 content-last">
@@ -58,7 +59,7 @@ The `find` function will not discover information contained in a modal. Please u
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
-[EXAMPLE]  
+[EXAMPLES]  
 {:/nomarkdown}
 </div>
   
