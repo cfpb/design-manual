@@ -51,10 +51,10 @@ The `find` function will not discover information contained in a modal. Please u
 <div class="content-50 content-first">
   <h5 id="do-not-use-when">Do not use when</h5>
   <ul>
-    <li>The information or interactions in the modal are crucial to the main user flow. Instead, either integrate what would have gone in the modal into the main UI of the page, or create an additional page.</li>
+    <li>The information or interactions in the modal are crucial to the main user flow. Instead, either integrate the content into the main page or create a new page.</li>
     <li>There is not enough space in the main page to present content, so the modal serves as additional screen real estate. Instead, either integrate the content into the main page or create a new page.</li>
-    <li>The interaction is a commonly understood and expected behavior on the web, such as an external link directing to a different domain as the page it's on.</li>
-    <li>The interaction is an error warning or status update. Use our alerts and notification elements instead.</li>
+    <li>The interaction is a commonly understood and expected behavior on the web, such as an external link directing to a different domain from the page it's on.</li>
+    <li>The interaction is an error warning or status update. Use a notification instead. (<em>NOTE: Place a link here when it's published</em>)</li>
     
   </ul>
 </div>
@@ -101,11 +101,14 @@ The `find` function will not discover information contained in a modal. Please u
 
 <div class="content-33 content-first">
 
+<em>Note: Sizes are totally super draft stage, as we see what works.</em>
+
 <ul>
+    <li>Can be triggered by links, buttons, or inactivity timeouts.</li>
 	<li>10px CFPB Green stripe along the top of the window</li>
 	<li>14px Avenir Next Demi-bold, all caps, dark gray header text</li>
 	<li>16px Avenir Next Regular black body text</li>
-	<li>Delete minicon within a circle in the upper right hand corner, with a label (if space allows)</li>
+	<li>30px delete minicon within a circle in the upper right hand corner, with a "Close" label</li>
 	<li>Gray transparent background with opacity of 0.6</li>
 	<li>Gray 10% bar along bottom of window to contain next action buttons</li>
 </ul>
@@ -116,7 +119,27 @@ The `find` function will not discover information contained in a modal. Please u
 [EXAMPLE]
 </div>
 
-Modals can be triggered by links, buttons, or inactivity timeouts.
+#### Headline considerations
+<div class="content-33 content-first">
+
+Modals should have a clear headline at the top of the window. If the modal was triggered due to user action, the headline should closely match the text of the triggering element.
+
+</div>
+
+<div class="content-67 content-last">
+[EXAMPLE]
+</div>
+
+#### Closing a modal
+<div class="content-33 content-first">
+
+Modals are always closable by either clicking/tapping a delete minion in the upper right corner or hitting the `ESC` key on a keyboard. If the primary action after the modal appears is to close it, a close button should be provided as a next action. 
+
+</div>
+
+<div class="content-67 content-last">
+[EXAMPLE]
+</div>
 
 
 **Questions to address:**
