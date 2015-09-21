@@ -5116,7 +5116,8 @@ input.btn::-moz-focus-inner {
       - |
         @input-error
         @input-warning
-        @input-success
+        @input-disabled
+        @input-disabled-bg
   - name: Sizing
     codenotes:
       - |
@@ -5194,14 +5195,14 @@ input.btn::-moz-focus-inner {
            states."
       markup: |
         <input class="warning" type="text" value="Invalid input" title="Test input">
-    - name: Success state
+    - name: Disabled state
       codenotes:
-        - .success
+        - .disabled
       notes:
         - "See the 'Form icons' section below for guidance on adding icons to
            states."
       markup: |
-        <input class="success" type="text" value="Validated input" title="Test input">
+        <input class="disabled" disabled="true" autocomplete="off" type="text" value="Validated input" title="Test input">
     tags:
     - cf-forms
 */
@@ -5227,16 +5228,17 @@ textarea.warning {
   border: 1px solid #ffb108;
   outline: 1px solid #ffb108;
 }
-input[type="text"].success,
-input[type="search"].success,
-input[type="email"].success,
-input[type="url"].success,
-input[type="tel"].success,
-input[type="number"].success,
-select[multiple].success,
-textarea.success {
-  border: 1px solid #2cb34a;
-  outline: 1px solid #2cb34a;
+input[type="text"].disabled,
+input[type="search"].disabled,
+input[type="email"].disabled,
+input[type="url"].disabled,
+input[type="tel"].disabled,
+input[type="number"].disabled,
+select[multiple].disabled,
+textarea.disabled {
+  border: 1px solid #babbbd;
+  outline: 1px solid #babbbd;
+  background-color: #f1f2f2;
 }
 /* topdoc
     name: Form icons
@@ -5293,9 +5295,6 @@ textarea.success {
 }
 .warning + .cf-form_input-icon {
   color: #ffb108;
-}
-.success + .cf-form_input-icon {
-  color: #2cb34a;
 }
 /* topdoc
   name: Form group

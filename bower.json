@@ -14,7 +14,8 @@
   },
   "license": "CC0",
   "dependencies": {
-    "capital-framework": "~1.0.0"
+    "capital-framework": "~1.0.0",
+    "cf-forms": "git://github.com/cfarm/cf-forms.git#text-input-fields"
   },
   "exportsOverride": {
     "cf-*": {
@@ -32,11 +33,5 @@
     "jquery.easing": {
       "js": "js/jquery.easing.js"
     }
-  },
-  "resolutions": {
-    "cf-expandables": "^1.0.0",
-    "cf-layout": "^1.0.0",
-    "cf-pagination": "^1.0.0",
-    "cf-typography": "^1.0.0"
   }
 }
