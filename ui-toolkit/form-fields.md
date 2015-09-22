@@ -22,7 +22,7 @@ category: UI toolkit
 <div class="lead-in">
 This page covers use cases, specs, accessibility and responsive considerations for major form field UI components. <br><br>
 
-In general, forms should be as simple and direct as possible to minimize scrolling (think mobile first!). Keep your queries to a minimum, and ask only what is absolutely needed.  Make inputs as self-explanatory as possible, with a minimum of helper text.  
+In general, forms should be as simple and direct as possible to minimize scrolling (think mobile first). Keep your queries to a minimum, and ask only what is absolutely needed.  Make inputs as self-explanatory as possible, with a minimum of helper text.  
 </div>
 
 </div>
@@ -204,7 +204,7 @@ Use for longer-form answers.
 
 </div> 
 
----
+
 
 <!--******   HELPER TEXT     **********-->
 
