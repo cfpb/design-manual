@@ -81,7 +81,13 @@ module.exports = function(grunt) {
         options: {
           // The src/vendor paths are needed to find the CF components' files.
           // Feel free to add additional paths to the array passed to `concat`.
-          paths: grunt.file.expand('src/vendor/*').concat([])
+          paths: grunt.file.expand('src/vendor/*').concat([]),
+          compress: true,
+          sourceMap: true,
+          // Where the sourcemap file is generated and located.
+          sourceMapFilename: '<%= loc.dist %>/static/css/main.css.map', 
+          // // The complete URL and sourcemap filename put in the compiled CSS file.
+          sourceMapURL: 'main.css.map'
         },
         files: {
           '<%= loc.dist %>/static/css/main.css': ['<%= loc.src %>/static/css/main.less']
