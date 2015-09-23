@@ -69,7 +69,7 @@ On a page with left-hand navigation, the featured content module spans 9 columns
 <div class="content-50 content-first">
 * Module is 270px total in height with 30px top and bottom margins. It appears 60px underneath the header/intro paragraph of the page
 * Background color of module is Gray 5 and bleeds off page and into sidebar or left nav
-* Visual spans 5 columns and can be an illustration, photo or video.
+* Visual spans 5 columns and bleeds into right sidebar.
 * Text spans 3 columns and is left and top aligned. When on a page with a right-hand sidebar, the text area has 60px of left margin and 30px of right margin. When on a page with left-hand navigation, the text area has 30px of left and right margin.
 </div>
 
@@ -89,6 +89,7 @@ Differences in style at tablet size
 
 * Text spans 5 columns
 * Visual spans 7 columns
+* Visual's height is fixed, and cropping will occur on both the left and right sides
 
 
 </div>
