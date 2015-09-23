@@ -100,7 +100,7 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 #### Error
 
 * Border: 2 px #d14124 (Red Orange)
-* Error minicon below field
+* See <a href="">alerts</a> for further specs and usage. 
 
 </div>
 
@@ -108,7 +108,6 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 {::nomarkdown} 
 <input class="error" type="text" value="invalid input">
-<span class="cf-icon cf-icon-delete-round cf-form_input-icon" role="alert"></span>
 {:/nomarkdown}
 
 </div> 
@@ -129,10 +128,8 @@ Limit use. Where possible, use progressive disclosure instead.
 
 <div class="content-50 content-last">
 
-<!--!!! Change this to a disabled field--> 
-
 {::nomarkdown} 
-<input type="text" value="placeholder text" style="border: 1px solid #babbbd; background:#f1f2f2">
+<input class="disabled" disabled="true" autocomplete="off" type="text" value="" title="Test input" placeholder="Placeholder text">
 {:/nomarkdown}
 
 </div> 
@@ -167,7 +164,7 @@ Use for longer-form answers.
 
 <div class="content-66 content-first">
 
-<h3> Labels</h3>
+<h3>Labels</h3>
 
 </div>
 
@@ -182,16 +179,19 @@ Use for longer-form answers.
 </div>
 
 <div class="content-50 content-last">
-
-<!--insert field label and text input-->
-
+{::nomarkdown} 
+<label class="form-label-header">
+    Form label
+</label>
+<input placeholder="placeholder text" type="text">
+{:/nomarkdown}
 </div> 
 
 ---
 
 <div class="content-50 content-first">
 
-#### Fieldset labels
+#### Fieldset legend
 
 * <a href="../identity/typography.html">H3</a>
 
@@ -200,9 +200,16 @@ Use for longer-form answers.
 
 <div class="content-50 content-last">
 
-<!--insert fieldset label -->
-
+{::nomarkdown} 
+<fieldset>
+    <legend>Fieldset legend</legend>
+    <label for="name">
+        Label
+    </label>
+    <input type="text" id="name" value="" placeholder="Placeholder text">
+</fieldset>
 </div> 
+{:/nomarkdown}
 
 ---
 
