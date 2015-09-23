@@ -110,7 +110,8 @@ Modals should have a clear headline at the top of the window. If the modal was t
 <div class="content-67 content-first">
 #### Mobile devices
 
-** Needs to be filled out to talk about scrolling, and other factors. **
+**Needs to be filled out to talk about scrolling, and other factors.**
+
 </div>
 
 
@@ -124,6 +125,9 @@ Modals should have a clear headline at the top of the window. If the modal was t
 
 <div class="content-67 content-first">
 #### Non-Javascript users
+
+**Still need to look into what should be said about this.**
+
 </div>
 
 
