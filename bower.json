@@ -15,7 +15,8 @@
   "license": "CC0",
   "dependencies": {
     "capital-framework": "~1.0.0",
-    "cf-forms": "git://github.com/cfarm/cf-forms.git#text-input-fields"
+    "cf-core": "git://github.com/cfarm/cf-core.git#forms",
+    "cf-forms": "git://github.com/cfarm/cf-forms.git#forms"
   },
   "exportsOverride": {
     "cf-*": {
