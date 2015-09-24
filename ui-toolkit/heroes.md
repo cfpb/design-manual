@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Page Heroes
+title: Heroes
 category: UI toolkit
 ---
 
@@ -55,7 +55,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 <div class="content-first">
 ![Image of the Claiming Social Security site's hero graphic]({{ site.baseurl }}/static/img/hero/Retirement.png)
 
-![Image of the Owning a Home site's hero graphic]({{ site.baseurl }}/static/img/hero/OaH.png)
+![Image of the Owning a Home site's hero graphic]({{ site.baseurl }}/static/img/hero/Hero_desktop.png)
 
 </div>
 
@@ -95,6 +95,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 * Top and bottom margins: 30px
 * Left and right margins: 30px
 * Module height is flexible to text height
+* Visually is vertically centered
 
 </div>
 
@@ -102,7 +103,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 ![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/Retirement-tablet.png)
 
-![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/OaH-tablet.png)
+![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/Hero_tablet.png)
 
 </div>
 
@@ -125,7 +126,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 <div class="content-33">
 
-![Image of hero with call to action at mobile size]({{ site.baseurl }}/static/img/hero/OaH-mobile.png)
+![Image of hero with call to action at mobile size]({{ site.baseurl }}/static/img/hero/Hero_mobile.png)
 
 </div>
 
