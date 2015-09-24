@@ -52,15 +52,6 @@ module.exports = function(grunt) {
      * Concatenate cf-* Less files prior to compiling them.
      */
     concat: {
-      'cf-less': {
-        src: [
-          '<%= loc.src %>/vendor/cf-*/*.less',
-          '!<%= loc.src %>/vendor/cf-core/*.less',
-          '<%= loc.src %>/vendor/cf-core/cf-core.less',
-          '<%= loc.src %>!vendor/cf-concat/cf.less'
-        ],
-        dest: '<%= loc.src %>/vendor/cf-concat/cf.less'
-      },
       js: {
         src: [
           '<%= loc.src %>/vendor/jquery/jquery.js',
@@ -360,7 +351,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases and combinations.
    */
-  grunt.registerTask('compile-cf', ['bower:cf', 'concat:cf-less', 'concat:topdocIcons']);
+  grunt.registerTask('compile-cf', ['bower:cf', 'concat:topdocIcons']);
   grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css', 'copy']);
   grunt.registerTask('js', ['concat:js', 'uglify', 'usebanner:js', 'copy']);
   grunt.registerTask('test', ['jshint']);
