@@ -54,7 +54,7 @@ The `find` function will not discover information contained in a modal. Please u
     <li>The information or interactions in the modal are crucial to the main user flow. Instead, either integrate the content into the main page or create a new page.</li>
     <li>There is not enough space in the main page to present content, so the modal serves as additional screen real estate. Instead, either integrate the content into the main page or create a new page.</li>
     <li>The interaction is an error warning or status update. Use a notification instead. (<em>NOTE: Place a link here when cf-notifications is published.</em>)</li>
-    <li>To alert the user that a link is for a different domain than the page it's on.</li>
+    <li>The interaction is to alert the user that the link they have clicked is for a different domain than ours.</li>
   </ul>
 </div>
 
