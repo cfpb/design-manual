@@ -7290,43 +7290,24 @@ textarea.disabled {
     name: Form icons
     family: cf-forms
     patterns:
-    - name: Form input icons
+    - name: Form alert icons
       notes:
-        - "Form input icons add small positioning tweaks to Capital Framework
+        - "Form alert icons add color tweaks to Capital Framework
           icons."
       markup: |
-        <input type="text" value="" title="Test input">
-        <span class="cf-form_input-icon cf-icon cf-icon-email"></span>
-    - name: Form input error icon
-      notes:
-        - "The icon must be placed directly after the form input in the markup
-          and the input must use the 'error' class."
-        - "For invalid fields only use the alert role to call attention to
-           fields that need immediate attention:
-           https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role"
-      markup: |
-        <input class="error" type="text" value="Invalid input" title="Test input">
-        <span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
-    - name: Form input warning icon
-      notes:
-        - "The icon must be placed directly after the form input in the markup
-          and the input must use the 'warning' class."
-        - "For invalid fields only use the alert role to call attention to
-           fields that need immediate attention:
-           https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role"
-      markup: |
-        <input class="warning" type="text" value="Invalid input" title="Test input">
-        <span class="cf-form_input-icon cf-icon cf-icon-error-round" role="alert"></span>
-    - name: Form input success icon
-      notes:
-        - "The icon must be placed directly after the form input in the markup
-          and the input must use the 'error' class."
-        - "For valid inputs only use the alert role to indicate that a
-           previously invalid input is now valid:
-           https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role"
-      markup: |
-        <input class="success" type="text" value="Validated input" title="Test input">
-        <span class="cf-form_input-icon cf-icon cf-icon-approved-round"></span>
+        <div class="alert alert__error">
+            <p><span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
+            The following form fields are incomplete or have errors:</p>
+            <ul class="list list__unstyled">
+                <li><a href="#">What do you think would be a fair resolution to your issue?</a></li>
+                <li><a href="#">Which of these best describes your issue?</a></li>
+                <li><a href="#">Describe what happened so we can understand the issue...</a></li>
+            </ul>
+        </div>
+        <div class="alert alert__success">
+            <p><span class="cf-form_input-icon cf-icon cf-icon-approved-round" role="alert"></span>
+            15 results found</p>
+        </div>
     tags:
     - cf-forms
 */
@@ -7344,7 +7325,7 @@ textarea.disabled {
 }
 
 .alert__success .cf-form_input-icon {
-  color: #009d38;
+  color: #2cb34a;
 }
 
 /* topdoc
@@ -7662,6 +7643,7 @@ textarea.disabled {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  padding: 0.9375em;
 }
 
 .alert em,
@@ -7692,14 +7674,18 @@ textarea.disabled {
   font-size: 1.125em;
 }
 
+.alert p:last-child {
+  margin-bottom: 0;
+}
+
 .alert__error {
   border: 1px solid #d12124;
-  background-color: #fdf4f4;
+  background-color: #fadede;
 }
 
 .alert__success {
-  border: 1px solid #009d38;
-  background-color: #9dffc0;
+  border: 1px solid #2cb34a;
+  background-color: #d1f4d9;
 }
 
 /* topdoc
