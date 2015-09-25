@@ -398,8 +398,14 @@ Lastly, some accessibility considerations. Use distinct icons, contrasting color
 
 <div class="content-50 content-last">
 
-<!--insert Label (required), error input field, and error message underneath-->
+{::nomarkdown} 
+<input class="error" type="text" value="" id="form-input-error">
+<label class="form-label-error" for="form-input-error">
+    <span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
+    This is a required question, please answer.
+</label>
 
+{:/nomarkdown}
 </div> 
 
 ---
@@ -418,6 +424,17 @@ Lastly, some accessibility considerations. Use distinct icons, contrasting color
 <div class="content-50 content-last">
 
 <!--insert error with links -->
+{::nomarkdown} 
+<div class="alert alert__error">
+    <p><span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
+    The following form fields are incomplete or have errors:</p>
+    <ul class="list list__unstyled">
+        <li><a href="#">What do you think would be a fair resolution to your issue?</a></li>
+        <li><a href="#">Which of these best describes your issue?</a></li>
+        <li><a href="#">Describe what happened so we can understand the issue...</a></li>
+    </ul>
+</div>
+{:/nomarkdown}
 
 </div> 
 
@@ -436,7 +453,12 @@ Lastly, some accessibility considerations. Use distinct icons, contrasting color
 <div class="content-50 content-last">
 
 <!--insert this form has been submitted successfully message -->
-
+{::nomarkdown} 
+<div class="alert alert__success">
+    <p><span class="cf-form_input-icon cf-icon cf-icon-approved-round" role="alert"></span>
+    15 results found</p>
+</div>
+{:/nomarkdown}
 </div> 
 
 
