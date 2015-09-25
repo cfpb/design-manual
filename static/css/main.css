@@ -588,7 +588,6 @@ input[type="radio"] {
           @link-underline-hover
           @link-text-active
           @link-underline-active
-          @table-border
           @thead-text
           @thead-bg
           @td-bg
@@ -1893,22 +1892,52 @@ ul {
             </thead>
             <tbody>
                 <tr>
-                    <td>Row 1, column 1</td>
+                    <th>Row 1 header</th>
                     <td>Row 1, column 2</td>
                     <td>Row 1, column 3</td>
                 </tr>
                 <tr>
-                    <td>Row 2, column 1</td>
+                    <th>Row 2 header</th>
                     <td>Row 2, column 2</td>
                     <td>Row 2, column 3</td>
                 </tr>
                 <tr>
-                    <td>Row 3, column 1</td>
+                    <th>Row 3 header</th>
                     <td>Row 3, column 2</td>
                     <td>Row 3, column 3</td>
                 </tr>
             </tbody>
         </table>
+    - name: Compact table
+      markup: |
+        <table class="compact-table">
+            <thead>
+                <tr>
+                    <th>Column 1 header</th>
+                    <th>Column 2 header</th>
+                    <th>Column 3 header</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Row 1 header</th>
+                    <td>Row 1, column 2</td>
+                    <td>Row 1, column 3</td>
+                </tr>
+                <tr>
+                    <th>Row 2 header</th>
+                    <td>Row 2, column 2</td>
+                    <td>Row 2, column 3</td>
+                </tr>
+                <tr>
+                    <th>Row 3 header</th>
+                    <td>Row 3, column 2</td>
+                    <td>Row 3, column 3</td>
+                </tr>
+            </tbody>
+        </table>
+      notes:
+        - Reduces cell padding to 10px.
   tags:
     - cf-core
 */
@@ -1939,29 +1968,30 @@ table b {
 }
 th,
 td {
-  padding: 0.625em;
+  padding: 0.75em 0.9375em;
+  background: #f8f8f8;
 }
 thead th,
 thead td {
   color: #ffffff;
   background: #43484e;
+}
+tbody > tr:nth-child(odd) > th,
+tbody > tr:nth-child(odd) > td {
+  background: #f1f2f2;
+}
+.compact-table th,
+.compact-table td {
+  padding: 0.4375em 0.625em;
+}
+th {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
+  text-align: left;
 }
-.lt-ie9 thead th,
-.lt-ie9 thead td {
+.lt-ie9 th {
   font-weight: normal !important;
-}
-thead,
-tbody tr {
-  border-bottom: 1px solid #babbbd;
 }
 /* topdoc
   name: Block quote
@@ -2015,7 +2045,7 @@ blockquote {
     - cf-core
 */
 legend {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   margin-top: 0;
@@ -2025,7 +2055,7 @@ legend {
 }
 legend em,
 legend i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -2035,7 +2065,7 @@ legend i {
 }
 legend strong,
 legend b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -2048,7 +2078,7 @@ legend b {
     margin-top: 0;
     margin-bottom: 1.16666667em;
     font-size: 1.125em;
-    font-family: Arial, Arial, sans-serif;
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 1.22222222;
@@ -5213,9 +5243,8 @@ input.btn::-moz-focus-inner {
  tags:
    - cf-typography
 */
-<<<<<<< HEAD
 .pull-quote_body {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   margin-top: 0;
@@ -5227,7 +5256,7 @@ input.btn::-moz-focus-inner {
 }
 .pull-quote_body em,
 .pull-quote_body i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -5237,7 +5266,7 @@ input.btn::-moz-focus-inner {
 }
 .pull-quote_body strong,
 .pull-quote_body b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -5250,7 +5279,7 @@ input.btn::-moz-focus-inner {
     margin-top: 0;
     margin-bottom: 1.16666667em;
     font-size: 1.125em;
-    font-family: Arial, Arial, sans-serif;
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 1.22222222;
@@ -5260,11 +5289,7 @@ input.btn::-moz-focus-inner {
   }
 }
 .pull-quote_citation {
-  font-family: Arial, Arial, sans-serif;
-=======
-.form-label-header {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
->>>>>>> master
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
@@ -5279,7 +5304,7 @@ input.btn::-moz-focus-inner {
   font-weight: normal !important;
 }
 .pull-quote__large .pull-quote_body {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   margin-top: 0;
@@ -5290,7 +5315,7 @@ input.btn::-moz-focus-inner {
 }
 .pull-quote__large .pull-quote_body em,
 .pull-quote__large .pull-quote_body i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -5300,7 +5325,7 @@ input.btn::-moz-focus-inner {
 }
 .pull-quote__large .pull-quote_body strong,
 .pull-quote__large .pull-quote_body b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -5310,7 +5335,7 @@ input.btn::-moz-focus-inner {
 }
 @media only all and (max-width: 37.4375em) {
   .pull-quote__large .pull-quote_body {
-    font-family: Arial, Arial, sans-serif;
+    font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     margin-top: 0;
@@ -5320,7 +5345,7 @@ input.btn::-moz-focus-inner {
   }
   .pull-quote__large .pull-quote_body em,
   .pull-quote__large .pull-quote_body i {
-    font-family: Arial, Arial, sans-serif;
+    font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
     font-style: italic;
     font-weight: normal;
   }
@@ -5330,7 +5355,7 @@ input.btn::-moz-focus-inner {
   }
   .pull-quote__large .pull-quote_body strong,
   .pull-quote__large .pull-quote_body b {
-    font-family: Arial, Arial, sans-serif;
+    font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
   }
@@ -5344,7 +5369,7 @@ input.btn::-moz-focus-inner {
     margin-top: 0;
     margin-bottom: 1.16666667em;
     font-size: 1.125em;
-    font-family: Arial, Arial, sans-serif;
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 1.22222222;
@@ -5377,13 +5402,13 @@ input.btn::-moz-focus-inner {
 .micro-copy {
   color: #ad81a8;
   font-size: 0.875em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 .micro-copy em,
 .micro-copy i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -5393,7 +5418,7 @@ input.btn::-moz-focus-inner {
 }
 .micro-copy strong,
 .micro-copy b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -5422,13 +5447,13 @@ input.btn::-moz-focus-inner {
     - cf-typography
 */
 .short-desc {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 .short-desc em,
 .short-desc i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -5438,7 +5463,7 @@ input.btn::-moz-focus-inner {
 }
 .short-desc strong,
 .short-desc b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -5462,7 +5487,7 @@ input.btn::-moz-focus-inner {
     - cf-typography
 */
 .date {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
@@ -5505,7 +5530,7 @@ input.btn::-moz-focus-inner {
   margin-top: 0;
   margin-bottom: 1.16666667em;
   font-size: 1.125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 1.22222222;
@@ -5564,7 +5589,7 @@ a.category-slug.active {
     - cf-typography
 */
 .header-slug {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
@@ -5600,7 +5625,7 @@ a.category-slug.active {
     - cf-typography
 */
 .padded-header {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
@@ -5643,7 +5668,7 @@ a.category-slug.active {
     - cf-typography
 */
 .fancy-slug {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
@@ -5958,7 +5983,7 @@ a.category-slug.active {
 */
 .styled-link {
   border-bottom-width: 1px;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
@@ -6017,7 +6042,7 @@ a.category-slug.active {
     - cf-typography
 */
 .jump-link {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
@@ -6450,7 +6475,7 @@ a.category-slug.active {
 */
 .list__branded li,
 .list__branded .list_item {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   list-style-type: none;
@@ -6460,7 +6485,7 @@ a.category-slug.active {
 .list__branded .list_item em,
 .list__branded li i,
 .list__branded .list_item i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -6474,7 +6499,7 @@ a.category-slug.active {
 .list__branded .list_item strong,
 .list__branded li b,
 .list__branded .list_item b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -6543,7 +6568,7 @@ a.category-slug.active {
   margin-top: 0;
   margin-bottom: 1.16666667em;
   font-size: 1.125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 1.22222222;
@@ -6555,7 +6580,7 @@ a.category-slug.active {
 .form-label-helper-text {
   color: #ad81a8;
   font-size: 0.875em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: #43484e;
@@ -6563,7 +6588,7 @@ a.category-slug.active {
 }
 .form-label-helper-text em,
 .form-label-helper-text i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -6573,7 +6598,7 @@ a.category-slug.active {
 }
 .form-label-helper-text strong,
 .form-label-helper-text b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -6697,6 +6722,12 @@ textarea.disabled {
 }
 .form-label-error .cf-form_input-icon {
   color: #d12124;
+}
+.alert__error .cf-form_input-icon {
+  color: #d12124;
+}
+.alert__success .cf-form_input-icon {
+  color: #009d38;
 }
 /* topdoc
   name: Form group
@@ -6968,6 +6999,66 @@ textarea.disabled {
 }
 .btn-inside-input .btn__link.btn__secondary {
   background-color: #fff;
+}
+/* topdoc
+  name: Form-level validation message
+  family: cf-forms
+  patterns:
+    - name: Form-level error alert
+      markup: |
+        <div class="alert alert__error">
+          <p><span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
+          The following form fields are incomplete or have errors:</p>
+          <ul class="list list__unstyled">
+            <li>What do you think would be a fair resolution to your issue?</li>
+            <li>Which of these best describes your issue?</li>
+            <li>Describe what happened so we can understand the issue...</li>
+          </ul>
+        </div>
+    - name: Form-level success alert
+      markup: |
+        <div class="alert alert__success">
+            <p><span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
+            15 results found</p>
+        </div>
+  tags:
+    - cf-forms
+*/
+.alert {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.alert em,
+.alert i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .alert em,
+.lt-ie9 .alert i {
+  font-style: normal !important;
+}
+.alert strong,
+.alert b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .alert strong,
+.lt-ie9 .alert b {
+  font-weight: normal !important;
+}
+.alert__large {
+  font-size: 1.125em;
+}
+.alert__error {
+  border: 1px solid #d12124;
+  background-color: #fdf4f4;
+}
+.alert__success {
+  border: 1px solid #009d38;
+  background-color: #9dffc0;
 }
 /* topdoc
   name: EOF
@@ -7424,7 +7515,6 @@ textarea.disabled {
     margin-right: -15px;
   }
 }
-<<<<<<< HEAD
 @media only all and (min-width: 37.5em) and (max-width: 47.9375em) {
   .content-l__full .content-l_col.content-l_col-1-3 {
     display: block;
@@ -7570,153 +7660,6 @@ textarea.disabled {
   .content-l__full .content-l_col + .content-l_col-3-4 {
     margin-top: 1.875em;
   }
-=======
-.lt-ie9 .wrapper,
-.lt-ie9 .content_wrapper {
-  max-width: 960px;
-}
-.lt-ie9 body {
-  min-width: 800px;
-}
-.grid_column__top-divider {
-  margin-top: 3.75em;
-  border-left-width: 15px;
-}
-.grid_column__top-divider:before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-bottom: 1.875em;
-  background-color: #babbbd;
-  position: static;
-  width: 100%;
-  margin-left: auto !important;
-}
-.grid_column__left-divider {
-  border-left-width: 30px;
-}
-.grid_column__left-divider:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  display: block;
-  background-color: #babbbd;
-  margin-left: -30px;
-}
-/* topdoc
-  name: EOF
-  eof: true
-*/
-/* ==========================================================================
-   Capital Framework
-   Advanced Typography
-   ========================================================================== */
-/* topdoc
-  name: Theme variables
-  family: cf-typography
-  notes:
-    - "The following color and sizing variables are exposed, allowing you to
-       easily override them before compiling."
-  patterns:
-  - name: Colors
-    codenotes:
-      - |
-        @pull-quote_body
-        @pull-quote_citation
-        @micro-copy-text
-        @date-text
-        @category-slug-text
-        @category-slug-hover
-        @header-slug-thin-border
-        @header-slug-thick-border
-        @padded-header-text
-        @padded-header-bg
-        @padded-header-border
-        @fancy-slug-text
-        @fancy-slug-bg
-        @fancy-slug-border
-        @meta-header-border
-        @jump-link__bg
-        @jump-link__bg-border
-        @list__branded-bullet
-  - name: Sizing
-    codenotes:
-      - |
-        @...
-  tags:
-  - cf-typography
-  - less
-*/
-/* topdoc
- name: Pull quote
- family: cf-typography
- patterns:
-   - name: Default pull quote
-     markup: |
-       <aside class="pull-quote">
-           <div class="pull-quote_body">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Cum corrupti tempora nam nihil qui mollitia consectetur
-               corporis nemo culpa dolorum!
-           </div>
-           <footer>
-               <cite class="pull-quote_citation">
-                   - Author Name
-               </cite>
-           <footer>
-       </aside>
-     notes:
-       - "Use a pull quote to highlight excerpts from the current work.
-         This is not to be confused with blockquote which quotes from an
-         external work."
-       - "Since a pull quote is an excerpt and repeats content from the
-         article it's contained within you should use the aside element."
-   - name: Large pull quote
-     markup: |
-       <aside class="pull-quote pull-quote__large">
-           <div class="pull-quote_body">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Cum corrupti tempora nam nihil qui mollitia consectetur
-               corporis nemo culpa dolorum!
-           </div>
-           <footer>
-               <cite class="pull-quote_citation">
-                   - Author Name
-               </cite>
-           <footer>
-       </aside>
- tags:
-   - cf-typography
-*/
-.pull-quote_body {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0.95454545em;
-  font-size: 1.375em;
-  line-height: 1.27272727;
-  margin-bottom: 0.54545455em;
-  color: #101820;
-}
-.pull-quote_body em,
-.pull-quote_body i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .pull-quote_body em,
-.lt-ie9 .pull-quote_body i {
-  font-style: normal !important;
-}
-.pull-quote_body strong,
-.pull-quote_body b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
->>>>>>> master
 }
 @media only all and (min-width: 50.0625em) and (max-width: 56.1875em) {
   .content-l__main .content-l_col.content-l_col-1-2 {
@@ -7744,7 +7687,6 @@ textarea.disabled {
     margin-top: 1.875em;
   }
 }
-<<<<<<< HEAD
 @media only all and (min-width: 37.5em) and (max-width: 56.1875em) {
   .content-l__main .content-l_col.content-l_col-1-3 {
     display: block;
@@ -7865,17 +7807,6 @@ textarea.disabled {
   }
   .content-l__main .content-l_col + .content-l_col-1-4 {
     margin-top: 1.875em;
-=======
-@media only all and (max-width: 37.4375em) {
-  .pull-quote_body {
-    margin-top: 0;
-    margin-bottom: 1.16666667em;
-    font-size: 1.125em;
-    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.22222222;
->>>>>>> master
   }
   .content-l__main .content-l_col.content-l_col-3-4 {
     display: block;
@@ -7902,48 +7833,14 @@ textarea.disabled {
     margin-top: 1.875em;
   }
 }
-<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-1-3 {
   display: block;
   width: 100%;
-=======
-.pull-quote_citation {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  color: #75787b;
-}
-.lt-ie9 .pull-quote_citation {
-  font-weight: normal !important;
-}
-.pull-quote__large .pull-quote_body {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0.73076923em;
-  font-size: 1.625em;
-  line-height: 1.26923077;
-  margin-bottom: 0.69230769em;
-}
-.pull-quote__large .pull-quote_body em,
-.pull-quote__large .pull-quote_body i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
->>>>>>> master
 }
 .content-l__sidebar .content-l_col.content-l_col-1-3.content-l_col__before-divider {
   margin-top: 3.75em;
   border-left-width: 15px;
 }
-<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-1-3.content-l_col__before-divider:before {
   content: "";
   display: block;
@@ -7953,18 +7850,10 @@ textarea.disabled {
   position: static;
   width: 100%;
   margin-left: auto !important;
-=======
-.pull-quote__large .pull-quote_body strong,
-.pull-quote__large .pull-quote_body b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
->>>>>>> master
 }
 .content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-1-3.content-l_col__before-divider {
   border-left-width: 30px;
 }
-<<<<<<< HEAD
 .content-l__sidebar .content-l_col + .content-l_col-1-3 {
   margin-top: 1.875em;
 }
@@ -7985,100 +7874,12 @@ textarea.disabled {
   position: static;
   width: 100%;
   margin-left: auto !important;
-=======
-@media only all and (max-width: 37.4375em) {
-  .pull-quote__large .pull-quote_body {
-    font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 0.95454545em;
-    font-size: 1.375em;
-    line-height: 1.27272727;
-  }
-  .pull-quote__large .pull-quote_body em,
-  .pull-quote__large .pull-quote_body i {
-    font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-    font-style: italic;
-    font-weight: normal;
-  }
-  .lt-ie9 .pull-quote__large .pull-quote_body em,
-  .lt-ie9 .pull-quote__large .pull-quote_body i {
-    font-style: normal !important;
-  }
-  .pull-quote__large .pull-quote_body strong,
-  .pull-quote__large .pull-quote_body b {
-    font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-  }
-  .lt-ie9 .pull-quote__large .pull-quote_body strong,
-  .lt-ie9 .pull-quote__large .pull-quote_body b {
-    font-weight: normal !important;
-  }
-}
-@media only all and (max-width: 37.4375em) and only all and (max-width: 37.4375em) {
-  .pull-quote__large .pull-quote_body {
-    margin-top: 0;
-    margin-bottom: 1.16666667em;
-    font-size: 1.125em;
-    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.22222222;
-  }
-  .lt-ie9 .pull-quote__large .pull-quote_body {
-    font-weight: normal !important;
-  }
-}
-/* topdoc
-  name: Micro copy
-  family: cf-typography
-  patterns:
-    - name: Standard micro copy
-      markup: |
-        <p class="micro-copy">
-            Lorem ipsum dolor sit amet
-        </p>
-      codenotes:
-        - .micro-copy
-    - name: Large micro copy
-      markup: |
-        <p class="micro-copy micro-copy__large">
-            Lorem ipsum dolor sit amet
-        </p>
-      codenotes:
-        - .micro-copy
-  tags:
-    - cf-typography
-*/
-.micro-copy {
-  color: #75787b;
-  font-size: 0.875em;
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-.micro-copy em,
-.micro-copy i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
->>>>>>> master
 }
 .content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-2-3.content-l_col__before-divider {
   border-left-width: 30px;
 }
-<<<<<<< HEAD
 .content-l__sidebar .content-l_col + .content-l_col-2-3 {
   margin-top: 1.875em;
-=======
-.micro-copy strong,
-.micro-copy b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
->>>>>>> master
 }
 .content-l__sidebar .content-l_col.content-l_col-3-8 {
   display: block;
@@ -8088,7 +7889,6 @@ textarea.disabled {
   margin-top: 3.75em;
   border-left-width: 15px;
 }
-<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-3-8.content-l_col__before-divider:before {
   content: "";
   display: block;
@@ -8101,50 +7901,13 @@ textarea.disabled {
 }
 .content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-3-8.content-l_col__before-divider {
   border-left-width: 30px;
-=======
-/* topdoc
-  name: Short description
-  family: cf-typography
-  patterns:
-    - name: .short-desc
-      markup: |
-        <p class="short-desc">I am short description.</p>
-      codenotes:
-        - .short-desc
-    - name: .short-desc__large (modifier)
-      markup: |
-        <p class="short-desc short-desc__large">I am large short description.</p>
-      codenotes:
-        - .short-desc__large
-  tags:
-    - cf-typography
-*/
-.short-desc {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-.short-desc em,
-.short-desc i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
->>>>>>> master
 }
 .content-l__sidebar .content-l_col + .content-l_col-3-8 {
   margin-top: 1.875em;
 }
-<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-5-8 {
   display: block;
   width: 100%;
-=======
-.short-desc strong,
-.short-desc b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
->>>>>>> master
 }
 .content-l__sidebar .content-l_col.content-l_col-5-8.content-l_col__before-divider {
   margin-top: 3.75em;
@@ -8160,80 +7923,15 @@ textarea.disabled {
   width: 100%;
   margin-left: auto !important;
 }
-<<<<<<< HEAD
 .content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-5-8.content-l_col__before-divider {
   border-left-width: 30px;
-=======
-/* topdoc
-  name: Date
-  family: cf-typography
-  patterns:
-    - name: Default date
-      markup: |
-        <span class="date">
-            Nov 4, 2013
-        </span>
-  tags:
-    - cf-typography
-*/
-.date {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  color: #75787b;
-  white-space: nowrap;
->>>>>>> master
 }
 .content-l__sidebar .content-l_col + .content-l_col-5-8 {
   margin-top: 1.875em;
 }
-<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-1-4 {
   display: block;
   width: 100%;
-=======
-/* topdoc
-  name: Category slug
-  family: cf-typography
-  patterns:
-    - name: Default category slug
-      markup: |
-        <a href="#" class="category-slug">
-            <span class="category-slug_icon cf-icon cf-icon-dialogue"></span>
-            <span class="u-visually-hidden">Category:</span>
-            Consumer finance
-        </a>
-      codenotes:
-        - |
-          Structural cheat sheet:
-          -----------------------
-          .category-slug
-            .category-slug_icon
-            .u-visually-hidden
-      notes:
-        - "We suggest using a .u-visually-hidden element to add more context for
-          screen readers."
-  tags:
-    - cf-typography
-*/
-.category-slug {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.22222222;
-  display: inline-block;
-  margin-bottom: 0.44444444em;
-  color: #101820;
->>>>>>> master
 }
 .content-l__sidebar .content-l_col.content-l_col-1-4.content-l_col__before-divider {
   margin-top: 3.75em;
@@ -8273,43 +7971,8 @@ textarea.disabled {
   width: 100%;
   margin-left: auto !important;
 }
-<<<<<<< HEAD
 .content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-3-4.content-l_col__before-divider {
   border-left-width: 30px;
-=======
-/* topdoc
-  name: Header slug
-  family: cf-typography
-  patterns:
-    - name: Default header slug
-      markup: |
-        <h2 class="header-slug">
-            <span class="header-slug_inner">
-                Blog summary
-            </span>
-        </h2>
-      codenotes:
-        - |
-          Structural cheat sheet:
-          -----------------------
-          .header-slug
-            .header-slug_inner
-  tags:
-    - cf-typography
-*/
-.header-slug {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  margin-bottom: 1.21428571em;
-  border-top: 1px solid #e3e4e5;
->>>>>>> master
 }
 .content-l__sidebar .content-l_col + .content-l_col-3-4 {
   margin-top: 1.875em;
@@ -8340,7 +8003,6 @@ textarea.disabled {
     margin-top: 1.875em;
   }
 }
-<<<<<<< HEAD
 @media only all and (min-width: 37.5em) {
   .content-l__large-gutters {
     margin-left: -30px;
@@ -8350,37 +8012,6 @@ textarea.disabled {
     border-left-width: 30px;
     border-right-width: 30px;
   }
-=======
-/* topdoc
-  name: Padded header
-  family: cf-typography
-  patterns:
-    - name: Default padded header
-      markup: |
-        <h2 class="padded-header">
-            Header
-        </h2>
-      codenotes:
-        - .padded-header
-  tags:
-    - cf-typography
-*/
-.padded-header {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  padding: 0.57142857em 0.71428571em;
-  margin-bottom: 0;
-  border-bottom: 1px solid #babbbd;
-  background: #f1f2f2;
-  color: #43484e;
->>>>>>> master
 }
 @media only all and (max-width: 37.4375em) {
   .content-l_col + .content-l_col {
@@ -8560,7 +8191,6 @@ textarea.disabled {
   tags:
     - cf-layout
 */
-<<<<<<< HEAD
 @media only all and (max-width: 37.4375em) {
   .content-l_col__before-divider.content-l_col-1-2 {
     margin-top: 3.75em;
@@ -8576,77 +8206,6 @@ textarea.disabled {
     width: 100%;
     margin-left: auto !important;
   }
-=======
-.fancy-slug {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  position: relative;
-  height: 1.14285714em;
-  padding: 0 1.21428571em;
-  margin-top: 1.14285714em;
-  margin-bottom: 0.57142857em;
-  border-top: 1px solid #babbbd;
-  line-height: 1;
-  text-align: center;
-}
-.lt-ie9 .fancy-slug {
-  font-weight: normal !important;
-}
-.fancy-slug_text {
-  display: inline-block;
-  position: relative;
-  top: -1.14285714em;
-  padding: 0.57142857em 1.42857143em;
-  border: 1px solid #babbbd;
-  background: #ffffff;
-}
-.fancy-slug_ribbon-left,
-.fancy-slug_ribbon-right {
-  display: block;
-  position: absolute;
-  top: -1px;
-  width: 1.21428571em;
-  height: 100%;
-  border-top: 1px solid #babbbd;
-  border-bottom: 1px solid #babbbd;
-}
-.lt-ie9 .fancy-slug_ribbon-left,
-.lt-ie9 .fancy-slug_ribbon-right {
-  display: none;
-}
-.fancy-slug_ribbon-left:before,
-.fancy-slug_ribbon-right:before,
-.fancy-slug_ribbon-left:after,
-.fancy-slug_ribbon-right:after {
-  display: block;
-  content: "";
-  position: absolute;
-  z-index: 3;
-  width: 1.21428571em;
-  height: 50%;
-  background: #ffffff;
-  border: 0 solid #babbbd;
-}
-.fancy-slug_ribbon-left {
-  left: -1.21428571em;
-}
-.fancy-slug_ribbon-left:before {
-  top: 0;
-  border-left-width: 1px;
-  -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
-          transform-origin: 0 0;
-  -webkit-transform: skewX(33deg);
-      -ms-transform: skewX(33deg);
-          transform: skewX(33deg);
->>>>>>> master
 }
 @media only all and (min-width: 37.5em) {
   .content-l_col__before-divider.content-l_col-1-2 {
@@ -9179,34 +8738,12 @@ textarea.disabled {
             </div>
         </main>
       codenotes:
-<<<<<<< HEAD
         - .block.block__flush-sides
       notes:
         - "Removes the side margin from .block."
         - "Typically used in conjuction with .block__bg to create a 'well' whose
            background extends into the left and right gutters. (See below.)"
     - name: Border-top modifier
-=======
-        - .styled-link
-  tags:
-    - cf-typography
-*/
-.styled-link {
-  border-bottom-width: 1px;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1em;
-}
-.lt-ie9 .styled-link {
-  font-weight: normal !important;
-}
-/* topdoc
-  name: Jump link
-  family: cf-typography
-  patterns:
-    - name: .jump-link
->>>>>>> master
       markup: |
         Main content...
         <div class="block block__border-top">
@@ -9276,141 +8813,11 @@ textarea.disabled {
             </div>
         </main>
       codenotes:
-<<<<<<< HEAD
         - .block.block__flush-sides.block__bg
       notes:
         - "This is an example of combining modifiers to get a flush padded bg
            with a .block."
     - name: Sub blocks
-=======
-        - .jump-link__bg
-  tags:
-    - cf-typography
-*/
-.jump-link {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1em;
-  border-bottom-width: 0;
-  position: relative;
-}
-.lt-ie9 .jump-link {
-  font-weight: normal !important;
-}
-.jump-link_text {
-  border-bottom-width: 1px;
-  border-bottom-style: inherit;
-}
-.jump-link:before,
-.jump-link:after {
-  font-family: 'CFPB Minicons';
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 1px;
-  margin-left: 1px;
-}
-.jump-link__download:after,
-.jump-link__download.jump-link__before:before {
-  content: "\e406";
-}
-.jump-link__email:after,
-.jump-link__email.jump-link__before:before {
-  content: "\e302";
-}
-.jump-link__external-link:after,
-.jump-link__external-link.jump-link__before:before {
-  content: "\e610";
-}
-.jump-link__fax:after,
-.jump-link__fax.jump-link__before:before {
-  content: "\e310";
-}
-.jump-link__left:after,
-.jump-link__left.jump-link__before:before {
-  content: "\e000";
-}
-.jump-link__mail:after,
-.jump-link__mail.jump-link__before:before {
-  content: "\e304";
-}
-.jump-link__pdf:after,
-.jump-link__pdf.jump-link__before:before {
-  content: "\e402";
-}
-.jump-link__pdf:after,
-.jump-link__pdf.jump-link__before:before {
-  content: "\e402";
-}
-.jump-link__phone:after,
-.jump-link__phone.jump-link__before:before {
-  content: "\e306";
-}
-.jump-link__right:after,
-.jump-link__right.jump-link__before:before {
-  content: "\e002";
-}
-.jump-link__before:after {
-  content: '';
-}
-.jump-link__no-wrap {
-  white-space: nowrap;
-}
-.jump-link__large {
-  font-size: 1.125em;
-}
-@media only all and (max-width: 37.4375em) {
-  .jump-link {
-    box-sizing: border-box;
-    display: block;
-    padding: 0.625em 1.25em 0.625em 0;
-    border: dotted #0072ce;
-    border-width: 1px 0;
-    margin-right: 0;
-    width: 100%;
-    text-align: left;
-  }
-  .jump-link:after {
-    position: absolute;
-    margin-bottom: -0.625em;
-    right: 0;
-    bottom: 50%;
-    text-align: right;
-  }
-  .jump-link__before {
-    padding-left: 1.25em;
-  }
-  .jump-link__before:before {
-    position: absolute;
-    margin-bottom: -0.625em;
-    bottom: 50%;
-    left: 0;
-  }
-  .jump-link_text {
-    border-bottom-width: 0;
-  }
-  .jump-link__bg {
-    background: #f1f2f2;
-    border: solid #e3e4e5;
-    border-width: 1px 0;
-    padding: 0.625em 1.25em 0.625em 1em;
-  }
-  .jump-link__bg:after {
-    right: 1em;
-  }
-  .jump-link__bg:before {
-    left: 0.625em;
-  }
-}
-/* topdoc
-  name: Block link
-  family: cf-typography
-  patterns:
-    - name: .block-link
->>>>>>> master
       markup: |
         <div class="block block__sub">
             <div style="background: #F1F2F2; padding: 8px;">
@@ -9655,7 +9062,6 @@ textarea.disabled {
   tags:
     - cf-layout
 */
-<<<<<<< HEAD
 @media only all and (min-width: 50.0625em) {
   .wrapper,
   .content_wrapper {
@@ -9670,23 +9076,6 @@ textarea.disabled {
 .content_wrapper__match-content {
   padding-left: 15px;
   padding-right: 15px;
-=======
-.list__branded li,
-.list__branded .list_item {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  position: relative;
-}
-.list__branded li em,
-.list__branded .list_item em,
-.list__branded li i,
-.list__branded .list_item i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
->>>>>>> master
 }
 @media only all and (min-width: 37.5em) {
   .wrapper__match-content,
@@ -9696,19 +9085,9 @@ textarea.disabled {
     max-width: 1140px;
   }
 }
-<<<<<<< HEAD
 .lt-ie9 .wrapper,
 .lt-ie9 .content_wrapper {
   max-width: 960px;
-=======
-.list__branded li strong,
-.list__branded .list_item strong,
-.list__branded li b,
-.list__branded .list_item b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
->>>>>>> master
 }
 .lt-ie9 body {
   min-width: 800px;
