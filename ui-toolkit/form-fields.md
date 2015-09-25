@@ -181,7 +181,7 @@ Use for longer-form answers.
 <div class="content-50 content-last">
 {::nomarkdown} 
 <label class="form-label-header">
-    Form label
+    Label
 </label>
 <input placeholder="placeholder text" type="text">
 {:/nomarkdown}
@@ -243,8 +243,15 @@ suggest ways of providing answers other than providing formatting examples.
 
 <div class="content-50 content-last">
 
-<!--insert field label, block helper text, and text input field-->
-
+{::nomarkdown} 
+<label class="form-label-header" for="helper-example">
+    Label
+</label>
+<label class="form-label-helper-text" for="helper-example">
+Use block helper text for instructions.
+</label>
+<input placeholder="placeholder text" type="text" id="helper-example">
+{:/nomarkdown} 
 </div> 
 
 ---
@@ -260,8 +267,12 @@ Use to indicate whether a field is optional or required (see below).
 
 <div class="content-50 content-last">
 
-<!--insert field label, inline helper text, and text input field -->
-
+{::nomarkdown} 
+<label class="form-label-header" for="helper-inline-example">
+    Label <span class="form-label-helper-text">(optional)</span>
+</label>
+<input placeholder="placeholder text" type="text" id="helper-inline-example">
+{:/nomarkdown} 
 </div> 
 
 ---
@@ -281,7 +292,16 @@ Don’t use for instructions. Once an input field is focused, the placeholder te
 
 <div class="content-50 content-last">
 
-<!--insert text input field with text like "e.g. (212) 555-1212" and "mm/dd/yyyy" -->
+{::nomarkdown} 
+<div class="form-group">
+    <div class="form-group_item">
+        <input placeholder="e.g. (212) 555-1212" type="text">
+    </div>
+    <div class="form-group_item">
+        <input placeholder="mm/dd/yyyy" type="text">
+    </div>
+</div>
+{:/nomarkdown} 
 
 </div> 
 
@@ -301,9 +321,22 @@ It’s discouraged to design forms consisting mainly of optional fields. If you 
 
 <div class="content-50 content-last">
 
-<!--insert field label, inline helper text that says "(required)", and text input field -->
-<!--insert field label, inline helper text that says "(optional)", and text input field -->
-
+{::nomarkdown} 
+<div class="form-group">
+    <div class="form-group_item">
+        <label class="form-label-header" for="helper-inline-required">
+            Label <span class="form-label-helper-text">(required)</span>
+        </label>
+        <input placeholder="placeholder text" type="text" id="helper-inline-required">
+    </div>
+    <div class="form-group_item">
+        <label class="form-label-header" for="helper-inline-optional">
+            Label <span class="form-label-helper-text">(optional)</span>
+        </label>
+        <input placeholder="placeholder text" type="text" id="helper-inline-optional">
+    </div>
+</div>
+{:/nomarkdown} 
 
 </div> 
 
@@ -322,9 +355,14 @@ Include error messaging below the field. Use the appropriate icon. <a href="#">M
 
 <div class="content-50 content-last">
 
-<!--insert field label, inline helper text that says "(required)", and text input field -->
-<!--insert field label, inline helper text that says "(optional)", and text input field -->
+{::nomarkdown} 
+<input class="error" type="text" value="" id="form-input-error">
+<label class="form-label-error" for="form-input-error">
+    <span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
+    This is a required question, please answer.
+</label>
 
+{:/nomarkdown}
 
 </div> 
 
