@@ -89,6 +89,21 @@ Modals should have a clear headline at the top of the window. If the modal was t
 
 </div>
 
+#### Closing a modal
+<div class="content-67 content-first">
+
+Modals are always closable by either:
+
+* clicking/tapping a delete minion in the upper right corner,
+* clicking/tapping the next action buttons or links,
+* clicking/tapping anywhere outside the modal, or
+* hitting the `ESC` key on a keyboard.
+
+If the primary action after the modal appears is to close it, a close button should be provided as a next action. 
+
+</div>
+
+
 **We still need to spell out the rules around height and width of the modal.**
 
 
@@ -101,7 +116,7 @@ Modals should have a clear headline at the top of the window. If the modal was t
 * Add `role="alertdialog"` to the modal.
 * Code the close minicon using a `button` element for more semantic markup. 
 * Provide separate focus and hover states for the close minicon and any next action buttons.
-* When the modal opens, set the focus to the first interactive element.
+* When the modal opens, set the focus to the first element they need to interact with. This could be either the first form field in the modal or the primary action button.
 * Save the last active element on the parent window, and return the focus there when the modal is closed.
 
 </div>
