@@ -1,3 +1,5 @@
+@import url(//fast.fonts.net/t/1.css?apiType=css&projectid=44e8c964-4684-44c6-a6e3-3f3da8787b50);
+
 /* ==========================================================================
    design-manual
    ========================================================================== */
@@ -726,6 +728,7 @@ input[type="radio"] {
           @link-underline-hover
           @link-text-active
           @link-underline-active
+          @table-border
           @thead-text
           @thead-bg
           @td-bg
@@ -1570,7 +1573,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -1587,7 +1590,7 @@ h2 i,
 .h2 i,
 h3 i,
 .h3 i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -1619,7 +1622,7 @@ h2 b,
 .h2 b,
 h3 b,
 .h3 b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -1668,7 +1671,7 @@ h4,
   margin-top: 0;
   margin-bottom: 1.16666667em;
   font-size: 1.125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 1.22222222;
@@ -1683,7 +1686,7 @@ h5,
 h6,
 .h5,
 .h6 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
@@ -1717,7 +1720,7 @@ h6,
   margin-top: 0;
   margin-bottom: 1.16666667em;
   font-size: 1.125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.22222222;
@@ -1725,7 +1728,7 @@ h6,
 
 .subheader em,
 .subheader i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -1737,7 +1740,7 @@ h6,
 
 .subheader strong,
 .subheader b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -1750,7 +1753,7 @@ h6,
 .superheader {
   margin-bottom: 0.1875em;
   font-size: 3em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   line-height: 1.25;
@@ -1954,65 +1957,35 @@ ul {
             </thead>
             <tbody>
                 <tr>
-                    <th>Row 1 header</th>
+                    <td>Row 1, column 1</td>
                     <td>Row 1, column 2</td>
                     <td>Row 1, column 3</td>
                 </tr>
                 <tr>
-                    <th>Row 2 header</th>
+                    <td>Row 2, column 1</td>
                     <td>Row 2, column 2</td>
                     <td>Row 2, column 3</td>
                 </tr>
                 <tr>
-                    <th>Row 3 header</th>
+                    <td>Row 3, column 1</td>
                     <td>Row 3, column 2</td>
                     <td>Row 3, column 3</td>
                 </tr>
             </tbody>
         </table>
-    - name: Compact table
-      markup: |
-        <table class="compact-table">
-            <thead>
-                <tr>
-                    <th>Column 1 header</th>
-                    <th>Column 2 header</th>
-                    <th>Column 3 header</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Row 1 header</th>
-                    <td>Row 1, column 2</td>
-                    <td>Row 1, column 3</td>
-                </tr>
-                <tr>
-                    <th>Row 2 header</th>
-                    <td>Row 2, column 2</td>
-                    <td>Row 2, column 3</td>
-                </tr>
-                <tr>
-                    <th>Row 3 header</th>
-                    <td>Row 3, column 2</td>
-                    <td>Row 3, column 3</td>
-                </tr>
-            </tbody>
-        </table>
-      notes:
-        - Reduces cell padding to 10px.
   tags:
     - cf-core
 */
 
 table {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 table em,
 table i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -2024,7 +1997,7 @@ table i {
 
 table strong,
 table b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -2036,35 +2009,32 @@ table b {
 
 th,
 td {
-  padding: 0.75em 0.9375em;
-  background: #f8f8f8;
+  padding: 0.625em;
 }
 
 thead th,
 thead td {
   color: #ffffff;
   background: #43484e;
-}
-
-tbody > tr:nth-child(odd) > th,
-tbody > tr:nth-child(odd) > td {
-  background: #f1f2f2;
-}
-
-.compact-table th,
-.compact-table td {
-  padding: 0.4375em 0.625em;
-}
-
-th {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
 }
 
-.lt-ie9 th {
+.lt-ie9 thead th,
+.lt-ie9 thead td {
   font-weight: normal !important;
+}
+
+thead,
+tbody tr {
+  border-bottom: 1px solid #babbbd;
 }
 
 /* topdoc
@@ -2180,14 +2150,14 @@ legend b {
 label {
   display: block;
   margin-bottom: 0.3125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 label em,
 label i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -2199,7 +2169,7 @@ label i {
 
 label strong,
 label b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -4747,7 +4717,7 @@ figure img {
   border-radius: 0.28571429em;
   margin: 0;
   vertical-align: middle;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.875em;
@@ -5834,6 +5804,7 @@ input.btn::-moz-focus-inner {
    - cf-typography
 */
 
+<<<<<<< HEAD
 .pull-quote_body {
   font-family: Arial, Arial, sans-serif;
   font-style: normal;
@@ -5872,6 +5843,10 @@ input.btn::-moz-focus-inner {
 
 .pull-quote_citation {
   font-family: Arial, Arial, sans-serif;
+=======
+.form-label-header {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+>>>>>>> master
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
@@ -7954,6 +7929,7 @@ textarea.disabled {
                     Full-width column (spans 12 columns)
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="content-l_col content-l_col-1-2">
                 <div style="background: #F1F2F2;
                             text-align: center;
@@ -8025,6 +8001,295 @@ textarea.disabled {
                 </div>
             </div>
         </div>
+=======
+        </main>
+      notes:
+        - "The .content area has a visual gutter twice the size of a normal
+           wrapper because the gutters from the sidebar and main content divs
+           add to the gutters of the wrapper. This modifier gives you a wrapper
+           with wider gutters to match the visual gutters of the .content area."
+    - name: Column divider modifiers
+      notes:
+        - "cf-grid columns use left and right borders for fixed margins which
+           means it's not possible to set visual left and right borders directly
+           on them. Instead we can use the :before pseudo element and position
+           it absolutely. The added benefit of doing it this way is that the
+           border spans the entire height of the next parent using `position:
+           relative;`. This means that the border will always match the height
+           of the tallest column in the row."
+      codenotes:
+        - .grid_column__top-divider
+        - .grid_column__left-divider
+        - |
+          .my-column-1-2 {
+
+              // Creates a column that spans 6 out of 12 columns.
+              .grid_column(6, 12);
+
+              // Add a top divider only at screen 599px and smaller.
+              .respond-to-max(599px {
+                  .grid_column__top-divider();
+              });
+
+              // Add a left divider only at screen 600px and larger.
+              .respond-to-min(600px, {
+                  .grid_column__left-divider();
+              });
+
+          }
+  tags:
+    - cf-layout
+*/
+
+.wrapper,
+.content_wrapper {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.wrapper__match-content,
+.content_wrapper__match-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper__match-content,
+.content_wrapper__match-content {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1140px;
+}
+
+.lt-ie9 .wrapper,
+.lt-ie9 .content_wrapper {
+  max-width: 960px;
+}
+
+.lt-ie9 body {
+  min-width: 800px;
+}
+
+.grid_column__top-divider {
+  margin-top: 3.75em;
+  border-left-width: 15px;
+}
+
+.grid_column__top-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 1.875em;
+  background-color: #babbbd;
+  position: static;
+  width: 100%;
+  margin-left: auto !important;
+}
+
+.grid_column__left-divider {
+  border-left-width: 30px;
+}
+
+.grid_column__left-divider:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  display: block;
+  background-color: #babbbd;
+  margin-left: -30px;
+}
+
+/* topdoc
+  name: EOF
+  eof: true
+*/
+
+/* ==========================================================================
+   Capital Framework
+   Advanced Typography
+   ========================================================================== */
+
+/* topdoc
+  name: Theme variables
+  family: cf-typography
+  notes:
+    - "The following color and sizing variables are exposed, allowing you to
+       easily override them before compiling."
+  patterns:
+  - name: Colors
+    codenotes:
+      - |
+        @pull-quote_body
+        @pull-quote_citation
+        @micro-copy-text
+        @date-text
+        @category-slug-text
+        @category-slug-hover
+        @header-slug-thin-border
+        @header-slug-thick-border
+        @padded-header-text
+        @padded-header-bg
+        @padded-header-border
+        @fancy-slug-text
+        @fancy-slug-bg
+        @fancy-slug-border
+        @meta-header-border
+        @jump-link__bg
+        @jump-link__bg-border
+        @list__branded-bullet
+  - name: Sizing
+    codenotes:
+      - |
+        @...
+  tags:
+  - cf-typography
+  - less
+*/
+
+/* topdoc
+ name: Pull quote
+ family: cf-typography
+ patterns:
+   - name: Default pull quote
+     markup: |
+       <aside class="pull-quote">
+           <div class="pull-quote_body">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Cum corrupti tempora nam nihil qui mollitia consectetur
+               corporis nemo culpa dolorum!
+           </div>
+           <footer>
+               <cite class="pull-quote_citation">
+                   - Author Name
+               </cite>
+           <footer>
+       </aside>
+     notes:
+       - "Use a pull quote to highlight excerpts from the current work.
+         This is not to be confused with blockquote which quotes from an
+         external work."
+       - "Since a pull quote is an excerpt and repeats content from the
+         article it's contained within you should use the aside element."
+   - name: Large pull quote
+     markup: |
+       <aside class="pull-quote pull-quote__large">
+           <div class="pull-quote_body">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Cum corrupti tempora nam nihil qui mollitia consectetur
+               corporis nemo culpa dolorum!
+           </div>
+           <footer>
+               <cite class="pull-quote_citation">
+                   - Author Name
+               </cite>
+           <footer>
+       </aside>
+ tags:
+   - cf-typography
+*/
+
+.pull-quote_body {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.95454545em;
+  font-size: 1.375em;
+  line-height: 1.27272727;
+  margin-bottom: 0.54545455em;
+  color: #101820;
+}
+
+.pull-quote_body em,
+.pull-quote_body i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .pull-quote_body em,
+.lt-ie9 .pull-quote_body i {
+  font-style: normal !important;
+}
+
+.pull-quote_body strong,
+.pull-quote_body b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .pull-quote_body strong,
+.lt-ie9 .pull-quote_body b {
+  font-weight: normal !important;
+}
+
+.pull-quote_citation {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  color: #75787b;
+}
+
+.lt-ie9 .pull-quote_citation {
+  font-weight: normal !important;
+}
+
+.pull-quote__large .pull-quote_body {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.73076923em;
+  font-size: 1.625em;
+  line-height: 1.26923077;
+  margin-bottom: 0.69230769em;
+}
+
+.pull-quote__large .pull-quote_body em,
+.pull-quote__large .pull-quote_body i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .pull-quote__large .pull-quote_body em,
+.lt-ie9 .pull-quote__large .pull-quote_body i {
+  font-style: normal !important;
+}
+
+.pull-quote__large .pull-quote_body strong,
+.pull-quote__large .pull-quote_body b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .pull-quote__large .pull-quote_body strong,
+.lt-ie9 .pull-quote__large .pull-quote_body b {
+  font-weight: normal !important;
+}
+
+/* topdoc
+  name: Micro copy
+  family: cf-typography
+  patterns:
+    - name: Standard micro copy
+      markup: |
+        <p class="micro-copy">
+            Lorem ipsum dolor sit amet
+        </p>
+>>>>>>> master
       codenotes:
         - .content-l.content-l__sidebar
       notes:
@@ -8071,6 +8336,7 @@ textarea.disabled {
     - cf-layout
 */
 
+<<<<<<< HEAD
 .content-l {
   position: relative;
 }
@@ -8080,6 +8346,21 @@ textarea.disabled {
   position: relative;
   margin-left: -15px;
   margin-right: -15px;
+=======
+.micro-copy {
+  color: #75787b;
+  font-size: 0.875em;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.micro-copy em,
+.micro-copy i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+>>>>>>> master
 }
 
 .content-l__sidebar .content-l_col.content-l_col-1-3 {
@@ -8087,9 +8368,17 @@ textarea.disabled {
   width: 100%;
 }
 
+<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-1-3.content-l_col__before-divider {
   margin-top: 3.75em;
   border-left-width: 15px;
+=======
+.micro-copy strong,
+.micro-copy b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+>>>>>>> master
 }
 
 .content-l__sidebar .content-l_col.content-l_col-1-3.content-l_col__before-divider:before {
@@ -8107,6 +8396,7 @@ textarea.disabled {
   border-left-width: 30px;
 }
 
+<<<<<<< HEAD
 .content-l__sidebar .content-l_col + .content-l_col-1-3 {
   margin-top: 1.875em;
 }
@@ -8114,6 +8404,37 @@ textarea.disabled {
 .content-l__sidebar .content-l_col.content-l_col-2-3 {
   display: block;
   width: 100%;
+=======
+/* topdoc
+  name: Short description
+  family: cf-typography
+  patterns:
+    - name: .short-desc
+      markup: |
+        <p class="short-desc">I am short description.</p>
+      codenotes:
+        - .short-desc
+    - name: .short-desc__large (modifier)
+      markup: |
+        <p class="short-desc short-desc__large">I am large short description.</p>
+      codenotes:
+        - .short-desc__large
+  tags:
+    - cf-typography
+*/
+
+.short-desc {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.short-desc em,
+.short-desc i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+>>>>>>> master
 }
 
 .content-l__sidebar .content-l_col.content-l_col-2-3.content-l_col__before-divider {
@@ -8121,6 +8442,7 @@ textarea.disabled {
   border-left-width: 15px;
 }
 
+<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-2-3.content-l_col__before-divider:before {
   content: "";
   display: block;
@@ -8130,6 +8452,13 @@ textarea.disabled {
   position: static;
   width: 100%;
   margin-left: auto !important;
+=======
+.short-desc strong,
+.short-desc b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+>>>>>>> master
 }
 
 .content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-2-3.content-l_col__before-divider {
@@ -8140,9 +8469,37 @@ textarea.disabled {
   margin-top: 1.875em;
 }
 
+<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-3-8 {
   display: block;
   width: 100%;
+=======
+/* topdoc
+  name: Date
+  family: cf-typography
+  patterns:
+    - name: Default date
+      markup: |
+        <span class="date">
+            Nov 4, 2013
+        </span>
+  tags:
+    - cf-typography
+*/
+
+.date {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  color: #75787b;
+  white-space: nowrap;
+>>>>>>> master
 }
 
 .content-l__sidebar .content-l_col.content-l_col-3-8.content-l_col__before-divider {
@@ -8150,6 +8507,7 @@ textarea.disabled {
   border-left-width: 15px;
 }
 
+<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-3-8.content-l_col__before-divider:before {
   content: "";
   display: block;
@@ -8159,6 +8517,44 @@ textarea.disabled {
   position: static;
   width: 100%;
   margin-left: auto !important;
+=======
+/* topdoc
+  name: Category slug
+  family: cf-typography
+  patterns:
+    - name: Default category slug
+      markup: |
+        <a href="#" class="category-slug">
+            <span class="category-slug_icon cf-icon cf-icon-dialogue"></span>
+            <span class="u-visually-hidden">Category:</span>
+            Consumer finance
+        </a>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .category-slug
+            .category-slug_icon
+            .u-visually-hidden
+      notes:
+        - "We suggest using a .u-visually-hidden element to add more context for
+          screen readers."
+  tags:
+    - cf-typography
+*/
+
+.category-slug {
+  margin-top: 0;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222222;
+  display: inline-block;
+  margin-bottom: 0.44444444em;
+  color: #101820;
+>>>>>>> master
 }
 
 .content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-3-8.content-l_col__before-divider {
@@ -8198,9 +8594,45 @@ textarea.disabled {
   margin-top: 1.875em;
 }
 
+<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-1-4 {
   display: block;
   width: 100%;
+=======
+/* topdoc
+  name: Header slug
+  family: cf-typography
+  patterns:
+    - name: Default header slug
+      markup: |
+        <h2 class="header-slug">
+            <span class="header-slug_inner">
+                Blog summary
+            </span>
+        </h2>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .header-slug
+            .header-slug_inner
+  tags:
+    - cf-typography
+*/
+
+.header-slug {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  margin-bottom: 1.21428571em;
+  border-top: 1px solid #e3e4e5;
+>>>>>>> master
 }
 
 .content-l__sidebar .content-l_col.content-l_col-1-4.content-l_col__before-divider {
@@ -8219,17 +8651,96 @@ textarea.disabled {
   margin-left: auto !important;
 }
 
+<<<<<<< HEAD
 .content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-1-4.content-l_col__before-divider {
   border-left-width: 30px;
+=======
+/* topdoc
+  name: Padded header
+  family: cf-typography
+  patterns:
+    - name: Default padded header
+      markup: |
+        <h2 class="padded-header">
+            Header
+        </h2>
+      codenotes:
+        - .padded-header
+  tags:
+    - cf-typography
+*/
+
+.padded-header {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  padding: 0.57142857em 0.71428571em;
+  margin-bottom: 0;
+  border-bottom: 1px solid #babbbd;
+  background: #f1f2f2;
+  color: #43484e;
+>>>>>>> master
 }
 
 .content-l__sidebar .content-l_col + .content-l_col-1-4 {
   margin-top: 1.875em;
 }
 
+<<<<<<< HEAD
 .content-l__sidebar .content-l_col.content-l_col-3-4 {
   display: block;
   width: 100%;
+=======
+/* topdoc
+  name: Fancy slug
+  family: cf-typography
+  patterns:
+    - name: Default fancy slug
+      markup: |
+        <h2 class="fancy-slug">
+            <span class="fancy-slug_text">
+                <span class="fancy-slug_ribbon-left"></span>
+                Watchroom
+                <span class="fancy-slug_ribbon-right"></span>
+            </span>
+        </h2>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .fancy-slug
+            .fancy-slug_text
+                .fancy-slug_ribbon-left
+                .fancy-slug_ribbon-right
+  tags:
+    - cf-typography
+*/
+
+.fancy-slug {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  position: relative;
+  height: 1.14285714em;
+  padding: 0 1.21428571em;
+  margin-top: 1.14285714em;
+  margin-bottom: 0.57142857em;
+  border-top: 1px solid #babbbd;
+  line-height: 1;
+  text-align: center;
+>>>>>>> master
 }
 
 .content-l__sidebar .content-l_col.content-l_col-3-4.content-l_col__before-divider {
@@ -8529,9 +9040,18 @@ textarea.disabled {
     - cf-layout
 */
 
+<<<<<<< HEAD
 .content_bar {
   height: 10px;
   background: #2cb34a;
+=======
+.styled-link {
+  border-bottom-width: 1px;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+>>>>>>> master
 }
 
 /* topdoc
@@ -8775,10 +9295,20 @@ textarea.disabled {
     - cf-layout
 */
 
+<<<<<<< HEAD
 .content_intro,
 .content_main,
 .content_sidebar {
   padding: 1.875em 0.9375em;
+=======
+.jump-link {
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  border-bottom-width: 0;
+  position: relative;
+>>>>>>> master
 }
 
 .content_intro,
@@ -9321,6 +9851,7 @@ textarea.disabled {
     - cf-layout
 */
 
+<<<<<<< HEAD
 .wrapper,
 .content_wrapper {
   max-width: 1170px;
@@ -9334,6 +9865,24 @@ textarea.disabled {
 .content_wrapper__match-content {
   padding-left: 15px;
   padding-right: 15px;
+=======
+.list__branded li,
+.list__branded .list_item {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  position: relative;
+}
+
+.list__branded li em,
+.list__branded .list_item em,
+.list__branded li i,
+.list__branded .list_item i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+>>>>>>> master
 }
 
 .wrapper__match-content,
@@ -9343,9 +9892,19 @@ textarea.disabled {
   max-width: 1140px;
 }
 
+<<<<<<< HEAD
 .lt-ie9 .wrapper,
 .lt-ie9 .content_wrapper {
   max-width: 960px;
+=======
+.list__branded li strong,
+.list__branded .list_item strong,
+.list__branded li b,
+.list__branded .list_item b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+>>>>>>> master
 }
 
 .lt-ie9 body {
@@ -9491,7 +10050,7 @@ textarea.disabled {
 .pagination_label {
   display: inline-block;
   margin: 0;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
@@ -9513,7 +10072,7 @@ input[type="text"].pagination_current-page {
   width: 2.625em;
   margin: 0 0.25em;
   font-size: 1em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: right;
@@ -9839,7 +10398,7 @@ input[type="text"].pagination_current-page {
 
 .expandable_label {
   color: #101820;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -9850,7 +10409,7 @@ input[type="text"].pagination_current-page {
 
 .expandable_link {
   color: #0072ce;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 0.875em;
@@ -9859,7 +10418,7 @@ input[type="text"].pagination_current-page {
 
 .expandable_link em,
 .expandable_link i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -9871,7 +10430,7 @@ input[type="text"].pagination_current-page {
 
 .expandable_link strong,
 .expandable_link b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -10276,7 +10835,7 @@ button.expandable_header {
   border-bottom: 1px solid #919395;
   background: #f1f2f2;
   color: #75787b;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
@@ -10302,7 +10861,7 @@ button.expandable_header {
   margin-top: 0;
   margin-bottom: 1.16666667em;
   font-size: 1.125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 1.22222222;
@@ -10333,6 +10892,72 @@ button.expandable_header {
 
 /* cf-core
    ========================================================================== */
+
+/*
+ * Source: http://fast.fonts.net/cssapi/44e8c964-4684-44c6-a6e3-3f3da8787b50.css
+ * This file has been edited to use absolute URLS so we can concatenate it with
+ * all of our other styles.
+ */
+
+@font-face {
+  font-family: "AvenirNextLTW01-Regular";
+  src: url("//fast.fonts.net/dv2/2/e9167238-3b3f-4813-a04a-a384394eed42.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Regular";
+  src: url("//fast.fonts.net/dv2/2/e9167238-3b3f-4813-a04a-a384394eed42.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/1e9892c0-6927-4412-9874-1b82801ba47a.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/52a192b1-bea5-4b48-879f-107f009b666f.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Italic";
+  src: url("//fast.fonts.net/dv2/2/d1fddef1-d940-4904-8f6c-17e809462301.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Italic";
+  src: url("//fast.fonts.net/dv2/2/d1fddef1-d940-4904-8f6c-17e809462301.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Medium";
+  src: url("//fast.fonts.net/dv2/2/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Medium";
+  src: url("//fast.fonts.net/dv2/2/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/f26faddb-86cc-4477-a253-1e1287684336.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Demi";
+  src: url("//fast.fonts.net/dv2/2/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Demi";
+  src: url("//fast.fonts.net/dv2/2/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/99affa9a-a5e9-4559-bd07-20cf0071852d.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
 
 /* cf-buttons
    ========================================================================== */
@@ -10397,7 +11022,7 @@ button.expandable_header {
 
 .header .site-title .title-link .site-org {
   color: #75787b;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -10476,7 +11101,7 @@ button.expandable_header {
 .main-nav li {
   display: inline-block;
   margin: 0 1em 0.5em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.125em;
@@ -10873,7 +11498,7 @@ figure {
 }
 
 .content .toc li {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.125em;
@@ -10902,7 +11527,7 @@ figure {
 }
 
 .content .lead-in {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.125em;
@@ -10910,7 +11535,7 @@ figure {
 
 .content .lead-in em,
 .content .lead-in i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -10922,7 +11547,7 @@ figure {
 
 .content .lead-in strong,
 .content .lead-in b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -10956,7 +11581,7 @@ figure {
 }
 
 .content dt {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -10997,7 +11622,7 @@ figure {
 
 .swatch th {
   padding-right: 0.25em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: left;
@@ -11189,7 +11814,7 @@ figure {
    ========================================================================== */
 
 [class^="type-color-combo"] {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
@@ -11303,7 +11928,7 @@ figure {
 }
 
 .minicon-scale-table th {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: .875em;
@@ -11335,7 +11960,7 @@ figure {
 }
 
 .minicon-asset-lib .minicon-assets-div h6 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: .875em;
@@ -11405,7 +12030,7 @@ figure {
 }
 
 .demi-ex p {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11415,7 +12040,7 @@ figure {
 }
 
 .medium-ex p {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -11425,14 +12050,14 @@ figure {
 }
 
 .regular-ex p {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .regular-ex p em,
 .regular-ex p i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11444,7 +12069,7 @@ figure {
 
 .regular-ex p strong,
 .regular-ex p b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11464,7 +12089,7 @@ h2.h2-ex {
 }
 
 #print-hierarchy-ex .superheader {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 60pt;
@@ -11476,7 +12101,7 @@ h2.h2-ex {
 }
 
 #print-hierarchy-ex h1 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 38pt;
@@ -11485,7 +12110,7 @@ h2.h2-ex {
 
 #print-hierarchy-ex h1 em,
 #print-hierarchy-ex h1 i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11497,7 +12122,7 @@ h2.h2-ex {
 
 #print-hierarchy-ex h1 strong,
 #print-hierarchy-ex h1 b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11508,7 +12133,7 @@ h2.h2-ex {
 }
 
 #print-hierarchy-ex h2 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 26pt;
@@ -11517,7 +12142,7 @@ h2.h2-ex {
 
 #print-hierarchy-ex h2 em,
 #print-hierarchy-ex h2 i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11529,7 +12154,7 @@ h2.h2-ex {
 
 #print-hierarchy-ex h2 strong,
 #print-hierarchy-ex h2 b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11540,7 +12165,7 @@ h2.h2-ex {
 }
 
 #print-hierarchy-ex h3 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16pt;
@@ -11552,7 +12177,7 @@ h2.h2-ex {
 }
 
 #print-hierarchy-ex h4.h4-print-ex {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14pt;
@@ -11564,7 +12189,7 @@ h2.h2-ex {
 }
 
 #print-hierarchy-ex h5 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 10pt;
@@ -11578,7 +12203,7 @@ h2.h2-ex {
 }
 
 #print-hierarchy-ex h6 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12pt;
@@ -11592,7 +12217,7 @@ h2.h2-ex {
 }
 
 p.print-subheader {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18pt;
@@ -11601,7 +12226,7 @@ p.print-subheader {
 
 p.print-subheader em,
 p.print-subheader i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11613,7 +12238,7 @@ p.print-subheader i {
 
 p.print-subheader strong,
 p.print-subheader b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11624,7 +12249,7 @@ p.print-subheader b {
 }
 
 p.print-avenir-para {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 11pt;
@@ -11633,7 +12258,7 @@ p.print-avenir-para {
 
 p.print-avenir-para em,
 p.print-avenir-para i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11645,7 +12270,7 @@ p.print-avenir-para i {
 
 p.print-avenir-para strong,
 p.print-avenir-para b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11661,7 +12286,7 @@ p.print-georgia-para {
 }
 
 .print-ul ul li p {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 11pt;
@@ -11671,7 +12296,7 @@ p.print-georgia-para {
 
 .print-ul ul li p em,
 .print-ul ul li p i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11683,7 +12308,7 @@ p.print-georgia-para {
 
 .print-ul ul li p strong,
 .print-ul ul li p b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11746,14 +12371,14 @@ p.print-georgia-para {
   margin: 0;
   font-size: 0.875em;
   color: #75787b;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .repo-list p em,
 .repo-list p i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11765,7 +12390,7 @@ p.print-georgia-para {
 
 .repo-list p strong,
 .repo-list p b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11797,7 +12422,7 @@ h2 span.cf-code-link {
   float: right;
   font-size: .625em;
   padding-top: .7em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11889,7 +12514,7 @@ ul.list_links-minicons li {
 .grid-demo p {
   max-width: none;
   text-align: center;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   margin-top: 1.125em;
@@ -11897,7 +12522,7 @@ ul.list_links-minicons li {
 
 .grid-demo p em,
 .grid-demo p i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11909,7 +12534,7 @@ ul.list_links-minicons li {
 
 .grid-demo p strong,
 .grid-demo p b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -12146,14 +12771,14 @@ ul.list_links-minicons li {
 }
 
 .secondary-nav {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .secondary-nav em,
 .secondary-nav i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -12165,7 +12790,7 @@ ul.list_links-minicons li {
 
 .secondary-nav strong,
 .secondary-nav b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -12254,7 +12879,7 @@ ul.list_links-minicons li {
 }
 
 .footer {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   display: table-row;
@@ -12269,7 +12894,7 @@ ul.list_links-minicons li {
 
 .footer em,
 .footer i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -12281,7 +12906,7 @@ ul.list_links-minicons li {
 
 .footer strong,
 .footer b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
