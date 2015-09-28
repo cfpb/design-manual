@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Buttons
+title:  Buttons - elephant
 category: UI toolkit
 ---
 
