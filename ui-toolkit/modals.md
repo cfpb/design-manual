@@ -123,7 +123,9 @@ Modals are always closable by either:
 <div class="content-67 content-first">
 #### Mobile devices
 
-**Needs to be filled out to talk about scrolling, and other factors.**
+When a modal is displayed, its background page should be set to fixed.
+
+Based on our use cases, modals should not scroll. If a modal you have designed or developed does scroll, use an alternative UI element.
 
 </div>
 
@@ -131,6 +133,8 @@ Modals are always closable by either:
 <div class="content-67 content-first">
 #### Keyboard navigation
 
+* When the modal opens, the focus should be on the first element users need to interact with. This could be either the first form field in the modal or the primary action button.
+* The close minicon should be able to be navigated to by a keyboard.
 * The modal should be closable by hitting the `ESC` key on a keyboard.
 
 </div>
