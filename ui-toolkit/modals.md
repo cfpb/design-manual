@@ -98,12 +98,16 @@ Modals should have a clear headline at the top of the window. If the modal was t
 <div class="content-67 content-first">
 #### General
 
+Specific coding directions:
+
 * Use the `aria-hidden`, `aria-label`, and `aria-labelledby` attributes.
 * Add `role="alertdialog"` to the modal.
 * Code the close minicon using a `button` element for more semantic markup. 
 * Provide separate focus and hover states for the close minicon and any next action buttons.
-* When the modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal or the primary action button.
-* Save the last active element on the parent window, and return the focus there when the modal is closed.
+
+When the modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal or the primary action button.
+
+Save the last active element on the parent window, and return the focus there when the modal is closed.
 
 </div>
 
@@ -133,9 +137,11 @@ Based on our use cases, modals should not scroll. If a modal you have designed o
 <div class="content-67 content-first">
 #### Keyboard navigation
 
-* When the modal opens, the focus should be on the first element users need to interact with. This could be either the first form field in the modal or the primary action button.
-* The close minicon should be able to be navigated to by a keyboard.
-* The modal should be closable by hitting the `ESC` key on a keyboard.
+When the modal opens, the focus should be on the first element users need to interact with. This could be either the first form field in the modal or the primary action button.
+
+The close minicon should be able to be navigated to by a keyboard.
+
+The modal should be closable by hitting the `ESC` key on a keyboard.
 
 </div>
 
