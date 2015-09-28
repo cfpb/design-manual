@@ -140,6 +140,14 @@ secondarynav:
   url: ui-toolkit/links.html
   internal: true
   category: UI toolkit
+# - text: Heroes
+#   url: ui-toolkit/heroes.html
+#   internal: true
+#   category: UI toolkit
+# - text: Featured content module
+#   url: ui-toolkit/featured-content-module.html
+#   internal: true
+#   category: UI toolkit
 # - text: Modals
 #   url: ui-toolkit/modals.html
 #   internal: true
