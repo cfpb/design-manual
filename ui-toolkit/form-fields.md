@@ -425,15 +425,17 @@ Lastly, some accessibility considerations. Use distinct icons, contrasting color
 
 <!--insert error with links -->
 {::nomarkdown} 
-<div class="alert alert__error">
-    <p><span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
-    The following form fields are incomplete or have errors:</p>
-    <ul class="list list__unstyled">
-        <li><a href="#">What do you think would be a fair resolution to your issue?</a></li>
-        <li><a href="#">Which of these best describes your issue?</a></li>
-        <li><a href="#">Describe what happened so we can understand the issue...</a></li>
-    </ul>
-</div>
+<div class="cf-notification cf-notification__error cf-notification__visible">
+    <span class="cf-notification_icon cf-notification_icon__error cf-icon cf-icon-error-round"></span>
+    <div class="cf-notification_text">
+        <p><span class="h4">The following form fields are incomplete or have errors:</span></p>
+        <ul class="list list__unstyled short-desc">
+            <li><a href="#">What do you think would be a fair resolution to your issue?</a></li>
+            <li><a href="#">Which of these best describes your issue?</a></li>
+            <li><a href="#">Describe what happened so we can understand the issue...</a></li>
+        </ul>
+    </div>
+  </div>
 {:/nomarkdown}
 
 </div> 
@@ -453,10 +455,12 @@ Lastly, some accessibility considerations. Use distinct icons, contrasting color
 <div class="content-50 content-last">
 
 <!--insert this form has been submitted successfully message -->
-{::nomarkdown} 
-<div class="alert alert__success">
-    <p><span class="cf-form_input-icon cf-icon cf-icon-approved-round" role="alert"></span>
-    15 results found</p>
+{::nomarkdown}
+
+<div class="cf-notification cf-notification__success cf-notification__visible">
+    <span class="cf-notification_icon cf-notification_icon__success cf-icon cf-icon-approved-round"></span>
+    <p class="cf-notification_text"><span class="h4">15 results found.
+</p>
 </div>
 {:/nomarkdown}
 </div> 
@@ -497,7 +501,11 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
+<label>
+    <input class="" type="checkbox" name="option1" value="Option 1">
+    Option 1
+</label>
 {:/nomarkdown}
 
 </div> 
