@@ -7135,6 +7135,8 @@ a.category-slug.active {
     codenotes:
       - |
         @input-error
+        @input-warning
+        @input-success
         @input-disabled
   - name: Sizing
     codenotes:
@@ -7290,24 +7292,15 @@ textarea.disabled {
     name: Form icons
     family: cf-forms
     patterns:
-    - name: Form alert icons
+    - name: Form input error icon
       notes:
-        - "Form alert icons add color tweaks to Capital Framework
-          icons."
+        - "The icon must be inside a label element with the 'form-label-error' class."
       markup: |
-        <div class="alert alert__error">
-            <p><span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
-            The following form fields are incomplete or have errors:</p>
-            <ul class="list list__unstyled">
-                <li><a href="#">What do you think would be a fair resolution to your issue?</a></li>
-                <li><a href="#">Which of these best describes your issue?</a></li>
-                <li><a href="#">Describe what happened so we can understand the issue...</a></li>
-            </ul>
-        </div>
-        <div class="alert alert__success">
-            <p><span class="cf-form_input-icon cf-icon cf-icon-approved-round" role="alert"></span>
-            15 results found</p>
-        </div>
+        <input class="error" type="text" value="" id="form-input-error">
+        <label class="form-label-error" for="form-input-error">
+            <span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
+            This is a required question, please answer.
+        </label>
     tags:
     - cf-forms
 */
@@ -7320,11 +7313,15 @@ textarea.disabled {
   color: #d12124;
 }
 
-.alert__error .cf-form_input-icon {
+.error + .cf-form_input-icon {
   color: #d12124;
 }
 
-.alert__success .cf-form_input-icon {
+.warning + .cf-form_input-icon {
+  color: #eca87a;
+}
+
+.success + .cf-form_input-icon {
   color: #2cb34a;
 }
 
@@ -7615,77 +7612,88 @@ textarea.disabled {
 }
 
 /* topdoc
-  name: Form-level validation message
-  family: cf-forms
+  name: Notifications
+  family: cf-notifications
+  notes:
+    - "Markup and styling for notifications"
   patterns:
-    - name: Form-level error alert
+    - name: Default Usage
       markup: |
-        <div class="alert alert__error">
-          <p><span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
-          The following form fields are incomplete or have errors:</p>
-          <ul class="list list__unstyled">
-            <li>What do you think would be a fair resolution to your issue?</li>
-            <li>Which of these best describes your issue?</li>
-            <li>Describe what happened so we can understand the issue...</li>
-          </ul>
-        </div>
-    - name: Form-level success alert
-      markup: |
-        <div class="alert alert__success">
-            <p><span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
-            15 results found</p>
+        <div class="cf-notification cf-notification__error">
+          <span class="cf-notification_icon cf-notification_icon__error cf-icon cf-icon-error-round"></span>
+          <p class="cf-notification_text">This is the default alert.</p>
         </div>
   tags:
-    - cf-forms
+    - cfgov-misc
 */
 
-.alert {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  padding: 0.9375em;
+.cf-notification {
+  display: none;
+  position: relative;
+  padding: 11px;
+  padding-left: 40px;
+  margin-bottom: 15px;
+  background: #e3e4e5;
+  border: 1px solid #75787b;
 }
 
-.alert em,
-.alert i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
+.cf-notification__visible {
+  display: block;
 }
 
-.lt-ie9 .alert em,
-.lt-ie9 .alert i {
-  font-style: normal !important;
+.cf-notification__error {
+  background: #f6d9d3;
+  border-color: #d12124;
 }
 
-.alert strong,
-.alert b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
+.cf-notification__success {
+  background: #dbedd4;
+  border-color: #2cb34a;
 }
 
-.lt-ie9 .alert strong,
-.lt-ie9 .alert b {
-  font-weight: normal !important;
+.cf-notification__warning {
+  background: #ffecd1;
+  border-color: #eca87a;
 }
 
-.alert__large {
+.cf-notification_icon {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  color: #e3e4e5;
   font-size: 1.125em;
 }
 
-.alert p:last-child {
-  margin-bottom: 0;
+.cf-notification_icon__error {
+  color: #d14327;
 }
 
-.alert__error {
-  border: 1px solid #d12124;
-  background-color: #fadede;
+.cf-notification_icon__success {
+  color: #2cb34a;
 }
 
-.alert__success {
-  border: 1px solid #2cb34a;
-  background-color: #d1f4d9;
+.cf-notification_icon__warning {
+  color: #ff931b;
+}
+
+.cf-notification_text {
+  margin-top: 0;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222222;
+  margin: 0;
+}
+
+.lt-ie9 .cf-notification_text {
+  font-weight: normal !important;
+}
+
+.cf-notification_text .short-desc {
+  display: block;
+  font-size: 16px;
 }
 
 /* topdoc
