@@ -61,7 +61,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 <div class="content-33 content-first">
 
-* Full-width colored background with black text and blue links. Standard link styles apply. Text and links must be accessible on background.
+* Full-width colored background with black text and blue link or button. Standard link and button styles apply. Color contrast of text and links on background must be <a href="{{ site.baseurl }}/identity/typography.html#type-accessibility">508-accessible</a>.
 * No breadcrumb should appear in or above the hero
 * Total height: 285px
 * Top and bottom margins: 45px 
@@ -95,7 +95,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 * Top and bottom margins: 30px
 * Left and right margins: 30px
 * Module height is flexible to text height
-* Visually is vertically centered
+* Visual is vertically centered
 
 </div>
 
