@@ -55,7 +55,7 @@ On a page with a sidebar, the featured content module spans 8 columns.
 </div>
 
 <div class="content-67 content-last">
-![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop01.png)
+![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop-right.png)
 </div>
 
 <div class="content-33 content-first">
