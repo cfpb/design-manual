@@ -77,19 +77,18 @@ The `find` function will not discover information contained in a modal. Please u
 * Maximum allowed width:
     * Small screens: 270px width
     * Medium and large screens: 630px width
+    
+Modals should have a clear headline at the top of the window. If the modal was triggered due to user action, the headline should closely match the text of the triggering element.
+
+When a modal is displayed, its background page should be set to fixed.
+
+Based on our use cases, modals should not scroll. If a modal you have designed or developed does scroll, use an alternative UI element.
 </div>
 
 <div class="content-50 content-last">
 {::nomarkdown}
 <img src="/design-manual/static/img/modals/savesearch.png"" /> 
 {:/nomarkdown}
-</div>
-
-#### Headline considerations
-<div class="content-67 content-first">
-
-Modals should have a clear headline at the top of the window. If the modal was triggered due to user action, the headline should closely match the text of the triggering element.
-
 </div>
 
 
@@ -103,9 +102,12 @@ Specific coding directions:
 * Use the `aria-hidden`, `aria-label`, and `aria-labelledby` attributes.
 * Add `role="alertdialog"` to the modal.
 * Code the close minicon using a `button` element for more semantic markup. 
-* Provide separate focus and hover states for the close minicon and any next action buttons.
 
 When the modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal or the primary action button.
+
+Provide separate focus and hover states for the close minicon and any next action buttons.
+
+The close minicon should be able to be navigated to by a keyboard.
 
 Save the last active element on the parent window, and return the focus there when the modal is closed.
 
@@ -123,27 +125,6 @@ Modals are always closable by either:
 
 </div>
 
-
-<div class="content-67 content-first">
-#### Mobile devices
-
-When a modal is displayed, its background page should be set to fixed.
-
-Based on our use cases, modals should not scroll. If a modal you have designed or developed does scroll, use an alternative UI element.
-
-</div>
-
-
-<div class="content-67 content-first">
-#### Keyboard navigation
-
-When the modal opens, the focus should be on the first element users need to interact with. This could be either the first form field in the modal or the primary action button.
-
-The close minicon should be able to be navigated to by a keyboard.
-
-The modal should be closable by hitting the `ESC` key on a keyboard.
-
-</div>
 
 
 
