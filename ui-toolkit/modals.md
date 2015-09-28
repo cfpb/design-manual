@@ -74,6 +74,9 @@ The `find` function will not discover information contained in a modal. Please u
 	* 10px padding on top/bottom
 	* 30px padding on left/right
 	* Primary action buttons and secondary action links left aligned
+* Maximum allowed width:
+    * Small screens: 270px width
+    * Medium and large screens: 630px width
 </div>
 
 <div class="content-50 content-last">
@@ -89,23 +92,6 @@ Modals should have a clear headline at the top of the window. If the modal was t
 
 </div>
 
-#### Closing a modal
-<div class="content-67 content-first">
-
-Modals are always closable by either:
-
-* clicking/tapping a delete minion in the upper right corner,
-* clicking/tapping the next action buttons or links,
-* clicking/tapping anywhere outside the modal, or
-* hitting the `ESC` key on a keyboard.
-
-If the primary action after the modal appears is to close it, a close button should be provided as a next action. 
-
-</div>
-
-
-**We still need to spell out the rules around height and width of the modal.**
-
 
 <h2 id="style">Accessibility<span class="cf-code-link"><a href="https://cfpb.github.io/cf-modals/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
@@ -116,10 +102,23 @@ If the primary action after the modal appears is to close it, a close button sho
 * Add `role="alertdialog"` to the modal.
 * Code the close minicon using a `button` element for more semantic markup. 
 * Provide separate focus and hover states for the close minicon and any next action buttons.
-* When the modal opens, set the focus to the first element they need to interact with. This could be either the first form field in the modal or the primary action button.
+* When the modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal or the primary action button.
 * Save the last active element on the parent window, and return the focus there when the modal is closed.
 
 </div>
+
+#### Closing a modal
+<div class="content-67 content-first">
+
+Modals are always closable by either:
+
+* clicking/tapping a delete minicon in the upper right corner,
+* clicking/tapping the next action buttons or links,
+* clicking/tapping anywhere outside the modal, or
+* hitting the `ESC` key on a keyboard.
+
+</div>
+
 
 <div class="content-67 content-first">
 #### Mobile devices
@@ -135,20 +134,6 @@ If the primary action after the modal appears is to close it, a close button sho
 * The modal should be closable by hitting the `ESC` key on a keyboard.
 
 </div>
-
-
-<div class="content-67 content-first">
-#### Non-Javascript users
-
-**Still need to look into what should be said about this.**
-
-</div>
-
-
-<style scoped>
-
-</style>
-
 
 
 
