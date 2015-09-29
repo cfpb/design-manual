@@ -55,18 +55,29 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 * Background color of module is Gray 5 with a 1px Gray 50 stroke.
 * Module bleeds to the edge of the page, right sidebar and left nav.
 * Visual spans 5 columns and bleeds into right sidebar.
-* Text spans 3 columns and is left and top aligned. When on a page with a right-hand sidebar, the text area has 60px of left margin and 30px of right margin. When on a page with left-hand navigation, the text area has 30px of left and right margin.
 
-* Tag is an 18px black minicon and H4 text, appears 30px from top
-* Headline is H2, appears 30px below tag and is 1–2 lines
-* Body copy is 16px, appears 30px underneath headline, is 2 to 4 lines
-* A CTA may be used and appears 30px underneath body copy. If a link, standard link styles apply. If a button, standard primary button styles apply.
+* Text spans 3 columns and is left and top aligned. When on a page with a right-hand sidebar, the text area has 60px of left margin and 30px of right margin. When on a page with left-hand navigation, the text area has 30px of left and right margin.
 </div>
 
 <div class="content-67 content-last">
 ![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop-right.png)
 
 ![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop-left.png)
+</div>
+
+<div class="content-33 content-first">
+* Tag is an 18px black minicon and H4 text, appears 30px from top
+* The five tag categories on the right can be used. If the content does not fit within one of the five tag categories, you may use the following.
+</div>
+
+<div class="content-33 content-first">
+* Headline is H2, appears 30px below tag and is 1–2 lines
+* Body copy is 16px, appears 30px underneath headline, is 2 to 4 lines
+* A CTA may be used and appears 30px underneath body copy. If a link, standard link styles apply. If a button, standard primary button styles apply.
+</div>
+
+<div class="content-33 content-first">
+<h4 class="cf-icon-speech-bubble">Featured blog</h4>
 </div>
 
 
