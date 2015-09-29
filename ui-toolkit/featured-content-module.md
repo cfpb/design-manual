@@ -74,7 +74,8 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 <div class="content-33 content-first">
 * Tag is an 18px black minicon and H4 text, appears 30px from top
 * The five tag categories on the right can be used. If the content does not fit within one of the five tag categories, you may use the following icon and prefix:
-<h4 class="cf-icon-favorite"> Featured </h4>
+
+<h4 class="cf-icon cf-icon-favorite"> Featured </h4>
 </div>
 
 <div class="content-33 content-first">
