@@ -77,7 +77,7 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 </div>
 
 <div class="content-33 content-first">
-<h4 class="cf-icon-speech-bubble">Featured blog</h4>
+<h4 class="cf-icon cf-icon-speech-bubble">Featured blog</h4>
 </div>
 
 
