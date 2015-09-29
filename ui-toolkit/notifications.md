@@ -34,15 +34,27 @@ Alerts, error, and validation messages provide important information to users an
 
 <div class="content-67 content-first">
 
-<p><b>Alert notifications</b> communicate information that should be read before the rest of the content on the page.</p>
+<p>**Alert notifications** communicate information that should be read before the rest of the content on the page.</p>
 
 <p>When the user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. For example, a notification of a system change may require more contextual information than a validation message. Write the message in concise, human readable language; avoid jargon and computer code.</p>
 
 <p>Be careful not to overdo it: too many notifications will either overwhelm or annoy the user, and are likely to be ignored.</p>
 
-<p><b>Error notifications</b> communicate an issue that was caused by the user’s action.</p>
+<p>**Error notifications** communicate an issue that was caused by the user’s action.</p>
 
 <p>Be polite in error messages—don’t place blame on the user. Make it clear something went wrong, and help them get back on track. Be specific about what to do next for each type of error.</p>
+
+<p>**Validation notifications** communicate success that was caused by the user’s action, such as the successful completion of a form.</p>
+
+###Adding Hyperlinks
+
+<p>Hyperlinks can be used within alerts to take the user to a page or field where they can take further action.</p>
+
+<p>In an error message, a hyperlink can be used to direct the user to a location where they can correct the error.</p>
+
+<p>In an alert message, a hyperlink can direct the user to content that the alert is referencing.</p>
+
+<p>In a validation message, a hyperlink can be used to direct the user to another step in a process, or related information about the process.</p>
 
 </div>
 
