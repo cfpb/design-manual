@@ -880,9 +880,20 @@ From an accessibility standpoint, browser default multiple select components req
 
 </div>
 
-<div class="content-50 content-last">
+<div class="content-50">
 
-{::nomarkdown} 
+{::nomarkdown}
+<div class="custom-select is-enabled">
+    <select class="custom-select_select" data-placeholder="Please select">
+        <option value>Please select</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select>
+    <span class="custom-select_icon cf-icon cf-icon-down"></span>
+    <span class="custom-select_text custom-select_placeholder">Please select</span>
+</div>
 {:/nomarkdown}
 
 </div> 
@@ -897,9 +908,20 @@ From an accessibility standpoint, browser default multiple select components req
 
 </div>
 
-<div class="content-50 content-last">
+<div class="content-50">
 
-{::nomarkdown} 
+{::nomarkdown}
+<div class="custom-select is-enabled is-hovered">
+    <select class="custom-select_select" data-placeholder="Please select">
+        <option value>Please select</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select>
+    <span class="custom-select_icon cf-icon cf-icon-down"></span>
+    <span class="custom-select_text custom-select_placeholder">Please select</span>
+</div>
 {:/nomarkdown}
 
 </div> 
@@ -915,9 +937,20 @@ Fill: #f1f2f2  (Grey 10)
 
 </div>
 
-<div class="content-50 content-last">
+<div class="content-50">
 
-{::nomarkdown} 
+{::nomarkdown}
+<div class="custom-select is-enabled disabled">
+    <select disabled="true" class="custom-select_select" data-placeholder="Please select">
+        <option value>Please select</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select>
+    <span class="custom-select_icon cf-icon cf-icon-down"></span>
+    <span class="custom-select_text custom-select_placeholder">Please select</span>
+</div>
 {:/nomarkdown}
 
 </div> 
@@ -967,7 +1000,9 @@ Handle:
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
+<label for="range-slider">Credit Score</label>
+<input id="range-slider" type="range" min="600" max="850">
 {:/nomarkdown}
 
 </div> 
@@ -984,7 +1019,9 @@ Handle:
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
+<label for="range-slider">Credit Score</label>
+<input id="range-slider" type="range" min="600" max="850">
 {:/nomarkdown}
 
 </div> 
