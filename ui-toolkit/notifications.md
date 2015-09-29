@@ -1,20 +1,18 @@
 ---
 layout: page
-title:  Buttons
+title:  Alerts, Validations, and Error Messaging
 category: UI toolkit
 ---
 
-- [Style](#style)
-- [States](#states)
-- [Variations](#variations)
+- [Use](#use)
+- [Placement](#placement)
+- [Types](#Types)
+- [Accessibility](#accessibility)
 {: class="toc"}
 
 <div class="content-50 content-first">
 
-Buttons signal actions. They should be used sparingly; each additional button on a page reduces the visual prominence of a call to action. 
-{: class="lead-in"}
-
-In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lead users to another page or further information.
+Alerts, error, and validation messages provide important information to users and guide or validate user action.
 {: class="lead-in"}
 
 </div>
@@ -26,19 +24,26 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-buttons"><h4>cf-buttons</h4></a>
-      <p>Buttons in the Capital Framework</p>
+      <a href="https://github.com/cfpb/cf-notifications"><h4>cf-notifications</h4></a>
+      <p>Notifications in the Capital Framework</p>
     </li>
   </ul>
 </div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="use">Use<span class="cf-code-link"><a href="https://cfpb.github.io/cf-notifications/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
-<div class="content-33 content-first">
-### Primary and Secondary buttons
-<p>Use primary buttons for actions that go to the next step. Use secondary buttons for actions that happen on the current page.</p>
+<div class="content-67 content-first">
 
-<p>Generous white space lends focus and makes buttons more actionable. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.</p>
+<p><b>Alert notifications</b> communicate information that should be read before the rest of the content on the page.</p>
+
+<p>When the user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. For example, a notification of a system change may require more contextual information than a validation message. Write the message in concise, human readable language; avoid jargon and computer code.</p>
+
+<p>Be careful not to overdo it: too many notifications will either overwhelm or annoy the user, and are likely to be ignored.</p>
+
+<p><b>Error notifications</b> communicate an issue that was caused by the user’s action.</p>
+
+<p>Be polite in error messages—don’t place blame on the user. Make it clear something went wrong, and help them get back on track. Be specific about what to do next for each type of error.</p>
+
 </div>
 
 <div class="content-67 content-last">
