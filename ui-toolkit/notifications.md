@@ -65,7 +65,7 @@ Alerts, error, and validation messages provide important information to users an
 <div class="content-67 content-first">
 ###Above Content
 
-<p>By default, alert, validation, and error messages should be displayed at the top of a page or form, spanning the full width of the page or section.<p>
+<p>By default, alert, validation, and error messages should be displayed at the top of a page or form, spanning the full width of the page or section.</p>
 
 ###Covering Content
 
