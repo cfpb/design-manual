@@ -502,8 +502,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label>
-    <input class="" type="checkbox" name="option1" value="Option 1">
+<label class="custom-input_label">
+    <input class="custom-input custom-input_input" type="checkbox" name="option1" value="Option 1">
     Option 1
 </label>
 {:/nomarkdown}
@@ -524,7 +524,11 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
+<label class="custom-input_label">
+    <input class="custom-input custom-input_input" type="checkbox" name="option1" value="Option 1" checked="checked">
+    Option 1
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -541,7 +545,11 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
+<label class="custom-input_label">
+    <input class="custom-input custom-input_input focus" type="checkbox" name="option1" value="Option 1">
+    Option 1
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -550,7 +558,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <div class="content-50 content-first">
 
-#### Hover
+#### Disabled
 
 * Border: 1 px #babbbd (Grey 50)
 * Fill: #75787b (Gray)
@@ -559,7 +567,11 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
+<label class="custom-input_label">
+    <input class="custom-input custom-input_input" type="checkbox" name="option1" value="Option 1" disabled="true">
+    Option 1
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -602,6 +614,11 @@ For screen readers, be aware that there are some issues with voiceover reading r
 <div class="content-50 content-last">
 
 {::nomarkdown} 
+<label class="custom-input_label">
+    <span class="custom-input_text">Option 1</span>
+    <input class="custom-input custom-input_input" type="radio" name="custom-input-example">
+    <span class="custom-input_radio"></span>
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -621,7 +638,13 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
+
+<label class="custom-input_label is-enabled is-checked">
+    <span class="custom-input_text">Option 1</span>
+    <input class="custom-input custom-input_input" type="radio" name="custom-input-example">
+    <span class="custom-input_radio"></span>
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -638,7 +661,12 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
+<label class="custom-input_label is-enabled is-hovered">
+    <span class="custom-input_text">Option 1</span>
+    <input class="custom-input custom-input_input" type="radio" name="custom-input-example">
+    <span class="custom-input_radio"></span>
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -657,7 +685,12 @@ Where possible, use progressive disclosure instead.
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
+<label class="custom-input_label is_disabled">
+    <span class="custom-input_text">Option 1</span>
+    <input class="custom-input custom-input_input" type="radio" name="custom-input-example" disabled="true">
+    <span class="custom-input_radio"></span>
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -695,9 +728,18 @@ Radio button:
 
 </div>
 
-<div class="content-50 content-last">
+<div class="content-50">
 
-{::nomarkdown} 
+{::nomarkdown}
+<div class="form-l">
+    <div class="form-l_col form-l-inset">
+        <div class="form-l-inset_container">
+            <label class="custom-input_label"><span class="custom-input_text">
+                Yes
+            </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
+        </div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div> 
@@ -712,9 +754,20 @@ Same as above
 
 </div>
 
-<div class="content-50 content-last">
+<div class="content-50">
 
 {::nomarkdown} 
+<fieldset>
+    <div class="form-l">
+        <div class="form-l_col form-l-inset">
+            <div class="form-l-inset_container">
+                <label class="custom-input_label"><span class="custom-input_text">
+                    Yes
+                </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
+            </div>
+        </div>
+    </div>    
+</fieldset>
 {:/nomarkdown}
 
 </div> 
@@ -738,9 +791,20 @@ Radio button:
 
 </div>
 
-<div class="content-50 content-last">
+<div class="content-50">
 
-{::nomarkdown} 
+{::nomarkdown}
+<fieldset>
+    <div class="form-l">
+        <div class="form-l_col form-l-inset">
+            <div class="form-l-inset_container is-checked">
+                <label class="custom-input_label is-enabled is-checked"><span class="custom-input_text">
+                    Yes
+                </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
+            </div>
+        </div>
+    </div>    
+</fieldset>
 {:/nomarkdown}
 
 </div> 
@@ -762,9 +826,20 @@ Radio button:
 
 </div>
 
-<div class="content-50 content-last">
+<div class="content-50">
 
-{::nomarkdown} 
+{::nomarkdown}
+<fieldset>
+    <div class="form-l">
+        <div class="form-l_col form-l-inset">
+            <div class="form-l-inset_container is-hovered">
+                <label class="custom-input_label is-enabled is-hovered"><span class="custom-input_text">
+                    Yes
+                </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
+            </div>
+        </div>
+    </div>    
+</fieldset>
 {:/nomarkdown}
 
 </div> 
