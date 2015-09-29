@@ -6708,11 +6708,7 @@ textarea.disabled {
   color: #d12124;
 }
 .warning + .cf-form_input-icon {
-<<<<<<< HEAD
-  color: #eca87a;
-=======
   color: #ffecd1;
->>>>>>> form-fields
 }
 .success + .cf-form_input-icon {
   color: #2cb34a;
@@ -6990,81 +6986,12 @@ textarea.disabled {
 }
 /* topdoc
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> form-fields
   name: Notifications
   family: cf-notifications
   notes:
     - "Markup and styling for notifications"
   patterns:
     - name: Default Usage
-<<<<<<< HEAD
-      markup: |
-        <div class="cf-notification cf-notification__error">
-          <span class="cf-notification_icon cf-notification_icon__error cf-icon cf-icon-error-round"></span>
-          <p class="cf-notification_text">This is the default alert.</p>
-        </div>
-  tags:
-    - cfgov-misc
-*/
-.cf-notification {
-  display: none;
-  position: relative;
-  padding: 11px;
-  padding-left: 40px;
-  margin-bottom: 15px;
-  background: #e3e4e5;
-  border: 1px solid #75787b;
-}
-.cf-notification__visible {
-  display: block;
-}
-.cf-notification__error {
-  background: #f6d9d3;
-  border-color: #d12124;
-}
-.cf-notification__success {
-  background: #dbedd4;
-  border-color: #2cb34a;
-}
-.cf-notification__warning {
-  background: #ffecd1;
-  border-color: #eca87a;
-}
-.cf-notification_icon {
-  position: absolute;
-  top: 13px;
-  left: 15px;
-  color: #e3e4e5;
-  font-size: 1.125em;
-}
-.cf-notification_icon__error {
-  color: #d14327;
-}
-.cf-notification_icon__success {
-  color: #2cb34a;
-}
-.cf-notification_icon__warning {
-  color: #ff931b;
-}
-.cf-notification_text {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.22222222;
-  margin: 0;
-}
-.lt-ie9 .cf-notification_text {
-  font-weight: normal !important;
-}
-.cf-notification_text .short-desc {
-  display: block;
-  font-size: 16px;
-=======
       markup: |
         <div class="cf-notification cf-notification__error">
           <span class="cf-notification_icon cf-notification_icon__error cf-icon cf-icon-error-round"></span>
@@ -7531,7 +7458,6 @@ input[type=checkbox].custom-input.disabled {
 .form-l-inset .form-l-inset_container:hover label,
 .form-l-inset .form-l-inset_container:focus label {
   cursor: pointer;
->>>>>>> form-fields
 }
 /* topdoc
   name: EOF
