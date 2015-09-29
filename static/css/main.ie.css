@@ -5562,592 +5562,6 @@ input.btn::-moz-focus-inner {
 
 /* ==========================================================================
    Capital Framework
-   Form Element Styling
-   ========================================================================== */
-
-/* topdoc
-  name: Theme variables
-  family: cf-forms
-  notes:
-    - "The following color and sizing variables are exposed, allowing you to
-       easily override them before compiling."
-  patterns:
-  - name: Colors
-    codenotes:
-      - |
-        @input-error
-        @input-success
-        @input-disabled
-  - name: Sizing
-    codenotes:
-      - |
-        @input__super-font-size
-  tags:
-  - cf-forms
-  - less
-*/
-
-/* topdoc
-  name: Form labels
-  family: cf-forms
-  patterns:
-    - name: Label header
-      markup: |
-        <label class="form-label-header">
-            Form label header
-        </label>
-    - name: Form label helper text
-      markup: |
-        <label class="form-label-helper-text">
-            Form label helper text
-        </label>
-  tags:
-    - cf-forms
-*/
-
-.form-label-header {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.22222222;
-  margin-bottom: 0.55555556em;
-}
-
-.lt-ie9 .form-label-header {
-  font-weight: normal !important;
-}
-
-.form-label-helper-text {
-  color: #ad81a8;
-  font-size: 0.875em;
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  color: #43484e;
-  margin-bottom: 0.71428571em;
-}
-
-.form-label-helper-text em,
-.form-label-helper-text i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-
-.lt-ie9 .form-label-helper-text em,
-.lt-ie9 .form-label-helper-text i {
-  font-style: normal !important;
-}
-
-.form-label-helper-text strong,
-.form-label-helper-text b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.lt-ie9 .form-label-helper-text strong,
-.lt-ie9 .form-label-helper-text b {
-  font-weight: normal !important;
-}
-
-.form-label-helper-text__large {
-  font-size: 1em;
-}
-
-.error + .form-label-error {
-  margin-top: 0.9375em;
-}
-
-/* topdoc
-  name: Super input
-  family: cf-forms
-  patterns:
-    - name: .input__super
-      markup: |
-        <input class="input__super" type="text" value="Super input" title="Test input"></input>
-        <button class="btn btn__super">Super</button>
-      notes:
-        - "An input that matches the height of a super button."
-  tags:
-    - cf-forms
-*/
-
-.input__super[type="text"],
-.input__super[type="search"],
-.input__super[type="email"],
-.input__super[type="url"],
-.input__super[type="tel"],
-.input__super[type="number"] {
-  padding: 0.55555556em;
-  font-size: 1.125em;
-}
-
-/* topdoc
-    name: Input states
-    family: cf-forms
-    patterns:
-    - name: Error state
-      codenotes:
-        - .error
-      markup: |
-        <input class="error" type="text" value="Invalid input" title="Test input">
-    - name: Disabled state
-      codenotes:
-        - .disabled
-      markup: |
-        <input class="disabled" disabled="true" autocomplete="off" type="text" value="Validated input" title="Test input">
-    tags:
-    - cf-forms
-*/
-
-input[type="text"].error,
-input[type="search"].error,
-input[type="email"].error,
-input[type="url"].error,
-input[type="tel"].error,
-input[type="number"].error,
-select[multiple].error,
-textarea.error {
-  border: 1px solid #d12124;
-  outline: 1px solid #d12124;
-}
-
-input[type="text"].disabled,
-input[type="search"].disabled,
-input[type="email"].disabled,
-input[type="url"].disabled,
-input[type="tel"].disabled,
-input[type="number"].disabled,
-select[multiple].disabled,
-textarea.disabled {
-  border-width: 2px;
-  background-color: #f1f2f2;
-}
-
-/* topdoc
-    name: Form icons
-    family: cf-forms
-    patterns:
-    - name: Form alert icons
-      notes:
-        - "Form alert icons add color tweaks to Capital Framework
-          icons."
-      markup: |
-        <div class="alert alert__error">
-            <p><span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
-            The following form fields are incomplete or have errors:</p>
-            <ul class="list list__unstyled">
-                <li><a href="#">What do you think would be a fair resolution to your issue?</a></li>
-                <li><a href="#">Which of these best describes your issue?</a></li>
-                <li><a href="#">Describe what happened so we can understand the issue...</a></li>
-            </ul>
-        </div>
-        <div class="alert alert__success">
-            <p><span class="cf-form_input-icon cf-icon cf-icon-approved-round" role="alert"></span>
-            15 results found</p>
-        </div>
-    tags:
-    - cf-forms
-*/
-
-.cf-form_input-icon {
-  font-size: 1.25em;
-}
-
-.form-label-error .cf-form_input-icon {
-  color: #d12124;
-}
-
-.alert__error .cf-form_input-icon {
-  color: #d12124;
-}
-
-.alert__success .cf-form_input-icon {
-  color: #2cb34a;
-}
-
-/* topdoc
-  name: Form group
-  family: cf-forms
-  notes:
-    - "A form group is recommended when you need to provide spacing between form
-       elements and between groups of form elements."
-  codenotes:
-    - |
-      Pattern structure
-      -----------------
-      .form-group
-        .form-group_item
-  patterns:
-    - name: .form-group (block)
-      markup: |
-        <div class="form-group">
-            <div class="form-group_item">
-                <input type="text" title="Test input">
-            </div>
-            <div class="form-group_item">
-                <input type="text" title="Test input">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="form-group_item">
-                <input type="text" title="Test input">
-            </div>
-            <div class="form-group_item">
-                <input type="text" title="Test input">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="form-group_item">
-                <input type="text" title="Test input">
-            </div>
-            <div class="form-group_item">
-                <input type="text" title="Test input">
-            </div>
-        </div>
-      codenotes:
-        - |
-          .form-group
-      notes:
-        - "Provides sizeable margins between groups of form elements."
-    - name: .form-group_item (element)
-      markup: |
-        <div class="form-group_item">
-            <input type="text" title="Test input">
-        </div>
-        <div class="form-group_item">
-            <input type="text" title="Test input">
-        </div>
-        <div class="form-group_item">
-            <input type="text" title="Test input">
-        </div>
-      notes:
-        - "Provides subtle margins between form elements within the same group."
-    - name: Real world example
-      markup: |
-        <div class="form-group">
-            <label class="form-label-header">Form group</label>
-            <div class="form-group_item">
-                <input type="text" value="Form group item" title="Test input">
-            </div>
-            <div class="form-group_item">
-                <input type="text" value="Form group item" title="Test input">
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="form-label-header">Form group</label>
-            <div class="form-group_item">
-                <input type="text" value="Form group item" title="Test input">
-            </div>
-            <div class="form-group_item">
-                <input type="text" value="Form group item" title="Test input">
-            </div>
-        </div>
-  tags:
-    - cf-forms
-*/
-
-.form-group + .form-group {
-  margin-top: 1.875em;
-}
-
-.form-group_item + .form-group_item {
-  margin-top: 0.9375em;
-}
-
-/* topdoc
-  name: Input with button
-  family: cf-forms
-  patterns:
-    - name: Default input and button
-      markup: |
-        <div class="input-with-btn">
-            <div class="input-with-btn_input">
-                <input type="text" title="Test input">
-            </div>
-            <div class="input-with-btn_btn">
-                <button class="btn">Search</button>
-            </div>
-        </div>
-    - name: Super input and button
-      markup: |
-        <div class="input-with-btn">
-            <div class="input-with-btn_input">
-                <input class="input__super" type="text" title="Test input">
-            </div>
-            <div class="input-with-btn_btn">
-                <button class="btn btn__super">Search</button>
-            </div>
-        </div>
-  tags:
-    - cf-forms
-*/
-
-.input-with-btn {
-  display: block;
-  position: relative;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.input-with-btn_input {
-  margin-bottom: 0.9375em;
-}
-
-.input-with-btn_input {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 75%;
-  border-right-width: 0;
-}
-
-.lt-ie8 .input-with-btn_input {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.input-with-btn_input {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 83.33333333%;
-  border-right-width: 0;
-}
-
-.lt-ie8 .input-with-btn_input {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.input-with-btn_input input {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.input-with-btn_btn {
-  margin-bottom: 0.9375em;
-}
-
-.input-with-btn_btn {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 25%;
-}
-
-.lt-ie8 .input-with-btn_btn {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.input-with-btn_btn {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 16.66666667%;
-}
-
-.lt-ie8 .input-with-btn_btn {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.input-with-btn_btn .btn {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.input-with-btn_btn .btn__super {
-  padding-left: 0.83333333em;
-  padding-right: 0.83333333em;
-}
-
-/* topdoc
-  name: Button inside input
-  family: cf-forms
-  patterns:
-    - name: Default button inside of an default input
-      markup: |
-        <div class="btn-inside-input">
-            <input type="text"
-                   value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
-            <button class="btn btn__link btn__secondary">
-                Clear
-                <span class="cf-icon cf-icon-delete"></span>
-            </button>
-        </div>
-    - name: Super button inside of a super input
-      markup: |
-        <div class="btn-inside-input">
-            <input class="input__super"
-                   type="text"
-                   value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
-            <button class="btn btn__super btn__link btn__secondary">
-                Clear
-                <span class="cf-icon cf-icon-delete"></span>
-            </button>
-        </div>
-  tags:
-    - cf-forms
-*/
-
-.btn-inside-input {
-  position: relative;
-}
-
-.btn-inside-input input[type="text"],
-.btn-inside-input input[type="search"],
-.btn-inside-input input[type="email"],
-.btn-inside-input input[type="url"],
-.btn-inside-input input[type="tel"],
-.btn-inside-input input[type="number"] {
-  box-sizing: border-box;
-  width: 100%;
-  padding-right: 4.64285714em;
-}
-
-.btn-inside-input input[type="text"].input__super,
-.btn-inside-input input[type="search"].input__super,
-.btn-inside-input input[type="email"].input__super,
-.btn-inside-input input[type="url"].input__super,
-.btn-inside-input input[type="tel"].input__super,
-.btn-inside-input input[type="number"].input__super {
-  padding-right: 5em;
-}
-
-.btn-inside-input .btn {
-  border-bottom-width: 0 !important;
-  position: absolute;
-  right: 1.07142857em;
-  top: 0;
-  /* pa11y fails unless the background color is explicitly set */
-}
-
-.btn-inside-input .btn__super {
-  right: 0.83333333em;
-}
-
-.btn-inside-input .btn__link.btn__secondary {
-  background-color: #fff;
-}
-
-/* topdoc
-  name: Notifications
-  family: cf-notifications
-  notes:
-    - "Markup and styling for notifications"
-  patterns:
-    - name: Default Usage
-      markup: |
-        <div class="cf-notification cf-notification__error">
-          <span class="cf-notification_icon cf-notification_icon__error cf-icon cf-icon-error-round"></span>
-          <p class="cf-notification_text">This is the default alert.</p>
-        </div>
-  tags:
-    - cfgov-misc
-*/
-
-.cf-notification {
-  display: none;
-  position: relative;
-  padding: 11px;
-  padding-left: 40px;
-  margin-bottom: 15px;
-  background: #e3e4e5;
-  border: 1px solid #75787b;
-}
-
-.cf-notification__visible {
-  display: block;
-}
-
-.cf-notification__error {
-  background: #f6d9d3;
-  border-color: #d12124;
-}
-
-.cf-notification__success {
-  background: #dbedd4;
-  border-color: #2cb34a;
-}
-
-.cf-notification__warning {
-  background: #ffecd1;
-  border-color: #ffecd1;
-}
-
-.cf-notification_icon {
-  position: absolute;
-  top: 13px;
-  left: 15px;
-  color: #e3e4e5;
-  font-size: 1.125em;
-}
-
-.cf-notification_icon__error {
-  color: #d14327;
-}
-
-.cf-notification_icon__success {
-  color: #2cb34a;
-}
-
-.cf-notification_icon__warning {
-  color: #ff931b;
-}
-
-.cf-notification_text {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.22222222;
-  margin: 0;
-}
-
-.lt-ie9 .cf-notification_text {
-  font-weight: normal !important;
-}
-
-.cf-notification_text .short-desc {
-  display: block;
-  font-size: 16px;
-}
-
-/* topdoc
-  name: EOF
-  eof: true
-*/
-
-/* ==========================================================================
-   Capital Framework
    Grid mixins
    ========================================================================== */
 
@@ -6332,1766 +5746,6 @@ textarea.disabled {
   tags:
     - cf-grid
 */
-
-/* topdoc
-  name: EOF
-  eof: true
-*/
-
-/* ==========================================================================
-   Capital Framework
-   Layout Helpers
-   ========================================================================== */
-
-/* topdoc
-  name: Theme variables
-  family: cf-layout
-  notes:
-    - "The following color and sizing variables are exposed, allowing you to
-       easily override them before compiling."
-  patterns:
-  - name: Colors
-    codenotes:
-      - |
-        @block__border-top
-        @block__border-bottom
-        @block__bg
-        @content_main-border
-        @content_sidebar-bg
-        @content_sidebar-border
-        @content_bar
-        @content_line
-        @grid_column__top-divider
-        @grid_column__left-divider
-  tags:
-  - cf-layout
-  - less
-*/
-
-/* topdoc
-  name: Content layouts
-  family: cf-layout
-  patterns:
-    - name: Standard content columns
-      markup: |
-        <div class="content-l">
-            <div class="content-l_col content-l_col-1">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Full-width column (spans 12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-2-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Two thirds-width column (spans 8/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-4">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;">
-                    Quarter width column (spans 3/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-3-4">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;">
-                    Three-quarter width column (spans 9/12 columns)
-                </div>
-            </div>
-        </div>
-      codenotes:
-        - |
-          Structural cheat sheet:
-          -----------------------
-          .content-l
-            .content-l_col
-      notes:
-        - "Simplifies use of grid structure inside content containers (like .content-main)."
-        - "Since .content-l_col's are nested within .content_main extra margins will occur.
-           The .content-l container uses the grid_nested-col-group mixin to counter this."
-        - ".content-l_col-RATIO classes default to stacking on mobile and displaying as columns
-           above mobile-max width (600px). This may not be the desired breakpoint for
-           all use cases, so mixins are provided to simplify changing column display to
-           stacked."
-        - "Three .content-l modifiers handle the stacking overrides for use cases of
-           .content_main, .content_full, and .content_sidebar containers."
-        - "Note that the divs with inline styles are for demonstration purposes
-           only and should not be used in production."
-    - name: .content-l__full modifier
-      markup: |
-        <div class="content-l content-l__full">
-            <div class="content-l_col content-l_col-1">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Full-width column (spans 12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-2-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Two thirds-width column (spans 8/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-4">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;">
-                    Quarter width column (spans 3/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-3-4">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;">
-                    Three-quarter width column (spans 9/12 columns)
-                </div>
-            </div>
-        </div>
-      codenotes:
-        - .content-l.content-l__full
-      notes:
-        - "Designed for use within .content_full containers."
-        - "Displays .content-l_col-1-2 as columns at tablet sizes & above (600px+)"
-        - "Displays other common .content-l_col modifiers (.content-l_col-1-3,
-           .content-l_col-2-3, .content-l_col-3-8, .content-l_col-5-8)
-           as columns above 767px."
-    - name: .content-l__main modifier
-      markup: |
-        <div class="content-l content-l__main">
-            <div class="content-l_col content-l_col-1">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Full-width column (spans 12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-2-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Two thirds-width column (spans 8/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-4">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;">
-                    Quarter width column (spans 3/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-3-4">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;">
-                    Three-quarter width column (spans 9/12 columns)
-                </div>
-            </div>
-        </div>
-      codenotes:
-        - .content-l.content-l__main
-      notes:
-        - "Designed for use in .content_main containers, which have reduced (75%) width
-           above tablet sizes to accommodate adjacent sidebar column."
-        - "Displays .content-l_col-1-2 as columns in the tablet range, 600-800px;
-           stacked from 800-899, the start of sidebar range; and as columns again at 900px+"
-        - "Displays other common .content-l_col modifiers (.content-l_col-1-3, .content-l_col-2-3,
-           .content-l_col-3-8, .content-l_col-5-8) as columns above 900px."
-    - name: .content-l__sidebar modifier
-      markup: |
-        <div class="content-l content-l__sidebar">
-            <div class="content-l_col content-l_col-1">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Full-width column (spans 12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-2-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Two thirds-width column (spans 8/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-3">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Third-width column (spans 4/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-4">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;">
-                    Quarter width column (spans 3/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-3-4">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;">
-                    Three-quarter width column (spans 9/12 columns)
-                </div>
-            </div>
-        </div>
-      codenotes:
-        - .content-l.content-l__sidebar
-      notes:
-        - "For use in sidebar containers, which are full width only
-           on tablet widths (600-800px)."
-        - "Displays .content-l_col-1-2 as columns in the tablet range,
-           600-800px, and stacked at all other widths."
-    - name: Large gutters modifier
-      markup: |
-        <div class="content-l content-l__main  content-l__large-gutters">
-            <div class="content-l_col content-l_col-1">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Full-width column (spans 12 columns)
-                </div>
-            </div>
-        </div>
-        <div class="content-l content-l__main  content-l__large-gutters">
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-            <div class="content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2;
-                            text-align: center;
-                            padding: 8px;
-                            margin-bottom: 4px;">
-                    Half-width column (spans 6/12 columns)
-                </div>
-            </div>
-        </div>
-      codenotes:
-        - .content-l.content-l__large-gutters
-      notes:
-        - "Adds 30px gutters to all columns by simply adding the
-           .content-l__large-gutters modifier."
-  tags:
-    - cf-layout
-*/
-
-.content-l {
-  position: relative;
-}
-
-.content-l {
-  display: block;
-  position: relative;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-1-3 {
-  display: block;
-  width: 100%;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-1-3.content-l_col__before-divider {
-  margin-top: 3.75em;
-  border-left-width: 15px;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-1-3.content-l_col__before-divider:before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-bottom: 1.875em;
-  background-color: #babbbd;
-  position: static;
-  width: 100%;
-  margin-left: auto !important;
-}
-
-.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-1-3.content-l_col__before-divider {
-  border-left-width: 30px;
-}
-
-.content-l__sidebar .content-l_col + .content-l_col-1-3 {
-  margin-top: 1.875em;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-2-3 {
-  display: block;
-  width: 100%;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-2-3.content-l_col__before-divider {
-  margin-top: 3.75em;
-  border-left-width: 15px;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-2-3.content-l_col__before-divider:before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-bottom: 1.875em;
-  background-color: #babbbd;
-  position: static;
-  width: 100%;
-  margin-left: auto !important;
-}
-
-.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-2-3.content-l_col__before-divider {
-  border-left-width: 30px;
-}
-
-.content-l__sidebar .content-l_col + .content-l_col-2-3 {
-  margin-top: 1.875em;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-3-8 {
-  display: block;
-  width: 100%;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-3-8.content-l_col__before-divider {
-  margin-top: 3.75em;
-  border-left-width: 15px;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-3-8.content-l_col__before-divider:before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-bottom: 1.875em;
-  background-color: #babbbd;
-  position: static;
-  width: 100%;
-  margin-left: auto !important;
-}
-
-.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-3-8.content-l_col__before-divider {
-  border-left-width: 30px;
-}
-
-.content-l__sidebar .content-l_col + .content-l_col-3-8 {
-  margin-top: 1.875em;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-5-8 {
-  display: block;
-  width: 100%;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-5-8.content-l_col__before-divider {
-  margin-top: 3.75em;
-  border-left-width: 15px;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-5-8.content-l_col__before-divider:before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-bottom: 1.875em;
-  background-color: #babbbd;
-  position: static;
-  width: 100%;
-  margin-left: auto !important;
-}
-
-.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-5-8.content-l_col__before-divider {
-  border-left-width: 30px;
-}
-
-.content-l__sidebar .content-l_col + .content-l_col-5-8 {
-  margin-top: 1.875em;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-1-4 {
-  display: block;
-  width: 100%;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-1-4.content-l_col__before-divider {
-  margin-top: 3.75em;
-  border-left-width: 15px;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-1-4.content-l_col__before-divider:before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-bottom: 1.875em;
-  background-color: #babbbd;
-  position: static;
-  width: 100%;
-  margin-left: auto !important;
-}
-
-.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-1-4.content-l_col__before-divider {
-  border-left-width: 30px;
-}
-
-.content-l__sidebar .content-l_col + .content-l_col-1-4 {
-  margin-top: 1.875em;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-3-4 {
-  display: block;
-  width: 100%;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-3-4.content-l_col__before-divider {
-  margin-top: 3.75em;
-  border-left-width: 15px;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-3-4.content-l_col__before-divider:before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-bottom: 1.875em;
-  background-color: #babbbd;
-  position: static;
-  width: 100%;
-  margin-left: auto !important;
-}
-
-.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-3-4.content-l_col__before-divider {
-  border-left-width: 30px;
-}
-
-.content-l__sidebar .content-l_col + .content-l_col-3-4 {
-  margin-top: 1.875em;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-1-2 {
-  display: block;
-  width: 100%;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-1-2.content-l_col__before-divider {
-  margin-top: 3.75em;
-  border-left-width: 15px;
-}
-
-.content-l__sidebar .content-l_col.content-l_col-1-2.content-l_col__before-divider:before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-bottom: 1.875em;
-  background-color: #babbbd;
-  position: static;
-  width: 100%;
-  margin-left: auto !important;
-}
-
-.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-1-2.content-l_col__before-divider {
-  border-left-width: 30px;
-}
-
-.content-l__sidebar .content-l_col + .content-l_col-1-2 {
-  margin-top: 1.875em;
-}
-
-.content-l__large-gutters {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-
-.content-l__large-gutters .content-l_col {
-  border-left-width: 30px;
-  border-right-width: 30px;
-}
-
-.content-l_col-1 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 100%;
-}
-
-.lt-ie8 .content-l_col-1 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content-l_col-1-2 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 50%;
-}
-
-.lt-ie8 .content-l_col-1-2 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content-l_col-1-3 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 33.33333333%;
-}
-
-.lt-ie8 .content-l_col-1-3 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content-l_col-2-3 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 66.66666667%;
-}
-
-.lt-ie8 .content-l_col-2-3 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content-l_col-3-8 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 37.5%;
-}
-
-.lt-ie8 .content-l_col-3-8 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content-l_col-5-8 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 62.5%;
-}
-
-.lt-ie8 .content-l_col-5-8 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content-l_col-1-4 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 25%;
-}
-
-.lt-ie8 .content-l_col-1-4 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content-l_col-3-4 {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 75%;
-}
-
-.lt-ie8 .content-l_col-3-4 {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-/* topdoc
-  name: Content layout column dividers
-  family: cf-layout
-  notes:
-    - "Adds dividers between specified .content-l_col-X-X classes."
-    - "Layout dividers work in conjunction with .content-l_col-X-X elements and
-       have specific needs depending on which column element variant they are
-       attached to. For example .content-l_col-1-2 has different divider needs
-       than .content-l_col-1-3 because they may break to single columns at different
-       breakpoints."
-    - "Dividers use absolute positioning relative to the .content-l element and
-       depends on .content-l using `position: relative;`. This allows vertical
-       dividers to span the height of the tallest column. Just be aware that if
-       you have more than one row of columns, and each row has columns of
-       different widths, the borders will cause unwanted overlapping since they
-       will span the height of the entire .content-l element."
-  patterns:
-    - name: .content-l_col__before-divider (modifier)
-      markup: |
-        <div class="content-l content-l__large-gutters">
-            <div class="content-l_col content-l_col-1-2">
-                <img src="http://placekitten.com/600/320" alt="Placeholder image">
-                <br>
-                Half-width column (spans 6/12 columns)
-            </div>
-            <div class="content-l_col content-l_col-1-2 content-l_col__before-divider">
-                <img src="http://placekitten.com/600/320" alt="Placeholder image">
-                <br>
-                Half-width column (spans 6/12 columns)
-            </div>
-        </div>
-        <br>
-        <!-- Starting a new .content-l so that the dividers from
-             .content-l_col.content-l_col-1-2.content-l_col__before-divider
-             won't overlap the .content-l_col-1-3 columns. -->
-        <div class="content-l content-l__large-gutters">
-            <div class="content-l_col content-l_col-1-3">
-                Third-width column (spans 4/12 columns)
-            </div>
-            <div class="content-l_col content-l_col-1-3 content-l_col__before-divider">
-                Third-width column (spans 4/12 columns)
-            </div>
-            <div class="content-l_col content-l_col-1-3 content-l_col__before-divider">
-                Third-width column (spans 4/12 columns)
-            </div>
-        </div>
-      codenotes:
-        - .content-l_col__before-divider
-  tags:
-    - cf-layout
-*/
-
-.content-l_col__before-divider.content-l_col-1-2 {
-  border-left-width: 30px;
-}
-
-.content-l_col__before-divider.content-l_col-1-2:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  display: block;
-  background-color: #babbbd;
-  margin-left: -30px;
-}
-
-.content-l_col__before-divider.content-l_col-1-3 {
-  border-left-width: 30px;
-}
-
-.content-l_col__before-divider.content-l_col-1-3:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  display: block;
-  background-color: #babbbd;
-  margin-left: -30px;
-}
-
-/* topdoc
-  name: Content bar
-  family: cf-layout
-  patterns:
-    - name: A 10 pixel bar that divides the header or hero from the main content
-      markup: |
-        <div class="content_bar"></div>
-      notes:
-        - "This is necessary because we don't have a predictable place to put a
-           full-width border. It needs to be under the hero on pages with
-           heroes, but under the header if there is no hero."
-        - ".content_bar must come after .content_hero but before .content_wrapper"
-  tags:
-    - cf-layout
-*/
-
-.content_bar {
-  height: 10px;
-  background: #2cb34a;
-}
-
-/* topdoc
-  name: Content line
-  family: cf-layout
-  patterns:
-    - name: "A 1 pixel edge to edge bar that can divide content."
-      markup: |
-        <div class="content_line"></div>
-  tags:
-    - cf-layout
-*/
-
-.content_line {
-  height: 1px;
-  background: #babbbd;
-}
-
-/* topdoc
-  name: Main content and sidebar
-  family: cf-layout
-  patterns:
-    - name: Standard layout for the main content area and sidebar
-      markup: |
-        <main class="content" role="main">
-            <section class="content_hero" style="background: #E3E4E5">
-                Content hero
-            </section>
-            <div class="content_bar"></div>
-            <div class="content_wrapper">
-                <section class="content_main">
-                    Main content area
-                </section>
-                <aside class="content_sidebar" style="background: #F1F2F2">
-                    Sidebar
-                </aside>
-            </div>
-        </main>
-      codenotes:
-        - |
-          Structural cheat sheet:
-          -----------------------
-          main.content
-            .content_hero
-            .content_bar
-            .content_wrapper
-              .content_sidebar
-              .content_main
-      notes:
-        - "By default .content_main and .content_sidebar stack vertically. When
-           using the modifiers described below to create columns, the columns
-           will remain stacked for smaller screens and then convert to to
-           columns at 801px."
-        - ".content_bar must come after .content_hero (if it exists) but before
-           .content_wrapper."
-        - "Inline styling is for demonstration purposes only; do not include it
-           in your markup."
-    - name: Left-hand navigation layout
-      markup: |
-        <main class="content content__1-3" role="main">
-            <div class="content_bar"></div>
-            <div class="content_wrapper">
-                <aside class="content_sidebar">
-                    Section navigation
-                </aside>
-                <section class="content_main">
-                    <h2>Main content area</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Cum corrupti tempora nam nihil qui mollitia consectetur
-                        corporis nemo culpa dolorum! Laborum at eos deleniti
-                        consequatur itaque officiis debitis quisquam! Provident!
-                    </p>
-                </section>
-            </div>
-        </main>
-        <footer class="footer" role="contentinfo">
-            <div class="wrapper">
-                Footer
-            </div>
-        </footer>
-      codenotes:
-        - .content__1-3
-      notes:
-        - "Add a class of .content__L-R to main.content to determine the width
-           ratio of .content_main and .content_sidebar, where 'L' is the
-           left-hand item and 'R' is the right-hand item. The two common
-           configurations are 1-3 (sidebar on the left, content on the right, in
-           a ratio of 1:3) and 2-1 (content on the left, sidebar on the right,
-           in a ratio of 2:1). It is assumed that the content is wider than the
-           sidebar."
-    - name: Right-hand sidebar layout
-      markup: |
-        <main class="content content__2-1" role="main">
-            <div class="content_bar"></div>
-            <div class="content_wrapper">
-                <section class="content_main">
-                    <h2>Main content area</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Cum corrupti tempora nam nihil qui mollitia consectetur
-                        corporis nemo culpa dolorum! Laborum at eos deleniti
-                        consequatur itaque officiis debitis quisquam! Provident!
-                    </p>
-                </section>
-                <aside class="content_sidebar" style="background: #F1F2F2">
-                    Sidebar
-                </aside>
-            </div>
-        </main>
-        <footer class="footer" role="contentinfo">
-            <div class="wrapper">
-                Footer
-            </div>
-        </footer>
-      codenotes:
-        - .content__2-1
-      notes:
-        - "Add a class of .content__L-R to main.content to determine the width
-           ratio of .content_main and .content_sidebar, where 'L' is the
-           left-hand item and 'R' is the right-hand item. The two common
-           configurations are 1-3 (sidebar on the left, content on the right, in
-           a ratio of 1:3) and 2-1 (content on the left, sidebar on the right,
-           in a ratio of 2:1). It is assumed that the content is wider than the
-           sidebar."
-        - "Inline styling is for demonstration purposes only; do not include it
-           in your markup."
-    - name: Narrow content column option
-      markup: |
-        <main class="content content__2-1" role="main">
-            <div class="content_bar"></div>
-            <div class="content_wrapper">
-                <section class="content_main content_main__narrow">
-                    <h2>Main content area</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Cum corrupti tempora nam nihil qui mollitia consectetur
-                        corporis nemo culpa dolorum! Laborum at eos deleniti
-                        consequatur itaque officiis debitis quisquam! Provident!
-                    </p>
-                </section>
-                <aside class="content_sidebar" style="background: #F1F2F2">
-                    Sidebar
-                </aside>
-            </div>
-        </main>
-        <footer class="footer" role="contentinfo">
-            <div class="wrapper">
-                Footer
-            </div>
-        </footer>
-      codenotes:
-        - .content_main__narrow
-      notes:
-        - "Add a class of .content_main__narrow to .content_main to get a
-           one-column (in a 12-column grid) gutter on the right side."
-        - "Inline styling is for demonstration purposes only; do not include it
-           in your markup."
-    - name: Flush bottom modifier
-      markup: |
-        <main class="content content__1-3" role="main">
-            <div class="content_bar"></div>
-            <div class="content_wrapper">
-                <aside class="content_sidebar content__flush-bottom">
-                    Side with no bottom padding...
-                </aside>
-                <section class="content_main content__flush-bottom">
-                    Main content with no bottom padding...
-                    <div class="block
-                                block__flush-bottom
-                                block__flush-sides
-                                block__bg">
-                        .content__flush-bottom is very useful when you have a
-                        content block inside of .content_main with a background
-                        and flush sides.
-                    </div>
-                </section>
-            </div>
-        </main>
-        <footer class="footer" role="contentinfo">
-            <div class="wrapper">
-                Footer
-            </div>
-        </footer>
-      codenotes:
-        - .content__flush-bottom
-      notes:
-        - "Add a class of .content__flush-bottom to .content_main or
-           content_sidebar to remove bottom padding."
-    - name: Flush top modifier (only on small screens)
-      markup: |
-        <main class="content content__1-3" role="main">
-            <div class="content_bar"></div>
-            <div class="content_wrapper">
-                <aside class="content_sidebar content__flush-top-on-small">
-                    Side with no top padding on small screens...
-                </aside>
-                <section class="content_main">
-                    Main content
-                </section>
-            </div>
-        </main>
-        <footer class="footer" role="contentinfo">
-            <div class="wrapper">
-                Footer
-            </div>
-        </footer>
-      codenotes:
-        - .content__flush-top-on-small
-      notes:
-        - "Add a class of .content__flush-top-on-small to .content_main or
-           .content_sidebar to remove top padding on small screens only.
-           'Small' screens in this case refers to the breakpoint where
-           .content_main and .content_sidebar single column layout."
-    - name: Flush all modifier (only on small screens)
-      markup: |
-        <main class="content content__1-3" role="main">
-            <div class="content_bar"></div>
-            <div class="content_wrapper">
-                <aside class="content_sidebar content__flush-all-on-small">
-                    Side with no padding or border-based gutters on small screens...
-                </aside>
-                <section class="content_main">
-                    Main content
-                </section>
-            </div>
-        </main>
-        <footer class="footer" role="contentinfo">
-            <div class="wrapper">
-                Footer
-            </div>
-        </footer>
-      codenotes:
-        - .content__flush-all-on-small
-      notes:
-        - "Add a class of .content__flush-all-on-small to .content_main or
-           .content_sidebar to remove all padding and border-based gutters on
-           small screens only. 'Small' screens in this case refers to the
-           breakpoint where .content_main and .content_sidebar single column layout."
-  tags:
-    - cf-layout
-*/
-
-.content_intro,
-.content_main,
-.content_sidebar {
-  padding: 1.875em 0.9375em;
-}
-
-.content_intro,
-.content_main,
-.content_sidebar {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 100%;
-  padding: 3.75em 0.9375em;
-}
-
-.lt-ie8 .content_intro,
-.lt-ie8 .content_main,
-.lt-ie8 .content_sidebar {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content_intro,
-.content_main,
-.content_sidebar {
-  padding: 3.75em 0;
-}
-
-.content_intro {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 100%;
-}
-
-.lt-ie8 .content_intro {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content__1-3 .content_sidebar {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 25%;
-  padding-right: 1.875em;
-}
-
-.lt-ie8 .content__1-3 .content_sidebar {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content__1-3 .content_main {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 75%;
-  position: relative;
-}
-
-.lt-ie8 .content__1-3 .content_main {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content__1-3 .content_main:after {
-  content: '';
-  border-left: 1px solid #babbbd;
-  position: absolute;
-  top: 3.75em;
-  bottom: 0;
-  left: -1.875em;
-}
-
-.content__2-1 .content_main {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 66.66666667%;
-}
-
-.lt-ie8 .content__2-1 .content_main {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content__2-1 .content_main:after {
-  right: -1.875em;
-}
-
-.content__2-1 .content_sidebar {
-  display: inline-block;
-  box-sizing: border-box;
-  border: solid transparent;
-  border-width: 0 15px;
-  margin-right: -0.25em;
-  vertical-align: top;
-  width: 33.33333333%;
-  padding-left: 1.875em;
-}
-
-.lt-ie8 .content__2-1 .content_sidebar {
-  display: inline;
-  margin-right: 0;
-  zoom: 1;
-  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
-}
-
-.content__flush-bottom {
-  padding-bottom: 0;
-}
-
-/* topdoc
-  name: Block
-  family: cf-layout
-  notes:
-    - ".block is a base class with several modifiers that help you separate
-       chunks of content via margins, padding, borders, and backgrounds."
-  patterns:
-    - name: Standard block example
-      markup: |
-        Main content...
-        <div class="block">
-            Content block
-        </div>
-        <div class="block">
-            Content block
-        </div>
-        <div class="block">
-            Content block
-        </div>
-      codenotes:
-        - .block
-      notes:
-        - "The standard .block class by itself simply adds a margin of twice the
-           gutter width to the top and bottom."
-    - name: Flush-top modifier
-      markup: |
-        Main content...
-        <div class="block block__flush-top">
-            Content block with no top margin.
-        </div>
-        <div class="block">
-            Content block
-        </div>
-      codenotes:
-        - .block.block__flush-top
-      notes:
-        - "Removes the top margin from .block."
-    - name: Flush-bottom modifier
-      markup: |
-        Main content...
-        <div class="block block__flush-bottom">
-            Content block with no bottom margin.
-        </div>
-        <div class="block block__flush-top">
-            Content block with no top margin.
-        </div>
-      codenotes:
-        - .block.block__flush-bottom
-      notes:
-        - "Removes the bottom margin from .block."
-    - name: Flush-sides modifier
-      markup: |
-        <main class="content content__1-3" role="main">
-            <div class="content_wrapper">
-                <aside class="content_sidebar">
-                    Section navigation
-                </aside>
-                <section class="content_main">
-                    Main content...
-                    <aside class="block block__flush-sides">
-                        Content block with no side margins.
-                    </aside>
-                </section>
-            </div>
-        </main>
-      codenotes:
-        - .block.block__flush-sides
-      notes:
-        - "Removes the side margin from .block."
-        - "Typically used in conjuction with .block__bg to create a 'well' whose
-           background extends into the left and right gutters. (See below.)"
-    - name: Border-top modifier
-      markup: |
-        Main content...
-        <div class="block block__border-top">
-            Content block with top border.
-        </div>
-      codenotes:
-        - .block.block__border-top
-      notes:
-        - "Adds top border to .block."
-    - name: Border-bottom modifier
-      markup: |
-        Main content...
-        <div class="block block__border-bottom">
-            Content block with bottom border.
-        </div>
-      codenotes:
-        - .block.block__border-bottom
-      notes:
-        - "Adds bottom border to .block."
-    - name: Padded-top modifier
-      markup: |
-        Main content...
-        <div class="block block__padded-top block__border-top">
-            Content block with reduced top margin & added top padding
-            and border.
-        </div>
-      codenotes:
-        - .block.block__padded-top
-      notes:
-        - "Breaks top margin into margin & padding. Useful in combination with
-           block__border-top to add padding between block contents & border."
-    - name: Padded-bottom modifier
-      markup: |
-        <div class="block block__padded-bottom block__border-bottom">
-            Content block with reduced bottom margin & added bottom padding
-            and border.
-        </div>
-        Content...
-      codenotes:
-        - .block.block__padded-bottom
-      notes:
-        - "Breaks bottom margin into margin & padding. Useful in combination with
-           block__border-bottom to add padding between block contents & border."
-    - name: Background modifier
-      markup: |
-        Main content...
-        <div class="block block__bg">
-            Content block with a background
-        </div>
-      codenotes:
-        - .block.block__bg
-      notes:
-        - "Adds a background color and padding to .block."
-    - name: Background and flush-sides modifier combo example
-      markup: |
-        <main class="content content__1-3" role="main">
-            <div class="content_wrapper">
-                <aside class="content_sidebar">
-                    Section navigation
-                </aside>
-                <section class="content_main content__flush-bottom">
-                    Main content...
-                    <div class="block block__flush-sides block__bg">
-                        Content block with a background and flush sides
-                    </div>
-                </section>
-            </div>
-        </main>
-      codenotes:
-        - .block.block__flush-sides.block__bg
-      notes:
-        - "This is an example of combining modifiers to get a flush padded bg
-           with a .block."
-    - name: Sub blocks
-      markup: |
-        <div class="block block__sub">
-            <div style="background: #F1F2F2; padding: 8px;">
-                Sub content block
-            </div>
-        </div>
-        <div class="block block__sub">
-            <div style="background: #F1F2F2; padding: 8px;">
-                Sub content block
-            </div>
-        </div>
-        <div class="block block__sub">
-            <div style="background: #F1F2F2; padding: 8px;">
-                Sub content block
-            </div>
-        </div>
-      codenotes:
-        - .block.block__sub
-      notes:
-        - "Useful for when you need some consistent margins between
-           blocks that are nested within other blocks."
-        - "Note that the divs with inline styles are for demonstration purposes
-           only and should not be used in production."
-    - name: Mixing content blocks with content layouts
-      markup: |
-        <div class="content-l">
-            <div class="block content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2; padding: 8px;">
-                    Content block that is also a content column.
-                    Notice how my top margins only exist on smaller screens when
-                    I need to stack vertically.
-                </div>
-            </div>
-            <div class="block content-l_col content-l_col-1-2">
-                <div style="background: #F1F2F2; padding: 8px;">
-                    Content block that is also a content column.
-                    Notice how my top margins only exist on smaller screens when
-                    I need to stack vertically.
-                </div>
-            </div>
-        </div>
-      codenotes:
-        - .block.content-l_col
-      notes:
-        - "You can safely combine .block with .content-l_col to
-           achieve a column-based layout at larger screens with no top margins
-           and a vertical layout at smaller screens that do have margins."
-        - "Note that the divs with inline styles are for demonstration purposes
-           only and should not be used in production."
-  tags:
-    - cf-layout
-*/
-
-.block {
-  margin-top: 3.75em;
-  margin-bottom: 3.75em;
-}
-
-.block__border-top {
-  border-top: 1px solid #babbbd;
-}
-
-.block__border-bottom {
-  border-bottom: 1px solid #babbbd;
-}
-
-.block__flush-top {
-  margin-top: 0 !important;
-}
-
-.block__flush-bottom {
-  margin-bottom: 0 !important;
-}
-
-.block__flush-sides {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.block__flush-sides {
-  margin-right: -30px;
-  margin-left: -30px;
-}
-
-.block__bg {
-  padding: 1.875em 0.9375em;
-  background: #f1f2f2;
-}
-
-.block__bg {
-  padding: 2.8125em 1.875em;
-}
-
-.block__padded-top {
-  padding-top: 1.875em;
-  margin-top: 1.875em;
-}
-
-.block__padded-bottom {
-  padding-bottom: 1.875em;
-  margin-bottom: 1.875em;
-}
-
-.block__sub {
-  margin-top: 1.875em;
-  margin-bottom: 1.875em;
-}
-
-.content-l_col.block,
-.content-l_col.block__sub {
-  margin-top: 0;
-}
-
-/* topdoc
-  name: Bleedbar sidebar styling
-  family: cf-layout
-  patterns:
-    - name: Give the sidebar a background color that bleeds off the edge of the screen
-      markup: |
-        <main class="content content__2-1 content__bleedbar" role="main">
-            <section class="content_hero" style="background: #E3E4E5">
-                Content hero
-            </section>
-            <div class="content_bar"></div>
-            <div class="content_wrapper">
-                <section class="content_main">
-                    Main content area
-                </section>
-                <aside class="content_sidebar">
-                    Bleeding sidebar
-                </aside>
-            </div>
-        </main>
-      codenotes:
-        - ".content__bleedbar"
-      notes:
-        - "Simply add class .content__bleedbar to main.content."
-        - "Only supports sidebars on the right, for now."
-        - "Inline styling is for demonstration purposes only; do not include it
-           in your markup."
-  tags:
-    - cf-layout
-*/
-
-.content__bleedbar .content_main:after {
-  content: none;
-}
-
-.content__bleedbar .content_sidebar {
-  padding: 1.875em 0.9375em;
-  background: #f1f2f2;
-}
-
-.content__bleedbar {
-  overflow: hidden;
-}
-
-.content__bleedbar .content_sidebar {
-  padding: 3.75em 0 0.9375em 1.875em;
-  margin-left: 0;
-  position: relative;
-  z-index: 1;
-  background: transparent;
-}
-
-.lt-ie8 .content__bleedbar .content_sidebar {
-  padding-right: 30px;
-  background: #f1f2f2;
-}
-
-.content__bleedbar .content_wrapper {
-  position: relative;
-}
-
-.content__bleedbar .content_wrapper:after {
-  content: '';
-  display: block;
-  width: 9999px;
-  border-left: 1px solid #babbbd;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  margin-left: 10px;
-  background: #f1f2f2;
-}
-
-.content__bleedbar.content__2-1 .content_wrapper:after {
-  left: 66.666666667%;
-}
-
-.content__bleedbar.content__3-1 .content_wrapper:after {
-  left: 75%;
-}
-
-/* topdoc
-  name: cf-grid helpers
-  family: cf-layout
-  patterns:
-    - name: .wrapper (base)
-      markup: |
-        <div class="wrapper">
-            Wrapper
-        </div>
-      notes:
-        - "Turns an element into a cf-grid wrapper at 801px and above."
-        - "Includes some explicit declarations for IE8 due to the fact that it
-           doesn't support media queries."
-    - name: .wrapper__match-content (modifier)
-      markup: |
-        <div class="wrapper wrapper__match-content">
-            <code>.wrapper.wrapper__match-content</code>
-            <img src="http://placekitten.com/800/40" alt="Placeholder image">
-        </div>
-        <br>
-        <main class="content" role="main">
-            <div class="content_wrapper">
-                <section class="content_main">
-                    <code>.content_wrapper .content_main</code>
-                    <img src="http://placekitten.com/800/40" alt="Placeholder image">
-                </section>
-            </div>
-        </main>
-      notes:
-        - "The .content area has a visual gutter twice the size of a normal
-           wrapper because the gutters from the sidebar and main content divs
-           add to the gutters of the wrapper. This modifier gives you a wrapper
-           with wider gutters to match the visual gutters of the .content area."
-    - name: Column divider modifiers
-      notes:
-        - "cf-grid columns use left and right borders for fixed margins which
-           means it's not possible to set visual left and right borders directly
-           on them. Instead we can use the :before pseudo element and position
-           it absolutely. The added benefit of doing it this way is that the
-           border spans the entire height of the next parent using `position:
-           relative;`. This means that the border will always match the height
-           of the tallest column in the row."
-      codenotes:
-        - .grid_column__top-divider
-        - .grid_column__left-divider
-        - |
-          .my-column-1-2 {
-
-              // Creates a column that spans 6 out of 12 columns.
-              .grid_column(6, 12);
-
-              // Add a top divider only at screen 599px and smaller.
-              .respond-to-max(599px {
-                  .grid_column__top-divider();
-              });
-
-              // Add a left divider only at screen 600px and larger.
-              .respond-to-min(600px, {
-                  .grid_column__left-divider();
-              });
-
-          }
-  tags:
-    - cf-layout
-*/
-
-.wrapper,
-.content_wrapper {
-  max-width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-  clear: both;
-}
-
-.wrapper__match-content,
-.content_wrapper__match-content {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.wrapper__match-content,
-.content_wrapper__match-content {
-  padding-left: 30px;
-  padding-right: 30px;
-  max-width: 1140px;
-}
-
-.lt-ie9 .wrapper,
-.lt-ie9 .content_wrapper {
-  max-width: 960px;
-}
-
-.lt-ie9 body {
-  min-width: 800px;
-}
-
-.grid_column__top-divider {
-  margin-top: 3.75em;
-  border-left-width: 15px;
-}
-
-.grid_column__top-divider:before {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-bottom: 1.875em;
-  background-color: #babbbd;
-  position: static;
-  width: 100%;
-  margin-left: auto !important;
-}
-
-.grid_column__left-divider {
-  border-left-width: 30px;
-}
-
-.grid_column__left-divider:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  display: block;
-  background-color: #babbbd;
-  margin-left: -30px;
-}
 
 /* topdoc
   name: EOF
@@ -9458,6 +7112,2778 @@ a.category-slug.active {
   line-height: 1;
   position: absolute;
   left: -0.86363636em;
+}
+
+/* topdoc
+  name: EOF
+  eof: true
+*/
+
+/* ==========================================================================
+   Capital Framework
+   Form Element Styling
+   ========================================================================== */
+
+/* topdoc
+  name: Theme variables
+  family: cf-forms
+  notes:
+    - "The following color and sizing variables are exposed, allowing you to
+       easily override them before compiling."
+  patterns:
+  - name: Colors
+    codenotes:
+      - |
+        @input-error
+        @input-warning
+        @input-success
+        @input-disabled
+        @input-inset-bg;
+        @input-inset-selected
+        @checkbox-border
+        @checkbox-checked-border
+        @checkbox-border-disabled
+        @checkbox-bg-disabled
+        @input-active-bg
+  - name: Sizing
+    codenotes:
+      - |
+        @input__super-font-size
+  tags:
+  - cf-forms
+  - less
+*/
+
+/* topdoc
+  name: Form labels
+  family: cf-forms
+  patterns:
+    - name: Label header
+      markup: |
+        <label class="form-label-header">
+            Form label header
+        </label>
+    - name: Form label helper text
+      markup: |
+        <label class="form-label-helper-text">
+            Form label helper text
+        </label>
+  tags:
+    - cf-forms
+*/
+
+.form-label-header {
+  margin-top: 0;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222222;
+  margin-bottom: 0.55555556em;
+}
+
+.lt-ie9 .form-label-header {
+  font-weight: normal !important;
+}
+
+.form-label-helper-text {
+  color: #ad81a8;
+  font-size: 0.875em;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #43484e;
+  margin-bottom: 0.71428571em;
+}
+
+.form-label-helper-text em,
+.form-label-helper-text i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .form-label-helper-text em,
+.lt-ie9 .form-label-helper-text i {
+  font-style: normal !important;
+}
+
+.form-label-helper-text strong,
+.form-label-helper-text b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .form-label-helper-text strong,
+.lt-ie9 .form-label-helper-text b {
+  font-weight: normal !important;
+}
+
+.form-label-helper-text__large {
+  font-size: 1em;
+}
+
+.error + .form-label-error {
+  margin-top: 0.9375em;
+}
+
+/* topdoc
+  name: Super input
+  family: cf-forms
+  patterns:
+    - name: .input__super
+      markup: |
+        <input class="input__super" type="text" value="Super input" title="Test input"></input>
+        <button class="btn btn__super">Super</button>
+      notes:
+        - "An input that matches the height of a super button."
+  tags:
+    - cf-forms
+*/
+
+.input__super[type="text"],
+.input__super[type="search"],
+.input__super[type="email"],
+.input__super[type="url"],
+.input__super[type="tel"],
+.input__super[type="number"] {
+  padding: 0.55555556em;
+  font-size: 1.125em;
+}
+
+/* topdoc
+    name: Input states
+    family: cf-forms
+    patterns:
+    - name: Error state
+      codenotes:
+        - .error
+      markup: |
+        <input class="error" type="text" value="Invalid input" title="Test input">
+    - name: Disabled state
+      codenotes:
+        - .disabled
+      markup: |
+        <input class="disabled" disabled="true" autocomplete="off" type="text" value="Validated input" title="Test input">
+    tags:
+    - cf-forms
+*/
+
+input[type="text"].error,
+input[type="search"].error,
+input[type="email"].error,
+input[type="url"].error,
+input[type="tel"].error,
+input[type="number"].error,
+select[multiple].error,
+textarea.error {
+  border: 1px solid #d12124;
+  outline: 1px solid #d12124;
+}
+
+input[type="text"].disabled,
+input[type="search"].disabled,
+input[type="email"].disabled,
+input[type="url"].disabled,
+input[type="tel"].disabled,
+input[type="number"].disabled,
+select[multiple].disabled,
+textarea.disabled {
+  border-width: 2px;
+  background-color: #f1f2f2;
+}
+
+/* topdoc
+    name: Form icons
+    family: cf-forms
+    patterns:
+    - name: Form input error icon
+      notes:
+        - "The icon must be inside a label element with the 'form-label-error' class."
+      markup: |
+        <input class="error" type="text" value="" id="form-input-error">
+        <label class="form-label-error" for="form-input-error">
+            <span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
+            This is a required question, please answer.
+        </label>
+    tags:
+    - cf-forms
+*/
+
+.cf-form_input-icon {
+  font-size: 1.25em;
+}
+
+.form-label-error .cf-form_input-icon {
+  color: #d12124;
+}
+
+.error + .cf-form_input-icon {
+  color: #d12124;
+}
+
+.warning + .cf-form_input-icon {
+  color: #ffecd1;
+}
+
+.success + .cf-form_input-icon {
+  color: #2cb34a;
+}
+
+/* topdoc
+  name: Form group
+  family: cf-forms
+  notes:
+    - "A form group is recommended when you need to provide spacing between form
+       elements and between groups of form elements."
+  codenotes:
+    - |
+      Pattern structure
+      -----------------
+      .form-group
+        .form-group_item
+  patterns:
+    - name: .form-group (block)
+      markup: |
+        <div class="form-group">
+            <div class="form-group_item">
+                <input type="text" title="Test input">
+            </div>
+            <div class="form-group_item">
+                <input type="text" title="Test input">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-group_item">
+                <input type="text" title="Test input">
+            </div>
+            <div class="form-group_item">
+                <input type="text" title="Test input">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-group_item">
+                <input type="text" title="Test input">
+            </div>
+            <div class="form-group_item">
+                <input type="text" title="Test input">
+            </div>
+        </div>
+      codenotes:
+        - |
+          .form-group
+      notes:
+        - "Provides sizeable margins between groups of form elements."
+    - name: .form-group_item (element)
+      markup: |
+        <div class="form-group_item">
+            <input type="text" title="Test input">
+        </div>
+        <div class="form-group_item">
+            <input type="text" title="Test input">
+        </div>
+        <div class="form-group_item">
+            <input type="text" title="Test input">
+        </div>
+      notes:
+        - "Provides subtle margins between form elements within the same group."
+    - name: Real world example
+      markup: |
+        <div class="form-group">
+            <label class="form-label-header">Form group</label>
+            <div class="form-group_item">
+                <input type="text" value="Form group item" title="Test input">
+            </div>
+            <div class="form-group_item">
+                <input type="text" value="Form group item" title="Test input">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-label-header">Form group</label>
+            <div class="form-group_item">
+                <input type="text" value="Form group item" title="Test input">
+            </div>
+            <div class="form-group_item">
+                <input type="text" value="Form group item" title="Test input">
+            </div>
+        </div>
+  tags:
+    - cf-forms
+*/
+
+.form-group + .form-group {
+  margin-top: 1.875em;
+}
+
+.form-group_item + .form-group_item {
+  margin-top: 0.9375em;
+}
+
+/* topdoc
+  name: Input with button
+  family: cf-forms
+  patterns:
+    - name: Default input and button
+      markup: |
+        <div class="input-with-btn">
+            <div class="input-with-btn_input">
+                <input type="text" title="Test input">
+            </div>
+            <div class="input-with-btn_btn">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+    - name: Super input and button
+      markup: |
+        <div class="input-with-btn">
+            <div class="input-with-btn_input">
+                <input class="input__super" type="text" title="Test input">
+            </div>
+            <div class="input-with-btn_btn">
+                <button class="btn btn__super">Search</button>
+            </div>
+        </div>
+  tags:
+    - cf-forms
+*/
+
+.input-with-btn {
+  display: block;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.input-with-btn_input {
+  margin-bottom: 0.9375em;
+}
+
+.input-with-btn_input {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 75%;
+  border-right-width: 0;
+}
+
+.lt-ie8 .input-with-btn_input {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.input-with-btn_input {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 83.33333333%;
+  border-right-width: 0;
+}
+
+.lt-ie8 .input-with-btn_input {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.input-with-btn_input input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.input-with-btn_btn {
+  margin-bottom: 0.9375em;
+}
+
+.input-with-btn_btn {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 25%;
+}
+
+.lt-ie8 .input-with-btn_btn {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.input-with-btn_btn {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 16.66666667%;
+}
+
+.lt-ie8 .input-with-btn_btn {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.input-with-btn_btn .btn {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.input-with-btn_btn .btn__super {
+  padding-left: 0.83333333em;
+  padding-right: 0.83333333em;
+}
+
+/* topdoc
+  name: Button inside input
+  family: cf-forms
+  patterns:
+    - name: Default button inside of an default input
+      markup: |
+        <div class="btn-inside-input">
+            <input type="text"
+                   value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
+            <button class="btn btn__link btn__secondary">
+                Clear
+                <span class="cf-icon cf-icon-delete"></span>
+            </button>
+        </div>
+    - name: Super button inside of a super input
+      markup: |
+        <div class="btn-inside-input">
+            <input class="input__super"
+                   type="text"
+                   value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
+            <button class="btn btn__super btn__link btn__secondary">
+                Clear
+                <span class="cf-icon cf-icon-delete"></span>
+            </button>
+        </div>
+  tags:
+    - cf-forms
+*/
+
+.btn-inside-input {
+  position: relative;
+}
+
+.btn-inside-input input[type="text"],
+.btn-inside-input input[type="search"],
+.btn-inside-input input[type="email"],
+.btn-inside-input input[type="url"],
+.btn-inside-input input[type="tel"],
+.btn-inside-input input[type="number"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 4.64285714em;
+}
+
+.btn-inside-input input[type="text"].input__super,
+.btn-inside-input input[type="search"].input__super,
+.btn-inside-input input[type="email"].input__super,
+.btn-inside-input input[type="url"].input__super,
+.btn-inside-input input[type="tel"].input__super,
+.btn-inside-input input[type="number"].input__super {
+  padding-right: 5em;
+}
+
+.btn-inside-input .btn {
+  border-bottom-width: 0 !important;
+  position: absolute;
+  right: 1.07142857em;
+  top: 0;
+  /* pa11y fails unless the background color is explicitly set */
+}
+
+.btn-inside-input .btn__super {
+  right: 0.83333333em;
+}
+
+.btn-inside-input .btn__link.btn__secondary {
+  background-color: #fff;
+}
+
+/* topdoc
+<<<<<<< HEAD
+  name: Notifications
+  family: cf-notifications
+  notes:
+    - "Markup and styling for notifications"
+  patterns:
+    - name: Default Usage
+      markup: |
+        <div class="cf-notification cf-notification__error">
+          <span class="cf-notification_icon cf-notification_icon__error cf-icon cf-icon-error-round"></span>
+          <p class="cf-notification_text">This is the default alert.</p>
+        </div>
+  tags:
+    - cfgov-misc
+*/
+
+.cf-notification {
+  display: none;
+  position: relative;
+  padding: 11px;
+  padding-left: 40px;
+  margin-bottom: 15px;
+  background: #e3e4e5;
+  border: 1px solid #75787b;
+}
+
+.cf-notification__visible {
+  display: block;
+}
+
+.cf-notification__error {
+  background: #f6d9d3;
+  border-color: #d12124;
+}
+
+.cf-notification__success {
+  background: #dbedd4;
+  border-color: #2cb34a;
+}
+
+.cf-notification__warning {
+  background: #ffecd1;
+  border-color: #ffecd1;
+}
+
+.cf-notification_icon {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  color: #e3e4e5;
+  font-size: 1.125em;
+}
+
+.cf-notification_icon__error {
+  color: #d14327;
+}
+
+.cf-notification_icon__success {
+  color: #2cb34a;
+}
+
+.cf-notification_icon__warning {
+  color: #ff931b;
+}
+
+.cf-notification_text {
+  margin-top: 0;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222222;
+  margin: 0;
+}
+
+.lt-ie9 .cf-notification_text {
+  font-weight: normal !important;
+}
+
+.cf-notification_text .short-desc {
+  display: block;
+  font-size: 16px;
+}
+
+/* topdoc
+  name: Custom checkboxes and radio buttons via jquery.custom-input
+  family: cfgov-forms
+  notes:
+    - "This plugin auto-initiates and will transform your initial HTML by adding
+      more markup and classes. If JavaScript is unavailable the new elements and
+      classes won't be added and won't interfere with default input behavior."
+    - "You MUST wrap your input.custom-input in a label."
+    - "Remember to use 'for' and 'id' attributes. This will allow IE less
+      than 8 to trigger the input on label click."
+    - "JavaScript is used to add .is-hovered and .is-focused classes to
+      .custom-input by detecting :hover and :focus on .custom-input."
+    - "JavaScript is used to detect change events to the input. By clicking
+      the label element you change the checked property and the plugin will
+      add the .is-checked class."
+  patterns:
+    - name: Custom checkbox demo with initialization markup
+      markup: |
+        <label for="custom-input_checkbox-lorem">
+            <input class="custom-input"
+                   id="custom-input_checkbox-lorem"
+                   type="checkbox"
+                   name="checkboxes-styled"
+                   value="lorem">
+            Lorem
+        </label>
+        <br>
+        <label for="custom-input_checkbox-ipsum">
+            <input class="custom-input"
+                   id="custom-input_checkbox-ipsum"
+                   type="checkbox"
+                   name="checkboxes-styled"
+                   value="ipsum">
+            Ipsum
+        </label>
+        <br>
+        <label for="custom-input_checkbox-dolor">
+            <input class="custom-input"
+                   id="custom-input_checkbox-dolor"
+                   type="checkbox"
+                   name="checkboxes-styled"
+                   value="dolor">
+            Dolor
+        </label>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          label
+            input[type=checkbox].custom-input
+      notes:
+        - "Use the markup structure above to add .custom-input elements."
+    - name: Custom radio button demo with initialization markup
+      markup: |
+        <label for="custom-input_radio-lorem">
+            <input class="custom-input"
+                   id="custom-input_radio-lorem"
+                   type="radio"
+                   name="radios-styled"
+                   value="lorem">
+            Lorem
+        </label>
+        <br>
+        <label for="custom-input_radio-ipsum">
+            <input class="custom-input"
+                   id="custom-input_radio-ipsum"
+                   type="radio"
+                   name="radios-styled"
+                   value="ipsum">
+            Ipsum
+        </label>
+        <br>
+        <label for="custom-input_radio-dolor">
+            <input class="custom-input"
+                   id="custom-input_radio-dolor"
+                   type="radio"
+                   name="radios-styled"
+                   value="dolor">
+            Dolor
+        </label>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          label
+            input[type=radio].custom-input
+      notes:
+        - "Use the markup structure above to add .custom-input elements."
+    - name: JavaScript setup
+      markup: |
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="../../static/js/jquery.custom-input.js"></script>
+  tags:
+    - cfgov-forms
+*/
+
+.custom-input_input {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.custom-input_checkbox,
+.custom-input_radio {
+  box-sizing: border-box;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: 1;
+  width: 1.25em;
+  height: 1.25em;
+  background: #ffffff;
+  outline: 1px solid #919395;
+}
+
+.custom-input_radio {
+  border-radius: 100%;
+  outline: none;
+  box-shadow: 0px 0px 0px 1px #919395;
+}
+
+.lt-ie9 .custom-input_radio {
+  outline: 1px solid #919395;
+}
+
+.custom-input_label {
+  position: relative;
+  z-index: 2;
+  padding-left: 1.375em;
+  margin-right: 0.375em;
+  line-height: 1;
+}
+
+.custom-input_text {
+  display: inline-block;
+  padding-left: 0.5em;
+  line-height: 1.375;
+}
+
+.is-hovered .custom-input_checkbox,
+.is-hovered .custom-input_radio,
+.is-focused .custom-input_checkbox,
+.is-focused .custom-input_radio {
+  border-color: #ffffff;
+  outline: 2px solid #0072ce;
+}
+
+.is-checked .custom-input_checkbox,
+.is-checked .custom-input_radio {
+  background-color: #0072ce;
+  border: 3px solid #ffffff;
+  outline: 1px solid #0072ce;
+}
+
+.is-checked.is-hovered .custom-input_checkbox,
+.is-checked.is-hovered .custom-input_radio,
+.is-checked.is-focused .custom-input_checkbox,
+.is-checked.is-focused .custom-input_radio {
+  outline: 2px solid #0072ce;
+}
+
+.is-active .custom-input_checkbox,
+.is-active .custom-input_radio {
+  background-color: #7fb8e6;
+  border: 3px solid #ffffff;
+}
+
+.is-checked .custom-input_radio {
+  outline: none;
+  box-shadow: 0px 0px 0px 1px #0072ce;
+}
+
+.lt-ie9 .is-checked .custom-input_radio {
+  outline: 1px solid #0072ce;
+}
+
+.is-hovered .custom-input_radio,
+.is-focused .custom-input_radio,
+.is-checked.is-hovered .custom-input_radio,
+.is-checked.is-focused .custom-input_radio {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #0072ce;
+}
+
+.lt-ie9 .is-hovered .custom-input_radio,
+.lt-ie9 .is-focused .custom-input_radio,
+.lt-ie9 .is-checked.is-hovered .custom-input_radio,
+.lt-ie9 .is-checked.is-focused .custom-input_radio {
+  outline: 2px solid #0072ce;
+}
+
+.is_disabled .custom-input_radio {
+  box-shadow: 0px 0px 0px 1px #babbbd;
+  background-color: #75787b;
+}
+
+.lt-ie9 .is_disabled .custom-input_radio {
+  outline: 1px solid #babbbd;
+}
+
+input[type=checkbox].custom-input {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid #919395;
+}
+
+input[type=checkbox].custom-input:checked {
+  border-color: #43484e;
+  outline: 1px solid #43484e;
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type=checkbox].custom-input:checked:before {
+  content: "\e100";
+}
+
+.lt-ie8 input[type=checkbox].custom-input:checked {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\e100');
+}
+
+input[type=checkbox].custom-input:checked:before {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+}
+
+input[type=checkbox].custom-input:hover,
+input[type=checkbox].custom-input:focus,
+input[type=checkbox].custom-input.focus {
+  border: 1px solid #0072ce;
+  cursor: pointer;
+}
+
+input[type=checkbox].custom-input[disabled=true],
+input[type=checkbox].custom-input.disabled {
+  border-color: #babbbd;
+  background-color: #75787b;
+}
+
+/* topdoc
+  name: Form layouts
+  family: cfgov-forms
+  patterns:
+    - name: Form columns
+      markup: |
+        <div class="form-l">
+            <div class="form-l_col form-l_col-1-3">
+                Form layout column 1
+            </div>
+            <div class="form-l_col form-l_col-1-3">
+                Form layout column 2
+            </div>
+            <div class="form-l_col form-l_col-1-3">
+                Form layout column 3
+            </div>
+        </div>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .form-l
+            .form-l_col.form-l_col-1-3
+    - name: "Form layout modifier: flush"
+      markup: |
+        <div class="form-l form-l__flush">
+            <div class="form-l_col form-l_col-1-3">
+                Form layout column 1
+            </div>
+            <div class="form-l_col form-l_col-1-3">
+                Form layout column 2
+            </div>
+            <div class="form-l_col form-l_col-1-3">
+                Form layout column 3
+            </div>
+        </div>
+      codenotes:
+        - .form-l.form-l__flush
+      notes:
+        - "Form layout columns have left and right gutters. If you want the
+          first and last column in each row to sit flush left/right
+          respectively then use the .form-l__flush modifier."
+    - name: Form layout columns
+      codenotes:
+        - .form-l_col
+        - .form-l_col-1-3
+      notes:
+        - ".form-l_col-1-3 elements are stacked for small screens. When the
+          viewport reaches 600px they transform into columns with one half the
+          width of the container. When the viewport reaches 768px their width
+          updates to one third of the container."
+  tags:
+    - cfgov-forms
+*/
+
+.form-l_col {
+  margin-bottom: 1.875em;
+}
+
+.form-l-inset {
+  border-right-width: 2.5px;
+}
+
+.form-l-inset + .form-l-inset {
+  border-left-width: 2.5px;
+}
+
+.form-l-inset:last-child {
+  border-right-width: 15px;
+}
+
+.form-l-inset .form-l-inset_container {
+  padding: 0.9375em 0.9375em;
+  background: #e3e4e5;
+}
+
+.form-l-inset .form-l-inset_container.is-checked {
+  background-color: #cce3f5;
+  outline: 2px solid #0072ce;
+}
+
+.form-l-inset .form-l-inset_container.is-hovered,
+.form-l-inset .form-l-inset_container:hover,
+.form-l-inset .form-l-inset_container:focus {
+  cursor: pointer;
+  outline: 2px solid #0072ce;
+}
+
+.form-l-inset .form-l-inset_container.is-hovered label,
+.form-l-inset .form-l-inset_container:hover label,
+.form-l-inset .form-l-inset_container:focus label {
+  cursor: pointer;
+}
+
+/* topdoc
+  name: EOF
+  eof: true
+*/
+
+/* ==========================================================================
+   Capital Framework
+   Layout Helpers
+   ========================================================================== */
+
+/* topdoc
+  name: Theme variables
+  family: cf-layout
+  notes:
+    - "The following color and sizing variables are exposed, allowing you to
+       easily override them before compiling."
+  patterns:
+  - name: Colors
+    codenotes:
+      - |
+        @block__border-top
+        @block__border-right
+        @block__border-bottom
+        @block__border-left
+        @block__border
+        @block__bg
+        @content_main-border
+        @content_sidebar-bg
+        @content_sidebar-border
+        @content_bar
+        @content_line
+        @grid_column__top-divider
+        @grid_column__left-divider
+  tags:
+  - cf-layout
+  - less
+*/
+
+/* topdoc
+  name: Content layouts
+  family: cf-layout
+  patterns:
+    - name: Standard content columns
+      markup: |
+        <div class="content-l">
+            <div class="content-l_col content-l_col-1">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Full-width column (spans 12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-2-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Two thirds-width column (spans 8/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-4">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;">
+                    Quarter width column (spans 3/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-3-4">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;">
+                    Three-quarter width column (spans 9/12 columns)
+                </div>
+            </div>
+        </div>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .content-l
+            .content-l_col
+      notes:
+        - "Simplifies use of grid structure inside content containers (like .content-main)."
+        - "Since .content-l_col's are nested within .content_main extra margins will occur.
+           The .content-l container uses the grid_nested-col-group mixin to counter this."
+        - ".content-l_col-RATIO classes default to stacking on mobile and displaying as columns
+           above mobile-max width (600px). This may not be the desired breakpoint for
+           all use cases, so mixins are provided to simplify changing column display to
+           stacked."
+        - "Three .content-l modifiers handle the stacking overrides for use cases of
+           .content_main, .content_full, and .content_sidebar containers."
+        - "Note that the divs with inline styles are for demonstration purposes
+           only and should not be used in production."
+    - name: .content-l__full modifier
+      markup: |
+        <div class="content-l content-l__full">
+            <div class="content-l_col content-l_col-1">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Full-width column (spans 12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-2-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Two thirds-width column (spans 8/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-4">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;">
+                    Quarter width column (spans 3/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-3-4">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;">
+                    Three-quarter width column (spans 9/12 columns)
+                </div>
+            </div>
+        </div>
+      codenotes:
+        - .content-l.content-l__full
+      notes:
+        - "Designed for use within .content_full containers."
+        - "Displays .content-l_col-1-2 as columns at tablet sizes & above (600px+)"
+        - "Displays other common .content-l_col modifiers (.content-l_col-1-3,
+           .content-l_col-2-3, .content-l_col-3-8, .content-l_col-5-8)
+           as columns above 767px."
+    - name: .content-l__main modifier
+      markup: |
+        <div class="content-l content-l__main">
+            <div class="content-l_col content-l_col-1">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Full-width column (spans 12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-2-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Two thirds-width column (spans 8/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-4">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;">
+                    Quarter width column (spans 3/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-3-4">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;">
+                    Three-quarter width column (spans 9/12 columns)
+                </div>
+            </div>
+        </div>
+      codenotes:
+        - .content-l.content-l__main
+      notes:
+        - "Designed for use in .content_main containers, which have reduced (75%) width
+           above tablet sizes to accommodate adjacent sidebar column."
+        - "Displays .content-l_col-1-2 as columns in the tablet range, 600-800px;
+           stacked from 800-899, the start of sidebar range; and as columns again at 900px+"
+        - "Displays other common .content-l_col modifiers (.content-l_col-1-3, .content-l_col-2-3,
+           .content-l_col-3-8, .content-l_col-5-8) as columns above 900px."
+    - name: .content-l__sidebar modifier
+      markup: |
+        <div class="content-l content-l__sidebar">
+            <div class="content-l_col content-l_col-1">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Full-width column (spans 12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-2-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Two thirds-width column (spans 8/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-3">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Third-width column (spans 4/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-4">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;">
+                    Quarter width column (spans 3/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-3-4">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;">
+                    Three-quarter width column (spans 9/12 columns)
+                </div>
+            </div>
+        </div>
+      codenotes:
+        - .content-l.content-l__sidebar
+      notes:
+        - "For use in sidebar containers, which are full width only
+           on tablet widths (600-800px)."
+        - "Displays .content-l_col-1-2 as columns in the tablet range,
+           600-800px, and stacked at all other widths."
+    - name: Large gutters modifier
+      markup: |
+        <div class="content-l content-l__main  content-l__large-gutters">
+            <div class="content-l_col content-l_col-1">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Full-width column (spans 12 columns)
+                </div>
+            </div>
+        </div>
+        <div class="content-l content-l__main  content-l__large-gutters">
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+            <div class="content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2;
+                            text-align: center;
+                            padding: 8px;
+                            margin-bottom: 4px;">
+                    Half-width column (spans 6/12 columns)
+                </div>
+            </div>
+        </div>
+      codenotes:
+        - .content-l.content-l__large-gutters
+      notes:
+        - "Adds 30px gutters to all columns by simply adding the
+           .content-l__large-gutters modifier."
+  tags:
+    - cf-layout
+*/
+
+.content-l {
+  position: relative;
+}
+
+.content-l {
+  display: block;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-1-3 {
+  display: block;
+  width: 100%;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-1-3.content-l_col__before-divider {
+  margin-top: 3.75em;
+  border-left-width: 15px;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-1-3.content-l_col__before-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 1.875em;
+  background-color: #babbbd;
+  position: static;
+  width: 100%;
+  margin-left: auto !important;
+}
+
+.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-1-3.content-l_col__before-divider {
+  border-left-width: 30px;
+}
+
+.content-l__sidebar .content-l_col + .content-l_col-1-3 {
+  margin-top: 1.875em;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-2-3 {
+  display: block;
+  width: 100%;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-2-3.content-l_col__before-divider {
+  margin-top: 3.75em;
+  border-left-width: 15px;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-2-3.content-l_col__before-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 1.875em;
+  background-color: #babbbd;
+  position: static;
+  width: 100%;
+  margin-left: auto !important;
+}
+
+.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-2-3.content-l_col__before-divider {
+  border-left-width: 30px;
+}
+
+.content-l__sidebar .content-l_col + .content-l_col-2-3 {
+  margin-top: 1.875em;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-3-8 {
+  display: block;
+  width: 100%;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-3-8.content-l_col__before-divider {
+  margin-top: 3.75em;
+  border-left-width: 15px;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-3-8.content-l_col__before-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 1.875em;
+  background-color: #babbbd;
+  position: static;
+  width: 100%;
+  margin-left: auto !important;
+}
+
+.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-3-8.content-l_col__before-divider {
+  border-left-width: 30px;
+}
+
+.content-l__sidebar .content-l_col + .content-l_col-3-8 {
+  margin-top: 1.875em;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-5-8 {
+  display: block;
+  width: 100%;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-5-8.content-l_col__before-divider {
+  margin-top: 3.75em;
+  border-left-width: 15px;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-5-8.content-l_col__before-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 1.875em;
+  background-color: #babbbd;
+  position: static;
+  width: 100%;
+  margin-left: auto !important;
+}
+
+.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-5-8.content-l_col__before-divider {
+  border-left-width: 30px;
+}
+
+.content-l__sidebar .content-l_col + .content-l_col-5-8 {
+  margin-top: 1.875em;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-1-4 {
+  display: block;
+  width: 100%;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-1-4.content-l_col__before-divider {
+  margin-top: 3.75em;
+  border-left-width: 15px;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-1-4.content-l_col__before-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 1.875em;
+  background-color: #babbbd;
+  position: static;
+  width: 100%;
+  margin-left: auto !important;
+}
+
+.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-1-4.content-l_col__before-divider {
+  border-left-width: 30px;
+}
+
+.content-l__sidebar .content-l_col + .content-l_col-1-4 {
+  margin-top: 1.875em;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-3-4 {
+  display: block;
+  width: 100%;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-3-4.content-l_col__before-divider {
+  margin-top: 3.75em;
+  border-left-width: 15px;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-3-4.content-l_col__before-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 1.875em;
+  background-color: #babbbd;
+  position: static;
+  width: 100%;
+  margin-left: auto !important;
+}
+
+.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-3-4.content-l_col__before-divider {
+  border-left-width: 30px;
+}
+
+.content-l__sidebar .content-l_col + .content-l_col-3-4 {
+  margin-top: 1.875em;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-1-2 {
+  display: block;
+  width: 100%;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-1-2.content-l_col__before-divider {
+  margin-top: 3.75em;
+  border-left-width: 15px;
+}
+
+.content-l__sidebar .content-l_col.content-l_col-1-2.content-l_col__before-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 1.875em;
+  background-color: #babbbd;
+  position: static;
+  width: 100%;
+  margin-left: auto !important;
+}
+
+.content-l__sidebar.content-l__large-gutters .content-l_col.content-l_col-1-2.content-l_col__before-divider {
+  border-left-width: 30px;
+}
+
+.content-l__sidebar .content-l_col + .content-l_col-1-2 {
+  margin-top: 1.875em;
+}
+
+.content-l__large-gutters {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.content-l__large-gutters .content-l_col {
+  border-left-width: 30px;
+  border-right-width: 30px;
+}
+
+.content-l_col-1 {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+}
+
+.lt-ie8 .content-l_col-1 {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content-l_col-1-2 {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 50%;
+}
+
+.lt-ie8 .content-l_col-1-2 {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content-l_col-1-3 {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 33.33333333%;
+}
+
+.lt-ie8 .content-l_col-1-3 {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content-l_col-2-3 {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 66.66666667%;
+}
+
+.lt-ie8 .content-l_col-2-3 {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content-l_col-3-8 {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 37.5%;
+}
+
+.lt-ie8 .content-l_col-3-8 {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content-l_col-5-8 {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 62.5%;
+}
+
+.lt-ie8 .content-l_col-5-8 {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content-l_col-1-4 {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 25%;
+}
+
+.lt-ie8 .content-l_col-1-4 {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content-l_col-3-4 {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 75%;
+}
+
+.lt-ie8 .content-l_col-3-4 {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+/* topdoc
+  name: Content layout column dividers
+  family: cf-layout
+  notes:
+    - "Adds dividers between specified .content-l_col-X-X classes."
+    - "Layout dividers work in conjunction with .content-l_col-X-X elements and
+       have specific needs depending on which column element variant they are
+       attached to. For example .content-l_col-1-2 has different divider needs
+       than .content-l_col-1-3 because they may break to single columns at different
+       breakpoints."
+    - "Dividers use absolute positioning relative to the .content-l element and
+       depends on .content-l using `position: relative;`. This allows vertical
+       dividers to span the height of the tallest column. Just be aware that if
+       you have more than one row of columns, and each row has columns of
+       different widths, the borders will cause unwanted overlapping since they
+       will span the height of the entire .content-l element."
+  patterns:
+    - name: .content-l_col__before-divider (modifier)
+      markup: |
+        <div class="content-l content-l__large-gutters">
+            <div class="content-l_col content-l_col-1-2">
+                <img src="http://placekitten.com/600/320" alt="Placeholder image">
+                <br>
+                Half-width column (spans 6/12 columns)
+            </div>
+            <div class="content-l_col content-l_col-1-2 content-l_col__before-divider">
+                <img src="http://placekitten.com/600/320" alt="Placeholder image">
+                <br>
+                Half-width column (spans 6/12 columns)
+            </div>
+        </div>
+        <br>
+        <!-- Starting a new .content-l so that the dividers from
+             .content-l_col.content-l_col-1-2.content-l_col__before-divider
+             won't overlap the .content-l_col-1-3 columns. -->
+        <div class="content-l content-l__large-gutters">
+            <div class="content-l_col content-l_col-1-3">
+                Third-width column (spans 4/12 columns)
+            </div>
+            <div class="content-l_col content-l_col-1-3 content-l_col__before-divider">
+                Third-width column (spans 4/12 columns)
+            </div>
+            <div class="content-l_col content-l_col-1-3 content-l_col__before-divider">
+                Third-width column (spans 4/12 columns)
+            </div>
+        </div>
+      codenotes:
+        - .content-l_col__before-divider
+  tags:
+    - cf-layout
+*/
+
+.content-l_col__before-divider.content-l_col-1-2 {
+  border-left-width: 30px;
+}
+
+.content-l_col__before-divider.content-l_col-1-2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  display: block;
+  background-color: #babbbd;
+  margin-left: -30px;
+}
+
+.content-l_col__before-divider.content-l_col-1-3 {
+  border-left-width: 30px;
+}
+
+.content-l_col__before-divider.content-l_col-1-3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  display: block;
+  background-color: #babbbd;
+  margin-left: -30px;
+}
+
+/* topdoc
+  name: Content bar
+  family: cf-layout
+  patterns:
+    - name: A 10 pixel bar that divides the header or hero from the main content
+      markup: |
+        <div class="content_bar"></div>
+      notes:
+        - "This is necessary because we don't have a predictable place to put a
+           full-width border. It needs to be under the hero on pages with
+           heroes, but under the header if there is no hero."
+        - ".content_bar must come after .content_hero but before .content_wrapper"
+  tags:
+    - cf-layout
+*/
+
+.content_bar {
+  height: 10px;
+  background: #2cb34a;
+}
+
+/* topdoc
+  name: Content line
+  family: cf-layout
+  patterns:
+    - name: "A 1 pixel edge to edge bar that can divide content."
+      markup: |
+        <div class="content_line"></div>
+  tags:
+    - cf-layout
+*/
+
+.content_line {
+  height: 1px;
+  background: #babbbd;
+}
+
+/* topdoc
+  name: Main content and sidebar
+  family: cf-layout
+  patterns:
+    - name: Standard layout for the main content area and sidebar
+      markup: |
+        <main class="content" role="main">
+            <section class="content_hero" style="background: #E3E4E5">
+                Content hero
+            </section>
+            <div class="content_bar"></div>
+            <div class="content_wrapper">
+                <section class="content_main">
+                    Main content area
+                </section>
+                <aside class="content_sidebar" style="background: #F1F2F2">
+                    Sidebar
+                </aside>
+            </div>
+        </main>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          main.content
+            .content_hero
+            .content_bar
+            .content_wrapper
+              .content_sidebar
+              .content_main
+      notes:
+        - "By default .content_main and .content_sidebar stack vertically. When
+           using the modifiers described below to create columns, the columns
+           will remain stacked for smaller screens and then convert to to
+           columns at 801px."
+        - ".content_bar must come after .content_hero (if it exists) but before
+           .content_wrapper."
+        - "Inline styling is for demonstration purposes only; do not include it
+           in your markup."
+    - name: Left-hand navigation layout
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_bar"></div>
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main">
+                    <h2>Main content area</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Cum corrupti tempora nam nihil qui mollitia consectetur
+                        corporis nemo culpa dolorum! Laborum at eos deleniti
+                        consequatur itaque officiis debitis quisquam! Provident!
+                    </p>
+                </section>
+            </div>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <div class="wrapper">
+                Footer
+            </div>
+        </footer>
+      codenotes:
+        - .content__1-3
+      notes:
+        - "Add a class of .content__L-R to main.content to determine the width
+           ratio of .content_main and .content_sidebar, where 'L' is the
+           left-hand item and 'R' is the right-hand item. The two common
+           configurations are 1-3 (sidebar on the left, content on the right, in
+           a ratio of 1:3) and 2-1 (content on the left, sidebar on the right,
+           in a ratio of 2:1). It is assumed that the content is wider than the
+           sidebar."
+    - name: Right-hand sidebar layout
+      markup: |
+        <main class="content content__2-1" role="main">
+            <div class="content_bar"></div>
+            <div class="content_wrapper">
+                <section class="content_main">
+                    <h2>Main content area</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Cum corrupti tempora nam nihil qui mollitia consectetur
+                        corporis nemo culpa dolorum! Laborum at eos deleniti
+                        consequatur itaque officiis debitis quisquam! Provident!
+                    </p>
+                </section>
+                <aside class="content_sidebar" style="background: #F1F2F2">
+                    Sidebar
+                </aside>
+            </div>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <div class="wrapper">
+                Footer
+            </div>
+        </footer>
+      codenotes:
+        - .content__2-1
+      notes:
+        - "Add a class of .content__L-R to main.content to determine the width
+           ratio of .content_main and .content_sidebar, where 'L' is the
+           left-hand item and 'R' is the right-hand item. The two common
+           configurations are 1-3 (sidebar on the left, content on the right, in
+           a ratio of 1:3) and 2-1 (content on the left, sidebar on the right,
+           in a ratio of 2:1). It is assumed that the content is wider than the
+           sidebar."
+        - "Inline styling is for demonstration purposes only; do not include it
+           in your markup."
+    - name: Narrow content column option
+      markup: |
+        <main class="content content__2-1" role="main">
+            <div class="content_bar"></div>
+            <div class="content_wrapper">
+                <section class="content_main content_main__narrow">
+                    <h2>Main content area</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Cum corrupti tempora nam nihil qui mollitia consectetur
+                        corporis nemo culpa dolorum! Laborum at eos deleniti
+                        consequatur itaque officiis debitis quisquam! Provident!
+                    </p>
+                </section>
+                <aside class="content_sidebar" style="background: #F1F2F2">
+                    Sidebar
+                </aside>
+            </div>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <div class="wrapper">
+                Footer
+            </div>
+        </footer>
+      codenotes:
+        - .content_main__narrow
+      notes:
+        - "Add a class of .content_main__narrow to .content_main to get a
+           one-column (in a 12-column grid) gutter on the right side."
+        - "Inline styling is for demonstration purposes only; do not include it
+           in your markup."
+    - name: Flush bottom modifier
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_bar"></div>
+            <div class="content_wrapper">
+                <aside class="content_sidebar content__flush-bottom">
+                    Side with no bottom padding...
+                </aside>
+                <section class="content_main content__flush-bottom">
+                    Main content with no bottom padding...
+                    <div class="block
+                                block__flush-bottom
+                                block__flush-sides
+                                block__bg">
+                        .content__flush-bottom is very useful when you have a
+                        content block inside of .content_main with a background
+                        and flush sides.
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <div class="wrapper">
+                Footer
+            </div>
+        </footer>
+      codenotes:
+        - .content__flush-bottom
+      notes:
+        - "Add a class of .content__flush-bottom to .content_main or
+           content_sidebar to remove bottom padding."
+    - name: Flush top modifier (only on small screens)
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_bar"></div>
+            <div class="content_wrapper">
+                <aside class="content_sidebar content__flush-top-on-small">
+                    Side with no top padding on small screens...
+                </aside>
+                <section class="content_main">
+                    Main content
+                </section>
+            </div>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <div class="wrapper">
+                Footer
+            </div>
+        </footer>
+      codenotes:
+        - .content__flush-top-on-small
+      notes:
+        - "Add a class of .content__flush-top-on-small to .content_main or
+           .content_sidebar to remove top padding on small screens only.
+           'Small' screens in this case refers to the breakpoint where
+           .content_main and .content_sidebar single column layout."
+    - name: Flush all modifier (only on small screens)
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_bar"></div>
+            <div class="content_wrapper">
+                <aside class="content_sidebar content__flush-all-on-small">
+                    Side with no padding or border-based gutters on small screens...
+                </aside>
+                <section class="content_main">
+                    Main content
+                </section>
+            </div>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <div class="wrapper">
+                Footer
+            </div>
+        </footer>
+      codenotes:
+        - .content__flush-all-on-small
+      notes:
+        - "Add a class of .content__flush-all-on-small to .content_main or
+           .content_sidebar to remove all padding and border-based gutters on
+           small screens only. 'Small' screens in this case refers to the
+           breakpoint where .content_main and .content_sidebar single column layout."
+  tags:
+    - cf-layout
+*/
+
+.content_intro,
+.content_main,
+.content_sidebar {
+  padding: 1.875em 0.9375em;
+}
+
+.content_intro,
+.content_main,
+.content_sidebar {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+  padding: 3.75em 0.9375em;
+}
+
+.lt-ie8 .content_intro,
+.lt-ie8 .content_main,
+.lt-ie8 .content_sidebar {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content_intro,
+.content_main,
+.content_sidebar {
+  padding: 3.75em 0;
+}
+
+.content_intro {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+}
+
+.lt-ie8 .content_intro {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content__1-3 .content_sidebar {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 25%;
+  padding-right: 1.875em;
+}
+
+.lt-ie8 .content__1-3 .content_sidebar {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content__1-3 .content_main {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 75%;
+  position: relative;
+}
+
+.lt-ie8 .content__1-3 .content_main {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content__1-3 .content_main:after {
+  content: '';
+  border-left: 1px solid #babbbd;
+  position: absolute;
+  top: 3.75em;
+  bottom: 0;
+  left: -1.875em;
+}
+
+.content__2-1 .content_main {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 66.66666667%;
+}
+
+.lt-ie8 .content__2-1 .content_main {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content__2-1 .content_main:after {
+  right: -1.875em;
+}
+
+.content__2-1 .content_sidebar {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 33.33333333%;
+  padding-left: 1.875em;
+}
+
+.lt-ie8 .content__2-1 .content_sidebar {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.content__flush-bottom {
+  padding-bottom: 0;
+}
+
+/* topdoc
+  name: Block
+  family: cf-layout
+  notes:
+    - ".block is a base class with several modifiers that help you separate
+       chunks of content via margins, padding, borders, and backgrounds."
+  patterns:
+    - name: Standard block example
+      markup: |
+        Main content...
+        <div class="block">
+            Content block
+        </div>
+        <div class="block">
+            Content block
+        </div>
+        <div class="block">
+            Content block
+        </div>
+      codenotes:
+        - .block
+      notes:
+        - "The standard .block class by itself simply adds a margin of twice the
+           gutter width to the top and bottom."
+    - name: Border-top modifier
+      markup: |
+        Main content...
+        <div class="block block__border-top">
+            Content block with top border.
+        </div>
+      codenotes:
+        - .block.block__border-top
+      notes:
+        - "Adds top border to .block."
+    - name: Border-right modifier
+      markup: |
+        Main content...
+        <div class="block block__border-right">
+            Content block with right border.
+        </div>
+      codenotes:
+        - .block.block__border-right
+      notes:
+        - "Adds right border to .block."
+    - name: Border-bottom modifier
+      markup: |
+        Main content...
+        <div class="block block__border-bottom">
+            Content block with bottom border.
+        </div>
+      codenotes:
+        - .block.block__border-bottom
+      notes:
+        - "Adds bottom border to .block."
+    - name: Border-left modifier
+      markup: |
+        Main content...
+        <div class="block block__border-left">
+            Content block with left border.
+        </div>
+      codenotes:
+        - .block.block__border-left
+      notes:
+        - "Adds left border to .block."
+    - name: Border modifier
+      markup: |
+        Main content...
+        <div class="block block__border">
+            Content block with borders on all sides.
+        </div>
+      codenotes:
+        - .block.block__border
+      notes:
+        - "Adds border on all sides to .block."
+    - name: Flush-top modifier
+      markup: |
+        Main content...
+        <div class="block block__flush-top">
+            Content block with no top margin.
+        </div>
+        <div class="block">
+            Content block
+        </div>
+      codenotes:
+        - .block.block__flush-top
+      notes:
+        - "Removes the top margin from .block."
+    - name: Flush-bottom modifier
+      markup: |
+        Main content...
+        <div class="block block__flush-bottom">
+            Content block with no bottom margin.
+        </div>
+        <div class="block block__flush-top">
+            Content block with no top margin.
+        </div>
+      codenotes:
+        - .block.block__flush-bottom
+      notes:
+        - "Removes the bottom margin from .block."
+    - name: Flush-sides modifier
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main">
+                    Main content...
+                    <aside class="block block__flush-sides">
+                        Content block with no side margins.
+                    </aside>
+                </section>
+            </div>
+        </main>
+      codenotes:
+        - .block.block__flush-sides
+      notes:
+        - "Removes the side margin from .block."
+        - "Typically used in conjuction with .block__bg to create a 'well' whose
+           background extends into the left and right gutters. (See below.)"
+    - name: Flush modifier
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main">
+                    Main content...
+                    <aside class="block block__flush">
+                        Content block with no margins.
+                    </aside>
+                </section>
+            </div>
+        </main>
+      codenotes:
+        - .block.block__flush
+      notes:
+        - "Removes the side, top, and bottom margin from .block."
+    - name: Background modifier
+      markup: |
+        Main content...
+        <div class="block block__bg">
+            Content block with a background
+        </div>
+      codenotes:
+        - .block.block__bg
+      notes:
+        - "Adds a background color and padding to .block."
+        - "Setup for (ems-equivalent) 30px padding on top and 60px on bottom."
+    - name: Background and flush-sides modifier combo example
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main content__flush-bottom">
+                    Main content...
+                    <div class="block block__flush-sides block__bg">
+                        Content block with a background and flush sides
+                    </div>
+                </section>
+            </div>
+        </main>
+      codenotes:
+        - .block.block__flush-sides.block__bg
+      notes:
+        - "This is an example of combining modifiers to get a flush padded bg
+           with a .block."
+    - name: Padded-top modifier
+      markup: |
+        Main content...
+        <div class="block block__padded-top block__border-top">
+            Content block with reduced top margin & added top padding
+            and border.
+        </div>
+      codenotes:
+        - .block.block__padded-top
+      notes:
+        - "Breaks top margin into margin & padding. Useful in combination with
+           block__border-top to add padding between block contents & border."
+    - name: Padded-bottom modifier
+      markup: |
+        <div class="block block__padded-bottom block__border-bottom">
+            Content block with reduced bottom margin & added bottom padding
+            and border.
+        </div>
+        Content...
+      codenotes:
+        - .block.block__padded-bottom
+      notes:
+        - "Breaks bottom margin into margin & padding. Useful in combination with
+           block__border-bottom to add padding between block contents & border."
+    - name: Sub blocks
+      markup: |
+        <div class="block block__sub">
+            <div style="background: #F1F2F2; padding: 8px;">
+                Sub content block
+            </div>
+        </div>
+        <div class="block block__sub">
+            <div style="background: #F1F2F2; padding: 8px;">
+                Sub content block
+            </div>
+        </div>
+        <div class="block block__sub">
+            <div style="background: #F1F2F2; padding: 8px;">
+                Sub content block
+            </div>
+        </div>
+      codenotes:
+        - .block.block__sub
+      notes:
+        - "Useful for when you need some consistent margins between
+           blocks that are nested within other blocks."
+        - "Note that the divs with inline styles are for demonstration purposes
+           only and should not be used in production."
+    - name: Mixing content blocks with content layouts
+      markup: |
+        <div class="content-l">
+            <div class="block content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2; padding: 8px;">
+                    Content block that is also a content column.
+                    Notice how my top margins only exist on smaller screens when
+                    I need to stack vertically.
+                </div>
+            </div>
+            <div class="block content-l_col content-l_col-1-2">
+                <div style="background: #F1F2F2; padding: 8px;">
+                    Content block that is also a content column.
+                    Notice how my top margins only exist on smaller screens when
+                    I need to stack vertically.
+                </div>
+            </div>
+        </div>
+      codenotes:
+        - .block.content-l_col
+      notes:
+        - "You can safely combine .block with .content-l_col to
+           achieve a column-based layout at larger screens with no top margins
+           and a vertical layout at smaller screens that do have margins."
+        - "Note that the divs with inline styles are for demonstration purposes
+           only and should not be used in production."
+  tags:
+    - cf-layout
+*/
+
+.block {
+  margin-top: 3.75em;
+  margin-bottom: 3.75em;
+}
+
+.block__border-top {
+  border-top: 1px solid #babbbd;
+}
+
+.block__border-right {
+  border-right: 1px solid #3a8899;
+}
+
+.block__border-bottom {
+  border-bottom: 1px solid #babbbd;
+}
+
+.block__border-left {
+  border-left: 1px solid #3a8899;
+}
+
+.block__border {
+  border: 1px solid #3a8899;
+}
+
+.block__flush-top {
+  margin-top: 0 !important;
+}
+
+.block__flush-bottom {
+  margin-bottom: 0 !important;
+}
+
+.block__flush-sides {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.block__flush-sides {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.block__flush {
+  margin-top: 0 !important;
+  margin-right: -15px;
+  margin-bottom: 0 !important;
+  margin-left: -15px;
+}
+
+.block__flush {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.block__bg {
+  padding: 1.875em 0.9375em;
+  padding-bottom: 3.75em;
+  background: #f1f2f2;
+}
+
+.block__bg {
+  padding: 2.8125em 1.875em;
+}
+
+.block__padded-top {
+  padding-top: 1.875em;
+  margin-top: 1.875em;
+}
+
+.block__padded-bottom {
+  padding-bottom: 1.875em;
+  margin-bottom: 1.875em;
+}
+
+.block__sub {
+  margin-top: 1.875em;
+  margin-bottom: 1.875em;
+}
+
+.content-l_col.block,
+.content-l_col.block__sub {
+  margin-top: 0;
+}
+
+/* topdoc
+  name: Bleedbar sidebar styling
+  family: cf-layout
+  patterns:
+    - name: Give the sidebar a background color that bleeds off the edge of the screen
+      markup: |
+        <main class="content content__2-1 content__bleedbar" role="main">
+            <section class="content_hero" style="background: #E3E4E5">
+                Content hero
+            </section>
+            <div class="content_bar"></div>
+            <div class="content_wrapper">
+                <section class="content_main">
+                    Main content area
+                </section>
+                <aside class="content_sidebar">
+                    Bleeding sidebar
+                </aside>
+            </div>
+        </main>
+      codenotes:
+        - ".content__bleedbar"
+      notes:
+        - "Simply add class .content__bleedbar to main.content."
+        - "Only supports sidebars on the right, for now."
+        - "Inline styling is for demonstration purposes only; do not include it
+           in your markup."
+  tags:
+    - cf-layout
+*/
+
+.content__bleedbar .content_main:after {
+  content: none;
+}
+
+.content__bleedbar .content_sidebar {
+  padding: 1.875em 0.9375em;
+  background: #f1f2f2;
+}
+
+.content__bleedbar {
+  overflow: hidden;
+}
+
+.content__bleedbar .content_sidebar {
+  padding: 3.75em 0 0.9375em 1.875em;
+  margin-left: 0;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+.lt-ie8 .content__bleedbar .content_sidebar {
+  padding-right: 30px;
+  background: #f1f2f2;
+}
+
+.content__bleedbar .content_wrapper {
+  position: relative;
+}
+
+.content__bleedbar .content_wrapper:after {
+  content: '';
+  display: block;
+  width: 9999px;
+  border-left: 1px solid #babbbd;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  margin-left: 10px;
+  background: #f1f2f2;
+}
+
+.content__bleedbar.content__2-1 .content_wrapper:after {
+  left: 66.666666667%;
+}
+
+.content__bleedbar.content__3-1 .content_wrapper:after {
+  left: 75%;
+}
+
+/* topdoc
+  name: cf-grid helpers
+  family: cf-layout
+  patterns:
+    - name: .wrapper (base)
+      markup: |
+        <div class="wrapper">
+            Wrapper
+        </div>
+      notes:
+        - "Turns an element into a cf-grid wrapper at 801px and above."
+        - "Includes some explicit declarations for IE8 due to the fact that it
+           doesn't support media queries."
+    - name: .wrapper__match-content (modifier)
+      markup: |
+        <div class="wrapper wrapper__match-content">
+            <code>.wrapper.wrapper__match-content</code>
+            <img src="http://placekitten.com/800/40" alt="Placeholder image">
+        </div>
+        <br>
+        <main class="content" role="main">
+            <div class="content_wrapper">
+                <section class="content_main">
+                    <code>.content_wrapper .content_main</code>
+                    <img src="http://placekitten.com/800/40" alt="Placeholder image">
+                </section>
+            </div>
+        </main>
+      notes:
+        - "The .content area has a visual gutter twice the size of a normal
+           wrapper because the gutters from the sidebar and main content divs
+           add to the gutters of the wrapper. This modifier gives you a wrapper
+           with wider gutters to match the visual gutters of the .content area."
+    - name: Column divider modifiers
+      notes:
+        - "cf-grid columns use left and right borders for fixed margins which
+           means it's not possible to set visual left and right borders directly
+           on them. Instead we can use the :before pseudo element and position
+           it absolutely. The added benefit of doing it this way is that the
+           border spans the entire height of the next parent using `position:
+           relative;`. This means that the border will always match the height
+           of the tallest column in the row."
+      codenotes:
+        - .grid_column__top-divider
+        - .grid_column__left-divider
+        - |
+          .my-column-1-2 {
+
+              // Creates a column that spans 6 out of 12 columns.
+              .grid_column(6, 12);
+
+              // Add a top divider only at screen 599px and smaller.
+              .respond-to-max(599px {
+                  .grid_column__top-divider();
+              });
+
+              // Add a left divider only at screen 600px and larger.
+              .respond-to-min(600px, {
+                  .grid_column__left-divider();
+              });
+
+          }
+  tags:
+    - cf-layout
+*/
+
+.wrapper,
+.content_wrapper {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.wrapper__match-content,
+.content_wrapper__match-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper__match-content,
+.content_wrapper__match-content {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1140px;
+}
+
+.lt-ie9 .wrapper,
+.lt-ie9 .content_wrapper {
+  max-width: 960px;
+}
+
+.lt-ie9 body {
+  min-width: 800px;
+}
+
+.grid_column__top-divider {
+  margin-top: 3.75em;
+  border-left-width: 15px;
+}
+
+.grid_column__top-divider:before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 1.875em;
+  background-color: #babbbd;
+  position: static;
+  width: 100%;
+  margin-left: auto !important;
+}
+
+.grid_column__left-divider {
+  border-left-width: 30px;
+}
+
+.grid_column__left-divider:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  display: block;
+  background-color: #babbbd;
+  margin-left: -30px;
 }
 
 /* topdoc
