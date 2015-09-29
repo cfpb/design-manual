@@ -85,21 +85,31 @@ Alerts, error, and validation messages provide important information to users an
 
 ####Alert
 * __Background:__ fff0dd
-* Border: 1px, ff9e1b
-* Minicon (E103): 18px, ff9e1b
-* Text: 8px space between minicon and text. Alert message is 18px Avenir Next medium. Needed action appears 15px below alert message and is 16px Avenir Next regular.
-* Margins: 15px margins on top, left and bottom. At least 15px on right. 
+* __Border:__ 1px, ff9e1b
+* __Minicon (E103):__ 18px, ff9e1b
+* __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next medium. Needed action appears 15px below alert message and is 16px Avenir Next regular.
+* __Margins:__ 15px margins on top, left and bottom. At least 15px on right. 
 
 ####Error
-* Background: f7e0d9
-* Border: 1px, d14124
-* Minicon (E107): 18px, d14124
-* Text: 8px space between minicon and text. Alert message is 18px Avenir Next medium. Needed action appears 15px below alert message and is 16px Avenir Next regular.
-* Margins: 15px margins on top, left and bottom. At least 15px on right. 
+* __Background:__ f7e0d9
+* __Border:__ 1px, d14124
+* __Minicon (E107):__ 18px, d14124
+* __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next medium. Needed action appears 15px below alert message and is 16px Avenir Next regular.
+* __Margins:__ 15px margins on top, left and bottom. At least 15px on right. 
 
 ####Validation
-* Background: e2efd8
-* Border: 1px 20aa3f
-* Minicon (E101): 18px, 20aa3f
-* Text: 8px space between minicon and text. Validation message is 18px Avenir Next medium. If needed, an action or explanation appears 15px below validation message and is 16px Avenir Next regular.
-* Margins: 15px margins on top, left and bottom. At least 15px on right. 
+* __Background:__ e2efd8
+* __Border:__ 1px 20aa3f
+* __Minicon (E101):__ 18px, 20aa3f
+* __Text:__ 8px space between minicon and text. Validation message is 18px Avenir Next medium. If needed, an action or explanation appears 15px below validation message and is 16px Avenir Next regular.
+* __Margins:__ 15px margins on top, left and bottom. At least 15px on right.
+
+</div>
+
+<h2 id="accessibility">Accessibility<span class="cf-code-link"><a href="https://cfpb.github.io/cf-notifications/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+
+<div class="content-67 content-first">
+
+<p>Use distinct icons, contrasting colors, prominent placement and text to indicate errors. Don’t rely on just one method, as users can have many different accessibility needs (color blind users, visually impaired users, users with motor control issues).</p>
+
+</div>
