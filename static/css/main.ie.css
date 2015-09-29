@@ -2296,7 +2296,7 @@ select[multiple] {
   font-family: Arial, sans-serif;
   font-size: 1em;
   background: #ffffff;
-  border: 1px solid #babbbd;
+  border: 1px solid #75787b;
   border-radius: 0;
   vertical-align: top;
   -webkit-appearance: none;
@@ -7145,6 +7145,9 @@ a.category-slug.active {
         @checkbox-border-disabled
         @checkbox-bg-disabled
         @input-active-bg
+        @input-range-bg
+        @input-range-border
+        @input-range-handle
   - name: Sizing
     codenotes:
       - |
@@ -8139,7 +8142,7 @@ input[type=checkbox].custom-input.disabled {
   position: relative;
   min-height: 1.875em;
   z-index: 1;
-  border: solid 1px #babbbd;
+  border: solid 1px #75787b;
   background: #ffffff;
 }
 
@@ -8162,9 +8165,9 @@ input[type=checkbox].custom-input.disabled {
   z-index: 2;
   min-width: 1em;
   padding: 0.25em 0.375em;
-  border-left: 1px solid #babbbd;
+  border-left: 1px solid #75787b;
   background: #f1f2f2;
-  color: #babbbd;
+  color: #75787b;
   line-height: 1.375;
   text-align: center;
 }
@@ -8218,6 +8221,116 @@ input[type=checkbox].custom-input.disabled {
 
 .custom-select__year {
   max-width: 5.375em;
+}
+
+/* topdoc
+  name: Range input
+  family: cf-forms
+  patterns:
+    - name: Range slider input
+      markup: |
+        <label for="range-slider">Range Slider</label>
+        <input id="range-slider" type="range" min="0" max="100">
+  tags:
+    - cf-forms
+*/
+
+input[type=range] {
+  width: 100%;
+  padding-left: 0;
+  margin: 15px 0;
+  -webkit-appearance: none;
+  border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 11px;
+  background: #919395;
+  border: 1px solid #babbbd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 11px;
+  background: #919395;
+  border: 1px solid #babbbd;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 11px;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  width: 45px;
+  height: 45px;
+  margin-top: -18px;
+  -webkit-appearance: none;
+  border: 1px solid #babbbd;
+  border-radius: 50%;
+  background: #f1f2f2;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 45px;
+  height: 45px;
+  background: #f1f2f2;
+  border: 1px solid #babbbd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  width: 45px;
+  height: 45px;
+  background: #f1f2f2;
+  border: 1px solid #babbbd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #919395;
+  border: 1px solid #babbbd;
+  border-radius: 2rem;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #919395;
+  border: 1px solid #babbbd;
+  border-radius: 2rem;
+}
+
+input[type=range]:focus,
+input[type=range].focus {
+  box-shadow: none;
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-thumb,
+input[type=range].focus::-webkit-slider-thumb {
+  background: #cce3f5;
+  border: 2px solid #0072ce;
+}
+
+input[type=range]:focus::-moz-range-thumb,
+input[type=range].focus::-moz-range-thumb {
+  background: #cce3f5;
+  border: 2px solid #0072ce;
+}
+
+input[type=range]:focus::-ms-thumb,
+input[type=range].focus::-ms-thumb {
+  background: #cce3f5;
+  border: 2px solid #0072ce;
 }
 
 /* topdoc
