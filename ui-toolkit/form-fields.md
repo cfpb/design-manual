@@ -1021,7 +1021,7 @@ Handle:
 
 {::nomarkdown}
 <label for="range-slider">Credit Score</label>
-<input id="range-slider" type="range" min="600" max="850">
+<input id="range-slider" class="focus" type="range" min="600" max="850">
 {:/nomarkdown}
 
 </div> 
