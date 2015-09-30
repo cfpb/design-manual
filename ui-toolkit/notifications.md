@@ -88,7 +88,6 @@ Alerts, error, and validation messages provide important information to users an
 </div>
 
 <div class="content-33 content-first">
-
 * __Background:__ fff0dd
 * __Border:__ 1px, ff9e1b
 * __Minicon (E103):__ 18px, ff9e1b
@@ -103,9 +102,11 @@ Alerts, error, and validation messages provide important information to users an
 
 </div>
 
-<div class="content-33 content-first">
+<div>
+###Error
+</div>
 
-####Error
+<div class="content-33 content-first">
 * __Background:__ f7e0d9
 * __Border:__ 1px, d14124
 * __Minicon (E107):__ 18px, d14124
@@ -120,9 +121,11 @@ Alerts, error, and validation messages provide important information to users an
 
 </div>
 
-<div class="content-33 content-first">
+<div>
+###Validation
+</div>
 
-####Validation
+<div class="content-33 content-first">
 * __Background:__ e2efd8
 * __Border:__ 1px 20aa3f
 * __Minicon (E101):__ 18px, 20aa3f
