@@ -81,7 +81,9 @@ Alerts, error, and validation messages provide important information to users an
 
 <p>Content should be written in two parts. The first part should articulate the alert, error or validation, and the second part should articulate what action the user needs to take.</p>
 
-![Alert notification]({{ site.baseurl }}/static/img/notifications/cfpb_alert_messsage.png "Alert notification")
+</div>
+
+<div class="content-33 content-first">
 
 ####Alert
 * __Background:__ fff0dd
@@ -90,7 +92,15 @@ Alerts, error, and validation messages provide important information to users an
 * __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next medium. Needed action appears 15px below alert message and is 16px Avenir Next regular.
 * __Margins:__ 15px margins on top, left and bottom. At least 15px on right. 
 
+</div>
+
+<div class="content-33 content-last">
+
 ![Alert notification]({{ site.baseurl }}/static/img/notifications/cfpb_alert_messsage.png "Alert notification")
+
+</div>
+
+<div class="content-67 content-first">
 
 ####Error
 * __Background:__ f7e0d9
