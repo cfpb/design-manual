@@ -90,6 +90,8 @@ Alerts, error, and validation messages provide important information to users an
 * __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next medium. Needed action appears 15px below alert message and is 16px Avenir Next regular.
 * __Margins:__ 15px margins on top, left and bottom. At least 15px on right. 
 
+![Alert notification]({{ site.baseurl }}/static/img/notifications/cfpb_alert_messsage.png "Alert notification")
+
 ####Error
 * __Background:__ f7e0d9
 * __Border:__ 1px, d14124
@@ -97,12 +99,16 @@ Alerts, error, and validation messages provide important information to users an
 * __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next medium. Needed action appears 15px below alert message and is 16px Avenir Next regular.
 * __Margins:__ 15px margins on top, left and bottom. At least 15px on right. 
 
+![Error notification]({{ site.baseurl }}/static/img/notifications/cfpb_error_messsage.png "Error notification")
+
 ####Validation
 * __Background:__ e2efd8
 * __Border:__ 1px 20aa3f
 * __Minicon (E101):__ 18px, 20aa3f
 * __Text:__ 8px space between minicon and text. Validation message is 18px Avenir Next medium. If needed, an action or explanation appears 15px below validation message and is 16px Avenir Next regular.
 * __Margins:__ 15px margins on top, left and bottom. At least 15px on right.
+
+![Validation notification]({{ site.baseurl }}/static/img/notifications/cfpb_validation_message.png "Validation notification")
 
 </div>
 
