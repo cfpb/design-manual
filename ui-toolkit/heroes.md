@@ -115,6 +115,8 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 * Top and bottom margins: 30px
 * Left and right margins: 15px
 * Illustration is 30px below copy and spans width (to 15px margins)
+* Headline: H2
+* Body copy: H4
 
 </div>
 
