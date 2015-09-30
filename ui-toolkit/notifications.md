@@ -94,7 +94,7 @@ Alerts, error, and validation messages provide important information to users an
 
 </div>
 
-<div class="content-33 content-last">
+<div class="content-67 content-last">
 
 ![Alert notification]({{ site.baseurl }}/static/img/notifications/cfpb_alert_messsage.png "Alert notification")
 
