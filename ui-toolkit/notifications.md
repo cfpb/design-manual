@@ -46,7 +46,7 @@ Alerts, error, and validation messages provide important information to users an
 
 <p>**Validation notifications** communicate success that was caused by the user’s action, such as the successful completion of a form.</p>
 
-<p></p>
+
 
 ###Adding Hyperlinks
 
@@ -81,7 +81,7 @@ Alerts, error, and validation messages provide important information to users an
 
 <p>Content should be written in two parts. The first part should articulate the alert, error or validation, and the second part should articulate what action the user needs to take.</p>
 
-<p><img src="PLACEHOLDER" alt="Example Alert, Validation, and Error"/></p>
+![Alert notification]({{ site.baseurl }}/static/img/notifications/cfpb_alert_messsage.png "Alert notification")
 
 ####Alert
 * __Background:__ fff0dd
