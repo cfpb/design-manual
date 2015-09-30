@@ -83,11 +83,12 @@ Alerts, error, and validation messages provide important information to users an
 
 </div>
 
-<div class="content-33 content-last"></div>
+<div class="content-67 content-first">
+###Alert
+</div>
 
 <div class="content-33 content-first">
 
-####Alert
 * __Background:__ fff0dd
 * __Border:__ 1px, ff9e1b
 * __Minicon (E103):__ 18px, ff9e1b
@@ -97,8 +98,6 @@ Alerts, error, and validation messages provide important information to users an
 </div>
 
 <div class="content-67 content-last">
-
-<div></div>
 
 ![Alert notification]({{ site.baseurl }}/static/img/notifications/cfpb_alert_messsage.png "Alert notification")
 
