@@ -83,7 +83,7 @@ Alerts, error, and validation messages provide important information to users an
 
 </div>
 
-<div class="content-67 content-first">
+<div>
 ###Alert
 </div>
 
