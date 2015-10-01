@@ -38,6 +38,7 @@ clean(){
 # Install project dependencies.
 install(){
   echo 'Installing project dependencies...'
+  bundle install
   npm install
   bower install --config.interactive=false
 }
@@ -45,7 +46,6 @@ install(){
 # Run tasks to build the project for distribution.
 build(){
   echo 'Building project...'
-
   grunt build
 }
 
