@@ -24,7 +24,7 @@ Heroes function as a primary focal point on a page, often used to introduce a co
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-typography"><h4>cf-something</h4></a>
+      <a href="https://github.com/cfpb/cf-layout"><h4>cf-layout</h4></a>
       <p>Heroes in the Capital Framework</p>
     </li>
   </ul>

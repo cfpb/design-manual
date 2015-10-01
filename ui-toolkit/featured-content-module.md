@@ -24,7 +24,7 @@ Featured content modules (FCMs) function to highlight a specific piece of conten
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-typography"><h4>cf-something</h4></a>
+      <a href="https://github.com/cfpb/cf-layout"><h4>cf-layout</h4></a>
       <p>FCMs in the Capital Framework</p>
     </li>
   </ul>
