@@ -115,8 +115,8 @@ Differences in style at tablet size
 Differences in style at mobile size
 
 * Module appears 30px underneath the header/intro paragraph of the page
-* Header becomes H2
-* Body becomes 16px
+* Headline: H2
+* Body copy: 16px
 * Tag becomes H5, minicon drops off
 * Visual drops below text
 * 30px space between text and top of visual
