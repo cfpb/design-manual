@@ -6133,6 +6133,7 @@ a.category-slug.active {
   transform: skewX(33deg);
 }
 
+<<<<<<< HEAD
 .fancy-slug_ribbon-left:after {
   bottom: 0;
   border-left-width: 1px;
@@ -6171,6 +6172,35 @@ a.category-slug.active {
   -ms-transform: skewX(33deg);
   transform: skewX(33deg);
 }
+=======
+/* topdoc
+  name: Theme variables
+  family: cf-layout
+  notes:
+    - "The following color and sizing variables are exposed, allowing you to
+       easily override them before compiling."
+  patterns:
+  - name: Colors
+    codenotes:
+      - |
+        @block__border-top
+        @block__border-right
+        @block__border-bottom
+        @block__border-left
+        @block__border
+        @block__bg
+        @content_main-border
+        @content_sidebar-bg
+        @content_sidebar-border
+        @content_bar
+        @content_line
+        @grid_column__top-divider
+        @grid_column__left-divider
+  tags:
+  - cf-layout
+  - less
+*/
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
 
 /* topdoc
   name: Meta header
@@ -8350,6 +8380,7 @@ input[type=range].focus::-ms-thumb {
     - "The following color and sizing variables are exposed, allowing you to
        easily override them before compiling."
   patterns:
+<<<<<<< HEAD
   - name: Colors
     codenotes:
       - |
@@ -8376,6 +8407,102 @@ input[type=range].focus::-ms-thumb {
   family: cf-layout
   patterns:
     - name: Standard content columns
+=======
+    - name: Standard block example
+      markup: |
+        Main content...
+        <div class="block">
+            Content block
+        </div>
+        <div class="block">
+            Content block
+        </div>
+        <div class="block">
+            Content block
+        </div>
+      codenotes:
+        - .block
+      notes:
+        - "The standard .block class by itself simply adds a margin of twice the
+           gutter width to the top and bottom."
+    - name: Border-top modifier
+      markup: |
+        Main content...
+        <div class="block block__border-top">
+            Content block with top border.
+        </div>
+      codenotes:
+        - .block.block__border-top
+      notes:
+        - "Adds top border to .block."
+    - name: Border-right modifier
+      markup: |
+        Main content...
+        <div class="block block__border-right">
+            Content block with right border.
+        </div>
+      codenotes:
+        - .block.block__border-right
+      notes:
+        - "Adds right border to .block."
+    - name: Border-bottom modifier
+      markup: |
+        Main content...
+        <div class="block block__border-bottom">
+            Content block with bottom border.
+        </div>
+      codenotes:
+        - .block.block__border-bottom
+      notes:
+        - "Adds bottom border to .block."
+    - name: Border-left modifier
+      markup: |
+        Main content...
+        <div class="block block__border-left">
+            Content block with left border.
+        </div>
+      codenotes:
+        - .block.block__border-left
+      notes:
+        - "Adds left border to .block."
+    - name: Border modifier
+      markup: |
+        Main content...
+        <div class="block block__border">
+            Content block with borders on all sides.
+        </div>
+      codenotes:
+        - .block.block__border
+      notes:
+        - "Adds border on all sides to .block."
+    - name: Flush-top modifier
+      markup: |
+        Main content...
+        <div class="block block__flush-top">
+            Content block with no top margin.
+        </div>
+        <div class="block">
+            Content block
+        </div>
+      codenotes:
+        - .block.block__flush-top
+      notes:
+        - "Removes the top margin from .block."
+    - name: Flush-bottom modifier
+      markup: |
+        Main content...
+        <div class="block block__flush-bottom">
+            Content block with no bottom margin.
+        </div>
+        <div class="block block__flush-top">
+            Content block with no top margin.
+        </div>
+      codenotes:
+        - .block.block__flush-bottom
+      notes:
+        - "Removes the bottom margin from .block."
+    - name: Flush-sides modifier
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
       markup: |
         <div class="content-l">
             <div class="content-l_col content-l_col-1">
@@ -8456,6 +8583,7 @@ input[type=range].focus::-ms-thumb {
                     Three-quarter width column (spans 9/12 columns)
                 </div>
             </div>
+<<<<<<< HEAD
         </div>
       codenotes:
         - |
@@ -8476,6 +8604,35 @@ input[type=range].focus::-ms-thumb {
         - "Note that the divs with inline styles are for demonstration purposes
            only and should not be used in production."
     - name: .content-l__full modifier
+=======
+        </main>
+      codenotes:
+        - .block.block__flush-sides
+      notes:
+        - "Removes the side margin from .block."
+        - "Typically used in conjuction with .block__bg to create a 'well' whose
+           background extends into the left and right gutters. (See below.)"
+    - name: Flush modifier
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main">
+                    Main content...
+                    <aside class="block block__flush">
+                        Content block with no margins.
+                    </aside>
+                </section>
+            </div>
+        </main>
+      codenotes:
+        - .block.block__flush
+      notes:
+        - "Removes the side, top, and bottom margin from .block."
+    - name: Background modifier
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
       markup: |
         <div class="content-l content-l__full">
             <div class="content-l_col content-l_col-1">
@@ -8560,12 +8717,18 @@ input[type=range].focus::-ms-thumb {
       codenotes:
         - .content-l.content-l__full
       notes:
+<<<<<<< HEAD
         - "Designed for use within .content_full containers."
         - "Displays .content-l_col-1-2 as columns at tablet sizes & above (600px+)"
         - "Displays other common .content-l_col modifiers (.content-l_col-1-3,
            .content-l_col-2-3, .content-l_col-3-8, .content-l_col-5-8)
            as columns above 767px."
     - name: .content-l__main modifier
+=======
+        - "Adds a background color and padding to .block."
+        - "Setup for (ems-equivalent) 30px padding on top and 60px on bottom."
+    - name: Background and flush-sides modifier combo example
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
       markup: |
         <div class="content-l content-l__main">
             <div class="content-l_col content-l_col-1">
@@ -8650,6 +8813,7 @@ input[type=range].focus::-ms-thumb {
       codenotes:
         - .content-l.content-l__main
       notes:
+<<<<<<< HEAD
         - "Designed for use in .content_main containers, which have reduced (75%) width
            above tablet sizes to accommodate adjacent sidebar column."
         - "Displays .content-l_col-1-2 as columns in the tablet range, 600-800px;
@@ -8657,6 +8821,35 @@ input[type=range].focus::-ms-thumb {
         - "Displays other common .content-l_col modifiers (.content-l_col-1-3, .content-l_col-2-3,
            .content-l_col-3-8, .content-l_col-5-8) as columns above 900px."
     - name: .content-l__sidebar modifier
+=======
+        - "This is an example of combining modifiers to get a flush padded bg
+           with a .block."
+    - name: Padded-top modifier
+      markup: |
+        Main content...
+        <div class="block block__padded-top block__border-top">
+            Content block with reduced top margin & added top padding
+            and border.
+        </div>
+      codenotes:
+        - .block.block__padded-top
+      notes:
+        - "Breaks top margin into margin & padding. Useful in combination with
+           block__border-top to add padding between block contents & border."
+    - name: Padded-bottom modifier
+      markup: |
+        <div class="block block__padded-bottom block__border-bottom">
+            Content block with reduced bottom margin & added bottom padding
+            and border.
+        </div>
+        Content...
+      codenotes:
+        - .block.block__padded-bottom
+      notes:
+        - "Breaks bottom margin into margin & padding. Useful in combination with
+           block__border-bottom to add padding between block contents & border."
+    - name: Sub blocks
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
       markup: |
         <div class="content-l content-l__sidebar">
             <div class="content-l_col content-l_col-1">
@@ -8730,12 +8923,131 @@ input[type=range].focus::-ms-thumb {
                     Quarter width column (spans 3/12 columns)
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="content-l_col content-l_col-3-4">
                 <div style="background: #F1F2F2;
                             text-align: center;
                             padding: 8px;">
                     Three-quarter width column (spans 9/12 columns)
                 </div>
+=======
+        </div>
+      codenotes:
+        - .block.content-l_col
+      notes:
+        - "You can safely combine .block with .content-l_col to
+           achieve a column-based layout at larger screens with no top margins
+           and a vertical layout at smaller screens that do have margins."
+        - "Note that the divs with inline styles are for demonstration purposes
+           only and should not be used in production."
+  tags:
+    - cf-layout
+*/
+
+.block {
+  margin-top: 3.75em;
+  margin-bottom: 3.75em;
+}
+
+.block__border-top {
+  border-top: 1px solid #babbbd;
+}
+
+.block__border-right {
+  border-right: 1px solid #3a8899;
+}
+
+.block__border-bottom {
+  border-bottom: 1px solid #babbbd;
+}
+
+.block__border-left {
+  border-left: 1px solid #3a8899;
+}
+
+.block__border {
+  border: 1px solid #3a8899;
+}
+
+.block__flush-top {
+  margin-top: 0 !important;
+}
+
+.block__flush-bottom {
+  margin-bottom: 0 !important;
+}
+
+.block__flush-sides {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.block__flush-sides {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.block__flush {
+  margin-top: 0 !important;
+  margin-right: -15px;
+  margin-bottom: 0 !important;
+  margin-left: -15px;
+}
+
+.block__flush {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.block__bg {
+  padding: 1.875em 0.9375em;
+  padding-bottom: 3.75em;
+  background: #f1f2f2;
+}
+
+.block__bg {
+  padding: 2.8125em 1.875em;
+}
+
+.block__padded-top {
+  padding-top: 1.875em;
+  margin-top: 1.875em;
+}
+
+.block__padded-bottom {
+  padding-bottom: 1.875em;
+  margin-bottom: 1.875em;
+}
+
+.block__sub {
+  margin-top: 1.875em;
+  margin-bottom: 1.875em;
+}
+
+.content-l_col.block,
+.content-l_col.block__sub {
+  margin-top: 0;
+}
+
+/* topdoc
+  name: Bleedbar sidebar styling
+  family: cf-layout
+  patterns:
+    - name: Give the sidebar a background color that bleeds off the edge of the screen
+      markup: |
+        <main class="content content__2-1 content__bleedbar" role="main">
+            <section class="content_hero" style="background: #E3E4E5">
+                Content hero
+            </section>
+            <div class="content_bar"></div>
+            <div class="content_wrapper">
+                <section class="content_main">
+                    Main content area
+                </section>
+                <aside class="content_sidebar">
+                    Bleeding sidebar
+                </aside>
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
             </div>
         </div>
       codenotes:

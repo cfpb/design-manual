@@ -5387,6 +5387,7 @@ a.category-slug.active {
   name: Header slug
   family: cf-typography
   patterns:
+<<<<<<< HEAD
     - name: Default header slug
       markup: |
         <h2 class="header-slug">
@@ -5400,6 +5401,24 @@ a.category-slug.active {
           -----------------------
           .header-slug
             .header-slug_inner
+=======
+  - name: Colors
+    codenotes:
+      - |
+        @block__border-top
+        @block__border-right
+        @block__border-bottom
+        @block__border-left
+        @block__border
+        @block__bg
+        @content_main-border
+        @content_sidebar-bg
+        @content_sidebar-border
+        @content_bar
+        @content_line
+        @grid_column__top-divider
+        @grid_column__left-divider
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
   tags:
     - cf-typography
 */
@@ -7616,9 +7635,73 @@ input[type=range].focus::-ms-thumb {
       codenotes:
         - ".grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 )"
       notes:
+<<<<<<< HEAD
         - "Computes column widths and prefix/suffix padding."
         - "CSS borders are used for fixed gutters."
     - name: Usage
+=======
+        - "The standard .block class by itself simply adds a margin of twice the
+           gutter width to the top and bottom."
+    - name: Border-top modifier
+      markup: |
+        Main content...
+        <div class="block block__border-top">
+            Content block with top border.
+        </div>
+      codenotes:
+        - .block.block__border-top
+      notes:
+        - "Adds top border to .block."
+    - name: Border-right modifier
+      markup: |
+        Main content...
+        <div class="block block__border-right">
+            Content block with right border.
+        </div>
+      codenotes:
+        - .block.block__border-right
+      notes:
+        - "Adds right border to .block."
+    - name: Border-bottom modifier
+      markup: |
+        Main content...
+        <div class="block block__border-bottom">
+            Content block with bottom border.
+        </div>
+      codenotes:
+        - .block.block__border-bottom
+      notes:
+        - "Adds bottom border to .block."
+    - name: Border-left modifier
+      markup: |
+        Main content...
+        <div class="block block__border-left">
+            Content block with left border.
+        </div>
+      codenotes:
+        - .block.block__border-left
+      notes:
+        - "Adds left border to .block."
+    - name: Border modifier
+      markup: |
+        Main content...
+        <div class="block block__border">
+            Content block with borders on all sides.
+        </div>
+      codenotes:
+        - .block.block__border
+      notes:
+        - "Adds border on all sides to .block."
+    - name: Flush-top modifier
+      markup: |
+        Main content...
+        <div class="block block__flush-top">
+            Content block with no top margin.
+        </div>
+        <div class="block">
+            Content block
+        </div>
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
       codenotes:
         - |
           .main-wrapper {
@@ -7647,6 +7730,7 @@ input[type=range].focus::-ms-thumb {
         - ".pull( @offset: 1, @grid_total-columns: @grid_total-columns )"
     - name: Usage
       codenotes:
+<<<<<<< HEAD
         - |
           .first {
             .grid_column(1, 2);
@@ -7947,6 +8031,33 @@ input[type=range].focus::-ms-thumb {
            .content-l_col-2-3, .content-l_col-3-8, .content-l_col-5-8)
            as columns above 767px."
     - name: .content-l__main modifier
+=======
+        - .block.block__flush-sides
+      notes:
+        - "Removes the side margin from .block."
+        - "Typically used in conjuction with .block__bg to create a 'well' whose
+           background extends into the left and right gutters. (See below.)"
+    - name: Flush modifier
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main">
+                    Main content...
+                    <aside class="block block__flush">
+                        Content block with no margins.
+                    </aside>
+                </section>
+            </div>
+        </main>
+      codenotes:
+        - .block.block__flush
+      notes:
+        - "Removes the side, top, and bottom margin from .block."
+    - name: Background modifier
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
       markup: |
         <div class="content-l content-l__main">
             <div class="content-l_col content-l_col-1">
@@ -8031,6 +8142,7 @@ input[type=range].focus::-ms-thumb {
       codenotes:
         - .content-l.content-l__main
       notes:
+<<<<<<< HEAD
         - "Designed for use in .content_main containers, which have reduced (75%) width
            above tablet sizes to accommodate adjacent sidebar column."
         - "Displays .content-l_col-1-2 as columns in the tablet range, 600-800px;
@@ -8038,6 +8150,11 @@ input[type=range].focus::-ms-thumb {
         - "Displays other common .content-l_col modifiers (.content-l_col-1-3, .content-l_col-2-3,
            .content-l_col-3-8, .content-l_col-5-8) as columns above 900px."
     - name: .content-l__sidebar modifier
+=======
+        - "Adds a background color and padding to .block."
+        - "Setup for (ems-equivalent) 30px padding on top and 60px on bottom."
+    - name: Background and flush-sides modifier combo example
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
       markup: |
         <div class="content-l content-l__sidebar">
             <div class="content-l_col content-l_col-1">
@@ -8056,6 +8173,7 @@ input[type=range].focus::-ms-thumb {
                     Half-width column (spans 6/12 columns)
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="content-l_col content-l_col-1-2">
                 <div style="background: #F1F2F2;
                             text-align: center;
@@ -8063,6 +8181,43 @@ input[type=range].focus::-ms-thumb {
                             margin-bottom: 4px;">
                     Half-width column (spans 6/12 columns)
                 </div>
+=======
+        </main>
+      codenotes:
+        - .block.block__flush-sides.block__bg
+      notes:
+        - "This is an example of combining modifiers to get a flush padded bg
+           with a .block."
+    - name: Padded-top modifier
+      markup: |
+        Main content...
+        <div class="block block__padded-top block__border-top">
+            Content block with reduced top margin & added top padding
+            and border.
+        </div>
+      codenotes:
+        - .block.block__padded-top
+      notes:
+        - "Breaks top margin into margin & padding. Useful in combination with
+           block__border-top to add padding between block contents & border."
+    - name: Padded-bottom modifier
+      markup: |
+        <div class="block block__padded-bottom block__border-bottom">
+            Content block with reduced bottom margin & added bottom padding
+            and border.
+        </div>
+        Content...
+      codenotes:
+        - .block.block__padded-bottom
+      notes:
+        - "Breaks bottom margin into margin & padding. Useful in combination with
+           block__border-bottom to add padding between block contents & border."
+    - name: Sub blocks
+      markup: |
+        <div class="block block__sub">
+            <div style="background: #F1F2F2; padding: 8px;">
+                Sub content block
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
             </div>
             <div class="content-l_col content-l_col-1-3">
                 <div style="background: #F1F2F2;
@@ -8164,8 +8319,39 @@ input[type=range].focus::-ms-thumb {
   tags:
     - cf-layout
 */
+<<<<<<< HEAD
 .content-l {
   position: relative;
+=======
+.block {
+  margin-top: 3.75em;
+  margin-bottom: 3.75em;
+}
+.block__border-top {
+  border-top: 1px solid #babbbd;
+}
+.block__border-right {
+  border-right: 1px solid #3a8899;
+}
+.block__border-bottom {
+  border-bottom: 1px solid #babbbd;
+}
+.block__border-left {
+  border-left: 1px solid #3a8899;
+}
+.block__border {
+  border: 1px solid #3a8899;
+}
+.block__flush-top {
+  margin-top: 0 !important;
+}
+.block__flush-bottom {
+  margin-bottom: 0 !important;
+}
+.block__flush-sides {
+  margin-right: -15px;
+  margin-left: -15px;
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
 }
 @media only all and (min-width: 37.5em) {
   .content-l {
@@ -8266,8 +8452,32 @@ input[type=range].focus::-ms-thumb {
     width: 100%;
     margin-left: auto !important;
   }
+<<<<<<< HEAD
   .content-l__full.content-l__large-gutters .content-l_col.content-l_col-5-8.content-l_col__before-divider {
     border-left-width: 30px;
+=======
+}
+.block__flush {
+  margin-top: 0 !important;
+  margin-right: -15px;
+  margin-bottom: 0 !important;
+  margin-left: -15px;
+}
+@media only all and (min-width: 37.5em) {
+  .block__flush {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+}
+.block__bg {
+  padding: 1.875em 0.9375em;
+  padding-bottom: 3.75em;
+  background: #f1f2f2;
+}
+@media only all and (min-width: 37.5em) {
+  .block__bg {
+    padding: 2.8125em 1.875em;
+>>>>>>> b7f801548471b5a32cdb8ece18a51ca5663690e9
   }
   .content-l__full .content-l_col + .content-l_col-5-8 {
     margin-top: 1.875em;
