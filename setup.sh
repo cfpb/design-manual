@@ -47,8 +47,7 @@ install(){
 build(){
   echo 'Building project...'
   grunt build
-  echo 'Your project is ready.' 
-  echo 'To serve, run `bundle exec jekyll serve --watch --baseurl ''`'
+  echo 'Your project is ready.'
 }
 
 init
