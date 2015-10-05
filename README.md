@@ -93,11 +93,11 @@ npm install -g grunt-cli bower
 ### Developing
 
 When first setting up this project, and each time you fetch from upstream,
-install project dependencies with npm and run `grunt` to build everything:
+run the setup shell script to install the newest project dependencies and
+build the website with grunt:
 
 ```sh
-npm install
-grunt
+./setup.sh
 ```
 
 We use [Grunt](http://gruntjs.com/) to compile and compress

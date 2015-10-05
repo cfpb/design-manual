@@ -6187,7 +6187,10 @@ textarea.success {
     codenotes:
       - |
         @block__border-top
+        @block__border-right
         @block__border-bottom
+        @block__border-left
+        @block__border
         @block__bg
         @content_main-border
         @content_sidebar-bg
@@ -7481,6 +7484,56 @@ textarea.success {
       notes:
         - "The standard .block class by itself simply adds a margin of twice the
            gutter width to the top and bottom."
+    - name: Border-top modifier
+      markup: |
+        Main content...
+        <div class="block block__border-top">
+            Content block with top border.
+        </div>
+      codenotes:
+        - .block.block__border-top
+      notes:
+        - "Adds top border to .block."
+    - name: Border-right modifier
+      markup: |
+        Main content...
+        <div class="block block__border-right">
+            Content block with right border.
+        </div>
+      codenotes:
+        - .block.block__border-right
+      notes:
+        - "Adds right border to .block."
+    - name: Border-bottom modifier
+      markup: |
+        Main content...
+        <div class="block block__border-bottom">
+            Content block with bottom border.
+        </div>
+      codenotes:
+        - .block.block__border-bottom
+      notes:
+        - "Adds bottom border to .block."
+    - name: Border-left modifier
+      markup: |
+        Main content...
+        <div class="block block__border-left">
+            Content block with left border.
+        </div>
+      codenotes:
+        - .block.block__border-left
+      notes:
+        - "Adds left border to .block."
+    - name: Border modifier
+      markup: |
+        Main content...
+        <div class="block block__border">
+            Content block with borders on all sides.
+        </div>
+      codenotes:
+        - .block.block__border
+      notes:
+        - "Adds border on all sides to .block."
     - name: Flush-top modifier
       markup: |
         Main content...
@@ -7528,26 +7581,56 @@ textarea.success {
         - "Removes the side margin from .block."
         - "Typically used in conjuction with .block__bg to create a 'well' whose
            background extends into the left and right gutters. (See below.)"
-    - name: Border-top modifier
+    - name: Flush modifier
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main">
+                    Main content...
+                    <aside class="block block__flush">
+                        Content block with no margins.
+                    </aside>
+                </section>
+            </div>
+        </main>
+      codenotes:
+        - .block.block__flush
+      notes:
+        - "Removes the side, top, and bottom margin from .block."
+    - name: Background modifier
       markup: |
         Main content...
-        <div class="block block__border-top">
-            Content block with top border.
+        <div class="block block__bg">
+            Content block with a background
         </div>
       codenotes:
-        - .block.block__border-top
+        - .block.block__bg
       notes:
-        - "Adds top border to .block."
-    - name: Border-bottom modifier
+        - "Adds a background color and padding to .block."
+        - "Setup for (ems-equivalent) 30px padding on top and 60px on bottom."
+    - name: Background and flush-sides modifier combo example
       markup: |
-        Main content...
-        <div class="block block__border-bottom">
-            Content block with bottom border.
-        </div>
+        <main class="content content__1-3" role="main">
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main content__flush-bottom">
+                    Main content...
+                    <div class="block block__flush-sides block__bg">
+                        Content block with a background and flush sides
+                    </div>
+                </section>
+            </div>
+        </main>
       codenotes:
-        - .block.block__border-bottom
+        - .block.block__flush-sides.block__bg
       notes:
-        - "Adds bottom border to .block."
+        - "This is an example of combining modifiers to get a flush padded bg
+           with a .block."
     - name: Padded-top modifier
       markup: |
         Main content...
@@ -7572,36 +7655,6 @@ textarea.success {
       notes:
         - "Breaks bottom margin into margin & padding. Useful in combination with
            block__border-bottom to add padding between block contents & border."
-    - name: Background modifier
-      markup: |
-        Main content...
-        <div class="block block__bg">
-            Content block with a background
-        </div>
-      codenotes:
-        - .block.block__bg
-      notes:
-        - "Adds a background color and padding to .block."
-    - name: Background and flush-sides modifier combo example
-      markup: |
-        <main class="content content__1-3" role="main">
-            <div class="content_wrapper">
-                <aside class="content_sidebar">
-                    Section navigation
-                </aside>
-                <section class="content_main content__flush-bottom">
-                    Main content...
-                    <div class="block block__flush-sides block__bg">
-                        Content block with a background and flush sides
-                    </div>
-                </section>
-            </div>
-        </main>
-      codenotes:
-        - .block.block__flush-sides.block__bg
-      notes:
-        - "This is an example of combining modifiers to get a flush padded bg
-           with a .block."
     - name: Sub blocks
       markup: |
         <div class="block block__sub">
@@ -7665,8 +7718,20 @@ textarea.success {
   border-top: 1px solid #babbbd;
 }
 
+.block__border-right {
+  border-right: 1px solid #3a8899;
+}
+
 .block__border-bottom {
   border-bottom: 1px solid #babbbd;
+}
+
+.block__border-left {
+  border-left: 1px solid #3a8899;
+}
+
+.block__border {
+  border: 1px solid #3a8899;
 }
 
 .block__flush-top {
@@ -7687,8 +7752,21 @@ textarea.success {
   margin-left: -30px;
 }
 
+.block__flush {
+  margin-top: 0 !important;
+  margin-right: -15px;
+  margin-bottom: 0 !important;
+  margin-left: -15px;
+}
+
+.block__flush {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
 .block__bg {
   padding: 1.875em 0.9375em;
+  padding-bottom: 3.75em;
   background: #f1f2f2;
 }
 
