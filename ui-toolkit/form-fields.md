@@ -152,7 +152,7 @@ Use for longer-form answers.
 <div class="content-50 content-last">
 
 {::nomarkdown}  
-<textarea>placeholder text</textarea>
+<textarea cols="30" rows="5">Placeholder text</textarea>
 {:/nomarkdown}
 
 </div> 
@@ -188,7 +188,7 @@ Use for longer-form answers.
 <label class="form-label-header">
     Label
 </label>
-<input placeholder="placeholder text" type="text">
+<input type="text">
 {:/nomarkdown}
 </div> 
 
@@ -208,10 +208,20 @@ Use for longer-form answers.
 {::nomarkdown} 
 <fieldset>
     <legend>Fieldset legend</legend>
-    <label for="name">
-        Label
-    </label>
-    <input type="text" id="name" value="" placeholder="Placeholder text">
+    <div class="form-group">
+        <div class="form-group_item">
+            <label for="name1">
+                Label
+            </label>
+            <input type="text" id="name1" value="">
+        </div>
+        <div class="form-group_item">
+            <label for="name2">
+                Label
+            </label>
+            <input type="text" id="name2" value="">
+        </div>
+    </div>
 </fieldset>
 {:/nomarkdown}
 
@@ -258,7 +268,7 @@ Use block helper text in the following cases:
 <label class="form-label-helper-text" for="helper-example">
 Use block helper text for instructions.
 </label>
-<input placeholder="placeholder text" type="text" id="helper-example">
+<input type="text" id="helper-example">
 {:/nomarkdown} 
 </div> 
 
@@ -279,7 +289,7 @@ Use to indicate whether a field is optional or required (see below).
 <label class="form-label-header" for="helper-inline-example">
     Label <span class="form-label-helper-text">(optional)</span>
 </label>
-<input placeholder="placeholder text" type="text" id="helper-inline-example">
+<input type="text" id="helper-inline-example">
 {:/nomarkdown} 
 </div> 
 
@@ -335,13 +345,13 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
         <label class="form-label-header" for="helper-inline-required">
             Label <span class="form-label-helper-text">(required)</span>
         </label>
-        <input placeholder="placeholder text" type="text" id="helper-inline-required">
+        <input type="text" id="helper-inline-required">
     </div>
     <div class="form-group_item">
         <label class="form-label-header" for="helper-inline-optional">
             Label <span class="form-label-helper-text">(optional)</span>
         </label>
-        <input placeholder="placeholder text" type="text" id="helper-inline-optional">
+        <input type="text" id="helper-inline-optional">
     </div>
 </div>
 {:/nomarkdown} 
@@ -441,7 +451,7 @@ Use after validating on the server side to call out input errors preventing form
 <!--insert error with links -->
 {::nomarkdown} 
 <div class="cf-notification cf-notification__error cf-notification__visible">
-    <span class="cf-notification_icon cf-notification_icon__error cf-icon cf-icon-error-round"></span>
+    <span class="cf-notification_icon cf-notification_icon__error cf-icon cf-icon-delete-round" role="alert"></span>
     <div class="cf-notification_text">
         <p><span class="h4">The following form fields are incomplete or have errors:</span></p>
         <ul class="list list__unstyled short-desc">
@@ -766,35 +776,6 @@ Radio button:
 
 <div class="content-50 content-first">
 
-#### Default against grey fieldset background 
-
-Same as above
-
-</div>
-
-<div class="content-50">
-
-{::nomarkdown} 
-<fieldset>
-    <div class="form-l">
-        <div class="form-l_col form-l-inset">
-            <div class="form-l-inset_container">
-                <label class="custom-input_label"><span class="custom-input_text">
-                    Yes
-                </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
-            </div>
-        </div>
-    </div>    
-</fieldset>
-{:/nomarkdown}
-
-</div> 
-
-
----
-
-<div class="content-50 content-first">
-
 #### Selected
 
 Background:
@@ -812,17 +793,15 @@ Radio button:
 <div class="content-50">
 
 {::nomarkdown}
-<fieldset>
-    <div class="form-l">
-        <div class="form-l_col form-l-inset">
-            <div class="form-l-inset_container is-checked">
-                <label class="custom-input_label is-enabled is-checked"><span class="custom-input_text">
-                    Yes
-                </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
-            </div>
+<div class="form-l">
+    <div class="form-l_col form-l-inset">
+        <div class="form-l-inset_container is-checked">
+            <label class="custom-input_label is-enabled is-checked"><span class="custom-input_text">
+                Yes
+            </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
         </div>
-    </div>    
-</fieldset>
+    </div>
+</div>    
 {:/nomarkdown}
 
 </div> 
@@ -847,17 +826,15 @@ Radio button:
 <div class="content-50">
 
 {::nomarkdown}
-<fieldset>
-    <div class="form-l">
-        <div class="form-l_col form-l-inset">
-            <div class="form-l-inset_container is-hovered">
-                <label class="custom-input_label is-enabled is-hovered"><span class="custom-input_text">
-                    Yes
-                </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
-            </div>
+<div class="form-l">
+    <div class="form-l_col form-l-inset">
+        <div class="form-l-inset_container is-hovered">
+            <label class="custom-input_label is-enabled is-hovered"><span class="custom-input_text">
+                Yes
+            </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
         </div>
-    </div>    
-</fieldset>
+    </div>
+</div>    
 {:/nomarkdown}
 
 </div> 
