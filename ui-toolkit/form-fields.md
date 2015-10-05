@@ -62,7 +62,7 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Default
 
-* Border: 1 px #babbbd (Grey 50)
+* Border: 1 px #75787b (Grey)
 * Height: 27 px
 * Padding: 10px 3px
 
@@ -521,7 +521,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 * 20x20px
 * Fill: #FFFFFF
-* Border: 1 px, Grey 80
+* Border: 1 px, Grey 80 (#919395)
 
 
 </div>
@@ -543,7 +543,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Selected
 
-* Border: Dark grey
+* Border: 2 px Dark Grey (#43484E)
 * Icon: 18px, CFPB Black
 
 
@@ -566,7 +566,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Hover
 
-* Border: Pacific blue
+* Border: 2 px  Pacific Blue (#0072CE)
 
 </div>
 
@@ -658,7 +658,7 @@ For screen readers, be aware that there are some issues with voiceover reading r
 #### Selected
 
 
-* Border: Dark grey
+* Border: 1 px  Pacific Blue (#0072CE)
 * Fill: 14x14px, Pacific Blue
 
 
@@ -683,7 +683,7 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Hover
 
-* Border: 1 px Pacific blue
+* Border: 2 px  Pacific Blue (#0072CE)
 
 </div>
 
