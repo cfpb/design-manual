@@ -51,12 +51,12 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
-* Module is 270px total in height with 30px top and bottom margins. It appears 60px underneath the header/intro paragraph of the page
+* Module is 270px total in height with 30px top and bottom padding. It appears 60px underneath the header/intro paragraph of the page
 * Background color of module is Gray 5 with a 1px Gray 50 stroke.
 * Module bleeds to the edge of the page, right sidebar and left nav.
 * Visual spans 5 columns and bleeds into right sidebar.
 
-* Text spans 3 columns and is left and top aligned. When on a page with a right-hand sidebar, the text area has 60px of left margin and 30px of right margin. When on a page with left-hand navigation, the text area has 30px of left and right margin.
+* Text spans 3 columns and is left and top aligned. When on a page with a right-hand sidebar, the text area has 60px of left padding and 30px of right padding. When on a page with left-hand navigation, the text area has 30px of left and right padding.
 </div>
 
 <div class="content-67 content-last">
