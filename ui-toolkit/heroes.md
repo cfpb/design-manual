@@ -66,7 +66,6 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 * Total height: 285px
 * Top and bottom margins: 45px 
 (In the case that there is minimal text and/or no CTA, the designer may choose to use 60px padding at the top to make the text appear more centered.)
-* Left and right margins: 60px
 
 </div>
 
@@ -93,7 +92,6 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 <div class="content-33 content-first">
 
 * Top and bottom margins: 30px
-* Left and right margins: 30px
 * Module height is flexible to text height
 * Visual is vertically centered
 * Headline: H2
@@ -115,7 +113,6 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 <div class="content-33 content-first">
 
 * Top and bottom margins: 30px
-* Left and right margins: 15px
 * Illustration is 30px below copy and spans width (to 15px margins)
 
 </div>
