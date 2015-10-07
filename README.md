@@ -39,11 +39,12 @@ developers, or groups to adapt it for their own use.
 Content editors and developers probably want to set up the Design Manual on
 their local machine so they can preview updates without pushing to GitHub.
 
-Before you get started make sure you have an up-to-date version of Ruby.
+Before you get started make sure you have an up-to-date version of Ruby and Bundler.
 We use [Homebrew](http://brew.sh/):
 
 ```sh
 brew install ruby
+gem install bundler
 ```
 
 As the site is intended to be deployed on GitHub Pages, installing the
