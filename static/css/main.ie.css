@@ -4756,7 +4756,6 @@ figure img {
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background-color 0.1s;
   transition: background-color 0.1s;
   -webkit-appearance: none;
 }
@@ -10762,7 +10761,7 @@ input[type="text"].pagination_current-page {
 
 .expandable_cue-open__animated,
 .expandable_cue-close__animated {
-  -webkit-transition: 0.25s -webkit-transform;
+  transition: 0.25s -webkit-transform;
   transition: 0.25s transform;
 }
 
