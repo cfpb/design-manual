@@ -39,7 +39,7 @@ user attention, and can be triggered by links, buttons, or inactivity timeouts.
 They should not be a default interaction method, since they result in an
 interruption of standard user flows. Modal windows can confuse users due to
 their similarity to popup windows or system alerts, and the find function will
-not discover information contained in a modal.
+not discover information contained in a modal window.
 
 These guidelines can help you determine what content and information should be
 presented in a modal window.
@@ -101,12 +101,12 @@ presented in a modal window.
     * Medium and large screens: 630px width
     
 Modal windows should have a clear headline at the top of the window. If the
-modal was triggered due to user action, the headline should closely match the
+modal window was triggered due to user action, the headline should closely match the
 text of the triggering element.
 
-When a modal is displayed, its background page should be set to fixed.
+When a modal window is displayed, its background page should be set to fixed.
 
-Based on our use cases, modal windows should not scroll. If a modal you have
+Based on our use cases, modal windows should not scroll. If a modal window you have
 designed or developed does scroll, use an alternative UI element.
 </div>
 <div class="content-50 content-last">
@@ -126,11 +126,11 @@ designed or developed does scroll, use an alternative UI element.
 Specific coding directions:
 
 * Use the `aria-hidden`, `aria-label`, and `aria-labelledby` attributes.
-* Add `role="alertdialog"` to the modal.
+* Add `role="alertdialog"` to the modal window.
 * Code the close minicon using a `button` element for more semantic markup. 
 
-When the modal opens, set the focus to the first element users need to interact
-with. This could be either the first form field in the modal or the primary
+When the modal window opens, set the focus to the first element users need to interact
+with. This could be either the first form field in the modal window or the primary
 action button.
 
 Provide separate focus and hover states for the close minicon and any next
@@ -139,18 +139,18 @@ action buttons.
 The close minicon should be able to be accessed by a keyboard.
 
 Save the last active element on the parent window, and return the focus there
-when the modal is closed.
+when the modal window is closed.
 
 </div>
 
-#### Closing a modal
+#### Closing a modal window
 <div class="content-67 content-first">
 
 Modal windows are always closable by either:
 
 * clicking/tapping a delete minicon in the upper right corner,
 * clicking/tapping the next action buttons or links,
-* clicking/tapping anywhere outside the modal, or
+* clicking/tapping anywhere outside the modal window, or
 * hitting the `ESC` key on a keyboard.
 
 </div>
