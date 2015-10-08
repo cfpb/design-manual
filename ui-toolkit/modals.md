@@ -107,8 +107,8 @@ text of the triggering element.
 When a modal is displayed, its background page should be set to fixed.
 
 Based on our use cases, modal windows should not scroll. If a modal you have
-designed or developed does scroll, use an alternative UI element. </div>
-
+designed or developed does scroll, use an alternative UI element.
+</div>
 <div class="content-50 content-last">
 {::nomarkdown}
 <img src="/design-manual/static/img/modals/savesearch.png" /> 
