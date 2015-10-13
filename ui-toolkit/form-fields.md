@@ -719,6 +719,8 @@ Where possible, use progressive disclosure instead.
     <input class="custom-input custom-input_input" type="radio" name="custom-input-example" disabled="true">
     <span class="custom-input_radio"></span>
 </label>
+<input class="success" type="text" value="Validated input" title="Test input">
+<span class="cf-form_input-icon cf-icon cf-icon-approved-round"></span>
 {:/nomarkdown}
 
 </div> 

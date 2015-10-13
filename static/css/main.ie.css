@@ -7147,6 +7147,7 @@ a.category-slug.active {
         @input-range-bg
         @input-range-border
         @input-range-handle
+        @label-helper
   - name: Sizing
     codenotes:
       - |
@@ -7262,6 +7263,9 @@ a.category-slug.active {
     - name: Error state
       codenotes:
         - .error
+      notes:
+        - "See the 'Form icons' section below for guidance on adding icons to
+           states."
       markup: |
         <input class="error" type="text" value="Invalid input" title="Test input">
     - name: Warning state
@@ -7362,15 +7366,15 @@ textarea.disabled {
 }
 
 .error + .cf-form_input-icon {
-  color: #d12124;
+  color: "#d12124";
 }
 
 .warning + .cf-form_input-icon {
-  color: #ffecd1;
+  color: "#ffecd1";
 }
 
 .success + .cf-form_input-icon {
-  color: #2cb34a;
+  color: "#2cb34a";
 }
 
 /* topdoc
@@ -11249,6 +11253,10 @@ button.expandable_header {
 
 /* cf-typography
    ========================================================================== */
+
+.error + .cf-form_input-icon {
+  color: "#d12124";
+}
 
 /* ==========================================================================
 	 CFPB Design Manual
