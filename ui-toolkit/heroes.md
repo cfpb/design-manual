@@ -44,7 +44,7 @@ Heroes should be limited to first- (i.e., Consumer Help) or second-level (i.e., 
 
 Heroes should be the most prominent thing on the page, and help to establish visual hierarchy of where the page lives within the information architecture.
 
-Heroes can contain calls to action. Rules for button versus links apply in a call to action apply.
+Heroes can contain calls to action. Rules for button versus links apply in a call to action.
 
 </div>
 
@@ -64,19 +64,17 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 * Full-width colored background with black text and blue link or button. Standard link and button styles apply. Color contrast of text and links on background must be <a href="{{ site.baseurl }}/identity/typography.html#type-accessibility">508-accessible</a>.
 * No breadcrumb should appear in or above the hero
 * Total height: 285px
-* Top and bottom padding: 45px 
-(In the case that there is minimal text and/or no CTA, the designer may choose to use 60px padding at the top to make the text appear more centered.)
+* Text is vertically centered, top and bottom padding should be no less than 45 px
+
 
 </div>
 
 <div class="content-33">
 * Text spans seven columns
-* Text is left- and top-aligned
 * Headline: H1, no longer than two lines
 * Body copy: H3, begins 30px below headline, no longer than three lines
-
-* CTA link: Standard link colors in body copy style, appears 30px below body copy
-* CTA button: Blue primary button, appears 30px below the body copy
+* Call to action link: Standard link colors in body copy style, appears 30px below body copy
+* Call to action button: Blue primary button, appears 30px below the body copy
 
 </div>
 
