@@ -73,7 +73,7 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 
 <div class="content-33 content-first">
 * Category is an 18px black minicon and H4 text, appears 30px from top
-* The following five category categories can be used. If the content does not fit within one of the five category categories, you may use this icon and prefix:
+* The following five categories can be used. If the content does not fit within one of the five categories, you may use this icon and prefix:
 * <h4 class="cf-icon cf-icon-favorite"> Featured </h4>
 </div>
 
