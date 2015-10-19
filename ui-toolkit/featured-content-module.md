@@ -66,14 +66,14 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 </div>
 
 <div class="content-33 content-first">
-* Headline is H2, appears 30px below tag and is 1–2 lines
+* Headline is H2, appears 30px below category and is 1–2 lines
 * Body copy is 16px, appears 30px underneath headline, is 2 to 4 lines
 * A CTA may be used and appears 30px underneath body copy. If a link, standard link styles apply. If a button, standard primary button styles apply.
 </div>
 
 <div class="content-33 content-first">
-* Tag is an 18px black minicon and H4 text, appears 30px from top
-* The following five tag categories can be used. If the content does not fit within one of the five tag categories, you may use this icon and prefix:
+* Category is an 18px black minicon and H4 text, appears 30px from top
+* The following five category categories can be used. If the content does not fit within one of the five category categories, you may use this icon and prefix:
 * <h4 class="cf-icon cf-icon-favorite"> Featured </h4>
 </div>
 
@@ -117,7 +117,7 @@ Differences in style at mobile size
 * Module appears 30px underneath the header/intro paragraph of the page
 * Headline: H2
 * Body copy: 16px
-* Tag becomes H5, minicon drops off
+* category becomes H5, minicon drops off
 * Visual drops below text
 * 30px space between text and top of visual
 
