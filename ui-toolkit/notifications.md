@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Alerts, Validations, and Error Messaging
+title:  Alerts, validations, and error messaging
 category: UI toolkit
 ---
 
@@ -34,17 +34,23 @@ Alerts, error, and validation messages provide important information to users an
 
 <div class="content-67 content-first">
 
-<p>**Alert notifications** communicate information that should be read before the rest of the content on the page.</p>
+####Alerts
+
+<p>Alert notifications communicate information that should be read before the rest of the content on the page.</p>
 
 <p>When the user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. For example, a notification of a system change may require more contextual information than a validation message. Write the message in concise, human readable language; avoid jargon and computer code.</p>
 
 <p>Be careful not to overdo it: too many notifications will either overwhelm or annoy the user, and are likely to be ignored.</p>
 
-<p>**Error notifications** communicate an issue that was caused by the user’s action.</p>
+####Errors
+
+<p>Error notifications communicate an issue that was caused by the user’s action.</p>
 
 <p>Be polite in error messages—don’t place blame on the user. Make it clear something went wrong, and help them get back on track. Be specific about what to do next for each type of error.</p>
 
-<p>**Validation notifications** communicate success that was caused by the user’s action, such as the successful completion of a form.</p>
+####Validations
+
+<p>Validation notifications communicate success that was caused by the user’s action, such as the successful completion of a form.</p>
 
 
 
