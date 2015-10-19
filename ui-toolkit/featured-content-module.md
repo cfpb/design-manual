@@ -40,9 +40,9 @@ Featured content modules should include a single piece of content from a defined
 
 FCMs appear below the title and introductory paragraph on a page, and retain that position on all screen sizes.
 
-FCMs contain a headline, body copy text and a graphical element related to the piece of content being featured. They are a “mini story” and never simply a dominant visual. 
+FCMs contain a headline, body copy text, and a graphical element related to the piece of content being featured. They are a “mini story” and never simply a dominant visual. 
 
-FCMs can appear on any page type, though they are best suited for pages 3rd level and below in the site map. They are designed to accommodate pages with either a left hand navigation or right hand sidebar.
+FCMs can appear on any page type, though they are best suited for pages 3rd level and below in the site map. They are designed to accommodate pages with either a left-hand navigation or right-hand sidebar.
 
 </div>
 
@@ -68,7 +68,7 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 <div class="content-33 content-first">
 * Headline is H2, appears 30px below category and is 1–2 lines
 * Body copy is 16px, appears 30px underneath headline, is 2 to 4 lines
-* A CTA may be used and appears 30px underneath body copy. If a link, standard link styles apply. If a button, standard primary button styles apply.
+* A call to action may be used and appears 30px underneath body copy. If a link, standard link styles apply. If a button, standard primary button styles apply.
 </div>
 
 <div class="content-33 content-first">
@@ -117,7 +117,6 @@ Differences in style at mobile size
 * Module appears 30px underneath the header/intro paragraph of the page
 * Headline: H2
 * Body copy: 16px
-* category becomes H5, minicon drops off
 * Visual drops below text
 * 30px space between text and top of visual
 
