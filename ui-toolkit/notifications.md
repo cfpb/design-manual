@@ -68,11 +68,11 @@ Alerts, error, and validation messages provide important information to users an
 <h2 id="placement">Placement<span class="cf-code-link"><a href="https://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-67 content-first">
-  <h3>Above Content</h3>
+  <h4>Above content</h4>
 
   <p>By default, alert, validation, and error messages should be displayed at the top of a page or form, spanning the full width of the page or section.</p>
 
-  <h3>Covering Content</h3>
+  <h4>Covering content</h4>
 
   <p>Alert and error messages can be displayed on top of a tool when something has happened that prevents the tool from functioning correctly (e.g., a broken data connection or null results).</p>
 
@@ -96,7 +96,7 @@ Alerts, error, and validation messages provide important information to users an
   * __Background:__ fff0dd
   * __Border:__ 1px, ff9e1b
   * __Minicon (E103):__ 18px, ff9e1b
-  * __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next medium. Needed action appears 15px below alert message and is 16px Avenir Next regular.
+  * __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next Medium. Needed action appears 15px below alert message and is 16px Avenir Next Regular.
   * __Margins:__ 15px margins on top, left and bottom. At least 15px on right. 
 
 </div>
@@ -115,7 +115,7 @@ Alerts, error, and validation messages provide important information to users an
   * __Background:__ e2efd8
   * __Border:__ 1px 20aa3f
   * __Minicon (E101):__ 18px, 20aa3f
-  * __Text:__ 8px space between minicon and text. Validation message is 18px Avenir Next medium. If needed, an action or explanation appears 15px below validation message and is 16px Avenir Next regular.
+  * __Text:__ 8px space between minicon and text. Validation message is 18px Avenir Next Medium. If needed, an action or explanation appears 15px below validation message and is 16px Avenir Next Regular.
   * __Margins:__ 15px margins on top, left and bottom. At least 15px on right.
 
 </div>
@@ -135,7 +135,7 @@ Alerts, error, and validation messages provide important information to users an
   * __Background:__ f7e0d9
   * __Border:__ 1px, d14124
   * __Minicon (E107):__ 18px, d14124
-  * __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next medium. Needed action appears 15px below alert message and is 16px Avenir Next regular.
+  * __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next Medium. Needed action appears 15px below alert message and is 16px Avenir Next Regular.
   * __Margins:__ 15px margins on top, left and bottom. At least 15px on right. 
 
 </div>
@@ -152,6 +152,6 @@ Alerts, error, and validation messages provide important information to users an
 
 <div class="content-67 content-first">
 
-<p>Use distinct icons, contrasting colors, prominent placement and text to indicate errors. Don’t rely on just one method, as users can have many different accessibility needs (color blind users, visually impaired users, users with motor control issues).</p>
+<p>Use distinct icons, contrasting colors, prominent placement, and text to indicate errors. Don’t rely on just one method as users can have many different accessibility needs (for example, color blindness, visually impairment, or motor control issues).</p>
 
 </div>
