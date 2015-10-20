@@ -51,10 +51,8 @@ Alerts, error, and validation messages provide important information to users an
   <h4>Validations</h4>
 
   <p>Validation notifications communicate success that was caused by the user’s action, such as the successful completion of a form.</p>
-
-  <p>
-
-  </p>
+</div>
+<div>
 
   <h3>Adding Hyperlinks</h3>
 
