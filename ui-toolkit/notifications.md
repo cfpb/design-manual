@@ -42,15 +42,15 @@ Alerts, error, and validation messages provide important information to users an
 
   <p>Be careful not to overdo it-too many notifications will either overwhelm or annoy the user, and are likely to be ignored.</p>
 
+  <h4>Validations</h4>
+
+  <p>Validation notifications communicate success that was caused by the user’s action, such as the successful completion of a form.</p>
+
   <h4>Errors</h4>
 
   <p>Error messages communicate an issue that was caused by the user’s action.</p>
 
   <p>Be polite in error messages—don’t place blame on the user. Make it clear something went wrong, and help them get back on track. Be specific about what to do next for each type of error.</p>
-
-  <h4>Validations</h4>
-
-  <p>Validation notifications communicate success that was caused by the user’s action, such as the successful completion of a form.</p>
 
   <br>
 
@@ -108,6 +108,26 @@ Alerts, error, and validation messages provide important information to users an
 </div>
 
 <div>
+  <h3>Validation</h3>
+</div>
+
+<div class="content-33 content-first">
+  * __Background:__ e2efd8
+  * __Border:__ 1px 20aa3f
+  * __Minicon (E101):__ 18px, 20aa3f
+  * __Text:__ 8px space between minicon and text. Validation message is 18px Avenir Next medium. If needed, an action or explanation appears 15px below validation message and is 16px Avenir Next regular.
+  * __Margins:__ 15px margins on top, left and bottom. At least 15px on right.
+
+</div>
+
+<div class="content-67 content-last">
+
+  ![Validation notification]({{ site.baseurl }}/static/img/notifications/cfpb_validation_message.png "Validation notification")
+
+</div>
+
+
+<div>
   <h3>Error</h3>
 </div>
 
@@ -126,24 +146,7 @@ Alerts, error, and validation messages provide important information to users an
 
 </div>
 
-<div>
-  <h3>Validation</h3>
-</div>
 
-<div class="content-33 content-first">
-  * __Background:__ e2efd8
-  * __Border:__ 1px 20aa3f
-  * __Minicon (E101):__ 18px, 20aa3f
-  * __Text:__ 8px space between minicon and text. Validation message is 18px Avenir Next medium. If needed, an action or explanation appears 15px below validation message and is 16px Avenir Next regular.
-  * __Margins:__ 15px margins on top, left and bottom. At least 15px on right.
-
-</div>
-
-<div class="content-67 content-last">
-
-  ![Validation notification]({{ site.baseurl }}/static/img/notifications/cfpb_validation_message.png "Validation notification")
-
-</div>
 
 <h2 id="accessibility">Accessibility<span class="cf-code-link"><a href="https://cfpb.github.io/cf-notifications/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
