@@ -52,11 +52,6 @@ Alerts, error, and validation messages provide important information to users an
 
   <p>Validation notifications communicate success that was caused by the user’s action, such as the successful completion of a form.</p>
 
-  <p>
-
-  </p>
-
-
   <h3>Adding Hyperlinks</h3>
 
   <p>Hyperlinks can be used within alerts to take the user to a page or field where they can take further action.</p>
