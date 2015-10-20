@@ -52,17 +52,20 @@ Alerts, error, and validation messages provide important information to users an
 
   <p>Validation notifications communicate success that was caused by the user’s action, such as the successful completion of a form.</p>
 
+  <p>
 
-  <div>
-    <h3>Adding Hyperlinks</h3>
-  </div>
-    <p>Hyperlinks can be used within alerts to take the user to a page or field where they can take further action.</p>
+  </p>
 
-    <p>In an error message, a hyperlink can be used to direct the user to a location where they can correct the error.</p>
 
-    <p>In an alert message, a hyperlink can direct the user to content that the alert is referencing.</p>
+  <h3>Adding Hyperlinks</h3>
 
-    <p>In a validation message, a hyperlink can be used to direct the user to another step in a process, or related information about the process.</p>
+  <p>Hyperlinks can be used within alerts to take the user to a page or field where they can take further action.</p>
+
+  <p>In an error message, a hyperlink can be used to direct the user to a location where they can correct the error.</p>
+
+  <p>In an alert message, a hyperlink can direct the user to content that the alert is referencing.</p>
+
+  <p>In a validation message, a hyperlink can be used to direct the user to another step in a process, or related information about the process.</p>
 </div>
 
 <h2 id="placement">Placement<span class="cf-code-link"><a href="https://cfpb.github.io/cf-buttons/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
