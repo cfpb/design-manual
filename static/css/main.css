@@ -4978,191 +4978,6 @@ input.btn::-moz-focus-inner {
 */
 /* ==========================================================================
    Capital Framework
-   Grid mixins
-   ========================================================================== */
-/* topdoc
-  name: Less variables
-  notes:
-    - "The following variables are exposed,
-       allowing you to easily override them before compiling.
-       Most mixins allows you to further override these values by passing them
-       arguments."
-  family: cf-grid
-  patterns:
-    - codenotes:
-        - "@grid_box-sizing-polyfill-path: '../../box-sizing-polyfill;"
-      notes:
-        - "The path where boxsizing.htc is located."
-        - "This path MUST be overridden in your project and set to a root relative url."
-    - codenotes:
-        - "@grid_wrapper-width: 1200px;"
-      notes:
-        - "The grid's maximum width in px."
-    - codenotes:
-        - "@grid_gutter-width: 30px;"
-      notes:
-        - "The fixed width between columns."
-    - codenotes:
-        - "@grid_total-columns: 12;"
-      notes:
-        - "The total number of columns used in calculating column widths."
-    - codenotes:
-        - "@grid_debug"
-      notes:
-        - "Gives column blocks a background color if set to true."
-  tags:
-    - cf-grid
-*/
-/* topdoc
-  name: Wrapper
-  notes:
-    - "Wrappers are centered containers with a max-width and fixed gutters
-       that match the gutter widths of columns."
-    - "To support IE 6/7, ensure that the path to boxsizing.htc is set using
-       the @grid_box-sizing-polyfill-path Less variable.
-       Read more: https://github.com/Schepp/box-sizing-polyfill."
-  family: cf-grid
-  patterns:
-    - name: Less mixin
-      codenotes:
-        - ".grid_wrapper( @grid_wrapper-width: @grid_wrapper-width )"
-      notes:
-        - "You can create wrappers with different max-widths by passing a pixel
-           value into the mixin."
-    - name: Usage
-      codenotes:
-        - |
-          .main-wrapper {
-            .grid_wrapper();
-          }
-          .wide-wrapper {
-            .grid_wrapper( 1900px );
-          }
-        - |
-          <div class="main-wrapper">
-              This container now has left and right padding and a centered max width.
-          </div>
-          <div class="wide-wrapper">
-              This container is the same except it has a wider max-width.
-          </div>
-  tags:
-    - cf-grid
-*/
-/* topdoc
-  name: Columns
-  family: cf-grid
-  patterns:
-    - name: Less mixin
-      codenotes:
-        - ".grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 )"
-      notes:
-        - "Computes column widths and prefix/suffix padding."
-        - "CSS borders are used for fixed gutters."
-    - name: Usage
-      codenotes:
-        - |
-          .main-wrapper {
-            .grid_wrapper();
-          }
-          .half {
-            .grid_column(1, 2);
-          }
-        - |
-          <div class="main-wrapper">
-              <div class="half">I am half of my parent.</div>
-              <div class="half">I am half of my parent.</div>
-          </div>
-    - name: This is a placeholder for documenting prefix and suffix
-      codenotes:
-        - "..."
-  tags:
-    - cf-grid
-*/
-/* topdoc
-  name: Push and Pull mixins for source ordering
-  family: cf-grid
-  patterns:
-    - codenotes:
-        - ".push( @offset: 1, @grid_total-columns: @grid_total-columns )"
-        - ".pull( @offset: 1, @grid_total-columns: @grid_total-columns )"
-    - name: Usage
-      codenotes:
-        - |
-          .first {
-            .grid_column(1, 2);
-            .grid_pull(1);
-          }
-          .second {
-            .grid_column(1, 2);
-            .grid_push(1);
-          }
-        - |
-          <div>
-              <div class="second">I am first in the markup but appear after .first.</div>
-              <div class="first">I am second in the markup but appear before .second.</div>
-          </div>
-  tags:
-    - cf-grid
-*/
-/* topdoc
-  name: Nested columns
-  notes:
-    - "Since all cf-grid columns have left and right gutters you will notice
-      undesireable offsetting when nesting columns.
-      Normally this is removed with complex selectors or by adding classes
-      to the first and last column per 'row'.
-      In cf-grid the way to get around this is by wrapping your columns in a
-      container that utilizes the .grid_nested-col-group() mixin.
-      This mixin uses negative left and right margins to pull the columns back
-      into alignment with parent columns."
-    - "NOTE: Working this way allows you to easily create responsive grids.
-      You are free to control the number of columns per 'row' without having
-      to deal with the first and last columns of each row."
-    - "NOTE: cf-grids does not use 'rows' and there is no row container.
-      To clarify, if you have a 12 column grid and place 24 columns inside
-      of a wrapper cf-grid columns will automaitcally stack into 2 'rows'
-      of 12."
-  family: cf-grid
-  patterns:
-    - name: Less mixin
-      codenotes:
-        - ".grid_nested-col-group()"
-    - name: Usage
-      codenotes:
-        - |
-          .main-wrapper {
-            .grid_wrapper();
-          }
-          .cols {
-            .grid_nested-col-group();
-          }
-          .half {
-            .grid_column(1, 2);
-          }
-        - |
-          <div class="main-wrapper">
-              <div class="half">
-                  <div class="cols">
-                      <div class="half"></div>
-                      <div class="half"></div>
-                  </div>
-              </div>
-              <div class="half">
-                  <div class="cols">
-                      <div class="half"></div>
-                      <div class="half"></div>
-                  </div>
-              </div>
-          </div>
-  tags:
-    - cf-grid
-*/
-/* topdoc
-  name: EOF
-  eof: true
-*/
-/* ==========================================================================
-   Capital Framework
    Advanced Typography
    ========================================================================== */
 /* topdoc
@@ -6542,15 +6357,19 @@ a.category-slug.active {
         @input-disabled
         @input-inset-bg
         @input-inset-selected
-        @checkbox-border
-        @checkbox-checked-border
-        @checkbox-border-disabled
-        @checkbox-bg-disabled
         @input-active-bg
         @input-range-bg
         @input-range-border
         @input-range-handle
         @label-helper
+        @checkbox-border
+        @checkbox-checked-border
+        @checkbox-border-disabled
+        @checkbox-bg-disabled
+        @notification-bg
+        @notification-error
+        @notification-success
+        @notification-warning
   - name: Sizing
     codenotes:
       - |
@@ -6701,8 +6520,8 @@ input[type="tel"].warning,
 input[type="number"].warning,
 select[multiple].warning,
 textarea.warning {
-  border: 1px solid #ffecd1;
-  outline: 1px solid #ffecd1;
+  border: 1px solid #ff9e1b;
+  outline: 1px solid #ff9e1b;
 }
 input[type="text"].success,
 input[type="search"].success,
@@ -6751,7 +6570,7 @@ textarea.disabled {
   color: "#d12124";
 }
 .warning + .cf-form_input-icon {
-  color: "#ffecd1";
+  color: "#ff9e1b";
 }
 .success + .cf-form_input-icon {
   color: "#2cb34a";
@@ -7029,7 +6848,7 @@ textarea.disabled {
 }
 /* topdoc
   name: Notifications
-  family: cf-notifications
+  family: cf-forms
   notes:
     - "Markup and styling for notifications"
   patterns:
@@ -7040,7 +6859,7 @@ textarea.disabled {
           <p class="cf-notification_text">This is the default alert.</p>
         </div>
   tags:
-    - cfgov-misc
+    - cf-forms
 */
 .cf-notification {
   display: none;
@@ -7064,7 +6883,7 @@ textarea.disabled {
 }
 .cf-notification__warning {
   background: #ffecd1;
-  border-color: #ffecd1;
+  border-color: #ff9e1b;
 }
 .cf-notification_icon {
   position: absolute;
@@ -7074,13 +6893,13 @@ textarea.disabled {
   font-size: 1.125em;
 }
 .cf-notification_icon__error {
-  color: #d14327;
+  color: #d12124;
 }
 .cf-notification_icon__success {
   color: #2cb34a;
 }
 .cf-notification_icon__warning {
-  color: #ff931b;
+  color: #ff9e1b;
 }
 .cf-notification_text {
   margin-top: 0;
@@ -7101,7 +6920,7 @@ textarea.disabled {
 }
 /* topdoc
   name: Custom checkboxes and radio buttons via jquery.custom-input
-  family: cfgov-forms
+  family: cf-forms
   notes:
     - "This plugin auto-initiates and will transform your initial HTML by adding
       more markup and classes. If JavaScript is unavailable the new elements and
@@ -7192,7 +7011,7 @@ textarea.disabled {
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="../../static/js/jquery.custom-input.js"></script>
   tags:
-    - cfgov-forms
+    - cf-forms
 */
 .custom-input_input {
   position: absolute;
@@ -7327,9 +7146,25 @@ input[type=checkbox].custom-input.disabled {
 }
 /* topdoc
   name: Form layouts
-  family: cfgov-forms
+  family: cf-forms
   patterns:
-    - name: Form columns
+    - name: Form one-half columns
+      markup: |
+        <div class="form-l">
+            <div class="form-l_col form-l_col-1-3">
+                Form layout column 1
+            </div>
+            <div class="form-l_col form-l_col-1-2">
+                Form layout column 2
+            </div>
+        </div>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .form-l
+            .form-l_col.form-l_col-1-2
+    - name: Form one-third columns
       markup: |
         <div class="form-l">
             <div class="form-l_col form-l_col-1-3">
@@ -7348,6 +7183,11 @@ input[type=checkbox].custom-input.disabled {
           -----------------------
           .form-l
             .form-l_col.form-l_col-1-3
+      notes:
+        - ".form-l_col-1-3 elements are stacked for small screens. When the
+          viewport reaches 600px they transform into columns with one half the
+          width of the container. When the viewport reaches 768px their width
+          updates to one third of the container."
     - name: "Form layout modifier: flush"
       markup: |
         <div class="form-l form-l__flush">
@@ -7367,17 +7207,25 @@ input[type=checkbox].custom-input.disabled {
         - "Form layout columns have left and right gutters. If you want the
           first and last column in each row to sit flush left/right
           respectively then use the .form-l__flush modifier."
-    - name: Form layout columns
+    - name: Form layout inset
+      markup: |
+        <div class="form-l-inset">
+          <div class="form-l-inset_container">
+              <label class="custom-input_label"><span class="custom-input_text">
+                  Yes
+              </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
+          </div>
+        </div>
       codenotes:
-        - .form-l_col
-        - .form-l_col-1-3
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .form-l-inset
+            .form-l-inset_container
       notes:
-        - ".form-l_col-1-3 elements are stacked for small screens. When the
-          viewport reaches 600px they transform into columns with one half the
-          width of the container. When the viewport reaches 768px their width
-          updates to one third of the container."
+        - ".form-l-inset_container elements have larger target areas for easier user interaction."
   tags:
-    - cfgov-forms
+    - cf-forms
 */
 @media only all and (min-width: 66.25em) {
   .form-l__flush {
@@ -7503,7 +7351,7 @@ input[type=checkbox].custom-input.disabled {
 }
 /* topdoc
     name: Custom select menus via jquery.custom-input
-    family: cfgov-forms
+    family: cf-forms
     patterns:
     - name: Custom select menu demo with initialization markup
       markup: |
@@ -7585,7 +7433,7 @@ input[type=checkbox].custom-input.disabled {
           class of .custom-select and append the the .is-enabled class which
           activates the styling."
     tags:
-    - cfgov-forms
+    - cf-forms
 */
 .custom-select.is-enabled {
   overflow: hidden;
@@ -7757,6 +7605,191 @@ input[type=range].focus::-ms-thumb {
   background: #cce3f5;
   border: 2px solid #0072ce;
 }
+/* topdoc
+  name: EOF
+  eof: true
+*/
+/* ==========================================================================
+   Capital Framework
+   Grid mixins
+   ========================================================================== */
+/* topdoc
+  name: Less variables
+  notes:
+    - "The following variables are exposed,
+       allowing you to easily override them before compiling.
+       Most mixins allows you to further override these values by passing them
+       arguments."
+  family: cf-grid
+  patterns:
+    - codenotes:
+        - "@grid_box-sizing-polyfill-path: '../../box-sizing-polyfill;"
+      notes:
+        - "The path where boxsizing.htc is located."
+        - "This path MUST be overridden in your project and set to a root relative url."
+    - codenotes:
+        - "@grid_wrapper-width: 1200px;"
+      notes:
+        - "The grid's maximum width in px."
+    - codenotes:
+        - "@grid_gutter-width: 30px;"
+      notes:
+        - "The fixed width between columns."
+    - codenotes:
+        - "@grid_total-columns: 12;"
+      notes:
+        - "The total number of columns used in calculating column widths."
+    - codenotes:
+        - "@grid_debug"
+      notes:
+        - "Gives column blocks a background color if set to true."
+  tags:
+    - cf-grid
+*/
+/* topdoc
+  name: Wrapper
+  notes:
+    - "Wrappers are centered containers with a max-width and fixed gutters
+       that match the gutter widths of columns."
+    - "To support IE 6/7, ensure that the path to boxsizing.htc is set using
+       the @grid_box-sizing-polyfill-path Less variable.
+       Read more: https://github.com/Schepp/box-sizing-polyfill."
+  family: cf-grid
+  patterns:
+    - name: Less mixin
+      codenotes:
+        - ".grid_wrapper( @grid_wrapper-width: @grid_wrapper-width )"
+      notes:
+        - "You can create wrappers with different max-widths by passing a pixel
+           value into the mixin."
+    - name: Usage
+      codenotes:
+        - |
+          .main-wrapper {
+            .grid_wrapper();
+          }
+          .wide-wrapper {
+            .grid_wrapper( 1900px );
+          }
+        - |
+          <div class="main-wrapper">
+              This container now has left and right padding and a centered max width.
+          </div>
+          <div class="wide-wrapper">
+              This container is the same except it has a wider max-width.
+          </div>
+  tags:
+    - cf-grid
+*/
+/* topdoc
+  name: Columns
+  family: cf-grid
+  patterns:
+    - name: Less mixin
+      codenotes:
+        - ".grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 )"
+      notes:
+        - "Computes column widths and prefix/suffix padding."
+        - "CSS borders are used for fixed gutters."
+    - name: Usage
+      codenotes:
+        - |
+          .main-wrapper {
+            .grid_wrapper();
+          }
+          .half {
+            .grid_column(1, 2);
+          }
+        - |
+          <div class="main-wrapper">
+              <div class="half">I am half of my parent.</div>
+              <div class="half">I am half of my parent.</div>
+          </div>
+    - name: This is a placeholder for documenting prefix and suffix
+      codenotes:
+        - "..."
+  tags:
+    - cf-grid
+*/
+/* topdoc
+  name: Push and Pull mixins for source ordering
+  family: cf-grid
+  patterns:
+    - codenotes:
+        - ".push( @offset: 1, @grid_total-columns: @grid_total-columns )"
+        - ".pull( @offset: 1, @grid_total-columns: @grid_total-columns )"
+    - name: Usage
+      codenotes:
+        - |
+          .first {
+            .grid_column(1, 2);
+            .grid_pull(1);
+          }
+          .second {
+            .grid_column(1, 2);
+            .grid_push(1);
+          }
+        - |
+          <div>
+              <div class="second">I am first in the markup but appear after .first.</div>
+              <div class="first">I am second in the markup but appear before .second.</div>
+          </div>
+  tags:
+    - cf-grid
+*/
+/* topdoc
+  name: Nested columns
+  notes:
+    - "Since all cf-grid columns have left and right gutters you will notice
+      undesireable offsetting when nesting columns.
+      Normally this is removed with complex selectors or by adding classes
+      to the first and last column per 'row'.
+      In cf-grid the way to get around this is by wrapping your columns in a
+      container that utilizes the .grid_nested-col-group() mixin.
+      This mixin uses negative left and right margins to pull the columns back
+      into alignment with parent columns."
+    - "NOTE: Working this way allows you to easily create responsive grids.
+      You are free to control the number of columns per 'row' without having
+      to deal with the first and last columns of each row."
+    - "NOTE: cf-grids does not use 'rows' and there is no row container.
+      To clarify, if you have a 12 column grid and place 24 columns inside
+      of a wrapper cf-grid columns will automaitcally stack into 2 'rows'
+      of 12."
+  family: cf-grid
+  patterns:
+    - name: Less mixin
+      codenotes:
+        - ".grid_nested-col-group()"
+    - name: Usage
+      codenotes:
+        - |
+          .main-wrapper {
+            .grid_wrapper();
+          }
+          .cols {
+            .grid_nested-col-group();
+          }
+          .half {
+            .grid_column(1, 2);
+          }
+        - |
+          <div class="main-wrapper">
+              <div class="half">
+                  <div class="cols">
+                      <div class="half"></div>
+                      <div class="half"></div>
+                  </div>
+              </div>
+              <div class="half">
+                  <div class="cols">
+                      <div class="half"></div>
+                      <div class="half"></div>
+                  </div>
+              </div>
+          </div>
+  tags:
+    - cf-grid
+*/
 /* topdoc
   name: EOF
   eof: true
@@ -10865,9 +10898,6 @@ button.expandable_header {
    ========================================================================== */
 /* cf-typography
    ========================================================================== */
-.error + .cf-form_input-icon {
-  color: "#d12124";
-}
 /* ==========================================================================
 	 CFPB Design Manual
 	 Header
@@ -12985,4 +13015,120 @@ body {
 .cf {
   /* For IE 6/7 (trigger hasLayout) */
   zoom: 1;
+}
+.cf-input_input {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.cf-input_checkbox,
+.cf-input_radio {
+  box-sizing: border-box;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: 1;
+  width: 1.25em;
+  height: 1.25em;
+  background: #ffffff;
+  outline: 1px solid #919395;
+}
+.cf-input_radio {
+  border-radius: 100%;
+  outline: none;
+  box-shadow: 0px 0px 0px 1px #919395;
+}
+.lt-ie9 .cf-input_radio {
+  outline: 1px solid #919395;
+}
+.cf-input_label {
+  position: relative;
+  z-index: 2;
+  padding-left: 1.375em;
+  margin-right: 0.375em;
+  line-height: 1;
+}
+.cf-input_text {
+  display: inline-block;
+  padding-left: 0.5em;
+  line-height: 1.375;
+}
+:hover + .cf-input_checkbox,
+:hover + .cf-input_radio,
+:focus + .cf-input_checkbox,
+:focus + .cf-input_radio,
+.focus + .cf-input_checkbox,
+.focus + .cf-input_radio {
+  border-color: #ffffff;
+  outline: 2px solid #0072ce;
+}
+:checked + .cf-input_checkbox,
+:checked + .cf-input_radio {
+  background-color: #0072ce;
+  border: 3px solid #ffffff;
+  outline: 1px solid #0072ce;
+}
+:checked + .cf-input_radio {
+  outline: none;
+  box-shadow: 0px 0px 0px 1px #0072ce;
+}
+.lt-ie9 :checked + .cf-input_radio {
+  outline: 1px solid #0072ce;
+}
+:hover + .cf-input_radio,
+:focus + .cf-input_radio,
+.focus + .cf-input_radio {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #0072ce;
+}
+.lt-ie9 :hover + .cf-input_radio,
+.lt-ie9 :focus + .cf-input_radio,
+.lt-ie9 .focus + .cf-input_radio {
+  outline: 2px solid #0072ce;
+}
+[disabled="true"] + .cf-input_radio {
+  box-shadow: 0px 0px 0px 1px #babbbd;
+  background-color: #75787b;
+  cursor: default;
+}
+.lt-ie9 [disabled="true"] + .cf-input_radio {
+  outline: 1px solid #babbbd;
+}
+.form-l-inset {
+  border-right-width: 2.5px;
+}
+.form-l-inset + .form-l-inset {
+  border-left-width: 2.5px;
+}
+.form-l-inset:last-child {
+  border-right-width: 15px;
+}
+.form-l-inset .form-l-inset_container {
+  padding: 0.9375em 0.9375em;
+  background: #e3e4e5;
+}
+.form-l-inset .form-l-inset_container.is-checked,
+:checked + .form-l-inset .form-l-inset_container {
+  background-color: #cce3f5;
+  outline: 2px solid #0072ce;
+}
+.form-l-inset .form-l-inset_container.is-hovered,
+.form-l-inset .form-l-inset_container:hover,
+.form-l-inset .form-l-inset_container:focus,
+:hover + .form-l-inset .form-l-inset_container,
+:focus + .form-l-inset .form-l-inset_container,
+.focus + .form-l-inset .form-l-inset_container {
+  cursor: pointer;
+  outline: 2px solid #0072ce;
+}
+.form-l-inset .form-l-inset_container.is-hovered label,
+.form-l-inset .form-l-inset_container:hover label,
+.form-l-inset .form-l-inset_container:focus label,
+:hover + .form-l-inset .form-l-inset_container label,
+:focus + .form-l-inset .form-l-inset_container label,
+.focus + .form-l-inset .form-l-inset_container label {
+  cursor: pointer;
 }

@@ -460,7 +460,7 @@ Use after validating on the server side to call out input errors preventing form
             <li><a href="#">Describe what happened so we can understand the issue...</a></li>
         </ul>
     </div>
-  </div>
+</div>
 {:/nomarkdown}
 
 </div> 
@@ -647,6 +647,11 @@ For screen readers, be aware that there are some issues with voiceover reading r
     <input class="custom-input custom-input_input" type="radio" name="custom-input-example">
     <span class="custom-input_radio"></span>
 </label>
+<label class="cf-input_label">
+    <span class="cf-input_text">Option 1</span>
+    <input class="cf-input cf-input_input" type="radio" name="cf-input-example_default">
+    <span class="cf-input_radio"></span>
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -673,6 +678,11 @@ For screen readers, be aware that there are some issues with voiceover reading r
     <input class="custom-input custom-input_input" type="radio" name="custom-input-example">
     <span class="custom-input_radio"></span>
 </label>
+<label class="cf-input_label">
+    <span class="cf-input_text">Option 1</span>
+    <input class="cf-input cf-input_input" type="radio" name="cf-input-example_selected" checked="checked">
+    <span class="cf-input_radio"></span>
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -694,6 +704,11 @@ For screen readers, be aware that there are some issues with voiceover reading r
     <span class="custom-input_text">Option 1</span>
     <input class="custom-input custom-input_input" type="radio" name="custom-input-example">
     <span class="custom-input_radio"></span>
+</label>
+<label class="cf-input_label">
+    <span class="cf-input_text">Option 1</span>
+    <input class="cf-input cf-input_input focus" type="radio" name="cf-input-example_hovered" checked="checked">
+    <span class="cf-input_radio"></span>
 </label>
 {:/nomarkdown}
 
@@ -719,8 +734,11 @@ Where possible, use progressive disclosure instead.
     <input class="custom-input custom-input_input" type="radio" name="custom-input-example" disabled="true">
     <span class="custom-input_radio"></span>
 </label>
-<input class="success" type="text" value="Validated input" title="Test input">
-<span class="cf-form_input-icon cf-icon cf-icon-approved-round"></span>
+<label class="cf-input_label">
+    <span class="cf-input_text">Option 1</span>
+    <input class="cf-input cf-input_input" type="radio" name="cf-input-example_disabled" disabled="true">
+    <span class="cf-input_radio"></span>
+</label>
 {:/nomarkdown}
 
 </div> 
@@ -770,6 +788,19 @@ Radio button:
         </div>
     </div>
 </div>
+<div class="form-l">
+    <div class="form-l_col form-l-inset">
+        <div class="form-l-inset_container">
+            <label class="cf-input_label">
+                <span class="cf-input_text">I am awesome</span>
+                <input class="cf-input cf-input_input" type="radio" name="cf-input-example_default-inset">
+                <span class="cf-input_radio"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+
 {:/nomarkdown}
 
 </div> 
@@ -804,6 +835,18 @@ Radio button:
         </div>
     </div>
 </div>    
+
+<div class="form-l">
+    <div class="form-l_col form-l-inset">
+        <div class="form-l-inset_container">
+            <label class="cf-input_label">
+                <span class="cf-input_text">Option 1</span>
+                <input class="cf-input cf-input_input" type="radio" name="cf-input-example_selected-inset" checked="checked">
+                <span class="cf-input_radio"></span>
+            </label>
+        </div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div> 
@@ -837,6 +880,18 @@ Radio button:
         </div>
     </div>
 </div>    
+
+<div class="form-l">
+    <div class="form-l_col form-l-inset">
+        <div class="form-l-inset_container">
+            <label class="cf-input_label">
+                <span class="cf-input_text">Option 1</span>
+                <input class="cf-input cf-input_input focus" type="radio" name="cf-input-example_hovered-inset" checked="checked">
+                <span class="cf-input_radio"></span>
+            </label>
+        </div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div> 
