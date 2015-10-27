@@ -714,8 +714,14 @@ input[type="radio"] {
           @base-font-size-px
           @base-line-height-px
           @base-line-height
-          @mobile-max
-          @tablet-min
+          @bp-xs-max
+          @bp-sm-min
+          @bp-sm-max
+          @bp-med-min
+          @bp-med-max
+          @bp-lg-min
+          @bp-lg-max
+          @bp-xl-min
     - name: Colors
       codenotes:
         - |
@@ -728,6 +734,7 @@ input[type="radio"] {
           @link-underline-hover
           @link-text-active
           @link-underline-active
+          @table-border
           @thead-text
           @thead-bg
           @td-bg
@@ -1567,28 +1574,28 @@ body {
 }
 
 h1,
-.h1,
 h2,
-.h2,
 h3,
-.h3 {
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1,
+.h1 {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  margin-bottom: 0.47058824em;
+  font-size: 2.125em;
+  line-height: 1.29411765;
 }
 
 h1 em,
 .h1 em,
-h2 em,
-.h2 em,
-h3 em,
-.h3 em,
 h1 i,
-.h1 i,
-h2 i,
-.h2 i,
-h3 i,
-.h3 i {
+.h1 i {
   font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
@@ -1596,31 +1603,15 @@ h3 i,
 
 .lt-ie9 h1 em,
 .lt-ie9 .h1 em,
-.lt-ie9 h2 em,
-.lt-ie9 .h2 em,
-.lt-ie9 h3 em,
-.lt-ie9 .h3 em,
 .lt-ie9 h1 i,
-.lt-ie9 .h1 i,
-.lt-ie9 h2 i,
-.lt-ie9 .h2 i,
-.lt-ie9 h3 i,
-.lt-ie9 .h3 i {
+.lt-ie9 .h1 i {
   font-style: normal !important;
 }
 
 h1 strong,
 .h1 strong,
-h2 strong,
-.h2 strong,
-h3 strong,
-.h3 strong,
 h1 b,
-.h1 b,
-h2 b,
-.h2 b,
-h3 b,
-.h3 b {
+.h1 b {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1628,51 +1619,102 @@ h3 b,
 
 .lt-ie9 h1 strong,
 .lt-ie9 .h1 strong,
-.lt-ie9 h2 strong,
-.lt-ie9 .h2 strong,
-.lt-ie9 h3 strong,
-.lt-ie9 .h3 strong,
 .lt-ie9 h1 b,
-.lt-ie9 .h1 b,
-.lt-ie9 h2 b,
-.lt-ie9 .h2 b,
-.lt-ie9 h3 b,
-.lt-ie9 .h3 b {
+.lt-ie9 .h1 b {
   font-weight: normal !important;
-}
-
-h1,
-.h1 {
-  margin-top: 0;
-  margin-bottom: 0.47058824em;
-  font-size: 2.125em;
-  line-height: 1.29411765;
 }
 
 h2,
 .h2 {
-  margin-top: 0;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   margin-bottom: 0.73076923em;
   font-size: 1.625em;
   line-height: 1.26923077;
 }
 
+h2 em,
+.h2 em,
+h2 i,
+.h2 i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 h2 em,
+.lt-ie9 .h2 em,
+.lt-ie9 h2 i,
+.lt-ie9 .h2 i {
+  font-style: normal !important;
+}
+
+h2 strong,
+.h2 strong,
+h2 b,
+.h2 b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 h2 strong,
+.lt-ie9 .h2 strong,
+.lt-ie9 h2 b,
+.lt-ie9 .h2 b {
+  font-weight: normal !important;
+}
+
 h3,
 .h3 {
-  margin-top: 0;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   margin-bottom: 0.95454545em;
   font-size: 1.375em;
   line-height: 1.27272727;
 }
 
+h3 em,
+.h3 em,
+h3 i,
+.h3 i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 h3 em,
+.lt-ie9 .h3 em,
+.lt-ie9 h3 i,
+.lt-ie9 .h3 i {
+  font-style: normal !important;
+}
+
+h3 strong,
+.h3 strong,
+h3 b,
+.h3 b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 h3 strong,
+.lt-ie9 .h3 strong,
+.lt-ie9 h3 b,
+.lt-ie9 .h3 b {
+  font-weight: normal !important;
+}
+
 h4,
 .h4 {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
   line-height: 1.22222222;
 }
 
@@ -1682,47 +1724,52 @@ h4,
 }
 
 h5,
+.h5 {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+}
+
+.lt-ie9 h5,
+.lt-ie9 .h5 {
+  font-weight: normal !important;
+}
+
 h6,
-.h5,
 .h6 {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-
-.lt-ie9 h5,
-.lt-ie9 h6,
-.lt-ie9 .h5,
-.lt-ie9 .h6 {
-  font-weight: normal !important;
-}
-
-h5,
-.h5 {
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-}
-
-h6,
-.h6 {
-  margin-top: 0;
   margin-bottom: 0.41666667em;
   font-size: 0.75em;
   line-height: 1.83333333;
 }
 
+.lt-ie9 h6,
+.lt-ie9 .h6 {
+  font-weight: normal !important;
+}
+
 .subheader {
-  margin-top: 0;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-weight: 500;
   margin-bottom: 1.16666667em;
   font-size: 1.125em;
+  line-height: 1.22222222;
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.22222222;
+}
+
+.lt-ie9 .subheader {
+  font-weight: normal !important;
 }
 
 .subheader em,
@@ -1750,11 +1797,11 @@ h6,
 }
 
 .superheader {
-  margin-bottom: 0.1875em;
-  font-size: 3em;
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
+  margin-bottom: 0.1875em;
+  font-size: 3em;
   line-height: 1.25;
 }
 
@@ -1956,52 +2003,22 @@ ul {
             </thead>
             <tbody>
                 <tr>
-                    <th>Row 1 header</th>
+                    <td>Row 1, column 1</td>
                     <td>Row 1, column 2</td>
                     <td>Row 1, column 3</td>
                 </tr>
                 <tr>
-                    <th>Row 2 header</th>
+                    <td>Row 2, column 1</td>
                     <td>Row 2, column 2</td>
                     <td>Row 2, column 3</td>
                 </tr>
                 <tr>
-                    <th>Row 3 header</th>
+                    <td>Row 3, column 1</td>
                     <td>Row 3, column 2</td>
                     <td>Row 3, column 3</td>
                 </tr>
             </tbody>
         </table>
-    - name: Compact table
-      markup: |
-        <table class="compact-table">
-            <thead>
-                <tr>
-                    <th>Column 1 header</th>
-                    <th>Column 2 header</th>
-                    <th>Column 3 header</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Row 1 header</th>
-                    <td>Row 1, column 2</td>
-                    <td>Row 1, column 3</td>
-                </tr>
-                <tr>
-                    <th>Row 2 header</th>
-                    <td>Row 2, column 2</td>
-                    <td>Row 2, column 3</td>
-                </tr>
-                <tr>
-                    <th>Row 3 header</th>
-                    <td>Row 3, column 2</td>
-                    <td>Row 3, column 3</td>
-                </tr>
-            </tbody>
-        </table>
-      notes:
-        - Reduces cell padding to 10px.
   tags:
     - cf-core
 */
@@ -2038,24 +2055,31 @@ table b {
 
 th,
 td {
-  padding: 0.75em 0.9375em;
-  background: #f8f8f8;
+  padding: 0.625em;
 }
 
 thead th,
 thead td {
   color: #ffffff;
   background: #43484e;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
 }
 
-tbody > tr:nth-child(odd) > th,
-tbody > tr:nth-child(odd) > td {
-  background: #f1f2f2;
+.lt-ie9 thead th,
+.lt-ie9 thead td {
+  font-weight: normal !important;
 }
 
-.compact-table th,
-.compact-table td {
-  padding: 0.4375em 0.625em;
+thead,
+tbody tr {
+  border-bottom: 1px solid #babbbd;
 }
 
 th {
@@ -2066,6 +2090,36 @@ th {
 }
 
 .lt-ie9 th {
+  font-weight: normal !important;
+}
+
+tbody th {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+tbody th em,
+tbody th i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 tbody th em,
+.lt-ie9 tbody th i {
+  font-style: normal !important;
+}
+
+tbody th strong,
+tbody th b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 tbody th strong,
+.lt-ie9 tbody th b {
   font-weight: normal !important;
 }
 
@@ -4691,15 +4745,15 @@ figure img {
 .btn {
   display: inline-block;
   box-sizing: border-box;
-  padding: 0.57142857em 1em;
+  padding: 0.5em 0.875em;
   border: 0;
-  border-radius: 0.28571429em;
+  border-radius: 0.25em;
   margin: 0;
   vertical-align: middle;
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
@@ -4741,7 +4795,7 @@ input.btn::-moz-focus-inner {
 }
 
 .btn + .btn {
-  margin-left: 0.42857143em;
+  margin-left: 0.375em;
 }
 
 .lt-ie8 {
@@ -4751,8 +4805,8 @@ input.btn::-moz-focus-inner {
 .lt-ie8 button.btn,
 .lt-ie8 input.btn {
   overflow: visible;
-  padding-top: 0.45714286em;
-  padding-bottom: 0.45714286em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 /* topdoc
@@ -5073,10 +5127,10 @@ input.btn::-moz-focus-inner {
 */
 
 .btn_icon__left {
-  padding: 0 0.75em 0 0;
+  padding: 0 0.65625em 0 0;
   border-right: 1px solid #ffffff;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
-  margin: 0 0.5em 0 0;
+  margin: 0 0.4375em 0 0;
 }
 
 .btn__secondary .btn_icon__left {
@@ -5096,11 +5150,11 @@ input.btn::-moz-focus-inner {
 }
 
 .btn_icon__right {
-  padding: 0 0 0 0.75em;
+  padding: 0 0 0 0.65625em;
   border-right: 0;
   border-left: 1px solid #ffffff;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
-  margin: 0 0 0 0.5em;
+  margin: 0 0 0 0.4375em;
 }
 
 .btn__secondary .btn_icon__right {
@@ -5177,7 +5231,7 @@ input.btn::-moz-focus-inner {
 .btn__grouped + .btn__grouped,
 .btn__grouped-last,
 .btn__grouped + .btn__grouped-last {
-  margin-left: -0.21428571em;
+  margin-left: -0.1875em;
 }
 
 .btn__grouped-first.btn__super + .btn__grouped.btn__super,
@@ -5352,7 +5406,7 @@ input.btn::-moz-focus-inner {
   padding: 0;
   border-bottom: 1px dotted #0072ce;
   border-radius: 0;
-  margin: 0.57142857em 0;
+  margin: 0.5em 0;
 }
 
 .btn__link,
@@ -5508,6 +5562,198 @@ input.btn::-moz-focus-inner {
 
 /* ==========================================================================
    Capital Framework
+   Grid mixins
+   ========================================================================== */
+
+/* topdoc
+  name: Less variables
+  notes:
+    - "The following variables are exposed,
+       allowing you to easily override them before compiling.
+       Most mixins allows you to further override these values by passing them
+       arguments."
+  family: cf-grid
+  patterns:
+    - codenotes:
+        - "@grid_box-sizing-polyfill-path: '../../box-sizing-polyfill;"
+      notes:
+        - "The path where boxsizing.htc is located."
+        - "This path MUST be overridden in your project and set to a root relative url."
+    - codenotes:
+        - "@grid_wrapper-width: 1200px;"
+      notes:
+        - "The grid's maximum width in px."
+    - codenotes:
+        - "@grid_gutter-width: 30px;"
+      notes:
+        - "The fixed width between columns."
+    - codenotes:
+        - "@grid_total-columns: 12;"
+      notes:
+        - "The total number of columns used in calculating column widths."
+    - codenotes:
+        - "@grid_debug"
+      notes:
+        - "Gives column blocks a background color if set to true."
+  tags:
+    - cf-grid
+*/
+
+/* topdoc
+  name: Wrapper
+  notes:
+    - "Wrappers are centered containers with a max-width and fixed gutters
+       that match the gutter widths of columns."
+    - "To support IE 6/7, ensure that the path to boxsizing.htc is set using
+       the @grid_box-sizing-polyfill-path Less variable.
+       Read more: https://github.com/Schepp/box-sizing-polyfill."
+  family: cf-grid
+  patterns:
+    - name: Less mixin
+      codenotes:
+        - ".grid_wrapper( @grid_wrapper-width: @grid_wrapper-width )"
+      notes:
+        - "You can create wrappers with different max-widths by passing a pixel
+           value into the mixin."
+    - name: Usage
+      codenotes:
+        - |
+          .main-wrapper {
+            .grid_wrapper();
+          }
+          .wide-wrapper {
+            .grid_wrapper( 1900px );
+          }
+        - |
+          <div class="main-wrapper">
+              This container now has left and right padding and a centered max width.
+          </div>
+          <div class="wide-wrapper">
+              This container is the same except it has a wider max-width.
+          </div>
+  tags:
+    - cf-grid
+*/
+
+/* topdoc
+  name: Columns
+  family: cf-grid
+  patterns:
+    - name: Less mixin
+      codenotes:
+        - ".grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 )"
+      notes:
+        - "Computes column widths and prefix/suffix padding."
+        - "CSS borders are used for fixed gutters."
+    - name: Usage
+      codenotes:
+        - |
+          .main-wrapper {
+            .grid_wrapper();
+          }
+          .half {
+            .grid_column(1, 2);
+          }
+        - |
+          <div class="main-wrapper">
+              <div class="half">I am half of my parent.</div>
+              <div class="half">I am half of my parent.</div>
+          </div>
+    - name: This is a placeholder for documenting prefix and suffix
+      codenotes:
+        - "..."
+  tags:
+    - cf-grid
+*/
+
+/* topdoc
+  name: Push and Pull mixins for source ordering
+  family: cf-grid
+  patterns:
+    - codenotes:
+        - ".push( @offset: 1, @grid_total-columns: @grid_total-columns )"
+        - ".pull( @offset: 1, @grid_total-columns: @grid_total-columns )"
+    - name: Usage
+      codenotes:
+        - |
+          .first {
+            .grid_column(1, 2);
+            .grid_pull(1);
+          }
+          .second {
+            .grid_column(1, 2);
+            .grid_push(1);
+          }
+        - |
+          <div>
+              <div class="second">I am first in the markup but appear after .first.</div>
+              <div class="first">I am second in the markup but appear before .second.</div>
+          </div>
+  tags:
+    - cf-grid
+*/
+
+/* topdoc
+  name: Nested columns
+  notes:
+    - "Since all cf-grid columns have left and right gutters you will notice
+      undesireable offsetting when nesting columns.
+      Normally this is removed with complex selectors or by adding classes
+      to the first and last column per 'row'.
+      In cf-grid the way to get around this is by wrapping your columns in a
+      container that utilizes the .grid_nested-col-group() mixin.
+      This mixin uses negative left and right margins to pull the columns back
+      into alignment with parent columns."
+    - "NOTE: Working this way allows you to easily create responsive grids.
+      You are free to control the number of columns per 'row' without having
+      to deal with the first and last columns of each row."
+    - "NOTE: cf-grids does not use 'rows' and there is no row container.
+      To clarify, if you have a 12 column grid and place 24 columns inside
+      of a wrapper cf-grid columns will automaitcally stack into 2 'rows'
+      of 12."
+  family: cf-grid
+  patterns:
+    - name: Less mixin
+      codenotes:
+        - ".grid_nested-col-group()"
+    - name: Usage
+      codenotes:
+        - |
+          .main-wrapper {
+            .grid_wrapper();
+          }
+          .cols {
+            .grid_nested-col-group();
+          }
+          .half {
+            .grid_column(1, 2);
+          }
+        - |
+          <div class="main-wrapper">
+              <div class="half">
+                  <div class="cols">
+                      <div class="half"></div>
+                      <div class="half"></div>
+                  </div>
+              </div>
+              <div class="half">
+                  <div class="cols">
+                      <div class="half"></div>
+                      <div class="half"></div>
+                  </div>
+              </div>
+          </div>
+  tags:
+    - cf-grid
+*/
+
+/* topdoc
+  name: EOF
+  eof: true
+*/
+
+/* ==========================================================================
+   Capital Framework
    Form Element Styling
    ========================================================================== */
 
@@ -5552,7 +5798,6 @@ input.btn::-moz-focus-inner {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -5977,7 +6222,7 @@ textarea.success {
 .btn-inside-input input[type="number"] {
   box-sizing: border-box;
   width: 100%;
-  padding-right: 4.64285714em;
+  padding-right: 4.0625em;
 }
 
 .btn-inside-input input[type="text"].input__super,
@@ -5992,7 +6237,7 @@ textarea.success {
 .btn-inside-input .btn {
   border-bottom-width: 0 !important;
   position: absolute;
-  right: 1.07142857em;
+  right: 0.9375em;
   top: 0;
   /* pa11y fails unless the background color is explicitly set */
 }
@@ -6004,198 +6249,6 @@ textarea.success {
 .btn-inside-input .btn__link.btn__secondary {
   background-color: #fff;
 }
-
-/* topdoc
-  name: EOF
-  eof: true
-*/
-
-/* ==========================================================================
-   Capital Framework
-   Grid mixins
-   ========================================================================== */
-
-/* topdoc
-  name: Less variables
-  notes:
-    - "The following variables are exposed,
-       allowing you to easily override them before compiling.
-       Most mixins allows you to further override these values by passing them
-       arguments."
-  family: cf-grid
-  patterns:
-    - codenotes:
-        - "@grid_box-sizing-polyfill-path: '../../box-sizing-polyfill;"
-      notes:
-        - "The path where boxsizing.htc is located."
-        - "This path MUST be overridden in your project and set to a root relative url."
-    - codenotes:
-        - "@grid_wrapper-width: 1200px;"
-      notes:
-        - "The grid's maximum width in px."
-    - codenotes:
-        - "@grid_gutter-width: 30px;"
-      notes:
-        - "The fixed width between columns."
-    - codenotes:
-        - "@grid_total-columns: 12;"
-      notes:
-        - "The total number of columns used in calculating column widths."
-    - codenotes:
-        - "@grid_debug"
-      notes:
-        - "Gives column blocks a background color if set to true."
-  tags:
-    - cf-grid
-*/
-
-/* topdoc
-  name: Wrapper
-  notes:
-    - "Wrappers are centered containers with a max-width and fixed gutters
-       that match the gutter widths of columns."
-    - "To support IE 6/7, ensure that the path to boxsizing.htc is set using
-       the @grid_box-sizing-polyfill-path Less variable.
-       Read more: https://github.com/Schepp/box-sizing-polyfill."
-  family: cf-grid
-  patterns:
-    - name: Less mixin
-      codenotes:
-        - ".grid_wrapper( @grid_wrapper-width: @grid_wrapper-width )"
-      notes:
-        - "You can create wrappers with different max-widths by passing a pixel
-           value into the mixin."
-    - name: Usage
-      codenotes:
-        - |
-          .main-wrapper {
-            .grid_wrapper();
-          }
-          .wide-wrapper {
-            .grid_wrapper( 1900px );
-          }
-        - |
-          <div class="main-wrapper">
-              This container now has left and right padding and a centered max width.
-          </div>
-          <div class="wide-wrapper">
-              This container is the same except it has a wider max-width.
-          </div>
-  tags:
-    - cf-grid
-*/
-
-/* topdoc
-  name: Columns
-  family: cf-grid
-  patterns:
-    - name: Less mixin
-      codenotes:
-        - ".grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 )"
-      notes:
-        - "Computes column widths and prefix/suffix padding."
-        - "CSS borders are used for fixed gutters."
-    - name: Usage
-      codenotes:
-        - |
-          .main-wrapper {
-            .grid_wrapper();
-          }
-          .half {
-            .grid_column(1, 2);
-          }
-        - |
-          <div class="main-wrapper">
-              <div class="half">I am half of my parent.</div>
-              <div class="half">I am half of my parent.</div>
-          </div>
-    - name: This is a placeholder for documenting prefix and suffix
-      codenotes:
-        - "..."
-  tags:
-    - cf-grid
-*/
-
-/* topdoc
-  name: Push and Pull mixins for source ordering
-  family: cf-grid
-  patterns:
-    - codenotes:
-        - ".push( @offset: 1, @grid_total-columns: @grid_total-columns )"
-        - ".pull( @offset: 1, @grid_total-columns: @grid_total-columns )"
-    - name: Usage
-      codenotes:
-        - |
-          .first {
-            .grid_column(1, 2);
-            .grid_pull(1);
-          }
-          .second {
-            .grid_column(1, 2);
-            .grid_push(1);
-          }
-        - |
-          <div>
-              <div class="second">I am first in the markup but appear after .first.</div>
-              <div class="first">I am second in the markup but appear before .second.</div>
-          </div>
-  tags:
-    - cf-grid
-*/
-
-/* topdoc
-  name: Nested columns
-  notes:
-    - "Since all cf-grid columns have left and right gutters you will notice
-      undesireable offsetting when nesting columns.
-      Normally this is removed with complex selectors or by adding classes
-      to the first and last column per 'row'.
-      In cf-grid the way to get around this is by wrapping your columns in a
-      container that utilizes the .grid_nested-col-group() mixin.
-      This mixin uses negative left and right margins to pull the columns back
-      into alignment with parent columns."
-    - "NOTE: Working this way allows you to easily create responsive grids.
-      You are free to control the number of columns per 'row' without having
-      to deal with the first and last columns of each row."
-    - "NOTE: cf-grids does not use 'rows' and there is no row container.
-      To clarify, if you have a 12 column grid and place 24 columns inside
-      of a wrapper cf-grid columns will automaitcally stack into 2 'rows'
-      of 12."
-  family: cf-grid
-  patterns:
-    - name: Less mixin
-      codenotes:
-        - ".grid_nested-col-group()"
-    - name: Usage
-      codenotes:
-        - |
-          .main-wrapper {
-            .grid_wrapper();
-          }
-          .cols {
-            .grid_nested-col-group();
-          }
-          .half {
-            .grid_column(1, 2);
-          }
-        - |
-          <div class="main-wrapper">
-              <div class="half">
-                  <div class="cols">
-                      <div class="half"></div>
-                      <div class="half"></div>
-                  </div>
-              </div>
-              <div class="half">
-                  <div class="cols">
-                      <div class="half"></div>
-                      <div class="half"></div>
-                  </div>
-              </div>
-          </div>
-  tags:
-    - cf-grid
-*/
 
 /* topdoc
   name: EOF
@@ -8128,7 +8181,6 @@ textarea.success {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin-top: 0;
   margin-bottom: 0.95454545em;
   font-size: 1.375em;
   line-height: 1.27272727;
@@ -8166,7 +8218,6 @@ textarea.success {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -8181,7 +8232,6 @@ textarea.success {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin-top: 0;
   margin-bottom: 0.73076923em;
   font-size: 1.625em;
   line-height: 1.26923077;
@@ -8341,7 +8391,6 @@ textarea.success {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -8379,12 +8428,11 @@ textarea.success {
 */
 
 .category-slug {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
   line-height: 1.22222222;
   display: inline-block;
   margin-bottom: 0.44444444em;
@@ -8455,7 +8503,6 @@ a.category-slug.active {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -8495,7 +8542,6 @@ a.category-slug.active {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -8541,7 +8587,6 @@ a.category-slug.active {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -9872,8 +9917,8 @@ input[type="text"].pagination_current-page {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 0.875em;
-  line-height: 1.57142857;
+  font-size: 1em;
+  line-height: 1.375;
 }
 
 .expandable_link em,
@@ -10300,7 +10345,6 @@ button.expandable_header {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -10318,12 +10362,11 @@ button.expandable_header {
 }
 
 .expandable-group .expandable_label {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
   line-height: 1.22222222;
   margin-bottom: 0;
 }
@@ -11279,7 +11322,6 @@ figure {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
