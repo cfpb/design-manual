@@ -5,6 +5,7 @@ category: Visual identity
 published: true
 ---
 
+
 - [Typefaces](#typefaces)
 - [Web hierarchy](#web-hierarchy)
 - [Web typesetting](#typesetting-for-readability)
@@ -128,7 +129,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Display
 
 * Avenir Next Demi Bold
-* 48 px
+* 48 px / 60 px
 
 </div>
 
@@ -145,7 +146,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Header 1
 
 * Avenir Next Regular
-* 34 px
+* 34 px / 42 px
 
 </div>
 
@@ -162,7 +163,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Header 2
 
 * Avenir Next Regular
-* 26 px
+* 26 px / 32 px
 
 </div>
 
@@ -179,7 +180,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Header 3
 
 * Avenir Next Regular
-* 22 px
+* 22 px / 28 px
 
 </div>
 
@@ -196,7 +197,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Header 4
 
 * Avenir Next Medium
-* 18 px
+* 18 px / 22 px
 
 </div>
 
@@ -213,7 +214,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Header 5
 
 * Avenir Next Demi Bold
-* 14 px, 1 px letter spacing
+* 14 px / 18 px, 1 px letter spacing
 * All caps
 
 </div>
@@ -231,7 +232,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Header 6
 
 * Avenir Next Demi Bold
-* 12 px, 1 px letter spacing
+* 12 px / 15 px, 1 px letter spacing
 * All caps
 
 </div>
