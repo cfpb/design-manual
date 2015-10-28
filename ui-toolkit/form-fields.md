@@ -800,7 +800,17 @@ Radio button:
     </div>
 </div>
 
-
+<div class="form-l">
+    <div class="form-l_col form-l-inset">
+        <div class="form-l-inset_container">
+            <input class="cf-input cf-input_input" type="radio" name="cf-input-example_default-inset" id="cf-input-example_default-inset">
+            <label class="cf-input_label" for="cf-input-example_default-inset">
+                <span class="cf-input_text">Default radio button state</span>
+            </label>
+            <span class="cf-input_radio"></span>
+        </div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div> 
@@ -838,12 +848,24 @@ Radio button:
 
 <div class="form-l">
     <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container">
+        <div class="form-l-inset_container selected">
             <label class="cf-input_label">
                 <span class="cf-input_text">Option 1</span>
                 <input class="cf-input cf-input_input" type="radio" name="cf-input-example_selected-inset" checked="checked">
                 <span class="cf-input_radio"></span>
             </label>
+        </div>
+    </div>
+</div>
+
+<div class="form-l">
+    <div class="form-l_col form-l-inset">
+        <div class="form-l-inset_container">
+            <input class="cf-input cf-input_input" type="radio" name="cf-input-example_selected-inset" checked="checked" id="cf-input-example_selected-inset">
+            <label class="cf-input_label" for="cf-input-example_selected-inset">
+                <span class="cf-input_text">Selected state</span>
+            </label>
+            <span class="cf-input_radio"></span>
         </div>
     </div>
 </div>
@@ -883,12 +905,24 @@ Radio button:
 
 <div class="form-l">
     <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container">
+        <div class="form-l-inset_container focus">
             <label class="cf-input_label">
                 <span class="cf-input_text">Option 1</span>
-                <input class="cf-input cf-input_input focus" type="radio" name="cf-input-example_hovered-inset" checked="checked">
+                <input class="cf-input cf-input_input focus" type="radio" name="cf-input-example_hovered-inset">
                 <span class="cf-input_radio"></span>
             </label>
+        </div>
+    </div>
+</div>
+
+<div class="form-l">
+    <div class="form-l_col form-l-inset">
+        <div class="form-l-inset_container focus">
+            <input class="cf-input cf-input_input focus" type="radio" name="cf-input-example_hover-inset" id="cf-input-example_hover-inset">
+            <label class="cf-input_label" for="cf-input-example_hover-inset">
+                <span class="cf-input_text">Option 1</span>
+            </label>
+            <span class="cf-input_radio"></span>
         </div>
     </div>
 </div>
