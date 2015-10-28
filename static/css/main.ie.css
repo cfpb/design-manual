@@ -5561,1373 +5561,6 @@ input.btn::-moz-focus-inner {
 
 /* ==========================================================================
    Capital Framework
-   Advanced Typography
-   ========================================================================== */
-
-/* topdoc
-  name: Theme variables
-  family: cf-typography
-  notes:
-    - "The following color and sizing variables are exposed, allowing you to
-       easily override them before compiling."
-  patterns:
-  - name: Colors
-    codenotes:
-      - |
-        @pull-quote_body
-        @pull-quote_citation
-        @micro-copy-text
-        @date-text
-        @category-slug-text
-        @category-slug-hover
-        @header-slug-thin-border
-        @header-slug-thick-border
-        @padded-header-text
-        @padded-header-bg
-        @padded-header-border
-        @fancy-slug-text
-        @fancy-slug-bg
-        @fancy-slug-border
-        @meta-header-border
-        @jump-link__bg
-        @jump-link__bg-border
-        @list__branded-bullet
-  - name: Sizing
-    codenotes:
-      - |
-        @...
-  tags:
-  - cf-typography
-  - less
-*/
-
-/* topdoc
- name: Pull quote
- family: cf-typography
- patterns:
-   - name: Default pull quote
-     markup: |
-       <aside class="pull-quote">
-           <div class="pull-quote_body">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Cum corrupti tempora nam nihil qui mollitia consectetur
-               corporis nemo culpa dolorum!
-           </div>
-           <footer>
-               <cite class="pull-quote_citation">
-                   - Author Name
-               </cite>
-           <footer>
-       </aside>
-     notes:
-       - "Use a pull quote to highlight excerpts from the current work.
-         This is not to be confused with blockquote which quotes from an
-         external work."
-       - "Since a pull quote is an excerpt and repeats content from the
-         article it's contained within you should use the aside element."
-   - name: Large pull quote
-     markup: |
-       <aside class="pull-quote pull-quote__large">
-           <div class="pull-quote_body">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Cum corrupti tempora nam nihil qui mollitia consectetur
-               corporis nemo culpa dolorum!
-           </div>
-           <footer>
-               <cite class="pull-quote_citation">
-                   - Author Name
-               </cite>
-           <footer>
-       </aside>
- tags:
-   - cf-typography
-*/
-
-.pull-quote_body {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0.95454545em;
-  font-size: 1.375em;
-  line-height: 1.27272727;
-  margin-bottom: 0.54545455em;
-  color: #101820;
-}
-
-.pull-quote_body em,
-.pull-quote_body i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-
-.lt-ie9 .pull-quote_body em,
-.lt-ie9 .pull-quote_body i {
-  font-style: normal !important;
-}
-
-.pull-quote_body strong,
-.pull-quote_body b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.lt-ie9 .pull-quote_body strong,
-.lt-ie9 .pull-quote_body b {
-  font-weight: normal !important;
-}
-
-.pull-quote_citation {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  color: #75787b;
-}
-
-.lt-ie9 .pull-quote_citation {
-  font-weight: normal !important;
-}
-
-.pull-quote__large .pull-quote_body {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0.73076923em;
-  font-size: 1.625em;
-  line-height: 1.26923077;
-  margin-bottom: 0.69230769em;
-}
-
-.pull-quote__large .pull-quote_body em,
-.pull-quote__large .pull-quote_body i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-
-.lt-ie9 .pull-quote__large .pull-quote_body em,
-.lt-ie9 .pull-quote__large .pull-quote_body i {
-  font-style: normal !important;
-}
-
-.pull-quote__large .pull-quote_body strong,
-.pull-quote__large .pull-quote_body b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.lt-ie9 .pull-quote__large .pull-quote_body strong,
-.lt-ie9 .pull-quote__large .pull-quote_body b {
-  font-weight: normal !important;
-}
-
-/* topdoc
-  name: Micro copy
-  family: cf-typography
-  patterns:
-    - name: Standard micro copy
-      markup: |
-        <p class="micro-copy">
-            Lorem ipsum dolor sit amet
-        </p>
-      codenotes:
-        - .micro-copy
-    - name: Large micro copy
-      markup: |
-        <p class="micro-copy micro-copy__large">
-            Lorem ipsum dolor sit amet
-        </p>
-      codenotes:
-        - .micro-copy
-  tags:
-    - cf-typography
-*/
-
-.micro-copy {
-  color: #75787b;
-  font-size: 0.875em;
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.micro-copy em,
-.micro-copy i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-
-.lt-ie9 .micro-copy em,
-.lt-ie9 .micro-copy i {
-  font-style: normal !important;
-}
-
-.micro-copy strong,
-.micro-copy b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.lt-ie9 .micro-copy strong,
-.lt-ie9 .micro-copy b {
-  font-weight: normal !important;
-}
-
-.micro-copy__large {
-  font-size: 1em;
-}
-
-/* topdoc
-  name: Short description
-  family: cf-typography
-  patterns:
-    - name: .short-desc
-      markup: |
-        <p class="short-desc">I am short description.</p>
-      codenotes:
-        - .short-desc
-    - name: .short-desc__large (modifier)
-      markup: |
-        <p class="short-desc short-desc__large">I am large short description.</p>
-      codenotes:
-        - .short-desc__large
-  tags:
-    - cf-typography
-*/
-
-.short-desc {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.short-desc em,
-.short-desc i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-
-.lt-ie9 .short-desc em,
-.lt-ie9 .short-desc i {
-  font-style: normal !important;
-}
-
-.short-desc strong,
-.short-desc b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.lt-ie9 .short-desc strong,
-.lt-ie9 .short-desc b {
-  font-weight: normal !important;
-}
-
-.short-desc__large {
-  font-size: 1.125em;
-}
-
-/* topdoc
-  name: Date
-  family: cf-typography
-  patterns:
-    - name: Default date
-      markup: |
-        <span class="date">
-            Nov 4, 2013
-        </span>
-  tags:
-    - cf-typography
-*/
-
-.date {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  color: #75787b;
-  white-space: nowrap;
-}
-
-.lt-ie9 .date {
-  font-weight: normal !important;
-}
-
-/* topdoc
-  name: Category slug
-  family: cf-typography
-  patterns:
-    - name: Default category slug
-      markup: |
-        <a href="#" class="category-slug">
-            <span class="category-slug_icon cf-icon cf-icon-dialogue"></span>
-            <span class="u-visually-hidden">Category:</span>
-            Consumer finance
-        </a>
-      codenotes:
-        - |
-          Structural cheat sheet:
-          -----------------------
-          .category-slug
-            .category-slug_icon
-            .u-visually-hidden
-      notes:
-        - "We suggest using a .u-visually-hidden element to add more context for
-          screen readers."
-  tags:
-    - cf-typography
-*/
-
-.category-slug {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.22222222;
-  display: inline-block;
-  margin-bottom: 0.44444444em;
-  color: #101820;
-}
-
-.lt-ie9 .category-slug {
-  font-weight: normal !important;
-}
-
-a.category-slug {
-  color: #101820;
-  border-color: #101820;
-}
-
-a.category-slug:visited,
-a.category-slug.visited {
-  border-color: #101820;
-  color: #101820;
-}
-
-a.category-slug:hover,
-a.category-slug.hover {
-  border-color: #7fb8e6;
-  color: #7fb8e6;
-}
-
-a.category-slug:focus,
-a.category-slug.focus {
-  border-color: #7fb8e6;
-  color: #7fb8e6;
-}
-
-a.category-slug:active,
-a.category-slug.active {
-  border-color: #101820;
-  color: #101820;
-}
-
-.category-slug_icon {
-  margin-right: 0.11111111em;
-}
-
-/* topdoc
-  name: Header slug
-  family: cf-typography
-  patterns:
-    - name: Default header slug
-      markup: |
-        <h2 class="header-slug">
-            <span class="header-slug_inner">
-                Blog summary
-            </span>
-        </h2>
-      codenotes:
-        - |
-          Structural cheat sheet:
-          -----------------------
-          .header-slug
-            .header-slug_inner
-  tags:
-    - cf-typography
-*/
-
-.header-slug {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  margin-bottom: 1.21428571em;
-  border-top: 1px solid #e3e4e5;
-}
-
-.lt-ie9 .header-slug {
-  font-weight: normal !important;
-}
-
-.header-slug_inner {
-  display: inline-block;
-  padding-top: 0.28571429em;
-  margin-top: -3px;
-  border-top: 5px solid #2cb34a;
-}
-
-/* topdoc
-  name: Padded header
-  family: cf-typography
-  patterns:
-    - name: Default padded header
-      markup: |
-        <h2 class="padded-header">
-            Header
-        </h2>
-      codenotes:
-        - .padded-header
-  tags:
-    - cf-typography
-*/
-
-.padded-header {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  padding: 0.57142857em 0.71428571em;
-  margin-bottom: 0;
-  border-bottom: 1px solid #babbbd;
-  background: #f1f2f2;
-  color: #43484e;
-}
-
-.lt-ie9 .padded-header {
-  font-weight: normal !important;
-}
-
-/* topdoc
-  name: Fancy slug
-  family: cf-typography
-  patterns:
-    - name: Default fancy slug
-      markup: |
-        <h2 class="fancy-slug">
-            <span class="fancy-slug_text">
-                <span class="fancy-slug_ribbon-left"></span>
-                Watchroom
-                <span class="fancy-slug_ribbon-right"></span>
-            </span>
-        </h2>
-      codenotes:
-        - |
-          Structural cheat sheet:
-          -----------------------
-          .fancy-slug
-            .fancy-slug_text
-                .fancy-slug_ribbon-left
-                .fancy-slug_ribbon-right
-  tags:
-    - cf-typography
-*/
-
-.fancy-slug {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-  position: relative;
-  height: 1.14285714em;
-  padding: 0 1.21428571em;
-  margin-top: 1.14285714em;
-  margin-bottom: 0.57142857em;
-  border-top: 1px solid #babbbd;
-  line-height: 1;
-  text-align: center;
-}
-
-.lt-ie9 .fancy-slug {
-  font-weight: normal !important;
-}
-
-.fancy-slug_text {
-  display: inline-block;
-  position: relative;
-  top: -1.14285714em;
-  padding: 0.57142857em 1.42857143em;
-  border: 1px solid #babbbd;
-  background: #ffffff;
-}
-
-.fancy-slug_ribbon-left,
-.fancy-slug_ribbon-right {
-  display: block;
-  position: absolute;
-  top: -1px;
-  width: 1.21428571em;
-  height: 100%;
-  border-top: 1px solid #babbbd;
-  border-bottom: 1px solid #babbbd;
-}
-
-.lt-ie9 .fancy-slug_ribbon-left,
-.lt-ie9 .fancy-slug_ribbon-right {
-  display: none;
-}
-
-.fancy-slug_ribbon-left:before,
-.fancy-slug_ribbon-right:before,
-.fancy-slug_ribbon-left:after,
-.fancy-slug_ribbon-right:after {
-  display: block;
-  content: "";
-  position: absolute;
-  z-index: 3;
-  width: 1.21428571em;
-  height: 50%;
-  background: #ffffff;
-  border: 0 solid #babbbd;
-}
-
-.fancy-slug_ribbon-left {
-  left: -1.21428571em;
-}
-
-.fancy-slug_ribbon-left:before {
-  top: 0;
-  border-left-width: 1px;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: skewX(33deg);
-  -ms-transform: skewX(33deg);
-  transform: skewX(33deg);
-}
-
-.fancy-slug_ribbon-left:after {
-  bottom: 0;
-  border-left-width: 1px;
-  -webkit-transform-origin: 0 100%;
-  -ms-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-  -webkit-transform: skewX(-33deg);
-  -ms-transform: skewX(-33deg);
-  transform: skewX(-33deg);
-}
-
-.fancy-slug_ribbon-right {
-  right: -1.21428571em;
-}
-
-.fancy-slug_ribbon-right:before {
-  top: 0;
-  right: 0;
-  border-right-width: 1px;
-  -webkit-transform-origin: 100% 0;
-  -ms-transform-origin: 100% 0;
-  transform-origin: 100% 0;
-  -webkit-transform: skewX(-33deg);
-  -ms-transform: skewX(-33deg);
-  transform: skewX(-33deg);
-}
-
-.fancy-slug_ribbon-right:after {
-  right: 0;
-  bottom: 0;
-  border-right-width: 1px;
-  -webkit-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-  -webkit-transform: skewX(33deg);
-  -ms-transform: skewX(33deg);
-  transform: skewX(33deg);
-}
-
-/* topdoc
-  name: Meta header
-  family: cf-typography
-  patterns:
-    - name: Default meta header
-      markup: |
-        <div class="meta-header">
-            <span class="meta-header_right date">
-                Nov 4, 2013
-            </span>
-            <a href="#" class="meta-header_left category-slug">
-                <span class="cf-icon cf-icon-credit-card"></span>
-                Consumer finance
-            </a>
-        </div>
-      codenotes:
-        - |
-          Structural cheat sheet:
-          -----------------------
-          .meta-header
-            .meta-header_right
-            .meta-header_left
-      notes:
-        - ".meta-header_right should come first in the markup so that when it
-          floats to the right it will appear on the same line as .meta-header_left."
-        - "Note that the example shows .meta-header_left using the
-          .category-slug pattern and .meta-header_right using the .date pattern
-          but you could use other patterns in place of them. Or you can even
-          swap them so that date is attached to .meta-header_left and
-          .category-slug is attacked to .meta-header_right."
-    - name: Alternate meta header arrangements
-      markup: |
-        <div class="meta-header">
-            <a href="#" class="meta-header_right category-slug">
-                <span class="cf-icon cf-icon-credit-card"></span>
-            </a>
-            <span class="meta-header_left date">
-                Nov 4, 2013
-            </span>
-        </div>
-        <br>
-        <div class="meta-header">
-            <a href="#" class="meta-header_left category-slug">
-                <span class="cf-icon cf-icon-credit-card"></span>
-                Consumer finance
-            </a>
-        </div>
-      notes:
-        - "Just some random variations to show off what you could do."
-  tags:
-    - cf-typography
-*/
-
-.meta-header {
-  padding-bottom: 0.5em;
-  margin-bottom: 0.625em;
-  border-bottom: 1px solid #babbbd;
-}
-
-.meta-header_left {
-  margin-bottom: 0;
-}
-
-.meta-header_right {
-  display: block;
-  margin-bottom: 0;
-}
-
-.meta-header_right {
-  float: right;
-  display: inline-block;
-}
-
-/* topdoc
-  name: Links with icons
-  family: cf-typography
-  notes:
-    - "Styles to enable adding an icon to a link and preventing the link's
-       underline from extending under the icon."
-    - "For the underlined icon prevention to work, you must wrap the link text
-       with a `span.icon-link_text`. There can be no whitespace between the text
-       and the opening and closing span tags."
-  patterns:
-    - name: Default link with icon
-      markup: |
-        <p>
-            For more information, email
-            <a class="icon-link icon-link__mail" href="#">
-                <span class="icon-link_text">john.smith@cfpb.gov</span>
-            </a>.
-            Alternatively, you can
-            <a class="icon-link icon-link__download" href="#">
-                <span class="icon-link_text">download the info sheet</span>
-            </a>.
-            Oh, you might also want to visit this
-            <a class="icon-link icon-link__external-link" href="#">
-                <span class="icon-link_text">other organization's website</span>
-            </a> for further details.
-        </p>
-        <a class="icon-link icon-link__right" href="#">
-            Visit another section of our site
-        </a>
-      notes:
-        - "The modifier names match the cf-icon names of commonly-used icons."
-        - "Icons appear to the right of a link, by default."
-    - name: Links with icons on the left (modifier)
-      markup: |
-        <a class="icon-link icon-link__mail icon-link__before" href="#">
-            <span class="icon-link_text">john.smith@cfpb.gov</span>
-        </a><br>
-        <a class="icon-link icon-link__phone icon-link__before" href="#">
-            (123) 456-7890
-        </a>
-      notes:
-        - "Simply add the `.icon-link__before` modifier to place the icon before
-           the link text."
-        - "You can omit the `span.icon-link_text` wrapper if you do not need
-           an underline on a particular link."
-    - name: Non-wrapping icon links
-      markup: |
-        <p>
-            For more information, email
-            <a class="icon-link icon-link__mail icon-link__no-wrap" href="#">
-                <span class="icon-link_text">john.smith@cfpb.gov</span>
-            </a>.
-        </p>
-      notes:
-        - "Warning: Icons added to inline links can sometimes break onto the
-           next line. If you want to prevent this, you can add the `__no-wrap`
-           modifier to `.icon-link`."
-  tags:
-    - cf-typography
-*/
-
-.icon-link {
-  border-bottom-width: 0;
-  position: relative;
-}
-
-.icon-link_text {
-  border-bottom-width: 1px;
-  border-bottom-style: inherit;
-}
-
-.icon-link:before,
-.icon-link:after {
-  font-family: 'CFPB Minicons';
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 1px;
-  margin-left: 1px;
-}
-
-.icon-link__download:after,
-.icon-link__download.icon-link__before:before {
-  content: "\e406";
-}
-
-.icon-link__email:after,
-.icon-link__email.icon-link__before:before {
-  content: "\e302";
-}
-
-.icon-link__external-link:after,
-.icon-link__external-link.icon-link__before:before {
-  content: "\e610";
-}
-
-.icon-link__fax:after,
-.icon-link__fax.icon-link__before:before {
-  content: "\e310";
-}
-
-.icon-link__left:after,
-.icon-link__left.icon-link__before:before {
-  content: "\e000";
-}
-
-.icon-link__mail:after,
-.icon-link__mail.icon-link__before:before {
-  content: "\e304";
-}
-
-.icon-link__pdf:after,
-.icon-link__pdf.icon-link__before:before {
-  content: "\e402";
-}
-
-.icon-link__pdf:after,
-.icon-link__pdf.icon-link__before:before {
-  content: "\e402";
-}
-
-.icon-link__phone:after,
-.icon-link__phone.icon-link__before:before {
-  content: "\e306";
-}
-
-.icon-link__right:after,
-.icon-link__right.icon-link__before:before {
-  content: "\e002";
-}
-
-.icon-link__before:after {
-  content: '';
-}
-
-.icon-link__no-wrap {
-  white-space: nowrap;
-}
-
-/* topdoc
-  name: Styled link
-  family: cf-typography
-  patterns:
-    - name: .styled-link
-      markup: |
-        <a class="styled-link" href="#">
-            Default styled link
-        </a>
-      codenotes:
-        - .styled-link
-  tags:
-    - cf-typography
-*/
-
-.styled-link {
-  border-bottom-width: 1px;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1em;
-}
-
-.lt-ie9 .styled-link {
-  font-weight: normal !important;
-}
-
-/* topdoc
-  name: Jump link
-  family: cf-typography
-  patterns:
-    - name: .jump-link
-      markup: |
-        <a class="jump-link" href="#">
-            <span class="jump-link_text">Default jump link</span>
-        </a>
-      codenotes:
-        - .jump-link
-    - name: .jump-link__large (modifier)
-      markup: |
-        <a class="jump-link jump-link__large" href="#">
-            <span class="jump-link_text">Large jump link</span>
-        </a>
-      codenotes:
-        - .jump-link__large
-      notes:
-        - "18px font-size, compared to the default of 16px"
-    - name: .jump-link__<icon> (modifier)
-      markup: |
-        <a class="jump-link jump-link__right" href="#">
-            <span class="jump-link_text">Jump link using the right icon from cf-icons</span>
-        </a>
-      codenotes:
-        - .jump-link__<icon>
-      notes:
-        - ".jump-link extends .icon-link, so all that is needed to add an icon
-           to a jump link is to add a modifier with the icon's name."
-    - name: .jump-link__before (modifier)
-      markup: |
-        <a class="jump-link jump-link__left jump-link__before" href="#">
-            <span class="jump-link_text">Jump link with icon on left</span>
-        </a>
-      codenotes:
-        - .jump-link__<icon>.jump-link__before
-      notes:
-        - "Jump links can also have icons before the text, like icon links."
-    - name: .jump-link__bg (modifier)
-      markup: |
-        <a class="jump-link jump-link__bg" href="#">
-            <span class="jump-link_text">Jump link with grey background and
-                solid borders on small screens</span>
-        </a>
-      codenotes:
-        - .jump-link__bg
-  tags:
-    - cf-typography
-*/
-
-.jump-link {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1em;
-  border-bottom-width: 0;
-  position: relative;
-}
-
-.lt-ie9 .jump-link {
-  font-weight: normal !important;
-}
-
-.jump-link_text {
-  border-bottom-width: 1px;
-  border-bottom-style: inherit;
-}
-
-.jump-link:before,
-.jump-link:after {
-  font-family: 'CFPB Minicons';
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 1px;
-  margin-left: 1px;
-}
-
-.jump-link__download:after,
-.jump-link__download.jump-link__before:before {
-  content: "\e406";
-}
-
-.jump-link__email:after,
-.jump-link__email.jump-link__before:before {
-  content: "\e302";
-}
-
-.jump-link__external-link:after,
-.jump-link__external-link.jump-link__before:before {
-  content: "\e610";
-}
-
-.jump-link__fax:after,
-.jump-link__fax.jump-link__before:before {
-  content: "\e310";
-}
-
-.jump-link__left:after,
-.jump-link__left.jump-link__before:before {
-  content: "\e000";
-}
-
-.jump-link__mail:after,
-.jump-link__mail.jump-link__before:before {
-  content: "\e304";
-}
-
-.jump-link__pdf:after,
-.jump-link__pdf.jump-link__before:before {
-  content: "\e402";
-}
-
-.jump-link__pdf:after,
-.jump-link__pdf.jump-link__before:before {
-  content: "\e402";
-}
-
-.jump-link__phone:after,
-.jump-link__phone.jump-link__before:before {
-  content: "\e306";
-}
-
-.jump-link__right:after,
-.jump-link__right.jump-link__before:before {
-  content: "\e002";
-}
-
-.jump-link__before:after {
-  content: '';
-}
-
-.jump-link__no-wrap {
-  white-space: nowrap;
-}
-
-.jump-link__large {
-  font-size: 1.125em;
-}
-
-/* topdoc
-  name: Block link
-  family: cf-typography
-  patterns:
-    - name: .block-link
-      markup: |
-        <a class="block-link" href="#">
-            Default block link
-        </a>
-      codenotes:
-        - .block-link
-      notes:
-        - "Convert a standard inline link to a block-level element with padding,
-           background, and borders."
-        - "Primarily used within a max-width 599px media query (see .jump-link
-           and .list__links)."
-  tags:
-    - cf-typography
-*/
-
-.block-link {
-  box-sizing: border-box;
-  display: block;
-  padding: 0.625em 1.25em 0.625em 0;
-  border: dotted #0072ce;
-  border-width: 1px 0;
-  margin-right: 0;
-  width: 100%;
-  text-align: left;
-}
-
-/* topdoc
-  name: Unstyled list modifier
-  family: cf-typography
-  patterns:
-    - name: Default example
-      markup: |
-        <ul class="list list__unstyled">
-            <li class="list_item">
-                <a class="list_link">List item 1</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link">List item 2</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link">List item 3</a>
-            </li>
-        </ul>
-      codenotes:
-        - .list.list__unstyled
-  tags:
-    - cf-typography
-*/
-
-.list__unstyled {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.list__unstyled .list_item {
-  margin-left: 0;
-}
-
-/* topdoc
-  name: Spaced list modifier
-  family: cf-typography
-  patterns:
-    - name: Default example
-      markup: |
-        <ul class="list list__spaced">
-            <li class="list_item">
-                <a class="list_link">List item 1</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link">List item 2</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link">List item 3</a>
-            </li>
-        </ul>
-      codenotes:
-        - .list.list__spaced
-  tags:
-    - cf-typography
-*/
-
-.list__spaced .list_item + .list_item {
-  margin-top: 1.5em;
-}
-
-/* topdoc
-  name: Spaced list item modifier
-  family: cf-typography
-  patterns:
-    - name: Default example
-      markup: |
-        <ul class="list">
-            <li class="list_item">
-                <a class="list_link">List item 1</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link">List item 2</a>
-            </li>
-            <li class="list_item list_item__spaced">
-                <a class="list_link">List item 3</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link">List item 4</a>
-            </li>
-        </ul>
-  tags:
-    - cf-typography
-*/
-
-.list_item__spaced {
-  margin-top: 1.5em;
-}
-
-/* topdoc
-  name: Horizontal list modifier
-  family: cf-typography
-  patterns:
-    - name: Default example
-      markup: |
-        <ul class="list list__horizontal">
-            <li class="list_item">
-                <a class="list_link">List item 1</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link">List item 2</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link">List item 3</a>
-            </li>
-        </ul>
-  tags:
-    - cf-typography
-*/
-
-.list__horizontal {
-  padding-left: 0;
-}
-
-.list__horizontal .list_item {
-  display: inline-block;
-}
-
-.lt-ie8 .list__horizontal .list_item {
-  display: inline;
-}
-
-.list__horizontal .list_item {
-  margin-right: 0.25em;
-  margin-left: 0;
-}
-
-/* topdoc
-  name: Icon list modifier
-  family: cf-typography
-  notes:
-    - "Set up a list with icons on the left, in place of bullets."
-    - "Will need some more work to allow lines to wrap."
-  patterns:
-    - name: Default example
-      markup: |
-        <ul class="list list__icons">
-            <li class="list_item">
-                <span class="cf-icon cf-icon-email list_icon"></span>
-                List item 1
-            </li>
-            <li class="list_item">
-                <span class="cf-icon cf-icon-phone list_icon"></span>
-                List item 1
-            </li>
-            <li class="list_item">
-                <span class="cf-icon cf-icon-fax list_icon"></span>
-                List item 1
-            </li>
-        </ul>
-  tags:
-    - cf-typography
-*/
-
-.list__icons {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.list__icons .list_item {
-  margin-left: 0;
-}
-
-.list__icons .list_icon {
-  width: 1.5em;
-  text-align: center;
-}
-
-/* topdoc
-  name: Link list modifier
-  family: cf-typography
-  notes:
-    - "The link list modifier is intended to be used for lists where each item
-      is a link. It converts to a finger-friendly link with a large tap area
-      on smaller screens."
-  patterns:
-    - name: Default example
-      markup: |
-        <ul class="list list__links">
-            <li class="list_item">
-                <a class="list_link" href="#">List item 1</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link" href="#">List item 2</a>
-            </li>
-            <li class="list_item">
-                <a class="list_link" href="#">List item 3</a>
-            </li>
-        </ul>
-    - name: Link list with icons
-      markup: |
-        <ul class="list list__links list__icons">
-            <li class="list_item">
-                <a class="list_link icon-link icon-link__before icon-link__email"
-                   href="#">
-                    <span class="icon-link_text">List item 1</span>
-                </a>
-            </li>
-            <li class="list_item">
-                <a class="list_link icon-link icon-link__before icon-link__phone"
-                   href="#">
-                    <span class="icon-link_text">List item 2</span>
-                </a>
-            </li>
-            <li class="list_item">
-                <a class="list_link icon-link icon-link__before icon-link__fax"
-                   href="#">
-                    <span class="icon-link_text">List item 3</span>
-                </a>
-            </li>
-        </ul>
-  tags:
-    - cf-typography
-*/
-
-.list__links {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.list__links .list_item {
-  margin-left: 0;
-}
-
-.list__links .list_item {
-  margin-bottom: 0.625em;
-}
-
-.list__links.list__spaced .list_item + .list_item {
-  margin-top: 0;
-}
-
-.list__links.list__icons .list_link {
-  position: relative;
-  left: -0.125em;
-}
-
-.list__links.list__icons .icon-link:before,
-.list__links.list__icons .icon-link:after {
-  width: 1.125em;
-  text-align: center;
-}
-
-/* topdoc
- name: Custom bullet mixin
- family: cf-typography
- patterns:
-   - name: Custom bullet
-     codenotes:
-       - ".custom-bullet(@text, @color, @offset, @size, @font, @type)"
-     notes:
-       - "Displays custom bullets to the left of specified elements as :before pseudo elements."
-       - "To use, pass this mixin values for the bullet to be displayed: text, color, font size,
-          and offset (distance away from the parent element the bullet should appear).
-          Font family parameter is optional and defaults to inherited."
-       - "Bullets are absolutely positioned outside of their parent's flow,
-          so they will not receive certain properties applied to the parent
-          (borders, text-decoration, etc)."
-       - "By default, custom bullets hang outside of their parent's content box
-          (in the margin or padding if there is any). If you want the bullets to align
-          with the left boundary of the parent's content box, give the parent a
-          left margin value equal to the offset."
- tags:
-   - cf-typography
-*/
-
-/* topdoc
- name: Branded list modifier
- family: cf-typography
- patterns:
-   - name: Branded list
-     markup: |
-       <ul class="list__branded">
-           <li>First item</li>
-           <li>Second item</li>
-           <li>Third item</li>
-       </ul>
-     codenotes:
-       - ".list__branded"
-     notes:
-       - "Uses .custom-bullet mixin to generate custom main-brand-color square bullets."
- tags:
-   - cf-typography
-*/
-
-.list__branded li,
-.list__branded .list_item {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  position: relative;
-}
-
-.list__branded li em,
-.list__branded .list_item em,
-.list__branded li i,
-.list__branded .list_item i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-
-.lt-ie9 .list__branded li em,
-.lt-ie9 .list__branded .list_item em,
-.lt-ie9 .list__branded li i,
-.lt-ie9 .list__branded .list_item i {
-  font-style: normal !important;
-}
-
-.list__branded li strong,
-.list__branded .list_item strong,
-.list__branded li b,
-.list__branded .list_item b {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-}
-
-.lt-ie9 .list__branded li strong,
-.lt-ie9 .list__branded .list_item strong,
-.lt-ie9 .list__branded li b,
-.lt-ie9 .list__branded .list_item b {
-  font-weight: normal !important;
-}
-
-.list__branded li:before,
-.list__branded .list_item:before {
-  content: "\25AA";
-  font-family: inherit;
-  font-size: 1.375em;
-  color: #2cb34a;
-  line-height: 1;
-  position: absolute;
-  left: -0.86363636em;
-}
-
-/* topdoc
-  name: EOF
-  eof: true
-*/
-
-/* ==========================================================================
-   Capital Framework
    Form Element Styling
    ========================================================================== */
 
@@ -10244,6 +8877,1373 @@ input[type=range].focus::-ms-thumb {
   display: block;
   background-color: #babbbd;
   margin-left: -30px;
+}
+
+/* topdoc
+  name: EOF
+  eof: true
+*/
+
+/* ==========================================================================
+   Capital Framework
+   Advanced Typography
+   ========================================================================== */
+
+/* topdoc
+  name: Theme variables
+  family: cf-typography
+  notes:
+    - "The following color and sizing variables are exposed, allowing you to
+       easily override them before compiling."
+  patterns:
+  - name: Colors
+    codenotes:
+      - |
+        @pull-quote_body
+        @pull-quote_citation
+        @micro-copy-text
+        @date-text
+        @category-slug-text
+        @category-slug-hover
+        @header-slug-thin-border
+        @header-slug-thick-border
+        @padded-header-text
+        @padded-header-bg
+        @padded-header-border
+        @fancy-slug-text
+        @fancy-slug-bg
+        @fancy-slug-border
+        @meta-header-border
+        @jump-link__bg
+        @jump-link__bg-border
+        @list__branded-bullet
+  - name: Sizing
+    codenotes:
+      - |
+        @...
+  tags:
+  - cf-typography
+  - less
+*/
+
+/* topdoc
+ name: Pull quote
+ family: cf-typography
+ patterns:
+   - name: Default pull quote
+     markup: |
+       <aside class="pull-quote">
+           <div class="pull-quote_body">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Cum corrupti tempora nam nihil qui mollitia consectetur
+               corporis nemo culpa dolorum!
+           </div>
+           <footer>
+               <cite class="pull-quote_citation">
+                   - Author Name
+               </cite>
+           <footer>
+       </aside>
+     notes:
+       - "Use a pull quote to highlight excerpts from the current work.
+         This is not to be confused with blockquote which quotes from an
+         external work."
+       - "Since a pull quote is an excerpt and repeats content from the
+         article it's contained within you should use the aside element."
+   - name: Large pull quote
+     markup: |
+       <aside class="pull-quote pull-quote__large">
+           <div class="pull-quote_body">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Cum corrupti tempora nam nihil qui mollitia consectetur
+               corporis nemo culpa dolorum!
+           </div>
+           <footer>
+               <cite class="pull-quote_citation">
+                   - Author Name
+               </cite>
+           <footer>
+       </aside>
+ tags:
+   - cf-typography
+*/
+
+.pull-quote_body {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.95454545em;
+  font-size: 1.375em;
+  line-height: 1.27272727;
+  margin-bottom: 0.54545455em;
+  color: #101820;
+}
+
+.pull-quote_body em,
+.pull-quote_body i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .pull-quote_body em,
+.lt-ie9 .pull-quote_body i {
+  font-style: normal !important;
+}
+
+.pull-quote_body strong,
+.pull-quote_body b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .pull-quote_body strong,
+.lt-ie9 .pull-quote_body b {
+  font-weight: normal !important;
+}
+
+.pull-quote_citation {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  color: #75787b;
+}
+
+.lt-ie9 .pull-quote_citation {
+  font-weight: normal !important;
+}
+
+.pull-quote__large .pull-quote_body {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.73076923em;
+  font-size: 1.625em;
+  line-height: 1.26923077;
+  margin-bottom: 0.69230769em;
+}
+
+.pull-quote__large .pull-quote_body em,
+.pull-quote__large .pull-quote_body i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .pull-quote__large .pull-quote_body em,
+.lt-ie9 .pull-quote__large .pull-quote_body i {
+  font-style: normal !important;
+}
+
+.pull-quote__large .pull-quote_body strong,
+.pull-quote__large .pull-quote_body b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .pull-quote__large .pull-quote_body strong,
+.lt-ie9 .pull-quote__large .pull-quote_body b {
+  font-weight: normal !important;
+}
+
+/* topdoc
+  name: Micro copy
+  family: cf-typography
+  patterns:
+    - name: Standard micro copy
+      markup: |
+        <p class="micro-copy">
+            Lorem ipsum dolor sit amet
+        </p>
+      codenotes:
+        - .micro-copy
+    - name: Large micro copy
+      markup: |
+        <p class="micro-copy micro-copy__large">
+            Lorem ipsum dolor sit amet
+        </p>
+      codenotes:
+        - .micro-copy
+  tags:
+    - cf-typography
+*/
+
+.micro-copy {
+  color: #75787b;
+  font-size: 0.875em;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.micro-copy em,
+.micro-copy i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .micro-copy em,
+.lt-ie9 .micro-copy i {
+  font-style: normal !important;
+}
+
+.micro-copy strong,
+.micro-copy b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .micro-copy strong,
+.lt-ie9 .micro-copy b {
+  font-weight: normal !important;
+}
+
+.micro-copy__large {
+  font-size: 1em;
+}
+
+/* topdoc
+  name: Short description
+  family: cf-typography
+  patterns:
+    - name: .short-desc
+      markup: |
+        <p class="short-desc">I am short description.</p>
+      codenotes:
+        - .short-desc
+    - name: .short-desc__large (modifier)
+      markup: |
+        <p class="short-desc short-desc__large">I am large short description.</p>
+      codenotes:
+        - .short-desc__large
+  tags:
+    - cf-typography
+*/
+
+.short-desc {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.short-desc em,
+.short-desc i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .short-desc em,
+.lt-ie9 .short-desc i {
+  font-style: normal !important;
+}
+
+.short-desc strong,
+.short-desc b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .short-desc strong,
+.lt-ie9 .short-desc b {
+  font-weight: normal !important;
+}
+
+.short-desc__large {
+  font-size: 1.125em;
+}
+
+/* topdoc
+  name: Date
+  family: cf-typography
+  patterns:
+    - name: Default date
+      markup: |
+        <span class="date">
+            Nov 4, 2013
+        </span>
+  tags:
+    - cf-typography
+*/
+
+.date {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  color: #75787b;
+  white-space: nowrap;
+}
+
+.lt-ie9 .date {
+  font-weight: normal !important;
+}
+
+/* topdoc
+  name: Category slug
+  family: cf-typography
+  patterns:
+    - name: Default category slug
+      markup: |
+        <a href="#" class="category-slug">
+            <span class="category-slug_icon cf-icon cf-icon-dialogue"></span>
+            <span class="u-visually-hidden">Category:</span>
+            Consumer finance
+        </a>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .category-slug
+            .category-slug_icon
+            .u-visually-hidden
+      notes:
+        - "We suggest using a .u-visually-hidden element to add more context for
+          screen readers."
+  tags:
+    - cf-typography
+*/
+
+.category-slug {
+  margin-top: 0;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222222;
+  display: inline-block;
+  margin-bottom: 0.44444444em;
+  color: #101820;
+}
+
+.lt-ie9 .category-slug {
+  font-weight: normal !important;
+}
+
+a.category-slug {
+  color: #101820;
+  border-color: #101820;
+}
+
+a.category-slug:visited,
+a.category-slug.visited {
+  border-color: #101820;
+  color: #101820;
+}
+
+a.category-slug:hover,
+a.category-slug.hover {
+  border-color: #7fb8e6;
+  color: #7fb8e6;
+}
+
+a.category-slug:focus,
+a.category-slug.focus {
+  border-color: #7fb8e6;
+  color: #7fb8e6;
+}
+
+a.category-slug:active,
+a.category-slug.active {
+  border-color: #101820;
+  color: #101820;
+}
+
+.category-slug_icon {
+  margin-right: 0.11111111em;
+}
+
+/* topdoc
+  name: Header slug
+  family: cf-typography
+  patterns:
+    - name: Default header slug
+      markup: |
+        <h2 class="header-slug">
+            <span class="header-slug_inner">
+                Blog summary
+            </span>
+        </h2>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .header-slug
+            .header-slug_inner
+  tags:
+    - cf-typography
+*/
+
+.header-slug {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  margin-bottom: 1.21428571em;
+  border-top: 1px solid #e3e4e5;
+}
+
+.lt-ie9 .header-slug {
+  font-weight: normal !important;
+}
+
+.header-slug_inner {
+  display: inline-block;
+  padding-top: 0.28571429em;
+  margin-top: -3px;
+  border-top: 5px solid #2cb34a;
+}
+
+/* topdoc
+  name: Padded header
+  family: cf-typography
+  patterns:
+    - name: Default padded header
+      markup: |
+        <h2 class="padded-header">
+            Header
+        </h2>
+      codenotes:
+        - .padded-header
+  tags:
+    - cf-typography
+*/
+
+.padded-header {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  padding: 0.57142857em 0.71428571em;
+  margin-bottom: 0;
+  border-bottom: 1px solid #babbbd;
+  background: #f1f2f2;
+  color: #43484e;
+}
+
+.lt-ie9 .padded-header {
+  font-weight: normal !important;
+}
+
+/* topdoc
+  name: Fancy slug
+  family: cf-typography
+  patterns:
+    - name: Default fancy slug
+      markup: |
+        <h2 class="fancy-slug">
+            <span class="fancy-slug_text">
+                <span class="fancy-slug_ribbon-left"></span>
+                Watchroom
+                <span class="fancy-slug_ribbon-right"></span>
+            </span>
+        </h2>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .fancy-slug
+            .fancy-slug_text
+                .fancy-slug_ribbon-left
+                .fancy-slug_ribbon-right
+  tags:
+    - cf-typography
+*/
+
+.fancy-slug {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  position: relative;
+  height: 1.14285714em;
+  padding: 0 1.21428571em;
+  margin-top: 1.14285714em;
+  margin-bottom: 0.57142857em;
+  border-top: 1px solid #babbbd;
+  line-height: 1;
+  text-align: center;
+}
+
+.lt-ie9 .fancy-slug {
+  font-weight: normal !important;
+}
+
+.fancy-slug_text {
+  display: inline-block;
+  position: relative;
+  top: -1.14285714em;
+  padding: 0.57142857em 1.42857143em;
+  border: 1px solid #babbbd;
+  background: #ffffff;
+}
+
+.fancy-slug_ribbon-left,
+.fancy-slug_ribbon-right {
+  display: block;
+  position: absolute;
+  top: -1px;
+  width: 1.21428571em;
+  height: 100%;
+  border-top: 1px solid #babbbd;
+  border-bottom: 1px solid #babbbd;
+}
+
+.lt-ie9 .fancy-slug_ribbon-left,
+.lt-ie9 .fancy-slug_ribbon-right {
+  display: none;
+}
+
+.fancy-slug_ribbon-left:before,
+.fancy-slug_ribbon-right:before,
+.fancy-slug_ribbon-left:after,
+.fancy-slug_ribbon-right:after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 3;
+  width: 1.21428571em;
+  height: 50%;
+  background: #ffffff;
+  border: 0 solid #babbbd;
+}
+
+.fancy-slug_ribbon-left {
+  left: -1.21428571em;
+}
+
+.fancy-slug_ribbon-left:before {
+  top: 0;
+  border-left-width: 1px;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: skewX(33deg);
+  -ms-transform: skewX(33deg);
+  transform: skewX(33deg);
+}
+
+.fancy-slug_ribbon-left:after {
+  bottom: 0;
+  border-left-width: 1px;
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: skewX(-33deg);
+  -ms-transform: skewX(-33deg);
+  transform: skewX(-33deg);
+}
+
+.fancy-slug_ribbon-right {
+  right: -1.21428571em;
+}
+
+.fancy-slug_ribbon-right:before {
+  top: 0;
+  right: 0;
+  border-right-width: 1px;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skewX(-33deg);
+  -ms-transform: skewX(-33deg);
+  transform: skewX(-33deg);
+}
+
+.fancy-slug_ribbon-right:after {
+  right: 0;
+  bottom: 0;
+  border-right-width: 1px;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: skewX(33deg);
+  -ms-transform: skewX(33deg);
+  transform: skewX(33deg);
+}
+
+/* topdoc
+  name: Meta header
+  family: cf-typography
+  patterns:
+    - name: Default meta header
+      markup: |
+        <div class="meta-header">
+            <span class="meta-header_right date">
+                Nov 4, 2013
+            </span>
+            <a href="#" class="meta-header_left category-slug">
+                <span class="cf-icon cf-icon-credit-card"></span>
+                Consumer finance
+            </a>
+        </div>
+      codenotes:
+        - |
+          Structural cheat sheet:
+          -----------------------
+          .meta-header
+            .meta-header_right
+            .meta-header_left
+      notes:
+        - ".meta-header_right should come first in the markup so that when it
+          floats to the right it will appear on the same line as .meta-header_left."
+        - "Note that the example shows .meta-header_left using the
+          .category-slug pattern and .meta-header_right using the .date pattern
+          but you could use other patterns in place of them. Or you can even
+          swap them so that date is attached to .meta-header_left and
+          .category-slug is attacked to .meta-header_right."
+    - name: Alternate meta header arrangements
+      markup: |
+        <div class="meta-header">
+            <a href="#" class="meta-header_right category-slug">
+                <span class="cf-icon cf-icon-credit-card"></span>
+            </a>
+            <span class="meta-header_left date">
+                Nov 4, 2013
+            </span>
+        </div>
+        <br>
+        <div class="meta-header">
+            <a href="#" class="meta-header_left category-slug">
+                <span class="cf-icon cf-icon-credit-card"></span>
+                Consumer finance
+            </a>
+        </div>
+      notes:
+        - "Just some random variations to show off what you could do."
+  tags:
+    - cf-typography
+*/
+
+.meta-header {
+  padding-bottom: 0.5em;
+  margin-bottom: 0.625em;
+  border-bottom: 1px solid #babbbd;
+}
+
+.meta-header_left {
+  margin-bottom: 0;
+}
+
+.meta-header_right {
+  display: block;
+  margin-bottom: 0;
+}
+
+.meta-header_right {
+  float: right;
+  display: inline-block;
+}
+
+/* topdoc
+  name: Links with icons
+  family: cf-typography
+  notes:
+    - "Styles to enable adding an icon to a link and preventing the link's
+       underline from extending under the icon."
+    - "For the underlined icon prevention to work, you must wrap the link text
+       with a `span.icon-link_text`. There can be no whitespace between the text
+       and the opening and closing span tags."
+  patterns:
+    - name: Default link with icon
+      markup: |
+        <p>
+            For more information, email
+            <a class="icon-link icon-link__mail" href="#">
+                <span class="icon-link_text">john.smith@cfpb.gov</span>
+            </a>.
+            Alternatively, you can
+            <a class="icon-link icon-link__download" href="#">
+                <span class="icon-link_text">download the info sheet</span>
+            </a>.
+            Oh, you might also want to visit this
+            <a class="icon-link icon-link__external-link" href="#">
+                <span class="icon-link_text">other organization's website</span>
+            </a> for further details.
+        </p>
+        <a class="icon-link icon-link__right" href="#">
+            Visit another section of our site
+        </a>
+      notes:
+        - "The modifier names match the cf-icon names of commonly-used icons."
+        - "Icons appear to the right of a link, by default."
+    - name: Links with icons on the left (modifier)
+      markup: |
+        <a class="icon-link icon-link__mail icon-link__before" href="#">
+            <span class="icon-link_text">john.smith@cfpb.gov</span>
+        </a><br>
+        <a class="icon-link icon-link__phone icon-link__before" href="#">
+            (123) 456-7890
+        </a>
+      notes:
+        - "Simply add the `.icon-link__before` modifier to place the icon before
+           the link text."
+        - "You can omit the `span.icon-link_text` wrapper if you do not need
+           an underline on a particular link."
+    - name: Non-wrapping icon links
+      markup: |
+        <p>
+            For more information, email
+            <a class="icon-link icon-link__mail icon-link__no-wrap" href="#">
+                <span class="icon-link_text">john.smith@cfpb.gov</span>
+            </a>.
+        </p>
+      notes:
+        - "Warning: Icons added to inline links can sometimes break onto the
+           next line. If you want to prevent this, you can add the `__no-wrap`
+           modifier to `.icon-link`."
+  tags:
+    - cf-typography
+*/
+
+.icon-link {
+  border-bottom-width: 0;
+  position: relative;
+}
+
+.icon-link_text {
+  border-bottom-width: 1px;
+  border-bottom-style: inherit;
+}
+
+.icon-link:before,
+.icon-link:after {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+
+.icon-link__download:after,
+.icon-link__download.icon-link__before:before {
+  content: "\e406";
+}
+
+.icon-link__email:after,
+.icon-link__email.icon-link__before:before {
+  content: "\e302";
+}
+
+.icon-link__external-link:after,
+.icon-link__external-link.icon-link__before:before {
+  content: "\e610";
+}
+
+.icon-link__fax:after,
+.icon-link__fax.icon-link__before:before {
+  content: "\e310";
+}
+
+.icon-link__left:after,
+.icon-link__left.icon-link__before:before {
+  content: "\e000";
+}
+
+.icon-link__mail:after,
+.icon-link__mail.icon-link__before:before {
+  content: "\e304";
+}
+
+.icon-link__pdf:after,
+.icon-link__pdf.icon-link__before:before {
+  content: "\e402";
+}
+
+.icon-link__pdf:after,
+.icon-link__pdf.icon-link__before:before {
+  content: "\e402";
+}
+
+.icon-link__phone:after,
+.icon-link__phone.icon-link__before:before {
+  content: "\e306";
+}
+
+.icon-link__right:after,
+.icon-link__right.icon-link__before:before {
+  content: "\e002";
+}
+
+.icon-link__before:after {
+  content: '';
+}
+
+.icon-link__no-wrap {
+  white-space: nowrap;
+}
+
+/* topdoc
+  name: Styled link
+  family: cf-typography
+  patterns:
+    - name: .styled-link
+      markup: |
+        <a class="styled-link" href="#">
+            Default styled link
+        </a>
+      codenotes:
+        - .styled-link
+  tags:
+    - cf-typography
+*/
+
+.styled-link {
+  border-bottom-width: 1px;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.lt-ie9 .styled-link {
+  font-weight: normal !important;
+}
+
+/* topdoc
+  name: Jump link
+  family: cf-typography
+  patterns:
+    - name: .jump-link
+      markup: |
+        <a class="jump-link" href="#">
+            <span class="jump-link_text">Default jump link</span>
+        </a>
+      codenotes:
+        - .jump-link
+    - name: .jump-link__large (modifier)
+      markup: |
+        <a class="jump-link jump-link__large" href="#">
+            <span class="jump-link_text">Large jump link</span>
+        </a>
+      codenotes:
+        - .jump-link__large
+      notes:
+        - "18px font-size, compared to the default of 16px"
+    - name: .jump-link__<icon> (modifier)
+      markup: |
+        <a class="jump-link jump-link__right" href="#">
+            <span class="jump-link_text">Jump link using the right icon from cf-icons</span>
+        </a>
+      codenotes:
+        - .jump-link__<icon>
+      notes:
+        - ".jump-link extends .icon-link, so all that is needed to add an icon
+           to a jump link is to add a modifier with the icon's name."
+    - name: .jump-link__before (modifier)
+      markup: |
+        <a class="jump-link jump-link__left jump-link__before" href="#">
+            <span class="jump-link_text">Jump link with icon on left</span>
+        </a>
+      codenotes:
+        - .jump-link__<icon>.jump-link__before
+      notes:
+        - "Jump links can also have icons before the text, like icon links."
+    - name: .jump-link__bg (modifier)
+      markup: |
+        <a class="jump-link jump-link__bg" href="#">
+            <span class="jump-link_text">Jump link with grey background and
+                solid borders on small screens</span>
+        </a>
+      codenotes:
+        - .jump-link__bg
+  tags:
+    - cf-typography
+*/
+
+.jump-link {
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  border-bottom-width: 0;
+  position: relative;
+}
+
+.lt-ie9 .jump-link {
+  font-weight: normal !important;
+}
+
+.jump-link_text {
+  border-bottom-width: 1px;
+  border-bottom-style: inherit;
+}
+
+.jump-link:before,
+.jump-link:after {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+
+.jump-link__download:after,
+.jump-link__download.jump-link__before:before {
+  content: "\e406";
+}
+
+.jump-link__email:after,
+.jump-link__email.jump-link__before:before {
+  content: "\e302";
+}
+
+.jump-link__external-link:after,
+.jump-link__external-link.jump-link__before:before {
+  content: "\e610";
+}
+
+.jump-link__fax:after,
+.jump-link__fax.jump-link__before:before {
+  content: "\e310";
+}
+
+.jump-link__left:after,
+.jump-link__left.jump-link__before:before {
+  content: "\e000";
+}
+
+.jump-link__mail:after,
+.jump-link__mail.jump-link__before:before {
+  content: "\e304";
+}
+
+.jump-link__pdf:after,
+.jump-link__pdf.jump-link__before:before {
+  content: "\e402";
+}
+
+.jump-link__pdf:after,
+.jump-link__pdf.jump-link__before:before {
+  content: "\e402";
+}
+
+.jump-link__phone:after,
+.jump-link__phone.jump-link__before:before {
+  content: "\e306";
+}
+
+.jump-link__right:after,
+.jump-link__right.jump-link__before:before {
+  content: "\e002";
+}
+
+.jump-link__before:after {
+  content: '';
+}
+
+.jump-link__no-wrap {
+  white-space: nowrap;
+}
+
+.jump-link__large {
+  font-size: 1.125em;
+}
+
+/* topdoc
+  name: Block link
+  family: cf-typography
+  patterns:
+    - name: .block-link
+      markup: |
+        <a class="block-link" href="#">
+            Default block link
+        </a>
+      codenotes:
+        - .block-link
+      notes:
+        - "Convert a standard inline link to a block-level element with padding,
+           background, and borders."
+        - "Primarily used within a max-width 599px media query (see .jump-link
+           and .list__links)."
+  tags:
+    - cf-typography
+*/
+
+.block-link {
+  box-sizing: border-box;
+  display: block;
+  padding: 0.625em 1.25em 0.625em 0;
+  border: dotted #0072ce;
+  border-width: 1px 0;
+  margin-right: 0;
+  width: 100%;
+  text-align: left;
+}
+
+/* topdoc
+  name: Unstyled list modifier
+  family: cf-typography
+  patterns:
+    - name: Default example
+      markup: |
+        <ul class="list list__unstyled">
+            <li class="list_item">
+                <a class="list_link">List item 1</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link">List item 2</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link">List item 3</a>
+            </li>
+        </ul>
+      codenotes:
+        - .list.list__unstyled
+  tags:
+    - cf-typography
+*/
+
+.list__unstyled {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.list__unstyled .list_item {
+  margin-left: 0;
+}
+
+/* topdoc
+  name: Spaced list modifier
+  family: cf-typography
+  patterns:
+    - name: Default example
+      markup: |
+        <ul class="list list__spaced">
+            <li class="list_item">
+                <a class="list_link">List item 1</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link">List item 2</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link">List item 3</a>
+            </li>
+        </ul>
+      codenotes:
+        - .list.list__spaced
+  tags:
+    - cf-typography
+*/
+
+.list__spaced .list_item + .list_item {
+  margin-top: 1.5em;
+}
+
+/* topdoc
+  name: Spaced list item modifier
+  family: cf-typography
+  patterns:
+    - name: Default example
+      markup: |
+        <ul class="list">
+            <li class="list_item">
+                <a class="list_link">List item 1</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link">List item 2</a>
+            </li>
+            <li class="list_item list_item__spaced">
+                <a class="list_link">List item 3</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link">List item 4</a>
+            </li>
+        </ul>
+  tags:
+    - cf-typography
+*/
+
+.list_item__spaced {
+  margin-top: 1.5em;
+}
+
+/* topdoc
+  name: Horizontal list modifier
+  family: cf-typography
+  patterns:
+    - name: Default example
+      markup: |
+        <ul class="list list__horizontal">
+            <li class="list_item">
+                <a class="list_link">List item 1</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link">List item 2</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link">List item 3</a>
+            </li>
+        </ul>
+  tags:
+    - cf-typography
+*/
+
+.list__horizontal {
+  padding-left: 0;
+}
+
+.list__horizontal .list_item {
+  display: inline-block;
+}
+
+.lt-ie8 .list__horizontal .list_item {
+  display: inline;
+}
+
+.list__horizontal .list_item {
+  margin-right: 0.25em;
+  margin-left: 0;
+}
+
+/* topdoc
+  name: Icon list modifier
+  family: cf-typography
+  notes:
+    - "Set up a list with icons on the left, in place of bullets."
+    - "Will need some more work to allow lines to wrap."
+  patterns:
+    - name: Default example
+      markup: |
+        <ul class="list list__icons">
+            <li class="list_item">
+                <span class="cf-icon cf-icon-email list_icon"></span>
+                List item 1
+            </li>
+            <li class="list_item">
+                <span class="cf-icon cf-icon-phone list_icon"></span>
+                List item 1
+            </li>
+            <li class="list_item">
+                <span class="cf-icon cf-icon-fax list_icon"></span>
+                List item 1
+            </li>
+        </ul>
+  tags:
+    - cf-typography
+*/
+
+.list__icons {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.list__icons .list_item {
+  margin-left: 0;
+}
+
+.list__icons .list_icon {
+  width: 1.5em;
+  text-align: center;
+}
+
+/* topdoc
+  name: Link list modifier
+  family: cf-typography
+  notes:
+    - "The link list modifier is intended to be used for lists where each item
+      is a link. It converts to a finger-friendly link with a large tap area
+      on smaller screens."
+  patterns:
+    - name: Default example
+      markup: |
+        <ul class="list list__links">
+            <li class="list_item">
+                <a class="list_link" href="#">List item 1</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link" href="#">List item 2</a>
+            </li>
+            <li class="list_item">
+                <a class="list_link" href="#">List item 3</a>
+            </li>
+        </ul>
+    - name: Link list with icons
+      markup: |
+        <ul class="list list__links list__icons">
+            <li class="list_item">
+                <a class="list_link icon-link icon-link__before icon-link__email"
+                   href="#">
+                    <span class="icon-link_text">List item 1</span>
+                </a>
+            </li>
+            <li class="list_item">
+                <a class="list_link icon-link icon-link__before icon-link__phone"
+                   href="#">
+                    <span class="icon-link_text">List item 2</span>
+                </a>
+            </li>
+            <li class="list_item">
+                <a class="list_link icon-link icon-link__before icon-link__fax"
+                   href="#">
+                    <span class="icon-link_text">List item 3</span>
+                </a>
+            </li>
+        </ul>
+  tags:
+    - cf-typography
+*/
+
+.list__links {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.list__links .list_item {
+  margin-left: 0;
+}
+
+.list__links .list_item {
+  margin-bottom: 0.625em;
+}
+
+.list__links.list__spaced .list_item + .list_item {
+  margin-top: 0;
+}
+
+.list__links.list__icons .list_link {
+  position: relative;
+  left: -0.125em;
+}
+
+.list__links.list__icons .icon-link:before,
+.list__links.list__icons .icon-link:after {
+  width: 1.125em;
+  text-align: center;
+}
+
+/* topdoc
+ name: Custom bullet mixin
+ family: cf-typography
+ patterns:
+   - name: Custom bullet
+     codenotes:
+       - ".custom-bullet(@text, @color, @offset, @size, @font, @type)"
+     notes:
+       - "Displays custom bullets to the left of specified elements as :before pseudo elements."
+       - "To use, pass this mixin values for the bullet to be displayed: text, color, font size,
+          and offset (distance away from the parent element the bullet should appear).
+          Font family parameter is optional and defaults to inherited."
+       - "Bullets are absolutely positioned outside of their parent's flow,
+          so they will not receive certain properties applied to the parent
+          (borders, text-decoration, etc)."
+       - "By default, custom bullets hang outside of their parent's content box
+          (in the margin or padding if there is any). If you want the bullets to align
+          with the left boundary of the parent's content box, give the parent a
+          left margin value equal to the offset."
+ tags:
+   - cf-typography
+*/
+
+/* topdoc
+ name: Branded list modifier
+ family: cf-typography
+ patterns:
+   - name: Branded list
+     markup: |
+       <ul class="list__branded">
+           <li>First item</li>
+           <li>Second item</li>
+           <li>Third item</li>
+       </ul>
+     codenotes:
+       - ".list__branded"
+     notes:
+       - "Uses .custom-bullet mixin to generate custom main-brand-color square bullets."
+ tags:
+   - cf-typography
+*/
+
+.list__branded li,
+.list__branded .list_item {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  position: relative;
+}
+
+.list__branded li em,
+.list__branded .list_item em,
+.list__branded li i,
+.list__branded .list_item i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .list__branded li em,
+.lt-ie9 .list__branded .list_item em,
+.lt-ie9 .list__branded li i,
+.lt-ie9 .list__branded .list_item i {
+  font-style: normal !important;
+}
+
+.list__branded li strong,
+.list__branded .list_item strong,
+.list__branded li b,
+.list__branded .list_item b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .list__branded li strong,
+.lt-ie9 .list__branded .list_item strong,
+.lt-ie9 .list__branded li b,
+.lt-ie9 .list__branded .list_item b {
+  font-weight: normal !important;
+}
+
+.list__branded li:before,
+.list__branded .list_item:before {
+  content: "\25AA";
+  font-family: inherit;
+  font-size: 1.375em;
+  color: #2cb34a;
+  line-height: 1;
+  position: absolute;
+  left: -0.86363636em;
 }
 
 /* topdoc
@@ -13850,52 +13850,56 @@ body {
   line-height: 1.375;
 }
 
-:hover + .cf-input_checkbox,
-:hover + .cf-input_radio,
-:focus + .cf-input_checkbox,
-:focus + .cf-input_radio,
-.focus + .cf-input_checkbox,
-.focus + .cf-input_radio {
+:hover ~ .cf-input_checkbox,
+:hover ~ .cf-input_radio,
+:focus ~ .cf-input_checkbox,
+:focus ~ .cf-input_radio,
+.focus ~ .cf-input_checkbox,
+.focus ~ .cf-input_radio {
   border-color: #ffffff;
   outline: 2px solid #0072ce;
 }
 
-:checked + .cf-input_checkbox,
-:checked + .cf-input_radio {
+input:checked ~ .cf-input_checkbox,
+input:checked ~ .cf-input_radio,
+input:checked + label + .cf-input_checkbox,
+input:checked + label + .cf-input_radio {
   background-color: #0072ce;
   border: 3px solid #ffffff;
   outline: 1px solid #0072ce;
 }
 
-:checked + .cf-input_radio {
+input:checked ~ .cf-input_radio,
+input:checked + label + .cf-input_radio {
   outline: none;
   box-shadow: 0px 0px 0px 1px #0072ce;
 }
 
-.lt-ie9 :checked + .cf-input_radio {
+.lt-ie9 input:checked ~ .cf-input_radio,
+.lt-ie9 input:checked + label + .cf-input_radio {
   outline: 1px solid #0072ce;
 }
 
-:hover + .cf-input_radio,
-:focus + .cf-input_radio,
-.focus + .cf-input_radio {
+:hover ~ .cf-input_radio,
+:focus ~ .cf-input_radio,
+.focus ~ .cf-input_radio {
   outline: none;
   box-shadow: 0px 0px 0px 2px #0072ce;
 }
 
-.lt-ie9 :hover + .cf-input_radio,
-.lt-ie9 :focus + .cf-input_radio,
-.lt-ie9 .focus + .cf-input_radio {
+.lt-ie9 :hover ~ .cf-input_radio,
+.lt-ie9 :focus ~ .cf-input_radio,
+.lt-ie9 .focus ~ .cf-input_radio {
   outline: 2px solid #0072ce;
 }
 
-[disabled="true"] + .cf-input_radio {
+[disabled="true"] ~ .cf-input_radio {
   box-shadow: 0px 0px 0px 1px #babbbd;
   background-color: #75787b;
   cursor: default;
 }
 
-.lt-ie9 [disabled="true"] + .cf-input_radio {
+.lt-ie9 [disabled="true"] ~ .cf-input_radio {
   outline: 1px solid #babbbd;
 }
 
@@ -13912,31 +13916,66 @@ body {
 }
 
 .form-l-inset .form-l-inset_container {
-  padding: 0.9375em 0.9375em;
+  padding: 0;
+  position: relative;
   background: #e3e4e5;
 }
 
-.form-l-inset .form-l-inset_container.is-checked,
-:checked + .form-l-inset .form-l-inset_container {
+.form-l-inset .form-l-inset_container:hover .cf-input_radio {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #0072ce;
+}
+
+.lt-ie9 .form-l-inset .form-l-inset_container:hover .cf-input_radio {
+  outline: 2px solid #0072ce;
+}
+
+.form-l-inset .form-l-inset_container:hover .cf-input_radio,
+.form-l-inset .form-l-inset_container:focus .cf-input_radio,
+.form-l-inset .form-l-inset_container.focus .cf-input_radio,
+.form-l-inset .form-l-inset_container:hover .cf-input_checkbox,
+.form-l-inset .form-l-inset_container:focus .cf-input_checkbox,
+.form-l-inset .form-l-inset_container.focus .cf-input_checkbox {
+  border-color: #ffffff;
+  outline: 2px solid #0072ce;
+}
+
+.form-l-inset .form-l-inset_container:hover .cf-input_radio,
+.form-l-inset .form-l-inset_container:focus .cf-input_radio,
+.form-l-inset .form-l-inset_container.focus .cf-input_radio {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #0072ce;
+}
+
+.lt-ie9 .form-l-inset .form-l-inset_container:hover .cf-input_radio,
+.lt-ie9 .form-l-inset .form-l-inset_container:focus .cf-input_radio,
+.lt-ie9 .form-l-inset .form-l-inset_container.focus .cf-input_radio {
+  outline: 2px solid #0072ce;
+}
+
+.form-l-inset .form-l-inset_container .cf-input_label {
+  margin: 0;
+  padding: 0.9375em 0.9375em 1.07142857em;
+}
+
+.form-l-inset .form-l-inset_container.selected .cf-input_label,
+.form-l-inset .form-l-inset_container.focus .cf-input_label,
+.form-l-inset .form-l-inset_container input:checked ~ .cf-input_label {
+  outline: 2px solid #0072ce;
+}
+
+.form-l-inset .form-l-inset_container.selected .cf-input_label,
+.form-l-inset .form-l-inset_container input:checked ~ .cf-input_label {
   background-color: #cce3f5;
-  outline: 2px solid #0072ce;
 }
 
-.form-l-inset .form-l-inset_container.is-hovered,
-.form-l-inset .form-l-inset_container:hover,
-.form-l-inset .form-l-inset_container:focus,
-:hover + .form-l-inset .form-l-inset_container,
-:focus + .form-l-inset .form-l-inset_container,
-.focus + .form-l-inset .form-l-inset_container {
-  cursor: pointer;
-  outline: 2px solid #0072ce;
+.form-l-inset .form-l-inset_container .cf-input_text {
+  margin-left: 25px;
 }
 
-.form-l-inset .form-l-inset_container.is-hovered label,
-.form-l-inset .form-l-inset_container:hover label,
-.form-l-inset .form-l-inset_container:focus label,
-:hover + .form-l-inset .form-l-inset_container label,
-:focus + .form-l-inset .form-l-inset_container label,
-.focus + .form-l-inset .form-l-inset_container label {
-  cursor: pointer;
+.form-l-inset .form-l-inset_container .cf-input_radio,
+.form-l-inset .form-l-inset_container .cf-input_checkbox {
+  top: 15px;
+  left: 15px;
+  z-index: 2;
 }

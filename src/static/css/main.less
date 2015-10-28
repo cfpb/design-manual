@@ -161,32 +161,25 @@ body {
 
     &_checkbox,
     &_radio {
-        // .is-hovered &,
-        // .is-focused &,
-        :hover + &,
-        :focus + &,
-        .focus + & {
+        :hover ~ &,
+        :focus ~ &,
+        .focus ~ & {
             border-color: @input-bg;
             outline: 2px solid @input-border-focus;
         }
-        // .is-checked &,
-        :checked + & {
+        input:checked ~ &,
+        input:checked + label + &
+        {
             background-color: @input-border-focus;
             border: 3px solid @input-bg;
             outline: 1px solid @input-border-focus;
         }
-        // .is-checked.is-hovered &,
-        // .is-checked.is-focused & {
-        //     outline: 2px solid @input-border-focus;
-        // }
-        // .is-active & {
-        //     background-color: @input-active-bg;
-        //     border: 3px solid @input-bg;
-        // }
     }
+
     &_radio {
-        // .is-checked &,
-        :checked + &  {
+        input:checked ~ &,
+        input:checked + label + &
+         {
             // box-shadow is being used instead of outline because outline
             // does not respect border-radius.
             outline: none;
@@ -197,13 +190,9 @@ body {
                 outline: 1px solid @input-border-focus;
             }
         }
-        // .is-hovered &,
-        // .is-focused &,
-        // .is-checked.is-hovered &,
-        // .is-checked.is-focused &,
-        :hover + &,
-        :focus + &,
-        .focus + & {
+        :hover ~ &,
+        :focus ~ &,
+        .focus ~ & {
             // box-shadow is being used instead of outline because outline
             // does not respect border-radius.
             outline: none;
@@ -214,8 +203,7 @@ body {
                 outline: 2px solid @input-border-focus;
             }
         }
-        // .is_disabled &,
-        [disabled="true"] + & {
+        [disabled="true"] ~ & {
           box-shadow: 0px 0px 0px 1px @checkbox-border-disabled;
           background-color: @checkbox-bg-disabled;
           cursor: default;
@@ -227,6 +215,7 @@ body {
     }
 }
 
+// The .focus & .selected classes are only included for documentation demos and should not be used in production.
 
 .form-l-inset {
     // The default margin between two columns is 30px.
@@ -236,25 +225,66 @@ body {
     &:last-child { border-right-width: 15px; }
 
     .form-l-inset_container {
-        padding: unit((@grid_gutter-width / 2) / @base-font-size-px, em)
-                 unit((@grid_gutter-width / 2) / @base-font-size-px, em);
+        padding: 0;
+        position: relative;
         background: @input-inset-bg;
-        &.is-checked,
-        :checked + & {
-            background-color: @input-inset-selected;
+        &:hover .cf-input_radio {
+            // box-shadow is being used instead of outline because outline
+            // does not respect border-radius.
+            outline: none;
+            box-shadow: 0px 0px 0px 2px @input-border-focus;
+            // Older IE does not support border-radius or box-shadow it's ok to
+            // use outline here.
+            .lt-ie9 & {
+                outline: 2px solid @input-border-focus;
+            }
+
+        }
+        &:hover .cf-input_radio,
+        &:focus .cf-input_radio,
+        &.focus .cf-input_radio,
+        &:hover .cf-input_checkbox,
+        &:focus .cf-input_checkbox,
+        &.focus .cf-input_checkbox {
+            border-color: @input-bg;
             outline: 2px solid @input-border-focus;
         }
-        &.is-hovered,
-        &:hover,
-        &:focus,
-        :hover + &,
-        :focus + &,
-        .focus + & {
-            cursor: pointer;
-            outline: 2px solid @input-border-focus;
-            label {
-                cursor: pointer;
+        &:hover .cf-input_radio,
+        &:focus .cf-input_radio,
+        &.focus .cf-input_radio {
+            // box-shadow is being used instead of outline because outline
+            // does not respect border-radius.
+            outline: none;
+            box-shadow: 0px 0px 0px 2px @input-border-focus;
+            // Older IE does not support border-radius or box-shadow it's ok to
+            // use outline here.
+            .lt-ie9 & {
+                outline: 2px solid @input-border-focus;
             }
+        }
+        .cf-input_label {
+            margin: 0;
+            padding: unit((@grid_gutter-width / 2) / @base-font-size-px, em)
+                 unit((@grid_gutter-width / 2) / @base-font-size-px, em) 
+                 unit((@grid_gutter-width / 1.75) / @base-font-size-px, em);
+        }
+        &.selected .cf-input_label,
+        &.focus .cf-input_label,
+        input:checked ~ .cf-input_label +  {
+            outline: 2px solid @input-border-focus;
+        }
+        &.selected .cf-input_label,
+        input:checked ~ .cf-input_label {
+            background-color: @input-inset-selected;
+        }
+        .cf-input_text {
+            margin-left: 25px;
+        }
+        .cf-input_radio,
+        .cf-input_checkbox {
+            top: 15px;
+            left: 15px;
+            z-index: 2;
         }
     }
 
