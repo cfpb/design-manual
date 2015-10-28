@@ -714,8 +714,14 @@ input[type="radio"] {
           @base-font-size-px
           @base-line-height-px
           @base-line-height
-          @mobile-max
-          @tablet-min
+          @bp-xs-max
+          @bp-sm-min
+          @bp-sm-max
+          @bp-med-min
+          @bp-med-max
+          @bp-lg-min
+          @bp-lg-max
+          @bp-xl-min
     - name: Colors
       codenotes:
         - |
@@ -1568,28 +1574,28 @@ body {
 }
 
 h1,
-.h1,
 h2,
-.h2,
 h3,
-.h3 {
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1,
+.h1 {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  margin-bottom: 0.47058824em;
+  font-size: 2.125em;
+  line-height: 1.29411765;
 }
 
 h1 em,
 .h1 em,
-h2 em,
-.h2 em,
-h3 em,
-.h3 em,
 h1 i,
-.h1 i,
-h2 i,
-.h2 i,
-h3 i,
-.h3 i {
+.h1 i {
   font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
@@ -1597,31 +1603,15 @@ h3 i,
 
 .lt-ie9 h1 em,
 .lt-ie9 .h1 em,
-.lt-ie9 h2 em,
-.lt-ie9 .h2 em,
-.lt-ie9 h3 em,
-.lt-ie9 .h3 em,
 .lt-ie9 h1 i,
-.lt-ie9 .h1 i,
-.lt-ie9 h2 i,
-.lt-ie9 .h2 i,
-.lt-ie9 h3 i,
-.lt-ie9 .h3 i {
+.lt-ie9 .h1 i {
   font-style: normal !important;
 }
 
 h1 strong,
 .h1 strong,
-h2 strong,
-.h2 strong,
-h3 strong,
-.h3 strong,
 h1 b,
-.h1 b,
-h2 b,
-.h2 b,
-h3 b,
-.h3 b {
+.h1 b {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1629,51 +1619,102 @@ h3 b,
 
 .lt-ie9 h1 strong,
 .lt-ie9 .h1 strong,
-.lt-ie9 h2 strong,
-.lt-ie9 .h2 strong,
-.lt-ie9 h3 strong,
-.lt-ie9 .h3 strong,
 .lt-ie9 h1 b,
-.lt-ie9 .h1 b,
-.lt-ie9 h2 b,
-.lt-ie9 .h2 b,
-.lt-ie9 h3 b,
-.lt-ie9 .h3 b {
+.lt-ie9 .h1 b {
   font-weight: normal !important;
-}
-
-h1,
-.h1 {
-  margin-top: 0;
-  margin-bottom: 0.47058824em;
-  font-size: 2.125em;
-  line-height: 1.29411765;
 }
 
 h2,
 .h2 {
-  margin-top: 0;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   margin-bottom: 0.73076923em;
   font-size: 1.625em;
   line-height: 1.26923077;
 }
 
+h2 em,
+.h2 em,
+h2 i,
+.h2 i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 h2 em,
+.lt-ie9 .h2 em,
+.lt-ie9 h2 i,
+.lt-ie9 .h2 i {
+  font-style: normal !important;
+}
+
+h2 strong,
+.h2 strong,
+h2 b,
+.h2 b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 h2 strong,
+.lt-ie9 .h2 strong,
+.lt-ie9 h2 b,
+.lt-ie9 .h2 b {
+  font-weight: normal !important;
+}
+
 h3,
 .h3 {
-  margin-top: 0;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   margin-bottom: 0.95454545em;
   font-size: 1.375em;
   line-height: 1.27272727;
 }
 
+h3 em,
+.h3 em,
+h3 i,
+.h3 i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 h3 em,
+.lt-ie9 .h3 em,
+.lt-ie9 h3 i,
+.lt-ie9 .h3 i {
+  font-style: normal !important;
+}
+
+h3 strong,
+.h3 strong,
+h3 b,
+.h3 b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 h3 strong,
+.lt-ie9 .h3 strong,
+.lt-ie9 h3 b,
+.lt-ie9 .h3 b {
+  font-weight: normal !important;
+}
+
 h4,
 .h4 {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
   line-height: 1.22222222;
 }
 
@@ -1683,47 +1724,52 @@ h4,
 }
 
 h5,
+.h5 {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+}
+
+.lt-ie9 h5,
+.lt-ie9 .h5 {
+  font-weight: normal !important;
+}
+
 h6,
-.h5,
 .h6 {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-
-.lt-ie9 h5,
-.lt-ie9 h6,
-.lt-ie9 .h5,
-.lt-ie9 .h6 {
-  font-weight: normal !important;
-}
-
-h5,
-.h5 {
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-}
-
-h6,
-.h6 {
-  margin-top: 0;
   margin-bottom: 0.41666667em;
   font-size: 0.75em;
   line-height: 1.83333333;
 }
 
+.lt-ie9 h6,
+.lt-ie9 .h6 {
+  font-weight: normal !important;
+}
+
 .subheader {
-  margin-top: 0;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-weight: 500;
   margin-bottom: 1.16666667em;
   font-size: 1.125em;
+  line-height: 1.22222222;
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.22222222;
+}
+
+.lt-ie9 .subheader {
+  font-weight: normal !important;
 }
 
 .subheader em,
@@ -1751,11 +1797,11 @@ h6,
 }
 
 .superheader {
-  margin-bottom: 0.1875em;
-  font-size: 3em;
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
+  margin-bottom: 0.1875em;
+  font-size: 3em;
   line-height: 1.25;
 }
 
@@ -2021,7 +2067,6 @@ thead td {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -2035,6 +2080,47 @@ thead td {
 thead,
 tbody tr {
   border-bottom: 1px solid #babbbd;
+}
+
+th {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+
+.lt-ie9 th {
+  font-weight: normal !important;
+}
+
+tbody th {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+tbody th em,
+tbody th i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 tbody th em,
+.lt-ie9 tbody th i {
+  font-style: normal !important;
+}
+
+tbody th strong,
+tbody th b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 tbody th strong,
+.lt-ie9 tbody th b {
+  font-weight: normal !important;
 }
 
 /* topdoc
@@ -4659,19 +4745,18 @@ figure img {
 .btn {
   display: inline-block;
   box-sizing: border-box;
-  padding: 0.57142857em 1em;
+  padding: 0.5em 0.875em;
   border: 0;
-  border-radius: 0.28571429em;
+  border-radius: 0.25em;
   margin: 0;
   vertical-align: middle;
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background-color 0.1s;
   transition: background-color 0.1s;
   -webkit-appearance: none;
 }
@@ -4710,7 +4795,7 @@ input.btn::-moz-focus-inner {
 }
 
 .btn + .btn {
-  margin-left: 0.42857143em;
+  margin-left: 0.375em;
 }
 
 .lt-ie8 {
@@ -4720,8 +4805,8 @@ input.btn::-moz-focus-inner {
 .lt-ie8 button.btn,
 .lt-ie8 input.btn {
   overflow: visible;
-  padding-top: 0.45714286em;
-  padding-bottom: 0.45714286em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 /* topdoc
@@ -5042,10 +5127,10 @@ input.btn::-moz-focus-inner {
 */
 
 .btn_icon__left {
-  padding: 0 0.75em 0 0;
+  padding: 0 0.65625em 0 0;
   border-right: 1px solid #ffffff;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
-  margin: 0 0.5em 0 0;
+  margin: 0 0.4375em 0 0;
 }
 
 .btn__secondary .btn_icon__left {
@@ -5065,11 +5150,11 @@ input.btn::-moz-focus-inner {
 }
 
 .btn_icon__right {
-  padding: 0 0 0 0.75em;
+  padding: 0 0 0 0.65625em;
   border-right: 0;
   border-left: 1px solid #ffffff;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
-  margin: 0 0 0 0.5em;
+  margin: 0 0 0 0.4375em;
 }
 
 .btn__secondary .btn_icon__right {
@@ -5146,7 +5231,7 @@ input.btn::-moz-focus-inner {
 .btn__grouped + .btn__grouped,
 .btn__grouped-last,
 .btn__grouped + .btn__grouped-last {
-  margin-left: -0.21428571em;
+  margin-left: -0.1875em;
 }
 
 .btn__grouped-first.btn__super + .btn__grouped.btn__super,
@@ -5321,7 +5406,7 @@ input.btn::-moz-focus-inner {
   padding: 0;
   border-bottom: 1px dotted #0072ce;
   border-radius: 0;
-  margin: 0.57142857em 0;
+  margin: 0.5em 0;
 }
 
 .btn__link,
@@ -5713,7 +5798,6 @@ input.btn::-moz-focus-inner {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -6138,7 +6222,7 @@ textarea.success {
 .btn-inside-input input[type="number"] {
   box-sizing: border-box;
   width: 100%;
-  padding-right: 4.64285714em;
+  padding-right: 4.0625em;
 }
 
 .btn-inside-input input[type="text"].input__super,
@@ -6153,7 +6237,7 @@ textarea.success {
 .btn-inside-input .btn {
   border-bottom-width: 0 !important;
   position: absolute;
-  right: 1.07142857em;
+  right: 0.9375em;
   top: 0;
   /* pa11y fails unless the background color is explicitly set */
 }
@@ -8097,7 +8181,6 @@ textarea.success {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin-top: 0;
   margin-bottom: 0.95454545em;
   font-size: 1.375em;
   line-height: 1.27272727;
@@ -8135,7 +8218,6 @@ textarea.success {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -8150,7 +8232,6 @@ textarea.success {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin-top: 0;
   margin-bottom: 0.73076923em;
   font-size: 1.625em;
   line-height: 1.26923077;
@@ -8310,7 +8391,6 @@ textarea.success {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -8348,12 +8428,11 @@ textarea.success {
 */
 
 .category-slug {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
   line-height: 1.22222222;
   display: inline-block;
   margin-bottom: 0.44444444em;
@@ -8424,7 +8503,6 @@ a.category-slug.active {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -8464,7 +8542,6 @@ a.category-slug.active {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -8510,7 +8587,6 @@ a.category-slug.active {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -9841,8 +9917,8 @@ input[type="text"].pagination_current-page {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 0.875em;
-  line-height: 1.57142857;
+  font-size: 1em;
+  line-height: 1.375;
 }
 
 .expandable_link em,
@@ -9923,7 +9999,7 @@ input[type="text"].pagination_current-page {
 
 .expandable_cue-open__animated,
 .expandable_cue-close__animated {
-  -webkit-transition: 0.25s -webkit-transform;
+  transition: 0.25s -webkit-transform;
   transition: 0.25s transform;
 }
 
@@ -10269,7 +10345,6 @@ button.expandable_header {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
@@ -10287,12 +10362,11 @@ button.expandable_header {
 }
 
 .expandable-group .expandable_label {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 1.16666667em;
+  font-size: 1.125em;
   line-height: 1.22222222;
   margin-bottom: 0;
 }
@@ -11248,7 +11322,6 @@ figure {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 0.35714286em;
   font-size: 0.875em;
   line-height: 1.57142857;
