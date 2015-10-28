@@ -39,11 +39,12 @@ developers, or groups to adapt it for their own use.
 Content editors and developers probably want to set up the Design Manual on
 their local machine so they can preview updates without pushing to GitHub.
 
-Before you get started make sure you have an up-to-date version of Ruby.
+Before you get started make sure you have an up-to-date version of Ruby and Bundler.
 We use [Homebrew](http://brew.sh/):
 
 ```sh
 brew install ruby
+gem install bundler
 ```
 
 As the site is intended to be deployed on GitHub Pages, installing the
@@ -60,7 +61,7 @@ to your local machine.
 From the project directory, run Jekyll:
 
 ```sh
-jekyll serve --watch --baseurl ''
+bundle exec jekyll serve --watch --baseurl ''
 ```
 
 Open it up in your browser: <http://localhost:4000/>
@@ -93,11 +94,11 @@ npm install -g grunt-cli bower
 ### Developing
 
 When first setting up this project, and each time you fetch from upstream,
-install project dependencies with npm and run `grunt` to build everything:
+run the setup shell script to install the newest project dependencies and
+build the website with grunt:
 
 ```sh
-npm install
-grunt
+./setup.sh
 ```
 
 We use [Grunt](http://gruntjs.com/) to compile and compress
@@ -183,7 +184,7 @@ The CFPB’s  Design & Development Team uses GitHub issues to track potential up
   - Ben Guhin (UX)
   - Scott Cranfill (FEWD)
   - Jennifer Horan (508)
-- After an issue has received the necessary approvals, anyone can volunteer to submit a pull request to make the change to the manual. Any applicable changes to our asset libraries and templates should also be updated on CFPB’s internal Google Drive. Any changes that require updates to a Capital Framework component should be made in the appropriate [GitHub repository](https://github.com/cfpb/capital-framework). 
+- After an issue has received the necessary approvals, anyone can volunteer to submit a pull request to make the change to the manual. Any applicable changes to our asset libraries and templates should also be updated on CFPB’s internal Google Drive. Any changes that require updates to a Capital Framework component should be made in the appropriate [GitHub repository](https://github.com/cfpb/capital-framework).
 
 ### Milestones
 
@@ -228,8 +229,8 @@ We recommend adding the following checklist to an issue when it's time to publis
 
 
 **3 - Publish** – When an issue has received all of the necessary approvals (which depends on the type of standard), move the issue to the milestone for ‘Publish.’ Be sure to tag how they need to be published from the options listed below.
-- Minicon font - All new minicons must have design approval before they are added to the minicon font. Once approved, an SVG file should be emailed to Daniel Pizarro. Updates to the minicon font are released every month or in an as needed basis. The updated file will be provided in a TrueType format (`.ttf`). 
-- Add to asset library – This is the responsibility of the designer or UX designer that volunteers for the issue. The final asset should either be added to the library or the template available on CFPB’s Google Drive. Examples of assets include the illustration library, isocon library, minicon font, cf.gov web templates, or print suite templates. Changes to the minicon font must go through Daniel Pizarro, are released in batches, and require more lead time. 
+- Minicon font - All new minicons must have design approval before they are added to the minicon font. Once approved, an SVG file should be emailed to Daniel Pizarro. Updates to the minicon font are released every month or in an as needed basis. The updated file will be provided in a TrueType format (`.ttf`).
+- Add to asset library – This is the responsibility of the designer or UX designer that volunteers for the issue. The final asset should either be added to the library or the template available on CFPB’s Google Drive. Examples of assets include the illustration library, isocon library, minicon font, cf.gov web templates, or print suite templates. Changes to the minicon font must go through Daniel Pizarro, are released in batches, and require more lead time.
 - Content update – Basic content update that can be done by anyone on the team.
 - FEWD task – Content that needs to be added to the Design Manual by a front end web developer. For the new content to be properly demonstrated in the manual, a CF component may be required.
 

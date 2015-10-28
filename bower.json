@@ -14,14 +14,7 @@
   },
   "license": "CC0",
   "dependencies": {
-    "cf-buttons": "*",
-    "cf-expandables": "~0.7.0",
-    "cf-forms": "~1.2.0",
-    "cf-grid": "*",
-    "cf-icons": "*",
-    "cf-layout": "~0.2.2",
-    "cf-pagination": "~0.5.0",
-    "cf-typography": "~0.7.0"
+    "capital-framework": "~1.0.0"
   },
   "exportsOverride": {
     "cf-*": {
@@ -39,5 +32,11 @@
     "jquery.easing": {
       "js": "js/jquery.easing.js"
     }
+  },
+  "resolutions": {
+    "cf-expandables": "^1.0.0",
+    "cf-layout": "^1.0.0",
+    "cf-pagination": "^1.0.0",
+    "cf-typography": "^1.0.0"
   }
 }
