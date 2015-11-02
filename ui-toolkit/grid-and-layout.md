@@ -94,7 +94,7 @@ Twelve-column grid with flexible column widths and fixed gutters. The width of t
     </section>
 </div>
 
-{::nomarkdown}   
+{:/nomarkdown}  
 
 <h2 id="style">Breakpoints<span class="cf-code-link"><a href="https://github.com/cfpb/cf-core/blob/gh-pages/src/cf-vars.less#L59-L66">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
