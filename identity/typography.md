@@ -6,6 +6,7 @@ published: true
 ---
 
 
+
 - [Typefaces](#typefaces)
 - [Web hierarchy](#web-hierarchy)
 - [Web typesetting](#typesetting-for-readability)
@@ -662,7 +663,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 #### Subheader
 
 * Avenir Next Regular
-* 18 pt / 22 pt leading
+* 16 pt / 20 pt leading
 
 </div>
 
