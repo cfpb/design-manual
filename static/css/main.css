@@ -1922,7 +1922,7 @@ thead td {
 }
 thead,
 tbody tr {
-  border-bottom: 1px solid #babbbd;
+  border-bottom: 1px solid #5b616b;
 }
 th {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
@@ -7667,6 +7667,250 @@ textarea.success {
   margin-left: -30px;
 }
 /* topdoc
+  name: Hero
+  family: cf-layout
+  patterns:
+    - name: .hero
+      markup: |
+        <section class="content_hero hero">
+            <div class="hero_wrapper wrapper">
+                <div class="hero_text">
+                    <h1 class="hero_heading">Hero title</h1>
+                    <p class="hero_subhead">
+                        Hero text goes here
+                    </p>
+                    <p class="hero_cta">
+                        <a>Call to action</a>
+                    </p>
+                </div>
+                <div class="hero_image" style="background-image: url('http://placekitten.com/g/400/195')"></div>
+            </div>
+        </section>
+      notes:
+        - "Hero consists of a headline, a small amount of additional text, an optional call to
+           action, and an illustration. Its background color is flush with
+           the sides of the screen, and the content is centered with wrapper classes."
+        - "The illustration can be customized by setting the background-image property
+           on the .hero_image element."
+        - "On small screens (or where media queries are not supported), the text spans the
+           full width of the .hero_wrapper and the illustration is displayed underneath."
+        - "For larger screen sizes, media queries are used to position the illustration
+           to the right of the text."
+        - "On desktop, the hero should not exceed 285px in height. The image should be 195px in
+           height to conform to this standard."
+      codenotes:
+        - .hero
+  tags:
+    - cf-layout
+*/
+.hero {
+  background-color: #f1f2f2;
+}
+.hero_wrapper {
+  box-sizing: border-box;
+  padding: 1.875em 0.9375em;
+  width: 100%;
+}
+@media only all and (min-width: 37.5em) {
+  .hero_wrapper {
+    display: table;
+  }
+}
+@media only all and (min-width: 50.0625em) {
+  .hero_wrapper {
+    padding-top: 2.8125em;
+    padding-bottom: 2.8125em;
+    min-height: 17.8125em;
+  }
+}
+@media only all and (min-width: 76.875em) {
+  .hero_wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.lt-ie9 .hero_wrapper {
+  min-height: initial;
+}
+@media only all and (min-width: 37.5em) {
+  .hero_text {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 58.33333333%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .lt-ie8 .hero_text {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+}
+.hero_heading {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0.47058824em;
+  font-size: 2.125em;
+  line-height: 1.29411765;
+}
+.hero_heading em,
+.hero_heading i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .hero_heading em,
+.lt-ie9 .hero_heading i {
+  font-style: normal !important;
+}
+.hero_heading strong,
+.hero_heading b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .hero_heading strong,
+.lt-ie9 .hero_heading b {
+  font-weight: normal !important;
+}
+@media only all and (max-width: 50em) {
+  .hero_heading {
+    font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0.73076923em;
+    font-size: 1.625em;
+    line-height: 1.26923077;
+  }
+  .hero_heading em,
+  .hero_heading i {
+    font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+  }
+  .lt-ie9 .hero_heading em,
+  .lt-ie9 .hero_heading i {
+    font-style: normal !important;
+  }
+  .hero_heading strong,
+  .hero_heading b {
+    font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .lt-ie9 .hero_heading strong,
+  .lt-ie9 .hero_heading b {
+    font-weight: normal !important;
+  }
+}
+.hero_subhead {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0.95454545em;
+  font-size: 1.375em;
+  line-height: 1.27272727;
+  margin-bottom: 1.36363636em;
+}
+.hero_subhead em,
+.hero_subhead i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .hero_subhead em,
+.lt-ie9 .hero_subhead i {
+  font-style: normal !important;
+}
+.hero_subhead strong,
+.hero_subhead b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .hero_subhead strong,
+.lt-ie9 .hero_subhead b {
+  font-weight: normal !important;
+}
+@media only all and (max-width: 50em) {
+  .hero_subhead {
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 1.16666667em;
+    font-size: 1.125em;
+    line-height: 1.22222222;
+  }
+  .lt-ie9 .hero_subhead {
+    font-weight: normal !important;
+  }
+}
+.hero_subhead:last-child {
+  margin-bottom: initial;
+}
+.hero_cta {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: initial;
+}
+.hero_cta em,
+.hero_cta i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .hero_cta em,
+.lt-ie9 .hero_cta i {
+  font-style: normal !important;
+}
+.hero_cta strong,
+.hero_cta b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .hero_cta strong,
+.lt-ie9 .hero_cta b {
+  font-weight: normal !important;
+}
+.hero_image {
+  min-height: 12.1875em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only all and (min-width: 37.5em) {
+  .hero_image {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 41.66666667%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .lt-ie8 .hero_image {
+    display: inline;
+    margin-right: 0;
+    zoom: 1;
+    behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+  }
+}
+@media only all and (max-width: 37.4375em) {
+  .hero_image {
+    margin-top: 1.875em;
+  }
+}
+/* topdoc
   name: EOF
   eof: true
 */
@@ -11015,8 +11259,8 @@ p.print-subheader {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18pt;
-  line-height: 22pt;
+  font-size: 16pt;
+  line-height: 20pt;
 }
 p.print-subheader em,
 p.print-subheader i {
