@@ -761,13 +761,13 @@ input[type="radio"] {
 */
 .u-visually-hidden {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
   width: 1px;
+  height: 1px;
+  border: 0;
   margin: -1px;
   padding: 0;
-  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 /* topdoc
   name: Inline block
@@ -1364,8 +1364,8 @@ small {
         <p class="subheader">Example subheader that's kinda long</p>
     - name: Super header
       markup: |
-        <h1 class="superheader">Example super header</h1>
-        <p class="superheader">Example super header</p>
+        <h1 class="superheading">Example super heading</h1>
+        <p class="superheading">Example super heading</p>
   tags:
     - cf-core
 */
@@ -1663,15 +1663,33 @@ h6,
 .lt-ie9 .subheader b {
   font-weight: normal !important;
 }
+.superheading,
 .superheader {
-  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 0.1875em;
   font-size: 3em;
   line-height: 1.25;
 }
-.lt-ie9 .superheader {
+.superheading em,
+.superheading i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .superheading em,
+.lt-ie9 .superheading i {
+  font-style: normal !important;
+}
+.superheading strong,
+.superheading b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .superheading strong,
+.lt-ie9 .superheading b {
   font-weight: normal !important;
 }
 /* topdoc

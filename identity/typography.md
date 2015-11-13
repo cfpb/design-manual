@@ -129,21 +129,21 @@ abcdefghijklmnopqrstuvwxyz
 
 #### Display
 
-* Avenir Next Demi Bold
+* Avenir Next Regular
 * 48 px / 60 px
 
 </div>
 
 <div class="content-67 content-last">
 
-<span class="superheader">Getting out of debt</span>
+<span class="superheading">Getting out of debt</span>
 
 </div>
 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 1
 
 * Avenir Next Regular
@@ -160,7 +160,7 @@ abcdefghijklmnopqrstuvwxyz
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 2
 
 * Avenir Next Regular
@@ -177,7 +177,7 @@ abcdefghijklmnopqrstuvwxyz
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 3
 
 * Avenir Next Regular
@@ -194,7 +194,7 @@ abcdefghijklmnopqrstuvwxyz
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 4
 
 * Avenir Next Medium
@@ -211,7 +211,7 @@ abcdefghijklmnopqrstuvwxyz
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 5
 
 * Avenir Next Demi Bold
@@ -229,7 +229,7 @@ abcdefghijklmnopqrstuvwxyz
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 6
 
 * Avenir Next Demi Bold
@@ -286,7 +286,7 @@ If you have received financial aid offers, use this tool to compare school data 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Body (serif)
 
 * Georgia Regular
@@ -324,7 +324,7 @@ Typography should be set flush left. This provides the eye a constant starting p
 
 ### Line height
 
-Ample space between lines of type promotes an open feeling and lends flow to body copy. 
+Ample space between lines of type promotes an open feeling and lends flow to body copy.
 
 When setting body copy, the leading should be 1.375 times the type size, or 37.5% larger.
 
@@ -369,7 +369,7 @@ For a single column of text, line length should be an average of 66 characters p
 
 ### Spacing
 
-White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. 
+White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements.
 
 When setting headers and body copy, the white space should be 15px, 20px, or 30px.
 
@@ -413,7 +413,7 @@ When setting headers and body copy, the white space should be 15px, 20px, or 30p
 
 ### Text contrast
 
-WCA (Web Content Accessibility) standards ensure that content is accessible by everyone, regardless of any disability or user device. 
+WCA (Web Content Accessibility) standards ensure that content is accessible by everyone, regardless of any disability or user device.
 
 To ensure text remains compliant with [WCAG 2.0 standards](http://www.w3.org/TR/WCAG20/), use only these permitted color combinations. These options fall within the range of foreground/background color contrast permitted by the Secion 508 guidelines.
 
@@ -554,7 +554,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 1
 
 * Avenir Next Regular
@@ -571,7 +571,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 2
 
 * Avenir Next Regular
@@ -588,7 +588,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 3
 
 * Avenir Next Demi Bold
@@ -605,7 +605,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 4
 
 * Avenir Next Medium
@@ -622,7 +622,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 5
 
 * Avenir Next Demi Bold
@@ -640,7 +640,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Header 6
 
 * Avenir Next Medium
@@ -676,7 +676,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Paragraph
 
 * Avenir Next Regular
@@ -693,7 +693,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Paragraph
 
 * Georgia
@@ -710,7 +710,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 ---
 
 <div class="content-33 content-first">
-    
+
 #### Bulleted list
 
 * Avenir Next Regular
