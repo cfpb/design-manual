@@ -265,7 +265,7 @@ Body text should provide an efficient and pleasant experience on every viewport 
 
 <div class="content-67 content-last">
 
-<p class="lead-paragraph">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
+<p class="lead-paragraph u-mt0">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
 
 </div>
 
@@ -594,7 +594,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-67 content-last">
 
-<h2 class="h2-ex">Getting out of debt</h2>
+<h2 class="h2-print-ex">Getting out of debt</h2>
 
 </div>
 
@@ -611,7 +611,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-67 content-last">
 
-<h3>Getting out of debt</h3>
+<h3 class="h3-print-ex">Getting out of debt</h3>
 
 </div>
 

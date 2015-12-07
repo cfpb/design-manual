@@ -11762,10 +11762,6 @@ h6 + [class^="type-color-combo"],
 .georgia-ex {
   font-family: Georgia, "Times New Roman", serif;
 }
-h2.h2-ex {
-  margin-top: 0;
-  border-bottom: none;
-}
 #print-hierarchy-ex .superheading {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
@@ -11803,41 +11799,43 @@ h2.h2-ex {
 .lt-ie9 #print-hierarchy-ex h1 b {
   font-weight: normal !important;
 }
-#print-hierarchy-ex h2 {
+#print-hierarchy-ex h2.h2-print-ex {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  border-bottom: none;
+  margin-top: 0;
   font-size: 26pt;
   line-height: 28pt;
 }
-#print-hierarchy-ex h2 em,
-#print-hierarchy-ex h2 i {
+#print-hierarchy-ex h2.h2-print-ex em,
+#print-hierarchy-ex h2.h2-print-ex i {
   font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
-.lt-ie9 #print-hierarchy-ex h2 em,
-.lt-ie9 #print-hierarchy-ex h2 i {
+.lt-ie9 #print-hierarchy-ex h2.h2-print-ex em,
+.lt-ie9 #print-hierarchy-ex h2.h2-print-ex i {
   font-style: normal !important;
 }
-#print-hierarchy-ex h2 strong,
-#print-hierarchy-ex h2 b {
+#print-hierarchy-ex h2.h2-print-ex strong,
+#print-hierarchy-ex h2.h2-print-ex b {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
-.lt-ie9 #print-hierarchy-ex h2 strong,
-.lt-ie9 #print-hierarchy-ex h2 b {
+.lt-ie9 #print-hierarchy-ex h2.h2-print-ex strong,
+.lt-ie9 #print-hierarchy-ex h2.h2-print-ex b {
   font-weight: normal !important;
 }
-#print-hierarchy-ex h3 {
+#print-hierarchy-ex h3.h3-print-ex {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16pt;
   line-height: 18pt;
 }
-.lt-ie9 #print-hierarchy-ex h3 {
+.lt-ie9 #print-hierarchy-ex h3.h3-print-ex {
   font-weight: normal !important;
 }
 #print-hierarchy-ex h4.h4-print-ex {
