@@ -132,8 +132,12 @@ secondarynav:
   url: ui-toolkit/form-fields.html
   internal: true
   category: UI toolkit
-- text: Grid and layout
+- text: Grid
   url: ui-toolkit/grid-and-layout.html
+  internal: true
+  category: UI toolkit
+- text: Layouts
+  url: ui-toolkit/layouts.html
   internal: true
   category: UI toolkit
 - text: Links
