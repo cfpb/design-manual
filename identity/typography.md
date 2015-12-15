@@ -121,9 +121,9 @@ abcdefghijklmnopqrstuvwxyz
 
 <p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read; a successful hierarchy enables readers to easily scan content.</p>
 
-### Headers
+### Headings
 
-<p>Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in three weights of Avenir Next Demi Bold, Medium, and Regular.</p>
+<p>Consistent scaling, weights, and capitalization are used to create distinction between heading levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headings are used in three weights of Avenir Next Demi Bold, Medium, and Regular.</p>
 
 <div class="content-33 content-first">
 
@@ -144,7 +144,7 @@ abcdefghijklmnopqrstuvwxyz
 
 <div class="content-33 content-first">
 
-#### Header 1
+#### Heading 1
 
 * Avenir Next Regular
 * 34 px / 42 px
@@ -161,7 +161,7 @@ abcdefghijklmnopqrstuvwxyz
 
 <div class="content-33 content-first">
 
-#### Header 2
+#### Heading 2
 
 * Avenir Next Regular
 * 26 px / 32 px
@@ -178,7 +178,7 @@ abcdefghijklmnopqrstuvwxyz
 
 <div class="content-33 content-first">
 
-#### Header 3
+#### Heading 3
 
 * Avenir Next Regular
 * 22 px / 28 px
@@ -195,7 +195,7 @@ abcdefghijklmnopqrstuvwxyz
 
 <div class="content-33 content-first">
 
-#### Header 4
+#### Heading 4
 
 * Avenir Next Medium
 * 18 px / 22 px
@@ -212,7 +212,7 @@ abcdefghijklmnopqrstuvwxyz
 
 <div class="content-33 content-first">
 
-#### Header 5
+#### Heading 5
 
 * Avenir Next Demi Bold
 * 14 px / 18 px, 1 px letter spacing
@@ -230,7 +230,7 @@ abcdefghijklmnopqrstuvwxyz
 
 <div class="content-33 content-first">
 
-#### Header 6
+#### Heading 6
 
 * Avenir Next Demi Bold
 * 12 px / 15 px, 1 px letter spacing
@@ -249,22 +249,23 @@ abcdefghijklmnopqrstuvwxyz
 
 ### Body text
 
-<p>Georgia should be used for the majority of body copy on the web. Avenir Next may be used for introductory or accent text. For example, Avenir is well-suited for use in tables or captions.</p>
+Georgia should be used for the majority of body copy on the web. Avenir Next may be used for introductory or accent text. For example, Avenir is well-suited for use in tables or captions.
 
-<p>Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast.</p>
+Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast.
 
 <div class="content-33 content-first">
 
-#### Subheader
+#### Lead paragraph
 
 * Avenir Next Regular
-* 18 px / 22 px line height
+* 22 px / 28 px line height
+* Reduces to 18px / 22px line height on smaller screens
 
 </div>
 
 <div class="content-67 content-last">
 
-<p class="subheader">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
+<p class="lead-paragraph u-mt0">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
 
 </div>
 
@@ -330,18 +331,11 @@ When setting body copy, the leading should be 1.375 times the type size, or 37.5
 
 </div>
 
-<div class="content-67 content-last">
+<div class="content-33 content-last">
 
-<div class="content-50 content-first">
-#### Font size: 26px
-
-![Line height example]({{ site.baseurl }}/static/img/typography/Typography_typesetting02_@2.png "Line height of 36px for 26px font size")
-</div>
-<div class="content-50 content-last">
 #### Font size: 16px
 
 ![Line height example]({{ site.baseurl }}/static/img/typography/Typography_typesetting03_@2.png "Line height of 22px for 16px font size")
-</div>
 
 </div>
 
@@ -365,47 +359,66 @@ For a single column of text, line length should be an average of 66 characters p
 
 ---
 
-<div class="content-33 content-first">
-
 ### Spacing
 
-White space or blank space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements.
+White space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements.
 
-When setting headers and body copy, the white space should be 15px, 20px, or 30px.
+<div class="content-33 content-first">
+
+#### Heading followed by body copy
+
+When a heading is followed by paragraph text, include 30 pixels of space below Display and 15 pixels below Headings 1–6.
 
 </div>
 
 <div class="content-67 content-last">
 
-<div class="content-50 content-first">
-![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_display_@2.png "Spacing for Display header")
-</div>
-
-<div class="content-50 content-last">
-![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header1_@2.png "Spacing for Header 1")
-</div>
-
-<div class="content-50 content-first">
-![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header2_@2.png "Spacing for Header 2")
-</div>
-
-<div class="content-50 content-last">
-![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header3_@2.png "Spacing for Header 3")
-</div>
-
-<div class="content-50 content-first">
-![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header4_@2.png "Spacing for Header 4")
-</div>
-
-<div class="content-50 content-last">
-![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header5_@2.png "Spacing for Header 5")
-</div>
-
-<div class="content-50 content-first">
-![Spacing example]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_header6_@2.png "Spacing for Header 6")
-</div>
+![Diagram of space between headings and body copy that follows]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_below-headings_@2.png)
 
 </div>
+
+<div class="content-33 content-first">
+
+#### Body copy followed by a heading
+
+When body copy is followed by a heading, include 45 pixels of space above Heading 2 and 30 pixels above Headings 3–6.
+
+</div>
+
+<div class="content-67 content-last">
+
+![Diagram of space between headings and body copy that follow]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_above-headings_@2.png)
+
+</div>
+
+<div class="content-33 content-first">
+
+#### Heading followed by a heading
+
+For stacked headings, include 30 pixels of space after the primary heading.
+
+</div>
+
+<div class="content-67 content-last">
+
+![Diagram of space between stacked headings]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_between-headings_@2.png)
+
+</div>
+
+<div class="content-33 content-first">
+
+#### Body copy spacing
+
+For multiple paragraphs within the same section set the space between paragraphs to 15 pixels.
+
+</div>
+
+<div class="content-67 content-last">
+
+![Diagram of space between stacked headings]({{ site.baseurl }}/static/img/typography/Typography_typesetting05_in-body_@2.png)
+
+</div>
+
 
 ## Type accessibility
 
@@ -415,7 +428,7 @@ When setting headers and body copy, the white space should be 15px, 20px, or 30p
 
 WCA (Web Content Accessibility) standards ensure that content is accessible by everyone, regardless of any disability or user device.
 
-To ensure text remains compliant with [WCAG 2.0 standards](http://www.w3.org/TR/WCAG20/), use only these permitted color combinations. These options fall within the range of foreground/background color contrast permitted by the Secion 508 guidelines.
+To ensure text remains compliant with [WCAG 2.0 standards](http://www.w3.org/TR/WCAG20/), use only these permitted color combinations. These options fall within the range of foreground/background color contrast permitted by the Section 508 guidelines.
 
 </div>
 
@@ -462,7 +475,7 @@ Accessible text and background color combinations are shown below:
 <div class="content-33 content-first">
 
 ### Partially accessible combinations
-CFPB Black text and white text on gray, and gray text on white are _only accessible for header sizes above 24px_.
+CFPB Black text and white text on gray, and gray text on white are _only accessible for text sizes above 24px_.
 
 </div>
 
@@ -532,9 +545,9 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <p>This hierarchy should serve as a basis for 8.5 x 11” documents, but appropriate scaling should be explored for content of larger or smaller dimensions.</p>
 
-### Headers
+### Headings
 
-<p>Consistent scaling, weights, and capitalization are used to create distinction between header levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headers are used in two weights of Avenir Next Demi Bold and Medium.</p>
+<p>Consistent scaling, weights, and capitalization are used to create distinction between heading levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headings are used in two weights of Avenir Next Demi Bold and Medium.</p>
 
 <div class="content-33 content-first">
 
@@ -547,7 +560,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-67 content-last">
 
-<span class="superheader">Getting out of debt</span>
+<span class="superheading">Getting out of debt</span>
 
 </div>
 
@@ -555,7 +568,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-33 content-first">
 
-#### Header 1
+#### Heading 1
 
 * Avenir Next Regular
 * 38 pt / 40 pt
@@ -572,7 +585,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-33 content-first">
 
-#### Header 2
+#### Heading 2
 
 * Avenir Next Regular
 * 26 pt / 28 pt
@@ -581,7 +594,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-67 content-last">
 
-<h2 class="h2-ex">Getting out of debt</h2>
+<h2 class="h2-print-ex">Getting out of debt</h2>
 
 </div>
 
@@ -589,7 +602,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-33 content-first">
 
-#### Header 3
+#### Heading 3
 
 * Avenir Next Demi Bold
 * 16 pt / 18 pt
@@ -598,7 +611,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-67 content-last">
 
-<h3>Getting out of debt</h3>
+<h3 class="h3-print-ex">Getting out of debt</h3>
 
 </div>
 
@@ -606,7 +619,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-33 content-first">
 
-#### Header 4
+#### Heading 4
 
 * Avenir Next Medium
 * 14 pt / 16 pt
@@ -623,7 +636,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-33 content-first">
 
-#### Header 5
+#### Heading 5
 
 * Avenir Next Demi Bold
 * 10 pt / 12 pt
@@ -641,7 +654,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-33 content-first">
 
-#### Header 6
+#### Heading 6
 
 * Avenir Next Medium
 * 12 pt / 14 pt
@@ -660,7 +673,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-33 content-first">
 
-#### Subheader
+#### Subheading
 
 * Avenir Next Regular
 * 16 pt / 20 pt leading
@@ -669,7 +682,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-67 content-last">
 
-<p class="print-subheader">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
+<p class="print-subheading">Use this tool to compare school data and relevant financial factors to make a more informed decision for your future.</p>
 
 </div>
 
