@@ -6,6 +6,8 @@ published: true
 ---
 
 
+
+
 - [Style](#style)
 {: class="toc"}
 
@@ -91,4 +93,15 @@ Twelve-column grid with flexible column widths and fixed gutters. The width of t
         <div class="col col-12"><p>twelve</p></div>
     </section>
 </div>
-{:/nomarkdown}
+
+{:/nomarkdown}  
+
+<h2 id="style">Breakpoints<span class="cf-code-link"><a href="https://github.com/cfpb/cf-core/blob/gh-pages/src/cf-vars.less#L59-L66">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+
+Five major breakpoints standardize large-scale changes like navigation and sidebar behavior. Use other breakpoints as necessary. 
+
+* xs: 0-600px
+* sm: 601-900px
+* med: 901-1020px
+* lg: 1021-1230px
+* xl: 1231px and up

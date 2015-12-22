@@ -143,5 +143,3 @@ Text input fields are used for requesting narratives, explanations, or other inf
 {:/nomarkdown}
 
 </div> 
-
-<!-- <h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2> -->
