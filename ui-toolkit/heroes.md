@@ -72,7 +72,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 <div class="content-33">
 * Text spans seven columns
 * Headline: H1, no longer than two lines
-* Body copy: H3, begins 30px below headline, no longer than three lines
+* Body copy: H3, begins 15px below headline, no longer than three lines
 * Call to action link: Standard link colors in body copy style, appears 30px below body copy
 * Call to action button: Blue primary button, appears 30px below the body copy
 
