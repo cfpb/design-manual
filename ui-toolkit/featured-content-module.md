@@ -51,23 +51,22 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
-* Module is 270px total in height with 30px top and bottom padding. It appears 60px underneath the header/intro paragraph of the page
+* Module is a minimum of 320px and maximum of 360px total in height with 30px top and bottom padding. It appears 60px underneath the header/intro paragraph of the page.
 * Background color of module is Gray 5 with a 1px Gray 50 stroke.
 * Module bleeds to the edge of the page, right sidebar and left nav.
-* Visual spans 5 columns and bleeds into right sidebar.
-
-* Text spans 3 columns and is left and top aligned. When on a page with a right-hand sidebar, the text area has 60px of left padding and 30px of right padding. When on a page with left-hand navigation, the text area has 30px of left and right padding.
+* Visual spans 5 columns and bleeds into right sidebar. The visual is sized at 640x360px (a 16:9 ratio) for optimal appearance at all screen sizes.
+* Text spans 3 columns and is left and top aligned.
 </div>
 
 <div class="content-67 content-last">
-![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop-right.png)
+![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop01.png)
 
-![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop-left.png)
+![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop02.png)
 </div>
 
 <div class="content-33 content-first">
 * Headline is H2, appears 30px below category and is 1–2 lines
-* Body copy is 16px, appears 30px underneath headline, is 2 to 4 lines
+* Body copy is 16px, appears 15px underneath headline, is 2 to 4 lines
 * A call to action may be used and appears 30px underneath body copy. If a link, standard link styles apply. If a button, standard primary button styles apply.
 </div>
 
@@ -94,7 +93,7 @@ Differences in style at tablet size
 
 * Text spans 5 columns
 * Visual spans 7 columns
-* Visual's height is fixed, and cropping will occur on both the left and right sides
+* Visual's height is fixed, and cropping will occur on both the left and right sides until 700px, when the image will drop below the text and appear at a 16:9 ratio. 
 
 
 </div>
@@ -115,9 +114,9 @@ Differences in style at tablet size
 Differences in style at mobile size
 
 * Module appears 30px underneath the header/intro paragraph of the page
-* Headline: H2
+* Headline: H3
 * Body copy: 16px
-* Visual drops below text
+* Visual appears below text at a 16:9 ratio
 * 30px space between text and top of visual
 
 
