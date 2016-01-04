@@ -2,6 +2,7 @@
 layout: page
 title: Featured content module
 category: UI toolkit
+published: true
 ---
 
 - [Use cases](#use)
