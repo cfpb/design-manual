@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Featured content module
+title: Featured content modules
 category: UI toolkit
 published: true
 ---

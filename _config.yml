@@ -140,11 +140,11 @@ secondarynav:
   url: ui-toolkit/links.html
   internal: true
   category: UI toolkit
-- text: Hero
+- text: Heroes
   url: ui-toolkit/heroes.html
   internal: true
   category: UI toolkit
-- text: Featured content module
+- text: Featured content modules
   url: ui-toolkit/featured-content-module.html
   internal: true
   category: UI toolkit

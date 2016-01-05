@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hero
+title: Heroes
 category: UI toolkit
 published: true
 ---
