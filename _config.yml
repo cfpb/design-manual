@@ -141,7 +141,7 @@ secondarynav:
   internal: true
   category: UI toolkit
 - text: Hero
-  url: ui-toolkit/hero.html
+  url: ui-toolkit/heroes.html
   internal: true
   category: UI toolkit
 - text: Featured content module
