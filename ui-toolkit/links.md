@@ -150,16 +150,6 @@ Icons appear to the right of the link text. The color and ```font-size``` of ico
 <div class="content-67 content-last">
 
 <div class="content-50 content-first">
-##### Internal links
-Carets (minicon glyph EE02) can emphasize CFPB webpages, such as in a navigational list. Do not use them in expandables, or for links to an external, non-CFPB webpage. 
-</div>
-<div class="content-50 content-last regular-ex">
-<a class="link-with-icon" href="#">Internal link <span class="cf-icon cf-icon-right"></span></a>
-</div>
-
----
-
-<div class="content-50 content-first">
 ##### External links
 Use the external link minicon (glyph E610) to emphasize a non-CFPB webpage.
 
