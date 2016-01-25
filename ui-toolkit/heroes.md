@@ -54,7 +54,6 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-first">
-![Image of the Claiming Social Security site's hero graphic]({{ site.baseurl }}/static/img/hero/Retirement.png)
 
 ![Image of the Owning a Home site's hero graphic]({{ site.baseurl }}/static/img/hero/Hero_desktop.png)
 
@@ -72,8 +71,8 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 <div class="content-33">
 * Text spans seven columns
-* Headline: H1, no longer than two lines
-* Body copy: H3, begins 15px below headline, no longer than three lines
+* Headline: H1, 25 maximum character count
+* Body copy: H3, begins 15px below headline, 185 maximum character count
 * Call to action link: Standard link colors in body copy style, appears 30px below body copy
 * Call to action button: Blue primary button, appears 30px below the body copy
 
@@ -100,8 +99,6 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 <div class="content-67 content-last">
 
-![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/Retirement-tablet.png)
-
 ![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/Hero_tablet.png)
 
 </div>
@@ -117,8 +114,6 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 </div>
 
 <div class="content-33">
-
-![Image of Claiming Social Security hero at mobile size]({{ site.baseurl }}/static/img/hero/Retirement-mobile.png)
 
 </div>
 
