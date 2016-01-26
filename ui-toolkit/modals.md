@@ -40,18 +40,11 @@ Modals help draw attention to an alert or a focused task by preventing interacti
    <strong>Feedback or correction</strong>
     <br />
 	Modals can be effective for communicating a warning or alert outside the main web page. They can be triggered by a user interaction (like pressing a button to “save”) or without an interaction (like a timeout warning after a period of inactivity).
-	<ul>
-    <li>The user should be warned or alerted to a change in the user flow that 
-      was not triggered by user interaction. For example, a modal window could 
-      be used to warn about an impending inactivity timeout for a form 
-      containing sensitive information.</li>
-    <li>There is an short part of the flow that is triggered by user 
-      interaction, has a clear beginning and end, and requires the user's full 
-      attention the whole time. For example, a modal window could be used for a 
-      save or export interaction (though alternative UI elements should be 
-      explored).</li>
-  </ul>
-</div>
+	<br />
+	<strong>Interruption</strong>
+	<br /> 
+Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. A critical piece of this scenario is that you need the workflow to be interrupted to be effective. If not, explore other UI elements to accomplish the goal. 
+	</div>
 <div class="content-50 content-last">
 {::nomarkdown}
 <img src="/design-manual/static/img/modals/formexpiring.png" /> 
