@@ -4,9 +4,11 @@ title:  Modal windows
 category: UI toolkit
 ---
 
-- [Use](#use)
+- [Use Cases](#use)
+- [Behavior](#behavior)
+- [Content Guidelines](#Content Guidelines)
 - [Style](#style)
-- [Accessibility](#accessibility)
+- [Code](#code) 
 {: class="toc"}
 
 <div class="content-50 content-first">
@@ -28,7 +30,7 @@ category: UI toolkit
   </ul>
 </div> 
 
-<h2 id="use">Use<span class="cf-code-link">
+<h2 id="use">Use Cases<span class="cf-code-link">
   <a href="https://cfpb.github.io/cf-modals/docs/">View code 
     <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
@@ -76,7 +78,15 @@ presented in a modal window.
   </ul>
 </div>
 
-
+<h2 id="behavior">Behavior<span class="cf-code-link">
+ </span></h2>
+ 
+ 
+<h2 id="content">Content Guidelines<span class="cf-code-link">
+ </span></h2>
+  
+     
+            
 <h2 id="style">Style<span class="cf-code-link">
   <a href="https://cfpb.github.io/cf-modals/docs/">View code 
     <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
@@ -114,9 +124,8 @@ designed or developed does scroll, use an alternative UI element.
 </div>
 
 
-<h2 id="accessibility">Accessibility<span class="cf-code-link">
-  <a href="https://cfpb.github.io/cf-modals/docs/">View code 
-    <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="code">Code<span class="cf-code-link">
+</span></h2>
 
 <div class="content-67 content-first">
 #### General
