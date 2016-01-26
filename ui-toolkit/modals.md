@@ -6,7 +6,7 @@ category: UI toolkit
 
 - [Use Cases](#use)
 - [Behavior](#behavior)
-- [Content Guidelines](#Content Guidelines)
+- [Content Guidelines](#content)
 - [Style](#style)
 - [Code](#code) 
 {: class="toc"}
@@ -34,18 +34,13 @@ category: UI toolkit
   <a href="https://cfpb.github.io/cf-modals/docs/">View code 
     <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
-Modal windows (also referred to as popups or lightboxes) are useful for focusing
-user attention, and can be triggered by links, buttons, or inactivity timeouts.
-They should not be a default interaction method, since they result in an
-interruption of standard user flows. Modal windows can confuse users due to
-their similarity to popup windows or system alerts, and the find function will
-not discover information contained in a modal window.
-
-These guidelines can help you determine what content and information should be
-presented in a modal window.
+Modals help draw attention to an alert or a focused task by preventing interactions with anything on the web page other than the modal itself. Due to their disruptive nature, modal windows should only be used in very specific cases outlined below. 
 
 <div class="content-50 content-first">
-  <h5 id="use-when">Use when</h5>
+  <h5 id="use-when">Only use modals to meet these objectives</h5>
+	<b>Feedback or correction</b> </>
+	Modals can be effective for communicating a warning or alert outside the 	main web page. They can be triggered by a user interaction (like pressing 	a button to “save”) or without an interaction (like a timeout warning 	after a period of inactivity). 
+  
   <ul>
     <li>The user should be warned or alerted to a change in the user flow that 
       was not triggered by user interaction. For example, a modal window could 
