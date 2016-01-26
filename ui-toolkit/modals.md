@@ -11,9 +11,7 @@ category: UI toolkit
 
 <div class="content-50 content-first">
 
-<p>Modal windows de-emphasize the rest of the user interface, which can draw
-the user’s attention to an alert or a focused task. Due to their disruptive
-nature, modal windows should be used sparingly.</p> {: class="lead-in"}
+<p>Modal windows (also known as dialog boxes or lightboxes) are “pop-up” elements that appear in front of a web page, blocking the main page below. Similar to popup windows or system alerts, modals are unique because they prevent interaction with the page underneath. </p> {: class="lead-in"}
 
 </div>
 
