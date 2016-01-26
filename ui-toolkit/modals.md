@@ -37,10 +37,10 @@ Modals help draw attention to an alert or a focused task by preventing interacti
 
 <div class="content-50 content-first">
   <h5 id="use-when">Only use modals to meet these objectives</h5>
-    <strong>Feedback or correction</strong>
+   <strong>Feedback or correction</strong>
     <br />
-	<p>Modals can be effective for communicating a warning or alert outside the main web page. They can be triggered by a user interaction (like pressing a button to “save”) or without an interaction (like a timeout warning after a period of inactivity).</p>
-  <ul>
+	Modals can be effective for communicating a warning or alert outside the main web page. They can be triggered by a user interaction (like pressing a button to “save”) or without an interaction (like a timeout warning after a period of inactivity).
+	<ul>
     <li>The user should be warned or alerted to a change in the user flow that 
       was not triggered by user interaction. For example, a modal window could 
       be used to warn about an impending inactivity timeout for a form 
