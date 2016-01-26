@@ -31,14 +31,14 @@ category: UI toolkit
 </div> 
 
 <h2 id="use">Use Cases<span class="cf-code-link">
-  <a href="https://cfpb.github.io/cf-modals/docs/">View code 
-    <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+</span></h2>
 
 Modals help draw attention to an alert or a focused task by preventing interactions with anything on the web page other than the modal itself. Due to their disruptive nature, modal windows should only be used in very specific cases outlined below. 
 
 <div class="content-50 content-first">
   <h5 id="use-when">Only use modals to meet these objectives</h5>
-	<b>Feedback or correction</b> </>
+    <b>Feedback or correction</b>
+    <br />
 	Modals can be effective for communicating a warning or alert outside the 	main web page. They can be triggered by a user interaction (like pressing 	a button to “save”) or without an interaction (like a timeout warning 	after a period of inactivity). 
   
   <ul>
