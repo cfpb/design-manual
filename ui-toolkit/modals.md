@@ -44,7 +44,7 @@ Modals help draw attention to an alert or a focused task by preventing interacti
 	<strong>Interruption</strong>
 <br>
 Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. A critical piece of this scenario is that you need the workflow to be interrupted to be effective. If not, explore other UI elements to accomplish the goal. 
-  <h5 id="use-when">Examples of when to use modals</h5>
+  <h5 id="examples">Examples of when to use modals</h5>
 	<ul>
 	<li>Confirm an action that can’t be undone, such as “Are you sure you want to delete this?</li>
 	<li>Display a warning that something is about to expire or timeout</li>
