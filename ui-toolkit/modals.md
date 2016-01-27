@@ -19,10 +19,10 @@ category: UI toolkit
 <p>Modals help draw attention to an alert or a focused task by preventing interactions with anything on the web page other than the modal itself. Due to their disruptive nature, modal windows should only be used in very specific cases outlined below.</p>
 
 <h5 id="use-when">Only use modals to meet these objectives</h5>
-<p><strong>Feedback or correction</strong></p>
+<p><strong>Feedback or correction</strong><br>
 <p>Modals can be effective for communicating a warning or alert outside the main web page. They can be triggered by a user interaction (like pressing a button to “save”) or without an interaction (like a timeout warning after a period of inactivity).</p>
 
-<p><strong>Interruption</strong></p>
+<p><strong>Interruption</strong><br>
 <p>Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. A critical piece of this scenario is that you need the workflow to be interrupted to be effective. If not, explore other UI elements to accomplish the goal.</p> 
 
 <div class="content-50 content-first">
@@ -46,11 +46,11 @@ category: UI toolkit
 <p><strong>Opening a modal</strong><br>
 Modals can be triggered by links, buttons, or even inactivity on a site. All modals should have a clear headline at the top of the window that clearly matches the action the user took to display the modal. If a modal appears due to inactivity, the headline should clearly state the action that is about to take place due to that inactivity.</p> 
 
-Scrolling
-Modal windows should not scroll. If a modal contains enough information to require scrolling, use an alternative method of displaying content, such as a different UI element or another content page.
+<p><strong>Scrolling</strong><br>
+Modal windows should not scroll. If a modal contains enough information to require scrolling, use an alternative method of displaying content, such as a different UI element or another content page.</p>
 
-Closing the modal
-Actions inside modals should be clearly marked. There should be a clear path forward (“continue”) and back (“cancel”), in addition to a clearly labeled way to close the modal without taking any action at all. 
+<p><strong>Closing the modal</strong><br>
+Actions inside modals should be clearly marked. There should be a clear path forward (“continue”) and back (“cancel”), in addition to a clearly labeled way to close the modal without taking any action at all.</p>
  
 <h2 id="content">Content Guidelines<span class="cf-code-link">
  </span></h2>
