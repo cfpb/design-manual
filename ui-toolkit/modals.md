@@ -11,12 +11,7 @@ category: UI toolkit
 - [Code](#code) 
 {: class="toc"}
 
-<div class="content-50 content-first">
-
 <p>Modal windows (also known as dialog boxes or lightboxes) are “pop-up” elements that appear in front of a web page, blocking the main page below. Similar to popup windows or system alerts, modals are unique because they prevent interaction with the page underneath. </p> {: class="lead-in"}
-
-</div>
-
 
 <h2 id="use">Use Cases<span class="cf-code-link">
 </span></h2>
