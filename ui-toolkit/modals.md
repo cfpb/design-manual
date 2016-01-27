@@ -17,18 +17,6 @@ category: UI toolkit
 
 </div>
 
-<div class="content-50 content-last">
-  <h5 class="repo-list-header">Repository</h5>
-  <ul class="repo-list">
-    <li>
-      <span class="cf-icon cf-icon-github"></span>
-    </li>
-    <li>
-      <a href="https://github.com/cfpb/cf-modals"><h4>cf-modals</h4></a>
-      <p>Modal windows in the Capital Framework</p>
-    </li>
-  </ul>
-</div> 
 
 <h2 id="use">Use Cases<span class="cf-code-link">
 </span></h2>
