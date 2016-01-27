@@ -39,10 +39,9 @@ Modals help draw attention to an alert or a focused task by preventing interacti
   <h5 id="use-when">Only use modals to meet these objectives</h5>
    <strong>Feedback or correction</strong>
 
-	Modals can be effective for communicating a warning or alert outside the main web page. They can be triggered by a user interaction (like pressing a button to “save”) or without an interaction (like a timeout warning after a period of inactivity).
+	<p>Modals can be effective for communicating a warning or alert outside the main web page. They can be triggered by a user interaction (like pressing a button to “save”) or without an interaction (like a timeout warning after a period of inactivity).</p>
 
 	<strong>Interruption</strong>
-
 Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. A critical piece of this scenario is that you need the workflow to be interrupted to be effective. If not, explore other UI elements to accomplish the goal. 
 <h5 id="use-when">Only use modals to meet these objectives</h5>	<ul>
 	<li>Confirm an action that can’t be undone, such as “Are you sure you want to delete this?</li>
