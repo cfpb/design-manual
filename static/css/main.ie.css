@@ -1,3 +1,5 @@
+@import url(//fast.fonts.net/t/1.css?apiType=css&projectid=44e8c964-4684-44c6-a6e3-3f3da8787b50);
+
 /* ==========================================================================
    design-manual
    ========================================================================== */
@@ -712,8 +714,14 @@ input[type="radio"] {
           @base-font-size-px
           @base-line-height-px
           @base-line-height
-          @mobile-max
-          @tablet-min
+          @bp-xs-max
+          @bp-sm-min
+          @bp-sm-max
+          @bp-med-min
+          @bp-med-max
+          @bp-lg-min
+          @bp-lg-max
+          @bp-xl-min
     - name: Colors
       codenotes:
         - |
@@ -726,6 +734,7 @@ input[type="radio"] {
           @link-underline-hover
           @link-text-active
           @link-underline-active
+          @table-border
           @thead-text
           @thead-bg
           @td-bg
@@ -904,13 +913,13 @@ input[type="radio"] {
 
 .u-visually-hidden {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
   width: 1px;
+  height: 1px;
+  border: 0;
   margin: -1px;
   padding: 0;
-  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 /* topdoc
@@ -1520,19 +1529,19 @@ small {
         <h1>Example heading element</h1>
         <p class="h1">A non-heading element</p>
       notes:
-        - Responsive header. At mobile sizes, displays as h2.
+        - Responsive heading. At small screen sizes, displays as h2.
     - name: Heading level 2
       markup: |
         <h2>Example heading element</h2>
         <p class="h2">A non-heading element</p>
       notes:
-        - Responsive header. At mobile sizes, displays as h3.
+        - Responsive heading. At small screen sizes, displays as h3.
     - name: Heading level 3
       markup: |
         <h3>Example heading element</h3>
         <p class="h3">A non-heading element</p>
       notes:
-        - Responsive header. At mobile sizes, displays as h4.
+        - Responsive heading. At small screen sizes, displays as h4.
     - name: Heading level 4
       markup: |
         <h4>Example heading element</h4>
@@ -1545,14 +1554,14 @@ small {
       markup: |
         <h6>Example heading element</h6>
         <p class="h6">A non-heading element</p>
-    - name: Subheader
+    - name: Lead paragraph
       markup: |
-        <h1 class="subheader">Example subheader that's kinda long</h1>
-        <p class="subheader">Example subheader that's kinda long</p>
-    - name: Super header
+        <p class="lead-paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      notes:
+        - Responsive. Displays as an h3 on large screens; displays at h4 size (but still Regular weight) on small screens.
+    - name: Display heading (aka "superheading")
       markup: |
-        <h1 class="superheader">Example super header</h1>
-        <p class="superheader">Example super header</p>
+        <h1 class="superheading">Example display heading</h1>
   tags:
     - cf-core
 */
@@ -1565,113 +1574,248 @@ body {
 }
 
 h1,
-.h1,
 h2,
-.h2,
 h3,
-.h3 {
-  font-family: Arial, Arial, sans-serif;
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1,
+.h1 {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  margin-bottom: 0.44117647em;
+  font-size: 2.125em;
+  line-height: 1.25;
 }
 
 h1 em,
 .h1 em,
-h2 em,
-.h2 em,
-h3 em,
-.h3 em,
 h1 i,
-.h1 i,
-h2 i,
-.h2 i,
-h3 i,
-.h3 i {
-  font-family: Arial, Arial, sans-serif;
+.h1 i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
 
 .lt-ie9 h1 em,
 .lt-ie9 .h1 em,
-.lt-ie9 h2 em,
-.lt-ie9 .h2 em,
-.lt-ie9 h3 em,
-.lt-ie9 .h3 em,
 .lt-ie9 h1 i,
-.lt-ie9 .h1 i,
-.lt-ie9 h2 i,
-.lt-ie9 .h2 i,
-.lt-ie9 h3 i,
-.lt-ie9 .h3 i {
+.lt-ie9 .h1 i {
   font-style: normal !important;
 }
 
 h1 strong,
 .h1 strong,
-h2 strong,
-.h2 strong,
-h3 strong,
-.h3 strong,
 h1 b,
-.h1 b,
-h2 b,
-.h2 b,
-h3 b,
-.h3 b {
-  font-family: Arial, Arial, sans-serif;
+.h1 b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
 .lt-ie9 h1 strong,
 .lt-ie9 .h1 strong,
+.lt-ie9 h1 b,
+.lt-ie9 .h1 b {
+  font-weight: normal !important;
+}
+
+p + h1,
+p + .h1,
+ul + h1,
+ul + .h1,
+ol + h1,
+ol + .h1,
+dl + h1,
+dl + .h1,
+figure + h1,
+figure + .h1,
+img + h1,
+img + .h1,
+table + h1,
+table + .h1,
+blockquote + h1,
+blockquote + .h1 {
+  margin-top: 1.76470588em;
+}
+
+h2,
+.h2 {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0.57692308em;
+  font-size: 1.625em;
+  line-height: 1.25;
+}
+
+h2 em,
+.h2 em,
+h2 i,
+.h2 i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 h2 em,
+.lt-ie9 .h2 em,
+.lt-ie9 h2 i,
+.lt-ie9 .h2 i {
+  font-style: normal !important;
+}
+
+h2 strong,
+.h2 strong,
+h2 b,
+.h2 b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
 .lt-ie9 h2 strong,
 .lt-ie9 .h2 strong,
+.lt-ie9 h2 b,
+.lt-ie9 .h2 b {
+  font-weight: normal !important;
+}
+
+p + h2,
+p + .h2,
+ul + h2,
+ul + .h2,
+ol + h2,
+ol + .h2,
+dl + h2,
+dl + .h2,
+figure + h2,
+figure + .h2,
+img + h2,
+img + .h2,
+table + h2,
+table + .h2,
+blockquote + h2,
+blockquote + .h2 {
+  margin-top: 1.73076923em;
+}
+
+h1 + h2,
+h1 + .h2,
+.h1 + h2,
+.h1 + .h2,
+h3 + h2,
+h3 + .h2,
+.h3 + h2,
+.h3 + .h2,
+h4 + h2,
+h4 + .h2,
+.h4 + h2,
+.h4 + .h2,
+h5 + h2,
+h5 + .h2,
+.h5 + h2,
+.h5 + .h2,
+h6 + h2,
+h6 + .h2,
+.h6 + h2,
+.h6 + .h2 {
+  margin-top: 1.15384615em;
+}
+
+h3,
+.h3 {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0.68181818em;
+  font-size: 1.375em;
+  line-height: 1.25;
+}
+
+h3 em,
+.h3 em,
+h3 i,
+.h3 i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 h3 em,
+.lt-ie9 .h3 em,
+.lt-ie9 h3 i,
+.lt-ie9 .h3 i {
+  font-style: normal !important;
+}
+
+h3 strong,
+.h3 strong,
+h3 b,
+.h3 b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
 .lt-ie9 h3 strong,
 .lt-ie9 .h3 strong,
-.lt-ie9 h1 b,
-.lt-ie9 .h1 b,
-.lt-ie9 h2 b,
-.lt-ie9 .h2 b,
 .lt-ie9 h3 b,
 .lt-ie9 .h3 b {
   font-weight: normal !important;
 }
 
-h1,
-.h1 {
-  margin-top: 0;
-  margin-bottom: 0.47058824em;
-  font-size: 2.125em;
-  line-height: 1.29411765;
-}
-
-h2,
-.h2 {
-  margin-top: 0;
-  margin-bottom: 0.73076923em;
-  font-size: 1.625em;
-  line-height: 1.26923077;
-}
-
-h3,
-.h3 {
-  margin-top: 0;
-  margin-bottom: 0.95454545em;
-  font-size: 1.375em;
-  line-height: 1.27272727;
+p + h3,
+p + .h3,
+ul + h3,
+ul + .h3,
+ol + h3,
+ol + .h3,
+dl + h3,
+dl + .h3,
+figure + h3,
+figure + .h3,
+img + h3,
+img + .h3,
+table + h3,
+table + .h3,
+blockquote + h3,
+blockquote + .h3,
+h1 + h3,
+h1 + .h3,
+.h1 + h3,
+.h1 + .h3,
+h2 + h3,
+h2 + .h3,
+.h2 + h3,
+.h2 + .h3,
+h4 + h3,
+h4 + .h3,
+.h4 + h3,
+.h4 + .h3,
+h5 + h3,
+h5 + .h3,
+.h5 + h3,
+.h5 + .h3,
+h6 + h3,
+h6 + .h3,
+.h6 + h3,
+.h6 + .h3 {
+  margin-top: 1.36363636em;
 }
 
 h4,
 .h4 {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.22222222;
+  margin-bottom: 0.83333333em;
+  font-size: 1.125em;
+  line-height: 1.25;
 }
 
 .lt-ie9 h4,
@@ -1679,96 +1823,245 @@ h4,
   font-weight: normal !important;
 }
 
-h5,
-h6,
-.h5,
-.h6 {
-  font-family: Arial, Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.lt-ie9 h5,
-.lt-ie9 h6,
-.lt-ie9 .h5,
-.lt-ie9 .h6 {
-  font-weight: normal !important;
+p + h4,
+p + .h4,
+ul + h4,
+ul + .h4,
+ol + h4,
+ol + .h4,
+dl + h4,
+dl + .h4,
+figure + h4,
+figure + .h4,
+img + h4,
+img + .h4,
+table + h4,
+table + .h4,
+blockquote + h4,
+blockquote + .h4,
+h1 + h4,
+h1 + .h4,
+.h1 + h4,
+.h1 + .h4,
+h2 + h4,
+h2 + .h4,
+.h2 + h4,
+.h2 + .h4,
+h3 + h4,
+h3 + .h4,
+.h3 + h4,
+.h3 + .h4,
+h5 + h4,
+h5 + .h4,
+.h5 + h4,
+.h5 + .h4,
+h6 + h4,
+h6 + .h4,
+.h6 + h4,
+.h6 + .h4 {
+  margin-top: 1.66666667em;
 }
 
 h5,
 .h5 {
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 1.07142857em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.lt-ie9 h5,
+.lt-ie9 .h5 {
+  font-weight: normal !important;
+}
+
+p + h5,
+p + .h5,
+ul + h5,
+ul + .h5,
+ol + h5,
+ol + .h5,
+dl + h5,
+dl + .h5,
+figure + h5,
+figure + .h5,
+img + h5,
+img + .h5,
+table + h5,
+table + .h5,
+blockquote + h5,
+blockquote + .h5,
+h1 + h5,
+h1 + .h5,
+.h1 + h5,
+.h1 + .h5,
+h2 + h5,
+h2 + .h5,
+.h2 + h5,
+.h2 + .h5,
+h3 + h5,
+h3 + .h5,
+.h3 + h5,
+.h3 + .h5,
+h4 + h5,
+h4 + .h5,
+.h4 + h5,
+.h4 + .h5,
+h6 + h5,
+h6 + .h5,
+.h6 + h5,
+.h6 + .h5 {
+  margin-top: 2.14285714em;
 }
 
 h6,
 .h6 {
-  margin-top: 0;
-  margin-bottom: 0.41666667em;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 1.25em;
   font-size: 0.75em;
-  line-height: 1.83333333;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
+.lt-ie9 h6,
+.lt-ie9 .h6 {
+  font-weight: normal !important;
+}
+
+p + h6,
+p + .h6,
+ul + h6,
+ul + .h6,
+ol + h6,
+ol + .h6,
+dl + h6,
+dl + .h6,
+figure + h6,
+figure + .h6,
+img + h6,
+img + .h6,
+table + h6,
+table + .h6,
+blockquote + h6,
+blockquote + .h6,
+h1 + h6,
+h1 + .h6,
+.h1 + h6,
+.h1 + .h6,
+h2 + h6,
+h2 + .h6,
+.h2 + h6,
+.h2 + .h6,
+h3 + h6,
+h3 + .h6,
+.h3 + h6,
+.h3 + .h6,
+h4 + h6,
+h4 + .h6,
+.h4 + h6,
+.h4 + .h6,
+h5 + h6,
+h5 + .h6,
+.h5 + h6,
+.h5 + .h6 {
+  margin-top: 2.5em;
+}
+
+.lead-paragraph,
 .subheader {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.22222222;
+  margin-bottom: 0.68181818em;
+  font-size: 1.375em;
+  line-height: 1.25;
+  margin-top: 1.36363636em;
+  margin-bottom: 0.83333333em;
 }
 
-.subheader em,
-.subheader i {
-  font-family: Arial, Arial, sans-serif;
+.lead-paragraph em,
+.lead-paragraph i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
 
-.lt-ie9 .subheader em,
-.lt-ie9 .subheader i {
+.lt-ie9 .lead-paragraph em,
+.lt-ie9 .lead-paragraph i {
   font-style: normal !important;
 }
 
-.subheader strong,
-.subheader b {
-  font-family: Arial, Arial, sans-serif;
+.lead-paragraph strong,
+.lead-paragraph b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
-.lt-ie9 .subheader strong,
-.lt-ie9 .subheader b {
+.lt-ie9 .lead-paragraph strong,
+.lt-ie9 .lead-paragraph b {
   font-weight: normal !important;
 }
 
+.superheading,
 .superheader {
-  margin-bottom: 0.1875em;
-  font-size: 3em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
+  margin-bottom: 0.41666667em;
+  font-size: 3em;
   line-height: 1.25;
 }
 
-.lt-ie9 .superheader {
+.superheading em,
+.superheading i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .superheading em,
+.lt-ie9 .superheading i {
+  font-style: normal !important;
+}
+
+.superheading strong,
+.superheading b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .superheading strong,
+.lt-ie9 .superheading b {
   font-weight: normal !important;
 }
 
 /* topdoc
-  name: Margins
+  name: Body copy element vertical margins
   family: cf-core
   patterns:
     - name: Consistent vertical margins
       notes:
-        - "Assumes that the font size of each of these items remains the default."
+        - Applies 15px bottom margin to all p, ul, ol, dl, figure, table, and blockquote elements.
+        - Applies -5px top margin to lists following paragraphs to reduce margin between them to 10px.
+        - Applies 8px bottom margin to list items that are not within a nav element.
+        - Assumes that the font size of each of these items remains the default.
       markup: |
         <p>Paragraph margin example</p>
+        <p>Paragraph margin example</p>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
         <p>Paragraph margin example</p>
   tags:
     - cf-core
@@ -1778,10 +2071,24 @@ p,
 ul,
 ol,
 dl,
+figure,
 table,
-figure {
+blockquote {
   margin-top: 0;
-  margin-bottom: 1.25em;
+  margin-bottom: 0.9375em;
+}
+
+p + ul,
+p + ol {
+  margin-top: -0.3125em;
+}
+
+:not(nav) li {
+  margin-bottom: 0.5em;
+}
+
+.lt-ie9 nav li {
+  margin-bottom: 0;
 }
 
 /* topdoc
@@ -1925,17 +2232,35 @@ nav a {
   patterns:
     - name: Unordered list
       markup: |
+        <p>Paragraph example for visual reference</p>
         <ul>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
         </ul>
+    - name: Ordered list
+      markup: |
+        <p>Paragraph example for visual reference</p>
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
   tags:
     - cf-core
 */
 
 ul {
+  padding-left: 2em;
   list-style: square;
+}
+
+ol {
+  padding-left: 1.9375em;
+}
+
+ol > li {
+  padding-left: 0.0625em;
 }
 
 /* topdoc
@@ -1954,65 +2279,35 @@ ul {
             </thead>
             <tbody>
                 <tr>
-                    <th>Row 1 header</th>
+                    <td>Row 1, column 1</td>
                     <td>Row 1, column 2</td>
                     <td>Row 1, column 3</td>
                 </tr>
                 <tr>
-                    <th>Row 2 header</th>
+                    <td>Row 2, column 1</td>
                     <td>Row 2, column 2</td>
                     <td>Row 2, column 3</td>
                 </tr>
                 <tr>
-                    <th>Row 3 header</th>
+                    <td>Row 3, column 1</td>
                     <td>Row 3, column 2</td>
                     <td>Row 3, column 3</td>
                 </tr>
             </tbody>
         </table>
-    - name: Compact table
-      markup: |
-        <table class="compact-table">
-            <thead>
-                <tr>
-                    <th>Column 1 header</th>
-                    <th>Column 2 header</th>
-                    <th>Column 3 header</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Row 1 header</th>
-                    <td>Row 1, column 2</td>
-                    <td>Row 1, column 3</td>
-                </tr>
-                <tr>
-                    <th>Row 2 header</th>
-                    <td>Row 2, column 2</td>
-                    <td>Row 2, column 3</td>
-                </tr>
-                <tr>
-                    <th>Row 3 header</th>
-                    <td>Row 3, column 2</td>
-                    <td>Row 3, column 3</td>
-                </tr>
-            </tbody>
-        </table>
-      notes:
-        - Reduces cell padding to 10px.
   tags:
     - cf-core
 */
 
 table {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 table em,
 table i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -2024,7 +2319,7 @@ table i {
 
 table strong,
 table b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -2036,34 +2331,110 @@ table b {
 
 th,
 td {
-  padding: 0.75em 0.9375em;
-  background: #f8f8f8;
+  padding: 0.625em;
 }
 
 thead th,
 thead td {
   color: #ffffff;
   background: #43484e;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 1.07142857em;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
-tbody > tr:nth-child(odd) > th,
-tbody > tr:nth-child(odd) > td {
-  background: #f1f2f2;
+.lt-ie9 thead th,
+.lt-ie9 thead td {
+  font-weight: normal !important;
 }
 
-.compact-table th,
-.compact-table td {
-  padding: 0.4375em 0.625em;
+p + thead th,
+p + thead td,
+ul + thead th,
+ul + thead td,
+ol + thead th,
+ol + thead td,
+dl + thead th,
+dl + thead td,
+figure + thead th,
+figure + thead td,
+img + thead th,
+img + thead td,
+table + thead th,
+table + thead td,
+blockquote + thead th,
+blockquote + thead td,
+h1 + thead th,
+h1 + thead td,
+.h1 + thead th,
+.h1 + thead td,
+h2 + thead th,
+h2 + thead td,
+.h2 + thead th,
+.h2 + thead td,
+h3 + thead th,
+h3 + thead td,
+.h3 + thead th,
+.h3 + thead td,
+h4 + thead th,
+h4 + thead td,
+.h4 + thead th,
+.h4 + thead td,
+h6 + thead th,
+h6 + thead td,
+.h6 + thead th,
+.h6 + thead td {
+  margin-top: 2.14285714em;
+}
+
+thead,
+tbody tr {
+  border-bottom: 1px solid #5b616b;
 }
 
 th {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: left;
 }
 
 .lt-ie9 th {
+  font-weight: normal !important;
+}
+
+tbody th {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+tbody th em,
+tbody th i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 tbody th em,
+.lt-ie9 tbody th i {
+  font-style: normal !important;
+}
+
+tbody th strong,
+tbody th b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 tbody th strong,
+.lt-ie9 tbody th b {
   font-weight: normal !important;
 }
 
@@ -2094,11 +2465,13 @@ th {
 */
 
 blockquote {
-  margin: 1.25em;
+  margin-right: 0.9375em;
+  margin-left: 0.9375em;
 }
 
 blockquote {
-  margin: 1.75em 2.5em;
+  margin-right: 1.875em;
+  margin-left: 1.875em;
 }
 
 /* topdoc
@@ -2127,14 +2500,14 @@ blockquote {
 label {
   display: block;
   margin-bottom: 0.3125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 label em,
 label i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -2146,7 +2519,7 @@ label i {
 
 label strong,
 label b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -4689,19 +5062,18 @@ figure img {
 .btn {
   display: inline-block;
   box-sizing: border-box;
-  padding: 0.57142857em 1em;
+  padding: 0.5em 0.875em;
   border: 0;
-  border-radius: 0.28571429em;
+  border-radius: 0.25em;
   margin: 0;
   vertical-align: middle;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background-color 0.1s;
   transition: background-color 0.1s;
   -webkit-appearance: none;
 }
@@ -4740,7 +5112,7 @@ input.btn::-moz-focus-inner {
 }
 
 .btn + .btn {
-  margin-left: 0.42857143em;
+  margin-left: 0.375em;
 }
 
 .lt-ie8 {
@@ -4750,8 +5122,8 @@ input.btn::-moz-focus-inner {
 .lt-ie8 button.btn,
 .lt-ie8 input.btn {
   overflow: visible;
-  padding-top: 0.45714286em;
-  padding-bottom: 0.45714286em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 /* topdoc
@@ -5072,10 +5444,10 @@ input.btn::-moz-focus-inner {
 */
 
 .btn_icon__left {
-  padding: 0 0.75em 0 0;
+  padding: 0 0.65625em 0 0;
   border-right: 1px solid #ffffff;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
-  margin: 0 0.5em 0 0;
+  margin: 0 0.4375em 0 0;
 }
 
 .btn__secondary .btn_icon__left {
@@ -5095,11 +5467,11 @@ input.btn::-moz-focus-inner {
 }
 
 .btn_icon__right {
-  padding: 0 0 0 0.75em;
+  padding: 0 0 0 0.65625em;
   border-right: 0;
   border-left: 1px solid #ffffff;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
-  margin: 0 0 0 0.5em;
+  margin: 0 0 0 0.4375em;
 }
 
 .btn__secondary .btn_icon__right {
@@ -5176,7 +5548,7 @@ input.btn::-moz-focus-inner {
 .btn__grouped + .btn__grouped,
 .btn__grouped-last,
 .btn__grouped + .btn__grouped-last {
-  margin-left: -0.21428571em;
+  margin-left: -0.1875em;
 }
 
 .btn__grouped-first.btn__super + .btn__grouped.btn__super,
@@ -5351,7 +5723,7 @@ input.btn::-moz-focus-inner {
   padding: 0;
   border-bottom: 1px dotted #0072ce;
   border-radius: 0;
-  margin: 0.57142857em 0;
+  margin: 0.5em 0;
 }
 
 .btn__link,
@@ -5738,20 +6110,40 @@ input.btn::-moz-focus-inner {
 */
 
 .form-label-header {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
+  margin-bottom: 1.07142857em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
   margin-bottom: 0.71428571em;
 }
 
 .lt-ie9 .form-label-header {
   font-weight: normal !important;
+}
+
+p + .form-label-header,
+ul + .form-label-header,
+ol + .form-label-header,
+dl + .form-label-header,
+figure + .form-label-header,
+img + .form-label-header,
+table + .form-label-header,
+blockquote + .form-label-header,
+h1 + .form-label-header,
+.h1 + .form-label-header,
+h2 + .form-label-header,
+.h2 + .form-label-header,
+h3 + .form-label-header,
+.h3 + .form-label-header,
+h4 + .form-label-header,
+.h4 + .form-label-header,
+h6 + .form-label-header,
+.h6 + .form-label-header {
+  margin-top: 2.14285714em;
 }
 
 /* topdoc
@@ -6168,7 +6560,7 @@ textarea.success {
 .btn-inside-input input[type="number"] {
   box-sizing: border-box;
   width: 100%;
-  padding-right: 4.64285714em;
+  padding-right: 4.0625em;
 }
 
 .btn-inside-input input[type="text"].input__super,
@@ -6183,7 +6575,7 @@ textarea.success {
 .btn-inside-input .btn {
   border-bottom-width: 0 !important;
   position: absolute;
-  right: 1.07142857em;
+  right: 0.9375em;
   top: 0;
   /* pa11y fails unless the background color is explicitly set */
 }
@@ -6217,7 +6609,10 @@ textarea.success {
     codenotes:
       - |
         @block__border-top
+        @block__border-right
         @block__border-bottom
+        @block__border-left
+        @block__border
         @block__bg
         @content_main-border
         @content_sidebar-bg
@@ -7511,6 +7906,56 @@ textarea.success {
       notes:
         - "The standard .block class by itself simply adds a margin of twice the
            gutter width to the top and bottom."
+    - name: Border-top modifier
+      markup: |
+        Main content...
+        <div class="block block__border-top">
+            Content block with top border.
+        </div>
+      codenotes:
+        - .block.block__border-top
+      notes:
+        - "Adds top border to .block."
+    - name: Border-right modifier
+      markup: |
+        Main content...
+        <div class="block block__border-right">
+            Content block with right border.
+        </div>
+      codenotes:
+        - .block.block__border-right
+      notes:
+        - "Adds right border to .block."
+    - name: Border-bottom modifier
+      markup: |
+        Main content...
+        <div class="block block__border-bottom">
+            Content block with bottom border.
+        </div>
+      codenotes:
+        - .block.block__border-bottom
+      notes:
+        - "Adds bottom border to .block."
+    - name: Border-left modifier
+      markup: |
+        Main content...
+        <div class="block block__border-left">
+            Content block with left border.
+        </div>
+      codenotes:
+        - .block.block__border-left
+      notes:
+        - "Adds left border to .block."
+    - name: Border modifier
+      markup: |
+        Main content...
+        <div class="block block__border">
+            Content block with borders on all sides.
+        </div>
+      codenotes:
+        - .block.block__border
+      notes:
+        - "Adds border on all sides to .block."
     - name: Flush-top modifier
       markup: |
         Main content...
@@ -7558,26 +8003,56 @@ textarea.success {
         - "Removes the side margin from .block."
         - "Typically used in conjuction with .block__bg to create a 'well' whose
            background extends into the left and right gutters. (See below.)"
-    - name: Border-top modifier
+    - name: Flush modifier
+      markup: |
+        <main class="content content__1-3" role="main">
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main">
+                    Main content...
+                    <aside class="block block__flush">
+                        Content block with no margins.
+                    </aside>
+                </section>
+            </div>
+        </main>
+      codenotes:
+        - .block.block__flush
+      notes:
+        - "Removes the side, top, and bottom margin from .block."
+    - name: Background modifier
       markup: |
         Main content...
-        <div class="block block__border-top">
-            Content block with top border.
+        <div class="block block__bg">
+            Content block with a background
         </div>
       codenotes:
-        - .block.block__border-top
+        - .block.block__bg
       notes:
-        - "Adds top border to .block."
-    - name: Border-bottom modifier
+        - "Adds a background color and padding to .block."
+        - "Setup for (ems-equivalent) 30px padding on top and 60px on bottom."
+    - name: Background and flush-sides modifier combo example
       markup: |
-        Main content...
-        <div class="block block__border-bottom">
-            Content block with bottom border.
-        </div>
+        <main class="content content__1-3" role="main">
+            <div class="content_wrapper">
+                <aside class="content_sidebar">
+                    Section navigation
+                </aside>
+                <section class="content_main content__flush-bottom">
+                    Main content...
+                    <div class="block block__flush-sides block__bg">
+                        Content block with a background and flush sides
+                    </div>
+                </section>
+            </div>
+        </main>
       codenotes:
-        - .block.block__border-bottom
+        - .block.block__flush-sides.block__bg
       notes:
-        - "Adds bottom border to .block."
+        - "This is an example of combining modifiers to get a flush padded bg
+           with a .block."
     - name: Padded-top modifier
       markup: |
         Main content...
@@ -7602,36 +8077,6 @@ textarea.success {
       notes:
         - "Breaks bottom margin into margin & padding. Useful in combination with
            block__border-bottom to add padding between block contents & border."
-    - name: Background modifier
-      markup: |
-        Main content...
-        <div class="block block__bg">
-            Content block with a background
-        </div>
-      codenotes:
-        - .block.block__bg
-      notes:
-        - "Adds a background color and padding to .block."
-    - name: Background and flush-sides modifier combo example
-      markup: |
-        <main class="content content__1-3" role="main">
-            <div class="content_wrapper">
-                <aside class="content_sidebar">
-                    Section navigation
-                </aside>
-                <section class="content_main content__flush-bottom">
-                    Main content...
-                    <div class="block block__flush-sides block__bg">
-                        Content block with a background and flush sides
-                    </div>
-                </section>
-            </div>
-        </main>
-      codenotes:
-        - .block.block__flush-sides.block__bg
-      notes:
-        - "This is an example of combining modifiers to get a flush padded bg
-           with a .block."
     - name: Sub blocks
       markup: |
         <div class="block block__sub">
@@ -7695,8 +8140,20 @@ textarea.success {
   border-top: 1px solid #babbbd;
 }
 
+.block__border-right {
+  border-right: 1px solid #3a8899;
+}
+
 .block__border-bottom {
   border-bottom: 1px solid #babbbd;
+}
+
+.block__border-left {
+  border-left: 1px solid #3a8899;
+}
+
+.block__border {
+  border: 1px solid #3a8899;
 }
 
 .block__flush-top {
@@ -7717,8 +8174,21 @@ textarea.success {
   margin-left: -30px;
 }
 
+.block__flush {
+  margin-top: 0 !important;
+  margin-right: -15px;
+  margin-bottom: 0 !important;
+  margin-left: -15px;
+}
+
+.block__flush {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
 .block__bg {
   padding: 1.875em 0.9375em;
+  padding-bottom: 3.75em;
   background: #f1f2f2;
 }
 
@@ -7957,6 +8427,215 @@ textarea.success {
 }
 
 /* topdoc
+  name: Hero
+  family: cf-layout
+  patterns:
+    - name: .hero
+      markup: |
+        <section class="content_hero hero">
+            <div class="hero_wrapper wrapper">
+                <div class="hero_text">
+                    <h1 class="hero_heading">Hero title</h1>
+                    <p class="hero_subhead">
+                        Hero text goes here
+                    </p>
+                    <p class="hero_cta">
+                        <a>Call to action</a>
+                    </p>
+                </div>
+                <div class="hero_image" style="background-image: url('http://placekitten.com/g/400/195')"></div>
+            </div>
+        </section>
+      notes:
+        - "Hero consists of a headline, a small amount of additional text, an optional call to
+           action, and an illustration. Its background color is flush with
+           the sides of the screen, and the content is centered with wrapper classes."
+        - "The illustration can be customized by setting the background-image property
+           on the .hero_image element."
+        - "On small screens (or where media queries are not supported), the text spans the
+           full width of the .hero_wrapper and the illustration is displayed underneath."
+        - "For larger screen sizes, media queries are used to position the illustration
+           to the right of the text."
+        - "On desktop, the hero should not exceed 285px in height. The image should be 195px in
+           height to conform to this standard."
+      codenotes:
+        - .hero
+  tags:
+    - cf-layout
+*/
+
+.hero {
+  background-color: #f1f2f2;
+}
+
+.hero_wrapper {
+  box-sizing: border-box;
+  padding: 1.875em 0.9375em;
+  width: 100%;
+}
+
+.hero_wrapper {
+  display: table;
+}
+
+.hero_wrapper {
+  padding-top: 2.8125em;
+  padding-bottom: 2.8125em;
+  min-height: 17.8125em;
+}
+
+.lt-ie9 .hero_wrapper {
+  min-height: initial;
+}
+
+.hero_text {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 58.33333333%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.lt-ie8 .hero_text {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.hero_heading {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0.44117647em;
+  font-size: 2.125em;
+  line-height: 1.25;
+}
+
+.hero_heading em,
+.hero_heading i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .hero_heading em,
+.lt-ie9 .hero_heading i {
+  font-style: normal !important;
+}
+
+.hero_heading strong,
+.hero_heading b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .hero_heading strong,
+.lt-ie9 .hero_heading b {
+  font-weight: normal !important;
+}
+
+.hero_subhead {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0.68181818em;
+  font-size: 1.375em;
+  line-height: 1.25;
+  margin-bottom: 1.36363636em;
+}
+
+.hero_subhead em,
+.hero_subhead i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .hero_subhead em,
+.lt-ie9 .hero_subhead i {
+  font-style: normal !important;
+}
+
+.hero_subhead strong,
+.hero_subhead b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .hero_subhead strong,
+.lt-ie9 .hero_subhead b {
+  font-weight: normal !important;
+}
+
+.hero_subhead:last-child {
+  margin-bottom: initial;
+}
+
+.hero_cta {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: initial;
+}
+
+.hero_cta em,
+.hero_cta i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.lt-ie9 .hero_cta em,
+.lt-ie9 .hero_cta i {
+  font-style: normal !important;
+}
+
+.hero_cta strong,
+.hero_cta b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lt-ie9 .hero_cta strong,
+.lt-ie9 .hero_cta b {
+  font-weight: normal !important;
+}
+
+.hero_image {
+  min-height: 12.1875em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero_image {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 41.66666667%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.lt-ie8 .hero_image {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+/* topdoc
   name: EOF
   eof: true
 */
@@ -8046,20 +8725,19 @@ textarea.success {
 */
 
 .pull-quote_body {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0.95454545em;
+  margin-bottom: 0.68181818em;
   font-size: 1.375em;
-  line-height: 1.27272727;
+  line-height: 1.25;
   margin-bottom: 0.54545455em;
   color: #101820;
 }
 
 .pull-quote_body em,
 .pull-quote_body i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -8071,7 +8749,7 @@ textarea.success {
 
 .pull-quote_body strong,
 .pull-quote_body b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -8081,16 +8759,36 @@ textarea.success {
   font-weight: normal !important;
 }
 
+p + .pull-quote_body,
+ul + .pull-quote_body,
+ol + .pull-quote_body,
+dl + .pull-quote_body,
+figure + .pull-quote_body,
+img + .pull-quote_body,
+table + .pull-quote_body,
+blockquote + .pull-quote_body,
+h1 + .pull-quote_body,
+.h1 + .pull-quote_body,
+h2 + .pull-quote_body,
+.h2 + .pull-quote_body,
+h4 + .pull-quote_body,
+.h4 + .pull-quote_body,
+h5 + .pull-quote_body,
+.h5 + .pull-quote_body,
+h6 + .pull-quote_body,
+.h6 + .pull-quote_body {
+  margin-top: 1.36363636em;
+}
+
 .pull-quote_citation {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
+  margin-bottom: 1.07142857em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
   color: #75787b;
 }
 
@@ -8098,20 +8796,40 @@ textarea.success {
   font-weight: normal !important;
 }
 
+p + .pull-quote_citation,
+ul + .pull-quote_citation,
+ol + .pull-quote_citation,
+dl + .pull-quote_citation,
+figure + .pull-quote_citation,
+img + .pull-quote_citation,
+table + .pull-quote_citation,
+blockquote + .pull-quote_citation,
+h1 + .pull-quote_citation,
+.h1 + .pull-quote_citation,
+h2 + .pull-quote_citation,
+.h2 + .pull-quote_citation,
+h3 + .pull-quote_citation,
+.h3 + .pull-quote_citation,
+h4 + .pull-quote_citation,
+.h4 + .pull-quote_citation,
+h6 + .pull-quote_citation,
+.h6 + .pull-quote_citation {
+  margin-top: 2.14285714em;
+}
+
 .pull-quote__large .pull-quote_body {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0.73076923em;
+  margin-bottom: 0.57692308em;
   font-size: 1.625em;
-  line-height: 1.26923077;
+  line-height: 1.25;
   margin-bottom: 0.69230769em;
 }
 
 .pull-quote__large .pull-quote_body em,
 .pull-quote__large .pull-quote_body i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -8123,7 +8841,7 @@ textarea.success {
 
 .pull-quote__large .pull-quote_body strong,
 .pull-quote__large .pull-quote_body b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -8131,6 +8849,30 @@ textarea.success {
 .lt-ie9 .pull-quote__large .pull-quote_body strong,
 .lt-ie9 .pull-quote__large .pull-quote_body b {
   font-weight: normal !important;
+}
+
+p + .pull-quote__large .pull-quote_body,
+ul + .pull-quote__large .pull-quote_body,
+ol + .pull-quote__large .pull-quote_body,
+dl + .pull-quote__large .pull-quote_body,
+figure + .pull-quote__large .pull-quote_body,
+img + .pull-quote__large .pull-quote_body,
+table + .pull-quote__large .pull-quote_body,
+blockquote + .pull-quote__large .pull-quote_body {
+  margin-top: 1.73076923em;
+}
+
+h1 + .pull-quote__large .pull-quote_body,
+.h1 + .pull-quote__large .pull-quote_body,
+h3 + .pull-quote__large .pull-quote_body,
+.h3 + .pull-quote__large .pull-quote_body,
+h4 + .pull-quote__large .pull-quote_body,
+.h4 + .pull-quote__large .pull-quote_body,
+h5 + .pull-quote__large .pull-quote_body,
+.h5 + .pull-quote__large .pull-quote_body,
+h6 + .pull-quote__large .pull-quote_body,
+.h6 + .pull-quote__large .pull-quote_body {
+  margin-top: 1.15384615em;
 }
 
 /* topdoc
@@ -8158,14 +8900,14 @@ textarea.success {
 .micro-copy {
   color: #75787b;
   font-size: 0.875em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .micro-copy em,
 .micro-copy i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -8177,7 +8919,7 @@ textarea.success {
 
 .micro-copy strong,
 .micro-copy b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -8210,14 +8952,14 @@ textarea.success {
 */
 
 .short-desc {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .short-desc em,
 .short-desc i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -8229,7 +8971,7 @@ textarea.success {
 
 .short-desc strong,
 .short-desc b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -8257,21 +8999,41 @@ textarea.success {
 */
 
 .date {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
+  margin-bottom: 1.07142857em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
   color: #75787b;
   white-space: nowrap;
 }
 
 .lt-ie9 .date {
   font-weight: normal !important;
+}
+
+p + .date,
+ul + .date,
+ol + .date,
+dl + .date,
+figure + .date,
+img + .date,
+table + .date,
+blockquote + .date,
+h1 + .date,
+.h1 + .date,
+h2 + .date,
+.h2 + .date,
+h3 + .date,
+.h3 + .date,
+h4 + .date,
+.h4 + .date,
+h6 + .date,
+.h6 + .date {
+  margin-top: 2.14285714em;
 }
 
 /* topdoc
@@ -8300,13 +9062,12 @@ textarea.success {
 */
 
 .category-slug {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.22222222;
+  margin-bottom: 0.83333333em;
+  font-size: 1.125em;
+  line-height: 1.25;
   display: inline-block;
   margin-bottom: 0.44444444em;
   color: #101820;
@@ -8314,6 +9075,27 @@ textarea.success {
 
 .lt-ie9 .category-slug {
   font-weight: normal !important;
+}
+
+p + .category-slug,
+ul + .category-slug,
+ol + .category-slug,
+dl + .category-slug,
+figure + .category-slug,
+img + .category-slug,
+table + .category-slug,
+blockquote + .category-slug,
+h1 + .category-slug,
+.h1 + .category-slug,
+h2 + .category-slug,
+.h2 + .category-slug,
+h3 + .category-slug,
+.h3 + .category-slug,
+h5 + .category-slug,
+.h5 + .category-slug,
+h6 + .category-slug,
+.h6 + .category-slug {
+  margin-top: 1.66666667em;
 }
 
 a.category-slug {
@@ -8371,21 +9153,41 @@ a.category-slug.active {
 */
 
 .header-slug {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
+  margin-bottom: 1.07142857em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
   margin-bottom: 1.21428571em;
   border-top: 1px solid #e3e4e5;
 }
 
 .lt-ie9 .header-slug {
   font-weight: normal !important;
+}
+
+p + .header-slug,
+ul + .header-slug,
+ol + .header-slug,
+dl + .header-slug,
+figure + .header-slug,
+img + .header-slug,
+table + .header-slug,
+blockquote + .header-slug,
+h1 + .header-slug,
+.h1 + .header-slug,
+h2 + .header-slug,
+.h2 + .header-slug,
+h3 + .header-slug,
+.h3 + .header-slug,
+h4 + .header-slug,
+.h4 + .header-slug,
+h6 + .header-slug,
+.h6 + .header-slug {
+  margin-top: 2.14285714em;
 }
 
 .header-slug_inner {
@@ -8411,15 +9213,14 @@ a.category-slug.active {
 */
 
 .padded-header {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
+  margin-bottom: 1.07142857em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
   padding: 0.57142857em 0.71428571em;
   margin-bottom: 0;
   border-bottom: 1px solid #babbbd;
@@ -8429,6 +9230,27 @@ a.category-slug.active {
 
 .lt-ie9 .padded-header {
   font-weight: normal !important;
+}
+
+p + .padded-header,
+ul + .padded-header,
+ol + .padded-header,
+dl + .padded-header,
+figure + .padded-header,
+img + .padded-header,
+table + .padded-header,
+blockquote + .padded-header,
+h1 + .padded-header,
+.h1 + .padded-header,
+h2 + .padded-header,
+.h2 + .padded-header,
+h3 + .padded-header,
+.h3 + .padded-header,
+h4 + .padded-header,
+.h4 + .padded-header,
+h6 + .padded-header,
+.h6 + .padded-header {
+  margin-top: 2.14285714em;
 }
 
 /* topdoc
@@ -8457,15 +9279,14 @@ a.category-slug.active {
 */
 
 .fancy-slug {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
+  margin-bottom: 1.07142857em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
   position: relative;
   height: 1.14285714em;
   padding: 0 1.21428571em;
@@ -8478,6 +9299,27 @@ a.category-slug.active {
 
 .lt-ie9 .fancy-slug {
   font-weight: normal !important;
+}
+
+p + .fancy-slug,
+ul + .fancy-slug,
+ol + .fancy-slug,
+dl + .fancy-slug,
+figure + .fancy-slug,
+img + .fancy-slug,
+table + .fancy-slug,
+blockquote + .fancy-slug,
+h1 + .fancy-slug,
+.h1 + .fancy-slug,
+h2 + .fancy-slug,
+.h2 + .fancy-slug,
+h3 + .fancy-slug,
+.h3 + .fancy-slug,
+h4 + .fancy-slug,
+.h4 + .fancy-slug,
+h6 + .fancy-slug,
+.h6 + .fancy-slug {
+  margin-top: 2.14285714em;
 }
 
 .fancy-slug_text {
@@ -8804,7 +9646,7 @@ a.category-slug.active {
 
 .styled-link {
   border-bottom-width: 1px;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
@@ -8866,7 +9708,7 @@ a.category-slug.active {
 */
 
 .jump-link {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
@@ -9273,7 +10115,7 @@ a.category-slug.active {
 
 .list__branded li,
 .list__branded .list_item {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   list-style-type: none;
@@ -9284,7 +10126,7 @@ a.category-slug.active {
 .list__branded .list_item em,
 .list__branded li i,
 .list__branded .list_item i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -9300,7 +10142,7 @@ a.category-slug.active {
 .list__branded .list_item strong,
 .list__branded li b,
 .list__branded .list_item b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -9431,7 +10273,7 @@ a.category-slug.active {
 .pagination_label {
   display: inline-block;
   margin: 0;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
@@ -9453,7 +10295,7 @@ input[type="text"].pagination_current-page {
   width: 2.625em;
   margin: 0 0.25em;
   font-size: 1em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: right;
@@ -9779,7 +10621,7 @@ input[type="text"].pagination_current-page {
 
 .expandable_label {
   color: #101820;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -9790,16 +10632,16 @@ input[type="text"].pagination_current-page {
 
 .expandable_link {
   color: #0072ce;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 0.875em;
-  line-height: 1.57142857;
+  font-size: 1em;
+  line-height: 1.375;
 }
 
 .expandable_link em,
 .expandable_link i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -9811,7 +10653,7 @@ input[type="text"].pagination_current-page {
 
 .expandable_link strong,
 .expandable_link b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -9875,7 +10717,7 @@ input[type="text"].pagination_current-page {
 
 .expandable_cue-open__animated,
 .expandable_cue-close__animated {
-  -webkit-transition: 0.25s -webkit-transform;
+  transition: 0.25s -webkit-transform;
   transition: 0.25s transform;
 }
 
@@ -10216,20 +11058,40 @@ button.expandable_header {
   border-bottom: 1px solid #919395;
   background: #f1f2f2;
   color: #75787b;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
+  margin-bottom: 1.07142857em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
   margin-bottom: 0;
 }
 
 .lt-ie9 .expandable-group_header {
   font-weight: normal !important;
+}
+
+p + .expandable-group_header,
+ul + .expandable-group_header,
+ol + .expandable-group_header,
+dl + .expandable-group_header,
+figure + .expandable-group_header,
+img + .expandable-group_header,
+table + .expandable-group_header,
+blockquote + .expandable-group_header,
+h1 + .expandable-group_header,
+.h1 + .expandable-group_header,
+h2 + .expandable-group_header,
+.h2 + .expandable-group_header,
+h3 + .expandable-group_header,
+.h3 + .expandable-group_header,
+h4 + .expandable-group_header,
+.h4 + .expandable-group_header,
+h6 + .expandable-group_header,
+.h6 + .expandable-group_header {
+  margin-top: 2.14285714em;
 }
 
 .expandable-group .expandable {
@@ -10239,18 +11101,38 @@ button.expandable_header {
 }
 
 .expandable-group .expandable_label {
-  margin-top: 0;
-  margin-bottom: 1.16666667em;
-  font-size: 1.125em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.22222222;
+  margin-bottom: 0.83333333em;
+  font-size: 1.125em;
+  line-height: 1.25;
   margin-bottom: 0;
 }
 
 .lt-ie9 .expandable-group .expandable_label {
   font-weight: normal !important;
+}
+
+p + .expandable-group .expandable_label,
+ul + .expandable-group .expandable_label,
+ol + .expandable-group .expandable_label,
+dl + .expandable-group .expandable_label,
+figure + .expandable-group .expandable_label,
+img + .expandable-group .expandable_label,
+table + .expandable-group .expandable_label,
+blockquote + .expandable-group .expandable_label,
+h1 + .expandable-group .expandable_label,
+.h1 + .expandable-group .expandable_label,
+h2 + .expandable-group .expandable_label,
+.h2 + .expandable-group .expandable_label,
+h3 + .expandable-group .expandable_label,
+.h3 + .expandable-group .expandable_label,
+h5 + .expandable-group .expandable_label,
+.h5 + .expandable-group .expandable_label,
+h6 + .expandable-group .expandable_label,
+.h6 + .expandable-group .expandable_label {
+  margin-top: 1.66666667em;
 }
 
 .expandable-group .expandable_content {
@@ -10273,6 +11155,72 @@ button.expandable_header {
 
 /* cf-core
    ========================================================================== */
+
+/*
+ * Source: http://fast.fonts.net/cssapi/44e8c964-4684-44c6-a6e3-3f3da8787b50.css
+ * This file has been edited to use absolute URLS so we can concatenate it with
+ * all of our other styles.
+ */
+
+@font-face {
+  font-family: "AvenirNextLTW01-Regular";
+  src: url("//fast.fonts.net/dv2/2/e9167238-3b3f-4813-a04a-a384394eed42.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Regular";
+  src: url("//fast.fonts.net/dv2/2/e9167238-3b3f-4813-a04a-a384394eed42.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/1e9892c0-6927-4412-9874-1b82801ba47a.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/52a192b1-bea5-4b48-879f-107f009b666f.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Italic";
+  src: url("//fast.fonts.net/dv2/2/d1fddef1-d940-4904-8f6c-17e809462301.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Italic";
+  src: url("//fast.fonts.net/dv2/2/d1fddef1-d940-4904-8f6c-17e809462301.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Medium";
+  src: url("//fast.fonts.net/dv2/2/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Medium";
+  src: url("//fast.fonts.net/dv2/2/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/f26faddb-86cc-4477-a253-1e1287684336.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Demi";
+  src: url("//fast.fonts.net/dv2/2/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AvenirNextLTW01-Demi";
+  src: url("//fast.fonts.net/dv2/2/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/99affa9a-a5e9-4559-bd07-20cf0071852d.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
 
 /* cf-buttons
    ========================================================================== */
@@ -10337,7 +11285,7 @@ button.expandable_header {
 
 .header .site-title .title-link .site-org {
   color: #75787b;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -10416,7 +11364,7 @@ button.expandable_header {
 .main-nav li {
   display: inline-block;
   margin: 0 1em 0.5em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.125em;
@@ -10813,7 +11761,7 @@ figure {
 }
 
 .content .toc li {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.125em;
@@ -10842,7 +11790,7 @@ figure {
 }
 
 .content .lead-in {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.125em;
@@ -10850,7 +11798,7 @@ figure {
 
 .content .lead-in em,
 .content .lead-in i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -10862,7 +11810,7 @@ figure {
 
 .content .lead-in strong,
 .content .lead-in b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -10896,7 +11844,7 @@ figure {
 }
 
 .content dt {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -10937,7 +11885,7 @@ figure {
 
 .swatch th {
   padding-right: 0.25em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: left;
@@ -11129,21 +12077,41 @@ figure {
    ========================================================================== */
 
 [class^="type-color-combo"] {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
+  margin-bottom: 1.07142857em;
   font-size: 0.875em;
-  line-height: 1.57142857;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform: uppercase;
   padding: 0.5em 1em;
   list-style: none;
 }
 
 .lt-ie9 [class^="type-color-combo"] {
   font-weight: normal !important;
+}
+
+p + [class^="type-color-combo"],
+ul + [class^="type-color-combo"],
+ol + [class^="type-color-combo"],
+dl + [class^="type-color-combo"],
+figure + [class^="type-color-combo"],
+img + [class^="type-color-combo"],
+table + [class^="type-color-combo"],
+blockquote + [class^="type-color-combo"],
+h1 + [class^="type-color-combo"],
+.h1 + [class^="type-color-combo"],
+h2 + [class^="type-color-combo"],
+.h2 + [class^="type-color-combo"],
+h3 + [class^="type-color-combo"],
+.h3 + [class^="type-color-combo"],
+h4 + [class^="type-color-combo"],
+.h4 + [class^="type-color-combo"],
+h6 + [class^="type-color-combo"],
+.h6 + [class^="type-color-combo"] {
+  margin-top: 2.14285714em;
 }
 
 .type-color-combo__black-on-white {
@@ -11243,7 +12211,7 @@ figure {
 }
 
 .minicon-scale-table th {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: .875em;
@@ -11275,7 +12243,7 @@ figure {
 }
 
 .minicon-asset-lib .minicon-assets-div h6 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: .875em;
@@ -11345,7 +12313,7 @@ figure {
 }
 
 .demi-ex p {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11355,7 +12323,7 @@ figure {
 }
 
 .medium-ex p {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -11365,14 +12333,14 @@ figure {
 }
 
 .regular-ex p {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .regular-ex p em,
 .regular-ex p i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11384,7 +12352,7 @@ figure {
 
 .regular-ex p strong,
 .regular-ex p b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11398,25 +12366,20 @@ figure {
   font-family: Georgia, "Times New Roman", serif;
 }
 
-h2.h2-ex {
-  margin-top: 0;
-  border-bottom: none;
-}
-
-#print-hierarchy-ex .superheader {
-  font-family: Arial, Arial, sans-serif;
+#print-hierarchy-ex .superheading {
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 60pt;
   line-height: 66pt;
 }
 
-.lt-ie9 #print-hierarchy-ex .superheader {
+.lt-ie9 #print-hierarchy-ex .superheading {
   font-weight: normal !important;
 }
 
 #print-hierarchy-ex h1 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 38pt;
@@ -11425,7 +12388,7 @@ h2.h2-ex {
 
 #print-hierarchy-ex h1 em,
 #print-hierarchy-ex h1 i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11437,7 +12400,7 @@ h2.h2-ex {
 
 #print-hierarchy-ex h1 strong,
 #print-hierarchy-ex h1 b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11447,52 +12410,54 @@ h2.h2-ex {
   font-weight: normal !important;
 }
 
-#print-hierarchy-ex h2 {
-  font-family: Arial, Arial, sans-serif;
+#print-hierarchy-ex h2.h2-print-ex {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  border-bottom: none;
+  margin-top: 0;
   font-size: 26pt;
   line-height: 28pt;
 }
 
-#print-hierarchy-ex h2 em,
-#print-hierarchy-ex h2 i {
-  font-family: Arial, Arial, sans-serif;
+#print-hierarchy-ex h2.h2-print-ex em,
+#print-hierarchy-ex h2.h2-print-ex i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
 
-.lt-ie9 #print-hierarchy-ex h2 em,
-.lt-ie9 #print-hierarchy-ex h2 i {
+.lt-ie9 #print-hierarchy-ex h2.h2-print-ex em,
+.lt-ie9 #print-hierarchy-ex h2.h2-print-ex i {
   font-style: normal !important;
 }
 
-#print-hierarchy-ex h2 strong,
-#print-hierarchy-ex h2 b {
-  font-family: Arial, Arial, sans-serif;
+#print-hierarchy-ex h2.h2-print-ex strong,
+#print-hierarchy-ex h2.h2-print-ex b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
-.lt-ie9 #print-hierarchy-ex h2 strong,
-.lt-ie9 #print-hierarchy-ex h2 b {
+.lt-ie9 #print-hierarchy-ex h2.h2-print-ex strong,
+.lt-ie9 #print-hierarchy-ex h2.h2-print-ex b {
   font-weight: normal !important;
 }
 
-#print-hierarchy-ex h3 {
-  font-family: Arial, Arial, sans-serif;
+#print-hierarchy-ex h3.h3-print-ex {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16pt;
   line-height: 18pt;
 }
 
-.lt-ie9 #print-hierarchy-ex h3 {
+.lt-ie9 #print-hierarchy-ex h3.h3-print-ex {
   font-weight: normal !important;
 }
 
 #print-hierarchy-ex h4.h4-print-ex {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14pt;
@@ -11504,7 +12469,7 @@ h2.h2-ex {
 }
 
 #print-hierarchy-ex h5 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 10pt;
@@ -11518,7 +12483,7 @@ h2.h2-ex {
 }
 
 #print-hierarchy-ex h6 {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12pt;
@@ -11531,40 +12496,40 @@ h2.h2-ex {
   font-weight: normal !important;
 }
 
-p.print-subheader {
-  font-family: Arial, Arial, sans-serif;
+p.print-subheading {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18pt;
-  line-height: 22pt;
+  font-size: 16pt;
+  line-height: 20pt;
 }
 
-p.print-subheader em,
-p.print-subheader i {
-  font-family: Arial, Arial, sans-serif;
+p.print-subheading em,
+p.print-subheading i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
 
-.lt-ie9 p.print-subheader em,
-.lt-ie9 p.print-subheader i {
+.lt-ie9 p.print-subheading em,
+.lt-ie9 p.print-subheading i {
   font-style: normal !important;
 }
 
-p.print-subheader strong,
-p.print-subheader b {
-  font-family: Arial, Arial, sans-serif;
+p.print-subheading strong,
+p.print-subheading b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
-.lt-ie9 p.print-subheader strong,
-.lt-ie9 p.print-subheader b {
+.lt-ie9 p.print-subheading strong,
+.lt-ie9 p.print-subheading b {
   font-weight: normal !important;
 }
 
 p.print-avenir-para {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 11pt;
@@ -11573,7 +12538,7 @@ p.print-avenir-para {
 
 p.print-avenir-para em,
 p.print-avenir-para i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11585,7 +12550,7 @@ p.print-avenir-para i {
 
 p.print-avenir-para strong,
 p.print-avenir-para b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11601,7 +12566,7 @@ p.print-georgia-para {
 }
 
 .print-ul ul li p {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 11pt;
@@ -11611,7 +12576,7 @@ p.print-georgia-para {
 
 .print-ul ul li p em,
 .print-ul ul li p i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11623,7 +12588,7 @@ p.print-georgia-para {
 
 .print-ul ul li p strong,
 .print-ul ul li p b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11686,14 +12651,14 @@ p.print-georgia-para {
   margin: 0;
   font-size: 0.875em;
   color: #75787b;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .repo-list p em,
 .repo-list p i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11705,7 +12670,7 @@ p.print-georgia-para {
 
 .repo-list p strong,
 .repo-list p b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11737,7 +12702,7 @@ h2 span.cf-code-link {
   float: right;
   font-size: .625em;
   padding-top: .7em;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -11829,7 +12794,7 @@ ul.list_links-minicons li {
 .grid-demo p {
   max-width: none;
   text-align: center;
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   margin-top: 1.125em;
@@ -11837,7 +12802,7 @@ ul.list_links-minicons li {
 
 .grid-demo p em,
 .grid-demo p i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -11849,7 +12814,7 @@ ul.list_links-minicons li {
 
 .grid-demo p strong,
 .grid-demo p b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -12086,14 +13051,14 @@ ul.list_links-minicons li {
 }
 
 .secondary-nav {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .secondary-nav em,
 .secondary-nav i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -12105,7 +13070,7 @@ ul.list_links-minicons li {
 
 .secondary-nav strong,
 .secondary-nav b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -12194,7 +13159,7 @@ ul.list_links-minicons li {
 }
 
 .footer {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   display: table-row;
@@ -12209,7 +13174,7 @@ ul.list_links-minicons li {
 
 .footer em,
 .footer i {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -12221,7 +13186,7 @@ ul.list_links-minicons li {
 
 .footer strong,
 .footer b {
-  font-family: Arial, Arial, sans-serif;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
