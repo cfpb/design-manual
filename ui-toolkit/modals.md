@@ -64,7 +64,22 @@ category: UI toolkit
 <h2 id="content">Content Guidelines<span class="cf-code-link">
  </span></h2>
   
-     
+<p>When a modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal window or the primary action button.</p>
+
+<p>Provide separate focus and hover states for the close minicon and any “next” action buttons.</p>
+
+<p>The close minicon needs to be accessible from a keyboard.</p>
+
+<p>The find function (ctrl+F) will not search information contained within a modal window.</p> 
+
+<p>When a modal window is closed, return focus to the last active element on the page behind the modal.</p> 
+
+<p>Specific coding directions:</p>
+  <ul>
+    <li>Use the aria-hidden, aria-label, and aria-labelledby attributes.</li>
+    <li>Add role="alertdialog" to the modal window.</li>
+    <li>Code the close minicon using a button element for more semantic markup.</li>
+
             
 <h2 id="style">Style<span class="cf-code-link">
   <a href="https://cfpb.github.io/cf-modals/docs/">View code 
