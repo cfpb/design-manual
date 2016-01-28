@@ -60,10 +60,6 @@ category: UI toolkit
     <li>ESC key on a keyboard</li>
   </ul>
 
- 
-<h2 id="content">Content Guidelines<span class="cf-code-link">
- </span></h2>
-  
 <p>When a modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal window or the primary action button.</p>
 
 <p>Provide separate focus and hover states for the close minicon and any “next” action buttons.</p>
@@ -79,11 +75,19 @@ category: UI toolkit
     <li>Use the aria-hidden, aria-label, and aria-labelledby attributes.</li>
     <li>Add role="alertdialog" to the modal window.</li>
     <li>Code the close minicon using a button element for more semantic markup.</li>
+ 
+<h2 id="content">Content Guidelines<span class="cf-code-link">
+ </span></h2>
+  
+<p>Modal windows should have a clear headline at the top of the window. This headline should clearly state what is happening or what action a modal is prompting the user for.</p>
+ 
+<p>Any copy underneath the headline should include clear instructions about what the user needs to do.</p>
+
+<p>If form fields are included in a modal, they should follow standard form field design guidelines.</p> 
+
 
             
-<h2 id="style">Style<span class="cf-code-link">
-  <a href="https://cfpb.github.io/cf-modals/docs/">View code 
-    <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"></h2>
 
 <div class="content-50 content-first">
 * 3px CFPB Green stripe along the top of the window
