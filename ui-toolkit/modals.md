@@ -43,13 +43,13 @@ category: UI toolkit
 <h2 id="behavior">Behavior<span class="cf-code-link">
  </span></h2>
  
-<h4 id="opening">Opening a modal</h4>
+<h3 id="opening">Opening a modal</h3>
 <p>Modals can be triggered by links, buttons, or even inactivity on a site. All modals should have a clear headline at the top of the window that clearly matches the action the user took to display the modal. If a modal appears due to inactivity, the headline should clearly state the action that is about to take place due to that inactivity.</p> 
 
-<h4 id="scrolling">Scrolling</h4>
+<h3 id="scrolling">Scrolling</h3>
 <p>Modal windows should not scroll. If a modal contains enough information to require scrolling, use an alternative method of displaying content, such as a different UI element or another content page.</p>
 
-<h4 id="closing">Closing a modal</h4>
+<h3 id="closing">Closing a modal</h3>
 <p>Actions inside modals should be clearly marked. There should be a clear path forward (“continue”) and back (“cancel”), in addition to a clearly labeled way to close the modal without taking any action at all.</p>
 
 <p>Modal windows are always closable by clicking or tapping:</p>
@@ -76,6 +76,8 @@ category: UI toolkit
     <li>Use the aria-hidden, aria-label, and aria-labelledby attributes.</li>
     <li>Add role="alertdialog" to the modal window.</li>
     <li>Code the close minicon using a button element for more semantic markup.</li>
+
+ 
  
 <h2 id="content">Content Guidelines<span class="cf-code-link">
  </span></h2>
@@ -91,6 +93,21 @@ category: UI toolkit
 <h2 id="style">Style<span class="cf-code-link"></h2>
 
 <div class="content-50 content-first">
+<p>Modal window box</p>
+  <ul>
+    <li>Alignment: centered horizontally and vertically on top of lightbox</li>
+    <li>Background: White #ffffff</li> 
+    <li>Background lightbox: Gray-80 #75787b, 70% opacity</li>
+    <li>Color: Black #101820</li>
+    <li>Font: Avenir Next Regular</li>
+    <li>Text size body: 16px</li>
+    <li>Text size header: 22px</li>
+    <li>Padding: 30px</li>
+    <li>Top border: 3px CFPB Green #20aa3f</li>
+  </ul>  
+    
+    
+    
 * 3px CFPB Green stripe along the top of the window
 * 30px padding as default
 * 22px Avenir Next Regular black header text
