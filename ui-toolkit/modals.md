@@ -18,15 +18,15 @@ category: UI toolkit
 
 <p>Modals help draw attention to an alert or a focused task by preventing interactions with anything on the web page other than the modal itself. Due to their disruptive nature, modal windows should only be used in very specific cases outlined below.</p>
 
-<h5 id="use-when">Only use modals to meet these objectives</h5>
-<p><strong>Feedback or correction</strong><br>
-Modals can be effective for communicating a warning or alert outside the main web page. They can be triggered by a user interaction (like pressing a button to “save”) or without an interaction (like a timeout warning after a period of inactivity).</p>
+<h3 id="feedback-correction">Feedback or correction</h3>
 
-<p><strong>Interruption</strong><br>
-Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. A critical piece of this scenario is that you need the workflow to be interrupted to be effective. If not, explore other UI elements to accomplish the goal.</p> 
+<p>Modals can be effective for communicating a warning or alert outside the main web page. They can be triggered by a user interaction (like pressing a button to “save”) or without an interaction (like a timeout warning after a period of inactivity).</p>
+
+<h3 id="interruption">Interruption</h3>
+<p>Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. A critical piece of this scenario is that you need the workflow to be interrupted to be effective. If not, explore other UI elements to accomplish the goal.</p> 
 
 <div class="content-50 content-first">
-  <h5 id="examples">Examples of when to use modals</h5>
+  <h4 id="examples">Examples of when to use modals</h4>
   <ul>
     <li>Confirm an action that can’t be undone, such as “Are you sure you want to delete this?</li>
     <li>Display a warning that something is about to expire or timeout</li>
