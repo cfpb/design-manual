@@ -60,6 +60,7 @@ category: UI toolkit
     <li>ESC key on a keyboard</li>
   </ul>
 
+<h3 id="accessible-behavior">Creating accessible behaviors</h3>
 <p>When a modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal window or the primary action button.</p>
 
 <p>Provide separate focus and hover states for the close minicon and any “next” action buttons.</p>
