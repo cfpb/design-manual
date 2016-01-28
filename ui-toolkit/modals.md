@@ -52,7 +52,7 @@ category: UI toolkit
 <h4 id="closing">Closing a modal</h4>
 <p>Actions inside modals should be clearly marked. There should be a clear path forward (“continue”) and back (“cancel”), in addition to a clearly labeled way to close the modal without taking any action at all.</p>
 
-<p>Modal windows are always closable by clicking or tapping:<p/>
+<p>Modal windows are always closable by clicking or tapping:</p>
   <ul>
     <li>A delete minicon or label in the upper right corner</li>
     <li>The next action button or link</li>
