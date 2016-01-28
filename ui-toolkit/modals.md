@@ -43,14 +43,14 @@ category: UI toolkit
 <h2 id="behavior">Behavior<span class="cf-code-link">
  </span></h2>
  
-<p><strong>Opening a modal</strong><br>
-Modals can be triggered by links, buttons, or even inactivity on a site. All modals should have a clear headline at the top of the window that clearly matches the action the user took to display the modal. If a modal appears due to inactivity, the headline should clearly state the action that is about to take place due to that inactivity.</p> 
+<h4 id="opening">Opening a modal</h4>
+<p>Modals can be triggered by links, buttons, or even inactivity on a site. All modals should have a clear headline at the top of the window that clearly matches the action the user took to display the modal. If a modal appears due to inactivity, the headline should clearly state the action that is about to take place due to that inactivity.</p> 
 
-<p><strong>Scrolling</strong><br>
-Modal windows should not scroll. If a modal contains enough information to require scrolling, use an alternative method of displaying content, such as a different UI element or another content page.</p>
+<h4 id="scrolling">Scrolling</h4>
+<p>Modal windows should not scroll. If a modal contains enough information to require scrolling, use an alternative method of displaying content, such as a different UI element or another content page.</p>
 
-<p><strong>Closing the modal</strong><br>
-Actions inside modals should be clearly marked. There should be a clear path forward (“continue”) and back (“cancel”), in addition to a clearly labeled way to close the modal without taking any action at all.</p>
+<h4 id="closing">Closing a modal</h4>
+<p>Actions inside modals should be clearly marked. There should be a clear path forward (“continue”) and back (“cancel”), in addition to a clearly labeled way to close the modal without taking any action at all.</p>
  
 <h2 id="content">Content Guidelines<span class="cf-code-link">
  </span></h2>
