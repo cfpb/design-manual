@@ -76,7 +76,7 @@ category: UI toolkit
     <li>Use the aria-hidden, aria-label, and aria-labelledby attributes.</li>
     <li>Add role="alertdialog" to the modal window.</li>
     <li>Code the close minicon using a button element for more semantic markup.</li>
-
+  </ul>
  
  
 <h2 id="content">Content Guidelines<span class="cf-code-link">
