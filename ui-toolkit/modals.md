@@ -93,16 +93,16 @@ category: UI toolkit
 <h2 id="style">Style<span class="cf-code-link"></h2>
 
 <div class="content-50 content-first">
-<p>Modal window box</p>
+<h4 id="modal">Modal window box</h4>
   <ul>
     <li>Alignment: centered horizontally and vertically on top of lightbox</li>
     <li>Background: White #ffffff</li> 
     <li>Background lightbox: Gray-80 #75787b, 70% opacity</li>
     <li>Color: Black #101820</li>
     <li>Font: Avenir Next Regular</li>
+    <li>Padding: 30px</li>
     <li>Text size body: 16px</li>
     <li>Text size header: 22px</li>
-    <li>Padding: 30px</li>
     <li>Top border: 3px CFPB Green #20aa3f</li>
   </ul>  
     
@@ -124,18 +124,11 @@ category: UI toolkit
     * Small screens: 270px width
     * Medium and large screens: 630px width
     
-Modal windows should have a clear headline at the top of the window. If the
-modal window was triggered due to user action, the headline should closely match the
-text of the triggering element.
-
-When a modal window is displayed, its background page should be set to fixed.
-
-Based on our use cases, modal windows should not scroll. If a modal window you have
-designed or developed does scroll, use an alternative UI element.
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
 <img src="/design-manual/static/img/modals/savesearch.png" /> 
+<img src="/design-manual/static/img/modals/dmmodals.png" /> 
 {:/nomarkdown}
 </div>
 
