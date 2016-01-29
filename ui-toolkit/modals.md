@@ -78,9 +78,10 @@ category: UI toolkit
     <li>Code the close minicon using a button element for more semantic markup.</li>
   </ul>
  
- 
+
+
 <h2 id="content">Content Guidelines<span class="cf-code-link">
- </span></h2>
+</span></h2>
   
 <p>Modal windows should have a clear headline at the top of the window. This headline should clearly state what is happening or what action a modal is prompting the user for.</p>
  
