@@ -105,25 +105,34 @@ category: UI toolkit
     <li>Text size header: 22px</li>
     <li>Top border: 3px CFPB Green #20aa3f</li>
   </ul>  
-    
-    
-    
-* 3px CFPB Green stripe along the top of the window
-* 30px padding as default
-* 22px Avenir Next Regular black header text
-* 16px Avenir Next Regular black body text
-* 16px delete minicon within a circle in the upper right hand corner, inline
-  with a "Close" label to its left.
-* Gray transparent background with opacity of 0.7
-* Next action bar:
-    * Gray 5% background
-	* 10px padding on top/bottom
-	* 30px padding on left/right
-	* Primary action buttons and secondary action links left aligned
-* Maximum allowed width:
-    * Small screens: 270px width
-    * Medium and large screens: 630px width
-    
+
+<h4 id="close">Close area</h4>
+  <ul>
+    <li>Minicon: “delete-round”</li>
+    <li>Minicon color: Pacific #0072ce</li>
+    <li>Minicon size: 16px (cf-icon_lg)</li>
+    <li>Font: 16px Avenir Next Regular</li>
+    <li>Font color: Pacific #0072ce</li>
+  </ul>
+
+<h4 id="action-bar">Gray action bar</h4>
+  <ul>
+    <li>Background: Gray-5 #f7f8f9</li>
+    <li>Padding right/left: 30px</li>
+    <li>Padding top/bottom: 10px</li>
+    <li>Primary action: left aligned button</li>
+  </ul> 
+
+<h4 id="max-width">Maximum width</h4> 
+  <ul>
+    <li>270px for small screens</li>
+    <li>630px for medium and large screens</li>
+  </ul>
+
+<h4 id="inactive">Inactive window</h4>
+  <ul> 
+    <li>Set page to fixed</li>
+  </ul>
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
