@@ -6,7 +6,7 @@ category: UI toolkit
 
 - [Use Cases](#use)
 - [Behavior](#behavior)
-- [Content Guidelines](#content)
+- [Content Guidelines](#guidelines)
 - [Style](#style)
 - [Code](#code) 
 {: class="toc"}
@@ -80,7 +80,7 @@ category: UI toolkit
  
 
 
-<h2 id="content">Content Guidelines<span class="cf-code-link">
+<h2 id="guidelines">Content Guidelines<span class="cf-code-link">
 </span></h2>
   
 <p>Modal windows should have a clear headline at the top of the window. This headline should clearly state what is happening or what action a modal is prompting the user for.</p>
