@@ -120,7 +120,7 @@ category: UI toolkit
     <li>Background: Gray-5 #f7f8f9</li>
     <li>Padding right/left: 30px</li>
     <li>Padding top/bottom: 10px</li>
-    <li>Primary action: left aligned button</li>
+    <li>Primary action: left aligned <a href="/design-manual/ui-toolkit/buttons.html#variations">button</a></li>
   </ul> 
 
 <h4 id="max-width">Maximum width</h4> 
@@ -144,48 +144,4 @@ category: UI toolkit
 
 <h2 id="code">Code<span class="cf-code-link">
 </span></h2>
-
-<div class="content-67 content-first">
-#### General
-
-Specific coding directions:
-
-* Use the `aria-hidden`, `aria-label`, and `aria-labelledby` attributes.
-* Add `role="alertdialog"` to the modal window.
-* Code the close minicon using a `button` element for more semantic markup. 
-
-When the modal window opens, set the focus to the first element users need to interact
-with. This could be either the first form field in the modal window or the primary
-action button.
-
-Provide separate focus and hover states for the close minicon and any next
-action buttons.
-
-The close minicon should be able to be accessed by a keyboard.
-
-Save the last active element on the parent window, and return the focus there
-when the modal window is closed.
-
-</div>
-
-#### Closing a modal window
-<div class="content-67 content-first">
-
-Modal windows are always closable by either:
-
-* clicking/tapping a delete minicon in the upper right corner,
-* clicking/tapping the next action buttons or links,
-* clicking/tapping anywhere outside the modal window, or
-* hitting the `ESC` key on a keyboard.
-
-</div>
-
-
-
-
-
-
-
-
-
 
