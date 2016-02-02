@@ -36,7 +36,6 @@ Heroes function as a primary focal point on a page, often used to introduce a co
 
 
 <div class="content-67 content-first">
-
 Content should be limited to one or two brief sentences to help the user orient themselves and ensure this page will satisfy their desired goal. Copy should be punchy and grab the user’s attention while reinforcing the brand voice. 
 
 Heroes are integral to the page, and cannot be removed. 
@@ -46,7 +45,6 @@ Heroes should be limited to first- (i.e., Consumer Help) or second-level (i.e., 
 Heroes should be the most prominent thing on the page, and help to establish visual hierarchy of where the page lives within the information architecture.
 
 Heroes can contain calls to action. Rules for button versus links apply in a call to action.
-
 </div>
 
 <div class="content-33 content-last"></div>
@@ -72,9 +70,9 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 <div class="content-33">
 * Text spans seven columns
 * Heading: H1, 25 maximum character count (including spaces)
-* Subheading: Lead paragraph (Avenir Next Regular 22px/28px) begins 15px below headline, 185 maximum character count (including spaces)
+* Subheading: Lead paragraph (Avenir Next Regular, 22px / 28px), begins 15px below headline, 185 maximum character count (including spaces)
 * Call to action link: Standard link colors in subheading style, appears 30px below subheading
-* Call to action button: Pacific Blue primary button, appears 30px below the subheading
+* Call to action button: Pacific Blue primary button, appears 30px below the subheading copy
 
 </div>
 
