@@ -51,7 +51,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
-<div>
+<div class="content-first">
 ![Image of the Owning a Home site's hero graphic]({{ site.baseurl }}/static/img/hero/Hero_desktop.png)
 </div>
 
@@ -68,7 +68,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 <div class="content-33">
 * Text spans seven columns
 * Heading: H1, 25 maximum character count (including spaces)
-* Subheading: Lead paragraph (Avenir Next Regular, 22px / 28px), begins 15px below headline, 185 maximum character count (including spaces)
+* Subheading: Lead paragraph (Avenir Next Regular, 22px/28px), begins 15px below headline, 185 maximum character count (including spaces)
 * Call to action link: Standard link colors in subheading style, appears 30px below subheading
 * Call to action button: Pacific Blue primary button, appears 30px below the subheading copy
 
