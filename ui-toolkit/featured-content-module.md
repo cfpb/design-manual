@@ -72,7 +72,8 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 
 <div class="content-33 content-last">
 * Category: 18px black minicon and H4 text, appears 30px from top
-* The following five categories can be used. <h4 class="cf-icon cf-icon-date"> Featured event</h4>
+* Categories to be used:
+<h4 class="cf-icon cf-icon-date"> Featured event</h4>
 <h4 class="cf-icon cf-icon-settings"> Featured blog</h4>
 <h4 class="cf-icon cf-icon-play-round"> Featured video</h4>
 <h4 class="cf-icon cf-icon-speech-bubble"> Featured tool</h4>
