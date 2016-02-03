@@ -94,9 +94,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 </div>
 
 <div class="content-67 content-last">
-
 ![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/Hero_tablet.png)
-
 </div>
 
 
