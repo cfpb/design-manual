@@ -51,7 +51,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
-<div class="col col-12">
+<div>
 ![Image of the Owning a Home site's hero graphic]({{ site.baseurl }}/static/img/hero/Hero_desktop.png)
 </div>
 
