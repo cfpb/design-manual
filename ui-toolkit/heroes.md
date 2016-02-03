@@ -48,21 +48,15 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 </div>
 
 <div class="content-33 content-last"></div>
-
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
-
 <div>
 <img alt="Image of the Owning a Home site's hero graphic" src="../static/img/hero/Hero_desktop.png"/>
 </div>
-
 <div class="content-33 content-first">
-
 * Full-width colored background with black text and Pacific blue link or button. Standard link and button styles apply. Color contrast of text and links on background must be <a href="{{ site.baseurl }}/identity/typography.html#type-accessibility">508-accessible</a>.
 * No breadcrumb should appear in or above the hero
 * Total height: 285px
 * Text is vertically centered, top and bottom padding should be no less than 45 px
-
-
 </div>
 
 <div class="content-33">
@@ -71,48 +65,38 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 * Subheading: Lead paragraph (Avenir Next Regular, 22px/28px), begins 15px below headline, 185 maximum character count (including spaces)
 * Call to action link: Standard link colors in subheading style, appears 30px below subheading
 * Call to action button: Pacific Blue primary button, appears 30px below the subheading copy
-
 </div>
 
 <div class="content-33 content-last">
 * Illustration area appears on the right of the text
 * Illustration is centered within five columns
 * Illustration height: 195px
-
 </div>
 
 <h2 id="tablet">Style at tablet size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
-
 * Heading: H2
 * Subheading: Lead paragraph (Avenir Next Regular, 18px/22px)
 * Top and bottom padding: 30px
 * Module height is flexible to text height
 * Visual is vertically centered
-
 </div>
 
 <div class="content-67 content-last">
 ![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/Hero_tablet.png)
 </div>
 
-
 <h2 id="mobile">Style at mobile size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
-
 <div class="content-33 content-first">
-
 * Heading: H2
 * Subheading: Lead paragraph (Avenir Next Regular, 18px/22px)
 * Top and bottom padding: 30px
 * Illustration is 30px below copy and spans width (to 15px padding)
-
 </div>
 
 <div class="content-33">
-
 ![Image of hero with call to action at mobile size]({{ site.baseurl }}/static/img/hero/Hero_mobile.png)
-
 </div>
 
 <div class="content-33 content-last"></div>
