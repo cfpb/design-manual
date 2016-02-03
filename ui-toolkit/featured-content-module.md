@@ -60,8 +60,6 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 </div>
 
 <div class="content-67 content-last">
-![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop01.png)
-
 ![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop02.png)
 </div>
 
@@ -102,8 +100,6 @@ Differences in style at tablet size
 
 <div class="content-67 content-last">
 
-![Image of featured content module example at tablet size]({{ site.baseurl }}/static/img/featured-content-module/fcm-tablet01.png)
-
 ![Image of featured content module example at tablet size]({{ site.baseurl }}/static/img/featured-content-module/fcm-tablet02.png)
 
 </div>
@@ -126,15 +122,10 @@ Differences in style at mobile size
 
 <div class="content-33">
 
-![Image of featured content module example at mobile size]({{ site.baseurl }}/static/img/featured-content-module/fcm-mobile01.png)
-
-</div>
-
-<div class="content-33">
-
 ![Image of featured content module example at mobile size]({{ site.baseurl }}/static/img/featured-content-module/fcm-mobile02.png)
 
 </div>
+
 
 
 
