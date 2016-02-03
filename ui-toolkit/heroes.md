@@ -49,9 +49,9 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 <div class="content-33 content-last"></div>
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
-<div>
-<img alt="Image of the Owning a Home site's hero graphic" src="../static/img/hero/Hero_desktop.png"/>
-</div>
+
+<div><img alt="Image of the Owning a Home site's hero graphic" src="../static/img/hero/Hero_desktop.png"/></div>
+
 <div class="content-33 content-first">
 * Full-width colored background with black text and Pacific blue link or button. Standard link and button styles apply. Color contrast of text and links on background must be <a href="{{ site.baseurl }}/identity/typography.html#type-accessibility">508-accessible</a>.
 * No breadcrumb should appear in or above the hero
