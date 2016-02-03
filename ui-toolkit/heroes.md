@@ -51,7 +51,9 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
+<div class="col col-12">
 ![Image of the Owning a Home site's hero graphic]({{ site.baseurl }}/static/img/hero/Hero_desktop.png)
+</div>
 
 <div class="content-33 content-first">
 
@@ -83,11 +85,11 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 
 <div class="content-33 content-first">
 
+* Heading: H2
+* Subheading: Lead paragraph (Avenir Next Regular, 18px/22px)
 * Top and bottom padding: 30px
 * Module height is flexible to text height
 * Visual is vertically centered
-* Heading: H2
-* Subheading: Lead paragraph (Avenir Next Regular, 18px/22px)
 
 </div>
 
