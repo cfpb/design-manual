@@ -51,6 +51,10 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
+<div>
+![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop02.png)
+</div>
+
 <div class="content-33 content-first">
 * Module is a minimum of 320px total in height with 30px top and bottom padding. It appears 60px underneath the header/intro paragraph of the page.
 * Background color of module is Gray 5 with a 1px Gray 50 stroke.
@@ -59,31 +63,24 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 * Text spans 3 columns and is left and top aligned.
 </div>
 
-<div class="content-67 content-last">
-![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop02.png)
-</div>
-
-<div class="content-33 content-first">
+<div class="content-33">
 * Heading: H2, appears 30px below category, 35 maximum character count (including spaces)
 * Body copy: 16px, appears 15px below the headline, 160 maximum character count (including spaces)
 * Call to action link: 16px, standard link colors, appears 30px below body copy, 30 maximum character count (including spaces)
 * Call to action button: Blue primary button, appears 30px below the body copy
 </div>
 
-<div class="content-33 content-first">
+<div class="content-33 content-last">
 * Category: 18px black minicon and H4 text, appears 30px from top
-* The following five categories can be used. If the content does not fit within one of the five categories, you may use this icon and prefix:
-* <h4 class="cf-icon cf-icon-favorite"> Featured </h4>
-</div>
-
-<div class="content-33 content-first">
+* The following five categories can be used. 
 <h4 class="cf-icon cf-icon-date"> Featured event</h4>
 <h4 class="cf-icon cf-icon-settings"> Featured blog</h4>
 <h4 class="cf-icon cf-icon-play-round"> Featured video</h4>
 <h4 class="cf-icon cf-icon-speech-bubble"> Featured tool</h4>
 <h4 class="cf-icon cf-icon-newspaper"> Featured news</h4>
+* If the content does not fit within one of the five categories, you may use this icon and prefix:
+* <h4 class="cf-icon cf-icon-favorite"> Featured </h4>
 </div>
-
 
 <h2 id="tablet">Style at tablet size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
