@@ -52,7 +52,7 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 <h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
-* Module is a minimum of 320px and maximum of 360px total in height with 30px top and bottom padding. It appears 60px underneath the header/intro paragraph of the page.
+* Module is a minimum of 320px total in height with 30px top and bottom padding. It appears 60px underneath the header/intro paragraph of the page.
 * Background color of module is Gray 5 with a 1px Gray 50 stroke.
 * Module bleeds to the edge of the page, right sidebar and left nav.
 * Visual spans 5 columns and bleeds into right sidebar. The visual is sized at 640x360px (a 16:9 ratio) for optimal appearance at all screen sizes.
@@ -66,9 +66,10 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 </div>
 
 <div class="content-33 content-first">
-* Headline is H2, appears 30px below category and is 1–2 lines
-* Body copy is 16px, appears 15px underneath headline, is 2 to 4 lines
-* A call to action may be used and appears 30px underneath body copy. If a link, standard link styles apply. If a button, standard primary button styles apply.
+* Heading: H2, appears 30px below category, 35 maximum character count (including spaces)
+* Body copy: 16px, appears 15px below the headline, 160 maximum character count (including spaces)
+* Call to action link: Standard link colors in subheading style, appears 30px below subheading, 30 maximum character count (including spaces)
+* Call to action button: Pacific Blue primary button, appears 30px below the subheading copy
 </div>
 
 <div class="content-33 content-first">
