@@ -55,7 +55,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 </div>
 
 <div class="content-33 content-first">
-* Full-width colored background with black text and Pacific blue link or button. Standard link and button styles apply. Color contrast of text and links on background must be <a href="{{ site.baseurl }}/identity/typography.html#type-accessibility">508-accessible</a>.
+* Full-width colored background with black text and blue link or button. Standard link and button styles apply. Color contrast of text and links on background must be <a href="{{ site.baseurl }}/identity/typography.html#type-accessibility">508-accessible</a>.
 * No breadcrumb should appear in or above the hero
 * Total height: 285px
 * Text is vertically centered, top and bottom padding should be no less than 45 px
@@ -66,7 +66,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 * Heading: H1, 25 maximum character count (including spaces)
 * Subheading: Lead paragraph (Avenir Next Regular, 22px/28px), begins 15px below headline, 185 maximum character count (including spaces)
 * Call to action link: Standard link colors in subheading style, appears 30px below subheading
-* Call to action button: Pacific Blue primary button, appears 30px below the subheading copy
+* Call to action button: Blue primary button, appears 30px below the subheading copy
 </div>
 
 <div class="content-33 content-last">
