@@ -32,7 +32,7 @@ Featured content modules (FCMs) function to highlight a specific piece of conten
 </div> 
 
 
-<h2 id="use">Use<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-layout/src/cf-layout.less#L544-L546">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="use">Use<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L544-L546">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 
 <div class="content-67 content-first">
@@ -49,7 +49,7 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 
 <div class="content-33 content-last"></div>
 
-<h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-layout/src/cf-layout.less#L544-L546">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L544-L546">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div>
 ![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop02.png)
@@ -82,7 +82,7 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 * <h4 class="cf-icon cf-icon-favorite"> Featured </h4>
 </div>
 
-<h2 id="tablet">Style at tablet size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-layout/src/cf-layout.less#L544-L546">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="tablet">Style at tablet size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L544-L546">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
@@ -102,7 +102,7 @@ Differences in style at tablet size
 </div>
 
 
-<h2 id="mobile">Style at mobile size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-layout/src/cf-layout.less#L544-L546">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="mobile">Style at mobile size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L544-L546">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 
