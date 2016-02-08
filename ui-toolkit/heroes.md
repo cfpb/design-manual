@@ -32,7 +32,7 @@ Heroes function as a primary focal point on a page, often used to introduce a co
 </div> 
 
 
-<h2 id="use">Use<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="use">Use<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 
 <div class="content-67 content-first">
@@ -48,7 +48,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 </div>
 
 <div class="content-33 content-last"></div>
-<h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div>
 <img alt="Image of the Owning a Home site's hero graphic" src="../static/img/hero/Hero_desktop.png"/>
@@ -75,7 +75,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 * Illustration height: 195px
 </div>
 
-<h2 id="tablet">Style at tablet size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="tablet">Style at tablet size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-33 content-first">
 * Heading: H2
@@ -89,7 +89,7 @@ Heroes can contain calls to action. Rules for button versus links apply in a cal
 ![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/Hero_tablet.png)
 </div>
 
-<h2 id="mobile">Style at mobile size<span class="cf-code-link"><a href="">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="mobile">Style at mobile size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 <div class="content-33 content-first">
 * Heading: H2
 * Subheading: Lead paragraph (Avenir Next Regular, 18px/22px)
