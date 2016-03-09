@@ -44,6 +44,9 @@ mainnav:
 - text: Overview
   url: index.html
   internal: true
+- text: Best practices
+  url: index.html
+  internal: true
 - text: Brand guidelines
   url: identity/identity.html
   internal: true
@@ -53,9 +56,10 @@ mainnav:
 - text: Page components
   url: index.html
   internal: true
-- text: Best practices
+- text: Data visualization
   url: index.html
   internal: true
+
 # - text: Guides
 #  url: guides/guides.html
 #  internal: true
@@ -76,18 +80,59 @@ secondarynav:
   url: index.html
   internal: true
   category: Overview
-- text: Design principles
-  url: guides/design-principles.html
+
+
+
+
+# Page Components - "Guides"
+- text: Alerts and notifications
+  url: 
   internal: true
   category: Guides
-- text: Accessible interfaces
-  url: guides/accessible-interfaces.html
+- text: Audio
+  url: 
   internal: true
   category: Guides
-- text: Effective forms
-  url: guides/effective-forms.html
+- text: Buttons
+  url: 
   internal: true
   category: Guides
+- text: Disclaimers
+  url: 
+  internal: true
+  category: Guides
+- text: Downloads
+  url: 
+  internal: true
+  category: Guides
+- text: Errors
+  url: 
+  internal: true
+  category: Guides
+- text: Expandables
+  url: 
+  internal: true
+  category: Guides
+- text: 
+  url: 
+  internal: true
+  category: Guides
+
+
+# - text: Design principles
+#  url: guides/design-principles.html
+#  internal: true
+#  category: Guides
+# - text: Accessible interfaces
+#  url: guides/accessible-interfaces.html
+#  internal: true
+#  category: Guides
+# - text: Effective forms
+# url: guides/effective-forms.html
+#  internal: true
+# category: Guides
+
+
 # - text: Filtering patterns
 #   url: guides/filtering-patterns.html
 #   internal: true
@@ -188,8 +233,6 @@ secondarynav:
   url:
   internal: true
   category: UI toolkit
-
-
 
 # - text: Buttons
 #   url: ui-toolkit/buttons.html
