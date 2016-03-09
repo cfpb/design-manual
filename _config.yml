@@ -44,8 +44,8 @@ mainnav:
 - text: Overview
   url: index.html
   internal: true
-- text: Style
-  url: index.html
+- text: Brand guidelines
+  url: identity/identity.html
   internal: true
 - text: Global elements
   url: index.html
@@ -96,42 +96,63 @@ secondarynav:
 #   url: guides/ux-checklist.html
 #   internal: true
 #   category: Guides
-- text: Logo
-  url: identity/logo.html
+- text: Beam pattern
+  url: identity/beams.html
+  internal: true
+  category: Visual identity
+- text: Cinematography
+  url: identity/video.html
   internal: true
   category: Visual identity
 - text: Color
   url: identity/color-principles.html
   internal: true
   category: Visual identity
-- text: Typography
-  url: identity/typography.html
-  internal: true
-  category: Visual identity
-- text: Minicons
-  url: identity/minicons.html
-  internal: true
-  category: Visual identity
-- text: Isocons
-  url: identity/isocons.html
+- text: Iconography
+  url: 
   internal: true
   category: Visual identity
 - text: Illustration
   url: identity/illustration.html
   internal: true
   category: Visual identity
-- text: Beam pattern
-  url: identity/beams.html
+- text: Infographics
+  url: 
+  internal: true
+  category: Visual identity
+- text: Isocons
+  url: identity/isocons.html
+  internal: true
+  category: Visual identity
+- text: Logo
+  url: identity/logo.html
+  internal: true
+  category: Visual identity
+- text: Minicons
+  url: identity/minicons.html
+  internal: true
+  category: Visual identity
+- text: Motion graphics
+  url: 
+  internal: true
+  category: Visual identity
+- text: Narration and sound
+  url: 
   internal: true
   category: Visual identity
 - text: Photography
   url: identity/photography.html
   internal: true
   category: Visual identity
-- text: Video
-  url: identity/video.html
+- text: Spacing
+  url: 
   internal: true
   category: Visual identity
+- text: Typography
+  url: identity/typography.html
+  internal: true
+  category: Visual identity
+# UI toolkit
 - text: Buttons
   url: ui-toolkit/buttons.html
   internal: true
