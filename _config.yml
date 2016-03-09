@@ -44,15 +44,27 @@ mainnav:
 - text: Overview
   url: index.html
   internal: true
-- text: Guides
-  url: guides/guides.html
+- text: Style
+  url: index.html
   internal: true
-- text: Visual identity
-  url: identity/identity.html
+- text: Global elements
+  url: index.html
   internal: true
-- text: UI toolkit
-  url: ui-toolkit/ui-toolkit.html
+- text: Page components
+  url: index.html
   internal: true
+- text: Best practices
+  url: index.html
+  internal: true
+# - text: Guides
+#  url: guides/guides.html
+#  internal: true
+# - text: Visual identity
+#  url: identity/identity.html
+#  internal: true
+# - text: UI toolkit
+#  url: ui-toolkit/ui-toolkit.html
+#  internal: true
 # - text: Downloads
 #   url: downloads/style-guide.html
 #   internal: true
