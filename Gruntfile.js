@@ -23,18 +23,21 @@ module.exports = function(grunt) {
     },
 
     /**
+     * Browserify: https://github.com/jmreidy/grunt-browserify/
+     *
+     * Grunt task for node-browserify.
+     */
+    browserify: {
+      main: {
+        src: ['<%= loc.src %>/static/js/app.js'],
+        dest: '<%= loc.dist %>/static/js/main.js'
+      }
+    },
+
+    /**
      * Concat: https://github.com/gruntjs/grunt-contrib-concat
      */
     concat: {
-      js: {
-        src: [
-          '<%= loc.modules %>/jquery/dist/jquery.js',
-          '<%= loc.modules %>/cf-*/*.js',
-          '!<%= loc.modules %>/cf-*/*.min.js',
-          '<%= loc.src %>/static/js/app.js'
-        ],
-        dest: '<%= loc.dist %>/static/js/main.js'
-      },
       topdocIcons: {
         src: [
           'src/topdoc-templates/includes/filter-components-without-markup.jade',
@@ -334,7 +337,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('compile-cf', ['concat:topdocIcons']);
   grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css', 'copy']);
-  grunt.registerTask('js', ['concat:js', 'uglify', 'usebanner:js', 'copy']);
+  grunt.registerTask('js', ['browserify', 'uglify', 'usebanner:js', 'copy']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('build', ['test', 'css', 'js', 'copy']);
   grunt.registerTask('default', ['build']);
