@@ -18,46 +18,19 @@ module.exports = function(grunt) {
      */
     loc: {
       src: 'src',
+      modules: 'node_modules',
       dist: '.'
     },
 
     /**
-     * Bower: https://github.com/yatskevich/grunt-bower-task
-     *
-     * Set up Bower packages and migrate static assets.
-     */
-    bower: {
-      cf: {
-        options: {
-          targetDir: '<%= loc.src %>/vendor/',
-          install: false,
-          verbose: true,
-          cleanTargetDir: false,
-          layout: function(type, component) {
-            if (type === 'img') {
-              return path.join('../static/img');
-            } else if (type === 'fonts') {
-              return path.join('../static/fonts');
-            } else {
-              return path.join(component);
-            }
-          }
-        }
-      }
-    },
-
-    /**
      * Concat: https://github.com/gruntjs/grunt-contrib-concat
-     *
-     * Concatenate cf-* Less files prior to compiling them.
      */
     concat: {
       js: {
         src: [
-          '<%= loc.src %>/vendor/jquery/jquery.js',
-          '<%= loc.src %>/vendor/jquery.easing/jquery.easing.js',
-          '<%= loc.src %>/vendor/cf-*/*.js',
-          '!<%= loc.src %>/vendor/cf-*/Gruntfile.js',
+          '<%= loc.modules %>/jquery/dist/jquery.js',
+          '<%= loc.modules %>/cf-*/*.js',
+          '!<%= loc.modules %>/cf-*/*.min.js',
           '<%= loc.src %>/static/js/app.js'
         ],
         dest: '<%= loc.dist %>/static/js/main.js'
@@ -79,9 +52,9 @@ module.exports = function(grunt) {
     less: {
       main: {
         options: {
-          // The src/vendor paths are needed to find the CF components' files.
+          // The module paths are needed to find the CF components' files.
           // Feel free to add additional paths to the array passed to `concat`.
-          paths: grunt.file.expand('src/vendor/*').concat([])
+          paths: grunt.file.expand('node_modules/cf-*/src/').concat([])
         },
         files: {
           '<%= loc.dist %>/static/css/main.css': ['<%= loc.src %>/static/css/main.less']
@@ -245,13 +218,21 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: '<%= loc.src %>',
+            flatten: true,
+            cwd: '<%= loc.modules %>',
             src: [
-              // Vendor files
-              'vendor/html5shiv/html5shiv-printshiv.min.js',
-              'vendor/box-sizing-polyfill/boxsizing.htc'
+              'html5shiv/dist/html5shiv-printshiv.min.js',
             ],
-            dest: '<%= loc.dist %>/static'
+            dest: '<%= loc.dist %>/static/vendor/html5shiv'
+          },
+          {
+            expand: true,
+            flatten: true,
+            cwd: '<%= loc.modules %>',
+            src: [
+              'box-sizing-polyfill/boxsizing.htc'
+            ],
+            dest: '<%= loc.dist %>/static/vendor/box-sizing-polyfill'
           }
         ]
       }
@@ -351,7 +332,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases and combinations.
    */
-  grunt.registerTask('compile-cf', ['bower:cf', 'concat:topdocIcons']);
+  grunt.registerTask('compile-cf', ['concat:topdocIcons']);
   grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css', 'copy']);
   grunt.registerTask('js', ['concat:js', 'uglify', 'usebanner:js', 'copy']);
   grunt.registerTask('test', ['jshint']);
