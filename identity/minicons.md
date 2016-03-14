@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Minicons
-category: Visual identity
+category: Brand Guidelines
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)

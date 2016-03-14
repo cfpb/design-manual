@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Photography
-category: Visual identity
+category: Brand Guidelines
 published: true
 ---
 

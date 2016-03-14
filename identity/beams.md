@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Beam pattern
-category: Visual identity
+category: Brand Guidelines
 published: true
 ---
 

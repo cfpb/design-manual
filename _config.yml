@@ -142,63 +142,39 @@ secondarynav:
 #   internal: true
 #   category: Guides
 
-# Brand Guidelines - "Visual identity"
+# Brand Guidelines - still in the "identity" folder
 - text: Beam pattern
   url: identity/beams.html
   internal: true
-  category: Visual identity
-- text: Cinematography
-  url: identity/video.html
-  internal: true
-  category: Visual identity
+  category: Brand Guidelines
 - text: Color
   url: identity/color-principles.html
   internal: true
-  category: Visual identity
-- text: Iconography
-  url: 
-  internal: true
-  category: Visual identity
+  category: Brand Guidelines
 - text: Illustration
   url: identity/illustration.html
   internal: true
-  category: Visual identity
-- text: Infographics
-  url: 
-  internal: true
-  category: Visual identity
+  category: Brand Guidelines
 - text: Isocons
   url: identity/isocons.html
   internal: true
-  category: Visual identity
+  category: Brand Guidelines
 - text: Logo
   url: identity/logo.html
   internal: true
-  category: Visual identity
+  category: Brand Guidelines
 - text: Minicons
   url: identity/minicons.html
   internal: true
-  category: Visual identity
-- text: Motion graphics
-  url: 
-  internal: true
-  category: Visual identity
-- text: Narration and sound
-  url: 
-  internal: true
-  category: Visual identity
+  category: Brand Guidelines
 - text: Photography
   url: identity/photography.html
   internal: true
-  category: Visual identity
-- text: Spacing
-  url: 
-  internal: true
-  category: Visual identity
+  category: Brand Guidelines
 - text: Typography
   url: identity/typography.html
   internal: true
-  category: Visual identity
+  category: Brand Guidelines
 
 # Global Elements - "UI toolkit"
 - text: Breadcrumbs

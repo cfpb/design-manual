@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Typography
-category: Visual identity
+category: Brand Guidelines
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Color
-category: Visual identity
+category: Brand Guidelines
 ---
 
 - [Palette](#palette)

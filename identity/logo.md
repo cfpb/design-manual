@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Logo
-category: Visual identity
+category: Brand Guidelines
 published: true
 ---
 
