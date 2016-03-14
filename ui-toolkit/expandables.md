@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Expandables
-category: UI toolkit
+category: Page components
 ---
 
 - [Use](#use)

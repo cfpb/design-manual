@@ -84,39 +84,23 @@ secondarynav:
 
 
 
-# Page Components - "Guides"
-- text: Alerts and notifications
-  url: 
-  internal: true
-  category: Guides
-- text: Audio
-  url: 
-  internal: true
-  category: Guides
+# Page components - "UI Toolkit"
 - text: Buttons
-  url: 
+  url: ui-toolkit/buttons.html
   internal: true
-  category: Guides
-- text: Disclaimers
-  url: 
-  internal: true
-  category: Guides
-- text: Downloads
-  url: 
-  internal: true
-  category: Guides
-- text: Errors
-  url: 
-  internal: true
-  category: Guides
+  category: Page components
 - text: Expandables
-  url: 
+  url: ui-toolkit/expandables.html
   internal: true
-  category: Guides
-- text: 
-  url: 
+  category: Page components
+- text: Featured content modules
+  url: ui-toolkit/featured-content-module.html
   internal: true
-  category: Guides
+  category: Page components
+- text: Tables
+  url: ui-toolkit/tables.html
+  internal: true
+  category: Page components
 
 
 # - text: Design principles
@@ -142,41 +126,41 @@ secondarynav:
 #   internal: true
 #   category: Guides
 
-# Brand Guidelines - still in the "identity" folder
+# Brand guidelines - still in the "identity" folder
 - text: Beam pattern
   url: identity/beams.html
   internal: true
-  category: Brand Guidelines
+  category: Brand guidelines
 - text: Color
   url: identity/color-principles.html
   internal: true
-  category: Brand Guidelines
+  category: Brand guidelines
 - text: Illustration
   url: identity/illustration.html
   internal: true
-  category: Brand Guidelines
+  category: Brand guidelines
 - text: Isocons
   url: identity/isocons.html
   internal: true
-  category: Brand Guidelines
+  category: Brand guidelines
 - text: Logo
   url: identity/logo.html
   internal: true
-  category: Brand Guidelines
+  category: Brand guidelines
 - text: Minicons
   url: identity/minicons.html
   internal: true
-  category: Brand Guidelines
+  category: Brand guidelines
 - text: Photography
   url: identity/photography.html
   internal: true
-  category: Brand Guidelines
+  category: Brand guidelines
 - text: Typography
   url: identity/typography.html
   internal: true
-  category: Brand Guidelines
+  category: Brand guidelines
 
-# Global Elements
+# Global elements
 - text: Heroes
   url: global-elements/heroes.html
   internal: true

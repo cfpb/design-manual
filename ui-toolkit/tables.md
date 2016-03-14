@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Tables
-category: UI toolkit
+category: Page components
 ---
 
 {::nomarkdown}

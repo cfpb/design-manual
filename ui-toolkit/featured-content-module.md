@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Featured content modules
-category: UI toolkit
+category: Page components
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Buttons
-category: UI toolkit
+category: Page components
 ---
 
 - [Style](#style)
