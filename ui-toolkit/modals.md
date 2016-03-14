@@ -138,11 +138,8 @@ category: UI toolkit
 <div class="content-50 content-last">
 {::nomarkdown}
 <img src="/design-manual/static/img/modals/savesearch.png" /> 
-<img src="/design-manual/static/img/modals/dmmodals.png" /> 
 {:/nomarkdown}
 </div>
 
 
-<h2 id="code">Code<span class="cf-code-link">
-</span></h2>
 
