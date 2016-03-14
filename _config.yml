@@ -119,7 +119,7 @@ secondarynav:
 
 
 # Global elements
-- text: Heroes
+- text: Page introductions
   url: global-elements/heroes.html
   internal: true
   category: Global elements
