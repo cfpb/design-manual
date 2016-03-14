@@ -45,7 +45,7 @@ mainnav:
   url: index.html
   internal: true
 - text: Best practices
-  url: index.html
+  url: guides/guides.html
   internal: true
 - text: Brand guidelines
   url: identity/identity.html
@@ -54,24 +54,11 @@ mainnav:
   url: global-elements/global-elements.html
   internal: true
 - text: Page components
-  url: index.html
+  url: ui-toolkit/ui-toolkit.html
   internal: true
 - text: Data visualization
-  url: index.html
+  url: data-visualization/data-visualization.html
   internal: true
-
-# - text: Guides
-#  url: guides/guides.html
-#  internal: true
-# - text: Visual identity
-#  url: identity/identity.html
-#  internal: true
-# - text: UI toolkit
-#  url: ui-toolkit/ui-toolkit.html
-#  internal: true
-# - text: Downloads
-#   url: downloads/style-guide.html
-#   internal: true
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
@@ -81,50 +68,20 @@ secondarynav:
   internal: true
   category: Overview
 
-
-
-
-# Page components - "UI Toolkit"
-- text: Buttons
-  url: ui-toolkit/buttons.html
+# Best practices - the "guides" folder
+- text: Design principles
+  url: guides/design-principles.html
   internal: true
-  category: Page components
-- text: Expandables
-  url: ui-toolkit/expandables.html
-  internal: true
-  category: Page components
-- text: Featured content modules
-  url: ui-toolkit/featured-content-module.html
-  internal: true
-  category: Page components
-- text: Tables
-  url: ui-toolkit/tables.html
-  internal: true
-  category: Page components
-
-
-# - text: Design principles
-#  url: guides/design-principles.html
-#  internal: true
-#  category: Guides
+  category: Best practices
 # - text: Accessible interfaces
 #  url: guides/accessible-interfaces.html
 #  internal: true
-#  category: Guides
-# - text: Effective forms
-# url: guides/effective-forms.html
-#  internal: true
-# category: Guides
+#  category: Best practices
+- text: Form best practices
+  url: guides/effective-forms.html
+  internal: true
+  category: Best practices
 
-
-# - text: Filtering patterns
-#   url: guides/filtering-patterns.html
-#   internal: true
-#   category: Guides
-# - text: UX checklist
-#   url: guides/ux-checklist.html
-#   internal: true
-#   category: Guides
 
 # Brand guidelines - still in the "identity" folder
 - text: Beam pattern
@@ -160,6 +117,7 @@ secondarynav:
   internal: true
   category: Brand guidelines
 
+
 # Global elements
 - text: Heroes
   url: global-elements/heroes.html
@@ -167,59 +125,23 @@ secondarynav:
   category: Global elements
 
 
-# - text: Buttons
-#   url: ui-toolkit/buttons.html
-#   internal: true
-  # category: UI toolkit
-# - text: Expandables
- #  url: ui-toolkit/expandables.html
-#   internal: true
- #  category: UI toolkit
- #- text: Form fields
- #  url: ui-toolkit/form-fields.html
- #  internal: true
- #  category: UI toolkit
-
- #- text: Links
-  # url: ui-toolkit/links.html
- #  internal: true
- #  category: UI toolkit
- #- text: Heroes
- #  url: ui-toolkit/heroes.html
- #  internal: true
- #  category: UI toolkit
- #- text: Featured content modules
-  # url: ui-toolkit/featured-content-module.html
-  # internal: true
-  # category: UI toolkit
-# - text: Modals
-#   url: ui-toolkit/modals.html
-#   internal: true
-#   category: UI toolkit
-# - text: Pagination
-#   url: ui-toolkit/pagination.html
-#   internal: true
-#   category: UI toolkit
-# - text: Tables
-#   url: ui-toolkit/tables.html
-#   internal: true
-#   category: UI toolkit
-# - text: Tooltips
-#   url: ui-toolkit/tooltips.html
-#   internal: true
-#   category: UI toolkit
-# - text: Brand 2.0 style guide
-#   url: downloads/style-guide.html
-#   internal: true
-#   category: Downloads
-# - text: Logo suite
-#   url: downloads/logo-suite.html
-#   internal: true
-#   category: Downloads
-# - text: Minicon font and assets
-#   url: downloads/minicons.html
-#   internal: true
-#   category: Downloads
+# Page components - the "ui-toolkit" folder
+- text: Buttons
+  url: ui-toolkit/buttons.html
+  internal: true
+  category: Page components
+- text: Expandables
+  url: ui-toolkit/expandables.html
+  internal: true
+  category: Page components
+- text: Featured content modules
+  url: ui-toolkit/featured-content-module.html
+  internal: true
+  category: Page components
+- text: Tables
+  url: ui-toolkit/tables.html
+  internal: true
+  category: Page components
 
 
 # Footer Navigation

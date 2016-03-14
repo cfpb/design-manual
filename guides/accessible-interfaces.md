@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Accessible interfaces
-category: Guides
+category: Best practices
 ---
 
 - [Perceivable](#perceivable)

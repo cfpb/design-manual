@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Design principles
-category: Guides
+category: Best practices
 ---
 
 <div class="content-67 content-first">

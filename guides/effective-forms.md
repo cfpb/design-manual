@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  Effective forms
-category: Guides
+title:  Form best practices
+category: Best practices
 ---
 
 - [Choosing a form structure](#choosing-a-form-structure)
