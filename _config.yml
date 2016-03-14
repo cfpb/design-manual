@@ -69,14 +69,14 @@ secondarynav:
   category: Overview
 
 # Best practices - the "guides" folder
+- text: Accessible interfaces
+  url: guides/accessible-interfaces.html
+  internal: true
+  category: Best practices
 - text: Design principles
   url: guides/design-principles.html
   internal: true
   category: Best practices
-# - text: Accessible interfaces
-#  url: guides/accessible-interfaces.html
-#  internal: true
-#  category: Best practices
 - text: Form best practices
   url: guides/effective-forms.html
   internal: true
@@ -116,10 +116,19 @@ secondarynav:
   url: identity/typography.html
   internal: true
   category: Brand guidelines
+- text: Video
+  url: identity/video.html
+  internal: true
+  category: Brand guidelines
 
 
 # Global elements
-- text: Page introductions
+- text: Grid and layout
+  url: global-elements/grid-and-layout.html
+  internal: true
+  category: Global elements
+
+- text: Heroes
   url: global-elements/heroes.html
   internal: true
   category: Global elements
