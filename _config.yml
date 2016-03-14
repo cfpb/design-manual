@@ -51,7 +51,7 @@ mainnav:
   url: identity/identity.html
   internal: true
 - text: Global elements
-  url: ui-toolkit/ui-toolkit.html
+  url: global-elements/global-elements.html
   internal: true
 - text: Page components
   url: index.html
@@ -176,39 +176,12 @@ secondarynav:
   internal: true
   category: Brand Guidelines
 
-# Global Elements - "UI toolkit"
-- text: Breadcrumbs
-  url: 
+# Global Elements
+- text: Heroes
+  url: global-elements/heroes.html
   internal: true
-  category: UI toolkit
-- text: Grid
-  url: ui-toolkit/grid-and-layout.html
-  internal: true
-  category: UI toolkit
-- text: Navigation
-  url:
-  internal: true
-  category: UI toolkit
-- text: Page introductions
-  url:
-  internal: true
-  category: UI toolkit
-- text: Page templates
-  url:
-  internal: true
-  category: UI toolkit
-- text: Page titles
-  url:
-  internal: true
-  category: UI toolkit
-- text: Search
-  url:
-  internal: true
-  category: UI toolkit
-- text: Text treatment
-  url:
-  internal: true
-  category: UI toolkit
+  category: Global elements
+
 
 # - text: Buttons
 #   url: ui-toolkit/buttons.html
