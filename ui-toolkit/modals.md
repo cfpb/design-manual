@@ -4,16 +4,16 @@ title:  Modal windows
 category: UI toolkit
 ---
 
-- [Use Cases](#use)
+- [Use cases](#use)
 - [Behavior](#behavior)
-- [Content Guidelines](#guidelines)
+- [Content guidelines](#guidelines)
 - [Style](#style)
 - [Code](#code) 
 {: class="toc"}
 
 <p>Modal windows (also known as dialog boxes or lightboxes) are “pop-up” elements that appear in front of a web page, blocking the main page below. Similar to popup windows or system alerts, modals are unique because they prevent interaction with the page underneath. </p> {: class="lead-in"}
 
-<h2 id="use">Use Cases<span class="cf-code-link">
+<h2 id="use">Use cases<span class="cf-code-link">
 </span></h2>
 
 <p>Modals help draw attention to an alert or a focused task by preventing interactions with anything on the web page other than the modal itself. Due to their disruptive nature, modal windows should only be used in very specific cases outlined below.</p>
@@ -80,7 +80,7 @@ category: UI toolkit
  
 
 
-<h2 id="guidelines">Content Guidelines<span class="cf-code-link">
+<h2 id="guidelines">Content guidelines<span class="cf-code-link">
 </span></h2>
   
 <p>Modal windows should have a clear headline at the top of the window. This headline should clearly state what is happening or what action a modal is prompting the user for.</p>
