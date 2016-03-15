@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Photography
-category: Brand Guidelines
+category: Brand guidelines
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Illustration
-category: Brand Guidelines
+title: Illustrations
+category: Brand guidelines
 published: true
 ---
 

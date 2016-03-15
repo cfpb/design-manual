@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Isocons
-category: Brand Guidelines
+category: Brand guidelines
 published: true
 ---
 

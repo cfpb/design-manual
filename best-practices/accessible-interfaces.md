@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Accessible interfaces
+title: Accessibility best practices
 category: Best practices
 ---
 

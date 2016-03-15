@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Color
-category: Brand Guidelines
+category: Brand guidelines
 ---
 
 - [Palette](#palette)

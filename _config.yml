@@ -56,9 +56,9 @@ mainnav:
 - text: Page components
   url: page-components/page-components.html
   internal: true
-- text: Data visualization
-  url: data-visualization/data-visualization.html
-  internal: true
+# - text: Data visualization
+#   url: data-visualization/data-visualization.html
+#   internal: true
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
@@ -69,7 +69,7 @@ secondarynav:
   category: Overview
 
 # Best practices
-- text: Accessible interfaces
+- text: Accessibility best practices
   url: best-practices/accessible-interfaces.html
   internal: true
   category: Best practices
@@ -92,7 +92,7 @@ secondarynav:
   url: brand-guidelines/color-principles.html
   internal: true
   category: Brand guidelines
-- text: Illustration
+- text: Illustrations
   url: brand-guidelines/illustration.html
   internal: true
   category: Brand guidelines
@@ -116,18 +116,17 @@ secondarynav:
   url: brand-guidelines/typography.html
   internal: true
   category: Brand guidelines
-- text: Video
-  url: brand-guidelines/video.html
-  internal: true
-  category: Brand guidelines
+# - text: Video
+#  url: brand-guidelines/video.html
+#  internal: true
+#  category: Brand guidelines
 
 
 # Global elements
-- text: Grid and layout
+- text: Grid
   url: global-elements/grid-and-layout.html
   internal: true
   category: Global elements
-
 - text: Heroes
   url: global-elements/heroes.html
   internal: true
@@ -145,6 +144,14 @@ secondarynav:
   category: Page components
 - text: Featured content modules
   url: page-components/featured-content-module.html
+  internal: true
+  category: Page components
+- text: Form fields
+  url: page-components/form-fields.html
+  internal: true
+  category: Page components
+- text: Links
+  url: page-components/links.html
   internal: true
   category: Page components
 - text: Tables

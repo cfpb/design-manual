@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Grid and layout
+title: Grid
 category: Global elements
 published: true
 ---
