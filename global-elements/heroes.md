@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Heroes
-category: Global Elements
+category: Global elements
 published: true
 ---
 
