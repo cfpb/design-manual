@@ -5226,6 +5226,124 @@ textarea.disabled {
 
 /* ==========================================================================
    Capital Framework
+   Pagination Styling
+   ========================================================================== */
+
+.pagination {
+  display: block;
+  position: relative;
+}
+
+.pagination_next {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pagination_form {
+  display: block;
+  padding: 0.3125em 0.3125em 0.375em;
+  margin: 1em 0 0 0;
+  background: #E3E4E5;
+  color: #75787B;
+  text-align: center;
+}
+
+.pagination_label {
+  display: inline-block;
+  margin: 0;
+  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+.lt-ie8 .pagination_label {
+  display: inline;
+}
+
+.lt-ie9 .pagination_label {
+  font-weight: normal !important;
+}
+
+.pagination_current-page,
+input[type="number"].pagination_current-page,
+input[type="text"].pagination_current-page {
+  display: inline-block;
+  width: 2.625em;
+  margin: 0 0.25em;
+  font-size: 1em;
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.lt-ie8 .pagination_current-page,
+.lt-ie8 input[type="number"].pagination_current-page,
+.lt-ie8 input[type="text"].pagination_current-page {
+  display: inline;
+}
+
+.lt-ie9 .pagination_current-page,
+.lt-ie9 input[type="number"].pagination_current-page,
+.lt-ie9 input[type="text"].pagination_current-page {
+  font-weight: normal !important;
+}
+
+.lt-ie8 .pagination_current-page,
+.lt-ie8 input[type="number"].pagination_current-page,
+.lt-ie8 input[type="text"].pagination_current-page {
+  margin: 0 4px;
+}
+
+.pagination_submit.btn {
+  display: inline-block;
+  margin: 0 0 0 0.875em;
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+.lt-ie8 .pagination_submit.btn {
+  display: inline;
+}
+
+.lt-ie8 .pagination_submit.btn {
+  padding-left: 0.875em;
+  margin: 0;
+  border: none;
+  text-decoration: underline;
+}
+
+.pagination_form {
+  margin: 0;
+  border-radius: 0.25em;
+}
+
+.pagination_prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pagination_prev,
+.pagination_prev:link,
+.pagination_prev:visited {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.pagination_next,
+.pagination_next:link,
+.pagination_next:visited {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* ==========================================================================
+   Capital Framework
    Table Styling
    ========================================================================== */
 
