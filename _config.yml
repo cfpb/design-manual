@@ -45,16 +45,16 @@ mainnav:
   url: index.html
   internal: true
 - text: Best practices
-  url: guides/guides.html
+  url: best-practices/best-practices.html
   internal: true
 - text: Brand guidelines
-  url: identity/identity.html
+  url: brand-guidelines/brand-guidelines.html
   internal: true
 - text: Global elements
   url: global-elements/global-elements.html
   internal: true
 - text: Page components
-  url: ui-toolkit/ui-toolkit.html
+  url: page-components/page-components.html
   internal: true
 - text: Data visualization
   url: data-visualization/data-visualization.html
@@ -68,56 +68,56 @@ secondarynav:
   internal: true
   category: Overview
 
-# Best practices - the "guides" folder
+# Best practices
 - text: Accessible interfaces
-  url: guides/accessible-interfaces.html
+  url: best-practices/accessible-interfaces.html
   internal: true
   category: Best practices
 - text: Design principles
-  url: guides/design-principles.html
+  url: best-practices/design-principles.html
   internal: true
   category: Best practices
 - text: Form best practices
-  url: guides/effective-forms.html
+  url: best-practices/effective-forms.html
   internal: true
   category: Best practices
 
 
-# Brand guidelines - still in the "identity" folder
+# Brand guidelines
 - text: Beam pattern
-  url: identity/beams.html
+  url: brand-guidelines/beams.html
   internal: true
   category: Brand guidelines
 - text: Color
-  url: identity/color-principles.html
+  url: brand-guidelines/color-principles.html
   internal: true
   category: Brand guidelines
 - text: Illustration
-  url: identity/illustration.html
+  url: brand-guidelines/illustration.html
   internal: true
   category: Brand guidelines
 - text: Isocons
-  url: identity/isocons.html
+  url: brand-guidelines/isocons.html
   internal: true
   category: Brand guidelines
 - text: Logo
-  url: identity/logo.html
+  url: brand-guidelines/logo.html
   internal: true
   category: Brand guidelines
 - text: Minicons
-  url: identity/minicons.html
+  url: brand-guidelines/minicons.html
   internal: true
   category: Brand guidelines
 - text: Photography
-  url: identity/photography.html
+  url: brand-guidelines/photography.html
   internal: true
   category: Brand guidelines
 - text: Typography
-  url: identity/typography.html
+  url: brand-guidelines/typography.html
   internal: true
   category: Brand guidelines
 - text: Video
-  url: identity/video.html
+  url: brand-guidelines/video.html
   internal: true
   category: Brand guidelines
 
@@ -134,21 +134,21 @@ secondarynav:
   category: Global elements
 
 
-# Page components - the "ui-toolkit" folder
+# Page components
 - text: Buttons
-  url: ui-toolkit/buttons.html
+  url: page-components/buttons.html
   internal: true
   category: Page components
 - text: Expandables
-  url: ui-toolkit/expandables.html
+  url: page-components/expandables.html
   internal: true
   category: Page components
 - text: Featured content modules
-  url: ui-toolkit/featured-content-module.html
+  url: page-components/featured-content-module.html
   internal: true
   category: Page components
 - text: Tables
-  url: ui-toolkit/tables.html
+  url: page-components/tables.html
   internal: true
   category: Page components
 
