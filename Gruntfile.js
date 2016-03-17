@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     /**
      * Pull in the package.json file so we can read its metadata.
      */
-    pkg: grunt.file.readJSON('bower.json'),
+    pkg: grunt.file.readJSON('package.json'),
 
     /**
      * Set some src and dist location variables.
