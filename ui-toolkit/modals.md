@@ -44,13 +44,13 @@ category: UI toolkit
  </span></h2>
  
 <h3 id="opening">Opening a modal</h3>
-<p>Modals can be triggered by links, buttons, or even inactivity on a site. All modals should have a clear headline at the top of the window that clearly matches the action the user took to display the modal. If a modal appears due to inactivity, the headline should clearly state the action that is about to take place due to that inactivity.</p> 
+<p>Modals can be triggered by links, buttons, or even inactivity on a site. When a modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal window or the primary action button.</p> 
 
 <h3 id="scrolling">Scrolling</h3>
 <p>Modal windows should not scroll. If a modal contains enough information to require scrolling, use an alternative method of displaying content, such as a different UI element or another content page.</p>
 
 <h3 id="closing">Closing a modal</h3>
-<p>Actions inside modals should be clearly marked. There should be a clear path forward (“continue”) and back (“cancel”), in addition to a clearly labeled way to close the modal without taking any action at all.</p>
+<p>Actions inside modals should be clearly marked. There should be a clear path forward (“continue”) and back (“cancel”), in addition to a clearly labeled way to close the modal without taking any action at all. When a modal window is closed, return focus to the last active element on the page behind the modal.</p>
 
 <p>Modal windows are always closable by clicking or tapping:</p>
   <ul>
@@ -61,15 +61,11 @@ category: UI toolkit
   </ul>
 
 <h3 id="accessible-behavior">Creating accessible behaviors</h3>
-<p>When a modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal window or the primary action button.</p>
-
 <p>Provide separate focus and hover states for the close minicon and any “next” action buttons.</p>
 
 <p>The close minicon needs to be accessible from a keyboard.</p>
 
 <p>The find function (ctrl+F) will not search information contained within a modal window.</p> 
-
-<p>When a modal window is closed, return focus to the last active element on the page behind the modal.</p> 
 
 <p>Specific coding directions:</p>
   <ul>
@@ -83,7 +79,7 @@ category: UI toolkit
 <h2 id="guidelines">Content guidelines<span class="cf-code-link">
 </span></h2>
   
-<p>Modal windows should have a clear headline at the top of the window. This headline should clearly state what is happening or what action a modal is prompting the user for.</p>
+<p>Modal windows should have a clear headline at the top of the window. This headline should clearly state what is happening or what action a modal is prompting the user for. For instance, if a modal appears due to inactivity, the headline should clearly state the action that is about to take place due to that inactivity.</p>
  
 <p>Any copy underneath the headline should include clear instructions about what the user needs to do.</p>
 
