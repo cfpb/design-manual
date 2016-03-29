@@ -46,7 +46,7 @@ category: UI toolkit
 <h3 id="opening">Opening a modal</h3>
 <p>Modals can be triggered by links, buttons, or even inactivity on a site. When a modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal window or the primary action button.</p> 
 
-<h3 id="scrolling">Scrolling</h3>
+<h3 id="scrolling">Scrolling within a modal</h3>
 <p>Modal windows should not scroll. If a modal contains enough information to require scrolling, use an alternative method of displaying content, such as a different UI element or another content page.</p>
 
 <h3 id="closing">Closing a modal</h3>
