@@ -85,7 +85,6 @@ category: UI toolkit
   </ul>
  
 
-
 <h2 id="guidelines">Content guidelines<span class="cf-code-link">
 </span></h2>
   
