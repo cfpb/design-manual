@@ -92,7 +92,7 @@ category: UI toolkit
  
 <p>Any copy underneath the headline should include clear instructions about what the user needs to do.</p>
 
-<p>If form fields are included in a modal, they should follow standard <a href="/design-manual/ui-toolkit/form-fields.html">form field</a> design guidelines.</p> 
+<p>If form fields are included in a modal, they should follow standard form field design guidelines.</p> 
 
 
             
