@@ -74,7 +74,7 @@ category: UI toolkit
 
 <p>Include offscreen instructions that describe the modal dialog and how to interact with it.</p>
 
-<p><b>Specific development directions</b></p>
+<h4 id="inactive">Specific development directions</h4>
   <ul>
     <li>Modal windows should be marked with aria-hidden="true" and toggled to false when visible and given the role=dialog ARIA role.
     <li>When the modal dialog is displayed, the main content of the page should be marked with aria-hidden="true" to prevent screen readers from interacting with it.</li>
