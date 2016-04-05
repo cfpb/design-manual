@@ -61,17 +61,27 @@ category: UI toolkit
   </ul>
 
 <h3 id="accessible-behavior">Creating accessible behaviors</h3>
-<p>Provide separate focus and hover states for the close minicon and any “next” action buttons.</p>
+<p>Keyboard access should be limited to only interacting with the modal dialog once it is visible.</p>
+  <ul>
+    <li>The close minicon needs to be accessible from a keyboard.</li>
+    <li>The escape key should also close the modal.</li>
+    <li>The enter key should should be mapped to any submission forms in the modal.</li>
+  </ul>
 
-<p>The close minicon needs to be accessible from a keyboard.</p>
+<p>Provide separate focus and hover states for the close minicon and any “next” action buttons.</p>
 
 <p>The find function (ctrl+F) will not search information contained within a modal window.</p> 
 
-<p>Specific coding directions:</p>
+<p>Include offscreen instructions that describe the modal dialog and how to interact with it.</p>
+
+<h4 id="accessible-behavior">Specific development directions</h4>
   <ul>
-    <li>Use the aria-hidden, aria-label, and aria-labelledby attributes.</li>
+    <li>Modal windows should be marked with aria-hidden="true" and toggled to false when visible and given the role=dialog ARIA role.
+    <li>When the modal dialog is displayed, the main content of the page should be marked with aria-hidden="true" to prevent screen readers from interacting with it.</li>
     <li>Add role="alertdialog" to the modal window.</li>
     <li>Code the close minicon using a button element for more semantic markup.</li>
+    <li>The heading of the modal dialog should be marked as an h1.</li>
+    <li>Offscreen interaction instructions should use the aria-labelledby attribute.</li>
   </ul>
  
 
