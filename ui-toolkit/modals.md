@@ -93,7 +93,7 @@ category: UI toolkit
 
 <p>If form fields are included in a modal, they should follow standard <a href="/design-manual/ui-toolkit/form-fields.html">form field</a> design guidelines.</p> 
             
-<h2 id="style">Style<span class="cf-code-link"></h2>
+<h2 id="style">Style<span class="cf-code-link"></span></h2>
 
 <div class="content-50 content-first">
 <h4 id="modal">Modal window box</h4>
