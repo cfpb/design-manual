@@ -76,7 +76,7 @@ category: UI toolkit
 
 <h4 id="inactive">Specific development directions</h4>
   <ul>
-    <li>Modal windows should be marked with aria-hidden="true" and toggled to false when visible and given the role=dialog ARIA role.
+    <li>Modal windows should be marked with aria-hidden="true" and toggled to false when visible and given the role=dialog ARIA role.</li>
     <li>When the modal dialog is displayed, the main content of the page should be marked with aria-hidden="true" to prevent screen readers from interacting with it.</li>
     <li>Add role="alertdialog" to the modal window.</li>
     <li>Code the close minicon using a button element for more semantic markup.</li>
