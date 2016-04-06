@@ -41,7 +41,7 @@ category: UI toolkit
 </div>
 
 <h2 id="behavior">Behavior<span class="cf-code-link">
- </span></h2>
+</span></h2>
  
 <h3 id="opening">Opening a modal</h3>
 <p>Modals can be triggered by links, buttons, or even inactivity on a site. When a modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal window or the primary action button.</p> 
