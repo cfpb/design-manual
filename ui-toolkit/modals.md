@@ -81,9 +81,8 @@ category: UI toolkit
     <li>Add role="alertdialog" to the modal window.</li>
     <li>Code the close minicon using a button element for more semantic markup.</li>
     <li>The heading of the modal dialog should be marked as an h1.</li>
-    <li>Offscreen interaction instructions should use aria-labelled by attribute.</li>
+    <li>Offscreen interaction instructions should use aria-labelledby attribute.</li>
   </ul>
- 
 
 <h2 id="guidelines">Content guidelines<span class="cf-code-link">
 </span></h2>
@@ -93,8 +92,6 @@ category: UI toolkit
 <p>Any copy underneath the headline should include clear instructions about what the user needs to do.</p>
 
 <p>If form fields are included in a modal, they should follow standard <a href="/design-manual/ui-toolkit/form-fields.html">form field</a> design guidelines.</p> 
-
-
             
 <h2 id="style">Style<span class="cf-code-link"></h2>
 
