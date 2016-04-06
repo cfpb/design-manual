@@ -84,8 +84,7 @@ category: UI toolkit
     <li>Offscreen interaction instructions should use aria-labelledby attribute.</li>
   </ul>
 
-<h2 id="guidelines">Content guidelines<span class="cf-code-link">
-</span></h2>
+<h2 id="guidelines">Content guidelines<span class="cf-code-link"></span></h2>
   
 <p>Modal windows should have a clear headline at the top of the window. This headline should clearly state what is happening or what action a modal is prompting the user for. For instance, if a modal appears due to inactivity, the headline should clearly state the action that is about to take place due to that inactivity.</p>
  
