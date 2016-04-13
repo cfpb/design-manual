@@ -56,9 +56,9 @@ mainnav:
 - text: Page components
   url: page-components/page-components.html
   internal: true
-- text: Data visualization
-  url: data-visualization/data-visualization.html
-  internal: true
+# - text: Data visualization
+#   url: data-visualization/data-visualization.html
+#   internal: true
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
