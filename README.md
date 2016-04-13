@@ -73,7 +73,6 @@ The Design Manual front end currently uses the following:
 
 - [Grunt](http://gruntjs.com/): Task runner for pulling in assets,
   linting and concatenating code, etc.
-- [Bower](http://bower.io/): Package manager for front-end dependencies.
 - [Less](http://lesscss.org/): CSS pre-processor.
 - [Capital Framework](https://cfpb.github.io/capital-framework/):
   User interface pattern-library produced by the CFPB.
@@ -85,10 +84,10 @@ The Design Manual front end currently uses the following:
 ### Installing dependencies (one time)
 
 1. Install [node.js](http://nodejs.org/) however you'd like.
-2. Install [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/) globally:
+2. Install [Grunt](http://gruntjs.com/) globally:
 
 ```sh
-npm install -g grunt-cli bower
+npm install -g grunt-cli
 ```
 
 ### Developing
