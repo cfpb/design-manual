@@ -99,10 +99,10 @@ category: UI toolkit
   <ul>
     <li>Alignment: centered horizontally and vertically on top of lightbox</li>
     <li>Background: {% assign color = site.data.colors["white"] %} {{ color.name }} #{{ color.hex }}</li> 
-    <li>Background lightbox: Gray-80 #75787b, 70% opacity</li>
-    <li>Color: {% assign color = site.data.colors["black"] %} {{ color.name }} #{{ color.hex }}</li>
+    <li>Background lightbox: {% assign color = site.data.colors["gray-80"] %} {{ color.name }} #{{ color.hex }}, 70% opacity</li>
     <li>Font: Avenir Next Regular</li>
     <li>Padding: 30px</li>
+    <li>Text color: {% assign color = site.data.colors["black"] %} {{ color.name }} #{{ color.hex }}</li>
     <li>Text size body: 16px</li>
     <li>Text size header: 22px</li>
     <li>Top border: 3px {% assign color = site.data.colors["green"] %} {{ color.name }} #{{ color.hex }}</li>
@@ -113,15 +113,15 @@ category: UI toolkit
 <h4 id="close">Close area</h4>
   <ul>
     <li>Minicon: “delete-round”</li>
-    <li>Minicon color: Pacific #0072ce</li>
+    <li>Minicon color: {% assign color = site.data.colors["pacific"] %} {{ color.name }} #{{ color.hex }}</li>
     <li>Minicon size: 16px (cf-icon_lg)</li>
     <li>Font: 16px Avenir Next Regular</li>
-    <li>Font color: Pacific #0072ce</li>
+    <li>Font color: {% assign color = site.data.colors["pacific"] %} {{ color.name }} #{{ color.hex }}</li>
   </ul>
 
 <h4 id="action-bar">Gray action bar</h4>
   <ul>
-    <li>Background: Gray-5 #f7f8f9</li>
+    <li>Background: {% assign color = site.data.colors["gray-5"] %} {{ color.name }} #{{ color.hex }</li>
     <li>Padding right/left: 30px</li>
     <li>Padding top/bottom: 10px</li>
     <li>Primary action: left aligned <a href="/design-manual/ui-toolkit/buttons.html#variations">button</a></li>
