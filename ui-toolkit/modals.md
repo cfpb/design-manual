@@ -98,14 +98,13 @@ category: UI toolkit
 <h4 id="modal">Modal window box</h4>
   <ul>
     <li>Alignment: centered horizontally and vertically on top of lightbox</li>
-    <li>Background: White #ffffff</li> 
+    <li>Background: {% assign color = site.data.colors["white"] %} {{ color.name }} #{{ color.hex }}</li> 
     <li>Background lightbox: Gray-80 #75787b, 70% opacity</li>
-    <li>Color: Black #101820</li>
+    <li>Color: {% assign color = site.data.colors["black"] %} {{ color.name }} #{{ color.hex }}</li>
     <li>Font: Avenir Next Regular</li>
     <li>Padding: 30px</li>
     <li>Text size body: 16px</li>
     <li>Text size header: 22px</li>
-    <li>Top border: 3px CFPB Green #20aa3f</li>
     <li>Top border: 3px {% assign color = site.data.colors["green"] %} {{ color.name }} #{{ color.hex }}</li>
 
 </li>
