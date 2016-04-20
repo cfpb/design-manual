@@ -106,6 +106,9 @@ category: UI toolkit
     <li>Text size body: 16px</li>
     <li>Text size header: 22px</li>
     <li>Top border: 3px CFPB Green #20aa3f</li>
+    <li>Top border: 3px {% assign color = site.data.colors["green"] %} {{ color.name }} #{{ color.hex }}</li>
+
+</li>
   </ul>  
 
 <h4 id="close">Close area</h4>
