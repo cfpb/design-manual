@@ -2,6 +2,7 @@
 layout: page
 title:  Form best practices
 category: Best practices
+redirect_from: "http://cfpb.github.io/design-manual/guides/effective-forms.html"
 ---
 
 - [Choosing a form structure](#choosing-a-form-structure)

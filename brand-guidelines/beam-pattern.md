@@ -3,6 +3,7 @@ layout: page
 title: Beam pattern
 category: Brand guidelines
 published: true
+redirect_from: "http://cfpb.github.io/design-manual/identity/beams.html"
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)

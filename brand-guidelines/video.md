@@ -2,6 +2,7 @@
 layout: page
 title: Video
 category: Brand guidelines
+redirect_from: "http://cfpb.github.io/design-manual/identity/video.html"
 ---
 
 - [Use cases](#use-cases)[Stylistic guidelines](#stylistic-guidelines)

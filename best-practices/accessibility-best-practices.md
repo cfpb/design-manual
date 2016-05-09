@@ -2,6 +2,7 @@
 layout: page
 title: Accessibility best practices
 category: Best practices
+redirect_from: "http://cfpb.github.io/design-manual/guides/accessible-interfaces.html"
 ---
 
 - [Perceivable](#perceivable)

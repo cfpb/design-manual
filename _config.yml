@@ -4,6 +4,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 markdown: kramdown
 highlighter: pygments
 
+# Redirects
+  - jekyll-redirect-from
+
 # Organization
 org: CFPB
 
@@ -70,7 +73,7 @@ secondarynav:
 
 # Best practices
 - text: Accessibility best practices
-  url: best-practices/accessible-interfaces.html
+  url: best-practices/accessibility-best-practices.html
   internal: true
   category: Best practices
 - text: Design principles
@@ -78,14 +81,14 @@ secondarynav:
   internal: true
   category: Best practices
 - text: Form best practices
-  url: best-practices/effective-forms.html
+  url: best-practices/form-best-practices.html
   internal: true
   category: Best practices
 
 
 # Brand guidelines
 - text: Beam pattern
-  url: brand-guidelines/beams.html
+  url: brand-guidelines/beam-pattern.html
   internal: true
   category: Brand guidelines
 - text: Color
@@ -116,15 +119,15 @@ secondarynav:
   url: brand-guidelines/typography.html
   internal: true
   category: Brand guidelines
-# - text: Video
-#  url: brand-guidelines/video.html
-#  internal: true
-#  category: Brand guidelines
+- text: Video
+  url: brand-guidelines/video.html
+  internal: true
+  category: Brand guidelines
 
 
 # Global elements
 - text: Grid
-  url: global-elements/grid-and-layout.html
+  url: global-elements/grid.html
   internal: true
   category: Global elements
 - text: Heroes

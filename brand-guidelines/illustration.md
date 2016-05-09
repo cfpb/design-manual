@@ -3,6 +3,7 @@ layout: page
 title: Illustrations
 category: Brand guidelines
 published: true
+redirect_from: "http://cfpb.github.io/design-manual/identity/illustration.html"
 ---
 
 - [Consumer illustrations](#consumer-illustrations)

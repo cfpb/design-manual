@@ -2,6 +2,7 @@
 layout: page
 title:  Expandables
 category: Page components
+redirect_from: "http://cfpb.github.io/design-manual/ui-toolkit/expandables.html"
 ---
 
 - [Use](#use)

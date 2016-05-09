@@ -3,6 +3,7 @@ layout: page
 title: Links
 category: Page components
 published: true
+redirect_from: "http://cfpb.github.io/design-manual/ui-toolkit/links.html"
 ---
 
 

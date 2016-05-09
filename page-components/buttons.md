@@ -2,6 +2,7 @@
 layout: page
 title:  Buttons
 category: Page components
+redirect_from: "http://cfpb.github.io/design-manual/ui-toolkit/buttons.html"
 ---
 
 - [Style](#style)

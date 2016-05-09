@@ -3,6 +3,7 @@ layout: page
 title: Logo
 category: Brand guidelines
 published: true
+redirect_from: "http://cfpb.github.io/design-manual/identity/logo.html"
 ---
 
 - [Lockups](#lockups)

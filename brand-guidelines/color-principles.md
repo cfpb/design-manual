@@ -2,6 +2,7 @@
 layout: page
 title:  Color
 category: Brand guidelines
+redirect_from: "http://cfpb.github.io/design-manual/identity/color-principles.html"
 ---
 
 - [Palette](#palette)
