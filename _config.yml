@@ -1,11 +1,12 @@
+# Redirects
+gems:
+  - jekyll-redirect-from
+
 # Base configuration
 permalink: /:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "src", "node_modules"]
 markdown: kramdown
 highlighter: pygments
-
-# Redirects
-  - jekyll-redirect-from
 
 # Organization
 org: CFPB
