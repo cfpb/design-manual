@@ -158,10 +158,10 @@ secondarynav:
   url: page-components/links.html
   internal: true
   category: Page components
-- text: Tables
-  url: page-components/tables.html
-  internal: true
-  category: Page components
+# - text: Tables
+#  url: page-components/tables.html
+#  internal: true
+#  category: Page components
 
 
 # Footer Navigation
