@@ -3,7 +3,7 @@ layout: page
 title: Grid
 category: Global elements
 published: true
-redirect_from: "http://cfpb.github.io/design-manual/ui-toolkit/grid-and-layout.html"
+redirect_from: "/ui-toolkit/grid-and-layout.html"
 ---
 
 

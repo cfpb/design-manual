@@ -3,7 +3,7 @@ layout: page
 title: Featured content modules
 category: Page components
 published: true
-redirect_from: "http://cfpb.github.io/design-manual/ui-toolkit/featured-content-module.html"
+redirect_from: "/ui-toolkit/featured-content-module.html"
 ---
 
 - [Use cases](#use)

@@ -3,7 +3,7 @@ layout: page
 title: Photography
 category: Brand guidelines
 published: true
-redirect_from: "http://cfpb.github.io/design-manual/identity/photography.html"
+redirect_from: "/identity/photography.html"
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)

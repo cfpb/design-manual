@@ -2,7 +2,7 @@
 layout: page
 title:  Form fields
 category: Page components
-redirect_from: "http://cfpb.github.io/design-manual/ui-toolkit/form-fields.html"
+redirect_from: "/ui-toolkit/form-fields.html"
 ---
 
 - [Style](#style)

@@ -2,7 +2,7 @@
 layout: page
 title:  Design principles
 category: Best practices
-redirect_from: "http://cfpb.github.io/design-manual/guides/design-principles.html"
+redirect_from: "/guides/design-principles.html"
 ---
 
 <div class="content-67 content-first">

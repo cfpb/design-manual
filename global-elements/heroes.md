@@ -3,7 +3,7 @@ layout: page
 title: Heroes
 category: Global elements
 published: true
-redirect_from: "http://cfpb.github.io/design-manual/ui-toolkit/heroes.html"
+redirect_from: "/ui-toolkit/heroes.html"
 ---
 
 - [Use cases](#use)

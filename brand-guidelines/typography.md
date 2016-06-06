@@ -3,7 +3,7 @@ layout: page
 title: Typography
 category: Brand guidelines
 published: true
-redirect_from: "http://cfpb.github.io/design-manual/identity/typography.html"
+redirect_from: "/identity/typography.html"
 ---
 
 

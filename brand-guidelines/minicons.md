@@ -2,7 +2,7 @@
 layout: page
 title: Minicons
 category: Brand guidelines
-redirect_from: "http://cfpb.github.io/design-manual/identity/minicons.html"
+redirect_from: "/identity/minicons.html"
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)

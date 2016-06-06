@@ -3,7 +3,7 @@ layout: page
 title: Isocons
 category: Brand guidelines
 published: true
-redirect_from: "http://cfpb.github.io/design-manual/identity/isocons.html"
+redirect_from: "/identity/isocons.html"
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)
