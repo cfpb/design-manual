@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Photography
-category: Visual identity
+category: Brand guidelines
 published: true
+redirect_from: "/identity/photography.html"
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)

@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Accessible interfaces
-category: Guides
+title: Accessibility best practices
+category: Best practices
+redirect_from: "/guides/accessible-interfaces.html"
 ---
 
 - [Perceivable](#perceivable)

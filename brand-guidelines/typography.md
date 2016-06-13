@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Typography
-category: Visual identity
+category: Brand guidelines
 published: true
+redirect_from: "/identity/typography.html"
 ---
 
 

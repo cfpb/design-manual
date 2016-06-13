@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Isocons
-category: Visual identity
+category: Brand guidelines
 published: true
+redirect_from: "/identity/isocons.html"
 ---
 
 - [Stylistic guidelines](#stylistic-guidelines)

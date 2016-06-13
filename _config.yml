@@ -1,3 +1,7 @@
+# Redirects
+gems:
+  - jekyll-redirect-from
+
 # Base configuration
 permalink: /:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "src", "node_modules"]
@@ -44,17 +48,20 @@ mainnav:
 - text: Overview
   url: index.html
   internal: true
-- text: Guides
-  url: guides/guides.html
+- text: Best practices
+  url: best-practices/best-practices.html
   internal: true
-- text: Visual identity
-  url: identity/identity.html
+- text: Brand guidelines
+  url: brand-guidelines/brand-guidelines.html
   internal: true
-- text: UI toolkit
-  url: ui-toolkit/ui-toolkit.html
+- text: Global elements
+  url: global-elements/global-elements.html
   internal: true
-# - text: Downloads
-#   url: downloads/style-guide.html
+- text: Page components
+  url: page-components/page-components.html
+  internal: true
+# - text: Data visualization
+#   url: data-visualization/data-visualization.html
 #   internal: true
 
 # Secondary Navigation
@@ -64,118 +71,97 @@ secondarynav:
   url: index.html
   internal: true
   category: Overview
+
+# Best practices
+- text: Accessibility best practices
+  url: best-practices/accessibility-best-practices.html
+  internal: true
+  category: Best practices
 - text: Design principles
-  url: guides/design-principles.html
+  url: best-practices/design-principles.html
   internal: true
-  category: Guides
-- text: Accessible interfaces
-  url: guides/accessible-interfaces.html
+  category: Best practices
+- text: Form best practices
+  url: best-practices/form-best-practices.html
   internal: true
-  category: Guides
-- text: Effective forms
-  url: guides/effective-forms.html
-  internal: true
-  category: Guides
-# - text: Filtering patterns
-#   url: guides/filtering-patterns.html
-#   internal: true
-#   category: Guides
-# - text: UX checklist
-#   url: guides/ux-checklist.html
-#   internal: true
-#   category: Guides
-- text: Logo
-  url: identity/logo.html
-  internal: true
-  category: Visual identity
-- text: Color
-  url: identity/color-principles.html
-  internal: true
-  category: Visual identity
-- text: Typography
-  url: identity/typography.html
-  internal: true
-  category: Visual identity
-- text: Minicons
-  url: identity/minicons.html
-  internal: true
-  category: Visual identity
-- text: Isocons
-  url: identity/isocons.html
-  internal: true
-  category: Visual identity
-- text: Illustration
-  url: identity/illustration.html
-  internal: true
-  category: Visual identity
+  category: Best practices
+
+
+# Brand guidelines
 - text: Beam pattern
-  url: identity/beams.html
+  url: brand-guidelines/beam-pattern.html
   internal: true
-  category: Visual identity
+  category: Brand guidelines
+- text: Color
+  url: brand-guidelines/color-principles.html
+  internal: true
+  category: Brand guidelines
+- text: Illustrations
+  url: brand-guidelines/illustration.html
+  internal: true
+  category: Brand guidelines
+- text: Isocons
+  url: brand-guidelines/isocons.html
+  internal: true
+  category: Brand guidelines
+- text: Logo
+  url: brand-guidelines/logo.html
+  internal: true
+  category: Brand guidelines
+- text: Minicons
+  url: brand-guidelines/minicons.html
+  internal: true
+  category: Brand guidelines
 - text: Photography
-  url: identity/photography.html
+  url: brand-guidelines/photography.html
   internal: true
-  category: Visual identity
+  category: Brand guidelines
+- text: Typography
+  url: brand-guidelines/typography.html
+  internal: true
+  category: Brand guidelines
 - text: Video
-  url: identity/video.html
+  url: brand-guidelines/video.html
   internal: true
-  category: Visual identity
-- text: Buttons
-  url: ui-toolkit/buttons.html
+  category: Brand guidelines
+
+
+# Global elements
+- text: Grid
+  url: global-elements/grid.html
   internal: true
-  category: UI toolkit
-- text: Expandables
-  url: ui-toolkit/expandables.html
-  internal: true
-  category: UI toolkit
-- text: Form fields
-  url: ui-toolkit/form-fields.html
-  internal: true
-  category: UI toolkit
-- text: Grid and layout
-  url: ui-toolkit/grid-and-layout.html
-  internal: true
-  category: UI toolkit
-- text: Links
-  url: ui-toolkit/links.html
-  internal: true
-  category: UI toolkit
+  category: Global elements
 - text: Heroes
-  url: ui-toolkit/heroes.html
+  url: global-elements/heroes.html
   internal: true
-  category: UI toolkit
+  category: Global elements
+
+
+# Page components
+- text: Buttons
+  url: page-components/buttons.html
+  internal: true
+  category: Page components
+- text: Expandables
+  url: page-components/expandables.html
+  internal: true
+  category: Page components
 - text: Featured content modules
-  url: ui-toolkit/featured-content-module.html
+  url: page-components/featured-content-module.html
   internal: true
-  category: UI toolkit
-# - text: Modals
-#   url: ui-toolkit/modals.html
-#   internal: true
-#   category: UI toolkit
-# - text: Pagination
-#   url: ui-toolkit/pagination.html
-#   internal: true
-#   category: UI toolkit
+  category: Page components
+- text: Form fields
+  url: page-components/form-fields.html
+  internal: true
+  category: Page components
+- text: Links
+  url: page-components/links.html
+  internal: true
+  category: Page components
 # - text: Tables
-#   url: ui-toolkit/tables.html
-#   internal: true
-#   category: UI toolkit
-# - text: Tooltips
-#   url: ui-toolkit/tooltips.html
-#   internal: true
-#   category: UI toolkit
-# - text: Brand 2.0 style guide
-#   url: downloads/style-guide.html
-#   internal: true
-#   category: Downloads
-# - text: Logo suite
-#   url: downloads/logo-suite.html
-#   internal: true
-#   category: Downloads
-# - text: Minicon font and assets
-#   url: downloads/minicons.html
-#   internal: true
-#   category: Downloads
+#  url: page-components/tables.html
+#  internal: true
+#  category: Page components
 
 
 # Footer Navigation

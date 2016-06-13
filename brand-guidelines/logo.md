@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Logo
-category: Visual identity
+category: Brand guidelines
 published: true
+redirect_from: "/identity/logo.html"
 ---
 
 - [Lockups](#lockups)

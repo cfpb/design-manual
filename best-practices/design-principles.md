@@ -1,7 +1,8 @@
 ---
 layout: page
 title:  Design principles
-category: Guides
+category: Best practices
+redirect_from: "/guides/design-principles.html"
 ---
 
 <div class="content-67 content-first">

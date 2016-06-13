@@ -1,7 +1,8 @@
 ---
 layout: page
 title:  Expandables
-category: UI toolkit
+category: Page components
+redirect_from: "/ui-toolkit/expandables.html"
 ---
 
 - [Use](#use)

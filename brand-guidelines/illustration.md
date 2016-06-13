@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Illustration
-category: Visual identity
+title: Illustrations
+category: Brand guidelines
 published: true
+redirect_from: "/identity/illustration.html"
 ---
 
 - [Consumer illustrations](#consumer-illustrations)

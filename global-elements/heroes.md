@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Heroes
-category: UI toolkit
+category: Global elements
 published: true
+redirect_from: "/ui-toolkit/heroes.html"
 ---
 
 - [Use cases](#use)

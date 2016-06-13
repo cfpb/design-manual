@@ -1,7 +1,8 @@
 ---
 layout: page
 title:  Color
-category: Visual identity
+category: Brand guidelines
+redirect_from: "/identity/color-principles.html"
 ---
 
 - [Palette](#palette)

@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Featured content modules
-category: UI toolkit
+category: Page components
 published: true
+redirect_from: "/ui-toolkit/featured-content-module.html"
 ---
 
 - [Use cases](#use)

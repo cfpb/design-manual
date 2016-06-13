@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Grid and layout
-category: UI toolkit
+title: Grid
+category: Global elements
 published: true
+redirect_from: "/ui-toolkit/grid-and-layout.html"
 ---
 
 

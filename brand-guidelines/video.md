@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Video
-category: Visual identity
+category: Brand guidelines
+redirect_from: "/identity/video.html"
 ---
 
 - [Use cases](#use-cases)[Stylistic guidelines](#stylistic-guidelines)

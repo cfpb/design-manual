@@ -1,7 +1,8 @@
 ---
 layout: page
 title:  Form fields
-category: UI toolkit
+category: Page components
+redirect_from: "/ui-toolkit/form-fields.html"
 ---
 
 - [Style](#style)

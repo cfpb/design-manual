@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Links
-category: UI toolkit
+category: Page components
 published: true
+redirect_from: "/ui-toolkit/links.html"
 ---
 
 
