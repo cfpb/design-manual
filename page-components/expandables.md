@@ -30,10 +30,10 @@ Expandables can be  used for displaying non-essential information on a page. The
   </ul>
 </div>
 
-<h2 id="use">Use<span class="cf-code-link"><a href="https://cfpb.github.io/cf-expandables/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="use">Use<span class="cf-code-link"><a href="https://cfpb.github.io/capital-framework/components/cf-expandables/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 The `find` function will not discover information hidden by a collapsed expandable, so use good judgement in deciding which information to hide.
-Non-javascript users should default to the expanded state. Otherwise, the default state (expanded or collapsed) will depend on the circumstance.
+Non-javaScript users should default to the expanded state. Otherwise, the default state (expanded or collapsed) will depend on the circumstance.
 
 <h2 id="style">Style</h2>
 
@@ -41,7 +41,7 @@ Non-javascript users should default to the expanded state. Otherwise, the defaul
 
 <div class="content-33 content-first">
 
-When only one expandable is used it should include a stroke on all sides, heading text, the expand/collapse minicon within a circle with a label reading “Show” or “Hide,” (when possible). A white or 5% grey background can be used to highlight the section from the page background.
+When only one expandable is used, it should include a stroke on all sides, heading text, and the expand/collapse minicon within a circle with a label reading “Show” or “Hide” (when possible). A white or 5% gray background can be used to highlight the section from the page background.
 
 The entire bar is actionable. The header should clearly indicate what the user will see when the content is expanded (it should not be a call to action). Expand icons stay aligned at the top of the row when the title breaks to multiple lines.
 
@@ -84,7 +84,7 @@ The entire bar is actionable. The header should clearly indicate what the user w
 
 <div class="content-33 content-first">
 
-Expandable sections  are used in a group, they are stacked vertically, with each row sharing its top or bottom stroke with the adjacent row. In this use case expandables have no background color of their own, but match whatever color they used on (this would typically be a white page or 5% grey well). Title text should be consistent across a group of expandables.
+When expandable sections are used in a group, they are stacked vertically, with each row sharing its top or bottom stroke with the adjacent row. In this use case, expandables have no background color of their own, but match whatever color they are used on (this would typically be a white page or 5% gray well). Title text should be consistent across a group of expandables.
 
 </div>
 
@@ -92,7 +92,6 @@ Expandable sections  are used in a group, they are stacked vertically, with each
 
 {::nomarkdown}
 <div class="expandable-group">
-    <div class="expandable-group_header">Expandable group header</div>
     <div class="expandable expandable__padded">
         <button class="expandable_header expandable_target" title="Expand content">
             <span class="expandable_header-left expandable_label">
@@ -180,13 +179,13 @@ Expandable sections  are used in a group, they are stacked vertically, with each
 
 <div class="content-33 content-first">
 
-- 60% grey 1px strokes. All sides on individual, or top and bottom for grouping.
-- Optional 5% grey or white background for individual expandable.
-- 10px  top and bottom padding.
+- 60% gray 1px strokes. All sides on individual, or top and bottom for grouping.
+- Optional 5% gray or white background for individual expandable.
+- 10px top and bottom padding.
 - 15px left and right padding.
-- 15px padding between title and mincon with label.
+- 15px padding between title and minicon with label.
 - Avenir paragraph (medium) or H4 title text.
-- Pacific Blue minicon and label.
+- Pacific blue minicon and label.
 
 </div>
 
@@ -202,7 +201,7 @@ Expandable sections  are used in a group, they are stacked vertically, with each
 
 <div class="content-33 content-first">
 
-The default collapsed state should include the expand/collapse minicon within a circle and a label (if space allows). The Show/Hide label can be hidden at narrower screen widths to prevent titles prematurely breaking onto multiple lines and reduced visual clutter.
+The default collapsed state should include the expand/collapse minicon within a circle and a label (if space allows). The Show/Hide label can be hidden at narrower screen widths to prevent titles prematurely breaking onto multiple lines and to reduced visual clutter.
 
 </div>
 
@@ -237,7 +236,6 @@ The default collapsed state should include the expand/collapse minicon within a 
 </div>
 
 <div class="expandable-group">
-    <div class="expandable-group_header">Expandable group header</div>
     <div class="expandable expandable__padded">
         <button class="expandable_header expandable_target" title="Expand content">
             <span class="expandable_header-left expandable_label">
@@ -327,7 +325,7 @@ The default collapsed state should include the expand/collapse minicon within a 
 
 The paragraph copy when expanded should use Avenir paragraph and use the type hierarchy header spacing rules.
 
-Expandables can make use of an optional stroke under the title when expanded. The title stroke can help to define the title from the  expanded content for longer sections of text it should be indented left and right to match the text within the expandable section.
+Expandables can make use of an optional stroke under the title when expanded. The title stroke can help to define the title from the expanded content for longer sections of text. It should be indented left and right to match the text within the expandable section.
 
 </div>
 
@@ -362,7 +360,6 @@ Expandables can make use of an optional stroke under the title when expanded. Th
 </div>
 
 <div class="expandable-group">
-    <div class="expandable-group_header">Expandable group header</div>
     <div class="expandable expandable__padded expandable__expanded">
         <button class="expandable_header expandable_target" title="Expand content">
             <span class="expandable_header-left expandable_label">
@@ -452,7 +449,7 @@ Expandables can make use of an optional stroke under the title when expanded. Th
 
 <div class="content-33 content-first">
 
-In the default mode, users are able to have multiple sections expanded at the same time, which allows users to easily compare information that is available in different sections.
+In the default mode, users are able to have multiple sections of an expandable group expanded at the same time, which allows users to easily compare information that is available in different sections.
 
 </div>
 
@@ -460,7 +457,6 @@ In the default mode, users are able to have multiple sections expanded at the sa
 
 {::nomarkdown}
 <div class="expandable-group">
-    <div class="expandable-group_header">Expandable group header</div>
     <div class="expandable expandable__padded">
         <button class="expandable_header expandable_target" title="Expand content">
             <span class="expandable_header-left expandable_label">
@@ -548,11 +544,11 @@ In the default mode, users are able to have multiple sections expanded at the sa
 
 <div class="content-33 content-first">
 
-With the “accordion” mode, users can only view the contents of one section at a time: when a user expands an additional section, the previously-expanded section will collapse automatically.
+With the “accordion” mode, users can only view the contents of one section at a time; when a user expands an additional section, the previously-expanded section will collapse automatically.
 
 This can be desirable for maintaining the height of a group of expandable sections, but it can be disorienting when the height of the expandable sections is greater than the height of the user’s viewport (e.g., for users of mobile phones or netbooks), which can lead to off-screen sections closing and shifting all of the content on the screen. For this reason, you should avoid the “accordion” mode if the expanded height of any of the sections is greater than 400px.
 
-Add the data-accordion="true" attribute to the expandable group to activate the accordion mode.
+Add the `data-accordion="true"` attribute to the expandable group to activate the accordion mode.
 
 </div>
 
@@ -560,7 +556,6 @@ Add the data-accordion="true" attribute to the expandable group to activate the 
 
 {::nomarkdown}
 <div class="expandable-group" data-accordion="true">
-    <div class="expandable-group_header">Expandable group header</div>
     <div class="expandable expandable__padded">
         <button class="expandable_header expandable_target" title="Expand content">
             <span class="expandable_header-left expandable_label">
