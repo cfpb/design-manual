@@ -645,5 +645,3 @@ The `find` function will not discover information hidden by a collapsed expandab
 
 Non-javascript users should default to the expanded state. Otherwise, the default state (expanded or collapsed) will depend on the circumstance.
 
-Additional content here about roles and tagging
-
