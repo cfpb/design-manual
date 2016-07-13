@@ -323,7 +323,7 @@ The default collapsed state should include the expand/collapse minicon within a 
 
 <div class="content-33 content-first">
 
-The paragraph copy when expanded should use Avenir paragraph and use the type hierarchy header spacing rules.
+The content of an expandable can contain normal paragraphs, headings, lists, wells, and images.
 
 Expandables can make use of an optional stroke under the title when expanded. The title stroke can help to define the title from the expanded content for longer sections of text. It should be indented left and right to match the text within the expandable section.
 
