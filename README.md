@@ -2,24 +2,11 @@
 
 https://cfpb.github.io/design-manual/
 
-This is the repository for CFPB's Design Manual for developing
-print and web products.
-It contains both the assets and the content for the site.
+This is the repository for CFPB's Design Manual for developing print and web products. It contains both the assets and the content for the site.
 
-This Design Manual is an open-source resource for CFPB staff to produce
-effective and visually-consistent products that are easy for consumers
-to access, use, and understand.
-The Manual includes our design principles, guidelines for user experience,
-visual identity standards, and code snippets for common user interface elements.
-The Manual will continue to evolve as we learn what works best
-for the CFPB and the people we serve.
+This Design Manual is an open-source resource for CFPB staff to produce effective and visually-consistent products that are easy for consumers to access, use, and understand. The Manual includes our design principles, guidelines for user experience, visual identity standards, and code snippets for common user interface elements. The Manual will continue to evolve as we learn what works best for the CFPB and the people we serve.
 
-These standards reflect our latest thinking and are just beginning to be
-incorporated into the CFPB's most recent projects.
-See them in practice in
-[eRegs](http://www.consumerfinance.gov/eregulations/),
-[Consumer Response](http://www.consumerfinance.gov/complaint/), and
-[Owning a Home](http://www.consumerfinance.gov/owning-a-home/).
+These standards reflect our latest thinking and are a work-in-progress. Our goal is to apply them to all of CFPB projects.
 
 We are proud to join the community of organizations that have made their
 design standards public, such as
@@ -39,11 +26,12 @@ developers, or groups to adapt it for their own use.
 Content editors and developers probably want to set up the Design Manual on
 their local machine so they can preview updates without pushing to GitHub.
 
-Before you get started make sure you have an up-to-date version of Ruby.
+Before you get started make sure you have an up-to-date version of Ruby and Bundler.
 We use [Homebrew](http://brew.sh/):
 
 ```sh
 brew install ruby
+gem install bundler
 ```
 
 As the site is intended to be deployed on GitHub Pages, installing the
@@ -60,7 +48,7 @@ to your local machine.
 From the project directory, run Jekyll:
 
 ```sh
-jekyll serve --watch --baseurl ''
+bundle exec jekyll serve --watch --baseurl ''
 ```
 
 Open it up in your browser: <http://localhost:4000/>
@@ -72,7 +60,6 @@ The Design Manual front end currently uses the following:
 
 - [Grunt](http://gruntjs.com/): Task runner for pulling in assets,
   linting and concatenating code, etc.
-- [Bower](http://bower.io/): Package manager for front-end dependencies.
 - [Less](http://lesscss.org/): CSS pre-processor.
 - [Capital Framework](https://cfpb.github.io/capital-framework/):
   User interface pattern-library produced by the CFPB.
@@ -84,20 +71,20 @@ The Design Manual front end currently uses the following:
 ### Installing dependencies (one time)
 
 1. Install [node.js](http://nodejs.org/) however you'd like.
-2. Install [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/) globally:
+2. Install [Grunt](http://gruntjs.com/) globally:
 
 ```sh
-npm install -g grunt-cli bower
+npm install -g grunt-cli
 ```
 
 ### Developing
 
 When first setting up this project, and each time you fetch from upstream,
-install project dependencies with npm and run `grunt` to build everything:
+run the setup shell script to install the newest project dependencies and
+build the website with grunt:
 
 ```sh
-npm install
-grunt
+./setup.sh
 ```
 
 We use [Grunt](http://gruntjs.com/) to compile and compress
@@ -160,18 +147,6 @@ Additionally, you may want to consider
 [contributing to the Capital Framework](https://cfpb.github.io/capital-framework/contributing/),
 which is the front-end pattern library used in this project.
 
-
-## Current Sitemap
-
-![sitemap image](static/img/design_manual_sitemap.png)
-
-
-## Roadmap
-
-In the near future we plan to add guidelines for pagination, filtering, modals,
-tooltips, tabs, and responsive tables.
-We also plan to make the Manual itself fully responsive for small screens.
-
 ---
 
 ## How to track an issue
@@ -180,26 +155,28 @@ The CFPB’s  Design & Development Team uses GitHub issues to track potential up
 
 - Updates and additions are published in the Design Manual after a GitHub issue has received approval from the applicable disciplines. The approvers are:
   - Natalia Fitzgerald (GD)
-  - Ben Guhin (UX)
+  - Jessica Schafer (UI)
   - Scott Cranfill (FEWD)
-  - Jennifer Horan (508)
-- After an issue has received the necessary approvals, anyone can volunteer to submit a pull request to make the change to the manual. Any applicable changes to our asset libraries and templates should also be updated on CFPB’s internal Google Drive. Any changes that require updates to a Capital Framework component should be made in the appropriate [GitHub repository](https://github.com/cfpb/capital-framework). 
+  - Jennifer Horan (508/Accessibility)
+- After an issue has received the necessary approvals, anyone can volunteer to submit a pull request to make the change to the manual. Any applicable changes to our asset libraries and templates should also be updated on CFPB’s internal Google Drive. Any changes that require updates to a Capital Framework component should be made in the appropriate [GitHub repository](https://github.com/cfpb/capital-framework).
 
 ### Milestones
 
-#### Backlog
-There are three backlogs; Design, UI, FEWD. Every month items are chosen to work through from those backlogs.
+#### Backlog / Priority
+There are three backlogs: Design, UI, and FEWD. In advance of quarterly meetings, discipline leads groom the backlog and match project teams with priority topics. If there are certain issues you want included in the next quarter’s sprint, make sure to communicate this to your discipline lead.
 
 #### Sprints
-We work through open issues in monthly sprints. These milestone helps us prioritize what to tackle and when. Every month, we have a working session to review open issues and set the next month’s sprint. If you want certain issues included in the next month’s sprint, make sure to communicate this before or during the working session.
+We work through open issues in quarterly  sprints. These milestone helps us prioritize what to tackle and when. Meeting time is reserved for brief updates from each team and to communicate any issue needing larger consensus. The remaining time can be used for Manual work amongst small teams.
 
-#### Second Level
-These issues may not be as high of a priority as the monthly sprint but they are issues being actively discussed and worked on. We consider these items to be “next in line.”
+#### Next up
+These issues may not be as high of a priority as the quarterly  sprint but they are issues being actively discussed and worked on. We consider these items to be “next in line.”
 
 ### Labels
 
 #### Step one: Label by classification
-- 508
+
+Include all that apply
+- 508 (Accessibility)
 - FEWD
 - UI
 - Design
@@ -208,36 +185,40 @@ These issues may not be as high of a priority as the monthly sprint but they are
 
 #### Step two: Where is it within the process?
 
-**0 - Backlog** – items within the Design Backlog, the UI Backlog, and the FEWD Backlog.
+**0 - Backlog** – When a new issue is created, it should be assigned to the backlog. Make sure to select a label so that your team lead can appropriately review and prioritize all issues.
 
-**1 - Working** – issues that are currently a work in progress.
+**1 - Working** – issues that are being worked on in the current sprint.
 
-**2 - Approval** – issues that need approval to publish. Be sure to tag the appropriate approver from the options listed below. To receive approval, the content should be presented in the way that it would be published to the Design Manual.
+**2 - Approval** – issues that need approval to publish. Be sure to tag the appropriate approver from the options listed below. To receive approval, the content should be finalized and presented in the way that it would be published to the Design Manual.
 - FEWD approval
 - UI approval
 - Design approval
 - 508 approval
 It is the responsibility of the approver to remove the approval tag.
 
-We recommend adding the following checklist to an issue when it's time to publish:
+**3 - Implement changes** – When an issue has received all of the necessary approvals (which depends on the type of standard), move the issue to the milestone ‘Implement changes.’ The following steps must be accomplished in order to be considered done.
+
+Add the following checklist to an issue when it's time to implement changes:
 
 >Steps to close out this issue:
 - [ ] Add to the Design Manual
 - [ ] Update Capital Framework
-- [ ] Update .ai template(s) to reflect new standard
+- [ ] Add assets to design libraries
 
+**Definition of done for each step**
+- Add to the Design Manual - DM pages should be built following the content standards.
+ 
+- Update Capital Framework - Make any necessary changes to our front-end code, following the Capital Framework contribution guidelines. Once the update is published, update the component here in the Design Manual.
 
-**3 - Publish** – When an issue has received all of the necessary approvals (which depends on the type of standard), move the issue to the milestone for ‘Publish.’ Be sure to tag how they need to be published from the options listed below.
-- Minicon font - All new minicons must have design approval before they are added to the minicon font. Once approved, an SVG file should be emailed to Daniel Pizarro. Updates to the minicon font are released every month or in an as needed basis. The updated file will be provided in a TrueType format (`.ttf`). 
-- Add to asset library – This is the responsibility of the designer or UX designer that volunteers for the issue. The final asset should either be added to the library or the template available on CFPB’s Google Drive. Examples of assets include the illustration library, isocon library, minicon font, cf.gov web templates, or print suite templates. Changes to the minicon font must go through Daniel Pizarro, are released in batches, and require more lead time. 
-- Content update – Basic content update that can be done by anyone on the team.
-- FEWD task – Content that needs to be added to the Design Manual by a front end web developer. For the new content to be properly demonstrated in the manual, a CF component may be required.
+- Add assets to design libraries – This is the responsibility of the graphic designer or UX designer of the team championing the issue. 
+ - Web Patterns
+    - Add the final asset to the Axure component library.
+    - Add .ai template file of the pattern to the folder ‘New patterns’ within website templates for consumerfinance.gov  on CFPB’s Google Drive. 
+    - Create a Google Doc of the approved DM page and add it to the folder ‘Approved standards’ within the Design Manual folder on Drive. This is to help all designers stay on top of the most current approved standards while the pattern is in development. Once the DM page has been built, this file should be removed from the folder.
+  - Other assets
+    - Add illustration assets, to the ‘In progress’ folder to be added to the official library. 
+    - Email an SVG file of approved Minicon font additions to Daniel Pizarro.
 
-#### Other
-
-**discussion** - topics up for discussion. These are not technically considered active but you might want to solicit thoughts and discussion from the Design and Development team as a whole.
-
-**the manual itself** - actual strategies and updates for the manual.
 
 
 ----

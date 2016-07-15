@@ -8,7 +8,7 @@ category: UI toolkit
 - [Behavior](#behavior)
 - [Content guidelines](#guidelines)
 - [Style](#style)
-- [Code](#code) 
+- [Code](#code)
 {: class="toc"}
 
 <p>Modal windows (also known as dialog boxes or lightboxes) are “pop-up” elements that appear in front of a web page, blocking the main page below. Similar to popup windows or system alerts, modals are unique because they prevent interaction with the page underneath. </p> {: class="lead-in"}
@@ -23,7 +23,7 @@ category: UI toolkit
 <p>Modals can be effective for communicating a warning or alert outside the main web page. They can be triggered by a user interaction (like pressing a button to “save”) or without an interaction (like a timeout warning after a period of inactivity).</p>
 
 <h3 id="interruption">Interruption</h3>
-<p>Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. A critical piece of this scenario is that you need the workflow to be interrupted to be effective. If not, explore other UI elements to accomplish the goal.</p> 
+<p>Use modals to force the user to complete a task or make a decision that requires their full attention outside of the main workflow. A critical piece of this scenario is that you need the workflow to be interrupted to be effective. If not, explore other UI elements to accomplish the goal.</p>
 
 <div class="content-50 content-first">
   <h4 id="examples">Examples of when to use modals</h4>
@@ -36,15 +36,15 @@ category: UI toolkit
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
-<img src="/design-manual/static/img/modals/formexpiring.png" /> 
+<img src="/design-manual/static/img/modals/formexpiring.png" />
 {:/nomarkdown}
 </div>
 
 <h2 id="behavior">Behavior<span class="cf-code-link">
 </span></h2>
- 
+
 <h3 id="opening">Opening a modal</h3>
-<p>Modals can be triggered by links, buttons, or even inactivity on a site. When a modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal window or the primary action button.</p> 
+<p>Modals can be triggered by links, buttons, or even inactivity on a site. When a modal opens, set the focus to the first element users need to interact with. This could be either the first form field in the modal window or the primary action button.</p>
 
 <h3 id="scrolling">Scrolling within a modal</h3>
 <p>Modal windows should not scroll. If a modal contains enough information to require scrolling, use an alternative method of displaying content, such as a different UI element or another content page.</p>
@@ -70,7 +70,7 @@ category: UI toolkit
 
 <p>Provide separate focus and hover states for the close minicon and any “next” action buttons.</p>
 
-<p>The find function (ctrl+F) will not search information contained within a modal window.</p> 
+<p>The find function (ctrl+F) will not search information contained within a modal window.</p>
 
 <p>Include offscreen instructions that describe the modal dialog and how to interact with it.</p>
 
@@ -85,20 +85,20 @@ category: UI toolkit
   </ul>
 
 <h2 id="guidelines">Content guidelines<span class="cf-code-link"></span></h2>
-  
+
 <p>Modal windows should have a clear headline at the top of the window. This headline should clearly state what is happening or what action a modal is prompting the user for. For instance, if a modal appears due to inactivity, the headline should clearly state the action that is about to take place due to that inactivity.</p>
- 
+
 <p>Any copy underneath the headline should include clear instructions about what the user needs to do.</p>
 
-<p>If form fields are included in a modal, they should follow standard <a href="/design-manual/ui-toolkit/form-fields.html">form field</a> design guidelines.</p> 
-            
+<p>If form fields are included in a modal, they should follow standard <a href="/design-manual/ui-toolkit/form-fields.html">form field</a> design guidelines.</p>
+
 <h2 id="style">Style<span class="cf-code-link"></span></h2>
 
 <div class="content-50 content-first">
 <h4 id="modal">Modal window box</h4>
   <ul>
     <li>Alignment: centered horizontally and vertically on top of lightbox</li>
-    <li>Background: {% assign color = site.data.colors["white"] %} {{ color.name }} #{{ color.hex }}</li> 
+    <li>Background: {% assign color = site.data.colors["white"] %} {{ color.name }} #{{ color.hex }}</li>
     <li>Background lightbox: {% assign color = site.data.colors["gray-80"] %} {{ color.name }} #{{ color.hex }}, 70% opacity</li>
     <li>Font: Avenir Next Regular</li>
     <li>Padding: 30px</li>
@@ -121,26 +121,26 @@ category: UI toolkit
 
 <h4 id="action-bar">Gray action bar</h4>
   <ul>
-    <li>Background: {% assign color = site.data.colors["gray-5"] %} {{ color.name }} #{{ color.hex }</li>
+    <li>Background: {% assign color = site.data.colors["gray-5"] %} {{ color.name }} #{{ color.hex }}</li>
     <li>Padding right/left: 30px</li>
     <li>Padding top/bottom: 10px</li>
     <li>Primary action: left aligned <a href="/design-manual/ui-toolkit/buttons.html#variations">button</a></li>
-  </ul> 
+  </ul>
 
-<h4 id="max-width">Maximum width</h4> 
+<h4 id="max-width">Maximum width</h4>
   <ul>
     <li>270px for small screens</li>
     <li>630px for medium and large screens</li>
   </ul>
 
 <h4 id="inactive">Inactive window</h4>
-  <ul> 
+  <ul>
     <li>Set page to fixed</li>
   </ul>
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
-<img src="/design-manual/static/img/modals/savesearch.png" /> 
+<img src="/design-manual/static/img/modals/savesearch.png" />
 {:/nomarkdown}
 </div>
 
