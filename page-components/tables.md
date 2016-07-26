@@ -32,12 +32,19 @@ Tables divide information into distinct columns and rows to create an intersecti
 </div>
 
 <h2 id="use-cases">Use cases<span class="cf-code-link"><a href="https://cfpb.github.io/capital-framework/components/cf-tables/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
-
+<div class="content-50 content-first">
 Tables are only one method for presenting many data points grouped together in a visual way. Other options include charts or graphs.
 
 Tables serve a unique purpose of allowing easy organization or comparison of more complex data than a chart or graph. They can be read either vertically (by columns) or horizontally (by rows).
 
-<div class="content-67 content-first">
+Tables work best when:
+
+- Presenting sequential data
+- Data being presented requires specific or precise values
+- Individual values are being presented or compared
+- Values across columns or rows require different units of measurement
+</div>
+<div class="content-50 content-last">
 {::nomarkdown}
     <table class="table__stack-on-small" style="width: 100%;">
         <thead>
@@ -103,25 +110,18 @@ Tables serve a unique purpose of allowing easy organization or comparison of mor
 {:/nomarkdown}
 </div>
 
-Tables work best when:
-
-- Presenting sequential data
-- Data being presented requires specific or precise values
-- Individual values are being presented or compared
-- Values across columns or rows require different units of measurement
-
-<div class="content-67 content-first">
+<div class="content-50 content-first">
 ### Stacking tables
 
 Since the nature of tables relies so much on visual space, there are several common variations that can be used to accommodate different types of data in a table.
 
 A default table would “stack” the information on a smaller screen, since shrinking a table that maintained its columns/row structure would make it illegible.
 </div>
-<div class="content-33 content-last">
+<div class="content-50 content-last">
 ![A table as it would appear on a small screen]({{ site.baseurl }}/static/img/tables/table-small.png)
 </div>
 
-<div class="content-67 content-first">
+<div class="content-50 content-first">
 ### Directory tables
 
 When the data you’re presenting should only be read across the rows (instead of down columns), you can use a directory table. The first column in these tables is what organizes or labels the other data points in the row.
@@ -134,11 +134,87 @@ As such, at the small screen breakpoint, the directory table pattern uses that f
 
 See [guidance on styles](#style) for a a directory table and how it should look on smaller breakpoints.
 </div>
-<div class="content-33 content-last">
+<div class="content-50 content-last">
+{::nomarkdown}
+    <p>
+        <span class="h5">
+            Table 1:
+        </span>
+        Directory table on large screens
+    </p>
+    <table class="table__stack-on-small table__entry-header-on-small" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>
+                    Employee
+                </th>
+                <th>
+                    Date and time
+                </th>
+                <th>
+                    Room
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Employee">
+                    Andrew Able
+                </td>
+                <td data-label="Date and time">
+                    Thurs. January 25, 8 pm
+                </td>
+                <td data-label="Room">
+                    1001
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Employee">
+                    Betsy Bort
+                </td>
+                <td data-label="Date and time">
+                    Fri. January 25, 3:30 pm
+                </td>
+                <td data-label="Room">
+                    325
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Employee">
+                    David Jones
+                </td>
+                <td data-label="Date and time">
+                    Fri. January 25, 3 pm
+                </td>
+                <td data-label="Room">
+                    1001
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Employee">
+                    Sarah Lamb
+                </td>
+                <td data-label="Date and time">
+                    Mon. January 28, 8 pm
+                </td>
+                <td data-label="Room">
+                    801
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>
+        <span class="h5">
+            Table 2:
+        </span>
+        Directory table on small screens
+    </p>
+{:/nomarkdown}
 ![A directory table as it would appear on a small screen]({{ site.baseurl }}/static/img/tables/table-small-header.png)
 </div>
 
-<div class="content-67 content-first">
+<div class="content-50 content-first">
 ### Scrolling tables
 
 When the data you’re presenting has more columns than what will comfortably fit on the screen, you can use a table that scrolls horizontally. This becomes especially important when thinking about tables on smaller screens, instead of allowing the data to stack at smaller breakpoints.
@@ -148,7 +224,7 @@ Using a table that scrolls ensures that all the information can be accessed in i
 See [guidance on styles](#style) for a table that scrolls horizontally at all screen sizes.
 </div>
 
-<div class="content-33 content-last">
+<div class="content-50 content-last">
 ![A scrolling table as it would appear on a small screen]({{ site.baseurl }}/static/img/tables/table-small-scroll.png)
 </div>
 
