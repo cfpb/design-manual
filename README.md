@@ -220,11 +220,11 @@ Add the following checklist to an issue when it's time to implement changes:
     - Email an SVG file of approved Minicon font additions to Daniel Pizarro.
 
 ## Expedited review for website template updates
-In general, we try to build using our templated components to create a consistent user experience and visual design across CFPB web products. If a project team encounters a use case in which they need a template change, a component change, and/or an entirely new template, please follow the following expedited review process: 
+In general, we try to build using our templated components to create a consistent user experience and visual design across CFPB web products. If a project team encounters a use case in which they need a template change, a component change, and/or an entirely new template, please follow the expedited review process: 
 
 1. Submit an issue to this repo requesting a template review. @ mention DM lead reviewers (as noted above) and CF.gov Product Owner (currently Jessica Schafer). 
  - The issue should include both a quick illustration or demo of how the new use case would be handled by established templates and how the use case would be handled by an update or addition. 
-2. DM lead reviewers and CFgov Product Owner have 1 week for discussion and consideration of the change. (Comments from others envouraged and welcome!) If consensus is not reached by the end of the week, the CF.gov Product Owner will make a decision.
+2. DM lead reviewers and CFgov Product Owner have 1 week for discussion and consideration of the change. (Comments from others encouraged and welcome!) If consensus is not reached by the end of the week, the CF.gov Product Owner will make a decision.
 3. If approved, add the “Approved concept” and “Documentation needed” tags to the issue and implement the change within your project work. 
 - If moving forward with the change requires modifications to our CMS code, the project team will take the lead with support from the CF.gov Platform team.
 
