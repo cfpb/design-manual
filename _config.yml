@@ -6,7 +6,7 @@ gems:
 permalink: /:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "src", "node_modules"]
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 # Organization
 org: CFPB
