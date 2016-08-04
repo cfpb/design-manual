@@ -222,10 +222,10 @@ secondarynav:
   url: page-components/sidebar-prefooter.html
   internal: true
   category: Page components
-# - text: Tables
-#  url: page-components/tables.html
-#  internal: true
-#  category: Page components
+- text: Tables
+  url: page-components/tables.html
+  internal: true
+  category: Page components
 - text: Wells
   url: page-components/wells.html
   internal: true
