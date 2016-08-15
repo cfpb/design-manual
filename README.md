@@ -219,14 +219,15 @@ Add the following checklist to an issue when it's time to implement changes:
     - Add illustration assets, to the ‘In progress’ folder to be added to the official library. 
     - Email an SVG file of approved Minicon font additions to Daniel Pizarro.
 
-## Expedited review for website template updates
-In general, we try to build using our templated components to create a consistent user experience and visual design across CFPB web products. If a project team encounters a use case in which they need a template change, a component change, and/or an entirely new template, please follow the expedited review process: 
+## Expedited review for component or template updates
+In general, we try to build using our templated components to create a consistent user experience and visual design across CFPB web products. If a project team encounters a use case in which they need a template change, a component change, and/or an entirely new template or component, please follow the expedited review process: 
 
-1. Submit an issue to this repo requesting a template review. @ mention DM lead reviewers (as noted above) and CF.gov Product Owner (currently Jessica Schafer). 
- - The issue should include both a quick illustration or demo of how the new use case would be handled by established templates and how the use case would be handled by an update or addition. 
-2. DM lead reviewers and CFgov Product Owner have 1 week for discussion and consideration of the change. (Comments from others encouraged and welcome!) If consensus is not reached by the end of the week, the CF.gov Product Owner will make a decision.
+1. Submit an issue to this repo requesting a review of your proposed change. @ mention DM lead reviewers (as noted above) and CF.gov Product Owner (currently Jessica Schafer).
+ - Be sure to include your business or user experience justification for the proposed change.
+ - The issue should include both a quick illustration or demo of how the new use case would be handled by established components/templates (if it can be handled at all) and how the use case would be handled by your update or addition. 
+2. DM lead reviewers and CF.gov Product Owner have 1 week for discussion and consideration of the change. (Comments from others encouraged and welcome!) If consensus is not reached by the end of the week, the CF.gov Product Owner will make a decision.
 3. If approved, add the “Approved concept” and “Documentation needed” tags to the issue and implement the change within your project work. 
-- If moving forward with the change requires modifications to our CMS code, the project team will take the lead with support from the CF.gov Platform team.
+ - If moving forward with the change requires modifications to our CMS code, the project team will take the lead with support from the CF.gov Platform Team.
 
 By the time the project ends, Design Manual and Capital Framework documentation should be updated to reflect the change per the existing processes described above:
 
