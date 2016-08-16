@@ -8,7 +8,6 @@ category: Page components
 - [Behavior](#behavior)
 - [Content guidelines](#content-guidelines)
 - [Style](#style)
-- [Code](#code)
 {: class="toc"}
 
 <div class="content-50 content-first">
@@ -1216,5 +1215,3 @@ Column widths are automatically set by browsers by default. If needed, some or a
 </div>
 {:/nomarkdown}
 </div>
-
-<h2 id="code">Code<span class="cf-code-link"><a href="https://cfpb.github.io/capital-framework/components/cf-tables/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
