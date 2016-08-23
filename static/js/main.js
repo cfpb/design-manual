@@ -1,3 +1,438 @@
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+/*
+ * jQuery Easing v1.3.2 - http://gsgd.co.uk/sandbox/jquery/easing/
+ * Open source under the BSD License.
+ * Copyright © 2008 George McGinley Smith
+ * All rights reserved.
+ * https://raw.github.com/gdsmith/jquery-easing/master/LICENSE
+*/
+
+// t: current time, b: begInnIng value, c: change In value, d: duration
+(function($){$.easing['jswing'] = $.easing['swing'];
+
+$.extend( $.easing,
+{
+	def: 'easeOutQuad',
+	swing: function (x, t, b, c, d) {
+		//alert($.easing.default);
+		return $.easing[$.easing.def](x, t, b, c, d);
+	},
+	easeInQuad: function (x, t, b, c, d) {
+		return c*(t/=d)*t + b;
+	},
+	easeOutQuad: function (x, t, b, c, d) {
+		return -c *(t/=d)*(t-2) + b;
+	},
+	easeInOutQuad: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t + b;
+		return -c/2 * ((--t)*(t-2) - 1) + b;
+	},
+	easeInCubic: function (x, t, b, c, d) {
+		return c*(t/=d)*t*t + b;
+	},
+	easeOutCubic: function (x, t, b, c, d) {
+		return c*((t=t/d-1)*t*t + 1) + b;
+	},
+	easeInOutCubic: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t + b;
+		return c/2*((t-=2)*t*t + 2) + b;
+	},
+	easeInQuart: function (x, t, b, c, d) {
+		return c*(t/=d)*t*t*t + b;
+	},
+	easeOutQuart: function (x, t, b, c, d) {
+		return -c * ((t=t/d-1)*t*t*t - 1) + b;
+	},
+	easeInOutQuart: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
+		return -c/2 * ((t-=2)*t*t*t - 2) + b;
+	},
+	easeInQuint: function (x, t, b, c, d) {
+		return c*(t/=d)*t*t*t*t + b;
+	},
+	easeOutQuint: function (x, t, b, c, d) {
+		return c*((t=t/d-1)*t*t*t*t + 1) + b;
+	},
+	easeInOutQuint: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+		return c/2*((t-=2)*t*t*t*t + 2) + b;
+	},
+	easeInSine: function (x, t, b, c, d) {
+		return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
+	},
+	easeOutSine: function (x, t, b, c, d) {
+		return c * Math.sin(t/d * (Math.PI/2)) + b;
+	},
+	easeInOutSine: function (x, t, b, c, d) {
+		return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
+	},
+	easeInExpo: function (x, t, b, c, d) {
+		return (t==0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
+	},
+	easeOutExpo: function (x, t, b, c, d) {
+		return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+	},
+	easeInOutExpo: function (x, t, b, c, d) {
+		if (t==0) return b;
+		if (t==d) return b+c;
+		if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+		return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
+	},
+	easeInCirc: function (x, t, b, c, d) {
+		return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
+	},
+	easeOutCirc: function (x, t, b, c, d) {
+		return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
+	},
+	easeInOutCirc: function (x, t, b, c, d) {
+		if ((t/=d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
+		return c/2 * (Math.sqrt(1 - (t-=2)*t) + 1) + b;
+	},
+	easeInElastic: function (x, t, b, c, d) {
+		var s=1.70158;var p=0;var a=c;
+		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+		if (a < Math.abs(c)) { a=c; var s=p/4; }
+		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+	},
+	easeOutElastic: function (x, t, b, c, d) {
+		var s=1.70158;var p=0;var a=c;
+		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+		if (a < Math.abs(c)) { a=c; var s=p/4; }
+		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		return a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b;
+	},
+	easeInOutElastic: function (x, t, b, c, d) {
+		var s=1.70158;var p=0;var a=c;
+		if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
+		if (a < Math.abs(c)) { a=c; var s=p/4; }
+		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+		return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
+	},
+	easeInBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158;
+		return c*(t/=d)*t*((s+1)*t - s) + b;
+	},
+	easeOutBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158;
+		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+	},
+	easeInOutBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158; 
+		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
+	},
+	easeInBounce: function (x, t, b, c, d) {
+		return c - $.easing.easeOutBounce (x, d-t, 0, c, d) + b;
+	},
+	easeOutBounce: function (x, t, b, c, d) {
+		if ((t/=d) < (1/2.75)) {
+			return c*(7.5625*t*t) + b;
+		} else if (t < (2/2.75)) {
+			return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
+		} else if (t < (2.5/2.75)) {
+			return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
+		} else {
+			return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
+		}
+	},
+	easeInOutBounce: function (x, t, b, c, d) {
+		if (t < d/2) return $.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
+		return $.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
+	}
+});})(jQuery);
+
+},{}],2:[function(require,module,exports){
+(function (global){
+/**
+ * cf-expandables
+ * https://github.com/cfpb/cf-expandables
+ *
+ * A public domain work of the Consumer Financial Protection Bureau
+ */
+
+global.jQuery = require('jquery');
+require('jquery.easing');
+
+(function( $ ) {
+
+  $.fn.expandable = function( userSettings ) {
+
+    return $( this ).each(function() {
+
+      var $this = $( this ),
+          $target = $this.find('.expandable_target').not( $this.find('.expandable .expandable_target') ),
+          $cueOpen = $this.find('.expandable_cue-open').not( $this.find('.expandable .expandable_cue-open') ),
+          $cueClose = $this.find('.expandable_cue-close').not( $this.find('.expandable .expandable_cue-close') ),
+          $content = $this.find('.expandable_content').not( $this.find('.expandable .expandable_content') ),
+          $groupParent = $this.parents('.expandable-group'),
+          accordion = $groupParent.length > 0 && $groupParent.data('accordion');
+
+      if ( accordion ) {
+        var $siblings = $this.siblings('.expandable');
+      }
+
+      this.init = function() {
+        // Todo: recommend using an id on all expandables so that we can use
+        // the aria-controls attribute.
+        $target.attr( 'aria-controls', $content.attr('id') );
+        if ( $this.hasClass('expandable__expanded') ) {
+          this.expand( 0 );
+        } else {
+          this.collapse( 0 );
+        }
+        $target.on( 'click', $.proxy( this.handleClick, this ) );
+      };
+
+      this.handleClick = function( ev ) {
+        ev.preventDefault();
+        ev.stopPropagation();
+        this.toggle();
+        if ( accordion ) {
+          $siblings.each( function( index, sibling ) {
+            sibling.collapse();
+          });
+        }
+      };
+
+      this.toggle = function() {
+        if ( $target.attr('aria-pressed') === 'true' ) {
+          this.collapse();
+        } else {
+          this.expand();
+        }
+      };
+
+      this.expand = function( duration ) {
+        $cueOpen.css( 'display', 'none' );
+        $cueClose.css( 'display', 'inline' );
+        $content.attr( 'aria-expanded', 'true' );
+        $target.attr( 'aria-pressed', 'true' );
+        if ( typeof duration === 'undefined' ) {
+          duration = $.fn.expandable.calculateExpandDuration( $content.height() );
+        }
+        $this.addClass('expandable__expanded');
+        $content.slideDown({
+          duration: duration,
+          easing: 'easeOutExpo'
+        });
+      };
+
+      this.collapse = function( duration ) {
+        $cueOpen.css( 'display', 'inline' );
+        $cueClose.css( 'display', 'none' );
+        $content.attr( 'aria-expanded', 'false' );
+        $target.attr( 'aria-pressed', 'false' );
+        if ( typeof duration === 'undefined' ) {
+          duration = $.fn.expandable.calculateCollapseDuration( $content.height() );
+        }
+        $this.removeClass('expandable__expanded');
+        $content.slideUp({
+          duration: duration,
+          easing: 'easeOutExpo'
+        });
+      };
+
+      this.init();
+
+    });
+
+  };
+
+  $.fn.expandable.calculateExpandDuration = function( height ) {
+    return $.fn.expandable.constrainValue( 450, 900, height * 4 );
+  };
+
+  $.fn.expandable.calculateCollapseDuration = function( height ) {
+    return $.fn.expandable.constrainValue( 350, 900, height * 2 );
+  };
+
+  $.fn.expandable.constrainValue = function( min, max, duration ) {
+    if ( duration > max ) {
+        return max;
+    } else if ( duration < min ) {
+        return min;
+    } else {
+        return duration;
+    }
+  };
+
+  // Auto init
+  $('.expandable').expandable();
+
+}(jQuery));
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"jquery":4,"jquery.easing":1}],3:[function(require,module,exports){
+(function (global){
+/**
+ * cf-tables
+ * https://github.com/cfpb/cf-tables
+ *
+ * A public domain work of the Consumer Financial Protection Bureau
+ */
+
+global.jQuery = require('jquery');
+
+( function( $ ) {
+  'use strict';
+
+  var SortableTable = function( table, options ) {
+    /*  At the moment, there are no default settings, but here's an object
+        for their future use! */
+    var defaults = {},
+    // settings is defaults combined with user options
+    settings = {},
+    // rows is an Array of Arrays, serving as a model of the table
+    rows = [],
+    $table = $( table ),
+    $sortButtons = $table.find( '.sortable' );
+
+    /**
+     * Initializes the SortableTable
+     * @param { object } options - Customizble options object
+     */
+    function _init( options ) {
+      settings = $.extend( {}, defaults, options );
+      _clickHandler();
+      // If the following classes exist, start by sorting those columns.
+      $table.find( '.sortable__start-up, .sortable__start-up' ).click();
+    }
+
+    /**
+     * Sorting function for Array.sort()
+     *
+     * @param { number } sign - A number where a negative number indicates a
+     * reverse sort.
+     * @param { sortType } sortType - A string used for sort types. By default,
+     * the values are sorted by their native type. If this value is set to
+     * 'number', then the cells' numeric values are used.
+     * @returns function - A function to be used by the Array.sort method, where
+     * the parameters 'a' and 'b' is each an Array (of Arrays) to be sorted
+     */
+
+    function _arraySorter( sign, sortType ) {
+      return function( a, b ) {
+        // Set a and b to the first Array in each Array-of-Arrays
+        a = a[0];
+        b = b[0];
+
+        // For number sort, convert a & b to numbers.
+        if ( sortType === 'number' ) {
+          a = Number( a.replace( /[^\d.-]/g, '' ) );
+          b = Number( b.replace( /[^\d.-]/g, '' ) );
+        }
+
+        // Sort the values
+        if ( a < b ) {
+          return sign * -1;
+        }
+        if ( a > b ) {
+          return sign;
+        }
+        return 0;
+      };
+    }
+
+    /**
+     * Updates internal model of table (rows[])
+     * @param { number } index - The index of the column used for sorting,
+     * which is used as the "key" for rows[] - it is set as the only value
+     * in the first array.
+     */
+    function _getRows( index ) {
+      var child = index + 1;
+      // Clear the model
+      rows.length = 0;
+      // Find the value in each row of the column we're sorting by,
+      // add it to the rows Array
+      $table.find( 'tbody tr' ).each( function() {
+        // indices count from 0, but nth-child counts from 1
+        var key = $( this ).find( 'td:nth-child(' + child + ')' ).text().trim();
+        rows.push( [ key, $( this ) ] );
+      } );
+    }
+
+    /**
+     * Updates the table in the DOM
+     * @param { number } index - The index of the column used for sorting
+     */
+    function _updateTable( index ) {
+      // Empty the tbody to prepare for sorted rows
+      $table.find( 'tbody' ).empty();
+
+      // Insert sorted rows
+      for ( var i = 0; i < rows.length; i++ ) {
+        $table.find( 'tbody' ).append( rows[i][1] );
+      }
+    }
+
+    /**
+     * Handler for click events on the column header
+     * No parameters - uses SortableTable properties, updates the DOM.
+     */
+    function _clickHandler() {
+      $sortButtons.on( 'click', function() {
+        var $button = $( this ),
+            $headercell = $button.closest( 'th, td' ),
+            $table = $headercell.closest( '.table__sortable' ),
+            sortType = $button.attr( 'data-sort_type' ),
+            sign = 1,
+            $firstChild = $table.find( 'tr:first-child' ),
+            index = $firstChild.children( 'th, td' ).index( $headercell );
+
+        _getRows( index );
+
+        // Determine sign
+        if ( $button.hasClass( 'sorted-up' ) || $button.hasClass( 'sortable__start-down' ) ) {
+          sign = -1;
+        }
+
+        $sortButtons.removeClass( 'sortable__start-down sortable__start-up' );
+        $sortButtons.removeClass( 'sorted-down sorted-up' );
+
+        // Add correct class
+        if ( sign === 1 ) {
+          $button.addClass( 'sorted-up' );
+        } 
+        else {
+          $button.addClass( 'sorted-down' );
+        }
+
+        // Perform the row sort
+        rows.sort( _arraySorter( sign, sortType ) );
+
+        _updateTable( index );
+
+      } );
+    }
+
+    _init( options );
+
+  };
+
+  /**
+   * Instatiates the SortableTable
+   * @param { object } options - An options object
+   * @returns { object } Attached objects for each matched element
+   */
+  $.fn.sortableTable = function( options ) {
+    return this.each( function() {
+      ( options || ( options = {} ) ).$element = $( this );
+      var scol = new SortableTable( this, options );
+    } );
+  };
+
+  $( document ).ready( function() {
+    $( '.table__sortable' ).sortableTable();
+  } );
+
+
+}( jQuery ) );
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"jquery":4}],4:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v1.11.3
  * http://jquery.com/
@@ -10350,331 +10785,18 @@ return jQuery;
 
 }));
 
-/*
- * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
- *
- * Uses the built in easing capabilities added In jQuery 1.1
- * to offer multiple easing options
- *
- * TERMS OF USE - jQuery Easing
- * 
- * Open source under the BSD License. 
- * 
- * Copyright © 2008 George McGinley Smith
- * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
- * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
- * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
- * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
- * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
- * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
- *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
- * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
- *
-*/
-
-// t: current time, b: begInnIng value, c: change In value, d: duration
-jQuery.easing['jswing'] = jQuery.easing['swing'];
-
-jQuery.extend( jQuery.easing,
-{
-	def: 'easeOutQuad',
-	swing: function (x, t, b, c, d) {
-		//alert(jQuery.easing.default);
-		return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
-	},
-	easeInQuad: function (x, t, b, c, d) {
-		return c*(t/=d)*t + b;
-	},
-	easeOutQuad: function (x, t, b, c, d) {
-		return -c *(t/=d)*(t-2) + b;
-	},
-	easeInOutQuad: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return c/2*t*t + b;
-		return -c/2 * ((--t)*(t-2) - 1) + b;
-	},
-	easeInCubic: function (x, t, b, c, d) {
-		return c*(t/=d)*t*t + b;
-	},
-	easeOutCubic: function (x, t, b, c, d) {
-		return c*((t=t/d-1)*t*t + 1) + b;
-	},
-	easeInOutCubic: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return c/2*t*t*t + b;
-		return c/2*((t-=2)*t*t + 2) + b;
-	},
-	easeInQuart: function (x, t, b, c, d) {
-		return c*(t/=d)*t*t*t + b;
-	},
-	easeOutQuart: function (x, t, b, c, d) {
-		return -c * ((t=t/d-1)*t*t*t - 1) + b;
-	},
-	easeInOutQuart: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
-		return -c/2 * ((t-=2)*t*t*t - 2) + b;
-	},
-	easeInQuint: function (x, t, b, c, d) {
-		return c*(t/=d)*t*t*t*t + b;
-	},
-	easeOutQuint: function (x, t, b, c, d) {
-		return c*((t=t/d-1)*t*t*t*t + 1) + b;
-	},
-	easeInOutQuint: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
-		return c/2*((t-=2)*t*t*t*t + 2) + b;
-	},
-	easeInSine: function (x, t, b, c, d) {
-		return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
-	},
-	easeOutSine: function (x, t, b, c, d) {
-		return c * Math.sin(t/d * (Math.PI/2)) + b;
-	},
-	easeInOutSine: function (x, t, b, c, d) {
-		return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
-	},
-	easeInExpo: function (x, t, b, c, d) {
-		return (t==0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
-	},
-	easeOutExpo: function (x, t, b, c, d) {
-		return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
-	},
-	easeInOutExpo: function (x, t, b, c, d) {
-		if (t==0) return b;
-		if (t==d) return b+c;
-		if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
-		return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
-	},
-	easeInCirc: function (x, t, b, c, d) {
-		return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
-	},
-	easeOutCirc: function (x, t, b, c, d) {
-		return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
-	},
-	easeInOutCirc: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
-		return c/2 * (Math.sqrt(1 - (t-=2)*t) + 1) + b;
-	},
-	easeInElastic: function (x, t, b, c, d) {
-		var s=1.70158;var p=0;var a=c;
-		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
-		if (a < Math.abs(c)) { a=c; var s=p/4; }
-		else var s = p/(2*Math.PI) * Math.asin (c/a);
-		return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
-	},
-	easeOutElastic: function (x, t, b, c, d) {
-		var s=1.70158;var p=0;var a=c;
-		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
-		if (a < Math.abs(c)) { a=c; var s=p/4; }
-		else var s = p/(2*Math.PI) * Math.asin (c/a);
-		return a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b;
-	},
-	easeInOutElastic: function (x, t, b, c, d) {
-		var s=1.70158;var p=0;var a=c;
-		if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
-		if (a < Math.abs(c)) { a=c; var s=p/4; }
-		else var s = p/(2*Math.PI) * Math.asin (c/a);
-		if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
-		return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
-	},
-	easeInBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158;
-		return c*(t/=d)*t*((s+1)*t - s) + b;
-	},
-	easeOutBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158;
-		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
-	},
-	easeInOutBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158; 
-		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
-		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
-	},
-	easeInBounce: function (x, t, b, c, d) {
-		return c - jQuery.easing.easeOutBounce (x, d-t, 0, c, d) + b;
-	},
-	easeOutBounce: function (x, t, b, c, d) {
-		if ((t/=d) < (1/2.75)) {
-			return c*(7.5625*t*t) + b;
-		} else if (t < (2/2.75)) {
-			return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
-		} else if (t < (2.5/2.75)) {
-			return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
-		} else {
-			return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
-		}
-	},
-	easeInOutBounce: function (x, t, b, c, d) {
-		if (t < d/2) return jQuery.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
-		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
-	}
-});
-
-/*
- *
- * TERMS OF USE - EASING EQUATIONS
- * 
- * Open source under the BSD License. 
- * 
- * Copyright © 2001 Robert Penner
- * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
- * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
- * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
- * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
- * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
- * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
- *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
- * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
- *
- */
-/**
- * cf-expandables
- * https://github.com/cfpb/cf-expandables
- *
- * A public domain work of the Consumer Financial Protection Bureau
- */
-
-(function( $ ) {
-
-  $.fn.expandable = function( userSettings ) {
-
-    return $( this ).each(function() {
-
-      var $this = $( this ),
-          $target = $this.find('.expandable_target').not( $this.find('.expandable .expandable_target') ),
-          $cueOpen = $this.find('.expandable_cue-open').not( $this.find('.expandable .expandable_cue-open') ),
-          $cueClose = $this.find('.expandable_cue-close').not( $this.find('.expandable .expandable_cue-close') ),
-          $content = $this.find('.expandable_content').not( $this.find('.expandable .expandable_content') ),
-          $groupParent = $this.parents('.expandable-group'),
-          accordion = $groupParent.length > 0 && $groupParent.data('accordion');
-
-      if ( accordion ) {
-        var $siblings = $this.siblings('.expandable');
-      }
-
-      this.init = function() {
-        // Todo: recommend using an id on all expandables so that we can use
-        // the aria-controls attribute.
-        $target.attr( 'aria-controls', $content.attr('id') );
-        if ( $this.hasClass('expandable__expanded') ) {
-          this.expand( 0 );
-        } else {
-          this.collapse( 0 );
-        }
-        $target.on( 'click', $.proxy( this.handleClick, this ) );
-      };
-
-      this.handleClick = function( ev ) {
-        ev.preventDefault();
-        ev.stopPropagation();
-        this.toggle();
-        if ( accordion ) {
-          $siblings.each( function( index, sibling ) {
-            sibling.collapse();
-          });
-        }
-      };
-
-      this.toggle = function() {
-        if ( $target.attr('aria-pressed') === 'true' ) {
-          this.collapse();
-        } else {
-          this.expand();
-        }
-      };
-
-      this.expand = function( duration ) {
-        $cueOpen.css( 'display', 'none' );
-        $cueClose.css( 'display', 'inline' );
-        $content.attr( 'aria-expanded', 'true' );
-        $target.attr( 'aria-pressed', 'true' );
-        if ( typeof duration === 'undefined' ) {
-          duration = $.fn.expandable.calculateExpandDuration( $content.height() );
-        }
-        $this.addClass('expandable__expanded');
-        $content.slideDown({
-          duration: duration,
-          easing: 'easeOutExpo'
-        });
-      };
-
-      this.collapse = function( duration ) {
-        $cueOpen.css( 'display', 'inline' );
-        $cueClose.css( 'display', 'none' );
-        $content.attr( 'aria-expanded', 'false' );
-        $target.attr( 'aria-pressed', 'false' );
-        if ( typeof duration === 'undefined' ) {
-          duration = $.fn.expandable.calculateCollapseDuration( $content.height() );
-        }
-        $this.removeClass('expandable__expanded');
-        $content.slideUp({
-          duration: duration,
-          easing: 'easeOutExpo'
-        });
-      };
-
-      this.init();
-
-    });
-
-  };
-
-  $.fn.expandable.calculateExpandDuration = function( height ) {
-    return $.fn.expandable.constrainValue( 450, 900, height * 4 );
-  };
-
-  $.fn.expandable.calculateCollapseDuration = function( height ) {
-    return $.fn.expandable.constrainValue( 350, 900, height * 2 );
-  };
-
-  $.fn.expandable.constrainValue = function( min, max, duration ) {
-    if ( duration > max ) {
-        return max;
-    } else if ( duration < min ) {
-        return min;
-    } else {
-        return duration;
-    }
-  };
-
-  // Auto init
-  $('.expandable').expandable();
-
-}(jQuery));
-
+},{}],5:[function(require,module,exports){
 /* ==========================================================================
    JS
    ========================================================================== */
+
+var $ = require( 'jquery' );
+require( 'cf-expandables' );
+require( 'cf-tables' );
 
 $(document).ready(function() {
   'use strict';
   $('.cf-icon-external-link').append('<span class="u-visually-hidden"> Links to external site.</span>');
 });
+
+},{"cf-expandables":2,"cf-tables":3,"jquery":4}]},{},[5]);

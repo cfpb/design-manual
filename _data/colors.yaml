@@ -1,0 +1,465 @@
+# PMS and CMYK values need to be confirmed by print tests
+
+dark-green:
+  shortname: dark-green
+  name: Dark Green
+  hex: 1e9642
+  RGB: 30, 150, 66
+  # PMS: 
+  # CMYK: 80, 0, 100, 17
+
+green:
+  shortname: green
+  name: CFPB Green
+  hex: 20aa3f
+  RGB: 32, 170, 63
+  # PMS: 
+  # CMYK: 80, 0, 100, 0
+
+green-80:
+  shortname: green-80
+  name: Green 80
+  hex: 66c368
+  RGB: 102, 195, 104
+  # PMS:
+  # CMYK: 55, 0, 76, 0
+  
+green-60:
+  shortname: green-60
+  name: Green 60
+  hex: addc91
+  RGB: 173, 220, 145
+  # PMS:
+  # CMYK: 32, 0, 52, 0
+  
+green-40:
+  shortname: green-40
+  name: Green 40
+  hex: c7e5b3
+  RGB: 199, 229, 179
+  # PMS:
+  # CMYK: 22, 0, 36, 0
+  
+green-20:
+  shortname: green-20
+  name: Green 20
+  hex: e2efd8
+  RGB: 226, 239, 216
+  # PMS:
+  # CMYK: 12, 0, 19, 0
+  
+dark-teal:
+  shortname: dark-teal
+  name: Dark Teal
+  hex: 005e5d
+  RGB: 0, 94, 93
+  # PMS: 	7721
+  # CMYK: 89, 0, 35, 60
+  
+teal:
+  shortname: teal
+  name: Teal
+  hex: 257675
+  RGB: 37, 118, 117
+  # PMS: 
+  # CMYK: 85, 0, 30, 44
+  
+teal-80:
+  shortname: teal-80
+  name: Teal 80%
+  hex: 579695
+  RGB: 87, 150, 149
+  # PMS: 
+  # CMYK: 50, 0, 20, 30
+  
+teal-60:
+  shortname: teal-60
+  name: Teal 60%
+  hex: 89b6b5
+  RGB: 137, 182, 181
+  # PMS: 
+  # CMYK: 36, 0, 13, 19
+  
+teal-40:
+  shortname: teal-40
+  name: Teal 40%
+  hex: b4d2d1
+  RGB: 180, 210, 209
+  # PMS: 
+  # CMYK: 20, 0, 8, 12
+  
+teal-20:
+  shortname: teal-20
+  name: Teal 20%
+  hex: d4e7e6;
+  RGB:
+  # PMS: 
+  # CMYK: 10, 0, 4, 6
+
+dark-pacific:
+  shortname: dark-pacific
+  name: Dark Pacific
+  hex: 0050b4
+  RGB: 212, 231, 230
+  # PMS: 
+  # CMYK: 100, 51, 0, 20
+
+pacific:
+  shortname: pacific
+  name: Pacific
+  hex: 0072ce
+  RGB: 0, 114, 206
+  # PMS: 285
+  # CMYK: 90, 48, 0, 0
+
+pacific-80:
+  shortname: pacific-80
+  name: Pacific 80%
+  hex: 4497dc
+  RGB: 68, 151, 220
+  # PMS: 
+  # CMYK: 68, 30, 0, 0
+  
+pacific-60:
+  shortname: pacific-60
+  name: Pacific 60%
+  hex: 7eb7e8
+  RGB: 126, 183, 232
+  # PMS: 
+  # CMYK: 46, 16, 0, 0
+  
+pacific-40:
+  shortname: pacific-40
+  name: Pacific 40%
+  hex: afd2f2
+  RGB: 175, 210, 242
+  # PMS: 
+  # CMYK: 29, 8, 0, 0
+  
+pacific-20:
+  shortname: pacific-20
+  name: Pacific 20%
+  hex: d6e8fa
+  RGB: 214, 232, 250
+  # PMS: 
+  # CMYK: 16, 3, 0, 0
+
+dark-navy:
+  shortname: dark-navy
+  name: Dark Navy
+  hex: 002d72
+  RGB: 0, 45, 114
+  # PMS: 	288
+  # CMYK: 100, 80, 6, 32
+
+navy:
+  shortname: navy
+  name: Navy
+  hex: 254b87
+  RGB: 37, 75, 135
+  # PMS: 
+  # CMYK: 82, 58, 0, 31
+
+navy-80:
+  shortname: navy-80
+  name: Navy 80%
+  hex: 5674a3
+  RGB: 86, 116, 163
+  # PMS: 
+  # CMYK: 60, 35, 0, 26
+  
+navy-60:
+  shortname: navy-60
+  name: Navy 60%
+  hex: 889cc0
+  RGB: 136, 156, 192
+  # PMS: 
+  # CMYK: 36, 21, 0, 17
+  
+navy-40:
+  shortname: navy-40
+  name: Navy 40%
+  hex: b3c0d9
+  RGB: 179, 192, 217
+  # PMS: 
+  # CMYK: 23, 13, 0, 7
+  
+navy-20:
+  shortname: navy-20
+  name: Navy 20%
+  hex: d3daeb
+  RGB: 211, 218, 235
+  # PMS: 
+  # CMYK: 13, 8, 0, 4
+
+dark-red:
+  shortname: dark-red
+  name: Dark Red
+  hex: b63014
+  RGB: 182, 48, 20
+  # PMS: 
+  # CMYK: 0, 90, 100, 20
+
+red:
+  shortname: red
+  name: Red
+  hex: d14124
+  RGB: 	209, 65, 36
+  # PMS: 7597
+  # CMYK: 0, 85, 100, 0
+
+red-80:
+  shortname: red-80
+  name: Red 80%
+  hex: dd735d
+  RGB: 221, 115, 93
+  # PMS: 
+  # CMYK: 0, 75, 75, 0
+  
+red-60:
+  shortname: red-60
+  name: Red 60%
+  hex: e79e8e
+  RGB: 231, 158, 142
+  # PMS: 
+  # CMYK: 0, 51, 46, 0
+  
+red-40:
+  shortname: red-40
+  name: Red 40%
+  hex: f0c3b8
+  RGB: 240, 195, 184
+  # PMS: 
+  # CMYK: 0, 28, 25, 0
+  
+red-20:
+  shortname: red-20
+  name: Red 20%
+  hex: f7e0d9
+  RGB: 247, 224, 217
+  # PMS: 
+  # CMYK: 0, 13, 12, 0
+  
+dark-raspberry:
+  shortname: dark-raspberry
+  name: Dark Raspberry
+  hex: a81457
+  RGB: 168, 20, 87
+  # PMS:
+  # CMYK: 
+
+raspberry:
+  shortname: raspberry
+  name: Raspberry
+  hex: b73b72
+  RGB: 183, 59, 114
+  # PMS:
+  # CMYK:
+
+raspberry-80:
+  shortname: raspberry-80
+  name: Raspberry 80%
+  hex: c86892
+  RGB: 200,104,146
+  # PMS:
+  # CMYK:
+
+raspberry-60:
+  shortname: raspberry-60
+  name: Raspberry 60%
+  hex: d88fad
+  RGB: 216, 143, 173
+  # PMS:
+  # CMYK: 
+
+raspberry-40:
+  shortname: raspberry-40
+  name: Raspberry 40%
+  hex: e7b6c9
+  RGB: 231, 182, 201
+  # PMS:
+  # CMYK:
+
+raspberry-20:
+  shortname: raspberry-20
+  name: Raspberry 20%
+  hex: f4d7e0
+  RGB: 244, 215, 224
+  # PMS:
+  # CMYK:
+
+dark-gold:
+  shortname: dark-gold
+  name: Dark Gold
+  hex: dc731c
+  RGB: 220, 115, 28
+  # PMS: 
+  # CMYK: 10, 60, 100, 0
+
+gold:
+  shortname: gold
+  name: Gold
+  hex: ff9e1b
+  RGB: 	255, 147, 27
+  # PMS: 1375
+  # CMYK: 0, 45, 94, 0
+
+gold-80:
+  shortname: gold-80
+  name: Gold 80%
+  hex: ffb858
+  RGB: 255, 184, 88
+  # PMS: 
+  # CMYK: 0, 34, 76, 0
+  
+gold-60:
+  shortname: gold-60
+  name: Gold 60%
+  hex: ffce8d
+  RGB: 255, 206, 141
+  # PMS: 
+  # CMYK: 0, 21, 49, 0
+  
+gold-40:
+  shortname: gold-40
+  name: Gold 40%
+  hex: ffe1b9
+  RGB: 255, 225, 185
+  # PMS: 
+  # CMYK: 0, 13, 31, 0
+  
+gold-20:
+  shortname: gold-20
+  name: Gold 20%
+  hex: fff0dd
+  RGB: 255, 240, 221
+  # PMS: 
+  # CMYK: 0, 6, 15, 0
+  
+dark-neutral:
+  shortname: dark-neutral
+  name: Dark Neutral
+  hex: 63574e
+  RGB: 99, 87, 78
+  # PMS: 
+  # CMYK: 26, 32, 36, 55
+
+neutral:
+  shortname: neutral
+  name: Neutral
+  hex: 796e65
+  RGB: 	121, 110, 101
+  # PMS: 
+  # CMYK: 19, 24, 28, 49
+
+neutral-80:
+  shortname: neutral-80
+  name: Neutral 80%
+  hex: 948b84
+  RGB: 148, 139, 132
+  # PMS: 
+  # CMYK: 14, 19, 21, 39
+  
+neutral-60:
+  shortname: neutral-60
+  name: Neutral 60%
+  hex: b5aca5
+  RGB: 181, 172, 165
+  # PMS: 
+  # CMYK: 11, 13, 15, 27
+  
+neutral-40:
+  shortname: neutral-40
+  name: Neutral 40%
+  hex: cdc7c2
+  RGB: 205, 199, 194
+  # PMS: 
+  # CMYK: 6, 8, 9, 17
+  
+neutral-20:
+  shortname: neutral-20
+  name: Neutral 20%
+  hex: e3e2df
+  RGB: 227, 226, 223
+  # PMS: 
+  # CMYK: 4, 3, 5, 8
+  
+dark-gray:
+  shortname: dark-gray
+  name: Dark Gray
+  hex: 43484e
+  RGB: 	67, 72, 78
+  # PMS: 
+  # CMYK: 0, 0, 0, 87
+
+gray:
+  shortname: gray
+  name: Gray
+  hex: 5a5d61
+  RGB: 90, 93, 97
+  # PMS: 
+  # CMYK: 0, 0, 0, 77
+
+gray-80:
+  shortname: gray-80
+  name: Gray 80%
+  hex: 75787b
+  RGB: 	117, 120, 123
+  # PMS: 
+  # CMYK: 0, 0, 0, 65
+  
+gray-60:
+  shortname: gray-60
+  name: Gray 60%
+  hex: 919395
+  RGB: 145, 147, 149
+  # PMS: 
+  # CMYK: 0, 0, 0, 50
+  
+gray-40:
+  shortname: gray-40
+  name: Gray 40%
+  hex: b4b5b6
+  RGB: 180, 181, 182
+  # PMS: 
+  # CMYK: 0, 0, 0, 35
+  
+gray-20:
+  shortname: gray-20
+  name: Gray 20%
+  hex: d2d3d5
+  RGB: 210, 211, 213
+  # PMS: 
+  # CMYK: 0, 0, 0, 20
+  
+gray-10:
+  shortname: gray-10
+  name: Gray 10%
+  hex: e7e8e9
+  RGB: 231, 232, 233
+  # PMS: 
+  # CMYK: 0, 0, 0, 10
+  
+gray-5:
+  shortname: gray-5
+  name: Gray 4%
+  hex: f7f8f9
+  RGB: 247, 248, 249
+  # PMS: 
+  # CMYK: 0, 0, 0, 5
+  
+black:
+  shortname: black
+  name: Black
+  hex: 101820
+  RGB: 16, 24, 32
+  # PMS: Black 6
+  # CMYK: 0, 0, 0, 100
+
+white:
+  shortname: white
+  name: White
+  hex: fff
+  RGB: 255, 255, 255
+  # PMS: 
+  # CMYK:
