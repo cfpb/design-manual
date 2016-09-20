@@ -154,6 +154,7 @@ which is the front-end pattern library used in this project.
 The CFPB’s  Design & Development Team uses GitHub issues to track potential updates and additions to the CFPB Design Manual. These issues are organized through milestones and labels. We welcome the public to participate  in our discussions and in opening pull requests to the Design Manual.
 
 - Updates and additions are published in the Design Manual after a GitHub issue has received approval from the applicable disciplines. The approvers are:
+  - John Paul Doguin (Multimedia) 
   - Natalia Fitzgerald (GD)
   - Jessica Schafer (UI)
   - Scott Cranfill (FEWD)

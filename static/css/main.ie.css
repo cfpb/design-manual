@@ -1485,8 +1485,9 @@ td {
 
 thead th,
 thead td {
-  color: #FFFFFF;
-  background: #43484E;
+  padding: 0.71428571em;
+  color: #101820;
+  background: #F8F8F8;
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1543,7 +1544,7 @@ h6 + thead td,
 
 thead,
 tbody tr {
-  border-bottom: 1px solid #aeb0b5;
+  border-bottom: 1px solid #BABBBD;
 }
 
 th {
@@ -2344,8 +2345,8 @@ input[type="tel"].warning,
 input[type="number"].warning,
 select[multiple].warning,
 textarea.warning {
-  border: 1px solid #ffb108;
-  outline: 1px solid #ffb108;
+  border: 1px solid #fdb81e;
+  outline: 1px solid #fdb81e;
 }
 
 input[type="text"].success,
@@ -2368,7 +2369,7 @@ input[type="tel"].disabled,
 input[type="number"].disabled,
 select[multiple].disabled,
 textarea.disabled {
-  background-color: #cdb5cd;
+  background-color: #aeb0b5;
 }
 
 .cf-form_input-icon {
@@ -2383,7 +2384,7 @@ textarea.disabled {
 }
 
 .warning + .cf-form_input-icon {
-  color: #ffb108;
+  color: #fdb81e;
 }
 
 .success + .cf-form_input-icon {
@@ -2590,7 +2591,7 @@ textarea.disabled {
 
 .cf-icon__border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eee;
+  border: solid 0.08em #5b616b;
   border-radius: .1em;
 }
 
@@ -4653,7 +4654,7 @@ textarea.disabled {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding: 3.75em 0.9375em;
+  padding: 2.8125em 0.9375em;
 }
 
 .lt-ie8 .content_intro,
@@ -4668,7 +4669,7 @@ textarea.disabled {
 .content_intro,
 .content_main,
 .content_sidebar {
-  padding: 3.75em 0;
+  padding: 2.8125em 0;
 }
 
 .content_intro {
@@ -4728,7 +4729,7 @@ textarea.disabled {
   content: '';
   border-left: 1px solid #BABBBD;
   position: absolute;
-  top: 3.75em;
+  top: 2.8125em;
   bottom: 0;
   left: -1.875em;
 }
@@ -4892,7 +4893,7 @@ textarea.disabled {
 }
 
 .content__bleedbar .content_sidebar {
-  padding: 3.75em 0 0.9375em 1.875em;
+  padding: 2.8125em 0 0.9375em 1.875em;
   margin-left: 0;
   position: relative;
   z-index: 1;
@@ -4997,6 +4998,8 @@ textarea.disabled {
   font-weight: normal;
   position: relative;
   min-height: 320px;
+  margin-right: -1px;
+  margin-left: -1px;
   background-color: #F1F2F2;
 }
 
@@ -5071,27 +5074,44 @@ textarea.disabled {
 }
 
 .hero {
-  background-color: #F1F2F2;
+  background-color: #f7f8f9;
 }
 
-.hero_wrapper {
-  box-sizing: border-box;
-  padding: 1.875em 0.9375em;
+.hero {
+  display: table;
   width: 100%;
 }
 
 .hero_wrapper {
-  display: table;
+  padding-top: 1.875em;
+  padding-bottom: 1.875em;
+}
+
+.hero_wrapper {
+  padding-right: 0.9375em;
+  padding-left: 0.9375em;
 }
 
 .hero_wrapper {
   padding-top: 2.8125em;
   padding-bottom: 2.8125em;
-  min-height: 17.8125em;
 }
 
-.lt-ie9 .hero_wrapper {
-  min-height: initial;
+.hero_text {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+}
+
+.lt-ie8 .hero_text {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
 }
 
 .hero_text {
@@ -5147,62 +5167,82 @@ textarea.disabled {
 }
 
 .hero_subhead,
-.hero_cta:not(.btn) {
+.hero_cta:not( .btn ) {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin-bottom: 0.68181818em;
-  font-size: 1.375em;
+  font-size: 18px;
   line-height: 1.25;
-  margin-bottom: 1.36363636em;
 }
 
 .hero_subhead em,
-.hero_cta:not(.btn) em,
+.hero_cta:not( .btn ) em,
 .hero_subhead i,
-.hero_cta:not(.btn) i {
+.hero_cta:not( .btn ) i {
   font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
 
 .lt-ie9 .hero_subhead em,
-.lt-ie9 .hero_cta:not(.btn) em,
+.lt-ie9 .hero_cta:not( .btn ) em,
 .lt-ie9 .hero_subhead i,
-.lt-ie9 .hero_cta:not(.btn) i {
+.lt-ie9 .hero_cta:not( .btn ) i {
   font-style: normal !important;
 }
 
 .hero_subhead strong,
-.hero_cta:not(.btn) strong,
+.hero_cta:not( .btn ) strong,
 .hero_subhead b,
-.hero_cta:not(.btn) b {
+.hero_cta:not( .btn ) b {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
 .lt-ie9 .hero_subhead strong,
-.lt-ie9 .hero_cta:not(.btn) strong,
+.lt-ie9 .hero_cta:not( .btn ) strong,
 .lt-ie9 .hero_subhead b,
-.lt-ie9 .hero_cta:not(.btn) b {
+.lt-ie9 .hero_cta:not( .btn ) b {
   font-weight: normal !important;
 }
 
-.hero_subhead:last-child,
-.hero_cta:not(.btn):last-child {
-  margin-bottom: initial;
+.hero_subhead,
+.hero_cta:not( .btn ) {
+  font-size: 22px;
+}
+
+.hero_subhead:not( :last-child ) {
+  margin-bottom: 1.66666667em;
+}
+
+.hero_subhead:not( :last-child ) {
+  margin-bottom: 1.36363636em;
 }
 
 .hero_cta {
-  margin-bottom: initial;
+  display: block;
 }
 
 .hero_image {
-  min-height: 12.1875em;
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 100%;
+  height: 12.1875em;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+
+.lt-ie8 .hero_image {
+  display: inline;
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
 }
 
 .hero_image {
@@ -5215,6 +5255,7 @@ textarea.disabled {
   width: 41.66666667%;
   display: table-cell;
   vertical-align: middle;
+  background-size: contain;
 }
 
 .lt-ie8 .hero_image {
@@ -5222,6 +5263,19 @@ textarea.disabled {
   margin-right: 0;
   zoom: 1;
   behavior: url('/static/vendor/box-sizing-polyfill/boxsizing.htc');
+}
+
+.hero__overlay .hero_wrapper {
+  background-repeat: no-repeat;
+}
+
+.hero__overlay .hero_image {
+  background: transparent !important;
+}
+
+.hero__white-text .hero_wrapper {
+  background-color: #5a5d61;
+  color: white;
 }
 
 /* ==========================================================================
@@ -5362,20 +5416,22 @@ input[type="text"].pagination_current-page {
 
 .table-wrapper__scrolling table > tbody > tr:nth-child(even) > th,
 .table-wrapper__scrolling table > tbody > tr:nth-child(even) > td {
-  background: #f1f1f1;
+  background: #F8F8F8;
 }
 
 .table__sortable button.sortable {
   width: 100%;
   height: 100%;
-  padding: inherit;
-  margin: inherit;
+  padding: 0;
+  margin: 0;
   border: none;
   background: none;
   font-family: inherit;
   font-weight: inherit;
+  line-height: inherit;
   outline: none;
   text-align: left;
+  text-transform: inherit;
 }
 
 .table__sortable .sortable:after {
@@ -5405,7 +5461,7 @@ input[type="text"].pagination_current-page {
 
 .table__striped > tbody > tr:nth-child(even) > th,
 .table__striped > tbody > tr:nth-child(even) > td {
-  background: #f1f1f1;
+  background: #F8F8F8;
 }
 
 /* ==========================================================================
