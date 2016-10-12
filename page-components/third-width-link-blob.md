@@ -12,10 +12,10 @@ published: true
 {: class="toc"}
 
 <div>
-The third-width link blob provides users with a preview of content that lives deeper within a section and a path for getting to that content. It can be used on full-width pages or  pages with a left navigation. It should not be used on pages with a sidebar. The third-width link blob is visible at higher breakpoints (small to extra large screen widths).
+The third-width link blob provides users with a preview of and a navigation path to content that lies deeper within a section. It can be used on full-width pages or pages with a left navigation. The three column layout utilizes extra screen real estate found at the higher breakpoints.
 {: class="lead-in"}
 
-A group of third-width link blobs, as seen on a landing page template:
+A group of third-width link blobs, as seen on a browse page template:
 {: class="lead-in"}
 
 <nomarkdown>
@@ -26,15 +26,16 @@ A group of third-width link blobs, as seen on a landing page template:
 ## Use case
 <div class="content-67 content-first">
 ##### When to use 
-- Default option for providing succinct descriptions and navigation path to child pages from a parent page.
-- Ideally, when a group of these components can be featured together in multiples of three (3, 6, 9, etc.).
+- Default option for providing succinct descriptions and a navigation path to child pages from a parent page.
+- Ideally, when a group of these components can be featured together in multiples of three (3, 6, 9, etc.). 
 
 ##### When other options are better 
-- When the number of components would be better featured in multiples of 2. Suggest using the half-width link blob.
-- When headings are too long for the narrower width (break to 3 lines or more).
-- When content requires imagery. Suggest using the 50/50 image and text or 25/75 image and text component instead.
+- When the number of components would be better featured in multiples of 2 (Suggest using the half-width link blob)
+- When headings are too long for the narrower width, for example, when they break to 3 lines or more.
+- When content requires imagery (Suggest using the 50/50 image and text or 25/75 image and text component instead)
 - When there are multiple paragraphs of copy
 - When we are not implying a parent/child relationship between the current page and the linked page
+- When the page includes a sidebar
 
 </div>
 
@@ -76,7 +77,11 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 <div class="content-67 content-first">
 - Headings: Use H3 or H4. Do not use both. Use H3 when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more. Use H4 when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.  
 - Body copy: Avenir paragraph.
-- At breakpoints below 601: H3 automatically drops down to an H4 and the mobile link style is used for the call to action link(s).
+- At breakpoints below 601 (small):
+-- H3 automatically drops down to an H4
+-- Three-column pattern transitions into a single column and stacks.
+-- Mobile link style is used for the call to action link(s)
+
 
 
 </div>
