@@ -12,7 +12,7 @@ published: true
 {: class="toc"}
 
 <div>
-The third-width link blob provides users with a preview of and a navigation path to content that lies deeper within a section. It can be used on full-width pages or pages with a left navigation. The three column layout utilizes extra screen real estate found at the higher breakpoints.
+The third-width link blob provides users with a succinct description and a navigation path to content that lies deeper within a section. It can be used on full-width pages or pages with a left navigation. The three column layout utilizes extra screen real estate found at the higher breakpoints.
 {: class="lead-in"}
 
 A group of third-width link blobs, as seen on a browse page template:
@@ -77,10 +77,7 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 <div class="content-67 content-first">
 - Headings: Use H3 or H4. Do not use both. Use H3 when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more. Use H4 when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.  
 - Body copy: Avenir paragraph.
-- At breakpoints below 601 (small):
--- H3 automatically drops down to an H4
--- Three-column pattern transitions into a single column and stacks.
--- Mobile link style is used for the call to action link(s)
+- At [breakpoints]({{site.baseurl}}//page-components/global-elements/grid.html) below 601 (small): H3 automatically drops down to an H4, the three-column pattern transitions into a single column and stacks, and the mobile link style is used for the call to action link(s)
 
 
 
