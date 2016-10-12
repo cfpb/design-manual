@@ -1559,11 +1559,10 @@ select[multiple] {
   border: 1px solid #75787B;
   border-radius: 0;
   vertical-align: top;
-  -webkit-appearance: none;
-  -webkit-user-modify: read-write-plaintext-only;
+  appearance: none;
 }
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+  appearance: none;
 }
 input[type="text"]:focus,
 input[type="text"].focus,
@@ -1628,7 +1627,7 @@ figure img {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.1s;
-  -webkit-appearance: none;
+  appearance: none;
 }
 .lt-ie9 .btn {
   font-weight: normal !important;
@@ -2366,27 +2365,27 @@ textarea.disabled {
 .cf-icon__rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .cf-icon__rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .cf-icon__rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 .cf-icon__flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -webkit-transform: scale(-1, 1);
-  transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }
 .cf-icon__flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -webkit-transform: scale(1, -1);
-  transform: scale(1, -1);
+          transform: scale(1, -1);
 }
 :root .cf-icon__rotate-90,
 :root .cf-icon__rotate-180,
@@ -2398,30 +2397,30 @@ textarea.disabled {
 }
 .cf-icon__spin {
   -webkit-animation: cf-spin 2s infinite linear;
-  animation: cf-spin 2s infinite linear;
+          animation: cf-spin 2s infinite linear;
 }
 .cf-icon__pulse {
   -webkit-animation: cf-spin 1s infinite steps(8);
-  animation: cf-spin 1s infinite steps(8);
+          animation: cf-spin 1s infinite steps(8);
 }
 @-webkit-keyframes cf-spin {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 @keyframes cf-spin {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 .cf-icon-left:before {

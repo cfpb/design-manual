@@ -1652,12 +1652,11 @@ select[multiple] {
   border: 1px solid #75787B;
   border-radius: 0;
   vertical-align: top;
-  -webkit-appearance: none;
-  -webkit-user-modify: read-write-plaintext-only;
+  appearance: none;
 }
 
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 input[type="text"]:focus,
@@ -1732,7 +1731,7 @@ figure img {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.1s;
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .lt-ie9 .btn {
