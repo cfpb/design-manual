@@ -14,13 +14,14 @@ published: true
 <div>
 The third-width link blob provides users with supplemental content or suggested navigation paths to sibling pages. It can be used on full-width pages or pages with a left navigation. The three column layout utilizes extra screen real estate found at higher breakpoints.
 {: class="lead-in"}
-
-A group of third-width link blobs, as seen on a browse page template:
-{: class="lead-in"}
+</div>
 
 <nomarkdown>
 <img src="https://raw.githubusercontent.com/ajbush/design-manual/gh-pages/static/img/V1_imagery/halfwidthblob_intro_mockup.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
+<div class="content-67 content-first">
+A group of third-width link blobs, as seen on a browse page template:
+{: class="lead-in"}
 </div>
 
 ## Use case
@@ -41,7 +42,9 @@ A group of third-width link blobs, as seen on a browse page template:
 <div class="content-33 content-last">
 ##### Where to use
 [Landing page]({{site.baseurl}}//global-elements/landing-page.html)
+
 [Sub-landing page]({{site.baseurl}}//global-elements/sublanding-page.html)
+
 [Browse page]({{site.baseurl}}//global-elements/browse-page.html)
 </div>
 
@@ -71,8 +74,8 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 
 <div class="content-67 content-first">
 * Headings: Use H3 or H4. Do not use both. 
- * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more. 
- * H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.  
+  * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more. 
+  * H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.  
 * Body copy: Avenir paragraph.
 * At breakpoints below 601: H3 automatically drops down to an H4, the three-column pattern transitions into a single column and stacks, and the mobile link style is used for the call to action link(s)
 
@@ -81,5 +84,6 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 <div class="content-33 content-last">
 ##### Component parts
 [Links]({{site.baseurl}}//page-components/links.html)
+
 [Typography]({{site.baseurl}}//brand-guidelines/typography.html)
 </div>
