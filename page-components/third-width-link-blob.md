@@ -16,7 +16,7 @@ The third-width link blob provides users with supplemental content or suggested 
 {: class="lead-in"}
 
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third-width-link-blob/third-width-link-blob-intro.png" alt="Mockup" height="100%" width="100%">
+<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_intro.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
 </div>
 
@@ -61,7 +61,7 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 
 ## Style
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third-width-link-blob/third-width-link-blob-intro.png" alt="Mockup with specs" height="100%" width="100%">
+<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_intro.png" alt="Mockup with specs" height="100%" width="100%">
 </nomarkdown>
 
 <div class="content-67 content-first">
