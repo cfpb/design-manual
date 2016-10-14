@@ -44,7 +44,7 @@ The third-width link blob provides users with supplemental content or suggested 
 [Browse page]({{site.baseurl}}//global-elements/browse-page.html)
 </div>
 
-<h2 id="behavior">Behavior</h2>
+## Behavior
 At breakpoints below 601, the three-column pattern transitions into a single column and stacks each instance in Z-order.
 
 #### Breakpoints 601+ (2 column)
