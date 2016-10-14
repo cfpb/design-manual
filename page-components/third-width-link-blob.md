@@ -46,10 +46,10 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 #### Breakpoints 601+ (3 column)
 <nomarkdown>
 <img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_behavior_1.png" alt="Mockup" height="100%" width="100%">
-</nomarkdown>
+<nomarkdown>
 
-<div class="content-33 content-last">
 #### Breakpoints 600 and less (1 column stacked)
+<div class="content-33 content-last">
 <nomarkdown>
 <img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_behavior_2.png" alt="Mockup">
 <nomarkdown>
