@@ -48,11 +48,9 @@ The third-width link blob provides users with supplemental content or suggested 
 At breakpoints below 601, the three-column pattern transitions into a single column and stacks each instance in Z-order.
 
 #### Breakpoints 601+ (3 column)
-<div class="content-67 content-first">
 <nomarkdown>
 <img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_behavior_1.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
-</div>
 
 
 #### Breakpoints 600 and less (1 column stacked)
@@ -75,7 +73,6 @@ At breakpoints below 601, the three-column pattern transitions into a single col
   * H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.  
 * Body copy: Avenir paragraph.
 * At breakpoints below 601: H3 automatically drops down to an H4, the three-column pattern transitions into a single column and stacks, and the mobile link style is used for the call to action link(s)
-
 </div>
 
 <div class="content-33 content-last">
