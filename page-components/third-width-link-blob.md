@@ -29,7 +29,7 @@ The third-width link blob provides users with supplemental content or suggested 
 ##### When other options are better 
 * When the number of components would be better featured in multiples of 2 (Suggest using the half-width link blob)
 * When headings are too long for the narrower width, for example, when they break to 3 lines or more.
-* When content requires imagery (Suggest using the [50/50 image and text component]({{site.baseurl}}//page-components/50-50.html) or the [25/75 image and text component] ({{site.baseurl}}//page-components/25-75.html) instead
+* When content requires imagery (Suggest using the [50/50 image and text component]({{site.baseurl}}//page-components/50-50.html) or the [25/75 image and text component]({{site.baseurl}}//page-components/25-75.html) instead
 * When there are multiple paragraphs of copy
 * When the page includes a sidebar
 
@@ -37,10 +37,6 @@ The third-width link blob provides users with supplemental content or suggested 
 
 <div class="content-33 content-last">
 ##### Where to use
-[Landing page]({{site.baseurl}}//global-elements/landing-page.html)
-
-[Sub-landing page]({{site.baseurl}}//global-elements/sublanding-page.html)
-
 [Browse page]({{site.baseurl}}//global-elements/browse-page.html)
 </div>
 
