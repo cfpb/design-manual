@@ -48,10 +48,15 @@ The third-width link blob provides users with supplemental content or suggested 
 At breakpoints below 601, the three-column pattern transitions into a single column and stacks each instance in Z-order.
 
 #### Breakpoints 601+ (2 column)
-![Desktop mockup]({{site.baseurl}}//static/img/third_width_link_blob/third_width_link_blob_behavior_1.png)
+<nomarkdown>
+<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_behavior_1.png" alt="Mockup" height="100%" width="100%">
+</nomarkdown>
+
 
 #### Breakpoints 600 and less (1 column stacked)
-![Stacked mockup]({{site.baseurl}}//static/img/third_width_link_blob/third_width_link_blob_behavior_2.png)
+<nomarkdown>
+<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_behavior_2.png" alt="Mockup" height="100%" width="100%">
+</nomarkdown>
 
 ## Content guidelines
 * Headings should be as succinct as possible, ideally 1 line at max column width (25 characters) or two lines at max column width maximum (45 characters).
