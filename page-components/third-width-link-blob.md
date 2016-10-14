@@ -14,14 +14,13 @@ published: true
 <div>
 The third-width link blob provides users with supplemental content or suggested navigation paths to sibling pages. It can be used on full-width pages or pages with a left navigation. The three column layout utilizes extra screen real estate found at higher breakpoints.
 {: class="lead-in"}
-</div>
+
+A set of third-width link blobs, as seen on a browse page template:
+{: class="lead-in"}
 
 <nomarkdown>
 <img src="https://raw.githubusercontent.com/ajbush/design-manual/gh-pages/static/img/V1_imagery/halfwidthblob_intro_mockup.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
-<div class="content-67 content-first">
-A group of third-width link blobs, as seen on a browse page template:
-{: class="lead-in"}
 </div>
 
 ## Use case
