@@ -16,11 +16,11 @@ The third-width link blob provides users with supplemental content or suggested 
 {: class="lead-in"}
 
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/ajbush/design-manual/gh-pages/static/img/V1_imagery/halfwidthblob_intro_mockup.png" alt="Mockup" height="100%" width="100%">
+<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third-width-link-blob/third-width-link-blob-intro.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
 </div>
 
-<h2 id="use-cases">Use cases</h2>
+## Use case
 <div class="content-67 content-first">
 ##### When to use 
 * Default option for providing users with secondary content or suggested navigation paths to sibling pages.
@@ -49,12 +49,12 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 
 <div class="content-50 content-first">
 #### Breakpoints 601+ (2 column)
-![Desktop mockup]({{site.baseurl}}//static/img/V1_imagery/halfwidthblob_behavior_mockup_1.png)
+![Desktop mockup]({{site.baseurl}}//static/img/third_width_link_blob/third_width_link_blob_behavior_1.png)
 </div>
 
 <div class="content-50 content-last">
 #### Breakpoints 600 and less (1 column stacked)
-![Stacked mockup]({{site.baseurl}}//static/img/V1_imagery/halfwidthblob_behavior_mockup_2.png)
+![Stacked mockup]({{site.baseurl}}//static/img/third_width_link_blob/third_width_link_blob_behavior_2.png)
 </div>
 
 ## Content guidelines
@@ -63,9 +63,9 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 * Call to action link should stay on a single line at max column width; 30 characters or less. Link content should follow link guidelines.
 * When these components are featured together (which is ideal), the amount of content in each component should be as close to the same number of total lines as possible; a difference of one line is ok, but the components look best as a grouping when they are the same height (have the same number of lines).
 
-<h2 id="style">Style</h2>
+## Style
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/ajbush/design-manual/gh-pages/static/img/V1_imagery/halfwidthblob_style_mockup.png" alt="Mockup with specs" height="100%" width="100%">
+<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third-width-link-blob/third-width-link-blob-intro.png" alt="Mockup with specs" height="100%" width="100%">
 </nomarkdown>
 
 <div class="content-67 content-first">
