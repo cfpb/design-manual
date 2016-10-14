@@ -48,12 +48,14 @@ The third-width link blob provides users with supplemental content or suggested 
 At breakpoints below 601, the three-column pattern transitions into a single column and stacks each instance in Z-order.
 
 #### Breakpoints 601+ (2 column)
+<div class="content-67 content-first">
 <nomarkdown>
 <img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_behavior_1.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
 
 
 #### Breakpoints 600 and less (1 column stacked)
+<div class="content-33 content-last">
 <nomarkdown>
 <img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_behavior_2.png" alt="Mockup">
 </nomarkdown>
@@ -65,10 +67,6 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 * When these components are featured together (which is ideal), the amount of content in each component should be as close to the same number of total lines as possible; a difference of one line is ok, but the components look best as a grouping when they are the same height (have the same number of lines).
 
 ## Style
-<nomarkdown>
-<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_intro.png" alt="Mockup with specs" height="100%" width="100%">
-</nomarkdown>
-
 <div class="content-67 content-first">
 * Headings: Use H3 or H4. Do not use both. 
   * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more. 
