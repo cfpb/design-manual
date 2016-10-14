@@ -12,7 +12,7 @@ published: true
 {: class="toc"}
 
 <div>
-The third-width link blob provides users with supplemental content or suggested navigation paths to sibling pages. It can be used on full-width pages or pages with a left navigation. The three column layout utilizes extra screen real estate found at higher breakpoints.
+The third-width link blob provides users with supplemental content or suggested navigation paths to sibling pages. It can be used on pages with a left side sub-navigation. The three column layout utilizes extra screen real estate found at higher breakpoints.
 {: class="lead-in"}
 
 <nomarkdown>
