@@ -15,15 +15,12 @@ published: true
 The third-width link blob provides users with supplemental content or suggested navigation paths to sibling pages. It can be used on full-width pages or pages with a left navigation. The three column layout utilizes extra screen real estate found at higher breakpoints.
 {: class="lead-in"}
 
-A set of third-width link blobs, as seen on a browse page template:
-{: class="lead-in"}
-
 <nomarkdown>
 <img src="https://raw.githubusercontent.com/ajbush/design-manual/gh-pages/static/img/V1_imagery/halfwidthblob_intro_mockup.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
 </div>
 
-## Use case
+<h2 id="use-cases">Use cases</h2>
 <div class="content-67 content-first">
 ##### When to use 
 * Default option for providing users with secondary content or suggested navigation paths to sibling pages.
@@ -32,7 +29,7 @@ A set of third-width link blobs, as seen on a browse page template:
 ##### When other options are better 
 * When the number of components would be better featured in multiples of 2 (Suggest using the half-width link blob)
 * When headings are too long for the narrower width, for example, when they break to 3 lines or more.
-* When content requires imagery (Suggest using the 50/50 image and text [50/50 image and text component]({{site.baseurl}}//page-components/50-50.html)or [25/75 image and text component] ({{site.baseurl}}//page-components/25-75.html) instead
+* When content requires imagery (Suggest using the [50/50 image and text component]({{site.baseurl}}//page-components/50-50.html) or the [25/75 image and text component] ({{site.baseurl}}//page-components/25-75.html) instead
 * When there are multiple paragraphs of copy
 * When the page includes a sidebar
 
@@ -47,7 +44,7 @@ A set of third-width link blobs, as seen on a browse page template:
 [Browse page]({{site.baseurl}}//global-elements/browse-page.html)
 </div>
 
-## Behavior
+<h2 id="behavior">Behavior</h2>
 At breakpoints below 601, the three-column pattern transitions into a single column and stacks each instance in Z-order.
 
 <div class="content-50 content-first">
@@ -66,7 +63,7 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 * Call to action link should stay on a single line at max column width; 30 characters or less. Link content should follow link guidelines.
 * When these components are featured together (which is ideal), the amount of content in each component should be as close to the same number of total lines as possible; a difference of one line is ok, but the components look best as a grouping when they are the same height (have the same number of lines).
 
-## Style
+<h2 id="style">Style</h2>
 <nomarkdown>
 <img src="https://raw.githubusercontent.com/ajbush/design-manual/gh-pages/static/img/V1_imagery/halfwidthblob_style_mockup.png" alt="Mockup with specs" height="100%" width="100%">
 </nomarkdown>
