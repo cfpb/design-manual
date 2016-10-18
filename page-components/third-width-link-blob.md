@@ -12,7 +12,7 @@ published: true
 {: class="toc"}
 
 <div>
-The third-width link blob provides users with supplemental content or suggested navigation paths to sibling pages. It can be used on pages with a left side sub-navigation. The three column layout utilizes extra screen real estate found at higher breakpoints.
+The third-width link blob provides users with supplemental content or suggested navigation paths to sibling pages. It can be used on pages with a left side sub-navigation. The three-column layout utilizes extra screen real estate found at higher breakpoints.
 {: class="lead-in"}
 
 <nomarkdown>
@@ -22,14 +22,14 @@ The third-width link blob provides users with supplemental content or suggested 
 
 ## Use case
 <div class="content-67 content-first">
-##### When to use 
+#### When to use 
 * Default option for providing users with secondary content or suggested navigation paths to sibling pages.
 * Ideally, when a group of these components can be featured together in multiples of three (3, 6, 9, etc.). 
 
-##### When other options are better 
+#### When other options are better 
 * When the number of components would be better featured in multiples of 2 (Suggest using the half-width link blob)
 * When headings are too long for the narrower width, for example, when they break to 3 lines or more.
-* When content requires imagery (Suggest using the [50/50 image and text component]({{site.baseurl}}//page-components/50-50.html) or the [25/75 image and text component]({{site.baseurl}}//page-components/25-75.html) instead
+* When content requires imagery (Suggest using the [50/50 image and text]({{site.baseurl}}//page-components/50-50.html) or the [25/75 image and text]({{site.baseurl}}//page-components/25-75.html) instead
 * When there are multiple paragraphs of copy
 * When the page includes a sidebar
 

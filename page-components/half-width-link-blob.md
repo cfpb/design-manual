@@ -12,13 +12,7 @@ published: true
 {: class="toc"}
 
 <div>
-The half-width link blob is used on higher-level template pages to help preview and lead users to content deeper within the section. The two column layout utilizes extra screen real estate found on larger breakpoints.
-{: class="lead-in"}
-
-The [50/50 image and text]({{site.baseurl}}//page-components/50-50.html) component is a variation of the half-width link blob that uses imagery.
-{: class="lead-in"}
-
-A pair of half-width link blobs, as seen on a landing page template:
+The half-width link blob is used on higher-level template pages to provide succinct descriptions and lead users to content deeper within the section. The two-column layout utilizes extra screen real estate found at higher breakpoints.
 {: class="lead-in"}
 
 <nomarkdown>
@@ -28,12 +22,13 @@ A pair of half-width link blobs, as seen on a landing page template:
 
 ## Use case
 <div class="content-67 content-first">
-##### When to use 
-- Default option for providing succinct descriptions and navigation path to child pages from a parent page.
+#### When to use 
+- Default option for providing succinct descriptions and navigation paths to child pages from a parent page.
 - Ideally, when an even number of these components can be featured together.
 
-##### When other options are better 
-- When content requires imagery. Suggest using the 50/50 image and text or 25/27 image and text component instead.
+#### When other options are better 
+- When the number of components would be better featured in multiples of 3. Suggest using third-width link blob.
+- When content requires imagery. Suggest using the [50/50 image and text]({{site.baseurl}}//page-components/50-50.html) or [25/75 image and text]({{site.baseurl}}//page-components/25-75.html) components instead.
 - When there are multiple paragraphs of copy
 - When we are not implying a parent/child relationship between the current page and the linked page
 </div>
@@ -73,10 +68,11 @@ At breakpoints below 601, the two-column pattern transitions into a single colum
 </nomarkdown>
 
 <div class="content-67 content-first">
-- Headings: Any heading size may be used, recommend H2-4. 
-- Body copy: Avenir paragraph. 
-- At breakpoints below 601: Heading sizes H3 and above automatically drop down one level and the mobile link style is used for the call to action link(s).
-
+* Headings: Use H3 or H4. Do not use both. 
+  * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more. 
+  * H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.  
+* Body copy: Avenir paragraph.
+* At breakpoints below 601: H3 automatically drops down to an H4, the three-column pattern transitions into a single column and stacks, and the mobile link style is used for the call to action link(s)
 </div>
 
 <div class="content-33 content-last">
