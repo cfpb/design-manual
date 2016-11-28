@@ -37,6 +37,10 @@ The third-width link blob provides users with supplemental content or suggested 
 
 <div class="content-33 content-last">
 ##### Where to use
+[Landing page]({{site.baseurl}}//global-elements/landing-page.html)
+
+[Sub-landing page]({{site.baseurl}}//global-elements/sublanding-page.html)
+
 [Browse page]({{site.baseurl}}//global-elements/browse-page.html)
 </div>
 
