@@ -172,9 +172,9 @@ We work through open issues during group hack hours. During hack hours, you shou
 
 **2. Review**<br>
 Updates and additions are ready for publishing after an issue has been: 
-reviewed and agreed upon by a combination of 3-4 user experience and graphic designers 
-content follows DM standards and is reviewed by the Manual content strategist
-reviewed by one of the FEWD Primary Maintainers to help spot any problems from a development perspective
+- reviewed and agreed upon by a combination of 3-4 user experience and graphic designers 
+- content follows DM standards and is reviewed by the Manual content strategist
+- reviewed by one of the FEWD Primary Maintainers to help spot any problems from a development perspective
 
 **3. Submit pull request**<br>
 After review is complete, anyone can submit a pull request to merge the update. The Primary Maintainers are responsible for reviewing and merging pull requests.
