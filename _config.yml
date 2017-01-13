@@ -230,6 +230,10 @@ secondarynav:
   url: page-components/wells.html
   internal: true
   category: Page components
+- text: Modals
+  url: page-components/modals.html
+  internal: true
+  category: Page components
 
 
 # Footer Navigation
