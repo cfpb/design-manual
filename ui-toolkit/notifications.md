@@ -24,13 +24,14 @@ Alerts, error, and validation messages provide important information to users an
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-notifications"><h4>cf-notifications</h4></a>
-      <p>Notifications in the Capital Framework</p>
+      <p>Not yet developed</p>
+      <!--<a href="https://github.com/cfpb/cf-notifications"><h4>cf-notifications</h4></a>
+      <p>Notifications in the Capital Framework</p>-->
     </li>
   </ul>
 </div>
 
-<h2 id="use">Use<span class="cf-code-link"><a href="https://cfpb.github.io/cf-notifications/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="use">Use<!--<span class="cf-code-link"><a href="https://cfpb.github.io/cf-notifications/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span>--></h2>
 
 <div class="content-67 content-first">
 
@@ -80,7 +81,7 @@ Alerts, error, and validation messages provide important information to users an
 
 </div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-notifications/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">Style<!--<span class="cf-code-link"><a href="https://cfpb.github.io/cf-notifications/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span>--></h2>
 
 <div class="content-67 content-first">
 
@@ -97,7 +98,7 @@ Alerts, error, and validation messages provide important information to users an
   * __Border:__ 1px, ff9e1b
   * __Minicon (E103):__ 18px, ff9e1b
   * __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next Medium. Needed action appears 15px below alert message and is 16px Avenir Next Regular.
-  * __Margins:__ 15px margins on top, left and bottom. At least 15px on right. 
+  * __Margins:__ 15px margins on top, left and bottom. At least 15px on right.
 
 </div>
 
@@ -136,7 +137,7 @@ Alerts, error, and validation messages provide important information to users an
   * __Border:__ 1px, d14124
   * __Minicon (E107):__ 18px, d14124
   * __Text:__ 8px space between minicon and text. Alert message is 18px Avenir Next Medium. Needed action appears 15px below alert message and is 16px Avenir Next Regular.
-  * __Margins:__ 15px margins on top, left and bottom. At least 15px on right. 
+  * __Margins:__ 15px margins on top, left and bottom. At least 15px on right.
 
 </div>
 
@@ -148,7 +149,7 @@ Alerts, error, and validation messages provide important information to users an
 
 
 
-<h2 id="accessibility">Accessibility<span class="cf-code-link"><a href="https://cfpb.github.io/cf-notifications/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="accessibility">Accessibility<!--<span class="cf-code-link"><a href="https://cfpb.github.io/cf-notifications/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span><-->/h2>
 
 <div class="content-67 content-first">
 
