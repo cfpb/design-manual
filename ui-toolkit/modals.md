@@ -76,12 +76,12 @@ category: UI toolkit
 
 <h4 id="inactive">Specific development directions</h4>
   <ul>
-    <li>Modal windows should be marked with aria-hidden="true" and toggled to false when visible and given the role=dialog ARIA role.</li>
-    <li>When the modal dialog is displayed, the main content of the page should be marked with aria-hidden="true" to prevent screen readers from interacting with it.</li>
-    <li>Add role="alertdialog" to the modal window.</li>
-    <li>Code the close minicon using a button element for more semantic markup.</li>
-    <li>The heading of the modal dialog should be marked as an h1.</li>
-    <li>Offscreen interaction instructions should use aria-labelledby attribute.</li>
+    <li>Modal windows should be marked with `aria-hidden="true"` which is then toggled whenever the modal visibility changes.</li>
+    <li>Modal windows should be given the ARIA role `role=dialog` unless the modal is for an error, emergency warning, or similar notice, in which case use the role `role="alertdialog"`.</li>
+    <li>When the modal dialog is visible, the main content of the page should be marked with `aria-hidden="true"` to prevent screen readers from interacting with it.</li>
+    <li>The "close" minicon should be coded as a button element for semantic markup.</li>
+    <li>The heading of the modal dialog should be coded as an h1.</li>
+    <li>Offscreen interaction instructions should use the `aria-labelledby` attribute.</li>
   </ul>
 
 <h2 id="guidelines">Content guidelines<span class="cf-code-link"></span></h2>
@@ -108,7 +108,7 @@ category: UI toolkit
     <li>Top border: 3px {% assign color = site.data.colors["green"] %} {{ color.name }} #{{ color.hex }}</li>
 
 </li>
-  </ul>  
+  </ul>
 
 <h4 id="close">Close area</h4>
   <ul>
