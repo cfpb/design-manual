@@ -1,0 +1,38 @@
+{
+  "name": "design-manual",
+  "version": "0.1.0",
+  "description": "A set of design principles and standards for the Consumer Financial Protection Bureau.",
+  "homepage": "http://cfpb.github.io/design-manual/",
+  "author": {
+    "name": "Consumer Financial Protection Bureau",
+    "email": "tech@cfpb.gov",
+    "url": "http://consumerfinance.gov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfpb/capital-framework.git"
+  },
+  "license": "CC0",
+  "dependencies": {
+    "capital-framework": "git://github.com/cfarm/capital-framework.git#forms",
+    "cf-core": "git://github.com/cfarm/cf-core.git#forms",
+    "cf-forms": "git://github.com/cfarm/cf-forms.git#forms"
+  },
+  "exportsOverride": {
+    "cf-*": {
+      "css": "src/**/*.css",
+      "less": "src/**/*.less",
+      "fonts": "src/fonts/*.*",
+      "js": "src/**/*.js"
+    },
+    "box-sizing-polyfill": {
+      "js": "boxsizing.htc"
+    },
+    "html5shiv": {
+      "js": "dist/html5shiv-printshiv.min.js"
+    },
+    "jquery.easing": {
+      "js": "js/jquery.easing.js"
+    }
+  }
+}
