@@ -1,7 +1,8 @@
 ---
 layout: page
 title:  Modal windows
-category: UI toolkit
+category: Page components
+redirect_from: "/ui-toolkit/modals.html"
 ---
 
 - [Use cases](#use)
