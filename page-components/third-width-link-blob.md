@@ -16,7 +16,7 @@ The third-width link blob provides users with supplemental content or suggested 
 {: class="lead-in"}
 
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_intro.png" alt="Mockup" height="100%" width="100%">
+<img src="{{site.baseurl}}/static/img/third_width_link_blob/third_width_link_blob_intro.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
 </div>
 
@@ -37,11 +37,11 @@ The third-width link blob provides users with supplemental content or suggested 
 
 <div class="content-33 content-last">
 ##### Where to use
-[Landing page]({{site.baseurl}}//global-elements/landing-page.html)
+[Landing page]({{site.baseurl}}/global-elements/landing-page.html)
 
-[Sub-landing page]({{site.baseurl}}//global-elements/sublanding-page.html)
+[Sub-landing page]({{site.baseurl}}/global-elements/sublanding-page.html)
 
-[Browse page]({{site.baseurl}}//global-elements/browse-page.html)
+[Browse page]({{site.baseurl}}/global-elements/browse-page.html)
 </div>
 
 ## Behavior
@@ -49,13 +49,13 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 
 #### Breakpoints 601+ (3 column)
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_behavior_1.png" alt="Mockup" height="100%" width="100%">
+<img src="{{site.baseurl}}/static/img/third_width_link_blob/third_width_link_blob_behavior_1.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
 
 #### Breakpoints 600 and less (1 column stacked)
 <div class="content-33 content-last">
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_behavior_2.png" alt="Mockup">
+<img src="{{site.baseurl}}/static/img/third_width_link_blob/third_width_link_blob_behavior_2.png" alt="Mockup">
 </nomarkdown>
 </div>
 
@@ -67,7 +67,7 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 
 ## Style
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/nataliafitzgerald/design-manual/gh-pages/static/img/third_width_link_blob/third_width_link_blob_style.png" alt="Mockup" height="100%" width="100%">
+<img src="{{site.baseurl}}/static/img/third_width_link_blob/third_width_link_blob_style.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
 <div class="content-67 content-first">
 * Headings: Use H3 or H4. Do not use both. 
@@ -79,7 +79,7 @@ At breakpoints below 601, the three-column pattern transitions into a single col
 
 <div class="content-33 content-last">
 ##### Component parts
-[Links]({{site.baseurl}}//page-components/links.html)
+[Links]({{site.baseurl}}/page-components/links.html)
 
-[Typography]({{site.baseurl}}//brand-guidelines/typography.html)
+[Typography]({{site.baseurl}}/brand-guidelines/typography.html)
 </div>

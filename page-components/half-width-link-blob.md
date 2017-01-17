@@ -16,7 +16,7 @@ The half-width link blob is used on higher-level template pages to provide succi
 {: class="lead-in"}
 
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/ajbush/design-manual/gh-pages/static/img/V1_imagery/halfwidthblob_intro_mockup.png" alt="Mockup" height="100%" width="100%">
+<img src="{{site.baseurl}}/static/img/V1_imagery/halfwidthblob_intro_mockup.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
 </div>
 
@@ -28,16 +28,16 @@ The half-width link blob is used on higher-level template pages to provide succi
 
 #### When other options are better 
 - When the number of components would be better featured in multiples of 3. Suggest using third-width link blob.
-- When content requires imagery. Suggest using the [50/50 image and text]({{site.baseurl}}//page-components/50-50.html) or [25/75 image and text]({{site.baseurl}}//page-components/25-75.html) components instead.
+- When content requires imagery. Suggest using the [50/50 image and text]({{site.baseurl}}/page-components/50-50.html) or [25/75 image and text]({{site.baseurl}}//page-components/25-75.html) components instead.
 - When there are multiple paragraphs of copy
 - When we are not implying a parent/child relationship between the current page and the linked page
 </div>
 
 <div class="content-33 content-last">
 ##### Where to use
-[Landing page]({{site.baseurl}}//global-elements/landing-page.html)
+[Landing page]({{site.baseurl}}/global-elements/landing-page.html)
 
-[Sub-landing page]({{site.baseurl}}//global-elements/sublanding-page.html)
+[Sub-landing page]({{site.baseurl}}/global-elements/sublanding-page.html)
 
 [Browse page]({{site.baseurl}}//global-elements/browse-page.html)
 </div>
@@ -47,24 +47,24 @@ At breakpoints below 601, the two-column pattern transitions into a single colum
 
 <div class="content-50 content-first">
 #### Breakpoints 601+ (2 column)
-![Desktop mockup]({{site.baseurl}}//static/img/V1_imagery/halfwidthblob_behavior_mockup_1.png)
+![Desktop mockup]({{site.baseurl}}/static/img/V1_imagery/halfwidthblob_behavior_mockup_1.png)
 </div>
 
 <div class="content-50 content-last">
 #### Breakpoints 600 and less (1 column stacked)
-![Stacked mockup]({{site.baseurl}}//static/img/V1_imagery/halfwidthblob_behavior_mockup_2.png)
+![Stacked mockup]({{site.baseurl}}/static/img/V1_imagery/halfwidthblob_behavior_mockup_2.png)
 </div>
 
 ## Content guidelines
 - Headings should be as succinct as possible, ideally 1 line at max column width (25 characters) or two lines at max column width maximum (50 characters).
 - Description beneath heading should also be succinct, roughly 3-5 lines at max column width of text (100-250 characters).
-- Call to action link should stay on a single line at max column width; 40 characters or less. Link content should follow [link guidelines]({{site.baseurl}}//page-components/links.html).
+- Call to action link should stay on a single line at max column width; 40 characters or less. Link content should follow [link guidelines]({{site.baseurl}}/page-components/links.html).
 - When these components are featured together (which is ideal), the amount of content in each component should be as close to the same number of total lines as possible; one or two lines different is ok, but the components look best as a grouping when they are the same height. 
 
 
 ## Style
 <nomarkdown>
-<img src="https://raw.githubusercontent.com/ajbush/design-manual/gh-pages/static/img/V1_imagery/halfwidthblob_style_mockup.png" alt="Mockup with specs" height="100%" width="100%">
+<img src="{{site.baseurl}}/static/img/V1_imagery/halfwidthblob_style_mockup.png" alt="Mockup with specs" height="100%" width="100%">
 </nomarkdown>
 
 <div class="content-67 content-first">
@@ -77,7 +77,7 @@ At breakpoints below 601, the two-column pattern transitions into a single colum
 
 <div class="content-33 content-last">
 ##### Component parts
-[Links]({{site.baseurl}}//page-components/links.html)
+[Links]({{site.baseurl}}/page-components/links.html)
 
-[Typography]({{site.baseurl}}//brand-guidelines/typography.html)
+[Typography]({{site.baseurl}}/brand-guidelines/typography.html)
 </div>
