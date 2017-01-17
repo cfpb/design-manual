@@ -29,7 +29,7 @@ The third-width link blob provides users with supplemental content or suggested 
 #### When other options are better 
 * When the number of components would be better featured in multiples of 2 (Suggest using the half-width link blob)
 * When headings are too long for the narrower width, for example, when they break to 3 lines or more.
-* When content requires imagery (Suggest using the [50/50 image and text]({{site.baseurl}}//page-components/50-50.html) or the [25/75 image and text]({{site.baseurl}}//page-components/25-75.html) instead
+* When content requires imagery (Suggest using the [50/50 image and text]({{site.baseurl}}/page-components/50-50.html) or the [25/75 image and text]({{site.baseurl}}/page-components/25-75.html) instead
 * When there are multiple paragraphs of copy
 * When the page includes a sidebar
 
@@ -47,12 +47,12 @@ The third-width link blob provides users with supplemental content or suggested 
 ## Behavior
 At breakpoints below 601, the three-column pattern transitions into a single column and stacks each instance in Z-order.
 
-#### Breakpoints 601+ (3 column)
+#### 601px and above (3 column)
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/third_width_link_blob/third_width_link_blob_behavior_1.png" alt="Mockup" height="100%" width="100%">
 </nomarkdown>
 
-#### Breakpoints 600 and less (1 column stacked)
+#### 600px and below (1 column stacked)
 <div class="content-33 content-last">
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/third_width_link_blob/third_width_link_blob_behavior_2.png" alt="Mockup">

@@ -46,12 +46,12 @@ The half-width link blob is used on higher-level template pages to provide succi
 At breakpoints below 601, the two-column pattern transitions into a single column and stacks each instance in Z-order.
 
 <div class="content-50 content-first">
-#### Breakpoints 601+ (2 column)
+#### 601 and above (2 column)
 ![Desktop mockup]({{site.baseurl}}/static/img/V1_imagery/halfwidthblob_behavior_mockup_1.png)
 </div>
 
 <div class="content-50 content-last">
-#### Breakpoints 600 and less (1 column stacked)
+#### 600 and below (1 column stacked)
 ![Stacked mockup]({{site.baseurl}}/static/img/V1_imagery/halfwidthblob_behavior_mockup_2.png)
 </div>
 
