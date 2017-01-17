@@ -187,7 +187,6 @@ After the update has been merged and is live on the Manual, add .ai pattern file
 ## Assigning labels to your issue
 
 **Where is it within the process?**<br>
-0 - Backlog – When a new issue is created, assign it to the backlog.<br>
 1 - Working – apply this to issues you are working on during current hack hours sprint.<br>
 2 - Peer review – apply this to issues that need peer review before going live. The page should be reviewed in it’s entirety, including content, before being published to the Design Manual.
 
