@@ -6,7 +6,7 @@ redirect_from: "/ui-toolkit/form-fields.html"
 ---
 
 
-<ul class="toc"> 
+<ul class="toc">
   <li><a href="#inputs">Text input fields</a></li>
   <li><a href="#labels">Labels and helper text</a></li>
   <li><a href="#validation">Form validation</a></li>
@@ -23,7 +23,7 @@ redirect_from: "/ui-toolkit/form-fields.html"
 <div class="lead-in">
 This page covers use cases, specs, accessibility and responsive considerations for major form field UI components. <br><br>
 
-In general, forms should be as simple and direct as possible to minimize scrolling (think mobile first). Keep your queries to a minimum, and ask only what is absolutely needed.  Make inputs as self-explanatory as possible, with a minimum of helper text.  
+In general, forms should be as simple and direct as possible to minimize scrolling (think mobile first). Keep your queries to a minimum, and ask only what is absolutely needed.  Make inputs as self-explanatory as possible, with a minimum of helper text.
 </div>
 
 </div>
@@ -40,9 +40,9 @@ In general, forms should be as simple and direct as possible to minimize scrolli
       <p>Forms in the Capital Framework</p>
     </li>
   </ul>
-</div>   
+</div>
 
-<!--**************************************    Text Input fields    **************************************--> 
+<!--**************************************    Text Input fields    **************************************-->
 
 <h2 id="inputs">Text Input Fields<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
@@ -54,7 +54,7 @@ Consider matching text input field lengths to the information requested so that 
 As the viewport resizes to smaller breakpoints, stack and snap text input fields to 100% width when inline fields no longer fit into one line.
 
 <strong>Accessibility</strong><br>
-For screen readers, make sure the tab focus order is correct. Consider the order in which error messages should be read if they fall below the text field. 
+For screen readers, make sure the tab focus order is correct. Consider the order in which error messages should be read if they fall below the text field.
 
 </div>
 
@@ -72,11 +72,11 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
 <input placeholder="placeholder text" type="text">
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -90,11 +90,11 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
 <input class="focus" placeholder="placeholder text" type="text">
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -109,11 +109,11 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
 <input class="error" type="text" value="invalid input">
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -121,7 +121,7 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Disabled
 
-Limit use. Where possible, use progressive disclosure instead. 
+Limit use. Where possible, use progressive disclosure instead.
 
 * Border: 1 px #babbbd (Grey 50)
 * Fill: #f1f2f2 (Gray 10)
@@ -131,11 +131,11 @@ Limit use. Where possible, use progressive disclosure instead.
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
 <input class="disabled" disabled="true" autocomplete="off" type="text" value="" title="Test input" placeholder="Placeholder text">
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -143,7 +143,7 @@ Limit use. Where possible, use progressive disclosure instead.
 
 #### Multi-line
 
-Use for longer-form answers. 
+Use for longer-form answers.
 
 * Font style: <a href="../identity/typography.html" target="blank">Body copy, sans-serif</a>
 
@@ -152,14 +152,14 @@ Use for longer-form answers.
 
 <div class="content-50 content-last">
 
-{::nomarkdown}  
+{::nomarkdown}
 <textarea cols="30" rows="5">Placeholder text</textarea>
 {:/nomarkdown}
 
-</div> 
+</div>
 
 
-<!--******************************-    LABELS AND HELPER TEXT     ******************************--> 
+<!--******************************-    LABELS AND HELPER TEXT     ******************************-->
 
 
 <h2 id="labels">Labels and helper text<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
@@ -185,13 +185,13 @@ Use for longer-form answers.
 </div>
 
 <div class="content-50 content-last">
-{::nomarkdown} 
+{::nomarkdown}
 <label class="form-label-header">
     Label
 </label>
 <input type="text">
 {:/nomarkdown}
-</div> 
+</div>
 
 ---
 
@@ -206,7 +206,7 @@ Use for longer-form answers.
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
 <fieldset>
     <legend>Fieldset legend</legend>
     <div class="form-group">
@@ -226,7 +226,7 @@ Use for longer-form answers.
 </fieldset>
 {:/nomarkdown}
 
-</div> 
+</div>
 
 
 <!--******   HELPER TEXT     **********-->
@@ -262,7 +262,7 @@ Use block helper text in the following cases:
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
 <label class="form-label-header" for="helper-example">
     Label
 </label>
@@ -270,15 +270,15 @@ Use block helper text in the following cases:
 Use block helper text for instructions.
 </label>
 <input type="text" id="helper-example">
-{:/nomarkdown} 
-</div> 
+{:/nomarkdown}
+</div>
 
 ---
 <div class="content-50 content-first">
 
 #### Inline helper text
 
-Use to indicate whether a field is optional or required (see below).   
+Use to indicate whether a field is optional or required (see below).
 
 * Font: Avenir Next Regular 14 pt Dark Grey (#43484e)
 
@@ -286,13 +286,13 @@ Use to indicate whether a field is optional or required (see below).
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
 <label class="form-label-header" for="helper-inline-example">
     Label <span class="form-label-helper-text">(optional)</span>
 </label>
 <input type="text" id="helper-inline-example">
-{:/nomarkdown} 
-</div> 
+{:/nomarkdown}
+</div>
 
 ---
 
@@ -300,18 +300,18 @@ Use to indicate whether a field is optional or required (see below).
 
 #### Placeholder text
 
-Use placeholder text for formatting examples only. 
+Use placeholder text for formatting examples only.
 
-Don’t use for instructions. Once an input field is focused, the placeholder text is lost.  
+Don’t use for instructions. Once an input field is focused, the placeholder text is lost.
 
-* Font: Avenir Next Regular 16 pt, #919395 (Grey 80) 
+* Font: Avenir Next Regular 16 pt, #919395 (Grey 80)
 
 
 </div>
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
 <div class="form-group">
     <div class="form-group_item">
         <input placeholder="e.g. (212) 555-1212" type="text">
@@ -320,18 +320,18 @@ Don’t use for instructions. Once an input field is focused, the placeholder te
         <input placeholder="mm/dd/yyyy" type="text">
     </div>
 </div>
-{:/nomarkdown} 
+{:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 <div class="content-50 content-first">
 
 #### Required vs. optional fields
 
-Where possible, design your forms to include required fields only. 
+Where possible, design your forms to include required fields only.
 
-Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise. 
+Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise.
 
 Try not to design forms consisting mainly of optional fields. If you must do so, mark required field labels only with inline helper text.
 
@@ -340,7 +340,7 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
+{::nomarkdown}
 <div class="form-group">
     <div class="form-group_item">
         <label class="form-label-header" for="helper-inline-required">
@@ -355,9 +355,9 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
         <input type="text" id="helper-inline-optional">
     </div>
 </div>
-{:/nomarkdown} 
+{:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -374,36 +374,31 @@ Error minicon and message should appear below the field.
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
-<input class="error" type="text" value="" id="form-input-error">
-<label class="form-label-error" for="form-input-error">
-    <span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
-    This is a required question, please answer.
-</label>
-
+{::nomarkdown}
+<img src="{{site.github.url}}/static/img/forms/field-level-alert.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 
 
-<!--******************************-    VALIDATION     ******************************--> 
+<!--******************************-    VALIDATION     ******************************-->
 
 
 <h2 id="validation">Form validation<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-66 content-first">
 
-Where possible, correct formatting errors immediately using client-side validation so that the user does not have to wait until submitting to see what went wrong. (This is especially frustrating if the information the user enters the first time around is not cached on submit and they have to fill out all the fields again from scratch.) If letters are entered in a date field, if an email address is missing the “@” sign, let the user know right away—show a field-level error on blur. 
+Where possible, correct formatting errors immediately using client-side validation so that the user does not have to wait until submitting to see what went wrong. (This is especially frustrating if the information the user enters the first time around is not cached on submit and they have to fill out all the fields again from scratch.) If letters are entered in a date field, if an email address is missing the “@” sign, let the user know right away—show a field-level error on blur.
 
-That said, it’s a good idea to always validate on the server side even if you use client-side validation for formatting checks. That’s because JavaScript validation may not work on all clients; JavaScript errors could occur no matter the client; and JS validation can easily be bypassed, which raises security concerns. 
+That said, it’s a good idea to always validate on the server side even if you use client-side validation for formatting checks. That’s because JavaScript validation may not work on all clients; JavaScript errors could occur no matter the client; and JS validation can easily be bypassed, which raises security concerns.
 
 In general, the best practice for server-side validation is to mark errors with both form-level AND field-level errors.
 
 <strong>Accessibility</strong><br>
 For screen reader accessibility, form-level errors should include anchor links to the problem field in question. See the example below.
 
-In general, use distinct icons, contrasting colors, prominent placement and text to indicate errors. Don’t rely on just one method, as users can have many different accessibility needs (color blind users, visually impaired users, users with motor control issues). 
+In general, use distinct icons, contrasting colors, prominent placement and text to indicate errors. Don’t rely on just one method, as users can have many different accessibility needs (color blind users, visually impaired users, users with motor control issues).
 
 
 </div>
@@ -416,21 +411,17 @@ In general, use distinct icons, contrasting colors, prominent placement and text
 
 #### Field-level errors
 
-* Use to indicate a problem with a particular field input 
+* Use to indicate a problem with a particular field input
 
 </div>
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
-<input class="error" type="text" value="" id="form-input-error">
-<label class="form-label-error" for="form-input-error">
-    <span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
-    This is a required question, please answer.
-</label>
-
+{::nomarkdown}
+<img src="{{site.github.url}}/static/img/forms/field-level-alert.png" />
 {:/nomarkdown}
-</div> 
+
+</div>
 
 ---
 
@@ -450,21 +441,11 @@ Use after validating on the server side to call out input errors preventing form
 <div class="content-50 content-last">
 
 <!--insert error with links -->
-{::nomarkdown} 
-<div class="cf-notification cf-notification__error cf-notification__visible">
-    <span class="cf-notification_icon cf-notification_icon__error cf-icon cf-icon-delete-round" role="alert"></span>
-    <div class="cf-notification_text">
-        <p><span class="h4">The following form fields are incomplete or have errors:</span></p>
-        <ul class="list list__unstyled short-desc">
-            <li><a href="#">What do you think would be a fair resolution to your issue?</a></li>
-            <li><a href="#">Which of these best describes your issue?</a></li>
-            <li><a href="#">Describe what happened so we can understand the issue...</a></li>
-        </ul>
-    </div>
-</div>
+{::nomarkdown}
+<img src="{{site.github.url}}/static/img/forms/form-level-errors.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -482,18 +463,14 @@ Use to confirm that the form has been successfully submitted
 
 <!--insert this form has been submitted successfully message -->
 {::nomarkdown}
-
-<div class="cf-notification cf-notification__success cf-notification__visible">
-    <span class="cf-notification_icon cf-notification_icon__success cf-icon cf-icon-approved-round"></span>
-    <p class="cf-notification_text"><span class="h4">15 results found.
-</p>
-</div>
+<img src="{{site.github.url}}/static/img/forms/form-level-success.png" />
 {:/nomarkdown}
-</div> 
+
+</div>
 
 
 
-<!--******************************-    CHECKBOXES AND RADIO BUTTONS     ******************************--> 
+<!--******************************-    CHECKBOXES AND RADIO BUTTONS     ******************************-->
 
 
 <h2 id="checkboxes">Checkboxes and radio buttons<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
@@ -509,7 +486,7 @@ Use to confirm that the form has been successfully submitted
 Use checkboxes when the user can select more than one option from a list. Make clear with helper text that this is the case.
 
 <strong>Usability</strong><br>
-To optimize usability, consider using <a href="#chunky_checkboxes">checkboxes with large target areas</a>. If these won’t fit into the design and the default style shown below is used, make sure the target area is at least 45 x 45 px and that it includes the text label. 
+To optimize usability, consider using <a href="#chunky_checkboxes">checkboxes with large target areas</a>. If these won’t fit into the design and the default style shown below is used, make sure the target area is at least 45 x 45 px and that it includes the text label.
 
 <strong>Accessibility</strong><br>
 To optimize screen reader accessibility, lay out checkboxes vertically rather than horizontally.
@@ -530,13 +507,10 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label class="custom-input_label">
-    <input class="custom-input custom-input_input" type="checkbox" name="option1" value="Option 1">
-    Option 1
-</label>
+<img src="{{site.github.url}}/static/img/forms/checkbox-default.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -553,13 +527,10 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label class="custom-input_label">
-    <input class="custom-input custom-input_input" type="checkbox" name="option1" value="Option 1" checked="checked">
-    Option 1
-</label>
+<img src="{{site.github.url}}/static/img/forms/checkbox-selected.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -574,13 +545,10 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label class="custom-input_label">
-    <input class="custom-input custom-input_input focus" type="checkbox" name="option1" value="Option 1">
-    Option 1
-</label>
+<img src="{{site.github.url}}/static/img/forms/checkbox-hover.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -596,15 +564,12 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label class="custom-input_label">
-    <input class="custom-input custom-input_input" type="checkbox" name="option1" value="Option 1" disabled="true">
-    Option 1
-</label>
+<img src="{{site.github.url}}/static/img/forms/checkbox-disabled.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
- 
+
 
 <!--******   RADIO BUTTONS     **********-->
 
@@ -612,18 +577,18 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <h3> Radio buttons</h3>
 
-Use radio buttons when the user can choose only one option out of a list. Use these for a small number of discrete elements—avoid long lists of radio buttons. When there are more than two options, stack radio buttons vertically.  
+Use radio buttons when the user can choose only one option out of a list. Use these for a small number of discrete elements—avoid long lists of radio buttons. When there are more than two options, stack radio buttons vertically.
 
 <strong>Usability</strong><br>
-Leave radio buttons unselected as the default. It’s easy for users to miss that a radio button has been preselected, and to submit a form with an erroneous answer. 
+Leave radio buttons unselected as the default. It’s easy for users to miss that a radio button has been preselected, and to submit a form with an erroneous answer.
 
-Never use radio buttons for optional questions. Once a radio button is selected from a list, it or another choice must remain selected and there is no going back unless you reload the form. 
+Never use radio buttons for optional questions. Once a radio button is selected from a list, it or another choice must remain selected and there is no going back unless you reload the form.
 
-Consider using  <a href="#chunky_checkboxes">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45 x 45 px and includes the option text.  
+Consider using  <a href="#chunky_checkboxes">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45 x 45 px and includes the option text.
 
 
 <strong>Accessibility</strong><br>
-For screen readers, be aware that there are some issues with voiceover reading radio buttons. To get around this, consider using the aria-describedby attribute. 
+For screen readers, be aware that there are some issues with voiceover reading radio buttons. To get around this, consider using the aria-describedby attribute.
 
 
 </div>
@@ -642,20 +607,11 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 <div class="content-50 content-last">
 
-{::nomarkdown} 
-<label class="custom-input_label">
-    <span class="custom-input_text">Option 1</span>
-    <input class="custom-input custom-input_input" type="radio" name="custom-input-example">
-    <span class="custom-input_radio"></span>
-</label>
-<label class="cf-input_label">
-    <span class="cf-input_text">Option 1</span>
-    <input class="cf-input cf-input_input" type="radio" name="cf-input-example_default">
-    <span class="cf-input_radio"></span>
-</label>
+{::nomarkdown}
+<img src="{{site.github.url}}/static/img/forms/radio-default.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -673,20 +629,10 @@ For screen readers, be aware that there are some issues with voiceover reading r
 <div class="content-50 content-last">
 
 {::nomarkdown}
-
-<label class="custom-input_label is-enabled is-checked">
-    <span class="custom-input_text">Option 1</span>
-    <input class="custom-input custom-input_input" type="radio" name="custom-input-example">
-    <span class="custom-input_radio"></span>
-</label>
-<label class="cf-input_label">
-    <span class="cf-input_text">Option 1</span>
-    <input class="cf-input cf-input_input" type="radio" name="cf-input-example_selected" checked="checked">
-    <span class="cf-input_radio"></span>
-</label>
+<img src="{{site.github.url}}/static/img/forms/radio-selected.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -701,19 +647,10 @@ For screen readers, be aware that there are some issues with voiceover reading r
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label class="custom-input_label is-enabled is-hovered">
-    <span class="custom-input_text">Option 1</span>
-    <input class="custom-input custom-input_input" type="radio" name="custom-input-example">
-    <span class="custom-input_radio"></span>
-</label>
-<label class="cf-input_label">
-    <span class="cf-input_text">Option 1</span>
-    <input class="cf-input cf-input_input focus" type="radio" name="cf-input-example_hovered" checked="checked">
-    <span class="cf-input_radio"></span>
-</label>
+<img src="{{site.github.url}}/static/img/forms/radio-hover.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -730,19 +667,10 @@ Where possible, use progressive disclosure instead.
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label class="custom-input_label is_disabled">
-    <span class="custom-input_text">Option 1</span>
-    <input class="custom-input custom-input_input" type="radio" name="custom-input-example" disabled="true">
-    <span class="custom-input_radio"></span>
-</label>
-<label class="cf-input_label">
-    <span class="cf-input_text">Option 1</span>
-    <input class="cf-input cf-input_input" type="radio" name="cf-input-example_disabled" disabled="true">
-    <span class="cf-input_radio"></span>
-</label>
+<img src="{{site.github.url}}/static/img/forms/radio-disabled.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 
 
@@ -769,7 +697,7 @@ Background:
 * Fill: #e3e4e5
 * Padding: 15px
 
-Radio button: 
+Radio button:
 
 * 20px x 20px
 * Fill: #FFFFFF
@@ -780,41 +708,10 @@ Radio button:
 <div class="content-50">
 
 {::nomarkdown}
-<div class="form-l">
-    <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container">
-            <label class="custom-input_label"><span class="custom-input_text">
-                Yes
-            </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
-        </div>
-    </div>
-</div>
-<div class="form-l">
-    <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container">
-            <label class="cf-input_label">
-                <span class="cf-input_text">I am awesome</span>
-                <input class="cf-input cf-input_input" type="radio" name="cf-input-example_default-inset">
-                <span class="cf-input_radio"></span>
-            </label>
-        </div>
-    </div>
-</div>
-
-<div class="form-l">
-    <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container">
-            <input class="cf-input cf-input_input" type="radio" name="cf-input-example_default-inset" id="cf-input-example_default-inset">
-            <label class="cf-input_label" for="cf-input-example_default-inset">
-                <span class="cf-input_text">Default radio button state</span>
-            </label>
-            <span class="cf-input_radio"></span>
-        </div>
-    </div>
-</div>
+<img src="{{site.github.url}}/static/img/forms/large-target-default.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -837,42 +734,10 @@ Radio button:
 <div class="content-50">
 
 {::nomarkdown}
-<div class="form-l">
-    <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container is-checked">
-            <label class="custom-input_label is-enabled is-checked"><span class="custom-input_text">
-                Yes
-            </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
-        </div>
-    </div>
-</div>    
-
-<div class="form-l">
-    <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container selected">
-            <label class="cf-input_label">
-                <span class="cf-input_text">Option 1</span>
-                <input class="cf-input cf-input_input" type="radio" name="cf-input-example_selected-inset" checked="checked">
-                <span class="cf-input_radio"></span>
-            </label>
-        </div>
-    </div>
-</div>
-
-<div class="form-l">
-    <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container">
-            <input class="cf-input cf-input_input" type="radio" name="cf-input-example_selected-inset" checked="checked" id="cf-input-example_selected-inset">
-            <label class="cf-input_label" for="cf-input-example_selected-inset">
-                <span class="cf-input_text">Selected state</span>
-            </label>
-            <span class="cf-input_radio"></span>
-        </div>
-    </div>
-</div>
+<img src="{{site.github.url}}/static/img/forms/large-target-selected.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -894,48 +759,16 @@ Radio button:
 <div class="content-50">
 
 {::nomarkdown}
-<div class="form-l">
-    <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container is-hovered">
-            <label class="custom-input_label is-enabled is-hovered"><span class="custom-input_text">
-                Yes
-            </span><input class="custom-input js-additional-field_trigger custom-input_input" type="radio" name="custom-input-example"><span class="custom-input_radio"></span></label>
-        </div>
-    </div>
-</div>    
-
-<div class="form-l">
-    <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container focus">
-            <label class="cf-input_label">
-                <span class="cf-input_text">Option 1</span>
-                <input class="cf-input cf-input_input focus" type="radio" name="cf-input-example_hovered-inset">
-                <span class="cf-input_radio"></span>
-            </label>
-        </div>
-    </div>
-</div>
-
-<div class="form-l">
-    <div class="form-l_col form-l-inset">
-        <div class="form-l-inset_container focus">
-            <input class="cf-input cf-input_input focus" type="radio" name="cf-input-example_hover-inset" id="cf-input-example_hover-inset">
-            <label class="cf-input_label" for="cf-input-example_hover-inset">
-                <span class="cf-input_text">Option 1</span>
-            </label>
-            <span class="cf-input_radio"></span>
-        </div>
-    </div>
-</div>
+<img src="{{site.github.url}}/static/img/forms/large-target-hover.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 
 
 
 
-<!--**************************************    Dropdowns   **************************************--> 
+<!--**************************************    Dropdowns   **************************************-->
 
 <h2 id="dropdowns">Dropdowns<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
@@ -957,7 +790,7 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Default
 
-* Height: 27 px  
+* Height: 27 px
 * Border: #babbbd (Grey 50)
 * Padding: 15px
 * Down caret box: #f1f2f2 (Grey 10)
@@ -969,20 +802,10 @@ From an accessibility standpoint, browser default multiple select components req
 <div class="content-50">
 
 {::nomarkdown}
-<div class="custom-select is-enabled">
-    <select class="custom-select_select" data-placeholder="Please select">
-        <option value>Please select</option>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-        <option value="option4">Option 4</option>
-    </select>
-    <span class="custom-select_icon cf-icon cf-icon-down"></span>
-    <span class="custom-select_text custom-select_placeholder">Please select</span>
-</div>
+<img src="{{site.github.url}}/static/img/forms/dropdown-default.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -997,20 +820,10 @@ From an accessibility standpoint, browser default multiple select components req
 <div class="content-50">
 
 {::nomarkdown}
-<div class="custom-select is-enabled is-hovered">
-    <select class="custom-select_select" data-placeholder="Please select">
-        <option value>Please select</option>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-        <option value="option4">Option 4</option>
-    </select>
-    <span class="custom-select_icon cf-icon cf-icon-down"></span>
-    <span class="custom-select_text custom-select_placeholder">Please select</span>
-</div>
+<img src="{{site.github.url}}/static/img/forms/dropdown-hover.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
  <div class="content-50 content-first">
@@ -1026,35 +839,25 @@ Fill: #f1f2f2  (Grey 10)
 <div class="content-50">
 
 {::nomarkdown}
-<div class="custom-select is-enabled disabled">
-    <select disabled="true" class="custom-select_select" data-placeholder="Please select">
-        <option value>Please select</option>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-        <option value="option4">Option 4</option>
-    </select>
-    <span class="custom-select_icon cf-icon cf-icon-down"></span>
-    <span class="custom-select_text custom-select_placeholder">Please select</span>
-</div>
+<img src="{{site.github.url}}/static/img/forms/dropdown-disabled.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 
 
 
 
 
-<!--**************************************    Range sliders   **************************************--> 
+<!--**************************************    Range sliders   **************************************-->
 
 <h2 id="sliders">Range sliders<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div class="content-66 content-first">
 
-Range sliders can work well for discovery and education, where the inputs are <a href="https://medium.com/@paulvddool/sliders-are-bad-practice-b56c3b7a6e19">a relative quantity and not a specific numeric input</a>. As an example, users can narrow a list of flight options on kayak.com with sliders that show a range of takeoff times. Sliders are an elegant and intuitive way to allow the user to discover which takeoff times will yield the lowest fares.  
+Range sliders can work well for discovery and education, where the inputs are <a href="https://medium.com/@paulvddool/sliders-are-bad-practice-b56c3b7a6e19">a relative quantity and not a specific numeric input</a>. As an example, users can narrow a list of flight options on kayak.com with sliders that show a range of takeoff times. Sliders are an elegant and intuitive way to allow the user to discover which takeoff times will yield the lowest fares.
 
-Because they’re imprecise and difficult to manipulate, range sliders are not a good choice when the user is likely to have one and only specific number that they will want to input. If you do choose to implement a slider in this latter case, consider adding steppers or an input box as an alternative means of entering the same data. Also consider the balance between the length of the slider and the number of data points it covers (the range as well as how discrete the points are). The more points to choose from, the harder it is for the user to target a specific number.  
+Because they’re imprecise and difficult to manipulate, range sliders are not a good choice when the user is likely to have one and only specific number that they will want to input. If you do choose to implement a slider in this latter case, consider adding steppers or an input box as an alternative means of entering the same data. Also consider the balance between the length of the slider and the number of data points it covers (the range as well as how discrete the points are). The more points to choose from, the harder it is for the user to target a specific number.
 
 <strong>Accessibility</strong><br>
 Make sure that sliders are accessible by keyboard using the arrow keys.
@@ -1084,11 +887,10 @@ Handle:
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label for="range-slider">Credit Score</label>
-<input id="range-slider" type="range" min="600" max="850">
+<img src="{{site.github.url}}/static/img/forms/slider-default.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
 
 ---
 
@@ -1103,8 +905,7 @@ Handle:
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label for="range-slider">Credit Score</label>
-<input id="range-slider" class="focus" type="range" min="600" max="850">
+<img src="{{site.github.url}}/static/img/forms/slider-focus.png" />
 {:/nomarkdown}
 
-</div> 
+</div>
