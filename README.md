@@ -151,74 +151,48 @@ which is the front-end pattern library used in this project.
 
 ## How to track an issue
 
-The CFPB’s  Design & Development Team uses GitHub issues to track potential updates and additions to the CFPB Design Manual. These issues are organized through milestones and labels. We welcome the public to participate  in our discussions and in opening pull requests to the Design Manual.
+The CFPB’s Design & Development Team uses GitHub issues to track potential updates and additions to the CFPB Design Manual. We welcome the public to participate in our discussions and in opening pull requests to the Design Manual.
 
-- Updates and additions are published in the Design Manual after a GitHub issue has received approval from the applicable disciplines. The approvers are:
-  - John Paul Doguin (Multimedia) 
-  - Natalia Fitzgerald (GD)
-  - Jessica Schafer (UI)
-  - Scott Cranfill (FEWD)
-  - Jennifer Horan (508/Accessibility)
-- After an issue has received the necessary approvals, anyone can volunteer to submit a pull request to make the change to the manual. Any applicable changes to our asset libraries and templates should also be updated on CFPB’s internal Google Drive. Any changes that require updates to a Capital Framework component should be made in the appropriate [GitHub repository](https://github.com/cfpb/capital-framework).
+**Design Manual Product Co-owners:**<br>
+Each discipline, UX and GD, has a representative<br>
+Jessica Schafer (UX)<br>
+Candice Heberer (GD)
 
-### Milestones
+**Manual content strategist:**<br>
+Insert name here
 
-#### Backlog / Priority
-There are three backlogs: Design, UI, and FEWD. In advance of quarterly meetings, discipline leads groom the backlog and match project teams with priority topics. If there are certain issues you want included in the next quarter’s sprint, make sure to communicate this to your discipline lead.
+**Primary Maintainers:**<br>
+Jimmy Wilson (FEWD)<br>
+Scott Cranfill (FEWD)
 
-#### Sprints
-We work through open issues in quarterly  sprints. These milestone helps us prioritize what to tackle and when. Meeting time is reserved for brief updates from each team and to communicate any issue needing larger consensus. The remaining time can be used for Manual work amongst small teams.
+## Process
 
-#### Next up
-These issues may not be as high of a priority as the quarterly  sprint but they are issues being actively discussed and worked on. We consider these items to be “next in line.”
+**1. Create MVP**<br>
+We work through open issues during group hack hours. During hack hours, you should choose an issue that has been prioritized with the “Hack hours” milestone, form small teams, and work to complete an MVP by the end of the session. This could mean completing the issue, providing a written recommendation, or simply outlining a plan for next steps. The goal will be to add something live to the Manual as a way to provide guidance to the rest of the team on that issue, as well as keeping the Manual a current source of our standards.
 
-### Labels
+**2. Review**<br>
+Updates and additions are ready for publishing after an issue has been: 
+- reviewed and agreed upon by a combination of 3-4 user experience and graphic designers 
+- content follows DM standards and is reviewed by the Manual content strategist
+- reviewed by one of the FEWD Primary Maintainers to help spot any problems from a development perspective
 
-#### Step one: Label by classification
+**3. Submit pull request**<br>
+After review is complete, anyone can submit a pull request to merge the update. The Primary Maintainers are responsible for reviewing and merging pull requests.
 
-Include all that apply
-- 508 (Accessibility)
-- FEWD
-- UI
-- Design
-- Multimedia
-- Content strategy
+The issue will be added to the Capital Framework backlog to be prioritized in upcoming sprints. DM Product Co-owners will attend CF backlog grooming sessions to assist in prioritizing issues.
 
-#### Step two: Where is it within the process?
+**4. Add patterns to design library**<br>
+After the update has been merged and is live on the Manual, add .ai pattern files to the design library in the folder ‘New patterns’ within website templates for consumerfinance.gov on CFPB’s Google Drive.
 
-**0 - Backlog** – When a new issue is created, it should be assigned to the backlog. Make sure to select a label so that your team lead can appropriately review and prioritize all issues.
+## Assigning labels to your issue
 
-**1 - Working** – issues that are being worked on in the current sprint.
+**Where is it within the process?**<br>
+1 - Working – apply this to issues you are working on during current hack hours sprint.<br>
+2 - Peer review – apply this to issues that need peer review before going live. The page should be reviewed in it’s entirety, including content, before being published to the Design Manual.
 
-**2 - Approval** – issues that need approval to publish. Be sure to tag the appropriate approver from the options listed below. To receive approval, the content should be finalized and presented in the way that it would be published to the Design Manual.
-- FEWD approval
-- UI approval
-- Design approval
-- 508 approval
-It is the responsibility of the approver to remove the approval tag.
+## Milestones
+Hack hours – This milestone will be named with the month of the upcoming hack hour, for example “February hack hours.” Issues for that session will be prioritized and assigned this milestone in advance by DM Product Co-owners.
 
-**3 - Implement changes** – When an issue has received all of the necessary approvals (which depends on the type of standard), move the issue to the milestone ‘Implement changes.’ The following steps must be accomplished in order to be considered done.
-
-Add the following checklist to an issue when it's time to implement changes:
-
->Steps to close out this issue:
-- [ ] Add to the Design Manual
-- [ ] Update Capital Framework
-- [ ] Add assets to design libraries
-
-**Definition of done for each step**
-- Add to the Design Manual - DM pages should be built following the content standards.
- 
-- Update Capital Framework - Make any necessary changes to our front-end code, following the Capital Framework contribution guidelines. Once the update is published, update the component here in the Design Manual.
-
-- Add assets to design libraries – This is the responsibility of the graphic designer or UX designer of the team championing the issue. 
- - Web Patterns
-    - Add the final asset to the Axure component library.
-    - Add .ai template file of the pattern to the folder ‘New patterns’ within website templates for consumerfinance.gov  on CFPB’s Google Drive. 
-    - Create a Google Doc of the approved DM page and add it to the folder ‘Approved standards’ within the Design Manual folder on Drive. This is to help all designers stay on top of the most current approved standards while the pattern is in development. Once the DM page has been built, this file should be removed from the folder.
-  - Other assets
-    - Add illustration assets, to the ‘In progress’ folder to be added to the official library. 
-    - Email an SVG file of approved Minicon font additions to Daniel Pizarro.
 
 ## Expedited review for component or template updates
 In general, we try to build using our templated components to create a consistent user experience and visual design across CFPB web products. If a project team encounters a use case in which they need a template change, a component change, and/or an entirely new template or component, please follow the expedited review process: 

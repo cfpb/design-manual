@@ -214,6 +214,10 @@ secondarynav:
   url: page-components/half-width-link-blob.html
   internal: true
   category: Page components
+- text: Third width link blob
+  url: page-components/third-width-link-blob.html
+  internal: true
+  category: Page components
 - text: Links
   url: page-components/links.html
   internal: true
@@ -228,6 +232,10 @@ secondarynav:
   category: Page components
 - text: Wells
   url: page-components/wells.html
+  internal: true
+  category: Page components
+- text: Modals
+  url: page-components/modals.html
   internal: true
   category: Page components
 
