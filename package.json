@@ -1,17 +1,21 @@
 {
   "name": "design-manual",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A set of design principles and standards for the Consumer Financial Protection Bureau.",
   "homepage": "http://cfpb.github.io/design-manual/",
   "author": {
     "name": "Consumer Financial Protection Bureau",
-    "email": "tech@cfpb.gov"  ,
-        "url": "http://consumerfinance.gov"
+    "email": "tech@cfpb.gov",
+    "url": "http://consumerfinance.gov"
   },
   "license": "CC0",
   "keywords": [
     "design-manual"
   ],
+  "scripts": {
+    "start": "parallelshell 'bundle exec jekyll serve --watch --baseurl ''' 'grunt watch'",
+    "build": "grunt build"
+  },
   "dependencies": {
     "cf-buttons": "^3.2.0",
     "cf-core": "^3.5.0",
@@ -46,6 +50,7 @@
     "grunt-string-replace": "~1.0.0",
     "grunt-topdoc": "~0.3.0",
     "load-grunt-tasks": "~1.0.0",
+    "parallelshell": "^2.0.0",
     "time-grunt": "~1.0.0"
   }
 }
