@@ -1,5 +1,5 @@
 /*!
- *  design-manual - v0.1.0
+ *  design-manual - v1.0.0
  *  http://cfpb.github.io/design-manual/
  *  Licensed CC0 by Consumer Financial Protection Bureau <tech@cfpb.gov>
  */
