@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "start": "parallelshell 'bundle exec jekyll serve --watch --baseurl ''' 'grunt watch'",
-    "build": "grunt build"
+    "build": "grunt build",
+    "colors": "node ./scripts/npm/colors"
   },
   "dependencies": {
     "cf-buttons": "^3.2.0",
@@ -34,6 +35,7 @@
     "jquery": "~1.11.0"
   },
   "devDependencies": {
+    "csv": "^1.1.1",
     "grunt": "~0.4.5",
     "grunt-autoprefixer": "~2.0.0",
     "grunt-banner": "~0.2.3",
@@ -50,6 +52,7 @@
     "grunt-string-replace": "~1.0.0",
     "grunt-topdoc": "~0.3.0",
     "load-grunt-tasks": "~1.0.0",
+    "moment": "^2.17.1",
     "parallelshell": "^2.0.0",
     "time-grunt": "~1.0.0"
   }
