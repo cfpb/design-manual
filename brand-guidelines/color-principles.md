@@ -23,7 +23,7 @@ A minimal palette, clear hierarchy, good information design, and ample white spa
 
 <h2 id="palette">Palette<span class="cf-code-link"><a href="https://github.com/cfpb/cf-theme-cfpb/blob/master/src/color-palette.less">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-Our core color palette includes CFPB Green and nine supporting colors.
+Our core color palette includes CFPB Green, black, and eight supporting colors.
 
 ### Primary colors
 
