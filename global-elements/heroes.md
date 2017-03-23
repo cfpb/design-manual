@@ -57,8 +57,14 @@ Hero content should be limited to one or two brief sentences that serve to orien
 
 <h2 id="desktop">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
-- Full-width light colored background with black text
-- Text must pass 508 contrast ratio 
+- Background: Use light tint with black text or secondary color with white type
+
+<h3>Image sizing</h3>
+- Non-bleed: 940px x 390px
+- Top and bottom bleed: 940px x 570px
+- Photo: 1290px x 285px
+- Illustrations are double sized to accommodate retina displays
+- All text must meet 508 contrast ratio requirements
 
 <h3>Desktop</h3>
   <img alt="Image of the Owning a Home site's hero graphic" src="../static/img/hero/Hero_desktop.png"/>
