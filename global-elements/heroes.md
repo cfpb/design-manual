@@ -37,71 +37,66 @@ Heroes function as a primary focal point on a page, often used to introduce a co
 
 
 <div class="content-67 content-first">
-Content should be limited to one or two brief sentences to help the user orient themselves and ensure this page will satisfy their desired goal. Copy should be punchy and grab the user’s attention while reinforcing the brand voice. 
-
-Heroes are integral to the page, and cannot be removed. 
-
-Heroes should be limited to first- (i.e., Consumer Help) or second-level (i.e., Credit & Credit Cards) landing pages. The fewer instances of heroes there are, the more impact they will convey. 
-
-Heroes should be the most prominent thing on the page, and help to establish visual hierarchy of where the page lives within the information architecture.
-
-Heroes can contain calls to action. Rules for button versus links apply in a call to action.
+Heroes should be the most prominent element on a page, in terms of their position and visual footprint. Heroes should only be used on top level pages, including landing and sublanding pages. The fewer instances of heroes on the website, the more impact they will convey. 
 </div>
-
-<div class="content-33 content-last"></div>
-<h2 id="desktop">Style at desktop size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 <div>
-<img alt="Image of the Owning a Home site's hero graphic" src="../static/img/hero/Hero_desktop.png"/>
+
+<h2>Content guidelines</h2>
+<div class="content-67 content-first">
+Hero content should be limited to one or two brief sentences that serve to orient the user and communicate the primary goal of the page. Copy should be punchy and grab the user’s attention while reinforcing the voice of the CFPB.
+<h4>One line heading</h4> 
+- Heading: 43 characters (maximum)
+- Subheading: 165 characters (minimum) / 185 characters (maximum)
+
+<h4>Two line heading</h4>
+- Heading: 40 characters (minimum) / 86 characters (maximum)
+- Subheading: 25 characters (minimum) / 105 characters (maximum)
+
+<div>
+
+<h2 id="desktop">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+
+- Full-width light colored background with black text
+- Text must pass 508 contrast ratio 
+
+<h3>Desktop</h3>
+  <img alt="Image of the Owning a Home site's hero graphic" src="../static/img/hero/Hero_desktop.png"/>
+</div>
+- Heading: H1; Subheading: Lead paragraph
+- Text spans 7 columns; Image spans 5 columns
+- Height: 285px (fixed)
+
 </div>
 
-<div class="content-33 content-first">
-* Full-width colored background with black text and blue link or button. Standard link and button styles apply. Color contrast of text and links on background must be <a href="{{ site.baseurl }}/identity/typography.html#type-accessibility">508-accessible</a>.
-* No breadcrumb should appear in or above the hero
-* Total height: 285px
-* Text is vertically centered, top and bottom padding should be no less than 45 px
-</div>
-
-<div class="content-33">
-* Text spans seven columns
-* Heading: H1, 25 maximum character count (including spaces)
-* Subheading: Lead paragraph (Avenir Next Regular, 22px/28px), begins 15px below headline, 185 maximum character count (including spaces)
-* Call to action link: Standard link colors in subheading style, appears 30px below subheading
-* Call to action button: Blue primary button, appears 30px below the subheading copy
-</div>
-
-<div class="content-33 content-last">
-* Illustration area appears on the right of the text
-* Illustration is centered within five columns
-* Illustration height: 195px
-</div>
-
-<h2 id="tablet">Style at tablet size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
-
-<div class="content-33 content-first">
-* Heading: H2
-* Subheading: Lead paragraph (Avenir Next Regular, 18px/22px)
-* Top and bottom padding: 30px
-* Module height is flexible to text height
-* Visual is vertically centered
-</div>
-
-<div class="content-67 content-last">
+<h3>Tablet</h3>
 ![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/Hero_tablet.png)
 </div>
+- Heading: H2; Subheading: Lead paragraph
+- Top and bottom padding: 30px
+- Visual is vertically centered
 
-<h2 id="mobile">Style at mobile size<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
-<div class="content-33 content-first">
-* Heading: H2
-* Subheading: Lead paragraph (Avenir Next Regular, 18px/22px)
-* Top and bottom padding: 30px
-* Illustration is 30px below copy and spans width (to 15px padding)
+
+
+<h3>Mobile</h3>
+<div class="content-33 content-last">
+  ![Image of hero with call to action at mobile size]({{ site.baseurl }}/static/img/hero/Hero_mobile.png)
 </div>
 
-<div class="content-33">
-![Image of hero with call to action at mobile size]({{ site.baseurl }}/static/img/hero/Hero_mobile.png)
-</div>
+- Heading: H2; Subheading: Lead paragraph
+- Top and bottom padding: 30px
+- Illustration is 30px below copy and spans width (to 15px padding)
+- Illustration area appears on the right of the text
+- Illustration is centered within five columns
+- Illustration height: 195px
 
-<div class="content-33 content-last"></div>
+
+
+
+
+
+
+
+
 
 
