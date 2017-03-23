@@ -40,8 +40,6 @@ Heroes function as a primary focal point on a page, often used to introduce a co
 Heroes should be the most prominent element on a page, in terms of their position and visual footprint. Heroes should only be used on top level pages, including landing and sublanding pages. The fewer instances of heroes on the website, the more impact they will convey. 
 </div>
 
-<div>
-
 <h2>Content guidelines</h2>
 <div class="content-67 content-first">
 Hero content should be limited to one or two brief sentences that serve to orient the user and communicate the primary goal of the page. Copy should be punchy and grab the user’s attention while reinforcing the voice of the CFPB.
@@ -57,16 +55,38 @@ Hero content should be limited to one or two brief sentences that serve to orien
 
 <h2 id="desktop">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
-- Background: Use light tint with black text or secondary color with white type
-
 <h3>Image sizing</h3>
 - Non-bleed: 940px x 390px
 - Top and bottom bleed: 940px x 570px
 - Photo: 1290px x 285px
 - Illustrations are double sized to accommodate retina displays
-- All text must meet 508 contrast ratio requirements
 
-<h3>Desktop</h3>
+<h3>Background and type</h3>
+- All text must meet 508 contrast ratio requirements
+- Full-width light colored background with black text
+- Use light tint background with black text or secondary color background with white type
+
+<div>
+
+<h2 id="use">Behavior<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+
+Add something here about the different breakpoints (desktop, tablet, mobile)
+<h3>Desktop</h3> 
+- Add here
+- Add here
+
+<h3>Tablet</h3>
+- Add here
+- Add here
+
+<h3>Mobile</h3>
+- Add here
+- Add here
+
+<div>
+</div>
+
+  <h4>Desktop</h4>
   <img alt="Image of the Owning a Home site's hero graphic" src="../static/img/hero/Hero_desktop.png"/>
 </div>
 - Heading: H1; Subheading: Lead paragraph
@@ -74,17 +94,14 @@ Hero content should be limited to one or two brief sentences that serve to orien
 - Height: 285px (fixed)
 
 </div>
-
-<h3>Tablet</h3>
+<h4>Tablet</h4>
 ![Image of hero with call to action at tablet size]({{ site.baseurl }}/static/img/hero/Hero_tablet.png)
 </div>
 - Heading: H2; Subheading: Lead paragraph
 - Top and bottom padding: 30px
 - Visual is vertically centered
 
-
-
-<h3>Mobile</h3>
+<h4>Mobile</h4>
 <div class="content-33 content-last">
   ![Image of hero with call to action at mobile size]({{ site.baseurl }}/static/img/hero/Hero_mobile.png)
 </div>
