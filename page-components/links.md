@@ -37,24 +37,35 @@ Links lead users to a different page or further information. In contrast, <a hre
 ## Style
 
 <div class="content-33 content-first">
-
 #### Body text and lists
 Links that appear in body text or link lists are underlined. Links are underlined with the ```border-bottom``` property.
+
+##### A note about font weight
+When set in Avenir Next, links should be Regular weight
+if inline with other text (e.g., within a paragraph),
+but should be Medium weight when standing alone
+(e.g., in a call to action list of links).
+When set in Georgia, _always_ use the Regular weight
+unless the link is contained within a phrase
+that is already set in Georgia Bold.
 </div>
 
 <div class="content-67 content-last">
-##### Georgia paragraph links
+##### Paragraph links
 Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>.
 
 ---
 
-##### Avenir Next list links
-- Lorem ipsum <a href="#">Default link style</a>, consectetur adipiscing elit.
-- Curabitur vel odio et est auctor, <a href="#" class="hover">Hover link style</a>.
-- Aliquam mollis tellus in purus porta, <a href="#" class="focus">Focused link style</a>.
-- <a href="#" class="active">Active link style</a>.
-- We've all been to the <a href="#" class="visited">Visited link style</a>.
+##### List links
+- <a href="#">Default link style</a>
+- <a href="#" class="hover">Hover link style</a>
+- <a href="#" class="focus">Focused link style</a>
+- <a href="#" class="active">Active link style</a>
+- <a href="#" class="visited">Visited link style</a>
+{: class="medium-ex"}
 </div>
+
+
 
 
 ## States
@@ -118,6 +129,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 #### Links in headers
 * No underline
 </div>
+
 <div class="content-67 content-last">
 # Header 2 <a href="#">link style</a>
 
