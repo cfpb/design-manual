@@ -37,7 +37,7 @@ figure {
 }
 
 .warning {
-    color: @redorange;
+    color: @red;
 }
 
 /* Media Queries
@@ -86,7 +86,7 @@ figure {
 
     /* Rules between rows of content */
     .content-row-rule {
-      border-bottom: 1px solid @gray-20;
+      border-bottom: 1px solid @gray-10;
       margin-bottom: 1em;
     }
 
@@ -113,7 +113,7 @@ figure {
 
     code {
       background-color: @gray-10;
-      border: 1px solid @gray-20;
+      border: 1px solid @gray-10;
       border-radius: 0.250em;
       overflow-x: auto;
       padding: 0.125em 0.250em;
@@ -138,7 +138,7 @@ figure {
 
   h2 {
     .u-clearfix();
-    border-bottom: 1px solid @gray-20;
+    border-bottom: 1px solid @gray-10;
     /* The EM sizes are calculating to unexpected values - DM */
     padding-bottom: 15px;
     margin-top: 20px;
@@ -152,7 +152,7 @@ figure {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid @gray-20;
+    border-top: 1px solid @gray-10;
     margin: 1.25em 0;
     padding: 0;
   }
@@ -193,7 +193,7 @@ figure {
 
       a:hover {
         border-bottom: none;
-        color: @pacific-50;
+        color: @pacific-60;
       }
 
     }
@@ -247,10 +247,6 @@ figure {
         height: 5em;
     }
 
-    &__primary &_field {
-        height: 10em;
-    }
-
     &_head {
         margin: 0.25em 0;
     }
@@ -258,6 +254,7 @@ figure {
     &_table {
         width: 100%;
     }
+
     td,
     th {
         padding: 0;
@@ -279,6 +276,10 @@ figure {
 
 /* Small tablet (600px) */
 @media only screen and (min-width: 37.5em) {
+
+    th {
+        width: unit( 70px / @base-font-size-px, em );
+    }
     .swatches {
         .grid_nested-col-group();
     }
@@ -288,20 +289,25 @@ figure {
 }
 /* Landscape tablet/netbook/laptop (1024px) */
 @media only screen and (min-width: 64em) {
-    .swatch {
+    .swatch__secondary {
         .grid_column(3);
+    }
+
+    .swatch__primary {
+        .grid_column(6);
     }
 }
 
-@colors: 'green', 'green-midtone', 'green-tint', 'black', 'darkgray',
-         'gray', 'gray-80', 'gray-50', 'gray-20', 'gray-10', 'gray-5',
-         'redorange', 'redorange-80', 'redorange-50', 'redorange-20',
-         'gold', 'gold-80', 'gold-50', 'gold-20',
-         'neutral', 'neutral-80', 'neutral-50', 'neutral-20',
-         'navy', 'navy-80', 'navy-50', 'navy-20',
-         'pacific', 'pacific-80', 'pacific-50', 'pacific-20',
-         'teal', 'teal-80', 'teal-50', 'teal-20',
-         'dark-redorange';
+@colors: 'dark-green', 'green', 'green-80', 'green-60', 'green-40', 'green-20',
+         'dark-teal', 'teal', 'teal-80', 'teal-60', 'teal-40', 'teal-20',
+         'dark-pacific', 'pacific', 'pacific-80', 'pacific-60', 'pacific-40', 'pacific-20',
+         'dark-navy', 'navy', 'navy-80', 'navy-60', 'navy-40', 'navy-20',
+         'dark-purple', 'purple', 'purple-80', 'purple-60', 'purple-40', 'purple-20',
+         'dark-red', 'red', 'red-80', 'red-60', 'red-40', 'red-20',
+         'dark-gold', 'gold', 'gold-80', 'gold-60', 'gold-40', 'gold-20',
+         'dark-neutral', 'neutral', 'neutral-80', 'neutral-60', 'neutral-40', 'neutral-20',
+         'black', 'dark-gray', 'gray', 'gray-80', 'gray-60', 'gray-40', 'gray-20',
+         'gray-10', 'gray-5', 'white';
 
 // Set up looping mixin
 .color-swatch-loop(@index) when (@index > 0) {
@@ -316,6 +322,19 @@ figure {
 // Initiate loop
 .color-swatch-loop( length(@colors) );
 
+.color-table {
+    width: 100%;
+    margin-bottom: unit( 45px / @base-font-size-px, em );
+
+    .swatch_field {
+        width: 30%;
+        height: 2.5em;
+    }
+
+    td:not(:first-of-type) {
+        white-space: nowrap;
+    }
+}
 
 /* Diagrams for Identity/Typography page
    ========================================================================== */
@@ -327,18 +346,18 @@ figure {
 }
 .type-color-combo__ {
     &black-on-white {
-        border: 1px solid @gray-20;
+        border: 1px solid @gray-10;
     }
-    &darkgray-on-white {
-        border: 1px solid @gray-20;
-        color: @darkgray;
+    &dark-gray-on-white {
+        border: 1px solid @gray-10;
+        color: @dark-gray;
     }
     &white-on-black {
         background: @black;
         color: @white;
     }
-    &white-on-darkgray {
-        background: @darkgray;
+    &white-on-dark-gray {
+        background: @dark-gray;
         color: @white;
     }
     &black-on-gray10 {
@@ -352,28 +371,28 @@ figure {
         color: @pacific;
     }
     &black-on-greenmid {
-        background: @green-midtone;
+        background: @green-60;
     }
     &black-on-greentint {
-        background: @green-tint;
+        background: @green-20;
     }
     &white-on-gray {
-        background: @gray;
+        background: @gray-80;
         color: @white;
     }
     &black-on-gray {
-        background: @gray;
+        background: @gray-80;
     }
     &gray-on-white {
-        border: 1px solid @gray-20;
-        color: @gray;
+        border: 1px solid @gray-10;
+        color: @gray-80;
     }
     &white-on-green {
         background: @green;
         color: @white;
     }
     &green-on-white {
-        border: 1px solid @green-tint;
+        border: 1px solid @green-20;
         color: @green;
     }
     &black-on-green {
@@ -590,7 +609,7 @@ p.print-georgia-para {
   }
   .cf-icon {
     font-size: 30px;
-    color: @gray;
+    color: @gray-80;
   }
   a:link,
   a:visited {
@@ -605,7 +624,7 @@ p.print-georgia-para {
   p {
     margin: 0;
     font-size: 0.875em;
-    color: @gray;
+    color: @gray-80;
     .webfont-regular;
   }
 }
@@ -706,8 +725,8 @@ ul {
         border-left-color: fade(@green, 100%);
         border-right-color: @green;
         border-right-color: fade(@green, 100%);
-        background-color: @green-tint;
-        background-color: fade(@green-tint, 100%);
+        background-color: @green-20;
+        background-color: fade(@green-20, 100%);
 
         &:before,
         &:after {
@@ -715,8 +734,8 @@ ul {
           display: block;
           width: 100%;
           height: @grid_gutter-width * 0.25;
-          background-color: @green-midtone;
-          background-color: fade(@green-midtone, 100%);
+          background-color: @green-60;
+          background-color: fade(@green-60, 100%);
         }
 
         &:before {
