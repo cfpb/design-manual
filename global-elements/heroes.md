@@ -72,7 +72,7 @@ Hero content should serve to orient the user and communicate the primary goal of
 </div>
 
 <div class="content-50 content-last">
-  <img alt="Image of hero graphic with one line heading" src="../static/img/hero/hero_one_line_heading.png"/>
+  <img alt="Image of hero graphic with one line heading" src="../static/img/hero/hero_content_one_line_heading.png"/>
 </div>
 
 <div class="content-50 content-first"> 
@@ -82,7 +82,7 @@ Hero content should serve to orient the user and communicate the primary goal of
 </div>
 
 <div class="content-50 content-last">
-  <img alt="Image of hero graphic with one line heading" src="../static/img/hero/hero_two_line_heading.png"/>
+  <img alt="Image of hero graphic with one line heading" src="../static/img/hero/hero_content_two_line_heading.png"/>
 </div>
 
 <h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
