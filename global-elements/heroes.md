@@ -91,33 +91,26 @@ Hero content should serve to orient the user and communicate the primary goal of
 - All illustrations should be saved at 200% to accommodate retina displays
 - Use a transparent background or match the background color to the background hexcode of overall hero space
 
-<div class="content-50 content-first">
-  <h4>Illustration (no bleed)</h4> 
-- Both large and small screens: 470px x 195px (940px x 390px)
-</div>
-<div class="content-50 content-last">
-<img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed.png"/>
-</div>
-
-<div class="content-50 content-first">
-<h4>Illustration (bleed)</h4> 
-- Bleeds top and bottom
-- Large screens: 470px x 285px (940px x 570px)
-- Small screens: 800px x 450px (1600px x 900px)
-</div> 
-<div class="content-50 content-last">
-<img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_size_bleed.png"/>
-</div>
-
-<div class="content-50 content-first">
-  <h4>Photo</h4> 
-- Large screens: 1290px x 300px
-- Small screens: 600px x 338px
+<h4>Photo</h4>
 - When selecting a photo include a 30px horizontal margin of clear space between text and image
-</div>
-<div class="content-50 content-last">
-<img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_photo.png"/>
-</div>
+- Dimensions (large screens): 1290px x 300px
+- Dimensions (small screens): 600px x 338px
+
+<img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_photo.png"/> 
+
+<h4>Illustration (bleed)</h4>
+- Illustration bleeds top and bottom
+- Dimensions (large screens): 470px x 285px (940px x 570px)
+- Dimensions (small screens): 800px x 450px (1600px x 900px)
+
+<img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_size_bleed.png"/> 
+
+<h4>Illustration (no bleed)</h4>
+- Single illustration for both large and small screens
+- Dimensions: 470px x 195px (940px x 390px)
+
+<img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed.png"/>
+
 <h3>Style at different breakpoints</h3>
 
 <h4>901px and above</h4> 
