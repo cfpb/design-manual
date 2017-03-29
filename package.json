@@ -13,7 +13,7 @@
     "design-manual"
   ],
   "scripts": {
-    "start": "parallelshell 'bundle exec jekyll serve --watch --baseurl ''' 'grunt watch'",
+    "start": "parallelshell \"bundle exec jekyll serve --watch --baseurl ''\" \"grunt watch\"",
     "build": "grunt build",
     "colors": "node ./scripts/npm/colors"
   },

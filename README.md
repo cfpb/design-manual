@@ -64,6 +64,8 @@ To install the site's dependencies, navigate to the project directory and run:
 ./setup.sh
 ```
 
+If you receive an error saying that `bundle: command not found`, run `bundle install` before re-running `./setup.sh`.
+
 To launch the site, enter:
 
 ```shell
