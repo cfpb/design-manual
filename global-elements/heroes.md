@@ -10,7 +10,6 @@ redirect_from: "/ui-toolkit/heroes.html"
 - [Behavior](#behavior)
 - [Content guidelines](#content-guidelines)
 - [Style](#style)
-- [Accessibility](#Accessibility)
  {: class="toc"}
 
 <div class="content-50 content-first">
@@ -67,6 +66,7 @@ Hero content should serve to orient the user and communicate the primary goal of
 
 <div class="content-50 content-first"> 
   <h4>One line heading</h4> 
+- One line heading at largest breakpoint
 - Heading: 43 characters (maximum)
 - Subheading: 165 characters (minimum) / 185 characters (maximum)
 </div>
@@ -77,6 +77,7 @@ Hero content should serve to orient the user and communicate the primary goal of
 
 <div class="content-50 content-first"> 
   <h4>Two line heading</h4>
+- Two line heading at largest breakpoint
 - Heading: 40 characters (minimum) / 86 characters (maximum)
 - Subheading: 25 characters (minimum) / 105 characters (maximum)
 </div>
@@ -87,36 +88,46 @@ Hero content should serve to orient the user and communicate the primary goal of
 
 <h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
-<h3>Working with images</h3>
 - All illustrations should be saved at 200% to accommodate retina displays
 - Use a transparent background or match the background color to the background hexcode of overall hero space
 
+<h3>Standard hero</h3>
+
+<h4>Illustration (no bleed)</h4>
+- Single illustration for both large and small screens
+- Dimensions for all screens: 470px x 195px (940px x 390px)
+- Height dimensions for small screens is the maximum
+
+<img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed.png"/>
+
+<h3>Variations</h3>
+
 <h4>Photo</h4>
-- When selecting a photo include a 30px horizontal margin of clear space between text and image
-- Dimensions (large screens): 1290px x 300px
-- Dimensions (small screens): 600px x 338px
+- When selecting a photo include a 30px horizontal margin of clear space between text and image area
+- Type contrast ratios cannot be mathematically determined for photos so special care should be paid when selecting these images
+- Small and large screen compositions should contain the same elements but can differ
+- Dimensions for large screens: 1230px x 285px
+- Dimensions for small screens: 600px x 338px
+- Height dimension for small screens is the maximum 
+
 
 <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_photo.png"/> 
 
 <h4>Illustration (bleed)</h4>
 - Illustration bleeds top and bottom
-- Dimensions (large screens): 470px x 285px (940px x 570px)
-- Dimensions (small screens): 800px x 450px (1600px x 900px)
+- Dimensions for large screens: 470px x 305px (940px x 610px)
+- Dimensions for small screens (maximum): 570px x 450px (1140px x 900px)
 
 <img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_size_bleed.png"/> 
 
-<h4>Illustration (no bleed)</h4>
-- Single illustration for both large and small screens
-- Dimensions: 470px x 195px (940px x 390px)
-
-<img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed.png"/>
 
 <h3>Style at different breakpoints</h3>
 
 <h4>901px and above</h4> 
 - Heading: H1
-- Subheading: Lead paragraph (Avenir Next Regular, 22px/28px)
+- Subheading: Avenir Next Regular, 22px/28px
 - Top and bottom padding: 45px
+- Text is vertically centered
 - Total height is 285px (fixed)
 
 <div class="content-75 content-first"> 
@@ -125,7 +136,7 @@ Hero content should serve to orient the user and communicate the primary goal of
 
 <h4>Between 900px and 601px</h4>
 - Heading: H2
-- Subheading: Lead paragraph (Avenir Next Regular, 18px/22px)
+- Subheading: Avenir Next Regular, 18px/22px
 - Top and bottom padding: 30px
 - Module height is flexible to text height
 
@@ -135,7 +146,7 @@ Hero content should serve to orient the user and communicate the primary goal of
 
 <h4>600px and below</h4>
 - Heading: H2
-- Subheading: Lead paragraph (Avenir Next Regular, 18px)
+- Subheading: Avenir Next Regular, 18px
 - Top and bottom padding: 30px
 - Module height is flexible to text height
 - Illustration spans full width (less 15px left and right padding)
@@ -143,12 +154,6 @@ Hero content should serve to orient the user and communicate the primary goal of
 <div class="content-25 content-first"> 
 <img alt="Image of hero graphic at mobile width" src="../static/img/hero/hero_style_mobile.png"/>
 </div>
-
-
-<h2>Accessibility</h2>
-- All text must meet WCA (Web Content Accessibility) standards for text [contrast ratio]({{site.baseurl}}/brand-guidelines/typography.html#type-accessibility)
-- Use light tint background with black text or secondary color background with white type
-
 
 
 
