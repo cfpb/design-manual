@@ -91,12 +91,12 @@ Hero content should serve to orient the user and communicate the primary goal of
 - All illustrations should be saved at 200% to accommodate retina displays
 - Use a transparent background or match the background color to the background hexcode of overall hero space
 
-<h3>Standard hero</h3>
+<h3>Standard</h3>
 
 <h4>Illustration (no bleed)</h4>
 - Single illustration for both large and small screens
 - Dimensions for all screens: 470px x 195px (940px x 390px)
-- Height dimensions for small screens is the maximum
+- Height dimension for small screens is the maximum
 
 <img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed.png"/>
 
