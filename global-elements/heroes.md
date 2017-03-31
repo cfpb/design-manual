@@ -91,6 +91,7 @@ Since the goal of the hero is to get the user to continue reading the page, don'
 - Subheading for heroes with a one-line heading: 25 characters (minimum) and 105 characters (maximum)
 - Subheading for heroes with a two-line heading: 165 characters (minimum) and 185 characters (maximum)
 - Add something about avoiding orphans
+</div>
 
 <h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
@@ -121,7 +122,7 @@ Since the goal of the hero is to get the user to continue reading the page, don'
 
 <h4>Illustration (bleed)</h4>
 - Illustration bleeds top and bottom
-- Dimensions for large screens: 470px x 305px (940px x 610px)
+- Dimensions for large screens: 470px x 610px (940px x 1220px)
 - Dimensions for small screens (maximum): 570px x 450px (1140px x 900px)
 
 <img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_size_bleed.png"/> 
