@@ -70,7 +70,7 @@ Below the 601 px breakpoint, the text and image stack to span the full width of 
 <h2>Content guidelines</h2>
 Hero content should serve to orient the user and communicate the primary goal of the page. Copy should be succint and engaging, reflecting the voice and tone of the CFPB. 
 
-The hero content should help a user answer these two questions: 
+Hero content should help a user answer these two questions: 
 
 - Is this page what I was looking for? (orient the user)
 - Do I want to keep reading? (engage the user)
@@ -80,14 +80,14 @@ Since the goal of the hero is to get the user to continue reading the page, don'
 <h3> Parts of the hero</h3>
 
 <h4>Heading</h4> 
-- Headings should communicate what the user can learn from this page or the benefit the page provides or (for example, headings should not be the name of the tool)
+- Headings should communicate what the user can learn from this page or the benefit the page provides
 - Headings should be a single phrase, preferably one line at the largest breakpoint
 - One-line heading: 43 characters maximum at largest breakpoint
 - Two-line heading: 86 characters maximum at largest breakpoint
 - Add something about avoiding orphans
 
 <h4>Subheading</h4>
-  - Content should be short, enticing, and build upon the heading describing the value of the page
+- Content should be brief, enticing, and build upon the heading to describe the value of the page
 - Subheading for heroes with a one-line heading: 25 characters (minimum) and 105 characters (maximum)
 - Subheading for heroes with a two-line heading: 165 characters (minimum) and 185 characters (maximum)
 - Add something about avoiding orphans
@@ -96,14 +96,14 @@ Since the goal of the hero is to get the user to continue reading the page, don'
 <h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 - All illustrations should be saved at 200% to accommodate retina displays
-- Use a transparent background or match the background color to the background hexcode of overall hero space
+- Use a transparent background or match the background color to the background hexcode of the overall hero space
 
 <h3>Standard</h3>
 
 <h4>Illustration (no bleed)</h4>
 - Single illustration for both large and small screens
-- Dimensions for all screens: 470px x 195px (940px x 390px)
-- Height dimension for small screens is the maximum
+- Dimensions for all screen widths: 470px x 195px (940px x 390px)
+- Height dimension for small screen widths is the maximum
 
 <img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed.png"/>
 
@@ -112,7 +112,7 @@ Since the goal of the hero is to get the user to continue reading the page, don'
 <h4>Photo</h4>
 - When selecting a photo include a 30px horizontal margin of clear space between text and image area
 - Type contrast ratios cannot be mathematically determined for photos so special care should be paid when selecting these images
-- Small and large screen compositions should contain the same elements but can differ
+- Small and large screen compositions should contain the same basic elements but can differ
 - Dimensions for large screens: 1230px x 285px
 - Dimensions for small screens: 600px x 338px
 - Height dimension for small screens is the maximum 
