@@ -91,7 +91,6 @@ Since the goal of the hero is to get the user to continue reading the page, don'
 - Subheading for heroes with a one-line heading: 25 characters (minimum) and 105 characters (maximum)
 - Subheading for heroes with a two-line heading: 165 characters (minimum) and 185 characters (maximum)
 - Add something about avoiding orphans
-</div>
 
 <h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
@@ -102,8 +101,7 @@ Since the goal of the hero is to get the user to continue reading the page, don'
 
 <h4>Illustration (no bleed)</h4>
 - Single illustration for both large and small screens
-- Dimensions for all screen widths: 470px x 195px (940px x 390px)
-- Height dimension for small screen widths is the maximum
+- Dimensions for all screen widths (maximum): 470px x 195px (2x: 940px x 390px)
 
 <img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed.png"/>
 
@@ -113,17 +111,15 @@ Since the goal of the hero is to get the user to continue reading the page, don'
 - When selecting a photo include a 30px horizontal margin of clear space between text and image area
 - Type contrast ratios cannot be mathematically determined for photos so special care should be paid when selecting these images
 - Small and large screen compositions should contain the same basic elements but can differ
-- Dimensions for large screens: 1230px x 285px
-- Dimensions for small screens: 600px x 338px
-- Height dimension for small screens is the maximum 
-
+- Dimensions for large screens (exact): 1230px x 285px
+- Dimensions for small screens: 600px (exact) x 338px (maximum)
 
 <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_photo.png"/> 
 
 <h4>Illustration (bleed)</h4>
 - Illustration bleeds top and bottom
-- Dimensions for large screens: 470px x 610px (940px x 1220px)
-- Dimensions for small screens (maximum): 570px x 450px (1140px x 900px)
+- Dimensions for large screens: 470px (exact) x 610px (maximum) (2x: 940px x 1220px)
+- Dimensions for small screens (maximum): 570px x 450px (2x: 1140px x 900px)
 
 <img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_size_bleed.png"/> 
 
