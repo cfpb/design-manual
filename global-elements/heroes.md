@@ -36,7 +36,7 @@ Heroes function as a primary focal point on a page, often used to introduce a co
 
 
 <div class="content-67 content-first">
-Heroes should be the most prominent element on a page, in terms of their position and visual footprint. Heroes should only be used on top level pages, including landing and sublanding pages.
+Heroes are the most prominent component on a page, in terms of their position and visual footprint. Heroes can only be used on top level pages, including landing and sublanding pages.
 </div>
 
 <div class="content-33 content-last">
@@ -46,6 +46,12 @@ Heroes should be the most prominent element on a page, in terms of their positio
 [Sub-landing page]({{site.baseurl}}/global-elements/sublanding-page.html)
 
 </div>
+
+<div class="content-67 content-first">
+<img alt="Image of hero graphic with one line heading" src="../static/img/hero/hero_content_one_line_heading.png"/>
+</div>
+
+
 
 <h2 id="behavior">Behavior<span class="cf-code-link"></h2>
 
@@ -64,27 +70,27 @@ Below the 601 px breakpoint, the text and image stack to span the full width of 
 <h2>Content guidelines</h2>
 Hero content should serve to orient the user and communicate the primary goal of the page. Copy should be succint and engaging, reflecting the voice and tone of the CFPB. 
 
-<div class="content-50 content-first"> 
-  <h4>One line heading</h4> 
-- One line heading at largest breakpoint
-- Heading: 43 characters (maximum)
-- Subheading: 165 characters (minimum) / 185 characters (maximum)
-</div>
+The hero content should help a user answer these two questions: 
 
-<div class="content-50 content-last">
-  <img alt="Image of hero graphic with one line heading" src="../static/img/hero/hero_content_one_line_heading.png"/>
-</div>
+- Is this page what I was looking for? (orient the user)
+- Do I want to keep reading? (engage the user)
 
-<div class="content-50 content-first"> 
-  <h4>Two line heading</h4>
-- Two line heading at largest breakpoint
-- Heading: 40 characters (minimum) / 86 characters (maximum)
-- Subheading: 25 characters (minimum) / 105 characters (maximum)
-</div>
+Since the goal of the hero is to get the user to continue reading the page, don't include links or calls to action in the hero. If there is content that needs to link elsewhere for explanation, it should go underneath the hero within the main content area.  
 
-<div class="content-50 content-last">
-  <img alt="Image of hero graphic with one line heading" src="../static/img/hero/hero_content_two_line_heading.png"/>
-</div>
+<h3> Parts of the hero</h3>
+
+<h4>Heading</h4> 
+- Headings should communicate what the user can learn from this page or the benefit the page provides or (for example, headings should not be the name of the tool)
+- Headings should be a single phrase, preferably one line at the largest breakpoint
+- One-line heading: 43 characters maximum at largest breakpoint
+- Two-line heading: 86 characters maximum at largest breakpoint
+- Add something about avoiding orphans
+
+<h4>Subheading</h4>
+  - Content should be short, enticing, and build upon the heading describing the value of the page
+- Subheading for heroes with a one-line heading: 25 characters (minimum) and 105 characters (maximum)
+- Subheading for heroes with a two-line heading: 165 characters (minimum) and 185 characters (maximum)
+- Add something about avoiding orphans
 
 <h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
