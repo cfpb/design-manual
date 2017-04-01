@@ -43,7 +43,7 @@ Heroes are the most prominent component on a page, in terms of their position an
 ##### Where to use
 [Landing page]({{site.baseurl}}/global-elements/landing-page.html)
 
-[Sub-landing page]({{site.baseurl}}/global-elements/sublanding-page.html)
+[Sublanding page]({{site.baseurl}}/global-elements/sublanding-page.html)
 
 </div>
 
@@ -70,51 +70,70 @@ Below the 601 px breakpoint, the text and image stack to span the full width of 
 <h2>Content guidelines</h2>
 Hero content should serve to orient the user and communicate the primary goal of the page. Copy should be succint and engaging, reflecting the voice and tone of the CFPB. 
 
+<h3> Role of the hero</h3>
 Hero content should help a user answer these two questions: 
 
 - Is this page what I was looking for? (orient the user)
 - Do I want to keep reading? (engage the user)
 
-Since the goal of the hero is to get the user to continue reading the page, don't include links or calls to action in the hero. If there is content that needs to link elsewhere for explanation, it should go underneath the hero within the main content area.  
+Since the goal of the hero is to get the user to continue reading the page, don't include links or calls to action within the hero. If there is content that needs to link elsewhere for explanation, place it underneath the hero within the main content area.  
 
 <h3> Parts of the hero</h3>
 
 <h4>Heading</h4> 
-- Headings should communicate what the user can learn from this page or the benefit the page provides
-- Headings should be a single phrase, preferably one line at the largest breakpoint
-- One-line heading: 43 characters maximum at largest breakpoint
-- Two-line heading: 86 characters maximum at largest breakpoint
-- Add something about avoiding orphans
+Headings should communicate what the user can learn from the page or the benefit the page provides. Headings should be a single phrase, preferably one line at the largest breakpoint.
+
+- One-line heading: 41 characters maximum
+- Two-line heading: 82 characters maximum
+
 
 <h4>Subheading</h4>
-- Content should be brief, enticing, and build upon the heading to describe the value of the page
-- Subheading for heroes with a one-line heading: 25 characters (minimum) and 105 characters (maximum)
-- Subheading for heroes with a two-line heading: 165 characters (minimum) and 185 characters (maximum)
-- Add something about avoiding orphans
+Subheading content should be brief, enticing, and build upon the heading to describe the value of the page
+
+- Subheading (after one-line heading): Between 165 and 186 characters
+- Subheading (after two-line heading): Between 108 and 124 characters
+
 
 <h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 - All illustrations should be saved at 200% to accommodate retina displays
 - Use a transparent background or match the background color to the background hexcode of the overall hero space
 
-<h3>Standard</h3>
+<h3>Standard hero</h3>
 
 <h4>Illustration (no bleed)</h4>
 - Single illustration for both large and small screens
-- Dimensions for all screen widths (maximum): 470px x 195px (2x: 940px x 390px)
+- Dimensions (maximum): 470px x 195px (2x: 940px x 390px)
 
-<img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed.png"/>
+<div class="content-50 content-last"> 
+  <p>Large screens (601+)</p>
+  <img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed_large.png"/> 
+</div>
 
-<h3>Variations</h3>
+<div class="content-50 content-last">
+ <p>Small screens (600-)</p> 
+  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed_small.png"/> 
+</div>
+
+<h3>Hero variations</h3>
 
 <h4>Photo</h4>
 - When selecting a photo include a 30px horizontal margin of clear space between text and image area
 - Type contrast ratios cannot be mathematically determined for photos so special care should be paid when selecting these images
-- Small and large screen compositions should contain the same basic elements but can differ
-- Dimensions for large screens (exact): 1230px x 285px
+- Dimensions for large screens: 1230px x 285px (exact)
 - Dimensions for small screens: 600px (exact) x 338px (maximum)
+- Small and large screen images should contain the same elements but can differ compositionally
+- To conserve vertical space aim to keep small screen images as short as possible 
 
-<img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_photo.png"/> 
+<div class="content-50 content-last"> 
+  <p>Large screens (601+)</p>
+  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_photo_large.png"/> 
+</div>
+
+<div class="content-50 content-last">
+ <p>Small screens (600-)</p> 
+  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_photo_small.png"/> 
+</div>
 
 <h4>Illustration (bleed)</h4>
 - Illustration bleeds top and bottom
