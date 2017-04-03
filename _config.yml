@@ -60,9 +60,9 @@ mainnav:
 - text: Page components
   url: page-components/page-components.html
   internal: true
-# - text: Data visualization
-#   url: data-visualization/data-visualization.html
-#   internal: true
+- text: Data visualization
+  url: data-visualization/data-visualization.html
+  internal: true
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
@@ -238,6 +238,37 @@ secondarynav:
   url: page-components/wells.html
   internal: true
   category: Page components
+
+
+# Data visualization
+- text: Accessibility
+  url: data-visualization/accessibility.html
+  internal: true
+  category: Data visualization
+- text: Accuracy
+  url: data-visualization/accuracy.html
+  internal: true
+  category: Data visualization
+- text: Audience
+  url: data-visualization/audience.html
+  internal: true
+  category: Data visualization
+- text: Chart types
+  url: data-visualization/chart-types.html
+  internal: true
+  category: Data visualization
+- text: Color
+  url: data-visualization/color.html
+  internal: true
+  category: Data visualization
+- text: Emphasis!
+  url: data-visualization/emphasis.html
+  internal: true
+  category: Data visualization
+- text: Text
+  url: data-visualization/text.html
+  internal: true
+  category: Data visualization
 
 
 # Footer Navigation
