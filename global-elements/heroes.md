@@ -36,7 +36,7 @@ Heroes function as a primary focal point on a page, often used to introduce a co
 
 
 <div class="content-67 content-first">
-Heroes are the most prominent component on a page, in terms of their position and visual footprint. Heroes can only be used on top level pages, including landing and sublanding pages.
+Heroes are the most prominent component on a page, in terms of their position and visual footprint. Heroes should only be used on top level pages, including landing and sublanding pages.
 </div>
 
 <div class="content-33 content-last">
@@ -48,7 +48,7 @@ Heroes are the most prominent component on a page, in terms of their position an
 </div>
 
 <div class="content-67 content-first">
-<img alt="Image of hero graphic with one line heading" src="../static/img/hero/hero_content_one_line_heading.png"/>
+<img alt="Image of hero graphic with one line heading" src="../static/img/hero/hero_use_case.png"/>
 </div>
 
 
@@ -70,7 +70,7 @@ Below the 601 px breakpoint, the text and image stack to span the full width of 
 <h2>Content guidelines</h2>
 Hero content should serve to orient the user and communicate the primary goal of the page. Copy should be succint and engaging, reflecting the voice and tone of the CFPB. 
 
-<h3> Role of the hero</h3>
+<h3>Purpose</h3>
 Hero content should help a user answer these two questions: 
 
 - Is this page what I was looking for? (orient the user)
@@ -97,22 +97,22 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 <h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
 - All illustrations should be saved at 200% to accommodate retina displays
-- Use a transparent background or match the background color to the background hexcode of the overall hero space
+- When saving illustrations, use a transparent background
 
 <h3>Standard hero</h3>
 
 <h4>Illustration (no bleed)</h4>
-- Single illustration for both large and small screens
-- Dimensions (maximum): 470px x 195px (2x: 940px x 390px)
+- Single illustration image for both large and small screens
+- Illustration dimensions (maximum): 470px x 195px (2x: 940px x 390px)
 
 <div class="content-50 content-last"> 
   <p>Large screens (601+)</p>
-  <img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed_large.png"/> 
+  <img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_non_bleed_large.png"/> 
 </div>
 
 <div class="content-50 content-last">
  <p>Small screens (600-)</p> 
-  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_non_bleed_small.png"/> 
+  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_non_bleed_small.png"/> 
 </div>
 
 <h3>Hero variations</h3>
@@ -120,27 +120,38 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 <h4>Photo</h4>
 - When selecting a photo include a 30px horizontal margin of clear space between text and image area
 - Type contrast ratios cannot be mathematically determined for photos so special care should be paid when selecting these images
-- Dimensions for large screens: 1230px x 285px (exact)
-- Dimensions for small screens: 600px (exact) x 338px (maximum)
 - Small and large screen images should contain the same elements but can differ compositionally
-- To conserve vertical space aim to keep small screen images as short as possible 
+- To conserve vertical space, small screen image should be as short as possible
+- Photo dimensions for large screens (exact): 1230px x 285px
+- Photo dimensions for small screens: 600px (exact) x 338px (maximum)
 
 <div class="content-50 content-last"> 
   <p>Large screens (601+)</p>
-  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_photo_large.png"/> 
+  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_variations_photo_large.png"/> 
 </div>
 
 <div class="content-50 content-last">
  <p>Small screens (600-)</p> 
-  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_size_photo_small.png"/> 
+  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_variations_photo_small.png"/> 
 </div>
 
 <h4>Illustration (bleed)</h4>
-- Illustration bleeds top and bottom
-- Dimensions for large screens: 470px (exact) x 610px (maximum) (2x: 940px x 1220px)
-- Dimensions for small screens (maximum): 570px x 450px (2x: 1140px x 900px)
+- On large screens, illustration bleeds top and bottom
+- Small and large screen images should contain the same elements but can differ compositionally
+- Large screen image dimensions are based on maximum possible hero height at 601px width
+- To conserve vertical space, small screen image should be as short as possible
+- Illustration dimensions for large screens (exact): 470px x 638px (2x: 940px x 1276px)
+- Illustration dimensions for small screens: 570px (exact) x 320px (maximum) (2x: 1140px x 640px) 
 
-<img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_size_bleed.png"/> 
+<div class="content-50 content-last"> 
+  <p>Large screens (601+)</p>
+  <img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_variations_bleed_large.png"/> 
+</div>
+
+<div class="content-50 content-last">
+ <p>Small screens (600-)</p> 
+  <img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_variations_bleed_small.png"/> 
+</div>
 
 
 <h3>Style at different breakpoints</h3>
@@ -149,6 +160,7 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 - Heading: H1
 - Subheading: Avenir Next Regular, 22px/28px
 - Top and bottom padding: 45px
+- Left and right padding: 30px
 - Text is vertically centered
 - Total height is 285px (fixed)
 
@@ -159,7 +171,7 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 <h4>Between 900px and 601px</h4>
 - Heading: H2
 - Subheading: Avenir Next Regular, 18px/22px
-- Top and bottom padding: 30px
+- Padding on all sides: 30px
 - Module height is flexible to text height
 
 <div class="content-50 content-first"> 
@@ -168,10 +180,10 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 
 <h4>600px and below</h4>
 - Heading: H2
-- Subheading: Avenir Next Regular, 18px
+- Subheading: Avenir Next Regular, 18px/22px
 - Top and bottom padding: 30px
+- Left and right padding: 15px
 - Module height is flexible to text height
-- Illustration spans full width (less 15px left and right padding)
 
 <div class="content-25 content-first"> 
 <img alt="Image of hero graphic at mobile width" src="../static/img/hero/hero_style_mobile.png"/>
