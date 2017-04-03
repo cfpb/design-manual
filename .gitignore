@@ -43,3 +43,7 @@ src/static/fonts/
 # Jekyll #
 ##########
 _site/
+
+# Ruby #
+########
+Gemfile.lock

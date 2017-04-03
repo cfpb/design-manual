@@ -13,9 +13,11 @@
     "design-manual"
   ],
   "scripts": {
-    "start": "parallelshell 'bundle exec jekyll serve --watch --baseurl ''' 'grunt watch'",
+    "start": "parallelshell \"bundle exec jekyll serve --watch --baseurl ''\" \"grunt watch\"",
     "build": "grunt build",
-    "colors": "node ./scripts/npm/colors"
+    "colors": "node ./scripts/npm/colors",
+    "cf-link": "node scripts/npm/link",
+    "cf-unlink": "node scripts/npm/unlink"
   },
   "dependencies": {
     "cf-buttons": "^3.2.0",
@@ -36,6 +38,7 @@
   },
   "devDependencies": {
     "csv": "^1.1.1",
+    "child-process-promise": "^2.2.0",
     "grunt": "~0.4.5",
     "grunt-autoprefixer": "~2.0.0",
     "grunt-banner": "~0.2.3",
