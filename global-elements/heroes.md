@@ -79,19 +79,20 @@ Hero content should help a user answer these two questions:
 Since the goal of the hero is to get the user to continue reading the page, don't include links or calls to action within the hero. If there is content that needs to link elsewhere for explanation, place it underneath the hero within the main content area.  
 
 <h3> Parts of the hero</h3>
+- For headings and subheadings, take care to avoid orphaned text
 
 <h4>Heading</h4> 
-Headings should communicate what the user can learn from the page or the benefit the page provides. Headings should be a single phrase, preferably one line at the largest breakpoint (1230px). With two line headings, take care to avoid orphaned text.
+Headings should communicate what the user can learn from the page or the benefit the page provides. Headings should be a single phrase, preferably one line at the largest breakpoint. 
 
-- One-line heading: 41 characters maximum (expected behavior is one line at 1230px wide)
-- Two-line heading: 82 characters maximum (expected behavior is two lines at 1230px wide)
+- One-line (at largest breakpoint): 41 characters maximum 
+- Two-line (at largest breakpoint): 82 characters maximum 
 
 
 <h4>Subheading</h4>
-Subheading content should be brief, enticing, and build upon the heading to describe the value of the page. Take care to avoid orphaned text.
+Subheading content should be brief, enticing, and build upon the heading to describe the value of the page.
 
-- Subheading (after one-line heading): Between 165 and 186 characters (expected behavior is three lines at 1230px wide)
-- Subheading (after two-line heading): Between 108 and 124 characters (expected behavior is two lines at 1230px wide)
+- After one-line heading: Between 165 and 186 characters (three lines at largest breakpoint)
+- After two-line heading: Between 108 and 124 characters (two lines at largest breakpoint)
 
 
 <h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
