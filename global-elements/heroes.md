@@ -67,7 +67,7 @@ Below the 601 px breakpoint, the text and image stack to span the full width of 
 <img alt="Image of hero graphic at mobile size" src="../static/img/hero/hero_behavior_mobile.png"/>
 </div>
 
-<h2>Content guidelines</h2>
+<h2 id="behavior">Content guidelines<span class="cf-code-link"></h2>
 Hero content should serve to orient the user and communicate the primary goal of the page. Copy should be succint and engaging, reflecting the voice and tone of the CFPB. 
 
 <h3>Purpose</h3>
