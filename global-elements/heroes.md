@@ -68,10 +68,12 @@ Below the 601 px breakpoint, the text and image stack to span the full width of 
 </div>
 
 <h2 id="content-guidelines">Content guidelines<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
-Hero content should serve to orient the user and communicate the primary goal of the page. Copy should be succint and engaging, reflecting the voice and tone of the CFPB. 
+Hero content should serve to orient the user and communicate the primary goal of the page. Copy should be succinct and engaging, reflecting the voice and tone of the CFPB.
 
 <h3>Purpose</h3>
-Hero content should help a user answer these two questions: 
+Hero copy should be written from the user’s perspective. It’s less about what we can do for them or what we can offer them, and more about what the user can do with the resources we provide.
+
+Hero content should help a user answer these two questions:
 
 - Is this page what I was looking for? (orient the user)
 - Do I want to keep reading? (engage the user)
@@ -79,17 +81,18 @@ Hero content should help a user answer these two questions:
 Since the goal of the hero is to get the user to continue reading the page, don't include links or calls to action within the hero. If there is content that needs to link elsewhere for explanation, place it underneath the hero within the main content area.  
 
 <h3> Parts of the hero</h3>
-- For headings and subheadings, take care to avoid orphaned text
 
 <h4>Heading</h4> 
-Headings should communicate what the user can learn from the page or the benefit the page provides. Headings should be a single phrase, preferably one line at the largest breakpoint. 
+Headings should communicate what the user can learn from the page or the benefit the page provides. Headings should be a single phrase, preferably one line at the largest breakpoint. Take care to avoid orphaned text.
+
+Headings should not include a period at the end. Question marks can be used when a question is asked, but would recommend not phrasing heroes as questions. Actionable, descriptive, orienting statements work best.
 
 - One-line (at largest breakpoint): 41 characters maximum 
 - Two-line (at largest breakpoint): 82 characters maximum 
 
 
 <h4>Subheading</h4>
-Subheading content should be brief, enticing, and build upon the heading to describe the value of the page.
+Subheading content should be brief, enticing, and build upon the heading to describe the value of the page. Take care to avoid orphaned text.
 
 - After one-line heading: Between 165 and 186 characters (three lines at largest breakpoint)
 - After two-line heading: Between 108 and 124 characters (two lines at largest breakpoint)
