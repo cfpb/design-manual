@@ -1,26 +1,31 @@
 ---
 layout: page
-title:  Audience
+title:  Emphasis!
 category: Data visualization
 published: true
 ---
 
-- [If your user group is general (i.e. the American public)](#general-users)
-- [If your user is refined to a specific audience](#specific-users)
- {: class="toc"}
-
-
-Consider your audience when you are creating data visualization.
+Highlighting parts of your chart will help users quickly understand the point of the graphic and accurately comprehend the information.
 {: class="lead-in"}
 
 <h5>Key questions</h5>
-* Who is your audience?
-* What is their familiarity with data visualization?
-* How much information do they need?
+* What is the point of the chart?
+* Can someone who hasn’t seen the chart before figure out the point from a quick look and the title?
+
+<h3 id="visual-hierarchy">Visual hierarchy</h3>
+Good visual hierarchy allows the user to focus on the most important piece of content first and work their way into the graphic. The title and subtitle should be the first thing that the user reads when viewing the chart to give them context of what the chart is about. Therefore, they should be the biggest thing on the chart (see the [Data visualization text section](color.html)).
+
+Use the squint test (take a step back from your graph, squint your eyes, and say what you see first, second, third…) to get a sense of what you users will automatically identify first.
+
+<h6>Examples</h6>
+
+<h3 id="labels">Labels</h3>
+Goals, trends and important outliers should be highlighted to help the user discern what is going on with the data. Labels will help the user understand the data and make sense of what it is showing.
+
+<h6>Examples</h6>
 
 
-<h3 id="general-users">If your user group is general (i.e. the American public)</h3>
-For charts meant for the general public, stick with basic and most common chart types that people can easily understand. A series of bar, pie or line charts can walk the consumer though the data. To this extent, using a graph that shows the whole of the data, then drills down into specifics helps frame and give context to what they are seeing. Adding emphasis and labels will help highlight the point of the visual and tell the story of the information.
+<h3 id="projected-values">Projected values</h3>
+When dealing with projected or predicted data, the predicted data should be deemphasized. Use a color change to a lighter tint or dashed outline for bar charts, a dotted line for line charts, and a label explaining what part of the data is predicted or projected.
 
-<h3 id="specific-users">If your user is refined to a specific audience</h3>
-When you’re creating visualizations for a specific target, take into consideration their familiarity with data and visualizations. More complex stories might necessitate more complex visuals. Aim not to create solely exploratory experiences, but to have meaning and a point to engage the user and walk them through the data.
+<h6>Examples</h6>
