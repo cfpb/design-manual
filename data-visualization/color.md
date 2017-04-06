@@ -27,12 +27,25 @@ with brand standards to appear inconsistent.
 The following sets of colors maintain CFPB brand cohesion and create accessible
 graphics.
 
+<nomarkdown>
+<img
+src="{{site.baseurl}}/static/img/data-visualization/datavis_color_03_03.png"
+alt="A list of primary, positive, and negative colors for use in CFPB data
+visualizations." height="100%" width="100%">
+</nomarkdown>
+<br />
+
+<nomarkdown>
+<img
+src="{{site.baseurl}}/static/img/data-visualization/datavis_color_03_06.png"
+alt="A list of color options for use in data visualizations." height="100%"
+width="100%">
+</nomarkdown>
+<br />
 
 <h4 id="subsets-relationships">Subsets and relationships</h4>
 To highlight part of a set of data, or show that things are related, use a tint
 or a shade of the main color.
-
-<h6>Examples</h6>
 
 
 <h4 id="categorical">Categorical</h4>
@@ -55,7 +68,13 @@ alt="Bar chart using categorical color while showing complaints by region (New
 When you are displaying sequential data that shows a range of data in a ranked
 order, use these sequential colors to imply the relationship.
 
-<h6>Examples</h6>
+<nomarkdown>
+<img
+src="{{site.baseurl}}/static/img/data-visualization/datavis_color_03_09.png"
+alt="A list of sequential colors for use in data visualizations." height="100%"
+width="100%">
+</nomarkdown>
+<br />
 
 
 <h3 id="color-accessibility">Color accessibility</h3>
