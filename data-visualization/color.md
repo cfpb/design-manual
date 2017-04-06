@@ -104,32 +104,40 @@ color to represent the brand.
 This is an example of a visualization using the green/red combination, and how
 it can appear to someone with red/green color blindness:
 
+<div class="content-50 content-first">
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/data-visualization/color-blindness-1.png"
 alt="Data visualization using red and green to show a positive/negative
-relationship." height="50%" width="50%">
+relationship." height="100%" width="100%">
 </nomarkdown>
+</div>
 
+<div class="content-50 content-last">
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/data-visualization/color-blindness-2.png"
 alt="Data visualization showing what using red and green to show a
 positive/negative relationship looks like for someone with color blindness."
-height="50%" width="50%">
+height="100%" width="100%">
 </nomarkdown>
+</div>
 
 
 This is an example of a visualization using the teal/red combination, and how
 it can appear to someone with red/green color blindness:
 
+<div class="content-50 content-first">
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/data-visualization/color-blindness-3.png"
 alt="Data visualization using teal and green to show a positive/negative
-relationship." height="50%" width="50%">
+relationship." height="100%" width="100%">
 </nomarkdown>
+</div>
 
+<div class="content-50 content-last">
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/data-visualization/color-blindness-4.png"
 alt="Data visualization showing what using teal and green to show a
 positive/negative relationship looks like for someone with color blindness."
-height="50%" width="50%">
+height="100%" width="100%">
 </nomarkdown>
+</div>
