@@ -34,11 +34,11 @@ To remedy this effect add a note at the bottom to explain the missing data.
 Use notes to add in other caveats around the data like if it was taken from a
 specific time period.
 
-> Example: _Percent change is based on a 3 month period (October-December) and
-compared to the previous year._
+> _Example:_ Percent change is based on a 3 month period (October-December) and
+compared to the previous year.
 
-> Example: _Company-level information should be considered in context of total
-complaints, company size and market share in a given geographic area._
+> _Example:_ Company-level information should be considered in context of total
+complaints, company size and market share in a given geographic area.
 
 <h3 id="sources-section">Sources Section</h3>
 Including the source of the data in the visualization is a must. It adds
