@@ -52,7 +52,7 @@ Heroes are the most prominent component on a page, in terms of their position an
 - When the page serves as a navigational tool with general information about a subject and links to lower-level pages that contain more specific information
 
 <h4>When other options are better</h4>
-- When introducing a specific piece of content, like a blog, press release, or other lengthy or detailed content, use the [Text introduction]({{site.baseurl}}/global-elements/text-introduction.html)
+- When introducing a specific piece of content, like a blog, press release, or other lengthy or detailed content, use the [text introduction]({{site.baseurl}}/global-elements/text-introductions.html)
 
 <h2 id="behavior">Behavior<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
 
