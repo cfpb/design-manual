@@ -45,7 +45,7 @@ Heroes are the most prominent component on a page, in terms of their position an
 [Sublanding page]({{site.baseurl}}/global-elements/sublanding-page.html)
 </div>
 
-<img alt="Image of hero graphic" src="../static/img/hero/hero_use_case.png"/>
+<img alt="Image of standard hero graphic" src="{{site.github.url}}/static/img/hero/hero_use-case.png"/>
 
 <h4>When to use</h4>
 - When orienting a user to a new section or topic
@@ -60,12 +60,12 @@ Below the 601 px breakpoint, the text and image stack to span the full width of 
 
 <div class="content-75 content-first"> 
 <h4>601 px and above</h4> 
-<img alt="Image of hero graphic at desktop size" src="../static/img/hero/hero_behavior_desktop.png"/>
+<img alt="Image of hero graphic at desktop size" src="{{site.github.url}}/static/img/hero/hero_behavior_large.png"/>
 </div>
 
 <div class="content-25 content-last"> 
 <h4>600 px and below</h4>
-<img alt="Image of hero graphic at mobile size" src="../static/img/hero/hero_behavior_mobile.png"/>
+<img alt="Image of hero graphic at mobile size" src="{{site.github.url}}/static/img/hero/hero_behavior_small.png"/>
 </div>
 
 <h2 id="content-guidelines">Content guidelines<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/cf-layout.less#L618-L620">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
@@ -120,12 +120,12 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 
 <div class="content-50 content-last"> 
   <p>Large screens (601+)</p>
-  <img alt="Image of non-bleed hero graphic with dimensions" src="../static/img/hero/hero_style_non_bleed_large.png"/> 
+  <img alt="Image of non-bleed hero graphic with dimensions" src="{{site.github.url}}/static/img/hero/hero_style_non-bleed_large.png"/> 
 </div>
 
 <div class="content-50 content-last">
  <p>Small screens (600-)</p> 
-  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_non_bleed_small.png"/> 
+  <img alt="Image of photo hero graphic with dimensions" src="{{site.github.url}}/static/img/hero/hero_style_non-bleed_small.png"/> 
 </div>
 
 <h3>Hero variations</h3>
@@ -141,12 +141,12 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 
 <div class="content-50 content-last"> 
   <p>Large screens (601+)</p>
-  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_variations_photo_large.png"/> 
+  <img alt="Image of photo hero graphic with dimensions" src="{{site.github.url}}/static/img/hero/hero_style_photo_large.png"/> 
 </div>
 
 <div class="content-50 content-last">
  <p>Small screens (600-)</p> 
-  <img alt="Image of photo hero graphic with dimensions" src="../static/img/hero/hero_style_variations_photo_small.png"/> 
+  <img alt="Image of photo hero graphic with dimensions" src="{{site.github.url}}/static/img/hero/hero_style_photo_small.png"/> 
 </div>
 
 <h4>Illustration (bleed)</h4>
@@ -160,15 +160,13 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 
 <div class="content-50 content-last"> 
   <p>Large screens (601+)</p>
-  <img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_variations_bleed_large.png"/> 
+  <img alt="Image of bleed illustration hero graphic with dimensions" src="{{site.github.url}}/static/img/hero/hero_style_bleed_large.png"/> 
 </div>
 
 <div class="content-50 content-last">
- <p>Small screens (600-)</p> 
-  <img alt="Image of bleed illustration hero graphic with dimensions" src="../static/img/hero/hero_style_variations_bleed_small.png"/> 
+  <p>Small screens (600-)</p> 
+  <img alt="Image of bleed illustration hero graphic with dimensions" src="{{site.github.url}}/static/img/hero/hero_style_bleed_small.png"/> 
 </div>
-
-
 
 <h3>Style at different breakpoints</h3>
 
@@ -181,7 +179,7 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 - Total height is 285px (fixed)
 
 <div class="content-75 content-first"> 
-<img alt="Image of hero graphic at desktop width" src="../static/img/hero/hero_style_desktop.png"/>
+<img alt="Image of hero graphic at desktop width" src="{{site.github.url}}/static/img/hero/hero_style_desktop.png"/>
 </div>
 
 <h4>Between 900px and 601px</h4>
@@ -191,7 +189,7 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 - Module height is flexible to text height
 
 <div class="content-50 content-first"> 
-<img alt="Image of hero graphic at tablet width" src="../static/img/hero/hero_style_tablet.png"/>
+<img alt="Image of hero graphic at tablet width" src="{{site.github.url}}/static/img/hero/hero_style_tablet.png"/>
 </div>
 
 <h4>600px and below</h4>
@@ -202,7 +200,7 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 - Module height is flexible to text height
 
 <div class="content-25 content-first"> 
-<img alt="Image of hero graphic at mobile width" src="../static/img/hero/hero_style_mobile.png"/>
+<img alt="Image of hero graphic at mobile width" src="{{site.github.url}}/static/img/hero/hero_style_mobile.png"/>
 </div>
 
 
