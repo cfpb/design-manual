@@ -10,7 +10,12 @@ published: true
  {: class="toc"}
 
 
-Allowing all users to be able to comprehend charts and graphics is a key part of being a government agency that serves the entire American public. This is an interpretation of what it means for a chart to be 508 compliant and accessible, starting with descriptive titles (see the [Data visualization text section](text.html)) and not only relying on color to connect data to its meaning (see the [Data visualization color section](color.html)).
+Allowing all users to be able to comprehend charts and graphics is a key part
+of being a government agency that serves the entire American public. This is an
+interpretation of what it means for a chart to be 508 compliant and accessible,
+starting with descriptive titles (see the [Data visualization text
+  section](text.html)) and not only relying on color to connect data to its
+  meaning (see the [Data visualization color section](color.html)).
 {: class="lead-in"}
 
 <h5>Key questions</h5>
