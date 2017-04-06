@@ -35,7 +35,9 @@ Use categorical color schemes when you are visualizing groups of things. These a
 
 <h6>Examples</h6>
 
-
+<nomarkdown>
+<img src="{{site.baseurl}}/static/img/data-visualization/categorical-color-1.png" alt="Bar chart using categorical color while showing complaints by region (New York metro area, New York state and the United States) for different financial categories." height="50%" width="50%">
+</nomarkdown>
 
 <h4 id="sequential">Sequential</h4>
 

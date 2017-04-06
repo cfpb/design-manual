@@ -35,24 +35,24 @@ Use bar or column charts to show comparisons of different discrete items, factor
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/data-visualization/bar-chart-1.png" alt="Horizontal bar chart showing breakdown of complaints in other financial services category." height="50%" width="50%">
 </nomarkdown>
-
+<br />
 
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/data-visualization/bar-chart-2.png" alt="Bar charts showing complaints by type for New York metro area, New
 York state and the United States." height="50%" width="50%">
 </nomarkdown>
-
+<br />
 
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/data-visualization/bar-chart-3.png" alt="Stacked bar chart showing breakdown of complaints in other financial services category." height="50%" width="50%">
 </nomarkdown>
-
+<br />
 
 <nomarkdown>
 <img src="{{site.baseurl}}/static/img/data-visualization/bar-chart-4.png" alt="Bar charts showing complaints by region (New York metro area, New
 York state and the United States) for different financial categories." height="50%" width="50%">
 </nomarkdown>
-
+<br />
 
 <h3 id="line-charts">Line charts</h3>
 Use when you have one factor over time to show change. Start your axis at 0 and label your axis to avoid confusion.
@@ -65,16 +65,14 @@ Use when you have one factor over time to show change. Start your axis at 0 and 
 <h6>Examples</h6>
 
 <nomarkdown>
-<img src="{{site.baseurl}}/static/img/data-visualization/line-chart-1.png" alt="Bar charts showing complaints by region (New York metro area, New
-York state and the United States) for different financial categories." height="50%" width="50%">
+<img src="{{site.baseurl}}/static/img/data-visualization/line-chart-1.png" alt="Line chart showing complaints from Florida from July 2011 to December 2016." height="50%" width="50%">
 </nomarkdown>
-
+<br />
 
 <nomarkdown>
-<img src="{{site.baseurl}}/static/img/data-visualization/bar-chart-3.png" alt="Bar charts showing complaints by region (New York metro area, New
-York state and the United States) for different financial categories." height="50%" width="50%">
+<img src="{{site.baseurl}}/static/img/data-visualization/line-chart-2.png" alt="Line chart showing change in college credit card agreement trends between 2009 and 2015." height="50%" width="50%">
 </nomarkdown>
-
+<br />
 
 <h3 id="pie-doughnut-charts">Pie or doughnut charts</h3>
 Use when you have less than six things that add up to 100%. Use the middle of the doughnut to highlight the number or category type. You could also consider using a stacked bar chart instead.
@@ -86,3 +84,12 @@ Use when you have less than six things that add up to 100%. Use the middle of th
 * Use a white outline or stroke to create contrast between the slices.
 
 <h6>Examples</h6>
+
+<nomarkdown>
+<img src="{{site.baseurl}}/static/img/data-visualization/doughnut-chart-1.png" alt="Three doughnut charts of varying percentages." height="50%" width="50%">
+</nomarkdown>
+<br />
+
+<nomarkdown>
+<img src="{{site.baseurl}}/static/img/data-visualization/doughnut-chart-2.jpg" alt="A doughnut chart used within a social media graphic." height="50%" width="50%">
+</nomarkdown>
