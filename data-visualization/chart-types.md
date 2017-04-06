@@ -28,7 +28,7 @@ Use bar or column charts to show comparisons of different discrete items, factor
 <h6>Key points</h6>
 * If exact numbers are important, the bars should be labeled with the value.
 * When possible label directly rather than relying on color.
-* For stacked charts, use a white outline or stroke to create contrast between bar chunks.
+* For stacked charts, use a white line or stroke to create contrast between bar chunks.
 
 <h6>Examples</h6>
 
