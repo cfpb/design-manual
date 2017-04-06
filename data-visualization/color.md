@@ -11,7 +11,7 @@ published: true
  {: class="toc"}
 
 
-When used properly, color can help clarify relationships between data, provide emphasis for certain data points, and help connote trust or branding. When used poorly, color can overwhelm and can make the data confusing.
+When used properly, color can help clarify relationships between data, provide emphasis for certain data points, and maintain a consistent brand voice. When used poorly, color can overwhelm the user, make the data confusing and break with brand standards to appear inconsistent.
 {: class="lead-in"}
 
 <h5>Key questions</h5>
