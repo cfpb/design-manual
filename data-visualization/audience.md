@@ -5,8 +5,8 @@ category: Data visualization
 published: true
 ---
 
-- [If your user group is general (i.e. the American public)](#general-users)
-- [If your user is refined to a specific audience](#specific-users)
+- [General users](#general-users)
+- [Specific users](#specific-users)
  {: class="toc"}
 
 
