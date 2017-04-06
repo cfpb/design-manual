@@ -81,6 +81,16 @@ body {
     overflow-wrap: break-word;
 }
 
+blockquote {
+
+  border-left: 0.25em solid @gray;
+  color: @dark-gray;
+  padding: 0.5em 1em 0.25em 1em;
+
+  &_p {
+    display: inline;
+  }
+}
 
 /* ==========================================================================
    To replace eventually
@@ -270,7 +280,7 @@ body {
         .cf-input_label {
             margin: 0;
             padding: unit((@grid_gutter-width / 2) / @base-font-size-px, em)
-                 unit((@grid_gutter-width / 2) / @base-font-size-px, em) 
+                 unit((@grid_gutter-width / 2) / @base-font-size-px, em)
                  unit((@grid_gutter-width / 1.75) / @base-font-size-px, em);
         }
         &.selected .cf-input_label,
