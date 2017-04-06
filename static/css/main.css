@@ -6042,6 +6042,7 @@ a.category-slug.active {
     vertical-align: top;
     width: 50%;
     text-align: right;
+    margin-bottom: 1.5625em;
   }
   .lt-ie8 .header .site-logo {
     display: inline;
@@ -8173,6 +8174,14 @@ body {
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+blockquote {
+  border-left: 0.25em solid #5a5d61;
+  color: #43484e;
+  padding: 0.5em 1em 0.25em 1em;
+}
+blockquote_p {
+  display: inline;
 }
 /* ==========================================================================
    To replace eventually
