@@ -10,7 +10,7 @@ published: true
  {: class="toc"}
 
 
-Consider your audience when you are creating data visualization.
+Consider your audience when you're creating data visualization.
 {: class="lead-in"}
 
 <h5>Key questions</h5>

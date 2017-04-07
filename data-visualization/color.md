@@ -42,7 +42,7 @@ To highlight part of a set of data, or show that things are related, use a tint
 or a shade of the main color.
 
 <h4 id="categorical">Categorical</h4>
-Use categorical color schemes when you are visualizing groups of things. These
+Use categorical color schemes when you're visualizing groups of things. These
 are discrete colors that do not imply an visual relationship between the sets
 of data.
 
@@ -56,7 +56,7 @@ alt="Bar chart using categorical color while showing complaints by region (New
 
 <h4 id="sequential">Sequential</h4>
 
-When you are displaying sequential data that shows a range of data in a ranked
+When you're displaying sequential data that shows a range of data in a ranked
 order, use these sequential colors to imply the relationship.
 
 <img
