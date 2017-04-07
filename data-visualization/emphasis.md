@@ -28,7 +28,7 @@ Use the squint test (take a step back from your graph, squint your eyes, and
 
 
 <h3 id="labels">Labels</h3>
-Goals, trends and important outliers should be highlighted to help the user
+Goals, trends, and important outliers should be highlighted to help the user
 discern what is going on with the data. Labels will help the user understand
 the data and make sense of what it is showing.
 
