@@ -5,7 +5,7 @@ category: Data visualization
 published: true
 ---
 
-### These guidelines make the most of effective and consistent data visualizations produced by the CFPB. They are meant to be platform agnostic, and aim to incorporate current usage of Excel, Tableau, and D3.js as well as the future use of any other program.
+### Whether you're using Excel, Tableau, D3.js, or any other program, follow these guidelines to create effective and consistent data visualizations.
 
 
 Data visualization can be an excellent way to increase understanding and make

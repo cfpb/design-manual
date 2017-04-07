@@ -14,7 +14,7 @@ published: true
  {: class="toc"}
 
 
-Using the appropriate font not only increases consistency with the CFPB brand,
+Using the appropriate font not only increases consistency with the core brand,
 but assures legibility and good visual hierarchy. Proper labeling and titles
 help users quickly understand the chart and increases comprehension as well as
 helping with accessibility.
