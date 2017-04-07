@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Text
+title:  Chart components
 category: Data visualization
 published: true
 ---
