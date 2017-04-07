@@ -60,21 +60,26 @@ src="{{site.baseurl}}/static/img/data-visualization/Parts-of-a-chart_013.png"
 alt="Labeled display of the titles on a chart." height="100%" width="100%">
 
 ### Reports
+
 #### Figure number
   * Uses the `Figure number` style (all caps)
+
 #### Title
   * Gives an overview of what the graph is about
   * Uses the `h3` heading style
   * 2 lines of text maximum
+
 #### Subtitle
   * Explains the general trends of the graph and what that means, including why
   it is important
   * Uses the `h4` heading style
   * 3 lines of text maximum
+
 #### Notes
   * Describes any caveats or inconsistencies with the data such as explaining
   why numbers do not add up to 100% or the specific dates that the data is
   pulled from
+
 #### Data source information
   * Provides a link to the URL of a spreadsheet or to the source of the data
   * Important to include for trustworthiness and validity
@@ -82,22 +87,27 @@ alt="Labeled display of the titles on a chart." height="100%" width="100%">
   themselves or to replicate the visualization
 
 ### Blog posts
+
 #### Title
   * Gives an overview of what the graph is about
   * Uses the `h3` heading style
   * 2 lines of text maximum
+
 #### Subtitle
   * Explains the general trends of the graph and what that means, including why
   it is important
   * Uses the `h4` heading style
   * 3 lines of text maximum
+
 #### Notes
   * Describes any caveats or inconsistencies with the data such as explaining
   why numbers do not add up to 100% or the specific dates that the data is
   pulled from
+
 #### Date
   * Include a date to at least the month and year of when the data was
   collected to provide context and accuracy over time.
+
 #### Data source information
   * Provides a link to the URL of a spreadsheet or to the source of the data
   * Important to include for trustworthiness and validity
@@ -105,27 +115,33 @@ alt="Labeled display of the titles on a chart." height="100%" width="100%">
   themselves or to replicate the visualization
 
 ### Social media
+
 #### Title
   * Gives an overview of what the graph is about
   * Uses the `h3` heading style
   * 2 lines of text maximum
+
 #### Subtitle
   * Explains the general trends of the graph and what that means, including why
   it is important
   * Uses the `h4` heading style
   * 3 lines of text maximum
+
 #### Notes
   * Describes any caveats or inconsistencies with the data such as explaining
   why numbers do not add up to 100% or the specific dates that the data is
   pulled from
+
 #### Date
   * Include a date to at least the month and year of when the data was
   collected to provide context and accuracy over time.
+
 #### Data source information
   * Provides a link to the URL of a spreadsheet or to the source of the data
   * Important to include for trustworthiness and validity
   * Allows people to dive deeper into the data and explore the nuances for
   themselves or to replicate the visualization
+
 #### CFPB logo
   * Include the CFPB logo; helps with identification and determining origin if
   the graphic gets re-used
