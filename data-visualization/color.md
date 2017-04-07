@@ -41,6 +41,14 @@ width="100%">
 To highlight part of a set of data, or show that things are related, use a tint
 or a shade of the main color.
 
+##### Examples
+
+<img
+src="{{site.baseurl}}/static/img/data-visualization/subsets-and-relationships-color-1.png"
+alt="Bar chart using subsets and relationships in color for financial
+marketplace complaints in both New York state and the smaller New York metro
+area." height="50%" width="50%">
+
 #### Categorical
 Use categorical color schemes when you're visualizing groups of things. These
 are discrete colors that do not imply an visual relationship between the sets
@@ -59,10 +67,12 @@ alt="Bar chart using categorical color while showing complaints by region (New
 When you're displaying sequential data that shows a range of data in a ranked
 order, use these sequential colors to imply the relationship.
 
+##### Examples
+
 <img
-src="{{site.baseurl}}/static/img/data-visualization/datavis_color_03_09.png"
-alt="A list of sequential colors for use in data visualizations." height="100%"
-width="100%">
+src="{{site.baseurl}}/static/img/data-visualization/sequential-color-1.png"
+alt="Map using sequential color to show a percentage change across different
+areas of the United States." height="50%" width="50%">
 
 ### Color accessibility
 Color should never be solely relied on to convey meaning in a visualization
