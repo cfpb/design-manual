@@ -253,6 +253,10 @@ secondarynav:
   url: data-visualization/audience.html
   internal: true
   category: Data visualization
+- text: Chart components
+  url: data-visualization/chart-components.html
+  internal: true
+  category: Data visualization
 - text: Chart types
   url: data-visualization/chart-types.html
   internal: true
@@ -265,11 +269,6 @@ secondarynav:
   url: data-visualization/emphasis.html
   internal: true
   category: Data visualization
-- text: Text
-  url: data-visualization/text.html
-  internal: true
-  category: Data visualization
-
 
 # Footer Navigation
 # List links that should appear in the footer navigation (footer) here
