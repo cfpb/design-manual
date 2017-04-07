@@ -117,6 +117,6 @@ alt="Labeled display of the titles on a chart." height="100%" width="100%">
   * Important to include for trustworthiness and validity
   * Allows people to dive deeper into the data and explore the nuances for
   themselves or to replicate the visualization
-<h4>CFPB Logo</h4>
+<h4>CFPB logo</h4>
   * Include the CFPB logo; helps with identification and determining origin if
   the graphic gets re-used
