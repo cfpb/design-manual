@@ -13,7 +13,7 @@ published: true
 Consider your audience when you're creating data visualization.
 {: class="lead-in"}
 
-<h5>Key questions</h5>
+##### Key questions
 * Who is your audience?
 * What is their familiarity with data visualization?
 * How much information do they need?

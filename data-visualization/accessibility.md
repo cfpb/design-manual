@@ -6,7 +6,7 @@ published: true
 ---
 
 - [Alt tags](#alt-tags)
-- [Color contrast and color blindness](#color-contrast-color-blindness)
+- [Color contrast and color blindness](#color-contrast-and-color-blindness)
  {: class="toc"}
 
 
@@ -18,11 +18,11 @@ starting with descriptive titles (see the [Data visualization text
   meaning (see the [Data visualization color section](color.html)).
 {: class="lead-in"}
 
-<h5>Key questions</h5>
+##### Key questions
 * How would someone using a screen reader interact with this visualization?
 * How would someone with low vision interact with this visualisation?
 
-<h3 id="alt-tags">Alt tags</h3>
+### Alt tags
 Alt tags are what a screen reader will say instead of the image. This is
 important for not only web materials, but charts that are in pdfs and charts
 that are placed as images into word documents.
@@ -43,6 +43,6 @@ York state and the United States.
 with impaired vision can tab through the data with a screen reader. The data
 should have descriptive column labels and provide a link.
 
-<h3 id="color-contrast-color-blindness">Color contrast and color blindness</h3>
+### Color contrast and color blindness
 
 See the [color section](color.html) of these data visualization guidelines.

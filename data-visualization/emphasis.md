@@ -5,17 +5,23 @@ category: Data visualization
 published: true
 ---
 
+- [Visual hierarchy](#visual-hierarchy)
+- [Labels](#labels)
+- [Projected values](#projected-values)
+{: class="toc"}
+
+
 Highlighting parts of your chart will help users quickly understand the point
 of the graphic and accurately comprehend the information.
 {: class="lead-in"}
 
-<h5>Key questions</h5>
+##### Key questions
 * What is the point of the chart?
 * Can someone who hasn’t seen the chart before figure out the point from a
 quick look and the title?
 
 
-<h3 id="visual-hierarchy">Visual hierarchy</h3>
+### Visual hierarchy
 Good visual hierarchy allows the user to focus on the most important piece of
 content first and work their way into the graphic. The title and subtitle
 should be the first thing that the user reads when viewing the chart to give
@@ -27,19 +33,19 @@ Use the squint test (take a step back from your graph, squint your eyes, and
   automatically identify first.
 
 
-<h3 id="labels">Labels</h3>
+### Labels
 Goals, trends, and important outliers should be highlighted to help the user
 discern what is going on with the data. Labels will help the user understand
 the data and make sense of what it is showing.
 
 
-<h3 id="projected-values">Projected values</h3>
+### Projected values
 When dealing with projected or predicted data, the predicted data should be
 deemphasized. Use a color change to a lighter tint or dashed outline for bar
 charts, a dotted line for line charts, and a label explaining what part of the
 data is predicted or projected.
 
-<h6>Examples</h6>
+##### Examples
 
 <img
 src="{{site.baseurl}}/static/img/data-visualization/projected-values-1.png"

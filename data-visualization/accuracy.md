@@ -16,13 +16,13 @@ One small error can invalidate the integrity of an entire visualization.
 Several errors in data accuracy can damage credibility.
 {: class="lead-in"}
 
-<h5>Key questions</h5>
+##### Key questions
 * Is this an accurate way to represent this data?
 * Did someone else look at the chart and data for feedback?
 * If there are percentages, do they add up to 100? Why not?
 * What is the source of the data?
 
-<h3 id="notes-section">Notes section</h3>
+### Notes section
 When using charts that show percentages, users expect things to add up to 100%.
 If they don’t it undermines the integrity of the visuals by leaving the user
 with missing pieces.
@@ -40,7 +40,7 @@ compared to the previous year.
 > _Example:_ Company-level information should be considered in context of total
 complaints, company size and market share in a given geographic area.
 
-<h3 id="sources-section">Sources section</h3>
+### Sources section
 Including the source of the data in the visualization is a must. It adds
 credibility and transparency to the graph. The visualization could then be
 replicated using the mentioned sources which adds credibility.

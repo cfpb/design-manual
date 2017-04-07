@@ -17,12 +17,12 @@ used poorly, color can overwhelm the user, make the data confusing and break
 with brand standards to appear inconsistent.
 {: class="lead-in"}
 
-<h5>Key questions</h5>
+##### Key questions
 * Does the use of color have a purpose?
 * Have you relied on more than just color to connote meaning?
 * Have you accounted for color blindness?
 
-<h3 id="color-schemes">Color schemes</h3>
+### Color schemes
 
 The following sets of colors maintain CFPB brand cohesion and create accessible
 graphics.
@@ -37,16 +37,16 @@ src="{{site.baseurl}}/static/img/data-visualization/datavis_color_03_06.png"
 alt="A list of color options for use in data visualizations." height="100%"
 width="100%">
 
-<h4 id="subsets-relationships">Subsets and relationships</h4>
+#### Subsets and relationships
 To highlight part of a set of data, or show that things are related, use a tint
 or a shade of the main color.
 
-<h4 id="categorical">Categorical</h4>
+#### Categorical
 Use categorical color schemes when you're visualizing groups of things. These
 are discrete colors that do not imply an visual relationship between the sets
 of data.
 
-<h6>Examples</h6>
+##### Examples
 
 <img
 src="{{site.baseurl}}/static/img/data-visualization/categorical-color-1.png"
@@ -54,7 +54,7 @@ alt="Bar chart using categorical color while showing complaints by region (New
   York metro area, New York state and the United States) for different
   financial categories." height="50%" width="50%">
 
-<h4 id="sequential">Sequential</h4>
+#### Sequential
 
 When you're displaying sequential data that shows a range of data in a ranked
 order, use these sequential colors to imply the relationship.
@@ -64,7 +64,7 @@ src="{{site.baseurl}}/static/img/data-visualization/datavis_color_03_09.png"
 alt="A list of sequential colors for use in data visualizations." height="100%"
 width="100%">
 
-<h3 id="color-accessibility">Color accessibility</h3>
+### Color accessibility
 Color should never be solely relied on to convey meaning in a visualization
 because of accessibility standards for people who are blind and visually
 impaired. There should be other clues beyond color to convey meaning or
@@ -75,7 +75,7 @@ You can use the [Color Palette Accessibility
 Checker](https://accessibility.oit.ncsu.edu/tools/color-contrast/accessible-color-palette.php?&colors=1e9642,20aa3f,66c368,addc91,c7e5b3,e2efd8,005e5d,257675,579695,89b6b5,b4d2d1,d4e7e6,0050b4,0072ce,4497dc,7eb7e8,afd2f2,d6e8fa,002d72,254b87,5674a3,889cc0,b3c0d9,d3daeb,a01b68,b4267a,c55998,d486b2,e3b2cc,f0d8e2,b63014,d14124,dd735d,e79e8e,f0c3b8,f7e0d9,dc731c,ff9e1b,ffb858,ffce8d,ffe1b9,fff0dd,745745,8a6c57,a18573,baa496,d3c5bc,e7ddd7,101820,43484e,5a5d61,75787b,919395,b4b5b6,d2d3d5,e7e8e9,f7f8f9,ffffff&main=ffffff&level=AA) to check and confirm the
 accessibility of CFPB colors at different type sizes.
 
-<h3 id="color-blindness">Color blindness</h3>
+### Color blindness
 When choosing colors for a graph, keep in mind that they may look different to
 people with color blindness. [About 1 in 12 men with Northern European ancestry
 have green/red color
@@ -86,7 +86,7 @@ pro/con, yes/no, positive/negative relationships. This both improves
 accessibility associated with color blindness, and also leaves the CFPB green
 color to represent the brand.
 
-<h6>Examples</h6>
+##### Examples
 
 This is an example of a visualization using the green/red combination, and how
 it can appear to someone with red/green color blindness:
