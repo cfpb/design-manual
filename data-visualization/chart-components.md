@@ -33,31 +33,22 @@ chart will be about. This not only provides users a framework of what they are
 looking at, but also helps with 508 accessibility and decreases the amount of
 text necessary in alt tags.
 
-<nomarkdown>
 <img
 src="{{site.baseurl}}/static/img/data-visualization/Parts-of-a-chart_01.png"
 alt="Labeled display of the titles on a chart." height="100%" width="100%">
-</nomarkdown>
-<br />
 
 <h3 id="labels-keys">Labels and keys</h3>
 Wherever possible, charts should not include a key, and data should be directly
 labeled. This reduces the cognitive burden for the user so they are not hunting
 for labels and trying to connect colors to the data.
 
-<nomarkdown>
 <img
 src="{{site.baseurl}}/static/img/data-visualization/Parts-of-a-chart_012.png"
 alt="Labeled display of the titles on a chart." height="100%" width="100%">
-</nomarkdown>
-<br />
 
-<nomarkdown>
 <img
 src="{{site.baseurl}}/static/img/data-visualization/Parts-of-a-chart_013.png"
 alt="Labeled display of the titles on a chart." height="100%" width="100%">
-</nomarkdown>
-<br />
 
 <h3 id="reports">Reports</h3>
 <h4>Figure number</h4>

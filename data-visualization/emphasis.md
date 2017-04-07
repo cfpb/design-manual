@@ -41,18 +41,12 @@ data is predicted or projected.
 
 <h6>Examples</h6>
 
-<nomarkdown>
 <img
 src="{{site.baseurl}}/static/img/data-visualization/projected-values-1.png"
 alt="Line chart that has a projected values label, as well as changes in color
 and pattern to indicate the projected data." height="50%" width="50%">
-</nomarkdown>
-<br />
 
-<nomarkdown>
 <img
 src="{{site.baseurl}}/static/img/data-visualization/projected-values-2.png"
 alt="Bar chart that has a projected values label, as well as changes in color
 to indicate the projected data." height="50%" width="50%">
-</nomarkdown>
-<br />
