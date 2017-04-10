@@ -18,7 +18,7 @@ people to understand.
 {: class="lead-in"}
 
 To help you choose what graph is best for your data, take a look at:
-[www.betterevaluation.org/sites/default/files/choosing-a-good-chart-09.pdf](www.betterevaluation.org/sites/default/files/choosing-a-good-chart-09.pdf)
+[www.betterevaluation.org/sites/default/files/choosing-a-good-chart-09.pdf](http://www.betterevaluation.org/sites/default/files/choosing-a-good-chart-09.pdf)
 {: class="lead-in"}
 
 ##### Key questions
