@@ -59,7 +59,7 @@ alt="Bar charts showing complaints by region (New York metro area, New
 York state and the United States) for different financial categories."
 height="50%" width="50%">
 
-### id="line-charts">Line charts
+### Line charts
 Use when you have one factor over time to show change. Start your axis at 0 and
 label your axis to avoid confusion.
 
