@@ -29,8 +29,8 @@ them context of what the chart is about. Therefore, they should be the biggest
 thing on the chart (see the [Data visualization text section](text.html)).
 
 Use the squint test (take a step back from your graph, squint your eyes, and
-  say what you see first, second, third…) to get a sense of what you users will
-  automatically identify first.
+say what you see first, second, third…) to get a sense of what your users will
+automatically identify first.
 
 
 ### Labels
