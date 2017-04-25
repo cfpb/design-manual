@@ -18,24 +18,26 @@ Expandables can be  used for displaying non-essential information on a page. The
 </div>
 
 <div class="content-50 content-last">
-  <h5 class="repo-list-header">Repository</h5>
+  <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-expandables"><h4>cf-expandables</h4></a>
-      <p>Expandables in the Capital Framework</p>
+      <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-expandables">
+        <h4>cf-expandables</h4>
+      </a>
+      <p>Expandables in Capital Framework</p>
     </li>
   </ul>
 </div>
 
-<h2 id="use">Use<span class="cf-code-link"><a href="https://cfpb.github.io/capital-framework/components/cf-expandables/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Use
 
 The `find` function will not discover information hidden by a collapsed expandable, so use good judgement in deciding which information to hide.
 Non-javaScript users should default to the expanded state. Otherwise, the default state (expanded or collapsed) will depend on the circumstance.
 
-<h2 id="style">Style</h2>
+## Style
 
 <h3 class="h4">Individual</h3>
 

@@ -30,21 +30,21 @@ In general, forms should be as simple and direct as possible to minimize scrolli
 
 
 <div class="content-50 content-last">
-  <h5 class="repo-list-header">Repository</h5>
+  <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-forms"><h4>cf-forms</h4></a>
-      <p>Forms in the Capital Framework</p>
+      <a href="https://github.com/cfpb/capital-framework/tree/canary/src/cf-forms"><h4>cf-forms</h4></a>
+      <p>Forms in Capital Framework</p>
     </li>
   </ul>
 </div>
 
 <!--**************************************    Text Input fields    **************************************-->
 
-<h2 id="inputs">Text Input Fields<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Text Input Fields
 
 <div class="content-66 content-first">
 <strong>Usability</strong><br>
@@ -162,7 +162,7 @@ Use for longer-form answers.
 <!--******************************-    LABELS AND HELPER TEXT     ******************************-->
 
 
-<h2 id="labels">Labels and helper text<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Labels and helper text
 
 
 
@@ -385,7 +385,7 @@ Error minicon and message should appear below the field.
 <!--******************************-    VALIDATION     ******************************-->
 
 
-<h2 id="validation">Form validation<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Form validation
 
 <div class="content-66 content-first">
 
@@ -473,7 +473,7 @@ Use to confirm that the form has been successfully submitted
 <!--******************************-    CHECKBOXES AND RADIO BUTTONS     ******************************-->
 
 
-<h2 id="checkboxes">Checkboxes and radio buttons<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Checkboxes and radio buttons
 
 
 
@@ -770,7 +770,7 @@ Radio button:
 
 <!--**************************************    Dropdowns   **************************************-->
 
-<h2 id="dropdowns">Dropdowns<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Dropdowns
 
 <div class="content-66 content-first">
 
@@ -851,7 +851,7 @@ Fill: #f1f2f2  (Grey 10)
 
 <!--**************************************    Range sliders   **************************************-->
 
-<h2 id="sliders">Range sliders<span class="cf-code-link"><a href="https://cfpb.github.io/cf-forms/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Range sliders
 
 <div class="content-66 content-first">
 

@@ -28,7 +28,14 @@ A clear typographic hierarchy is critical to the effective communication of our 
 
 </div>
 
-<h2 id="typefaces">Typefaces<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="typefaces">
+    Typefaces
+    <span class="cf-code-link">
+        <a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-core/src/cf-base.less">
+            View code <span class="cf-icon cf-icon-external-link"></span>
+        </a>
+    </span>
+</h2>
 
 ### Avenir Next
 
@@ -118,7 +125,7 @@ abcdefghijklmnopqrstuvwxyz
 
 </div>
 
-<h2 id="web-hierarchy">Web hierarchy<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Web hierarchy
 
 <p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read; a successful hierarchy enables readers to easily scan content.</p>
 

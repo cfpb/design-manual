@@ -20,19 +20,21 @@ Links lead users to a different page or further information. In contrast, <a hre
 </div>
 
 <div class="content-50 content-last">
-  <h5 class="repo-list-header">Repository</h5>
+  <h5 class="repo-list-header">Code Source</h5>
   <ul class="repo-list">
     <li>
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-typography"><h4>cf-typography</h4></a>
-      <p>Links in the Capital Framework</p>
+      <a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-core/src/cf-base.less#L396">
+        <h4>cf-core</h4>
+      </a>
+      <p>Links in Capital Framework</p>
     </li>
   </ul>
-</div> 
+</div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Style
 
 <div class="content-33 content-first">
 
@@ -42,7 +44,7 @@ Links that appear in body text or link lists are underlined. Links are underline
 
 <div class="content-67 content-last">
 ##### Georgia paragraph links
-Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>. 
+Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>.
 
 ---
 
@@ -55,7 +57,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 </div>
 
 
-<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## States
 
 <div class="content-33 content-first">
 #### Default
@@ -110,7 +112,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 </div>
 
 
-<h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Variations
 
 <div class="content-33 content-first">
 #### Links in headers
@@ -119,7 +121,7 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 <div class="content-67 content-last">
 # Header 2 <a href="#">link style</a>
 
-Lorem ipsum dolor sit amet. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. Et ultricies erat pellentesque nec. Suspendisse quis faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. 
+Lorem ipsum dolor sit amet. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. Et ultricies erat pellentesque nec. Suspendisse quis faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum.
 </div>
 
 ---

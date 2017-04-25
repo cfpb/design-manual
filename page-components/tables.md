@@ -18,19 +18,20 @@ Tables divide information into distinct columns and rows to create an intersecti
 </div>
 
 <div class="content-50 content-last">
-  <h5 class="repo-list-header">Repository</h5>
+  <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
       <a href="https://github.com/cfpb/capital-framework/tree/canary/src/cf-tables"><h4>cf-tables</h4></a>
-      <p>Tables in the Capital Framework</p>
+      <p>Tables in Capital Framework</p>
     </li>
   </ul>
 </div>
 
-<h2 id="use-cases">Use cases<span class="cf-code-link"><a href="https://cfpb.github.io/capital-framework/components/cf-tables/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Use cases
+
 <div class="content-50 content-first">
 Tables are only one method for presenting many data points grouped together in a visual way. Other options include charts or graphs.
 
@@ -227,7 +228,7 @@ See [guidance on styles](#style) for a table that scrolls horizontally at all sc
 ![A scrolling table as it would appear on a small screen]({{ site.baseurl }}/static/img/tables/table-small-scroll.png)
 </div>
 
-<h2 id="behavior">Behavior<span class="cf-code-link"><a href="https://cfpb.github.io/capital-framework/components/cf-tables/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Behavior
 
 <div class="content-50 content-first">
 ### Sorting tables
@@ -488,7 +489,7 @@ Remember to always use headers (that is, `<th>` elements) for all data tables to
 
 <div class="content-50 content-last"></div>
 
-<h2 id="content-guidelines">Content guidelines<span class="cf-code-link"><a href="https://cfpb.github.io/capital-framework/components/cf-tables/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Content guidelines
 
 <div class="content-50 content-first">
 As a rule, design tables so that they are easy to read. Label columns precisely and include units of measurement where necessary. Organize the data so that the underlying meaning is quickly apparent.
@@ -695,7 +696,14 @@ If units differ from column to column, the standard is to list the unit of measu
 {:/nomarkdown}
 </div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/capital-framework/components/cf-tables/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">
+    Style
+    <span class="cf-code-link">
+        <a href="https://github.com/cfpb/capital-framework/tree/canary/src/cf-tables">
+            View code <span class="cf-icon cf-icon-external-link"></span>
+        </a>
+    </span>
+</h2>
 
 <div class="content-50 content-first">
 <h3 class="h4">Default table and directory table (large screens)</h3>
