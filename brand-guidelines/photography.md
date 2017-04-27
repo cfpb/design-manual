@@ -47,7 +47,7 @@ Editorial photographs capture the events and activities attended by CFPB staff. 
 
 <div class="content-33 content-first">
 
-###Treatment
+### Treatment
 
 Photos should have a clear focal point, proper lighting, and dynamic composition.
 
