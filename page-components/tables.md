@@ -46,7 +46,7 @@ Tables work best when:
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
-    <table class="table__stack-on-small" style="width: 100%;">
+    <table class="o-table o-table__stack-on-small">
         <thead>
             <tr>
                 <th>
@@ -142,7 +142,7 @@ See [guidance on styles](#style) for a a directory table and how it should look 
         </span>
         Directory table on large screens
     </p>
-    <table class="table__stack-on-small table__entry-header-on-small" style="width: 100%;">
+    <table class="o-table o-table__stack-on-small">
         <thead>
             <tr>
                 <th>
@@ -249,7 +249,7 @@ If sorting is needed for smaller screens, use a filter-like expandable with a so
 
 <div class="content-50 content-last">
 {::nomarkdown}
-<table class="table__sortable" style="width: 100%;">
+<table class="o-table o-table__sortable">
   <thead>
       <tr>
           <th>
@@ -261,7 +261,7 @@ If sorting is needed for smaller screens, use a filter-like expandable with a so
             </button>
           </th>
           <th>
-            <button class="sortable sortable__start-up" data-sort_type="number">
+            <button class="sortable sorted-up" data-sort_type="number">
               Distance
             </button>
           </th>
@@ -324,27 +324,27 @@ Tables can be paired with a filter to show only rows that meet certain criteria.
 
 <div class="content-50 content-last">
 {::nomarkdown}
-<div class="expandable expandable__filters expandable__padded js-post-filter">
-    <button class="expandable_header expandable_target" aria-pressed="false">
-        <span class="expandable_header-left expandable_label">
+<div class="o-expandable o-expandable__filters o-expandable__padded">
+    <button class="o-expandable_header o-expandable_target" aria-pressed="false">
+        <span class="o-expandable_header-left o-expandable_label">
             Filter activities
         </span>
-        <span class="expandable_header-right expandable_link">
-            <span class="expandable_cue-open" style="display: inline;">
+        <span class="o-expandable_header-right o-expandable_link">
+            <span class="o-expandable_cue-open">
                 Show
               <span class="cf-icon cf-icon-plus-round"></span>
             </span>
-            <span class="expandable_cue-close" style="display: none;">
+            <span class="o-expandable_cue-close">
                 Hide
                 <span class="cf-icon cf-icon-minus-round"></span>
             </span>
         </span>
     </button>
-    <div class="expandable_content" aria-expanded="false" style="display: none;">
+    <div class="o-expandable_content" aria-expanded="false">
         <p>Filter options go here</p>
     </div>
 </div>
-<table class="table__stack-on-small" style="width: 100%;">
+<table class="o-table o-table__stack-on-small">
     <thead>
         <tr>
             <th class="u-w20pct">
@@ -405,7 +405,7 @@ Tables with over 20 rows can be paired with pagination.
 
 <div class="content-50 content-last">
 {::nomarkdown}
-<table class="table__stack-on-small" style="width: 100%;">
+<table class="o-table o-table__stack-on-small">
     <thead>
         <tr>
             <th class="u-w20pct">
@@ -449,33 +449,41 @@ Tables with over 20 rows can be paired with pagination.
         </tr>
     </tbody>
 </table>
-<nav class="post-pagination pagination" role="navigation" aria-label="Pagination" data-ajax-action="posts-paginated.html">
-    <a class="btn btn__super btn__disabled pagination_prev">
-
-        <span class="btn_icon__left cf-icon cf-icon-left"></span>
+<nav class="m-pagination" role="navigation" aria-label="Pagination" >
+    <a class="a-btn
+              a-btn__disabled
+              m-pagination_btn-prev">
+        <span class="cf-icon cf-icon-left cf-icon__before"></span>
         Newer
     </a>
-    <a class="btn btn__super pagination_next" href="#">Older
-        <span class="btn_icon__right cf-icon cf-icon-right"></span>
+
+    <a class="a-btn
+              m-pagination_btn-next" href="#">
+        Older
+        <span class="cf-icon cf-icon-right cf-icon__after"></span>
     </a>
-    <form class="pagination_form js-validate_pagination" action="#">
-        <label class="pagination_label" for="pagination_current-page">
+
+    <form class="m-pagination_form" action="#">
+        <label class="m-pagination_label" for="m-pagination_current-page">
             Page
             <span class="u-visually-hidden">
                 number out of 3 total pages
             </span>
+            <input class="m-pagination_current-page"
+                   id="m-pagination_current-page"
+                   name="page"
+                   type="number"
+                   min="1"
+                   max="3"
+                   inputmode="numeric"
+                   value="1">
+            of 3
         </label>
-        <input class="pagination_current-page" id="pagination_current-page" name="page" type="number" min="1" max="3" value="1">
-
-
-    <label class="pagination_label">
-            <span aria-hidden="true">
-                of 3
-            </span>
-        </label>
-        <button class="btn btn__link pagination_submit" id="pagination_submit" type="submit">
-            Go
-        </button>
+        <button class="a-btn
+                       a-btn__link
+                       m-pagination_submit-btn"
+                id="pagination_submit"
+                type="submit">Go</button>
     </form>
 </nav>
 {:/nomarkdown}
@@ -519,105 +527,101 @@ If units differ from column to column, the standard is to list the unit of measu
 
 <div class="content-50 content-last">
 {::nomarkdown}
-<div class="regular-ex">
-    <p>
-        <span class="h5">
-            Table 1:
-        </span>
-        Budget by strategic goal
-    </p>
-</div>
-<table class="table__stack-on-small" style="width: 100%;">
+<p>
+    <span class="h5">
+        Table 1:
+    </span>
+    Budget by strategic goal
+</p>
+<table class="o-table o-table__stack-on-small">
     <thead>
         <tr>
-            <th>
-
-            </th>
-            <th class="table_cell__right-align">
+            <th></th>
+            <th class="o-table_cell__right-align">
                 FY 2011*
             </th>
-            <th class="table_cell__right-align">
+            <th class="o-table_cell__right-align">
                 %
             </th>
-            <th class="table_cell__right-align">
+            <th class="o-table_cell__right-align">
                 FY 2012*
             </th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td data-label="">
+            <td>
                 Goal 1
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 $252.0
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 48%
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 $279.4
             </td>
         </tr>
         <tr>
-            <td data-label="">
+            <td>
                 Goal 2
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 $107.8
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 20%
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 $131.6
             </td>
         </tr>
         <tr>
-            <td data-label="">
+            <td>
                 Goal 3
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 $46.4
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 9%
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 $56.3
             </td>
         </tr>
         <tr>
-            <td data-label="">
+            <td>
                 Goal 4
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 $118.2
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 23%
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 $138.6
             </td>
         </tr>
         <tr>
-            <td data-label="">
+            <td>
                 <strong>
                     Total
                 </strong>
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 <strong>
                     $524.4
                 </strong>
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 <strong>
                     100%
                 </strong>
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 <strong>
                     $605.9
                 </strong>
@@ -625,20 +629,16 @@ If units differ from column to column, the standard is to list the unit of measu
         </tr>
     </tbody>
 </table>
-<div class="regular-ex">
-    <p>
-        * In millions
-    </p>
-</div>
-<div class="regular-ex">
-    <p>
-        <span class="h5">
-            Table 2:
-        </span>
-        Key investments
-    </p>
-</div>
-<table class="table__stack-on-small" style="width: 100%;">
+<p><small>* In millions</small></p>
+
+
+<p>
+    <span class="h5">
+        Table 2:
+    </span>
+    Key investments
+</p>
+<table class="o-table o-table__stack-on-small">
     <thead>
         <tr>
             <th>
@@ -647,7 +647,7 @@ If units differ from column to column, the standard is to list the unit of measu
             <th>
                 Key investment descripton
             </th>
-            <th class="table_cell__right-align">
+            <th class="o-table_cell__right-align">
                 %
             </th>
         </tr>
@@ -660,7 +660,7 @@ If units differ from column to column, the standard is to list the unit of measu
             <td data-label="Key investment descripton">
                 Disclosure, design, testing, implementation
             </td>
-            <td data-label="%" class="table_cell__right-align">
+            <td data-label="%" class="o-table_cell__right-align">
                 16
             </td>
         </tr>
@@ -671,7 +671,7 @@ If units differ from column to column, the standard is to list the unit of measu
             <td data-label="Key investment descripton">
                 Small business rulemaking
             </td>
-            <td data-label="%" class="table_cell__right-align">
+            <td data-label="%" class="o-table_cell__right-align">
                 9
             </td>
         </tr>
@@ -682,17 +682,16 @@ If units differ from column to column, the standard is to list the unit of measu
             <td data-label="Key investment descripton">
                 Large business rulemaking
             </td>
-            <td data-label="%" class="table_cell__right-align">
+            <td data-label="%" class="o-table_cell__right-align">
                 20
             </td>
         </tr>
     </tbody>
 </table>
-<div class="regular-ex">
-    <p>
-        * In millions
-    </p>
-</div>
+<p>
+    <small>* In millions</small>
+</p>
+
 {:/nomarkdown}
 </div>
 
@@ -732,7 +731,7 @@ This is the default style at the large screen breakpoint. It is also how the dir
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
-<table class="table__stack-on-small" style="width: 100%;">
+<table class="o-table o-table__stack-on-small">
     <thead>
         <tr>
             <th>
@@ -859,7 +858,7 @@ Striping is useful to help the eye track across table rows. Use striping for tab
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
-<table class="table__stack-on-small table__striped" style="width: 100%;">
+<table class="o-table o-table__stack-on-small o-table__striped">
     <thead>
         <tr>
             <th>
@@ -932,7 +931,7 @@ Left-align columns of nominal numbers (ZIP codes, room numbers) or non-numeric v
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
-<table class="table__stack-on-small" style="width: 100%;">
+<table class="o-table o-table__stack-on-small">
     <thead>
         <tr>
             <th>
@@ -941,7 +940,7 @@ Left-align columns of nominal numbers (ZIP codes, room numbers) or non-numeric v
             <th>
                 ZIP
             </th>
-            <th class="table_cell__right-align">
+            <th class="o-table_cell__right-align">
                 Records
             </th>
         </tr>
@@ -954,7 +953,7 @@ Left-align columns of nominal numbers (ZIP codes, room numbers) or non-numeric v
             <td data-label="ZIP">
                 96122
             </td>
-            <td class="table_cell__right-align" data-label="Records">
+            <td class="o-table_cell__right-align" data-label="Records">
                 8
             </td>
         </tr>
@@ -965,7 +964,7 @@ Left-align columns of nominal numbers (ZIP codes, room numbers) or non-numeric v
             <td data-label="ZIP">
                 94012
             </td>
-            <td class="table_cell__right-align" data-label="Records">
+            <td class="o-table_cell__right-align" data-label="Records">
                 586
             </td>
         </tr>
@@ -976,7 +975,7 @@ Left-align columns of nominal numbers (ZIP codes, room numbers) or non-numeric v
             <td data-label="ZIP">
                 96201
             </td>
-            <td class="table_cell__right-align" data-label="Records">
+            <td class="o-table_cell__right-align" data-label="Records">
                 126
             </td>
         </tr>
@@ -987,7 +986,7 @@ Left-align columns of nominal numbers (ZIP codes, room numbers) or non-numeric v
             <td data-label="ZIP">
                 96104
             </td>
-            <td class="table_cell__right-align" data-label="Records">
+            <td class="o-table_cell__right-align" data-label="Records">
                 1,685
             </td>
         </tr>
@@ -1003,15 +1002,14 @@ Column widths are automatically set by browsers by default. If needed, some or a
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
-<div class="regular-ex">
-    <p>
-        <span class="h5">
-            Table 1:
-        </span>
-        Table with column widths set automatically by the browser
-    </p>
-</div>
-<table class="table table__stack-on-small" style="width: 100%; margin-bottom: 30px;">
+
+<p>
+    <span class="h5">
+        Table 1:
+    </span>
+    Table with column widths set automatically by the browser
+</p>
+<table class="o-table o-table__stack-on-small">
     <thead>
         <tr>
             <th>
@@ -1050,15 +1048,14 @@ Column widths are automatically set by browsers by default. If needed, some or a
         </tr>
     </tbody>
 </table>
-<div class="regular-ex">
-    <p>
-        <span class="h5">
-            Table 2:
-        </span>
-        Table with columns fixed at 20%, 60%, and 20% of the table width
-    </p>
-</div>
-<table class="table table__stack-on-small" style="width: 100%;">
+
+<p>
+    <span class="h5">
+        Table 2:
+    </span>
+    Table with columns fixed at 20%, 60%, and 20% of the table width
+</p>
+<table class="o-table o-table__stack-on-small">
     <thead>
         <tr>
             <th class="u-w20pct">
@@ -1110,27 +1107,26 @@ Column widths are automatically set by browsers by default. If needed, some or a
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
-<div class="regular-ex">
-    <p>
-        <span class="h5">
-            Table 1:
-        </span>
-        Budget by strategic goal
-    </p>
-</div>
-<table class="table__stack-on-small" style="width: 100%;">
+<p>
+    <span class="h5">
+        Table 1:
+    </span>
+    Budget by strategic goal
+</p>
+
+<table class="o-table o-table__stack-on-small">
     <thead>
         <tr>
             <th>
 
             </th>
-            <th class="table_cell__right-align">
+            <th class="o-table_cell__right-align">
                 FY 2011*
             </th>
-            <th class="table_cell__right-align">
+            <th class="o-table_cell__right-align">
                 %
             </th>
-            <th class="table_cell__right-align">
+            <th class="o-table_cell__right-align">
                 FY 2012*
             </th>
         </tr>
@@ -1140,13 +1136,13 @@ Column widths are automatically set by browsers by default. If needed, some or a
             <td data-label="">
                 Goal 1
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 $252.0
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 48%
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 $279.4
             </td>
         </tr>
@@ -1154,13 +1150,13 @@ Column widths are automatically set by browsers by default. If needed, some or a
             <td data-label="">
                 Goal 2
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 $107.8
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 20%
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 $131.6
             </td>
         </tr>
@@ -1168,13 +1164,13 @@ Column widths are automatically set by browsers by default. If needed, some or a
             <td data-label="">
                 Goal 3
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 $46.4
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 9%
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 $56.3
             </td>
         </tr>
@@ -1182,13 +1178,13 @@ Column widths are automatically set by browsers by default. If needed, some or a
             <td data-label="">
                 Goal 4
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 $118.2
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 23%
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 $138.6
             </td>
         </tr>
@@ -1198,17 +1194,17 @@ Column widths are automatically set by browsers by default. If needed, some or a
                     Total
                 </strong>
             </td>
-            <td class="table_cell__right-align" data-label="FY 2011*">
+            <td class="o-table_cell__right-align" data-label="FY 2011*">
                 <strong>
                     $524.4
                 </strong>
             </td>
-            <td class="table_cell__right-align" data-label="%">
+            <td class="o-table_cell__right-align" data-label="%">
                 <strong>
                     100%
                 </strong>
             </td>
-            <td class="table_cell__right-align" data-label="FY 2012*">
+            <td class="o-table_cell__right-align" data-label="FY 2012*">
                 <strong>
                     $605.9
                 </strong>
@@ -1216,10 +1212,8 @@ Column widths are automatically set by browsers by default. If needed, some or a
         </tr>
     </tbody>
 </table>
-<div class="regular-ex">
-    <p>
-        * In millions
-    </p>
-</div>
+<p>
+    <small>* In millions</small>
+</p>
 {:/nomarkdown}
 </div>

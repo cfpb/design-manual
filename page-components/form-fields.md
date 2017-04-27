@@ -73,7 +73,7 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input placeholder="placeholder text" type="text">
+<input class="a-text-input" placeholder="placeholder text" type="text">
 {:/nomarkdown}
 
 </div>
@@ -91,7 +91,7 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="focus" placeholder="placeholder text" type="text">
+<input class="a-text-input a-text-input__focused" placeholder="placeholder text" type="text">
 {:/nomarkdown}
 
 </div>
@@ -110,7 +110,7 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="error" type="text" value="invalid input">
+<input class="a-text-input a-text-input__error" type="text" value="invalid input">
 {:/nomarkdown}
 
 </div>
@@ -132,7 +132,7 @@ Limit use. Where possible, use progressive disclosure instead.
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="disabled" disabled="true" autocomplete="off" type="text" value="" title="Test input" placeholder="Placeholder text">
+<input class="a-text-input a-text-input__disabled" disabled="true" autocomplete="off" type="text" value="" title="Test input" placeholder="Placeholder text">
 {:/nomarkdown}
 
 </div>
@@ -153,7 +153,7 @@ Use for longer-form answers.
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<textarea cols="30" rows="5">Placeholder text</textarea>
+<textarea class="a-text-input" cols="30" rows="5">Placeholder text</textarea>
 {:/nomarkdown}
 
 </div>
@@ -186,10 +186,10 @@ Use for longer-form answers.
 
 <div class="content-50 content-last">
 {::nomarkdown}
-<label class="form-label-header">
+<label class="a-label a-label__heading">
     Label
 </label>
-<input type="text">
+<input class="a-text-input" type="text">
 {:/nomarkdown}
 </div>
 
@@ -211,16 +211,16 @@ Use for longer-form answers.
     <legend>Fieldset legend</legend>
     <div class="form-group">
         <div class="form-group_item">
-            <label for="name1">
+            <label class="a-label" for="name1">
                 Label
             </label>
-            <input type="text" id="name1" value="">
+            <input class="a-text-input" type="text" id="name1" value="">
         </div>
         <div class="form-group_item">
-            <label for="name2">
+            <label class="a-label" for="name2">
                 Label
             </label>
-            <input type="text" id="name2" value="">
+            <input class="a-text-input" type="text" id="name2" value="">
         </div>
     </div>
 </fieldset>
@@ -263,13 +263,13 @@ Use block helper text in the following cases:
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label class="form-label-header" for="helper-example">
+<label class="a-label a-label__heading" for="helper-example">
     Label
 </label>
 <label class="form-label-helper-text" for="helper-example">
 Use block helper text for instructions.
 </label>
-<input type="text" id="helper-example">
+<input class="a-text-input" type="text" id="helper-example">
 {:/nomarkdown}
 </div>
 
@@ -287,10 +287,10 @@ Use to indicate whether a field is optional or required (see below).
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<label class="form-label-header" for="helper-inline-example">
+<label class="a-label a-label__heading" for="helper-inline-example">
     Label <span class="form-label-helper-text">(optional)</span>
 </label>
-<input type="text" id="helper-inline-example">
+<input class="a-text-input" type="text" id="helper-inline-example">
 {:/nomarkdown}
 </div>
 
@@ -314,10 +314,10 @@ Don’t use for instructions. Once an input field is focused, the placeholder te
 {::nomarkdown}
 <div class="form-group">
     <div class="form-group_item">
-        <input placeholder="e.g. (212) 555-1212" type="text">
+        <input class="a-text-input" placeholder="e.g. (212) 555-1212" type="text">
     </div>
     <div class="form-group_item">
-        <input placeholder="mm/dd/yyyy" type="text">
+        <input class="a-text-input" placeholder="mm/dd/yyyy" type="text">
     </div>
 </div>
 {:/nomarkdown}
@@ -343,16 +343,16 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 {::nomarkdown}
 <div class="form-group">
     <div class="form-group_item">
-        <label class="form-label-header" for="helper-inline-required">
+        <label class="a-label a-label__heading" for="helper-inline-required">
             Label <span class="form-label-helper-text">(required)</span>
         </label>
-        <input type="text" id="helper-inline-required">
+        <input class="a-text-input" type="text" id="helper-inline-required">
     </div>
     <div class="form-group_item">
-        <label class="form-label-header" for="helper-inline-optional">
+        <label class="a-label a-label__heading" for="helper-inline-optional">
             Label <span class="form-label-helper-text">(optional)</span>
         </label>
-        <input type="text" id="helper-inline-optional">
+        <input class="a-text-input" type="text" id="helper-inline-optional">
     </div>
 </div>
 {:/nomarkdown}

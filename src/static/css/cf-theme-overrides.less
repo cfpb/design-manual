@@ -6,22 +6,6 @@
 /* cf-core
    ========================================================================== */
 
-// Sizing variables
-
-@base-font-size-px:             16px;
-@base-line-height-px:           22px;
-@base-line-height:              unit(@base-line-height-px / @base-font-size-px);
-@mobile-max:                    599px;
-@tablet-min:                    600px;
-
-// Font variables
-@import (less) 'licensed-fonts.css';
-
-@webfont-regular: 'AvenirNextLTW01-Regular';
-@webfont-italic: 'AvenirNextLTW01-Italic';
-@webfont-medium: 'AvenirNextLTW01-Medium';
-@webfont-demi: 'AvenirNextLTW01-Demi';
-
 // Color variables
 
 // body
@@ -37,22 +21,47 @@
 @link-text-active:              @dark-navy;
 @link-underline-active:         @dark-navy;
 
-// thead
-@thead-text:                    @black;
-@thead-bg:                      @gray-5;
+// table
+@table-border:                  @gray-40;
 @td-bg:                         @gray-5;
 @td-bg-alt:                     @gray-10;
 @table-cell-bg_alt:             @gray-5;
-@table-border:                  @gray-40;
 
-// input
-@input-bg:                      @white;
-@input-border:                  @gray-80;
-@input-border-focus:            @pacific;
-@input-placeholder:             @gray-60;
+// thead
+@thead-text:                    @black;
+@thead-bg:                      @gray-5;
 
 // .figure__bordered
 @figure__bordered:              @gray-40;
+
+// Sizing variables
+@base-font-size-px:             16px;
+@base-line-height-px:           22px;
+@base-line-height:              unit( @base-line-height-px / @base-font-size-px );
+
+
+// Breakpoint variables
+@bp-xs-max:                     600px;
+@bp-sm-min:                     @bp-xs-max + 1px;
+@bp-sm-max:                     900px;
+@bp-med-min:                    @bp-sm-max + 1px;
+@bp-med-max:                    1020px;
+@bp-lg-min:                     @bp-med-max + 1px;
+@bp-lg-max:                     1230px;
+@bp-xl-min:                     @bp-lg-max + 1px;
+
+
+// Deprecated
+@mobile-max:                    599px;
+@tablet-min:                    600px;
+
+// Font variables
+@import (less) 'licensed-fonts.css';
+
+@webfont-regular:               'AvenirNextLTW01-Regular';
+@webfont-italic:                'AvenirNextLTW01-Italic';
+@webfont-medium:                'AvenirNextLTW01-Medium';
+@webfont-demi:                  'AvenirNextLTW01-Demi';
 
 
 /* cf-buttons
@@ -86,9 +95,12 @@
 // Sizing variables
 
 // .btn
-@btn-font-size:                 16px;
+@btn-font-size:                 @base-font-size-px;
 @btn-v-padding:                 8px;
-@btn-v-padding-modifier-ie:     .8;
+@btn-v-padding-modifier-ie:     0.8;
+
+// .btn__super
+@btn__super-font-size:          20px;
 
 
 /* cf-expandables
@@ -113,7 +125,7 @@
 // .expandable-group
 @expandable-group_header-text:  @gray-80;
 @expandable-group_header-bg:    @gray-10;
-@expandable-group-bg: @white;
+@expandable-group-bg:           @white;
 @expandable-group-divider:      @gray-60;
 
 // Sizing variables
@@ -121,55 +133,52 @@
 // .expandable_link
 @expandable_link-font-size:     @btn-font-size;
 
+// Transition variables
+
+// Transition timing
+@expandable__transition-speed:  0.25s;
 
 /* cf-forms
    ========================================================================== */
 
-// Color variables
 
-// .error
-@input-error:                   @red;
+// .a-text-input borders
+@input-border:                  @gray-80;
+@input-border__hover:           @pacific;
+@input-border__focused:         @pacific;
+@input-border__active:          @pacific;
+@input-border__error:           @red;
+@input-border__warning:         @gold;
+@input-border__success:         @green;
+@input-border__selected:        #046b99; // $color-primary-alt-darkest
 
-// .warning
-@input-warning:                   @gold;
+// .a-text-input backgrounds
+@input-bg:                      @white;
+@input-bg__active:              @pacific;
+@input-bg__disabled:            @gray-10;
 
-// .disabled
-@input-disabled:                 @gray-10;
+// .a-text-input text
+@input-text__disabled:          @gray-80;
+@input-text__placeholder:       @dark-gray;
 
-// .success
-@input-success:                 @green;
+// .a-text-input icons
+@input-icon__error:             @red;
 
-// .form-label-helper-text
-@label-helper:                  @dark-gray;
+// .a-select
+@select-border:                 @gray-40;
+@select-icon:                   @gray-80;
+@select-icon-bg:                @gray-5;
+@select-text__disabled          @input-text__disabled;
 
-// .form-l-inset_container
-@input-inset-bg:                @gray-10;
-
-// .form-l-inset_container.is-checked
-@input-inset-selected:          @pacific-20;
-
-// checkbox, radio buttons
-@checkbox-border:               @gray-60;
-@checkbox-checked-border:       @dark-gray;
-@checkbox-border-disabled:      @gray-40;
-@checkbox-bg-disabled:          @gray-80;
-@input-active-bg:               @pacific-60;
-
-// range input
-@input-range-bg:                @gray-60;
-@input-range-border:            @gray-40;
-@input-range-handle:            @gray-10;
-
-// .cf-notification
-@notification-bg:               @gray-10;
-@notification-error:            @red-20;
-@notification-success:          @green-20;
-@notification-warning:          @gold-20;
+// .m-form-field__lg-target
+//@input-lg-target:               #d6d7d9; // $color-gray-lighter
+//@input-lg-target__selected:     #9bdaf1; // $color-primary-alt-light
+//@input-lg-target__disabled:     #aeb0b5; // $color-gray-light
 
 // Sizing variables
 
-// .input__super
-@input__super-font-size:        @super-btn-font-size;
+// .a-select
+@select-height:                 30px;
 
 
 /* cf-grid
@@ -187,7 +196,6 @@
 
 @cf-icon-prefix:                cf-icon;
 @cf-icon-path:                  '../fonts';
-@cf-icon-ie7-support:           true;
 
 
 /* cf-layout
@@ -196,9 +204,12 @@
 // Color variables
 
 // .block
-@block__border-top:             @gray-40;
-@block__border-bottom:          @gray-40;
 @block__bg:                     @gray-10;
+@block__border:                 @gray-40;
+@block__border-top:             @block__border;
+@block__border-right:           @block__border;
+@block__border-bottom:          @block__border;
+@block__border-left:            @block__border;
 
 // .content_main
 @content_main-border:           @gray-40;
@@ -206,9 +217,6 @@
 // .content_sidebar
 @content_sidebar-bg:            @gray-10;
 @content_sidebar-border:        @gray-40;
-
-// .content_bar
-@content_bar:                   @green;
 
 // .content_line
 @content_line:                  @gray-40;
@@ -225,13 +233,25 @@
 
 // Color variables
 
-@pagination-text:               @gray-80;
-@pagination-bg:                 @gray-10;
+@pagination-text-color:         @gray-80;
+@pagination-bg-color:           @gray-10;
 
 // Sizing variables
 
-@pagination-font-size:          16px;
-@pagination-bp:                 640px;
+@pagination-font-size-px:       @base-font-size-px;
+@pagination-font-size-em:       unit( @pagination-font-size-px / @base-font-size-px, em );
+@pagination-btn-height-px:      42px;
+@pagination-btn-width-px:       130px;
+
+
+/* cf-tables
+   ========================================================================== */
+
+@table-cell-bg:                 #ffffff; // $color-white
+@table-cell-bg_alt:             #f1f1f1; // $color-gray-lightest
+@table-row-link-bg-hover:       #205493; // $color-cool-blue
+@table-row-link-hover-color:    #ffffff; // $color-white
+@table-scrolling-border:        #e4e2e0; // $color-gray-warm-light
 
 
 /* cf-typography
@@ -239,40 +259,40 @@
 
 // Color variables
 
-// .pull-quote
+// Running text elements
+
+// .a-micro-copy
+@micro-copy:                    @gray-80;
+
+// .a-date
+@date:                          @gray-80;
+
+// .m-pull-quote
 @pull-quote_body:               @black;
 @pull-quote_citation:           @gray-80;
 
-// .micro-copy
-@micro-copy-text:               @gray-80;
+// Headings
 
-// .date
-@date-text:                     @gray-80;
+// .a-heading__icon
+@heading__icon:                 #112e51; // $color-primary-darkest
+@heading__icon__hover:          #205493; // $color-primary-darker
 
-// .category-slug
-@category-slug-text:            @black;
-@category-slug-hover:           @link-text-hover;
+// .a-heading__padded
+@heading__padded:               @dark-gray;
+@heading__padded_bg:            @gray-10;
+@heading__padded_border:        @gray-40;
 
-// .header-slug
-@header-slug-thin-border:       @gray-10;
-@header-slug-thick-border:      @green;
+// Headers
 
-// .padded-header
-@padded-header-text:            @dark-gray;
-@padded-header-bg:              @gray-10;
-@padded-header-border:          @gray-40;
+// .m-slug-header
+@slug-header_border__thin:      @gray-10;
+@slug-header_border__thick:     @green;
 
-// .fancy-slug
-@fancy-slug-text:               @black;
-@fancy-slug-bg:                 @white;
-@fancy-slug-border:             @gray-40;
+// .m-meta-header
+@meta-header_border:            @gray-40;
 
-// .meta-header
-@meta-header-border:            @gray-40;
+// Links
 
-// .jump-link
-@jump-link__bg:                 @gray-10;
-@jump-link__bg-border:          @gray-10;
-
-// .list__branded
-@list__branded-bullet:          @green;
+// .a-link__jump
+@jump-link_bg:                  @gray-10;
+@jump-link_border:              @gray-10;
