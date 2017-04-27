@@ -4535,26 +4535,27 @@ button.o-expandable_header {
 .m-hero {
   background-color: #dce4ef;
 }
-@media only all and (min-width: 37.5625em) {
-  .m-hero {
-    display: table;
-    width: 100%;
-    height: 285px;
-  }
-}
 .m-hero_wrapper {
   padding-top: 1.875em;
   padding-bottom: 1.875em;
 }
 @media only all and (min-width: 37.5625em) {
   .m-hero_wrapper {
-    display: table-row;
+    display: table;
+    min-height: 225px;
+  }
+  @supports (display: flex ) {
+    .m-hero_wrapper {
+      display: -ms-flexbox;
+      display: flex;
+    }
   }
 }
-@media only all and (max-width: 37.5em) {
+@media only all and (min-width: 63.8125em) {
   .m-hero_wrapper {
-    padding-top: 1.875em;
-    padding-bottom: 1.875em;
+    padding-top: 2.8125em;
+    padding-bottom: 2.8125em;
+    min-height: 195px;
   }
 }
 .m-hero_text {
@@ -4578,12 +4579,17 @@ button.o-expandable_header {
     margin-right: -0.25em;
     vertical-align: top;
     width: 58.33333333%;
-    padding: 1.875em 0.9375em;
     display: table-cell;
     vertical-align: middle;
   }
   .lt-ie8 .m-hero_text {
     display: inline;
+  }
+  @supports (display: flex ) {
+    .m-hero_text {
+      display: block;
+      margin: auto;
+    }
   }
 }
 .m-hero_heading {
@@ -4644,57 +4650,36 @@ button.o-expandable_header {
     font-weight: normal !important;
   }
 }
-.m-hero_subhead,
-.m-hero_cta:not( .btn ) {
+.m-hero_subhead {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.25;
 }
 .m-hero_subhead em,
-.m-hero_cta:not( .btn ) em,
-.m-hero_subhead i,
-.m-hero_cta:not( .btn ) i {
+.m-hero_subhead i {
   font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
 .lt-ie9 .m-hero_subhead em,
-.lt-ie9 .m-hero_cta:not( .btn ) em,
-.lt-ie9 .m-hero_subhead i,
-.lt-ie9 .m-hero_cta:not( .btn ) i {
+.lt-ie9 .m-hero_subhead i {
   font-style: normal !important;
 }
 .m-hero_subhead strong,
-.m-hero_cta:not( .btn ) strong,
-.m-hero_subhead b,
-.m-hero_cta:not( .btn ) b {
+.m-hero_subhead b {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 .lt-ie9 .m-hero_subhead strong,
-.lt-ie9 .m-hero_cta:not( .btn ) strong,
-.lt-ie9 .m-hero_subhead b,
-.lt-ie9 .m-hero_cta:not( .btn ) b {
+.lt-ie9 .m-hero_subhead b {
   font-weight: normal !important;
 }
-@media only all and (min-width: 56.3125em) {
-  .m-hero_subhead,
-  .m-hero_cta:not( .btn ) {
-    font-size: 22px;
-  }
-}
-.m-hero_subhead:last-child {
-  margin-bottom: 0;
-}
-.m-hero_cta:not( .btn ) {
-  border-bottom-width: 1px;
-}
-@media only all and (min-width: 37.5625em) {
-  .m-hero_cta {
-    margin-bottom: 0;
+@media only all and (max-width: 56.25em) {
+  .m-hero_subhead {
+    font-size: 18px;
   }
 }
 .m-hero_image-wrapper {
@@ -4705,6 +4690,7 @@ button.o-expandable_header {
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
+  overflow: hidden;
 }
 .lt-ie8 .m-hero_image-wrapper {
   display: inline;
@@ -4724,76 +4710,77 @@ button.o-expandable_header {
   .lt-ie8 .m-hero_image-wrapper {
     display: inline;
   }
+  @supports (display: flex ) {
+    .m-hero_image-wrapper {
+      display: block;
+      margin: auto;
+    }
+  }
 }
 @media only all and (max-width: 37.5em) {
   .m-hero_image-wrapper {
     margin-top: 1.875em;
   }
 }
-.m-hero_image-wrapper__bleed-vertical {
-  position: relative;
-}
-.m-hero_image-wrapper__bleed-vertical .m-hero_image {
-  display: block;
-  height: auto;
-}
-.m-hero_image-wrapper__bleed-vertical .m-hero_image__bleeding {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media only all and (max-width: 37.5em) {
-  .m-hero_image-wrapper__bleed-vertical .m-hero_image__bleeding {
-    display: none;
-  }
-}
-@media only all and (min-width: 37.5625em) {
-  .m-hero_image-wrapper__bleed-vertical .m-hero_image {
-    display: none;
-  }
-}
-@media only all and (min-width: 56.3125em) {
-  .m-hero_image-wrapper__bleed-vertical .m-hero_image {
-    display: none;
-  }
-}
 .m-hero_image {
-  height: 12.1875em;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.m-hero__overlay {
-  background-repeat: no-repeat;
-  background-size: cover;
+.m-hero__knockout {
+  background-color: #5b616b;
+  color: white;
 }
-@media only all and (max-width: 37.5em) {
-  .m-hero__overlay {
-    background-image: none !important;
+@media only all and (min-width: 37.5625em) {
+  .m-hero__bleeding .m-hero_wrapper {
+    position: relative;
   }
-  .m-hero__overlay .m-hero_wrapper {
-    padding-bottom: 0;
+  .m-hero__bleeding .m-hero_image-wrapper {
+    margin-top: -1.875em;
+    margin-bottom: -1.875em;
+    position: absolute;
+    height: 100%;
   }
-  .m-hero__overlay .m-hero_image-wrapper {
-    border-width: 0;
+  @supports (display: flex ) {
+    .m-hero__bleeding .m-hero_image-wrapper {
+      position: relative;
+      height: initial;
+    }
   }
-  .m-hero__overlay .m-hero_image {
+  .m-hero__bleeding .m-hero_image {
+    padding-bottom: 0 !important;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     background-size: cover;
   }
 }
-@media only all and (min-width: 37.5625em) {
-  .m-hero__overlay .m-hero_image {
-    background: transparent !important;
+@media only all and (min-width: 63.8125em) {
+  .m-hero__bleeding .m-hero_image-wrapper {
+    margin-top: -2.8125em;
+    margin-bottom: -2.8125em;
+  }
+}
+.m-hero__overlay .m-hero_wrapper {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media only all and (max-width: 37.5em) {
+  .m-hero__overlay .m-hero_wrapper {
+    background-image: none !important;
+    padding-bottom: 0;
+  }
+  .m-hero__overlay .m-hero_image-wrapper {
+    position: relative;
+    border-width: 0;
   }
 }
 @media only all and (min-width: 37.5625em) {
-  .m-hero__overlay-text .m-hero_wrapper {
-    background-color: #5b616b;
-    color: white;
+  .m-hero__overlay .m-hero_image {
+    display: none;
   }
 }
 /* ==========================================================================
