@@ -1000,6 +1000,8 @@ Left-align columns of nominal numbers (ZIP codes, room numbers) or non-numeric v
 <h3 class="h4">Fixed-width columns</h3>
 
 Column widths are automatically set by browsers by default. If needed, some or all columns can be set to specific widths instead to accommodate longer data or labels.
+
+Fixed-width columns at the 600 px breakpoint and less lose their custom widths and expand to full width. This is the same responsive pattern used for default tables at small screens.
 </div>
 <div class="content-50 content-last">
 {::nomarkdown}
