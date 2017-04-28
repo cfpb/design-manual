@@ -120,19 +120,31 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 {::nomarkdown}
 <button class="a-btn">
-    <span class="a-btn_icon__left cf-icon cf-icon-upload"></span>
+    <span class="a-btn_icon
+                 a-btn_icon__on-left
+                 cf-icon
+                 cf-icon__before
+                 cf-icon-upload"></span>
     Upload document
 </button>
 <br><br>
 
 <div class="m-btn-group">
     <button class="a-btn">
-        <span class="a-btn_icon__left cf-icon cf-icon-left"></span>
+        <span class="a-btn_icon
+                     a-btn_icon__on-left
+                     cf-icon
+                     cf-icons__before
+                     cf-icon-left"></span>
         Back
     </button>
     <button class="a-btn">
         Next
-        <span class="a-btn_icon__right cf-icon cf-icon-right"></span>
+        <span class="a-btn_icon
+                     a-btn_icon__on-right
+                     cf-icon
+                     cf-icon__after
+                     cf-icon-right"></span>
     </button>
 </div>
 {:/nomarkdown}
