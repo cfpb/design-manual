@@ -151,6 +151,34 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 </div>
 
+---
+
+<div class="content-33 content-first">
+
+### Animation
+
+Use [an animated icon]({{site.github.url}}/brand-guidelines/minicons.html#animation)
+in a button to reassure the user that the action they are attempting to perform
+is functioning as intended.
+
+</div>
+
+<div class="content-67 content-last">
+{::nomarkdown}
+
+<button class="a-btn a-btn__disabled">
+    Get your estimates
+    <span class="a-btn-icon
+                 a-btn_icon__on-right
+                 cf-icon
+                 cf-icon-update
+                 cf-icon__after
+                 cf-icon__spin"></span>
+</button>
+
+{:/nomarkdown}
+</div>
+
 ## States
 
 <div class="content-33 content-first">

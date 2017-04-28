@@ -451,6 +451,24 @@ Use after validating on the server side to call out input errors preventing form
 
 <div class="content-50 content-first">
 
+#### Form-level action
+
+Use [animated minicons]({{site.github.url}}/brand-guidelines/minicons.html#animation) to reassure the user that an action is functioning as intended.
+
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<img src="{{site.github.url}}/static/img/forms/form-level-action.png" />
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
 
 #### Form-level success
 

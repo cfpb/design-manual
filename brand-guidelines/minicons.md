@@ -156,6 +156,7 @@ Although color usage is flexible, minicons should always be used in high contras
 <div class="content-33 content-first">
 
 ### Spacing
+
 Padding varies around minicons of various primary shapes. Square, vertically and horizontally rectangular, diagonal, and most complex minicons can fit within the relative padding bounding box. Circular and some complex icons should be slightly larger to offset the visual weight of surrounding negative space.
 
 </div>
@@ -164,6 +165,41 @@ Padding varies around minicons of various primary shapes. Square, vertically and
 
 ![Minicon spacing diagram]({{ site.baseurl }}/static/img/minicons/Minicons4_@2.png "Minicon spacing diagram")
 
+</div>
+
+<div class="content-33 content-first">
+
+### Animation
+
+In certain instances, minicons can be animated to aid communication or to
+reassure the user that an action is functioning as intended. Examples include
+saving or loading content. Depending on the context, the animated minicon
+follows the standards of the component that contains it, for example, the
+minicon follows the size and padding standards for buttons when placed inside
+a [button to indicate loading]({{site.github.url}}/page-components/buttons.html#animation)
+or follows standards of a form-level alert within an
+[alert message]({{site.github.url}}/page-components/form-fields.html#form-level-action).
+
+</div>
+
+<div class="content-67 content-last">
+{::nomarkdown}
+    <div class="minicon-asset-lib">
+        <!-- empty div unfortunately required for layout spacing -->
+        <div class="minicon-assets-div"></div>
+        <div class="minicon-assets-div">
+            <h6>Update</h6>
+            <p>
+                <span class="cf-icon
+                             cf-icon-update
+                             cf-icon__before
+                             cf-icon__spin"></span>
+            </p>
+        </div>
+        <!-- empty div unfortunately required for right border -->
+        <div class="minicon-assets-div"></div>
+    </div>
+{:/nomarkdown}
 </div>
 
 <h2 id="asset-library">
