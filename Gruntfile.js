@@ -203,7 +203,7 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: '<%= loc.src %>/static',
+            cwd: '<%= loc.modules %>/cf-icons/src',
             src: [
               // Fonts
               'fonts/*'
@@ -310,10 +310,6 @@ module.exports = function(grunt) {
       js: {
         files: ['Gruntfile.js', '<%= loc.src %>/static/js/**/*.js'],
         tasks: ['js']
-      },
-      content: {
-        files: ['**/*.html', '/downloads/*.md', '/guides/*.md', '/identity/*.md', '/ui-toolkit/*.md'],
-        tasks: ['copy']
       }
     }
 
