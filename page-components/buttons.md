@@ -168,7 +168,7 @@ is functioning as intended.
 
 <button class="a-btn a-btn__disabled">
     Get your estimates
-    <span class="a-btn-icon
+    <span class="a-btn_icon
                  a-btn_icon__on-right
                  cf-icon
                  cf-icon-update
