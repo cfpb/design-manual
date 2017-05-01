@@ -158,18 +158,33 @@ Use the external link minicon (glyph E610) to emphasize a non-CFPB webpage.
 
 External links should open in the same browser window (i.e., do not set them to ```target="_blank"```). This allows the user to choose whether they want to open an additional window in order to view the content.
 </div>
+
 <div class="content-50 content-last regular-ex">
-<a class="link-with-icon" href="#">External link <span class="cf-icon cf-icon-external-link"></span></a>
+  <a class="a-link
+            a-link__icon
+            cf-icon
+            cf-icon__after
+            cf-icon-external-link" href="#">
+    <span class="a-link_text">External link</span>
+  </a>
 </div>
 
 ---
 
 <div class="content-50 content-first">
 ##### Email links
+
 Use the Email link minicon (glyph E302) to emphasize a <code>mailto</code> link.
 </div>
+
 <div class="content-50 content-last regular-ex">
-<a class="link-with-icon" href="#">Email us <span class="cf-icon cf-icon-email"></span></a>
+  <a class="a-link
+            a-link__icon
+            cf-icon
+            cf-icon__after
+            cf-icon-email" href="#">
+    <span class="a-link_text">Email us</span>
+  </a>
 </div>
 
 ---
@@ -180,13 +195,54 @@ Documents minicons can emphasize a link that contains a file or document.
 
 Document links should open in the same browser window (i.e., do not set them to ```target="_blank"```). This allows the user to choose whether they want to open an additional window in order to view the content.
 </div>
+
 <div class="content-50 content-last regular-ex">
 <ul class="list_links-minicons">
-<li><a class="link-with-icon" href="#">Basic document <span class="cf-icon cf-icon-document"></span></a></li>
-<li><a class="link-with-icon" href="#">Download <span class="cf-icon cf-icon-download"></span></a></li>
-<li><a class="link-with-icon" href="#">Appendix <span class="cf-icon cf-icon-appendix"></span></a></li>
-<li><a class="link-with-icon" href="#">Supplement <span class="cf-icon cf-icon-supplement"></span></a></li>
-<li><a class="link-with-icon" href="#">Attach <span class="cf-icon cf-icon-attach"></span></a></li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-document" href="#">
+      <span class="a-link_text">Basic document</span>
+    </a>
+  </li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-download" href="#">
+      <span class="a-link_text">Download</span>
+    </a>
+  </li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-appendix" href="#">
+      <span class="a-link_text">Appendix</span>
+    </a>
+  </li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-supplement" href="#">
+      <span class="a-link_text">Supplement</span>
+    </a>
+  </li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-attach" href="#">
+      <span class="a-link_text">Attach</span>
+    </a>
+  </li>
 </ul>
 
 </div>
