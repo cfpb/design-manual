@@ -2061,6 +2061,10 @@ button.o-expandable_header {
   background: #ffffff;
 }
 
+.o-expandable-group .o-expandable:first-child {
+  border-top: 1px solid #919395;
+}
+
 .o-expandable-group .o-expandable_label {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
