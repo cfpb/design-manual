@@ -10,10 +10,7 @@ redirect_from: "/identity/color-principles.html"
 
 <div class="content-67 content-first">
 
-A minimal palette, clear hierarchy, good information design, and ample whitespace will ensure a voice of authority and expertise in communication.
-{: class="lead-in"}
-
-The color palette for the CFPB is brand green, eight supporting colors and their tints, black, and thoughtful use of whitespace.
+A minimal palette, clear hierarchy, good information design, and ample white space ensures a voice of authority and expertise in communication.
 {: class="lead-in"}
 
 </div>
@@ -26,12 +23,15 @@ The color palette for the CFPB is brand green, eight supporting colors and their
 
 <h2 id="palette">Palette<span class="cf-code-link"><a href="https://github.com/cfpb/cf-theme-cfpb/blob/master/src/color-palette.less">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-### Core colors
-Our core brand colors include CFPB Green, Green 60, and Gray (logo colors). This limited color palette is ideal for simple branded pieces.
+The CFPB palette has been created to reflect the spirit of our brand. Green for this. White for that. Black is used for body copy.
+
+### Primary palette
+The primary color palette for CFPB is green and black, including mid-tones and tints, and thoughtful use of
+whitespace.
 
 {::nomarkdown}
 <div class="swatches">
-    {% for color in site.data.cfpb-brand-colors %}
+    {% for color in site.data.cfpb-brand-colors-2 %}
         {% if color.primary %}
             <figure class="swatch swatch__primary">
                 <div class="swatch_field swatch_field__{{ color.shortname }}"></div>
@@ -63,10 +63,10 @@ Our core brand colors include CFPB Green, Green 60, and Gray (logo colors). This
 ### Supporting colors
 
 Supporting colors compliment our brand green and serve to add variety to page content and illustrations.
-
 {::nomarkdown}
+
 <div class="swatches">
-    {% for color in site.data.cfpb-brand-colors %}
+    {% for color in site.data.cfpb-brand-colors-2 %}
         {% if color.secondary %}
             <figure class="swatch">
                 <div class="swatch_field swatch_field__{{ color.shortname }}"></div>
