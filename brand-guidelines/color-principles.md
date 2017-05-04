@@ -10,10 +10,7 @@ redirect_from: "/identity/color-principles.html"
 
 <div class="content-67 content-first">
 
-A minimal palette, clear hierarchy, good information design, and ample whitespace will ensure a voice of authority and expertise in communication.
-{: class="lead-in"}
-
-The color palette for the CFPB is brand green, eight supporting colors and their tints, black, and thoughtful use of whitespace.
+A minimal palette, clear hierarchy, good information design, and ample whitespace ensure a voice of authority and expertise in communication.
 {: class="lead-in"}
 
 </div>
@@ -26,8 +23,8 @@ The color palette for the CFPB is brand green, eight supporting colors and their
 
 <h2 id="palette">Palette<span class="cf-code-link"><a href="https://github.com/cfpb/cf-theme-cfpb/blob/master/src/color-palette.less">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-### Core colors
-Our core brand colors include CFPB Green, Green 60, and Gray (logo colors). This limited color palette is ideal for simple branded pieces.
+### Primary palette
+The primary color palette for the CFPB is Green, Green 60, Gray (logo colors), and Green 20. This limited color palette is ideal for simple branded pieces.
 
 {::nomarkdown}
 <div class="swatches">
@@ -60,9 +57,8 @@ Our core brand colors include CFPB Green, Green 60, and Gray (logo colors). This
 </div>
 {:/nomarkdown}
 
-### Supporting colors
-
-Supporting colors compliment our brand green and serve to add variety to page content and illustrations.
+### Secondary colors
+The secondary color palette introduces visual variety. Colors were selected to hold together as a family and coordinate with CFPB Green.
 
 {::nomarkdown}
 <div class="swatches">
@@ -97,7 +93,7 @@ Supporting colors compliment our brand green and serve to add variety to page co
 
 
 ### Tints
-Tints expand upon the core and secondary colors and create visual cohesion when creating complex illustrations and data visualizations. 
+Tints expand upon the primary and secondary palettes to help create visual cohesion when incorporating complex illustrations and data visualizations. 
 
 {::nomarkdown}
     {% assign family = site.data.cfpb-brand-colors[1].family %}
