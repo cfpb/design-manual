@@ -6001,6 +6001,10 @@ figure {
   height: 5em;
 }
 
+.swatch__primary .swatch_field {
+  height: 10em;
+}
+
 .swatch_head {
   margin: 0.25em 0;
 }

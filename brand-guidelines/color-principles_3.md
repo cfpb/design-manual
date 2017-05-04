@@ -10,7 +10,7 @@ redirect_from: "/identity/color-principles.html"
 
 <div class="content-67 content-first">
 
-A minimal palette, clear hierarchy, good information design, and ample whitespace ensure a voice of authority and expertise in communication.
+A minimal palette, clear hierarchy, good information design, and ample white space ensures a voice of authority and expertise in communication.
 {: class="lead-in"}
 
 </div>
@@ -23,12 +23,12 @@ A minimal palette, clear hierarchy, good information design, and ample whitespac
 
 <h2 id="palette">Palette<span class="cf-code-link"><a href="https://github.com/cfpb/cf-theme-cfpb/blob/master/src/color-palette.less">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-### Primary palette
-The primary color palette for the CFPB is Green, Green 60, Gray (logo colors), and Green 20. This limited color palette is ideal for simple branded pieces.
+### Brand colors
+Our brand colors include CFPB Green, Green 60, and Gray (logo colors) and Green 40. This limited color palette is ideal for simple branded pieces.
 
 {::nomarkdown}
 <div class="swatches">
-    {% for color in site.data.cfpb-brand-colors %}
+    {% for color in site.data.cfpb-brand-colors-3 %}
         {% if color.primary %}
             <figure class="swatch swatch__primary">
                 <div class="swatch_field swatch_field__{{ color.shortname }}"></div>
@@ -57,12 +57,12 @@ The primary color palette for the CFPB is Green, Green 60, Gray (logo colors), a
 </div>
 {:/nomarkdown}
 
-### Secondary colors
-The secondary color palette introduces visual variety. Colors were selected to hold together as a family and coordinate with CFPB Green.
+### Supporting colors
+Supporting colors compliment our brand green and serve to add variety to page content and illustrations.
 
 {::nomarkdown}
 <div class="swatches">
-    {% for color in site.data.cfpb-brand-colors %}
+    {% for color in site.data.cfpb-brand-colors-2 %}
         {% if color.secondary %}
             <figure class="swatch">
                 <div class="swatch_field swatch_field__{{ color.shortname }}"></div>
@@ -93,7 +93,7 @@ The secondary color palette introduces visual variety. Colors were selected to h
 
 
 ### Tints
-Tints expand upon the primary and secondary palettes to help create visual cohesion when incorporating complex illustrations and data visualizations. 
+Tints expand upon the core and secondary colors and create visual cohesion when creating complex illustrations and data visualizations. 
 
 {::nomarkdown}
     {% assign family = site.data.cfpb-brand-colors[1].family %}
