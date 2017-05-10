@@ -37,32 +37,39 @@ Links lead users to a different page or further information. In contrast, <a hre
 ## Style
 
 <div class="content-33 content-first">
-#### Body text and lists
-Links that appear in body text or link lists are underlined. Links are underlined with the ```border-bottom``` property.
+### Body text and lists
+Links that appear in body text or link lists are underlined.
 
-##### A note about font weight
-When set in Avenir Next, links should be Regular weight
-if inline with other text (e.g., within a paragraph),
+Links should be Regular weight if inline with other text
+(e.g., within a paragraph),
 but should be Medium weight when standing alone
-(e.g., in a call to action list of links).
-When set in Georgia, _always_ use the Regular weight
-unless the link is contained within a phrase
-that is already set in Georgia Bold.
+(e.g., in a call to action or list of links).
 </div>
 
 <div class="content-67 content-last">
-##### Paragraph links
-Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>.
+#### Inline links
+Lorem ipsum dolor sit amet, <a href="#">default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">visited link style</a>.
 
 ---
 
-##### List links
-- <a href="#">Default link style</a>
-- <a href="#" class="hover">Hover link style</a>
-- <a href="#" class="focus">Focused link style</a>
-- <a href="#" class="active">Active link style</a>
-- <a href="#" class="visited">Visited link style</a>
-{: class="medium-ex"}
+#### Standalone links
+<ul class="medium-ex m-list m-list__unstyled">
+    <li class="m-list_item">
+        <a href="#">Default link style</a>
+    </li>
+    <li class="m-list_item">
+        <a href="#" class="hover">Hover link style</a>
+    </li>
+    <li class="m-list_item">
+        <a href="#" class="focus">Focused link style</a>
+    </li>
+    <li class="m-list_item">
+        <a href="#" class="active">Active link style</a>
+    </li>
+    <li class="m-list_item">
+        <a href="#" class="visited">Visited link style</a>
+    </li>
+</ul>
 </div>
 
 
