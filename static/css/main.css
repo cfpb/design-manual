@@ -6364,45 +6364,58 @@ h6 + [class^="type-color-combo"],
   letter-spacing: 3px;
   margin-bottom: .5em;
 }
-.demi-ex p {
+.demi-ex p,
+.demi-ex li {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
-.lt-ie9 .demi-ex p {
+.lt-ie9 .demi-ex p,
+.lt-ie9 .demi-ex li {
   font-weight: normal !important;
 }
-.medium-ex p {
+.medium-ex p,
+.medium-ex li {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
-.lt-ie9 .medium-ex p {
+.lt-ie9 .medium-ex p,
+.lt-ie9 .medium-ex li {
   font-weight: normal !important;
 }
-.regular-ex p {
+.regular-ex p,
+.regular-ex li {
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 .regular-ex p em,
-.regular-ex p i {
+.regular-ex li em,
+.regular-ex p i,
+.regular-ex li i {
   font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
 }
 .lt-ie9 .regular-ex p em,
-.lt-ie9 .regular-ex p i {
+.lt-ie9 .regular-ex li em,
+.lt-ie9 .regular-ex p i,
+.lt-ie9 .regular-ex li i {
   font-style: normal !important;
 }
 .regular-ex p strong,
-.regular-ex p b {
+.regular-ex li strong,
+.regular-ex p b,
+.regular-ex li b {
   font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 .lt-ie9 .regular-ex p strong,
-.lt-ie9 .regular-ex p b {
+.lt-ie9 .regular-ex li strong,
+.lt-ie9 .regular-ex p b,
+.lt-ie9 .regular-ex li b {
   font-weight: normal !important;
 }
 .georgia-ex {
