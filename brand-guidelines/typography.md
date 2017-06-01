@@ -487,7 +487,9 @@ Accessible text and background color combinations are shown below:
 <div class="content-33 content-first">
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Non-accessible combinations</h3>
-Do not set CFPB Green type on a white background or white type on CFPB Green background as these combinations are not accessible. Do not set type on a patterned background.
+Never set CFPB Green type on a white background or white type on CFPB Green background as these combinations are not accessible. 
+
+Never set type on a patterned background.
 
 </div>
 
@@ -509,7 +511,7 @@ Do not set CFPB Green type on a white background or white type on CFPB Green bac
 <div class="content-33 content-first">
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Undesirable combinations</h3>
-Although CFPB Green and Black are accessible for large scale type, this color combination should never be used for web type.
+Although CFPB Green type on a Black background and Black type on a CFPB Green background are accessible at larger type sizes, this color combination should never be used as it is not in line with our brand tone.
 
 </div>
 
