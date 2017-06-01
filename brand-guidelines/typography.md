@@ -484,7 +484,7 @@ Accessible text and background color combinations are shown below:
 <div class="content-33 content-first">
 
 ### Partially accessible combinations
-CFPB Black text and white text on gray, and gray text on white are _only accessible for text sizes above 24px_.
+White text on gray and gray text on white are _only accessible for text sizes above 24px_.
 
 </div>
 
@@ -495,7 +495,6 @@ CFPB Black text and white text on gray, and gray text on white are _only accessi
 <figure>
     <ul>
         <li class="type-color-combo__white-on-gray">White on Gray</li>
-        <li class="type-color-combo__black-on-gray">CFPB Black on Gray</li>
         <li class="type-color-combo__gray-on-white">Gray on White</li>
     </ul>
 </figure>
