@@ -466,16 +466,16 @@ Accessible text and background color combinations are shown below:
 <figure>
     <ul>
         <li class="type-color-combo__black-on-white">Black on White</li>
-        <li class="type-color-combo__dark-gray-on-white">Dark Gray on White</li>
+        <li class="type-color-combo__darkgray-on-white">Dark Gray on White</li>
         <li class="type-color-combo__gray-on-white">Gray on White</li>
         <li class="type-color-combo__white-on-black">White on Black</li>
-        <li class="type-color-combo__white-on-dark-gray">White on Dark Gray</li>
-        <li class="type-color-combo__white-on-gray-10">White on Gray</li>
-        <li class="type-color-combo__black-on-gray-10">Black on Gray 10</li>
-        <li class="type-color-combo__black-on-gray-5">Black on Gray 5</li>
-        <li class="type-color-combo__pacific-on-gray-5">Pacific on Gray 5</li>
-        <li class="type-color-combo__black-on-green-60">Black on Green 60</li>
-        <li class="type-color-combo__black-on-green-20">Black on Green 20</li>
+        <li class="type-color-combo__white-on-darkgray">White on Dark Gray</li>
+        <li class="type-color-combo__white-on-gray10">White on Gray</li>
+        <li class="type-color-combo__black-on-gray10">Black on Gray 10</li>
+        <li class="type-color-combo__black-on-gray5">Black on Gray 5</li>
+        <li class="type-color-combo__pacific-on-gray5">Pacific on Gray 5</li>
+        <li class="type-color-combo__black-on-greenmid">Black on Green 60</li>
+        <li class="type-color-combo__black-on-greentint">Black on Green 20</li>
     </ul>
 </figure>
 
@@ -509,7 +509,7 @@ Do not set CFPB Green type on a white background or white type on CFPB Green bac
 <div class="content-33 content-first">
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Undesirable combinations</h3>
-Even though CFPB Green and CFPB Black are accessible for large scale type, this color combination should never be used for web type.
+Although CFPB Green and Black are accessible for large scale type, this color combination should never be used for web type.
 
 </div>
 
@@ -519,8 +519,8 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <figure>
     <ul>
-        <li class="type-color-combo__@black-on-@green">Black on Green</li>
-        <li class="type-color-combo__@green-on-@black">Green on Black</li>
+        <li class="type-color-combo__black-on-green">Black on Green</li>
+        <li class="type-color-combo__green-on-black">Green on Black</li>
     </ul>
 </figure>
 
