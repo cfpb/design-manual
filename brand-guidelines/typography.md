@@ -511,7 +511,7 @@ Never set type on a patterned background.
 <div class="content-33 content-first">
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Undesirable combinations</h3>
-Although CFPB Green type on a Black background and Black type on a CFPB Green background are accessible at larger type sizes, this color combination should never be used as it is not in line with our brand tone.
+Although CFPB Green type on a black background and black type on a CFPB Green background are accessible at larger type sizes, this color combination should never be used as it is not in line with our brand tone.
 
 </div>
 
