@@ -64,8 +64,8 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 #### Default
 
 * Border: 1 px #919395 (Grey 60)
-* Height: 27 px
-* Padding: 10px 3px
+* Height: 35 px (includes border, padding, and text height)
+* Padding: 7px
 
 
 </div>
