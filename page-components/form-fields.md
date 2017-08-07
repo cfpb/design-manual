@@ -63,7 +63,7 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Default
 
-* Border: 1 px #75787b (Grey)
+* Border: 1 px #919395 (Grey 60)
 * Height: 27 px
 * Padding: 10px 3px
 
