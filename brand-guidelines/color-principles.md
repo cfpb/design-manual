@@ -126,7 +126,15 @@ Tints expand upon the primary and secondary palettes to help create visual cohes
                 <th>Hex</th>
                 <th>RGB</th>
                 <th>CMYK</th>
-            </thead>   
+            </thead>
+        {% endif %}
+        <tr>
+            <td class="swatch_field swatch_field__{{ color.shortname }}"></td>
+            <td>{{ color.name }}</td>
+            <td>{{ color.hex }}</td>
+            <td>{{ color.RGB }}</td>
+            <td>{{ color.CMYK }}</td>
+        </tr>
     {% endfor %}
     </table>
-    {:/nomarkdown}
+{:/nomarkdown}
