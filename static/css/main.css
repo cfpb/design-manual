@@ -5886,6 +5886,15 @@ figure {
     vertical-align: top;
     width: 25%;
   }
+  .swatch__primary {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid transparent;
+    border-width: 0 15px;
+    margin-right: -0.25em;
+    vertical-align: top;
+    width: 33.33333333%;
+  }
 }
 .swatch_field__white {
   background: #ffffff;
