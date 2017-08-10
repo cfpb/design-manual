@@ -5877,7 +5877,7 @@ figure {
 }
 /* Landscape tablet/netbook/laptop (1024px) */
 @media only screen and (min-width: 64em) {
-  .swatch {
+  .swatch__secondary {
     display: inline-block;
     box-sizing: border-box;
     border: solid transparent;
