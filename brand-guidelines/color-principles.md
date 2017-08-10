@@ -70,7 +70,7 @@ The secondary color palette introduces visual variety. Colors were selected to h
 <div class="swatches">
     {% for color in site.data.cfpb-brand-colors %}
         {% if color.secondary %}
-            <figure class="swatch">
+            <figure class="swatch swatch__secondary">
                 <div class="swatch_field swatch_field__{{ color.shortname }}"></div>
                 <figcaption class="swatch_label">
                     <h4 class="swatch_head">{{ color.name }}</h4>
