@@ -5825,6 +5825,9 @@ figure {
 .swatch_field {
   height: 5em;
 }
+.swatch__primary .swatch_field {
+  height: 10em;
+}
 .swatch_head {
   margin: 0.25em 0;
 }
@@ -5890,7 +5893,7 @@ figure {
     border-width: 0 15px;
     margin-right: -0.25em;
     vertical-align: top;
-    width: 50%;
+    width: 33.33333333%;
   }
 }
 .swatch_field__white {

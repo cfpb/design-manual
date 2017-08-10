@@ -10,7 +10,7 @@ redirect_from: "/identity/color-principles.html"
 
 <div class="content-67 content-first">
 
-A minimal palette, clear hierarchy, good information design, and ample white space ensures a voice of authority and expertise in communication.
+A minimal palette, clear hierarchy, good information design, and ample whitespace ensure a voice of authority and expertise in communication.
 {: class="lead-in"}
 
 </div>
@@ -23,9 +23,8 @@ A minimal palette, clear hierarchy, good information design, and ample white spa
 
 <h2 id="palette">Palette<span class="cf-code-link"><a href="https://github.com/cfpb/cf-theme-cfpb/blob/master/src/color-palette.less">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
-Our core color palette includes CFPB Green, black, and eight supporting colors.
-
-### Primary colors
+### Primary palette
+Our core brand color is CFPB Green. Green 60 and Green 20 play a supporting role in basic branded pieces. Black is primarily used for type and icons while grays are used for wells and accents, such as rules and borders.
 
 {::nomarkdown}
 <div class="swatches">
@@ -37,13 +36,17 @@ Our core color palette includes CFPB Green, black, and eight supporting colors.
                     <h4 class="swatch_head">{{ color.name }}</h4>
                     <table class="swatch_table">
                         <tbody>
-                            <tr>
+                             <tr>
                                 <th>Hex</th>
                                 <td>{{ color.hex }}</td>
                             </tr>
                             <tr>
                                 <th>RGB</th>
                                 <td>{{ color.RGB }}</td>
+                            </tr>
+                            <tr>
+                                <th>PMS</th>
+                                <td>{{ color.PMS }}</td>
                             </tr>
                             <tr>
                                 <th>CMYK</th>
@@ -58,9 +61,10 @@ Our core color palette includes CFPB Green, black, and eight supporting colors.
 </div>
 {:/nomarkdown}
 
-### Supporting colors
+---
 
-These colors are used primarily as accent colors, and should be used to add variety to page content and illustrations. They should never overpower the core brand colors.
+### Secondary colors
+The secondary color palette introduces visual variety. Colors were selected to hold together as a family and coordinate with CFPB Green.
 
 {::nomarkdown}
 <div class="swatches">
@@ -81,6 +85,10 @@ These colors are used primarily as accent colors, and should be used to add vari
                                 <td>{{ color.RGB }}</td>
                             </tr>
                             <tr>
+                                <th>PMS</th>
+                                <td>{{ color.PMS }}</td>
+                            </tr>
+                            <tr>
                                 <th>CMYK</th>
                                 <td>{{ color.CMYK }}</td>
                             </tr>
@@ -95,6 +103,7 @@ These colors are used primarily as accent colors, and should be used to add vari
 
 
 ### Tints
+Tints expand upon the primary and secondary palettes to help create visual cohesion when incorporating complex illustrations and data visualizations. 
 
 {::nomarkdown}
     {% assign family = site.data.cfpb-brand-colors[1].family %}
