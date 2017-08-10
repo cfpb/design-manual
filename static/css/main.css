@@ -5825,6 +5825,9 @@ figure {
 .swatch_field {
   height: 5em;
 }
+.swatch__primary .swatch_field {
+  height: 10em;
+}
 .swatch_head {
   margin: 0.25em 0;
 }
@@ -5874,7 +5877,7 @@ figure {
 }
 /* Landscape tablet/netbook/laptop (1024px) */
 @media only screen and (min-width: 64em) {
-  .swatch__secondary {
+  .swatch {
     display: inline-block;
     box-sizing: border-box;
     border: solid transparent;
@@ -5883,6 +5886,7 @@ figure {
     vertical-align: top;
     width: 25%;
   }
+<<<<<<< HEAD
   .swatch__primary {
     display: inline-block;
     box-sizing: border-box;
@@ -5891,6 +5895,10 @@ figure {
     margin-right: -0.25em;
     vertical-align: top;
     width: 50%;
+=======
+  .lt-ie8 .swatch {
+    display: inline;
+>>>>>>> 73e9af3e6fba579e6703fc8ee41cb0eb577315f2
   }
 }
 .swatch_field__white {
