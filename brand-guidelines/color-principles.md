@@ -24,7 +24,7 @@ A minimal palette, clear hierarchy, good information design, and ample whitespac
 <h2 id="palette">Palette<span class="cf-code-link"><a href="https://github.com/cfpb/cf-theme-cfpb/blob/master/src/color-palette.less">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
 
 ### Primary palette
-The primary color palette for the CFPB is Green, Green 60, Gray (logo colors), and Green 20. This limited color palette is ideal for simple branded pieces.
+Our core brand color is CFPB Green. Green 60 and Green 20 play a supporting role in basic branded pieces. Black is primarily used for type and icons while grays are used for wells and accents, such as rules and borders.
 
 {::nomarkdown}
 <div class="swatches">
@@ -36,13 +36,17 @@ The primary color palette for the CFPB is Green, Green 60, Gray (logo colors), a
                     <h4 class="swatch_head">{{ color.name }}</h4>
                     <table class="swatch_table">
                         <tbody>
-                            <tr>
+                             <tr>
                                 <th>Hex</th>
                                 <td>{{ color.hex }}</td>
                             </tr>
                             <tr>
                                 <th>RGB</th>
                                 <td>{{ color.RGB }}</td>
+                            </tr>
+                             <tr>
+                                <th>PMS</th>
+                                <td>{{ color.PMS }}</td>
                             </tr>
                             <tr>
                                 <th>CMYK</th>
@@ -56,6 +60,8 @@ The primary color palette for the CFPB is Green, Green 60, Gray (logo colors), a
     {% endfor %}
 </div>
 {:/nomarkdown}
+
+---
 
 ### Secondary colors
 The secondary color palette introduces visual variety. Colors were selected to hold together as a family and coordinate with CFPB Green.
@@ -77,6 +83,10 @@ The secondary color palette introduces visual variety. Colors were selected to h
                             <tr>
                                 <th>RGB</th>
                                 <td>{{ color.RGB }}</td>
+                            </tr>
+                             <tr>
+                                <th>PMS</th>
+                                <td>{{ color.PMS }}</td>
                             </tr>
                             <tr>
                                 <th>CMYK</th>
@@ -116,15 +126,7 @@ Tints expand upon the primary and secondary palettes to help create visual cohes
                 <th>Hex</th>
                 <th>RGB</th>
                 <th>CMYK</th>
-            </thead>
-        {% endif %}
-        <tr>
-            <td class="swatch_field swatch_field__{{ color.shortname }}"></td>
-            <td>{{ color.name }}</td>
-            <td>{{ color.hex }}</td>
-            <td>{{ color.RGB }}</td>
-            <td>{{ color.CMYK }}</td>
-        </tr>
+            </thead>   
     {% endfor %}
     </table>
-{:/nomarkdown}
+    {:/nomarkdown}
