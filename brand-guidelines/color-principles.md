@@ -44,7 +44,7 @@ Our core brand color is CFPB Green. Green 60 and Green 20 play a supporting role
                                 <th>RGB</th>
                                 <td>{{ color.RGB }}</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <th>PMS</th>
                                 <td>{{ color.PMS }}</td>
                             </tr>
@@ -84,7 +84,7 @@ The secondary color palette introduces visual variety. Colors were selected to h
                                 <th>RGB</th>
                                 <td>{{ color.RGB }}</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <th>PMS</th>
                                 <td>{{ color.PMS }}</td>
                             </tr>
