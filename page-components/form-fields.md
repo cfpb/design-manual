@@ -21,7 +21,7 @@ redirect_from: "/ui-toolkit/form-fields.html"
 
 
 <div class="lead-in">
-This page covers use cases, specs, accessibility and responsive considerations for major form field UI components. <br><br>
+This page covers use cases, specs, accessibility, and responsive considerations for major form field UI components.
 
 In general, forms should be as simple and direct as possible to minimize scrolling (think mobile first). Keep your queries to a minimum, and ask only what is absolutely needed.  Make inputs as self-explanatory as possible, with a minimum of helper text.
 </div>
@@ -44,36 +44,36 @@ In general, forms should be as simple and direct as possible to minimize scrolli
 
 <!--**************************************    Text Input fields    **************************************-->
 
-## Text Input Fields
+## Text input fields
 
 <div class="content-66 content-first">
-<strong>Usability</strong><br>
-Consider matching text input field lengths to the information requested so that users can quickly grasp what is being asked. It’s hard to understand at a glance that a single 1000-px-wide text field is asking for your phone number. A better affordance is three short text fields for area code, prefix and last four digits.
+#### Usability
+Consider matching text input field lengths to the information requested so that users can quickly grasp what's being asked. It’s hard to understand at a glance that a single 1000-px-wide text field is asking for your phone number. A better affordance is three short text fields for area code, prefix, and last four digits.
 
-<strong>Responsive design</strong><br>
-As the viewport resizes to smaller breakpoints, stack and snap text input fields to 100% width when inline fields no longer fit into one line.
+#### Responsive design
+As the viewport resizes to smaller breakpoints, stack and snap text input fields to 100% width when inline fields no longer fit on one line.
 
-<strong>Accessibility</strong><br>
+#### Accessibility
 For screen readers, make sure the tab focus order is correct. Consider the order in which error messages should be read if they fall below the text field.
 
+### States
 </div>
-
 
 <div class="content-50 content-first">
 
 #### Default
 
-* Border: 1px #919395 (Gray 60)
-* Height: 35px (includes border, padding, and text height)
-* Padding: 7px
-
+- Border: 1 px, Gray 60 (#919395)
+- Height: 35 px
+- Padding: 7px
+- Text: Avenir Next Regular, 16px, Gray (#5a5d61)
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-text-input" placeholder="placeholder text" type="text">
+<input class="a-text-input" placeholder="Placeholder text" type="text">
 {:/nomarkdown}
 
 </div>
@@ -84,14 +84,14 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Focus
 
-* Border: 2 px #0072ce (Pacific Blue)
+* Border: 2 px, Pacific (#0072ce)
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-text-input a-text-input__focused" placeholder="placeholder text" type="text">
+<input class="a-text-input a-text-input__focused" placeholder="Placeholder text" type="text">
 {:/nomarkdown}
 
 </div>
@@ -102,15 +102,15 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Error
 
-* Border: 2 px #d14124 (Red Orange)
-* Error minicon and message should be below the field
+* Border: 2 px, Red (#d14124)
+* Error minicon and message should appear below the field (see error messaging below)
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-text-input a-text-input__error" type="text" value="invalid input">
+<input class="a-text-input a-text-input__error" type="text" value="Invalid input">
 {:/nomarkdown}
 
 </div>
@@ -121,11 +121,11 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Disabled
 
-Limit use. Where possible, use progressive disclosure instead.
+Where possible, use progressive disclosure instead.
 
-* Border: 1 px #babbbd (Grey 50)
-* Fill: #f1f2f2 (Gray 10)
-
+* Border: 1px, Gray 60 (#919395)
+* Fill: Gray 5 (#f7f8f9)
+* Text: Avenir Next Regular, 16px, Gray (#5a5d61)
 
 </div>
 
@@ -145,8 +145,8 @@ Limit use. Where possible, use progressive disclosure instead.
 
 Use for longer-form answers.
 
-* Font style: <a href="../identity/typography.html" target="blank">Body copy, sans-serif</a>
-
+* Border: 1px, Gray 60 (#919395)
+* Text: Avenir Next Regular, 16px, Gray (#5a5d61) 
 
 </div>
 
@@ -157,6 +157,8 @@ Use for longer-form answers.
 {:/nomarkdown}
 
 </div>
+<br>
+<br>
 
 
 <!--******************************-    LABELS AND HELPER TEXT     ******************************-->
@@ -170,17 +172,17 @@ Use for longer-form answers.
 
 <div class="content-66 content-first">
 
-<h3>Labels</h3>
+### Labels
 
 </div>
-
 
 <div class="content-50 content-first">
 
 #### Form field labels
 
-* <a href="../identity/typography.html" target="blank">H4</a>
-* Top aligned
+* H4 (Avenir Next Medium, 18px), Black (#101820)
+* Text is top aligned
+* Margin bottom: 10px
 
 </div>
 
@@ -199,8 +201,7 @@ Use for longer-form answers.
 
 #### Fieldset legend
 
-* <a href="../identity/typography.html" target="blank">H3</a>
-
+* H3 (Avenir Next Medium, 22px), Black (#101820)
 
 </div>
 
@@ -228,8 +229,9 @@ Use for longer-form answers.
 
 </div>
 
-
 <!--******   HELPER TEXT     **********-->
+
+<br>
 
 <div class="content-66 content-first">
 
@@ -237,26 +239,22 @@ Use for longer-form answers.
 
 </div>
 
-
 <div class="content-66 content-first">
 
-For screen reader accessibility, consider using the <i>aria-describedby</i> attribute for helper text, which gives users of screen readers the information if they need while allowing more flexibility with placement.
-
+For screen reader accessibility, consider using the <i>aria-describedby</i> attribute for helper text, which gives users of screen readers the information they need while allowing more flexibility with placement.
 
 </div>
+
+<br>
 
 <div class="content-50 content-first">
 
 #### Block helper text
 
-Use block helper text in the following cases:
+Use block helper text to explain why a piece of information is being requested, address security and privacy concerns, and suggest ways of providing answers other than providing formatting examples.
 
-* To explain why a piece of information is being requested
-* To address security and privacy concerns
-* To suggest ways of providing answers other than providing formatting examples
-
-* Font: Avenir Next Regular 14 pt, Dark Grey (#43484e)
-* Margin: 10px 0
+Text: Avenir Next Regular 14 pt, Dark Gray (#43484e)
+Margin bottom: 10px
 
 </div>
 
@@ -269,18 +267,22 @@ Use block helper text in the following cases:
 <label class="form-label-helper-text" for="helper-example">
 Use block helper text for instructions.
 </label>
+
+<br>
+
 <input class="a-text-input" type="text" id="helper-example">
 {:/nomarkdown}
 </div>
 
 ---
+
 <div class="content-50 content-first">
 
 #### Inline helper text
 
-Use to indicate whether a field is optional or required (see below).
+Use to indicate whether a field is optional or required.
 
-* Font: Avenir Next Regular 14 pt Dark Grey (#43484e)
+- Text: Avenir Next Regular, 14px, Dark Grey (#43484e)
 
 </div>
 
@@ -304,7 +306,7 @@ Use placeholder text for formatting examples only.
 
 Don’t use for instructions. Once an input field is focused, the placeholder text is lost.
 
-* Font: Avenir Next Regular 16 pt, #919395 (Grey 80)
+Text: Avenir Next Regular, 16px, Gray (#5a5d61)
 
 
 </div>
@@ -325,13 +327,12 @@ Don’t use for instructions. Once an input field is focused, the placeholder te
 </div>
 
 ---
+
 <div class="content-50 content-first">
 
 #### Required vs. optional fields
 
-Where possible, design your forms to include required fields only.
-
-Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise.
+Where possible, design your forms to include required fields only. Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise.
 
 Try not to design forms consisting mainly of optional fields. If you must do so, mark required field labels only with inline helper text.
 
@@ -348,6 +349,7 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
         </label>
         <input class="a-text-input" type="text" id="helper-inline-required">
     </div>
+    </br>
     <div class="form-group_item">
         <label class="a-label a-label__heading" for="helper-inline-optional">
             Label <span class="form-label-helper-text">(optional)</span>
@@ -365,10 +367,9 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 
 #### Error messaging
 
-Error minicon and message should appear below the field.
+- Error minicon and message should appear below the field.
 
-* Text: <a href="../identity/typography.html">Body copy</a>
-
+- Text: Avenir Next Regular, 16px, Gray (#5a5d61)
 
 </div>
 
@@ -383,7 +384,7 @@ Error minicon and message should appear below the field.
 
 
 <!--******************************-    VALIDATION     ******************************-->
-
+<br>
 
 ## Form validation
 
@@ -395,25 +396,22 @@ That said, it’s a good idea to always validate on the server side even if you 
 
 In general, the best practice for server-side validation is to mark errors with both form-level AND field-level errors.
 
-<strong>Accessibility</strong><br>
-For screen reader accessibility, form-level errors should include anchor links to the problem field in question. See the example below.
+#### Accessibility
+For screen reader accessibility, form-level errors should include anchor links to the problem field in question.
 
 In general, use distinct icons, contrasting colors, prominent placement and text to indicate errors. Don’t rely on just one method, as users can have many different accessibility needs (color blind users, visually impaired users, users with motor control issues).
 
+### Field-level alert
 
 </div>
-
-
 
 <div class="content-50 content-first">
 
-### Field-level alerts
-
-#### Field-level errors
+#### Error
 
 * Use to indicate a problem with a particular field input
 
-</div>
+</div> 
 
 <div class="content-50 content-last">
 
@@ -421,15 +419,19 @@ In general, use distinct icons, contrasting colors, prominent placement and text
 <img src="{{site.github.url}}/static/img/forms/field-level-alert.png" />
 {:/nomarkdown}
 
+<br>
+
 </div>
 
----
+<div class="content-66 content-first">
+
+### Form-level notifications
+
+</div>
 
 <div class="content-50 content-first">
 
-### Form-level alerts
-
-#### Form-level errors
+#### Errors
 
 Use after validating on the server side to call out input errors preventing form submission
 
@@ -451,7 +453,7 @@ Use after validating on the server side to call out input errors preventing form
 
 <div class="content-50 content-first">
 
-#### Form-level action
+#### Action
 
 Use [animated minicons]({{site.github.url}}/brand-guidelines/minicons.html#animation) to reassure the user that an action is functioning as intended.
 
@@ -470,7 +472,7 @@ Use [animated minicons]({{site.github.url}}/brand-guidelines/minicons.html#anima
 <div class="content-50 content-first">
 
 
-#### Form-level success
+#### Success
 
 Use to confirm that the form has been successfully submitted
 
@@ -491,8 +493,8 @@ Use to confirm that the form has been successfully submitted
 <!--******************************-    CHECKBOXES AND RADIO BUTTONS     ******************************-->
 
 
+<br>
 ## Checkboxes and radio buttons
-
 
 
 <!--******   CHECKBOXES     **********-->
@@ -503,22 +505,26 @@ Use to confirm that the form has been successfully submitted
 
 Use checkboxes when the user can select more than one option from a list. Make clear with helper text that this is the case.
 
-<strong>Usability</strong><br>
+#### Usability
 To optimize usability, consider using <a href="#chunky_checkboxes">checkboxes with large target areas</a>. If these won’t fit into the design and the default style shown below is used, make sure the target area is at least 45 x 45 px and that it includes the text label.
 
-<strong>Accessibility</strong><br>
+#### Accessibility
 To optimize screen reader accessibility, lay out checkboxes vertically rather than horizontally.
 
+<br>
+
+### States
 </div>
 
 <div class="content-50 content-first">
 
 #### Default
 
-* 20x20px
-* Fill: #FFFFFF
-* Border: 1 px, Grey 80 (#919395)
-
+* 20 x 20px
+* Margin right: 10px
+* Border: 1px, Gray 60 (#919395)
+* Fill: White (#ffffff)
+* Text: Avenir Next Regular, 16px, Gray (#5a5d61)
 
 </div>
 
@@ -534,29 +540,9 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <div class="content-50 content-first">
 
-#### Selected
+#### Focused/Hover
 
-* Border: 2 px Dark Grey (#43484E)
-* Icon: 18px, CFPB Black
-
-
-</div>
-
-<div class="content-50 content-last">
-
-{::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/checkbox-selected.png" />
-{:/nomarkdown}
-
-</div>
-
----
-
-<div class="content-50 content-first">
-
-#### Hover
-
-* Border: 2 px  Pacific Blue (#0072CE)
+* Border: 2px, Pacific (#0072CE)
 
 </div>
 
@@ -572,10 +558,29 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <div class="content-50 content-first">
 
-#### Disabled
+#### Selected
 
-* Border: 1 px #babbbd (Grey 50)
-* Fill: #75787b (Gray)
+* Border: 1px, Pacific (#0072CE)
+* Fill: 14x14px, Pacific (#0072CE)
+
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<img src="{{site.github.url}}/static/img/forms/checkbox-selected.png" />
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Disabled
+Where possible, use progressive disclosure instead.
+* Border: 1px, Gray 60 (#919395)
+* Fill: Gray 80 (#75787b)
 
 </div>
 
@@ -588,16 +593,16 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 </div>
 
 
-
 <!--******   RADIO BUTTONS     **********-->
 
+<br>
 <div class="content-66 content-first">
 
-<h3> Radio buttons</h3>
+### Radio buttons
 
 Use radio buttons when the user can choose only one option out of a list. Use these for a small number of discrete elements—avoid long lists of radio buttons. When there are more than two options, stack radio buttons vertically.
 
-<strong>Usability</strong><br>
+#### Usability
 Leave radio buttons unselected as the default. It’s easy for users to miss that a radio button has been preselected, and to submit a form with an erroneous answer.
 
 Never use radio buttons for optional questions. Once a radio button is selected from a list, it or another choice must remain selected and there is no going back unless you reload the form.
@@ -605,21 +610,22 @@ Never use radio buttons for optional questions. Once a radio button is selected 
 Consider using  <a href="#chunky_checkboxes">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45 x 45 px and includes the option text.
 
 
-<strong>Accessibility</strong><br>
+#### Accessibility
 For screen readers, be aware that there are some issues with voiceover reading radio buttons. To get around this, consider using the aria-describedby attribute.
 
+### States
 
 </div>
-
 
 <div class="content-50 content-first">
 
 #### Default
 
-* 20x20px
-* Fill: #FFFFFF
-* Stroke: 1 px, #919395 (Grey 80)
-
+* 20 x 20px
+* Margin right: 10px
+* Border: 1px, Gray 60 (#919395)
+* Fill: White (#ffffff)
+* Text: Avenir Next Regular, 16px, Gray (#5a5d61)
 
 </div>
 
@@ -635,12 +641,29 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 <div class="content-50 content-first">
 
+#### Hover/Focused
+
+* Border: 2px, Pacific (#0072CE)
+
+</div> 
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<img src="{{site.github.url}}/static/img/forms/radio-hover.png" />
+{:/nomarkdown}
+
+</div>
+
+
+---
+
+<div class="content-50 content-first">
+
 #### Selected
 
-
-* Border: 1 px  Pacific Blue (#0072CE)
-* Fill: 14x14px, Pacific Blue
-
+* Border: 1px, Pacific (#0072CE)
+* Fill: 14x14px, Pacific (#0072CE)
 
 </div>
 
@@ -656,29 +679,11 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 <div class="content-50 content-first">
 
-#### Hover
-
-* Border: 2 px  Pacific Blue (#0072CE)
-
-</div>
-
-<div class="content-50 content-last">
-
-{::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/radio-hover.png" />
-{:/nomarkdown}
-
-</div>
-
----
-
-<div class="content-50 content-first">
-
 #### Disabled
-Where possible, use progressive disclosure instead.
 
-* Border: 1 px #babbbd (Grey 50)
-* Fill: #75787b (Gray)
+Where possible, use progressive disclosure instead.
+* Border: 1px, Gray 60 (#919395)
+* Fill: Gray 80 (#75787b)
 
 </div>
 
@@ -690,10 +695,9 @@ Where possible, use progressive disclosure instead.
 
 </div>
 
-
-
-
 <!--******   CHUNKY CHECKBOXES     **********-->
+
+<br>
 
 <div class="content-66 content-first">
 
@@ -702,8 +706,8 @@ Where possible, use progressive disclosure instead.
 
 For better usability, consider using checkboxes and radio buttons with large target areas, as shown below. These are easier to interact with and harder to miss. Given the amount of real estate they occupy, they’re probably not suited for use in all cases; for example, they may not work well for terms of service agreement checkboxes.
 
+### States
 </div>
-
 
 <div class="content-50 content-first">
 
@@ -711,15 +715,16 @@ For better usability, consider using checkboxes and radio buttons with large tar
 
 Background:
 
-* Min-height: 50px
-* Fill: #e3e4e5
-* Padding: 15px
+- Min-height: 50px
+- Fill: Gray 10 (#e7e8e9)
+- Padding: 15px
+- Text: 16px, Avenir Next Regular, Black (#101820)
 
 Radio button:
 
-* 20px x 20px
-* Fill: #FFFFFF
-* Stroke: 1 px #919395 (Grey 80)
+- 20 x 20px
+- Fill: White (#FFFFFF)
+- Border: 1px, Gray 60 (#919395)
 
 </div>
 
@@ -735,16 +740,40 @@ Radio button:
 
 <div class="content-50 content-first">
 
+#### Hover
+
+Background:
+- Fill: Gray 10 (#e7e8e9)
+- Border: 2px, Pacific (#0072ce)
+
+Radio button:
+- Border: 2px, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50">
+
+{::nomarkdown}
+<img src="{{site.github.url}}/static/img/forms/large-target-hover.png" />
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
 #### Selected
 
 Background:
 
-* Fill: #cce3f5 (Pacific 20)
-* Stroke: 1 or 2 px #a5a7aa (Pacific blue)
+- Fill: Pacific 20 (#d6e8fa)
+- Border: 2px, Pacific (#0072ce)
 
 Radio button:
 
-* Stroke: 1 px #a5a7aa (Pacific blue)
+- Border: 1px, Pacific (#0072ce)
+- Fill: 14x14px, Pacific (#0072ce)
 
 
 </div>
@@ -757,36 +786,9 @@ Radio button:
 
 </div>
 
----
-
-<div class="content-50 content-first">
-
-#### Hover
-
-Background:
-
-* Fill: #e3e4e5 (Grey 20)
-* Stroke: #a5a7aa (Pacific blue)
-
-Radio button:
-
-* Stroke: #a5a7aa (Pacific blue)
-
-</div>
-
-<div class="content-50">
-
-{::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/large-target-hover.png" />
-{:/nomarkdown}
-
-</div>
-
-
-
-
-
 <!--**************************************    Dropdowns   **************************************-->
+
+<br>
 
 ## Dropdowns
 
@@ -798,22 +800,22 @@ Dropdowns should be avoided where the information being presented is likely to b
 
 Also keep in mind that dropdowns behave differently on various mobile clients, taking up different amounts of real estate. Mobile also doesn’t allow for the use of typeahead to navigate quickly to an item in a list, so navigating long lists can be especially cumbersome. Again, consider alternatives.
 
-<strong>Accessibility</strong><br>
+#### Accessibility
 From an accessibility standpoint, browser default multiple select components require the use of a mouse (e.g. holding the control key down and clicking several items). The default components are a poor choice for the visually impaired. If a multi-select component is desired, use custom javascript to make it accessible.
 
-</div>
+### States
 
+</div>
 
 <div class="content-50 content-first">
 
 #### Default
 
-* Height: 27 px
-* Border: #babbbd (Grey 50)
-* Padding: 15px
-* Down caret box: #f1f2f2 (Grey 10)
-* Down caret: #919395 (Grey 80)
-
+* Height: 35 px
+* Border: 1 px, Gray 60 (#919395)
+* Padding: 7 px
+* Fill (down caret box): Gray 10 (#e7e8e9)
+* Icon (down caret): Gray 80 (#75787b)
 
 </div>
 
@@ -831,7 +833,7 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Hover
 
-* Border: 2 px #0072ce (Pacific Blue)
+* Border: 2px, Pacific (#0072ce)
 
 </div>
 
@@ -850,7 +852,8 @@ From an accessibility standpoint, browser default multiple select components req
 
 Where possible, use progressive disclosure instead.
 
-Fill: #f1f2f2  (Grey 10)
+* Border: 1px, Gray 60 (#919395)
+* Fill: Gray 10 (#e7e8e9)
 
 </div>
 
@@ -863,11 +866,9 @@ Fill: #f1f2f2  (Grey 10)
 </div>
 
 
-
-
-
-
 <!--**************************************    Range sliders   **************************************-->
+
+<br>
 
 ## Range sliders
 
@@ -877,9 +878,10 @@ Range sliders can work well for discovery and education, where the inputs are <a
 
 Because they’re imprecise and difficult to manipulate, range sliders are not a good choice when the user is likely to have one and only specific number that they will want to input. If you do choose to implement a slider in this latter case, consider adding steppers or an input box as an alternative means of entering the same data. Also consider the balance between the length of the slider and the number of data points it covers (the range as well as how discrete the points are). The more points to choose from, the harder it is for the user to target a specific number.
 
-<strong>Accessibility</strong><br>
+#### Accessibility
 Make sure that sliders are accessible by keyboard using the arrow keys.
 
+### States
 </div>
 
 
@@ -889,16 +891,15 @@ Make sure that sliders are accessible by keyboard using the arrow keys.
 
 Track:
 
-* Fill: #919395 (Grey 80)
-* Stroke:  1 px #BABBBD (Grey 50)
-* Height: 9 px
+* Fill: Gray 80 (#75787b)
+* Border: 1px, Gray 40 (#b4b5b6)
+* Height: 9px
 
 Handle:
 
 * 45 x 45 px
-* Fill: #F1F2F2 (Grey 10)
-* Stroke: 1 px #BABBBD (Grey 50)
-
+* Fill: Gray 10 (#e7e8e9)
+* Border: 1px, Gray 40 (#b4b5b6)
 
 </div>
 
@@ -916,7 +917,9 @@ Handle:
 
 #### Focus
 
-* Stroke: 2 px #0072ce (Pacific Blue)
+* Fill: Pacific 20 (#d6e8fa)
+* Border: 2px, Pacific (#0072CE)
+
 
 </div>
 
