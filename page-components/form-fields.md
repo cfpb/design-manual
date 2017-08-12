@@ -253,8 +253,8 @@ For screen reader accessibility, consider using the <i>aria-describedby</i> attr
 
 Use block helper text to explain why a piece of information is being requested, address security and privacy concerns, and suggest ways of providing answers other than providing formatting examples.
 
-Text: Avenir Next Regular 14 pt, Dark Gray (#43484e)
-Margin bottom: 10px
+- Text: Avenir Next Regular 14 pt, Dark Gray (#43484e)
+- Margin bottom: 10px
 
 </div>
 
@@ -267,11 +267,9 @@ Margin bottom: 10px
 <label class="form-label-helper-text" for="helper-example">
 Use block helper text for instructions.
 </label>
-
-<br>
-
 <input class="a-text-input" type="text" id="helper-example">
 {:/nomarkdown}
+
 </div>
 
 ---
@@ -302,11 +300,9 @@ Use to indicate whether a field is optional or required.
 
 #### Placeholder text
 
-Use placeholder text for formatting examples only.
+Use placeholder text for formatting examples only. Don’t use for instructions. Once an input field is focused, the placeholder text is lost.
 
-Don’t use for instructions. Once an input field is focused, the placeholder text is lost.
-
-Text: Avenir Next Regular, 16px, Gray (#5a5d61)
+- Text: Avenir Next Regular, 16px, Gray (#5a5d61)
 
 
 </div>
@@ -318,6 +314,7 @@ Text: Avenir Next Regular, 16px, Gray (#5a5d61)
     <div class="form-group_item">
         <input class="a-text-input" placeholder="e.g. (212) 555-1212" type="text">
     </div>
+    <br>
     <div class="form-group_item">
         <input class="a-text-input" placeholder="mm/dd/yyyy" type="text">
     </div>
@@ -531,7 +528,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/checkbox-default.png" />
+<input class="a-checkbox" type="checkbox">
+<label class="a-checkbox a-checkbox__heading">Option 1</label> 
 {:/nomarkdown}
 
 </div>
@@ -549,7 +547,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/checkbox-hover.png" />
+<input class="a-checkbox a-checkbox__focused" type="checkbox">
+<label class="a-checkbox a-checkbox__heading">Option 1</label> 
 {:/nomarkdown}
 
 </div>
@@ -568,7 +567,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/checkbox-selected.png" />
+<input class="a-checkbox a-checkbox__selected" type="checkbox">
+<label class="a-checkbox a-checkbox__heading">Option 1</label>
 {:/nomarkdown}
 
 </div>
@@ -587,7 +587,8 @@ Where possible, use progressive disclosure instead.
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/checkbox-disabled.png" />
+<input class="a-checkbox a-checkbox__disabled" type="checkbox">
+<label class="a-checkbox a-checkbox__heading">Option 1</label>
 {:/nomarkdown}
 
 </div>
