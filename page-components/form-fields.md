@@ -20,7 +20,7 @@ redirect_from: "/ui-toolkit/form-fields.html"
 <div class="lead-in">
 This page covers use cases, specs, accessibility, and responsive considerations for major form field UI components.
 
-In general, forms should be as simple and direct as possible to minimize scrolling (think mobile first). Keep your queries to a minimum, and ask only what is absolutely needed.  Make inputs as self-explanatory as possible, with a minimum of helper text.
+In general, forms should be as simple and direct as possible to minimize scrolling (think mobile first). Keep your queries to a minimum, and ask only what is absolutely needed.  Make inputs as self-explanatory as possible, with a minimum of helper text. Avoid the use of disabled fields where possible, and use progressive disclosure instead.
 </div>
 
 </div>
@@ -62,8 +62,8 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 - Border: 1 px, Gray 60 (#919395)
 - Height: 35 px
-- Padding: 7px
-- Text: Avenir Next Regular, 16px, Gray (#5a5d61)
+- Padding: 7 px
+- Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -118,11 +118,9 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Disabled
 
-Where possible, use progressive disclosure instead.
-
-* Border: 1px, Gray 60 (#919395)
+* Border: 1 px, Gray 60 (#919395)
 * Fill: Gray 5 (#f7f8f9)
-* Text: Avenir Next Regular, 16px, Gray (#5a5d61)
+* Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -142,8 +140,8 @@ Where possible, use progressive disclosure instead.
 
 Use for longer-form answers.
 
-* Border: 1px, Gray 60 (#919395)
-* Text: Avenir Next Regular, 16px, Gray (#5a5d61) 
+* Border: 1 px, Gray 60 (#919395)
+* Text: Avenir Next Regular, 16 px, Gray (#5a5d61) 
 
 </div>
 
@@ -174,9 +172,9 @@ Use for longer-form answers.
 
 #### Form field labels
 
-* H4 (Avenir Next Medium, 18px), Black (#101820)
+* H4 (Avenir Next Medium, 18 px), Black (#101820)
 * Text is top aligned
-* Margin bottom: 10px
+* Margin bottom: 10 px
 
 </div>
 
@@ -195,7 +193,7 @@ Use for longer-form answers.
 
 #### Fieldset legend
 
-* H3 (Avenir Next Medium, 22px), Black (#101820)
+* H3 (Avenir Next Medium, 22 px), Black (#101820)
 
 </div>
 
@@ -247,8 +245,8 @@ For screen reader accessibility, consider using the <i>aria-describedby</i> attr
 
 Use block helper text to explain why a piece of information is being requested, address security and privacy concerns, and suggest ways of providing answers other than providing formatting examples.
 
-- Text: Avenir Next Regular 14 pt, Dark Gray (#43484e)
-- Margin bottom: 10px
+- Text: Avenir Next Regular 14 px, Dark Gray (#43484e)
+- Margin bottom: 10 px
 
 </div>
 
@@ -274,7 +272,7 @@ Use block helper text for instructions.
 
 Use to indicate whether a field is optional or required.
 
-- Text: Avenir Next Regular, 14px, Dark Grey (#43484e)
+- Text: Avenir Next Regular, 14 px, Dark Gray (#43484e)
 
 </div>
 
@@ -296,7 +294,7 @@ Use to indicate whether a field is optional or required.
 
 Use placeholder text for formatting examples only. Don’t use for instructions. Once an input field is focused, the placeholder text is lost.
 
-- Text: Avenir Next Regular, 16px, Gray (#5a5d61)
+- Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 
 </div>
@@ -360,7 +358,7 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 
 - Error minicon and message should appear below the field.
 
-- Text: Avenir Next Regular, 16px, Gray (#5a5d61)
+- Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -487,7 +485,6 @@ Use to confirm that the form has been successfully submitted
 <br>
 ## Checkboxes and radio buttons
 
-
 <!--******   CHECKBOXES     **********-->
 
 <div class="content-66 content-first">
@@ -511,11 +508,11 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Default
 
-* 20 x 20px
-* Margin right: 10px
-* Border: 1px, Gray 60 (#919395)
+* 20 x 20 px
+* Margin right: 10 px
+* Border: 1 px, Gray 60 (#919395)
 * Fill: White (#ffffff)
-* Text: Avenir Next Regular, 16px, Gray (#5a5d61)
+* Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -534,7 +531,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Focused/Hover
 
-* Border: 2px, Pacific (#0072CE)
+* Border: 2 px, Pacific (#0072CE)
 
 </div>
 
@@ -553,8 +550,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Selected
 
-* Border: 1px, Pacific (#0072CE)
-* Fill: 14x14px, Pacific (#0072CE)
+* Border: 1 px, Pacific (#0072CE)
+* Fill: 14 x 14 px, Pacific (#0072CE)
 
 </div>
 
@@ -572,8 +569,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-first">
 
 #### Disabled
-Where possible, use progressive disclosure instead.
-* Border: 1px, Gray 60 (#919395)
+
+* Border: 1 px, Gray 60 (#919395)
 * Fill: Gray 80 (#75787b)
 
 </div>
@@ -602,7 +599,7 @@ Leave radio buttons unselected as the default. It’s easy for users to miss tha
 
 Never use radio buttons for optional questions. Once a radio button is selected from a list, it or another choice must remain selected and there is no going back unless you reload the form.
 
-Consider using <a href="#large-target">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45 x 45 px and includes the option text.
+Consider using <a href="#large-target">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45x45px and includes the option text.
 
 
 #### Accessibility
@@ -617,10 +614,10 @@ For screen readers, be aware that there are some issues with voiceover reading r
 #### Default
 
 * 20 x 20px
-* Margin right: 10px
-* Border: 1px, Gray 60 (#919395)
+* Margin right: 10 px
+* Border: 1 px, Gray 60 (#919395)
 * Fill: White (#ffffff)
-* Text: Avenir Next Regular, 16px, Gray (#5a5d61)
+* Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -638,7 +635,7 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Hover/Focused
 
-* Border: 2px, Pacific (#0072CE)
+* Border: 2 px, Pacific (#0072CE)
 
 </div> 
 
@@ -657,8 +654,8 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Selected
 
-* Border: 1px, Pacific (#0072CE)
-* Fill: 14x14px, Pacific (#0072CE)
+* Border: 1 px, Pacific (#0072CE)
+* Fill: 14 x 14 px, Pacific (#0072CE)
 
 </div>
 
@@ -676,8 +673,7 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Disabled
 
-Where possible, use progressive disclosure instead.
-* Border: 1px, Gray 60 (#919395)
+* Border: 1 px, Gray 60 (#919395)
 * Fill: Gray 80 (#75787b)
 
 </div>
@@ -712,14 +708,14 @@ Background:
 
 - Min-height: 50px
 - Fill: Gray 10 (#e7e8e9)
-- Padding: 15px
-- Text: 16px, Avenir Next Regular, Black (#101820)
+- Padding: 15 px
+- Text: 16 px, Avenir Next Regular, Black (#101820)
 
 Radio button:
 
-- 20 x 20px
+- 20 x 20 px
 - Fill: White (#FFFFFF)
-- Border: 1px, Gray 60 (#919395)
+- Border: 1 px, Gray 60 (#919395)
 
 </div>
 
@@ -739,10 +735,10 @@ Radio button:
 
 Background:
 - Fill: Gray 10 (#e7e8e9)
-- Border: 2px, Pacific (#0072ce)
+- Border: 2 px, Pacific (#0072ce)
 
 Radio button:
-- Border: 2px, Pacific (#0072ce)
+- Border: 2 px, Pacific (#0072ce)
 
 </div>
 
@@ -763,12 +759,12 @@ Radio button:
 Background:
 
 - Fill: Pacific 20 (#d6e8fa)
-- Border: 2px, Pacific (#0072ce)
+- Border: 2 px, Pacific (#0072ce)
 
 Radio button:
 
-- Border: 1px, Pacific (#0072ce)
-- Fill: 14x14px, Pacific (#0072ce)
+- Border: 1 px, Pacific (#0072ce)
+- Fill: 14 x 14 px, Pacific (#0072ce)
 
 
 </div>
@@ -828,7 +824,7 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Hover
 
-* Border: 2px, Pacific (#0072ce)
+* Border: 2 px, Pacific (#0072ce)
 
 </div>
 
@@ -845,9 +841,7 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Disabled
 
-Where possible, use progressive disclosure instead.
-
-* Border: 1px, Gray 60 (#919395)
+* Border: 1 px, Gray 60 (#919395)
 * Fill: Gray 10 (#e7e8e9)
 
 </div>
@@ -887,14 +881,14 @@ Make sure that sliders are accessible by keyboard using the arrow keys.
 Track:
 
 * Fill: Gray 80 (#75787b)
-* Border: 1px, Gray 40 (#b4b5b6)
-* Height: 9px
+* Border: 1 px, Gray 40 (#b4b5b6)
+* Height: 9 px
 
 Handle:
 
 * 45 x 45 px
 * Fill: Gray 10 (#e7e8e9)
-* Border: 1px, Gray 40 (#b4b5b6)
+* Border: 1 px, Gray 40 (#b4b5b6)
 
 </div>
 
@@ -913,7 +907,7 @@ Handle:
 #### Focus
 
 * Fill: Pacific 20 (#d6e8fa)
-* Border: 2px, Pacific (#0072CE)
+* Border: 2 px, Pacific (#0072CE)
 
 
 </div>
