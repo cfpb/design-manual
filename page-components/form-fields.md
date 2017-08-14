@@ -5,15 +5,12 @@ category: Page components
 redirect_from: "/ui-toolkit/form-fields.html"
 ---
 
-
-<ul class="toc">
-  <li><a href="#inputs">Text input fields</a></li>
-  <li><a href="#labels">Labels and helper text</a></li>
-  <li><a href="#validation">Form validation</a></li>
-  <li><a href="#checkboxes">Checkboxes and radio buttons</a></li>
-  <li><a href="#dropdowns">Dropdowns</a></li>
-  <li><a href="#sliders">Range sliders</a></li>
-</ul>
+- [Text input fields](#text-input-fields)
+- [Labels & helper text](#labels-and-helper-text)
+- [Checkboxes & radio buttons](#checkboxes-and-radio-buttons)
+- [Dropdowns](#dropdowns)
+- [Range sliders](#range-sliders)
+{: class="toc"}
 
 <!--Intro-->
 
@@ -163,10 +160,7 @@ Use for longer-form answers.
 
 <!--******************************-    LABELS AND HELPER TEXT     ******************************-->
 
-
 ## Labels and helper text
-
-
 
 <!--******   LABELS     **********-->
 
@@ -498,12 +492,12 @@ Use to confirm that the form has been successfully submitted
 
 <div class="content-66 content-first">
 
-<h3> Checkboxes</h3>
+<h3>Checkboxes</h3>
 
 Use checkboxes when the user can select more than one option from a list. Make clear with helper text that this is the case.
 
 #### Usability
-To optimize usability, consider using <a href="#chunky_checkboxes">checkboxes with large target areas</a>. If these won’t fit into the design and the default style shown below is used, make sure the target area is at least 45 x 45 px and that it includes the text label.
+To optimize usability, consider using <a href="#large-target">checkboxes with large target areas</a>. If these won’t fit into the design and the default style shown below is used, make sure the target area is at least 45 x 45 px and that it includes the text label.
 
 #### Accessibility
 To optimize screen reader accessibility, lay out checkboxes vertically rather than horizontally.
@@ -608,7 +602,7 @@ Leave radio buttons unselected as the default. It’s easy for users to miss tha
 
 Never use radio buttons for optional questions. Once a radio button is selected from a list, it or another choice must remain selected and there is no going back unless you reload the form.
 
-Consider using  <a href="#chunky_checkboxes">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45 x 45 px and includes the option text.
+Consider using <a href="#large-target">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45 x 45 px and includes the option text.
 
 
 #### Accessibility
@@ -696,16 +690,16 @@ Where possible, use progressive disclosure instead.
 
 </div>
 
-<!--******   CHUNKY CHECKBOXES     **********-->
+<!--******   LARGE TARGET CHECKBOXES AND BUTTONS     **********-->
 
 <br>
 
 <div class="content-66 content-first">
 
-<h3 id="chunky_checkboxes">Checkboxes and radio buttons with large target areas</h3>
+<h3 id="large-target">Checkboxes and radio buttons with large target areas</h3>
 
 
-For better usability, consider using checkboxes and radio buttons with large target areas, as shown below. These are easier to interact with and harder to miss. Given the amount of real estate they occupy, they’re probably not suited for use in all cases; for example, they may not work well for terms of service agreement checkboxes.
+For better usability, consider using checkboxes and radio buttons with large target areas.These are easier to interact with and harder to miss. Given the amount of real estate they occupy, they’re probably not suited for use in all cases; for example, they may not work well for terms of service agreement checkboxes.
 
 ### States
 </div>
