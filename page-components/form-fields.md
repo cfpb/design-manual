@@ -99,8 +99,8 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Error
 
-* Border: 2 px, Red (#d14124)
-* Error minicon and message should appear below the field (see error messaging below)
+- Border: 2 px, Red (#d14124)
+- Error minicon and message should appear below the field (see error messaging below)
 
 </div>
 
@@ -118,9 +118,9 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Disabled
 
-* Border: 1 px, Gray 60 (#919395)
-* Fill: Gray 5 (#f7f8f9)
-* Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
+- Border: 1 px, Gray 60 (#919395)
+- Fill: Gray 5 (#f7f8f9)
+- Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -140,8 +140,8 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 Use for longer-form answers.
 
-* Border: 1 px, Gray 60 (#919395)
-* Text: Avenir Next Regular, 16 px, Gray (#5a5d61) 
+- Border: 1 px, Gray 60 (#919395)
+- Text: Avenir Next Regular, 16 px, Gray (#5a5d61) 
 
 </div>
 
@@ -172,9 +172,9 @@ Use for longer-form answers.
 
 #### Form field labels
 
-* H4 (Avenir Next Medium, 18 px), Black (#101820)
-* Text is top aligned
-* Margin bottom: 10 px
+- H4 (Avenir Next Medium, 18 px), Black (#101820)
+- Text is top aligned
+- Margin bottom: 10 px
 
 </div>
 
@@ -193,7 +193,7 @@ Use for longer-form answers.
 
 #### Fieldset legend
 
-* H3 (Avenir Next Medium, 22 px), Black (#101820)
+- H3 (Avenir Next Medium, 22 px), Black (#101820)
 
 </div>
 
@@ -424,8 +424,8 @@ In general, use distinct icons, contrasting colors, prominent placement and text
 
 Use after validating on the server side to call out input errors preventing form submission
 
-* For screen reader accessibility, include anchor links to the fields that need correction
-* Place form-level alerts below the form title
+- For screen reader accessibility, include anchor links to the fields that need correction
+- Place form-level alerts below the form title
 
 </div>
 
@@ -508,19 +508,21 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Default
 
-* 20 x 20 px
-* Margin right: 10 px
-* Border: 1 px, Gray 60 (#919395)
-* Fill: White (#ffffff)
-* Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
+- 20 x 20 px
+- Margin right: 10 px
+- Border: 1 px, Gray 60 (#919395)
+- Fill: White (#ffffff)
+- Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-checkbox" type="checkbox">
-<label class="a-checkbox a-checkbox__heading">Option 1</label> 
+<div class="m-form-field m-form-field__checkbox">
+    <input class="a-checkbox" type="checkbox" id="test_checkbox">
+    <label class="a-label" for="test_checkbox">Option 1</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -531,15 +533,17 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Focused/Hover
 
-* Border: 2 px, Pacific (#0072CE)
+- Border: 2 px, Pacific (#0072CE)
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-checkbox a-checkbox__focused" type="checkbox">
-<label class="a-checkbox a-checkbox__heading">Option 1</label> 
+<div class="m-form-field m-form-field__checkbox">
+    <input class="a-checkbox" type="checkbox" id="test_checkbox">
+    <label class="a-label" for="test_checkbox">Option 1</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -550,16 +554,18 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Selected
 
-* Border: 1 px, Pacific (#0072CE)
-* Fill: 14 x 14 px, Pacific (#0072CE)
+- Border: 1 px, Pacific (#0072CE)
+- Fill: 14 x 14 px, Pacific (#0072CE)
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-checkbox a-checkbox__selected" type="checkbox">
-<label class="a-checkbox a-checkbox__heading">Option 1</label>
+<div class="m-form-field m-form-field__checkbox">
+    <input class="a-checkbox" type="checkbox" id="test_checkbox">
+    <label class="a-label" for="test_checkbox">Option 1</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -570,8 +576,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Disabled
 
-* Border: 1 px, Gray 60 (#919395)
-* Fill: Gray 80 (#75787b)
+- Border: 1 px, Gray 60 (#919395)
+- Fill: Gray 80 (#75787b)
 
 </div>
 
@@ -613,18 +619,21 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Default
 
-* 20 x 20px
-* Margin right: 10 px
-* Border: 1 px, Gray 60 (#919395)
-* Fill: White (#ffffff)
-* Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
+- 20 x 20px
+- Margin right: 10 px
+- Border: 1 px, Gray 60 (#919395)
+- Fill: White (#ffffff)
+- Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/radio-default.png" />
+<div class="m-form-field m-form-field__radio">
+    <input class="a-radio" type="radio" id="test_radio">
+    <label class="a-label" for="test_radio">Option 1</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -635,14 +644,17 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Hover/Focused
 
-* Border: 2 px, Pacific (#0072CE)
+- Border: 2 px, Pacific (#0072CE)
 
 </div> 
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/radio-hover.png" />
+<div class="m-form-field m-form-field__radio">
+    <input class="a-radio" type="radio" id="test_radio">
+    <label class="a-label" for="test_radio">Option 1</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -654,15 +666,18 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Selected
 
-* Border: 1 px, Pacific (#0072CE)
-* Fill: 14 x 14 px, Pacific (#0072CE)
+- Border: 1 px, Pacific (#0072CE)
+- Fill: 14 x 14 px, Pacific (#0072CE)
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/radio-selected.png" />
+<div class="m-form-field m-form-field__radio">
+    <input class="a-radio" type="radio" id="test_radio">
+    <label class="a-label" for="test_radio">Option 1</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -673,15 +688,18 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Disabled
 
-* Border: 1 px, Gray 60 (#919395)
-* Fill: Gray 80 (#75787b)
+- Border: 1 px, Gray 60 (#919395)
+- Fill: Gray 80 (#75787b)
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/radio-disabled.png" />
+<div class="m-form-field m-form-field__radio">
+    <input class="a-radio" type="radio" id="test_radio">
+    <label class="a-label" for="test_radio">Option 1</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -802,18 +820,27 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Default
 
-* Height: 35 px
-* Border: 1 px, Gray 60 (#919395)
-* Padding: 7 px
-* Fill (down caret box): Gray 10 (#e7e8e9)
-* Icon (down caret): Gray 80 (#75787b)
+- Height: 35 px
+- Border: 1 px, Gray 60 (#919395)
+- Padding: 7 px
+- Fill (down caret box): Gray 10 (#e7e8e9)
+- Icon (down caret): Gray 80 (#75787b)
 
 </div>
 
 <div class="content-50">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/dropdown-default.png" />
+<div class="m-form-field m-form-field__select">
+    <div class="a-select">
+        <select id="test_select">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -824,14 +851,23 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Hover
 
-* Border: 2 px, Pacific (#0072ce)
+- Border: 2 px, Pacific (#0072ce)
 
 </div>
 
 <div class="content-50">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/dropdown-hover.png" />
+<div class="m-form-field m-form-field__select">
+    <div class="a-select">
+        <select id="test_select">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -841,15 +877,24 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Disabled
 
-* Border: 1 px, Gray 60 (#919395)
-* Fill: Gray 10 (#e7e8e9)
+- Border: 1 px, Gray 60 (#919395)
+- Fill: Gray 10 (#e7e8e9)
 
 </div>
 
 <div class="content-50">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/dropdown-disabled.png" />
+<div class="m-form-field m-form-field__select">
+    <div class="a-select">
+        <select id="test_select__disabled" disabled>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -880,15 +925,15 @@ Make sure that sliders are accessible by keyboard using the arrow keys.
 
 Track:
 
-* Fill: Gray 80 (#75787b)
-* Border: 1 px, Gray 40 (#b4b5b6)
-* Height: 9 px
+- Fill: Gray 80 (#75787b)
+- Border: 1 px, Gray 40 (#b4b5b6)
+- Height: 9 px
 
 Handle:
 
-* 45 x 45 px
-* Fill: Gray 10 (#e7e8e9)
-* Border: 1 px, Gray 40 (#b4b5b6)
+- 45 x 45 px
+- Fill: Gray 10 (#e7e8e9)
+- Border: 1 px, Gray 40 (#b4b5b6)
 
 </div>
 
@@ -906,8 +951,8 @@ Handle:
 
 #### Focus
 
-* Fill: Pacific 20 (#d6e8fa)
-* Border: 2 px, Pacific (#0072CE)
+- Fill: Pacific 20 (#d6e8fa)
+- Border: 2 px, Pacific (#0072CE)
 
 
 </div>
