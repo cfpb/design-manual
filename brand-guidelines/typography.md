@@ -427,7 +427,7 @@ Use only these accessible text and background color combinations.
 <div class="content-33 content-first">
 
 ### Partially accessible combinations
-White text on Gray and Gray text on White are _only accessible for text sizes above 24px_.
+White text on Gray and Gray text on White are only accessible for text sizes above 24px.
 
 </div>
 
