@@ -412,9 +412,9 @@ Use only these accessible text and background color combinations.
         <li class="type-color-combo__dark-gray-on-white">Dark Gray on White</li>
         <li class="type-color-combo__white-on-black">White on Black</li>
         <li class="type-color-combo__white-on-darkgray">White on Dark Gray</li>
-        <li class="type-color-combo__black-on-gray-10">Black on Gray 10</li>
-        <li class="type-color-combo__black-on-gray-5">Black on Gray 5</li>
-        <li class="type-color-combo__pacific-on-gray-5">Pacific on Gray 5</li>
+        <li class="type-color-combo__black-on-gray10">Black on Gray 10</li>
+        <li class="type-color-combo__black-on-gray5">Black on Gray 5</li>
+        <li class="type-color-combo__pacific-on-gray5">Pacific on Gray 5</li>
         <li class="type-color-combo__black-on-greenmid">Black on Green 60</li>
         <li class="type-color-combo__black-on-greentint">Black on Green 20</li>
     </ul>
