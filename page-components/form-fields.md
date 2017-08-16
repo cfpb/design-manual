@@ -99,13 +99,8 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Error
 
-<<<<<<< HEAD
 - Border: 2 px, Red (#d14124)
 - Error minicon and message should appear below the field (see error messaging below)
-=======
-* Border: 2 px, Red (#d14124)
-* Error minicon and message should appear below the field (see error messaging below)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -123,15 +118,9 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 #### Disabled
 
-<<<<<<< HEAD
 - Border: 1 px, Gray 60 (#919395)
 - Fill: Gray 5 (#f7f8f9)
 - Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
-=======
-* Border: 1 px, Gray 60 (#919395)
-* Fill: Gray 5 (#f7f8f9)
-* Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -151,13 +140,8 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 Use for longer-form answers.
 
-<<<<<<< HEAD
 - Border: 1 px, Gray 60 (#919395)
 - Text: Avenir Next Regular, 16 px, Gray (#5a5d61) 
-=======
-* Border: 1 px, Gray 60 (#919395)
-* Text: Avenir Next Regular, 16 px, Gray (#5a5d61) 
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -188,15 +172,9 @@ Use for longer-form answers.
 
 #### Form field labels
 
-<<<<<<< HEAD
 - H4 (Avenir Next Medium, 18 px), Black (#101820)
 - Text is top aligned
 - Margin bottom: 10 px
-=======
-* H4 (Avenir Next Medium, 18 px), Black (#101820)
-* Text is top aligned
-* Margin bottom: 10 px
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -215,11 +193,7 @@ Use for longer-form answers.
 
 #### Fieldset legend
 
-<<<<<<< HEAD
 - H3 (Avenir Next Medium, 22 px), Black (#101820)
-=======
-* H3 (Avenir Next Medium, 22 px), Black (#101820)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -534,34 +508,21 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Default
 
-<<<<<<< HEAD
 - 20 x 20 px
 - Margin right: 10 px
 - Border: 1 px, Gray 60 (#919395)
 - Fill: White (#ffffff)
 - Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
-=======
-* 20 x 20 px
-* Margin right: 10 px
-* Border: 1 px, Gray 60 (#919395)
-* Fill: White (#ffffff)
-* Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<<<<<<< HEAD
 <div class="m-form-field m-form-field__checkbox">
     <input class="a-checkbox" type="checkbox" id="test_checkbox">
     <label class="a-label" for="test_checkbox">Option 1</label>
 </div>
-=======
-<input class="a-checkbox" type="checkbox">
-<label class="a-checkbox a-checkbox__heading">Option 1</label> 
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 {:/nomarkdown}
 
 </div>
@@ -572,26 +533,17 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Focused/Hover
 
-<<<<<<< HEAD
 - Border: 2 px, Pacific (#0072CE)
-=======
-* Border: 2 px, Pacific (#0072CE)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<<<<<<< HEAD
 <div class="m-form-field m-form-field__checkbox">
     <input class="a-checkbox" type="checkbox" id="test_checkbox">
     <label class="a-label" for="test_checkbox">Option 1</label>
 </div>
-=======
-<input class="a-checkbox a-checkbox__focused" type="checkbox">
-<label class="a-checkbox a-checkbox__heading">Option 1</label> 
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 {:/nomarkdown}
 
 </div>
@@ -602,28 +554,18 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Selected
 
-<<<<<<< HEAD
 - Border: 1 px, Pacific (#0072CE)
 - Fill: 14 x 14 px, Pacific (#0072CE)
-=======
-* Border: 1 px, Pacific (#0072CE)
-* Fill: 14 x 14 px, Pacific (#0072CE)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<<<<<<< HEAD
 <div class="m-form-field m-form-field__checkbox">
     <input class="a-checkbox" type="checkbox" id="test_checkbox">
     <label class="a-label" for="test_checkbox">Option 1</label>
 </div>
-=======
-<input class="a-checkbox a-checkbox__selected" type="checkbox">
-<label class="a-checkbox a-checkbox__heading">Option 1</label>
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 {:/nomarkdown}
 
 </div>
@@ -634,13 +576,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Disabled
 
-<<<<<<< HEAD
 - Border: 1 px, Gray 60 (#919395)
 - Fill: Gray 80 (#75787b)
-=======
-* Border: 1 px, Gray 60 (#919395)
-* Fill: Gray 80 (#75787b)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -682,19 +619,11 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Default
 
-<<<<<<< HEAD
 - 20 x 20px
 - Margin right: 10 px
 - Border: 1 px, Gray 60 (#919395)
 - Fill: White (#ffffff)
 - Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
-=======
-* 20 x 20px
-* Margin right: 10 px
-* Border: 1 px, Gray 60 (#919395)
-* Fill: White (#ffffff)
-* Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -714,28 +643,18 @@ For screen readers, be aware that there are some issues with voiceover reading r
 <div class="content-50 content-first">
 
 #### Hover/Focused
-<<<<<<< HEAD
 
 - Border: 2 px, Pacific (#0072CE)
 
-=======
-
-* Border: 2 px, Pacific (#0072CE)
-
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 </div> 
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<<<<<<< HEAD
 <div class="m-form-field m-form-field__radio">
     <input class="a-radio" type="radio" id="test_radio">
     <label class="a-label" for="test_radio">Option 1</label>
 </div>
-=======
-<img src="{{site.github.url}}/static/img/forms/radio-hover.png" />
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 {:/nomarkdown}
 
 </div>
@@ -747,27 +666,18 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Selected
 
-<<<<<<< HEAD
 - Border: 1 px, Pacific (#0072CE)
 - Fill: 14 x 14 px, Pacific (#0072CE)
-=======
-* Border: 1 px, Pacific (#0072CE)
-* Fill: 14 x 14 px, Pacific (#0072CE)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<<<<<<< HEAD
 <div class="m-form-field m-form-field__radio">
     <input class="a-radio" type="radio" id="test_radio">
     <label class="a-label" for="test_radio">Option 1</label>
 </div>
-=======
-<img src="{{site.github.url}}/static/img/forms/radio-selected.png" />
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 {:/nomarkdown}
 
 </div>
@@ -778,13 +688,8 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Disabled
 
-<<<<<<< HEAD
 - Border: 1 px, Gray 60 (#919395)
 - Fill: Gray 80 (#75787b)
-=======
-* Border: 1 px, Gray 60 (#919395)
-* Fill: Gray 80 (#75787b)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -915,19 +820,11 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Default
 
-<<<<<<< HEAD
 - Height: 35 px
 - Border: 1 px, Gray 60 (#919395)
 - Padding: 7 px
 - Fill (down caret box): Gray 10 (#e7e8e9)
 - Icon (down caret): Gray 80 (#75787b)
-=======
-* Height: 35 px
-* Border: 1 px, Gray 60 (#919395)
-* Padding: 7 px
-* Fill (down caret box): Gray 10 (#e7e8e9)
-* Icon (down caret): Gray 80 (#75787b)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -954,11 +851,7 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Hover
 
-<<<<<<< HEAD
 - Border: 2 px, Pacific (#0072ce)
-=======
-* Border: 2 px, Pacific (#0072ce)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -984,13 +877,8 @@ From an accessibility standpoint, browser default multiple select components req
 
 #### Disabled
 
-<<<<<<< HEAD
 - Border: 1 px, Gray 60 (#919395)
 - Fill: Gray 10 (#e7e8e9)
-=======
-* Border: 1 px, Gray 60 (#919395)
-* Fill: Gray 10 (#e7e8e9)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -1037,7 +925,6 @@ Make sure that sliders are accessible by keyboard using the arrow keys.
 
 Track:
 
-<<<<<<< HEAD
 - Fill: Gray 80 (#75787b)
 - Border: 1 px, Gray 40 (#b4b5b6)
 - Height: 9 px
@@ -1047,17 +934,6 @@ Handle:
 - 45 x 45 px
 - Fill: Gray 10 (#e7e8e9)
 - Border: 1 px, Gray 40 (#b4b5b6)
-=======
-* Fill: Gray 80 (#75787b)
-* Border: 1 px, Gray 40 (#b4b5b6)
-* Height: 9 px
-
-Handle:
-
-* 45 x 45 px
-* Fill: Gray 10 (#e7e8e9)
-* Border: 1 px, Gray 40 (#b4b5b6)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
 
 </div>
 
@@ -1075,14 +951,8 @@ Handle:
 
 #### Focus
 
-<<<<<<< HEAD
 - Fill: Pacific 20 (#d6e8fa)
 - Border: 2 px, Pacific (#0072CE)
-=======
-* Fill: Pacific 20 (#d6e8fa)
-* Border: 2 px, Pacific (#0072CE)
->>>>>>> 24cbec6522a85c3e7870073b5f8c45a76ff400d5
-
 
 </div>
 
