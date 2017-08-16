@@ -398,7 +398,7 @@ is a useful resource for testing the compliance of any combination of colors in 
 
 ### Fully accessible combinations
 
-Use only these permitted accessible text and background color combinations.
+Use only these accessible text and background color combinations.
 
 </div>
 
