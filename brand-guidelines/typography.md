@@ -450,7 +450,8 @@ Black or White text on Gray, and Gray text on white are _only accessible for tex
 <div class="content-33 content-first">
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Non-accessible combinations</h3>
-Never set CFPB Green web type on White combinations, as they are not accessible. Never set type on a patterned background.
+
+Never set CFPB Green type on a white background or White type on CFPB Green background as these combinations are not accessible. Never set type on a patterned background.
 
 </div>
 
@@ -472,6 +473,7 @@ Never set CFPB Green web type on White combinations, as they are not accessible.
 <div class="content-33 content-first">
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Undesirable combinations</h3>
+
 Although CFPB Green and Black are accessible for large scale type, this color combination should never be used for web or print type.
 
 </div>
