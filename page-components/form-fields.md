@@ -79,6 +79,24 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 
 <div class="content-50 content-first">
 
+#### Hover
+
+* Border: 2 px, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<input class="a-text-input a-text-input__focused" placeholder="Placeholder text" type="text">
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
 #### Focus
 
 * Border: 2 px, Pacific (#0072ce)
@@ -107,7 +125,18 @@ For screen readers, make sure the tab focus order is correct. Consider the order
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-text-input a-text-input__error" type="text" value="Invalid input">
+<div class="m-field m-field__error">
+    <label class="a-label__heading" for="form-input-error">Label</label>
+    <input class="a-text-input a-text-input__error"
+           type="text"
+           value="Invalid input"
+           id="form-input-error"
+           aria-describedby="form-input-error_message">
+    <div class="a-error-message" id="form-input-error_message" role="alert">
+        <span class="cf-icon cf-icon-delete-round" aria-hidden="true"></span>
+        This is a required question, please answer.
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -365,7 +394,18 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/field-level-alert.png" />
+<div class="m-field m-field__error">
+    <label class="a-label__heading" for="form-input-error">Label</label>
+    <input class="a-text-input a-text-input__error"
+           type="text"
+           value="Invalid input"
+           id="form-input-error"
+           aria-describedby="form-input-error_message">
+    <div class="a-error-message" id="form-input-error_message" role="alert">
+        <span class="cf-icon cf-icon-delete-round" aria-hidden="true"></span>
+        This is a required question, please answer.
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -508,11 +548,20 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Default
 
-- 20 x 20 px
-- Margin right: 10 px
-- Border: 1 px, Gray 60 (#919395)
-- Fill: White (#ffffff)
-- Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
+Checkbox
+ - Height: 20 px
+ - Width: 20 px
+ - Margin right: 10 px
+ - Background color: White (#ffffff)
+ - Border width: 1 px
+ - Border color: Gray 60 (#919395)
+
+ Label
+- Font family: Avenir Next Regular
+- Font size: 16 px
+- Font color: Gray (#5a5d61)
+
+
 
 </div>
 
@@ -554,8 +603,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Selected
 
-- Border: 1 px, Pacific (#0072CE)
-- Fill: 14 x 14 px, Pacific (#0072CE)
+- Border: 2 px, Dark Gray (#43484e)
+- Icon: 18 px, Black (#101820)
 
 </div>
 
@@ -619,11 +668,18 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Default
 
-- 20 x 20px
-- Margin right: 10 px
-- Border: 1 px, Gray 60 (#919395)
-- Fill: White (#ffffff)
-- Text: Avenir Next Regular, 16 px, Gray (#5a5d61)
+Button
+ - Height: 20 px
+ - Width: 20 px
+ - Margin right: 10 px
+ - Background color: White (#ffffff)
+ - Border width: 1 px
+ - Border color: Gray 60 (#919395)
+ 
+ Label
+ - Font family: Avenir Next Regular
+ - Font size: 16 px
+ - Color: Gray (#5a5d61)
 
 </div>
 
@@ -644,7 +700,8 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Hover/Focused
 
-- Border: 2 px, Pacific (#0072CE)
+ - Border width: 2 px
+ - Border color: Pacific (#0072CE)
 
 </div> 
 
@@ -666,8 +723,14 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Selected
 
-- Border: 1 px, Pacific (#0072CE)
-- Fill: 14 x 14 px, Pacific (#0072CE)
+Border
+ - Width: 1 px, 
+ - Color: Pacific (#0072CE)
+
+Background
+- Height: 14 px
+- Width: 14 px
+- Color: Pacific (#0072CE)
 
 </div>
 
@@ -688,8 +751,13 @@ For screen readers, be aware that there are some issues with voiceover reading r
 
 #### Disabled
 
-- Border: 1 px, Gray 60 (#919395)
-- Fill: Gray 80 (#75787b)
+Border 
+- Width: 1 px
+- Color: Gray 60 (#919395)
+
+Background 
+- Gray 80 (#75787b)
+
 
 </div>
 
@@ -722,18 +790,21 @@ For better usability, consider using checkboxes and radio buttons with large tar
 
 #### Default
 
-Background:
-
+Target area
 - Min-height: 50px
 - Fill: Gray 10 (#e7e8e9)
 - Padding: 15 px
-- Text: 16 px, Avenir Next Regular, Black (#101820)
 
-Radio button:
+Label
+ - Font family: Avenir Next Regular
+ - Font size: 16 px
+ - Color: Black (#101820)
 
-- 20 x 20 px
-- Fill: White (#FFFFFF)
+Button
+- Width: 20 px 
+- Height: 20 px
 - Border: 1 px, Gray 60 (#919395)
+- Background color: White (#FFFFFF)
 
 </div>
 
@@ -751,11 +822,11 @@ Radio button:
 
 #### Hover
 
-Background:
-- Fill: Gray 10 (#e7e8e9)
+Target area
 - Border: 2 px, Pacific (#0072ce)
+- Fill: Gray 10 (#e7e8e9)
 
-Radio button:
+Button
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
@@ -774,15 +845,17 @@ Radio button:
 
 #### Selected
 
-Background:
+Target area
 
-- Fill: Pacific 20 (#d6e8fa)
 - Border: 2 px, Pacific (#0072ce)
+- Fill: Pacific 20 (#d6e8fa)
 
-Radio button:
+Button
 
 - Border: 1 px, Pacific (#0072ce)
-- Fill: 14 x 14 px, Pacific (#0072ce)
+- Height (fill): 14 px
+- Width (fill): 14 px
+- Background color: Pacific (#0072ce)
 
 
 </div>
@@ -835,9 +908,9 @@ From an accessibility standpoint, browser default multiple select components req
     <div class="a-select">
         <select id="test_select">
             <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-            <option value="option4">Option 4</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
         </select>
     </div>
 </div>
@@ -862,9 +935,9 @@ From an accessibility standpoint, browser default multiple select components req
     <div class="a-select">
         <select id="test_select">
             <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-            <option value="option4">Option 4</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
         </select>
     </div>
 </div>
@@ -889,9 +962,9 @@ From an accessibility standpoint, browser default multiple select components req
     <div class="a-select">
         <select id="test_select__disabled" disabled>
             <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-            <option value="option4">Option 4</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
         </select>
     </div>
 </div>
@@ -923,17 +996,19 @@ Make sure that sliders are accessible by keyboard using the arrow keys.
 
 #### Default
 
-Track:
+Track
 
-- Fill: Gray 80 (#75787b)
-- Border: 1 px, Gray 40 (#b4b5b6)
 - Height: 9 px
-
-Handle:
-
-- 45 x 45 px
-- Fill: Gray 10 (#e7e8e9)
 - Border: 1 px, Gray 40 (#b4b5b6)
+- Fill: Gray 80 (#75787b)
+
+Handle
+
+- Height: 45 px
+- Width: 45 px
+- Border: 1 px, Gray 40 (#b4b5b6)
+- Fill: Gray 10 (#e7e8e9)
+
 
 </div>
 
@@ -951,8 +1026,8 @@ Handle:
 
 #### Focus
 
-- Fill: Pacific 20 (#d6e8fa)
 - Border: 2 px, Pacific (#0072CE)
+- Fill: Pacific 20 (#d6e8fa)
 
 </div>
 
