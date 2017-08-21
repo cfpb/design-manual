@@ -79,12 +79,9 @@ Users of screen readers use the tab key to move focus from one form control to a
 
 #### Default
 
-Input field
  - Border: 1 px, Gray 60 (#919395)
  - Height: 35 px
  - Padding: 7px
-
-Placeholder text: 
  - Body (Avenir Next Regular, 16px), Gray (#5a5d61)
  - Text should be in sentence case
 
@@ -104,7 +101,7 @@ Placeholder text:
 
 #### Hover/Focus
 
- - Border: 2 px, Pacific (#0072ce)
+- Border: 2 px, Pacific (#0072ce)
 
 </div>
 
@@ -123,8 +120,8 @@ Placeholder text:
 #### Error
 
 - Border: 2 px, Red (#d14124)
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 - Minicon: 18 px, Red (#d14124)
-- Text: Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 - Minicon and message should always appear below input field
 
 </div>
@@ -135,7 +132,7 @@ Placeholder text:
 <div class="m-field m-field__error">
     <input class="a-text-input a-text-input__error"
            type="text"
-           value="Invalid input"
+           value="Placeholder text"
            id="form-input-error"
            aria-describedby="form-input-error_message">
     <div class="a-error-message" id="form-input-error_message" role="alert">
@@ -155,7 +152,7 @@ Placeholder text:
 
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 5 (#f7f8f9)
-- Text: Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
 
@@ -176,7 +173,7 @@ Placeholder text:
 Use for long-form answers.
 
 - Border: 1 px, Gray 60 (#919395)
-- Text: Body (Avenir Next Regular, 16 px), Gray (#5a5d61) 
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61) 
 
 </div>
 
@@ -207,7 +204,7 @@ Use for long-form answers.
 
 #### Form field labels
 
-- Heading 4 (Avenir Next Medium, 18 px), Black (#101820)
+- H4 (Avenir Next Medium, 18 px), Black (#101820)
 - Positioned above the input field, left aligned
 - Margin bottom: 10 px
 
@@ -228,7 +225,7 @@ Use for long-form answers.
 
 #### Fieldset legend
 
-- Heading 3 (Avenir Next Medium, 22 px), Black (#101820)
+- H3 (Avenir Next Medium, 22 px), Black (#101820)
 
 </div>
 
@@ -494,7 +491,7 @@ The error notification displays when an operation has not run as expected and en
 
 - Border: 2 px, Red (#d14124)
 - Minicon: 18 px, Red (#d14124)
-- Error message: Avenir Next Regular, 16 px, Gray (#5a5d61)
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 - Error minicon and message should always appear below
 
 </div> 
@@ -552,14 +549,11 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Default
 
-Checkbox
 - Height: 20 px
 - Width: 20 px
 - Margin right: 10 px
 - Border: 1 px, Gray 60 (#919395)
 - Background: White (#ffffff)
-
- Label
 - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
@@ -667,14 +661,11 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 #### Default
 
-Button
  - Height: 20 px
  - Width: 20 px
  - Border: 1 px, Gray 60 (#919395)
  - Background: White (#ffffff)
  - Margin right: 10 px
-
- Label
  - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
@@ -718,8 +709,8 @@ Button
 
 #### Selected
 
-Border: 1 px, Pacific (#0072CE)
-Background: 14 px x 14 px, Pacific (#0072CE)
+- Border: 1 px, Pacific (#0072CE)
+- Background: 14 px x 14 px, Pacific (#0072CE)
 
 </div>
 
@@ -740,9 +731,8 @@ Background: 14 px x 14 px, Pacific (#0072CE)
 
 #### Disabled
 
-Border: 1 px, Gray 60 (#919395)
-Background: Gray 80 (#75787b)
-
+- Border: 1 px, Gray 60 (#919395)
+- Background: Gray 80 (#75787b)
 
 </div>
 
@@ -806,7 +796,7 @@ Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Gray 10 (#e7e8e9)
 
-Button:
+Button
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
