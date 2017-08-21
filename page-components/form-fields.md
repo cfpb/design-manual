@@ -102,28 +102,9 @@ Placeholder text:
 
 <div class="content-50 content-first">
 
-#### Hover
+#### Hover/Focus
 
  - Border: 2 px, Pacific (#0072ce)
-
-</div>
-
-<div class="content-50 content-last">
-
-{::nomarkdown}
-<input class="a-text-input a-text-input__focused" placeholder="Placeholder text" type="text">
-{:/nomarkdown}
-
-</div>
-
----
-
-<div class="content-50 content-first">
-
-#### Focus
-
- - Border: 2 px, Pacific (#0072ce)
- - Placeholder text disappears on focus
 
 </div>
 
@@ -143,9 +124,8 @@ Placeholder text:
 
 - Border: 2 px, Red (#d14124)
 - Minicon: 18 px, Red (#d14124)
-- Error message: Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
-- Minicon and error message should always appear below the input field
-
+- Text: Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Minicon and message should always appear below input field
 
 </div>
 
@@ -153,7 +133,6 @@ Placeholder text:
 
 {::nomarkdown}
 <div class="m-field m-field__error">
-    <label class="a-label__heading" for="form-input-error">Label</label>
     <input class="a-text-input a-text-input__error"
            type="text"
            value="Invalid input"
