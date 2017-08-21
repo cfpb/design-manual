@@ -673,8 +673,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<div class="m-form-field m-form-field__radio_1">
-    <input class="a-radio" type="radio" id="test_radio">
+<div class="m-form-field m-form-field__radio">
+    <input class="a-radio" type="radio" id="test_radio_1">
     <label class="a-label" for="test_radio_1">Option 1</label>
 </div>
 {:/nomarkdown}
@@ -694,8 +694,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<div class="m-form-field m-form-field__radio_2">
-    <input class="a-radio" type="radio" id="test_radio">
+<div class="m-form-field m-form-field__radio">
+    <input class="a-radio" type="radio" id="test_radio_2">
     <label class="a-label" for="test_radio_2">Option 1</label>
 </div>
 {:/nomarkdown}
@@ -739,8 +739,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<div class="m-form-field m-form-field__radio_4">
-    <input class="a-radio" type="radio" id="test_radio">
+<div class="m-form-field m-form-field__radio">
+    <input class="a-radio" type="radio" id="test_radio_4">
     <label class="a-label" for="test_radio_4">Option 1</label>
 </div>
 {:/nomarkdown}
