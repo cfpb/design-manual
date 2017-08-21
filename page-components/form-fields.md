@@ -7,8 +7,9 @@ redirect_from: "/ui-toolkit/form-fields.html"
 
 - [General principles](#general-principles)
 - [Text input fields](#text-input-fields)
-- [Labels & helper text](#labels-and-helper-text)
-- [Checkboxes & radio buttons](#checkboxes-and-radio-buttons)
+- [Labels and helper text](#labels-and-helper-text)
+- [Notifications](#notifications)
+- [Checkboxes and radio buttons](#checkboxes-and-radio-buttons)
 - [Dropdowns](#dropdowns)
 - [Range sliders](#range-sliders)
 {: class="toc"}
@@ -406,29 +407,23 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 </div>
 
 <!--******************************-    VALIDATION     ******************************-->
-<br>
-
-## Validation
 
 <div class="content-66 content-first">
 
-Where possible, display formatting errors immediately using client-side validation so the user doesn’t have to wait until submitting to see what went wrong. (This is especially frustrating if the information the user enters the first time around is not cached on submit and they have to fill out all the fields again from scratch.) If letters are entered in a date field, if an email address is missing the “@” sign, let the user know right away by showing a field-level error on blur.
+## Notifications
+
+<div class="content-66 content-first">
+
+Where possible, display formatting errors immediately using client-side validation so the user doesn’t have to wait until submitting to see what went wrong (this is especially frustrating if the information the user enters the first time around is not cached on submit and they have to fill out all the fields again from scratch). If letters are entered in a date field, if an email address is missing the “@” sign, let the user know right away by showing a field-level error on blur.
 
 That said, it’s a good idea to always validate on the server side even if you use client-side validation for formatting checks. That’s because JavaScript validation may not work on all clients; JavaScript errors could occur no matter the client; and JS validation can easily be bypassed, which raises security concerns.
 
-In general, the best practice for server-side validation is to mark errors with both form-level AND field-level errors.
+In general, the best practice for server-side validation is to mark errors with both form-level and field-level errors.
 
 #### Accessibility
 For screen reader accessibility, form-level errors should include anchor links to the problem field in question. In general, use distinct icons, contrasting colors, prominent placement, and text to indicate errors. Don’t rely on just one method, as users can have many different accessibility needs (color blind users, visually impaired users, users with motor control issues, etc.).
 
-
-</div>
-
-### Notifications
-
-</div>
-
----
+### States
 
 <div class="content-50 content-first">
 
@@ -439,7 +434,7 @@ The action notification displays when something is happening on the page, such a
 - Border: 1 px, Gray 40 (#B4B5B6)
 - Background: Gray 10 (#f7f8f9)
 - Padding: 15px
-- Text: Heading 4 (Avenir Next Medium, 18 px) Gray (#5a5d61)
+- Text: H4 (Avenir Next Medium, 18 px) Gray (#5a5d61)
 - Minicon: 18 px, Black (#101820)
 
 </div>
@@ -465,7 +460,6 @@ The success notification displays when an operation has run as expected, such as
 
 </div>
 
-
 <div class="content-50 content-last">
 
 <!--insert this form has been submitted successfully message -->
@@ -486,17 +480,7 @@ The warning notification displays when an operation has run as expected, but doe
 - Border: 2 px, Gold (#ff9e1b)
 - Background: Gold 20 (#fff0dd)
 - Minicon: 18px, Gold (#ff9e1b)
-
-</div> 
-
-<div class="content-50 content-last">
-
-{::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/field-level-alert.png" />
-{:/nomarkdown}
-
-<br>
-
+ 
 </div>
 
 ---
@@ -517,7 +501,6 @@ The error notification displays when an operation has not run as expected and en
 
 <div class="content-50 content-last">
 
-<!--insert error with links -->
 {::nomarkdown}
 <img src="{{site.github.url}}/static/img/forms/form-level-errors.png" />
 {:/nomarkdown}
@@ -528,7 +511,7 @@ The error notification displays when an operation has not run as expected and en
 
 <div class="content-50 content-first">
 
-#### Field -level error
+#### Field-level error
 
 - Border: 2 px, Red (#d14124)
 - Minicon: 18 px, Red (#d14124)
@@ -582,8 +565,6 @@ In this case, the following behavior and design should be followed:
 
 #### Accessibility
 To optimize screen reader accessibility, lay out checkboxes vertically rather than horizontally.
-
-<br>
 
 ### States
 </div>
