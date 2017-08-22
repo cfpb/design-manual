@@ -821,21 +821,19 @@ Target area
 - Background: Gray 10 (#e7e8e9)
 - Padding: 15 px
 
-Label
-- Body (Avenir Next Regular, 16 px), Black (#101820)
-
-Button: 
+Radio button and text 
 - Border: 1 px, Gray 60 (#919395)
 - Background: 20 px x 20 px, White (#ffffff)
+- Body (Avenir Next Regular, 16 px), Black (#101820)
 
 </div>
 
 <div class="content-50">
 
 {::nomarkdown}
-<div class="m-form-field m-form-field__checkbox m-form-field__lg-target">
-    <input class="a-checkbox" type="checkbox" id="test_checkbox_lg">
-    <label class="a-label" for="test_checkbox_lg">Label</label>
+<div class="m-form-field m-form-field__radio m-form-field__lg-target">
+    <input class="a-radio" type="radio" id="test_radio_lg">
+    <label class="a-label" for="test_radio_lg">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -851,7 +849,7 @@ Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Gray 10 (#e7e8e9)
 
-Button
+Radio button
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
@@ -859,7 +857,10 @@ Button
 <div class="content-50">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/large-target-hover.png" />
+<div class="m-form-field m-form-field__radio m-form-field__lg-target">
+    <input class="a-radio" type="radio" id="test_radio_lg">
+    <label class="a-label" for="test_radio_lg">Label</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -875,18 +876,20 @@ Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Pacific 20 (#d6e8fa)
 
-Button
+Radio button
 
 - Border: 1 px, Pacific (#0072ce)
 - Background: 14 x 14 px, Pacific (#0072ce)
-
 
 </div>
 
 <div class="content-50">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/large-target-selected.png" />
+<div class="m-form-field m-form-field__radio m-form-field__lg-target">
+    <input class="a-radio" type="radio" id="test_radio_lg">
+    <label class="a-label" for="test_radio_lg">Label</label>
+</div>
 {:/nomarkdown}
 
 </div>
