@@ -7,9 +7,9 @@ redirect_from: "/ui-toolkit/form-fields.html"
 
 - [General principles](#general-principles)
 - [Text input fields](#text-input-fields)
-- [Labels and helper text](#labels-and-helper-text)
+- [Labels & helper text](#labels-and-helper-text)
 - [Notifications](#notifications)
-- [Checkboxes and radio buttons](#checkboxes-and-radio-buttons)
+- [Checkboxes & radio buttons](#checkboxes-and-radio-buttons)
 - [Dropdowns](#dropdowns)
 - [Range sliders](#range-sliders)
 {: class="toc"}
