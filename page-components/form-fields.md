@@ -129,7 +129,7 @@ Users of screen readers use the tab key to move focus from one form control to a
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<div class="m-field m-field__error">
+<div class="m-form-field m-form-field__error">
     <input class="a-text-input a-text-input__error"
            type="text"
            value="Placeholder text"
@@ -180,7 +180,7 @@ Use for long-form answers.
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<textarea class="a-text-input" cols="30" rows="5">Placeholder text</textarea>
+<textarea class="a-text-input" cols="30" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
 {:/nomarkdown}
 
 </div>
@@ -313,10 +313,12 @@ Use to indicate whether a field is optional or required.
 
 {::nomarkdown}
 <label class="a-label a-label__heading" for="helper-inline-example">
-    Label <span class="form-label-helper-text">(optional)</span>
+    Label <span class="form-label-helper">(optional)</span>
 </label>
+
 <input class="a-text-input" type="text" id="helper-inline-example">
 {:/nomarkdown}
+
 </div>
 
 ---
@@ -499,7 +501,17 @@ The error notification displays when an operation has not run as expected and en
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/field-level-alert.png" />
+<div class="m-form-field m-form-field__error">
+    <input class="a-text-input a-text-input__error"
+           type="text"
+           value="Placeholder text"
+           id="form-input-error"
+           aria-describedby="form-input-error_message">
+    <div class="a-error-message" id="form-input-error_message" role="alert">
+        <span class="cf-icon cf-icon-delete-round" aria-hidden="true"></span>
+        This is a required question, please answer.
+    </div>
+</div>
 {:/nomarkdown}
 
 <br>
