@@ -66,6 +66,7 @@ As the screen size gets smaller, break multi-column inputs into a single, stacke
 Users of screen readers use the tab key to move focus from one form control to another. Make sure that tab focus order reflects the way you would like users to navigate through the form. Consider whether tabs should move a user down or across the page. 
 
 </div>
+<br>
 
 <!--**************************************    Text Input fields    **************************************-->
 
@@ -118,11 +119,11 @@ Users of screen readers use the tab key to move focus from one form control to a
 <div class="content-50 content-first">
 
 #### Error
+Minicon and message should always appear below input field
 
 - Border: 2 px, Red (#d14124)
 - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 - Minicon: 18 px, Red (#d14124)
-- Minicon and message should always appear below input field
 
 </div>
 
@@ -151,7 +152,7 @@ Users of screen readers use the tab key to move focus from one form control to a
 #### Disabled
 
 - Border: 1 px, Gray 60 (#919395)
-- Background: Gray 5 (#f7f8f9)
+- Background: Gray 10 (#e7e8e9)
 - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
@@ -185,8 +186,6 @@ Use for long-form answers.
 
 </div>
 <br>
-<br>
-
 
 <!--******************************-    LABELS AND HELPER TEXT     ******************************-->
 
@@ -225,30 +224,70 @@ Use for long-form answers.
 
 #### Fieldset legend
 
-- H3 (Avenir Next Medium, 22 px), Black (#101820)
-
+- H4 (Avenir Next Medium, 18 px), Black (#101820)
+- Positioned above a group of input fields, left aligned
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<fieldset>
-    <legend>Fieldset legend</legend>
-    <div class="form-group">
-        <div class="form-group_item">
-            <label class="a-label" for="name1">
-                Label
-            </label>
-            <input class="a-text-input" type="text" id="name1" value="">
-        </div>
-        <div class="form-group_item">
-            <label class="a-label" for="name2">
-                Label
-            </label>
-            <input class="a-text-input" type="text" id="name2" value="">
-        </div>
+<div class="o-feedback
+            " data-js-hook="state_atomic_init">
+  <form class="o-form" method="post" action="." novalidate="">
+    <div class="u-mb15">
+        
+<div class="m-notification
+              m-notification__success
+              ">
+      <span class="m-notification_icon
+                   cf-icon"></span>
+      <div class="m-notification_content">
+          <div class="h4 m-notification_message"></div>
+          
+      </div>
+  </div>
+        
     </div>
-</fieldset>
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="nYow8ZWnmtc52VD4tK3VrFvAmA07QpJm">
+    <input type="hidden" name="form_id" value="form-content-3">
+    <input type="hidden" name="referrer" value="https://www.consumerfinance.gov/about-us/blog/">
+    <input type="hidden" name="language" value="en">
+
+    <div class="o-form_group">
+        <fieldset class="o-form_fieldset">
+            <legend class="a-legend">
+               Fieldset legend
+            </legend>
+
+            <ul class="content-l m-list m-list__unstyled">
+                <li class="content-l_col content-l_col-1-2">
+                    <div class="m-form-field
+                                m-form-field__radio
+                                m-form-field__lg-target">
+                        <input class="a-radio" id="is_helpful_1" type="radio" name="is_helpful" value="1">
+                        <label class="a-label" for="is_helpful_1">
+                            Yes
+                        </label>
+                    </div>
+                </li>
+                <li class="content-l_col content-l_col-1-2">
+                    <div class="m-form-field
+                                m-form-field__radio
+                                m-form-field__lg-target">
+                            <input class="a-radio" id="is_helpful_0" type="radio" name="is_helpful" value="0">
+                            <label class="a-label" for="is_helpful_0">
+                                No
+                            </label>
+                    </div>
+                </li>
+            </ul>
+
+        </fieldset>
+    </div>
+  </form>
+</div>
+
 {:/nomarkdown}
 
 </div>
@@ -259,7 +298,7 @@ Use for long-form answers.
 
 <div class="content-66 content-first">
 
-<h3> Helper text</h3>
+<h3>Helper text</h3>
 
 </div>
 
@@ -288,11 +327,13 @@ Use block helper text to explain why a piece of information is being requested, 
 <label class="a-label a-label__heading" for="helper-example">
     Label
 </label>
-<label class="form-label-helper-text" for="helper-example">
-Use block helper text for instructions.
-</label>
-<input class="a-text-input" type="text" id="helper-example">
+<div class="o-form_group">
+        <p class="u-mb15">Use block helper text for instructions.</p>
+        <input class="a-text-input" type="text" id="helper-example">
+    </div>
 {:/nomarkdown}
+
+
 
 </div>
 
@@ -303,7 +344,7 @@ Use block helper text for instructions.
 #### Inline helper text
 
 Use to indicate whether a field is optional or required.
-- H4 (Avenir Next Medium, 18 px), Gray (#5a5d61)
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 - Margin bottom: 10 px
 - Helper text should be lowercase and placed in parenthesis after the label
 
@@ -330,7 +371,6 @@ Use to indicate whether a field is optional or required.
 Use placeholder text for formatting examples only. Don’t use for instructions. Once an input field is focused, the placeholder text is lost.  
 
 - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
-- Padding: 7 px
 
 </div>
 
@@ -409,7 +449,7 @@ For screen reader accessibility, form-level errors should include anchor links t
 
 The action notification displays when something is happening on the page, such as a page loading notification as search results are found. Use [animated minicons]({{site.github.url}}/brand-guidelines/minicons.html#animation) to reassure the user that an action is functioning as intended.
 
-- Border: 1 px, Gray 40 (#B4B5B6)
+- Border: 1 px, Gray 40 (#b4b5b6)
 - Background: Gray 10 (#f7f8f9)
 - Padding: 15px
 - Text: H4 (Avenir Next Medium, 18 px) Gray (#5a5d61)
@@ -587,7 +627,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Hover/Focus
 
-- Border: 2 px, Pacific (#0072CE)
+- Border: 2 px, Pacific (#0072ce)
 
 </div>
 
@@ -699,7 +739,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 #### Hover/Focus
 
- - Border: 2 px, Pacific (#0072CE)
+ - Border: 2 px, Pacific (#0072ce)
 
 </div> 
 
@@ -721,8 +761,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 #### Selected
 
-- Border: 1 px, Pacific (#0072CE)
-- Background: 14 px x 14 px, Pacific (#0072CE)
+- Border: 1 px, Pacific (#0072ce)
+- Background: 14 px x 14 px, Pacific (#0072ce)
 
 </div>
 
@@ -793,7 +833,10 @@ Button:
 <div class="content-50">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/large-target-default.png" />
+<div class="m-form-field m-form-field__checkbox m-form-field__lg-target">
+    <input class="a-checkbox" type="checkbox" id="test_checkbox_lg">
+    <label class="a-label" for="test_checkbox_lg">Label</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -883,6 +926,7 @@ From an accessibility standpoint, browser defaults for multiple select component
 - Border: 1 px, Gray 60 (#919395)
 - Background (down caret box): Gray 10 (#e7e8e9)
 - Minicon: Gray 80 (#75787b)
+- Body (Avenir Next Regular, 16px), Gray (#5a5d61)
 
 </div>
 
@@ -947,9 +991,9 @@ From an accessibility standpoint, browser defaults for multiple select component
     <div class="a-select">
         <select id="test_select__disabled" disabled>
             <option value="option1">Option 1</option>
-            <option value="option1">Option 1</option>
-            <option value="option1">Option 1</option>
-            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
         </select>
     </div>
 </div>
@@ -1006,7 +1050,7 @@ Handle
 
 #### Focus
 
-- Border: 2 px, Pacific (#0072CE)
+- Border: 2 px, Pacific (#0072ce)
 - Background: Pacific 20 (#d6e8fa)
 
 </div>
