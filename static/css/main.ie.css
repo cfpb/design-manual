@@ -6869,8 +6869,8 @@ p.print-georgia-para {
   float: left;
   height: 4.0625em;
   max-height: 4.0625em;
-  background-color: #E7E7E6;
-  border-left: 1px solid #BABBBD;
+  background-color: #e7e8e9;
+  border-left: 1px solid #b4b5b6;
   width: 85%;
   padding: .75em 1em;
 }
@@ -6893,7 +6893,7 @@ p.print-georgia-para {
   display: block;
   max-height: 4.0625em;
   border-width: 0;
-  background-color: #E7E7E6;
+  background-color: #e7e8e9;
 }
 
 .repo-list h4 {
