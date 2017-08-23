@@ -56,9 +56,9 @@ Choose the appropriate width for text input fields so they match the kind of inf
 For example, it’s hard to understand at a glance that a single 1,000 px-wide text field is asking for your phone number or birth date. When possible, be even more explicit with the width by dividing it into known character counts. For instance, social security number should be three characters, then two, then four.  Be mindful of not getting too restrictive, however. This approach could work for phone numbers, but only if international numbers are not permitted. 
 
 These types of inputs should always be smaller widths:
- - Middle initial 
- - Date, month, or year
- - State abbreviation
+- Middle initial 
+- Date, month, or year
+- State abbreviation
 
 #### Responsive design
 As the screen size gets smaller, break multi-column inputs into a single, stacked column. Fields that are next to each other on a large screen, should stack at smaller screen sizes. When possible, fields should span the entire width of the screen at the smallest screen sizes.
@@ -747,12 +747,12 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 <div class="content-50 content-first">
 
 #### Default
- - Height: 20 px
- - Width: 20 px
- - Border: 1 px, Gray 60 (#919395)
- - Background: White (#ffffff)
- - Margin right: 10 px
- - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Height: 20 px
+- Width: 20 px
+- Border: 1 px, Gray 60 (#919395)
+- Background: White (#ffffff)
+- Margin right: 10 px
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
 
