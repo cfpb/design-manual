@@ -579,18 +579,6 @@ To optimize usability, consider using checkboxes with large target areas. If the
 
 Selecting the checkbox or touching the label text next to it should toggle the state of the checkbox on and off. 
 
-There are times when checkboxes may be nested with parent/child relationships. This is common when used within filter interactions. 
-
-In this case, the following behavior and design should be followed:
-
-- Parent is “collapsed” and displays an expandable arrow at the end of the text
-- The label of the parent checkbox should be clickable 
-- Clicking on the label or arrow toggles the opening/closing of the child options
-- In open state, arrow points up; in closed state, arrow points down
-- Child options are in black text and not clickable 
-- Clicking on the parent checkbox selects the parent option and all child options
-- Clicking on the parent checkbox does not change the state of the open/close expansion (if it's checked with the children expanded, it stays expanded, for instance)
-
 #### Accessibility
 To optimize screen reader accessibility, lay out checkboxes vertically rather than horizontally.
 
@@ -737,6 +725,63 @@ In this case, the following behavior and design should be followed:
 
 </div>
 
+<!--******   NESTED CHECKBOXES     **********-->
+
+<div class="content-66 content-first">
+
+</div>
+<br>
+### Nested checkboxes
+
+There are times when checkboxes may be nested with parent/child relationships. This is common when used within filter interactions. 
+
+#### Usability 
+In this case, the following behavior and design should be followed:
+
+- Parent is “collapsed” and displays an expandable arrow at the end of the text
+- The label of the parent checkbox should be clickable 
+- Clicking on the label or arrow toggles the opening/closing of the child options
+- In open state, arrow points up; in closed state, arrow points down
+- Child options are in black text and not clickable 
+- Clicking on the parent checkbox selects the parent option and all child options
+- Clicking on the parent checkbox does not change the state of the open/close expansion (if it's checked with the children expanded, it stays expanded, for instance)
+
+### States
+
+</div>
+
+<div class="content-50 content-first">
+
+#### Indeterminate
+- Border: 2px, Dark Gray (#43484e)
+- Background: 12 x 12px square centered, Gray 80 (#75787b)
+
+</div>
+
+<div class="content-50 content-last">
+
+</div>
+
+<div class="content-50 content-first">
+
+#### Nested checkboxes (closed)
+- Label: Pacific (#0072CE)
+- Arrow pointed down
+
+</div>
+
+<div class="content-50 content-last">
+
+</div>
+
+<div class="content-50 content-first">
+
+#### Nested checkboxes (open)
+- Label: Pacific (#0072CE)
+- Arrow pointed up
+- Child checkbox options left aligned with parent label
+
+</div>
 
 <!--******   RADIO BUTTONS     **********-->
 
@@ -873,21 +918,19 @@ Target area
 - Background: Gray 10 (#e7e8e9)
 - Padding: 15 px
 
-Label
-- Body (Avenir Next Regular, 16 px), Black (#101820)
-
-Button: 
+Radio button and text 
 - Border: 1 px, Gray 60 (#919395)
 - Background: 20 px x 20 px, White (#ffffff)
+- Body (Avenir Next Regular, 16 px), Black (#101820)
 
 </div>
 
 <div class="content-50">
 
 {::nomarkdown}
-<div class="m-form-field m-form-field__checkbox m-form-field__lg-target">
-    <input class="a-checkbox" type="checkbox" id="test_checkbox_lg">
-    <label class="a-label" for="test_checkbox_lg">Label</label>
+<div class="m-form-field m-form-field__radio m-form-field__lg-target">
+    <input class="a-radio" type="radio" id="test_radio_lg">
+    <label class="a-label" for="test_radio_lg">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -903,7 +946,7 @@ Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Gray 10 (#e7e8e9)
 
-Button
+Radio button
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
@@ -911,7 +954,10 @@ Button
 <div class="content-50">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/large-target-hover.png" />
+<div class="m-form-field m-form-field__radio m-form-field__lg-target">
+    <input class="a-radio" type="radio" id="test_radio_lg">
+    <label class="a-label" for="test_radio_lg">Label</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -927,18 +973,20 @@ Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Pacific 20 (#d6e8fa)
 
-Button
+Radio button
 
 - Border: 1 px, Pacific (#0072ce)
 - Background: 14 x 14 px, Pacific (#0072ce)
-
 
 </div>
 
 <div class="content-50">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/large-target-selected.png" />
+<div class="m-form-field m-form-field__radio m-form-field__lg-target">
+    <input class="a-radio" type="radio" id="test_radio_lg">
+    <label class="a-label" for="test_radio_lg">Label</label>
+</div>
 {:/nomarkdown}
 
 </div>

@@ -17,7 +17,7 @@ redirect_from: "/identity/typography.html"
 
 <div class="content-67 content-first">
 
-A clear typographic hierarchy is critical to the effective communication of our brand. Type should be light and well-spaced to reinforce the idea that the CFPB is open, modern, and approachable. It should promote readability and accessibility, which allows all users to efficiently read and absorb textual information. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document.
+A clear typographic hierarchy is critical to the effective communication of our brand. Type should be light and well-spaced to reinforce that we are transparent, open, and approachable. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document. Readability and accessibility allow all users to efficiently read and absorb textual information. 
 {: class="lead-in"}
 
 </div>
@@ -89,7 +89,7 @@ abcdefghijklmnopqrstuvwxyz
 
 ## Web hierarchy
 
-<p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read; a successful hierarchy enables readers to easily scan content.</p>
+<p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read. A successful hierarchy enables readers to easily scan content.</p>
 
 ### Headings
 
@@ -398,7 +398,7 @@ is a useful resource for testing the compliance of any combination of colors in 
 
 ### Fully accessible combinations
 
-Accessible text and background color combinations are shown below:
+Use only these accessible text and background color combinations.
 
 </div>
 
@@ -409,37 +409,16 @@ Accessible text and background color combinations are shown below:
 <figure>
     <ul>
         <li class="type-color-combo__black-on-white">Black on White</li>
-        <li class="type-color-combo__darkgray-on-white">Dark Gray on White</li>
+        <li class="type-color-combo__dark-gray-on-white">Dark Gray on White</li>
+        <li class="type-color-combo__gray-on-white">Gray on White</li> 
         <li class="type-color-combo__white-on-black">White on Black</li>
-        <li class="type-color-combo__white-on-darkgray">White on Dark Gray</li>
+        <li class="type-color-combo__white-on-dark-gray">White on Dark Gray</li>
+        <li class="type-color-combo__white-on-gray">White on Gray</li>
         <li class="type-color-combo__black-on-gray10">Black on Gray 10</li>
         <li class="type-color-combo__black-on-gray5">Black on Gray 5</li>
         <li class="type-color-combo__pacific-on-gray5">Pacific on Gray 5</li>
-        <li class="type-color-combo__black-on-green60">Black on Green 60</li>
-        <li class="type-color-combo__black-on-green20">Black on Green 20</li>
-    </ul>
-</figure>
-
-{:/nomarkdown}
-
-</div>
-
-<div class="content-33 content-first">
-
-### Partially accessible combinations
-Black or White text on Gray, and Gray text on white are _only accessible for text sizes above 24px_.
-
-</div>
-
-<div class="content-67 content-last">
-
-{::nomarkdown}
-
-<figure>
-    <ul>
-        <li class="type-color-combo__white-on-gray">White on Gray</li>
-        <li class="type-color-combo__black-on-gray">Black on Gray</li>
-        <li class="type-color-combo__gray-on-white">Gray on White</li>
+        <li class="type-color-combo__black-on-greenmid">Black on Green 60</li>
+        <li class="type-color-combo__black-on-greentint">Black on Green 20</li>
     </ul>
 </figure>
 
@@ -451,7 +430,7 @@ Black or White text on Gray, and Gray text on white are _only accessible for tex
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Non-accessible combinations</h3>
 
-Never set CFPB Green type on a white background or White type on CFPB Green background as these combinations are not accessible. Never set type on a patterned background.
+Never set CFPB Green type on a white background or white type on CFPB Green background as these combinations are not accessible. Never set type on a patterned background.
 
 </div>
 
@@ -474,7 +453,7 @@ Never set CFPB Green type on a white background or White type on CFPB Green back
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Undesirable combinations</h3>
 
-Although CFPB Green and Black are accessible for large scale type, this color combination should never be used for web or print type.
+Although CFPB Green and black are accessible for large scale type, this color combination should never be used for web or print type.
 
 </div>
 
