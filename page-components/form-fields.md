@@ -7,9 +7,9 @@ redirect_from: "/ui-toolkit/form-fields.html"
 
 - [General principles](#general-principles)
 - [Text input fields](#text-input-fields)
-- [Labels and helper text](#labels-and-helper-text)
+- [Labels & helper text](#labels-and-helper-text)
 - [Notifications](#notifications)
-- [Checkboxes and radio buttons](#checkboxes-and-radio-buttons)
+- [Checkboxes & radio buttons](#checkboxes-and-radio-buttons)
 - [Dropdowns](#dropdowns)
 - [Range sliders](#range-sliders)
 {: class="toc"}
@@ -328,7 +328,7 @@ Use block helper text to explain why a piece of information is being requested, 
     Label
 </label>
 <div class="o-form_group">
-        <p class="u-mb15">Use block helper text for instructions.</p>
+        <p class="u-mb10">Use block helper text for instructions.</p>
         <input class="a-text-input" type="text" id="helper-example">
     </div>
 {:/nomarkdown}
@@ -682,6 +682,58 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <input class="a-checkbox a-checkbox__disabled" type="checkbox">
 <label class="a-checkbox a-checkbox__heading">Option 1</label>
 {:/nomarkdown}
+
+</div>
+<br>
+### Nested checkboxes
+
+There are times when checkboxes may be nested with parent/child relationships. This is common when used within filter interactions. 
+
+#### Usability 
+In this case, the following behavior and design should be followed:
+
+- Parent is “collapsed” and displays an expandable arrow at the end of the text
+- The label of the parent checkbox should be clickable 
+- Clicking on the label or arrow toggles the opening/closing of the child options
+- In open state, arrow points up; in closed state, arrow points down
+- Child options are in black text and not clickable 
+- Clicking on the parent checkbox selects the parent option and all child options
+- Clicking on the parent checkbox does not change the state of the open/close expansion (if it's checked with the children expanded, it stays expanded, for instance)
+
+### States
+
+</div>
+
+<div class="content-50 content-first">
+
+#### Indeterminate
+- Border: 2px, Dark Gray (#43484e)
+- Background: 12 x 12px square centered, Gray 80 (#75787b)
+
+</div>
+
+<div class="content-50 content-last">
+
+</div>
+
+<div class="content-50 content-first">
+
+#### Nested checkboxes (closed)
+- Label: Pacific (#0072CE)
+- Arrow pointed down
+
+</div>
+
+<div class="content-50 content-last">
+
+</div>
+
+<div class="content-50 content-first">
+
+#### Nested checkboxes (open)
+- Label: Pacific (#0072CE)
+- Arrow pointed up
+- Child checkbox options left aligned with parent label
 
 </div>
 
