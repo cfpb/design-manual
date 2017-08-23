@@ -725,64 +725,6 @@ In this case, the following behavior and design should be followed:
 
 </div>
 
-<!--******   NESTED CHECKBOXES     **********-->
-
-<div class="content-66 content-first">
-
-</div>
-<br>
-### Nested checkboxes
-
-There are times when checkboxes may be nested with parent/child relationships. This is common when used within filter interactions. 
-
-#### Usability 
-In this case, the following behavior and design should be followed:
-
-- Parent is “collapsed” and displays an expandable arrow at the end of the text
-- The label of the parent checkbox should be clickable 
-- Clicking on the label or arrow toggles the opening/closing of the child options
-- In open state, arrow points up; in closed state, arrow points down
-- Child options are in black text and not clickable 
-- Clicking on the parent checkbox selects the parent option and all child options
-- Clicking on the parent checkbox does not change the state of the open/close expansion (if it's checked with the children expanded, it stays expanded, for instance)
-
-### States
-
-</div>
-
-<div class="content-50 content-first">
-
-#### Indeterminate
-- Border: 2px, Dark Gray (#43484e)
-- Background: 12 x 12px square centered, Gray 80 (#75787b)
-
-</div>
-
-<div class="content-50 content-last">
-
-</div>
-
-<div class="content-50 content-first">
-
-#### Nested checkboxes (closed)
-- Label: Pacific (#0072CE)
-- Arrow pointed down
-
-</div>
-
-<div class="content-50 content-last">
-
-</div>
-
-<div class="content-50 content-first">
-
-#### Nested checkboxes (open)
-- Label: Pacific (#0072CE)
-- Arrow pointed up
-- Child checkbox options left aligned with parent label
-
-</div>
-
 <!--******   RADIO BUTTONS     **********-->
 
 <br>
