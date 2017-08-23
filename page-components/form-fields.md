@@ -49,7 +49,9 @@ Avoid the use of disabled fields where possible, and instead hide disabled field
 ## General principles
 
 <div class="content-66 content-first">
+
 #### Usability
+
 Choose the appropriate width for text input fields so they match the kind of information requested. This makes it easier for users to quickly grasp what’s being asked.
 
 For example, it’s hard to understand at a glance that a single 1,000 px-wide text field is asking for your phone number or birth date. When possible, be even more explicit with the width by dividing it into known character counts. For instance, social security number should be three characters, then two, then four.  Be mindful of not getting too restrictive, however. This approach could work for phone numbers, but only if international numbers are not permitted. 
@@ -562,15 +564,15 @@ The error notification displays when an operation has not run as expected and en
 
 <!--******************************-    CHECKBOXES AND RADIO BUTTONS     ******************************-->
 
-
 <br>
+
 ## Checkboxes and radio buttons
 
 <!--******   CHECKBOXES     **********-->
 
 <div class="content-66 content-first">
 
-<h3>Checkboxes</h3>
+### Checkboxes
 
 Use checkboxes when the user can select more than one option from a list. Make clear with helper text that this is the case.
 
@@ -672,12 +674,19 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 {:/nomarkdown}
 
 </div>
+
 <br>
+
+<!--******   NESTED CHECKBOXES     **********-->
+
+<div class="content-66 content-first">
+
 ### Nested checkboxes
 
 There are times when checkboxes may be nested with parent/child relationships. This is common when used within filter interactions. 
 
 #### Usability 
+
 In this case, the following behavior and design should be followed:
 
 - Parent is “collapsed” and displays an expandable arrow at the end of the text
@@ -953,6 +962,7 @@ Use dropdowns when:
 Also keep in mind that dropdowns behave differently on various mobile devices, taking up different amounts of real estate and requiring different interactions. Mobile also doesn’t allow for the use of typeahead to navigate quickly to an item in a list, so navigating long lists can be especially cumbersome. 
 
 #### Accessibility
+
 From an accessibility standpoint, browser defaults for multiple select components require the use of a mouse (e.g. holding down the control key and clicking several items). The default components are a poor choice for the visually impaired. If a multi-select component is desired, use custom JavaScript to make it accessible.
 
 ### States
