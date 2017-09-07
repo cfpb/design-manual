@@ -511,6 +511,8 @@ The warning notification displays when an operation has run as expected, but doe
  
 </div>
 
+<div class="content-50 content-last">
+
 {::nomarkdown}
 <div class="m-notification
             m-notification__visible
@@ -521,6 +523,8 @@ The warning notification displays when an operation has run as expected, but doe
     </div>
 </div>
 {:/nomarkdown}
+
+</div>
 
 ---
 
