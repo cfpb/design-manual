@@ -5846,6 +5846,21 @@ figure {
 }
 /* Color swatches for Identity/Color page
    ========================================================================== */
+.swatches-container__primary {
+  display: block;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.swatches__primary {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 78.33333333%;
+}
 .swatch {
   margin-left: 0;
 }
