@@ -458,7 +458,12 @@ The action notification displays when something is happening on the page, such a
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/form-level-action.png" />
+<div class="m-notification
+            m-notification__visible">
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">The page is loading…</div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -480,7 +485,14 @@ The success notification displays when an operation has run as expected, such as
 
 <!--insert this form has been submitted successfully message -->
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/form-level-success.png" />
+<div class="m-notification
+            m-notification__visible
+            m-notification__success">
+    <span class="m-notification_icon cf-icon"></span>
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">11 results</div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -498,6 +510,17 @@ The warning notification displays when an operation has run as expected, but doe
 - Minicon: 18px, Gold (#ff9e1b)
  
 </div>
+
+{::nomarkdown}
+<div class="m-notification
+            m-notification__visible
+            m-notification__warning">
+    <span class="m-notification_icon cf-icon"></span>
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">No results found.</div>
+    </div>
+</div>
+{:/nomarkdown}
 
 ---
 
@@ -518,7 +541,14 @@ The error notification displays when an operation has not run as expected and en
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/form-level-errors.png" />
+<div class="m-notification
+            m-notification__visible
+            m-notification__error">
+    <span class="m-notification_icon cf-icon"></span>
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">Page not found.</div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
