@@ -27,7 +27,8 @@ A minimal palette, clear hierarchy, and ample whitespace ensure a voice of autho
 Our core brand color is CFPB Green. Green 60 and Green 20 play a supporting role in basic branded pieces. Black is typically used for type and icons while grays are used for wells and accents, such as rules and borders.
 
 {::nomarkdown}
-<div class="swatches">
+<div class="swatches-container__primary">
+    <div class="swatches swatches__primary">
     {% for color in site.data.cfpb-brand-colors %}
         {% if color.primary %}
             <figure class="swatch swatch__primary">
@@ -58,6 +59,7 @@ Our core brand color is CFPB Green. Green 60 and Green 20 play a supporting role
             </figure>
         {% endif %}
     {% endfor %}
+</div>
 </div>
 {:/nomarkdown}
 
