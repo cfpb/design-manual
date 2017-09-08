@@ -395,7 +395,7 @@ Use placeholder text for formatting examples only. Don’t use for instructions.
 
 #### Required vs. optional fields
 
-Where possible, design your forms to only include required fields. If it’s not required, ask yourself if it’s really necessary to include at all. . Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise. 
+Where possible, design your forms to only include required fields. If it’s not required, ask yourself if it’s really necessary to include at all. Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise. 
 
 Try not to design forms consisting mainly of optional fields. If you must do so, mark required field labels only with inline helper text.
 
@@ -458,7 +458,12 @@ The action notification displays when something is happening on the page, such a
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/form-level-action.png" />
+<div class="m-notification
+            m-notification__visible">
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">The page is loading…</div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -480,7 +485,14 @@ The success notification displays when an operation has run as expected, such as
 
 <!--insert this form has been submitted successfully message -->
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/form-level-success.png" />
+<div class="m-notification
+            m-notification__visible
+            m-notification__success">
+    <span class="m-notification_icon cf-icon"></span>
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">11 results</div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -497,6 +509,21 @@ The warning notification displays when an operation has run as expected, but doe
 - Background: Gold 20 (#fff0dd)
 - Minicon: 18px, Gold (#ff9e1b)
  
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<div class="m-notification
+            m-notification__visible
+            m-notification__warning">
+    <span class="m-notification_icon cf-icon"></span>
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">No results found.</div>
+    </div>
+</div>
+{:/nomarkdown}
+
 </div>
 
 ---
@@ -518,7 +545,14 @@ The error notification displays when an operation has not run as expected and en
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/form-level-errors.png" />
+<div class="m-notification
+            m-notification__visible
+            m-notification__error">
+    <span class="m-notification_icon cf-icon"></span>
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">Page not found.</div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
