@@ -634,8 +634,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__checkbox">
-    <input class="a-checkbox" type="checkbox" id="test_checkbox_1">
-    <label class="a-label" for="test_checkbox_1">Option 1</label>
+    <input class="a-checkbox" type="checkbox" id="test_checkbox">
+    <label class="a-label" for="test_checkbox">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -654,9 +654,10 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__checkbox">
-    <input class="a-checkbox" type="checkbox" id="test_checkbox_2">
-    <label class="a-label" for="test_checkbox_2">Option 1</label>
+    <input class="a-checkbox hover" type="checkbox" id="test_checkbox_basic_hover">
+    <label class="a-label" for="test_checkbox_basic_hover">Label</label>
 </div>
+
 {:/nomarkdown}
 
 </div>
@@ -675,8 +676,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__checkbox">
-    <input class="a-checkbox" type="checkbox" id="test_checkbox_3">
-    <label class="a-label" for="test_checkbox_3">Option 1</label>
+    <input class="a-checkbox" type="checkbox" id="test_checkbox_basic_checked" checked>
+    <label class="a-label" for="test_checkbox_basic_checked">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -695,8 +696,10 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-checkbox a-checkbox__disabled" type="checkbox">
-<label class="a-checkbox a-checkbox__heading">Option 1</label>
+<div class="m-form-field m-form-field__checkbox">
+    <input class="a-checkbox" type="checkbox" id="test_checkbox_basic_disabled" disabled>
+    <label class="a-label" for="test_checkbox_basic_disabled">Label</label>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -796,8 +799,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio" type="radio" id="test_radio_1">
-    <label class="a-label" for="test_radio_1">Option 1</label>
+    <input class="a-radio" type="radio" id="test_radio_basic_default">
+    <label class="a-label" for="test_radio_basic_default">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -816,8 +819,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio" type="radio" id="test_radio_2">
-    <label class="a-label" for="test_radio_2">Option 1</label>
+    <input class="a-radio hover" type="radio" id="test_radio_basic_hover">
+    <label class="a-label" for="test_radio_basic_hover">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -838,8 +841,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio" type="radio" id="test_radio_3">
-    <label class="a-label" for="test_radio_3">Option 1</label>
+    <input class="a-radio focus" type="radio" id="test_radio_basic_checked" checked>
+    <label class="a-label" for="test_radio_basic_checked">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -859,9 +862,10 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio" type="radio" id="test_radio_4">
-    <label class="a-label" for="test_radio_4">Option 1</label>
+    <input class="a-radio" type="radio" id="test_radio_basic_disabled" disabled>
+    <label class="a-label" for="test_radio_basic_disabled">Label</label>
 </div>
+
 {:/nomarkdown}
 
 </div>
