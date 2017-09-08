@@ -4774,6 +4774,110 @@ h6 + .a-legend,
 }
 /* ==========================================================================
    Capital Framework
+   Notifications Styling
+   ========================================================================== */
+.m-notification {
+  display: none;
+  position: relative;
+  padding: 15px;
+  background: #e7e8e9;
+  border: 1px solid #b4b5b6;
+}
+.m-notification__success {
+  background: #e2efd8;
+  border-color: #20aa3f;
+}
+.m-notification__success .m-notification_icon:before {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\e101";
+  vertical-align: middle;
+  color: #20aa3f;
+}
+.m-notification__warning {
+  background: #fff0dd;
+  border-color: #ff9e1b;
+}
+.m-notification__warning .m-notification_icon:before {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\e103";
+  vertical-align: middle;
+  color: #ff9e1b;
+}
+.m-notification__error {
+  background: #f7e0d9;
+  border-color: #d14124;
+}
+.m-notification__error .m-notification_icon:before {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\e107";
+  vertical-align: middle;
+  color: #d14124;
+}
+.m-notification__visible {
+  display: block;
+}
+.m-notification_icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #5a5d61;
+  font-size: 1.125em;
+  line-height: 1;
+}
+.m-notification_icon + .m-notification_content {
+  padding-left: 25px;
+}
+.m-notification_message {
+  margin-bottom: 0;
+}
+.m-notification_explanation {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  margin-top: 0.3125em;
+  margin-bottom: 0;
+}
+.m-notification_explanation em,
+.m-notification_explanation i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .m-notification_explanation em,
+.lt-ie9 .m-notification_explanation i {
+  font-style: normal !important;
+}
+.m-notification_explanation strong,
+.m-notification_explanation b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .m-notification_explanation strong,
+.lt-ie9 .m-notification_explanation b {
+  font-weight: normal !important;
+}
+.m-notification_explanation a {
+  border-bottom-width: 1px;
+}
+/* ==========================================================================
+   Capital Framework
    Pagination Styling
    ========================================================================== */
 .m-pagination {
