@@ -9,7 +9,8 @@ redirect_from: "/ui-toolkit/form-fields.html"
 - [Text input fields](#text-input-fields)
 - [Labels & helper text](#labels-and-helper-text)
 - [Notifications](#notifications)
-- [Checkboxes & radio buttons](#checkboxes-and-radio-buttons)
+- [Checkboxes](#checkboxes)
+- [Radio buttons](#radio-buttons)
 - [Dropdowns](#dropdowns)
 - [Range sliders](#range-sliders)
 {: class="toc"}
@@ -101,9 +102,28 @@ Users of screen readers use the tab key to move focus from one form control to a
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
+#### Hover
 
 - Border: 2 px, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<input class="a-text-input a-text-input__hover" placeholder="Placeholder text" type="text">
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+
+- Border: 2 px, Pacific (#0072ce)
+- Outline: Dotted thin, Pacific (#0072ce)
 
 </div>
 
@@ -596,13 +616,11 @@ The error notification displays when an operation has not run as expected and en
 
 <br>
 
-## Checkboxes and radio buttons
+## Checkboxes
 
 <!--******   CHECKBOXES     **********-->
 
 <div class="content-66 content-first">
-
-### Checkboxes
 
 Use checkboxes when the user can select more than one option from a list. Make clear with helper text that this is the case.
 
@@ -645,7 +663,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
+#### Hover
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
@@ -656,6 +674,28 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="m-form-field m-form-field__checkbox">
     <input class="a-checkbox hover" type="checkbox" id="test_checkbox_basic_hover">
     <label class="a-label" for="test_checkbox_basic_hover">Label</label>
+</div>
+
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+- Border: 2 px, Pacific (#0072ce)
+- Outline: Dotted thin, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__checkbox">
+    <input class="a-checkbox focus" type="checkbox" id="test_checkbox_basic_focus">
+    <label class="a-label" for="test_checkbox_basic_focus">Label</label>
 </div>
 
 {:/nomarkdown}
@@ -740,6 +780,8 @@ In this case, the following behavior and design should be followed:
 
 </div>
 
+---
+
 <div class="content-50 content-first">
 
 #### Nested checkboxes (closed)
@@ -751,6 +793,8 @@ In this case, the following behavior and design should be followed:
 <div class="content-50 content-last">
 
 </div>
+
+---
 
 <div class="content-50 content-first">
 
@@ -764,9 +808,11 @@ In this case, the following behavior and design should be followed:
 <!--******   RADIO BUTTONS     **********-->
 
 <br>
+
+## Radio buttons
+
 <div class="content-66 content-first">
 
-### Radio buttons
 Use radio buttons when the user can choose only one option out of a list. Use these for a small number of discrete elements—avoid long lists of radio buttons (usually no more than 6-8 options). When there are more than two options, stack radio buttons vertically. 
 
 #### Usability
@@ -810,7 +856,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
+#### Hover
 - Border: 2 px, Pacific (#0072ce)
 
 </div> 
@@ -826,6 +872,26 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 </div>
 
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+- Border: 2 px, Pacific (#0072ce)
+- Outline: Dotted thin, Pacific (#0072ce)
+
+</div> 
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__radio">
+    <input class="a-radio focused" type="radio" id="test_radio_basic_ocused">
+    <label class="a-label" for="test_radio_basic_focused">Label</label>
+</div>
+{:/nomarkdown}
+
+</div>
 
 ---
 
@@ -892,7 +958,7 @@ Target area
 - Background: Gray 10 (#e7e8e9)
 - Padding: 15 px
 
-Radio button and text 
+Radio button (or checkbox) and text 
 - Border: 1 px, Gray 60 (#919395)
 - Background: 20 px x 20 px, White (#ffffff)
 - Body (Avenir Next Regular, 16 px), Black (#101820)
@@ -914,13 +980,40 @@ Radio button and text
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
+#### Hover
 
 Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Gray 10 (#e7e8e9)
 
-Radio button
+Radio button (or checkbox) 
+- Border: 2 px, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__radio m-form-field__lg-target">
+    <input class="a-radio" type="radio" id="test_radio_lg">
+    <label class="a-label" for="test_radio_lg">Label</label>
+</div>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+
+Target area
+- Border: 2 px, Pacific (#0072ce)
+- Background: Gray 10 (#e7e8e9)
+- Outline: Dotted thin, Pacific (#0072ce)
+
+Radio button (or checkbox) 
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
@@ -947,7 +1040,7 @@ Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Pacific 20 (#d6e8fa)
 
-Radio button
+Radio button (or checkbox) 
 
 - Border: 1 px, Pacific (#0072ce)
 - Background: 14 x 14 px, Pacific (#0072ce)
@@ -1026,8 +1119,35 @@ From an accessibility standpoint, browser defaults for multiple select component
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
+#### Hover
 - Border: 2 px, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__select">
+    <div class="a-select">
+        <select id="test_select">
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
+        </select>
+    </div>
+</div>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+- Border: 2 px, Pacific (#0072ce)
+- Outline: Dotted thin, Pacific (#0072ce)
 
 </div>
 
