@@ -11,6 +11,7 @@ redirect_from: "/ui-toolkit/form-fields.html"
 - [Notifications](#notifications)
 - [Checkboxes](#checkboxes)
 - [Radio buttons](#radio-buttons)
+- [Large target areas](#large-target-areas)
 - [Dropdowns](#dropdowns)
 - [Range sliders](#range-sliders)
 {: class="toc"}
@@ -111,7 +112,7 @@ Users of screen readers use the tab key to move focus from one form control to a
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-text-input a-text-input__hover" placeholder="Placeholder text" type="text">
+<input class="a-text-input a-text-input__focused" placeholder="Placeholder text" type="text">
 {:/nomarkdown}
 
 </div>
@@ -612,7 +613,7 @@ The error notification displays when an operation has not run as expected and en
 
 <div class="content-66 content-first">
 
-<!--******************************-    CHECKBOXES AND RADIO BUTTONS     ******************************-->
+<!--******************************-    CHECKBOXES AND RADIO BUTTONS ******************************-->
 
 <br>
 
@@ -675,7 +676,6 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
     <input class="a-checkbox hover" type="checkbox" id="test_checkbox_basic_hover">
     <label class="a-label" for="test_checkbox_basic_hover">Label</label>
 </div>
-
 {:/nomarkdown}
 
 </div>
@@ -694,10 +694,9 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__checkbox">
-    <input class="a-checkbox focus" type="checkbox" id="test_checkbox_basic_focus">
-    <label class="a-label" for="test_checkbox_basic_focus">Label</label>
+    <input class="a-checkbox hover" type="checkbox" id="test_checkbox_basic_hover">
+    <label class="a-label" for="test_checkbox_basic_hover">Label</label>
 </div>
-
 {:/nomarkdown}
 
 </div>
@@ -886,8 +885,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio focused" type="radio" id="test_radio_basic_ocused">
-    <label class="a-label" for="test_radio_basic_focused">Label</label>
+    <input class="a-radio hover" type="radio" id="test_radio_basic_hover">
+    <label class="a-label" for="test_radio_basic_hover">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -940,9 +939,9 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 <br>
 
-<div class="content-66 content-first">
+## Large target areas 
 
-<h3 id="large-target">Checkboxes and radio buttons with large target areas</h3>
+<div class="content-66 content-first">
 
 For better usability, consider using checkboxes and radio buttons with large target areas. These are easier to interact with (especially on smaller screens) and harder to miss. They are especially desirable when the form will have heavy mobile usage. Given the amount of real estate they occupy, they’re probably not suited for all use cases; for example, they may not work well for terms of service agreement checkboxes.
 
