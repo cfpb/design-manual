@@ -540,6 +540,25 @@ input[type="radio"] {
   *width: 13px;
 }
 /* ==========================================================================
+   cf-theme-cfpb
+   Color variables
+   ========================================================================== */
+/**
+ * When adding this theme to a CFPB project using a version of our color palette
+ * that predates November 13, 2015, you will have some deprecated color
+ * variables to deal with.
+ *
+ * Run the list of project-wide Find and Replace actions given below
+ * to update deprecated variables to their current equivalents.
+ *
+ * IMPORTANT: You must execute these in the specified order
+ * to ensure that you don't overwrite previous updates.
+ *
+ * ALSO IMPORTANT: When running replacements #3, #7, and #19, ensure that you
+ * have the regular expression option turned on in your editor.
+ * Failure to do so will replace the partial match in every tint of that color.
+ */
+/* ==========================================================================
    Capital Framework
    Less variables
    ========================================================================== */
@@ -1499,7 +1518,7 @@ figure img {
 }
 pre,
 code {
-  background: #f1f1f1;
+  background: #f7f8f9;
   border-radius: 4px;
   color: #101820;
   font-family: 'Input Mono', Consolas, Monaco, 'Courier New', monospace;
@@ -1921,6 +1940,10 @@ button.o-expandable_header {
 .a-label {
   display: inline-block;
 }
+.a-label_helper {
+  color: #5a5d61;
+  font-size: 1em;
+}
 .a-label__heading {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
@@ -2110,7 +2133,7 @@ h6 + .a-legend,
   right: 0.875em;
   top: 0.5em;
 }
-.m-form-field .a-text-input {
+.m-form-field .a-text-input__full {
   box-sizing: border-box;
   width: 100%;
 }
@@ -2119,7 +2142,7 @@ h6 + .a-legend,
 }
 .m-form-field__checkbox .a-label,
 .m-form-field__radio .a-label {
-  vertical-align: middle;
+  vertical-align: top;
   cursor: pointer;
 }
 .m-form-field__checkbox .a-label:before,
@@ -2213,8 +2236,8 @@ h6 + .a-legend,
 }
 .m-form-field__lg-target .a-label {
   display: block;
-  padding: 10px;
-  background-color: #d6d7d9;
+  padding: 15px;
+  background-color: #e7e8e9;
 }
 .m-form-field__lg-target .a-checkbox:focus + .a-label,
 .m-form-field__lg-target .a-radio:focus + .a-label,
@@ -2224,13 +2247,13 @@ h6 + .a-legend,
 }
 .m-form-field__lg-target .a-checkbox:checked + .a-label,
 .m-form-field__lg-target .a-radio:checked + .a-label {
-  background-color: #9bdaf1;
+  background-color: #d6e8fa;
 }
 .m-form-field__lg-target .a-checkbox:disabled + .a-label:before,
 .m-form-field__lg-target .a-radio:disabled + .a-label:before {
   border: none;
   background-color: transparent;
-  color: #aeb0b5;
+  color: #e7e8e9;
   content: "\e111";
   font-family: 'CFPB Minicons';
   font-size: 1.11111111em;
@@ -2379,7 +2402,7 @@ h6 + .a-legend,
 .cf-icon__border.cf-icon__before:before,
 .cf-icon__border.cf-icon__after:after {
   padding: .2em .25em .15em;
-  border: solid 0.08em #5b616b;
+  border: solid 0.08em #5a5d61;
   border-radius: .1em;
 }
 .cf-icon__rotate-90.cf-icon:before,
@@ -4510,7 +4533,7 @@ h6 + .a-legend,
   }
 }
 .m-hero {
-  background-color: #dce4ef;
+  background-color: #e7e8e9;
 }
 .m-hero_wrapper {
   padding-top: 1.875em;
@@ -4696,7 +4719,7 @@ h6 + .a-legend,
   background-size: contain;
 }
 .m-hero__knockout {
-  background-color: #5b616b;
+  background-color: #5a5d61;
   color: #ffffff;
 }
 @media only all and (min-width: 37.5625em) {
@@ -4751,6 +4774,110 @@ h6 + .a-legend,
 }
 /* ==========================================================================
    Capital Framework
+   Notifications Styling
+   ========================================================================== */
+.m-notification {
+  display: none;
+  position: relative;
+  padding: 15px;
+  background: #e7e8e9;
+  border: 1px solid #b4b5b6;
+}
+.m-notification__success {
+  background: #e2efd8;
+  border-color: #20aa3f;
+}
+.m-notification__success .m-notification_icon:before {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\e101";
+  vertical-align: middle;
+  color: #20aa3f;
+}
+.m-notification__warning {
+  background: #fff0dd;
+  border-color: #ff9e1b;
+}
+.m-notification__warning .m-notification_icon:before {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\e103";
+  vertical-align: middle;
+  color: #ff9e1b;
+}
+.m-notification__error {
+  background: #f7e0d9;
+  border-color: #d14124;
+}
+.m-notification__error .m-notification_icon:before {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\e107";
+  vertical-align: middle;
+  color: #d14124;
+}
+.m-notification__visible {
+  display: block;
+}
+.m-notification_icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #5a5d61;
+  font-size: 1.125em;
+  line-height: 1;
+}
+.m-notification_icon + .m-notification_content {
+  padding-left: 25px;
+}
+.m-notification_message {
+  margin-bottom: 0;
+}
+.m-notification_explanation {
+  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  margin-top: 0.3125em;
+  margin-bottom: 0;
+}
+.m-notification_explanation em,
+.m-notification_explanation i {
+  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .m-notification_explanation em,
+.lt-ie9 .m-notification_explanation i {
+  font-style: normal !important;
+}
+.m-notification_explanation strong,
+.m-notification_explanation b {
+  font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .m-notification_explanation strong,
+.lt-ie9 .m-notification_explanation b {
+  font-weight: normal !important;
+}
+.m-notification_explanation a {
+  border-bottom-width: 1px;
+}
+/* ==========================================================================
+   Capital Framework
    Pagination Styling
    ========================================================================== */
 .m-pagination {
@@ -4760,7 +4887,7 @@ h6 + .a-legend,
   padding: 0.3125em;
   border-radius: 0.25em;
   background: #e7e8e9;
-  color: #75787b;
+  color: #5a5d61;
   text-align: center;
 }
 .m-pagination_current-page {
@@ -4793,6 +4920,7 @@ h6 + .a-legend,
 .m-pagination_btn-prev.a-btn__disabled,
 .m-pagination_btn-next.a-btn__disabled {
   background-color: #e7e8e9;
+  border-color: transparent;
 }
 .m-pagination_btn-next {
   position: absolute;
@@ -4823,6 +4951,9 @@ h6 + .a-legend,
    Capital Framework
    Table Styling
    ========================================================================== */
+.o-table th {
+  background: #f7f8f9;
+}
 .o-table_cell__right-align {
   text-align: right;
 }
@@ -5819,6 +5950,21 @@ figure {
 }
 /* Color swatches for Identity/Color page
    ========================================================================== */
+.swatches-container__primary {
+  display: block;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.swatches__primary {
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 15px;
+  margin-right: -0.25em;
+  vertical-align: top;
+  width: 78.33333333%;
+}
 .swatch {
   margin-left: 0;
 }
@@ -6543,8 +6689,8 @@ p.print-georgia-para {
   float: left;
   height: 4.0625em;
   max-height: 4.0625em;
-  background-color: #E7E7E6;
-  border-left: 1px solid #BABBBD;
+  background-color: #e7e8e9;
+  border-left: 1px solid #b4b5b6;
   width: 85%;
   padding: .75em 1em;
 }
@@ -6564,15 +6710,15 @@ p.print-georgia-para {
   display: block;
   max-height: 4.0625em;
   border-width: 0;
-  background-color: #E7E7E6;
+  background-color: #e7e8e9;
 }
 .repo-list h4 {
   margin-bottom: .125em;
 }
 .repo-list p {
   margin: 0;
-  font-size: 0.875em;
-  color: #75787b;
+  font-size: 1em;
+  color: #5a5d61;
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;

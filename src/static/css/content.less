@@ -225,6 +225,15 @@ figure {
 /* Color swatches for Identity/Color page
    ========================================================================== */
 
+.swatches-container__primary{
+  .grid_nested-col-group()
+}
+
+.swatches__primary {
+    .grid_column(9.40)
+}
+
+
 .swatch {
 
     margin-left: 0;
@@ -284,7 +293,7 @@ figure {
     }
 
     .swatch__primary {
-        .grid_column(4); 
+       .grid_column(4); 
     }
 
 }
@@ -589,8 +598,8 @@ p.print-georgia-para {
     float: left;
     height: 4.0625em;
     max-height: 4.0625em;
-    background-color: #E7E7E6;
-    border-left: 1px solid #BABBBD;
+    background-color: @gray-10;
+    border-left: 1px solid @gray-40;
     width: 85%;
     padding: .75em 1em;
   }
@@ -610,15 +619,15 @@ p.print-georgia-para {
     display: block;
     max-height: 4.0625em;
     border-width: 0;
-    background-color: #E7E7E6;
+    background-color: @gray-10;
   }
   h4 {
     margin-bottom: .125em;
   }
   p {
     margin: 0;
-    font-size: 0.875em;
-    color: @gray-80;
+    font-size: 1em;
+    color: @gray;
     .u-webfont-regular;
   }
 }

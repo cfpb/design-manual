@@ -1,5 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-
 /* ==========================================================================
    AtomicComponent
 
@@ -14,12 +13,12 @@
 
 'use strict';
 
-var assign = require('../utilities/object-assign').assign;
-var bind = require('../utilities/function-bind').bind;
-var classList = require('../utilities/dom-class-list');
-var Delegate = require('dom-delegate').Delegate;
-var Events = require('../mixins/Events');
-var isFunction = require('../utilities/type-checkers').isFunction;
+const assign = require( '../utilities/object-assign' ).assign;
+const bind = require( '../utilities/function-bind' ).bind;
+const classList = require( '../utilities/dom-class-list' );
+const Delegate = require( 'dom-delegate' ).Delegate;
+const Events = require( '../mixins/Events' );
+const isFunction = require( '../utilities/type-checkers' ).isFunction;
 
 
 /**
@@ -40,7 +39,7 @@ function AtomicComponent( element, attributes ) {
   this.setCachedElements();
   this.initializers.push( this.initialize );
   this.initializers.forEach( function( func ) {
-    isFunction( func ) && func.apply( this, arguments );
+    if ( isFunction( func ) ) func.apply( this, arguments );
   }, this );
   this.trigger( 'component:initialized' );
 }
@@ -144,12 +143,12 @@ assign( AtomicComponent.prototype, Events, classList, {
    * Function used to remove the base element from the DOM
    * and unbind events.
    *
-   * @returns {true} Boolean indicating successful component teardown.
+   * @returns {boolean} True if successful in tearing down component.
    */
   destroy: function() {
-    if (this.element) {
-      this.element.parentNode.removeChild(this.element);
-      if (this.element.view) delete this.element.view;
+    if ( this.element ) {
+      this.element.parentNode.removeChild( this.element );
+      if ( this.element.view ) delete this.element.view;
       delete this.element;
     }
     this.undelegateEvents();
@@ -164,11 +163,11 @@ assign( AtomicComponent.prototype, Events, classList, {
    * @param {Object} attributes -  Hash of attributes to set on base element.
    */
   setElementAttributes: function( attributes ) {
-    var property;
+    let property;
 
-    for (property in attributes) {
-      if (attributes.hasOwnProperty(property)) {
-        this.element.setAttribute(property, attributes[property]);
+    for ( property in attributes ) {
+      if ( attributes.hasOwnProperty( property ) ) {
+        this.element.setAttribute( property, attributes[property] );
       }
     }
   },
@@ -211,7 +210,7 @@ assign( AtomicComponent.prototype, Events, classList, {
    * @returns {AtomicComponent} An instance.
    */
   delegate: function( eventName, selector, listener ) {
-    this._delegate.on(eventName, selector, listener);
+    this._delegate.on( eventName, selector, listener );
 
     return this;
   },
@@ -225,7 +224,7 @@ assign( AtomicComponent.prototype, Events, classList, {
     if ( this._delegate ) {
       this._delegate.destroy();
     }
-    this.element.removeAttribute( 'data-bound' )
+    this.element.removeAttribute( 'data-bound' );
 
     return this;
   },
@@ -233,11 +232,11 @@ assign( AtomicComponent.prototype, Events, classList, {
   /**
    * Function used to set the attributes on an element.
    *
-   * @param {Object} prefix - String to use a prefix.
+   * @param {string} prefix - String to use a prefix.
    * @returns {string} Prefixed unique id string.
    */
   uniqueId: function( prefix ) {
-    return prefix + '_' + Math.random().toString(36).substr(2, 9);
+    return prefix + '_' + Math.random().toString( 36 ).substr( 2, 9 );
   }
 
 } );
@@ -265,8 +264,8 @@ AtomicComponent.extend = function( attributes ) {
   }
 
   child.prototype = Object.create( AtomicComponent.prototype );
-  assign(child.prototype, attributes);
-  assign(child, AtomicComponent);
+  assign( child.prototype, attributes );
+  assign( child, AtomicComponent );
 
   if ( attributes.hasOwnProperty( 'ui' ) &&
   attributes.ui.hasOwnProperty( 'base' ) ) {
@@ -292,7 +291,7 @@ AtomicComponent.init = function() {
 
   for ( var i = 0; i < elements.length; ++i ) {
     element = elements[i];
-    if( element.hasAttribute( 'data-bound' ) === false ) {
+    if ( element.hasAttribute( 'data-bound' ) === false ) {
       components.push( new this( element ) );
     }
   }
@@ -302,8 +301,7 @@ AtomicComponent.init = function() {
 
 module.exports = AtomicComponent;
 
-},{"../mixins/Events":3,"../utilities/dom-class-list":5,"../utilities/function-bind":7,"../utilities/object-assign":8,"../utilities/type-checkers":12,"dom-delegate":29}],2:[function(require,module,exports){
-
+},{"../mixins/Events":3,"../utilities/dom-class-list":5,"../utilities/function-bind":7,"../utilities/object-assign":8,"../utilities/type-checkers":12,"dom-delegate":20}],2:[function(require,module,exports){
 /* ==========================================================================
    Organism
 
@@ -313,18 +311,17 @@ module.exports = AtomicComponent;
 
 'use strict';
 
-var AtomicComponent = require( './AtomicComponent' );
-var TYPES = require( '../utilities/config' ).TYPES;
+const AtomicComponent = require( './AtomicComponent' );
+const TYPES = require( '../utilities/config' ).TYPES;
 
-var Organism = AtomicComponent.extend( {
+const Organism = AtomicComponent.extend( {
   TYPE: TYPES.ORGANISM,
-  CHILD_TYPES: [TYPES.MOLECULE, TYPES.ATOM]
+  CHILD_TYPES: [ TYPES.MOLECULE, TYPES.ATOM ]
 } );
 
 module.exports = Organism;
 
 },{"../utilities/config":4,"./AtomicComponent":1}],3:[function(require,module,exports){
-
 /* ==========================================================================
    Events
 
@@ -333,18 +330,18 @@ module.exports = Organism;
 
 'use strict';
 
-
-var Events = {
+const Events = {
 
   /**
    * Function used to add events to an event stack.
    *
-   * @param {string} eventName - The name of the event to add to the event stack.
-   * @param {Function} callback - Function to callback when event is triggered.
-   * @returns {object} An instance.
+   * @param {string} eventName -
+   *   The name of the event to add to the event stack.
+   * @param {Function} callback - Function to call when event is triggered.
+   * @returns {Object} An instance.
    */
   on: function( eventName, callback ) {
-    var events = this.events = this.events || {};
+    const events = this.events = this.events || {};
     events[eventName] = this.events[eventName] || [];
     events[eventName].push( callback );
 
@@ -354,8 +351,9 @@ var Events = {
   /**
    * Function used to remove events from an event stack.
    *
-   * @param {string} eventName - The name of the event to remove from the event stack.
-   * @returns {object} An instance.
+   * @param {string} eventName -
+   *   The name of the event to remove from the event stack.
+   * @returns {Object} An instance.
    */
   off: function( eventName ) {
     if ( this.events && this.events[eventName] ) delete this.events[eventName];
@@ -367,10 +365,10 @@ var Events = {
    * Function used to trigger events that exist on the event stack.
    *
    * @param {string} eventName - The name of the event to trigger.
-   * @returns {object} An instance.
+   * @returns {Object} An instance.
    */
   trigger: function( eventName ) {
-    var events = this.events || {};
+    const events = this.events || {};
     if ( events.hasOwnProperty( eventName ) === false ) {
       return this;
     }
@@ -386,7 +384,6 @@ var Events = {
 module.exports = Events;
 
 },{}],4:[function(require,module,exports){
-
 /* ==========================================================================
    Atomic configurations and constants
 
@@ -395,16 +392,15 @@ module.exports = Events;
 'use strict';
 
 // Bit values intended to be used for bit inversion.
-var DIRECTIONS = {
+const DIRECTIONS = {
   UP: 0,
   RIGHT: 1,
   DOWN: -1,
   LEFT: -2
 };
 
-// Atomic component types used for describing component
-// hiearchy.
-var TYPES = {
+// Atomic component types used for describing component hierarchy.
+const TYPES = {
   PAGE: 1,
   TEMPLATE: 2,
   ORGANISM: 3,
@@ -414,7 +410,7 @@ var TYPES = {
 
 // Atomic Prefixes used for standardizing naming conventions
 // across HTML, CSS, and Javascript.
-var PREFIXES = {
+const PREFIXES = {
   PAGE: 'p-',
   TEMPLATE: 't-',
   ORGANISM: 'o-',
@@ -428,20 +424,19 @@ var PREFIXES = {
  *
  * @returns {undefined}.
  */
-function NO_OP_FUNCTION(){ return }
+function NO_OP_FUNCTION() { return; }
 
-var UNDEFINED;
+let UNDEFINED;
 
 module.exports = {
   DIRECTIONS: DIRECTIONS,
   NO_OP_FUNCTION: NO_OP_FUNCTION,
-  PREFIXES : PREFIXES,
-  TYPES : TYPES,
+  PREFIXES: PREFIXES,
+  TYPES: TYPES,
   UNDEFINED: UNDEFINED
-}
+};
 
 },{}],5:[function(require,module,exports){
-
 /* ==========================================================================
    Dom class list
 
@@ -456,7 +451,7 @@ module.exports = {
 
 'use strict';
 
-var hasClassList = 'classList' in document.createElement( '_' );
+const hasClassList = 'classList' in document.createElement( '_' );
 
 /**
  * Slice first element from passed arguments.
@@ -476,13 +471,13 @@ function _sliceArgs( args ) {
  * @returns {HTMLNode} element - A DOM element.
  */
 function addClass( element ) {
-  var addClassNamesArray = _sliceArgs( arguments );
+  const addClassNamesArray = _sliceArgs( arguments );
   if ( hasClassList ) {
     element.classList.add.apply( element.classList, addClassNamesArray );
   } else {
     var classes = element.className.split( ' ' );
     addClassNamesArray.forEach( function( name ) {
-      if ( classes.indexOf( name ) ===-1 ) {
+      if ( classes.indexOf( name ) === -1 ) {
         classes.push( name );
       }
     } );
@@ -497,7 +492,7 @@ function addClass( element ) {
  *
  * @param {HTMLNode} element - A DOM element.
  * @param {string} className - CSS selector.
- * @returns {Boolean} indicating if element has class.
+ * @returns {boolean} True if `element` contains class `className`.
  */
 function contains( element, className ) {
   className = className.replace( '.', '' );
@@ -515,7 +510,7 @@ function contains( element, className ) {
  * @param {string} className - CSS selector.
  */
 function removeClass( element ) {
-  var removeClassNamesArray = _sliceArgs( arguments );
+  const removeClassNamesArray = _sliceArgs( arguments );
   if ( hasClassList ) {
     element.classList.remove
     .apply( element.classList, removeClassNamesArray );
@@ -534,15 +529,15 @@ function removeClass( element ) {
  * Toggle CSS class on an element.
  *
  * @param {HTMLNode} element - A DOM element.
- * @param {className} className - CSS selector.
- * @param {boolean} forceFlag - Boolean indicating whether
-                                to forcibly remove class.
- * @returns {hasClass} Boolean indicating wether the flag existed.
+ * @param {string} className - CSS selector.
+ * @param {boolean} forceFlag - True if `className` class
+                                should be forcibly removed.
+ * @returns {boolean} True if the flag existed, false otherwise.
  */
 function toggleClass( element, className, forceFlag ) {
-  var hasClass = false;
+  let hasClass = false;
   if ( hasClassList ) {
-    hasClass = element.classList.toggle.apply( element.classList, className );
+    hasClass = element.classList.toggle( className );
   } else if ( forceFlag === false || contains( element, className ) ) {
     removeClass( element, forceFlag );
   } else {
@@ -554,15 +549,15 @@ function toggleClass( element, className, forceFlag ) {
 }
 
 // Expose public methods.
-module.exports = { addClass: addClass,
-                   contains: contains,
-                   hasClassList: hasClassList,
-                   removeClass: removeClass,
-                   toggleClass: toggleClass
+module.exports = {
+  addClass: addClass,
+  contains: contains,
+  hasClassList: hasClassList,
+  removeClass: removeClass,
+  toggleClass: toggleClass
 };
 
 },{}],6:[function(require,module,exports){
-
 /* ==========================================================================
    Dom closest
 
@@ -585,11 +580,11 @@ function closest( element, selector ) {
     return element.closest( selector );
   }
 
-  var matchesSelector = element.matches ||
-                        element.webkitMatchesSelector ||
-                        element.mozMatchesSelector ||
-                        element.msMatchesSelector;
-  var match;
+  const matchesSelector = element.matches ||
+                          element.webkitMatchesSelector ||
+                          element.mozMatchesSelector ||
+                          element.msMatchesSelector;
+  let match;
 
   while ( element ) {
     if ( matchesSelector.bind( element )( selector ) ) {
@@ -610,11 +605,10 @@ module.exports = {
 };
 
 },{}],7:[function(require,module,exports){
-
 /* ==========================================================================
    Function bind
 
-   Contains code copied from the following with minimal modifications :
+   Contains code copied from the following with minimal modifications:
 
    - https://raw.githubusercontent.com/Modernizr/Modernizr/
      74655c45ad2cd05c002e4802cdd74cba70310f08/src/fnBind.js
@@ -634,7 +628,7 @@ module.exports = {
  */
 function bind( fn, context ) {
   if ( Function.prototype.bind ) {
-  	return fn.bind.apply( fn, Array.prototype.slice.call( arguments, 1 ) );
+    return fn.bind.apply( fn, Array.prototype.slice.call( arguments, 1 ) );
   }
 
   return function() {
@@ -648,7 +642,6 @@ module.exports = {
 };
 
 },{}],8:[function(require,module,exports){
-
 /* ==========================================================================
    Assign
 
@@ -662,9 +655,9 @@ module.exports = {
 'use strict';
 
 /**
-* @param {object} object - JavaScript object.
-* @returns {boolean} True if object is plain Javascript object.
-*/
+ * @param {object} object - JavaScript object.
+ * @returns {boolean} True if object is a plain JavaScript object.
+ */
 function _isPlainObject( object ) {
   return Object.prototype.toString.call( object ) === '[object Object]';
 }
@@ -679,11 +672,11 @@ function _isPlainObject( object ) {
 */
 function assign( destination ) {
   destination = destination || {};
-  for ( var i = 1; i < arguments.length; i++ ) {
-    var source = arguments[i] || {};
-    for ( var key in source ) {
+  for ( let i = 1, len = arguments.length; i < len; i++ ) {
+    const source = arguments[i] || {};
+    for ( const key in source ) {
       if ( Object.prototype.hasOwnProperty.call( source, key ) ) {
-        var value = source[key];
+        const value = source[key];
         if ( _isPlainObject( value ) ) {
           assign( destination[key] || ( destination[key] = {} ), value );
         } else {
@@ -709,23 +702,24 @@ module.exports = { assign: assign };
 
 'use strict';
 
-var _readyFunctions = [];
+const _readyFunctions = [];
 
 /**
-* Checks if the document is ready, if it is, trigger the passed function,
-* if not, save the function to an array to be triggered after the page is loaded
-* @param {function} fn -
-*   Function to run only after the DOM has completely loaded
-* @returns {foo} bar
-*/
+ * Checks if the document is ready, if it is, trigger the passed function,
+ * if not, push the function to an array to be triggered after the page
+ * is loaded.
+ * @param {Function} fn -
+ *   Function to run only after the DOM has completely loaded.
+ * @returns {Array} List of functions to run after the DOM has loaded.
+ */
 function onReady( fn ) {
   // Ensure we passed a function as the argument
   if ( typeof fn !== 'function' ) {
-    return;
+    return [];
   }
 
   // If the ready state is already complete, run the passed function,
-  // otherwise add it to our saved array
+  // otherwise add it to our saved array.
   if ( document.readyState === 'complete' ) {
     fn();
   } else {
@@ -735,7 +729,7 @@ function onReady( fn ) {
   // When the ready state changes to complete, run the passed function
   document.onreadystatechange = function() {
     if ( document.readyState === 'complete' ) {
-      for ( var i = 0, l = _readyFunctions.length; i < l; i++ ) {
+      for ( let i = 0, l = _readyFunctions.length; i < l; i++ ) {
         _readyFunctions[i]();
       }
       _readyFunctions.length = 0;
@@ -753,8 +747,8 @@ module.exports = {
 'use strict';
 
 // Required modules.
-var Events = require( '../../mixins/Events.js' );
-var fnBind = require( '../function-bind' ).bind;
+const Events = require( '../../mixins/Events.js' );
+const fnBind = require( '../function-bind' ).bind;
 
 /**
  * BaseTransition
@@ -771,15 +765,15 @@ var fnBind = require( '../function-bind' ).bind;
  * @returns {BaseTransition} An instance.
  */
 function BaseTransition( element, classes ) { // eslint-disable-line max-statements, no-inline-comments, max-len
-  var _classes = classes;
-  var _dom;
+  const _classes = classes;
+  let _dom;
 
-  var _lastClass;
-  var _transitionEndEvent;
-  var _transitionCompleteBinded;
-  var _addEventListenerBinded;
-  var _isAnimating = false;
-  var _isFlushed = false;
+  let _lastClass;
+  let _transitionEndEvent;
+  let _transitionCompleteBinded;
+  let _addEventListenerBinded;
+  let _isAnimating = false;
+  let _isFlushed = false;
 
   /**
    * @returns {BaseTransition} An instance.
@@ -895,7 +889,7 @@ function BaseTransition( element, classes ) { // eslint-disable-line max-stateme
    * already been applied to this BaseTransition's target element.
    */
   function _flush() {
-    for ( var prop in _classes ) {
+    for ( const prop in _classes ) {
       if ( _classes.hasOwnProperty( prop ) &&
            _classes[prop] !== _classes.BASE_CLASS &&
            _dom.classList.contains( _classes[prop] ) ) {
@@ -953,19 +947,19 @@ function BaseTransition( element, classes ) { // eslint-disable-line max-stateme
    */
   function _getTransitionEndEvent( elem ) {
     if ( !elem ) {
-      var msg = 'Element does not have TransitionEnd event. It may be null!';
+      const msg = 'Element does not have TransitionEnd event. It may be null!';
       throw new Error( msg );
     }
 
-    var transition;
-    var transitions = {
+    let transition;
+    const transitions = {
       WebkitTransition: 'webkitTransitionEnd',
       MozTransition:    'transitionend',
       OTransition:      'oTransitionEnd otransitionend',
       transition:       'transitionend'
     };
 
-    for ( var transitionEnd in transitions ) {
+    for ( const transitionEnd in transitions ) {
       if ( transitions.hasOwnProperty( transitionEnd ) &&
            typeof elem.style[transitionEnd] !== 'undefined' ) {
         transition = transitions[transitionEnd];
@@ -1003,16 +997,16 @@ module.exports = BaseTransition;
 'use strict';
 
 // Required modules.
-var Events = require( '../../mixins/Events.js' );
-var BaseTransition = require( './BaseTransition' );
-var fnBind = require( '../function-bind' ).bind;
-var contains = require( '../dom-class-list' ).contains;
-var addClass = require( '../dom-class-list' ).addClass;
-var removeClass = require( '../dom-class-list' ).removeClass;
-var onReady = require( '../on-ready' ).onReady;
+const Events = require( '../../mixins/Events.js' );
+const BaseTransition = require( './BaseTransition' );
+const fnBind = require( '../function-bind' ).bind;
+const contains = require( '../dom-class-list' ).contains;
+const addClass = require( '../dom-class-list' ).addClass;
+const removeClass = require( '../dom-class-list' ).removeClass;
+const onReady = require( '../on-ready' ).onReady;
 
 // Exported constants.
-var CLASSES = {
+const CLASSES = {
   BASE_CLASS:   'u-expandable-transition',
   EXPANDED:     'u-expandable-expanded',
   COLLAPSED:    'u-expandable-collapsed',
@@ -1027,23 +1021,21 @@ var CLASSES = {
  *
  * @param {HTMLNode} element
  *   DOM element to apply move transition to.
- * @param {classes} Object
+ * @param {Object} classes
  *   An Object of custom classes to override the base classes Object
  * @returns {ExpandableTransition} An instance.
  */
 function ExpandableTransition( element, classes ) { // eslint-disable-line max-statements, no-inline-comments, max-len
-  var classObject = classes || CLASSES;
-  var _baseTransition = new BaseTransition( element, classObject );
-  var timer;
-  var previousHeight;
-  var isAnimating = false;
+  const classObject = classes || CLASSES;
+  const _baseTransition = new BaseTransition( element, classObject );
+  let previousHeight;
 
   /**
    * @returns {ExpandableTransition} An instance.
    */
   function init() {
     _baseTransition.init();
-    var _transitionCompleteBinded = fnBind( _transitionComplete, this );
+    const _transitionCompleteBinded = fnBind( _transitionComplete, this );
     _baseTransition.addEventListener( BaseTransition.END_EVENT,
                                       _transitionCompleteBinded );
 
@@ -1065,20 +1057,21 @@ function ExpandableTransition( element, classes ) { // eslint-disable-line max-s
    */
   function _transitionComplete() {
     this.trigger( BaseTransition.END_EVENT, { target: this } );
-    if ( contains( element, classObject.EXPANDED ) && element.scrollHeight > previousHeight ) {
+    if ( contains( element, classObject.EXPANDED ) &&
+         element.scrollHeight > previousHeight ) {
       element.style.maxHeight = element.scrollHeight + 'px';
     }
   }
 
   /**
    * Toggle the expandable
-   * @returns {ExpandableTransition} An instance
+   * @returns {ExpandableTransition} An instance.
    */
   function toggleExpandable() {
-    if ( !contains( element, classObject.COLLAPSED ) ) {
-      collapse();
-    } else {
+    if ( contains( element, classObject.COLLAPSED ) ) {
       expand();
+    } else {
+      collapse();
     }
 
     return this;
@@ -1149,7 +1142,7 @@ module.exports = ExpandableTransition;
 
 'use strict';
 
-var _toString = Object.prototype.toString;
+const _toString = Object.prototype.toString;
 
 /**
  * @name isUndefined
@@ -1322,11 +1315,9 @@ module.exports = {
 var contains = require( 'atomic-component/src/utilities/dom-class-list' ).contains;
 var addClass = require( 'atomic-component/src/utilities/dom-class-list' ).addClass;
 var closest = require( 'atomic-component/src/utilities/dom-closest' ).closest;
-var bind = require( 'atomic-component/src/utilities/function-bind' ).bind;
 var removeClass = require( 'atomic-component/src/utilities/dom-class-list' ).removeClass;
 var ExpandableTransition = require( 'atomic-component/src/utilities/transition/ExpandableTransition' );
 var Events = require( 'atomic-component/src/mixins/Events.js' );
-var config = require( 'atomic-component/src/utilities/config' );
 var Organism = require( 'atomic-component/src/components/Organism' );
 
 var ExpandableOrganism = Organism.extend( {
@@ -1337,7 +1328,7 @@ var ExpandableOrganism = Organism.extend( {
   classes: {
     targetExpanded: 'o-expandable_target__expanded',
     targetCollapsed: 'o-expandable_target__collapsed',
-    groupAccordion: 'o-expandable-group__accordion',
+    groupAccordion: 'o-expandable-group__accordion'
   },
 
   events: {
@@ -1367,7 +1358,7 @@ var ExpandableOrganism = Organism.extend( {
       var fn = this.accordionClose.bind( this );
       Events.on( 'CFAccordionClose', fn );
     }
-    
+
     if ( contains( this.ui.content, customClasses.OPEN_DEFAULT ) ) {
       addClass( this.ui.target, this.classes.targetExpanded );
     } else {
@@ -1388,7 +1379,6 @@ var ExpandableOrganism = Organism.extend( {
   },
 
   onToggleAccordion: function( event ) {
-    var group = closest( this.ui.target, '.' + this.classes.groupAccordion );
     Events.trigger( 'CFAccordionClose' );
     this.activeAccordion = true;
   },
@@ -1406,7 +1396,8 @@ var ExpandableOrganism = Organism.extend( {
 } );
 
 module.exports = ExpandableOrganism;
-},{"atomic-component/src/components/Organism":2,"atomic-component/src/mixins/Events.js":3,"atomic-component/src/utilities/config":4,"atomic-component/src/utilities/dom-class-list":5,"atomic-component/src/utilities/dom-closest":6,"atomic-component/src/utilities/function-bind":7,"atomic-component/src/utilities/transition/ExpandableTransition":11}],14:[function(require,module,exports){
+
+},{"atomic-component/src/components/Organism":2,"atomic-component/src/mixins/Events.js":3,"atomic-component/src/utilities/dom-class-list":5,"atomic-component/src/utilities/dom-closest":6,"atomic-component/src/utilities/transition/ExpandableTransition":11}],14:[function(require,module,exports){
 'use strict';
 
 var Expandable = require( './Expandable' );
@@ -1415,26 +1406,8 @@ var Expandable = require( './Expandable' );
 require( 'classlist-polyfill' );
 
 Expandable.init();
-},{"./Expandable":13,"classlist-polyfill":27}],15:[function(require,module,exports){
-arguments[4][1][0].apply(exports,arguments)
-},{"../mixins/Events":17,"../utilities/dom-class-list":19,"../utilities/function-bind":21,"../utilities/object-assign":22,"../utilities/type-checkers":23,"dom-delegate":29,"dup":1}],16:[function(require,module,exports){
-arguments[4][2][0].apply(exports,arguments)
-},{"../utilities/config":18,"./AtomicComponent":15,"dup":2}],17:[function(require,module,exports){
-arguments[4][3][0].apply(exports,arguments)
-},{"dup":3}],18:[function(require,module,exports){
-arguments[4][4][0].apply(exports,arguments)
-},{"dup":4}],19:[function(require,module,exports){
-arguments[4][5][0].apply(exports,arguments)
-},{"dup":5}],20:[function(require,module,exports){
-arguments[4][6][0].apply(exports,arguments)
-},{"dup":6}],21:[function(require,module,exports){
-arguments[4][7][0].apply(exports,arguments)
-},{"dup":7}],22:[function(require,module,exports){
-arguments[4][8][0].apply(exports,arguments)
-},{"dup":8}],23:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],24:[function(require,module,exports){
 
+},{"./Expandable":13,"classlist-polyfill":18}],15:[function(require,module,exports){
 /* ==========================================================================
    Table Row Links
 
@@ -1444,9 +1417,9 @@ arguments[4][12][0].apply(exports,arguments)
 
 'use strict';
 
-var closest = require( 'atomic-component/src/utilities/dom-closest' ).closest;
+const closest = require( 'atomic-component/src/utilities/dom-closest' ).closest;
 
-var TableRowLinks = {
+const TableRowLinks = {
 
   events: {
     'click tbody tr': 'onRowLinkClick'
@@ -1462,35 +1435,19 @@ var TableRowLinks = {
    * @param {Object} event Mouse event for click on the table.
    */
   onRowLinkClick: function( event ) {
-    var target = event.target;
-    if( target && target.tagName === 'A' ) {
-      return
+    let target = event.target;
+    if ( target && target.tagName === 'A' ) {
+      return;
     }
     target = closest( event.target, 'tr' );
     var link = target.querySelector( 'a' );
-    if( link ) window.location = link.getAttribute( 'href' );
-  },
-
-  /**
-   * Handle initilization of Table Row Links. Added for standalone
-   * use cases.
-   *
-   */
-  init: function() {
-    var elements = document.querySelector( TableRowLinks.ui.base );
-    for ( var i = 0; i < elements.length; ++i ) {
-      if( elements[i].hasAttribute( 'data-bound' ) === false ) {
-        elements[i].addEventListener( 'click', table,
-        TableRowLinks.onRowLinkClick );
-      }
-    }
+    if ( link ) window.location = link.getAttribute( 'href' );
   }
 };
 
 module.exports = TableRowLinks;
 
-},{"atomic-component/src/utilities/dom-closest":20}],25:[function(require,module,exports){
-
+},{"atomic-component/src/utilities/dom-closest":6}],16:[function(require,module,exports){
 /* ==========================================================================
    Table Sortablle
 
@@ -1533,8 +1490,9 @@ var TableSortable = {
     this.bindProperties();
     if ( this.ui.sortButton ) {
       this.sortColumnIndex = this.getColumnIndex();
-      this.sortDirection = this.contains( this.ui.sortButton, this.classes.sortDown )
-      					   ? DIRECTIONS.DOWN : DIRECTIONS.UP;
+      this.sortDirection =
+        this.contains( this.ui.sortButton, this.classes.sortDown ) ?
+        DIRECTIONS.DOWN : DIRECTIONS.UP;
       this.updateTable();
     }
   },
@@ -1553,7 +1511,7 @@ var TableSortable = {
       set: function( value ) {
         if ( value === DIRECTIONS.UP ) {
           this.sortClass = this.classes.sortUp;
-        } else if( value === DIRECTIONS.DOWN ) {
+        } else if ( value === DIRECTIONS.DOWN ) {
           this.sortClass = this.classes.sortDown;
         }
         sortDirection = value;
@@ -1564,7 +1522,8 @@ var TableSortable = {
   /**
    * Function used to get the column index of the active sort column.
    *
-   * @param { HTMLNode } element - The element used as the sortable.
+   * @param {HTMLNode} element - The element used as the sortable.
+   * @returns {number} The column index of the active sort column.
    */
   getColumnIndex: function( element ) {
     return closest( element || this.ui.sortButton, 'td, th' ).cellIndex;
@@ -1572,6 +1531,7 @@ var TableSortable = {
 
   /**
    * Function used to update the table data and dom.
+   * @returns {boolean} TODO: Add description.
    */
   updateTable: function() {
     return this.updateTableData() && this.updateTableDom();
@@ -1580,7 +1540,8 @@ var TableSortable = {
   /**
    * Function used to get, sort, and update the table data array.
    *
-   * @param { number } columnIndex - The index of the column used for sorting.
+   * @param {number} columnIndex - The index of the column used for sorting.
+   * @returns {Array} TODO: Add description.
    */
   updateTableData: function( columnIndex ) {
     var cell;
@@ -1589,12 +1550,12 @@ var TableSortable = {
     this.tableData = [];
     columnIndex = columnIndex || this.sortColumnIndex;
 
-    for ( var i = 0; i < rows.length; ++i ) {
-      cell = rows[i].cells[ columnIndex ];
-      if( cell ) {
+    for ( var i = 0, len = rows.length; i < len; ++i ) {
+      cell = rows[i].cells[columnIndex];
+      if ( cell ) {
         cell = cell.textContent.trim();
       }
-      this.tableData.push( [ cell, rows[ i ] ] );
+      this.tableData.push( [ cell, rows[i] ] );
     }
 
     sortType = this.ui.sortButton.getAttribute( 'data-sort_type' );
@@ -1605,6 +1566,7 @@ var TableSortable = {
 
   /**
    * Function used to update the table DOM.
+   * @returns {HTMLNode} TODO: Add description.
    */
   updateTableDom: function() {
     var documentFragment;
@@ -1632,19 +1594,19 @@ var TableSortable = {
    * Function used to create a function for sorting table data.
    * Passed to Array.sort method.
    *
-   * @param { number } direction - A number where a negative number indicates a
+   * @param {number} direction - A number where a negative number indicates a
    * reverse sort.
-   * @param { sortType } sortType - A string used for sort types. By default,
+   * @param {string} sortType - A string used for sort types. By default,
    * the values are sorted by their native type. If this value is set to
    * 'number', then the cells' numeric values are used.
-   * @returns function - A function to be used by the Array.sort method, where
+   * @returns {Function} - A function to be used by the Array.sort method, where
    * the parameters 'a' and 'b' is each an Array (of Arrays) to be sorted
    */
-  tableDataSorter : function( direction, sortType ) {
+  tableDataSorter: function( direction, sortType ) {
     return function( a, b ) {
-       var sign = 1;
-       var order = 0;
-       var regex = /[^\d.-]/g;
+      var sign = 1;
+      var order = 0;
+      var regex = /[^\d.-]/g;
 
       // Set a and b to the first Array in each Array-of-Arrays
       a = a[0];
@@ -1657,12 +1619,12 @@ var TableSortable = {
       }
 
       if ( direction === DIRECTIONS.DOWN ) {
-        sign = -1
+        sign = -1;
       }
 
       // Sort the values
       if ( a < b ) {
-        order =  sign * -1;
+        order = sign * -1;
       } else if ( a > b ) {
         order = sign;
       }
@@ -1674,10 +1636,11 @@ var TableSortable = {
   /**
    * Function used as callback for the sortable click event.
    *
-   * @param { Event } event - DOM event.
+   * @param {Event} event - DOM event.
+   * @returns {Object} - TOOD: Add description.
    */
   onSortableClick: function( event ) {
-    if( this.ui.sortButton ) {
+    if ( this.ui.sortButton ) {
       this.removeClass( this.ui.sortButton, this.sortClass );
     }
     if ( this.ui.sortButton === event.target ) {
@@ -1698,8 +1661,7 @@ var TableSortable = {
 
 module.exports = TableSortable;
 
-},{"atomic-component/src/utilities/config":18,"atomic-component/src/utilities/dom-closest":20}],26:[function(require,module,exports){
-
+},{"atomic-component/src/utilities/config":4,"atomic-component/src/utilities/dom-closest":6}],17:[function(require,module,exports){
 /* ==========================================================================
    TableOrganism
 
@@ -1718,7 +1680,7 @@ var TableOrganism = Organism.extend( {
     base: '.o-table'
   },
 
-  modifiers: [TableSortable, TableRowLinks]
+  modifiers: [ TableSortable, TableRowLinks ]
 
 } );
 
@@ -1728,7 +1690,7 @@ TableOrganism.init();
 
 module.exports = TableOrganism;
 
-},{"./cf-table-row-links":24,"./cf-table-sortable":25,"atomic-component/src/components/Organism":16,"atomic-component/src/utilities/config":18}],27:[function(require,module,exports){
+},{"./cf-table-row-links":15,"./cf-table-sortable":16,"atomic-component/src/components/Organism":2,"atomic-component/src/utilities/config":4}],18:[function(require,module,exports){
 /*
  * classList.js: Cross-browser full element.classList implementation.
  * 2014-07-23
@@ -1971,7 +1933,7 @@ if ("document" in window.self) {
   }
 }
 
-},{}],28:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 /*jshint browser:true, node:true*/
 
 'use strict';
@@ -2402,7 +2364,7 @@ Delegate.prototype.destroy = function() {
   this.root();
 };
 
-},{}],29:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 /*jshint browser:true, node:true*/
 
 'use strict';
@@ -2423,7 +2385,7 @@ module.exports = function(root) {
 
 module.exports.Delegate = Delegate;
 
-},{"./delegate":28}],30:[function(require,module,exports){
+},{"./delegate":19}],21:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v1.11.3
  * http://jquery.com/
@@ -12776,7 +12738,7 @@ return jQuery;
 
 }));
 
-},{}],31:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 /* ==========================================================================
    JS
    ========================================================================== */
@@ -12790,4 +12752,4 @@ $(document).ready(function() {
   $('.cf-icon-external-link').append('<span class="u-visually-hidden"> Links to external site.</span>');
 });
 
-},{"cf-expandables":14,"cf-tables":26,"jquery":30}]},{},[31]);
+},{"cf-expandables":14,"cf-tables":17,"jquery":21}]},{},[22]);

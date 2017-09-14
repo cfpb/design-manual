@@ -9,7 +9,8 @@ redirect_from: "/ui-toolkit/form-fields.html"
 - [Text input fields](#text-input-fields)
 - [Labels & helper text](#labels-and-helper-text)
 - [Notifications](#notifications)
-- [Checkboxes & radio buttons](#checkboxes-and-radio-buttons)
+- [Checkboxes](#checkboxes)
+- [Radio buttons](#radio-buttons)
 - [Dropdowns](#dropdowns)
 - [Range sliders](#range-sliders)
 {: class="toc"}
@@ -49,15 +50,16 @@ Avoid the use of disabled fields where possible, and instead hide disabled field
 ## General principles
 
 <div class="content-66 content-first">
+
 #### Usability
 Choose the appropriate width for text input fields so they match the kind of information requested. This makes it easier for users to quickly grasp what’s being asked.
 
 For example, it’s hard to understand at a glance that a single 1,000 px-wide text field is asking for your phone number or birth date. When possible, be even more explicit with the width by dividing it into known character counts. For instance, social security number should be three characters, then two, then four.  Be mindful of not getting too restrictive, however. This approach could work for phone numbers, but only if international numbers are not permitted. 
 
 These types of inputs should always be smaller widths:
- - Middle initial 
- - Date, month, or year
- - State abbreviation
+- Middle initial 
+- Date, month, or year
+- State abbreviation
 
 #### Responsive design
 As the screen size gets smaller, break multi-column inputs into a single, stacked column. Fields that are next to each other on a large screen, should stack at smaller screen sizes. When possible, fields should span the entire width of the screen at the smallest screen sizes.
@@ -100,9 +102,28 @@ Users of screen readers use the tab key to move focus from one form control to a
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
+#### Hover
 
 - Border: 2 px, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<input class="a-text-input a-text-input__hover" placeholder="Placeholder text" type="text">
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+
+- Border: 2 px, Pacific (#0072ce)
+- Outline: Dotted thin, Pacific (#0072ce)
 
 </div>
 
@@ -328,12 +349,10 @@ Use block helper text to explain why a piece of information is being requested, 
     Label
 </label>
 <div class="o-form_group">
-        <p class="u-mb15">Use block helper text for instructions.</p>
+        <p class="u-mb10">Use block helper text for instructions.</p>
         <input class="a-text-input" type="text" id="helper-example">
     </div>
 {:/nomarkdown}
-
-
 
 </div>
 
@@ -396,7 +415,7 @@ Use placeholder text for formatting examples only. Don’t use for instructions.
 
 #### Required vs. optional fields
 
-Where possible, design your forms to only include required fields. If it’s not required, ask yourself if it’s really necessary to include at all. . Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise. 
+Where possible, design your forms to only include required fields. If it’s not required, ask yourself if it’s really necessary to include at all. Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise. 
 
 Try not to design forms consisting mainly of optional fields. If you must do so, mark required field labels only with inline helper text.
 
@@ -429,9 +448,6 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 <div class="content-66 content-first">
 
 ## Notifications
-
-<div class="content-66 content-first">
-
 Where possible, display formatting errors immediately using client-side validation so the user doesn’t have to wait until submitting to see what went wrong (this is especially frustrating if the information the user enters the first time around is not cached on submit and they have to fill out all the fields again from scratch). If letters are entered in a date field, if an email address is missing the “@” sign, let the user know right away by showing a field-level error on blur.
 
 That said, it’s a good idea to always validate on the server side even if you use client-side validation for formatting checks. That’s because JavaScript validation may not work on all clients; JavaScript errors could occur no matter the client; and JS validation can easily be bypassed, which raises security concerns.
@@ -442,6 +458,8 @@ In general, the best practice for server-side validation is to mark errors with 
 For screen reader accessibility, form-level errors should include anchor links to the problem field in question. In general, use distinct icons, contrasting colors, prominent placement, and text to indicate errors. Don’t rely on just one method, as users can have many different accessibility needs (color blind users, visually impaired users, users with motor control issues, etc.).
 
 ### States
+
+</div>
 
 <div class="content-50 content-first">
 
@@ -460,7 +478,12 @@ The action notification displays when something is happening on the page, such a
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/form-level-action.png" />
+<div class="m-notification
+            m-notification__visible">
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">The page is loading…</div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -482,7 +505,14 @@ The success notification displays when an operation has run as expected, such as
 
 <!--insert this form has been submitted successfully message -->
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/form-level-success.png" />
+<div class="m-notification
+            m-notification__visible
+            m-notification__success">
+    <span class="m-notification_icon cf-icon"></span>
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">11 results</div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -499,6 +529,21 @@ The warning notification displays when an operation has run as expected, but doe
 - Background: Gold 20 (#fff0dd)
 - Minicon: 18px, Gold (#ff9e1b)
  
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<div class="m-notification
+            m-notification__visible
+            m-notification__warning">
+    <span class="m-notification_icon cf-icon"></span>
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">No results found.</div>
+    </div>
+</div>
+{:/nomarkdown}
+
 </div>
 
 ---
@@ -520,7 +565,14 @@ The error notification displays when an operation has not run as expected and en
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<img src="{{site.github.url}}/static/img/forms/form-level-errors.png" />
+<div class="m-notification
+            m-notification__visible
+            m-notification__error">
+    <span class="m-notification_icon cf-icon"></span>
+    <div class="m-notification_content">
+        <div class="h4 m-notification_message">Page not found.</div>
+    </div>
+</div>
 {:/nomarkdown}
 
 </div>
@@ -562,15 +614,13 @@ The error notification displays when an operation has not run as expected and en
 
 <!--******************************-    CHECKBOXES AND RADIO BUTTONS     ******************************-->
 
-
 <br>
-## Checkboxes and radio buttons
+
+## Checkboxes
 
 <!--******   CHECKBOXES     **********-->
 
 <div class="content-66 content-first">
-
-<h3>Checkboxes</h3>
 
 Use checkboxes when the user can select more than one option from a list. Make clear with helper text that this is the case.
 
@@ -583,12 +633,12 @@ Selecting the checkbox or touching the label text next to it should toggle the s
 To optimize screen reader accessibility, lay out checkboxes vertically rather than horizontally.
 
 ### States
+
 </div>
 
 <div class="content-50 content-first">
 
 #### Default
-
 - Height: 20 px
 - Width: 20 px
 - Margin right: 10 px
@@ -602,8 +652,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__checkbox">
-    <input class="a-checkbox" type="checkbox" id="test_checkbox_1">
-    <label class="a-label" for="test_checkbox_1">Option 1</label>
+    <input class="a-checkbox" type="checkbox" id="test_checkbox">
+    <label class="a-label" for="test_checkbox">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -613,8 +663,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
-
+#### Hover
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
@@ -623,9 +672,32 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__checkbox">
-    <input class="a-checkbox" type="checkbox" id="test_checkbox_2">
-    <label class="a-label" for="test_checkbox_2">Option 1</label>
+    <input class="a-checkbox hover" type="checkbox" id="test_checkbox_basic_hover">
+    <label class="a-label" for="test_checkbox_basic_hover">Label</label>
 </div>
+
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+- Border: 2 px, Pacific (#0072ce)
+- Outline: Dotted thin, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__checkbox">
+    <input class="a-checkbox focus" type="checkbox" id="test_checkbox_basic_focus">
+    <label class="a-label" for="test_checkbox_basic_focus">Label</label>
+</div>
+
 {:/nomarkdown}
 
 </div>
@@ -635,10 +707,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-first">
 
 #### Selected
-
 - Border: 2 px, Dark Gray (#43484e)
 - Minicon: 18 px, Black (#101820)
-
 
 </div>
 
@@ -646,8 +716,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__checkbox">
-    <input class="a-checkbox" type="checkbox" id="test_checkbox_3">
-    <label class="a-label" for="test_checkbox_3">Option 1</label>
+    <input class="a-checkbox" type="checkbox" id="test_checkbox_basic_checked" checked>
+    <label class="a-label" for="test_checkbox_basic_checked">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -658,7 +728,6 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-first">
 
 #### Disabled
-
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 80 (#75787b) 
 
@@ -667,20 +736,21 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-checkbox a-checkbox__disabled" type="checkbox">
-<label class="a-checkbox a-checkbox__heading">Option 1</label>
+<div class="m-form-field m-form-field__checkbox">
+    <input class="a-checkbox" type="checkbox" id="test_checkbox_basic_disabled" disabled>
+    <label class="a-label" for="test_checkbox_basic_disabled">Label</label>
+</div>
 {:/nomarkdown}
 
 </div>
+
+<br>
 
 <!--******   NESTED CHECKBOXES     **********-->
 
 <div class="content-66 content-first">
 
-</div>
-<br>
 ### Nested checkboxes
-
 There are times when checkboxes may be nested with parent/child relationships. This is common when used within filter interactions. 
 
 #### Usability 
@@ -710,6 +780,8 @@ In this case, the following behavior and design should be followed:
 
 </div>
 
+---
+
 <div class="content-50 content-first">
 
 #### Nested checkboxes (closed)
@@ -721,6 +793,8 @@ In this case, the following behavior and design should be followed:
 <div class="content-50 content-last">
 
 </div>
+
+---
 
 <div class="content-50 content-first">
 
@@ -734,9 +808,10 @@ In this case, the following behavior and design should be followed:
 <!--******   RADIO BUTTONS     **********-->
 
 <br>
-<div class="content-66 content-first">
 
-### Radio buttons
+## Radio buttons
+
+<div class="content-66 content-first">
 
 Use radio buttons when the user can choose only one option out of a list. Use these for a small number of discrete elements—avoid long lists of radio buttons (usually no more than 6-8 options). When there are more than two options, stack radio buttons vertically. 
 
@@ -757,13 +832,12 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 <div class="content-50 content-first">
 
 #### Default
-
- - Height: 20 px
- - Width: 20 px
- - Border: 1 px, Gray 60 (#919395)
- - Background: White (#ffffff)
- - Margin right: 10 px
- - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Height: 20 px
+- Width: 20 px
+- Border: 1 px, Gray 60 (#919395)
+- Background: White (#ffffff)
+- Margin right: 10 px
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
 
@@ -771,8 +845,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio" type="radio" id="test_radio_1">
-    <label class="a-label" for="test_radio_1">Option 1</label>
+    <input class="a-radio" type="radio" id="test_radio_basic_default">
+    <label class="a-label" for="test_radio_basic_default">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -782,9 +856,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
-
- - Border: 2 px, Pacific (#0072ce)
+#### Hover
+- Border: 2 px, Pacific (#0072ce)
 
 </div> 
 
@@ -792,20 +865,39 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio" type="radio" id="test_radio_2">
-    <label class="a-label" for="test_radio_2">Option 1</label>
+    <input class="a-radio hover" type="radio" id="test_radio_basic_hover">
+    <label class="a-label" for="test_radio_basic_hover">Label</label>
 </div>
 {:/nomarkdown}
 
 </div>
 
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+- Border: 2 px, Pacific (#0072ce)
+- Outline: Dotted thin, Pacific (#0072ce)
+
+</div> 
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__radio">
+    <input class="a-radio focused" type="radio" id="test_radio_basic_ocused">
+    <label class="a-label" for="test_radio_basic_focused">Label</label>
+</div>
+{:/nomarkdown}
+
+</div>
 
 ---
 
 <div class="content-50 content-first">
 
 #### Selected
-
 - Border: 1 px, Pacific (#0072ce)
 - Background: 14 px x 14 px, Pacific (#0072ce)
 
@@ -815,8 +907,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio" type="radio" id="test_radio_3">
-    <label class="a-label" for="test_radio_3">Option 1</label>
+    <input class="a-radio focus" type="radio" id="test_radio_basic_checked" checked>
+    <label class="a-label" for="test_radio_basic_checked">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -827,7 +919,6 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 <div class="content-50 content-first">
 
 #### Disabled
-
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 80 (#75787b)
 
@@ -837,9 +928,10 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio" type="radio" id="test_radio_4">
-    <label class="a-label" for="test_radio_4">Option 1</label>
+    <input class="a-radio" type="radio" id="test_radio_basic_disabled" disabled>
+    <label class="a-label" for="test_radio_basic_disabled">Label</label>
 </div>
+
 {:/nomarkdown}
 
 </div>
@@ -866,7 +958,7 @@ Target area
 - Background: Gray 10 (#e7e8e9)
 - Padding: 15 px
 
-Radio button and text 
+Radio button (or checkbox) and text 
 - Border: 1 px, Gray 60 (#919395)
 - Background: 20 px x 20 px, White (#ffffff)
 - Body (Avenir Next Regular, 16 px), Black (#101820)
@@ -888,13 +980,40 @@ Radio button and text
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
+#### Hover
 
 Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Gray 10 (#e7e8e9)
 
-Radio button
+Radio button (or checkbox) 
+- Border: 2 px, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__radio m-form-field__lg-target">
+    <input class="a-radio" type="radio" id="test_radio_lg">
+    <label class="a-label" for="test_radio_lg">Label</label>
+</div>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+
+Target area
+- Border: 2 px, Pacific (#0072ce)
+- Background: Gray 10 (#e7e8e9)
+- Outline: Dotted thin, Pacific (#0072ce)
+
+Radio button (or checkbox) 
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
@@ -921,7 +1040,7 @@ Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Pacific 20 (#d6e8fa)
 
-Radio button
+Radio button (or checkbox) 
 
 - Border: 1 px, Pacific (#0072ce)
 - Background: 14 x 14 px, Pacific (#0072ce)
@@ -959,6 +1078,7 @@ Use dropdowns when:
 Also keep in mind that dropdowns behave differently on various mobile devices, taking up different amounts of real estate and requiring different interactions. Mobile also doesn’t allow for the use of typeahead to navigate quickly to an item in a list, so navigating long lists can be especially cumbersome. 
 
 #### Accessibility
+
 From an accessibility standpoint, browser defaults for multiple select components require the use of a mouse (e.g. holding down the control key and clicking several items). The default components are a poor choice for the visually impaired. If a multi-select component is desired, use custom JavaScript to make it accessible.
 
 ### States
@@ -999,9 +1119,35 @@ From an accessibility standpoint, browser defaults for multiple select component
 
 <div class="content-50 content-first">
 
-#### Hover/Focus
-
+#### Hover
 - Border: 2 px, Pacific (#0072ce)
+
+</div>
+
+<div class="content-50">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__select">
+    <div class="a-select">
+        <select id="test_select">
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
+            <option value="option1">Option 1</option>
+        </select>
+    </div>
+</div>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Focus
+- Border: 2 px, Pacific (#0072ce)
+- Outline: Dotted thin, Pacific (#0072ce)
 
 </div>
 
@@ -1054,10 +1200,9 @@ From an accessibility standpoint, browser defaults for multiple select component
 
 <br>
 
-## Range sliders
-
 <div class="content-66 content-first">
 
+## Range sliders
 Range sliders can work well for discovery and education, where the inputs are <a href="https://medium.com/@paulvddool/sliders-are-bad-practice-b56c3b7a6e19">a relative quantity and not a specific numeric input</a>. As an example, users can narrow a list of flight options on kayak.com with sliders that show a range of takeoff times. Sliders are an elegant and intuitive way to allow the user to discover which takeoff times will yield the lowest fares.
 
 Because they’re imprecise and difficult to manipulate, range sliders are not a good choice when the user is likely to have a specific number that they want to input. If you choose to implement a slider in this latter case, consider adding steppers or an input box as an alternative means of entering the same data. Also consider the balance between the length of the slider and the number of data points it covers (the range as well as how discrete the points are). The more points to choose from, the harder it is for the user to target a specific number.
@@ -1067,7 +1212,6 @@ Make sure that sliders are accessible by keyboard using the arrow keys.
 
 ### States
 </div>
-
 
 <div class="content-50 content-first">
 

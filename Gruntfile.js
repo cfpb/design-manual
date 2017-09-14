@@ -264,7 +264,8 @@ module.exports = function(grunt) {
           define: true,
           console: true,
           EventEmitter: true
-        }
+        },
+        reporterOutput: ''
       },
       all: ['<%= loc.src %>/static/js/app.js']
     },
