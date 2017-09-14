@@ -664,8 +664,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Disabled
 - Border: 1 px, Gray 60 (#919395)
-- Background: Gray 80 (#75787b) 
-
+- Background: Gray 20 (#d2d3d5)
 </div>
 
 <div class="content-50 content-last">
@@ -720,7 +719,7 @@ In this case, the following behavior and design should be followed:
 <div class="content-50 content-first">
 
 #### Nested checkboxes (closed)
-- Label: Pacific (#0072CE)
+- Label: Pacific (#0072ce)
 - Arrow pointed down
 
 </div>
@@ -734,7 +733,7 @@ In this case, the following behavior and design should be followed:
 <div class="content-50 content-first">
 
 #### Nested checkboxes (open)
-- Label: Pacific (#0072CE)
+- Label: Pacific (#0072ce)
 - Arrow pointed up
 - Child checkbox options left aligned with parent label
 
