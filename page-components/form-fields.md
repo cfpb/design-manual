@@ -11,7 +11,7 @@ redirect_from: "/ui-toolkit/form-fields.html"
 - [Notifications](#notifications)
 - [Checkboxes](#checkboxes)
 - [Radio buttons](#radio-buttons)
-- [Large target areas](#large-target-areas)
+- [Large target areas](#checkboxes-and-radio-buttons-with-large-target-areas)
 - [Dropdowns](#dropdowns)
 - [Range sliders](#range-sliders)
 {: class="toc"}
@@ -939,7 +939,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 <br>
 
-## Large target areas 
+## Checkboxes and radio buttons with large target areas 
 
 <div class="content-66 content-first">
 
