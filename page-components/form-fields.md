@@ -46,11 +46,11 @@ Avoid the use of disabled fields where possible, and instead hide disabled field
   </ul>
 </div>
 
-<!--**************************************    General principles    **************************************-->
-
-## General principles
+<!--*****************************    General principles    **********************-->
 
 <div class="content-66 content-first">
+
+## General principles
 
 #### Usability
 Choose the appropriate width for text input fields so they match the kind of information requested. This makes it easier for users to quickly grasp what’s being asked.
@@ -71,11 +71,12 @@ Users of screen readers use the tab key to move focus from one form control to a
 </div>
 <br>
 
-<!--**************************************    Text Input fields    **************************************-->
+<!--****************************    Text Input fields    ************************-->
+
+<div class="content-66 content-first">
 
 ## Text input fields
 
-<div class="content-66 content-first">
 ### States
 </div>
 
@@ -174,6 +175,7 @@ Use for long-form answers.
 {:/nomarkdown}
 
 </div>
+
 <br>
 
 <!--******************************-    LABELS AND HELPER TEXT     ******************************-->
@@ -250,8 +252,6 @@ Use for long-form answers.
 </div>
 
 <!--******   HELPER TEXT     **********-->
-
-<br>
 
 <div class="content-66 content-first">
 
@@ -379,7 +379,10 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 
 </div>
 
+<br>
+
 <!--******************************-    VALIDATION     ******************************-->
+
 
 <div class="content-66 content-first">
 
@@ -549,13 +552,11 @@ The error notification displays when an operation has not run as expected and en
 
 <div class="content-66 content-first">
 
-<!--******************************-    CHECKBOXES AND RADIO BUTTONS ******************************-->
-
 <br>
 
-## Checkboxes
-
 <!--******   CHECKBOXES     **********-->
+
+## Checkboxes
 
 <div class="content-66 content-first">
 
@@ -739,15 +740,15 @@ In this case, the following behavior and design should be followed:
 
 </div>
 
-<!--******   RADIO BUTTONS     **********-->
-
 <br>
 
-## Radio buttons
+<!--******   RADIO BUTTONS     **********-->
 
 <div class="content-66 content-first">
 
-Use radio buttons when the user can choose only one option out of a list. Use these for a small number of discrete elements—avoid long lists of radio buttons (usually no more than 6-8 options). When there are more than two options, stack radio buttons vertically. 
+## Radio buttons
+
+Use radio buttons when the user can choose only one option out of a list. Use these for a small number of discrete elements—avoid long lists of radio buttons (usually no more than 6-8 options).When there are more than two options, stack radio buttons vertically. 
 
 #### Usability
 Leave radio buttons unselected as the default. It’s easy for users to miss that a radio button has been preselected and to submit a form with an erroneous answer. 
@@ -870,13 +871,13 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 </div>
 
-<!--******   LARGE TARGET CHECKBOXES AND BUTTONS     **********-->
-
 <br>
 
-## Checkboxes and radio buttons with large target areas 
+<!--******   LARGE TARGET CHECKBOXES AND BUTTONS     **********-->
 
 <div class="content-66 content-first">
+
+## Checkboxes and radio buttons with large target areas 
 
 For better usability, consider using checkboxes and radio buttons with large target areas. These are easier to interact with (especially on smaller screens) and harder to miss. They are especially desirable when the form will have heavy mobile usage. Given the amount of real estate they occupy, they’re probably not suited for all use cases; for example, they may not work well for terms of service agreement checkboxes.
 
@@ -1016,13 +1017,13 @@ Radio button (or checkbox)
 
 </div>
 
-<!--**************************************    Dropdowns   **************************************-->
-
 <br>
 
-## Dropdowns
+<!--********************************    Dropdowns   **************************************-->
 
 <div class="content-66 content-first">
+
+## Dropdowns
 
 While dropdowns are easy to implement, they aren’t always the best choice from a usability perspective. 
 
@@ -1153,9 +1154,10 @@ From an accessibility standpoint, browser defaults for multiple select component
 </div>
 
 
-<!--**************************************    Range sliders   **************************************-->
-
 <br>
+
+<!--**************************************    Range sliders   **********************-->
+
 
 <div class="content-66 content-first">
 
