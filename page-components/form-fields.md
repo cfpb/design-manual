@@ -1052,7 +1052,7 @@ From an accessibility standpoint, browser defaults for multiple select component
 - Border: 1 px, Gray 60 (#919395)
 - Background (down caret box): Gray 10 (#e7e8e9)
 - Minicon: Gray 80 (#75787b)
-- Body (Avenir Next Regular, 16px), Gray (#5a5d61)
+- Body (Avenir Next Regular, 16px), Black (#101820)
 
 </div>
 
@@ -1131,7 +1131,6 @@ From an accessibility standpoint, browser defaults for multiple select component
 
 #### Disabled
 
-- Border: 1 px, Gray 60 (#919395)
 - Background: Gray 10 (#e7e8e9)
 
 </div>
