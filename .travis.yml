@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "8"
+before_install:
+  # - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
+  # - npm whoami
+before_script:
+  # - npm config set spin false --global
+  # - npm config set package-lock false
+  - brew install ruby
+  - brew install node
+  - gem install jekyll
+  - npm install --global grunt-cli
+  - npm run colors
+  - ./setup.sh
+after_success:
+  # - git checkout package-lock.json package.json
+  - git status && git diff
+  # - ./scripts/travis/release.sh
+  # - npm whoami
