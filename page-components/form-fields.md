@@ -271,7 +271,7 @@ For screen reader accessibility, consider using the aria-describedby attribute f
 
 #### Placeholder text
 
-Use placeholder text for formatting examples only. Don’t use for instructions. Once an input field is focused, the placeholder text is lost.  
+Use placeholder text for formatting examples only. Don’t use for instructions. Placeholder text disappears once a user begins typing in the field. 
 
 - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
@@ -631,8 +631,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__checkbox">
-    <input class="a-checkbox hover" type="checkbox" id="test_checkbox_basic_hover">
-    <label class="a-label" for="test_checkbox_basic_hover">Label</label>
+    <input class="a-checkbox hover" type="checkbox" id="test_checkbox_basic_focus">
+    <label class="a-label" for="test_checkbox_basic_focus">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -821,8 +821,8 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio hover" type="radio" id="test_radio_basic_hover">
-    <label class="a-label" for="test_radio_basic_hover">Label</label>
+    <input class="a-radio hover" type="radio" id="test_radio_basic_focus">
+    <label class="a-label" for="test_radio_basic_focus">Label</label>
 </div>
 {:/nomarkdown}
 
