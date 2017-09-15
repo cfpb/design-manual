@@ -582,7 +582,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 - Margin right: 10 px
 - Border: 1 px, Gray 60 (#919395)
 - Background: White (#ffffff)
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Body (Avenir Next Regular, 16 px), Black (#101820)
 
 </div>
 
@@ -666,6 +666,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 #### Disabled
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 20 (#d2d3d5)
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 </div>
 
 <div class="content-50 content-last">
@@ -772,7 +773,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 - Border: 1 px, Gray 60 (#919395)
 - Background: White (#ffffff)
 - Margin right: 10 px
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Body (Avenir Next Regular, 16 px), Black (#101820)
 
 </div>
 
@@ -856,6 +857,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 #### Disabled
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 20 (#d2d3d5)
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
 
@@ -1003,6 +1005,7 @@ Radio button (or checkbox)
 
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 20 (#d2d3d5)
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
 
@@ -1133,6 +1136,7 @@ From an accessibility standpoint, browser defaults for multiple select component
 #### Disabled
 
 - Background: Gray 10 (#e7e8e9)
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
 
