@@ -2019,6 +2019,7 @@ h6 + .a-legend,
   color: #101820;
 }
 .a-select select:hover,
+.a-select select.hover,
 .a-select select:active,
 .a-select select:focus {
   outline: 2px solid #0072ce;
@@ -2032,6 +2033,8 @@ h6 + .a-legend,
 .a-select select[disabled]:hover {
   outline: none;
 }
+.a-select select[disabled] option,
+.a-select select[disabled] option:disabled,
 .a-select select option:disabled {
   color: #75787b;
 }
@@ -2161,7 +2164,9 @@ h6 + .a-legend,
   display: none !important;
 }
 .m-form-field__checkbox .a-label:hover:before,
-.m-form-field__radio .a-label:hover:before {
+.m-form-field__radio .a-label:hover:before,
+.m-form-field__checkbox .a-label.hover:before,
+.m-form-field__radio .a-label.hover:before {
   border-color: #0072ce;
 }
 .m-form-field__checkbox .a-checkbox,
@@ -2190,17 +2195,33 @@ h6 + .a-legend,
   width: auto;
   clear: both;
 }
+.m-form-field__checkbox .a-checkbox:disabled:focus + .a-label:before,
+.m-form-field__radio .a-checkbox:disabled:focus + .a-label:before,
+.m-form-field__checkbox .a-radio:disabled:focus + .a-label:before,
+.m-form-field__radio .a-radio:disabled:focus + .a-label:before,
+.m-form-field__checkbox .a-checkbox:disabled:hover + .a-label:before,
+.m-form-field__radio .a-checkbox:disabled:hover + .a-label:before,
+.m-form-field__checkbox .a-radio:disabled:hover + .a-label:before,
+.m-form-field__radio .a-radio:disabled:hover + .a-label:before,
+.m-form-field__checkbox .a-checkbox:disabled.hover + .a-label:before,
+.m-form-field__radio .a-checkbox:disabled.hover + .a-label:before,
+.m-form-field__checkbox .a-radio:disabled.hover + .a-label:before,
+.m-form-field__radio .a-radio:disabled.hover + .a-label:before {
+  border-color: #919395;
+  outline: none;
+  box-shadow: none;
+}
 .m-form-field__checkbox .a-checkbox:disabled + .a-label,
 .m-form-field__radio .a-checkbox:disabled + .a-label,
 .m-form-field__checkbox .a-radio:disabled + .a-label,
 .m-form-field__radio .a-radio:disabled + .a-label {
   cursor: not-allowed;
+  color: #75787b;
 }
 .m-form-field__checkbox .a-checkbox:disabled + .a-label:before,
 .m-form-field__radio .a-checkbox:disabled + .a-label:before,
 .m-form-field__checkbox .a-radio:disabled + .a-label:before,
 .m-form-field__radio .a-radio:disabled + .a-label:before {
-  border-color: #919395;
   background: #e7e8e9;
 }
 .m-form-field__checkbox .a-label:before {
@@ -2209,7 +2230,8 @@ h6 + .a-legend,
   line-height: 1.125em;
 }
 .m-form-field__checkbox .a-checkbox:focus + .a-label:before,
-.m-form-field__checkbox .a-checkbox:hover + .a-label:before {
+.m-form-field__checkbox .a-checkbox:hover + .a-label:before,
+.m-form-field__checkbox .a-checkbox.hover + .a-label:before {
   border-color: #0072ce;
   outline: 1px solid #0072ce;
 }
@@ -2220,7 +2242,8 @@ h6 + .a-legend,
   border-radius: 50%;
 }
 .m-form-field__radio .a-radio:focus + .a-label:before,
-.m-form-field__radio .a-radio:hover + .a-label:before {
+.m-form-field__radio .a-radio:hover + .a-label:before,
+.m-form-field__radio .a-radio.hover + .a-label:before {
   outline: none;
   border-color: #0072ce;
   box-shadow: 0 0 0 1px #0072ce;
@@ -2230,7 +2253,8 @@ h6 + .a-legend,
   box-shadow: inset 0 0 0 2px #fff;
 }
 .m-form-field__radio .a-radio:focus:checked + .a-label:before,
-.m-form-field__radio .a-radio:hover:checked + .a-label:before {
+.m-form-field__radio .a-radio:hover:checked + .a-label:before,
+.m-form-field__radio .a-radio.hover:checked + .a-label:before {
   border-color: #0072ce;
   box-shadow: 0 0 0 1px #0072ce, inset 0 0 0 2px #fff;
 }
@@ -2249,12 +2273,17 @@ h6 + .a-legend,
 .m-form-field__lg-target .a-radio:checked + .a-label {
   background-color: #d6e8fa;
 }
+.m-form-field__lg-target .a-checkbox:disabled + .a-label,
+.m-form-field__lg-target .a-radio:disabled + .a-label,
+.m-form-field__lg-target .a-checkbox:hover:disabled + .a-label,
+.m-form-field__lg-target .a-radio:hover:disabled + .a-label {
+  color: #75787b;
+}
 .m-form-field__lg-target .a-checkbox:disabled + .a-label:before,
-.m-form-field__lg-target .a-radio:disabled + .a-label:before {
-  border: none;
-  background-color: transparent;
-  color: #e7e8e9;
-  content: "\e111";
+.m-form-field__lg-target .a-radio:disabled + .a-label:before,
+.m-form-field__lg-target .a-checkbox:hover:disabled + .a-label:before,
+.m-form-field__lg-target .a-radio:hover:disabled + .a-label:before {
+  background-color: #d2d3d5;
   font-family: 'CFPB Minicons';
   font-size: 1.11111111em;
 }
