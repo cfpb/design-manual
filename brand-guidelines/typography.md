@@ -17,7 +17,7 @@ redirect_from: "/identity/typography.html"
 
 <div class="content-67 content-first">
 
-A clear typographic hierarchy is critical to the effective communication of our brand. Type should be light and well-spaced to reinforce the idea that the CFPB is open, modern, and approachable. It should promote readability and accessibility, which allows all users to efficiently read and absorb textual information. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document.
+A clear typographic hierarchy is critical to the effective communication of our brand. Type should be light and well-spaced to reinforce that we are transparent, open, and approachable. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document. Readability and accessibility allow all users to efficiently read and absorb textual information. 
 {: class="lead-in"}
 
 </div>
@@ -28,13 +28,18 @@ A clear typographic hierarchy is critical to the effective communication of our 
 
 </div>
 
-<h2 id="typefaces">Typefaces<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="typefaces">
+    Typefaces
+    <span class="cf-code-link">
+        <a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-core/src/cf-base.less">
+            View code <span class="cf-icon cf-icon-external-link"></span>
+        </a>
+    </span>
+</h2>
 
 ### Avenir Next
 
 <p>Avenir Next is the primary brand typeface and can be used across all formats from print to digital. Its round and geometric letterforms are approachable and modern.</p>
-
-<p>Avenir is great for titling, pull-quotes and lists, and in some cases can be used for lengthy body copy. Italics are included in the brand typography but should only be used on rare occasion, when necessary for grammatical accuracy.</p>
 
 <div class="content-33 content-first">
 #### Avenir Next Demi Bold
@@ -82,45 +87,9 @@ abcdefghijklmnopqrstuvwxyz
 
 </div>
 
-### Georgia
+## Web hierarchy
 
-<p>Georgia is the secondary brand typeface and is designed for digital executions. Its high x-height and round letterforms play nicely with Avenir Next. Georgia is well-suited for lengthy body copy. Bold is useful for highlighting or titling within body copy. The italic weights work nicely at a medium scale for pull-quotes or language with a human tone.</p>
-
-<p>Georgia should not be used for display type or large-scale typography.</p>
-
-<div class="content-33 content-first">
-#### Georgia Regular
-</div>
-
-<div class="content-67 content-last georgia-ex abc">
-
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-
-abcdefghijklmnopqrstuvwxyz
-
-0123456789
-
-</div>
-
----
-
-<div class="content-33 content-first">
-#### Georgia Regular Italic
-</div>
-
-<div class="content-67 content-last georgia-ex abc">
-
-<i>ABCDEFGHIJKLMNOPQRSTUVWXYZ</i>
-
-<i>abcdefghijklmnopqrstuvwxyz</i>
-
-<i>0123456789</i>
-
-</div>
-
-<h2 id="web-hierarchy">Web hierarchy<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
-
-<p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read; a successful hierarchy enables readers to easily scan content.</p>
+<p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read. A successful hierarchy enables readers to easily scan content.</p>
 
 ### Headings
 
@@ -250,8 +219,6 @@ abcdefghijklmnopqrstuvwxyz
 
 ### Body text
 
-Georgia should be used for the majority of body copy on the web. Avenir Next may be used for introductory or accent text. For example, Avenir is well-suited for use in tables or captions.
-
 Body text should provide an efficient and pleasant experience on every viewport size. Readable text makes good use of alignment, spacing, line length and height, and contrast.
 
 <div class="content-33 content-first">
@@ -272,7 +239,7 @@ Body text should provide an efficient and pleasant experience on every viewport 
 
 <div class="content-33 content-first">
 
-#### Body (sans-serif)
+#### Body
 
 * Avenir Next Regular
 * 16 px / 22 px line height
@@ -280,23 +247,6 @@ Body text should provide an efficient and pleasant experience on every viewport 
 </div>
 
 <div class="content-67 content-last regular-ex">
-
-If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
-
-</div>
-
----
-
-<div class="content-33 content-first">
-
-#### Body (serif)
-
-* Georgia Regular
-* 16 px / 22 px line height
-
-</div>
-
-<div class="content-67 content-last">
 
 If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
 
@@ -334,7 +284,7 @@ When setting body copy, the leading should be 1.375 times the type size, or 37.5
 
 <div class="content-33 content-last">
 
-#### Font size: 16px
+#### Font size: 16 px
 
 ![Line height example]({{ site.baseurl }}/static/img/typography/Typography_typesetting03_@2.png "Line height of 22px for 16px font size")
 
@@ -368,7 +318,7 @@ White space affects how the user focuses their attention on the content. It make
 
 #### Heading followed by body copy
 
-When a heading is followed by paragraph text, include 30 pixels of space below Display and 15 pixels below Headings 1–6.
+When a heading is followed by paragraph text, include 30 px of space below Display and 15 px below Headings 1–6.
 
 </div>
 
@@ -382,7 +332,7 @@ When a heading is followed by paragraph text, include 30 pixels of space below D
 
 #### Body copy followed by a heading
 
-When body copy is followed by a heading, include 45 pixels of space above Heading 2 and 30 pixels above Headings 3–6.
+When body copy is followed by a heading, include 45 px of space above Heading 2 and 30 px above Headings 3–6.
 
 </div>
 
@@ -396,7 +346,7 @@ When body copy is followed by a heading, include 45 pixels of space above Headin
 
 #### Heading followed by a heading
 
-For stacked headings, include 30 pixels of space after the primary heading.
+For stacked headings, include 30 px of space after the primary heading.
 
 </div>
 
@@ -410,7 +360,7 @@ For stacked headings, include 30 pixels of space after the primary heading.
 
 #### Body copy spacing
 
-For multiple paragraphs within the same section set the space between paragraphs to 15 pixels.
+For multiple paragraphs within the same section set the space between paragraphs to 15 px.
 
 </div>
 
@@ -439,7 +389,8 @@ To ensure text remains compliant with [WCAG 2.0 standards](http://www.w3.org/TR/
 
 To learn more, refer to the [http://www.section508.gov](http://www.section508.gov).
 
-[This color contrast tool](http://accessibility.oit.ncsu.edu/tools/color-contrast/) is a useful resource for testing the compliance of any color combination.
+[This color contrast tool](https://accessibility.oit.ncsu.edu/tools/color-contrast/accessible-color-palette.php?&colors=1e9642,20aa3f,66c368,addc91,c7e5b3,e2efd8,005e5d,257675,579695,89b6b5,b4d2d1,d4e7e6,0050b4,0072ce,4497dc,7eb7e8,afd2f2,d6e8fa,002d72,254b87,5674a3,889cc0,b3c0d9,d3daeb,a01b68,b4267a,c55998,d486b2,e3b2cc,f0d8e2,b63014,d14124,dd735d,e79e8e,f0c3b8,f7e0d9,dc731c,ff9e1b,ffb858,ffce8d,ffe1b9,fff0dd,745745,8a6c57,a18573,baa496,d3c5bc,e7ddd7,101820,43484e,5a5d61,75787b,919395,b4b5b6,d2d3d5,e7e8e9,f7f8f9,ffffff&main=ffffff&level=AA)
+is a useful resource for testing the compliance of any combination of colors in our palette.
 
 </div>
 
@@ -447,7 +398,7 @@ To learn more, refer to the [http://www.section508.gov](http://www.section508.go
 
 ### Fully accessible combinations
 
-Accessible text and background color combinations are shown below:
+Use only these accessible text and background color combinations.
 
 </div>
 
@@ -457,38 +408,17 @@ Accessible text and background color combinations are shown below:
 
 <figure>
     <ul>
-        <li class="type-color-combo__black-on-white">CFPB Black on White</li>
-        <li class="type-color-combo__darkgray-on-white">Dark Gray on White</li>
-        <li class="type-color-combo__white-on-black">White on CFPB Black</li>
-        <li class="type-color-combo__white-on-darkgray">White on Dark Gray</li>
-        <li class="type-color-combo__black-on-gray10">CFPB Black on Gray 10%</li>
-        <li class="type-color-combo__black-on-gray5">CFPB Black on Gray 5%</li>
-        <li class="type-color-combo__pacific-on-gray5">Pacific on Gray 5%</li>
-        <li class="type-color-combo__black-on-greenmid">CFPB Black on Green Midtone</li>
-        <li class="type-color-combo__black-on-greentint">CFPB Black on Green Tint</li>
-    </ul>
-</figure>
-
-{:/nomarkdown}
-
-</div>
-
-<div class="content-33 content-first">
-
-### Partially accessible combinations
-CFPB Black text and white text on gray, and gray text on white are _only accessible for text sizes above 24px_.
-
-</div>
-
-<div class="content-67 content-last">
-
-{::nomarkdown}
-
-<figure>
-    <ul>
+        <li class="type-color-combo__black-on-white">Black on White</li>
+        <li class="type-color-combo__dark-gray-on-white">Dark Gray on White</li>
+        <li class="type-color-combo__gray-on-white">Gray on White</li> 
+        <li class="type-color-combo__white-on-black">White on Black</li>
+        <li class="type-color-combo__white-on-dark-gray">White on Dark Gray</li>
         <li class="type-color-combo__white-on-gray">White on Gray</li>
-        <li class="type-color-combo__black-on-gray">CFPB Black on Gray</li>
-        <li class="type-color-combo__gray-on-white">Gray on White</li>
+        <li class="type-color-combo__black-on-gray10">Black on Gray 10</li>
+        <li class="type-color-combo__black-on-gray5">Black on Gray 5</li>
+        <li class="type-color-combo__pacific-on-gray5">Pacific on Gray 5</li>
+        <li class="type-color-combo__black-on-greenmid">Black on Green 60</li>
+        <li class="type-color-combo__black-on-greentint">Black on Green 20</li>
     </ul>
 </figure>
 
@@ -499,7 +429,8 @@ CFPB Black text and white text on gray, and gray text on white are _only accessi
 <div class="content-33 content-first">
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Non-accessible combinations</h3>
-Never set CFPB Green web type on white combinations, as they are not accessible. Never set type on a patterned background.
+
+Never set CFPB Green type on a white background or white type on CFPB Green background as these combinations are not accessible. Never set type on a patterned background.
 
 </div>
 
@@ -509,8 +440,8 @@ Never set CFPB Green web type on white combinations, as they are not accessible.
 
 <figure>
     <ul>
-        <li class="type-color-combo__white-on-green">White on Green</li>
-        <li class="type-color-combo__green-on-white">Green on White</li>
+        <li class="type-color-combo__white-on-green">White on CFPB Green</li>
+        <li class="type-color-combo__green-on-white">CFPB Green on White</li>
     </ul>
 </figure>
 
@@ -521,7 +452,8 @@ Never set CFPB Green web type on white combinations, as they are not accessible.
 <div class="content-33 content-first">
 
 <h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Undesirable combinations</h3>
-Even though CFPB Green and CFPB Black are accessible for large scale type, this color combination should never be used for web type.
+
+Although CFPB Green and black are accessible for large scale type, this color combination should never be used for web or print type.
 
 </div>
 
@@ -531,8 +463,8 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <figure>
     <ul>
-        <li class="type-color-combo__black-on-green">Black on Green</li>
-        <li class="type-color-combo__green-on-black">Green on Black</li>
+        <li class="type-color-combo__black-on-green">Black on CFPB Green</li>
+        <li class="type-color-combo__green-on-black">CFPB Green on Black</li>
     </ul>
 </figure>
 
@@ -677,7 +609,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 #### Subheading
 
 * Avenir Next Regular
-* 16 pt / 20 pt leading
+* 16 pt / 20 pt
 
 </div>
 
@@ -694,7 +626,7 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 #### Paragraph
 
 * Avenir Next Regular
-* 11 pt / 16 pt leading
+* 11 pt / 16 pt
 
 </div>
 
@@ -708,27 +640,10 @@ Even though CFPB Green and CFPB Black are accessible for large scale type, this 
 
 <div class="content-33 content-first">
 
-#### Paragraph
-
-* Georgia
-* 11 pt / 16 pt leading
-
-</div>
-
-<div class="content-67 content-last">
-
-<p class="print-georgia-para">If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future. Evaluate the costs and risks involved in paying for school.</p>
-
-</div>
-
----
-
-<div class="content-33 content-first">
-
 #### Bulleted list
 
 * Avenir Next Regular
-* 11 pt / 14 pt leading
+* 11 pt / 14 pt
 
 </div>
 

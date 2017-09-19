@@ -20,42 +20,62 @@ Links lead users to a different page or further information. In contrast, <a hre
 </div>
 
 <div class="content-50 content-last">
-  <h5 class="repo-list-header">Repository</h5>
+  <h5 class="repo-list-header">Code Source</h5>
   <ul class="repo-list">
     <li>
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-typography"><h4>cf-typography</h4></a>
-      <p>Links in the Capital Framework</p>
+      <a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-core/src/cf-base.less#L396">
+        <h4>cf-core</h4>
+      </a>
+      <p>Links in Capital Framework</p>
     </li>
   </ul>
-</div> 
+</div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Style
 
 <div class="content-33 content-first">
+### Body text and lists
+Links that appear in body text or link lists are underlined.
 
-#### Body text and lists
-Links that appear in body text or link lists are underlined. Links are underlined with the ```border-bottom``` property.
+Links should be Regular weight if inline with other text
+(e.g., within a paragraph),
+but should be Medium weight when standing alone
+(e.g., in a call to action or list of links).
 </div>
 
 <div class="content-67 content-last">
-##### Georgia paragraph links
-Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">Active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">Visited link style</a>. 
+#### Inline links
+Lorem ipsum dolor sit amet, <a href="#">default link style</a>. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. <a href="#" class="hover">Hover link style</a> venenatis suscipit. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. <a href="#" class="focus">Focused link style</a>, et ultricies erat pellentesque nec. Suspendisse quis <a href="#" class="active">active link style</a> faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. We've all been to the <a href="#" class="visited">visited link style</a>.
 
 ---
 
-##### Avenir Next list links
-- Lorem ipsum <a href="#">Default link style</a>, consectetur adipiscing elit.
-- Curabitur vel odio et est auctor, <a href="#" class="hover">Hover link style</a>.
-- Aliquam mollis tellus in purus porta, <a href="#" class="focus">Focused link style</a>.
-- <a href="#" class="active">Active link style</a>.
-- We've all been to the <a href="#" class="visited">Visited link style</a>.
+#### Standalone links
+<ul class="medium-ex m-list m-list__unstyled">
+    <li class="m-list_item">
+        <a href="#">Default link style</a>
+    </li>
+    <li class="m-list_item">
+        <a href="#" class="hover">Hover link style</a>
+    </li>
+    <li class="m-list_item">
+        <a href="#" class="focus">Focused link style</a>
+    </li>
+    <li class="m-list_item">
+        <a href="#" class="active">Active link style</a>
+    </li>
+    <li class="m-list_item">
+        <a href="#" class="visited">Visited link style</a>
+    </li>
+</ul>
 </div>
 
 
-<h2 id="states">States<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+
+
+## States
 
 <div class="content-33 content-first">
 #### Default
@@ -110,16 +130,17 @@ Lorem ipsum dolor sit amet, <a href="#">Default link style</a>. Vestibulum orci 
 </div>
 
 
-<h2 id="variations">Variations<span class="cf-code-link"><a href="https://cfpb.github.io/cf-typography/docs/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Variations
 
 <div class="content-33 content-first">
 #### Links in headers
 * No underline
 </div>
+
 <div class="content-67 content-last">
 # Header 2 <a href="#">link style</a>
 
-Lorem ipsum dolor sit amet. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. Et ultricies erat pellentesque nec. Suspendisse quis faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum. 
+Lorem ipsum dolor sit amet. Vestibulum orci ante, sagittis quis dolor a, fringilla dapibus nunc. Nulla in purus nisi. Curabitur vel odio et est auctor tincidunt. Et ultricies erat pellentesque nec. Suspendisse quis faucibus nec eu justo. Nulla ut massa eget dolor vehicula bibendum.
 </div>
 
 ---
@@ -156,18 +177,33 @@ Use the external link minicon (glyph E610) to emphasize a non-CFPB webpage.
 
 External links should open in the same browser window (i.e., do not set them to ```target="_blank"```). This allows the user to choose whether they want to open an additional window in order to view the content.
 </div>
+
 <div class="content-50 content-last regular-ex">
-<a class="link-with-icon" href="#">External link <span class="cf-icon cf-icon-external-link"></span></a>
+  <a class="a-link
+            a-link__icon
+            cf-icon
+            cf-icon__after
+            cf-icon-external-link" href="#">
+    <span class="a-link_text">External link</span>
+  </a>
 </div>
 
 ---
 
 <div class="content-50 content-first">
 ##### Email links
+
 Use the Email link minicon (glyph E302) to emphasize a <code>mailto</code> link.
 </div>
+
 <div class="content-50 content-last regular-ex">
-<a class="link-with-icon" href="#">Email us <span class="cf-icon cf-icon-email"></span></a>
+  <a class="a-link
+            a-link__icon
+            cf-icon
+            cf-icon__after
+            cf-icon-email" href="#">
+    <span class="a-link_text">Email us</span>
+  </a>
 </div>
 
 ---
@@ -178,13 +214,54 @@ Documents minicons can emphasize a link that contains a file or document.
 
 Document links should open in the same browser window (i.e., do not set them to ```target="_blank"```). This allows the user to choose whether they want to open an additional window in order to view the content.
 </div>
+
 <div class="content-50 content-last regular-ex">
 <ul class="list_links-minicons">
-<li><a class="link-with-icon" href="#">Basic document <span class="cf-icon cf-icon-document"></span></a></li>
-<li><a class="link-with-icon" href="#">Download <span class="cf-icon cf-icon-download"></span></a></li>
-<li><a class="link-with-icon" href="#">Appendix <span class="cf-icon cf-icon-appendix"></span></a></li>
-<li><a class="link-with-icon" href="#">Supplement <span class="cf-icon cf-icon-supplement"></span></a></li>
-<li><a class="link-with-icon" href="#">Attach <span class="cf-icon cf-icon-attach"></span></a></li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-document" href="#">
+      <span class="a-link_text">Basic document</span>
+    </a>
+  </li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-download" href="#">
+      <span class="a-link_text">Download</span>
+    </a>
+  </li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-appendix" href="#">
+      <span class="a-link_text">Appendix</span>
+    </a>
+  </li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-supplement" href="#">
+      <span class="a-link_text">Supplement</span>
+    </a>
+  </li>
+  <li>
+    <a class="a-link
+              a-link__icon
+              cf-icon
+              cf-icon__after
+              cf-icon-attach" href="#">
+      <span class="a-link_text">Attach</span>
+    </a>
+  </li>
 </ul>
 
 </div>

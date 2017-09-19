@@ -10,15 +10,21 @@
 @import (less) "cf-grid.less";
 @import (less) "cf-icons.less";
 @import (less) "cf-layout.less";
+@import (less) "cf-notifications.less";
 @import (less) "cf-pagination.less";
 @import (less) "cf-tables.less";
 @import (less) "cf-typography.less";
 
-// Import the brand color palette.
-@import (less) "brand-palette.less";
+// Font variables
+@import (less) 'licensed-fonts.css';
 
-// Override the Capital Framework theme variables with colors from the brand color palette.
-@import (less) "cf-theme-overrides.less";
+@webfont-regular: 'AvenirNextLTW01-Regular';
+@webfont-italic: 'AvenirNextLTW01-Italic';
+@webfont-medium: 'AvenirNextLTW01-Medium';
+@webfont-demi: 'AvenirNextLTW01-Demi';
+
+// Icon font path
+@cf-icon-path:                  '../fonts';
 
 // Import site-specific Less files
 @import (less) "header.less";
@@ -52,19 +58,6 @@ samp {
   margin-bottom: 1.375em;
 }
 
-// Hide only visually, but have it available for screenreaders
-.u-visually-hidden {
-    &.focusable:active,
-    &.focusable:focus {
-        clip: auto;
-        height: auto;
-        margin: 0;
-        overflow: visible;
-        position: static;
-        width: auto;
-    }
-}
-
 /* ==========================================================================
    Base styles
    ========================================================================== */
@@ -81,21 +74,12 @@ body {
     overflow-wrap: break-word;
 }
 
-
-/* ==========================================================================
-   To replace eventually
-   ========================================================================== */
-
-// Use u-clearfix class instead
-.cf:before,  .cf:after {
-    content: "";
-    display: table;
+blockquote {
+  border-left: 0.25em solid @gray;
+  color: @dark-gray;
+  padding: 0.5em 1em 0.25em 1em;
 }
- /* For modern browsers */
-.cf:after {
-    clear: both;
-}
-.cf {
-    /* For IE 6/7 (trigger hasLayout) */
-    zoom: 1;
+
+table {
+    width: 100%;
 }

@@ -12,7 +12,7 @@
   .main-nav li {
     display: inline-block;
     margin: 0 1em 0.5em;
-    .webfont-medium;
+    .u-webfont-medium;
     font-size: 1.125em; /* 18px */
     list-style: none;
   }
@@ -23,15 +23,15 @@
 
     &:link,
     &:visited {
-      color: @gray;
+      color: @gray-80;
     }
     &:hover,
     &:focus {
-      border-bottom: 4px solid @green-tint;
-      color: @darkgray;
+      border-bottom: 4px solid @green-20;
+      color: @dark-gray;
     }
     &:active {
-      border-bottom: 4px solid @green-midtone;
+      border-bottom: 4px solid @green-60;
       color: @black;
     }
   }
@@ -41,7 +41,7 @@
     &:hover,
     &:focus,
     &:active {
-      border-bottom: 4px solid @green-midtone;
+      border-bottom: 4px solid @green-60;
       color: @black;
     }
   }
@@ -59,7 +59,7 @@
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 2em;
-    
+
     &:first-child {
       margin-left: 0;
     }
@@ -86,7 +86,7 @@
 }
 
 /* Tablet/netbook (768px) */
-@media only screen and (min-width: 48em) { 
+@media only screen and (min-width: 48em) {
   .main-nav li {
     font-size: 1.125em; /* 18px */
   }

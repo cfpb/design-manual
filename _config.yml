@@ -1,12 +1,12 @@
 # Redirects
-gems:
+plugins:
   - jekyll-redirect-from
 
 # Base configuration
 permalink: /:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "src", "node_modules"]
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 # Organization
 org: CFPB
@@ -60,9 +60,9 @@ mainnav:
 - text: Page components
   url: page-components/page-components.html
   internal: true
-# - text: Data visualization
-#   url: data-visualization/data-visualization.html
-#   internal: true
+- text: Data visualization
+  url: data-visualization/data-visualization.html
+  internal: true
 
 # Secondary Navigation
 # List links that should appear in the secondary navigation (sidebar) here
@@ -127,6 +127,18 @@ secondarynav:
 
 
 # Global elements
+- text: Browse page
+  url: global-elements/browse-page.html
+  internal: true
+  category: Global elements
+- text: Document detail page
+  url: global-elements/document-detail.html
+  internal: true
+  category: Global elements
+- text: Filterable list pages
+  url: global-elements/filterable-list-pages.html
+  internal: true
+  category: Global elements
 - text: Grid
   url: global-elements/grid.html
   internal: true
@@ -135,11 +147,47 @@ secondarynav:
   url: global-elements/heroes.html
   internal: true
   category: Global elements
+- text: Item introduction
+  url: global-elements/item-introduction.html
+  internal: true
+  category: Global elements
+- text: Landing page
+  url: global-elements/landing-page.html
+  internal: true
+  category: Global elements
+- text: Learn page
+  url: global-elements/learn-page.html
+  internal: true
+  category: Global elements
+- text: Sublanding page
+  url: global-elements/sublanding-page.html
+  internal: true
+  category: Global elements
+- text: Text introductions
+  url: global-elements/text-introductions.html
+  internal: true
+  category: Global elements
 
 
 # Page components
+- text: 25/75 image and text
+  url: page-components/25-75.html
+  internal: true
+  category: Page components
+- text: 50/50 image and text
+  url: page-components/50-50.html
+  internal: true
+  category: Page components
 - text: Buttons
   url: page-components/buttons.html
+  internal: true
+  category: Page components
+- text: Contact information
+  url: page-components/contact-information.html
+  internal: true
+  category: Page components
+- text: Email sign-up
+  url: page-components/email-sign-up.html
   internal: true
   category: Page components
 - text: Expandables
@@ -150,19 +198,77 @@ secondarynav:
   url: page-components/featured-content-module.html
   internal: true
   category: Page components
+- text: Filterable list control panel
+  url: page-components/filter-control.html
+  internal: true
+  category: Page components
 - text: Form fields
   url: page-components/form-fields.html
+  internal: true
+  category: Page components
+- text: Full width text
+  url: page-components/fullwidth-text.html
+  internal: true
+  category: Page components
+- text: Link blob - half width
+  url: page-components/half-width-link-blob.html
+  internal: true
+  category: Page components
+- text: Link blob - third width
+  url: page-components/third-width-link-blob.html
   internal: true
   category: Page components
 - text: Links
   url: page-components/links.html
   internal: true
   category: Page components
-# - text: Tables
-#  url: page-components/tables.html
-#  internal: true
-#  category: Page components
+- text: Modals
+  url: page-components/modals.html
+  internal: true
+  category: Page components
+- text: Sidebar/prefooter
+  url: page-components/sidebar-prefooter.html
+  internal: true
+  category: Page components
+- text: Tables
+  url: page-components/tables.html
+  internal: true
+  category: Page components
+- text: Wells
+  url: page-components/wells.html
+  internal: true
+  category: Page components
 
+
+# Data visualization
+- text: Accessibility
+  url: data-visualization/accessibility.html
+  internal: true
+  category: Data visualization
+- text: Accuracy
+  url: data-visualization/accuracy.html
+  internal: true
+  category: Data visualization
+- text: Audience
+  url: data-visualization/audience.html
+  internal: true
+  category: Data visualization
+- text: Chart components
+  url: data-visualization/chart-components.html
+  internal: true
+  category: Data visualization
+- text: Chart types
+  url: data-visualization/chart-types.html
+  internal: true
+  category: Data visualization
+- text: Color
+  url: data-visualization/color.html
+  internal: true
+  category: Data visualization
+- text: Emphasis!
+  url: data-visualization/emphasis.html
+  internal: true
+  category: Data visualization
 
 # Footer Navigation
 # List links that should appear in the footer navigation (footer) here

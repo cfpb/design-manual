@@ -14,27 +14,36 @@ redirect_from: "/ui-toolkit/grid-and-layout.html"
 
 <div class="content-50 content-first">
 
-The grid provides structure for website content. The flexible design adjusts for different devices. 
+The grid provides structure for website content. The flexible design adjusts for different devices.
 {: class="lead-in"}
 
 </div>
 
 <div class="content-50 content-last">
-  <h5 class="repo-list-header">Repository</h5>
+  <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
       <i class="cf-icon cf-icon-github"></i>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-grid"><h4>cf-grid</h4></a>
-      <p>Grid in the Capital Framework</p>
+      <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-grid">
+        <h4>cf-grid</h4>
+      </a>
+      <p>Grid in Capital Framework</p>
     </li>
   </ul>
 </div>
 
-<h2 id="style">Style<span class="cf-code-link"><a href="https://cfpb.github.io/cf-grid/docs/">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="style">
+    Style
+    <span class="cf-code-link">
+        <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-grid">
+            View code <span class="cf-icon cf-icon-external-link"></span>
+        </a>
+    </span>
+</h2>
 
-Twelve-column grid with flexible column widths and fixed gutters. The width of the padding on the left and right edge of the grid depends on device size. 
+Twelve-column grid with flexible column widths and fixed gutters. The width of the padding on the left and right edge of the grid depends on device size.
 
 * 30px fixed gutter width
 * Max width 1230px, background colors may bleed to edge
@@ -42,7 +51,7 @@ Twelve-column grid with flexible column widths and fixed gutters. The width of t
 * Tablet: 30px padding on each side
 * Mobile: 15px padding on each side
 
-{::nomarkdown}    
+{::nomarkdown}
 
 <div class="grid-demo cols-12">
 
@@ -95,11 +104,11 @@ Twelve-column grid with flexible column widths and fixed gutters. The width of t
     </section>
 </div>
 
-{:/nomarkdown}  
+{:/nomarkdown}
 
-<h2 id="style">Breakpoints<span class="cf-code-link"><a href="https://github.com/cfpb/cf-core/blob/gh-pages/src/cf-vars.less#L59-L66">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+## Breakpoints
 
-Five major breakpoints standardize large-scale changes like navigation and sidebar behavior. Use other breakpoints as necessary. 
+Five major breakpoints standardize large-scale changes like navigation and sidebar behavior. Use other breakpoints as necessary.
 
 * xs: 0-600px
 * sm: 601-900px

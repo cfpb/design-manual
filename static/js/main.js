@@ -1,438 +1,2391 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-/*
- * jQuery Easing v1.3.2 - http://gsgd.co.uk/sandbox/jquery/easing/
- * Open source under the BSD License.
- * Copyright © 2008 George McGinley Smith
- * All rights reserved.
- * https://raw.github.com/gdsmith/jquery-easing/master/LICENSE
-*/
+/* ==========================================================================
+   AtomicComponent
 
-// t: current time, b: begInnIng value, c: change In value, d: duration
-(function($){$.easing['jswing'] = $.easing['swing'];
+   Base Atomic Component
 
-$.extend( $.easing,
-{
-	def: 'easeOutQuad',
-	swing: function (x, t, b, c, d) {
-		//alert($.easing.default);
-		return $.easing[$.easing.def](x, t, b, c, d);
-	},
-	easeInQuad: function (x, t, b, c, d) {
-		return c*(t/=d)*t + b;
-	},
-	easeOutQuad: function (x, t, b, c, d) {
-		return -c *(t/=d)*(t-2) + b;
-	},
-	easeInOutQuad: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return c/2*t*t + b;
-		return -c/2 * ((--t)*(t-2) - 1) + b;
-	},
-	easeInCubic: function (x, t, b, c, d) {
-		return c*(t/=d)*t*t + b;
-	},
-	easeOutCubic: function (x, t, b, c, d) {
-		return c*((t=t/d-1)*t*t + 1) + b;
-	},
-	easeInOutCubic: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return c/2*t*t*t + b;
-		return c/2*((t-=2)*t*t + 2) + b;
-	},
-	easeInQuart: function (x, t, b, c, d) {
-		return c*(t/=d)*t*t*t + b;
-	},
-	easeOutQuart: function (x, t, b, c, d) {
-		return -c * ((t=t/d-1)*t*t*t - 1) + b;
-	},
-	easeInOutQuart: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
-		return -c/2 * ((t-=2)*t*t*t - 2) + b;
-	},
-	easeInQuint: function (x, t, b, c, d) {
-		return c*(t/=d)*t*t*t*t + b;
-	},
-	easeOutQuint: function (x, t, b, c, d) {
-		return c*((t=t/d-1)*t*t*t*t + 1) + b;
-	},
-	easeInOutQuint: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
-		return c/2*((t-=2)*t*t*t*t + 2) + b;
-	},
-	easeInSine: function (x, t, b, c, d) {
-		return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
-	},
-	easeOutSine: function (x, t, b, c, d) {
-		return c * Math.sin(t/d * (Math.PI/2)) + b;
-	},
-	easeInOutSine: function (x, t, b, c, d) {
-		return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
-	},
-	easeInExpo: function (x, t, b, c, d) {
-		return (t==0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
-	},
-	easeOutExpo: function (x, t, b, c, d) {
-		return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
-	},
-	easeInOutExpo: function (x, t, b, c, d) {
-		if (t==0) return b;
-		if (t==d) return b+c;
-		if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
-		return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
-	},
-	easeInCirc: function (x, t, b, c, d) {
-		return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
-	},
-	easeOutCirc: function (x, t, b, c, d) {
-		return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
-	},
-	easeInOutCirc: function (x, t, b, c, d) {
-		if ((t/=d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
-		return c/2 * (Math.sqrt(1 - (t-=2)*t) + 1) + b;
-	},
-	easeInElastic: function (x, t, b, c, d) {
-		var s=1.70158;var p=0;var a=c;
-		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
-		if (a < Math.abs(c)) { a=c; var s=p/4; }
-		else var s = p/(2*Math.PI) * Math.asin (c/a);
-		return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
-	},
-	easeOutElastic: function (x, t, b, c, d) {
-		var s=1.70158;var p=0;var a=c;
-		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
-		if (a < Math.abs(c)) { a=c; var s=p/4; }
-		else var s = p/(2*Math.PI) * Math.asin (c/a);
-		return a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b;
-	},
-	easeInOutElastic: function (x, t, b, c, d) {
-		var s=1.70158;var p=0;var a=c;
-		if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
-		if (a < Math.abs(c)) { a=c; var s=p/4; }
-		else var s = p/(2*Math.PI) * Math.asin (c/a);
-		if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
-		return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
-	},
-	easeInBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158;
-		return c*(t/=d)*t*((s+1)*t - s) + b;
-	},
-	easeOutBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158;
-		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
-	},
-	easeInOutBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158; 
-		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
-		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
-	},
-	easeInBounce: function (x, t, b, c, d) {
-		return c - $.easing.easeOutBounce (x, d-t, 0, c, d) + b;
-	},
-	easeOutBounce: function (x, t, b, c, d) {
-		if ((t/=d) < (1/2.75)) {
-			return c*(7.5625*t*t) + b;
-		} else if (t < (2/2.75)) {
-			return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
-		} else if (t < (2.5/2.75)) {
-			return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
-		} else {
-			return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
-		}
-	},
-	easeInOutBounce: function (x, t, b, c, d) {
-		if (t < d/2) return $.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
-		return $.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
-	}
-});})(jQuery);
+   Contains code copied from the following with major modifications :
 
-},{}],2:[function(require,module,exports){
-(function (global){
+   - Backbone.js ( http://backbonejs.org/docs/backbone.html ).
+   - Marionette ( http://marionettejs.com/ ).
+
+   ========================================================================== */
+
+'use strict';
+
+const assign = require( '../utilities/object-assign' ).assign;
+const bind = require( '../utilities/function-bind' ).bind;
+const classList = require( '../utilities/dom-class-list' );
+const Delegate = require( 'dom-delegate' ).Delegate;
+const Events = require( '../mixins/Events' );
+const isFunction = require( '../utilities/type-checkers' ).isFunction;
+
+
 /**
- * cf-expandables
- * https://github.com/cfpb/cf-expandables
+ * Function as the constrcutor for the AtomicComponent.
+ * Sets up initial instance properties and calls
+ * necessary methods to properly instantiatie component.
  *
- * A public domain work of the Consumer Financial Protection Bureau
+ * @param {HTMLElement} element - The element to set as the base element.
+ * @param {Object} attributes -  Hash of attributes to set on base element.
  */
+function AtomicComponent( element, attributes ) {
+  this.element = element;
+  this.initializers = [];
+  this.uId = this.uniqueId( 'ac' );
+  assign( this, attributes );
+  this.processModifiers();
+  this.ensureElement();
+  this.setCachedElements();
+  this.initializers.push( this.initialize );
+  this.initializers.forEach( function( func ) {
+    if ( isFunction( func ) ) func.apply( this, arguments );
+  }, this );
+  this.trigger( 'component:initialized' );
+}
 
-global.jQuery = require('jquery');
-require('jquery.easing');
+// Public instance Methods and properties.
+assign( AtomicComponent.prototype, Events, classList, {
 
-(function( $ ) {
-
-  $.fn.expandable = function( userSettings ) {
-
-    return $( this ).each(function() {
-
-      var $this = $( this ),
-          $target = $this.find('.expandable_target').not( $this.find('.expandable .expandable_target') ),
-          $cueOpen = $this.find('.expandable_cue-open').not( $this.find('.expandable .expandable_cue-open') ),
-          $cueClose = $this.find('.expandable_cue-close').not( $this.find('.expandable .expandable_cue-close') ),
-          $content = $this.find('.expandable_content').not( $this.find('.expandable .expandable_content') ),
-          $groupParent = $this.parents('.expandable-group'),
-          accordion = $groupParent.length > 0 && $groupParent.data('accordion');
-
-      if ( accordion ) {
-        var $siblings = $this.siblings('.expandable');
-      }
-
-      this.init = function() {
-        // Todo: recommend using an id on all expandables so that we can use
-        // the aria-controls attribute.
-        $target.attr( 'aria-controls', $content.attr('id') );
-        if ( $this.hasClass('expandable__expanded') ) {
-          this.expand( 0 );
-        } else {
-          this.collapse( 0 );
-        }
-        $target.on( 'click', $.proxy( this.handleClick, this ) );
-      };
-
-      this.handleClick = function( ev ) {
-        ev.preventDefault();
-        ev.stopPropagation();
-        this.toggle();
-        if ( accordion ) {
-          $siblings.each( function( index, sibling ) {
-            sibling.collapse();
-          });
-        }
-      };
-
-      this.toggle = function() {
-        if ( $target.attr('aria-pressed') === 'true' ) {
-          this.collapse();
-        } else {
-          this.expand();
-        }
-      };
-
-      this.expand = function( duration ) {
-        $cueOpen.css( 'display', 'none' );
-        $cueClose.css( 'display', 'inline' );
-        $content.attr( 'aria-expanded', 'true' );
-        $target.attr( 'aria-pressed', 'true' );
-        if ( typeof duration === 'undefined' ) {
-          duration = $.fn.expandable.calculateExpandDuration( $content.height() );
-        }
-        $this.addClass('expandable__expanded');
-        $content.slideDown({
-          duration: duration,
-          easing: 'easeOutExpo'
-        });
-      };
-
-      this.collapse = function( duration ) {
-        $cueOpen.css( 'display', 'inline' );
-        $cueClose.css( 'display', 'none' );
-        $content.attr( 'aria-expanded', 'false' );
-        $target.attr( 'aria-pressed', 'false' );
-        if ( typeof duration === 'undefined' ) {
-          duration = $.fn.expandable.calculateCollapseDuration( $content.height() );
-        }
-        $this.removeClass('expandable__expanded');
-        $content.slideUp({
-          duration: duration,
-          easing: 'easeOutExpo'
-        });
-      };
-
-      this.init();
-
-    });
-
-  };
-
-  $.fn.expandable.calculateExpandDuration = function( height ) {
-    return $.fn.expandable.constrainValue( 450, 900, height * 4 );
-  };
-
-  $.fn.expandable.calculateCollapseDuration = function( height ) {
-    return $.fn.expandable.constrainValue( 350, 900, height * 2 );
-  };
-
-  $.fn.expandable.constrainValue = function( min, max, duration ) {
-    if ( duration > max ) {
-        return max;
-    } else if ( duration < min ) {
-        return min;
-    } else {
-        return duration;
-    }
-  };
-
-  // Auto init
-  $('.expandable').expandable();
-
-}(jQuery));
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"jquery":4,"jquery.easing":1}],3:[function(require,module,exports){
-(function (global){
-/**
- * cf-tables
- * https://github.com/cfpb/cf-tables
- *
- * A public domain work of the Consumer Financial Protection Bureau
- */
-
-global.jQuery = require('jquery');
-
-( function( $ ) {
-  'use strict';
-
-  var SortableTable = function( table, options ) {
-    /*  At the moment, there are no default settings, but here's an object
-        for their future use! */
-    var defaults = {},
-    // settings is defaults combined with user options
-    settings = {},
-    // rows is an Array of Arrays, serving as a model of the table
-    rows = [],
-    $table = $( table ),
-    $sortButtons = $table.find( '.sortable' );
-
-    /**
-     * Initializes the SortableTable
-     * @param { object } options - Customizble options object
-     */
-    function _init( options ) {
-      settings = $.extend( {}, defaults, options );
-      _clickHandler();
-      // If the following classes exist, start by sorting those columns.
-      $table.find( '.sortable__start-up, .sortable__start-up' ).click();
-    }
-
-    /**
-     * Sorting function for Array.sort()
-     *
-     * @param { number } sign - A number where a negative number indicates a
-     * reverse sort.
-     * @param { sortType } sortType - A string used for sort types. By default,
-     * the values are sorted by their native type. If this value is set to
-     * 'number', then the cells' numeric values are used.
-     * @returns function - A function to be used by the Array.sort method, where
-     * the parameters 'a' and 'b' is each an Array (of Arrays) to be sorted
-     */
-
-    function _arraySorter( sign, sortType ) {
-      return function( a, b ) {
-        // Set a and b to the first Array in each Array-of-Arrays
-        a = a[0];
-        b = b[0];
-
-        // For number sort, convert a & b to numbers.
-        if ( sortType === 'number' ) {
-          a = Number( a.replace( /[^\d.-]/g, '' ) );
-          b = Number( b.replace( /[^\d.-]/g, '' ) );
-        }
-
-        // Sort the values
-        if ( a < b ) {
-          return sign * -1;
-        }
-        if ( a > b ) {
-          return sign;
-        }
-        return 0;
-      };
-    }
-
-    /**
-     * Updates internal model of table (rows[])
-     * @param { number } index - The index of the column used for sorting,
-     * which is used as the "key" for rows[] - it is set as the only value
-     * in the first array.
-     */
-    function _getRows( index ) {
-      var child = index + 1;
-      // Clear the model
-      rows.length = 0;
-      // Find the value in each row of the column we're sorting by,
-      // add it to the rows Array
-      $table.find( 'tbody tr' ).each( function() {
-        // indices count from 0, but nth-child counts from 1
-        var key = $( this ).find( 'td:nth-child(' + child + ')' ).text().trim();
-        rows.push( [ key, $( this ) ] );
-      } );
-    }
-
-    /**
-     * Updates the table in the DOM
-     * @param { number } index - The index of the column used for sorting
-     */
-    function _updateTable( index ) {
-      // Empty the tbody to prepare for sorted rows
-      $table.find( 'tbody' ).empty();
-
-      // Insert sorted rows
-      for ( var i = 0; i < rows.length; i++ ) {
-        $table.find( 'tbody' ).append( rows[i][1] );
-      }
-    }
-
-    /**
-     * Handler for click events on the column header
-     * No parameters - uses SortableTable properties, updates the DOM.
-     */
-    function _clickHandler() {
-      $sortButtons.on( 'click', function() {
-        var $button = $( this ),
-            $headercell = $button.closest( 'th, td' ),
-            $table = $headercell.closest( '.table__sortable' ),
-            sortType = $button.attr( 'data-sort_type' ),
-            sign = 1,
-            $firstChild = $table.find( 'tr:first-child' ),
-            index = $firstChild.children( 'th, td' ).index( $headercell );
-
-        _getRows( index );
-
-        // Determine sign
-        if ( $button.hasClass( 'sorted-up' ) || $button.hasClass( 'sortable__start-down' ) ) {
-          sign = -1;
-        }
-
-        $sortButtons.removeClass( 'sortable__start-down sortable__start-up' );
-        $sortButtons.removeClass( 'sorted-down sorted-up' );
-
-        // Add correct class
-        if ( sign === 1 ) {
-          $button.addClass( 'sorted-up' );
-        } 
-        else {
-          $button.addClass( 'sorted-down' );
-        }
-
-        // Perform the row sort
-        rows.sort( _arraySorter( sign, sortType ) );
-
-        _updateTable( index );
-
-      } );
-    }
-
-    _init( options );
-
-  };
+  tagName: 'div',
 
   /**
-   * Instatiates the SortableTable
-   * @param { object } options - An options object
-   * @returns { object } Attached objects for each matched element
+   * Function used to process class modifiers. These should
+   * correspond with BEM modifiers.
+   *
+   * @param {Object} attributes -  Hash of attributes to set on base element.
+   * @param {Object} atomicComponent -  Base component.
    */
-  $.fn.sortableTable = function( options ) {
-    return this.each( function() {
-      ( options || ( options = {} ) ).$element = $( this );
-      var scol = new SortableTable( this, options );
+  processModifiers: function() {
+    if ( !this.modifiers ) {
+      return;
+    }
+
+    this.modifiers.forEach( function( modifier ) {
+      if ( classList.contains( this.element, modifier.ui.base ) ) {
+        if ( modifier.initialize ) {
+          this.initializers.push( modifier.initialize );
+          delete modifier.initialize;
+        }
+        assign( this, modifier );
+      }
+    }, this );
+  },
+
+  /**
+   * Function used to render a template in Single Page Applications.
+   *
+   * @returns {AtomicComponent} An instance.
+   */
+  render: function() {
+    return this;
+  },
+
+  /**
+   * Function used to ensure and set / create the base DOM element.
+   */
+  ensureElement: function() {
+    if ( !this.element ) { // eslint-disable-line no-negated-condition, inline-comments, max-len
+      var attrs = assign( {}, this.attributes );
+      attrs.id = this.id || this.u_id;
+      if ( this.className ) attrs['class'] = this.className;
+      this.setElement( document.createElement( this.tagName ) );
+      this.setElementAttributes( attrs );
+    } else {
+      this.setElement( this.element );
+    }
+    this.element.setAttribute( 'data-bound', true );
+  },
+
+  /**
+   * Function used to set the base DOM element.
+   *
+   * @param {HTMLElement} element - The element to set as the base element.
+   * @returns {AtomicComponent} An instance.
+   */
+  setElement: function( element ) {
+    if ( this.element ) {
+      this.undelegateEvents();
+    }
+    this.element = element;
+    this.delegateEvents();
+
+    return this;
+  },
+
+  /**
+   * Function used to set the cached DOM elements.
+   *
+   * @returns {Object} Hash of event names and cached elements.
+   */
+  setCachedElements: function() {
+    var key;
+    var ui = assign( {}, this.ui );
+    var element;
+    for ( key in ui ) {
+      if ( ui.hasOwnProperty( key ) ) {
+        element = this.element.querySelectorAll( ui[key] );
+        if ( element.length === 1 ) {
+          ui[key] = element[0];
+        } else if ( element.length > 1 ) {
+          ui[key] = element;
+        } else {
+          ui[key] = null;
+        }
+      }
+    }
+    this.ui = ui;
+
+    return ui;
+  },
+
+  /**
+   * Function used to remove the base element from the DOM
+   * and unbind events.
+   *
+   * @returns {boolean} True if successful in tearing down component.
+   */
+  destroy: function() {
+    if ( this.element ) {
+      this.element.parentNode.removeChild( this.element );
+      if ( this.element.view ) delete this.element.view;
+      delete this.element;
+    }
+    this.undelegateEvents();
+    this.trigger( 'component:destroyed' );
+
+    return true;
+  },
+
+  /**
+   * Function used to set the attributes on an element.
+   *
+   * @param {Object} attributes -  Hash of attributes to set on base element.
+   */
+  setElementAttributes: function( attributes ) {
+    let property;
+
+    for ( property in attributes ) {
+      if ( attributes.hasOwnProperty( property ) ) {
+        this.element.setAttribute( property, attributes[property] );
+      }
+    }
+  },
+
+  /**
+   * Function used to up event delegation on the base element.
+   * Using Dom-delegate library to enable this functionality.
+   *
+   * @param {Object} events - Hash of events to bind to the dom element.
+   * @returns {AtomicComponent} An instance.
+   */
+  delegateEvents: function( events ) {
+    var key;
+    var method;
+    var match;
+    var delegateEventSplitter = /^(\S+)\s*(.*)$/;
+
+    events = events || ( events = this.events );
+    if ( !events ) return this;
+    this.undelegateEvents();
+    this._delegate = new Delegate( this.element );
+    for ( key in events ) {
+      method = events[key];
+      if ( isFunction( this[method] ) ) method = this[method];
+      if ( !method ) continue;
+      match = key.match( delegateEventSplitter );
+      this.delegate( match[1], match[2], bind( method, this ) );
+    }
+    this.trigger( 'component:bound' );
+
+    return this;
+  },
+
+  /**
+   * Function used to set the attributes on an element.
+   *
+   * @param {string} eventName -  Event in which to listen for.
+   * @param {string} selector - CSS selector.
+   * @param {Function} listener - Callback for event.
+   * @returns {AtomicComponent} An instance.
+   */
+  delegate: function( eventName, selector, listener ) {
+    this._delegate.on( eventName, selector, listener );
+
+    return this;
+  },
+
+  /**
+   * Function used to remove events from the base element.
+   *
+   * @returns {AtomicComponent} An instance.
+   */
+  undelegateEvents: function() {
+    if ( this._delegate ) {
+      this._delegate.destroy();
+    }
+    this.element.removeAttribute( 'data-bound' );
+
+    return this;
+  },
+
+  /**
+   * Function used to set the attributes on an element.
+   *
+   * @param {string} prefix - String to use a prefix.
+   * @returns {string} Prefixed unique id string.
+   */
+  uniqueId: function( prefix ) {
+    return prefix + '_' + Math.random().toString( 36 ).substr( 2, 9 );
+  }
+
+} );
+
+// Static Methods
+
+
+/**
+ * Function used to set the attributes on an element.
+ * and unbind events.
+ *
+ * @param {Object} attributes -  Hash of attributes to set on base element.
+ * @returns {Function} Extended child constructor function.
+ */
+AtomicComponent.extend = function( attributes ) {
+
+ /**
+ * Function used as constructor in order to establish inheritance
+ * chain.
+ * @returns {AtomicComponent} An instance.
+ */
+  function child() {
+    this._super = AtomicComponent.prototype;
+    return AtomicComponent.apply( this, arguments );
+  }
+
+  child.prototype = Object.create( AtomicComponent.prototype );
+  assign( child.prototype, attributes );
+  assign( child, AtomicComponent );
+
+  if ( attributes.hasOwnProperty( 'ui' ) &&
+  attributes.ui.hasOwnProperty( 'base' ) ) {
+    child.selector = attributes.ui.base;
+  }
+
+  child.constants = {};
+
+  return child;
+};
+
+
+/**
+ * Function used to instantiate all instances of the particular
+ * atomic component on a page.
+ *
+ * @returns {Array} List of AtomicComponent instances.
+ */
+AtomicComponent.init = function() {
+  var elements = document.querySelectorAll( this.selector );
+  var element;
+  var components = [];
+
+  for ( var i = 0; i < elements.length; ++i ) {
+    element = elements[i];
+    if ( element.hasAttribute( 'data-bound' ) === false ) {
+      components.push( new this( element ) );
+    }
+  }
+
+  return components;
+};
+
+module.exports = AtomicComponent;
+
+},{"../mixins/Events":3,"../utilities/dom-class-list":5,"../utilities/function-bind":7,"../utilities/object-assign":8,"../utilities/type-checkers":12,"dom-delegate":20}],2:[function(require,module,exports){
+/* ==========================================================================
+   Organism
+
+   Organism Atomic Component
+
+   ========================================================================== */
+
+'use strict';
+
+const AtomicComponent = require( './AtomicComponent' );
+const TYPES = require( '../utilities/config' ).TYPES;
+
+const Organism = AtomicComponent.extend( {
+  TYPE: TYPES.ORGANISM,
+  CHILD_TYPES: [ TYPES.MOLECULE, TYPES.ATOM ]
+} );
+
+module.exports = Organism;
+
+},{"../utilities/config":4,"./AtomicComponent":1}],3:[function(require,module,exports){
+/* ==========================================================================
+   Events
+
+   Mixin to add basic event callback functionality.
+   ========================================================================== */
+
+'use strict';
+
+const Events = {
+
+  /**
+   * Function used to add events to an event stack.
+   *
+   * @param {string} eventName -
+   *   The name of the event to add to the event stack.
+   * @param {Function} callback - Function to call when event is triggered.
+   * @returns {Object} An instance.
+   */
+  on: function( eventName, callback ) {
+    const events = this.events = this.events || {};
+    events[eventName] = this.events[eventName] || [];
+    events[eventName].push( callback );
+
+    return this;
+  },
+
+  /**
+   * Function used to remove events from an event stack.
+   *
+   * @param {string} eventName -
+   *   The name of the event to remove from the event stack.
+   * @returns {Object} An instance.
+   */
+  off: function( eventName ) {
+    if ( this.events && this.events[eventName] ) delete this.events[eventName];
+
+    return this;
+  },
+
+   /**
+   * Function used to trigger events that exist on the event stack.
+   *
+   * @param {string} eventName - The name of the event to trigger.
+   * @returns {Object} An instance.
+   */
+  trigger: function( eventName ) {
+    const events = this.events || {};
+    if ( events.hasOwnProperty( eventName ) === false ) {
+      return this;
+    }
+    for ( var i = 0, len = events[eventName].length; i < len; i++ ) {
+      this.events[eventName][i].apply( this, arguments );
+    }
+
+    return this;
+  }
+
+};
+
+module.exports = Events;
+
+},{}],4:[function(require,module,exports){
+/* ==========================================================================
+   Atomic configurations and constants
+
+   ========================================================================== */
+
+'use strict';
+
+// Bit values intended to be used for bit inversion.
+const DIRECTIONS = {
+  UP: 0,
+  RIGHT: 1,
+  DOWN: -1,
+  LEFT: -2
+};
+
+// Atomic component types used for describing component hierarchy.
+const TYPES = {
+  PAGE: 1,
+  TEMPLATE: 2,
+  ORGANISM: 3,
+  MOLECULE: 4,
+  ATOM: 5
+};
+
+// Atomic Prefixes used for standardizing naming conventions
+// across HTML, CSS, and Javascript.
+const PREFIXES = {
+  PAGE: 'p-',
+  TEMPLATE: 't-',
+  ORGANISM: 'o-',
+  MOLECULE: 'm-',
+  ATOM: 'a-'
+};
+
+/**
+ * Function used as a non-operational method that
+ * is intended to be overriden.
+ *
+ * @returns {undefined}.
+ */
+function NO_OP_FUNCTION() { return; }
+
+let UNDEFINED;
+
+module.exports = {
+  DIRECTIONS: DIRECTIONS,
+  NO_OP_FUNCTION: NO_OP_FUNCTION,
+  PREFIXES: PREFIXES,
+  TYPES: TYPES,
+  UNDEFINED: UNDEFINED
+};
+
+},{}],5:[function(require,module,exports){
+/* ==========================================================================
+   Dom class list
+
+   Contains code copied from the following with major modifications :
+
+   - http://stackoverflow.com/posts/18492076/revisions
+   - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+
+   TODO: Integrate with https://github.com/wilsonpage/fastdom.  Refactor to
+         eliminate redudant code.
+   ========================================================================== */
+
+'use strict';
+
+const hasClassList = 'classList' in document.createElement( '_' );
+
+/**
+ * Slice first element from passed arguments.
+ *
+ * @param {Arguments} args - Function arguments.
+ * @returns {Array} List of arguments.
+ */
+function _sliceArgs( args ) {
+  return Array.prototype.slice.call( args, 1 );
+}
+
+/**
+ * Add CSS class from an element.
+ *
+ * @param {HTMLNode} element - A DOM element.
+ * @param {string} className - CSS selector.
+ * @returns {HTMLNode} element - A DOM element.
+ */
+function addClass( element ) {
+  const addClassNamesArray = _sliceArgs( arguments );
+  if ( hasClassList ) {
+    element.classList.add.apply( element.classList, addClassNamesArray );
+  } else {
+    var classes = element.className.split( ' ' );
+    addClassNamesArray.forEach( function( name ) {
+      if ( classes.indexOf( name ) === -1 ) {
+        classes.push( name );
+      }
     } );
+    element.className = classes.join( ' ' );
+  }
+
+  return element;
+}
+
+/**
+ * Determine if element has particular CSS class.
+ *
+ * @param {HTMLNode} element - A DOM element.
+ * @param {string} className - CSS selector.
+ * @returns {boolean} True if `element` contains class `className`.
+ */
+function contains( element, className ) {
+  className = className.replace( '.', '' );
+  if ( hasClassList ) {
+    return element.classList.contains( className );
+  }
+
+  return element.className.indexOf( className ) > -1;
+}
+
+/**
+ * Remove CSS class from an element.
+ *
+ * @param {HTMLNode} element - A DOM element.
+ * @param {string} className - CSS selector.
+ */
+function removeClass( element ) {
+  const removeClassNamesArray = _sliceArgs( arguments );
+  if ( hasClassList ) {
+    element.classList.remove
+    .apply( element.classList, removeClassNamesArray );
+  } else {
+    var classes = element.className.split( ' ' );
+    removeClassNamesArray.forEach( function( className ) {
+      if ( className ) {
+        classes.splice( classes.indexOf( className ), 1 );
+      }
+    } );
+    element.className = classes.join( ' ' );
+  }
+}
+
+/**
+ * Toggle CSS class on an element.
+ *
+ * @param {HTMLNode} element - A DOM element.
+ * @param {string} className - CSS selector.
+ * @param {boolean} forceFlag - True if `className` class
+                                should be forcibly removed.
+ * @returns {boolean} True if the flag existed, false otherwise.
+ */
+function toggleClass( element, className, forceFlag ) {
+  let hasClass = false;
+  if ( hasClassList ) {
+    hasClass = element.classList.toggle( className );
+  } else if ( forceFlag === false || contains( element, className ) ) {
+    removeClass( element, forceFlag );
+  } else {
+    addClass( element, className );
+    hasClass = true;
+  }
+
+  return hasClass;
+}
+
+// Expose public methods.
+module.exports = {
+  addClass: addClass,
+  contains: contains,
+  hasClassList: hasClassList,
+  removeClass: removeClass,
+  toggleClass: toggleClass
+};
+
+},{}],6:[function(require,module,exports){
+/* ==========================================================================
+   Dom closest
+
+   Utility for retrieving the closest DOM element that
+   matches a give selector.
+
+   ========================================================================== */
+
+'use strict';
+
+/**
+ * Get the nearest parent node of an elementent.
+ *
+ * @param {HTMLNode} element - A DOM elementent.
+ * @param {string} selector - CSS selector.
+ * @returns {HTMLNode} Nearest parent node that matches the selector.
+ */
+function closest( element, selector ) {
+  if ( 'closest' in element ) {
+    return element.closest( selector );
+  }
+
+  const matchesSelector = element.matches ||
+                          element.webkitMatchesSelector ||
+                          element.mozMatchesSelector ||
+                          element.msMatchesSelector;
+  let match;
+
+  while ( element ) {
+    if ( matchesSelector.bind( element )( selector ) ) {
+      match = element;
+    } else {
+      element = element.parentElement;
+    }
+
+    if ( match ) { return element; }
+  }
+
+  return null;
+}
+
+// Expose public methods.
+module.exports = {
+  closest: closest
+};
+
+},{}],7:[function(require,module,exports){
+/* ==========================================================================
+   Function bind
+
+   Contains code copied from the following with minimal modifications:
+
+   - https://raw.githubusercontent.com/Modernizr/Modernizr/
+     74655c45ad2cd05c002e4802cdd74cba70310f08/src/fnBind.js
+
+   ========================================================================== */
+
+'use strict';
+
+/**
+ * Function.prototype.bind polyfill.
+ *
+ * @access private
+ * @function bind
+ * @param {Function} fn - A function you want to change `this` reference to.
+ * @param {Object} context - The `this` you want to call the function with.
+ * @returns {Function} The wrapped version of the supplied function.
+ */
+function bind( fn, context ) {
+  if ( Function.prototype.bind ) {
+    return fn.bind.apply( fn, Array.prototype.slice.call( arguments, 1 ) );
+  }
+
+  return function() {
+    return fn.apply( context, arguments );
+  };
+}
+
+// Expose public methods.
+module.exports = {
+  bind: bind
+};
+
+},{}],8:[function(require,module,exports){
+/* ==========================================================================
+   Assign
+
+   Contains code copied from the following with major modifications :
+
+   - https://github.com/maslennikov/shallow-extend
+     Copyright (c) 2014 Alexey Maslennikov
+
+   ========================================================================== */
+
+'use strict';
+
+/**
+ * @param {object} object - JavaScript object.
+ * @returns {boolean} True if object is a plain JavaScript object.
+ */
+function _isPlainObject( object ) {
+  return Object.prototype.toString.call( object ) === '[object Object]';
+}
+
+/**
+* Copies properties of all sources to the destination object overriding its own
+* existing properties. When assigning from multiple sources, fields of every
+* next source will override same named fields of previous sources.
+*
+* @param {Object} destination object.
+* @returns {Object} assigned destination object.
+*/
+function assign( destination ) {
+  destination = destination || {};
+  for ( let i = 1, len = arguments.length; i < len; i++ ) {
+    const source = arguments[i] || {};
+    for ( const key in source ) {
+      if ( Object.prototype.hasOwnProperty.call( source, key ) ) {
+        const value = source[key];
+        if ( _isPlainObject( value ) ) {
+          assign( destination[key] || ( destination[key] = {} ), value );
+        } else {
+          destination[key] = value;
+        }
+      }
+    }
+  }
+
+  return destination;
+}
+
+// Expose public methods.
+module.exports = { assign: assign };
+
+},{}],9:[function(require,module,exports){
+/* ==========================================================================
+   On Ready
+
+   Utility for triggering functions only after the page is loaded
+
+   ========================================================================== */
+
+'use strict';
+
+const _readyFunctions = [];
+
+/**
+ * Checks if the document is ready, if it is, trigger the passed function,
+ * if not, push the function to an array to be triggered after the page
+ * is loaded.
+ * @param {Function} fn -
+ *   Function to run only after the DOM has completely loaded.
+ * @returns {Array} List of functions to run after the DOM has loaded.
+ */
+function onReady( fn ) {
+  // Ensure we passed a function as the argument
+  if ( typeof fn !== 'function' ) {
+    return [];
+  }
+
+  // If the ready state is already complete, run the passed function,
+  // otherwise add it to our saved array.
+  if ( document.readyState === 'complete' ) {
+    fn();
+  } else {
+    _readyFunctions.push( fn );
+  }
+
+  // When the ready state changes to complete, run the passed function
+  document.onreadystatechange = function() {
+    if ( document.readyState === 'complete' ) {
+      for ( let i = 0, l = _readyFunctions.length; i < l; i++ ) {
+        _readyFunctions[i]();
+      }
+      _readyFunctions.length = 0;
+    }
   };
 
-  $( document ).ready( function() {
-    $( '.table__sortable' ).sortableTable();
-  } );
+  return _readyFunctions;
+}
+
+module.exports = {
+  onReady: onReady
+};
+
+},{}],10:[function(require,module,exports){
+'use strict';
+
+// Required modules.
+const Events = require( '../../mixins/Events.js' );
+const fnBind = require( '../function-bind' ).bind;
+
+/**
+ * BaseTransition
+ * @class
+ *
+ * @classdesc Initializes new BaseTransition behavior.
+ *   This shouldn't be used directly, but instead should be
+ *   the base class used through composition by a specific transition.
+ *
+ * @param {HTMLNode} element
+ *   DOM element to apply transition to.
+ * @param {Object} classes
+ *   The classes to apply to this transition.
+ * @returns {BaseTransition} An instance.
+ */
+function BaseTransition( element, classes ) { // eslint-disable-line max-statements, no-inline-comments, max-len
+  const _classes = classes;
+  let _dom;
+
+  let _lastClass;
+  let _transitionEndEvent;
+  let _transitionCompleteBinded;
+  let _addEventListenerBinded;
+  let _isAnimating = false;
+  let _isFlushed = false;
+
+  /**
+   * @returns {BaseTransition} An instance.
+   */
+  function init() {
+    _transitionCompleteBinded = fnBind( _transitionComplete, this );
+    _addEventListenerBinded = fnBind( _addEventListener, this );
+    setElement( element );
+
+    return this;
+  }
+
+  /**
+   * Set the HTML element target of this transition.
+   * @param {HTMLNode} targetElement - The target of the transition.
+   */
+  function setElement( targetElement ) {
+    // If the element has already been set,
+    // clear the transition classes from the old element.
+    if ( _dom ) {
+      remove();
+      animateOn();
+    }
+    _dom = targetElement;
+    _dom.classList.add( _classes.BASE_CLASS );
+    _transitionEndEvent = _getTransitionEndEvent( _dom );
+  }
+
+  /**
+   * Add a "transition-duration: 0s" utility CSS class.
+   * @returns {BaseTransition} An instance.
+   */
+  function animateOn() {
+    if ( !_dom ) { return this; }
+    _dom.classList.remove( BaseTransition.NO_ANIMATION_CLASS );
+
+    return this;
+  }
+
+  /**
+   * Remove a "transition-duration: 0s" utility CSS class.
+   * @returns {BaseTransition} An instance.
+   */
+  function animateOff() {
+    if ( !_dom ) { return this; }
+    _dom.classList.add( BaseTransition.NO_ANIMATION_CLASS );
+
+    return this;
+  }
+
+  /**
+   * @returns {boolean} Whether the transition has a duration or not.
+   *   Returns false if this transition has not been initialized.
+   */
+  function isAnimated() {
+    if ( !_dom ) { return false; }
+    return !_dom.classList.contains( BaseTransition.NO_ANIMATION_CLASS );
+  }
+
+  /**
+   * Halt an in-progress animation and call the complete event immediately.
+   */
+  function halt() {
+    if ( !_isAnimating ) { return; }
+    _dom.style.webkitTransitionDuration = '0';
+    _dom.style.mozTransitionDuration = '0';
+    _dom.style.oTransitionDuration = '0';
+    _dom.style.transitionDuration = '0';
+    _dom.removeEventListener( _transitionEndEvent,
+                              _transitionCompleteBinded );
+    _transitionCompleteBinded();
+    _dom.style.webkitTransitionDuration = '';
+    _dom.style.mozTransitionDuration = '';
+    _dom.style.oTransitionDuration = '';
+    _dom.style.transitionDuration = '';
+  }
+
+  /**
+   * Add an event listener to the transition, or call the transition
+   * complete handler immediately if transition not supported.
+   */
+  function _addEventListener() {
+    _isAnimating = true;
+    // If transition is not supported, call handler directly (IE9/OperaMini).
+    if ( _transitionEndEvent ) {
+      _dom.addEventListener( _transitionEndEvent,
+                             _transitionCompleteBinded );
+      this.trigger( BaseTransition.BEGIN_EVENT, { target: this } );
+    } else {
+      this.trigger( BaseTransition.BEGIN_EVENT, { target: this } );
+      _transitionCompleteBinded();
+    }
+  }
+
+  /**
+   * Remove an event listener to the transition.
+   */
+  function _removeEventListener() {
+    _dom.removeEventListener( _transitionEndEvent, _transitionCompleteBinded );
+  }
+
+  /**
+   * Handle the end of a transition.
+   */
+  function _transitionComplete() {
+    _removeEventListener();
+    this.trigger( BaseTransition.END_EVENT, { target: this } );
+    _isAnimating = false;
+  }
+
+  /**
+   * Search for and remove initial BaseTransition classes that have
+   * already been applied to this BaseTransition's target element.
+   */
+  function _flush() {
+    for ( const prop in _classes ) {
+      if ( _classes.hasOwnProperty( prop ) &&
+           _classes[prop] !== _classes.BASE_CLASS &&
+           _dom.classList.contains( _classes[prop] ) ) {
+        _dom.classList.remove( _classes[prop] );
+      }
+    }
+  }
+
+  /**
+   * Remove all transition classes, if transition is initialized.
+   * @returns {boolean}
+   *   True, if the element's CSS classes were touched, false otherwise.
+   */
+  function remove() {
+    if ( _dom ) {
+      halt();
+      _dom.classList.remove( _classes.BASE_CLASS );
+      _flush();
+      return true;
+    }
+
+    return false;
+  }
+
+  /**
+   * @param {string} className - A CSS class.
+   * @returns {boolean} False if the class is already applied
+   *   or the transition is not initialized,
+   *   otherwise true if the class was applied.
+   */
+  function applyClass( className ) {
+    if ( !_dom ) { return false; }
+    if ( !_isFlushed ) {
+      _flush();
+      _isFlushed = true;
+    }
+
+    if ( _dom.classList.contains( className ) ) {
+      return false;
+    }
+
+    _removeEventListener();
+    _dom.classList.remove( _lastClass );
+    _lastClass = className;
+    _addEventListenerBinded();
+    _dom.classList.add( _lastClass );
+
+    return true;
+  }
+
+  /**
+   * @param {HTMLNode} elem
+   *   The element to check for support of transition end event.
+   * @returns {string} The browser-prefixed transition end event.
+   */
+  function _getTransitionEndEvent( elem ) {
+    if ( !elem ) {
+      const msg = 'Element does not have TransitionEnd event. It may be null!';
+      throw new Error( msg );
+    }
+
+    let transition;
+    const transitions = {
+      WebkitTransition: 'webkitTransitionEnd',
+      MozTransition:    'transitionend',
+      OTransition:      'oTransitionEnd otransitionend',
+      transition:       'transitionend'
+    };
+
+    for ( const transitionEnd in transitions ) {
+      if ( transitions.hasOwnProperty( transitionEnd ) &&
+           typeof elem.style[transitionEnd] !== 'undefined' ) {
+        transition = transitions[transitionEnd];
+        break;
+      }
+    }
+    return transition;
+  }
+
+  // Attach public events.
+  this.addEventListener = Events.on;
+  this.trigger = Events.trigger;
+  this.removeEventListener = Events.off;
+
+  this.animateOff = animateOff;
+  this.animateOn = animateOn;
+  this.applyClass = applyClass;
+  this.halt = halt;
+  this.init = init;
+  this.isAnimated = isAnimated;
+  this.remove = remove;
+  this.setElement = setElement;
+
+  return this;
+}
+
+// Public static constants.
+BaseTransition.BEGIN_EVENT = 'transitionBegin';
+BaseTransition.END_EVENT = 'transitionEnd';
+BaseTransition.NO_ANIMATION_CLASS = 'u-no-animation';
+
+module.exports = BaseTransition;
+
+},{"../../mixins/Events.js":3,"../function-bind":7}],11:[function(require,module,exports){
+'use strict';
+
+// Required modules.
+const Events = require( '../../mixins/Events.js' );
+const BaseTransition = require( './BaseTransition' );
+const fnBind = require( '../function-bind' ).bind;
+const contains = require( '../dom-class-list' ).contains;
+const addClass = require( '../dom-class-list' ).addClass;
+const removeClass = require( '../dom-class-list' ).removeClass;
+const onReady = require( '../on-ready' ).onReady;
+
+// Exported constants.
+const CLASSES = {
+  BASE_CLASS:   'u-expandable-transition',
+  EXPANDED:     'u-expandable-expanded',
+  COLLAPSED:    'u-expandable-collapsed',
+  OPEN_DEFAULT: 'u-expandable-content__onload-open'
+};
+
+/**
+ * ExpandableTransition
+ * @class
+ *
+ * @classdesc Initializes new ExpandableTransition behavior.
+ *
+ * @param {HTMLNode} element
+ *   DOM element to apply move transition to.
+ * @param {Object} classes
+ *   An Object of custom classes to override the base classes Object
+ * @returns {ExpandableTransition} An instance.
+ */
+function ExpandableTransition( element, classes ) { // eslint-disable-line max-statements, no-inline-comments, max-len
+  const classObject = classes || CLASSES;
+  const _baseTransition = new BaseTransition( element, classObject );
+  let previousHeight;
+
+  /**
+   * @returns {ExpandableTransition} An instance.
+   */
+  function init() {
+    _baseTransition.init();
+    const _transitionCompleteBinded = fnBind( _transitionComplete, this );
+    _baseTransition.addEventListener( BaseTransition.END_EVENT,
+                                      _transitionCompleteBinded );
+
+    onReady( function() {
+      if ( contains( element, classObject.OPEN_DEFAULT ) ) {
+        addClass( element, classObject.EXPANDED );
+        element.style.maxHeight = element.scrollHeight + 'px';
+      } else {
+        previousHeight = element.scrollHeight;
+        addClass( element, classObject.COLLAPSED );
+      }
+    } );
+
+    return this;
+  }
+
+  /**
+   * Handle the end of a transition.
+   */
+  function _transitionComplete() {
+    this.trigger( BaseTransition.END_EVENT, { target: this } );
+    if ( contains( element, classObject.EXPANDED ) &&
+         element.scrollHeight > previousHeight ) {
+      element.style.maxHeight = element.scrollHeight + 'px';
+    }
+  }
+
+  /**
+   * Toggle the expandable
+   * @returns {ExpandableTransition} An instance.
+   */
+  function toggleExpandable() {
+    if ( contains( element, classObject.COLLAPSED ) ) {
+      expand();
+    } else {
+      collapse();
+    }
+
+    return this;
+  }
+
+  /**
+   * Collapses the expandable content
+   * @returns {ExpandableTransition} An instance.
+   */
+  function collapse() {
+    previousHeight = element.scrollHeight;
+    element.style.maxHeight = '0';
+    addClass( element, classObject.COLLAPSED );
+    removeClass( element, classObject.EXPANDED );
+
+    return this;
+  }
+
+  /**
+   * Expands the expandable content
+   * @returns {ExpandableTransition} An instance.
+   */
+  function expand() {
+    element.style.maxHeight = previousHeight + 'px';
+    addClass( element, classObject.EXPANDED );
+    removeClass( element, classObject.COLLAPSED );
+
+    return this;
+  }
+
+  // Attach public events.
+  this.addEventListener = Events.on;
+  this.trigger = Events.trigger;
+  this.removeEventListener = Events.off;
+
+  this.animateOff = _baseTransition.animateOff;
+  this.animateOn = _baseTransition.animateOn;
+  this.halt = _baseTransition.halt;
+  this.isAnimated = _baseTransition.isAnimated;
+  this.setElement = _baseTransition.setElement;
+  this.remove = _baseTransition.remove;
+
+  this.init = init;
+  this.toggleExpandable = toggleExpandable;
+  this.collapse = collapse;
+  this.expand = expand;
+
+  return this;
+}
+
+// Public static properties.
+ExpandableTransition.CLASSES = CLASSES;
+
+module.exports = ExpandableTransition;
+
+},{"../../mixins/Events.js":3,"../dom-class-list":5,"../function-bind":7,"../on-ready":9,"./BaseTransition":10}],12:[function(require,module,exports){
+/* ==========================================================================
+   Javascript Type Checkers
+
+   Various utility functions to check Javascript types and primitives.
+
+   Contains code copied from with moderate modifications:
+
+   https://github.com/angular/angular.js/blob/master/src/Angular.js.
+   Copyright (c) 2010-2015 Google, Inc. http://angularjs.org
+
+   ========================================================================== */
+
+'use strict';
+
+const _toString = Object.prototype.toString;
+
+/**
+ * @name isUndefined
+ * @kind function
+ *
+ * @description
+ * Determines if a reference is undefined.
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is undefined.
+ */
+function isUndefined( value ) {
+  return typeof value === 'undefined';
+}
 
 
-}( jQuery ) );
+/**
+ * @name isDefined
+ * @kind function
+ *
+ * @description
+ * Determines if a reference is defined.
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is defined.
+ */
+function isDefined( value ) {
+  return typeof value !== 'undefined';
+}
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"jquery":4}],4:[function(require,module,exports){
+
+/**
+ * @name isObject
+ * @kind function
+ *
+ * @description
+ * Determines if a reference is an `Object`.
+ * Unlike `typeof` in JavaScript, `null`s are not
+ * considered to be objects. Note that JavaScript arrays are objects.
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is an `Object` but not `null`.
+ */
+function isObject( value ) {
+  // http://jsperf.com/isobject4
+  return value !== null && typeof value === 'object';
+}
+
+
+/**
+ * @name isString
+ * @kind function
+ *
+ * @description
+ * Determines if a reference is a `String`.
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is a `String`.
+ */
+function isString( value ) {
+  return _toString.call( value ) === '[object String]';
+}
+
+
+/**
+ * @name isNumber
+ * @kind function
+ *
+ * @description
+ * Determines if a reference is a `Number`.
+ *
+ * This includes the "special" numbers `NaN`, `+Infinity` and `-Infinity`.
+ *
+ * If you wish to exclude these then you can use the native
+ * [`isFinite'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/
+ *                      Reference/Global_Objects/isFinite)
+ * method.
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is a `Number`.
+ */
+function isNumber( value ) {
+  return _toString.call( value ) === '[object Number]';
+}
+
+
+/**
+ * @name isDate
+ * @kind function
+ *
+ * @description
+ * Determines if a value is a date.
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is a `Date`.
+ */
+function isDate( value ) {
+  return _toString.call( value ) === '[object Date]';
+}
+
+
+/**
+ * @name isArray
+ * @kind function
+ *
+ * @description
+ * Determines if a reference is an `Array`.
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is an `Array`.
+ */
+var isArray = Array.isArray || function isArray( value ) {
+  return _toString.call( value ) === '[object Array]';
+};
+
+
+/**
+ * @name isFunction
+ * @kind function
+ *
+ * @description
+ * Determines if a reference is a `Function`.
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is a `Function`.
+ */
+function isFunction( value ) {
+  return _toString.call( value ) === '[object Function]';
+}
+
+/**
+ * @name isEmpty
+ * @kind function
+ *
+ * @description
+ * Determines if a reference is empty.
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is empty.
+ */
+function isEmpty( value ) {
+  return isUndefined( value ) ||
+         value === null ||
+         isString( value ) &&
+         value.length <= 0 ||
+         ( /^\s*$/ ).test( value );
+}
+
+
+// Expose public methods.
+module.exports = {
+  isUndefined: isUndefined,
+  isDefined:   isDefined,
+  isObject:    isObject,
+  isString:    isString,
+  isNumber:    isNumber,
+  isDate:      isDate,
+  isArray:     isArray,
+  isFunction:  isFunction,
+  isEmpty:     isEmpty
+};
+
+},{}],13:[function(require,module,exports){
+/* ==========================================================================
+   Expandable Organism
+   ========================================================================== */
+
+'use strict';
+
+var contains = require( 'atomic-component/src/utilities/dom-class-list' ).contains;
+var addClass = require( 'atomic-component/src/utilities/dom-class-list' ).addClass;
+var closest = require( 'atomic-component/src/utilities/dom-closest' ).closest;
+var removeClass = require( 'atomic-component/src/utilities/dom-class-list' ).removeClass;
+var ExpandableTransition = require( 'atomic-component/src/utilities/transition/ExpandableTransition' );
+var Events = require( 'atomic-component/src/mixins/Events.js' );
+var Organism = require( 'atomic-component/src/components/Organism' );
+
+var ExpandableOrganism = Organism.extend( {
+
+  transition: null,
+  accordionEvent: null,
+  activeAccordion: false,
+  classes: {
+    targetExpanded: 'o-expandable_target__expanded',
+    targetCollapsed: 'o-expandable_target__collapsed',
+    groupAccordion: 'o-expandable-group__accordion'
+  },
+
+  events: {
+    'click .o-expandable_target': 'onExpandableClick',
+    'click .o-expandable-group__accordion .o-expandable_target': 'onToggleAccordion'
+  },
+
+  ui: {
+    base: '.o-expandable',
+    target: '.o-expandable_target',
+    content: '.o-expandable_content',
+    header: '.o-expandable_header'
+  },
+
+  initialize: function() {
+    var customClasses = {
+      BASE_CLASS:   'o-expandable_content__transition',
+      EXPANDED:     'o-expandable_content__expanded',
+      COLLAPSED:    'o-expandable_content__collapsed',
+      OPEN_DEFAULT: 'o-expandable_content__onload-open'
+    };
+
+    this.transition = new ExpandableTransition( this.ui.content, customClasses ).init();
+
+    var groupElement = closest( this.ui.target, '.' + this.classes.groupAccordion );
+    if ( groupElement !== null ) {
+      var fn = this.accordionClose.bind( this );
+      Events.on( 'CFAccordionClose', fn );
+    }
+
+    if ( contains( this.ui.content, customClasses.OPEN_DEFAULT ) ) {
+      addClass( this.ui.target, this.classes.targetExpanded );
+    } else {
+      addClass( this.ui.target, this.classes.targetCollapsed );
+    }
+  },
+
+  accordionClose: function() {
+    if ( this.activeAccordion === true ) {
+      this.activeAccordion = false;
+      this.transition.collapse();
+    }
+  },
+
+  onExpandableClick: function( event ) {
+    this.transition.toggleExpandable();
+    this.toggleTargetState( this.ui.target );
+  },
+
+  onToggleAccordion: function( event ) {
+    Events.trigger( 'CFAccordionClose' );
+    this.activeAccordion = true;
+  },
+
+  toggleTargetState: function( element ) {
+    if ( contains( element, this.classes.targetExpanded ) ) {
+      addClass( this.ui.target, this.classes.targetCollapsed );
+      removeClass( this.ui.target, this.classes.targetExpanded );
+    } else {
+      addClass( this.ui.target, this.classes.targetExpanded );
+      removeClass( this.ui.target, this.classes.targetCollapsed );
+    }
+  }
+
+} );
+
+module.exports = ExpandableOrganism;
+
+},{"atomic-component/src/components/Organism":2,"atomic-component/src/mixins/Events.js":3,"atomic-component/src/utilities/dom-class-list":5,"atomic-component/src/utilities/dom-closest":6,"atomic-component/src/utilities/transition/ExpandableTransition":11}],14:[function(require,module,exports){
+'use strict';
+
+var Expandable = require( './Expandable' );
+
+// polyfill for ie9 compatibility
+require( 'classlist-polyfill' );
+
+Expandable.init();
+
+},{"./Expandable":13,"classlist-polyfill":18}],15:[function(require,module,exports){
+/* ==========================================================================
+   Table Row Links
+
+   Mixin for adding row link click functionality to table organism.
+
+   ========================================================================== */
+
+'use strict';
+
+const closest = require( 'atomic-component/src/utilities/dom-closest' ).closest;
+
+const TableRowLinks = {
+
+  events: {
+    'click tbody tr': 'onRowLinkClick'
+  },
+
+  ui: {
+    base: '.o-table__row-links'
+  },
+
+  /**
+   * Handle a click of the table.
+   *
+   * @param {Object} event Mouse event for click on the table.
+   */
+  onRowLinkClick: function( event ) {
+    let target = event.target;
+    if ( target && target.tagName === 'A' ) {
+      return;
+    }
+    target = closest( event.target, 'tr' );
+    var link = target.querySelector( 'a' );
+    if ( link ) window.location = link.getAttribute( 'href' );
+  }
+};
+
+module.exports = TableRowLinks;
+
+},{"atomic-component/src/utilities/dom-closest":6}],16:[function(require,module,exports){
+/* ==========================================================================
+   Table Sortablle
+
+   Mixin for sorting table organism.
+
+   ========================================================================== */
+
+'use strict';
+
+var config = require( 'atomic-component/src/utilities/config' );
+var closest = require( 'atomic-component/src/utilities/dom-closest' ).closest;
+var DIRECTIONS = config.DIRECTIONS;
+var UNDEFINED = config.UNDEFINED;
+
+var TableSortable = {
+
+  classes: {
+    sortDown: 'sorted-down',
+    sortUp:   'sorted-up'
+  },
+
+  events: {
+    'click .sortable': 'onSortableClick'
+  },
+
+  ui: {
+    base:       '.o-table__sortable',
+    tableBody:  'tbody',
+    sortButton: '.sorted-up, .sorted-down'
+  },
+
+  /**
+   * Function used to create computed and triggered properties.
+   */
+  initialize: function() {
+    this.sortClass = UNDEFINED;
+    this.sortColumnIndex = UNDEFINED;
+    this.sortDirection = UNDEFINED;
+    this.tableData = [];
+    this.bindProperties();
+    if ( this.ui.sortButton ) {
+      this.sortColumnIndex = this.getColumnIndex();
+      this.sortDirection =
+        this.contains( this.ui.sortButton, this.classes.sortDown ) ?
+        DIRECTIONS.DOWN : DIRECTIONS.UP;
+      this.updateTable();
+    }
+  },
+
+  /**
+   * Function used to create computed and trigger properties.
+   */
+  bindProperties: function() {
+    var sortDirection;
+
+    Object.defineProperty( this, 'sortDirection', {
+      configurable: true,
+      get: function() {
+        return sortDirection;
+      },
+      set: function( value ) {
+        if ( value === DIRECTIONS.UP ) {
+          this.sortClass = this.classes.sortUp;
+        } else if ( value === DIRECTIONS.DOWN ) {
+          this.sortClass = this.classes.sortDown;
+        }
+        sortDirection = value;
+      }
+    } );
+  },
+
+  /**
+   * Function used to get the column index of the active sort column.
+   *
+   * @param {HTMLNode} element - The element used as the sortable.
+   * @returns {number} The column index of the active sort column.
+   */
+  getColumnIndex: function( element ) {
+    return closest( element || this.ui.sortButton, 'td, th' ).cellIndex;
+  },
+
+  /**
+   * Function used to update the table data and dom.
+   * @returns {boolean} TODO: Add description.
+   */
+  updateTable: function() {
+    return this.updateTableData() && this.updateTableDom();
+  },
+
+  /**
+   * Function used to get, sort, and update the table data array.
+   *
+   * @param {number} columnIndex - The index of the column used for sorting.
+   * @returns {Array} TODO: Add description.
+   */
+  updateTableData: function( columnIndex ) {
+    var cell;
+    var rows = this.ui.tableBody.querySelectorAll( 'tr' );
+    var sortType;
+    this.tableData = [];
+    columnIndex = columnIndex || this.sortColumnIndex;
+
+    for ( var i = 0, len = rows.length; i < len; ++i ) {
+      cell = rows[i].cells[columnIndex];
+      if ( cell ) {
+        cell = cell.textContent.trim();
+      }
+      this.tableData.push( [ cell, rows[i] ] );
+    }
+
+    sortType = this.ui.sortButton.getAttribute( 'data-sort_type' );
+    this.tableData.sort( this.tableDataSorter( this.sortDirection, sortType ) );
+
+    return this.tableData;
+  },
+
+  /**
+   * Function used to update the table DOM.
+   * @returns {HTMLNode} TODO: Add description.
+   */
+  updateTableDom: function() {
+    var documentFragment;
+    var tableBody = this.ui.tableBody;
+
+    // Empty the table body to prepare for sorting the rows
+    // TODO: It might make sense to use innerHTML
+    // from a performance and garbage collection standpoint.
+    while ( tableBody.lastChild ) {
+      tableBody.removeChild( tableBody.lastChild );
+    }
+
+    documentFragment = document.createDocumentFragment();
+    for ( var i = 0; i < this.tableData.length; i++ ) {
+      documentFragment.appendChild( this.tableData[i][1] );
+    }
+
+    tableBody.appendChild( documentFragment );
+    this.trigger( 'table:updated' );
+
+    return tableBody;
+  },
+
+  /**
+   * Function used to create a function for sorting table data.
+   * Passed to Array.sort method.
+   *
+   * @param {number} direction - A number where a negative number indicates a
+   * reverse sort.
+   * @param {string} sortType - A string used for sort types. By default,
+   * the values are sorted by their native type. If this value is set to
+   * 'number', then the cells' numeric values are used.
+   * @returns {Function} - A function to be used by the Array.sort method, where
+   * the parameters 'a' and 'b' is each an Array (of Arrays) to be sorted
+   */
+  tableDataSorter: function( direction, sortType ) {
+    return function( a, b ) {
+      var sign = 1;
+      var order = 0;
+      var regex = /[^\d.-]/g;
+
+      // Set a and b to the first Array in each Array-of-Arrays
+      a = a[0];
+      b = b[0];
+
+      // For number sort, convert a & b to numbers.
+      if ( sortType === 'number' ) {
+        a = Number( a.replace( regex, '' ) );
+        b = Number( b.replace( regex, '' ) );
+      }
+
+      if ( direction === DIRECTIONS.DOWN ) {
+        sign = -1;
+      }
+
+      // Sort the values
+      if ( a < b ) {
+        order = sign * -1;
+      } else if ( a > b ) {
+        order = sign;
+      }
+
+      return order;
+    };
+  },
+
+  /**
+   * Function used as callback for the sortable click event.
+   *
+   * @param {Event} event - DOM event.
+   * @returns {Object} - TOOD: Add description.
+   */
+  onSortableClick: function( event ) {
+    if ( this.ui.sortButton ) {
+      this.removeClass( this.ui.sortButton, this.sortClass );
+    }
+    if ( this.ui.sortButton === event.target ) {
+      this.sortDirection = ~this.sortDirection;
+    } else {
+      this.ui.sortButton = event.target;
+      this.sortColumnIndex = this.getColumnIndex();
+      this.sortDirection = DIRECTIONS.UP;
+    }
+    // The active sort class is changing when the sort direction changes.
+    this.addClass( this.ui.sortButton, this.sortClass );
+    this.updateTable();
+
+    return this;
+  }
+
+};
+
+module.exports = TableSortable;
+
+},{"atomic-component/src/utilities/config":4,"atomic-component/src/utilities/dom-closest":6}],17:[function(require,module,exports){
+/* ==========================================================================
+   TableOrganism
+
+   ========================================================================== */
+
+'use strict';
+
+var config = require( 'atomic-component/src/utilities/config' );
+var Organism = require( 'atomic-component/src/components/Organism' );
+var TableSortable = require( './cf-table-sortable' );
+var TableRowLinks = require( './cf-table-row-links' );
+
+var TableOrganism = Organism.extend( {
+
+  ui: {
+    base: '.o-table'
+  },
+
+  modifiers: [ TableSortable, TableRowLinks ]
+
+} );
+
+TableOrganism.constants.DIRECTIONS = config.DIRECTIONS;
+
+TableOrganism.init();
+
+module.exports = TableOrganism;
+
+},{"./cf-table-row-links":15,"./cf-table-sortable":16,"atomic-component/src/components/Organism":2,"atomic-component/src/utilities/config":4}],18:[function(require,module,exports){
+/*
+ * classList.js: Cross-browser full element.classList implementation.
+ * 2014-07-23
+ *
+ * By Eli Grey, http://eligrey.com
+ * Public Domain.
+ * NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
+ */
+
+/*global self, document, DOMException */
+
+/*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js*/
+
+/* Copied from MDN:
+ * https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+ */
+
+if ("document" in window.self) {
+
+  // Full polyfill for browsers with no classList support
+  // Including IE < Edge missing SVGElement.classList
+  if (!("classList" in document.createElement("_"))
+    || document.createElementNS && !("classList" in document.createElementNS("http://www.w3.org/2000/svg","g"))) {
+
+  (function (view) {
+
+    "use strict";
+
+    if (!('Element' in view)) return;
+
+    var
+        classListProp = "classList"
+      , protoProp = "prototype"
+      , elemCtrProto = view.Element[protoProp]
+      , objCtr = Object
+      , strTrim = String[protoProp].trim || function () {
+        return this.replace(/^\s+|\s+$/g, "");
+      }
+      , arrIndexOf = Array[protoProp].indexOf || function (item) {
+        var
+            i = 0
+          , len = this.length
+        ;
+        for (; i < len; i++) {
+          if (i in this && this[i] === item) {
+            return i;
+          }
+        }
+        return -1;
+      }
+      // Vendors: please allow content code to instantiate DOMExceptions
+      , DOMEx = function (type, message) {
+        this.name = type;
+        this.code = DOMException[type];
+        this.message = message;
+      }
+      , checkTokenAndGetIndex = function (classList, token) {
+        if (token === "") {
+          throw new DOMEx(
+              "SYNTAX_ERR"
+            , "An invalid or illegal string was specified"
+          );
+        }
+        if (/\s/.test(token)) {
+          throw new DOMEx(
+              "INVALID_CHARACTER_ERR"
+            , "String contains an invalid character"
+          );
+        }
+        return arrIndexOf.call(classList, token);
+      }
+      , ClassList = function (elem) {
+        var
+            trimmedClasses = strTrim.call(elem.getAttribute("class") || "")
+          , classes = trimmedClasses ? trimmedClasses.split(/\s+/) : []
+          , i = 0
+          , len = classes.length
+        ;
+        for (; i < len; i++) {
+          this.push(classes[i]);
+        }
+        this._updateClassName = function () {
+          elem.setAttribute("class", this.toString());
+        };
+      }
+      , classListProto = ClassList[protoProp] = []
+      , classListGetter = function () {
+        return new ClassList(this);
+      }
+    ;
+    // Most DOMException implementations don't allow calling DOMException's toString()
+    // on non-DOMExceptions. Error's toString() is sufficient here.
+    DOMEx[protoProp] = Error[protoProp];
+    classListProto.item = function (i) {
+      return this[i] || null;
+    };
+    classListProto.contains = function (token) {
+      token += "";
+      return checkTokenAndGetIndex(this, token) !== -1;
+    };
+    classListProto.add = function () {
+      var
+          tokens = arguments
+        , i = 0
+        , l = tokens.length
+        , token
+        , updated = false
+      ;
+      do {
+        token = tokens[i] + "";
+        if (checkTokenAndGetIndex(this, token) === -1) {
+          this.push(token);
+          updated = true;
+        }
+      }
+      while (++i < l);
+
+      if (updated) {
+        this._updateClassName();
+      }
+    };
+    classListProto.remove = function () {
+      var
+          tokens = arguments
+        , i = 0
+        , l = tokens.length
+        , token
+        , updated = false
+        , index
+      ;
+      do {
+        token = tokens[i] + "";
+        index = checkTokenAndGetIndex(this, token);
+        while (index !== -1) {
+          this.splice(index, 1);
+          updated = true;
+          index = checkTokenAndGetIndex(this, token);
+        }
+      }
+      while (++i < l);
+
+      if (updated) {
+        this._updateClassName();
+      }
+    };
+    classListProto.toggle = function (token, force) {
+      token += "";
+
+      var
+          result = this.contains(token)
+        , method = result ?
+          force !== true && "remove"
+        :
+          force !== false && "add"
+      ;
+
+      if (method) {
+        this[method](token);
+      }
+
+      if (force === true || force === false) {
+        return force;
+      } else {
+        return !result;
+      }
+    };
+    classListProto.toString = function () {
+      return this.join(" ");
+    };
+
+    if (objCtr.defineProperty) {
+      var classListPropDesc = {
+          get: classListGetter
+        , enumerable: true
+        , configurable: true
+      };
+      try {
+        objCtr.defineProperty(elemCtrProto, classListProp, classListPropDesc);
+      } catch (ex) { // IE 8 doesn't support enumerable:true
+        if (ex.number === -0x7FF5EC54) {
+          classListPropDesc.enumerable = false;
+          objCtr.defineProperty(elemCtrProto, classListProp, classListPropDesc);
+        }
+      }
+    } else if (objCtr[protoProp].__defineGetter__) {
+      elemCtrProto.__defineGetter__(classListProp, classListGetter);
+    }
+
+    }(window.self));
+
+    } else {
+    // There is full or partial native classList support, so just check if we need
+    // to normalize the add/remove and toggle APIs.
+
+    (function () {
+      "use strict";
+
+      var testElement = document.createElement("_");
+
+      testElement.classList.add("c1", "c2");
+
+      // Polyfill for IE 10/11 and Firefox <26, where classList.add and
+      // classList.remove exist but support only one argument at a time.
+      if (!testElement.classList.contains("c2")) {
+        var createMethod = function(method) {
+          var original = DOMTokenList.prototype[method];
+
+          DOMTokenList.prototype[method] = function(token) {
+            var i, len = arguments.length;
+
+            for (i = 0; i < len; i++) {
+              token = arguments[i];
+              original.call(this, token);
+            }
+          };
+        };
+        createMethod('add');
+        createMethod('remove');
+      }
+
+      testElement.classList.toggle("c3", false);
+
+      // Polyfill for IE 10 and Firefox <24, where classList.toggle does not
+      // support the second argument.
+      if (testElement.classList.contains("c3")) {
+        var _toggle = DOMTokenList.prototype.toggle;
+
+        DOMTokenList.prototype.toggle = function(token, force) {
+          if (1 in arguments && !this.contains(token) === !force) {
+            return force;
+          } else {
+            return _toggle.call(this, token);
+          }
+        };
+
+      }
+
+      testElement = null;
+    }());
+  }
+}
+
+},{}],19:[function(require,module,exports){
+/*jshint browser:true, node:true*/
+
+'use strict';
+
+module.exports = Delegate;
+
+/**
+ * DOM event delegator
+ *
+ * The delegator will listen
+ * for events that bubble up
+ * to the root node.
+ *
+ * @constructor
+ * @param {Node|string} [root] The root node or a selector string matching the root node
+ */
+function Delegate(root) {
+
+  /**
+   * Maintain a map of listener
+   * lists, keyed by event name.
+   *
+   * @type Object
+   */
+  this.listenerMap = [{}, {}];
+  if (root) {
+    this.root(root);
+  }
+
+  /** @type function() */
+  this.handle = Delegate.prototype.handle.bind(this);
+}
+
+/**
+ * Start listening for events
+ * on the provided DOM element
+ *
+ * @param  {Node|string} [root] The root node or a selector string matching the root node
+ * @returns {Delegate} This method is chainable
+ */
+Delegate.prototype.root = function(root) {
+  var listenerMap = this.listenerMap;
+  var eventType;
+
+  // Remove master event listeners
+  if (this.rootElement) {
+    for (eventType in listenerMap[1]) {
+      if (listenerMap[1].hasOwnProperty(eventType)) {
+        this.rootElement.removeEventListener(eventType, this.handle, true);
+      }
+    }
+    for (eventType in listenerMap[0]) {
+      if (listenerMap[0].hasOwnProperty(eventType)) {
+        this.rootElement.removeEventListener(eventType, this.handle, false);
+      }
+    }
+  }
+
+  // If no root or root is not
+  // a dom node, then remove internal
+  // root reference and exit here
+  if (!root || !root.addEventListener) {
+    if (this.rootElement) {
+      delete this.rootElement;
+    }
+    return this;
+  }
+
+  /**
+   * The root node at which
+   * listeners are attached.
+   *
+   * @type Node
+   */
+  this.rootElement = root;
+
+  // Set up master event listeners
+  for (eventType in listenerMap[1]) {
+    if (listenerMap[1].hasOwnProperty(eventType)) {
+      this.rootElement.addEventListener(eventType, this.handle, true);
+    }
+  }
+  for (eventType in listenerMap[0]) {
+    if (listenerMap[0].hasOwnProperty(eventType)) {
+      this.rootElement.addEventListener(eventType, this.handle, false);
+    }
+  }
+
+  return this;
+};
+
+/**
+ * @param {string} eventType
+ * @returns boolean
+ */
+Delegate.prototype.captureForType = function(eventType) {
+  return ['blur', 'error', 'focus', 'load', 'resize', 'scroll'].indexOf(eventType) !== -1;
+};
+
+/**
+ * Attach a handler to one
+ * event for all elements
+ * that match the selector,
+ * now or in the future
+ *
+ * The handler function receives
+ * three arguments: the DOM event
+ * object, the node that matched
+ * the selector while the event
+ * was bubbling and a reference
+ * to itself. Within the handler,
+ * 'this' is equal to the second
+ * argument.
+ *
+ * The node that actually received
+ * the event can be accessed via
+ * 'event.target'.
+ *
+ * @param {string} eventType Listen for these events
+ * @param {string|undefined} selector Only handle events on elements matching this selector, if undefined match root element
+ * @param {function()} handler Handler function - event data passed here will be in event.data
+ * @param {Object} [eventData] Data to pass in event.data
+ * @returns {Delegate} This method is chainable
+ */
+Delegate.prototype.on = function(eventType, selector, handler, useCapture) {
+  var root, listenerMap, matcher, matcherParam;
+
+  if (!eventType) {
+    throw new TypeError('Invalid event type: ' + eventType);
+  }
+
+  // handler can be passed as
+  // the second or third argument
+  if (typeof selector === 'function') {
+    useCapture = handler;
+    handler = selector;
+    selector = null;
+  }
+
+  // Fallback to sensible defaults
+  // if useCapture not set
+  if (useCapture === undefined) {
+    useCapture = this.captureForType(eventType);
+  }
+
+  if (typeof handler !== 'function') {
+    throw new TypeError('Handler must be a type of Function');
+  }
+
+  root = this.rootElement;
+  listenerMap = this.listenerMap[useCapture ? 1 : 0];
+
+  // Add master handler for type if not created yet
+  if (!listenerMap[eventType]) {
+    if (root) {
+      root.addEventListener(eventType, this.handle, useCapture);
+    }
+    listenerMap[eventType] = [];
+  }
+
+  if (!selector) {
+    matcherParam = null;
+
+    // COMPLEX - matchesRoot needs to have access to
+    // this.rootElement, so bind the function to this.
+    matcher = matchesRoot.bind(this);
+
+  // Compile a matcher for the given selector
+  } else if (/^[a-z]+$/i.test(selector)) {
+    matcherParam = selector;
+    matcher = matchesTag;
+  } else if (/^#[a-z0-9\-_]+$/i.test(selector)) {
+    matcherParam = selector.slice(1);
+    matcher = matchesId;
+  } else {
+    matcherParam = selector;
+    matcher = matches;
+  }
+
+  // Add to the list of listeners
+  listenerMap[eventType].push({
+    selector: selector,
+    handler: handler,
+    matcher: matcher,
+    matcherParam: matcherParam
+  });
+
+  return this;
+};
+
+/**
+ * Remove an event handler
+ * for elements that match
+ * the selector, forever
+ *
+ * @param {string} [eventType] Remove handlers for events matching this type, considering the other parameters
+ * @param {string} [selector] If this parameter is omitted, only handlers which match the other two will be removed
+ * @param {function()} [handler] If this parameter is omitted, only handlers which match the previous two will be removed
+ * @returns {Delegate} This method is chainable
+ */
+Delegate.prototype.off = function(eventType, selector, handler, useCapture) {
+  var i, listener, listenerMap, listenerList, singleEventType;
+
+  // Handler can be passed as
+  // the second or third argument
+  if (typeof selector === 'function') {
+    useCapture = handler;
+    handler = selector;
+    selector = null;
+  }
+
+  // If useCapture not set, remove
+  // all event listeners
+  if (useCapture === undefined) {
+    this.off(eventType, selector, handler, true);
+    this.off(eventType, selector, handler, false);
+    return this;
+  }
+
+  listenerMap = this.listenerMap[useCapture ? 1 : 0];
+  if (!eventType) {
+    for (singleEventType in listenerMap) {
+      if (listenerMap.hasOwnProperty(singleEventType)) {
+        this.off(singleEventType, selector, handler);
+      }
+    }
+
+    return this;
+  }
+
+  listenerList = listenerMap[eventType];
+  if (!listenerList || !listenerList.length) {
+    return this;
+  }
+
+  // Remove only parameter matches
+  // if specified
+  for (i = listenerList.length - 1; i >= 0; i--) {
+    listener = listenerList[i];
+
+    if ((!selector || selector === listener.selector) && (!handler || handler === listener.handler)) {
+      listenerList.splice(i, 1);
+    }
+  }
+
+  // All listeners removed
+  if (!listenerList.length) {
+    delete listenerMap[eventType];
+
+    // Remove the main handler
+    if (this.rootElement) {
+      this.rootElement.removeEventListener(eventType, this.handle, useCapture);
+    }
+  }
+
+  return this;
+};
+
+
+/**
+ * Handle an arbitrary event.
+ *
+ * @param {Event} event
+ */
+Delegate.prototype.handle = function(event) {
+  var i, l, type = event.type, root, phase, listener, returned, listenerList = [], target, /** @const */ EVENTIGNORE = 'ftLabsDelegateIgnore';
+
+  if (event[EVENTIGNORE] === true) {
+    return;
+  }
+
+  target = event.target;
+
+  // Hardcode value of Node.TEXT_NODE
+  // as not defined in IE8
+  if (target.nodeType === 3) {
+    target = target.parentNode;
+  }
+
+  root = this.rootElement;
+
+  phase = event.eventPhase || ( event.target !== event.currentTarget ? 3 : 2 );
+  
+  switch (phase) {
+    case 1: //Event.CAPTURING_PHASE:
+      listenerList = this.listenerMap[1][type];
+    break;
+    case 2: //Event.AT_TARGET:
+      if (this.listenerMap[0] && this.listenerMap[0][type]) listenerList = listenerList.concat(this.listenerMap[0][type]);
+      if (this.listenerMap[1] && this.listenerMap[1][type]) listenerList = listenerList.concat(this.listenerMap[1][type]);
+    break;
+    case 3: //Event.BUBBLING_PHASE:
+      listenerList = this.listenerMap[0][type];
+    break;
+  }
+
+  // Need to continuously check
+  // that the specific list is
+  // still populated in case one
+  // of the callbacks actually
+  // causes the list to be destroyed.
+  l = listenerList.length;
+  while (target && l) {
+    for (i = 0; i < l; i++) {
+      listener = listenerList[i];
+
+      // Bail from this loop if
+      // the length changed and
+      // no more listeners are
+      // defined between i and l.
+      if (!listener) {
+        break;
+      }
+
+      // Check for match and fire
+      // the event if there's one
+      //
+      // TODO:MCG:20120117: Need a way
+      // to check if event#stopImmediatePropagation
+      // was called. If so, break both loops.
+      if (listener.matcher.call(target, listener.matcherParam, target)) {
+        returned = this.fire(event, target, listener);
+      }
+
+      // Stop propagation to subsequent
+      // callbacks if the callback returned
+      // false
+      if (returned === false) {
+        event[EVENTIGNORE] = true;
+        event.preventDefault();
+        return;
+      }
+    }
+
+    // TODO:MCG:20120117: Need a way to
+    // check if event#stopPropagation
+    // was called. If so, break looping
+    // through the DOM. Stop if the
+    // delegation root has been reached
+    if (target === root) {
+      break;
+    }
+
+    l = listenerList.length;
+    target = target.parentElement;
+  }
+};
+
+/**
+ * Fire a listener on a target.
+ *
+ * @param {Event} event
+ * @param {Node} target
+ * @param {Object} listener
+ * @returns {boolean}
+ */
+Delegate.prototype.fire = function(event, target, listener) {
+  return listener.handler.call(target, event, target);
+};
+
+/**
+ * Check whether an element
+ * matches a generic selector.
+ *
+ * @type function()
+ * @param {string} selector A CSS selector
+ */
+var matches = (function(el) {
+  if (!el) return;
+  var p = el.prototype;
+  return (p.matches || p.matchesSelector || p.webkitMatchesSelector || p.mozMatchesSelector || p.msMatchesSelector || p.oMatchesSelector);
+}(Element));
+
+/**
+ * Check whether an element
+ * matches a tag selector.
+ *
+ * Tags are NOT case-sensitive,
+ * except in XML (and XML-based
+ * languages such as XHTML).
+ *
+ * @param {string} tagName The tag name to test against
+ * @param {Element} element The element to test with
+ * @returns boolean
+ */
+function matchesTag(tagName, element) {
+  return tagName.toLowerCase() === element.tagName.toLowerCase();
+}
+
+/**
+ * Check whether an element
+ * matches the root.
+ *
+ * @param {?String} selector In this case this is always passed through as null and not used
+ * @param {Element} element The element to test with
+ * @returns boolean
+ */
+function matchesRoot(selector, element) {
+  /*jshint validthis:true*/
+  if (this.rootElement === window) return element === document;
+  return this.rootElement === element;
+}
+
+/**
+ * Check whether the ID of
+ * the element in 'this'
+ * matches the given ID.
+ *
+ * IDs are case-sensitive.
+ *
+ * @param {string} id The ID to test against
+ * @param {Element} element The element to test with
+ * @returns boolean
+ */
+function matchesId(id, element) {
+  return id === element.id;
+}
+
+/**
+ * Short hand for off()
+ * and root(), ie both
+ * with no parameters
+ *
+ * @return void
+ */
+Delegate.prototype.destroy = function() {
+  this.off();
+  this.root();
+};
+
+},{}],20:[function(require,module,exports){
+/*jshint browser:true, node:true*/
+
+'use strict';
+
+/**
+ * @preserve Create and manage a DOM event delegator.
+ *
+ * @version 0.3.0
+ * @codingstandard ftlabs-jsv2
+ * @copyright The Financial Times Limited [All Rights Reserved]
+ * @license MIT License (see LICENSE.txt)
+ */
+var Delegate = require('./delegate');
+
+module.exports = function(root) {
+  return new Delegate(root);
+};
+
+module.exports.Delegate = Delegate;
+
+},{"./delegate":19}],21:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v1.11.3
  * http://jquery.com/
@@ -10785,7 +12738,7 @@ return jQuery;
 
 }));
 
-},{}],5:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 /* ==========================================================================
    JS
    ========================================================================== */
@@ -10799,4 +12752,4 @@ $(document).ready(function() {
   $('.cf-icon-external-link').append('<span class="u-visually-hidden"> Links to external site.</span>');
 });
 
-},{"cf-expandables":2,"cf-tables":3,"jquery":4}]},{},[5]);
+},{"cf-expandables":14,"cf-tables":17,"jquery":21}]},{},[22]);

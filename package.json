@@ -1,35 +1,45 @@
 {
   "name": "design-manual",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A set of design principles and standards for the Consumer Financial Protection Bureau.",
   "homepage": "http://cfpb.github.io/design-manual/",
   "author": {
     "name": "Consumer Financial Protection Bureau",
-    "email": "tech@cfpb.gov"  ,
-        "url": "http://consumerfinance.gov"
+    "email": "tech@cfpb.gov",
+    "url": "http://consumerfinance.gov"
   },
   "license": "CC0",
   "keywords": [
     "design-manual"
   ],
+  "scripts": {
+    "start": "parallelshell \"bundle exec jekyll serve --watch --baseurl ''\" \"grunt watch\"",
+    "build": "grunt build",
+    "colors": "node ./scripts/npm/colors",
+    "cf-link": "node scripts/npm/link",
+    "cf-unlink": "node scripts/npm/unlink"
+  },
   "dependencies": {
-    "cf-buttons": "^3.0.3",
-    "cf-core": "^3.2.0",
-    "cf-expandables": "^3.0.3",
-    "cf-forms": "^3.0.3",
-    "cf-grid": "^3.1.1",
-    "cf-icons": "^3.0.4",
-    "cf-layout": "^3.0.6",
-    "cf-pagination": "^3.0.4",
-    "cf-tables": "^1.0.0",
-    "cf-typography": "^3.0.4",
-    "html5shiv": "latest",
     "box-sizing-polyfill": "0.1.0",
+    "cf-buttons": "^4.5.1",
+    "cf-core": "^4.4.2",
+    "cf-expandables": "^4.1.5",
+    "cf-forms": "^4.4.2",
+    "cf-grid": "^4.2.2",
+    "cf-icons": "^4.2.1",
+    "cf-layout": "^4.5.1",
+    "cf-notifications": "^1.0.2",
+    "cf-pagination": "^4.2.1",
+    "cf-tables": "^4.1.4",
+    "cf-typography": "^4.2.1",
+    "html5shiv": "latest",
+    "jquery": "~1.11.0",
     "normalize-css": "^2.0.0",
-    "normalize-legacy-addon": "0.1.0",
-    "jquery": "~1.11.0"
+    "normalize-legacy-addon": "0.1.0"
   },
   "devDependencies": {
+    "child-process-promise": "^2.2.0",
+    "csv": "^1.1.1",
     "grunt": "~0.4.5",
     "grunt-autoprefixer": "~2.0.0",
     "grunt-banner": "~0.2.3",
@@ -40,12 +50,15 @@
     "grunt-contrib-cssmin": "~0.10.0",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-less": "~1.2.0",
-    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-uglify": "git+https://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-legacssy": "~0.4.0",
     "grunt-string-replace": "~1.0.0",
     "grunt-topdoc": "~0.3.0",
     "load-grunt-tasks": "~1.0.0",
-    "time-grunt": "~1.0.0"
+    "moment": "^2.17.1",
+    "parallelshell": "^3.0.0",
+    "time-grunt": "~1.0.0",
+    "uglify-es": "^3.1.0"
   }
 }
