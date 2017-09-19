@@ -20,18 +20,16 @@ redirect_from: "/ui-toolkit/form-fields.html"
 
 <div class="content-50 content-first">
 
-
-<div class="lead-in">
+{: class="lead-in"}
 This page covers use cases, specs, accessibility, and responsive considerations for major form field UI components. 
 
+{: class="lead-in"}
 In general, forms should be as simple and direct as possible to minimize scrolling (think mobile first). Keep your questions to a minimum and only ask what is absolutely needed. Make inputs as self-explanatory as possible, with a minimum of helper text.
 
+{: class="lead-in"}
 Avoid the use of disabled fields where possible, and instead hide disabled fields until they become relevant and can be enabled.
 
 </div>
-
-</div>
-
 
 <div class="content-50 content-last">
   <h5 class="repo-list-header">Source Code</h5>
@@ -150,7 +148,7 @@ Users of screen readers use the tab key to move focus from one form control to a
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-text-input a-text-input__disabled" disabled="true" autocomplete="off" type="text" value="" title="Test input" placeholder="Placeholder text">
+<input class="a-text-input disabled" disabled="true" autocomplete="off" type="text" value="Disabled input">
 {:/nomarkdown}
 
 </div>
@@ -932,8 +930,8 @@ Radio button (or checkbox)
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-    <input class="a-radio" type="radio" id="test_radio_lg">
-    <label class="a-label" for="test_radio_lg">Label</label>
+    <input class="a-radio hover" type="radio" id="test_radio_lg_hover">
+    <label class="a-label" for="test_radio_lg_hover">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -959,8 +957,8 @@ Radio button (or checkbox)
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-    <input class="a-radio" type="radio" id="test_radio_lg">
-    <label class="a-label" for="test_radio_lg">Label</label>
+    <input class="a-radio hover" type="radio" id="test_radio_lg_hover">
+    <label class="a-label" for="test_radio_lg_hover">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -988,8 +986,8 @@ Radio button (or checkbox)
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-    <input class="a-radio" type="radio" id="test_radio_lg">
-    <label class="a-label" for="test_radio_lg">Label</label>
+    <input class="a-radio" type="radio" id="test_radio_lg_checked" checked>
+    <label class="a-label" for="test_radio_lg_checked">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -1013,8 +1011,8 @@ Radio button (or checkbox)
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-    <input class="a-radio" type="radio" id="test_radio_lg">
-    <label class="a-label" for="test_radio_lg">Label</label>
+    <input class="a-radio" type="radio" id="test_radio_lg_disabled" disabled>
+    <label class="a-label" for="test_radio_lg_disabled">Label</label>
 </div>
 {:/nomarkdown}
 
@@ -1064,8 +1062,9 @@ From an accessibility standpoint, browser defaults for multiple select component
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__select">
+    <label class="a-label" for="test_select_default">Label</label>
     <div class="a-select">
-        <select id="test_select">
+        <select id="test_select_default">
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
@@ -1090,12 +1089,13 @@ From an accessibility standpoint, browser defaults for multiple select component
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__select">
+    <label class="a-label" for="test_select__hover">Label</label>
     <div class="a-select">
-        <select id="test_select">
+        <select id="test_select__hover" class="hover">
             <option value="option1">Option 1</option>
-            <option value="option1">Option 1</option>
-            <option value="option1">Option 1</option>
-            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
         </select>
     </div>
 </div>
@@ -1117,12 +1117,13 @@ From an accessibility standpoint, browser defaults for multiple select component
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__select">
+    <label class="a-label" for="test_select__hover">Label</label>
     <div class="a-select">
-        <select id="test_select">
+        <select id="test_select__hover" class="hover">
             <option value="option1">Option 1</option>
-            <option value="option1">Option 1</option>
-            <option value="option1">Option 1</option>
-            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
         </select>
     </div>
 </div>
@@ -1144,6 +1145,7 @@ From an accessibility standpoint, browser defaults for multiple select component
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__select">
+    <label class="a-label" for="test_select__disabled">Label</label>
     <div class="a-select">
         <select id="test_select__disabled" disabled>
             <option value="option1">Option 1</option>
