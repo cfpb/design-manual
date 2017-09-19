@@ -15,11 +15,16 @@
 @import (less) "cf-tables.less";
 @import (less) "cf-typography.less";
 
-// Import the brand color palette.
-@import (less) "brand-palette.less";
+// Font variables
+@import (less) 'licensed-fonts.css';
 
-// Override the Capital Framework theme variables with colors from the brand color palette.
-@import (less) "cf-theme-overrides.less";
+@webfont-regular: 'AvenirNextLTW01-Regular';
+@webfont-italic: 'AvenirNextLTW01-Italic';
+@webfont-medium: 'AvenirNextLTW01-Medium';
+@webfont-demi: 'AvenirNextLTW01-Demi';
+
+// Icon font path
+@cf-icon-path:                  '../fonts';
 
 // Import site-specific Less files
 @import (less) "header.less";
