@@ -663,7 +663,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Disabled
 - Border: 1 px, Gray 60 (#919395)
-- Background: Gray 20 (#d2d3d5)
+- Background: Gray 10 (#e7e8e9)
 - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 </div>
 
@@ -854,7 +854,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 #### Disabled
 - Border: 1 px, Gray 60 (#919395)
-- Background: Gray 20 (#d2d3d5)
+- Background: Gray 10 (#e7e8e9)
 - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
