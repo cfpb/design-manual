@@ -253,9 +253,6 @@ implements changes:
  - Add to the Design Manual
  - Add assets to design libraries
 
-
-
-
 ----
 
 ## Open source licensing info
