@@ -100,39 +100,34 @@ If form fields are included in a modal, they should follow standard [form field]
 * Text size header: 22px
 * Top border: 3px CFPB Green #20aa3f
 
-<h4 id="close">Close area</h4>
-  <ul>
-    <li>Minicon: “delete-round”</li>
-    <li>Minicon color: Pacific #0072ce</li>
-    <li>Minicon size: 16px (cf-icon_lg)</li>
-    <li>Font: 16px Avenir Next Regular</li>
-    <li>Font color: Pacific #0072ce</li>
-  </ul>
+#### Close area
+* Minicon: “delete-round”
+* Minicon color: Pacific #0072ce
+* Minicon size: 16px (cf-icon_lg)
+* Font: 16px Avenir Next Regular
+* Font color: Pacific #0072ce
 
-<h4 id="action-bar">Gray action bar</h4>
-  <ul>
-    <li>Background: Gray 5 #f7f8f9</li>
-    <li>Padding right/left: 30px</li>
-    <li>Padding top/bottom: 10px</li>
-    <li>Primary action: left aligned <a href="/design-manual/ui-toolkit/buttons.html#variations">button</a></li>
-  </ul>
+#### Gray action bar
+* Background: Gray 5 #f7f8f9
+* Padding right/left: 30px
+* Padding top/bottom: 10px
+* Primary action: left aligned [button](/design-manual/page-components/buttons#variations)
 
-<h4 id="max-width">Maximum width</h4>
-  <ul>
-    <li>270px for small screens</li>
-    <li>630px for medium and large screens</li>
-  </ul>
+#### Maximum width
+* 270px for small screens
+* 630px for medium and large screens
 
-<h4 id="inactive">Inactive window</h4>
-  <ul>
-    <li>Set page to fixed</li>
-  </ul>
+#### Inactive window
+* Set page to fixed
+
 </div>
+
+
 <div class="content-50 content-last">
 {::nomarkdown}
 <img src="/design-manual/static/img/modals/savesearch.png" />
 {:/nomarkdown}
 </div>
 
-<h2 id="code">Code<span class="cf-code-link"></h2>
+##Code
 <p>Coming soon to Capital Framework</p>
