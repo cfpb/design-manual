@@ -83,7 +83,7 @@ Modal windows should have a clear headline at the top of the window. This headli
 
 Any copy underneath the headline should include clear instructions about what the user needs to do.
 
-If form fields are included in a modal, they should follow standard [form field](/design-manual/ui-toolkit/form-fields.html) design guidelines.
+If form fields are included in a modal, they should follow standard [form field](/design-manual/page-components/form-fields.html) design guidelines.
 
 ## Style
 
@@ -129,5 +129,5 @@ If form fields are included in a modal, they should follow standard [form field]
 {:/nomarkdown}
 </div>
 
-##Code
-<p>Coming soon to Capital Framework</p>
+## Code
+Coming soon to Capital Framework
