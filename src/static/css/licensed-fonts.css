@@ -3,7 +3,7 @@
  * This file has been edited to use absolute URLS so we can concatenate it with
  * all of our other styles.
  */
-@import url(//fast.fonts.net/t/1.css?apiType=css&projectid=44e8c964-4684-44c6-a6e3-3f3da8787b50);
+@import url(https://fast.fonts.net/t/1.css?apiType=css&projectid=44e8c964-4684-44c6-a6e3-3f3da8787b50);
 @font-face {
     font-family: "AvenirNextLTW01-Regular";
     src: url("//fast.fonts.net/dv2/2/e9167238-3b3f-4813-a04a-a384394eed42.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
