@@ -36,9 +36,6 @@ module.exports = function(grunt) {
 
     /**
      * Concat: https://github.com/gruntjs/grunt-contrib-concat
-     * concat:cssImport task created to handle @imports correctly in cssmin
-     * task.
-     * See https://stackoverflow.com/questions/21173522/cssmin-not-correctly-handling-import/28454233#28454233
      */
     concat: {
       topdocIcons: {
