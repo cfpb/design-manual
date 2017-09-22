@@ -47,16 +47,6 @@ module.exports = function(grunt) {
           'src/topdoc-templates/icons/src.jade'
         ],
         dest: 'src/topdoc-templates/icons/index.jade'
-      },
-      cssImport: {
-        options: {
-          process: function(src, filepath) {
-            return "@import url(//fast.fonts.net/t/1.css?apiType=css&projectid=44e8c964-4684-44c6-a6e3-3f3da8787b50);"+src.replace('@import url(//fast.fonts.net/t/1.css?apiType=css&projectid=44e8c964-4684-44c6-a6e3-3f3da8787b50);', '');
-          }
-        },
-        files: {
-          '<%= loc.dist %>/static/css/main.css': ['<%= loc.src %>/static/css/main.css']
-        }
       }
     },
 
@@ -337,7 +327,7 @@ module.exports = function(grunt) {
    * Create custom task aliases and combinations.
    */
   grunt.registerTask('compile-cf', ['concat:topdocIcons']);
-  grunt.registerTask('css', ['less', 'autoprefixer', 'concat:cssImport', 'legacssy', 'cssmin', 'usebanner:css', 'copy']);
+  grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css', 'copy']);
   grunt.registerTask('js', ['browserify', 'uglify', 'usebanner:js', 'copy']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('build', ['test', 'css', 'js', 'copy']);
