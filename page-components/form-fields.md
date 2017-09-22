@@ -21,7 +21,7 @@ redirect_from: "/ui-toolkit/form-fields.html"
 <div class="content-50 content-first">
 
 {: class="lead-in"}
-This page covers use cases, specs, accessibility, and responsive considerations for major form field UI components. 
+This page covers use cases, specs, accessibility, and responsive considerations for major form field UI components.
 
 {: class="lead-in"}
 In general, forms should be as simple and direct as possible to minimize scrolling (think mobile first). Keep your questions to a minimum and only ask what is absolutely needed. Make inputs as self-explanatory as possible, with a minimum of helper text.
@@ -53,10 +53,10 @@ Avoid the use of disabled fields where possible, and instead hide disabled field
 #### Usability
 Choose the appropriate width for text input fields so they match the kind of information requested. This makes it easier for users to quickly grasp what’s being asked.
 
-For example, it’s hard to understand at a glance that a single 1,000 px-wide text field is asking for your phone number or birth date. When possible, be even more explicit with the width by dividing it into known character counts. For instance, social security number should be three characters, then two, then four.  Be mindful of not getting too restrictive, however. This approach could work for phone numbers, but only if international numbers are not permitted. 
+For example, it’s hard to understand at a glance that a single 1,000 px-wide text field is asking for your phone number or birth date. When possible, be even more explicit with the width by dividing it into known character counts. For instance, social security number should be three characters, then two, then four.  Be mindful of not getting too restrictive, however. This approach could work for phone numbers, but only if international numbers are not permitted.
 
 These types of inputs should always be smaller widths:
-- Middle initial 
+- Middle initial
 - Date, month, or year
 - State abbreviation
 
@@ -64,7 +64,7 @@ These types of inputs should always be smaller widths:
 As the screen size gets smaller, break multi-column inputs into a single, stacked column. Fields that are next to each other on a large screen, should stack at smaller screen sizes. When possible, fields should span the entire width of the screen at the smallest screen sizes.
 
 #### Accessibility
-Users of screen readers use the tab key to move focus from one form control to another. Make sure that tab focus order reflects the way you would like users to navigate through the form. Consider whether tabs should move a user down or across the page. 
+Users of screen readers use the tab key to move focus from one form control to another. Make sure that tab focus order reflects the way you would like users to navigate through the form. Consider whether tabs should move a user down or across the page.
 
 </div>
 <br>
@@ -93,7 +93,7 @@ Users of screen readers use the tab key to move focus from one form control to a
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-text-input" placeholder="Placeholder text" type="text">
+<input class="a-text-input " placeholder="Placeholder text" type="text">
 {:/nomarkdown}
 
 </div>
@@ -111,7 +111,7 @@ Users of screen readers use the tab key to move focus from one form control to a
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-text-input a-text-input__focused" placeholder="Placeholder text" type="text">
+<input class="a-text-input hover" placeholder="Placeholder text" type="text">
 {:/nomarkdown}
 
 </div>
@@ -123,14 +123,15 @@ Users of screen readers use the tab key to move focus from one form control to a
 #### Focus
 
 - Border: 2 px, Pacific (#0072ce)
-- Outline: Dotted thin, Pacific (#0072ce)
+- Outline: Dotted 1px, Pacific (#0072ce)
+- Outline offset: 1px
 
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<input class="a-text-input a-text-input__focused" placeholder="Placeholder text" type="text">
+<input class="a-text-input focus" placeholder="Placeholder text" type="text">
 {:/nomarkdown}
 
 </div>
@@ -162,7 +163,7 @@ Users of screen readers use the tab key to move focus from one form control to a
 Use for long-form answers.
 
 - Border: 1 px, Gray 60 (#919395)
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61) 
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
 </div>
 
@@ -269,7 +270,7 @@ For screen reader accessibility, consider using the aria-describedby attribute f
 
 #### Placeholder text
 
-Use placeholder text for formatting examples only. Don’t use for instructions. Placeholder text disappears once a user begins typing in the field. 
+Use placeholder text for formatting examples only. Don’t use for instructions. Placeholder text disappears once a user begins typing in the field.
 
 - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 
@@ -299,7 +300,7 @@ Use placeholder text for formatting examples only. Don’t use for instructions.
 
 Use block helper text to explain why a piece of information is being requested, address security and privacy concerns, or to suggest ways of providing answers other than providing formatting examples.
 
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61) 
+- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
 - Margin bottom: 10 px
 
 </div>
@@ -335,7 +336,7 @@ Use to indicate whether a field is optional or required.
 
 {::nomarkdown}
 <label class="a-label a-label__heading" for="helper-inline-example">
-    Label <span class="form-label-helper">(optional)</span>
+    Label <small class="a-label_helper">(optional)</small>
 </label>
 
 <input class="a-text-input" type="text" id="helper-inline-example">
@@ -349,7 +350,7 @@ Use to indicate whether a field is optional or required.
 
 #### Required vs. optional fields
 
-Where possible, design your forms to only include required fields. If it’s not required, ask yourself if it’s really necessary to include at all. Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise. 
+Where possible, design your forms to only include required fields. If it’s not required, ask yourself if it’s really necessary to include at all. Add instructions at the top of the form to clearly indicate that all fields are required unless otherwise noted. If a field is optional, indicate it with inline helper text, as shown here. Don't indicate which fields are required; that would only introduce redundant visual noise.
 
 Try not to design forms consisting mainly of optional fields. If you must do so, mark required field labels only with inline helper text.
 
@@ -361,14 +362,14 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 <div class="form-group">
     <div class="form-group_item">
         <label class="a-label a-label__heading" for="helper-inline-required">
-            Label <span class="form-label-helper-text">(required)</span>
+            Label <small class="a-label_helper">(required)</small>
         </label>
         <input class="a-text-input" type="text" id="helper-inline-required">
     </div>
     </br>
     <div class="form-group_item">
         <label class="a-label a-label__heading" for="helper-inline-optional">
-            Label <span class="form-label-helper-text">(optional)</span>
+            Label <small class="a-label_helper">(optional)</small>
         </label>
         <input class="a-text-input" type="text" id="helper-inline-optional">
     </div>
@@ -408,7 +409,7 @@ The action notification displays when something is happening on the page, such a
 - Background: Gray 10 (#f7f8f9)
 - Padding: 15px
 - H4 (Avenir Next Medium, 18 px) Black (#101820)
-- Minicon: 18 px, Gray (#5a5d61) 
+- Minicon: 18 px, Gray (#5a5d61)
 
 </div>
 
@@ -469,7 +470,7 @@ The warning notification displays when an operation has run as expected, but doe
 - Border: 2 px, Gold (#ff9e1b)
 - Background: Gold 20 (#fff0dd)
 - Minicon: 18px, Gold (#ff9e1b)
- 
+
 </div>
 
 <div class="content-50 content-last">
@@ -563,7 +564,7 @@ Use checkboxes when the user can select more than one option from a list. Make c
 #### Usability
 To optimize usability, consider using checkboxes with large target areas. If these won’t fit into the design and the default style shown below is used, make sure the target area is at least 45 x 45px and that it includes the text label.
 
-Selecting the checkbox or touching the label text next to it should toggle the state of the checkbox on and off. 
+Selecting the checkbox or touching the label text next to it should toggle the state of the checkbox on and off.
 
 #### Accessibility
 To optimize screen reader accessibility, lay out checkboxes vertically rather than horizontally.
@@ -621,7 +622,8 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 #### Focus
 - Border: 2 px, Pacific (#0072ce)
-- Outline: Dotted thin, Pacific (#0072ce)
+- Outline: Dotted 1px, Pacific (#0072ce)
+- Outline offset: 1px
 
 </div>
 
@@ -629,7 +631,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__checkbox">
-    <input class="a-checkbox hover" type="checkbox" id="test_checkbox_basic_focus">
+    <input class="a-checkbox focus" type="checkbox" id="test_checkbox_basic_focus">
     <label class="a-label" for="test_checkbox_basic_focus">Label</label>
 </div>
 {:/nomarkdown}
@@ -685,16 +687,16 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-66 content-first">
 
 ### Nested checkboxes
-There are times when checkboxes may be nested with parent/child relationships. This is common when used within filter interactions. 
+There are times when checkboxes may be nested with parent/child relationships. This is common when used within filter interactions.
 
-#### Usability 
+#### Usability
 In this case, the following behavior and design should be followed:
 
 - Parent is “collapsed” and displays an expandable arrow at the end of the text
-- The label of the parent checkbox should be clickable 
+- The label of the parent checkbox should be clickable
 - Clicking on the label or arrow toggles the opening/closing of the child options
 - In open state, arrow points up; in closed state, arrow points down
-- Child options are in black text and not clickable 
+- Child options are in black text and not clickable
 - Clicking on the parent checkbox selects the parent option and all child options
 - Clicking on the parent checkbox does not change the state of the open/close expansion (if it's checked with the children expanded, it stays expanded, for instance)
 
@@ -747,12 +749,12 @@ In this case, the following behavior and design should be followed:
 
 ## Radio buttons
 
-Use radio buttons when the user can choose only one option out of a list. Use these for a small number of discrete elements—avoid long lists of radio buttons (usually no more than 6-8 options).When there are more than two options, stack radio buttons vertically. 
+Use radio buttons when the user can choose only one option out of a list. Use these for a small number of discrete elements—avoid long lists of radio buttons (usually no more than 6-8 options).When there are more than two options, stack radio buttons vertically.
 
 #### Usability
-Leave radio buttons unselected as the default. It’s easy for users to miss that a radio button has been preselected and to submit a form with an erroneous answer. 
+Leave radio buttons unselected as the default. It’s easy for users to miss that a radio button has been preselected and to submit a form with an erroneous answer.
 
-Never use radio buttons for optional questions. Once a radio button is selected from a list, it or another choice must remain selected and there is no undoing the selection unless you reload the form. 
+Never use radio buttons for optional questions. Once a radio button is selected from a list, it or another choice must remain selected and there is no undoing the selection unless you reload the form.
 
 Consider using <a href="#large-target">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45 x 45 px and includes the option text.  
 
@@ -793,7 +795,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 #### Hover
 - Border: 2 px, Pacific (#0072ce)
 
-</div> 
+</div>
 
 <div class="content-50 content-last">
 
@@ -812,15 +814,16 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 #### Focus
 - Border: 2 px, Pacific (#0072ce)
-- Outline: Dotted thin, Pacific (#0072ce)
+- Outline: Dotted 1px, Pacific (#0072ce)
+- Outline offset: 1px
 
-</div> 
+</div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio hover" type="radio" id="test_radio_basic_focus">
+    <input class="a-radio focus" type="radio" id="test_radio_basic_focus">
     <label class="a-label" for="test_radio_basic_focus">Label</label>
 </div>
 {:/nomarkdown}
@@ -841,7 +844,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio">
-    <input class="a-radio focus" type="radio" id="test_radio_basic_checked" checked>
+    <input class="a-radio" type="radio" id="test_radio_basic_checked" checked>
     <label class="a-label" for="test_radio_basic_checked">Label</label>
 </div>
 {:/nomarkdown}
@@ -877,7 +880,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 
 <div class="content-66 content-first">
 
-## Checkboxes and radio buttons with large target areas 
+## Checkboxes and radio buttons with large target areas
 
 For better usability, consider using checkboxes and radio buttons with large target areas. These are easier to interact with (especially on smaller screens) and harder to miss. They are especially desirable when the form will have heavy mobile usage. Given the amount of real estate they occupy, they’re probably not suited for all use cases; for example, they may not work well for terms of service agreement checkboxes.
 
@@ -893,7 +896,7 @@ Target area
 - Background: Gray 10 (#e7e8e9)
 - Padding: 15 px
 
-Radio button (or checkbox) and text 
+Radio button (or checkbox) and text
 - Border: 1 px, Gray 60 (#919395)
 - Background: 20 px x 20 px, White (#ffffff)
 - Body (Avenir Next Regular, 16 px), Black (#101820)
@@ -921,7 +924,7 @@ Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Gray 10 (#e7e8e9)
 
-Radio button (or checkbox) 
+Radio button (or checkbox)
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
@@ -946,9 +949,9 @@ Radio button (or checkbox)
 Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Gray 10 (#e7e8e9)
-- Outline: Dotted thin, Pacific (#0072ce)
+- Outline: Dotted 1px, Pacific (#0072ce)
 
-Radio button (or checkbox) 
+Radio button (or checkbox)
 - Border: 2 px, Pacific (#0072ce)
 
 </div>
@@ -957,7 +960,7 @@ Radio button (or checkbox)
 
 {::nomarkdown}
 <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-    <input class="a-radio hover" type="radio" id="test_radio_lg_hover">
+    <input class="a-radio focus" type="radio" id="test_radio_lg_hover">
     <label class="a-label" for="test_radio_lg_hover">Label</label>
 </div>
 {:/nomarkdown}
@@ -975,7 +978,7 @@ Target area
 - Border: 2 px, Pacific (#0072ce)
 - Background: Pacific 20 (#d6e8fa)
 
-Radio button (or checkbox) 
+Radio button (or checkbox)
 
 - Border: 1 px, Pacific (#0072ce)
 - Background: 14 x 14 px, Pacific (#0072ce)
@@ -999,7 +1002,7 @@ Radio button (or checkbox)
 
 #### Disabled
 
-Radio button (or checkbox) 
+Radio button (or checkbox)
 
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 20 (#d2d3d5)
@@ -1026,16 +1029,16 @@ Radio button (or checkbox)
 
 ## Dropdowns
 
-While dropdowns are easy to implement, they aren’t always the best choice from a usability perspective. 
+While dropdowns are easy to implement, they aren’t always the best choice from a usability perspective.
 
-Use dropdowns when: 
-- You have a long list of finite options. If the list is shorter than around six items, radio buttons might work better. If the options include something open ended, a text input field is better. 
+Use dropdowns when:
+- You have a long list of finite options. If the list is shorter than around six items, radio buttons might work better. If the options include something open ended, a text input field is better.
 
-- You need structured data for a long list. For instance, an open text field for “state” could be entered as Missouri or MO. So if this needs to be standardized, a dropdown facilitates this standardization. 
+- You need structured data for a long list. For instance, an open text field for “state” could be entered as Missouri or MO. So if this needs to be standardized, a dropdown facilitates this standardization.
 
-- The list options are familiar to the user. A dropdown is not a good place to introduce new or complicated terms or concepts. For instance, if the question is “What’s your favorite color of the rainbow,” a dropdown could be a good choice. The options are familiar and there are more than six. You don’t want the user to have to read and absorb a lot of new information in a dropdown. 
+- The list options are familiar to the user. A dropdown is not a good place to introduce new or complicated terms or concepts. For instance, if the question is “What’s your favorite color of the rainbow,” a dropdown could be a good choice. The options are familiar and there are more than six. You don’t want the user to have to read and absorb a lot of new information in a dropdown.
 
-Also keep in mind that dropdowns behave differently on various mobile devices, taking up different amounts of real estate and requiring different interactions. Mobile also doesn’t allow for the use of typeahead to navigate quickly to an item in a list, so navigating long lists can be especially cumbersome. 
+Also keep in mind that dropdowns behave differently on various mobile devices, taking up different amounts of real estate and requiring different interactions. Mobile also doesn’t allow for the use of typeahead to navigate quickly to an item in a list, so navigating long lists can be especially cumbersome.
 
 #### Accessibility
 
@@ -1109,7 +1112,7 @@ From an accessibility standpoint, browser defaults for multiple select component
 
 #### Focus
 - Border: 2 px, Pacific (#0072ce)
-- Outline: Dotted thin, Pacific (#0072ce)
+- Outline: Dotted 1px, Pacific (#0072ce)
 
 </div>
 
@@ -1119,7 +1122,7 @@ From an accessibility standpoint, browser defaults for multiple select component
 <div class="m-form-field m-form-field__select">
     <label class="a-label" for="test_select__hover">Label</label>
     <div class="a-select">
-        <select id="test_select__hover" class="hover">
+        <select id="test_select__hover" class="focus">
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
