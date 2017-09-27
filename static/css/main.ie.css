@@ -1639,8 +1639,6 @@ pre code {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   display: inline-block;
   box-sizing: border-box;
@@ -2219,8 +2217,6 @@ h6 + .a-legend,
   width: 100%;
   padding: 0.25em 0.375em;
   border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   background-color: #fff;
   border-radius: 0;
@@ -2286,8 +2282,6 @@ h6 + .a-legend,
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   display: inline-block;
   padding: 0.4375em;
@@ -2362,7 +2356,6 @@ h6 + .a-legend,
 }
 
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -4809,7 +4802,6 @@ h6 + .a-legend,
 
 @supports (display: flex ) {
   .m-hero_wrapper {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
@@ -5888,8 +5880,6 @@ a.a-heading__icon.active {
 .content {
   margin-top: 0;
   padding: 2em 0;
-  /* only here to keep footer sticky */
-  overflow: auto;
   display: inline-block;
   box-sizing: border-box;
   border: solid transparent;
@@ -5943,7 +5933,6 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  overflow: hidden;
   /* Inner content - nested grid inside content */
   /* Inner content - nested grid inside content */
   /* Inner content - nested grid inside content */
