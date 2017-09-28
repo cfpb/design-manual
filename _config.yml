@@ -1,5 +1,5 @@
 # Redirects
-gems:
+plugins:
   - jekyll-redirect-from
 
 # Base configuration
