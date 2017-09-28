@@ -6,7 +6,6 @@ before_install:
   # - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
   # - npm whoami
   - brew install ruby
-  - brew install node
   - gem install jekyll
   - npm install --global grunt-cli
 before_script:
