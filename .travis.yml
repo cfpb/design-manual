@@ -4,15 +4,16 @@ node_js:
 before_install:
   # - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
   # - npm whoami
-before_script:
-  # - npm config set spin false --global
-  # - npm config set package-lock false
   - brew install ruby
   - brew install node
   - gem install jekyll
   - npm install --global grunt-cli
+before_script:
+  # - npm config set spin false --global
+  # - npm config set package-lock false
+script:
   - npm run colors
-  - ./setup.sh
+  - ./setup.sh  
 after_success:
   # - git checkout package-lock.json package.json
   - git status && git diff
