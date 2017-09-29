@@ -11,6 +11,7 @@ before_install:
 before_script:
   - npm config set spin false --global
   - npm config set package-lock false
+  - npm config ls -l
 script:
   - ./setup.sh  
   - npm run colors
