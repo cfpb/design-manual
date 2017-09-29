@@ -6,20 +6,13 @@ addons:
     packages:
     - ruby
 before_install:
-  # - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
-  # - npm whoami
-  # - brew update
-  # - brew install ruby
   - gem install jekyll
   - npm install --global grunt-cli
 before_script:
   # - npm config set spin false --global
   # - npm config set package-lock false
 script:
-  - npm run colors
   - ./setup.sh  
+  - npm run colors
 after_success:
-  # - git checkout package-lock.json package.json
-  - git status && git diff
-  # - ./scripts/travis/release.sh
-  # - npm whoami
+  - git status
