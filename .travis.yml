@@ -9,8 +9,8 @@ before_install:
   - gem install jekyll
   - npm install --global grunt-cli
 before_script:
-  # - npm config set spin false --global
-  # - npm config set package-lock false
+  - npm config set spin false --global
+  - npm config set package-lock false
 script:
   - ./setup.sh  
   - npm run colors
