@@ -79,10 +79,13 @@ Include offscreen instructions that describe the modal dialog and how to interac
 
 ## Content guidelines
 
-Modal windows should have a clear headline at the top of the window. This headline should clearly state what is happening or what action a modal is prompting the user for. For instance, if a modal appears due to inactivity, the headline should clearly state the action that is about to take place due to that inactivity.
+### Heading
+Modal windows should have a clear heading at the top of the window. This heading should clearly state what is happening or what action a modal is prompting the user for. For instance, if a modal appears due to inactivity, the heading should clearly state the action that is about to take place due to that inactivity.
 
-Any copy underneath the headline should include clear instructions about what the user needs to do.
+### Supporting text
+Any copy underneath the heading should include clear instructions about what the user needs to do.
 
+### Form fields
 If form fields are included in a modal, they should follow standard [form field](/design-manual/page-components/form-fields.html) design guidelines.
 
 ## Style
@@ -91,24 +94,22 @@ If form fields are included in a modal, they should follow standard [form field]
 
 #### Modal window box
 * Alignment: centered horizontally and vertically on top of lightbox
-* Background: White #ffffff
-* Background lightbox: Gray 80 #75787b, 70% opacity
-* Font: Avenir Next Regular
+* Background: White (#ffffff)
+* Background lightbox: Gray 80 (#75787b), 70% opacity
 * Padding: 30px
-* Text color: Black #101820
-* Text size body: 16px
-* Text size header: 22px
 * Top border: 3px CFPB Green #20aa3f
+* Heading: H3 (Avenir Next Regular, 22 px), Black (#101820)
+* Supporting text: Body (Avenir Next Regular, 16px), Black (#101820)
+
 
 #### Close area
 * Minicon: “delete-round”
 * Minicon color: Pacific #0072ce
 * Minicon size: 16px (cf-icon_lg)
-* Font: 16px Avenir Next Regular
-* Font color: Pacific #0072ce
+* Font: Body (Avenir Next Regular, 16px), Pacific (#0072ce)
 
 #### Gray action bar
-* Background: Gray 5 #f7f8f9
+* Background: Gray 5 (#f7f8f9)
 * Padding right/left: 30px
 * Padding top/bottom: 10px
 * Primary action: left aligned [button](/design-manual/page-components/buttons#variations)
