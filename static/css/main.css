@@ -589,6 +589,9 @@ input[type="radio"] {
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
+.u-hidden {
+  display: none;
+}
 .u-inline-block {
   display: inline-block;
 }
@@ -1547,7 +1550,9 @@ pre code {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
   box-sizing: border-box;
   padding: 0.5em 0.875em;
@@ -1946,7 +1951,7 @@ button.o-expandable_header {
   font-style: normal;
   font-weight: normal;
   color: #5a5d61;
-  font-size: 1em;
+  font-size: 0.875em;
 }
 .a-label_helper em,
 .a-label_helper i {
@@ -1968,6 +1973,10 @@ button.o-expandable_header {
 .lt-ie9 .a-label_helper b {
   font-weight: normal !important;
 }
+.a-label_helper__block {
+  display: block;
+  margin-top: 0.83333333em;
+}
 .a-label__heading {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
@@ -1980,6 +1989,12 @@ button.o-expandable_header {
 }
 .lt-ie9 .a-label__heading {
   font-weight: normal !important;
+}
+.a-label__heading .a-label_helper {
+  font-size: 0.88888889em;
+}
+.a-label__heading .a-label_helper__block {
+  margin-top: 0.625em;
 }
 .a-legend {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
@@ -2037,7 +2052,9 @@ h6 + .a-legend,
   width: 100%;
   padding: 0.25em 0.375em;
   border: 0;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #fff;
   border-radius: 0;
   color: #101820;
@@ -2094,7 +2111,9 @@ h6 + .a-legend,
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: inline-block;
   padding: 0.4375em;
   border: 1px solid #919395;
@@ -2157,7 +2176,8 @@ h6 + .a-legend,
   outline: 1px solid #20aa3f;
 }
 ::-webkit-search-decoration {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 ::-webkit-input-placeholder {
   color: #5a5d61;
@@ -4656,6 +4676,7 @@ h6 + .a-legend,
   }
   @supports (display: flex ) {
     .m-hero_wrapper {
+      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
     }

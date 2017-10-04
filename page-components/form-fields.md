@@ -310,11 +310,13 @@ Use block helper text to explain why a piece of information is being requested, 
 {::nomarkdown}
 <label class="a-label a-label__heading" for="helper-example">
     Label
+    <small class="a-label_helper a-label_helper__block">
+        Use block helper text for instructions.
+    </small>
 </label>
 <div class="o-form_group">
-        <p class="u-mb10">Use block helper text for instructions.</p>
-        <input class="a-text-input" type="text" id="helper-example">
-    </div>
+    <input class="a-text-input" type="text" id="helper-example">
+</div>
 {:/nomarkdown}
 
 </div>
