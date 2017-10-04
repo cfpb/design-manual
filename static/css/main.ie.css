@@ -734,6 +734,10 @@ input[type="radio"] {
   clip: rect(0 0 0 0);
 }
 
+.u-hidden {
+  display: none;
+}
+
 .u-inline-block {
   display: inline-block;
 }
@@ -1639,6 +1643,8 @@ pre code {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   display: inline-block;
   box-sizing: border-box;
@@ -2113,7 +2119,7 @@ button.o-expandable_header {
   font-style: normal;
   font-weight: normal;
   color: #5a5d61;
-  font-size: 1em;
+  font-size: 0.875em;
 }
 
 .a-label_helper em,
@@ -2140,6 +2146,11 @@ button.o-expandable_header {
   font-weight: normal !important;
 }
 
+.a-label_helper__block {
+  display: block;
+  margin-top: 0.83333333em;
+}
+
 .a-label__heading {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
@@ -2153,6 +2164,14 @@ button.o-expandable_header {
 
 .lt-ie9 .a-label__heading {
   font-weight: normal !important;
+}
+
+.a-label__heading .a-label_helper {
+  font-size: 0.88888889em;
+}
+
+.a-label__heading .a-label_helper__block {
+  margin-top: 0.625em;
 }
 
 .a-legend {
@@ -2217,6 +2236,8 @@ h6 + .a-legend,
   width: 100%;
   padding: 0.25em 0.375em;
   border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background-color: #fff;
   border-radius: 0;
@@ -2282,6 +2303,8 @@ h6 + .a-legend,
   font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   display: inline-block;
   padding: 0.4375em;
@@ -2356,6 +2379,7 @@ h6 + .a-legend,
 }
 
 ::-webkit-search-decoration {
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -4802,6 +4826,7 @@ h6 + .a-legend,
 
 @supports (display: flex ) {
   .m-hero_wrapper {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
