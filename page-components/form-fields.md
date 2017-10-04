@@ -301,6 +301,7 @@ Use placeholder text for formatting examples only. Don’t use for instructions.
 Use block helper text to explain why a piece of information is being requested, address security and privacy concerns, or to suggest ways of providing answers other than providing formatting examples.
 
 - Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Margin top: 10 px
 - Margin bottom: 10 px
 
 </div>
