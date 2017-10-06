@@ -97,16 +97,16 @@ If form fields are included in a modal, they should follow standard [form field]
 * Background: White (#ffffff)
 * Background lightbox: Gray 80 (#75787b), 70% opacity
 * Padding: 30px
-* Top border: 3px CFPB Green #20aa3f
-* Heading: H3 (Avenir Next Regular, 22 px), Black (#101820)
-* Supporting text: Body (Avenir Next Regular, 16px), Black (#101820)
+* Top border: 3px, CFPB Green (#20aa3f)
+* Heading: Avenir Next Regular, 22 px, Black (#101820)
+* Supporting text: Avenir Next Regular, 16px, Black (#101820)
 
 
 #### Close area
 * Minicon: “delete-round”
-* Minicon color: Pacific #0072ce
+* Minicon color: Pacific (#0072ce)
 * Minicon size: 16px (cf-icon_lg)
-* Font: Body (Avenir Next Regular, 16px), Pacific (#0072ce)
+* Font: Avenir Next Regular, 16px, Pacific (#0072ce)
 
 #### Gray action bar
 * Background: Gray 5 (#f7f8f9)
@@ -123,12 +123,8 @@ If form fields are included in a modal, they should follow standard [form field]
 
 </div>
 
-
 <div class="content-50 content-last">
 {::nomarkdown}
 <img src="/design-manual/static/img/modals/savesearch.png" />
 {:/nomarkdown}
 </div>
-
-## Code
-Coming soon to Capital Framework
