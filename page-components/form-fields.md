@@ -85,7 +85,7 @@ Users of screen readers use the tab key to move focus from one form control to a
  - Border: 1 px, Gray 60 (#919395)
  - Height: 35 px
  - Padding: 7px
- - Body (Avenir Next Regular, 16px), Gray (#5a5d61)
+ - Avenir Next Regular, 16px, Gray (#5a5d61)
  - Text should be in sentence case
 
 </div>
@@ -162,7 +162,7 @@ Users of screen readers use the tab key to move focus from one form control to a
 Use for long-form answers.
 
 - Border: 1 px, Gray 60 (#919395)
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61) 
+- Avenir Next Regular, 16 px, Gray (#5a5d61) 
 
 </div>
 
@@ -182,73 +182,50 @@ Use for long-form answers.
 
 <!--******   LABELS     **********-->
 
-<div class="content-66 content-first">
-
 ### Labels
-
-</div>
 
 <div class="content-50 content-first">
 
-#### Form field labels
+#### Basic label
 
-- H4 (Avenir Next Medium, 18 px), Black (#101820)
+- Avenir Next Medium, 18 px, Black (#101820)
 - Positioned above the input field, left aligned
 - Margin bottom: 10 px
 
 </div>
 
 <div class="content-50 content-last">
+
 {::nomarkdown}
-<label class="a-label a-label__heading">
-    Label
-</label>
+<label class="a-label a-label__heading">Label</label>
 <input class="a-text-input" type="text">
 {:/nomarkdown}
+
 </div>
 
 ---
 
 <div class="content-50 content-first">
 
-#### Fieldset legend
+#### Inline label
 
-- H4 (Avenir Next Medium, 18 px), Black (#101820)
-- Positioned above a group of input fields, left aligned
+- Avenir Next Regular, 16 px, Black (#101820)
+- Positioned to the right of the input field, inline
+
 </div>
 
 <div class="content-50 content-last">
 
 {::nomarkdown}
-<div class="o-form_group">
-    <fieldset class="o-form_fieldset">
-        <legend class="a-legend">
-            Fieldset legend
-        </legend>
-            <ul class="content-l m-list m-list__unstyled">
-                <li class="content-l_col content-l_col-1-2">
-                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-                        <input class="a-radio" id="is_helpful_1" type="radio" name="is_helpful" value="1">
-                        <label class="a-label" for="is_helpful_1">
-                            Yes
-                        </label>
-                    </div>
-                </li>
-                <li class="content-l_col content-l_col-1-2">
-                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-                        <input class="a-radio" id="is_helpful_0" type="radio" name="is_helpful" value="0">
-                        <label class="a-label" for="is_helpful_0">
-                                No
-                        </label>
-                    </div>
-                </li>
-            </ul>
-        </fieldset>
-    </div>
+<div class="m-form-field m-form-field__checkbox">
+    <input class="a-checkbox" type="checkbox" id="test_checkbox">
+    <label class="a-label" for="test_checkbox">Label</label>
+</div>
 {:/nomarkdown}
 
 </div>
 
+<br>
 <!--******   HELPER TEXT     **********-->
 
 <div class="content-66 content-first">
@@ -271,7 +248,7 @@ For screen reader accessibility, consider using the aria-describedby attribute f
 
 Use placeholder text for formatting examples only. Don’t use for instructions. Placeholder text disappears once a user begins typing in the field. 
 
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -299,7 +276,7 @@ Use placeholder text for formatting examples only. Don’t use for instructions.
 
 Use block helper text to explain why a piece of information is being requested, address security and privacy concerns, or to suggest ways of providing answers other than providing formatting examples.
 
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61) 
+- Avenir Next Regular, 16 px, Gray (#5a5d61) 
 - Margin bottom: 10 px
 
 </div>
@@ -325,7 +302,7 @@ Use block helper text to explain why a piece of information is being requested, 
 #### Inline helper text
 
 Use to indicate whether a field is optional or required.
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Avenir Next Regular, 16 px, Gray (#5a5d61)
 - Margin bottom: 10 px
 - Helper text should be lowercase and placed in parenthesis after the label
 
@@ -361,19 +338,103 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 <div class="form-group">
     <div class="form-group_item">
         <label class="a-label a-label__heading" for="helper-inline-required">
-            Label <span class="form-label-helper-text">(required)</span>
+            Label <span class="form-label-helper-text">(optional)</span>
         </label>
         <input class="a-text-input" type="text" id="helper-inline-required">
     </div>
     </br>
     <div class="form-group_item">
         <label class="a-label a-label__heading" for="helper-inline-optional">
-            Label <span class="form-label-helper-text">(optional)</span>
+            Label <span class="form-label-helper-text"></span>
         </label>
         <input class="a-text-input" type="text" id="helper-inline-optional">
     </div>
 </div>
 {:/nomarkdown}
+
+</div>
+
+<!--******************************-    FIELDSET    ******************************-->
+
+## Fieldset
+
+<div class="content-50 content-first">
+The fieldset element is used to group several controls as well as labels within a web form. 
+
+The fieldset includes: 
+- Legend
+- Block helper text (if necessary)
+- Inline labels
+- Set of controls
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<div class="o-form_group">
+    <fieldset class="o-form_fieldset">
+                <li class="content-l_col content-l_col-1">
+        <legend class="a-legend">
+            Legend
+        </legend>
+        <p class="u-mb10">Use block helper text for instructions.</p>
+    </li>
+        <li class="content-l_col content-l_col-1-2">
+                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
+                        <input class="a-radio" id="is_helpful_1" type="radio" name="is_helpful" value="1">
+                        <label class="a-label" for="is_helpful_1">
+                            Inline label
+                        </label>
+                    </div>
+                </li>
+                <li class="content-l_col content-l_col-1-2">
+                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
+                        <input class="a-radio" id="is_helpful_2" type="radio" name="is_helpful" value="0">
+                        <label class="a-label" for="is_helpful_2">
+                                Inline label
+                        </label>
+                    </div>
+                </li>
+                 <li class="content-l_col content-l_col-1-2">
+                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
+                        <input class="a-radio" id="is_helpful_3" type="radio" name="is_helpful" value="0">
+                        <label class="a-label" for="is_helpful_3">
+                                Inline label
+                        </label>
+                    </div>
+                </li>
+                 <li class="content-l_col content-l_col-1-2">
+                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
+                        <input class="a-radio" id="is_helpful_4" type="radio" name="is_helpful" value="0">
+                        <label class="a-label" for="is_helpful_4">
+                                Inline label
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+{:/nomarkdown}
+
+</div>
+
+
+<div class="content-50 content-first">
+
+#### Legend
+
+The legend serves as the heading for the fieldset
+- Avenir Next Medium, 18 px, Black (#101820)
+- Positioned above a group of input fields, left aligned
+
+#### Inline label
+- Avenir Next Regular, 16 px, Black (#101820)
+- Positioned to the right of the input field, inline
+
+#### Set of controls
+- Checkboxes
+- Radio buttons
+- Input fields
 
 </div>
 
@@ -536,7 +597,7 @@ The error notification displays when an operation has not run as expected and en
 <div class="m-form-field m-form-field__error">
     <input class="a-text-input a-text-input__error"
            type="text"
-           value="Placeholder text"
+           placeholder="Placeholder text"
            id="form-input-error"
            aria-describedby="form-input-error_message">
     <div class="a-error-message" id="form-input-error_message" role="alert">
@@ -580,7 +641,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 - Margin right: 10 px
 - Border: 1 px, Gray 60 (#919395)
 - Background: White (#ffffff)
-- Body (Avenir Next Regular, 16 px), Black (#101820)
+- Avenir Next Regular, 16 px, Black (#101820)
 
 </div>
 
@@ -664,7 +725,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 #### Disabled
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 10 (#e7e8e9)
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Avenir Next Regular, 16 px, Gray (#5a5d61)
 </div>
 
 <div class="content-50 content-last">
@@ -771,7 +832,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 - Border: 1 px, Gray 60 (#919395)
 - Background: White (#ffffff)
 - Margin right: 10 px
-- Body (Avenir Next Regular, 16 px), Black (#101820)
+- Avenir Next Regular, 16 px, Black (#101820)
 
 </div>
 
@@ -855,7 +916,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 #### Disabled
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 10 (#e7e8e9)
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -896,7 +957,7 @@ Target area
 Radio button (or checkbox) and text 
 - Border: 1 px, Gray 60 (#919395)
 - Background: 20 px x 20 px, White (#ffffff)
-- Body (Avenir Next Regular, 16 px), Black (#101820)
+- Avenir Next Regular, 16 px, Black (#101820)
 
 </div>
 
@@ -1003,7 +1064,7 @@ Radio button (or checkbox)
 
 - Border: 1 px, Gray 60 (#919395)
 - Background: Gray 20 (#d2d3d5)
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -1137,7 +1198,7 @@ From an accessibility standpoint, browser defaults for multiple select component
 #### Disabled
 
 - Background: Gray 10 (#e7e8e9)
-- Body (Avenir Next Regular, 16 px), Gray (#5a5d61)
+- Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
