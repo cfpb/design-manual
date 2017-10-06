@@ -341,15 +341,17 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 {::nomarkdown}
 <div class="form-group">
     <div class="form-group_item">
-        <label class="a-label a-label__heading" for="helper-inline-required">Label <span class="form-label-helper-text">(optional)</span>
-        </label>
+    <label class="a-label a-label__heading">
+    Label <small class="a-label_helper">(optional)</small>
+    </label>
         <input class="a-text-input" type="text" id="helper-inline-required">
-    </divf>
+    </div>
     </br>
     <div class="form-group_item">
-        <label class="a-label a-label__heading" for="helper-inline-optional">Label <span class="form-label-helper-text"></span>
-        </label>
-        <input class="a-text-input" type="text" id="helper-inline-optional">
+    <label class="a-label a-label__heading">
+    Label <small class="a-label_helper"></small>
+    </label>
+        <input class="a-text-input" type="text" id="helper-inline-required">
     </div>
 </div>
 {:/nomarkdown}
