@@ -379,47 +379,38 @@ The fieldset includes:
 {::nomarkdown}
 <div class="o-form_group">
     <fieldset class="o-form_fieldset">
-                <li class="content-l_col content-l_col-1">
-        <legend class="a-legend">
-            Legend
-        </legend>
-        <p class="u-mb10">Use block helper text for instructions.</p>
-    </li>
-        <li class="content-l_col content-l_col-1-2">
-                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-                        <input class="a-radio" id="is_helpful_1" type="radio" name="is_helpful" value="1">
-                        <label class="a-label" for="is_helpful_1">
-                            Inline label
+
+                <legend class="a-legend">Legend
+                    <small class="a-label_helper a-label_helper__block">Use block helper text for instructions.
+                    </small>
+                </legend>
+                    
+                <div class="m-form-field m-form-field__radio m-form-field__lg-target">
+                    <input class="a-radio" id="is_helpful_1" type="radio" name="is_helpful" value="1">
+                        <label class="a-label" for="is_helpful_1">Inline label
                         </label>
-                    </div>
-                </li>
-                <li class="content-l_col content-l_col-1-2">
-                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-                        <input class="a-radio" id="is_helpful_2" type="radio" name="is_helpful" value="0">
-                        <label class="a-label" for="is_helpful_2">
-                                Inline label
+                </div>
+
+                <div class="m-form-field m-form-field__radio m-form-field__lg-target">
+                    <input class="a-radio" id="is_helpful_2" type="radio" name="is_helpful" value="0">
+                        <label class="a-label" for="is_helpful_2">Inline label
                         </label>
-                    </div>
-                </li>
-                 <li class="content-l_col content-l_col-1-2">
-                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-                        <input class="a-radio" id="is_helpful_3" type="radio" name="is_helpful" value="0">
-                        <label class="a-label" for="is_helpful_3">
-                                Inline label
+                </div>
+
+                <div class="m-form-field m-form-field__radio m-form-field__lg-target">
+                    <input class="a-radio" id="is_helpful_3" type="radio" name="is_helpful" value="0">
+                        <label class="a-label" for="is_helpful_3">Inline label
                         </label>
-                    </div>
-                </li>
-                 <li class="content-l_col content-l_col-1-2">
-                    <div class="m-form-field m-form-field__radio m-form-field__lg-target">
-                        <input class="a-radio" id="is_helpful_4" type="radio" name="is_helpful" value="0">
-                        <label class="a-label" for="is_helpful_4">
-                                Inline label
+                </div>
+
+                <div class="m-form-field m-form-field__radio m-form-field__lg-target">
+                    <input class="a-radio" id="is_helpful_4" type="radio" name="is_helpful" value="0">
+                        <label class="a-label" for="is_helpful_4">Inline label
                         </label>
-                    </div>
-                </li>
-            </ul>
-        </fieldset>
-    </div>
+                </div>
+
+    </fieldset>
+</div>
 {:/nomarkdown}
 
 </div>
