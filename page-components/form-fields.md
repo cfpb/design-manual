@@ -354,6 +354,8 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 
 </div>
 
+<br>
+
 <!--******************************-    FIELDSET    ******************************-->
 
 ## Fieldset
