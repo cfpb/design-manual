@@ -1528,7 +1528,6 @@ code {
   font-family: 'Input Mono', Consolas, Monaco, 'Courier New', monospace;
 }
 code {
-  display: inline-block;
   padding: 0.23076923em 0.23076923em 0;
   font-size: 0.8125em;
 }
