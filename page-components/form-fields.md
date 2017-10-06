@@ -422,7 +422,6 @@ The fieldset includes:
 
 The legend serves as the heading for the fieldset
 - Avenir Next Medium, 18 px, Black (#101820)
-- Margin bottom: 10 px
 - Positioned above a group of input fields, left aligned
 
 #### Inline label
