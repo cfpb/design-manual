@@ -8,8 +8,6 @@
 .content {
   margin-top: 0;
   padding: 2em 0;
-  /* only here to keep footer sticky */
-  overflow: auto;
   .grid_column(12);
 
   .content-25,
@@ -49,8 +47,6 @@ figure {
   .content {
     // Make room for the fixed header
     .grid_column(9);
-    overflow: hidden; // Added so that .nested-col-group mixin within isn't too wide.
-                      // This shouldn't be necessary, though... need to revisit.
 
     /* Inner content - nested grid inside content */
     .content-25 {
@@ -293,7 +289,7 @@ figure {
     }
 
     .swatch__primary {
-       .grid_column(4); 
+       .grid_column(4);
     }
 
 }

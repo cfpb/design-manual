@@ -734,6 +734,10 @@ input[type="radio"] {
   clip: rect(0 0 0 0);
 }
 
+.u-hidden {
+  display: none;
+}
+
 .u-inline-block {
   display: inline-block;
 }
@@ -1613,7 +1617,6 @@ code {
 }
 
 code {
-  display: inline-block;
   padding: 0.23076923em 0.23076923em 0;
   font-size: 0.8125em;
 }
@@ -2115,7 +2118,7 @@ button.o-expandable_header {
   font-style: normal;
   font-weight: normal;
   color: #5a5d61;
-  font-size: 1em;
+  font-size: 0.875em;
 }
 
 .a-label_helper em,
@@ -2142,6 +2145,11 @@ button.o-expandable_header {
   font-weight: normal !important;
 }
 
+.a-label_helper__block {
+  display: block;
+  margin-top: 0.83333333em;
+}
+
 .a-label__heading {
   font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
@@ -2155,6 +2163,14 @@ button.o-expandable_header {
 
 .lt-ie9 .a-label__heading {
   font-weight: normal !important;
+}
+
+.a-label__heading .a-label_helper {
+  font-size: 0.88888889em;
+}
+
+.a-label__heading .a-label_helper__block {
+  margin-top: 0.625em;
 }
 
 .a-legend {
@@ -4398,6 +4414,27 @@ h6 + .a-legend,
   background: #b4b5b6;
 }
 
+.content_main dd,
+.content_intro dd,
+.content_main dt,
+.content_intro dt,
+.content_main h3,
+.content_intro h3,
+.content_main h4,
+.content_intro h4,
+.content_main h5,
+.content_intro h5,
+.content_main h6,
+.content_intro h6,
+.content_main li,
+.content_intro li,
+.content_main p,
+.content_intro p,
+.content_main label,
+.content_intro label {
+  max-width: 41.875rem;
+}
+
 .content_intro,
 .content_main,
 .content_sidebar {
@@ -5888,8 +5925,6 @@ a.a-heading__icon.active {
 .content {
   margin-top: 0;
   padding: 2em 0;
-  /* only here to keep footer sticky */
-  overflow: auto;
   display: inline-block;
   box-sizing: border-box;
   border: solid transparent;
@@ -5943,7 +5978,6 @@ figure {
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  overflow: hidden;
   /* Inner content - nested grid inside content */
   /* Inner content - nested grid inside content */
   /* Inner content - nested grid inside content */
