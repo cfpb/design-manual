@@ -4241,6 +4241,26 @@ h6 + .a-legend,
   height: 1px;
   background: #b4b5b6;
 }
+.content_main dd,
+.content_intro dd,
+.content_main dt,
+.content_intro dt,
+.content_main h3,
+.content_intro h3,
+.content_main h4,
+.content_intro h4,
+.content_main h5,
+.content_intro h5,
+.content_main h6,
+.content_intro h6,
+.content_main li,
+.content_intro li,
+.content_main p,
+.content_intro p,
+.content_main label,
+.content_intro label {
+  max-width: 41.875rem;
+}
 .content_intro,
 .content_main,
 .content_sidebar {
