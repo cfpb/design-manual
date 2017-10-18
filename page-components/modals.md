@@ -74,7 +74,7 @@ Include offscreen instructions that describe the modal dialog and how to interac
 * When the modal dialog is displayed, the main content of the page should be marked with aria-hidden="true" to prevent screen readers from interacting with it.
 * Add role="alertdialog" to the modal window.
 * Code the close minicon using a button element for more semantic markup.
-* The heading of the modal dialog should be marked as an h1.
+* The heading of the modal dialog should use an H1 tag.
 * Offscreen interaction instructions should use aria-labelledby attribute.
 
 ## Content guidelines
