@@ -28,7 +28,7 @@ category: UI toolkit
 <div class="content-50 content-first">
   <h4 id="examples">Examples of when to use modals</h4>
   <ul>
-    <li>Confirm an action that can’t be undone, such as “Are you sure you want to delete this</li>
+    <li>Confirm an action that can’t be undone, such as “Are you sure you want to delete this?</li>
     <li>Display a warning that something is about to expire or timeout</li>
     <li>Save a form that requires inputs separate from the main workflow, like entering a “Save as” file name</li>
     <li>Focus attention on the need to accept or acknowledge something before the user can proceed</li>
