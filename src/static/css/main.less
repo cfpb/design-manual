@@ -16,8 +16,6 @@
 @import (less) "cf-typography.less";
 
 // Font variables
-@import (less) 'licensed-fonts.css';
-
 @webfont-regular: 'AvenirNextLTW01-Regular';
 @webfont-italic: 'AvenirNextLTW01-Italic';
 @webfont-medium: 'AvenirNextLTW01-Medium';
@@ -25,6 +23,12 @@
 
 // Icon font path
 @cf-icon-path:                  '../fonts';
+
+// Webfont variables
+// This is the path for self-hosted fonts.
+@cf-fonts-path: '/static/fonts';
+// Whether or not to override the local path and retrieve fonts from fonts.net.
+@use-font-cdn: true;
 
 // Import site-specific Less files
 @import (less) "header.less";
