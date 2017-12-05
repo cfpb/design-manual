@@ -301,7 +301,7 @@ AtomicComponent.init = function() {
 
 module.exports = AtomicComponent;
 
-},{"../mixins/Events":3,"../utilities/dom-class-list":5,"../utilities/function-bind":7,"../utilities/object-assign":8,"../utilities/type-checkers":12,"dom-delegate":21}],2:[function(require,module,exports){
+},{"../mixins/Events":3,"../utilities/dom-class-list":5,"../utilities/function-bind":7,"../utilities/object-assign":8,"../utilities/type-checkers":11,"dom-delegate":20}],2:[function(require,module,exports){
 /* ==========================================================================
    Organism
 
@@ -378,7 +378,6 @@ const Events = {
 
     return this;
   }
-
 };
 
 module.exports = Events;
@@ -393,29 +392,29 @@ module.exports = Events;
 
 // Bit values intended to be used for bit inversion.
 const DIRECTIONS = {
-  UP: 0,
+  UP:    0,
   RIGHT: 1,
-  DOWN: -1,
-  LEFT: -2
+  DOWN:  -1,
+  LEFT:  -2
 };
 
 // Atomic component types used for describing component hierarchy.
 const TYPES = {
-  PAGE: 1,
+  PAGE:     1,
   TEMPLATE: 2,
   ORGANISM: 3,
   MOLECULE: 4,
-  ATOM: 5
+  ATOM:     5
 };
 
 // Atomic Prefixes used for standardizing naming conventions
 // across HTML, CSS, and Javascript.
 const PREFIXES = {
-  PAGE: 'p-',
+  PAGE:     'p-',
   TEMPLATE: 't-',
   ORGANISM: 'o-',
   MOLECULE: 'm-',
-  ATOM: 'a-'
+  ATOM:     'a-'
 };
 
 /**
@@ -429,11 +428,11 @@ function NO_OP_FUNCTION() { return; }
 let UNDEFINED;
 
 module.exports = {
-  DIRECTIONS: DIRECTIONS,
+  DIRECTIONS:     DIRECTIONS,
   NO_OP_FUNCTION: NO_OP_FUNCTION,
-  PREFIXES: PREFIXES,
-  TYPES: TYPES,
-  UNDEFINED: UNDEFINED
+  PREFIXES:       PREFIXES,
+  TYPES:          TYPES,
+  UNDEFINED:      UNDEFINED
 };
 
 },{}],5:[function(require,module,exports){
@@ -693,57 +692,6 @@ function assign( destination ) {
 module.exports = { assign: assign };
 
 },{}],9:[function(require,module,exports){
-/* ==========================================================================
-   On Ready
-
-   Utility for triggering functions only after the page is loaded
-
-   ========================================================================== */
-
-'use strict';
-
-const _readyFunctions = [];
-
-/**
- * Checks if the document is ready, if it is, trigger the passed function,
- * if not, push the function to an array to be triggered after the page
- * is loaded.
- * @param {Function} fn -
- *   Function to run only after the DOM has completely loaded.
- * @returns {Array} List of functions to run after the DOM has loaded.
- */
-function onReady( fn ) {
-  // Ensure we passed a function as the argument
-  if ( typeof fn !== 'function' ) {
-    return [];
-  }
-
-  // If the ready state is already complete, run the passed function,
-  // otherwise add it to our saved array.
-  if ( document.readyState === 'complete' ) {
-    fn();
-  } else {
-    _readyFunctions.push( fn );
-  }
-
-  // When the ready state changes to complete, run the passed function
-  document.onreadystatechange = function() {
-    if ( document.readyState === 'complete' ) {
-      for ( let i = 0, l = _readyFunctions.length; i < l; i++ ) {
-        _readyFunctions[i]();
-      }
-      _readyFunctions.length = 0;
-    }
-  };
-
-  return _readyFunctions;
-}
-
-module.exports = {
-  onReady: onReady
-};
-
-},{}],10:[function(require,module,exports){
 'use strict';
 
 // Required modules.
@@ -993,17 +941,14 @@ BaseTransition.NO_ANIMATION_CLASS = 'u-no-animation';
 
 module.exports = BaseTransition;
 
-},{"../../mixins/Events.js":3,"../function-bind":7}],11:[function(require,module,exports){
+},{"../../mixins/Events.js":3,"../function-bind":7}],10:[function(require,module,exports){
 'use strict';
 
 // Required modules.
 const Events = require( '../../mixins/Events.js' );
-const BaseTransition = require( './BaseTransition' );
-const fnBind = require( '../function-bind' ).bind;
-const contains = require( '../dom-class-list' ).contains;
-const addClass = require( '../dom-class-list' ).addClass;
-const removeClass = require( '../dom-class-list' ).removeClass;
-const onReady = require( '../on-ready' ).onReady;
+const BaseTransition = require( '../../utilities/transition/BaseTransition' );
+const contains = require( '../../utilities/dom-class-list' ).contains;
+const fnBind = require( '../../utilities/function-bind' ).bind;
 
 // Exported constants.
 const CLASSES = {
@@ -1039,15 +984,13 @@ function ExpandableTransition( element, classes ) { // eslint-disable-line max-s
     _baseTransition.addEventListener( BaseTransition.END_EVENT,
                                       _transitionCompleteBinded );
 
-    onReady( function() {
-      if ( contains( element, classObject.OPEN_DEFAULT ) ) {
-        addClass( element, classObject.EXPANDED );
-        element.style.maxHeight = element.scrollHeight + 'px';
-      } else {
-        previousHeight = element.scrollHeight;
-        addClass( element, classObject.COLLAPSED );
-      }
-    } );
+    if ( contains( element, classObject.OPEN_DEFAULT ) ) {
+      _baseTransition.applyClass( classObject.EXPANDED );
+      element.style.maxHeight = element.scrollHeight + 'px';
+    } else {
+      previousHeight = element.scrollHeight;
+      _baseTransition.applyClass( classObject.COLLAPSED );
+    }
 
     return this;
   }
@@ -1084,8 +1027,7 @@ function ExpandableTransition( element, classes ) { // eslint-disable-line max-s
   function collapse() {
     previousHeight = element.scrollHeight;
     element.style.maxHeight = '0';
-    addClass( element, classObject.COLLAPSED );
-    removeClass( element, classObject.EXPANDED );
+    _baseTransition.applyClass( classObject.COLLAPSED );
 
     return this;
   }
@@ -1096,8 +1038,7 @@ function ExpandableTransition( element, classes ) { // eslint-disable-line max-s
    */
   function expand() {
     element.style.maxHeight = previousHeight + 'px';
-    addClass( element, classObject.EXPANDED );
-    removeClass( element, classObject.COLLAPSED );
+    _baseTransition.applyClass( classObject.EXPANDED );
 
     return this;
   }
@@ -1127,7 +1068,7 @@ ExpandableTransition.CLASSES = CLASSES;
 
 module.exports = ExpandableTransition;
 
-},{"../../mixins/Events.js":3,"../dom-class-list":5,"../function-bind":7,"../on-ready":9,"./BaseTransition":10}],12:[function(require,module,exports){
+},{"../../mixins/Events.js":3,"../../utilities/dom-class-list":5,"../../utilities/function-bind":7,"../../utilities/transition/BaseTransition":9}],11:[function(require,module,exports){
 /* ==========================================================================
    Javascript Type Checkers
 
@@ -1305,30 +1246,34 @@ module.exports = {
   isEmpty:     isEmpty
 };
 
-},{}],13:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 /* ==========================================================================
    Expandable Organism
    ========================================================================== */
 
 'use strict';
 
-var contains = require( 'atomic-component/src/utilities/dom-class-list' ).contains;
-var addClass = require( 'atomic-component/src/utilities/dom-class-list' ).addClass;
-var closest = require( 'atomic-component/src/utilities/dom-closest' ).closest;
-var removeClass = require( 'atomic-component/src/utilities/dom-class-list' ).removeClass;
-var ExpandableTransition = require( 'atomic-component/src/utilities/transition/ExpandableTransition' );
-var Events = require( 'atomic-component/src/mixins/Events.js' );
-var Organism = require( 'atomic-component/src/components/Organism' );
+const domClassList = require( 'cf-atomic-component/src/utilities/dom-class-list' );
+const addClass = domClassList.addClass;
+const contains = domClassList.contains;
+const removeClass = domClassList.removeClass;
+const closest = require( 'cf-atomic-component/src/utilities/dom-closest' ).closest;
+const ExpandableTransition = require( 'cf-atomic-component/src/utilities/transition/ExpandableTransition' );
+const Events = require( 'cf-atomic-component/src/mixins/Events.js' );
+const Organism = require( 'cf-atomic-component/src/components/Organism' );
 
-var ExpandableOrganism = Organism.extend( {
+const Expandable = Organism.extend( {
+  ui: {
+    base:    '.o-expandable',
+    target:  '.o-expandable_target',
+    content: '.o-expandable_content',
+    header:  '.o-expandable_header'
+  },
 
-  transition: null,
-  accordionEvent: null,
-  activeAccordion: false,
   classes: {
-    targetExpanded: 'o-expandable_target__expanded',
+    targetExpanded:  'o-expandable_target__expanded',
     targetCollapsed: 'o-expandable_target__collapsed',
-    groupAccordion: 'o-expandable-group__accordion'
+    groupAccordion:  'o-expandable-group__accordion'
   },
 
   events: {
@@ -1336,68 +1281,87 @@ var ExpandableOrganism = Organism.extend( {
     'click .o-expandable-group__accordion .o-expandable_target': 'onToggleAccordion'
   },
 
-  ui: {
-    base: '.o-expandable',
-    target: '.o-expandable_target',
-    content: '.o-expandable_content',
-    header: '.o-expandable_header'
-  },
+  transition:      null,
+  accordionEvent:  null,
+  activeAccordion: false,
 
-  initialize: function() {
-    var customClasses = {
-      BASE_CLASS:   'o-expandable_content__transition',
-      EXPANDED:     'o-expandable_content__expanded',
-      COLLAPSED:    'o-expandable_content__collapsed',
-      OPEN_DEFAULT: 'o-expandable_content__onload-open'
-    };
-
-    this.transition = new ExpandableTransition( this.ui.content, customClasses ).init();
-
-    var groupElement = closest( this.ui.target, '.' + this.classes.groupAccordion );
-    if ( groupElement !== null ) {
-      var fn = this.accordionClose.bind( this );
-      Events.on( 'CFAccordionClose', fn );
-    }
-
-    if ( contains( this.ui.content, customClasses.OPEN_DEFAULT ) ) {
-      addClass( this.ui.target, this.classes.targetExpanded );
-    } else {
-      addClass( this.ui.target, this.classes.targetCollapsed );
-    }
-  },
-
-  accordionClose: function() {
-    if ( this.activeAccordion === true ) {
-      this.activeAccordion = false;
-      this.transition.collapse();
-    }
-  },
-
-  onExpandableClick: function( event ) {
-    this.transition.toggleExpandable();
-    this.toggleTargetState( this.ui.target );
-  },
-
-  onToggleAccordion: function( event ) {
-    Events.trigger( 'CFAccordionClose' );
-    this.activeAccordion = true;
-  },
-
-  toggleTargetState: function( element ) {
-    if ( contains( element, this.classes.targetExpanded ) ) {
-      addClass( this.ui.target, this.classes.targetCollapsed );
-      removeClass( this.ui.target, this.classes.targetExpanded );
-    } else {
-      addClass( this.ui.target, this.classes.targetExpanded );
-      removeClass( this.ui.target, this.classes.targetCollapsed );
-    }
-  }
-
+  initialize:        initialize,
+  accordionClose:    accordionClose,
+  onExpandableClick: onExpandableClick,
+  onToggleAccordion: onToggleAccordion,
+  toggleTargetState: toggleTargetState
 } );
 
-module.exports = ExpandableOrganism;
+/**
+ * Initialize a new expandable.
+ */
+function initialize() {
+  const customClasses = {
+    BASE_CLASS:   'o-expandable_content__transition',
+    EXPANDED:     'o-expandable_content__expanded',
+    COLLAPSED:    'o-expandable_content__collapsed',
+    OPEN_DEFAULT: 'o-expandable_content__onload-open'
+  };
 
-},{"atomic-component/src/components/Organism":2,"atomic-component/src/mixins/Events.js":3,"atomic-component/src/utilities/dom-class-list":5,"atomic-component/src/utilities/dom-closest":6,"atomic-component/src/utilities/transition/ExpandableTransition":11}],14:[function(require,module,exports){
+  if ( contains( this.ui.content, customClasses.OPEN_DEFAULT ) ) {
+    addClass( this.ui.target, this.classes.targetExpanded );
+  } else {
+    addClass( this.ui.target, this.classes.targetCollapsed );
+  }
+
+  const transition = new ExpandableTransition( this.ui.content, customClasses );
+  this.transition = transition.init();
+
+  const groupElement = closest( this.ui.target, '.' + this.classes.groupAccordion );
+  if ( groupElement !== null ) {
+    const fn = this.accordionClose.bind( this );
+    Events.on( 'CFAccordionClose', fn );
+  }
+}
+
+/**
+ * Event handler for when an accordion is closed.
+ */
+function accordionClose() {
+  if ( this.activeAccordion === true ) {
+    this.activeAccordion = false;
+    this.transition.collapse();
+  }
+}
+
+/**
+ * Event handler for when an expandable is clicked.
+ */
+function onExpandableClick() {
+  this.transition.toggleExpandable();
+  this.toggleTargetState( this.ui.target );
+}
+
+/**
+ * Event handler for when an expandable is clicked as part of an accordion.
+ */
+function onToggleAccordion() {
+  Events.trigger( 'CFAccordionClose' );
+  this.activeAccordion = true;
+}
+
+/**
+ * Toggle an expandable to open or closed.
+ * @param {HTMLNode} element - The expandable target HTML DOM element.
+ */
+function toggleTargetState( element ) {
+  if ( contains( element, this.classes.targetExpanded ) ) {
+    addClass( this.ui.target, this.classes.targetCollapsed );
+    removeClass( this.ui.target, this.classes.targetExpanded );
+  } else {
+    addClass( this.ui.target, this.classes.targetExpanded );
+    removeClass( this.ui.target, this.classes.targetCollapsed );
+  }
+}
+
+module.exports = Expandable;
+
+},{"cf-atomic-component/src/components/Organism":2,"cf-atomic-component/src/mixins/Events.js":3,"cf-atomic-component/src/utilities/dom-class-list":5,"cf-atomic-component/src/utilities/dom-closest":6,"cf-atomic-component/src/utilities/transition/ExpandableTransition":10}],13:[function(require,module,exports){
 'use strict';
 
 var Expandable = require( './Expandable' );
@@ -1407,88 +1371,92 @@ require( 'classlist-polyfill' );
 
 Expandable.init();
 
-},{"./Expandable":13,"classlist-polyfill":19}],15:[function(require,module,exports){
+},{"./Expandable":12,"classlist-polyfill":18}],14:[function(require,module,exports){
 /* ==========================================================================
    Table Organism
    ========================================================================== */
 
 'use strict';
 
-var config = require( 'atomic-component/src/utilities/config' );
-var Organism = require( 'atomic-component/src/components/Organism' );
-var TableSortable = require( './TableSortable' );
-var TableRowLinks = require( './TableRowLinks' );
+const config = require( 'cf-atomic-component/src/utilities/config' );
+const Organism = require( 'cf-atomic-component/src/components/Organism' );
+const TableSortable = require( './TableSortable' );
+const TableRowLinks = require( './TableRowLinks' );
 
-var TableOrganism = Organism.extend( {
-
+const Table = Organism.extend( {
   ui: {
     base: '.o-table'
   },
 
   modifiers: [ TableSortable, TableRowLinks ]
-
 } );
 
-TableOrganism.constants.DIRECTIONS = config.DIRECTIONS;
+Table.constants.DIRECTIONS = config.DIRECTIONS;
 
-module.exports = TableOrganism;
+module.exports = Table;
 
-},{"./TableRowLinks":16,"./TableSortable":17,"atomic-component/src/components/Organism":2,"atomic-component/src/utilities/config":4}],16:[function(require,module,exports){
+},{"./TableRowLinks":15,"./TableSortable":16,"cf-atomic-component/src/components/Organism":2,"cf-atomic-component/src/utilities/config":4}],15:[function(require,module,exports){
 /* ==========================================================================
    Table Row Links
 
-   Mixin for adding row link click functionality to table organism.
-
+   Mixin for adding row link click functionality to Table organism.
    ========================================================================== */
 
 'use strict';
 
-const closest = require( 'atomic-component/src/utilities/dom-closest' ).closest;
+const closest = require( 'cf-atomic-component/src/utilities/dom-closest' ).closest;
 
 const TableRowLinks = {
+  ui: {
+    base: '.o-table__row-links'
+  },
 
   events: {
     'click tbody tr': 'onRowLinkClick'
   },
 
-  ui: {
-    base: '.o-table__row-links'
-  },
-
-  /**
-   * Handle a click of the table.
-   *
-   * @param {Object} event Mouse event for click on the table.
-   */
-  onRowLinkClick: function( event ) {
-    let target = event.target;
-    if ( target && target.tagName === 'A' ) {
-      return;
-    }
-    target = closest( event.target, 'tr' );
-    var link = target.querySelector( 'a' );
-    if ( link ) window.location = link.getAttribute( 'href' );
-  }
+  onRowLinkClick: onRowLinkClick
 };
+
+/**
+ * Handle a click of the table.
+ *
+ * @param {MouseEvent} event - Mouse event for click on the table.
+ */
+function onRowLinkClick( event ) {
+  let target = event.target;
+  if ( target && target.tagName === 'A' ) {
+    return;
+  }
+  target = closest( event.target, 'tr' );
+  const link = target.querySelector( 'a' );
+  if ( link ) {
+    window.location = link.getAttribute( 'href' );
+  }
+}
 
 module.exports = TableRowLinks;
 
-},{"atomic-component/src/utilities/dom-closest":6}],17:[function(require,module,exports){
+},{"cf-atomic-component/src/utilities/dom-closest":6}],16:[function(require,module,exports){
 /* ==========================================================================
    Table Sortablle
 
    Mixin for sorting table organism.
-
    ========================================================================== */
 
 'use strict';
 
-var config = require( 'atomic-component/src/utilities/config' );
-var closest = require( 'atomic-component/src/utilities/dom-closest' ).closest;
-var DIRECTIONS = config.DIRECTIONS;
-var UNDEFINED = config.UNDEFINED;
+const config = require( 'cf-atomic-component/src/utilities/config' );
+const closest = require( 'cf-atomic-component/src/utilities/dom-closest' ).closest;
+const DIRECTIONS = config.DIRECTIONS;
+const UNDEFINED = config.UNDEFINED;
 
-var TableSortable = {
+const TableSortable = {
+  ui: {
+    base:       '.o-table__sortable',
+    tableBody:  'tbody',
+    sortButton: '.sorted-up, .sorted-down'
+  },
 
   classes: {
     sortDown: 'sorted-down',
@@ -1499,195 +1467,195 @@ var TableSortable = {
     'click .sortable': 'onSortableClick'
   },
 
-  ui: {
-    base:       '.o-table__sortable',
-    tableBody:  'tbody',
-    sortButton: '.sorted-up, .sorted-down'
-  },
+  initialize:      initialize,
+  bindProperties:  bindProperties,
+  getColumnIndex:  getColumnIndex,
+  updateTable:     updateTable,
+  updateTableData: updateTableData,
+  updateTableDom:  updateTableDom,
+  tableDataSorter: tableDataSorter,
+  onSortableClick: onSortableClick
+};
 
-  /**
-   * Function used to create computed and triggered properties.
-   */
-  initialize: function() {
-    this.sortClass = UNDEFINED;
-    this.sortColumnIndex = UNDEFINED;
-    this.sortDirection = UNDEFINED;
-    this.tableData = [];
-    this.bindProperties();
-    if ( this.ui.sortButton ) {
-      this.sortColumnIndex = this.getColumnIndex();
-      this.sortDirection =
-        this.contains( this.ui.sortButton, this.classes.sortDown ) ?
-        DIRECTIONS.DOWN : DIRECTIONS.UP;
-      this.updateTable();
-    }
-  },
-
-  /**
-   * Function used to create computed and trigger properties.
-   */
-  bindProperties: function() {
-    var sortDirection;
-
-    Object.defineProperty( this, 'sortDirection', {
-      configurable: true,
-      get: function() {
-        return sortDirection;
-      },
-      set: function( value ) {
-        if ( value === DIRECTIONS.UP ) {
-          this.sortClass = this.classes.sortUp;
-        } else if ( value === DIRECTIONS.DOWN ) {
-          this.sortClass = this.classes.sortDown;
-        }
-        sortDirection = value;
-      }
-    } );
-  },
-
-  /**
-   * Function used to get the column index of the active sort column.
-   *
-   * @param {HTMLNode} element - The element used as the sortable.
-   * @returns {number} The column index of the active sort column.
-   */
-  getColumnIndex: function( element ) {
-    return closest( element || this.ui.sortButton, 'td, th' ).cellIndex;
-  },
-
-  /**
-   * Function used to update the table data and dom.
-   * @returns {boolean} TODO: Add description.
-   */
-  updateTable: function() {
-    return this.updateTableData() && this.updateTableDom();
-  },
-
-  /**
-   * Function used to get, sort, and update the table data array.
-   *
-   * @param {number} columnIndex - The index of the column used for sorting.
-   * @returns {Array} TODO: Add description.
-   */
-  updateTableData: function( columnIndex ) {
-    var cell;
-    var rows = this.ui.tableBody.querySelectorAll( 'tr' );
-    var sortType;
-    this.tableData = [];
-    columnIndex = columnIndex || this.sortColumnIndex;
-
-    for ( var i = 0, len = rows.length; i < len; ++i ) {
-      cell = rows[i].cells[columnIndex];
-      if ( cell ) {
-        cell = cell.textContent.trim();
-      }
-      this.tableData.push( [ cell, rows[i] ] );
-    }
-
-    sortType = this.ui.sortButton.getAttribute( 'data-sort_type' );
-    this.tableData.sort( this.tableDataSorter( this.sortDirection, sortType ) );
-
-    return this.tableData;
-  },
-
-  /**
-   * Function used to update the table DOM.
-   * @returns {HTMLNode} TODO: Add description.
-   */
-  updateTableDom: function() {
-    var documentFragment;
-    var tableBody = this.ui.tableBody;
-
-    // Empty the table body to prepare for sorting the rows
-    // TODO: It might make sense to use innerHTML
-    // from a performance and garbage collection standpoint.
-    while ( tableBody.lastChild ) {
-      tableBody.removeChild( tableBody.lastChild );
-    }
-
-    documentFragment = document.createDocumentFragment();
-    for ( var i = 0; i < this.tableData.length; i++ ) {
-      documentFragment.appendChild( this.tableData[i][1] );
-    }
-
-    tableBody.appendChild( documentFragment );
-    this.trigger( 'table:updated' );
-
-    return tableBody;
-  },
-
-  /**
-   * Function used to create a function for sorting table data.
-   * Passed to Array.sort method.
-   *
-   * @param {number} direction - A number where a negative number indicates a
-   * reverse sort.
-   * @param {string} sortType - A string used for sort types. By default,
-   * the values are sorted by their native type. If this value is set to
-   * 'number', then the cells' numeric values are used.
-   * @returns {Function} - A function to be used by the Array.sort method, where
-   * the parameters 'a' and 'b' is each an Array (of Arrays) to be sorted
-   */
-  tableDataSorter: function( direction, sortType ) {
-    return function( a, b ) {
-      var sign = 1;
-      var order = 0;
-      var regex = /[^\d.-]/g;
-
-      // Set a and b to the first Array in each Array-of-Arrays
-      a = a[0];
-      b = b[0];
-
-      // For number sort, convert a & b to numbers.
-      if ( sortType === 'number' ) {
-        a = Number( a.replace( regex, '' ) );
-        b = Number( b.replace( regex, '' ) );
-      }
-
-      if ( direction === DIRECTIONS.DOWN ) {
-        sign = -1;
-      }
-
-      // Sort the values
-      if ( a < b ) {
-        order = sign * -1;
-      } else if ( a > b ) {
-        order = sign;
-      }
-
-      return order;
-    };
-  },
-
-  /**
-   * Function used as callback for the sortable click event.
-   *
-   * @param {Event} event - DOM event.
-   * @returns {Object} - TOOD: Add description.
-   */
-  onSortableClick: function( event ) {
-    if ( this.ui.sortButton ) {
-      this.removeClass( this.ui.sortButton, this.sortClass );
-    }
-    if ( this.ui.sortButton === event.target ) {
-      this.sortDirection = ~this.sortDirection;
-    } else {
-      this.ui.sortButton = event.target;
-      this.sortColumnIndex = this.getColumnIndex();
-      this.sortDirection = DIRECTIONS.UP;
-    }
-    // The active sort class is changing when the sort direction changes.
-    this.addClass( this.ui.sortButton, this.sortClass );
+/**
+ * Function used to create computed and triggered properties.
+ */
+function initialize() {
+  this.sortClass = UNDEFINED;
+  this.sortColumnIndex = UNDEFINED;
+  this.sortDirection = UNDEFINED;
+  this.tableData = [];
+  this.bindProperties();
+  if ( this.ui.sortButton ) {
+    this.sortColumnIndex = this.getColumnIndex();
+    this.sortDirection =
+      this.contains( this.ui.sortButton, this.classes.sortDown ) ?
+      DIRECTIONS.DOWN : DIRECTIONS.UP;
     this.updateTable();
+  }
+}
 
-    return this;
+/**
+ * Function used to create computed and trigger properties.
+ */
+function bindProperties() {
+  let sortDirection;
+
+  Object.defineProperty( this, 'sortDirection', {
+    configurable: true,
+    get: function() {
+      return sortDirection;
+    },
+    set: function( value ) {
+      if ( value === DIRECTIONS.UP ) {
+        this.sortClass = this.classes.sortUp;
+      } else if ( value === DIRECTIONS.DOWN ) {
+        this.sortClass = this.classes.sortDown;
+      }
+      sortDirection = value;
+    }
+  } );
+}
+
+/**
+ * Function used to get the column index of the active sort column.
+ *
+ * @param {HTMLNode} element - The element used as the sortable.
+ * @returns {number} The column index of the active sort column.
+ */
+function getColumnIndex( element ) {
+  return closest( element || this.ui.sortButton, 'td, th' ).cellIndex;
+}
+
+/**
+ * Function used to update the table data and dom.
+ * @returns {boolean} TODO: Add description.
+ */
+function updateTable() {
+  return this.updateTableData() && this.updateTableDom();
+}
+
+/**
+ * Function used to get, sort, and update the table data array.
+ *
+ * @param {number} columnIndex - The index of the column used for sorting.
+ * @returns {Array} TODO: Add description.
+ */
+function updateTableData( columnIndex ) {
+  let cell;
+  const rows = this.ui.tableBody.querySelectorAll( 'tr' );
+  this.tableData = [];
+  columnIndex = columnIndex || this.sortColumnIndex;
+
+  for ( let i = 0, len = rows.length; i < len; ++i ) {
+    cell = rows[i].cells[columnIndex];
+    if ( cell ) {
+      cell = cell.textContent.trim();
+    }
+    this.tableData.push( [ cell, rows[i] ] );
   }
 
-};
+  const sortType = this.ui.sortButton.getAttribute( 'data-sort_type' );
+  this.tableData.sort( this.tableDataSorter( this.sortDirection, sortType ) );
+
+  return this.tableData;
+}
+
+/**
+ * Function used to update the table DOM.
+ * @returns {HTMLNode} TODO: Add description.
+ */
+function updateTableDom() {
+  const tableBody = this.ui.tableBody;
+
+  // Empty the table body to prepare for sorting the rows
+  // TODO: It might make sense to use innerHTML
+  // from a performance and garbage collection standpoint.
+  while ( tableBody.lastChild ) {
+    tableBody.removeChild( tableBody.lastChild );
+  }
+
+  const documentFragment = document.createDocumentFragment();
+  for ( let i = 0; i < this.tableData.length; i++ ) {
+    documentFragment.appendChild( this.tableData[i][1] );
+  }
+
+  tableBody.appendChild( documentFragment );
+  this.trigger( 'table:updated' );
+
+  return tableBody;
+}
+
+/**
+ * Function used to create a function for sorting table data.
+ * Passed to Array.sort method.
+ *
+ * @param {number} direction - A number where a negative number indicates a
+ * reverse sort.
+ * @param {string} sortType - A string used for sort types. By default,
+ * the values are sorted by their native type. If this value is set to
+ * 'number', then the cells' numeric values are used.
+ * @returns {Function} - A function to be used by the Array.sort method,
+ * where the parameters 'a' and 'b' is each an Array (of Arrays) to be sorted.
+ */
+function tableDataSorter( direction, sortType ) {
+  return function( a, b ) {
+    let sign = 1;
+    let order = 0;
+    const regex = /[^\d.-]/g;
+
+    // Set a and b to the first Array in each Array-of-Arrays
+    a = a[0];
+    b = b[0];
+
+    // For number sort, convert a & b to numbers.
+    if ( sortType === 'number' ) {
+      a = Number( a.replace( regex, '' ) );
+      b = Number( b.replace( regex, '' ) );
+    }
+
+    if ( direction === DIRECTIONS.DOWN ) {
+      sign = -1;
+    }
+
+    // Sort the values
+    if ( a < b ) {
+      order = sign * -1;
+    } else if ( a > b ) {
+      order = sign;
+    }
+
+    return order;
+  };
+}
+
+/**
+ * Function used as callback for the sortable click event.
+ *
+ * @param {Event} event - DOM event.
+ * @returns {Object} - TOOD: Add description.
+ */
+function onSortableClick( event ) {
+  if ( this.ui.sortButton ) {
+    this.removeClass( this.ui.sortButton, this.sortClass );
+  }
+  if ( this.ui.sortButton === event.target ) {
+    this.sortDirection = ~this.sortDirection;
+  } else {
+    this.ui.sortButton = event.target;
+    this.sortColumnIndex = this.getColumnIndex();
+    this.sortDirection = DIRECTIONS.UP;
+  }
+  // The active sort class is changing when the sort direction changes.
+  this.addClass( this.ui.sortButton, this.sortClass );
+  this.updateTable();
+
+  return this;
+}
 
 module.exports = TableSortable;
 
-},{"atomic-component/src/utilities/config":4,"atomic-component/src/utilities/dom-closest":6}],18:[function(require,module,exports){
+},{"cf-atomic-component/src/utilities/config":4,"cf-atomic-component/src/utilities/dom-closest":6}],17:[function(require,module,exports){
 /* ==========================================================================
    Table initialization code.
    ========================================================================== */
@@ -1698,7 +1666,7 @@ const Table = require( './Table' );
 
 Table.init();
 
-},{"./Table":15}],19:[function(require,module,exports){
+},{"./Table":14}],18:[function(require,module,exports){
 /*
  * classList.js: Cross-browser full element.classList implementation.
  * 2014-07-23
@@ -1941,7 +1909,7 @@ if ("document" in window.self) {
   }
 }
 
-},{}],20:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 /*jshint browser:true, node:true*/
 
 'use strict';
@@ -2372,7 +2340,7 @@ Delegate.prototype.destroy = function() {
   this.root();
 };
 
-},{}],21:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 /*jshint browser:true, node:true*/
 
 'use strict';
@@ -2393,7 +2361,7 @@ module.exports = function(root) {
 
 module.exports.Delegate = Delegate;
 
-},{"./delegate":20}],22:[function(require,module,exports){
+},{"./delegate":19}],21:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v1.11.3
  * http://jquery.com/
@@ -12746,7 +12714,7 @@ return jQuery;
 
 }));
 
-},{}],23:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 /* ==========================================================================
    JS
    ========================================================================== */
@@ -12760,4 +12728,4 @@ $(document).ready(function() {
   $('.cf-icon-external-link').append('<span class="u-visually-hidden"> Links to external site.</span>');
 });
 
-},{"cf-expandables":14,"cf-tables":18,"jquery":22}]},{},[23]);
+},{"cf-expandables":13,"cf-tables":17,"jquery":21}]},{},[22]);
