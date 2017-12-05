@@ -61,7 +61,7 @@ Each sub-landing page template has three basic content areas with two variations
 
 [Gray well]({{site.baseurl}}/page-components/wells.html)
 
-[Contect information]({{site.baseurl}}/page-components/contact-information.html)
+[Contact information]({{site.baseurl}}/page-components/contact-information.html)
 
 #### Area 3
 
