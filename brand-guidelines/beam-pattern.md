@@ -67,7 +67,7 @@ Beam patterns are composed of overlapping beams that frame areas of white space 
 
 <div class="content-25">
 
-#### Ideal composition  
+#### Ideal composition
 
 Solid green beam bleeds off the top of the layout. Beams alternate direction to create layered beam shapes.
 
@@ -81,7 +81,7 @@ Solid green beam bleeds off the top of the layout. Beams alternate direction to 
 
 <div class="content-25">
 
-#### Ideal composition  
+#### Ideal composition
 
 Layered beams anchor to the bottom, leaving plenty of white space above for type. This works
 especially well for horizontal layouts.
@@ -96,7 +96,7 @@ especially well for horizontal layouts.
 
 <div class="content-25">
 
-<h4 class="warning"><i class="cf-icon cf-icon-delete-round"></i> Poor composition</h4>
+<h4 class="warning">{% include icons/error-round.svg %} Poor composition</h4>
 
 Beams float in white space, leaving little room for content. No transparency used.
 
@@ -110,7 +110,7 @@ Beams float in white space, leaving little room for content. No transparency use
 
 <div class="content-25">
 
-<h4 class="warning"><i class="cf-icon cf-icon-delete-round"></i> Poor composition</h4>  
+<h4 class="warning">{% include icons/error-round.svg %} Poor composition</h4>
 
 All three beams layer in the same direction, weakening the beam metaphor.
 

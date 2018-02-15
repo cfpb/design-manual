@@ -24,7 +24,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
   <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
-      <span class="cf-icon cf-icon-github"></span>
+      {% include icons/github.svg %}
     </li>
     <li>
       <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-buttons">
@@ -39,7 +39,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
   Style
   <span class="cf-code-link">
     <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-buttons">
-      View code <span class="cf-icon cf-icon-external-link"></span>
+      View code {% include icons/external-link.svg %}
     </a>
   </span>
 </h2>
@@ -121,10 +121,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 {::nomarkdown}
 <button class="a-btn">
     <span class="a-btn_icon
-                 a-btn_icon__on-left
-                 cf-icon
-                 cf-icon__before
-                 cf-icon-upload"></span>
+                 a-btn_icon__on-left">{% include icons/upload.svg %}</span>
     Upload document
 </button>
 <br><br>
@@ -132,19 +129,13 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 <div class="m-btn-group">
     <button class="a-btn">
         <span class="a-btn_icon
-                     a-btn_icon__on-left
-                     cf-icon
-                     cf-icons__before
-                     cf-icon-left"></span>
+                     a-btn_icon__on-left">{% include icons/left.svg %}</span>
         Back
     </button>
     <button class="a-btn">
         Next
         <span class="a-btn_icon
-                     a-btn_icon__on-right
-                     cf-icon
-                     cf-icon__after
-                     cf-icon-right"></span>
+                     a-btn_icon__on-right">{% include icons/right.svg %}</span>
     </button>
 </div>
 {:/nomarkdown}
@@ -291,7 +282,7 @@ is functioning as intended.
 {::nomarkdown}
 <div class="m-btn-group m-btn-group__combined">
     <button class="a-btn">Button</button>
-    <button class="a-btn"><span class="cf-icon cf-icon-down"></span></button>
+    <button class="a-btn">{% include icons/down.svg %}</button>
 </div>
 {:/nomarkdown}
 

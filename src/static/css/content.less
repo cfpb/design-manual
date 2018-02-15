@@ -414,53 +414,23 @@ figure {
 .minicon-scale-table {
   th,
   td {
-    padding: 0 5px;
-    border-left: 1px solid @gray-10;
+    padding: 10px 5px;
     background: transparent !important;
     color: @black !important;
     text-align: center;
 
-    &:first-child {
-        border: none;
+    &:not(:last-child) {
+      border-right: 1px solid @gray-10;
     }
   }
+
   th {
-    .u-webfont-demi;
-    font-size: .875em;
+    .heading-5();
   }
-  .cf-icon {
+
+  .cf-icon-svg {
     display: block;
-    margin: 20px 20px 0;
-  }
-}
-
-.minicon-asset-lib {
-  h3 {
-      margin-top: 1.5em;
-  }
-  .minicon-assets-div {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 6em;
-    text-align: center;
-    border-right: 1px solid @gray-10;
-
-    &:last-child {
-      border-right: none;
-    }
-    h6 {
-      .u-webfont-demi;
-      font-size: .875em;
-      line-height: 1.325em;
-      text-transform: capitalize;
-      letter-spacing: 0;
-      margin-bottom: 1.5em;
-    }
-    .cf-icon {
-      font-size: 40px;
-      display: block;
-      margin: .75em 0;
-    }
+    margin: 20px auto 0;
   }
 }
 
@@ -470,9 +440,9 @@ figure {
 
 // Set up looping mixin
 .minicon-scale-loop(@index) when (@index > 0) {
-    // Retrieve the next variable name from the @colors array
+    // Retrieve the next variable name from the @minicon-sizes array
     @size: e(extract(@minicon-sizes, @index));
-    // Output the `.swatch_field__color` rule
+    // Output the `.minicon-scale-size` rule
     .minicon-scale-@{size} { font-size: @size; }
     // Call the next iteration of the loop
     .minicon-scale-loop((@index - 1));
@@ -480,6 +450,75 @@ figure {
 
 // Initiate loop
 .minicon-scale-loop( length(@minicon-sizes) );
+
+
+// Asset library
+
+.minicon-asset-lib {
+  h3 {
+    margin-top: 1.5em;
+  }
+
+  .minicon-assets-div {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 6em;
+    text-align: center;
+
+    &:not(:last-child) {
+      border-right: 1px solid @gray-10;
+    }
+
+    h6 {
+      font-size: .875em;
+      line-height: 1.325em;
+      text-transform: capitalize;
+      letter-spacing: 0;
+      margin-bottom: 1.5em;
+    }
+
+    .cf-icon {
+      font-size: 40px;
+      display: block;
+      margin: .75em 0;
+    }
+  }
+}
+
+.icon-table {
+    width: 100%;
+
+    th {
+      background: transparent;
+      letter-spacing: 0;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    td:nth-child( 1 ),
+    td:nth-child( 2 ) {
+        font-size: unit( 32px / @base-font-size-px, em );
+        text-align: center;
+        padding: unit( 10px / 32px, em );
+        width: 15%;
+    }
+
+    td:nth-child( 1 ) {
+        width: 8%;
+    }
+
+    td:nth-child( 2 ) {
+        width: 20%;
+    }
+
+    td:nth-child( 3 ) {
+        width: 26%;
+    }
+
+    td:nth-child( 4 ) {
+        width: 46%;
+    }
+}
 
 /* Identity/Typography page
    ========================================================================== */
@@ -602,11 +641,11 @@ p.print-georgia-para {
   li:first-child {
     text-align: center;
     border-left: none;
-    line-height: 75px;
+    line-height: 50px;
     padding: 0 .75em;
     width: 15%;
   }
-  .cf-icon {
+  .cf-icon-svg {
     font-size: 30px;
     color: @gray-80;
   }
@@ -646,6 +685,8 @@ p.print-georgia-para {
 }
 
 /* UI toolkit
+   TODO: This section has been moved/combined with page-components.
+   Check if these styles are still necessary.
    ========================================================================== */
 
 h2 {

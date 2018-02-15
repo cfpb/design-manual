@@ -27,7 +27,7 @@ _This guide is adapted from the [Web Content Accessibility Guidelines 2.0](http:
 
 </div>
 
-<h2 id="perceivable">Perceivable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#perceivable">View Perceivable on W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="perceivable">Perceivable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#perceivable">View Perceivable on W3C site {% include icons/external-link.svg %}</a></span></h2>
 
 Information and user interface elements must be presented to users in ways that they can perceive. This includes considering individuals using assistive technology (e.g., screen readers for blind users or captions for deaf users) and the limitations of different devices (e.g., grayscale screens or muted mobile devices).
 
@@ -46,7 +46,7 @@ For any content that is not text-based (images, audio, video, animations, charts
 - Include descriptive text near images (for example, a pie chart legend with percentages of each item).
 - Provide transcripts of audio and video recordings.
 
-</div>  
+</div>
 
 ---
 
@@ -74,12 +74,12 @@ Multimedia such as audio, video, and animations will usually require more than j
 </div>
 
 ---
-  
+
 <div class="content-33 content-first">
 ### Organize content semantically
 {: class="h4"}
 
-Semantic content allows user agents to correctly parse documents and present it to end users in a way that is appropriate for their device and medium without losing information or structure. 
+Semantic content allows user agents to correctly parse documents and present it to end users in a way that is appropriate for their device and medium without losing information or structure.
 </div>
 
 <div class="content-67 content-last">
@@ -117,7 +117,7 @@ These guidelines help ensure that content is perceivable for sighted users.
 - Text should have a contrast ratio of at least 4.5 : 1, but there are exceptions.
   1. For large text, a contrast ratio of only 3 : 1 is necessary. Large regular text is at least 18pt/24px, while large bold text is 14pt/18px.
   1. Text or images of text that are either pure decoration or not visible, or are part of a logo, picture that contains significant other visual content, or inactive UI components (like disabled form controls) do not have a color contrast requirement.
-- The [Colour Contrast Check](http://www.snook.ca/technical/colour_contrast/colour.html) is a nice tool for testing color contrast ratios. 
+- The [Colour Contrast Check](http://www.snook.ca/technical/colour_contrast/colour.html) is a nice tool for testing color contrast ratios.
 
 #### Audio:
 {: class="h5"}
@@ -127,7 +127,7 @@ These guidelines help ensure that content is perceivable for sighted users.
 
 </div>
 
-<h2 id="operable">Operable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#operable">View Operable on W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="operable">Operable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#operable">View Operable on W3C site {% include icons/external-link.svg %}</a></span></h2>
 
 User interface components and navigation must be operable: an interface cannot require interaction that a user cannot perform. Following these guidelines will guarantee that all users can navigate a website or app regardless of their input device (mouse, keyboard, touchscreen, screen reader, etc).
 
@@ -136,15 +136,15 @@ User interface components and navigation must be operable: an interface cannot r
 ### Ensure that all content is keyboard accessible
 {: class="h4"}
 
-In general, if a website can be operated using only the keyboard, it will also be operable with less-common input devices. 
+In general, if a website can be operated using only the keyboard, it will also be operable with less-common input devices.
 
 </div>
 
 <div class="content-67 content-last">
 
 - All controls must be addressible by the keyboard. By default, this includes `<a>`, `<area>`, `<object>`, and all form elements. Other elements can be made addressible by applying a `tabindex` value.
-- Avoid keyboard traps. If a user can tab to an element on the page, the user needs to be able to exit that element using only the keyboard as well. 
-- Do not rely on specific timing of individual keystrokes when implementing keyboard accessibility. 
+- Avoid keyboard traps. If a user can tab to an element on the page, the user needs to be able to exit that element using only the keyboard as well.
+- Do not rely on specific timing of individual keystrokes when implementing keyboard accessibility.
 
 </div>
 
@@ -155,7 +155,7 @@ In general, if a website can be operated using only the keyboard, it will also b
 ### Give users ample time to interact with content
 {: class="h4"}
 
-You should not use time limits. 
+You should not use time limits.
 
 </div>
 
@@ -239,8 +239,8 @@ Whe users navigate a webpage using the keyboard or another alternative input dev
 - If a user action causes a modal dialog to appear on screen, make sure the focus is moved to that dialog or area. When the dialog is dismissed, re-focus back to the original control or to some other logical place in the document.
 
 </div>
- 
-<h2 id="understandable">Understandable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#understandable">View Understandable on W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+
+<h2 id="understandable">Understandable<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#understandable">View Understandable on W3C site {% include icons/external-link.svg %}</a></span></h2>
 
 Users must be able to comprehend content and how to operate an interface.
 
@@ -262,18 +262,18 @@ Users must be able to comprehend content and how to operate an interface.
 
 </div>
 
---- 
+---
 
 <div class="content-33 content-first">
 
 ### Develop sites that behave in a predictable way
 {: class="h4"}
 
-</div> 
+</div>
 
 <div class="content-67 content-last">
 
-- Related webpages should have a consistent navigation structure and layout. 
+- Related webpages should have a consistent navigation structure and layout.
 - Components that perform the same action should be labelled the same way.
 
 </div>
@@ -285,7 +285,7 @@ Users must be able to comprehend content and how to operate an interface.
 ### Maintain context
 {: class="h4"}
 
-Avoid changing a user’s context without an explicit request from the user, like clicking or otherwise activating a link or button. 
+Avoid changing a user’s context without an explicit request from the user, like clicking or otherwise activating a link or button.
 
 If an automatic context change is necessary, warn the user in advance and give them an opportunity to stop the change.
 
@@ -304,7 +304,7 @@ A few examples of context changes:
 
 </div>
 
-<h2 id="robust">Robust<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#robust">View Robust on W3C site <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="robust">Robust<span class="cf-code-link"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#robust">View Robust on W3C site {% include icons/external-link.svg %}</a></span></h2>
 
 Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies. A robust site will be broadly compatible with past, current, and future web browsers and devices.
 
@@ -322,10 +322,10 @@ This means using standard HTML markup. If complex widgets are required, use WAI-
 - Make sure your HTML validates.
 - Use unique IDs on individual pages.
 - Avoid deprecated or proprietary markup.
-- Make sure states and properties of elements are machine readable. 
+- Make sure states and properties of elements are machine readable.
 - Note that this is specific to HTML and does not include CSS.
 
-</div> 
+</div>
 
 
 ## Attribution

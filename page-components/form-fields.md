@@ -35,7 +35,7 @@ Avoid the use of disabled fields where possible, and instead hide disabled field
   <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
-      <span class="cf-icon cf-icon-github"></span>
+      {% include icons/github.svg %}
     </li>
     <li>
       <a href="https://github.com/cfpb/capital-framework/tree/canary/src/cf-forms"><h4>cf-forms</h4></a>
@@ -163,7 +163,7 @@ Users of screen readers use the tab key to move focus from one form control to a
 Use for long-form answers.
 
 - Border: 1 px, Gray 60 (#919395)
-- Avenir Next Regular, 16 px, Gray (#5a5d61) 
+- Avenir Next Regular, 16 px, Gray (#5a5d61)
 
 </div>
 
@@ -277,7 +277,7 @@ Use placeholder text for formatting examples only. Don’t use for instructions.
 
 Use block helper text to explain why a piece of information is being requested, address security and privacy concerns, or to suggest ways of providing answers other than providing formatting examples.
 
-- Avenir Next Regular, 16 px, Gray (#5a5d61) 
+- Avenir Next Regular, 16 px, Gray (#5a5d61)
 - Margin top: 10 px
 - Margin bottom: 10 px
 
@@ -365,9 +365,9 @@ Try not to design forms consisting mainly of optional fields. If you must do so,
 ## Fieldset
 
 <div class="content-50 content-first">
-The fieldset element is used to group several controls as well as labels within a web form. 
+The fieldset element is used to group several controls as well as labels within a web form.
 
-The fieldset includes: 
+The fieldset includes:
 - Legend
 - Block helper text (if necessary)
 - Inline labels
@@ -384,7 +384,7 @@ The fieldset includes:
                     <small class="a-label_helper a-label_helper__block">Use block helper text for instructions.
                     </small>
                 </legend>
-                    
+
                 <div class="m-form-field m-form-field__radio m-form-field__lg-target">
                     <input class="a-radio" id="is_helpful_1" type="radio" name="is_helpful" value="1">
                         <label class="a-label" for="is_helpful_1">Inline label
@@ -475,10 +475,7 @@ The action notification displays when something is happening on the page, such a
 {::nomarkdown}
 <div class="m-notification
             m-notification__visible">
-    <span class="m-notification_icon
-                 cf-icon
-                 cf-icon-update
-                 cf-icon__spin"></span>
+    {% include icons/update.svg %}
     <div class="m-notification_content">
         <div class="h4 m-notification_message">The page is loading…</div>
     </div>
@@ -507,9 +504,9 @@ The success notification displays when an operation has run as expected, such as
 <div class="m-notification
             m-notification__visible
             m-notification__success">
-    <span class="m-notification_icon cf-icon"></span>
+    {% include icons/approved-round.svg %}
     <div class="m-notification_content">
-        <div class="h4 m-notification_message">11 results.</div>
+        <div class="h4 m-notification_message">11 results</div>
     </div>
 </div>
 {:/nomarkdown}
@@ -536,7 +533,7 @@ The warning notification displays when an operation has run as expected, but doe
 <div class="m-notification
             m-notification__visible
             m-notification__warning">
-    <span class="m-notification_icon cf-icon"></span>
+    {% include icons/warning-round.svg %}
     <div class="m-notification_content">
         <div class="h4 m-notification_message">No results found.</div>
     </div>
@@ -567,7 +564,7 @@ The error notification displays when an operation has not run as expected and en
 <div class="m-notification
             m-notification__visible
             m-notification__error">
-    <span class="m-notification_icon cf-icon"></span>
+    {% include icons/error-round.svg %}
     <div class="m-notification_content">
         <div class="h4 m-notification_message">Page not found.</div>
     </div>
@@ -598,7 +595,7 @@ The error notification displays when an operation has not run as expected and en
            id="form-input-error"
            aria-describedby="form-input-error_message">
     <div class="a-error-message" id="form-input-error_message" role="alert">
-        <span class="cf-icon cf-icon-delete-round" aria-hidden="true"></span>
+        {% include icons/error-round.svg %}
         This is a required question, please answer.
     </div>
 </div>
@@ -813,7 +810,7 @@ Leave radio buttons unselected as the default. It’s easy for users to miss tha
 
 Never use radio buttons for optional questions. Once a radio button is selected from a list, it or another choice must remain selected and there is no undoing the selection unless you reload the form.
 
-Consider using <a href="#large-target">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45 x 45 px and includes the option text.  
+Consider using <a href="#large-target">radio buttons with large target areas</a>. If these won’t fit into your design and you need to use the default style shown below, make sure the target area is at least 45 x 45 px and includes the option text.
 
 #### Accessibility
 There are some issues with voiceover reading radio buttons. To get around this, consider using the aria-describedby attribute.

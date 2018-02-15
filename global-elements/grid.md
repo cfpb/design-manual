@@ -23,7 +23,7 @@ The grid provides structure for website content. The flexible design adjusts for
   <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
-      <i class="cf-icon cf-icon-github"></i>
+      {% include icons/github.svg %}
     </li>
     <li>
       <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-grid">
@@ -38,7 +38,7 @@ The grid provides structure for website content. The flexible design adjusts for
     Style
     <span class="cf-code-link">
         <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-grid">
-            View code <span class="cf-icon cf-icon-external-link"></span>
+            View code {% include icons/external-link.svg %}
         </a>
     </span>
 </h2>

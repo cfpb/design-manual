@@ -1577,15 +1577,15 @@ input.a-btn::-moz-focus-inner {
 .a-btn__link,
 .a-btn__link:link,
 .a-btn__link:visited {
+  border-bottom-color: #0072ce;
   background-color: transparent;
-  border-bottom-color: #257675;
-  color: #257675;
+  color: #0072ce;
 }
 
 .a-btn__link:hover,
 .a-btn__link.hover {
-  background-color: transparent;
   border-bottom: 1px solid #7eb7e8;
+  background-color: transparent;
   color: #7eb7e8;
 }
 
@@ -1653,14 +1653,19 @@ input.a-btn::-moz-focus-inner {
   color: #b63014;
 }
 
+.lt-ie9 .a-btn_icon__on-left,
+.lt-ie9 .a-btn_icon__on-right {
+  display: none;
+}
+
 .a-btn_icon__on-left {
-  padding-right: 0.65625em;
+  padding-right: 0.6875em;
   border-right: 1px solid #80b9e7;
   margin-right: 0.4375em;
 }
 
 .a-btn_icon__on-right {
-  padding-left: 0.65625em;
+  padding-left: 0.6875em;
   border-left: 1px solid #80b9e7;
   margin-left: 0.4375em;
 }
@@ -1991,18 +1996,19 @@ h6 + .a-legend,
 }
 
 .a-select:after {
-  width: 1.875em;
+  width: 1.9375em;
   border-left: 1px solid #919395;
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
   background-color: #e7e8e9;
-  color: #75787b;
-  content: '\e006';
-  font-family: 'CFPB Minicons';
-  line-height: 1.875em;
-  text-align: center;
+  content: '';
   pointer-events: none;
+  background-image: url('../icons/down.svg');
+  background-size: auto 1.1875em;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .no-csspointerevents .a-select:after {
@@ -2091,7 +2097,7 @@ h6 + .a-legend,
 
 .m-btn-inside-input .a-text-input {
   box-sizing: border-box;
-  padding-right: 4.6875em;
+  padding-right: 2.4375em;
   width: 100%;
 }
 
@@ -2100,6 +2106,15 @@ h6 + .a-legend,
   position: absolute;
   right: 0.875em;
   top: 0.5em;
+  color: #75787b;
+}
+
+.m-btn-inside-input .a-btn:hover {
+  color: #101820;
+}
+
+.no-js .m-btn-inside-input .a-btn {
+  display: none;
 }
 
 .m-form-field {
@@ -2247,12 +2262,6 @@ h6 + .a-legend,
   display: inline-grid;
 }
 
-.m-form-field__checkbox .a-label:before {
-  font-family: 'CFPB Minicons';
-  text-align: center;
-  line-height: 1.25em;
-}
-
 .m-form-field__checkbox .a-checkbox:focus + .a-label:before,
 .m-form-field__checkbox .a-checkbox.focus + .a-label:before {
   border-color: #0072ce;
@@ -2266,13 +2275,17 @@ h6 + .a-legend,
 }
 
 .m-form-field__checkbox .a-checkbox:checked + .a-label:before {
-  content: '\e100';
+  background-image: url('../icons/approved.svg');
+  background-size: auto 1.1875em;
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
 .m-form-field__radio .a-label:before {
   border-radius: 50%;
   /* The rotate is needed to fix a bug in Firefox where radio
                    button was not centered. */
+  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -2352,12 +2365,8 @@ h6 + .a-legend,
   margin-top: 0.9375em;
 }
 
-.a-error-message .cf-icon-delete-round {
+.a-error-message .cf-icon-svg {
   color: #d14124;
-}
-
-.a-error-message .cf-icon-delete-round__select .a-label + .a-select {
-  margin-top: 0.5em;
 }
 
 .o-form_group {
@@ -2529,6 +2538,7 @@ h6 + .a-legend,
 .cf-icon__rotate-90.cf-icon__before:before,
 .cf-icon__rotate-90.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -2536,6 +2546,7 @@ h6 + .a-legend,
 .cf-icon__rotate-180.cf-icon__before:before,
 .cf-icon__rotate-180.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -2543,6 +2554,7 @@ h6 + .a-legend,
 .cf-icon__rotate-270.cf-icon__before:before,
 .cf-icon__rotate-270.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
@@ -2550,6 +2562,7 @@ h6 + .a-legend,
 .cf-icon__flip-horizontal.cf-icon__before:before,
 .cf-icon__flip-horizontal.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
@@ -2557,6 +2570,7 @@ h6 + .a-legend,
 .cf-icon__flip-vertical.cf-icon__before:before,
 .cf-icon__flip-vertical.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 
@@ -2582,21 +2596,37 @@ h6 + .a-legend,
 .cf-icon__spin.cf-icon:before,
 .cf-icon__spin.cf-icon__before:before,
 .cf-icon__spin.cf-icon__after:after {
+  -webkit-animation: cf-spin 2s infinite linear;
   animation: cf-spin 2s infinite linear;
 }
 
 .cf-icon__pulse.cf-icon:before,
 .cf-icon__pulse.cf-icon__before:before,
 .cf-icon__pulse.cf-icon__after:after {
+  -webkit-animation: cf-spin 1s infinite steps(8);
   animation: cf-spin 1s infinite steps(8);
 }
 
-@keyframes cf-spin {
+@-webkit-keyframes cf-spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes cf-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
@@ -4473,6 +4503,7 @@ h6 + .a-legend,
 
 @supports (display: flex ) {
   .m-hero_wrapper {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
@@ -4651,6 +4682,7 @@ h6 + .a-legend,
 .o-featured-content-module__center .o-featured-content-module_img {
   position: relative;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -4687,21 +4719,22 @@ h6 + .a-legend,
   border: 1px solid #b4b5b6;
 }
 
+.m-notification .cf-icon-svg {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1.125em;
+  float: left;
+  fill: #5a5d61;
+}
+
 .m-notification__success {
   background: #e2efd8;
   border-color: #20aa3f;
 }
 
-.m-notification__success .m-notification_icon:before {
-  font-family: 'CFPB Minicons';
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  content: '\e101';
-  vertical-align: middle;
-  color: #20aa3f;
+.m-notification__success .cf-icon-svg {
+  fill: #20aa3f;
 }
 
 .m-notification__warning {
@@ -4709,16 +4742,8 @@ h6 + .a-legend,
   border-color: #ff9e1b;
 }
 
-.m-notification__warning .m-notification_icon:before {
-  font-family: 'CFPB Minicons';
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  content: '\e103';
-  vertical-align: middle;
-  color: #ff9e1b;
+.m-notification__warning .cf-icon-svg {
+  fill: #ff9e1b;
 }
 
 .m-notification__error {
@@ -4726,32 +4751,15 @@ h6 + .a-legend,
   border-color: #d14124;
 }
 
-.m-notification__error .m-notification_icon:before {
-  font-family: 'CFPB Minicons';
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  content: '\e107';
-  vertical-align: middle;
-  color: #d14124;
+.m-notification__error .cf-icon-svg {
+  fill: #d14124;
 }
 
 .m-notification__visible {
   display: block;
 }
 
-.m-notification_icon {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  color: #5a5d61;
-  font-size: 1.125em;
-  line-height: 1;
-}
-
-.m-notification_icon + .m-notification_content {
+.cf-icon-svg + .m-notification_content {
   padding-left: 25px;
 }
 
@@ -4908,10 +4916,12 @@ h6 + .a-legend,
 
 .o-table__sortable .sortable.sorted-down:after,
 .o-table__sortable .sortable.sorted-up:hover:after {
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .o-table__sortable .sortable.sorted-down:hover:after {
+  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -4988,14 +4998,6 @@ a.a-heading__icon.active {
 .a-link__jump .a-link_text {
   border-bottom-width: 1px;
   border-bottom-style: inherit;
-}
-
-.a-link__icon:before,
-.a-link__jump:before,
-.a-link__icon:after,
-.a-link__jump:after {
-  margin-right: 1px;
-  margin-left: 1px;
 }
 
 .a-link__icon.a-link__no-wrap,
@@ -6120,69 +6122,30 @@ h6 + [class^="type-color-combo"],
 
 .minicon-scale-table th,
 .minicon-scale-table td {
-  padding: 0 5px;
-  border-left: 1px solid #e7e8e9;
+  padding: 10px 5px;
   background: transparent !important;
   color: #101820 !important;
   text-align: center;
 }
 
-.minicon-scale-table th:first-child,
-.minicon-scale-table td:first-child {
-  border: none;
-}
-
-.minicon-scale-table th {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: .875em;
-}
-
-.lt-ie9 .minicon-scale-table th {
-  font-weight: normal !important;
-}
-
-.minicon-scale-table .cf-icon {
-  display: block;
-  margin: 20px 20px 0;
-}
-
-.minicon-asset-lib h3 {
-  margin-top: 1.5em;
-}
-
-.minicon-asset-lib .minicon-assets-div {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 6em;
-  text-align: center;
+.minicon-scale-table th:not(:last-child),
+.minicon-scale-table td:not(:last-child) {
   border-right: 1px solid #e7e8e9;
 }
 
-.minicon-asset-lib .minicon-assets-div:last-child {
-  border-right: none;
-}
-
-.minicon-asset-lib .minicon-assets-div h6 {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
+.minicon-scale-table th {
+  margin-bottom: 1.07142857em;
+  font-size: 0.875em;
   font-weight: 600;
-  font-size: .875em;
-  line-height: 1.325em;
-  text-transform: capitalize;
-  letter-spacing: 0;
-  margin-bottom: 1.5em;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-shadow: 0px 0px #101820;
+  text-transform: uppercase;
 }
 
-.lt-ie9 .minicon-asset-lib .minicon-assets-div h6 {
-  font-weight: normal !important;
-}
-
-.minicon-asset-lib .minicon-assets-div .cf-icon {
-  font-size: 40px;
+.minicon-scale-table .cf-icon-svg {
   display: block;
-  margin: .75em 0;
+  margin: 20px auto 0;
 }
 
 .minicon-scale-48pt {
@@ -6223,6 +6186,70 @@ h6 + [class^="type-color-combo"],
 
 .minicon-scale-16px {
   font-size: 16px;
+}
+
+.minicon-asset-lib h3 {
+  margin-top: 1.5em;
+}
+
+.minicon-asset-lib .minicon-assets-div {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 6em;
+  text-align: center;
+}
+
+.minicon-asset-lib .minicon-assets-div:not(:last-child) {
+  border-right: 1px solid #e7e8e9;
+}
+
+.minicon-asset-lib .minicon-assets-div h6 {
+  font-size: .875em;
+  line-height: 1.325em;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  margin-bottom: 1.5em;
+}
+
+.minicon-asset-lib .minicon-assets-div .cf-icon {
+  font-size: 40px;
+  display: block;
+  margin: .75em 0;
+}
+
+.icon-table {
+  width: 100%;
+}
+
+.icon-table th {
+  background: transparent;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.icon-table td:nth-child( 1 ),
+.icon-table td:nth-child( 2 ) {
+  font-size: 2em;
+  text-align: center;
+  padding: 0.3125em;
+  width: 15%;
+}
+
+.icon-table td:nth-child( 1 ) {
+  width: 8%;
+}
+
+.icon-table td:nth-child( 2 ) {
+  width: 20%;
+}
+
+.icon-table td:nth-child( 3 ) {
+  width: 26%;
+}
+
+.icon-table td:nth-child( 4 ) {
+  width: 46%;
 }
 
 /* Identity/Typography page
@@ -6560,12 +6587,12 @@ p.print-georgia-para {
 .repo-list li:first-child {
   text-align: center;
   border-left: none;
-  line-height: 75px;
+  line-height: 50px;
   padding: 0 .75em;
   width: 15%;
 }
 
-.repo-list .cf-icon {
+.repo-list .cf-icon-svg {
   font-size: 30px;
   color: #75787b;
 }
@@ -6631,6 +6658,8 @@ p.print-georgia-para {
 }
 
 /* UI toolkit
+   TODO: This section has been moved/combined with page-components.
+   Check if these styles are still necessary.
    ========================================================================== */
 
 h2 span.cf-code-link {
