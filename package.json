@@ -58,7 +58,5 @@
     "load-grunt-tasks": "^3.5.2",
     "moment": "^2.17.1",
     "parallelshell": "^3.0.0",
-    "time-grunt": "^1.4.0",
-    "uglify-es": "^3.1.0"
-  }
+    "time-grunt": "^1.4.0"  }
 }
