@@ -100,7 +100,7 @@ abcdefghijklmnopqrstuvwxyz
 #### Display
 
 * Avenir Next Regular
-* 48 px / 60 px
+* 48px / 60px
 
 </div>
 
@@ -117,7 +117,8 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 1
 
 * Avenir Next Regular
-* 34 px / 42 px
+* 34px / 42px
+* Small screen: Drops to Heading 2
 
 </div>
 
@@ -134,7 +135,8 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 2
 
 * Avenir Next Regular
-* 26 px / 32 px
+* 26px / 32px
+* Small screen: Drops to Heading 3
 
 </div>
 
@@ -151,7 +153,8 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 3
 
 * Avenir Next Regular
-* 22 px / 28 px
+* 22px / 28px
+* Small screen: Drops to Heading 4
 
 </div>
 
@@ -168,7 +171,8 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 4
 
 * Avenir Next Medium
-* 18 px / 22 px
+* 18px / 22px
+* Small screen: Drops to 16px / 18px 
 
 </div>
 
@@ -185,8 +189,9 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 5
 
 * Avenir Next Demi Bold
-* 14 px / 18 px, 1 px letter spacing
+* 14px / 18px, 1px letter spacing
 * All caps
+* Small screen: No change
 
 </div>
 
@@ -203,8 +208,9 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 6
 
 * Avenir Next Demi Bold
-* 12 px / 15 px, 1 px letter spacing
+* 12px / 15px, 1px letter spacing
 * All caps
+* Small screen: No change
 
 </div>
 
@@ -226,8 +232,8 @@ Body text should provide an efficient and pleasant experience on every viewport 
 #### Lead paragraph
 
 * Avenir Next Regular
-* 22 px / 28 px line height
-* Reduces to 18px / 22px line height on smaller screens
+* 22px / 28px
+* Small screen: 18px / 22px
 
 </div>
 
@@ -242,7 +248,7 @@ Body text should provide an efficient and pleasant experience on every viewport 
 #### Body
 
 * Avenir Next Regular
-* 16 px / 22 px line height
+* 16px / 22px
 
 </div>
 
@@ -284,7 +290,7 @@ When setting body copy, the leading should be 1.375 times the type size, or 37.5
 
 <div class="content-33 content-last">
 
-#### Font size: 16 px
+#### Font size: 16px
 
 ![Line height example]({{ site.baseurl }}/static/img/typography/Typography_typesetting03_@2.png "Line height of 22px for 16px font size")
 
@@ -487,7 +493,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Display
 
 * Avenir Next Medium
-* 60 pt / 66 pt
+* 60pt / 66pt
 
 </div>
 
@@ -504,7 +510,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 1
 
 * Avenir Next Regular
-* 38 pt / 40 pt
+* 38pt / 40pt
 
 </div>
 
@@ -521,7 +527,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 2
 
 * Avenir Next Regular
-* 26 pt / 28 pt
+* 26pt / 28pt
 
 </div>
 
@@ -538,7 +544,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 3
 
 * Avenir Next Demi Bold
-* 16 pt / 18 pt
+* 16pt / 18pt
 
 </div>
 
@@ -555,7 +561,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 4
 
 * Avenir Next Medium
-* 14 pt / 16 pt
+* 14pt / 16pt
 
 </div>
 
@@ -572,7 +578,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 5
 
 * Avenir Next Demi Bold
-* 10 pt / 12 pt
+* 10pt / 12pt
 * All caps
 
 </div>
@@ -590,7 +596,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 6
 
 * Avenir Next Medium
-* 12 pt / 14 pt
+* 12pt / 14pt
 
 </div>
 
@@ -609,7 +615,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Subheading
 
 * Avenir Next Regular
-* 16 pt / 20 pt
+* 16pt / 20pt
 
 </div>
 
@@ -626,7 +632,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Paragraph
 
 * Avenir Next Regular
-* 11 pt / 16 pt
+* 11pt / 16pt
 
 </div>
 
@@ -643,7 +649,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Bulleted list
 
 * Avenir Next Regular
-* 11 pt / 14 pt
+* 11pt / 14pt
 
 </div>
 
