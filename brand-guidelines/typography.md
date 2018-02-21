@@ -101,6 +101,7 @@ abcdefghijklmnopqrstuvwxyz
 
 * Avenir Next Regular
 * 48px / 60px
+* <601px wide: Drops to Heading 1
 
 </div>
 
