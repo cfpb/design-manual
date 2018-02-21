@@ -118,7 +118,7 @@ abcdefghijklmnopqrstuvwxyz
 
 * Avenir Next Regular
 * 34px / 42px
-* <601 wide: Drops to Heading 2
+* <601px wide: Drops to Heading 2
 
 </div>
 
@@ -136,7 +136,7 @@ abcdefghijklmnopqrstuvwxyz
 
 * Avenir Next Regular
 * 26px / 32px
-* <601 wide: Drops to Heading 3
+* <601px wide: Drops to Heading 3
 
 </div>
 
@@ -154,7 +154,7 @@ abcdefghijklmnopqrstuvwxyz
 
 * Avenir Next Regular
 * 22px / 28px
-* <601 wide: Drops to Heading 4
+* <601px wide: Drops to Heading 4
 
 </div>
 
@@ -172,7 +172,7 @@ abcdefghijklmnopqrstuvwxyz
 
 * Avenir Next Medium
 * 18px / 22px
-* <601 wide: Drops to 16px / 18px 
+* <601px wide: Drops to 16px / 18px 
 
 </div>
 
@@ -191,7 +191,7 @@ abcdefghijklmnopqrstuvwxyz
 * Avenir Next Demi Bold
 * 14px / 18px, 1px letter spacing
 * All caps
-* <601 wide: No change
+* <601px wide: No change
 
 </div>
 
@@ -210,7 +210,7 @@ abcdefghijklmnopqrstuvwxyz
 * Avenir Next Demi Bold
 * 12px / 15px, 1px letter spacing
 * All caps
-* <601 wide: No change
+* <601px wide: No change
 
 </div>
 
