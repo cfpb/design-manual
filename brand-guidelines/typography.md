@@ -324,7 +324,7 @@ White space affects how the user focuses their attention on the content. It make
 
 #### Heading followed by body copy
 
-When a heading is followed by paragraph text, include 30 px of space below Display and 15 px below Headings 1–6.
+When a heading is followed by paragraph text, include 30px of space below Display and 15px below Headings 1–6.
 
 </div>
 
@@ -338,7 +338,7 @@ When a heading is followed by paragraph text, include 30 px of space below Displ
 
 #### Body copy followed by a heading
 
-When body copy is followed by a heading, include 45 px of space above Heading 2 and 30 px above Headings 3–6.
+When body copy is followed by a heading, include 45px of space above Heading 2 and 30px above Headings 3–6.
 
 </div>
 
@@ -366,7 +366,7 @@ For stacked headings, include 30 px of space after the primary heading.
 
 #### Body copy spacing
 
-For multiple paragraphs within the same section set the space between paragraphs to 15 px.
+For multiple paragraphs within the same section set the space between paragraphs to 15px.
 
 </div>
 
