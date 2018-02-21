@@ -32,6 +32,7 @@
     "cf-pagination": "^4.2.2",
     "cf-tables": "^4.2.1",
     "cf-typography": "^4.6.0",
+    "grunt-contrib-uglify-es": "^3.3.0",
     "html5shiv": "latest",
     "jquery": "~1.11.0",
     "normalize-css": "^2.0.0",
