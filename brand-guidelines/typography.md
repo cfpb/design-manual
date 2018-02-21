@@ -89,11 +89,11 @@ abcdefghijklmnopqrstuvwxyz
 
 ## Web hierarchy
 
-<p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read. A successful hierarchy enables readers to easily scan content.</p>
+<p>Hierarchy refers to the difference in type size and weight between text elements. A successful hierarchy establishes the order of importance of elements on a page, allowing readers to easily scan content and find what they're looking for.</p>
 
 ### Headings
 
-<p>Consistent scaling, weights, and capitalization are used to create distinction between heading levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headings are used in three weights of Avenir Next Demi Bold, Medium, and Regular.</p>
+<p>Consistent scaling, weights, and capitalization are used to create distinction between heading levels. At screen widths of 600px and below, the Display heading and Headings 1-4 drop in size. Headings 5-6 remain consistent at all screen widths.</p>
 
 <div class="content-33 content-first">
 
