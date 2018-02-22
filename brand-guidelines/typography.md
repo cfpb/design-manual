@@ -89,18 +89,19 @@ abcdefghijklmnopqrstuvwxyz
 
 ## Web hierarchy
 
-<p>Hierarchy refers to the difference in type size and weight between text elements. It creates focus points that signal the user where to read. A successful hierarchy enables readers to easily scan content.</p>
+<p>Hierarchy refers to the difference in type size and weight between text elements. A successful hierarchy establishes the order of importance of elements on a page, allowing readers to easily scan content and find what they're looking for.</p>
 
 ### Headings
 
-<p>Consistent scaling, weights, and capitalization are used to create distinction between heading levels. They provide the user with a familiar focus point when they scan through text and it helps organize content. Headings are used in three weights of Avenir Next Demi Bold, Medium, and Regular.</p>
+<p>Consistent scaling, weights, and capitalization are used to create distinction between heading levels. At screen widths of 600px and below, the Display heading and Headings 1-4 drop in size. Headings 5-6 remain consistent at all screen widths.</p>
 
 <div class="content-33 content-first">
 
 #### Display
 
 * Avenir Next Regular
-* 48 px / 60 px
+* 48px / 60px
+* <601px wide: Drops to Heading 1
 
 </div>
 
@@ -117,7 +118,8 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 1
 
 * Avenir Next Regular
-* 34 px / 42 px
+* 34px / 42px
+* <601px wide: Drops to Heading 2
 
 </div>
 
@@ -134,7 +136,8 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 2
 
 * Avenir Next Regular
-* 26 px / 32 px
+* 26px / 32px
+* <601px wide: Drops to Heading 3
 
 </div>
 
@@ -151,7 +154,8 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 3
 
 * Avenir Next Regular
-* 22 px / 28 px
+* 22px / 28px
+* <601px wide: Drops to Heading 4
 
 </div>
 
@@ -168,7 +172,8 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 4
 
 * Avenir Next Medium
-* 18 px / 22 px
+* 18px / 22px
+* <601px wide: Drops to 16px / 18px 
 
 </div>
 
@@ -185,8 +190,9 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 5
 
 * Avenir Next Demi Bold
-* 14 px / 18 px, 1 px letter spacing
+* 14px / 18px, 1px letter spacing
 * All caps
+* <601px wide: No change
 
 </div>
 
@@ -203,8 +209,9 @@ abcdefghijklmnopqrstuvwxyz
 #### Heading 6
 
 * Avenir Next Demi Bold
-* 12 px / 15 px, 1 px letter spacing
+* 12px / 15px, 1px letter spacing
 * All caps
+* <601px wide: No change
 
 </div>
 
@@ -226,8 +233,8 @@ Body text should provide an efficient and pleasant experience on every viewport 
 #### Lead paragraph
 
 * Avenir Next Regular
-* 22 px / 28 px line height
-* Reduces to 18px / 22px line height on smaller screens
+* 22px / 28px
+* Small screen: 18px / 22px
 
 </div>
 
@@ -242,7 +249,7 @@ Body text should provide an efficient and pleasant experience on every viewport 
 #### Body
 
 * Avenir Next Regular
-* 16 px / 22 px line height
+* 16px / 22px
 
 </div>
 
@@ -284,7 +291,7 @@ When setting body copy, the leading should be 1.375 times the type size, or 37.5
 
 <div class="content-33 content-last">
 
-#### Font size: 16 px
+#### Font size: 16px
 
 ![Line height example]({{ site.baseurl }}/static/img/typography/Typography_typesetting03_@2.png "Line height of 22px for 16px font size")
 
@@ -318,7 +325,7 @@ White space affects how the user focuses their attention on the content. It make
 
 #### Heading followed by body copy
 
-When a heading is followed by paragraph text, include 30 px of space below Display and 15 px below Headings 1–6.
+When a heading is followed by paragraph text, include 30px of space below Display and 15px below Headings 1–6.
 
 </div>
 
@@ -332,7 +339,7 @@ When a heading is followed by paragraph text, include 30 px of space below Displ
 
 #### Body copy followed by a heading
 
-When body copy is followed by a heading, include 45 px of space above Heading 2 and 30 px above Headings 3–6.
+When body copy is followed by a heading, include 45px of space above Heading 2 and 30px above Headings 3–6.
 
 </div>
 
@@ -360,7 +367,7 @@ For stacked headings, include 30 px of space after the primary heading.
 
 #### Body copy spacing
 
-For multiple paragraphs within the same section set the space between paragraphs to 15 px.
+For multiple paragraphs within the same section set the space between paragraphs to 15px.
 
 </div>
 
@@ -487,7 +494,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Display
 
 * Avenir Next Medium
-* 60 pt / 66 pt
+* 60pt / 66pt
 
 </div>
 
@@ -504,7 +511,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 1
 
 * Avenir Next Regular
-* 38 pt / 40 pt
+* 38pt / 40pt
 
 </div>
 
@@ -521,7 +528,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 2
 
 * Avenir Next Regular
-* 26 pt / 28 pt
+* 26pt / 28pt
 
 </div>
 
@@ -538,7 +545,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 3
 
 * Avenir Next Demi Bold
-* 16 pt / 18 pt
+* 16pt / 18pt
 
 </div>
 
@@ -555,7 +562,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 4
 
 * Avenir Next Medium
-* 14 pt / 16 pt
+* 14pt / 16pt
 
 </div>
 
@@ -572,7 +579,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 5
 
 * Avenir Next Demi Bold
-* 10 pt / 12 pt
+* 10pt / 12pt
 * All caps
 
 </div>
@@ -590,7 +597,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Heading 6
 
 * Avenir Next Medium
-* 12 pt / 14 pt
+* 12pt / 14pt
 
 </div>
 
@@ -609,7 +616,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Subheading
 
 * Avenir Next Regular
-* 16 pt / 20 pt
+* 16pt / 20pt
 
 </div>
 
@@ -626,7 +633,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Paragraph
 
 * Avenir Next Regular
-* 11 pt / 16 pt
+* 11pt / 16pt
 
 </div>
 
@@ -643,7 +650,7 @@ Although CFPB Green and black are accessible for large scale type, this color co
 #### Bulleted list
 
 * Avenir Next Regular
-* 11 pt / 14 pt
+* 11pt / 14pt
 
 </div>
 
