@@ -50,7 +50,7 @@
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-less": "^1.4.1",
-    "grunt-contrib-uglify": "git+https://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunt-contrib-uglify-es": "^3.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-legacssy": "~0.4.0",
     "grunt-string-replace": "^1.3.1",
@@ -58,7 +58,5 @@
     "load-grunt-tasks": "^3.5.2",
     "moment": "^2.17.1",
     "parallelshell": "^3.0.0",
-    "time-grunt": "^1.4.0",
-    "uglify-es": "^3.1.0"
-  }
+    "time-grunt": "^1.4.0"  }
 }
