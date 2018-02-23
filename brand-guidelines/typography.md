@@ -328,7 +328,7 @@ List items should:
 * 16px / 8px
 * Margin top: 10px
 * Margin bottom: 15px
-* Nested bullets are flush left with the preceeding line of text  
+* Nested bullets are flush left with the preceding line of text  
 
 </div>
 
@@ -358,7 +358,7 @@ List items should:
 * 16px / 8px
 * Margin top: 10px
 * Margin bottom: 15px
-* Nested bullets are flush left with the preceeding line of text 
+* Nested bullets are flush left with the preceding line of text 
 
 </div>
 
