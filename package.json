@@ -33,7 +33,7 @@
     "cf-tables": "^4.2.1",
     "cf-typography": "^4.6.0",
     "html5shiv": "latest",
-    "jquery": "~1.11.0",
+    "jquery": "^3.0.0",
     "normalize-css": "^2.0.0",
     "normalize-legacy-addon": "0.1.0"
   },
@@ -58,5 +58,6 @@
     "load-grunt-tasks": "^3.5.2",
     "moment": "^2.17.1",
     "parallelshell": "^3.0.0",
-    "time-grunt": "^1.4.0"  }
+    "time-grunt": "^1.4.0"
+  }
 }
