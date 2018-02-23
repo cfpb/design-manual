@@ -17,7 +17,7 @@ redirect_from: "/identity/typography.html"
 
 <div class="content-67 content-first">
 
-A clear typographic hierarchy is critical to the effective communication of our brand. Type should be light and well-spaced to reinforce that we are transparent, open, and approachable. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document. Readability and accessibility allow all users to efficiently read and absorb textual information. 
+A clear typographic hierarchy is critical to the effective communication of our brand. Type should be light and well-spaced to reinforce that we are transparent, open, and approachable. This system uses weight, scale, and capitalization to convey the relative importance of each heading within a document. Readability and accessibility allow all users to efficiently read and absorb textual information.
 {: class="lead-in"}
 
 </div>
@@ -32,7 +32,7 @@ A clear typographic hierarchy is critical to the effective communication of our 
     Typefaces
     <span class="cf-code-link">
         <a href="https://github.com/cfpb/capital-framework/blob/canary/src/cf-core/src/cf-base.less">
-            View code <span class="cf-icon cf-icon-external-link"></span>
+            View code {% include icons/external-link.svg %}
         </a>
     </span>
 </h2>
@@ -417,7 +417,7 @@ Use only these accessible text and background color combinations.
     <ul>
         <li class="type-color-combo__black-on-white">Black on White</li>
         <li class="type-color-combo__dark-gray-on-white">Dark Gray on White</li>
-        <li class="type-color-combo__gray-on-white">Gray on White</li> 
+        <li class="type-color-combo__gray-on-white">Gray on White</li>
         <li class="type-color-combo__white-on-black">White on Black</li>
         <li class="type-color-combo__white-on-dark-gray">White on Dark Gray</li>
         <li class="type-color-combo__white-on-gray">White on Gray</li>
@@ -435,7 +435,7 @@ Use only these accessible text and background color combinations.
 
 <div class="content-33 content-first">
 
-<h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Non-accessible combinations</h3>
+<h3 class="warning">{% include icons/error-round.svg %} Non-accessible combinations</h3>
 
 Never set CFPB Green type on a white background or white type on CFPB Green background as these combinations are not accessible. Never set type on a patterned background.
 
@@ -458,7 +458,7 @@ Never set CFPB Green type on a white background or white type on CFPB Green back
 
 <div class="content-33 content-first">
 
-<h3 class="warning"><span class="cf-icon cf-icon-delete-round"></span> Undesirable combinations</h3>
+<h3 class="warning">{% include icons/error-round.svg %} Undesirable combinations</h3>
 
 Although CFPB Green and black are accessible for large scale type, this color combination should never be used for web or print type.
 

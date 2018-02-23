@@ -12,14 +12,14 @@ redirect_from: "/identity/logo.html"
 {: class="toc"}
 
 <div class="content-67 content-first">
-	
+
 The CFPB logo was designed to symbolize vigilance, transparency, and a consumer focus. Consumers are the foundation and focus of our mission and our logo reflects that. A soft beam of light symbolizes our efforts to illuminate the financial landscape and foster transparency in the marketplace.
 {: class="lead-in"}
 
 </div>
 
 <div class="content-33 content-last">
-	
+
 ![Feature logo]({{ site.baseurl }}/static/img/logo/Logo0_@2.png "CFPB Logo")
 
 </div>
@@ -43,7 +43,7 @@ and website.
 </div>
 
 <div class="content-33 content-first">
-	
+
 ### Vertical
 
 The vertical lockup is useful for square
@@ -52,7 +52,7 @@ frames or narrow columns.
 </div>
 
 <div class="content-50 content-last">
-	
+
 ![Vertical lockup logo]({{ site.baseurl }}/static/img/logo/Logo1_vertical-lockup_@2.png "Vertical lockup logo")
 
 </div>
@@ -208,7 +208,7 @@ The small execution logo should be used to optimize legibility of the logotype o
 </div><!-- /.content-67 -->
 
 <div class="content-33 content-first">
-	
+
 ### Print scale
 
 The horizontal or vertical lockup should be used for most print applications. These are our benchmark sizes for 8.5 x 11” documents, including reports, brochures, powerpoints, and forms. For large-format print pieces, such as posters and banners, where the logo is used with a height greater than 1”, it should be used in increments of 1/2”.
@@ -267,7 +267,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<span class="cf-icon cf-icon-delete-round"></span> Don’t remove the light beam. It is essential to the logo.
+<p>{% include icons/error-round.svg %} Don’t remove the light beam. It is essential to the logo.</p>
 
 </div>
 
@@ -281,7 +281,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<span class="cf-icon cf-icon-delete-round"></span> Don’t stretch or condense. This weakens the brand.
+<p>{% include icons/error-round.svg %} Don’t stretch or condense. This weakens the brand.</p>
 
 </div><!-- /.content-33 -->
 
@@ -298,7 +298,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<span class="cf-icon cf-icon-delete-round"></span> Don’t apply a drop shadow.
+<p>{% include icons/error-round.svg %} Don’t apply a drop shadow.</p>
 
 </div><!-- /.content-33 -->
 
@@ -312,7 +312,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<span class="cf-icon cf-icon-delete-round"></span> Don’t outline the logo or use other colors. This dilutes brand association.
+<p>{% include icons/error-round.svg %} Don’t outline the logo or use other colors. This dilutes brand association.</p>
 
 </div><!-- /.content-33 -->
 
@@ -329,7 +329,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<span class="cf-icon cf-icon-delete-round"></span> Don’t rotate the symbol. This changes the connotation of the light.
+<p>{% include icons/error-round.svg %} Don’t rotate the symbol. This changes the connotation of the light.</p>
 
 </div><!-- /.content-33 -->
 
@@ -346,7 +346,7 @@ to the required clear space.
 
 <div class="content-33 content-first warning">
 
-<span class="cf-icon cf-icon-delete-round"></span> Don’t place the logo directly on a colored background or photo without a white bounding box.
+<p>{% include icons/error-round.svg %} Don’t place the logo directly on a colored background or photo without a white bounding box.</p>
 
 </div><!-- /.content-33 -->
 

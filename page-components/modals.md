@@ -103,9 +103,9 @@ If form fields are included in a modal, they should follow standard [form field]
 
 
 #### Close area
-* Minicon: “delete-round”
+* Minicon: "close-round”
 * Minicon color: Pacific (#0072ce)
-* Minicon size: 16px (cf-icon_lg)
+* Minicon size: 16px
 * Font: Avenir Next Regular, 16px, Pacific (#0072ce)
 
 #### Gray action bar

@@ -55,24 +55,24 @@ The following primary benchmark sizes should be used for web sizing:
     </thead>
     <tbody>
         <td class="minicon-scale-16px">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
         <td class="minicon-scale-20px">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
         <td class="minicon-scale-25px">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
         <td class="minicon-scale-30px">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
         <td class="minicon-scale-40px">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
     </tbody>
 </table>
@@ -104,24 +104,24 @@ The following primary benchmark sizes should be used for print sizing:
     </thead>
     <tbody>
         <td class="minicon-scale-14pt">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
         <td class="minicon-scale-21pt">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
         <td class="minicon-scale-28pt">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
         <td class="minicon-scale-36pt">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
         <td class="minicon-scale-48pt">
-            <i class="cf-icon cf-icon-loan"></i>
-            <i class="cf-icon cf-icon-loan-round"></i>
+            {% include icons/loan.svg %}
+            {% include icons/loan-round.svg %}
         </td>
     </tbody>
 </table>
@@ -206,14 +206,14 @@ or follows standards of a form-level alert within an
     Asset Library
     <span class="cf-code-link">
         <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-icons">
-            View code <span class="cf-icon cf-icon-external-link"></span>
+            View code {% include icons/external-link.svg %}
         </a>
     </span>
 </h2>
 
 <div class="minicon-asset-lib">
 
-{% include identity/icons/index.html %}
+{% include identity/icons/index.md %}
 
 </div>
 
@@ -224,8 +224,9 @@ or follows standards of a form-level alert within an
 ### Minicon font
 Our full minicon set is available for desktop use as an icon font (.ttf). It can be accessed through programs like Illustrator and InDesign via the glyph panel.
 
-<a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fcfpb%2Fcf-icons%2Fblob%2Fgh-pages%2Fsrc%2Ffonts%2Fcf-icons.ttf%3Fraw%3Dtrue&sa=D&sntz=1&usg=AFQjCNEfA_Pb9TWATcmS11SAt2epvxOmXg" target="_blank" class="btn">
-    <span class="btn_icon__left cf-icon cf-icon-download"></span>
+<a href="https://github.com/cfpb/cf-icons/blob/gh-pages/src/fonts/cf-icons.ttf?raw=true" target="_blank" class="a-btn">
+    <span class="a-btn_icon
+                 a-btn_icon__on-left">{% include icons/download.svg %}</span>
     Download .ttf
 </a>
 

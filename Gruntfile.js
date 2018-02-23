@@ -197,9 +197,18 @@ module.exports = function(grunt) {
             cwd: '<%= loc.modules %>/cf-icons/src',
             src: [
               // Fonts
-              'fonts/*'
+              'icons/*'
             ],
             dest: '<%= loc.dist %>/static'
+          },
+          {
+            expand: true,
+            cwd: '<%= loc.modules %>/cf-icons/src',
+            src: [
+              // Fonts
+              'icons/*'
+            ],
+            dest: '<%= loc.dist %>/_includes'
           },
           {
             expand: true,
