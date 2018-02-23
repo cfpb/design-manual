@@ -21,7 +21,7 @@ A minimal palette, clear hierarchy, and ample whitespace ensure a voice of autho
 
 </div>
 
-<h2 id="palette">Palette<span class="cf-code-link"><a href="https://github.com/cfpb/cf-theme-cfpb/blob/master/src/color-palette.less">View code <i class="cf-icon cf-icon-external-link"></i></a></span></h2>
+<h2 id="palette">Palette<span class="cf-code-link"><a href="https://github.com/cfpb/cf-theme-cfpb/blob/master/src/color-palette.less">View code {% include icons/external-link.svg %}</a></span></h2>
 
 ### Primary colors
 Our core brand color is CFPB Green. Green 60 and Green 20 play a supporting role in basic branded pieces. Black is typically used for type and icons while grays are used for wells and accents, such as rules and borders.
@@ -105,7 +105,7 @@ The secondary color palette introduces visual variety. Colors were selected to h
 
 
 ### Tints
-Tints expand upon the primary and secondary color palettes to help create visual cohesion when incorporating complex illustrations and data visualizations. 
+Tints expand upon the primary and secondary color palettes to help create visual cohesion when incorporating complex illustrations and data visualizations.
 
 {::nomarkdown}
     {% assign family = site.data.cfpb-brand-colors[1].family %}

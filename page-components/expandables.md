@@ -21,7 +21,7 @@ Expandables can be  used for displaying non-essential information on a page. The
   <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
-      <span class="cf-icon cf-icon-github"></span>
+      {% include icons/github.svg %}
     </li>
     <li>
       <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-expandables">
@@ -60,11 +60,11 @@ The entire bar is actionable. The header should clearly indicate what the user w
         <span class="o-expandable_header-right o-expandable_link">
             <span class="o-expandable_cue-open">
                 Show
-                <span class="cf-icon cf-icon-plus-round"></span>
+                {% include icons/plus-round.svg %}
             </span>
             <span class="o-expandable_cue-close">
                 Hide
-                <span class="cf-icon cf-icon-minus-round"></span>
+                {% include icons/minus-round.svg %}
             </span>
         </span>
     </button>
@@ -102,11 +102,11 @@ When expandable sections are used in a group, they are stacked vertically, with 
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -128,11 +128,11 @@ When expandable sections are used in a group, they are stacked vertically, with 
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -154,11 +154,11 @@ When expandable sections are used in a group, they are stacked vertically, with 
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -218,11 +218,11 @@ The default collapsed state should include the expand/collapse minicon within a 
         <span class="o-expandable_header-right o-expandable_link">
             <span class="o-expandable_cue-open">
                 Show
-                <span class="cf-icon cf-icon-plus-round"></span>
+                {% include icons/plus-round.svg %}
             </span>
             <span class="o-expandable_cue-close">
                 Hide
-                <span class="cf-icon cf-icon-minus-round"></span>
+                {% include icons/minus-round.svg %}
             </span>
         </span>
     </button>
@@ -246,11 +246,11 @@ The default collapsed state should include the expand/collapse minicon within a 
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -272,11 +272,11 @@ The default collapsed state should include the expand/collapse minicon within a 
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -298,11 +298,11 @@ The default collapsed state should include the expand/collapse minicon within a 
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -342,11 +342,11 @@ Expandables can make use of an optional stroke under the title when expanded. Th
         <span class="o-expandable_header-right o-expandable_link">
             <span class="o-expandable_cue-open">
                 Show
-                <span class="cf-icon cf-icon-plus-round"></span>
+                {% include icons/plus-round.svg %}
             </span>
             <span class="o-expandable_cue-close">
                 Hide
-                <span class="cf-icon cf-icon-minus-round"></span>
+                {% include icons/minus-round.svg %}
             </span>
         </span>
     </button>
@@ -370,11 +370,11 @@ Expandables can make use of an optional stroke under the title when expanded. Th
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -396,11 +396,11 @@ Expandables can make use of an optional stroke under the title when expanded. Th
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -422,11 +422,11 @@ Expandables can make use of an optional stroke under the title when expanded. Th
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -467,11 +467,11 @@ In the default mode, users are able to have multiple sections of an expandable g
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -493,11 +493,11 @@ In the default mode, users are able to have multiple sections of an expandable g
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>
@@ -519,11 +519,11 @@ In the default mode, users are able to have multiple sections of an expandable g
             <span class="o-expandable_header-right o-expandable_link">
                 <span class="o-expandable_cue-open">
                     Show
-                    <span class="cf-icon cf-icon-plus-round"></span>
+                    {% include icons/plus-round.svg %}
                 </span>
                 <span class="o-expandable_cue-close">
                     Hide
-                    <span class="cf-icon cf-icon-minus-round"></span>
+                    {% include icons/minus-round.svg %}
                 </span>
             </span>
         </button>

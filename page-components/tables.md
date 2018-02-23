@@ -21,7 +21,7 @@ Tables divide information into distinct columns and rows to create an intersecti
   <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
-      <span class="cf-icon cf-icon-github"></span>
+      {% include icons/github.svg %}
     </li>
     <li>
       <a href="https://github.com/cfpb/capital-framework/tree/canary/src/cf-tables"><h4>cf-tables</h4></a>
@@ -332,11 +332,11 @@ Tables can be paired with a filter to show only rows that meet certain criteria.
         <span class="o-expandable_header-right o-expandable_link">
             <span class="o-expandable_cue-open">
                 Show
-              <span class="cf-icon cf-icon-plus-round"></span>
+                {% include icons/plus-round.svg %}
             </span>
             <span class="o-expandable_cue-close">
                 Hide
-                <span class="cf-icon cf-icon-minus-round"></span>
+                {% include icons/minus-round.svg %}
             </span>
         </span>
     </button>
@@ -361,7 +361,7 @@ Tables can be paired with a filter to show only rows that meet certain criteria.
     <tbody>
         <tr>
             <td data-label="Type">
-                <span class="cf-icon cf-icon-speech-bubble"></span> Blog
+                {% include icons/speech-bubble.svg %} Blog
             </td>
             <td data-label="Title">
                 Three things to do before closing
@@ -372,7 +372,7 @@ Tables can be paired with a filter to show only rows that meet certain criteria.
         </tr>
         <tr>
             <td data-label="Type">
-                <span class="cf-icon cf-icon-bullhorn"></span> News
+                {% include icons/bullhorn.svg %} News
             </td>
             <td data-label="Title">
                 Electronic Mortgage Closings Can Benefit Consumers
@@ -383,7 +383,7 @@ Tables can be paired with a filter to show only rows that meet certain criteria.
         </tr>
         <tr>
             <td data-label="Type">
-                <span class="cf-icon cf-icon-speech-bubble"></span> Blog
+                {% include icons/speech-bubble.svg %} Blog
             </td>
             <td data-label="Title">
                 National Day of Civic Hacking 2015
@@ -422,7 +422,7 @@ Tables with over 20 rows can be paired with pagination.
     <tbody>
         <tr>
             <td data-label="Type">
-                <span class="cf-icon cf-icon-speech-bubble"></span> Blog
+                {% include icons/speech-bubble.svg %} Blog
             </td>
             <td data-label="Title">
                 Three things to do before closing
@@ -438,7 +438,7 @@ Tables with over 20 rows can be paired with pagination.
         </tr>
         <tr>
             <td data-label="Type">
-                <span class="cf-icon cf-icon-speech-bubble"></span> Blog
+                {% include icons/speech-bubble.svg %} Blog
             </td>
             <td data-label="Title">
                 National Day of Civic Hacking 2015
@@ -453,14 +453,14 @@ Tables with over 20 rows can be paired with pagination.
     <a class="a-btn
               a-btn__disabled
               m-pagination_btn-prev">
-        <span class="cf-icon cf-icon-left cf-icon__before"></span>
+        {% include icons/left.svg %}
         Newer
     </a>
 
     <a class="a-btn
               m-pagination_btn-next" href="#">
         Older
-        <span class="cf-icon cf-icon-right cf-icon__after"></span>
+        {% include icons/right.svg %}
     </a>
 
     <form class="m-pagination_form" action="#">
@@ -699,7 +699,7 @@ If units differ from column to column, the standard is to list the unit of measu
     Style
     <span class="cf-code-link">
         <a href="https://github.com/cfpb/capital-framework/tree/canary/src/cf-tables">
-            View code <span class="cf-icon cf-icon-external-link"></span>
+            View code {% include icons/external-link.svg %}
         </a>
     </span>
 </h2>

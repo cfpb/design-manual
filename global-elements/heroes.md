@@ -22,7 +22,7 @@ Heroes function as a primary focal point on a page, often used to introduce a co
   <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
-      <span class="cf-icon cf-icon-github"></span>
+      {% include icons/github.svg %}
     </li>
     <li>
       <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/molecules/heroes.less">
@@ -101,7 +101,7 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 - After one-line heading: Between 165 and 186 characters (three lines at largest breakpoint)
 - After two-line heading: Between 108 and 124 characters (two lines at largest breakpoint)
 
-<h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/molecules/heroes.less">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+<h2 id="style">Style<span class="cf-code-link"><a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-layout/src/molecules/heroes.less">View code {% include icons/external-link.svg %}</a></span></h2>
 
 <div class="content-67 content-first">
 - All illustrations should be saved at 200% to accommodate retina displays
