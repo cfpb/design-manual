@@ -13,14 +13,15 @@ published: true
 Allowing all users to be able to comprehend charts and graphics is a key part
 of being a government agency that serves the entire American public. This is an
 interpretation of what it means for a chart to be 508 compliant and accessible,
-starting with descriptive titles (see the [Data visualization text
-  section](text.html)) and not only relying on color to connect data to its
-  meaning (see the [Data visualization color section](color.html)).
+starting with descriptive titles (see the [Data visualization chart components
+subsection on titles](chart-components.html#titles)) and not only relying on
+color to connect data to its meaning (with details in the [Data visualization
+color section](color.html)).
 {: class="lead-in"}
 
 ##### Key questions
 * How would someone using a screen reader interact with this visualization?
-* How would someone with low vision interact with this visualisation?
+* How would someone with low vision interact with this visualization?
 
 ### Alt tags
 Alt tags are what a screen reader will say instead of the image. This is
