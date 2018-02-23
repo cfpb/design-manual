@@ -263,7 +263,7 @@ If you have received financial aid offers, use this tool to compare school data 
 ### Lists
 Lists are an effective way to visually highlight important information so that it can be more easily scanned and read. Before writing a list, it’s important to identify the best style needed for the information being presented. 
 
-All list items should:
+List items should:
 <ul>
     <li>Be capitalized</li>
     <li>Avoid unnecessary repetition</li>
@@ -272,9 +272,9 @@ All list items should:
     <li>Use consistent punctuation</li>
 </ul>
 
-<p>If the items in a list are complete sentences, the introductory clause should also be a complete sentence, followed by a colon. The items in this list should end with a period.</p>
+<p>If the list items are complete sentences, the introductory clause should also be a complete sentence, followed by a colon. These list items should end with a period.</p>
 
-<p>If the items in a list are a group of short fragments that each work to complete an introductory clause, the introductory clause should also be a short fragment, followed by a colon. The items in this list should end with no punctuation.</p>
+<p>If the list items are a group of short fragments that each work to complete an introductory clause, the introductory clause should also be a short fragment, followed by a colon. These list items should end with no punctuation.</p>
 
 <div class="content-33 content-first">
 
