@@ -221,8 +221,7 @@ abcdefghijklmnopqrstuvwxyz
 
 </div>
 
----
-
+<br>
 
 ### Body text
 
@@ -234,7 +233,7 @@ Body text should provide an efficient and pleasant experience on every viewport 
 
 * Avenir Next Regular
 * 22px / 28px
-* Small screen: 18px / 22px
+* <601px wide: 18px / 22px
 
 </div>
 
@@ -258,6 +257,155 @@ Body text should provide an efficient and pleasant experience on every viewport 
 If you have received financial aid offers, use this tool to compare school data and relevant financial factors to make a more informed decision for your future.
 
 </div>
+
+<br>
+
+### Lists
+Lists are an effective way to visually highlight important information so that it can be more easily scanned and read. Before writing a list, it’s important to identify the best style needed for the information being presented. 
+
+All list items should:
+<ul>
+    <li>Be capitalized</li>
+    <li>Avoid unnecessary repetition</li>
+    <li>Have a parallel structure</li>
+    <li>Start with an introductory clause or sentence</li>
+    <li>Use consistent punctuation</li>
+</ul>
+
+<p>If the items in a list are complete sentences, the introductory clause should also be a complete sentence, followed by a colon. The items in this list should end with a period.</p>
+
+<p>If the items in a list are a group of short fragments that each work to complete an introductory clause, the introductory clause should also be a short fragment, followed by a colon. The items in this list should end with no punctuation.</p>
+
+<div class="content-33 content-first">
+
+#### Bulleted list
+* Avenir Next Regular
+* 16px / 8px
+* Margin top: 10px
+* Margin bottom: 15px
+
+</div>
+
+<div class="content-67 content-last">
+
+<ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+</ul>
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+
+#### Numbered list
+* Avenir Next Regular
+* 16px / 8px
+* Margin top: 10px
+* Margin bottom: 15px
+
+</div>
+
+<div class="content-67 content-last">
+
+<ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+</ol>
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+
+#### Nested list (bulleted)
+
+* Avenir Next Regular
+* 16px / 8px
+* Margin top: 10px
+* Margin bottom: 15px
+* Nested bullets are flush left with the preceeding line of text  
+
+</div>
+
+<div class="content-67 content-last">
+
+<ul>
+    <li>List item 1</li>
+    <li>List item 2
+        <ul>
+            <li>List item 2.1</li>
+            <li>List item 2.2</li>
+            <li>List item 2.3</li>
+        </ul>
+    </li>
+    <li>List item 3</li>
+</ul>
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+
+#### Nested list (numbered)
+
+* Avenir Next Regular
+* 16px / 8px
+* Margin top: 10px
+* Margin bottom: 15px
+* Nested bullets are flush left with the preceeding line of text 
+
+</div>
+
+<div class="content-67 content-last">
+
+<ol>
+    <li>List item 1</li>
+    <li>List item 2
+        <ul>
+            <li>List item 2.1</li>
+            <li>List item 2.2</li>
+            <li>List item 2.3</li>
+        </ul>
+    </li>
+    <li>List item 3</li>
+</ol>
+
+</div>
+---
+
+<div class="content-33 content-first">
+
+#### Link list
+
+* Avenir Next Regular
+* 16px / 8px
+* Margin top: 10px
+* Margin bottom: 15px
+
+</div>
+
+<div class="content-67 content-last">
+
+<ul class="m-list m-list__links">
+    <li class="m-list_item">
+        <a class="m-list_link" href="#">List item 1</a>
+    </li>
+    <li class="m-list_item">
+        <a class="m-list_link" href="#">List item 2</a>
+    </li>
+    <li class="m-list_item">
+        <a class="m-list_link" href="#">List item 3</a>
+    </li>
+</ul>
+
+</div>
+<br>
 
 ## Typesetting for readability
 
