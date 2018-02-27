@@ -276,13 +276,16 @@ List items should:
 
 <p>If the list items are a group of short fragments that each work to complete an introductory clause, the introductory clause should also be a short fragment, followed by a colon. These list items should end with no punctuation.</p>
 
-<div class="content-33 content-first">
-
 #### Bulleted list
-* Avenir Next Regular
-* 16px / 8px
-* Margin top: 10px
-* Margin bottom: 15px
+Use a bulleted list when grouping similar items or short thoughts into “bite-size” chunks. Generally, the order or count of the items in a bullet list isn’t important. An exception to this may be a list of states, which naturally fits into an alphabetical order. 
+
+<div class="content-33 content-first">
+<h5>Default</h5>
+* Avenir Next Regular, 16px
+* Margin bottom (list item): 8px
+* Margin top (list): 10px
+* Margin bottom (list): 15px
+* Bullets are solid squares
 
 </div>
 
@@ -296,15 +299,41 @@ List items should:
 
 </div>
 
----
-
 <div class="content-33 content-first">
+<h5>Nested</h5>
+* Bullets are open circles and flush left with the preceding line of text
+
+</div>
+
+<div class="content-67 content-last">
+
+<ul>
+    <li>List item 1</li>
+    <li>List item 2
+        <ul>
+            <li>List item 2.1</li>
+            <li>List item 2.2</li>
+            <li>List item 2.3</li>
+        </ul>
+    </li>
+    <li>List item 3</li>
+</ul>
+
+</div>
+
+---
 
 #### Numbered list
-* Avenir Next Regular
-* 16px / 8px
-* Margin top: 10px
-* Margin bottom: 15px
+When the order of information presented is important, use a numbered list. This could include chronological items, things presented in the order or importance, or a finite list of a counted number of items.
+
+<div class="content-33 content-first">
+
+<h5>Default</h5>
+* Avenir Next Regular, 16px
+* Margin bottom (list item): 8px
+* Margin top (list): 10px
+* Margin bottom (list): 15px
+* Numbers are right aligned to the period
 
 </div>
 
@@ -318,47 +347,10 @@ List items should:
 
 </div>
 
----
 
 <div class="content-33 content-first">
-
-#### Nested list (bulleted)
-
-* Avenir Next Regular
-* 16px / 8px
-* Margin top: 10px
-* Margin bottom: 15px
-* Nested bullets are flush left with the preceding line of text  
-
-</div>
-
-<div class="content-67 content-last">
-
-<ul>
-    <li>List item 1</li>
-    <li>List item 2
-        <ul>
-            <li>List item 2.1</li>
-            <li>List item 2.2</li>
-            <li>List item 2.3</li>
-        </ul>
-    </li>
-    <li>List item 3</li>
-</ul>
-
-</div>
-
----
-
-<div class="content-33 content-first">
-
-#### Nested list (numbered)
-
-* Avenir Next Regular
-* 16px / 8px
-* Margin top: 10px
-* Margin bottom: 15px
-* Nested bullets are flush left with the preceding line of text 
+<h5>Nested</h5>
+* Bullets are solid squares and flush left with the preceding line of text 
 
 </div>
 
@@ -379,14 +371,16 @@ List items should:
 </div>
 ---
 
+#### Link list
+The link list converts to a touch-friendly link with a large tap area on smaller screens.
+
 <div class="content-33 content-first">
 
-#### Link list
-
-* Avenir Next Regular
-* 16px / 8px
-* Margin top: 10px
-* Margin bottom: 15px
+* Avenir Next Medium, 16px, Pacific
+* Border bottom: 1 px, dotted, Pacific
+* Margin bottom (list item): 8px
+* Margin top (list): 10px
+* Margin bottom (list): 15px
 
 </div>
 
