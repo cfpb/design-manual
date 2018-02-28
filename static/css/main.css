@@ -1158,12 +1158,6 @@ li:last-child,
 nav li {
   margin-bottom: 0;
 }
-ol ol {
-  list-style-type: lower-alpha;
-}
-ol ol ol {
-  list-style-type: lower-roman;
-}
 a {
   border-width: 0;
   border-style: dotted;
@@ -1449,14 +1443,14 @@ input.a-btn::-moz-focus-inner {
 .a-btn__link,
 .a-btn__link:link,
 .a-btn__link:visited {
-  border-bottom-color: #0072ce;
   background-color: transparent;
-  color: #0072ce;
+  border-bottom-color: #257675;
+  color: #257675;
 }
 .a-btn__link:hover,
 .a-btn__link.hover {
-  border-bottom: 1px solid #7eb7e8;
   background-color: transparent;
+  border-bottom: 1px solid #7eb7e8;
   color: #7eb7e8;
 }
 .a-btn__link:focus,
@@ -1513,17 +1507,13 @@ input.a-btn::-moz-focus-inner {
   border-bottom-color: #b63014;
   color: #b63014;
 }
-.lt-ie9 .a-btn_icon__on-left,
-.lt-ie9 .a-btn_icon__on-right {
-  display: none;
-}
 .a-btn_icon__on-left {
-  padding-right: 0.6875em;
+  padding-right: 0.65625em;
   border-right: 1px solid #80b9e7;
   margin-right: 0.4375em;
 }
 .a-btn_icon__on-right {
-  padding-left: 0.6875em;
+  padding-left: 0.65625em;
   border-left: 1px solid #80b9e7;
   margin-left: 0.4375em;
 }
@@ -1802,19 +1792,18 @@ h6 + .a-legend,
   color: #5a5d61;
 }
 .a-select:after {
-  width: 1.9375em;
+  width: 1.875em;
   border-left: 1px solid #919395;
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
   background-color: #e7e8e9;
-  content: '';
+  color: #75787b;
+  content: '\e006';
+  font-family: 'CFPB Minicons';
+  line-height: 1.875em;
+  text-align: center;
   pointer-events: none;
-  background-image: url('../icons/down.svg');
-  background-size: auto 1.1875em;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .no-csspointerevents .a-select:after {
   height: 0;
@@ -1888,7 +1877,7 @@ h6 + .a-legend,
 }
 .m-btn-inside-input .a-text-input {
   box-sizing: border-box;
-  padding-right: 2.4375em;
+  padding-right: 4.6875em;
   width: 100%;
 }
 .m-btn-inside-input .a-btn {
@@ -1896,13 +1885,6 @@ h6 + .a-legend,
   position: absolute;
   right: 0.875em;
   top: 0.5em;
-  color: #75787b;
-}
-.m-btn-inside-input .a-btn:hover {
-  color: #101820;
-}
-.no-js .m-btn-inside-input .a-btn {
-  display: none;
 }
 .m-form-field {
   /*
@@ -2034,6 +2016,11 @@ h6 + .a-legend,
   /* autoprefixer: off */
   display: inline-grid;
 }
+.m-form-field__checkbox .a-label:before {
+  font-family: 'CFPB Minicons';
+  text-align: center;
+  line-height: 1.25em;
+}
 .m-form-field__checkbox .a-checkbox:focus + .a-label:before,
 .m-form-field__checkbox .a-checkbox.focus + .a-label:before {
   border-color: #0072ce;
@@ -2045,17 +2032,13 @@ h6 + .a-legend,
   box-shadow: 0 0 0 1px #0072ce;
 }
 .m-form-field__checkbox .a-checkbox:checked + .a-label:before {
-  background-image: url('../icons/approved.svg');
-  background-size: auto 1.1875em;
-  background-repeat: no-repeat;
-  background-position: center 0;
+  content: '\e100';
 }
 .m-form-field__radio .a-label:before {
   border-radius: 50%;
   /* The rotate is needed to fix a bug in Firefox where radio
                    button was not centered. */
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 .m-form-field__radio .a-radio:focus + .a-label:before,
 .m-form-field__radio .a-radio.focus + .a-label:before {
@@ -2121,8 +2104,11 @@ h6 + .a-legend,
 .m-form-field__error .a-error-message {
   margin-top: 0.9375em;
 }
-.a-error-message .cf-icon-svg {
+.a-error-message .cf-icon-delete-round {
   color: #d14124;
+}
+.a-error-message .cf-icon-delete-round__select .a-label + .a-select {
+  margin-top: 0.5em;
 }
 .o-form_group {
   margin-bottom: 1.875em;
@@ -2278,36 +2264,31 @@ h6 + .a-legend,
 .cf-icon__rotate-90.cf-icon__before:before,
 .cf-icon__rotate-90.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .cf-icon__rotate-180.cf-icon:before,
 .cf-icon__rotate-180.cf-icon__before:before,
 .cf-icon__rotate-180.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .cf-icon__rotate-270.cf-icon:before,
 .cf-icon__rotate-270.cf-icon__before:before,
 .cf-icon__rotate-270.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 .cf-icon__flip-horizontal.cf-icon:before,
 .cf-icon__flip-horizontal.cf-icon__before:before,
 .cf-icon__flip-horizontal.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 .cf-icon__flip-vertical.cf-icon:before,
 .cf-icon__flip-vertical.cf-icon__before:before,
 .cf-icon__flip-vertical.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
-  -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 :root .cf-icon__rotate-90.cf-icon:before,
 :root .cf-icon__rotate-180.cf-icon:before,
@@ -2330,33 +2311,19 @@ h6 + .a-legend,
 .cf-icon__spin.cf-icon:before,
 .cf-icon__spin.cf-icon__before:before,
 .cf-icon__spin.cf-icon__after:after {
-  -webkit-animation: cf-spin 2s infinite linear;
-          animation: cf-spin 2s infinite linear;
+  animation: cf-spin 2s infinite linear;
 }
 .cf-icon__pulse.cf-icon:before,
 .cf-icon__pulse.cf-icon__before:before,
 .cf-icon__pulse.cf-icon__after:after {
-  -webkit-animation: cf-spin 1s infinite steps(8);
-          animation: cf-spin 1s infinite steps(8);
-}
-@-webkit-keyframes cf-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
+  animation: cf-spin 1s infinite steps(8);
 }
 @keyframes cf-spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 .cf-icon-left.cf-icon:before,
@@ -4332,7 +4299,6 @@ h6 + .a-legend,
   }
   @supports (display: flex ) {
     .m-hero_wrapper {
-      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
     }
@@ -4562,8 +4528,7 @@ h6 + .a-legend,
   .o-featured-content-module__center .o-featured-content-module_img {
     position: relative;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   .lt-ie9 .o-featured-content-module__center .o-featured-content-module_img {
     position: absolute;
@@ -4596,39 +4561,63 @@ h6 + .a-legend,
   background: #e7e8e9;
   border: 1px solid #b4b5b6;
 }
-.m-notification .cf-icon-svg {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  font-size: 1.125em;
-  float: left;
-  fill: #5a5d61;
-}
 .m-notification__success {
   background: #e2efd8;
   border-color: #20aa3f;
 }
-.m-notification__success .cf-icon-svg {
-  fill: #20aa3f;
+.m-notification__success .m-notification_icon:before {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: '\e101';
+  vertical-align: middle;
+  color: #20aa3f;
 }
 .m-notification__warning {
   background: #fff0dd;
   border-color: #ff9e1b;
 }
-.m-notification__warning .cf-icon-svg {
-  fill: #ff9e1b;
+.m-notification__warning .m-notification_icon:before {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: '\e103';
+  vertical-align: middle;
+  color: #ff9e1b;
 }
 .m-notification__error {
   background: #f7e0d9;
   border-color: #d14124;
 }
-.m-notification__error .cf-icon-svg {
-  fill: #d14124;
+.m-notification__error .m-notification_icon:before {
+  font-family: 'CFPB Minicons';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: '\e107';
+  vertical-align: middle;
+  color: #d14124;
 }
 .m-notification__visible {
   display: block;
 }
-.cf-icon-svg + .m-notification_content {
+.m-notification_icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #5a5d61;
+  font-size: 1.125em;
+  line-height: 1;
+}
+.m-notification_icon + .m-notification_content {
   padding-left: 25px;
 }
 .m-notification_message {
@@ -4768,12 +4757,10 @@ h6 + .a-legend,
 }
 .o-table__sortable .sortable.sorted-down:after,
 .o-table__sortable .sortable.sorted-up:hover:after {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .o-table__sortable .sortable.sorted-down:hover:after {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 @media only all and (min-width: 37.5625em) {
   .o-table__striped > tbody > tr:nth-child(even) > th,
@@ -4890,6 +4877,13 @@ a.a-heading__icon.active {
   border-bottom-width: 1px;
   border-bottom-style: inherit;
 }
+.a-link__icon:before,
+.a-link__jump:before,
+.a-link__icon:after,
+.a-link__jump:after {
+  margin-right: 1px;
+  margin-left: 1px;
+}
 .a-link__icon.a-link__no-wrap,
 .a-link__jump.a-link__no-wrap {
   white-space: nowrap;
@@ -4915,39 +4909,40 @@ a.a-heading__icon.active {
   .a-link__jump .a-link_text {
     border-bottom-width: 0;
   }
-  .a-link__jump .cf-icon-svg {
+  .a-link__jump:after,
+  .a-link__jump:before {
     position: absolute;
     margin-bottom: -0.6em;
     bottom: 50%;
   }
-  .a-link__jump.a-link__icon-after-text {
-    padding-right: 1.25em;
-  }
-  .a-link__jump.a-link__icon-after-text .cf-icon-svg {
+  .a-link__jump:after {
     right: 0;
   }
-  .a-link__jump.a-link__icon-before-text {
-    padding-left: 1.25em;
-  }
-  .a-link__jump.a-link__icon-before-text .cf-icon-svg {
+  .a-link__jump:before {
     left: 0;
+  }
+  .a-link__jump.cf-icon__after {
+    padding-right: 1.25em;
+  }
+  .a-link__jump.cf-icon__before {
+    padding-left: 1.25em;
   }
   .a-link__jump.a-link__bg {
     border: solid #b4b5b6;
     border-width: 1px 0;
     background: #e7e8e9;
   }
-  .a-link__jump.a-link__bg.a-link__icon-after-text .cf-icon-svg {
+  .a-link__jump.a-link__bg:after {
     right: 1em;
   }
-  .a-link__jump.a-link__bg.a-link__icon-before-text .cf-icon-svg {
+  .a-link__jump.a-link__bg:before {
     left: 1em;
   }
-  .a-link__jump.a-link__bg.a-link__icon-after-text {
+  .a-link__jump.a-link__bg.cf-icon__after {
     padding-left: 1em;
     padding-right: 2.25em;
   }
-  .a-link__jump.a-link__bg.a-link__icon-before-text {
+  .a-link__jump.a-link__bg.cf-icon__before {
     padding-left: 2.25em;
     padding-right: 1em;
   }
@@ -5153,12 +5148,7 @@ a.a-heading__icon.active {
 }
 .header .site-title .title-link .site-org {
   color: #75787b;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
   font-weight: 500;
-}
-.lt-ie9 .header .site-title .title-link .site-org {
-  font-weight: normal !important;
 }
 .header .site-title .title-link:visited {
   color: #919395;
@@ -5210,15 +5200,10 @@ a.a-heading__icon.active {
   .main-nav li {
     display: inline-block;
     margin: 0 1em 0.5em;
-    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 1.125em;
     /* 18px */
+    font-weight: 500;
     list-style: none;
-  }
-  .lt-ie9 .main-nav li {
-    font-weight: normal !important;
   }
   .main-nav a {
     display: block;
@@ -5487,16 +5472,11 @@ figure {
   clear: both;
 }
 .content .toc li {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.125em;
   display: block;
   float: left;
   position: relative;
-}
-.lt-ie9 .content .toc li {
-  font-weight: normal !important;
+  font-size: 1.125em;
+  font-weight: 600;
 }
 .content .toc li a {
   text-decoration: none;
@@ -5511,30 +5491,7 @@ figure {
   color: #7eb7e8;
 }
 .content .lead-in {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.125em;
-}
-.content .lead-in em,
-.content .lead-in i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .content .lead-in em,
-.lt-ie9 .content .lead-in i {
-  font-style: normal !important;
-}
-.content .lead-in strong,
-.content .lead-in b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 .content .lead-in strong,
-.lt-ie9 .content .lead-in b {
-  font-weight: normal !important;
 }
 /* ==========================================================================
    CFPB Design Manual
@@ -5544,12 +5501,7 @@ figure {
   margin-left: 1.375em;
 }
 .content dt {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
   font-weight: 600;
-}
-.lt-ie9 .content dt {
-  font-weight: normal !important;
 }
 /* Color swatches for Identity/Color page
    ========================================================================== */
@@ -5591,13 +5543,8 @@ figure {
 }
 .swatch th {
   padding-right: 0.25em;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
   font-weight: 600;
   text-align: left;
-}
-.lt-ie9 .swatch th {
-  font-weight: normal !important;
 }
 .swatch_field__green {
   background: #20aa3f;
@@ -6042,256 +5989,79 @@ h6 + [class^="type-color-combo"],
 }
 .demi-ex p,
 .demi-ex li {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
   font-weight: 600;
-}
-.lt-ie9 .demi-ex p,
-.lt-ie9 .demi-ex li {
-  font-weight: normal !important;
 }
 .medium-ex p,
 .medium-ex li {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
   font-weight: 500;
-}
-.lt-ie9 .medium-ex p,
-.lt-ie9 .medium-ex li {
-  font-weight: normal !important;
 }
 .regular-ex p,
 .regular-ex li {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-.regular-ex p em,
-.regular-ex li em,
-.regular-ex p i,
-.regular-ex li i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .regular-ex p em,
-.lt-ie9 .regular-ex li em,
-.lt-ie9 .regular-ex p i,
-.lt-ie9 .regular-ex li i {
-  font-style: normal !important;
-}
-.regular-ex p strong,
-.regular-ex li strong,
-.regular-ex p b,
-.regular-ex li b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 .regular-ex p strong,
-.lt-ie9 .regular-ex li strong,
-.lt-ie9 .regular-ex p b,
-.lt-ie9 .regular-ex li b {
-  font-weight: normal !important;
+  font-weight: 400;
 }
 .georgia-ex {
   font-family: Georgia, "Times New Roman", serif;
 }
 #print-hierarchy-ex .superheading {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 60pt;
+  font-weight: 500;
   line-height: 66pt;
 }
-.lt-ie9 #print-hierarchy-ex .superheading {
-  font-weight: normal !important;
-}
 #print-hierarchy-ex h1 {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 38pt;
+  font-weight: normal;
   line-height: 40pt;
 }
-#print-hierarchy-ex h1 em,
-#print-hierarchy-ex h1 i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 #print-hierarchy-ex h1 em,
-.lt-ie9 #print-hierarchy-ex h1 i {
-  font-style: normal !important;
-}
-#print-hierarchy-ex h1 strong,
-#print-hierarchy-ex h1 b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 #print-hierarchy-ex h1 strong,
-.lt-ie9 #print-hierarchy-ex h1 b {
-  font-weight: normal !important;
-}
 #print-hierarchy-ex h2.h2-print-ex {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   border-bottom: none;
   margin-top: 0;
   font-size: 26pt;
+  font-weight: normal;
   line-height: 28pt;
 }
-#print-hierarchy-ex h2.h2-print-ex em,
-#print-hierarchy-ex h2.h2-print-ex i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 #print-hierarchy-ex h2.h2-print-ex em,
-.lt-ie9 #print-hierarchy-ex h2.h2-print-ex i {
-  font-style: normal !important;
-}
-#print-hierarchy-ex h2.h2-print-ex strong,
-#print-hierarchy-ex h2.h2-print-ex b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 #print-hierarchy-ex h2.h2-print-ex strong,
-.lt-ie9 #print-hierarchy-ex h2.h2-print-ex b {
-  font-weight: normal !important;
-}
 #print-hierarchy-ex h3.h3-print-ex {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
   font-size: 16pt;
+  font-weight: 600;
   line-height: 18pt;
 }
-.lt-ie9 #print-hierarchy-ex h3.h3-print-ex {
-  font-weight: normal !important;
-}
 #print-hierarchy-ex h4.h4-print-ex {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 14pt;
+  font-weight: 500;
   line-height: 16pt;
-}
-.lt-ie9 #print-hierarchy-ex h4.h4-print-ex {
-  font-weight: normal !important;
 }
 #print-hierarchy-ex h5 {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
   font-size: 10pt;
-  line-height: 12pt;
+  font-weight: 600;
   letter-spacing: 1pt;
+  line-height: 12pt;
   text-transform: uppercase;
 }
-.lt-ie9 #print-hierarchy-ex h5 {
-  font-weight: normal !important;
-}
 #print-hierarchy-ex h6 {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 12pt;
-  line-height: 14pt;
+  font-weight: 500;
   letter-spacing: 0;
+  line-height: 14pt;
   text-transform: none;
 }
-.lt-ie9 #print-hierarchy-ex h6 {
-  font-weight: normal !important;
-}
 p.print-subheading {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16pt;
+  font-weight: 400;
   line-height: 20pt;
 }
-p.print-subheading em,
-p.print-subheading i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 p.print-subheading em,
-.lt-ie9 p.print-subheading i {
-  font-style: normal !important;
-}
-p.print-subheading strong,
-p.print-subheading b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 p.print-subheading strong,
-.lt-ie9 p.print-subheading b {
-  font-weight: normal !important;
-}
 p.print-avenir-para {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 11pt;
+  font-weight: 400;
   line-height: 16pt;
-}
-p.print-avenir-para em,
-p.print-avenir-para i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 p.print-avenir-para em,
-.lt-ie9 p.print-avenir-para i {
-  font-style: normal !important;
-}
-p.print-avenir-para strong,
-p.print-avenir-para b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 p.print-avenir-para strong,
-.lt-ie9 p.print-avenir-para b {
-  font-weight: normal !important;
 }
 p.print-georgia-para {
   font-size: 11pt;
   line-height: 16pt;
 }
 .print-ul ul li p {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11pt;
-  line-height: 14pt;
   margin-bottom: 1em;
-}
-.print-ul ul li p em,
-.print-ul ul li p i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .print-ul ul li p em,
-.lt-ie9 .print-ul ul li p i {
-  font-style: normal !important;
-}
-.print-ul ul li p strong,
-.print-ul ul li p b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 .print-ul ul li p strong,
-.lt-ie9 .print-ul ul li p b {
-  font-weight: normal !important;
+  font-size: 11pt;
+  font-weight: 400;
+  line-height: 14pt;
 }
 /* UI toolkit repo list
    ========================================================================== */
@@ -6338,29 +6108,6 @@ p.print-georgia-para {
   margin: 0;
   font-size: 1em;
   color: #5a5d61;
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-.repo-list p em,
-.repo-list p i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .repo-list p em,
-.lt-ie9 .repo-list p i {
-  font-style: normal !important;
-}
-.repo-list p strong,
-.repo-list p b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 .repo-list p strong,
-.lt-ie9 .repo-list p b {
-  font-weight: normal !important;
 }
 @media screen and (max-width: 60em) {
   .repo-list li {
@@ -6381,15 +6128,10 @@ p.print-georgia-para {
    Check if these styles are still necessary.
    ========================================================================== */
 h2 span.cf-code-link {
+  padding-top: 0.7em;
   float: right;
   font-size: .625em;
-  padding-top: .7em;
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
   font-weight: 600;
-}
-.lt-ie9 h2 span.cf-code-link {
-  font-weight: normal !important;
 }
 /* UI toolkit/Links page
    ========================================================================== */
@@ -6459,30 +6201,7 @@ ul.list_links-minicons li {
 .grid-demo p {
   max-width: none;
   text-align: center;
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   margin-top: 1.125em;
-}
-.grid-demo p em,
-.grid-demo p i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .grid-demo p em,
-.lt-ie9 .grid-demo p i {
-  font-style: normal !important;
-}
-.grid-demo p strong,
-.grid-demo p b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 .grid-demo p strong,
-.lt-ie9 .grid-demo p b {
-  font-weight: normal !important;
 }
 .col-12 {
   display: inline-block;
@@ -6605,31 +6324,6 @@ ul.list_links-minicons li {
   vertical-align: top;
   width: 100%;
 }
-.secondary-nav {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-.secondary-nav em,
-.secondary-nav i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .secondary-nav em,
-.lt-ie9 .secondary-nav i {
-  font-style: normal !important;
-}
-.secondary-nav strong,
-.secondary-nav b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 .secondary-nav strong,
-.lt-ie9 .secondary-nav b {
-  font-weight: normal !important;
-}
 .secondary-nav a {
   display: block;
   padding: 10px;
@@ -6691,9 +6385,6 @@ ul.list_links-minicons li {
   width: 100%;
 }
 .footer {
-  font-family: 'AvenirNextLTW01-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   display: table-row;
   /* for sticky footer */
   height: 1px;
@@ -6702,26 +6393,6 @@ ul.list_links-minicons li {
   border-top: 2px solid #b4b5b6;
   background: #e7e8e9;
   width: 100%;
-}
-.footer em,
-.footer i {
-  font-family: 'AvenirNextLTW01-Italic', Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .footer em,
-.lt-ie9 .footer i {
-  font-style: normal !important;
-}
-.footer strong,
-.footer b {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-.lt-ie9 .footer strong,
-.lt-ie9 .footer b {
-  font-weight: normal !important;
 }
 .footer h4 {
   margin-top: 0;
