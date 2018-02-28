@@ -286,6 +286,7 @@ Use a bulleted list when grouping similar items or short thoughts into “bite-s
 * Margin top (list): 10px
 * Margin bottom (list): 15px
 * Bullets are solid squares
+* Bullets are aligned flush with the left margin of the column of text they're in
 
 </div>
 
@@ -333,7 +334,7 @@ When the order of information presented is important, use a numbered list. This 
 * Margin bottom (list item): 8px
 * Margin top (list): 10px
 * Margin bottom (list): 15px
-* Numbers are right aligned to the period
+* Numbers are right aligned to their associated period; all single-digit numbers fit inside the left margin
 
 </div>
 
