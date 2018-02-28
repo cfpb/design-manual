@@ -22,7 +22,7 @@
   "dependencies": {
     "box-sizing-polyfill": "0.1.0",
     "cf-buttons": "^5.0.0",
-    "cf-core": "^4.6.2",
+    "cf-core": "^4.6.3",
     "cf-expandables": "^5.0.0",
     "cf-forms": "^5.0.0",
     "cf-grid": "^4.2.4",

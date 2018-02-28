@@ -1158,6 +1158,12 @@ li:last-child,
 nav li {
   margin-bottom: 0;
 }
+ol ol {
+  list-style-type: lower-alpha;
+}
+ol ol ol {
+  list-style-type: lower-roman;
+}
 a {
   border-width: 0;
   border-style: dotted;
