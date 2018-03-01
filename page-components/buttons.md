@@ -45,7 +45,7 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </h2>
 
 <div class="content-33 content-first">
-### Primary and Secondary buttons
+### Primary and secondary buttons
 <p>Use primary buttons for actions that go to the next step. Use secondary buttons for actions that happen on the current page.</p>
 
 <p>Generous white space lends focus and makes buttons more actionable. Avoid using multiple primary buttons on a single page; there can be multiple secondary buttons per page.</p>
@@ -55,11 +55,8 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-67 content-first">
 #### Primary buttons
-* Pacific Blue background color
-* 4px rounded corner
-* 10px top and bottom padding
-* 15px left and right padding
-* 16px Avenir Next Medium text in white
+* Avenir Next Medium, 16px, White (#ffffff)
+* Background: Pacific (#0072ce)
 * Sentence case
 </div>
 
@@ -78,13 +75,13 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-67 content-first">
 #### Secondary buttons
-* Gray background color
+* Background: Gray (#5a5d61)
 </div>
 
 <div class="content-33 content-last">
 
 {::nomarkdown}
-<button class="a-btn a-btn__secondary">Secondary button</button>
+<a href="#" class="a-btn a-btn__secondary">Sign up</a>
 {:/nomarkdown}
 
 </div>
@@ -173,9 +170,12 @@ is functioning as intended.
 ## States
 
 <div class="content-33 content-first">
-#### Normal
-* Pacific background color
-* White text
+#### Default
+* Avenir Next Medium, 16px, (#ffffff)
+* Background: Pacific (#0072ce)
+* Top and bottom padding: 10px
+* Left and right padding: 15px
+* Border radius: 4px
 </div>
 
 <div class="content-67 content-last">
@@ -189,14 +189,31 @@ is functioning as intended.
 ---
 
 <div class="content-33 content-first">
-#### Hover/Focused
-* Pacific 80% background color
+#### Hover
+* Background: Pacific 80 (#4497dc)
 </div>
 
 <div class="content-67 content-last">
 
 {::nomarkdown}
-<button class="a-btn hover">Sign up</button>
+<a href="#" class="a-btn hover" title="Sign up">Sign up</a>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+#### Focused
+* Background: Pacific 80 (#4497dc)
+* Outline: Dotted 1px, Pacific (#0072ce)
+* Outline offset: 1px
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown}
+<a href="#" class="a-btn focus" title="Test button">Sign up</a>
 {:/nomarkdown}
 
 </div>
@@ -205,13 +222,13 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Active
-* Navy 80% background color
+* Background: Navy 80 (#5674a3)
 </div>
 
 <div class="content-67 content-last">
 
 {::nomarkdown}
-<button class="a-btn active">Sign up</button>
+<a href="#" class="a-btn active" title="Test button">Sign up</a>
 {:/nomarkdown}
 
 </div>
@@ -221,27 +238,41 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Disabled
-* Gray 20% background color
-* Gray text
+
+Default/Hover/Active
+* Avenir Next Medium, 16px, Gray (#5a5d61)
+* Background: Gray 20 (#d2d3d5)
 * Cursor set to <code>not-allowed</code>
 </div>
 
 <div class="content-67 content-last">
 
 {::nomarkdown}
-<button class="a-btn a-btn__disabled">Sign up</button>
+<a href="#" class="a-btn a-btn__disabled">Sign up</a>
 {:/nomarkdown}
 
+</div>
+
+<div class="content-33 content-first">
+Focused
+* Outline: Dotted 1px, Gray 20 (#d2d3d5)
+* Outline offset: 1px
+</div>
+
+<div class="content-67 content-last">
+  {::nomarkdown}
+<a href="#" class="a-btn a-btn__disabled focus">Sign up</a>
+{:/nomarkdown}
 </div>
 
 ## Variations
 
 <div class="content-33 content-first">
-#### Large Primary button
+#### Large primary button
 <p>At the designer’s discretion, use the larger primary button on consumer-facing products for an important call to action.</p>
-* 18px Avenir Next Medium text in white
-* 15px top and bottom padding
-* 30px left and right padding
+* Avenir Next Medium, 18px, White (#ffffff)
+* Top and bottom padding: 15px
+* Left and right padding: 30px
 </div>
 
 <div class="content-67 content-last">
@@ -292,8 +323,8 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Destructive action
-* Red Orange type color
-<p>When paired with a Primary action, indicate the destructive action using a Destructive action button link to the right of the Primary button.</p>
+* Avenir Next Medium, 16px, Red (#d14124)
+<p>When paired with a primary action, indicate the destructive action using a destructive action button link to the right of the primary button.</p>
 </div>
 
 <div class="content-67 content-last">
