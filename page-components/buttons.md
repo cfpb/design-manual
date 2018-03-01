@@ -159,9 +159,10 @@ is functioning as intended.
 
 {:/nomarkdown}
 </div>
-<br>
 
-## Primary button states
+## States
+
+### Primary button
 
 <div class="content-33 content-first">
 #### Default
@@ -228,9 +229,7 @@ is functioning as intended.
 </div>
 <br>
 
-<br>
-
-## Secondary button states
+### Secondary button
 
 <div class="content-33 content-first">
 #### Default
@@ -293,7 +292,7 @@ is functioning as intended.
 </div>
 <br>
 
-## Destructive button states
+### Destructive button
 
 <div class="content-33 content-first">
 #### Default
@@ -357,7 +356,7 @@ is functioning as intended.
 
 <br>
 
-## Disabled button states
+### Disabled button
 
 <div class="content-33 content-first">
 #### Default/Hover/Active
@@ -385,6 +384,8 @@ is functioning as intended.
 <a href="#" class="a-btn a-btn__disabled focus">Sign up</a>
 {:/nomarkdown}
 </div>
+
+<br>
 
 ## Variations
 
