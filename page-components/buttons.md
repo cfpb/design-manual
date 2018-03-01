@@ -55,8 +55,6 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-67 content-first">
 #### Primary buttons
-* Avenir Next Medium, 16px, White (#ffffff)
-* Background: Pacific (#0072ce)
 </div>
 
 <div class="content-33 content-last">
@@ -64,7 +62,6 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 {::nomarkdown}
 <div class="m-btn-group">
     <button class="a-btn">Sign up</button>
-    <button class="a-btn a-btn__link">Log in</button>
 </div>
 {:/nomarkdown}
 
@@ -74,7 +71,6 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 
 <div class="content-67 content-first">
 #### Secondary buttons
-* Background: Gray (#5a5d61)
 </div>
 
 <div class="content-33 content-last">
@@ -112,8 +108,6 @@ In contrast, <a href="/design-manual/ui-toolkit/links.html">links</a> should lea
 </div>
 
 <div class="content-67 content-last">
-#### Placement
-
 {::nomarkdown}
 <button class="a-btn">
     <span class="a-btn_icon
@@ -153,7 +147,7 @@ is functioning as intended.
 <div class="content-67 content-last">
 {::nomarkdown}
 
-<button class="a-btn a-btn__disabled">
+<button class="a-btn a-btn">
     Get your estimates
     <span class="a-btn_icon
                  a-btn_icon__on-right
@@ -167,6 +161,8 @@ is functioning as intended.
 </div>
 
 ## States
+
+### Primary button
 
 <div class="content-33 content-first">
 #### Default
@@ -231,14 +227,139 @@ is functioning as intended.
 {:/nomarkdown}
 
 </div>
+<br>
 
+### Secondary button
+
+<div class="content-33 content-first">
+#### Default
+* Background: Gray (#5a5d61)
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown}
+<a href="#" class="a-btn a-btn__secondary">Sign up</a>
+{:/nomarkdown}
+
+</div>
 
 ---
 
 <div class="content-33 content-first">
-#### Disabled
+#### Hover
+* Background: Gray 80 (#75787b)
+</div>
 
-Default/Hover/Active
+<div class="content-67 content-last">
+
+{::nomarkdown}
+<a href="#" class="a-btn a-btn__secondary hover">Sign up</a>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+#### Focused
+* Background: Gray 80 (#75787b)
+* Outline: Dotted 1px, Gray (#5a5d61)
+* Outline offset: 1px
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown}
+<a href="#" class="a-btn a-btn__secondary focus">Sign up</a>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+#### Active
+* Background: Dark Gray (##43484e)
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown}
+<a href="#" class="a-btn a-btn__secondary active">Sign up</a>
+{:/nomarkdown}
+
+</div>
+<br>
+
+### Destructive button
+
+<div class="content-33 content-first">
+#### Default
+* Background: Red (#d14124)
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown}
+<a href="#" class="a-btn a-btn__warning">Sign up</a>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+#### Hover
+* Background: Red 80 (#dd735d)
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown}
+<a href="#" class="a-btn a-btn__warning hover">Sign up</a>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+#### Focused
+* Background: Red 80 (#dd735d)
+* Outline: Dotted 1px, Red (#d14124)
+* Outline offset: 1px
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown}
+<a href="#" class="a-btn a-btn__warning focus">Sign up</a>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-33 content-first">
+#### Active
+* Background: Dark Red (#B63014)
+</div>
+
+<div class="content-67 content-last">
+
+{::nomarkdown}
+<a href="#" class="a-btn a-btn__warning active">Sign up</a>
+{:/nomarkdown}
+
+</div>
+
+<br>
+
+### Disabled button
+
+<div class="content-33 content-first">
+#### Default/Hover/Active
 * Avenir Next Medium, 16px, Gray (#5a5d61)
 * Background: Gray 20 (#d2d3d5)
 * Cursor set to <code>not-allowed</code>
@@ -253,7 +374,7 @@ Default/Hover/Active
 </div>
 
 <div class="content-33 content-first">
-Focused
+#### Focused
 * Outline: Dotted 1px, Gray 20 (#d2d3d5)
 * Outline offset: 1px
 </div>
@@ -263,6 +384,8 @@ Focused
 <a href="#" class="a-btn a-btn__disabled focus">Sign up</a>
 {:/nomarkdown}
 </div>
+
+<br>
 
 ## Variations
 
