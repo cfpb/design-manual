@@ -168,14 +168,12 @@ figure {
   }
 
   .toc {
-
     li {
-
-      .u-webfont-demi();
-      font-size: 1.125em;
       display: block;
       float: left;
       position: relative;
+      font-size: 1.125em;
+      font-weight: 600;
 
       a {
         text-decoration: none;
@@ -197,7 +195,6 @@ figure {
   }
 
   .lead-in {
-    .u-webfont-regular();
     font-size: 1.125em;
   }
 
@@ -214,7 +211,7 @@ figure {
   }
 
   dt {
-    .u-webfont-demi(); // this should be explored and documented, then moved to Capital Framework
+    font-weight: 600;
   }
 }
 
@@ -258,7 +255,7 @@ figure {
     }
     th {
         padding-right: 0.25em;
-        .u-webfont-demi();
+        font-weight: 600;
         text-align: left;
     }
 
@@ -533,19 +530,19 @@ figure {
 .demi-ex {
   p,
   li {
-    .u-webfont-demi;
+    font-weight: 600;
   }
 }
 .medium-ex {
   p,
   li {
-    .u-webfont-medium;
+    font-weight: 500;
   }
 }
 .regular-ex {
   p,
   li {
-    .u-webfont-regular;
+    font-weight: 400;
   }
 }
 
@@ -555,55 +552,55 @@ figure {
 
 #print-hierarchy-ex {
   .superheading {
-    .u-webfont-medium;
     font-size: 60pt;
+    font-weight: 500;
     line-height: 66pt;
   }
   h1 {
-    .u-webfont-regular;
     font-size: 38pt;
+    font-weight: 400;
     line-height: 40pt;
   }
   h2.h2-print-ex {
-    .u-webfont-regular;
     border-bottom: none;
     margin-top: 0;
     font-size: 26pt;
+    font-weight: 400;
     line-height: 28pt;
   }
   h3.h3-print-ex {
-    .u-webfont-demi;
     font-size: 16pt;
+    font-weight: 600;
     line-height: 18pt;
   }
   h4.h4-print-ex {
-    .u-webfont-medium;
     font-size: 14pt;
+    font-weight: 500;
     line-height: 16pt;
   }
   h5 {
-    .u-webfont-demi;
     font-size: 10pt;
-    line-height: 12pt;
+    font-weight: 600;
     letter-spacing: 1pt;
+    line-height: 12pt;
     text-transform: uppercase;
   }
   h6 {
-    .u-webfont-medium;
     font-size: 12pt;
-    line-height: 14pt;
+    font-weight: 500;
     letter-spacing: 0;
+    line-height: 14pt;
     text-transform: none;
   }
 }
 p.print-subheading {
-  .u-webfont-regular;
   font-size: 16pt;
+  font-weight: 400;
   line-height: 20pt;
 }
 p.print-avenir-para {
-  .u-webfont-regular;
   font-size: 11pt;
+  font-weight: 400;
   line-height: 16pt;
 }
 p.print-georgia-para {
@@ -611,10 +608,10 @@ p.print-georgia-para {
   line-height: 16pt;
 }
 .print-ul ul li p {
-  .u-webfont-regular;
-  font-size: 11pt;
-  line-height: 14pt;
   margin-bottom: 1em;
+  font-size: 11pt;
+  font-weight: 400;
+  line-height: 14pt;
 }
 
 /* UI toolkit repo list
@@ -663,7 +660,6 @@ p.print-georgia-para {
     margin: 0;
     font-size: 1em;
     color: @gray;
-    .u-webfont-regular;
   }
 }
 
@@ -691,10 +687,10 @@ p.print-georgia-para {
 
 h2 {
   span.cf-code-link {
+    padding-top: 0.7em;
     float: right;
     font-size: .625em;
-    padding-top: .7em;
-    .u-webfont-demi;
+    font-weight: 600;
   }
 }
 
@@ -790,7 +786,6 @@ ul {
     p {
         max-width: none;
         text-align: center;
-        .u-webfont-regular;
         margin-top: 1.125em;
     }
 }
@@ -803,5 +798,6 @@ ul {
 
     .columnX( @index - 1 );
 }
+
 // Initiate loop
 .columnX ( @grid_total-columns );
