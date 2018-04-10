@@ -535,7 +535,7 @@ The warning notification displays when an operation has run as expected, but doe
             m-notification__warning">
     {% include icons/warning-round.svg %}
     <div class="m-notification_content">
-        <div class="h4 m-notification_message">No results found.</div>
+        <div class="h4 m-notification_message">No results found</div>
     </div>
 </div>
 {:/nomarkdown}
@@ -566,7 +566,7 @@ The error notification displays when an operation has not run as expected and en
             m-notification__error">
     {% include icons/error-round.svg %}
     <div class="m-notification_content">
-        <div class="h4 m-notification_message">Page not found.</div>
+        <div class="h4 m-notification_message">Page not found</div>
     </div>
 </div>
 {:/nomarkdown}
