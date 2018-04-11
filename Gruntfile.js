@@ -35,19 +35,6 @@ module.exports = function(grunt) {
     },
 
     /**
-     * Concat: https://github.com/gruntjs/grunt-contrib-concat
-     */
-    concat: {
-      topdocIcons: {
-        src: [
-          'src/topdoc-templates/includes/filter-components-without-markup.jade',
-          'src/topdoc-templates/icons/src.jade'
-        ],
-        dest: 'src/topdoc-templates/icons/index.jade'
-      }
-    },
-
-    /**
      * Less: https://github.com/gruntjs/grunt-contrib-less
      *
      * Compile Less files to CSS.
@@ -280,24 +267,6 @@ module.exports = function(grunt) {
     },
 
     /**
-     * Topdoc: https://github.com/topcoat/topdoc
-     *
-     * A command line tool for generating usage docs based on css comments
-     */
-    topdoc: {
-      icons: {
-        options: {
-          source: 'static/css/',
-          destination: '_includes/identity/icons/',
-          template: 'src/topdoc-templates/icons/index.jade',
-          templateData: {
-            family: 'cf-icons'
-          }
-        }
-      }
-    },
-
-    /**
      * Watch: https://github.com/gruntjs/grunt-contrib-watch
      *
      * Run predefined tasks whenever watched file patterns are added, changed or deleted.
@@ -321,23 +290,13 @@ module.exports = function(grunt) {
    */
   grunt.initConfig(config);
 
-  grunt.registerTask(
-    'cleanUpAfterTopdoc',
-    'Topdoc runs on all non-minified CSS files, including .ie.css files. We need to delete those.',
-    function() {
-      grunt.file.delete(grunt.file.expand('_includes/**/**/main.ie.html'));
-    }
-  );
-
   /**
    * Create custom task aliases and combinations.
    */
-  grunt.registerTask('compile-cf', ['concat:topdocIcons']);
   grunt.registerTask('css', ['less', 'autoprefixer', 'legacssy', 'cssmin', 'usebanner:css', 'copy']);
   grunt.registerTask('js', ['browserify', 'uglify', 'usebanner:js', 'copy']);
   grunt.registerTask('test', ['jshint']);
   grunt.registerTask('build', ['test', 'css', 'js', 'copy']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build-partials-from-cf-docs', ['topdoc', 'cleanUpAfterTopdoc']);
 
 };
