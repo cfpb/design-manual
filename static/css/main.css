@@ -4598,11 +4598,12 @@ h6 + .a-legend,
 }
 .m-notification .cf-icon-svg {
   position: absolute;
-  top: 15px;
-  left: 15px;
-  font-size: 1.125em;
-  float: left;
   fill: #5a5d61;
+}
+@media only all and (min-width: 37.5625em) {
+  .m-notification .cf-icon-svg {
+    font-size: 1.125em;
+  }
 }
 .m-notification__success {
   background: #e2efd8;
@@ -4629,19 +4630,13 @@ h6 + .a-legend,
   display: block;
 }
 .cf-icon-svg + .m-notification_content {
-  padding-left: 25px;
+  padding-left: 1.5625em;
 }
 .m-notification_message {
   margin-bottom: 0;
 }
 .m-notification_explanation {
-  font-size: 1em;
-  font-weight: normal;
   margin-top: 0.3125em;
-  margin-bottom: 0;
-}
-.m-notification_explanation a {
-  border-bottom-width: 1px;
 }
 /* ==========================================================================
    Capital Framework
