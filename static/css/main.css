@@ -6085,10 +6085,8 @@ h6 + [class^="type-color-combo"],
   letter-spacing: 0;
   margin-bottom: 1.5em;
 }
-.minicon-asset-lib .minicon-assets-div .cf-icon {
+.minicon-asset-lib .minicon-assets-div .cf-icon-svg {
   font-size: 40px;
-  display: block;
-  margin: .75em 0;
 }
 .icon-table {
   width: 100%;

@@ -20,7 +20,7 @@
 | {% include icons/error.svg %} | {% include icons/error-round.svg %} | error | delete, close, remove, multiply, multiplication, x |
 | {% include icons/warning.svg %} | {% include icons/warning-round.svg %} | warning | alert, exclamation-mark |
 | {% include icons/help.svg %} | {% include icons/help-round.svg %} | help | question, question-mark |
-| {% include icons/update.svg %} | {% include icons/update-round.svg %} | update |  |
+| {% include icons/update.svg %} | {% include icons/update-round.svg %} | update | updating _(used for animated state)_ |
 | {% include icons/dollar.svg %} | {% include icons/dollar-round.svg %} | dollar |  |
 | {% include icons/plus.svg %} | {% include icons/plus-round.svg %} | plus | add, addition, expand |
 | {% include icons/minus.svg %} | {% include icons/minus-round.svg %} | minus | subtract, subtraction, collapse |
