@@ -140,3 +140,16 @@ Tints expand upon the primary and secondary color palettes to help create visual
     {% endfor %}
     </table>
 {:/nomarkdown}
+
+
+## Updating the color palette
+
+To update the color palette within the Design Manual:
+
+1. Update the values within the [CFPB Brand Colors CSV file](https://github.com/cfpb/design-manual/blob/gh-pages/_data/cfpb-brand-colors.csv)
+1. From terminal within this repo run `npm run colors`, this will auto-generate a [new brand-palette.less file](https://github.com/cfpb/design-manual/blob/gh-pages/src/static/css/brand-palette.less)
+1. Run `grunt build` (you may need the `-f` flag because of linting issues)
+1. Run `npm start` and check `/design-manual/brand-guidelines/color-principles.html` locally
+1. Commit the changes and open a PR.
+
+Once the PR is merged, the Less file needs to be duplicated [in Capital Framework CF Core](https://github.com/cfpb/capital-framework/tree/canary/src/cf-core/src) and follow that project's release process.
