@@ -5172,9 +5172,9 @@ a.a-heading__icon.active {
 }
 
 /* ==========================================================================
-	 CFPB Design Manual
-	 Header
-	 ========================================================================== */
+     CFPB Design Manual
+     Header
+     ========================================================================== */
 
 .header {
   border-bottom: 4px solid #20aa3f;
@@ -5249,6 +5249,156 @@ a.a-heading__icon.active {
 
 .header .site-logo .logo {
   display: inline;
+}
+
+.skip-link {
+  position: absolute;
+  top: -1.875em;
+  left: 1.875em;
+  background: transparent;
+  transition: -webkit-transform 1s ease, background .5s linear;
+  transition: transform 1s ease, background .5s linear;
+  z-index: 1;
+}
+
+.skip-link:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0.5em 0.875em;
+  border: 0;
+  margin: 0;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.1s;
+  padding: 11px 29px;
+  font-size: 1.125em;
+  position: absolute;
+  top: 0;
+  outline: 0;
+  transition: -webkit-transform .1s ease, background .2s linear;
+  transition: transform .1s ease, background .2s linear;
+}
+
+.skip-link:focus,
+.skip-link:focus:link,
+.skip-link:focus:visited {
+  background-color: #0072ce;
+  color: #fff;
+}
+
+.skip-link:focus:hover,
+.skip-link:focus.hover,
+.skip-link:focus:focus,
+.skip-link:focus.focus {
+  background-color: #4497dc;
+}
+
+.skip-link:focus:focus,
+.skip-link:focus.focus {
+  outline: 1px dotted #0072ce;
+  outline-offset: 1px;
+}
+
+.skip-link:focus:active,
+.skip-link:focus.active {
+  background-color: #5674a3;
+}
+
+button.skip-link:focus::-moz-focus-inner,
+input.skip-link:focus::-moz-focus-inner {
+  border: 0;
+}
+
+.skip-link:focus__secondary,
+.skip-link:focus__secondary:link,
+.skip-link:focus__secondary:visited {
+  background-color: #5a5d61;
+  color: #fff;
+}
+
+.skip-link:focus__secondary:hover,
+.skip-link:focus__secondary.hover,
+.skip-link:focus__secondary:focus,
+.skip-link:focus__secondary.focus {
+  background-color: #75787b;
+}
+
+.skip-link:focus__secondary:focus,
+.skip-link:focus__secondary.focus {
+  outline-color: #5a5d61;
+}
+
+.skip-link:focus__secondary:active,
+.skip-link:focus__secondary.active {
+  background-color: #43484e;
+}
+
+.skip-link:focus__warning,
+.skip-link:focus__warning:link,
+.skip-link:focus__warning:visited {
+  background-color: #d14124;
+  color: #fff;
+}
+
+.skip-link:focus__warning:hover,
+.skip-link:focus__warning.hover,
+.skip-link:focus__warning:focus,
+.skip-link:focus__warning.focus {
+  background-color: #dd735d;
+}
+
+.skip-link:focus__warning:focus,
+.skip-link:focus__warning.focus {
+  outline-color: #d14124;
+}
+
+.skip-link:focus__warning:active,
+.skip-link:focus__warning.active {
+  background-color: #b63014;
+}
+
+.skip-link:focus__disabled,
+.skip-link:focus[disabled],
+.skip-link:focus__disabled:link,
+.skip-link:focus[disabled]:link,
+.skip-link:focus__disabled:visited,
+.skip-link:focus[disabled]:visited,
+.skip-link:focus__disabled:hover,
+.skip-link:focus[disabled]:hover,
+.skip-link:focus__disabled.hover,
+.skip-link:focus[disabled].hover,
+.skip-link:focus__disabled:focus,
+.skip-link:focus[disabled]:focus,
+.skip-link:focus__disabled.focus,
+.skip-link:focus[disabled].focus,
+.skip-link:focus__disabled:active,
+.skip-link:focus[disabled]:active,
+.skip-link:focus__disabled.active,
+.skip-link:focus[disabled].active {
+  background-color: #d2d3d5;
+  color: #5a5d61;
+  cursor: default;
+  cursor: not-allowed;
+}
+
+.skip-link:focus__disabled:focus,
+.skip-link:focus[disabled]:focus,
+.skip-link:focus__disabled.focus,
+.skip-link:focus[disabled].focus {
+  outline-color: #d2d3d5;
+}
+
+.skip-link:focus__super {
+  padding: 0.61111111em 1.61111111em;
+  font-size: 1.125em;
 }
 
 /* Mobile portrait (320px) */
