@@ -190,10 +190,7 @@ or follows standards of a form-level alert within an
         <div class="minicon-assets-div">
             <h6>Update</h6>
             <p>
-                <span class="cf-icon
-                             cf-icon-update
-                             cf-icon__before
-                             cf-icon__spin"></span>
+                {% include icons/updating.svg %}
             </p>
         </div>
         <!-- empty div unfortunately required for right border -->
