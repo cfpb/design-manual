@@ -596,7 +596,9 @@ The error notification displays when an operation has not run as expected and en
            aria-describedby="form-input-error_message">
     <div class="a-error-message" id="form-input-error_message" role="alert">
         {% include icons/error-round.svg %}
-        This is a required question, please answer.
+        <span class="a-error-message_text">
+            This is a required question, please answer.
+        </span>
     </div>
 </div>
 {:/nomarkdown}

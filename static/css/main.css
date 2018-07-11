@@ -756,7 +756,9 @@ h1,
   margin-bottom: 0.44117647em;
   font-size: 2.125em;
   font-weight: normal;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
 }
 p + h1,
 p + .h1,
@@ -782,7 +784,9 @@ blockquote + .h1 {
     margin-bottom: 0.57692308em;
     font-size: 1.625em;
     font-weight: normal;
+    letter-spacing: initial;
     line-height: 1.25;
+    text-transform: initial;
   }
   p + h1,
   p + .h1,
@@ -830,7 +834,9 @@ h2,
   margin-bottom: 0.57692308em;
   font-size: 1.625em;
   font-weight: normal;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
 }
 p + h2,
 p + .h2,
@@ -878,7 +884,9 @@ h6 + .h2,
     margin-bottom: 0.68181818em;
     font-size: 1.375em;
     font-weight: normal;
+    letter-spacing: initial;
     line-height: 1.25;
+    text-transform: initial;
   }
   p + h2,
   p + .h2,
@@ -904,7 +912,9 @@ h3,
   margin-bottom: 0.68181818em;
   font-size: 1.375em;
   font-weight: normal;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
 }
 p + h3,
 p + .h3,
@@ -950,7 +960,9 @@ h6 + .h3,
     margin-bottom: 0.83333333em;
     font-size: 1.125em;
     font-weight: 500;
+    letter-spacing: initial;
     line-height: 1.25;
+    text-transform: initial;
   }
 }
 h4,
@@ -958,7 +970,9 @@ h4,
   margin-bottom: 0.83333333em;
   font-size: 1.125em;
   font-weight: 500;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
 }
 p + h4,
 p + .h4,
@@ -1013,7 +1027,6 @@ h5,
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
-  text-shadow: 0px 0px #101820;
   text-transform: uppercase;
 }
 p + h5,
@@ -1061,7 +1074,6 @@ h6,
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
-  text-shadow: 0px 0px #101820;
   text-transform: uppercase;
 }
 p + h6,
@@ -1106,7 +1118,9 @@ h5 + .h6,
   margin-bottom: 0.68181818em;
   font-size: 1.375em;
   font-weight: normal;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
   margin-top: 1.36363636em;
   margin-bottom: 0.83333333em;
 }
@@ -1201,15 +1215,15 @@ dd a {
 nav a {
   border-bottom-width: 0;
 }
-ul,
-ol {
-  padding-left: 1.125em;
-}
 ul {
+  padding-left: 1.125em;
   list-style: square;
 }
 ul ul {
   list-style-type: circle;
+}
+ol {
+  padding-left: 1.3125em;
 }
 th,
 td {
@@ -1222,7 +1236,6 @@ thead td {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
-  text-shadow: 0px 0px #101820;
   text-transform: uppercase;
   padding: 0.71428571em;
   background: #e7e8e9;
@@ -1672,7 +1685,9 @@ button.o-expandable_header {
   margin-bottom: 0.83333333em;
   font-size: 1.125em;
   font-weight: 500;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
   margin-bottom: 0;
 }
 .o-expandable-group .o-expandable_content {
@@ -1682,6 +1697,14 @@ button.o-expandable_header {
    Capital Framework
    Form Element Styling
    ========================================================================== */
+.a-error-message .cf-icon-svg {
+  color: #d14124;
+  float: left;
+}
+.a-error-message_text {
+  display: block;
+  margin-left: 1.25em;
+}
 .a-label {
   display: inline-block;
 }
@@ -1697,7 +1720,9 @@ button.o-expandable_header {
   margin-bottom: 0.83333333em;
   font-size: 1.125em;
   font-weight: 500;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
   display: block;
   margin-bottom: 0.55555556em;
 }
@@ -1712,7 +1737,9 @@ button.o-expandable_header {
   margin-bottom: 0.83333333em;
   font-size: 1.125em;
   font-weight: 500;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
   box-sizing: border-box;
   display: table;
   max-width: 100%;
@@ -1762,9 +1789,9 @@ h6 + .a-legend,
   border: 1px solid #919395;
 }
 .a-select select {
-  height: 1.875em;
   width: 100%;
-  padding: 0.25em 0.375em;
+  line-height: 1.375;
+  padding: 0.4375em 0.375em 0.375em;
   border: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1802,7 +1829,8 @@ h6 + .a-legend,
   color: #5a5d61;
 }
 .a-select:after {
-  width: 1.9375em;
+  width: 2.1875em;
+  box-sizing: border-box;
   border-left: 1px solid #919395;
   position: absolute;
   top: 0;
@@ -2222,6 +2250,32 @@ h6 + .a-legend,
 }
 .lt-ie9 .cf-icon-svg {
   display: none;
+}
+.cf-icon-svg__updating {
+  -webkit-animation: updating-animation 1.25s infinite linear;
+          animation: updating-animation 1.25s infinite linear;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+@-webkit-keyframes updating-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+@keyframes updating-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
 }
 @font-face {
   font-family: 'CFPB Minicons';
@@ -4377,14 +4431,18 @@ h6 + .a-legend,
   margin-bottom: 0.44117647em;
   font-size: 2.125em;
   font-weight: normal;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
 }
 @media only all and (max-width: 56.25em) {
   .m-hero_heading {
     margin-bottom: 0.57692308em;
     font-size: 1.625em;
     font-weight: normal;
+    letter-spacing: initial;
     line-height: 1.25;
+    text-transform: initial;
   }
 }
 .m-hero_subhead {
@@ -4836,7 +4894,6 @@ h6 + .a-legend,
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
-  text-shadow: 0px 0px #5a5d61;
   text-transform: uppercase;
   color: #5a5d61;
   white-space: nowrap;
@@ -4845,7 +4902,9 @@ h6 + .a-legend,
   margin-bottom: 0.83333333em;
   font-size: 1.125em;
   font-weight: 500;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
   color: #101820;
 }
 a.a-heading__icon {
@@ -5035,7 +5094,9 @@ a.a-heading__icon.active {
   margin-bottom: 0.68181818em;
   font-size: 1.375em;
   font-weight: normal;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
   color: #101820;
 }
 @media only all and (max-width: 37.5em) {
@@ -5043,7 +5104,9 @@ a.a-heading__icon.active {
     margin-bottom: 0.83333333em;
     font-size: 1.125em;
     font-weight: 500;
+    letter-spacing: initial;
     line-height: 1.25;
+    text-transform: initial;
   }
 }
 .m-pull-quote_citation {
@@ -5052,7 +5115,6 @@ a.a-heading__icon.active {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
-  text-shadow: 0px 0px #5a5d61;
   text-transform: uppercase;
   color: #5a5d61;
 }
@@ -5063,14 +5125,18 @@ a.a-heading__icon.active {
   margin-bottom: 0.57692308em;
   font-size: 1.625em;
   font-weight: normal;
+  letter-spacing: initial;
   line-height: 1.25;
+  text-transform: initial;
 }
 @media only all and (max-width: 37.5em) {
   .m-pull-quote__large .m-pull-quote_body {
     margin-bottom: 0.68181818em;
     font-size: 1.375em;
     font-weight: normal;
+    letter-spacing: initial;
     line-height: 1.25;
+    text-transform: initial;
   }
 }
 .m-slug-header {
@@ -5082,7 +5148,6 @@ a.a-heading__icon.active {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
-  text-shadow: 0px 0px #101820;
   text-transform: uppercase;
   display: inline-block;
   padding-top: 0.28571429em;
@@ -5923,7 +5988,6 @@ figure {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
-  text-shadow: 0px 0px #101820;
   text-transform: uppercase;
   padding: 0.5em 1em;
   list-style: none;
@@ -6029,7 +6093,6 @@ h6 + [class^="type-color-combo"],
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
-  text-shadow: 0px 0px #101820;
   text-transform: uppercase;
 }
 .minicon-scale-table .cf-icon-svg {
