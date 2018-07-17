@@ -475,7 +475,7 @@ The action notification displays when something is happening on the page, such a
 {::nomarkdown}
 <div class="m-notification
             m-notification__visible">
-    {% include icons/update.svg %}
+    {% include icons/updating.svg %}
     <div class="m-notification_content">
         <div class="h4 m-notification_message">The page is loading…</div>
     </div>
