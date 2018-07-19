@@ -475,7 +475,7 @@ The action notification displays when something is happening on the page, such a
 {::nomarkdown}
 <div class="m-notification
             m-notification__visible">
-    {% include icons/update.svg %}
+    {% include icons/updating.svg %}
     <div class="m-notification_content">
         <div class="h4 m-notification_message">The page is loading…</div>
     </div>
@@ -517,6 +517,40 @@ The success notification displays when an operation has run as expected, such as
 
 <div class="content-50 content-first">
 
+#### Success (field-level)
+
+- Border: 2 px, CFPB Green (#20aa3f)
+- Minicon: 18 px, CFPB Green (#20aa3f)
+- Success minicon and message should always appear below input field
+
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__success">
+    <input class="a-text-input a-text-input__success"
+           type="text"
+           placeholder="Placeholder text"
+           id="form-input-success"
+           aria-describedby="form-input-success_message">
+    <div class="a-form-alert a-form-alert__success"
+         id="form-input-success_message"
+         role="alert">
+        {% include icons/success-round.svg %}
+        <span class="a-form-alert_text">
+            This is an inline alert with a success state.
+        </span>
+    </div>
+</div>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
 #### Warning
 
 The warning notification displays when an operation has run as expected, but doesn't have the expected results,such as a search that returned no results.This can also be used to display additional critical information to a user before they submit a form, such as how their data will be used and protected or a reminder that they can’t edit their responses after submitting.
@@ -536,6 +570,40 @@ The warning notification displays when an operation has run as expected, but doe
     {% include icons/warning-round.svg %}
     <div class="m-notification_content">
         <div class="h4 m-notification_message">No results found</div>
+    </div>
+</div>
+{:/nomarkdown}
+
+</div>
+
+---
+
+<div class="content-50 content-first">
+
+#### Warning (field-level)
+
+- Border: 2 px, Gold (#ff9e1b)
+- Minicon: 18 px, Gold (#ff9e1b)
+- Warning minicon and message should always appear below input field
+
+</div>
+
+<div class="content-50 content-last">
+
+{::nomarkdown}
+<div class="m-form-field m-form-field__warning">
+    <input class="a-text-input a-text-input__warning"
+           type="text"
+           placeholder="Placeholder text"
+           id="form-input-warning"
+           aria-describedby="form-input-warning_message">
+    <div class="a-form-alert a-form-alert__warning"
+         id="form-input-warning_message"
+         role="alert">
+        {% include icons/warning-round.svg %}
+        <span class="a-form-alert_text">
+            This is an inline alert with a warning state.
+        </span>
     </div>
 </div>
 {:/nomarkdown}
@@ -594,10 +662,12 @@ The error notification displays when an operation has not run as expected and en
            placeholder="Placeholder text"
            id="form-input-error"
            aria-describedby="form-input-error_message">
-    <div class="a-error-message" id="form-input-error_message" role="alert">
+    <div class="a-form-alert a-form-alert__error"
+         id="form-input-error_message"
+         role="alert">
         {% include icons/error-round.svg %}
-        <span class="a-error-message_text">
-            This is a required question, please answer.
+        <span class="a-form-alert_text">
+            This is an inline alert with an error state.
         </span>
     </div>
 </div>

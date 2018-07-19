@@ -1883,14 +1883,48 @@ button.o-expandable_header {
    Form Element Styling
    ========================================================================== */
 
-.a-error-message .cf-icon-svg {
+.a-form-alert .cf-icon-svg {
+  color: #5a5d61;
+  float: left;
+}
+
+.a-form-alert_text {
+  display: block;
+  margin-left: 1.25em;
+}
+
+.a-form-alert__success .cf-icon-svg {
+  color: #20aa3f;
+}
+
+.a-form-alert__error .cf-icon-svg {
   color: #d14124;
+}
+
+.a-form-alert__warning .cf-icon-svg {
+  color: #ff9e1b;
+}
+
+.a-error-message .cf-icon-svg {
+  color: #5a5d61;
   float: left;
 }
 
 .a-error-message_text {
   display: block;
   margin-left: 1.25em;
+}
+
+.a-error-message__success .cf-icon-svg {
+  color: #20aa3f;
+}
+
+.a-error-message__error .cf-icon-svg {
+  color: #d14124;
+}
+
+.a-error-message__warning .cf-icon-svg {
+  color: #ff9e1b;
 }
 
 .a-label {
@@ -2393,12 +2427,9 @@ h6 + .a-legend,
   font-size: 1.11111111em;
 }
 
-.m-form-field__error .a-error-message {
+.m-form-field .a-form-alert,
+.m-form-field .a-error-message {
   margin-top: 0.9375em;
-}
-
-.a-error-message .cf-icon-svg {
-  color: #d14124;
 }
 
 .o-form_group {
