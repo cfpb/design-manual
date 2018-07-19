@@ -1578,7 +1578,6 @@ input.a-btn::-moz-focus-inner {
    ========================================================================== */
 .o-expandable {
   position: relative;
-  margin-bottom: 1.875em;
 }
 .o-expandable_target {
   padding: 0;
@@ -1590,14 +1589,15 @@ input.a-btn::-moz-focus-inner {
   outline: 1px dotted #101820;
   outline-offset: 1px;
 }
-.o-expandable_target__expanded .o-expandable_cue-open {
+.o-expandable_target .o-expandable_cue-close,
+.o-expandable_target .o-expandable_cue-open {
   display: none;
 }
-.o-expandable_target__collapsed .o-expandable_cue-close {
-  display: none;
+.o-expandable_target__expanded .o-expandable_cue-close {
+  display: block;
 }
-.lt-ie9 .o-expandable_target .o-expandable_cue {
-  display: none;
+.o-expandable_target__collapsed .o-expandable_cue-open {
+  display: block;
 }
 .o-expandable_content {
   overflow: hidden;
@@ -1617,6 +1617,7 @@ input.a-btn::-moz-focus-inner {
   max-height: 1000px;
 }
 .o-expandable_label {
+  margin-bottom: 0;
   color: #101820;
   font-weight: 500;
 }
@@ -1646,52 +1647,33 @@ button.o-expandable_header {
 .o-expandable_header-right {
   float: right;
 }
-.o-expandable__padded {
-  margin-bottom: 1.875em;
-  background: #e7e8e9;
-}
-.o-expandable__padded:hover,
-.o-expandable__padded.o-expandable__expanded {
-  background: #d2d3d5;
-}
 .o-expandable__padded .o-expandable_header {
   padding: 0.625em 0.9375em;
 }
 .o-expandable__padded .o-expandable_content {
-  margin: 0 0.9375em 1.375em;
+  padding: 0 0.9375em;
 }
 .o-expandable__padded .o-expandable_content:before {
   content: '';
   display: block;
-  border-bottom: 1px solid #b4b5b6;
-  margin-bottom: 0.9375em;
+  border-top: 1px solid #b4b5b6;
+  padding-top: 0.9375em;
 }
 .o-expandable__padded .o-expandable_content:after {
-  margin-bottom: 0.9375em;
+  padding-bottom: 0.9375em;
   width: 100%;
 }
-.o-expandable-group {
-  margin-bottom: 1.875em;
+.o-expandable__background {
+  background: #f7f8f9;
 }
-.o-expandable-group .o-expandable {
+.o-expandable__border {
+  border: 1px solid #b4b5b6;
+}
+.o-expandable-group .o-expandable__padded {
   border-bottom: 1px solid #b4b5b6;
-  margin-bottom: 0;
-  background: #fff;
 }
-.o-expandable-group .o-expandable:first-child {
+.o-expandable-group .o-expandable__padded:first-child {
   border-top: 1px solid #b4b5b6;
-}
-.o-expandable-group .o-expandable_label {
-  margin-bottom: 0.83333333em;
-  font-size: 1.125em;
-  font-weight: 500;
-  letter-spacing: initial;
-  line-height: 1.25;
-  text-transform: initial;
-  margin-bottom: 0;
-}
-.o-expandable-group .o-expandable_content {
-  margin-bottom: 0;
 }
 /* ==========================================================================
    Capital Framework
