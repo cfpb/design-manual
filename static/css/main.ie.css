@@ -2129,10 +2129,6 @@ h6 + .a-legend,
   appearance: none;
 }
 
-::-webkit-input-placeholder {
-  color: #5a5d61;
-}
-
 ::-moz-placeholder {
   color: #5a5d61;
 }
@@ -2340,7 +2336,6 @@ h6 + .a-legend,
   border-radius: 50%;
   /* The rotate is needed to fix a bug in Firefox where radio
                    button was not centered. */
-  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -2541,32 +2536,16 @@ h6 + .a-legend,
 }
 
 .cf-icon-svg__updating {
-  -webkit-animation: updating-animation 1.25s infinite linear;
   animation: updating-animation 1.25s infinite linear;
-  -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-}
-
-@-webkit-keyframes updating-animation {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
 }
 
 @keyframes updating-animation {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   100% {
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
@@ -2634,7 +2613,6 @@ h6 + .a-legend,
 .cf-icon__rotate-90.cf-icon__before:before,
 .cf-icon__rotate-90.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -2642,7 +2620,6 @@ h6 + .a-legend,
 .cf-icon__rotate-180.cf-icon__before:before,
 .cf-icon__rotate-180.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -2650,7 +2627,6 @@ h6 + .a-legend,
 .cf-icon__rotate-270.cf-icon__before:before,
 .cf-icon__rotate-270.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
@@ -2658,7 +2634,6 @@ h6 + .a-legend,
 .cf-icon__flip-horizontal.cf-icon__before:before,
 .cf-icon__flip-horizontal.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
-  -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
@@ -2666,7 +2641,6 @@ h6 + .a-legend,
 .cf-icon__flip-vertical.cf-icon__before:before,
 .cf-icon__flip-vertical.cf-icon__after:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
-  -webkit-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 
@@ -2685,44 +2659,27 @@ h6 + .a-legend,
 :root .cf-icon__rotate-270.cf-icon__after:after,
 :root .cf-icon__flip-horizontal.cf-icon__after:after,
 :root .cf-icon__flip-vertical.cf-icon__after:after {
-  -webkit-filter: none;
   filter: none;
 }
 
 .cf-icon__spin.cf-icon:before,
 .cf-icon__spin.cf-icon__before:before,
 .cf-icon__spin.cf-icon__after:after {
-  -webkit-animation: cf-spin 2s infinite linear;
   animation: cf-spin 2s infinite linear;
 }
 
 .cf-icon__pulse.cf-icon:before,
 .cf-icon__pulse.cf-icon__before:before,
 .cf-icon__pulse.cf-icon__after:after {
-  -webkit-animation: cf-spin 1s infinite steps(8);
   animation: cf-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes cf-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
 }
 
 @keyframes cf-spin {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   100% {
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
@@ -4599,7 +4556,6 @@ h6 + .a-legend,
 
 @supports (display: flex ) {
   .m-hero_wrapper {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
@@ -4780,7 +4736,6 @@ h6 + .a-legend,
 .o-featured-content-module__center .o-featured-content-module_img {
   position: relative;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -5007,12 +4962,10 @@ h6 + .a-legend,
 
 .o-table__sortable .sortable.sorted-down:after,
 .o-table__sortable .sortable.sorted-up:hover:after {
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .o-table__sortable .sortable.sorted-down:hover:after {
-  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -5349,7 +5302,6 @@ a.a-heading__icon.active {
   top: -1.875em;
   left: 1.875em;
   background: transparent;
-  transition: -webkit-transform 1s ease, background .5s linear;
   transition: transform 1s ease, background .5s linear;
   z-index: 1;
 }
@@ -5376,7 +5328,6 @@ a.a-heading__icon.active {
   position: absolute;
   top: 0;
   outline: 0;
-  transition: -webkit-transform .1s ease, background .2s linear;
   transition: transform .1s ease, background .2s linear;
 }
 
@@ -7354,7 +7305,6 @@ This LESS Code is for code highlighing
     color: black !important;
     /*prints faster and cheaper */
     text-shadow: none !important;
-    -webkit-filter: none !important;
     filter: none !important;
     -ms-filter: none !important;
   }
