@@ -6,7 +6,7 @@ published: true
 redirect_from: "/ui-toolkit/links.html"
 ---
 
-
+- [Behavior](#behavior)
 - [Style](#style)
 - [States](#states)
 - [Variations](#variations)
@@ -33,6 +33,19 @@ Links lead users to a different page or further information. In contrast, <a hre
     </li>
   </ul>
 </div>
+
+## Behavior
+
+### Default links
+In general, links should default to opening in the same page or browser tab.
+
+### Opening a link in a new tab
+Links should open in a new tab in interactions where users enter data or make
+selections that would be lost if they left the page and used the back button to
+come back to the page. This includes interactive tools, search filters, and
+forms where the user has to submit and enter information. Add `target="_blank" rel="noopener noreferrer"` to direct these links to
+securely open in a new tab.
+
 
 ## Style
 
@@ -159,6 +172,12 @@ Lorem ipsum dolor sit amet. Vestibulum orci ante, sagittis quis dolor a, fringil
 - [Contact us](#)
 {: class="toc"}
 </div>
+
+---
+
+#### Links used in interactive tools, forms, and search filters
+These links should open in a new tab. Set them to `target="_blank"
+rel="noopener noreferrer"`
 
 ---
 
