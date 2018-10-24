@@ -48,9 +48,9 @@ information.
 - Add `target="_blank" rel="noopener noreferrer"` to direct these links to
 securely open in a new tab.
 - Add screenreader-only text to warn users with visual impairments that this
-will open in a new tab to meet <a
-href="https://www.w3.org/TR/WCAG20-TECHS/G201.html">WCAG guideline 3.2 that
-webpages should work in a predictable way</a>.
+will open in a new tab to meet [WCAG guideline 3.2 that webpages should work in
+a predictable way](https://www.w3.org/TR/WCAG20-TECHS/G201.html).
+
 
 
 ## Style
