@@ -41,9 +41,9 @@ In general, links should default to opening in the same page or browser tab.
 
 ### Opening a link in a new tab
 Links should open in a new tab in situations where users enter data or make
-selections that would be lost if they left the page and used the back button to
-come back to the page. This includes interactive tools, search filters, and
-forms where the user has to enter and submit information.
+selections that would be lost if they left the page. This includes interactive
+tools, search filters, and forms where the user has to enter and submit
+information.
 
 - Add `target="_blank" rel="noopener noreferrer"` to direct these links to
 securely open in a new tab.
