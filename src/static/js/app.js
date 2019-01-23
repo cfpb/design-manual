@@ -3,8 +3,11 @@
    ========================================================================== */
 
 var $ = require( 'jquery' );
-require( 'cf-expandables/src/Expandable' );
-require( 'cf-tables/src/Table' );
+var Expandable = require( 'cf-expandables/src/Expandable' );
+var Table = require( 'cf-tables/src/Table' );
+
+Expandable.init();
+Table.init();
 
 $(document).ready(function() {
   'use strict';

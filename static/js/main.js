@@ -310,7 +310,7 @@ AtomicComponent.init = function( scope ) {
 
 module.exports = AtomicComponent;
 
-},{"../mixins/Events":3,"../utilities/object-assign":6,"../utilities/type-checkers":8,"dom-delegate":22}],2:[function(require,module,exports){
+},{"../mixins/Events":3,"../utilities/object-assign":6,"../utilities/type-checkers":8,"dom-delegate":15}],2:[function(require,module,exports){
 /* ==========================================================================
    Organism
 
@@ -1236,20 +1236,6 @@ ExpandableTransition.CLASSES = CLASSES;
 module.exports = ExpandableTransition;
 
 },{"cf-atomic-component/src/mixins/Events.js":3,"cf-atomic-component/src/utilities/transition/BaseTransition":7}],11:[function(require,module,exports){
-arguments[4][1][0].apply(exports,arguments)
-},{"../mixins/Events":13,"../utilities/object-assign":16,"../utilities/type-checkers":17,"dom-delegate":22,"dup":1}],12:[function(require,module,exports){
-arguments[4][2][0].apply(exports,arguments)
-},{"../utilities/config":14,"./AtomicComponent":11,"dup":2}],13:[function(require,module,exports){
-arguments[4][3][0].apply(exports,arguments)
-},{"dup":3}],14:[function(require,module,exports){
-arguments[4][4][0].apply(exports,arguments)
-},{"dup":4}],15:[function(require,module,exports){
-arguments[4][5][0].apply(exports,arguments)
-},{"dup":5}],16:[function(require,module,exports){
-arguments[4][6][0].apply(exports,arguments)
-},{"dup":6}],17:[function(require,module,exports){
-arguments[4][8][0].apply(exports,arguments)
-},{"dup":8}],18:[function(require,module,exports){
 /* ==========================================================================
    Table Organism
    ========================================================================== */
@@ -1272,7 +1258,7 @@ Table.constants.DIRECTIONS = config.DIRECTIONS;
 
 module.exports = Table;
 
-},{"./TableRowLinks":19,"./TableSortable":20,"cf-atomic-component/src/components/Organism":12,"cf-atomic-component/src/utilities/config":14}],19:[function(require,module,exports){
+},{"./TableRowLinks":12,"./TableSortable":13,"cf-atomic-component/src/components/Organism":2,"cf-atomic-component/src/utilities/config":4}],12:[function(require,module,exports){
 /* ==========================================================================
    Table Row Links
 
@@ -1315,7 +1301,7 @@ function onRowLinkClick( event ) {
 
 module.exports = TableRowLinks;
 
-},{"cf-atomic-component/src/utilities/dom-closest":15}],20:[function(require,module,exports){
+},{"cf-atomic-component/src/utilities/dom-closest":5}],13:[function(require,module,exports){
 /* ==========================================================================
    Table Sortablle
 
@@ -1537,7 +1523,7 @@ function onSortableClick( event ) {
 
 module.exports = TableSortable;
 
-},{"cf-atomic-component/src/utilities/config":14,"cf-atomic-component/src/utilities/dom-closest":15}],21:[function(require,module,exports){
+},{"cf-atomic-component/src/utilities/config":4,"cf-atomic-component/src/utilities/dom-closest":5}],14:[function(require,module,exports){
 /*jshint browser:true, node:true*/
 
 'use strict';
@@ -1659,7 +1645,7 @@ Delegate.prototype.captureForType = function(eventType) {
  * @param {string} eventType Listen for these events
  * @param {string|undefined} selector Only handle events on elements matching this selector, if undefined match root element
  * @param {function()} handler Handler function - event data passed here will be in event.data
- * @param {Object} [eventData] Data to pass in event.data
+ * @param {boolean} [useCapture] see 'useCapture' in <https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener>
  * @returns {Delegate} This method is chainable
  */
 Delegate.prototype.on = function(eventType, selector, handler, useCapture) {
@@ -1968,7 +1954,7 @@ Delegate.prototype.destroy = function() {
   this.root();
 };
 
-},{}],22:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 /*jshint browser:true, node:true*/
 
 'use strict';
@@ -1976,7 +1962,6 @@ Delegate.prototype.destroy = function() {
 /**
  * @preserve Create and manage a DOM event delegator.
  *
- * @version 0.3.0
  * @codingstandard ftlabs-jsv2
  * @copyright The Financial Times Limited [All Rights Reserved]
  * @license MIT License (see LICENSE.txt)
@@ -1989,7 +1974,7 @@ module.exports = function(root) {
 
 module.exports.Delegate = Delegate;
 
-},{"./delegate":21}],23:[function(require,module,exports){
+},{"./delegate":14}],16:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
@@ -12355,18 +12340,21 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],24:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 /* ==========================================================================
    JS
    ========================================================================== */
 
 var $ = require( 'jquery' );
-require( 'cf-expandables/src/Expandable' );
-require( 'cf-tables/src/Table' );
+var Expandable = require( 'cf-expandables/src/Expandable' );
+var Table = require( 'cf-tables/src/Table' );
+
+Expandable.init();
+Table.init();
 
 $(document).ready(function() {
   'use strict';
   $('.cf-icon-external-link').append('<span class="u-visually-hidden"> Links to external site.</span>');
 });
 
-},{"cf-expandables/src/Expandable":9,"cf-tables/src/Table":18,"jquery":23}]},{},[24]);
+},{"cf-expandables/src/Expandable":9,"cf-tables/src/Table":11,"jquery":16}]},{},[17]);
