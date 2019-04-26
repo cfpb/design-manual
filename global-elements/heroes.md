@@ -120,7 +120,7 @@ Subheading content should be brief, enticing, and build upon the heading to desc
 
 <h4>Illustration (no bleed)</h4>
 - Single image for both large and small screens
-- Illustration dimensions (maximum): 470px x 195px (2x: 940px x 390px)
+- Illustration dimensions: 470px (exact) x 195px (maximum) (2x: 940px x 390px)
 
 <div class="content-50 content-last">
   <p>Large screens (601+)</p>
