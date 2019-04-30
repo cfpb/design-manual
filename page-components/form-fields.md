@@ -769,7 +769,7 @@ To optimize screen reader accessibility, lay out checkboxes vertically rather th
 <div class="content-50 content-first">
 
 #### Selected
-- Border: 2 px, Dark Gray (#43484e)
+- Border: 1 px, Gray 60 (#919395)
 - Minicon: 18 px, Black (#101820)
 
 </div>
@@ -961,7 +961,7 @@ There are some issues with voiceover reading radio buttons. To get around this, 
 <div class="content-50 content-first">
 
 #### Selected
-- Border: 1 px, Pacific (#0072ce)
+- Border: 1 px, Gray 60 (#919395)
 - Background: 14 px x 14 px, Pacific (#0072ce)
 
 </div>
@@ -1101,7 +1101,7 @@ Radio button (or checkbox)
 
 Target area
 
-- Border: 2 px, Pacific (#0072ce)
+- Border: 1 px, Pacific (#0072ce)
 - Background: Pacific 20 (#d6e8fa)
 
 Radio button (or checkbox)
