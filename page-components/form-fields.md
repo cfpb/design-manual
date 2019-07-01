@@ -553,7 +553,9 @@ The success notification displays when an operation has run as expected, such as
 
 #### Warning
 
-The warning notification displays when an operation has run as expected, but doesn't have the expected results,such as a search that returned no results.This can also be used to display additional critical information to a user before they submit a form, such as how their data will be used and protected or a reminder that they can’t edit their responses after submitting.
+The warning notification displays when an operation has run as expected, but doesn't have the expected results, such as a search that returned no results.
+
+This notification can also be used to display additional critical information to a user before they submit a form, such as how their data will be used and protected or a reminder that they can’t edit their responses after submitting.
 
 - Border: 2 px, Gold (#ff9e1b)
 - Background: Gold 20 (#fff0dd)
@@ -1106,7 +1108,7 @@ Target area
 
 Radio button (or checkbox)
 
-- Border: 1 px, Pacific (#0072ce)
+- Border: 1 px, Gray 60 (#919395)
 - Background: 14 x 14 px, Pacific (#0072ce)
 
 </div>
