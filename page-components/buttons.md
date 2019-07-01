@@ -185,7 +185,7 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Hover
-* Background: Pacific 80 (#4497dc)
+* Background: Dark Pacific (#0050b4)
 </div>
 
 <div class="content-67 content-last">
@@ -200,7 +200,7 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Focused
-* Background: Pacific 80 (#4497dc)
+* Background: Dark Pacific (#0050b4)
 * Outline: Dotted 1px, Pacific (#0072ce)
 * Outline offset: 1px
 </div>
@@ -217,7 +217,7 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Active
-* Background: Navy 80 (#5674a3)
+* Background: Navy (#254b87)
 </div>
 
 <div class="content-67 content-last">
@@ -248,7 +248,7 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Hover
-* Background: Gray 80 (#75787b)
+* Background: Dark Gray (#43484e)
 </div>
 
 <div class="content-67 content-last">
@@ -263,7 +263,7 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Focused
-* Background: Gray 80 (#75787b)
+* Background: Dark Gray (#43484e)
 * Outline: Dotted 1px, Gray (#5a5d61)
 * Outline offset: 1px
 </div>
@@ -280,7 +280,7 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Active
-* Background: Dark Gray (##43484e)
+* Background: CFPB Black (#101820)
 </div>
 
 <div class="content-67 content-last">
@@ -311,7 +311,7 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Hover
-* Background: Red 80 (#dd735d)
+* Background: Dark Red (#b63014)
 </div>
 
 <div class="content-67 content-last">
@@ -326,7 +326,7 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Focused
-* Background: Red 80 (#dd735d)
+* Background: Dark Red (#b63014)
 * Outline: Dotted 1px, Red (#d14124)
 * Outline offset: 1px
 </div>
@@ -343,7 +343,7 @@ is functioning as intended.
 
 <div class="content-33 content-first">
 #### Active
-* Background: Dark Red (#B63014)
+* Background: Dark Gray (#43484e)
 </div>
 
 <div class="content-67 content-last">

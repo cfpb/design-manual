@@ -111,7 +111,7 @@ Lorem ipsum dolor sit amet, <a href="#">default link style</a>. Vestibulum orci 
 
 <div class="content-33 content-first">
 #### Hover
-* 50% Pacific Blue
+* Dark Pacific Blue
 * 1px solid bottom border
 </div>
 <div class="content-67 content-last regular-ex">
@@ -142,7 +142,7 @@ Lorem ipsum dolor sit amet, <a href="#">default link style</a>. Vestibulum orci 
 
 <div class="content-33 content-first">
 #### Visited
-* 50% Teal
+* Teal
 * 1px solid bottom border
 </div>
 
