@@ -3,4 +3,4 @@
    Color variables
    ========================================================================== */
 
-// Official Palette as of [date]
+// Official Palette as of [date].

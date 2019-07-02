@@ -16,7 +16,7 @@ var transformer = transformCSV( function( data ) {
   if ( data[0] === 'family' ) {
     return fs.readFileSync( templateSource )
              .toString()
-             .replace( /\[date\]/g, moment().format( 'MMMM Do YYYY, h:mm:ss a' ) );
+             .replace( /\[date\]/g, moment().format( 'MMMM D, YYYY' ) );
   }
 
   if ( family !== data[0] ) {
