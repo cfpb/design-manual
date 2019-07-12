@@ -7,9 +7,9 @@ redirect_from: "/ui-toolkit/featured-content-module.html"
 ---
 
 - [Use cases](#use)
-- [Desktop style](#desktop)
-- [Tablet style](#tablet)
-- [Mobile style](#mobile)
+- [Desktop style](#style-at-desktop-size)
+- [Tablet style](#style-at-tablet-size)
+- [Mobile style](#style-at-mobile-size)
 {: class="toc"}
 
 <div class="content-50 content-first">
@@ -39,13 +39,13 @@ Featured content modules (FCMs) function to highlight a specific piece of conten
 
 <div class="content-67 content-first">
 
-Featured content modules should include a single piece of content from a defined content type, including: Blog, News, Video, Event, and Tool.
+Featured content modules should highlight a single piece of content. That content can be almost anything, from a webpage to a blog post to a PDF to a video.
 
 FCMs appear below the title and introductory paragraph on a page, and retain that position on all screen sizes.
 
 FCMs contain a headline, body copy text, and a graphical element related to the piece of content being featured. They are a “mini story” and never simply a dominant visual.
 
-FCMs can appear on any page type, though they are best suited for pages 3rd level and below in the site map. They are designed to accommodate pages with either a left-hand navigation or right-hand sidebar.
+FCMs can appear on any page type, though they are best suited for pages third level and below in the site map. They are designed to accommodate pages with either a left-hand navigation or right-hand sidebar.
 
 </div>
 
@@ -53,47 +53,31 @@ FCMs can appear on any page type, though they are best suited for pages 3rd leve
 
 ## Style at desktop size
 
+{::nomarkdown}
 <div>
-![Image of featured content module example at desktop size]({{ site.baseurl }}/static/img/featured-content-module/fcm-desktop02.png)
+  <img src="{{ site.baseurl }}/static/img/featured-content-module/fcm-desktop02.png" alt="Image of featured content module example at desktop size">
+</div>
+{:/nomarkdown}
+
+<div class="content-50 content-first">
+* Module spans the full width of the page’s content area and is a minimum of 220px tall. It appears 60px underneath the header/intro paragraph of the page.
+* Background color of module is Gray 5 with a 1px Gray 40 stroke.
+* Visual is 270px wide and a minimum of 220px tall. The height of the visual will vary at different screen sizes so that the full height of the image is always visible. The aspect ratio of the image changes with screen size to keep the full image height visible; the image will be cropped up to 23% from each side.
+* Text spans 5 columns and is left and top aligned. There is 30px of padding around all sides of the text.
 </div>
 
-<div class="content-33 content-first">
-* Module is a minimum of 320px total in height with 30px top and bottom padding. It appears 60px underneath the header/intro paragraph of the page.
-* Background color of module is Gray 5 with a 1px Gray 50 stroke.
-* Module bleeds to the edge of the page, right sidebar and left nav.
-* Visual spans 5 columns and bleeds into right sidebar. The visual is sized at 640 x 360px (a 16:9 ratio) for optimal appearance at all screen sizes.
-* Text spans 3 columns and is left and top aligned.
-</div>
-
-<div class="content-33">
-* Heading: H2, appears 30px below category, 35 maximum character count (including spaces)
+<div class="content-50">
+* Heading: H3, 35 maximum character count (including spaces)
 * Body copy: 16px, appears 15px below the headline, 160 maximum character count (including spaces)
-* Call to action link: 16px, standard link colors, appears 30px below body copy, 30 maximum character count (including spaces)
-* Call to action button: Blue primary button, appears 30px below the body copy
-</div>
-
-<div class="content-33 content-last">
-* Category: 18px black minicon and H4 text, appears 30px from top
-* The following five categories can be used.
-  * <h4>{% include icons/date.svg %} Featured event</h4>
-  * <h4> {% include icons/speech-bubble.svg %} Featured blog</h4>
-  * <h4>{% include icons/play-round.svg %} Featured video</h4>
-  * <h4>{% include icons/settings.svg %} Featured tool</h4>
-  * <h4>{% include icons/newspaper.svg %} Featured news</h4>
-* If the content does not fit within one of the five categories, you may use this icon and prefix:
-  * <h4>{% include icons/favorite.svg %} Featured </h4>
+* Call to action link: 16px, standard link colors, appears 15px below body copy, 35 maximum character count (including spaces)
+* Play button (for FCMs with a video): 60px diameter, Black background at 75% opacity that changes to Pacific on hover, White icon, 2px Gray 5 border, centered in the visual
 </div>
 
 ## Style at tablet size
 
 <div class="content-33 content-first">
 
-Differences in style at tablet size
-
-* Text spans 5 columns
-* Visual spans 7 columns
-* Visual's height is fixed, and cropping will occur on both the left and right sides until 700px, when the image will drop below the text and appear at a 16:9 ratio.
-
+The FCM looks and behaves the same at tablet sizes as it does at desktop sizes, spanning the full width of the page’s content area and adjusting its height to always show the full height of the image.
 
 </div>
 
@@ -110,11 +94,11 @@ Differences in style at tablet size
 
 Differences in style at mobile size
 
-* Module appears 30px underneath the header/intro paragraph of the page
-* Headline: H3
-* Body copy: 16px
+* Height is variable depending on how much content is in the FCM
+* Headline: H4
 * Visual appears below text at a 16:9 ratio
 * 30px space between text and top of visual
+* 15px of left, right, and bottom padding around all content in the FCM
 
 
 </div>
