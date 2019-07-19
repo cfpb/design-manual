@@ -43,7 +43,7 @@ Featured content modules should highlight a single piece of content. That conten
 
 FCMs appear below the title and introductory paragraph on a page, and retain that position on all screen sizes.
 
-FCMs contain a headline, body copy text, and a graphical element related to the piece of content being featured. They are a “mini story” and never simply a dominant visual.
+FCMs contain a headline, body copy text, a call to action (either a text link or a play button), and a graphical element related to the piece of content being featured. They are a “mini story” and never simply a dominant visual.
 
 FCMs can appear on any page type, though they are best suited for pages third level and below in the site map. They are designed to accommodate pages with either a left-hand navigation or right-hand sidebar.
 
@@ -51,7 +51,7 @@ FCMs can appear on any page type, though they are best suited for pages third le
 
 <div class="content-33 content-last"></div>
 
-## Style at desktop size
+## Style at desktop and tablet sizes
 
 {::nomarkdown}
 <div>
@@ -60,10 +60,11 @@ FCMs can appear on any page type, though they are best suited for pages third le
 {:/nomarkdown}
 
 <div class="content-50 content-first">
-* Module spans the full width of the page’s content area and is a minimum of 220px tall. It appears 60px underneath the header/intro paragraph of the page.
+* Module spans the full width of the page’s content area and is 220px tall at maximum page width. It appears 60px underneath the header/intro paragraph of the page.
 * Background color of module is Gray 5 with a 1px Gray 40 stroke.
-* Visual is 270px wide and a minimum of 220px tall. The height of the visual will vary at different screen sizes so that the full height of the image is always visible. The aspect ratio of the image changes with screen size to keep the full image height visible; the image will be cropped up to 23% from each side.
-* Text spans 5 columns and is left and top aligned. There is 30px of padding around all sides of the text.
+* Visual is always 270px wide and 220px tall at maximum page width.
+* Text spans 5 columns at maximum page width and is left and top aligned. There is 30px of padding around all sides of the text.
+* The ratio of text and visual changes with screen size to keep the full height of the image visible. As available width dips below the maximum page width, the text area shrinks in width while the visual maintains a fixed width of 270px. That means that the height and aspect ratio of the visual will change as the screen shrinks, and the image will be cropped between 16% and 29% from each side.
 </div>
 
 <div class="content-50">
@@ -73,37 +74,21 @@ FCMs can appear on any page type, though they are best suited for pages third le
 * Play button (for FCMs with a video): 60px diameter, Black background at 75% opacity that changes to Pacific on hover, White icon, 2px Gray 5 border, centered in the visual
 </div>
 
-## Style at tablet size
-
-<div class="content-33 content-first">
-
-The FCM looks and behaves the same at tablet sizes as it does at desktop sizes, spanning the full width of the page’s content area and adjusting its height to always show the full height of the image.
-
-</div>
-
-<div class="content-67 content-last">
-
-![Image of featured content module example at tablet size]({{ site.baseurl }}/static/img/featured-content-module/fcm-tablet02.png)
-
-</div>
-
-
 ## Style at mobile size
 
 <div class="content-33 content-first">
 
-Differences in style at mobile size
+Differences in style at mobile size:
 
-* Height is variable depending on how much content is in the FCM
+* Text and visual are stacked instead of side by side with 30px space between text and top of visual
 * Headline: H4
-* Visual appears below text at a 16:9 ratio
-* 30px space between text and top of visual
+* Visual is always in a 16:9 ratio
 * 15px of left, right, and bottom padding around all content in the FCM
 
 
 </div>
 
-<div class="content-33">
+<div class="content-67">
 
 ![Image of featured content module example at mobile size]({{ site.baseurl }}/static/img/featured-content-module/fcm-mobile02.png)
 
