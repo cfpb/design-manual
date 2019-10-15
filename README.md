@@ -1,3 +1,6 @@
+# :warning: THIS REPO IS DEPRECATED (1/15/2016) :warning:
+Please migrate to using the [design-system](https://github.com/cfpb/design-system).
+
 # The CFPB Design Manual
 
 https://cfpb.github.io/design-manual/
