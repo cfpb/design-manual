@@ -33,7 +33,7 @@
     "cf-tables": "^4.3.0",
     "cf-typography": "^10.2.1",
     "html5shiv": "latest",
-    "jquery": "^3.0.0",
+    "jquery": "^3.5.0",
     "normalize-css": "^2.0.0",
     "normalize-legacy-addon": "0.1.0"
   },
